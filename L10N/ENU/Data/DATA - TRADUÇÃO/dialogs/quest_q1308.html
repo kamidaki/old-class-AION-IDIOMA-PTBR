@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ... não, não funcionou. Mais coisas foram roubadas pelo Manduri, e eu não posso continuar perguntando ... ACHOO ... Pedindo a Passing Daevas para ajudar a trazê -los de volta. O que podemos fazer?</p>
+<p> </p>
+<p>Deve haver outra maneira de parar sua ameaça ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles têm um líder que podemos remover?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! É isso! Perfeito!</p>
+<p> </p>
+<p>É só desde então[%dic:STR_DIC_M_ManduriTNamed_22_An] Assumiu o que os roubos realmente se tornaram um problema. Se pudermos removê -lo, talvez o Manduri esteja menos inclinado a continuar tomando nossos pertences.</p>
+<p> </p>
+<p>Há apenas um problema. Não o chamamos de "astuto" por nada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ele é difícil de pegar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais difícil do que um bellepig lubrificado. O que é pior, nem sabemos onde está sua cova, e só pode tentar pegá -lo quando ele aparecer nos principais assentamentos de Manduri.</p>
+<p> </p>
+<p>Eu encomendei outros para encontrá -lo e derrubá -lo, mas ninguém nunca teve sucesso. Ah ... achoo! Oh ... onde eu estava? Oh, não importa.</p>
+<p> </p>
+<p>E você, [%username]? Nós não tivemos um[%userclass] experimente ainda, e a recompensa é bastante pesada nos dias de hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Com alguma sorte, [%dic:STR_DIC_M_ManduriTNamed_22_An] está prestes a encontrar sua partida e poderemos finalmente tranquilizar os moradores de que os roubos terminarão.</p>
+<p> </p>
+<p>Agora, como eu disse, não sabemos onde está a cova dele, por isso tenho medo de que você tenha que ir à vila de Manduri ou ao armazenamento de alimentos e esperar por ele. Obviamente, se você quisesse passar o tempo matando alguns dos outros Manduri lá, ninguém o impediria.</p>
+<p> </p>
+<p>Você pode até encontrar algumas bugigangas interessantes, cleptomaníacas que são. Fé e ... ACHOO!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim ... fé e armas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Bem, se você mudar de idéia, apenas diga. Duvido que tenhamos[%dic:STR_DIC_M_ManduriTNamed_22_An]pego em breve e um[%userclass]Como se você fosse sempre bem -vindo a tentar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você!</p>
+<p> </p>
+<p>Você conseguiu matar [%dic:STR_DIC_M_ManduriTNamed_22_An] então? Eu já vi outros dois surgirem desde que você saiu ... ACHOO! Nem tiveram sorte de capturá -lo, é claro ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu consegui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez? Isso é excelente notícia, muito bem! Vou relatar as notícias aos moradores assim que meu turno terminar, tenho certeza de que eles ficarão muito felizes!</p>
+<p> </p>
+<p>Aqui está a sua recompensa, [%username]. Tenho certeza de que você pegou muitos itens bons por aí, mas prometi a você a recompensa, e aqui está. Bom trabalho!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_ManduriTNamed_22_An]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatar a morte a [%dic:STR_DIC_N_Archelaos].</p></step>
+</steps>
+<p>Mate Wily Kundu para que os manduri estejam menos inclinados a roubar dos residentes da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Archelaos pediu que você caçasse uma criatura Manduri chamada Wily Kundu, dizendo que os assaltos haviam se tornado mais prevalentes depois que ele assumiu o comando sobre o manduri. Você encontrou e matou Kundu, e recebeu a recompensa prometida a você por Archelaos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

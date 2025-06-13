@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode -se vencer uma batalha, mas continue perdendo o próximo se as baixas forem grandes demais.</p>
+<p> </p>
+<p>Como governador, devo inventar estratégias para minimizar nossas perdas e maximizar as deles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um plano, [%username], isso requer suas habilidades.</p>
+<p> </p>
+<p>Atualmente, não posso mobilizar a Guilda do Vento Cinzento ou a Guilda do Escudo de Nezekan. Mas com sua renome, você deve conseguir reunir uma força forte.</p>
+<p> </p>
+<p>Leve -os e derrote [%dic:STR_DIC_E_Q1738] S na camada superior de Reshanta durante a batalha da fortaleza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Derrota [%dic:STR_DIC_E_Q1738] S em Roah Fortaleza e Krotan Refuge. Asmodianos ou Balaur, veteranos ou novatos, não importa o que. Eles são todos inimigos.</p>
+<p> </p>
+<p>Reúna uma força, espere até que a batalha seja iniciada e depois mate todos eles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você perdeu toda a sua confiança?</p>
+<p> </p>
+<p>É verdade que eles não são inimigos fáceis. Mas você não é Daeva comum.</p>
+<p> </p>
+<p>Ainda há tempo para reconsiderar e reunir sua força.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil manter nossas baixas sob controle.</p>
+<p> </p>
+<p>Sua derrota dos guardas do portão nas fortalezas de camada superior de Reshanta, no entanto, deve suavizar consideravelmente o inimigo.</p>
+<p> </p>
+<p>Diga -me como foi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós caímos sobre eles como uma única lâmina poderosa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você seria o Daeva perfeito para o trabalho.</p>
+<p> </p>
+<p>Se ao menos todos os Daevas poderiam ser como você ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_E_Q1738] S na camada superior de Reshanta.</p>
+<p visible="[%0]">Fortaleza de roah ([%2]/1)</p>
+<p visible="[%0]">Refúgio Krotan ([%5]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Taranis].</p></step>
+</steps>
+<p>Você recebeu uma ordem para derrotar os guardas do portão nas fortalezas de camada superior de Reshanta. Organize uma força e derrote os guardas do portão quando a batalha da fortaleza começar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O governador Michalis pediu que você derrotasse os guardas do portão nas fortalezas de camada superior de Reshanta, a fim de infligir danos a Balaur e asmodianos.</p>
+<p> </p>
+<p>Você organizou uma força e derrotou os guardas do portão que guardavam a fortaleza de Roah e o refúgio de Krotan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

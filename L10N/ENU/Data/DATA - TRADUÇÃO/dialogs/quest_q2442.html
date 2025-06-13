@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Às vezes me sinto ... culpado por tomar ... esta forma. Mas é melhor vergonha do que ... o tormento da crina da névoa.</p>
+<p> </p>
+<p>Eles nos odeiam agora ... você vê. Se eles soubessem ... eu era um Elim ... eles me caçariam ....</p>
+<p> </p>
+<p>Devo permanecer em ... disfarce, então ... se for para ajudar meu colega a eliminar. Não vou ter motivos ... para ter vergonha disso ... forma miserável então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ajude -os com o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh Daeva ... os elimes estão com problemas ... e a falta de Aether é ... o problema.</p>
+<p> </p>
+<p>Se eu puder obter o suficiente ... Aether Power, então posso ... reviver meu colega eliminar.</p>
+<p> </p>
+<p>A névoa Mane Mau ... encontrou uma maneira de aproveitar o Aether. Não sei ... quão eficaz é, mas certamente valerá a pena tentar. Eu não posso ir ... mas você pode ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Eles fizeram uma pílula ... de Odella. Eles dizem isso ... contém Aether.</p>
+<p> </p>
+<p>Eu devo pegar.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_ReC_LycanRangerM_40_Ae] Areia [%dic:STR_DIC_M_KeB_LycanKnightM_38_Ae] S ... é mais provável que carregue um[%dic:STR_DIC_I_QUEST_2442a]. Depois de conseguir ... traga para mim</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não posso ir ... tenho muito o que fazer ... aqui.</p>
+<p> </p>
+<p>Por favor ... meu companheiro elim está morrendo.</p>
+<p> </p>
+<p>Você deve reconsiderar ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Temoji tentou me envergonhar ... por ter sido disfarçado de Gnarl, mas realmente ... uma agregação não é melhor. Estamos no mesmo estado ... ele e eu.</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_2442a] eu pedi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você procurava?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não está certo.</p>
+<p> </p>
+<p>Você precisará voltar ... e recuperar o [%dic:STR_DIC_I_QUEST_2442a].</p>
+<p> </p>
+<p>É a única coisa que eu consigo pensar ... que salvará o elimismo ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe. Vou acertar desta vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Esta é ... a pílula de Odella sobre a qual eu mais ouvi.</p>
+<p> </p>
+<p>Obrigado, Daeva.</p>
+<p> </p>
+<p>Com isso ... eu poderei salvar muitos elimes ....</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_2442a] e trazê -lo para [%dic:STR_DIC_N_Taisan].</p>[%collectitem]</step>
+</steps>
+<p>Taisan disse que queria salvar sua tribo tomando a pílula de Odella da névoa Mane Mau. Pegue -o deles e traga para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Taisan disse que tinha vergonha de ser disfarçado de Gnarl, mas não sabia dizer por que ele tinha que se esconder. Ele mencionou que teve que ajudar seu colega a eliminar.</p>
+<p> </p>
+<p>Ele pediu que você fosse ao névoa Mane Mau e encontrasse uma pílula de Odella, depois levasse -a para ele. Você fez o que lhe foi perguntado para que Taisan pudesse ajudar a salvar o Elim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

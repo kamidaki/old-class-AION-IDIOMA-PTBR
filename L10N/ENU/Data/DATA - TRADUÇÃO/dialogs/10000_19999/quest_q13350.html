@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard10_L]do[%dic:STR_DIC_W_LDF5b_B2_v10]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: derrotar o asmodiano que se infiltrou[%dic:STR_DIC_W_LDF5b_SZ_B2]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que os asmodianos querem ocupar a área contaminada.</p>
+<p> </p>
+<p>Se você subestimar o número de asmodianos invasores, poderá ter sérias conseqüências mais tarde.</p>
+<p> </p>
+<p>Embora eu ache que não terei que me preocupar mais agora que você está aqui, [%username].</p>
+<p> </p>
+<p>Você eliminou os asmodianos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu confio que você voltará com boas notícias.</p>
+<p> </p>
+<p>Conseguimos conservar a força de luta dos aliados com sua ajuda.</p>
+<p> </p>
+<p>Por favor, continue a ajudar no futuro.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5b_SZ_B2]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard10_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou na área contaminada no sul de Katalam e se reporte a Theron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos invasores direcionaram a zona contaminada no sul de Katalam.</p>
+<p> </p>
+<p>Você rasgou os asmodianos invasores e se reportou a Teron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

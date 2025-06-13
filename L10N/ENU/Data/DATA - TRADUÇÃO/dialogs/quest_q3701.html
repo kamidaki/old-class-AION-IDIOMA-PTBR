@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], venha aqui. Tenho algumas informações para você.</p>
+<p> </p>
+<p>É centurião[%dic:STR_DIC_N_Nereus], você vê. Ele pediu que você o visse no campo de treinamento de Teminon.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você sabe por quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não, mas[%dic:STR_DIC_N_Nereus] está lutando com o Balaur há algum tempo. Se eu fosse uma mulher apostada, apostava, tem algo a ver com eles.</p>
+<p> </p>
+<p>Independentemente disso, agora não é hora de especulação. Você foi escolhido para uma tarefa e agora deve se provar digno de seleção.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos Daevas no abismo estão sob pressão constante. Se você é capaz de aliviar essa pressão, mesmo por um tempo, a fé de Nereus estaria bem colocada.</p>
+<p> </p>
+<p>A graça de Ariel voa com você. Oro para que o peso da expectativa não o prenda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É um peso que eu posso suportar, Rentia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Bem, eu ... estou surpreso.</p>
+<p> </p>
+<p>Muito bem, enviarei um relatório ao campo de treinamento, informando -os sobre sua recusa. Só rezo para que a necessidade deles pela sua presença não fosse tão boa quanto eu deduzi.</p>
+<p> </p>
+<p>Fé e armas, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA! A criança pródiga está aqui!</p>
+<p> </p>
+<p>Obrigado por atender minha ligação, [%username]. Com toda a palha flutuando hoje em dia, não podia correr o risco de oferecer esse trabalho a qualquer pessoa.</p>
+<p> </p>
+<p>Precisa do creme da colheita para este. A escolha da ninhada ... por assim dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Qual é o trabalho então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um campo de treinamento de Balaur nas proximidades. Lugar eficiente também ... meio que o buraco que os perfura nos pesadelos que temos que lutar dia após dia.</p>
+<p> </p>
+<p>Queremos que alguém vá para o acampamento e tire o balauro lá antes que eles tenham a chance de serem treinados.</p>
+<p> </p>
+<p>Eles não podem balançar uma espada sem treinar, mas ainda podem ser mostrados um pouco de hospitalidade de Elyos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Nereus].</p></step>
+</steps>
+<p>Centurion Nereus pediu por você. Vá para o pouso de Teminon e encontre -o.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Rentia, oficial de informações em Reshanta, disse que o Centurion Nereus estava procurando por você.</p>
+<p> </p>
+<p>Você foi encontrá -lo e soube que Nereus precisava de alguém para concluir algumas tarefas importantes no campo de treinamento de Balaur nas proximidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

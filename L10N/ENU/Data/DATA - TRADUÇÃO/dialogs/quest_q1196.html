@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece moedas de ferro, [%username]?</p>
+<p> </p>
+<p>Existem várias tarefas que nossos guardiões não conseguem concluir, geralmente devido a restrições de tempo. Essas tarefas são atribuídas ao status de moeda de ferro, o que significa que a recompensa pelas tarefas não é Kinah ou suprimentos comuns, mas uma dessas moedas.</p>
+<p> </p>
+<p>Nossos Daevas podem concluir várias dessas tarefas, coletar moedas de ferro e entregá -las para recompensas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você tem uma tarefa para mim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu faço. Envolve o terreno sagrado aqui. Os espíritos que habitam esse refúgio de Aether mudaram recentemente. Eles se tornaram agressivos quando antes de serem pacíficos e calmos.</p>
+<p> </p>
+<p>Algo deve ser feito. Enviamos guardiões que eliminaram com sucesso muitos dos espíritos, mas ainda assim os espíritos retornam.</p>
+<p> </p>
+<p>Santum finalmente concordou que a situação merece o status de moeda de ferro. Talvez este seja um trabalho em que você estaria interessado, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quantos eu precisaria matar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Digamos que você precise matar quatorze espíritos do céu e oito espíritos do vento de geada antes de lhe entregar uma moeda.</p>
+<p> </p>
+<p>O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom.</p>
+<p> </p>
+<p>Se isso faz você se sentir melhor, considere o fato de estar ajudando os habitantes locais aqui, e não apenas você.</p>
+<p> </p>
+<p>Agora, venha. Lembre -se, eu preciso de 14[%dic:STR_DIC_M_AElemental1st_18_An] S e 8[%dic:STR_DIC_M_ElementalAir2_19_An] está morto antes que eu possa recompensá -lo. Fé e armas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Tem certeza? Sua armadura está parecendo um pouco esfarrapada ... e que [%mainslotitem]... bem, acho que não precisa ser dito lá.</p>
+<p> </p>
+<p>A escolha é sua, é claro. Se você é feliz o suficiente como é, não perdoo meu tempo pregando para você.</p>
+<p> </p>
+<p>O que é essa frase novamente? Aquele sobre felicidade e ignorância? Tenho certeza que você sabe disso ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estou indo ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você.</p>
+<p> </p>
+<p>Você sabe que deve realmente tentar trabalhar um pouco mais rápido se quiser colocar as mãos em nosso melhor equipamento.</p>
+<p> </p>
+<p>Você fez o que eu perguntei?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente!</p>
+<p> </p>
+<p>Eu ouvi algumas histórias de um jovem perverso[%userclass]rasgando através dos motivos sagrados. Suponho que agora isso deve ter sido você.</p>
+<p> </p>
+<p>Por sua vez, aqui está sua moeda de ferro. Lembre -se, temos trabalho e muitas moedas. Volte se você quiser ganhar mais.</p>
+<p> </p>
+<p>Fé e armas!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os espíritos que se tornaram violentos recentemente.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_AElemental1st_18_An]([%2]/14)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalAir2_19_An]([%5]/8)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Anontrite].</p></step>
+</steps>
+<p>O oficial Anontrite prometeu lhe dar uma moeda de ferro se você pudesse matar espíritos do céu e espíritos do vento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial do governo Anontrite disse que os espíritos locais se tornaram violentos e pediram que você se livrasse deles.</p>
+<p> </p>
+<p>Você derrotou espíritos e recebeu uma moeda de ferro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

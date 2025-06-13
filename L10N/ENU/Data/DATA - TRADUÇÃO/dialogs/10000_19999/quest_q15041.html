@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15041</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Este misterioso e antigo jardim é fortemente guardado. Seus guardiões devem ter recebido ordens para proteger o jardim há muito tempo.</p>
+<p> </p>
+<p>Esses guardiões não permitem que ninguém se intromite e representa um risco para os membros da expedição enquanto eles investigam.</p>
+<p> </p>
+<p>Você poderia eliminar os Guardiões para que possamos continuar com nossa investigação?</p>
+<p> </p>
+<p>Digite o [%dic:STR_DIC_W_LF5_SZ_D_01] e matar o [plur][%dic:STR_DIC_M_LF5_D_Brohum_M_Forest_58_An] e [plur][%dic:STR_DIC_M_LF5_D_Brohum_M_Young_Forest_58_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa ... eu me pergunto se minha filha vai se sair bem em um lugar tão perigoso ...</p>
+<p> </p>
+<p>Eh? Oh, é você.</p>
+<p> </p>
+<p>Você matou o Brohum?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Ouvi os gritos aterrorizados do Brohum mesmo aqui.</p>
+<p> </p>
+<p>Toda a tropa da expedição está falando sobre suas ações corajosas.</p>
+<p> </p>
+<p>Isso foi um bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF5_D_Brohum_M_Forest_58_An] e o [plur][%dic:STR_DIC_M_LF5_D_Brohum_M_Young_Forest_58_An]no[%dic:STR_DIC_W_LF5_SZ_D_01]([%2]/8).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Eukraton_E].</p></step>
+</steps>
+<p>Mate os guardas do Brohum Garden no jardim de Balaur, interferindo na investigação da tropa da expedição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eukraton pediu que você eliminasse o Brohum porque eles estavam interferindo na investigação da tropa da expedição.</p>
+<p> </p>
+<p>Você matou o Brohum e foi recompensado quando voltou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

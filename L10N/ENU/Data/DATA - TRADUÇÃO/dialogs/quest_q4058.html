@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, estou tão frustrado, [%username].</p>
+<p> </p>
+<p>Fomos enviados aqui em uma questão urgente. Estamos verificando quais regiões estão contaminadas e até que ponto a contaminação progrediu em cada região.</p>
+<p> </p>
+<p>No entanto, dificultou a investigação da contaminação nas planícies da ADMA. Estamos impressionados com a carga de trabalho. Você pode nos ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas algumas amostras. Peckus é particularmente resiliente a todos os níveis de toxinas. Ao caçar Peckus, podemos examinar seu tecido quanto ao nível de contaminação.</p>
+<p> </p>
+<p>Mas a amostragem não é fácil, porque Petrahulks nos atacaria enquanto estávamos marcando o Peckus. Seria uma grande ajuda se você, [%username], removeria o [%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An] para nós.</p>
+<p> </p>
+<p>Você pode nos ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matando todos[%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An]no[%dic:STR_DIC_W_DF2B_SZ_D2] e no[%dic:STR_DIC_W_DF2B_SZ_D3]Limparia o caminho para coletarmos as amostras de que precisamos.</p>
+<p> </p>
+<p>Bem, talvez isso seja um pouco demais-o Thining Out trinta deles faria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Considere isso feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Pandaemonium espera que completemos nossas missões de maneira adequada e rápida. Eu não posso enviar um humano para lá fora. Eu esperava que você estivesse disposto a ajudar.</p>
+<p> </p>
+<p>Simplesmente não vemos os Daevas fortes o suficiente aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente não vimos o Daevas suficiente aqui para ajudar a progredir com nossa coleção de amostras.</p>
+<p> </p>
+<p>Realizar missões de maneira adequada e eficiente é uma obrigação para um arconte.</p>
+<p> </p>
+<p>Que tal, [%username]? Você matou todos os trabalhadores de Petahulk?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Trinta abaixo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um ótimo trabalho. Deveríamos ser capazes de fazer algum progresso agora.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_DF2A_CyclopsWorkerD_48_An]([%2]/12).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Asustri].</p></step>
+</steps>
+<p>Precisamos coletar amostras, mas é impossível por causa dos trabalhadores de Petrahulk. Elimine os Petahulks.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>ASustri teve problemas para coletar amostras de contaminação nas planícies da ADMA. Os trabalhadores de Petrahulk estão impedindo a missão.</p>
+<p> </p>
+<p>Você se livrou dos trabalhadores de Petahulk para ele. Asustri espera que possa completar a missão a tempo agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

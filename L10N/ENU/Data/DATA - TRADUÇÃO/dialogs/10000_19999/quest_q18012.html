@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O laboratório de Idgel parece ter sido ocupado por soldados de Beritra.</p>
+<p> </p>
+<p>Eles devem saber que estamos ocupando a fortaleza do Proves ... se eles ainda estão mantendo esse lugar, é mais provável que seja algo importante.</p>
+<p> </p>
+<p>Para ser sincero, descobri um livro que os soldados de Tiamat deixaram para trás na fortaleza ...</p>
+<p> </p>
+<p>Se você promete não contar a ninguém, eu vou lhe dizer o que diz, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Beritra parece estar continuando a pesquisa de Tiamat.</p>
+<p> </p>
+<p>No entanto, isso é apenas especulação e ainda não foi investigado.</p>
+<p> </p>
+<p>Por que você não se encarrega deste, [%username]?</p>
+<p> </p>
+<p>Enquanto você está nisso, você também pode determinar se essa é a fonte dos gritos que a fortaleza do Tenisian estava falando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de entrar, há duas coisas que você precisa fazer.</p>
+<p> </p>
+<p>Descubra o que está acontecendo no laboratório Idgel e mate o restante [%dic:STR_DIC_M_BIDF5_R2_Killer_65_Ae].</p>
+<p> </p>
+<p>A tropa de Beritra restante está realizando experimentos sobre assuntos vivos, o que provavelmente explica os gritos. Depois de matar esses demônios de Beritra, os gritos vão parar.</p>
+<p> </p>
+<p>Sim, relate tudo sobre a tropa de Beritra restante - não para mim, mas ao Centurion Tenisian.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mm. Eu pensei que você ajudaria, [%username], é por isso que também contei sobre o conteúdo do livro.</p>
+<p> </p>
+<p>Entendido. No final, não posso forçá -lo a fazer nada.</p>
+<p> </p>
+<p>Mas, por favor, mantenha o que eu te disse em segredo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conheceu Gadoron?</p>
+<p> </p>
+<p>Você passou o que eu te disse? Minhas suspeitas estavam corretas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi pior do que eu pensava.</p>
+<p> </p>
+<p>Eu achava que Balaur ainda estava escondido por aí, mas eu não sabia que os experimentos estavam sendo continuados.</p>
+<p> </p>
+<p>Felizmente, aqueles gritos irritantes pararam e interrompemos os experimentos da Beritra.</p>
+<p> </p>
+<p>Bom trabalho, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_BIDF5_R2_Killer_65_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Tenisian]%.</p></step>
+</steps>
+<p>Faça o pedido de Gadoron, investigue o Instituto de Pesquisa Idgel e mate o 40º mestre de Blade Drakan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gadoron disse que o laboratório de Idgel parecia ter sido ocupado por Beritra e solicitou que você fosse ao laboratório para resolver a situação e cuidar do que estava causando todos os gritos.</p>
+<p> </p>
+<p>Você foi ao Laboratório Idgel, eliminou o Beritra que estava realizando experimentos com Reians e relatou tudo ao Centurion Tenisian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

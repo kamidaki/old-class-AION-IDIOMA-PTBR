@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Patrulhei o lado leste da vila com LeTum há alguns dias.</p>
+<p> </p>
+<p>Havia muitos tipólidos no campo TrieDED, então os perseguimos e matamos a maioria deles. Não queríamos que eles danificassem o campo.</p>
+<p> </p>
+<p>Mas um aldeão veio até mim ontem e disse que os tipolidas danificaram o campo desde então. Não parece possível que eles tenham voltado nesses números tão rapidamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez eles estivessem escondidos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez ... mas o motivo é menos importante do que o fato de estar de volta. Eu disse ao meu comandante que cuidamos deles, e agora parece que eu sou um mentiroso ou incompetente.</p>
+<p> </p>
+<p>Eu preciso de alguém para caçar esses tipóticos antes que a notícia volte para a pessoa errada.</p>
+<p> </p>
+<p>Que tal? Eu posso fazer valer o seu tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você entenda, [%username].</p>
+<p> </p>
+<p>Por favor, vá para as fontes termais de Halabana e caça [%dic:STR_DIC_M_hippolizardReD_37_An] S.</p>
+<p> </p>
+<p>Depois de matá -los, volte e me avise ... e obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso poderia ter acontecido com alguém."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se meu comandante ouvir sobre o [%dic:STR_DIC_M_hippolizardReD_37_An] S, eu poderia estar com grandes problemas.</p>
+<p> </p>
+<p>Por favor, é um problema real para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Às vezes você tem que corrigir seus próprios erros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu estive esperando por você.</p>
+<p> </p>
+<p>Você matou aqueles tipolidas de cauda de colher?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A ação está pronta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Isso vai me manter longe de problemas.</p>
+<p> </p>
+<p>Espero uma promoção para o relógio, e isso poderia ter sido uma mancha no meu disco.</p>
+<p> </p>
+<p>Quando eu sou um Daeva importante, lembrarei de quem me ajudou, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Remova o [plur][%dic:STR_DIC_M_hippolizardReD_37_An], que estão se tornando problemáticos nos campos tripédos ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mirmak].</p></step>
+</steps>
+<p>Responda ao apelo de Mirmak e vá a Halabana Hot Springs e mate o tipolido da cauda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirmak disse que já disse ao comandante que o problema da Tipolid foi corrigida e, em seguida, eles retornaram inesperadamente.</p>
+<p> </p>
+<p>Você foi às fontes termais de Halabana e caçou os tipolidas da cauda. Ele ficou muito grato por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me importo com ação, mas parece que esse trabalho nunca termina! A LETUM despeja todo o trabalho em mim, trivial ou não, e sou forçado a completá -lo enquanto outros estão por aí.</p>
+<p> </p>
+<p>Sou um soldado talentoso, mas até a Contineo poderia lidar com algumas dessas tarefas, e ele costumava ser um fazendeiro! O que é ainda pior é que tenho residentes me pedindo favores. Se eu tiver que encontrar mais um porgus perdido ... eu juro na sombra de Azphel ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tem isso áspero."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Além de todo o outro trabalho que precisa fazer, os moradores estão reclamando de Scolopens furiosos. Mesmo uma pequena picada de um Scolopeno de Poisontip pode ser fatal, mas não tenho tempo para sair e matar as bestas.</p>
+<p> </p>
+<p>Letum insiste que eu faço o trabalho dela antes de ajudar os moradores, mesmo que nada desse trabalho seja tão importante. Exterminando os Scolopens salvará vidas. Você pode ajudar, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já eliminamos alguns deles, mas eles estão se multiplicando mais rapidamente do que podemos nos livrar deles.</p>
+<p> </p>
+<p>Mas se um Daeva qualificado nos ajudasse, isso mudaria a situação.</p>
+<p> </p>
+<p>Por favor, mate 10[%dic:STR_DIC_M_ScorpionDF2_32_An]perto da vila.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem, [%username]. Eu preciso encontrar tempo para fazer isso. É o meu trabalho.</p>
+<p> </p>
+<p>Eu só queria ter um gêmeo às vezes ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quem não?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora eu receba tarefas importantes, também recebo muito trabalho trivial. Quero dizer ... um policial me pediu para limpar a armadura deles. Eu sei que, de fato, contineo poderia fazer isso.</p>
+<p> </p>
+<p>Eu gostaria de apenas começar a Shirking Responsabilidades para que os policiais e os moradores parassem de vir até mim.</p>
+<p> </p>
+<p>Bem, e os scolopens, [%username]?.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado!</p>
+<p> </p>
+<p>Obrigado a você, [%username], Posso dormir por mais uma hora.</p>
+<p> </p>
+<p>Aqui está uma recompensa por sua ajuda. Espero que você ache este item útil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_ScorpionDF2_32_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Raukus].</p></step>
+</steps>
+<p>Mate o Poisontip Scolopen na área ao redor da vila para ajudar Raukus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Raukus tinha muito trabalho para concluir por conta própria.</p>
+<p> </p>
+<p>Você o ajudou matando Poisontip Scolopens ao redor da vila, pelo qual ele ficou agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

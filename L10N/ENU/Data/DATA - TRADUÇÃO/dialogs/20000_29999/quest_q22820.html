@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Mensageiro enviado por Triniel encontrou perigo!</p>
+<p> </p>
+<p>Triniel disse que um comando deve ser emitido ao mensageiro para enviar uma carta.</p>
+<p> </p>
+<p>Ele é um shugo chamado[%dic:STR_DIC_N_LDF5a_Lettering_E].</p>
+<p> </p>
+<p>Mas letra que o mensageiro parece ter desaparecido no caminho aqui.</p>
+<p> </p>
+<p>[%username], você poderia ir em busca de letra e me trazer a carta que Triniel queria me enviar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe, AK!</p>
+<p> </p>
+<p>Fui forçado a defensivo brevemente, mas pelo menos posso me proteger, Akakak.</p>
+<p> </p>
+<p>Pegue isso primeiro, AK! É uma carta de Triniel, Akakak.</p>
+<p> </p>
+<p>Eu posso escapar daqui eu mesmo. Por favor, pegue esta carta diretamente para Naat, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já tentou encontrar a letra do Mensageiro?</p>
+<p> </p>
+<p>Parece melhor realizar uma pesquisa intensiva na direção da floresta.</p>
+<p> </p>
+<p>Triniel não terá dado a carta a ninguém. A mensagem está faltando; Isso é preocupante.</p>
+<p> </p>
+<p>Além disso, a carta pode conter algo importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de Jakan.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Você trouxe uma carta!</p>
+<p> </p>
+<p>Graças ao Senhor! Meu coração quase parou. Eu estava preocupado por ter perdido uma carta importante.</p>
+<p> </p>
+<p>(Inspeciona a carta), mas ... isso é? Diz de Jakahn?</p>
+<p> </p>
+<p>Eu acho que Lottararing cometeu um erro. Esta não é uma carta de Triniel, foi escrita por alguém chamado Jakahn.</p>
+<p> </p>
+<p>Obrigado por me trazer a carta, mas não sei como vou resolver a situação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procurar [%dic:STR_DIC_N_LDF5a_Lettering_E].</p></step>
+<step><p visible="[%3]">Pegar [%dic:STR_DIC_I_quest_22820a]para [%dic:STR_DIC_N_LDF5_Village_Guard05_D].</p></step>
+</steps>
+<p>Procure o retorinerk que desapareceu enquanto entregava a carta de Triniel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Letteriner, que trouxe as ordens de Triniel, desapareceu. Você enviou uma festa de busca.</p>
+<p> </p>
+<p>Você encontrou letra e encaminhou as ordens para Naat, mas, infelizmente, não era a carta de Triniel, mas uma por outra pessoa.</p>
+<p> </p>
+<p>Naat ficou surpreso, mas agradeceu pela carta que você obteve da Letterinerk, de qualquer maneira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu nome é[%username], não é? Meu parceiro Craig e eu fomos informados muito sobre você. Sim ... muito.</p>
+<p> </p>
+<p>Eu sei coisas sobre você que você não sabe. Tudo termina em uma coisa: alguém com quem eu possa contar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uh, conte com o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu faço parte de uma organização secreta supervisionada pela própria Lady Lumiel. Nós assumimos tarefas em Atreia que ninguém mais o fará, ou pode tocar.</p>
+<p> </p>
+<p>Mas ninguém é perfeito. Minha última missão se encontrou com alguns problemas que abandonaram toda a minha programação.</p>
+<p> </p>
+<p>Eu preciso de alguém para corrigir esses problemas em meu lugar. Eu acho que você é o único.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me ir direto ao ponto: eu preciso que você lute [%dic:STR_DIC_M_Branch_Event_ElementalFire2_DARK_99_n].</p>
+<p> </p>
+<p>Traga de volta o [%dic:STR_DIC_I_QUEST_80132A] S eles roubaram de mim. Tenha cuidado para lidar com eles.</p>
+<p> </p>
+<p>Lamento não posso te contar mais, mas quanto menos você souber, mais seguro é para você. Boa sorte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero não me arrepender disso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Vou ter que conversar com algumas das minhas fontes. Parece que o reconhecimento deles em você foi falho.</p>
+<p> </p>
+<p>Só não vá dizer a ninguém que conversamos, ou que já conhecemos. É mais saudável para você dessa maneira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa ameaça, aí."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm .... ele definitivamente precisa de alguma persuasão .... se eu conseguir apenas o ferro quente o suficiente ...</p>
+<p> </p>
+<p>Oh![%username]! Eu não te vi. Posso assumir que você tem aquelas ervas de que preciso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eles com certeza parecem comuns ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Agora dê isso a ... cuidadoso! Sorte que nós dois estávamos usando luvas, ou nós ... se arrependeríamos.</p>
+<p> </p>
+<p>Você certamente me impressionou, [%username]. Você é tão bom quanto eles dizem.</p>
+<p> </p>
+<p>Há outra tarefa a ser realizada e você acabou de provar que pode lidar com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>E como você saberia o que [%dic:STR_DIC_I_QUEST_80132A] S são como? Você obviamente não viu o suficiente para contar.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_Branch_Event_ElementalFire2_DARK_99_n] não deve ser muito difícil para um Daeva do seu calibre.</p>
+<p> </p>
+<p>Nada que ouvi indica que você é um covarde.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E o que você ouviu sobre mim ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_80132A] e dê -los a [%dic:STR_DIC_N_event_Heloise].</p>[%collectitem]</step>
+</steps>
+<p>Encontre as ervas pegajosas que os detritos estrelados roubaram e devolvam -os a Heloise.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva cansativo chamado Heloise pediu sua ajuda para recuperar ervas especiais roubadas por detritos estrela.</p>
+<p> </p>
+<p>Você recuperou as ervas e as devolveu a Heloise, que sentiu confiança suficiente em você para fazer outro pedido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não consigo parar de pensar no meu laboratório.</p>
+<p> </p>
+<p>Eu tive décadas de pesquisa e o mais raro de suprimentos e materiais lá. Todos abandonados.</p>
+<p> </p>
+<p>Sem mencionar todas as minhas coisas pessoais, é claro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Muita perda."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho que encontrar uma maneira de voltar. Esta cabine fará para viver, mas nunca servirá para pesquisas.</p>
+<p> </p>
+<p>Eu preciso livrar o lugar dos espíritos. Mas não girei uma espada há décadas e minhas habilidades de combate nunca foram muito boas.</p>
+<p> </p>
+<p>Você estaria disposto a me ajudar, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É o que eu esperava que você diria-obrigado!</p>
+<p> </p>
+<p>Era [%dic:STR_DIC_M_ElementalEarth2D_23_An] Areia [%dic:STR_DIC_M_ElementalEarth3D_23_An] S que invadiu meu laboratório e me levou a sair.</p>
+<p> </p>
+<p>Quando eles se foram, eu posso voltar. Por favor, vá para a ascensão do cristal e se livre deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Eles são oponentes formidáveis.</p>
+<p> </p>
+<p>Encontrarei uma maneira de derrotar esses espíritos: por magia, por espada, por pura força da vontade.</p>
+<p> </p>
+<p>Não posso abandonar minha pesquisa!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Que a sombra de Azphel o fortaleça."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os dois[%dic:STR_DIC_M_ElementalEarth2D_23_An] S e o [%dic:STR_DIC_M_ElementalEarth3D_23_An] S?</p>
+<p> </p>
+<p>E você deve ter visto meu laboratório. Como foi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">"Sem espíritos, mas o laboratório está em ruínas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em ruínas? Como isso é possível? O que eles fizeram?</p>
+<p> </p>
+<p>Oh[%username], eles tornaram nosso trabalho sem sentido!</p>
+<p> </p>
+<p>Obrigado ... por ... por me ajudar. Agora que entendi a situação, preciso fazer um novo plano.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute contra os espíritos para que Kistig possa continuar pesquisando em seu laboratório.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_ElementalEarth2D_23_An]([%2]/7).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_ElementalEarth3D_23_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kistig].</p></step>
+</steps>
+<p>Kistig foi perseguido pelos espíritos e agora pretende voltar ao laboratório. Lute contra os espíritos da lama e os espíritos da rocha para que ele possa voltar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kistig queria recuperar seu laboratório dos espíritos que o atacavam e o ocupavam. Ele pediu que você voltasse para baixo os espíritos da lama e os espíritos das rochas.</p>
+<p> </p>
+<p>Quando você voltou depois de derrotar os espíritos, ele perguntou sobre seu laboratório. Você teve que dizer a ele que foi destruído. Embora chocado e desanimado, ele prometeu que retomaria sua pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

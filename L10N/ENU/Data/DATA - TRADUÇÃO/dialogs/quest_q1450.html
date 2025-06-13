@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, Hannet finalmente pediria ajuda agora. Estou inundado de trabalho!</p>
+<p> </p>
+<p>Eu tenho Drakes praticamente na minha barraca e peregrinos para vigiar. Sem mencionar as forças de cura, devemos nos concentrar na terra ao nosso redor. É cansativo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece um trabalho importante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você vai me ajudar?</p>
+<p> </p>
+<p>Eu realmente quero ajudar Hannet, já que ela geralmente não pede nada.</p>
+<p> </p>
+<p>Vou recompensá -lo se você me ajudar. O que você acha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Você poderia me pegar dez peças de [%dic:STR_DIC_E_metal_n_c_30b].</p>
+<p> </p>
+<p>Há muito minério nesta área e a caminho da montanha Kuriullu. Você encontrará facilmente.</p>
+<p> </p>
+<p>Estou contando com você, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"As bênçãos do sol!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não achei que fosse um grande negócio para um Daeva. Eu realmente poderia usar sua ajuda ....</p>
+<p> </p>
+<p>Estou muito ocupado hoje em dia. Acho que poderia comprá -lo de Shumerurk. Não será barato embora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Impressionante! Você é eficiente e rápido!</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_E_metal_n_c_30b]?</p>
+<p> </p>
+<p>Costumava estar em toda parte, mas tornou -se cada vez mais difícil encontrar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o minério de Adamantium."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza que te disse que preciso de 20[%dic:STR_DIC_E_metal_n_c_30b].</p>
+<p> </p>
+<p>Você provavelmente estava com pressa, porque eu te incomodei. Sinto muito.</p>
+<p> </p>
+<p>Você pode levar mais tempo, se quiser, mas deve me trazer 10 minério.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"20 peças-got."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso ver que foi uma boa ideia pedir ajuda a você, [%username].</p>
+<p> </p>
+<p>Eu poderia ter recebido de Shumerurk, mas não podia confiar na qualidade.</p>
+<p> </p>
+<p>Hannet ficará satisfeito com este minério.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_metal_n_c_30b] e trazê -lo para [%dic:STR_DIC_N_Ophelos].</p>[%collectitem]</step>
+</steps>
+<p>Colete Adamantium para enviar para Hannet, em nome de Ophelos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ophelos disse que queria ajudar Hannet, mas ele não podia deixar seu post. Ele pediu que você pegasse o Adamantium para ele.</p>
+<p> </p>
+<p>Você trouxe Adamantium para ele. Ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

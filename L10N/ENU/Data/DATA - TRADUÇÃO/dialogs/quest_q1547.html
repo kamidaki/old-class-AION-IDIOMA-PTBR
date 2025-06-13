@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão entediado! Ficar preso neste acampamento com tão pouco a fazer é me deixar louco.</p>
+<p> </p>
+<p>Minha pesquisa não está indo a lugar nenhum até que o apanhador de Klaw chegue do santuário. Eu preciso coletar corações de várias espécies, então preciso de um especialista.</p>
+<p> </p>
+<p>É irritante ter que esperar, e ela cobra uma fortuna também! Quem sabia que custaria tanto Kinah para alguém caçar Klaws?!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Kinah? Quanto?</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, é ... oh, você está interessado? Não me ocorreu pedir que você fizesse uma coisa tão trivial, mas eu teria prazer em dar o que ia pagar a ela.</p>
+<p> </p>
+<p>Desde que vim aqui, encontrei[%dic:STR_DIC_M_NeutH1_38_An] S, [%dic:STR_DIC_M_NeutH2_38_An] S, [%dic:STR_DIC_M_NeutL1_37_An] Areia [%dic:STR_DIC_M_NeutL2_37_An] está na selva. Cada um deles tem um papel diferente. Não sei se esse papel é inato ou determinado pelo meio ambiente.</p>
+<p> </p>
+<p>Eu preciso estudar células de [%dic:STR_DIC_I_QUEST_1547UNI]. Você poderia obtê -los para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso!</p>
+<p> </p>
+<p>Ah, e mais uma coisa. É melhor se eu puder fazer o exame enquanto estiver quente, então, quando terminar, volte.</p>
+<p> </p>
+<p>4 espécimes de [%dic:STR_DIC_I_QUEST_1547UNI]deve fazer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, me desculpe, pensei que você era ... não importa.</p>
+<p> </p>
+<p>Bobo da minha parte pensar uma coisa dessas de qualquer maneira.</p>
+<p> </p>
+<p>Eu realmente gostaria de ter trazido mais livros para ler. Às vezes é muito chato aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu o [%dic:STR_DIC_I_QUEST_1547UNI]?</p>
+<p> </p>
+<p>Não pode ter sido fácil. Essas coisas são inteligentes!</p>
+<p> </p>
+<p>Se você os tem, deixe -me ver imediatamente. É melhor se eu começar meu trabalho enquanto estiver quente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, espere. Algo está faltando.</p>
+<p> </p>
+<p>Eu preciso ter amostras de cada um dos[%dic:STR_DIC_I_QUEST_1547UNI].</p>
+<p> </p>
+<p>Estou ansioso para ver o que você volta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto logo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Ooooh ... eles ainda estão quentes. Muito obrigado por recuperá -los rapidamente!</p>
+<p> </p>
+<p>É melhor eu chegar ao trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar várias variedades de [%dic:STR_DIC_I_QUEST_1547UNI] e leve-os para [%dic:STR_DIC_N_Senemonea].</p>[%collectitem]</step>
+</steps>
+<p>Colete uma variedade de corações de Klaw para a pesquisa da SENEA.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Senea não pôde começar sua pesquisa até que alguém chegasse para caçar garras para ela na selva de Poya.</p>
+<p> </p>
+<p>Você se ofereceu para coletar todos os tipos de coração de Klaw para ela, e ela ficou muito satisfeita por poder continuar com seus estudos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

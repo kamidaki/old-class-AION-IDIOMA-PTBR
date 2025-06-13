@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12035</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu isso? Lá! Não? Acabei de ver um penhor de peles passando lá embaixo, como algum tipo de vermes de sarjeta.</p>
+<p> </p>
+<p>Ele desapareceu por trás de uma das ameias, mas aposto que ele ainda está lá embaixo. Isso apenas confirma os rumores que ouvi que os ASMOs têm espiões escondidos por todo o olho, observando nossos movimentos.</p>
+<p> </p>
+<p>Ugh, essa ideia me dá arrepios. Vá encontrar os espiões asmodianos[%dic:STR_DIC_M_TDown_NPC_Q12035A], Assim, [%dic:STR_DIC_M_TDown_NPC_Q12035B], e [%dic:STR_DIC_M_TDown_NPC_Q12035C], Assim, [%username], e verifique se eles não encontram o seu caminho de volta aos seus comandantes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você desapareceu lá fora, [%username]. Você era melhor disfarçado do que aqueles espiões asmodianos!</p>
+<p> </p>
+<p>Ou devo dizer "foram"?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estavam. Pastido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! A última coisa que queremos é um daqueles sorrateiros meio draks conquistando a vitória de nós no último momento.</p>
+<p> </p>
+<p>Estamos no fio agora. Não podemos fazer um único passo em falso por aí.</p>
+<p> </p>
+<p>Você tem sido uma grande ajuda. Bom trabalho, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre e mate os espiões asmodianos.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_TDown_NPC_Q12035A]([%2]/1)</p>
+<p visible="[%3]">[%dic:STR_DIC_M_TDown_NPC_Q12035B]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_TDown_NPC_Q12035C]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Marmara].</p></step>
+</steps>
+<p>Marmara viu espiões asmodianos rastejando em torno dos olhos de Tiamaranta. Ela não quer vê -los novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Marmara alertou que os espiões asmodianos estavam assistindo os movimentos de Elyos nos olhos de Tiamaranta.</p>
+<p> </p>
+<p>Você os caçou e, embora não tenha sido fácil, os agradecimentos e a recompensa de Marmara fizeram valer a pena.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

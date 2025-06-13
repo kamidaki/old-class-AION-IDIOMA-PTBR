@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você sabia que os ninhados atacaram enquanto estava fora?</p>
+<p> </p>
+<p>Eu roubei ovos frescos para minha pesquisa há um tempo atrás, e acho que as mães que podem ter vindo para elas.</p>
+<p> </p>
+<p>Os guardas protegeram o acampamento, mas todas as amostras e materiais que eu reuni foram arruinados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você pode conseguir mais?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso coletar materiais novamente, mas estou um desastre nervoso! Não consigo me concentrar na minha pesquisa.</p>
+<p> </p>
+<p>O que eu devo fazer se eles atacarem novamente enquanto estou cultivando o fluido que você recebeu para mim?</p>
+<p> </p>
+<p>Se apenas alguém pudesse matar parte do[%dic:STR_DIC_M_Frillfaimam1st_37_An] está por aqui ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Suspirar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um suspiro de aceitação? Eu ficaria muito grato se você pudesse se livrar do[%dic:STR_DIC_M_Frillfaimam1st_37_An] está por aqui.</p>
+<p> </p>
+<p>Você não precisa pegar todos eles. Apenas 10 deles.</p>
+<p> </p>
+<p>Isso será suficiente para assustá -los. Por favor?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia começar imediatamente, por favor?</p>
+<p> </p>
+<p>Eu mal posso pensar, estou tão preocupado. Eles poderiam atacar novamente a qualquer momento!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Relaxe. Eu entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, suponho que você tenha. Desculpe. É muito para perguntar.</p>
+<p> </p>
+<p>Mas não é como se eu pudesse fazer isso sozinho, não é?</p>
+<p> </p>
+<p>Eu não sei o que fazer!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Relaxar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caçou os Frillnecks?</p>
+<p> </p>
+<p>Acabei de terminar o primeiro cultivo dessas células e estava prestes a preparar o segundo lote.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É resolvido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Senea também ficará feliz.</p>
+<p> </p>
+<p>Ela ficou presa no acampamento por alguns dias porque as nó da balsa estavam enxameando.</p>
+<p> </p>
+<p>Isto é para você. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_Frillfaimam1st_37_An] S que ameaçam a segurança do acampamento ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar os resultados para [%dic:STR_DIC_N_Okonus].</p></step>
+</steps>
+<p>Livre -se das nó de Frillcks para que as pessoas no acampamento possam se concentrar em seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Okonus disse que perdeu todos os seus materiais de pesquisa durante um ataque de ninhões.</p>
+<p> </p>
+<p>Ele pediu que você se livrasse de ninhadas do acampamento, porque a ameaça de outro ataque o deixou muito nervoso. Você se livrou de Frillnecks, conforme solicitado, e ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22026</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sou apenas um guardião do armazém, mas os legionários do Fate -Bound continuam sugerindo que eu poderia fazer mais pela guerra. Sabe, se você e eu nos encontrarmos, [%username], não será difícil.</p>
+<p> </p>
+<p>Por que você não vai coletar [%dic:STR_DIC_I_quest_22026a] S de qualquer [%dic:STR_DIC_M_LDF4b_C3_DrakanFi_Noble_60_Ae], Assim, [%dic:STR_DIC_M_LDF4b_C3_DrakanSc_Noble_60_Ae], Assim, [%dic:STR_DIC_M_LDF4b_C3_DrakanWi_Noble_60_Ae], e [%dic:STR_DIC_M_LDF4b_C3_DrakanCl_Noble_60_Ae].</p>
+<p> </p>
+<p>Então, nos reportaremos aos legionários juntos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso lhe interessar em um--</p>
+<p> </p>
+<p>[%username]! Esses legionários do Fatebound continuam perguntando quando vou entrar. Você tem esses itens sobre os quais conversamos uma vez?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Se você quer dizer essas insígnias ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso! Agora posso contar a Kusir sobre como derrotamos esses protetorados Drakan.</p>
+<p> </p>
+<p>Você não acha que trabalhamos bem juntos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_22026a] para [%dic:STR_DIC_N_Motogut].</p>[%collectitem]</step>
+</steps>
+<p>Ajude o detentor do armazém Marius a fazer parte do esforço de combate. Colete as insígnias dos legionários do protetorado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Marius apelou à sua melhor natureza e pediu que você colecionasse insígnias de protetorado de Drakan perigoso para que ele pudesse fazer parte do esforço de guerra.</p>
+<p> </p>
+<p>Teoricamente, ele lhe deu crédito igual pelo trabalho quando se relatou ao Centurion Kusir de Fatebound.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

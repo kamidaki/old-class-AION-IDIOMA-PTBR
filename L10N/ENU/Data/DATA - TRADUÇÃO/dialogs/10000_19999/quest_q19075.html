@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Bem-vindo!</p>
+<p> </p>
+<p>Até que ponto você aprimorou suas habilidades como bardo?</p>
+<p> </p>
+<p>Como bardo, você pode escolher entre diferentes habilidades.</p>
+<p> </p>
+<p>Se você quer ser um bom bardo, depende de como você escolhe entre as várias habilidades.</p>
+<p> </p>
+<p>Portanto, a técnica deve se fundir com carne e sangue até que o ponto seja atingido no qual o corpo e a técnica se tornem um.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu simplesmente quero me garantir o quanto você melhorou nesse meio tempo, fornecendo uma tarefa. O que você diz?</p>
+<p> </p>
+<p>A tarefa consiste em repetir o [%dic:STR_DIC_E_DP_Ba] exercício 10 vezes. Esta é uma técnica que requer um bardo versátil.</p>
+<p> </p>
+<p>Se você chegou até aqui, concluir esta tarefa não deve ter problema. Mesmo que suas habilidades não sejam boas o suficiente, essa será uma boa oportunidade para dominar a arte perfeitamente.</p>
+<p> </p>
+<p>O que você diz? Você vai tentar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tiro isso da sua resposta que você não está muito ocupado.</p>
+<p> </p>
+<p>No entanto, será preciso alguma resistência para concluir esta tarefa.</p>
+<p> </p>
+<p>Felizmente, tenho essa geléia para lhe dar DP. Isso deve ajudá -lo muito.</p>
+<p> </p>
+<p>Se você pensa em desistir, lembre -se de que não é fácil se tornar um excelente bardo.</p>
+<p> </p>
+<p>Mas o mundo parecerá bem diferente quando você atingir um certo nível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está achando difícil porque é um tipo de tarefa?</p>
+<p> </p>
+<p>Eu não vou forçar você.</p>
+<p> </p>
+<p>Há um momento certo para tudo. Volte quando estiver pronto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A julgar pelo seu rosto, você vem com boas notícias.</p>
+<p> </p>
+<p>Você tem o resultado da última tarefa para melhorar sua técnica?</p>
+<p> </p>
+<p>Agora, você conseguiu pegar [%dic:STR_DIC_E_DP_Ba] Sem problemas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Relatórios.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>Se você treinou tanto, não há necessidade de pedir que você me mostre.</p>
+<p> </p>
+<p>Lembro -me do momento em que [%username] escolhi o caminho do bardo ... Lembro -me de um rosto levemente avermelhado.</p>
+<p> </p>
+<p>Espero que você melhore com sucesso suas habilidades e se torne um bom bardo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Ba]([%2]/10).</p></step>
+<step><p visible="[%3]">Diga ao professor, [%dic:STR_DIC_N_LC1_Dion_M], sobre os bardos.</p></step>
+</steps>
+<p>Conclua a missão que Dion lhe deu de volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dion achou que testaria suas habilidades como bardo e colocaria a tarefa de usar o Song of Illusion I 10 vezes.</p>
+<p> </p>
+<p>Quando você concluiu a tarefa e relatou a Dion, ele achou que você deveria continuar melhorando suas habilidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

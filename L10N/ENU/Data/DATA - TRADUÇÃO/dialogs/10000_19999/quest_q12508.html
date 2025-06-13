@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], venha aqui. Eu tenho algo urgente para lhe contar.</p>
+<p> </p>
+<p>Os movimentos dos Reians na fortaleza são suspeitos.</p>
+<p> </p>
+<p>Eu não confio neles de qualquer maneira, porque eles apareceram do nada um dia e começaram a se misturar conosco ...</p>
+<p> </p>
+<p>Eu acho que algo está errado lá. Isso está claro.</p>
+<p> </p>
+<p>Por favor, diga ao soldado mensageiro[%dic:STR_DIC_N_LDF5A_Pregin_E] em meu nome, o guarda dos reianos deve ser fortalecido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga -me novamente: Quem te enviou aqui?</p>
+<p> </p>
+<p>Os segredos devem sempre ser compartilhados em silêncio e em um local seguro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você passa as palavras de Edis.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA, os reianos. Eu entendo.</p>
+<p> </p>
+<p>Informe -os de que estaremos ainda mais vigilantes e não há mais necessidade de se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Passar as palavras de Edis para [%dic:STR_DIC_N_LDF5A_Pregin_E].</p></step>
+</steps>
+<p>Passe as palavras de Edis para Pregion, que foi enviado para a região de Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Edis disse que os Reians certamente estavam escondendo alguma coisa e pediu que você instrua o oficial Pregion, que havia sido enviado para áreas onde havia reianos, para aumentar as atividades de monitoramento da Reian.</p>
+<p> </p>
+<p>Depois de passar as instruções dele para a Pregion, Pregion disse que aumentaria seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

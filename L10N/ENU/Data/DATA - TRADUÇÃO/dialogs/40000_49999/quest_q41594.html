@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41594</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As missões difíceis em uma área desconhecida estão diminuindo o moral de combate dos meus companheiros.</p>
+<p> </p>
+<p>Agora é o momento certo para uma comida deliciosa para elevar o clima.</p>
+<p> </p>
+<p>Gostaria de preparar uma omelete com ovos Griffon para meus companheiros, mas não tenho os ingredientes.</p>
+<p> </p>
+<p>[%username], eu poderia pedir que você mate o [plur][%dic:STR_DIC_M_LDF4b_T1_Griffon_Crack_58_An] e para me trazer o [plur][%dic:STR_DIC_I_QUEST_41594a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que comida deliciosa aumentará a energia? Aumentar a energia para todo o pessoal do escritório de suprimentos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Você pode descobrir com isso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles são grandes e ovos grandes. Pronto para uma grande e grande omelete.</p>
+<p> </p>
+<p>Obrigado por entregar os materiais.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_QUEST_41594a] para [%dic:STR_DIC_N_Naisoi].</p>[%collectitem]</step>
+</steps>
+<p>Nasoi quer cozinhar algo delicioso para seus colegas apáticos. Derrote Goldhook Griffon por alguns gostos de Griffon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nasoi disse que seus colegas estavam ficando sem listagem após missões cansativas. Ele queria animá -los com comida deliciosa.</p>
+<p> </p>
+<p>Então você matou Goldhook Griffon e trouxe ovos de Griffon para suas incríveis omeletes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

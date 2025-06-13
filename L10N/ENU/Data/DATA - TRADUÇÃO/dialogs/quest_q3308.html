@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lidar com os oficiais de comando do bastião é a melhor maneira de chegar a eles, eu acho. Eles têm tantos grunhidos, não faz sentido atacar sua força principal.</p>
+<p> </p>
+<p>Somente os funcionários seniores sabem de alguma coisa. É aí que temos que atingi -los.</p>
+<p> </p>
+<p>Gostaríamos de manter os ataques. Continue impressionando com eles enquanto ainda estão tentando reorganizar do nosso último sucesso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há mais trabalho então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os oficiais remanescentes mais importantes do bastião são o padre -sumário Rhipel e o Highmage Wyron, mas decidimos não matá -los ainda. Em vez disso, vamos enviar uma mensagem a eles.</p>
+<p> </p>
+<p>Sua tarefa será eliminar o guarda -costas de Rhipel, [%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae], e o aluno favorito de Wyron Highmage [%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae].</p>
+<p> </p>
+<p>Isso enviará uma mensagem a eles. Eles saberão que podemos derrubá -los a qualquer momento, sempre que quisermos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito pouco se sabe sobre [%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae], então cuidado. Nós nem temos uma descrição confiável. Dizem que ninguém saiu vivo tem visto o rosto de Scop.</p>
+<p> </p>
+<p>Em contraste, [%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae]é muito conhecido por suas habilidades mágicas. Ele tem a reputação de ser muito bonito ... rosto de um anjo, alma de um diabo.</p>
+<p> </p>
+<p>Nem será um alvo fácil, mas essa é uma missão crítica para nossa estratégia. Não falhe.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem minha palavra!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo o desejo de atacar diretamente, mas pense sobre isso, [%username]. Deixar aqueles oficiais aterrorizados em uma posição de poder paralisará os lefaristas. Se você os matar, eles serão substituídos por subordinados eficazes.</p>
+<p> </p>
+<p>Veja o que quero dizer?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Tudo foi conforme o plano?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Foi perfeito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Isso deveria ter colocado o medo dos cinco neles. Agora apenas os deixamos guardar por um tempo ... deixe aquele terror apodrecer ....</p>
+<p> </p>
+<p>Em breve eles começarão a reorganizar as defesas do bastião estritamente para proteger seus próprios couros e abrir lacunas em outros lugares.</p>
+<p> </p>
+<p>Eventualmente, eliminaremos Rhipel e Wyron, mas eles destruirão a coesão das defesas lefaristas primeiro. Brilhante, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os guarda -costas que protegem o mago alto e o sumo sacerdote no bastião.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparAsNamedQ_39_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparWiNamedQ_39_Ae]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Elram].</p></step>
+</steps>
+<p>Elram está realizando o segundo estágio de uma operação contra os comandantes do bastião lefarista. Elimine o escopo sem rosto e narcis pálido, guarda -costas para o alto mago e sumo sacerdote do bastião lefarista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Elram passou para o próximo estágio da operação contra os lefaristas. Ele pediu que você eliminasse o Scop e Narcis sem rosto, a fim de aterrorizar o padre -sumário Rhipel e Highmage Wyron, a quem eles guardam.</p>
+<p> </p>
+<p>Você se reportou ao Elram depois de derrotar Scop e Narcis. Ele ficou muito satisfeito por os comandantes lefaristas estarem aterrorizados para serem eficazes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

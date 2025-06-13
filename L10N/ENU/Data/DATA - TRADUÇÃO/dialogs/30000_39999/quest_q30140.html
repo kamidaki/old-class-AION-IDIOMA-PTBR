@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Estou enganado ou é a chave soberana de Siel?</p>
+<p> </p>
+<p>Por Aion ... onde você o encontrou?</p>
+<p> </p>
+<p>Sua reputação vai antes de você e, pela primeira vez, parece que os rumores são verdadeiros, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso dar uma olhada mais de perto na chave soberana de Siel?</p>
+<p> </p>
+<p>(Examine de perto a chave do aether.) Minha bondade ... uma excelente chave de aether ... mas, infelizmente! Parece estar muito danificado.</p>
+<p> </p>
+<p>O poder da chave do aether seria muito maior se fosse restaurada à sua condição original.</p>
+<p> </p>
+<p>Deseja restaurar sua chave de éter? Posso ajudá -lo a fazê -lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que concordei em ajudá -lo, mas não quis dizer a restaurá -lo sozinho. Eu não tenho as habilidades necessárias.</p>
+<p> </p>
+<p>Mas eu sei quem pode restaurá -lo para você, [%username].</p>
+<p> </p>
+<p>Encontre -se com o Kobold Smith[%dic:STR_DIC_N_DF4_NPC_Nehmatan]na vila de Rhonnam Refugee. Ele pode ser um Kobold, mas ele tem uma compreensão incrível de armas.</p>
+<p> </p>
+<p>Ele sempre fica preso no que diz respeito ao reparo de armas. Ele terá certeza de ajudá -lo também.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está um pouco cheio de si mesmo, não é?</p>
+<p> </p>
+<p>Você acha que as armas não são mais tão importantes quando você tem habilidades como as suas, [%username]?</p>
+<p> </p>
+<p>Não vou pedir que você faça nada se não estiver interessado.</p>
+<p> </p>
+<p>Mesmo uma excelente chave de éter será útil apenas para aqueles que reconhecem seu valor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer de mim, Daeva?</p>
+<p> </p>
+<p>É sobre uma arma? Diga -me qual é o problema.</p>
+<p> </p>
+<p>Kobold vai consertar isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que deseja restaurar a chave soberana de Siel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chave soberana de Siel!</p>
+<p> </p>
+<p>Essa é uma boa arma. Kobold sabe disso.</p>
+<p> </p>
+<p>Mas a arma está em más condições. Não pode ser usado corretamente assim.</p>
+<p> </p>
+<p>Kobold o ajudará a restaurá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_DF4_NPC_Nehmatan].</p></step>
+</steps>
+<p>Há rumores de que Tataka pode restaurar o poder da chave soberana de Siel. Vá e encontre -o na vila de Rhonnam Refugee.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Ipses viu a chave soberana de Siel, ela disse que era uma arma fina, mas que deveria ser restaurada primeiro à sua condição original.</p>
+<p> </p>
+<p>Ela o enviou para um Kobold Smith chamado Tataka, que concordou em restaurar a arma para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

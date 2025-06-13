@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você estiver no campo de treinamento de Nochsana, tenho outro favor a perguntar. Esses instrutores de Balaur são os que treinam os soldados Draconute.</p>
+<p> </p>
+<p>Seria bastante eficaz se pudéssemos eliminar aqueles que fazem o esforço de Balaur correr bem, como tenho certeza que você entende.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os instrutores não serão tão fáceis quanto os estagiários, você entende, mas eles não são imparáveis. Apenas fique calmo e equilibrado, e você poderá derrubá-los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os instrutores de Balaur ensinam estratégias para defender os importantes pontos de ligação do[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All].</p>
+<p> </p>
+<p>Você provavelmente encontrará o [%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae] S no artefato, o [%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae] S e o [%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae] está no portão e [%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae]na própria fortaleza.</p>
+<p> </p>
+<p>Comece com o artefato e derrote -os à medida que avança.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Coisas melhores para fazer, não é?</p>
+<p> </p>
+<p>Eu pensei que você era um Daeva capaz, mas agora posso dizer que ouvi apenas histórias e falsidades.</p>
+<p> </p>
+<p>Se você encontrar sua coragem e sua dignidade, volte dessa maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É ... eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos e o Balaur nos apresentam uma ameaça adequada para nós, você sabe. Se tivéssemos que lutar apenas em uma frente de cada vez, essa guerra teria terminado há muito tempo.</p>
+<p> </p>
+<p>O problema é que nunca podemos dizer de que direção a ameaça virá.</p>
+<p> </p>
+<p>À luz de tudo isso, estou pronto para algumas boas notícias. Diga -me trouxe alguns.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você encontrará isso ao seu gosto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é uma boa notícia! Você fez bem, [%username].</p>
+<p> </p>
+<p>Vamos ter certeza de aproveitar isso. Vamos atacar mais agressivamente do que nunca.</p>
+<p> </p>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os instrutores de Balaur.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae]([%8]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae]([%11]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Lasanya].</p></step>
+</steps>
+<p>Derrote os instrutores de Balaur que treinam soldados de Draconute.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lisya pediu que você derrotasse instrutores de Balaur que perfuram trainees de Draconute.</p>
+<p> </p>
+<p>Quando você voltou depois de derrotar os instrutores de Balaur no campo de treinamento de Nochsana, ela ficou satisfeita e observou que os asmodianos poderiam tirar proveito da situação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

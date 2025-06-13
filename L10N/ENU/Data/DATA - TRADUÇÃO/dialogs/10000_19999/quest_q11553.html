@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q11515</questid>
+<questname></questname>
+<questtype>만두리 사냥</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você quer provar suas habilidades lutando?</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF4a_SZ_B1_08] e matar o [%dic:STR_DIC_M_LDF4A_B1_LeafyManduriFi_57_An] e o [%dic:STR_DIC_M_LDF4A_B1_LeafyManduriWi_57_An].</p>
+<p> </p>
+<p>Eles podem parecer mansos, mas seria tolice subestimá -los. A propósito, você precisará matar 30 deles.</p>
+<p> </p>
+<p>Quando você voltar, eu vou ajudá -lo a expandir seu maior estigma por um slot com[%dic:STR_DIC_I_Q11550_stigma].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Mas eu pedi para você matar 30[%dic:STR_DIC_M_LDF4A_B1_LeafyManduriFi_57_An] e 30[%dic:STR_DIC_M_LDF4A_B1_LeafyManduriWi_57_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou impressionado.</p>
+<p> </p>
+<p>Eu não achei que você voltaria tão cedo. Você provou que seu poder é ótimo o suficiente para controlar esse tipo de estigma maior.</p>
+<p> </p>
+<p>Por favor, mantenha isso [%dic:STR_DIC_I_Q11550_stigma] em suas mãos por um momento.</p>
+<p> </p>
+<p>Fazer isso permite que o estigma absorva sua energia, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF4a_SZ_B1_08] e matar o [plur][%dic:STR_DIC_M_LDF4A_B1_LeafyManduriFi_57_An] e o [plur][%dic:STR_DIC_M_LDF4A_B1_LeafyManduriWi_57_An]([%2]/30).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Bariunos].</p></step>
+</steps>
+<p>Vá para a colina de Macori e prove que você tem poder suficiente para controlar um estigma maior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os bariunos queriam ter certeza absoluta de que você tinha poder suficiente para manter o maior estigma sob controle.</p>
+<p> </p>
+<p>Você matou 30 oponentes em Colina Macori. Quando você relatou isso a Bariunos, ele disse que essa força seria suficiente e aquele que o ajudaria a expandir seu slot de estigma para um estigma maior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

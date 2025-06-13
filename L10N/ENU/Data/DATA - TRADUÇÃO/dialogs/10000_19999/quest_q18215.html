@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Inggril dirige o coliseu Crucol.</p>
+<p> </p>
+<p>É um lugar extremamente perigoso!</p>
+<p> </p>
+<p>A arena é uma zona de acesso restrita, você só pode entrar se tiver um ingresso.</p>
+<p> </p>
+<p>Os ingressos são alocados apenas uma vez por dia.</p>
+<p> </p>
+<p>Só não é possível fazer tantos todos os dias.</p>
+<p> </p>
+<p>Se você gosta, [%username], Vou te dar os ingressos para o coliseu Crisol.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">"Eu penso que sim."</act>
+<act href="HACTION_QUEST_REFUSE_1"> </act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me verificar meu estoque aqui.</p>
+<p> </p>
+<p>Você esperaria um momento? Eu preciso verificar quantos eu tenho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estou no Tenterhooks aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, mesmo que você não esteja planejando usá -lo imediatamente, pode ser mais sensato reservar um ingresso enquanto puder. Você só recebe um desses a cada dia, lembre -se!</p>
+<p> </p>
+<p>Mas então, eu entendo se você está se sentindo um pouco intimidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Intimidado? Não é uma chance."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas um momento ...</p>
+<p> </p>
+<p>Sim, acho que você está com sorte!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Pare de provocar! Apenas entregue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, aqui estão seus ingressos para o coliseu Crisol[%username].</p>
+<p> </p>
+<p>Um ingresso para a arena da disciplina, um para a arena de veemência e outro para a arena da cooperação.</p>
+<p> </p>
+<p>Faça o melhor disso!</p>
+<p> </p>
+<p>Estes são itens valiosos que foram criados arduamente para permitir que você treine.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete um ingresso de [%dic:STR_DIC_N_Eno].</p></step>
+</steps>
+<p>Peça ao Perbano um ingresso para a arena para entrar no coliseu Crisol.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Perbano deu a você uma passagem de arena para o coliseu Crisol, juntamente com o aviso de que você só pode receber um por dia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

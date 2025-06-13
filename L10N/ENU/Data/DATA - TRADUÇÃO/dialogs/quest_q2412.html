@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bastante simples[%username]. Tudo o que você precisa é esmagar espíritos da terra ao longo da estrada de outono.</p>
+<p> </p>
+<p>Esta tarefa não será fácil. Os espíritos são astutos e mortais. Se você tirar os olhos deles, mesmo por um momento, você se encontrará cercado.</p>
+<p> </p>
+<p>E nem todos os espíritos da Terra se comportam da mesma forma.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ouvi dizer que existem vários tipos ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato, três tipos diferentes de espíritos da terra roam a estrada de outono. Eles são[%dic:STR_DIC_M_ElementalEarth2D_35_An] S, [%dic:STR_DIC_M_ElementalEarth3D_35_An] Areia [%dic:STR_DIC_M_ElementalEarth4D_36_An] S.</p>
+<p> </p>
+<p>Embora todos sejam semelhantes, os espíritos da Terra têm mais energia da terra do que os espíritos do solo, e espíritos abundantes têm mais do que os outros.</p>
+<p> </p>
+<p>Você deve remover todos os três tipos e trazer de volta suas pedras elementares como evidência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais uma coisa, as pedras elementares variam dependendo do espírito.</p>
+<p> </p>
+<p>Traga de volta três[%dic:STR_DIC_I_QUEST_2412a] S dos espíritos do solo, dois[%dic:STR_DIC_I_QUEST_2412b] S dos espíritos da terra, e um[%dic:STR_DIC_I_QUEST_2412c]de um espírito abundante.</p>
+<p> </p>
+<p>Vá ferozmente, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou esmagá -los para seixos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Por que você está recuando agora?</p>
+<p> </p>
+<p>O trabalho não é o que você esperava? Com suas habilidades, [%username], Eu pensei que essa tarefa seria simples ...</p>
+<p> </p>
+<p>Vou te dar mais tempo para pensar sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou apenas sacudindo a poeira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, Daeva.</p>
+<p> </p>
+<p>Você não se machucou, não é? Os espíritos da terra podem realmente espancar seus inimigos.</p>
+<p> </p>
+<p>Você tem as pedras elementares que eu solicitei?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Esses espíritos atingem com força."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é uma tarefa fácil. Eles podem ser espíritos, mas esmagam e tocam como um terremoto.</p>
+<p> </p>
+<p>Não pare agora, Daeva, tenho certeza que você pode tocá -los.</p>
+<p> </p>
+<p>Vou esperar aqui pelo seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo, eu estarei de volta ... em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Você tem todos eles! Não precisarei me preocupar com os espíritos da Terra por um tempo.</p>
+<p> </p>
+<p>Obrigado por me ajudar.</p>
+<p> </p>
+<p>Receba essa recompensa de Tyr. Você merece.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_ElementalEarth4D_all] para reunir três tipos de pedras elementares e trazê -las para [%dic:STR_DIC_N_Angrboda].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se dos espíritos do solo, espíritos da terra e espíritos abundantes na estrada de outono e junte pedras elementares para Angreboda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Angreboda explicou sobre os espíritos da Terra na estrada de outono e pediu que você os caçasse e trazia pedras espirituais do solo, pedras espirituais da terra e pedras elementares terrnas como evidência.</p>
+<p> </p>
+<p>Quando você trouxe as pedras elementares para ela, ela ficou satisfeita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

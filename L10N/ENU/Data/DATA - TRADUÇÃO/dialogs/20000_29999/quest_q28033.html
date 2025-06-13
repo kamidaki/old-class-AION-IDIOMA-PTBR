@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso se parece [%dic:STR_DIC_N_IDF5_TD_Drum_D], que pode ser usado para atacar as máquinas de assalto do Exército de Beritra.)</p>
+<p> </p>
+<p>(Esta artilharia de defesa aérea definitivamente destruirá as máquinas de assalto.)</p>
+<p> </p>
+<p>(Uma vez que as máquinas de assalto forem destruídas, isso enfraquecerá o moral do inimigo. Você deve usar a artilharia de defesa aérea e eliminar o [%dic:STR_DIC_E_Q18033all].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O moral dos soldados deve sempre ser levado em consideração em batalha.</p>
+<p> </p>
+<p>Afinal, é um fator decisivo no resultado da guerra.</p>
+<p> </p>
+<p>Dez soldados com alto moral poderiam derrotar mil inimigos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que estava pensando em quebrar o espírito de luta do inimigo no meio desta turbulência?</p>
+<p> </p>
+<p>Ho Ho, posso imaginar o moral do inimigo nos lixões.</p>
+<p> </p>
+<p>[%username], seu julgamento certamente contribuiu muito para a defesa do bastião da parede de aço.</p>
+<p> </p>
+<p>Quão impressionante!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDLDF5b_TD] e uso[%dic:STR_DIC_N_IDF5_TD_Drum_D]. Eliminar o [%dic:STR_DIC_E_Q18033all].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Fi_N_65_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Kn_N_65_Ae]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Ra_N_65_Ae]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5b_Latkel_E].</p></step>
+</steps>
+<p>Use a artilharia de defesa aérea, destrua as máquinas de assalto e elimine o forte Drakan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu uma artilharia de defesa aérea enquanto defendia o bastião da parede de aço.</p>
+<p> </p>
+<p>Você usou a artilharia de defesa aérea para destruir as máquinas de assalto do Exército de Beritra. Mighty Drakan então apareceu, e você também os eliminou.</p>
+<p> </p>
+<p>Você se reportou de volta a Latkel, que o recompensou por sua decisão sábia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

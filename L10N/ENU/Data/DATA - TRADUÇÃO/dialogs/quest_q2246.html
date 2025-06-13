@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui, Daeva? Você não está aqui para provocar problemas, está?</p>
+<p> </p>
+<p>Nós, gergers, somos um povo tranquilo e pacífico. Nós nunca prejudicamos ninguém.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Então me considere seu amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! Isso é um alívio ... diga, eu me pergunto se posso pedir um favor? Eu ... perdi algo. Você vai me ajudar a encontrá -lo?</p>
+<p> </p>
+<p>É uma insígnia-muito preciosa para mim. Eu deixei cair [%dic:STR_DIC_W_DF1A_22].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você já procurou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tentei! Os Ksellids no lago são muito fortes e ferozes para mim. Mas não posso deixar isso ser perdido.</p>
+<p> </p>
+<p>Você vai encontrar minhas insígnias e trazê -la de volta para mim? Eu ficaria muito grato.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Provavelmente terá caído no fundo de [%dic:STR_DIC_W_DF1A_22], mas não deve ser muito difícil de encontrar. É bastante brilhante.</p>
+<p> </p>
+<p>Eu confiei em você para encontrá -lo, Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você disser isso ... eu esperava que você fosse o único a ajudar-você parece tão generoso e justo.</p>
+<p> </p>
+<p>A maioria das pessoas reage a nós com medo ou violência, mas você não tem ....</p>
+<p> </p>
+<p>Se você mudar de idéia, porém, volte e nos ajude.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu vá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso parece ser algum tipo de insígnia-talvez o que Germir está procurando.)</p>
+<p> </p>
+<p>(Parece as insígnias de um arconte, mas tem uma forma diferente.)</p>
+<p> </p>
+<p>(Bem, Germir será por favor para recuperá -lo.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou levá -lo imediatamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo? Você conseguiu encontrar minhas insígnias?</p>
+<p> </p>
+<p>Eu pensei que levaria você por muito mais tempo. Esse lago é enorme e esses ksellids são selvagens!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava o mesmo. O item é brilhante, mas tão pequeno que não será fácil de encontrar.</p>
+<p> </p>
+<p>Olhe cuidadosamente para o fundo do lago. Já faz um tempo, mas tenho certeza de que ainda está lá.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrar se puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo esse problema por nada. Isso não é ... não é o que eu estava procurando.</p>
+<p> </p>
+<p>Mas como você trabalhou tanto para encontrá -lo, basta me dar. Não sei para que serve, mas talvez algum dia seja útil.</p>
+<p> </p>
+<p>E pegue esse sinal de minha gratidão pelo seu problema.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre algo que [%dic:STR_DIC_N_NPC_Gerger_3]perdido em[%dic:STR_DIC_W_DF1A_22] e trazê -lo para ele.</p>[%collectitem]</step>
+</steps>
+<p>Germir perdeu algo no lago Gribade Crater há um tempo atrás. Encontre pesquisando no fundo do lago.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Germir pediu que você encontrasse algo que ele havia perdido no lago. Quando você trouxe uma insígnia para ele, ele disse que aceitaria, mesmo que não fosse o que ele esperava que você encontrasse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

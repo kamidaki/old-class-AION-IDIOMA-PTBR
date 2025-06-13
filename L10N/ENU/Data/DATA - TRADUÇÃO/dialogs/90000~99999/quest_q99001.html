@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sou um teste NPC.</p>
+<p> </p>
+<p>Deseja realizar este teste?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez uma boa escolha.</p>
+<p> </p>
+<p>Esta missão é apenas uma busca simples de conversa.</p>
+<p> </p>
+<p>Espero que seu teste corra bem.</p>
+<p> </p>
+<p>Sorrisos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você recebe uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está a recompensa.</p>
+<p> </p>
+<p>Seu teste acabou.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Falar com</p></step>
+</steps>
+<p>Realize o teste com o teste NPC.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realizou o teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está pronto, [%username]?</p>
+<p> </p>
+<p>O esquadrão de assalto de Tavrosh está se preparando para atacar.</p>
+<p> </p>
+<p>Desta vez, devemos mostrar a eles que eles não são adversários reais, mesmo que eles nos superem.</p>
+<p> </p>
+<p>Mate o postado[%dic:STR_DIC_E_LDF5b_D1_Vri43] e nos levar à vitória.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A batalha com o Exército de Beritra começou.</p>
+<p> </p>
+<p>Devemos quebrar o espírito de luta em nosso primeiro ataque.</p>
+<p> </p>
+<p>Pense principalmente sobre a vitória da Asmodiana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a você, a batalha começou com uma vitória honrosa.</p>
+<p> </p>
+<p>Graças a você, o espírito de luta deles será reduzido substancialmente.</p>
+<p> </p>
+<p>Agradeço seus esforços, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_LDF5b_D1_Vri43]. ([%2]/9)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard15_D]%.</p></step>
+</steps>
+<p>Derrote o esquadrão de assalto da Guilda Tavrosh, que acaba de montar acampamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ube disse que a hora da guerra veio e pediu que você acabasse com o 43º Esquadrão de Ataque.</p>
+<p> </p>
+<p>Você lidou com a 43ª equipe de ataque, conforme instruído e foi recompensado ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

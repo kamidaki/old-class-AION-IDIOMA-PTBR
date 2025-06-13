@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A operação para destruir a Vanguard Elyos começará agora.</p>
+<p> </p>
+<p>[%username], por favor, mate o [%dic:STR_DIC_M_LDF5_Recon_v01_L_all].</p>
+<p> </p>
+<p>Em vez de tremer e esperar pela batalha, é melhor enfrentá -la abertamente.</p>
+<p> </p>
+<p>Se invadirmos primeiro e prejudicarmos os danos de Elyos na batalha seguinte, a vitória será nossa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como estão as coisas com o poder de combate das tropas Elyos?</p>
+<p> </p>
+<p>Mesmo se eles se chamam batedores, diz -se que eles não estão em um nível com nossos estagiários no Crisol de pandaemonium, certo?</p>
+<p> </p>
+<p>Mas provavelmente será melhor matá -los, porque estamos nos preparando para a Grande Guerra.</p>
+<p> </p>
+<p>A vitória na Grande Guerra depende da força militar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado! Suas ações, [%username], brilhará intensamente na próxima batalha.</p>
+<p> </p>
+<p>O ataque dos Elyos perderá sua mordida sem a tropa de escoteiros.</p>
+<p> </p>
+<p>A vitória da Asmodiana é tão boa quanto alcançada.</p>
+<p> </p>
+<p>Esta é uma recompensa por seus esforços, [%username], por favor aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5_Recon_v01_L_all]que aparece se os asmodianos conquistarem o [%dic:STR_DIC_W_LDF5a_A2_1]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard01_D].</p></step>
+</steps>
+<p>Destrua a 71ª tropa de escoteiros Elyos Vanguard para danificar a força de luta dos Elyos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Abus disse que seria vantajoso para o esforço de guerra se a 71ª tropa de escoteiros de Elyos fosse morta e que isso causaria um grande golpe para a força de luta de Elyos.</p>
+<p> </p>
+<p>Depois de eliminar a 71ª tropa de Elyos, você voltou e ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_quest">
+<contents cdata="true">
+<html>
+<body>
+<p>(É a entrada do templo de Beshmundir.)</p>
+</body>
+</html>
+</contents>
+<npcfuncs>
+<instance_entry>"Estou pronto para entrar."</instance_entry>
+</npcfuncs>
+<selects>
+<act href="HACTION_OPEN_INSTANCE_RECRUIT">Você procura amigos para acompanhá -lo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>(Parece ser um portão para o templo de Beshmundir.)</p>
+<p> </p>
+<p>(Existem dois caminhos.)</p>
+<p> </p>
+<p>(Um é mais fácil de seguir, o outro é mais difícil.)</p>
+<p> </p>
+<p>(Parece que você precisa decidir seguir um dos dois caminhos.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_select_none_1">Você escolhe uma maneira fácil.</act>
+<act href="HACTION_select_none_2">Você escolhe uma maneira difícil.</act>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(É a entrada do templo de Beshmundir.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gostaria de saber se eu deveria entrar ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="no_right">
+<contents cdata="true">
+<html>
+<body>
+<p>(Sem resposta.)</p>
+<p> </p>
+<p>(Parece que uma condição especial deve ser atendida para entrar.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Charões! Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+</htmlpages>

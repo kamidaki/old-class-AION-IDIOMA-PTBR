@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Não há blocos de construção suficientes para a fundação, AK. Juntar [%dic:STR_DIC_I_quest_39608a] Aproximar [%dic:STR_DIC_W_LDF5a_E6] e traga tudo para o ramo responsável, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BL]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Diligentemente faz entradas no livro de contas.)</p>
+<p> </p>
+<p>Shugo tem muito o que fazer, então diga o que Daeva exige, AK.</p>
+<p> </p>
+<p>Shugo não consegue acompanhar todas as perguntas de todo o katalam, então Shugo deve anotá -las, AK.</p>
+<p> </p>
+<p>Daeva parece ser um empreiteiro da Silverine. Daeva terminou o que precisava ser feito, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os azulejos não danificados.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o item correto, certo?</p>
+<p> </p>
+<p>Como um Daeva pode até tentar tal engano? Mesmo quando estou ocupado, olho para tudo de perto, Ak.</p>
+<p> </p>
+<p>Nunca mais faça nada assim, AK</p>
+<p> </p>
+<p>Vou te perdoar apenas uma vez, já que estamos com poucos funcionários. Traga o [%dic:STR_DIC_I_quest_39608a]Rapidamente, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Fecha o livro de contas.) Shugo está sentindo algum tipo de frio.</p>
+<p> </p>
+<p>É claro que está proveniente das ruínas do remorso.</p>
+<p> </p>
+<p>Às vezes, os Daevas tentam enganar Shugo com pedras que parecem semelhantes, Ak.</p>
+<p> </p>
+<p>Graças à sua ajuda, agora temos materiais de construção suficientes.</p>
+<p> </p>
+<p>Aqui, a recompensa de Daeva por hoje, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_39608a] e leve para [%dic:STR_DIC_E_LDF5a_Silverlin_BL].</p>[%collectitem]</step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois de obter rochas ao redor das ruínas do arrependimento e entregá -las ao ramo de Silverine, no norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

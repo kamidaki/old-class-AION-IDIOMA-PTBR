@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22042</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%userclass], aqui. Os reianos têm um pedido especial que desejam fazer de nós.</p>
+<p> </p>
+<p>Eles precisam aquecer aço a uma temperatura extremamente alta. Não sabemos ao certo o porquê, mas sabemos o que eles precisam: carvão branco da chama Dragrants.</p>
+<p> </p>
+<p>Nosso relacionamento com os Reians é confortável no momento, mas pode fazer um pouco de empurrão na direção certa. Ajudá -los a obter seu carvão seria um primeiro passo sólido. Você vai ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu estava esperando por você.</p>
+<p> </p>
+<p>Você tem o carvão? Os Reians têm perguntado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Tudo está aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso é o material. Bom trabalho, [%username].</p>
+<p> </p>
+<p>Vou garantir que o crédito seja dado onde é devido. Os Reians em breve saberão que nosso sangue é forte e confiável, ao contrário do aquoso pinga os covardes queimados pelo sol espirram.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna o carvão branco da Flame Dragrants e leve -o para Lineta.</p>[%collectitem]</step>
+</steps>
+<p>Os Reians pediram carvão branco. Mate o Dragrants da chama e coloque -o para eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lineta lhe disse que os Reians haviam enviado um pedido especial de carvão branco, uma substância extremamente rara que naturalmente se forma dentro de Dragrants da chama. Você foi convidado a ajudar e reuniu o carvão em tempo útil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

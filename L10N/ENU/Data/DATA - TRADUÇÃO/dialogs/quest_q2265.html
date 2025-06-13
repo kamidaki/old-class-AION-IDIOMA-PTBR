@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu a General da Brigada Suthran? Ele está sempre murmurando sobre a "escória Sapien". Ele parece pensar que a ofensa é a melhor defesa.</p>
+<p> </p>
+<p>Ele os ataca em todas as oportunidades, com muito mais frequência do que nosso ex -general.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso parece um bom plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu decidi patrulhar essa área sozinha, porque todos os outros vigias foram para o [%dic:STR_DIC_W_DF1A_13]Para caçar o Mau.</p>
+<p> </p>
+<p>Eu não podia simplesmente sentar e não fazer nada .... Meu plano original era chegar perto[%dic:STR_DIC_W_DF1A_15] e caça apenas alguns deles.</p>
+<p> </p>
+<p>Estou familiarizado com esse lugar, então pensei que seria fácil. O Mau me atacou em um pacote grande. Eu tive sorte de ter sobrevivido!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você é um homem corajoso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, essa é uma palavra para isso. O problema é que eu perdi minha espada. Foi arrancado da minha mão por um guerreiro Mau. Estou tão envergonhado. Eu sou um arconte e permiti que um sapien pegasse minha espada!</p>
+<p> </p>
+<p>Eu peguei esse martelo, mas simplesmente não parece o mesmo que o velho Swordy. Você iria para o pântano Mahindel e recuperaria minha espada, [%username]? Vou compensar você, eu juro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que o Mau que pegou minha espada era um guerreiro veterano. Eu estava sendo colocado de todos os lados, então não o vi muito bem ....</p>
+<p> </p>
+<p>Certamente o Mau não foi longe do pântano. Mate o [%dic:STR_DIC_M_LycanFighterS_17_An]Você encontra lá-um deles tem que ter minha espada!</p>
+<p> </p>
+<p>Por favor retorne meu[%dic:STR_DIC_I_quest_2265a] e meu orgulho, com isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou recuperar isso para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se eu acabar saindo do meu post, terei que contar aos outros arcontes ... é por isso que perguntei, [%username].</p>
+<p> </p>
+<p>Eu não vou te implorar. Acho que deveria apenas economizar meus salários e perguntar [%dic:STR_DIC_N_Lunber]Para fazer uma nova espada para mim.</p>
+<p> </p>
+<p>Apenas esqueça que eu perguntei.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou meu[%dic:STR_DIC_I_quest_2265a]?</p>
+<p> </p>
+<p>Se alguém descobrir sobre toda essa bagunça, terei que me aposentar da minha posição como arconte. Estou tão envergonhado ....</p>
+<p> </p>
+<p>Se você encontrou minha espada, por favor, devolva para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a sua espada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou meu[%dic:STR_DIC_I_quest_2265a] Ainda?</p>
+<p> </p>
+<p>Vou estar com tantos problemas se essa espada não for recuperada.</p>
+<p> </p>
+<p>Por favor, procure mais uma vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso! Essa é a minha espada![%dic:STR_DIC_I_quest_2265a]! Muito obrigado.</p>
+<p> </p>
+<p>Hmm ... a lâmina está cortada ... vou ter que afiar.</p>
+<p> </p>
+<p>Este é um sinal de minha apreciação. Por favor, continue. E ... você poderia apenas manter isso entre nós?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recupere a espada tirada pelo[%dic:STR_DIC_M_LycanFighterS_17_An] em[%dic:STR_DIC_W_DF1A_15] e trazê -lo para [%dic:STR_DIC_N_Dellalont].</p>[%collectitem]</step>
+</steps>
+<p>Recupere a espada de Dellalont, que foi levada por um Mau em Mahindel Swamp.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dellalont foi ao Mahindel Swamp para caçar Mau, mas foi atacado e perdeu a espada na briga.</p>
+<p> </p>
+<p>A seu pedido, você foi ao pântano de Mahindel, matou os guerreiros da garra negra feroz e trouxe a espada de volta a Dellalont.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah ... achoo! Ah ... ah ... achoo!</p>
+<p> </p>
+<p>Desculpe [%username]! É esse dever de guarda, eu fico resfriado sempre que começa a chover, então leva dias até que eu seja melhor. A pior coisa é que eu tendem a ficar mal quando estou doente, então ...</p>
+<p> </p>
+<p>Um observador!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você tem algum remédio?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ficarei saudável, mesmo se tomar remédios. Até você, [%username], não terá nenhuma solução especial. Obrigado por cuidar de mim.</p>
+<p> </p>
+<p>Oh, eu tenho algo que tenho que perguntar a você.</p>
+<p> </p>
+<p>Se estiver tudo bem, você poderia me pegar 10[%dic:STR_DIC_E_vegetable_n_c_20a]raízes, sibilos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu poderia conseguir as raízes para você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Um observador!</p>
+<p> </p>
+<p>Você faria isso? R ... achoo! Realmente?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. [%dic:STR_DIC_E_vegetable_n_c_20a] está no Hall de Artesãos em Santum.</p>
+<p> </p>
+<p>Cerca de 10 raízes são suficientes.</p>
+<p> </p>
+<p>Agora que conversamos sobre comida, estou com fome. Sinto muito, mas você pode se apressar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou cuidar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>MULTAR! Eu não queria sua ajuda de qualquer maneira!</p>
+<p> </p>
+<p>Oh ... sinto muito. É o nariz bloqueado que você vê, isso me leva ... achoo!</p>
+<p> </p>
+<p>Me deixa louco. Vou pegar as raízes de outra pessoa, não se preocupe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Fique seco."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu pobre cabeça dolorida ....</p>
+<p> </p>
+<p>Você recebeu as raízes que eu pedi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui, acho que isso está certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho isso um pouco sem coração. Eu pedi para você fazer isso porque estou doente.</p>
+<p> </p>
+<p>Eu preciso de algo para comer para que eu possa recuperar um pouco de energia. Traga -me 10[%dic:STR_DIC_E_vegetable_n_c_20a]raízes.</p>
+<p> </p>
+<p>Por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito!</p>
+<p> </p>
+<p>Oh, eu me sinto melhor apenas olhando para eles! Vou lava -os imediatamente!</p>
+<p> </p>
+<p>Obrigado, [%username]! Por favor, pegue isso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_vegetable_n_c_20a] e trazê -los para [%dic:STR_DIC_N_Archelaos].</p>[%collectitem]</step>
+</steps>
+<p>Colete as raízes de Rubashi para Archelaos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Archelaos lhe disse que ele pegou um resfriado e pediu que você reunisse algumas raízes de Rubashi para que ele pudesse melhorar mais cedo.</p>
+<p> </p>
+<p>Você trouxe as raízes para ele, o que ele apreciou muito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

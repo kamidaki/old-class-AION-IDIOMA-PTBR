@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que a Sirob está preocupada com o que farei, mas não pretendo me matar antes que minha vingança esteja completa.</p>
+<p> </p>
+<p>Se eu pudesse fazer tudo sozinho, em um piscar de olhos ... mas eu sei que não sou.</p>
+<p> </p>
+<p>Asmodian .... você é um daeva, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você pode ser a espada com a qual eu derrubei aqueles amaldiçoados Dragonbound.</p>
+<p> </p>
+<p>Eu sei que os asmodianos os odeiam tanto quanto eu, então você estaria atendendo ao seu povo e às minhas necessidades.</p>
+<p> </p>
+<p>Seja meu agente de vingança, Asmodian .... derramar sangue Dragonbound em meu nome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Começamos com[%dic:STR_DIC_M_IDTemple_FanaticKnKey1Named_54_Ae] e [%dic:STR_DIC_E_IDTemple_FanaticAsNamed_53_Ah].</p>
+<p> </p>
+<p>Seus subordinados, [%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae] S, deve morrer também.</p>
+<p> </p>
+<p>Isso é justiça, asmodianas, da forma mais antiga e mais pura. Mete, generosamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Só porque eles merecem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você acha que vou me mudar deste local antes que meu trabalho seja concluído, você é mais insano do que o dragão.</p>
+<p> </p>
+<p>Se você não usar sua força por uma causa digna, é mais do que inútil. Minha filha será vingada, com ou sem a sua ajuda.</p>
+<p> </p>
+<p>Deixe de lado se você não pretende me ajudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sua obsessão levará à ruína."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que a partir do momento em que ela nasceu que minha filha foi abençoada por Aion. Ela era inteligente, charmosa, capaz ....</p>
+<p> </p>
+<p>Ela teria liderado a próxima geração de nossa tribo. Mas o dragão tirou todo esse potencial de nós ... longe de mim.</p>
+<p> </p>
+<p>Eles estão mortos? Isso é importante, asmodiano-não tente me enganar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles foram mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, feliz em ver que minha espada escolhida é tão nítida quanto parecia. Se eu pudesse estar lá.</p>
+<p> </p>
+<p>Você aliviou o sofrimento da minha filha e de mim. Mas ainda há mais que devo fazer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dragonbound para Altina.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDTemple_FanaticKnKey1Named_54_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_IDTemple_FanaticAsNamed_53_Ah]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae]([%8]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Altinard].</p></step>
+</steps>
+<p>Você concordou em vingar a morte da filha de Altina. Vá para Udas Temple e destrua o Dragonbound.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Altina pediu que você fosse seu agente de vingança contra o dragão para a filha.</p>
+<p> </p>
+<p>Você foi ao Templo de Udas e lutou contra Garha, o Punisher, Chura Twinblade e Udas Elite Peons. Ela agradeceu, mas disse que tinha mais a fazer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

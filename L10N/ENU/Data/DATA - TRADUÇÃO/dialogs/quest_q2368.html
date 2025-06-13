@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos caminhos nos trouxeram aqui, [%username]. Você subiu nas fileiras mais rápido do que a maioria, com força mortal e uma vontade inflexível.</p>
+<p> </p>
+<p>Morheim é o seu mais recente teatro de guerra, e agora preciso de suas habilidades. Fui enviado aqui para investigar os Daevas ausentes, mas meu progresso está sendo bastante prejudicado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por muitas coisas. A queda de cinzas vulcânicas torna quase impossível os rastreamentos, as condições climáticas extremas prejudicam nossos níveis de resistência e, é claro, as criaturas!</p>
+<p> </p>
+<p>Não posso fazer nada sobre o clima ou as cinzas vulcânicas, mas já tive o suficiente das criaturas.</p>
+<p> </p>
+<p>Estou sancionando um abate completo das espécies mais interferentes. Embla e eu estamos muito ocupados, e Gangleri desaparece sempre que ele agrada. Eu preciso de mais apoio.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E é aí que eu entro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Será muito trabalho, então precisarei de tantos lutadores qualificados possível. Você faria perfeitamente, se estivesse disposto a ajudar, é claro.</p>
+<p> </p>
+<p>Então, você está dentro?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora ouça de perto. Vou listar todas as criaturas que eu marquei para o abate. Você deve se lembrar de todos eles.</p>
+<p> </p>
+<p>Eu quero que você mate cinco[%dic:STR_DIC_M_HellhoundD_28_An] S, cinco[%dic:STR_DIC_M_ShadowstalkerD_28_An] S, sete [%dic:STR_DIC_M_FlyingEyeD_28_An] S, nove [%dic:STR_DIC_M_ClodwormRe2D_28_An] S e nove [%dic:STR_DIC_M_SlimeReD_28_An] S.</p>
+<p> </p>
+<p>Eles estão todos na região do Monte Musphel, por isso deve ser fácil de encontrar. Volte apenas quando todas as cotas tiverem sido preenchidas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles vão provar seu próprio sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que foi? Eu perguntei demais? Você está muito ocupado?</p>
+<p> </p>
+<p>Não posso forçá -lo a me ajudar, [%username], mas precisamos desesperadamente de ajuda.</p>
+<p> </p>
+<p>Esta é uma tarefa enorme que estamos realizando. Se você pudesse ajudá -lo a fazer o Asmodae um grande serviço.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então eu voltarei quando puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não vou mentir para você, [%username]: O progresso é lento. Quanto mais cedo pudermos tirar essas criaturas do caminho, melhor.</p>
+<p> </p>
+<p>Já enviei alguns outros para fazer o mesmo trabalho que você fez. Suas cotas já foram cumpridas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, todos eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Precisamos de mais soldados do seu calibre, [%username]. Muitos se tornaram fracos e covardes recentemente.</p>
+<p> </p>
+<p>Pegue isso. Graças à sua contribuição, poderemos concluir nossa investigação muito mais cedo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua as criaturas que estão frustrando Utgar.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_HellhoundD_28_An]([%2]/2).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_ShadowstalkerD_28_An]([%5]/2).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_FlyingEyeD_28_An]([%8]/2).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_ClodwormRe2D_28_An]([%11]/2).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_SlimeReD_28_An]([%14]/2).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Utgar].</p></step>
+</steps>
+<p>Várias criaturas no Monte Musphel estão impedindo que Utgar possa concluir sua missão. Você elimina essas criaturas para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Utgar lhe disse que era quase impossível realizar sua tarefa por causa das criaturas ao redor do Monte Musphel.</p>
+<p> </p>
+<p>Você concordou em ajudar e matou as lava Barghests, ardentes obscuras, observando oculazens, molhos de rastreamento e lisos de enxofre ao redor do Monte Musphel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

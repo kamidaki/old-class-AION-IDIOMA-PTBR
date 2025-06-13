@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. Recebedor: funcionário temporário[%username]</p>
+<p> </p>
+<p>2. Tarefa: O dano que os diurinhas que comem kokonat causaram é grave. Por favor, vá para a Plantação Kokonat, elimine as moscas e depois relate -se ao Escritório Administrativo.</p>
+<p> </p>
+<p>3. Ramo responsável: Silverine Branch em North Katalam</p>
+<p> </p>
+<p>A tarefa acima conta para a avaliação para um cargo permanente e Daeva ganha pontos extras, dependendo dos resultados. Bom trabalho vale a pena o de Daeva, Ak.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva se livrou de todos os insetos?</p>
+<p> </p>
+<p>Esses insetos amaldiçoados arruinaram nossa colheita de coco.</p>
+<p> </p>
+<p>Usamos inseticida forte, mas eles ainda não morreram, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que alívio, AK.</p>
+<p> </p>
+<p>As moscas estão mordiscando os kokonats, você pode simplesmente arranhá -lo ... oh, não, esqueça, Ak.</p>
+<p> </p>
+<p>[%username], você é um trabalhador de meio período, AK?</p>
+<p> </p>
+<p>Shugo relatou que Daeva também realizou essa tarefa, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os insetos que estão comendo os kokonats (%2/7)</p></step>
+<step><p visible="[%15]">Relatório ao ramo de Silverine em North Katalam.</p></step>
+</steps>
+<p>As instruções chegaram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você matou os insetos que estavam comendo os cocos e relatados à filial de Silverine Limited, na parte norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

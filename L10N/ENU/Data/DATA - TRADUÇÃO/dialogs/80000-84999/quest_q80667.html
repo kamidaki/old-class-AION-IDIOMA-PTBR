@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é um prazer, Akakak.</p>
+<p> </p>
+<p>Se Daeva quer provar seu mérito, Shugo tem uma proposta para Daeva, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Traga Shugo uma grande árvore sagrada, AK.</p>
+<p> </p>
+<p>A grande árvore sagrada é muito importante para a prosperidade dos Shugos, Ak.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo está dependendo de Daeva e esperará aqui pelo retorno de Daeva. AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva provavelmente ainda não está pronto, Ak.</p>
+<p> </p>
+<p>Que pena, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva deve ir para a fortaleza!</p>
+<p> </p>
+<p>A grande árvore sagrada aumentará os méritos gloriosos de [%username], Akak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a grande árvore sagrada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que Daeva ainda não está envolvido na batalha.</p>
+<p> </p>
+<p>Daeva deve obter uma grande árvore sagrada o mais rápido possível, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo nunca teria pensado que Daeva o obteria tão rapidamente.</p>
+<p> </p>
+<p>Daeva deve ser recompensado de acordo, Akakak.</p>
+<p> </p>
+<p>Como Daeva trouxe uma grande árvore, Daeva receberá uma recompensa luxuosa, Ak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha uma grande árvore sagrada e leve -a para Glorinerk.</p>[%collectitem]</step>
+</steps>
+<p>Atenda ao pedido de Glorinerk e obtenha uma grande árvore sagrada.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Glorinerk disse que muitos Daevas dariam qualquer coisa para aumentar sua honra. Isso requer uma grande árvore sagrada.</p>
+<p> </p>
+<p>Você obteve uma grande árvore sagrada e foi recompensada de acordo com a honra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

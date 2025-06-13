@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um comandante do exército de Beritra na sala vazia.</p>
+<p> </p>
+<p>Isso é[%dic:STR_DIC_IDF5_R3_VriCU_Fi].</p>
+<p> </p>
+<p>Derrote Barukan e as unidades de infiltração!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou Barukan?</p>
+<p> </p>
+<p>Ele está liderando a unidade de infiltração de Beritra da sala vazia.</p>
+<p> </p>
+<p>É imperativo que o eliminemos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que o matou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Agora devo acelerar a sede para compartilhar essas boas notícias.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_IDF5_R3_VriCU_Fi]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LDF5b_resco_G_LHF]no[%dic:STR_DIC_W_LDF5b_SV_6011].</p></step>
+</steps>
+<p>Cumprir o pedido de Atica e matar o comandante Barukan. Em seguida, relate à Lesco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atica pediu que você matasse o comandante Barukan. Você matou Barukan e recebeu uma recompensa da Lesco quando voltou.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

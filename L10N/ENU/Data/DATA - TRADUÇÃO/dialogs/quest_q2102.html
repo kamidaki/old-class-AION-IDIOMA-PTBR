@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terá visto o [%dic:STR_DIC_M_SpriggD_1_n] está por aqui. Eles cresceram mais corajosos quando Asmodae prestou menos atenção. Eles são criaturas de embalagem, assim como seus números aumentam, o mesmo acontece com a confiança deles.</p>
+<p> </p>
+<p>Basta olhar em volta. Os Spriggs não são exatamente tímidos agora, estão?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não exatamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero que você se junte aos outros Raiders e os derrube alguns degraus, [%username].</p>
+<p> </p>
+<p>Suas cabanas já estão queimando. Coloque alguns corpos no chão.</p>
+<p> </p>
+<p>Isso lembrará aos Spriggs que eles podem viver em Ishalgen, mas nós o possuímos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu sabia que você gostaria de salvar a cara depois de desmaiar.</p>
+<p> </p>
+<p>Saia para a bacia e mate quatro[%dic:STR_DIC_M_SpriggD_1_n] S. Volte para mim assim que terminar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Considere isso feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu covarde preguiçoso!</p>
+<p> </p>
+<p>Esperamos por você nessas condições miseráveis, mesmo quando o código asmodiano nos diz para deixar os retardadores para trás! Você tem a chance de retribuir nossa bondade, mas você nos dá um tapa na cara?</p>
+<p> </p>
+<p>Raiders trabalham juntos, [%userclass]. É isso que nos separa de meros bandidos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo? Você não parece magoado ...</p>
+<p> </p>
+<p>Você já terminou a missão?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu morei os Spriggs."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma tarefa sangrenta bem feita. Você se recuperou totalmente do seu colapso.</p>
+<p> </p>
+<p>Aqui está a sua recompensa, [%username]. Pegue.</p>
+<p> </p>
+<p>E não caia mais no chão!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_M_SpriggD_1_n] S que começaram recentemente a atacar os Raiders Ulgorn ([%2]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Vandarnt].</p></step>
+</steps>
+<p>Livre -se dos Spriggs como Vandar ordenou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vandar estava ficando frustrado com os spriggs cada vez mais agressivos e pediu que você cortasse seus números.</p>
+<p> </p>
+<p>Você se livrou de Spriggs e, depois de se reportar a Vandar, recebeu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

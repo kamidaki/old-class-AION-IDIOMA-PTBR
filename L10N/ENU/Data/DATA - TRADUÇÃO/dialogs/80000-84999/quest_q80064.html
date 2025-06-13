@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você! Você é[%username]o [%userclass], não é?</p>
+<p> </p>
+<p>Não, você não me conhece, mas eu te conheço. E a Elysea poderia usar seu serviço agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"De que maneira?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sou membro de A, digamos, organização secreta, Beholden para ninguém além de Lord Nezekan. Trabalhamos em toda a Atreia.</p>
+<p> </p>
+<p>Meu associado Conner e eu estamos em uma missão particularmente importante, mas houve ... complicações imprevistas.</p>
+<p> </p>
+<p>Há uma questão de tempo sério aqui. Queremos que você resolva os problemas. Garanto -lhe que isso é importante para o futuro de Elysea.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ariel seja elogiado! Eu preciso que você encontre e caça [%dic:STR_DIC_M_Branch_Event_ElementalFire2_LIGHT_99_n].</p>
+<p> </p>
+<p>Alguns me atacaram e roubaram[%dic:STR_DIC_I_QUEST_80064A] S. Eles podem parecer mundanos, mas tornam um potente nervo acelerante.</p>
+<p> </p>
+<p>O restante é de uma base de necessidade de saber. Você só precisa se lembrar de que isso é para o bem de Elysea.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou confiar em você ... por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu deixo você com este aviso: conte a alguém sobre mim ou nossa discussão e você será deslocado antes de perceber.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece uma ameaça".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você se foi, eu coloquei alguns tópicos em movimento. Esperançosamente, eles entrarão em um padrão coeso em breve.</p>
+<p> </p>
+<p>O tempo não é o nosso aliado, [%username]. Eu confio que você cumpriu sua missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Peguei suas ervas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é tão bom quanto eles dizem. Quem é "eles", você pergunta? Oh, algumas pessoas que você conhece ... e algumas que você não.</p>
+<p> </p>
+<p>Estes irão para os alquimistas imediatamente. Mas este não é o fim das complicações, receio ... não por um tiro no escuro.</p>
+<p> </p>
+<p>Os Daevas colocaram suas vidas em risco para Elysea todos os dias ... tenha certeza de que você está fazendo o mesmo, apenas conversando comigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é hora de piadas. Este é um negócio sério, se você percebe ou não ... e espero que nunca o faça.</p>
+<p> </p>
+<p>Aqueles[%dic:STR_DIC_I_QUEST_80064A] S parece inocente, mas também uma faca embainhada. Como aquela faca, eles podem atacar profundamente o coração de nossos inimigos.</p>
+<p> </p>
+<p>É por isso que é tão importante combater o [%dic:STR_DIC_M_Branch_Event_ElementalFire2_LIGHT_99_n]para eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então por que você não está fazendo isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_I_QUEST_80064A] e dê -los a [%dic:STR_DIC_N_event_Isolde].</p>[%collectitem]</step>
+</steps>
+<p>Encontre as ervas misteriosas que os detritos estrelados roubaram e devolvê -los a Emelene.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva bastante misterioso chamado Emeele colou você e pediu que você recuperasse ervas narcóticas roubadas por detritos estrela.</p>
+<p> </p>
+<p>Você fez isso, para a gratidão de Emele. Ela pediu que você fizesse outra coisa para a organização sombria para a qual trabalha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já se arrependeu da sua escolha de [%userclass], Daeva?</p>
+<p> </p>
+<p>Eu queria ser um curandeiro de alma a vida toda, então este é um excelente trabalho para mim.</p>
+<p> </p>
+<p>Se ao menos eu não tivesse ficado sem poções ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Poções?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>As almas curativas são o trabalho exaustivo. O uso do obelisco parece fácil, mas é preciso concentração intensa.</p>
+<p> </p>
+<p>Depois de curar uma ou duas almas, ficamos mentalmente cansados.</p>
+<p> </p>
+<p>Podemos restaurar nossa força por meditação silenciosa, mas isso leva tempo, o que nem sempre temos. A poção pode nos refrescar imediatamente, mas estou quase saindo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_yes;HACTION_ASK_QUEST_ACCEPT">"Qual poção é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os mesmos vendidos como "poções de recuperação de MP". Eu os faço, mas não tenho os ingredientes agora.</p>
+<p> </p>
+<p>Se você não está muito ocupado, talvez possa ajudar?</p>
+<p> </p>
+<p>Eu tenho que ficar aqui pelo obelisco, mas você pode reunir algumas ervas para mim, se tiver tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até sua alma é linda, [%username].</p>
+<p> </p>
+<p>A erva que eu preciso para fazer a poção é[%dic:STR_DIC_E_herb_n_c_10b]. Você pode encontrá -lo crescendo abundantemente perto do solo sagrado de Miraju.</p>
+<p> </p>
+<p>Você me traria dez deles, por favor?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem, [%username].</p>
+<p> </p>
+<p>Tenho certeza de que você tem um bom motivo.</p>
+<p> </p>
+<p>Não se preocupe comigo. Vou encontrar outra pessoa para reunir o Targena.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aion observe você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você achou onde o [%dic:STR_DIC_E_herb_n_c_10b]cresce?</p>
+<p> </p>
+<p>Não cheira delicioso, recém -colhido?</p>
+<p> </p>
+<p>Posso ter isso? Eu gostaria de fazer essa poção.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh céus. Isso não fará nada.</p>
+<p> </p>
+<p>Eu preciso daquelas folhas de Targena, querida [%username]. Eu não posso sobreviver sem.</p>
+<p> </p>
+<p>A receita exige dez peças de [%dic:STR_DIC_E_herb_n_c_10b]. Volte quando você os tiver.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro. Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia confiar em você, Daeva. Sua alma tem uma bela luz.</p>
+<p> </p>
+<p>Com sua ajuda, posso fazer minha poção imediatamente e estar pronto para curar nossos Daevas feridos.</p>
+<p> </p>
+<p>Por favor, pegue isso. É um pequeno sinal da minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_E_herb_n_c_10b] e leve para [%dic:STR_DIC_N_Titania].</p>[%collectitem]</step>
+</steps>
+<p>Reúna Targena do solo sagrado de Miraju e leve -o para Titania para que ela possa fazer sua poção.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Titania explicou que a operação do obelisco requer um alto nível de concentração e que ela gosta de manter as poções de recuperação de MP à mão para emergências.</p>
+<p> </p>
+<p>Ela geralmente faz as poções de Targena. Como ela teve que ficar no obelisco, você coletou a erva para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

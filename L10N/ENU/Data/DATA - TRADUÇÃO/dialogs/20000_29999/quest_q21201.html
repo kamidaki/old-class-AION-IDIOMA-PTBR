@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora que tenho o peixe, preciso obter amostras de Cellatu e Alitaurs. Eles não parecem diferentes daqueles em Asmodae, mas suponho que Ightris saiba melhor.</p>
+<p> </p>
+<p>Mmm, Ightris .... De suas cartas, ela parece muito pequena e recatada. Gostaria de saber se ela tem cabelos pretos esvoaçantes e macios e macios ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">(Tosse muito alto.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que ...? Oh. Ahem. Sim, certo, as amostras de Cellatu e Alitaur!</p>
+<p> </p>
+<p>Ela me pediu para pegá -los também, mas não tive tempo de me afastar do meu post, como fiz com o peixe.</p>
+<p> </p>
+<p>Eu ... ela precisa de várias amostras. Acha que você poderia fazer outro favor para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, o que você está esperando, um convite por escrito de Lord Azphel? Nesse ritmo, Ightris estará esperando até o próximo catacllysm!</p>
+<p> </p>
+<p>Corra para o pântano e a pele do viscum alguns[%dic:STR_DIC_E_QUEST_21201]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, mas este é o seu último favor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Oh, você acha que estou pedindo para você fazer isso de graça.</p>
+<p> </p>
+<p>Não se preocupe-acredito em justiça. Você me faz esse favor, e você terá apenas uma compensação, promessa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é sobre dinheiro ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, desculpe se eu estive um pouco curto. Grauzer está montando todo mundo ultimamente. Entre o seu discurso e o estresse do suspense ... acho que todo mundo está no limite agora.</p>
+<p> </p>
+<p>Eu realmente aprecio você sair e obter essas amostras para mim. Falando nisso ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"São o suficiente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm, não. Ightris foi muito enfática sobre o que ela precisava.</p>
+<p> </p>
+<p>Eu não preciso dela me incomodando. Grauzer é suficiente, obrigado. Volte quando você tiver mais amostras de Cellatu e Brokenhorn Alitaur.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor valer a pena ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sheesh, essas coisas são mais nojentas do que eu pensava. Mas uma vez que eu os empacote com o peixe, será Ightris para lidar.</p>
+<p> </p>
+<p>Mas como faço para levá -los a ela sem deixar meu post? Você poderia ... apenas brincando! Eu preciso voltar para a fortaleza em breve.</p>
+<p> </p>
+<p>É bom saber que alguns Daevas ainda podem ser confiáveis. Aqui, você merece isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter amostras de [%dic:STR_DIC_E_QUEST_21201]morando no pântano de viscum e trazê -los para [%dic:STR_DIC_N_Lucal].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha amostras de Cellatus espinhosas, Baby Cellatus e Alitaurs Brokenhorn que vivem no pântano de viscos de Lucal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lucal disse que Ightris também pediu amostras de Cellatus e Alitaurs e pediu que você as obtesse também.</p>
+<p> </p>
+<p>Você caçou Cellatus espinhosos, Baby Cellatus e Alitaurs Brokenhorn, e trouxe as amostras de volta a Lucal, que realmente mostrou alguma gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

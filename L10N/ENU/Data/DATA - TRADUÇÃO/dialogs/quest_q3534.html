@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você sabe, ainda estamos tentando ter uma idéia dessa região, seu layout e seus problemas. Acabei de ouvir de um que é fascinante.</p>
+<p> </p>
+<p>Parece que há um lugar chamado Ilha da Eternidade que tem algumas lendas interessantes ao seu redor.</p>
+<p> </p>
+<p>Não posso deixar de me perguntar se seu poder pode ter algo a ver com Bollvig ... ou possui segredos que podem nos ajudar contra ele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você sabe sobre isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A ilha da eternidade é na verdade um conjunto de três ilhas no sudeste de Heiron.</p>
+<p> </p>
+<p>Parece que não há como chegar lá do continente, mas na verdade há uma ponte invisível que você pode atravessar, se souber onde procurar.</p>
+<p> </p>
+<p>Nessas ilhas, residem em querrubes com poderes incomuns. Eu quero saber o que são esses poderes e de onde eles vêm. Tenho a sensação de que o conhecimento seria útil. Você pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os querubos em questão são[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah], Assim, [%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah], e [%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al].</p>
+<p> </p>
+<p>Você provavelmente terá que lutar contra eles para descobrir mais. Conheço alguns estudiosos que podem aprender muito com o que você pode me dizer.</p>
+<p> </p>
+<p>Ainda assim, sugiro que você traga alguns colegas de confiança confiáveis ​​com você. Mesmo que tudo o que você enfrentará é o querubas, tenho certeza de que eles não são insultos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Conselhos observados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, nada disso provavelmente tem nada a ver com o Bollvig diretamente. Mas se pudéssemos explorar quaisquer que os poderes existam lá ....</p>
+<p> </p>
+<p>Pense nisso! Se esses berros podem ser ameaças sérias, imagine o que poderíamos nos tornar! Poderíamos mudar toda a maré desta guerra!</p>
+<p> </p>
+<p>Você não tem pelo menos nenhuma curiosidade sobre o lugar? Você não quer descobrir mais sobre isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Alguns mistérios são mistérios por uma razão".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta. Espero que você tenha falhado, você teria voltado muito mais cedo.</p>
+<p> </p>
+<p>Isso significa que você encontrou a ponte invisível? Conheceu os querubinhos extraordinariamente poderosos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fui, vi, conquistei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fascinante! Espere, eu tenho que escrever tudo isso! Meus estudiosos terão um dia de campo com isso!</p>
+<p> </p>
+<p>Você pode ter lutado para alguns berros, mas também nos aproximou um grande passo para penetrar nos segredos da ilha.</p>
+<p> </p>
+<p>Poderíamos vencer facilmente sobre Bollvig ... sobre a totalidade de Asmodae e Balaurea! Mas esses são apenas sonhos ... por enquanto. Aqui está uma recompensa pelo seu excelente trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar os guardiões da ilha da eternidade em[%dic:STR_DIC_E_LF3_name].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]([%8]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Gorgos].</p></step>
+</steps>
+<p>Encontre a ilha misteriosa da eternidade e lute contra seus guardiões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gorgos queria descobrir mais sobre a ilha da eternidade, acessível apenas por uma ponte invisível.</p>
+<p> </p>
+<p>Você encontrou a ponte e matou os guardiões querrubianos da ilha. Você voltou com essas informações, aos louvores de Gorgos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

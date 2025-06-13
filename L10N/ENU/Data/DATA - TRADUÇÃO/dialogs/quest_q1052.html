@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<!-- Aphesius -->
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando cheguei a Heiron, todas as terras por aqui eram florestas exuberantes e verdejantes.</p>
+<p> </p>
+<p>Desde então, vi a terra sucumbir à decadência.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é a causa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não faço ideia. Todos os meus esforços vão para a manutenção do campo etérico.</p>
+<p> </p>
+<p>E como o Balaur conseguiu penetrá -lo de alguma forma, eu tenho minhas mãos cheias.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Não é uma tarefa fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos nos concentrar no assunto em questão. Precisamos estudar o problema.</p>
+<p> </p>
+<p>Traga -me raízes de [%dic:STR_DIC_M_Agrint_34_An] Areia [%dic:STR_DIC_M_Rottentree_34_An] S. Vou tentar determinar a causa da corrupção.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Muito bem."</act>
+</selects>
+<voice file="Q1052-1.ogg"></voice>
+</htmlpage>
+<!-- Aphesius -->
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe as amostras que solicitei?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho. Eles são bastante estranhos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes são ... bastante prejudiciais. Hmm ... Receio que esteja além das minhas habilidades para diagnosticar o problema.</p>
+<p> </p>
+<p>Precisamos da experiência de um elimismo. Há uma cidade próxima, o Arbolu's Haven, onde os humanos e eliminam o lado vivo.</p>
+<p> </p>
+<p>Leve essas raízes para [%dic:STR_DIC_N_Tree_Move_Mersephon]lá. Ele poderia lhe contar mais.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Devo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Este não é um pequeno problema. Se negligenciarmos-quem sabe o que vai acontecer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazer as raízes."</act>
+</selects>
+</htmlpage>
+<!-- Tree_Move_Mersephon -->
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo ... ao refúgio de Arbolu. Você é ... seguro aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"O que você faz disso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que eles vêm ... de agripas e ... rotrons? Essa corrupção ... parece ter ... causas artificiais.</p>
+<p> </p>
+<p>Traga -os para [%dic:STR_DIC_N_Tree_Nomove_Trajanus]. Ele é ... o mais velho entre nós.</p>
+<p> </p>
+<p>Se isso ... aconteceu no mundo ... ele já viu isso antes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Onde posso encontrá -lo?"</act>
+</selects>
+<voice file="Q1052-2.ogg"></voice>
+</htmlpage>
+<!-- Tree_Nomove_Trajanus -->
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve ... honrado Daeva.</p>
+<p> </p>
+<p>O Haven de Arbolu ... recebe você com ramos estendidos ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Conte -me sobre essa corrupção."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é ... uma ocorrência natural.</p>
+<p> </p>
+<p>Eu ouço sussurros das ... árvores da selva de Poya. Os seres humanos estão fazendo ... coisas terríveis.</p>
+<p> </p>
+<p>Eles corrompem ... até as árvores.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Aphesius].</p></step>
+<step><p visible="[%3]">Coletar as raízes de [%dic:STR_DIC_M_Agrint_34_An] Areia [%dic:STR_DIC_M_Rottentree_34_An] S e depois os traga para [%dic:STR_DIC_N_Aphesius].</p>[%collectitem]</step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Tree_Move_Mersephon].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Tree_Nomove_Trajanus].</p></step>
+</steps>
+<p>Ordem: Parece que uma coisa estranha está acontecendo com as árvores e os elimes. Vamos ouvir a história detalhada de Aphesius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aphesius lhe disse que, à medida que a floresta desaparece, o número de agrografias e rotron aumenta. Ele pediu que você investigasse a causa do problema. Você coletou as amostras de raízes do bosque decapado e as trouxe para Aphesius. Ele disse para você levá -los para o elimismo.</p>
+<p> </p>
+<p>Você mostrou as amostras de raiz para Mersephon e Trajanus, que lhe disseram que as raízes não pareciam ter mudado naturalmente, mas como resultado da intervenção humana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

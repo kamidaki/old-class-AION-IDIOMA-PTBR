@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tão frio ultimamente! E minhas roupas estão todas desgastadas, o que significa que elas não me mantêm aquecido.</p>
+<p> </p>
+<p>Eu acho que as roupas de couro manteriam o frio bem, mas não é fácil encontrar quando eu não posso caçar.</p>
+<p> </p>
+<p>O couro Mosbear seria absolutamente perfeito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que você não pode caçar?"</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Eu não posso caçar no momento, mas aposto que você não teria nada contra isso, seria [%username]?</p>
+<p> </p>
+<p>Você poderia me pegar [%dic:STR_DIC_I_quest_2224a]?</p>
+<p> </p>
+<p>Eu o recompensaria por isso, é claro.</p>
+<p> </p>
+<p>Você vai fazer isso por mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já voltou?</p>
+<p> </p>
+<p>Esses moscas são difíceis, não são?</p>
+<p> </p>
+<p>Você trouxe 6 pedaços de [%dic:STR_DIC_I_quest_2224a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Eu posso fazer algumas roupas muito boas com isso.</p>
+<p> </p>
+<p>Finalmente, eu posso me aquecer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_2224a] e leve para [%dic:STR_DIC_N_Lamir].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha couro luxuoso Mosbear para que Lamir possa fazer roupas novas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As roupas desgastadas de Lamir eram inadequadas para o uso de clima frio. A pedido dela, você segurou o couro Mosbar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

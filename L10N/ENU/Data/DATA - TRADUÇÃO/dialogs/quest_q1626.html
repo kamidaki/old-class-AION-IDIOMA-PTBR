@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provavelmente acha que as tochas são uma ideia boba. Você já ouviu falar sobre Calon? O povo de Calon foi supostamente salvo por essas mesmas tochas-e é a lenda que as pessoas no campo quando as tochas são iluminadas nunca morrem.</p>
+<p> </p>
+<p>Mesmo que não seja verdade, se as tropas acreditarem, isso pode nos dar a vantagem de que precisamos. A fé é tão importante quanto a força, sim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Suponho que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Também não dói que acenda o caminho, é claro. Há um lado prático nisso também.</p>
+<p> </p>
+<p>A vida dos meus soldados são minha responsabilidade, [%username], e farei o que for necessário para trazer o maior número possível de seguridade para casa com segurança novamente. Eu sei quais são nossas chances contra o Bollvig. Se uma tocha puder fazer a diferença, eu a usarei absolutamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso faz sentido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz que você pense assim, porque tenho um último favor a pedir a você antes da batalha-me ajude a iluminar a rota de ataque.</p>
+<p> </p>
+<p>Eu sei que você esteve nas ruínas do patema antes. Você conhece bem a área e pode nos salvar um tempo valioso.</p>
+<p> </p>
+<p>O que você diz, velho amigo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você. Aqui está a garrafa com a gordura Starturtle.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LF3_SZ_F1] e incendiar as tochas de encorajamento, ataque, coragem, orientação, batalha, vitória e glória, uma a uma de uma mais próxima da vila até a mais distante.</p>
+<p> </p>
+<p>Depois de acender as tochas, nem mesmo uma tempestade será capaz de extingui -las. Então podemos partir em nossa missão com corações claros e espíritos capazes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou cuidar disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Multar. Eu lancei bom dia, [%username]. Pense em nós enquanto marchamos para o covil de Bollvig, não é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volups ... as bênçãos do sol em você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Está feito? Eu posso ver um brilho no horizonte ... Eu esperava que fosse sua luz preparando o caminho.</p>
+<p> </p>
+<p>Estou ansioso, admito, mas suas ações aqui hoje ajudam a deixar meu coração à vontade.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A luz guiará seus passos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Eu posso ver nos rostos dos meus soldados. Eles tomaram o coração. Seus espíritos foram levantados na véspera da batalha, nenhuma tarefa fácil.</p>
+<p> </p>
+<p>Vamos agora. Aqui está a sua recompensa-Saia uma oração para Aion por nós enquanto viajamos para a batalha. Bollvig aguarda ... não o manteremos por muito tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Defina luz para [%dic:STR_DIC_E_LF3_Torch1].</p></step>
+<step><p visible="[%3]">Defina luz para [%dic:STR_DIC_E_LF3_Torch2].</p></step>
+<step><p visible="[%6]">Defina luz para [%dic:STR_DIC_E_LF3_Torch3].</p></step>
+<step><p visible="[%9]">Defina luz para [%dic:STR_DIC_E_LF3_Torch4].</p></step>
+<step><p visible="[%12]">Defina luz para [%dic:STR_DIC_E_LF3_Torch5].</p></step>
+<step><p visible="[%15]">Defina luz para [%dic:STR_DIC_E_LF3_Torch6].</p></step>
+<step><p visible="[%18]">Defina luz para [%dic:STR_DIC_E_LF3_Torch7].</p></step>
+<step><p visible="[%21]">Fale com [%dic:STR_DIC_N_Voluptes].</p></step>
+</steps>
+<p>Libere as tochas nas ruínas do patema, para que os soldados da frota azul possam atacar o círculo da tempestade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Volups lhe disseram uma lenda sobre as tochas que protegem a vida das pessoas no acampamento quando foram iluminadas. Ele pediu sua ajuda para aumentar o moral de seus soldados e acender a rota de ataque.</p>
+<p> </p>
+<p>Depois que você acendeu as tochas, ele agradeceu e pediu que você pensasse nele e nos seus homens enquanto eles atacam Bollvig.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

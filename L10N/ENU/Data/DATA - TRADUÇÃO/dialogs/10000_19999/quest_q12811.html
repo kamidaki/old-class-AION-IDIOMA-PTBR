@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia cuidar do[%dic:STR_DIC_M_LDF5A_A1_Lupyllini_62_n]Para garantir a fronteira?</p>
+<p> </p>
+<p>O barulho da pluma gritante aqui no posto de guarda é quase insuportável.</p>
+<p> </p>
+<p>A pluma gritando certamente cumprirá seu nome quando vir Daeva.</p>
+<p> </p>
+<p>Você deve primeiro tentar atacar a pluma gritante emboscando -a.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>As plumas gritando na área eram tão altas que todos tivemos dores de cabeça - você as matou?</p>
+<p> </p>
+<p>Depois de voltar, [%username], os gritos da Pluma morreram e ficou quieto.</p>
+<p> </p>
+<p>No entanto, não podemos dizer se os animais estão simplesmente tirando uma soneca do meio -dia ...</p>
+<p> </p>
+<p>Então, [%username], você matou as plumas gritando, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade então que se você tiver algum problema para resolver, [%username]é a pessoa para entrar em contato.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Agora que a pluma gritando é derrotada, não precisamos mais nos preocupar com um ataque.</p>
+<p> </p>
+<p>Desta vez, também lhe darei uma pequena recompensa. Mais uma vez, muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_A1_Lupyllini_62_n]que estão interferindo no reforço da guarda ([%2]/11)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard03_L].</p></step>
+</steps>
+<p>Mate a pluma gritando para que os guardas na área possam ser reforçados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Seas pediu que você matasse as plumas gritando que não estavam apenas gritando alto, mas também interferindo na operação de emboscada.</p>
+<p> </p>
+<p>Você matou os Plumas gritando, e Seas agradeceu pela paz e sossego quando você voltou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

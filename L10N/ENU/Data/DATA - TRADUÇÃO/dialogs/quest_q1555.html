@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh olá, [%username]. Você chegou na hora certa. Eu estava prestes a ligar para você.</p>
+<p> </p>
+<p>Você já ouviu falar de Arbolu? Ele é uma árvore com poder misterioso no extremo norte de Heiron. Ele bloqueia a energia prejudicial, aumenta a vitalidade das plantas e repele Mortos Vivos.</p>
+<p> </p>
+<p>Arbolu é a razão pela qual há tantos elimes por lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Deve ser um lugar agradável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Geralmente é, mas ouço que as plantas em torno do Haven de Arbolu começaram a murchar e morrer. Parece que a energia de Arbolu está diminuindo.</p>
+<p> </p>
+<p>Os daevas da vida estão investigando, mas a causa os escapou.</p>
+<p> </p>
+<p>Eles me pediram para enviar algo para reviver as plantas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como o que?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não há como saber com certeza, mas minha teoria é que o solo está ficando sem elementos nutritivos.</p>
+<p> </p>
+<p>Eu reuni um bom solo e preciso de alguém para levar isso para [%dic:STR_DIC_N_Erone], Daeva da vida, e diga a ela para polvilhar em torno das árvores doentes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É gentil da sua parte se voluntariar. Não gosto de perder mais mensageiros nessa corrida. O refúgio de Arbolu fica a leste da selva. Você deve ter cuidado com os Mortos Vivos ao longo do caminho, mas pelo que ouço que você deve ser capaz de lidar com eles.</p>
+<p> </p>
+<p>Dê isso a [%dic:STR_DIC_N_Erone], e diga a ela o que eu disse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algo mais urgente para fazer?</p>
+<p> </p>
+<p>Não quero perder outro mensageiro para os Mortos Vivos ao longo do caminho.</p>
+<p> </p>
+<p>Ainda temos tempo, então volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá. Bem-vindo.</p>
+<p> </p>
+<p>O que te traz ao refúgio de Arbolu?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Senea enviou isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o solo Senea estava nos enviando. Estou ansioso para ver isso.</p>
+<p> </p>
+<p>Hmm ... isso certamente parece fértil, mas ... há algo estranho nisso.</p>
+<p> </p>
+<p>Embora seja fraco, sinto uma certa virulência. Acho que não posso usar isso. Lamento que você tenha vindo até nada por nada.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o saco de sujeira para [%dic:STR_DIC_N_Erone].</p></step>
+</steps>
+<p>As plantas ao redor do refúgio de Arbolu estão murchando. Pegue o saco de sujeira de Senea a Erone, Daeva da vida, para ajudar a resolver o problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Erone pediu ajuda à Senea, dizendo que as plantas ao redor do refúgio de Arbolu estavam murchando. Senea pediu que você pegasse um solo fértil para Erone para ver se isso ajudaria.</p>
+<p> </p>
+<p>Quando você deu o solo a Erone, ela disse que o solo estava contaminado e não podia ser usado. Ela pediu desculpas por desperdiçar seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

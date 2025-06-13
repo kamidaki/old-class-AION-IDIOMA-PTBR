@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Como a situação está olhando perto do templo carmesim?</p>
+<p> </p>
+<p>Os Elyos não estão em lugar algum agora ...</p>
+<p> </p>
+<p>Eu acho que mais forças de luta são necessárias para o apoio em Akaron.</p>
+<p> </p>
+<p>[%username], você tem habilidades excepcionais. Portanto, não tenho dúvidas de que você poderá concluir a seguinte tarefa.</p>
+<p> </p>
+<p>Sair para Akaron e eliminar [plur][%dic:STR_DIC_M_LDF4_Advance_J_ElementalEarth3_65_An]no platô de Valpurah.</p>
+<p> </p>
+<p>Você acha que pode fazer isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], como é possível que você já esteja de volta?</p>
+<p> </p>
+<p>Os Elyos desistiram do templo carmesim e estão a caminho de Akaron.</p>
+<p> </p>
+<p>Não podemos permitir que isso vá à nossa cabeça agora!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você resolveria esse problema imediatamente.</p>
+<p> </p>
+<p>Muito bem feito. Muito obrigado!</p>
+<p> </p>
+<p>Entrarei em contato com você novamente para a próxima tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_J_ElementalEarth3_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Hrimfaxi].</p></step>
+</steps>
+<p>Cumprir o pedido de Hrimfaxi e eliminar as fladias encantadoras no platô de Valpurah, em Akaron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hrimfaxi, do templo carmesim, explicou a você que mais apoio era necessário em Akaron.</p>
+<p> </p>
+<p>Você destruiu as fladias encantadoras no platô de Valpurah, em Akaron, a pedido de Hrimfaxi.</p>
+<p> </p>
+<p>Hrimfaxi agradeceu e decidiu chamá -lo novamente para obter ajuda no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

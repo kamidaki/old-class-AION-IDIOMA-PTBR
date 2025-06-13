@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se ao menos tivéssemos o Relatório de Pesquisa da Tribo Rune, poderíamos facilmente entender o método de aplicação ou fabricação do IDGEL.</p>
+<p> </p>
+<p>Dizem que o diretor de pesquisa Notius mantém o relatório de pesquisa da tribo Rune no armazém Idgel. Mas a maneira como não há caminho fácil.</p>
+<p> </p>
+<p>[%username], isso certamente não é um problema para você. Você poderia ir para [%dic:STR_DIC_W_IDLDF5RE_solo_idgel] e pegue o [%dic:STR_DIC_I_quest_18002a]?</p>
+<p> </p>
+<p>Se você esperar muito tempo, ele explodirá o armazém Idgel e fugirá. Portanto, você deve se apressar.</p>
+<p> </p>
+<p>Mate o Beritra rapidamente e, quando chegar ao armazém Idgel, obtenha os registros de pesquisa da tribo Rune, mesmo que Notius escape.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você achou este pesquisador de Beritra Head?</p>
+<p> </p>
+<p>Onde está o diário de pesquisa da tribo Rune?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de pesquisa da tribo Ruhn.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim como eu esperava.</p>
+<p> </p>
+<p>Nossos cientistas estão satisfeitos com este diário de pesquisa.</p>
+<p> </p>
+<p>Como Notius considera os periódicos de pesquisa tão importantes, eles devem conter muitas informações relacionadas à pesquisa da IDGEL.</p>
+<p> </p>
+<p>[%username], com sua ajuda, conseguimos entender um pouco mais a pesquisa deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os soldados do exército de Beritra no[%dic:STR_DIC_W_IDLDF5RE_solo_idgel] e pegue o [%dic:STR_DIC_I_quest_18002a]. Em seguida, leve o diário de pesquisa para [%dic:STR_DIC_N_LDF5a_Solon].</p>[%collectitem]</step>
+</steps>
+<p>Encontre o diário de pesquisa da tribo Rune que está sendo mantido no armazém Idgel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Solon achou que ter o diário de pesquisa da tribo Rune seria uma grande ajuda para a pesquisa sobre Idgel.</p>
+<p> </p>
+<p>Solon agradeceu por entrar no Storehouse Idgel e recuperar o Jornal de Pesquisa da Tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

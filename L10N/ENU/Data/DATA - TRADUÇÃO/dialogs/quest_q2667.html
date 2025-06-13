@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O homem no tubo de ensaio parece estar com imensa dor, segurando o peito com as mãos e estremecendo.)</p>
+<p> </p>
+<p>Frio ... dói ... difícil de ... respirar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Fique calmo-eu vou te salvar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sede ... por favor ...</p>
+<p> </p>
+<p>Paeru ... eu tenho que chegar a ... paeru ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quem é Paeru?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Paeru]... meu filho ...</p>
+<p> </p>
+<p>Por favor ... sede ... dói ... preciso de vinho ...</p>
+<p> </p>
+<p>Você vai ... ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ele bebe com dificuldade, derramando metade dele.)</p>
+<p> </p>
+<p>Isso ... isso é melhor. Por favor ... pegue esta carta ... para [%dic:STR_DIC_N_Paeru]...</p>
+<p> </p>
+<p>(Ele se afasta da inconsciência. Não há mais nada que você possa fazer por ele.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe ... eu vou encontrar seu filho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pa ... paeru ... seu pai ... tanto ... dor ...</p>
+<p> </p>
+<p>(Ele para de falar e se afasta para a inconsciência. Não há mais nada que você possa fazer por ele.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ele provavelmente terminou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oi, Daeva. Você ... você viu meu pai?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pai...! Temos que ajudá -lo ... o que podemos fazer?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a carta de Strahein para [%dic:STR_DIC_N_Paeru].</p></step>
+</steps>
+<p>Um cativo no laboratório lefarista pediu que você levasse uma carta para o filho. Vá fazer isso!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um homem mantido em cativeiro no Laboratório Lefarista. Ele fez você levar uma carta para o filho dele, Paeru, mas não parecia que ele estava saindo de lá vivo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

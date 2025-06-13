@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava procurando por você, [%username].</p>
+<p> </p>
+<p>Recebemos uma nova ordem de morte. Naturalmente, pensei em você imediatamente, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mostre -me."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_M_LF4_DayQ_DGaurdRa_53_An]</p>
+<p> </p>
+<p>2. Charge: Informador para os asmodianos</p>
+<p> </p>
+<p>3. Detalhes do crime: disfarçados de Elyos, o mestre de Bowmasar Kemar roubou segredos militares e fugiu para Gelkmaros. Kemar deve ser eliminado antes que os documentos confidenciais sejam entregues aos asmodianos. Último paradeiro conhecido: Vorgaltem Battlefield, Gelkmaros.</p>
+<p> </p>
+<p>Qualquer pessoa que elimine o Bowmaster Kemar e recupere os documentos confidenciais receberá uma recompensa generosa.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Boas notícias!</p>
+<p> </p>
+<p>Outros juram matar Kemar, mas logo desaparecem depois de entrar em Gelkmaros ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ele ainda não me conheceu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem. Vamos lidar ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, bem, bem, é[%username]. De volta de Gelkmaros tão cedo?</p>
+<p> </p>
+<p>O que eu vejo na sua mão lá? Esses são os documentos confidenciais? Isso significa que o Bowmaster Kemar está dormindo nas sombras?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão seus papéis preciosos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que em toda a Elysea você está aqui diante de mim de mãos vazias, [%username]?</p>
+<p> </p>
+<p>Esses documentos devem ser recuperados antes que os asmodianos os levam a garras. Em todos os meus anos como fortuneer, nunca fui tão ousado sobre uma recompensa.</p>
+<p> </p>
+<p>Vá lá e faça o que você faz de melhor, fortuneer! E eu não quero dizer engolir uma cerveja!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, estou saindo agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, esses são os documentos preciosos pelos quais você arriscou sua vida e que eu arrisquei minha reputação? É uma cifra ... a coisa sangrenta está codificada! Não tenho ideia do que diz.</p>
+<p> </p>
+<p>Mesmo que aqueles miseráveis ​​asmodianos tivessem posse desses documentos, duvido que eles possam fazer qualquer coisa com isso. É sem sentido.</p>
+<p> </p>
+<p>De qualquer forma, você se saiu bem, [%username]. Aqui está a recompensa que você foi prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para Gelkmaros, elimine [%dic:STR_DIC_M_LF4_DayQ_DGaurdRa_53_An] e trazer os documentos confidenciais para [%dic:STR_DIC_E_36500].</p>[%collectitem]</step>
+</steps>
+<p>Você recebeu uma proclamação da Guilda Fortuneers.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma proclamação foi entregue a você à Guilda dos Fortunes.</p>
+<p> </p>
+<p>Você eliminou o Bowmaster Kemar, que foi acusado de roubar segredos militares de Elyos. O capitão dos fortuários emitiu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

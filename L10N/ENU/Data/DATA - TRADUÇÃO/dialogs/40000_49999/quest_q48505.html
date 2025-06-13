@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva está procurando tokens, Nyerk? Russonerk propõe uma troca.</p>
+<p> </p>
+<p>Normalmente, Shugo só quer trocar algo por Kinah, mas Russoner tem exceção desta vez.</p>
+<p> </p>
+<p>Se você tem o que Shugo quer, Shugo pode lhe dar algo que você quer, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Russoner está procurando tokens de daemon. Se Daeva tiver algum, Shugo dará a Daeva alguns fichas cruzadas, Nyerk Nyerk.</p>
+<p> </p>
+<p>Comércio justo, completamente acima do conselho, sem captura. Você está interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva fez uma escolha sábia, Nyerk.</p>
+<p> </p>
+<p>A taxa de mercado para 6 fichas cruzadas é de 8 tokens de Daemon. Daeva deve dar Shugo 8[%dic:STR_DIC_I_COIN_D_HUNTERS_01] S.</p>
+<p> </p>
+<p>Então Russoner devolverá 6 fichas cruzadas, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Vamos dar uma chance a isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pena que Daeva não aprecia a oportunidade de uma vida, Akakakakak!</p>
+<p> </p>
+<p>Mas a Russoner supõe que Daeva tem tempo de sobra para apreciar, devido à longa vida útil.</p>
+<p> </p>
+<p>Pena que o pobre Shugo não tem tanto tempo para esperar .... Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Awwwww ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe tokens de daemon para russonerk?</p>
+<p> </p>
+<p>Deixe-me ver. Às vezes, os daevasas confundem outros tipos com os tokens daemon. Todos parecem tão semelhantes.</p>
+<p> </p>
+<p>O russoner pode dizer imediatamente. Bom olho para coisas brilhantes, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Estes devem ser satisfatórios."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, Russoner não estava claro sobre os parâmetros comerciais, Nyerk.</p>
+<p> </p>
+<p>Daeva deve trazer 8[%dic:STR_DIC_I_COIN_D_HUNTERS_01] S, e então russoner, dará tokens da Daeva Crusader.</p>
+<p> </p>
+<p>Nada mais fará. Deve ser 8 tokens Daemon, Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu mal mal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, esses são os tokens de daemon. Akakakakak!</p>
+<p> </p>
+<p>Russoner agora cumprirá sua parte da barganha, como prometido. Aqui estão os seus fichas cruzadas.</p>
+<p> </p>
+<p>O russoner pode sempre usar mais tokens de daemon, então volte quando você tiver mais, Nyerk.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_HUNTERS_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_07].</p>[%collectitem]</step>
+</steps>
+<p>Russonercia coleciona Tokens Daemon. Traga -lhe os tokens de daemon em troca de 6 tokens de cruzados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O colecionador de moedas Russoner, disse que ele queria trocar tokens cruzados por tokens de daemon.</p>
+<p> </p>
+<p>Você deu a seus fichas russoneradores e recebeu alguns fichas cruzadas em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

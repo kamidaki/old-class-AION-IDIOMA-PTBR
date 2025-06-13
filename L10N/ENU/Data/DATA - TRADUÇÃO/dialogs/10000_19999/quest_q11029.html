@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. Suprimentos, suprimentos, suprimentos-isso é apenas parte do problema aqui. Comida decente, esse é o verdadeiro problema.</p>
+<p> </p>
+<p>Sinto -me tão ruim no poço do meu estômago ... e não é sobre guerra, é essa comida miserável.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que você não reclama?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Reclamar? Reclamar com quem? Doria está encarregada da comida por aqui, e ela sempre me faz provar primeiro.</p>
+<p> </p>
+<p>Ela experimenta com diferentes ingredientes ... não tenho idéia do que estou comendo na maioria das vezes. Algumas das coisas que ela usa são venenosas para os animais, mas ela diz que eles têm um gosto bom, então os usa.</p>
+<p> </p>
+<p>No outro dia, experimentei sua sopa de cogumelos e minha língua ficou dormente por três horas! Eu tive que me deitar o resto da tarde!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então evite a sopa de cogumelos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está apenas ficando doente que está me incomodando-é que eu não posso executar minhas tarefas diárias.</p>
+<p> </p>
+<p>Olhe para aqueles Wraithlings ali. Eles parecem árvores normais, mas depois atacam Daevas quando chegam muito perto. Eu deveria me livrar deles na semana passada, mas fiquei acamado o tempo todo.</p>
+<p> </p>
+<p>Agora eles estão se multiplicando![%username], você poderia descartar o [%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An] para mim? Eu te devo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, muito obrigado, de fato.</p>
+<p> </p>
+<p>Se eu fosse saudável, eu cuidaria disso sozinho.</p>
+<p> </p>
+<p>Eu realmente não gosto de pedir ajuda a outras pessoas.</p>
+<p> </p>
+<p>Mas como você pode ver, não tenho escolha.</p>
+<p> </p>
+<p>Então, por favor, mate 10[plur][%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer lenha para fora deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas esse é o caminho que os guardiões usam quando vão instalar obeliscos.</p>
+<p> </p>
+<p>A segurança de muitos Daevas está em risco. Você realmente vai me fazer fazer isso sozinho, [%username]? Eu mal posso andar em linha reta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Por que não andar em torno deles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sweet Ariel, eu recebo os shakes só de pensar nesses Wraithlings. Eu mal consigo levantar minha arma agora.</p>
+<p> </p>
+<p>Como foi lá fora, [%username]? O caminho está livre de Wraithlings? Posso ficar mais fácil agora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Agora eles são apenas lascas de madeira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você tinha outras tarefas para concluir. Eu queria agradecer sua ajuda lá fora.</p>
+<p> </p>
+<p>Eu posso lidar com o resto ... Foi apenas a maior parte deles que me assustou ... especialmente no estado em que estou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LF4_A4_Vampire_Tree_51_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Delus].</p></step>
+</steps>
+<p>Mate o Bloodsap Waithling por Delus, porque ele está doente demais para fazer a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Delus ficou doente ao experimentar um pouco da comida venenosa de Doria, e seu trabalho começou a se acumular.</p>
+<p> </p>
+<p>Você se livrou de alguns Wraithlings para ele, e ele agradeceu. Ele disse que lidaria com quaisquer Wraithlings adicionais que aparecessem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

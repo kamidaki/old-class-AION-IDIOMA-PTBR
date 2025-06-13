@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta vila é bastante desolada, não é? Ainda assim, é muito melhor do que quando cheguei aqui. Todos nós dormimos no chão então.</p>
+<p> </p>
+<p>Agora, temos um obelisco e comerciantes reais. Finalmente parece uma vila real.</p>
+<p> </p>
+<p>O maior problema restante é encontrar uma fonte confiável de comida perto da vila.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, a comida é importante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Costumávamos coletar as litreias e as tanges ao redor da costa de Latheron, mas hoje em dia as vespinas, buzinas e morthorns estão comendo todos eles.</p>
+<p> </p>
+<p>Às vezes vou para a costa com meu irmão e os caço, mas eles se reproduzem tão rápido, não há fim.</p>
+<p> </p>
+<p>Então, estamos pedindo à Daevas que os mate por nós. Você é o único que pode matar o suficiente deles com rapidez suficiente para fazer a diferença.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você sair da vila, pegue a estrada do lado direito. Então você verá a costa de Latheron.</p>
+<p> </p>
+<p>Mate as Vespinas, Hornskulls e Mudthorns e traga de volta conchas salgadas como evidência de suas mortes para uma recompensa.</p>
+<p> </p>
+<p>Que tipo de recompensa? Por que, uma moeda de platina!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece justo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, eu entendo que você pode ter negócios urgentes.</p>
+<p> </p>
+<p>Temos a aprovação do Santuário para dar moedas de platina como recompensa por essa missão; portanto, se você mudar de idéia, me avise.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei. Isso foi rápido!</p>
+<p> </p>
+<p>Então, você matou os vermes que estão comendo nossa comida? Se você trouxe de volta conchas salgadas suficientes, eu lhe darei uma moeda de platina.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você teve problemas para encontrar o caminho para a costa de Latheron?</p>
+<p> </p>
+<p>Você só precisa virar à direita assim que sair da entrada da vila.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já fez o suficiente. Excelente!</p>
+<p> </p>
+<p>Aqui está a moeda que eu prometi a você.</p>
+<p> </p>
+<p>Se você puder continuar com isso, podemos usar sua ajuda. Vou te dar mais moedas se você quiser ficar por aqui e fazer mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se de Vespines, Hornskulls e Mudthorns e leve suas conchas para Eunomia.</p>[%collectitem]</step>
+</steps>
+<p>Vespines, buzinas e mudthorns consomem toda a comida local ao redor da costa de Latheron. Isso está causando uma escassez de alimentos, então Eunomia está oferecendo uma recompensa para aqueles que matam os vermes. Colete suas conchas e leve -as à Eunomia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eunomia estava preocupada com a vida selvagem local comer toda a comida disponível.</p>
+<p> </p>
+<p>Ela disse que as Vespinas, Hornskulls e Mudthorns se tornaram os maiores problemas e ofereceram uma recompensa por matá -los.</p>
+<p> </p>
+<p>Você fez o que ela solicitou e coletou suas conchas como evidência. Ela lhe deu uma moeda como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

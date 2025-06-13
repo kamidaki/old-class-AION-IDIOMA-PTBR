@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já ouviu falar que um fantasma aquário deveria ter aparecido no lago de tristeza que está atrás do[%dic:STR_DIC_W_DF5_SZ_OP_02]?</p>
+<p> </p>
+<p>Uma tropa de expedição corajosa soube que o fantasma já foi um aquano chamado[%dic:STR_DIC_M_DF5_D_QuestMerman_Ghost_58_An].</p>
+<p> </p>
+<p>Eu me pergunto por que esse fantasma aquano está aqui?</p>
+<p> </p>
+<p>Nós realmente devemos nos concentrar em combater o Balaur, mas ... minha intuição me diz que isso pode nos beneficiar pesquisar essa aparição.</p>
+<p> </p>
+<p>[%username], você não tem medo de fantasmas, não é? Você investigaria esse assunto para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username].</p>
+<p> </p>
+<p>Você voltou ileso.</p>
+<p> </p>
+<p>Você foi ao lago da tristeza?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a lembrança.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é claramente um item da Asmodae.</p>
+<p> </p>
+<p>Mas por que o fantasma tinha?</p>
+<p> </p>
+<p>Eu vi algo assim uma vez em Pandaemonium, mas é tudo o que consigo pensar.</p>
+<p> </p>
+<p>Veja isso? Diz algo aqui ... "muel"?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2">Você pergunta se ele sabe o nome "muel".</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não cuidou de [%dic:STR_DIC_M_DF5_D_QuestMerman_Ghost_58_An]o fantasma já?</p>
+<p> </p>
+<p>Você tem medo de fantasmas, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca ouvi o nome "Muel".</p>
+<p> </p>
+<p>É melhor você perguntar à tropa da expedição.</p>
+<p> </p>
+<p>Talvez [%dic:STR_DIC_N_DF5_Redelf_E]pode ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você veio aqui? Não tenho missões para você agora.</p>
+<p> </p>
+<p>Ou você traz uma mensagem para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você pergunta se ele sabe o nome "muel".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_DF5_Muwel_E]! Claro que sei o nome.</p>
+<p> </p>
+<p>HM, agora que penso nisso, Muel parece ter mudado ultimamente.</p>
+<p> </p>
+<p>Eu nunca vi Muel tão desanimado e mal -humorado.</p>
+<p> </p>
+<p>Por favor, vá ao lago da tristeza e descubra o que aconteceu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Barnur ... sinto muito ...</p>
+<p> </p>
+<p>(Muel começa a chorar.)</p>
+<p> </p>
+<p>Ah ... sinto muito. Fui dominado pela dor.</p>
+<p> </p>
+<p>Me perdoe.</p>
+<p> </p>
+<p>Se você não está aqui sobre nada em particular, poderia sair?</p>
+<p> </p>
+<p>Quero ficar sozinho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você mostra a Muel the Memento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é meu ... você recebeu de Barnur?</p>
+<p> </p>
+<p>Ele e eu ... estávamos perto. Os outros não acreditariam nisso.</p>
+<p> </p>
+<p>Ele ... ele foi assassinado por seu povo porque tentou me proteger.</p>
+<p> </p>
+<p>Dói -me ver que Barnur não pode encontrar paz ... mas não sei o que fazer.</p>
+<p> </p>
+<p>EU...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_quest_25031b] e trazê -lo para [%dic:STR_DIC_N_DF5_Sigmuel_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Sigmuel_E].</p></step>
+<step><p visible="[%6]">Perguntar [%dic:STR_DIC_N_DF5_Redelf_E] Sobre Muel.</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_DF5_Muwel_E].</p></step>
+</steps>
+<p>Cumprir a missão de Zigumuel e descobrir se realmente existe um fantasma aquário na floresta de Twilight.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Zigmuel falou sobre um fantasma aquário que apareceu no lago de tristeza. Zigmuel pediu que você investigasse o assunto.</p>
+<p> </p>
+<p>Você ajudou Barnur, o fantasma, a encontrar a paz eterna. Barnur deu a você um item com a palavra "muel" escrita nele.</p>
+<p> </p>
+<p>Você foi a Muel e perguntou por que o fantasma tinha esse item em sua posse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

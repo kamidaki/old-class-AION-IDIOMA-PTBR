@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p></p>
+<p>A Cruzada Blood confirmou que um contingente do Exército de Elyos está ameaçando asmodianos em Reshanta. A força é pequena, mas aparece em todo o Reshanta em intervalos aleatórios e causa estragos. A Cruzada Blood deseja interromper sua ameaça e, por meio deste, emite uma ordem de morte para ser promulgada imediatamente.</p>
+<p></p>
+<p>1. Localize as forças de Elyos, conforme indicado nos níveis superior e central de [%dic:STR_DIC_W_AB1] e matar três ou mais de seus soldados.</p>
+<p></p>
+<p>2. Derrote os Elyos por qualquer meio possível-táticas robutas são autorizadas para esta missão. No entanto, eles devem ter força relativa. Não há honra em esmagar os fracos.</p>
+<p></p>
+<p>3. Quando as mortes forem confirmadas e o inimigo perdeu a vontade de lutar, reportar -se a [%dic:STR_DIC_E_45502].</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você voltou! Excelente!</p>
+<p> </p>
+<p>Ouvi o contingente de Elyos recentemente encontrou alguns ... problemas. Você não saberia nada sobre isso, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Curiosamente, acabei de voltar de Reshanta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Haha! Eu sabia. A carnificina nos relatórios tinha seu nome escrito por toda parte, [%username].</p>
+<p> </p>
+<p>Eu poderia usar mais como você, você sabe. Os cruzados vêm e vêm todos os dias, mas poucos têm sua dedicação.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Sangue para sangue!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_E_Daily_2]nos níveis superior e central de [%dic:STR_DIC_W_AB1]([%2]/3).</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_E_45502].</p></step>
+</steps>
+<p>Livre -se do Elyos causando estragos em Reshanta e relate -se a um agente de Ramo de Reshanta quando a tarefa estiver concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada de Sangue emitiu uma ordem de morte no contingente de Elyos em Reshanta.</p>
+<p> </p>
+<p>Depois de concluir a missão, você visitou um agente da Ramo de Reshanta e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

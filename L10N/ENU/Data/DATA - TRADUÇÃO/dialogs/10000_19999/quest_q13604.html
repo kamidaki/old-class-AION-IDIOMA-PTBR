@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria de pedir um favor.</p>
+<p> </p>
+<p>Por favor, entregue esta carta a [%dic:STR_DIC_N_LDF5_Under_Hadius_E]para mim.</p>
+<p> </p>
+<p>Tudo o que você precisa fazer é entregar a carta; Não há outra tarefa.</p>
+<p> </p>
+<p>Eu confio em você para não dar uma olhada na carta.</p>
+<p> </p>
+<p>O conteúdo é estritamente confidencial!</p>
+<p> </p>
+<p>Não abra a carta sob nenhuma circunstância. Entendido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deveria cuidar de uma tarefa desta vez?</p>
+<p> </p>
+<p>Eu posso ver a letra em sua mão.</p>
+<p> </p>
+<p>Então o assunto está claro.</p>
+<p> </p>
+<p>Kurius te enviou, não foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de Kurius.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta de pedidos de Kurius, eu sabia!</p>
+<p> </p>
+<p>(Abre a letra e lê.) Hmm, hmm ... aha, então é isso.</p>
+<p> </p>
+<p>[%username], você não deu uma olhada na carta, não é?</p>
+<p> </p>
+<p>Se sim, é melhor me dizer agora!</p>
+<p> </p>
+<p>Caso contrário, está tudo bem. Muito obrigado por cumprir esta missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_doc_quest_13604a]para [%dic:STR_DIC_N_LDF5_Under_Hadius_E].</p></step>
+</steps>
+<p>Encontre Hadius e leve a carta de Kurius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kurius pediu que você trazia uma carta que ele havia escrito para Hadio. Kurius enfatizou que, em nenhuma circunstância, você pode ler a carta.</p>
+<p> </p>
+<p>Você encontrou Hadius e deu a ele a carta de Kurius. Ao mesmo tempo, foi perguntado se havia lido a carta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

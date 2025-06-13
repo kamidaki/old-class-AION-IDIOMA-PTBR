@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma tarefa para [%username]. É sobre a conquista de Akaron.</p>
+<p> </p>
+<p>Os distúrbios devem ser limpos desta região para proteger o campo da barreira da fissura.</p>
+<p> </p>
+<p>Portanto, elimine [plur][%dic:STR_DIC_M_LDF4_Advance_Baku_65_n], Assim, [plur][%dic:STR_DIC_M_LDF4_Advance_Zaif_65_An] e [plur][%dic:STR_DIC_M_LDF4_Advance_Saam_65_n] Assim como[plur][%dic:STR_DIC_M_LDF4_Advance_Rafflesia_65_An]. E colete provas enquanto você está nisso.</p>
+<p> </p>
+<p>Quanto mais missões você realiza para conquistar Akaron, mais rápido alcançaremos nosso objetivo.</p>
+<p> </p>
+<p>Por favor, faça um esforço!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A presença do Balaur e dos Asmodianos está nos dando mais problemas aqui em Akaron. No entanto, seria imprudente enviar nossas tropas, pois ainda não estamos familiarizados com o terreno.</p>
+<p> </p>
+<p>Então, antes de tudo, devemos nos familiarizar com o terreno.</p>
+<p> </p>
+<p>Você garantiu o campo da barreira da fissura?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as evidências que confirmam o campo da barreira da fissura.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A evidência do campo da barreira da fissura foi confirmada.</p>
+<p> </p>
+<p>Tenho a sensação de que já chegamos um passo mais perto de conquistar Akaron.</p>
+<p> </p>
+<p>Agora que o campo da barreira da fissura foi garantido, podemos nos concentrar em confrontar o Balaur e os Asmodianos.</p>
+<p> </p>
+<p>Muito bem feito. Obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_LDF4_Advance_Q13741_all] e trazer tudo para [%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o campo da barreira da fissura e mate a bacia de Longhorn Bakus, os malodors de juba, a bacia de Mane Worgs e o milênio ginsengs. E coletar provas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Elger o convenceu da urgência de garantir o campo da barreira da fissura em Akaron.</p>
+<p> </p>
+<p>Você eliminou a bacia de Longhorn Bakus, os malodoros de juba, a bacia de Mane Worgs e o milênio Saams, depois apresentou a Elger com evidências do campo da barreira da fissura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

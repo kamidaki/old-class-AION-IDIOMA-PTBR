@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41171</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegou a hora de testar seu artesanato.</p>
+<p> </p>
+<p>Um membro das Fenris Fangs deve ser hábil em um ofício, pelo menos.</p>
+<p> </p>
+<p>Eu não acho que você seja um daeva que detém o artesanato em baixa consideração, ou você é?</p>
+<p> </p>
+<p>Se você passar no teste, será recompensado com um par de calças Fenris Fangs. Então faça um esforço.</p>
+<p> </p>
+<p>Se você deseja fazer o teste de artesanato de móveis, fale com[%dic:STR_DIC_N_Darfen]Para obter mais informações sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Ajudarei você a passar no teste de habilidades de habilidade com facilidade ainda maior.</p>
+<p> </p>
+<p>Normalmente, você criaria um coração sagrado de magia. Usener inspecionaria esse coração e lhe daria insígnia.</p>
+<p> </p>
+<p>Mas eu lhe darei o padrão para as insígnias de Fenris Fangs para que você possa fazer essas insígnias você mesmo.</p>
+<p> </p>
+<p>Isso não permitirá que você evite a cerimônia da purificação, mas Kvasir o manterá em alta estima quando descobrir que você mesmo fez as insígnias.</p>
+<p> </p>
+<p>Quando você terminar as insígnias, pegue [%dic:STR_DIC_I_relic_d_02]para [%dic:STR_DIC_N_Balder]. Ele então realizará o ritual de purificação para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma cerimônia de purificação ... da última vez que foi sobre uma marca de contribuição e, desta vez, parece que será sobre o coração sagrado da magia.</p>
+<p> </p>
+<p>Você foi indiscutivelmente bem -sucedido novamente, não foi?</p>
+<p> </p>
+<p>Quero dizer, estou feliz por Asmodae e Fenris Fangs, mas sinto muito por você mesmo, [%username].</p>
+<p> </p>
+<p>Não consigo entender por que você está se esforçando para tentar se juntar às Fenris Fangs. Existem muitas outras oportunidades de fazer algo para asmodae.</p>
+<p> </p>
+<p>Ugh, eu não deveria ter dito isso. Mas não segure contra mim, eu só disse isso porque estou preocupado com você, [%username].</p>
+<p> </p>
+<p>Agora, então, vamos começar com o ritual de purificação. Me dê o seu[%dic:STR_DIC_I_relic_d_02].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você pede que ele realize a cerimônia da purificação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, a cerimônia da purificação acabou agora.</p>
+<p> </p>
+<p>No entanto, as insígnias de Fenris Fangs que você trouxe com você parece um pouco diferente das insígnias que eu já vi até agora.</p>
+<p> </p>
+<p>HM ... A textura e a obra foram melhorados ligeiramente?</p>
+<p> </p>
+<p>Isso é realmente estranho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Darfen] em[%dic:STR_DIC_W_DC1_5].</p></step>
+<step><p visible="[%3]">Pegue as insígnias fenris fang e [%dic:STR_DIC_I_relic_d_02]para [%dic:STR_DIC_N_Balder].</p>[%collectitem]</step>
+</steps>
+<p>Faça o teste de habilidades de habilidade de artesanato exigido por Kvasir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kvasir lhe disse que agora você deveria fazer o teste de habilidades de habilidade.</p>
+<p> </p>
+<p>O mestre de artesanato de móveis disse que quer ajudá -lo a obter uma pontuação melhor e deu um padrão para as insígnias de Fenris.</p>
+<p> </p>
+<p>Você criou as insígnias de Fenris Fangs para esse padrão. Quando você apresentou essa insígnia a Balder, ele realizou a cerimônia de purificação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

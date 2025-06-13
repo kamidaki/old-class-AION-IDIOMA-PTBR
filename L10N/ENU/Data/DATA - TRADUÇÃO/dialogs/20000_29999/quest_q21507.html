@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q21507</questid>
+<questname>칼리돈 마을의 거신병 석상 1</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%userrace], bem -vindo à minha humilde morada. Ênfase em humilde. Como o Calydon pode viver nessas coisas?</p>
+<p> </p>
+<p>Há evidências de que a Humnaz tem uma chave secreta para a fabricação petralizada. Quanto mais rápido eu descubro o que os Humnaz sabem sobre petraliths, quanto mais cedo eu saio daqui e volto a um acampamento real.</p>
+<p> </p>
+<p>Se você estiver disposto a ajudar, vá verificar se o Humnaz ao redor do[%dic:STR_DIC_W_LDF4a_SZ_A4_03] estão carregando qualquer coisa suspeita. Se eles têm alguma coisa, provavelmente é roubado do Jotun. Os Humnaz são ferozes, mas não são exatamente cientistas petralithes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que os Humnaz têm tecnologia petralith.</p>
+<p> </p>
+<p>Eles não são inteligentes o suficiente para descobrir o que faz.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu não encontrei nada nos bolsos deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão.</p>
+<p> </p>
+<p>Bem, obrigado pela sua ajuda de qualquer maneira. Talvez eles estejam mantendo -o escondido em algum lugar ... mas onde?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Verificar [%dic:STR_DIC_E_LDF4a_Q21507all]Bolsos para a tecnologia petralith ([%2]/12).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Tanytia].</p></step>
+</steps>
+<p>Mate os Calydons e verifique se eles estão carregando a tecnologia petralith.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Tanitia estava ansiosa para investigar rumores de que a tribo Humnaz Calydon havia contado com a tecnologia petralith.</p>
+<p> </p>
+<p>Ela o enviou para matar Humnaz e verificar seus bolsos para ver se eles carregavam algo suspeito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga, você sabe disso[%dic:STR_DIC_FLA200], Assim, [%username]?</p>
+<p> </p>
+<p>Bem, as pessoas chamam isso por causa de todos os Gergers por lá.</p>
+<p> </p>
+<p>Os Gergers se parecem muito com Spriggs, mas definitivamente não são spriggs-eles são muito mais inteligentes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim ... continue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não diria isso a ninguém, mas ouvi alguns deles falando nossa língua.</p>
+<p> </p>
+<p>Então, outro dia, eu estava coletando ervas e passei bem pela vila de Gerger. Fiquei meio curioso sobre eles, na verdade.</p>
+<p> </p>
+<p>Eu vi um, mas ele olhou para mim e fugiu. Eu não queria assustá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então o que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele deixou cair algo-um tipo de charme com escrita sobre ele. Eu realmente não consigo adivinhar o que um animal precisaria com algo assim.</p>
+<p> </p>
+<p>De qualquer forma, quero devolvê -lo, mas receio que ele funcione novamente.</p>
+<p> </p>
+<p>Se você tem planos de aparecer pelo[%dic:STR_DIC_FLA200], você vai devolver isso ao Gerger?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi um dos outros chamando ele [%dic:STR_DIC_N_NPC_Gerger_1], e ele estava parado na entrada da vila.</p>
+<p> </p>
+<p>Cuidado para não assustá -lo, ok?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que realmente não preciso devolvê -lo ... quero dizer, se eles são realmente apenas animais ....</p>
+<p> </p>
+<p>Não é estranho, embora ...? Animais morando juntos em uma vila?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certamente é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está fazendo aqui, Daeva?</p>
+<p> </p>
+<p>Seu povo nem tenta falar conosco. Eles nos chamam de animais, ou pior. Falando spriggs. Hmph!</p>
+<p> </p>
+<p>Mas apenas fingimos que não entendemos. Não queremos estar envolvidos nos problemas dos seres humanos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu acho que isso é seu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é isso que eu perdi! O humano que me surpreendeu pediu que você traga isso de volta para mim?</p>
+<p> </p>
+<p>Obrigado. Isso pode parecer nada para os outros, mas para mim, é ... é ... precioso.</p>
+<p> </p>
+<p>Obrigado por devolvê -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o [%dic:STR_DIC_I_quest_2242a]para [%dic:STR_DIC_N_NPC_Gerger_1].</p></step>
+</steps>
+<p>Você prometeu tomar um charme perdido, que Vovetirn encontrou, de volta a Gemyu na entrada da vila de Gerger.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vovetirn disse que ele passou perto da vila de Gerger enquanto colecionava ervas.</p>
+<p> </p>
+<p>Ele disse que um gerger perto da entrada da vila ficou tão surpreso quando viu Vovetirn que deixou cair seu charme enquanto fugiu.</p>
+<p> </p>
+<p>Como Vovetirn perguntou, você foi ao Gerger Village e devolveu o charme ao Gerger.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

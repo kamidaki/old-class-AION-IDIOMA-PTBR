@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizem que um artefato abandonado está em algum lugar em[%dic:STR_DIC_W_LF2B_SZ_B2]. Enviei Guardiões várias vezes para investigar, mas está cercado por Kerubiels.</p>
+<p> </p>
+<p>Não sei por que os Kerubiels ficariam em torno do artefato, mas aí está você.</p>
+<p> </p>
+<p>Encontrar um artefato em Theobomos é de grande importância ... Santum está bastante interessado ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que um artefato estaria aqui?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se não for para Kerubiels, teríamos uma resposta para isso. Mas todos os guardiões que enviei foram frustrados.</p>
+<p> </p>
+<p>[%username], você vai me ajudar?</p>
+<p> </p>
+<p>Destruir o [%dic:STR_DIC_M_LF2A_Cherubim3_46_An] Areia [%dic:STR_DIC_M_LF2A_Cherubim4_46_An] está ao redor do artefato.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O artefato está no[%dic:STR_DIC_W_LF2B_SZ_B2].</p>
+<p> </p>
+<p>Um guardião que foi lá disse que podia sentir energia incomum emanando com isso.</p>
+<p> </p>
+<p>Se você remover esses Kerubiels, podemos começar a investigar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos guardiões, é claro, mas Theobomos é tão vasto que não há o suficiente para patrulhar tudo.</p>
+<p> </p>
+<p>Estou pedindo sua ajuda, [%username].</p>
+<p> </p>
+<p>Por favor, reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei quando tiver mais tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua missão? Você conseguiu localizar o artefato?</p>
+<p> </p>
+<p>Foi difícil abordar o artefato com todos os Kerubiels pendurados?</p> </body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O lugar é desagradável com eles ... ou foi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Agora eles foram desencorajados, podemos investigar o artefato imediatamente.</p>
+<p> </p>
+<p>Protegi o campo etérico em outras regiões, mas é a primeira vez que um artefato é descoberto nas proximidades. Estou muito animado.</p>
+<p> </p>
+<p>Obrigado por me ajudar com esta importante missão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Kerbiel protegendo o artefato.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LF2A_Cherubim3_46_An]([%2]/7).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LF2A_Cherubim4_46_An]([%5]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Atropos].</p></step>
+</steps>
+<p>Um artefato foi descoberto na costa do sul de Latheron. Mate o Kerbiel para que o Atropos possa examinar o artefato.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Atropos estava empolgada com um artefato encontrado em Theobomos.</p>
+<p> </p>
+<p>Ela tinha esperança de que o artefato pudesse ajudar na reconstrução de Theobomos.</p>
+<p> </p>
+<p>Como ela solicitou, você matou Kerubiels e Arch Kerubiels, os maiores obstáculos para a investigação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

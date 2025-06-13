@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que é o negócio da família, mas eu realmente não quero administrar uma taberna pelo resto da minha vida. Eu gostaria de me casar e ter uma família.</p>
+<p> </p>
+<p>Sou um bom cozinheiro e estou à procura de um homem que eu possa respeitar.</p>
+<p> </p>
+<p>Alguns me cortejaram, mas nenhum estava certo. Então ... ele ... veio para a fortaleza ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Ele?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Desculpe, eu quis dizer [%dic:STR_DIC_N_Heidunn]. Ele é tão diligente, tão gentil com os humanos ... eu não posso deixar de respeitá -lo.</p>
+<p> </p>
+<p>Eu adoraria conhecê -lo melhor, mas realmente não sei como começar. Não com palavras, de qualquer maneira ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você quer dizer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, Heidunn é parcial para a comida. Airon parece ser seu favorito-ele ordena que toda vez que ele entra.</p>
+<p> </p>
+<p>Eu planejava servir a ele meu Airon Picante Especial na próxima vez-é garantido ganhar seu coração.</p>
+<p> </p>
+<p>Mas a luz explodi, eu fiquei sem[%dic:STR_DIC_I_quest_2205a]. Você poderia me ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]!</p>
+<p> </p>
+<p>Você pode encontrar os aeronsos em[%dic:STR_DIC_W_DF1A_2]. Vou precisar de 5 pedaços de [%dic:STR_DIC_I_quest_2205a]Para fazer esta refeição.</p>
+<p> </p>
+<p>Vou preparar os temperos enquanto você se foi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Você está me julgando porque sou um humano que quer se casar com um Daeva?</p>
+<p> </p>
+<p>Heidunn não encontrará uma esposa melhor. Estou perfeitamente preparado.</p>
+<p> </p>
+<p>Se você não ajudar, encontrarei outra maneira.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh bom, você está de volta!</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_quest_2205a], Espero?</p>
+<p> </p>
+<p>Todo o resto está pronto-só preciso da carne.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que em nome de Old Class Aion? Todos esses ingredientes são inúteis sem carne. Heidunn não é vegetariano, você sabe!</p>
+<p> </p>
+<p>Eu só preciso de 5 pedaços de carne aeron, [%username]. Você disse que conseguiria para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, essa carne é bastante fresca! Você deve ter vindo direto da caça.</p>
+<p> </p>
+<p>É perfeito! Este prato simplesmente não pode falhar, graças a você!</p>
+<p> </p>
+<p>Por favor, leve isso para o seu problema. Oh, Heidunn está em uma surpresa ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_2205a] e leve para [%dic:STR_DIC_N_Venoa].</p>[%collectitem]</step>
+</steps>
+<p>Você prometeu trazer carne de aeron para venoa para que ela pudesse preparar um prato para conquistar o coração de Heidunn.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Veloa acredita que Heidunn seria o marido perfeito. Ela planejava conquistar o coração dele cozinhando carne aeron, sua comida favorita. A pedido dela, você caçou aeron de gelo e levou a carne para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

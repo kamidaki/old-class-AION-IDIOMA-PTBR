@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Inacreditável! Você é[%username], não é?</p>
+<p> </p>
+<p>As histórias da Citadel da Verteron não fazem justiça.</p>
+<p> </p>
+<p>Diga -me, é verdade que você arrebatou o olho de um balaur da cabeça?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não tinha ouvido isso, na verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tinha certeza que eles disseram que era um[%userclass]nomeado[%username]. Essas histórias nos mantêm saindo aqui, você sabe.</p>
+<p> </p>
+<p>A maior parte do nosso tempo é gasta lidando com[%dic:STR_DIC_M_Troll_35_An] Areia [%dic:STR_DIC_M_Trollkin_35_An]. É mais difícil o tempo todo.</p>
+<p> </p>
+<p>Às vezes, leva meio dia para caçar apenas um, e Hylas disse que devo explicar mais 20 antes que meu turno termine. Posso incomodá -lo por ajuda?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso. Eu ia desistir disso; Você me deu esperança renovada.</p>
+<p> </p>
+<p>Se você caçar sete [%dic:STR_DIC_M_Troll_35_An] S e três[%dic:STR_DIC_M_Trollkin_35_An], Eu vou lidar com o resto.</p>
+<p> </p>
+<p>Devemos ir agora. Quero mostrar -lhe que estou à altura da tarefa e digno de seu respeito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa caça!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está certo. Este é meu dever de cumprir. Eu nem deveria ter perguntado.</p>
+<p> </p>
+<p>Estou fazendo o meu melhor aqui fora, mas é difícil mantê -lo junto às vezes.</p>
+<p> </p>
+<p>O que posso fazer sozinho terá que ser bom o suficiente. Mesmo que Hylas me repreenda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou feliz que você entenda."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já está de volta?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho boas notícias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É realmente incrível. Ouvi dizer que você era hábil, mas não esperava isso.</p>
+<p> </p>
+<p>Hylas tem que ser feliz com o que fizemos.</p>
+<p> </p>
+<p>Só não conte a mais ninguém. Eu ficaria tão envergonhado se alguém soubesse ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos trolls e Trollkin que estão causando problemas.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Troll_35_An]([%2]/7)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Trollkin_35_An]([%5]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Paion].</p></step>
+</steps>
+<p>Elimine os bandidos trolls e o Knuckledragger Trollkin para que Paion possa cumprir seu dever.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hylas havia ordenado que Paion eliminasse trolls e Trollkin, mas ela estava tendo problemas para fazê -lo com rapidez suficiente.</p>
+<p> </p>
+<p>Então você eliminou Troll Outlaws e Knuckledragger Trollkin para ajudá -la a concluir sua tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

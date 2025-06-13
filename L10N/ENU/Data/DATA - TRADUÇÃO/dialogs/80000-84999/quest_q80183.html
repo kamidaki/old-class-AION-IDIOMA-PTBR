@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenho coragem de carregar essa memória dolorosa comigo para sempre.</p>
+<p> </p>
+<p>Eu gostaria de pedir uma última coisa.</p>
+<p> </p>
+<p>Você vai me ajudar e iuiel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode encontrar o funio destemido no[%dic:STR_DIC_FLA09]%.</p>
+<p> </p>
+<p>Se você os pegar, poderá obter fragmentos de esquecimento.</p>
+<p> </p>
+<p>[%username], colete esses fragmentos e traga -os para mim!</p>
+<p> </p>
+<p>Se você os levar para mim ... iuiel e eu poderei apagar essas terríveis lembranças.</p>
+<p> </p>
+<p>Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caça o funio destemido e traga -me 10 fragmentos de esquecimento.</p>
+<p> </p>
+<p>Diz -se que eles estão morando pelo[%dic:STR_DIC_FLA09]. Eles não serão difíceis de encontrar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu tenho que continuar vivendo com essas lembranças dolorosas ...</p>
+<p> </p>
+<p>Como o destino cruel pode ser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você reuniu todos os fragmentos do esquecimento?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os fragmentos do esquecimento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é tudo isso?</p>
+<p> </p>
+<p>Precisamos de mais para fazer cristais. Por favor, tente mais!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por toda a sua ajuda, [%username]!</p>
+<p> </p>
+<p>Agora vou criar os cristais e usá -los para apagar as terríveis memórias.</p>
+<p> </p>
+<p>As memórias de Iuiel e as minhas desaparecerão.</p>
+<p> </p>
+<p>O que mais posso fazer? Esta é provavelmente a melhor coisa ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 10 fragmentos de esquecimento e leve -os a Ryoenniya.</p>[%collectitem]</step>
+</steps>
+<p>Ryoenniya pede que você obtenha fragmentos de esquecimento. Reúna 5 fragmentos e transformá -los em cristais. Em seguida, leve -os para Ryoenniya.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ryoenniya usa os cristais do esquecimento para apagar Iuiel e suas próprias memórias.</p>
+<p> </p>
+<p>Após o uso dos cristais, as memórias de Iuiel de Ryoenniya, bem como as memórias de Ryoenniya de Iuiel, foram completamente apagadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

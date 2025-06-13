@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você não tem mais problemas para usar suas habilidades recentemente aprendidas?</p>
+<p> </p>
+<p>Ah, apenas me ocorreu que tenho algo para lhe dizer, [%username].</p>
+<p> </p>
+<p>Você está qualificado para fazer o teste do poder divino. Você quer tentar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O teste de poder divino?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Aion dotou os Daevas com duas habilidades muito especiais: suas asas e poder divino.</p>
+<p> </p>
+<p>O poder divino é especialmente precioso. As habilidades de DP são reservadas para Daevas, mas humanos e monstros como o Mau podem usar habilidades HP e MANA.</p>
+<p> </p>
+<p>Como as habilidades do DP têm mais limitações em comparação com outras habilidades e isso dificulta o uso, muitas pessoas não sabem disso.</p>
+<p> </p>
+<p>O teste do poder divino é uma iniciativa do governador, que deve resolver esse problema.</p>
+<p> </p>
+<p>É chamado de teste, mas na verdade é apenas uma unidade de treinamento. Você usa uma habilidade específica dez vezes.</p>
+<p> </p>
+<p>Isso deve ser uma informação suficiente. Você quer participar do teste do poder divino?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um feiticeiro, você disse? Então você deveria ter aprendido a habilidade tranquilizante da nuvem recentemente.</p>
+<p> </p>
+<p>Essa habilidade estará sujeita ao seu teste de poder divino. Volte para mim depois de usar [%dic:STR_DIC_E_DP_Wi]dez vezes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você tem outros assuntos urgentes para atender. Eu entendo.</p>
+<p> </p>
+<p>Você pode fazer o teste de poder divino mais tarde.</p>
+<p> </p>
+<p>Tomar cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já terminou o teste?</p>
+<p> </p>
+<p>Você realmente usou[%dic:STR_DIC_E_DP_Wi]Dez vezes já?</p>
+<p> </p>
+<p>Posso tocar na sua testa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... o fluxo do seu poder divino é suave e ininterrupto. Parece que você praticou a habilidade divina de poder corretamente.</p>
+<p> </p>
+<p>Bem feito-você passou no teste. Mas aprimore suas habilidades.</p>
+<p> </p>
+<p>Aqui está uma recompensa que damos àqueles que passam no teste. Isso deve ser útil para você como feiticeiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Wi]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Sif].</p></step>
+</steps>
+<p>O teste de poder divino é patrocinado pelo governador. Use a habilidade de nuvem tranquilizante dez vezes para passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sif convidou você a participar do teste de poder divino que está sendo realizado para treinar Daevas que são inexperientes no uso de poder divino.</p>
+<p> </p>
+<p>Quando você voltou ao SIF depois de usar a habilidade de nuvem tranquilizante dez vezes, ela parabenizou você por passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

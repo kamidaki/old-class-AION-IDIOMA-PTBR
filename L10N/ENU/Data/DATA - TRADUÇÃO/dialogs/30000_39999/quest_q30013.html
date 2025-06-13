@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], lembra -se de nossa pequena situação de antes? Sobre o ferreiro de Reian e suas picaretas?</p>
+<p> </p>
+<p>Ajudá -lo realmente lançaria uma luz amigável sobre nossas relações públicas com essas pessoas.</p>
+<p> </p>
+<p>Pensei em uma maneira de ajudar ... mas não é tão simples quanto eu acho que você ou ele esperava.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vamos ouvir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que estou propondo é muito pouco ortodoxo ... poderia nos levar a um monte de problemas, mas ajudará nosso amigo Reian.</p>
+<p> </p>
+<p>Você precisará ir ao templo inferior dos Udas e roubar picaretas do dragão lá. Muito perigoso, mas essa é a única maneira de pensar que muitas picaretas tão rapidamente.</p>
+<p> </p>
+<p>Devo manter minhas mãos limpas neste, então tenho medo de que tudo depende de você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que você já esteve no Templo dos Udas inferiores e sei que o dragão está cavando um túnel grande.</p>
+<p> </p>
+<p>Como eu disse, é uma missão perigosa, mas eu sei que eles terão dezenas de picaretas decentes para tomar.</p>
+<p> </p>
+<p>Você provavelmente terá que remover violentamente o [%dic:STR_DIC_I_QUEST_30013a] S do[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se importe disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, não, não, não ... você não pode simplesmente abandonar esse problema no meu colo, [%username]! Você está nisso tão profundo quanto eu.</p>
+<p> </p>
+<p>Eu sou o Daeva que atestou este Reian! Vou parecer um idiota se ele não puder entregar. E então me ajude, eu vou te derrubar comigo.</p>
+<p> </p>
+<p>Então, quando você vai embora para o Templo Udas então?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como estou tão profundo quanto você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, você está de volta, [%username]. Eu já estava começando a pensar em maneiras de girar esse pequeno problema ... uma guerra de turfos da Reian foi tudo o que eu criei.</p>
+<p> </p>
+<p>Você recebeu as picaretas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Peguei -os ... aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], O que você está fazendo? Eu tenho generais da brigada respirando no meu pescoço sobre "o ferreiro sujo de Reian que eu os apresentei" e você está passeando por aqui como um kerubar sem se importar!</p>
+<p> </p>
+<p>Temos até hoje à noite antes de dizer a eles que você e os Reian são parceiros ... que você é o Daeva que atestou por ele, não para mim!</p>
+<p> </p>
+<p>Desça ao templo inferior dos Udas, mate aqueles malditos[%dic:STR_DIC_M_IDTemple_FanaticAsWorker_53_Ae] S, e trazer de volta seu[%dic:STR_DIC_I_QUEST_30013a] S!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está me chantageando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada mal, nada mal. Essas não são as picaretas mais bonitas que eu já vi, mas elas funcionam por enquanto.</p>
+<p> </p>
+<p>Nosso amigo Gefeios pode precisar de mais alguns, mas eles devem adiar os generais por alguns dias. Vou ter alguns Daevas os assumem.</p>
+<p> </p>
+<p>Eu me sinto melhor agora, não é? E quem disse que não damos a mínima para os Reians, hein?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_30013a] e leve-os para [%dic:STR_DIC_N_Sueros].</p>[%collectitem]</step>
+</steps>
+<p>Existem picaretas que podem ser retiradas do templo inferior dos Udas. Derrote os peões UDAs Elite e colete suas pesadas escolhas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sueros disse que a única maneira de obter as picaretas que o Gefeios precisa é levá -las de trabalhadores no Templo Lower Udas.</p>
+<p> </p>
+<p>Depois de fazer as escolhas dos Peons de Elite Udas, Sueros disse que os enviaria para Gefeios.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], se você vir os soldados da garra de Griffon na prisão enquanto realizam sua missão, ajude -os.</p>
+<p> </p>
+<p>Meus soldados são valiosos guardiões da Elyos.</p>
+<p> </p>
+<p>Desde o pouso de emergência em Brusthonin, os soldados da garra do Griffon e eu estamos envolvidos em uma batalha de vida e morte contra os asmodianos.</p>
+<p> </p>
+<p>Os brutais asmodianos sempre tiraram os soldados da garra do Griffon sempre que viram meus soldados.</p>
+<p> </p>
+<p>Ainda estou muito triste quando penso nos soldados presos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você salvou o soldado da garra de Griffon capturado?</p>
+<p> </p>
+<p>A Nevma pode ter pedido que você o fizesse.</p>
+<p> </p>
+<p>Como ele pode pensar tal coisa aqui no meio de Asmodae ... ele realmente é extraordinário.</p>
+<p> </p>
+<p>Esse caso provavelmente servirá de exemplo para todos os Elyos Daevas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você responde que você a salvou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu acho que você é tão bom quanto nevma</p>
+<p> </p>
+<p>Agradeço o nome da Sala de Operações do Santivo.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Libere os soldados da garra de Griffon na prisão ([%2]/7)</p></step>
+<step><p visible="[%15]">Entregar seu relatório para [%dic:STR_DIC_NPC_Arena_Geniki_E_LHM]</p></step>
+</steps>
+<p>Liberte os soldados da garra de Griffon quebrando as barras e relate o resultado a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nevma pediu que você resgatasse os soldados capturados de garras de agarrar.</p>
+<p> </p>
+<p>Quando você foi a Ginikki depois de resgatar os soldados de garras de agarrar, ele o recompensou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

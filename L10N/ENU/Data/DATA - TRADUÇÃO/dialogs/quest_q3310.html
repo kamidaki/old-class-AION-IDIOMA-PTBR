@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. Parece que tenho um problema.</p>
+<p> </p>
+<p>Eu tenho administrado o novo teste de habilidade de voo de alto nível, e quase nenhum daevasa está passando. Eu pensei que a maioria passaria na primeira ou na segunda tentativa, mas ... acho que fiz o teste demais.</p>
+<p> </p>
+<p>É tarde demais para mudar a trajetória de vôo, mas preciso fazer algo para facilitar o teste. Deve ser um desafio apropriado, mas não impossível.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você propõe?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por acaso, sei que você pode aumentar sua velocidade de voo com uma mistura especial de materiais alquímicos e asas de fangwing seco.</p>
+<p> </p>
+<p>Felizmente, as presas são facilmente encontradas ao redor do templo.</p>
+<p> </p>
+<p>Você vai me trazer alguns? Você sempre pode aproveitar a oportunidade para praticar seu voo também.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dê uma olhada ao redor do[%dic:STR_DIC_W_LF2_SZ_C3] e você encontrará muitos deles .--[%dic:STR_DIC_M_0C_Vivre_28_An] S, [%dic:STR_DIC_M_1C_Vivre_28_Ae] S, [%dic:STR_DIC_M_2C_Vivre_29_Ae] S, [%dic:STR_DIC_M_2C_VivrePath_29_Ae] Areia [%dic:STR_DIC_M_7C_Vivre_31_Ae] S. Vou precisar de muitos tipos diferentes para testar.</p>
+<p> </p>
+<p>Apresse -se de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem uma missão importante em outro lugar, suponho?</p>
+<p> </p>
+<p>Bem, continuarei a fazer o teste como ele é, então. Deixe -me saber se você puder ajudar mais tarde.</p>
+<p> </p>
+<p>Fé e armas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já matou todos aqueles fangwings?</p>
+<p> </p>
+<p>Isso é muito impressionante.</p>
+<p> </p>
+<p>Tem as asas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que pedi para você obter vários tipos diferentes de asas de presa do[%dic:STR_DIC_W_LF2_SZ_C3].</p>
+<p> </p>
+<p>Eu mencionei[%dic:STR_DIC_M_0C_Vivre_28_An] S, [%dic:STR_DIC_M_1C_Vivre_28_Ae] S, [%dic:STR_DIC_M_2C_Vivre_29_Ae] S, [%dic:STR_DIC_M_2C_VivrePath_29_Ae] Areia [%dic:STR_DIC_M_7C_Vivre_31_Ae] S.</p>
+<p> </p>
+<p>Não se esqueça de nenhum deles, ok?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, muito bom. Cada tipo de asa deve produzir um tipo diferente de efeito.</p>
+<p> </p>
+<p>Afinal, não quero dar a muito vantagem aos alunos, então farei alguns lotes de amostra e ver qual oferece a quantidade certa de aprimoramento.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_E_Vivre] S, colete suas asas e trazê -las para [%dic:STR_DIC_N_Marana].</p>[%collectitem]</step>
+</steps>
+<p>A instrutora de vôo Marana teme que muitos Daevas estão falhando no teste de voo de alto nível. Ajude-a a fazer uma solução para melhorar o desempenho, reunindo asas de fangwings.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A instrutora de vôo Marana disse que muitos de Daevas estavam falhando no teste de habilidade de voo de alto nível, então ela queria ajudar os candidatos.</p>
+<p> </p>
+<p>Ela pediu que você reunisse asas de fangwing para fazer uma solução alquímica para aumentar a velocidade de voo dos alunos.</p>
+<p> </p>
+<p>Você reuniu asas dos fangwings que vivem na caverna do templo de Eracus e voltou para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

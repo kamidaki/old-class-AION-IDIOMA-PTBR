@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bênçãos do Sol, [%username]. Você percebe que é preciso mais do que um livro de feitiços para se destacar como feiticeiro, não é?</p>
+<p> </p>
+<p>Você nunca sabe quando precisará de um feitiço. Você deve ser capaz de se adaptar ao seu ambiente.</p>
+<p> </p>
+<p>É importante dominar seus feitiços e ser capaz de lançá -los rapidamente ... por assim dizer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou ciente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de avaliar seu progresso como feiticeiro.</p>
+<p> </p>
+<p>Você pode executar o [%dic:STR_DIC_E_DP_Wi]habilidade dez vezes?</p>
+<p> </p>
+<p>Não é um teste difícil para um feiticeiro experiente como você, mas realmente precisa ser feito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem hesitação. Um sinal muito bom.</p>
+<p> </p>
+<p>É preciso vontade e ambição para subir com sucesso como feiticeiro.</p>
+<p> </p>
+<p>Pegue essas geleias. Eles aumentarão sua natureza Daevic e acesso aos seus poderes divinos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Soar na luz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um feiticeiro deve ter uma natureza decisiva para lançar os feitiços necessários para sobreviver. Um único lapso em concentração pode significar falha.</p>
+<p> </p>
+<p>Sua mente é tão quieta quanto uma taberna cheia de Shugos animados. Talvez este não seja o melhor momento.</p>
+<p> </p>
+<p>Aumente sua calma e volte para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar outro dia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você anda com confiança, [%username].</p>
+<p> </p>
+<p>Eu confio que minha tarefa não foi muito difícil para você terminar?</p>
+<p> </p>
+<p>Você dominou o [%dic:STR_DIC_E_DP_Wi]habilidade?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu posso até ter refinado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão rapidamente! Muito bem, Daeva.</p>
+<p> </p>
+<p>Lembre -se, este é apenas um dos muitos feitiços em seu livro de feitiços. Você deve dominar todos eles.</p>
+<p> </p>
+<p>Você terá sucesso. Eu sinto isso e isso me deixa orgulhoso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Wi]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Hecate], o preceptor de feiticeiros e mestres de espírito.</p></step>
+</steps>
+<p>Conclua a tarefa dada a você e relate de volta a Charna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Charna testou suas habilidades como feiticeiro e deu a você uma tarefa de usar o Cloud I Tranquilizante dez vezes.</p>
+<p> </p>
+<p>Charna elogiou você quando você terminou.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

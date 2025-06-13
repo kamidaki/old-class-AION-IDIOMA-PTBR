@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], isso é uma surpresa!</p>
+<p> </p>
+<p>Recebi a notícia de que um hábil[%userclass] estava vindo para nos ajudar, mas eu não estava esperando você. Você causou uma impressão favorável em muitos, ao que parece.</p>
+<p> </p>
+<p>Hmm, ouve isso? Os Kobolds de Dukaki estão invadindo árvores na floresta. Aparentemente, um dos elimes tem assediado ampeis para fazer algo a respeito.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que é um problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ficou difícil encontrar madeira ou materiais para queimar, porque os Dukaki estão diminuindo demais.</p>
+<p> </p>
+<p>Não se trata apenas das árvores. Não podemos simplesmente permitir que o [%dic:STR_DIC_FLA07]cai em suas mãos.</p>
+<p> </p>
+<p>Eles precisam cuidar antes mesmo de entrar na floresta. Vá para o acampamento deles.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_FLA07] e derrotar o [%dic:STR_DIC_MLA137].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Você pode contar comigo."</act>
+</selects>
+<voice file="Q1003-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta? Bem, sem tempo para parabéns. Fizemos uma descoberta.</p>
+<p> </p>
+<p>Aparentemente, os Dukaki são mais do que apenas um monte de lenhadores organizados-eles estão tentando refinar [%dic:STR_DIC_ELA19]! Não acredito que demoramos tanto para entender! Precisamos informar o capitão Kalio.</p>
+<p> </p>
+<p>O que é, [%username]? Você parece um pouco confuso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Hum ... o que é Odium?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, certo! Eu ouvi você bater na sua cabeça. Odium é um minério infundido com éter, a substância capacitando os Serafim Senhores e nossos[%dic:STR_DIC_ELA09] S. É incrivelmente poderoso!</p>
+<p> </p>
+<p>Pior ainda, aprendemos que os Tursin Krall estão por trás das atividades do Dukaki. Se eles conseguiram manipular o Aether, então tudo de [%dic:STR_DIC_E_LF1_name] está em risco.</p>
+<p> </p>
+<p>[%username], Eu preciso que você volte para o [%dic:STR_DIC_FLA07]imediatamente e matar alguns[%dic:STR_DIC_MLA139] es.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Estou nisso."</act>
+</selects>
+<voice file="Q1003-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Ótimo trabalho nos grandes chefes de Tursin. Você deixou a unidade orgulhosa.</p>
+<p> </p>
+<p>Já enviei notícias para o capitão Kalio-ele decidirá como proceder com o Krall.</p>
+<p> </p>
+<p>Sua recompensa está aqui. Você ganhou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar -se [%dic:STR_DIC_LA143], o mergulho de mergulho mercenário.</p></step>
+<step><p visible="[%3]">Mate o [plur][%dic:STR_DIC_MLA137]no[%dic:STR_DIC_FLA07]([%5]/6).</p></step>
+<step><p visible="[%6]">Retornar a [%dic:STR_DIC_LA143].</p></step>
+<step><p visible="[%9]">Eliminar o [plur][%dic:STR_DIC_MLA139]([%11]/3).</p></step>
+<step><p visible="[%12]">Retornar a [%dic:STR_DIC_LA143].</p></step>
+</steps>
+<p>Ordens: Os Dukaki estão ameaçando a floresta de Daminu. Conheça Oz, o guarda -costas do mercenário no acampamento de Melponeh, e ouça suas instruções.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Oz, um guarda da área desmatada, disse que os Dukaki estão tramando alguma coisa.</p>
+<p> </p>
+<p>Você os derrotou e soube que eles estão tentando refinar o Odium.</p>
+<p> </p>
+<p>Você voltou para a área desmatada e derrotou mais Dukaki para impedir sua operação de mineração de Ódio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem: encontre [%dic:STR_DIC_LA143]%, o guarda em[%dic:STR_DIC_FLA05].</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

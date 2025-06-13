@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Tursin Krall enlouqueceu? Como eles se atrevem a invadir o templo?</p>
+<p> </p>
+<p>Eles sabiam exatamente quando atacar. Eles estão sempre nos observando das árvores, você sabe. Quase posso sentir o hálito sujo no pescoço.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Diga -me o que aconteceu aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>UM[%dic:STR_DIC_MLA65]roubou os ícones do Senhor Kaisinel-os que tínhamos abençoado por aqueles que realizam a grande peregrinação.</p>
+<p> </p>
+<p>Essas criaturas não adoram os Serafim Senhores, ou mesmo Aion! Por que eles levariam nossos ícones sagrados?</p>
+<p> </p>
+<p>Espere ... eles estão refinando Odium, não é? Você acha que eles podem querer extrair o Aether deles?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"É possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que recuperar os ícones antes que eles possam levar o Aether!</p>
+<p> </p>
+<p>Eu vi[%dic:STR_DIC_MLA63] S, [%dic:STR_DIC_MLA64] es, [%dic:STR_DIC_MLA62] Areia [%dic:STR_DIC_MLA61] S. Eles não podem ter ido longe. Eu também vi[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an] S, mas eles entraram em[%dic:STR_DIC_W_IDNovice_SZ_IDNovice].</p>
+<p> </p>
+<p>Derrubá -los, [%userclass]. Traga a morte para o Krall que profanou nosso templo e devolva nossos ícones sagrados!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou."</act>
+</selects>
+<voice file="Q1017-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recuperou nossos ícones do[%dic:STR_DIC_MLA65]?</p>
+<p> </p>
+<p>Esses pobres peregrinos chegaram tão longe, e não tenho ícones para lhes dar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você não tem respeito por lorde Kaisinel?</p>
+<p> </p>
+<p>Como você pode ficar aqui enquanto o [plur][%dic:STR_DIC_MLA65]Befoul the Stone estátua do Senhor!</p>
+<p> </p>
+<p>Pense nos peregrinos que fizeram a árdua jornada para este lugar e que precisam voltar sem a bênção agora!</p>
+<p> </p>
+<p>Realmente não importa se você elimina o Krall perto do local da peregrinação ou do[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an]. Basta nos trazer de volta a estátua de pedra de Kaisinel!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou. Eu prometo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... sim, eles estão todos aqui! Obrigado, [%username]! Agora, os peregrinos terão seus ícones sagrados sempre para valorizar.</p>
+<p> </p>
+<p>Que os cinco abençoem e mantenham você pelo que você fez.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LA67].</p></step>
+<step><p visible="[%3]">Recuperar as imagens sagradas do kaisinel de [%dic:STR_DIC_MLA65] S ou[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an] S, ou entrar e explorar através[%dic:STR_DIC_W_IDNovice_SZ_IDNovice]para eles, depois traga suas descobertas para [%dic:STR_DIC_LA67].</p>[%collectitem]</step>
+</steps>
+<p>Ordem: encontre o Tursin Krall que atacou o templo, recupere os ícones sagrados e devolva -os a [%dic:STR_DIC_LA67].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um grupo de Krall atacou o Santuário de Ardus e roubou alguns ícones de Kaisinel.</p>
+<p> </p>
+<p>A pedido de Lunax, você derrotou o Tursin Krall e retomou os ícones antes que o Krall pudesse extrair Aether deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Fale com o Lunax.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

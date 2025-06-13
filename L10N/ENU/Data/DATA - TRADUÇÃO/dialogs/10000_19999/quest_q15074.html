@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15074</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A atmosfera é estranha na floresta musgosa. Você pode sentir uma energia estranha.</p>
+<p> </p>
+<p>Essa energia faz com que as criaturas dessa floresta cresçam particularmente rápidas e elas se tornam extraordinariamente grandes.</p>
+<p> </p>
+<p>São os abrigos que nos dão mais problemas. Eles interferem em investigações e também são perigosas porque são venenosas.</p>
+<p> </p>
+<p>Por favor, entre no[%dic:STR_DIC_W_LF5_SZ_H_01] e matar o [plur][%dic:STR_DIC_M_LF5_H_Sheluk_61_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não gosto de criaturas de pernas longas.</p>
+<p> </p>
+<p>Eles me assustam mais quando são criaturas grandes e de pernas longas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Sheluk torto tão rapidamente? Você é muito rápido!</p>
+<p> </p>
+<p>Bom trabalho! Vou me reportar à sede sobre suas ações incríveis, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_H_01] e derrotar o [plur][%dic:STR_DIC_M_LF5_H_Sheluk_61_An]([%2]/8).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Brontte_E].</p></step>
+</steps>
+<p>Mate os abriços tortos na floresta musgosa e relate -se a Branth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Branth pediu que você eliminasse os abritos tortos na floresta musgosa.</p>
+<p> </p>
+<p>Você derrotou os abriços tortos e relatou Branth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O treinamento é importante para manter o corpo em forma.</p>
+<p> </p>
+<p>Mas tratar lesões imediatamente é ainda mais importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Continue ouvindo atentamente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preparei uma receita para emergências. Você está interessado neste medicamento de emergência?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Procure uma caixa de remédios perto do acampamento.</p>
+<p> </p>
+<p>Você encontrará medicação de emergência dentro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece ter uma vontade forte.</p>
+<p> </p>
+<p>Volte se precisar de uma receita de cura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Há uma caixa de remédios em frente à barraca.)</p>
+<p> </p>
+<p>(O nome do paciente no medicamento de emergência é[%username].)</p>
+<p> </p>
+<p>(Você deve verificar.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Inspecione o medicamento de emergência.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, use apenas em caso de emergência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o medicamento de emergência da caixa de medicina.</p></step>
+</steps>
+<p>Procure a caixa de medicina perto do campo de cura e obtenha a medicação de emergência.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O chefe do campo de cura lhe deu medicação de emergência para saúde física.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

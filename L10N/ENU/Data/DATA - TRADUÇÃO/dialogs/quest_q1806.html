@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdemos a fortaleza de enxofre, [%username]. Que Aion tenha pena de nós.</p>
+<p> </p>
+<p>É claro que não podemos deixar que os asmodianos continuem a ocupá -lo, e minha pesquisa depende da fortaleza estar nas mãos de Elyos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que podemos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos atacar enquanto eles ocupam a fortaleza, mas não até a fortaleza ficar vulnerável.</p>
+<p> </p>
+<p>Então, enquanto a batalha está sendo travada, alguém precisa entrar e eliminar a guarnição de elite.</p>
+<p> </p>
+<p>Você é o único que confio o suficiente para enviar uma missão tão perigosa, [%username]. Você vai fazer isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Aion! Vamos recuperar a fortaleza com certeza agora!</p>
+<p> </p>
+<p>Ouça com cuidado-a fortaleza de Sulphur está atualmente em casa [%dic:STR_DIC_M_1806_all]. Você encontrará muitos tipos diferentes de asmodianos de elite. Mate todos eles que puder.</p>
+<p> </p>
+<p>Eles vão usar [%dic:STR_DIC_I_QUEST_1806a] S. Leve -os de seus corpos e leve -os para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto profundamente a perda da fortaleza de enxofre, [%userclass]. Talvez eu não devesse ter assumido que você sentiu o mesmo.</p>
+<p> </p>
+<p>Mas o dever de um Daeva nunca pode ser forçado. Vou encontrar outro para a tarefa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou! Vivo!</p>
+<p> </p>
+<p>Não me mantenha esperando, [%username]-Vamos ver as insígnias!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eles estão bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que esta não é sua única missão, [%username], mas eu esperava que você desse prioridade.</p>
+<p> </p>
+<p>Precisamos da sua ajuda na fortaleza de enxofre contra a guarnição de elite asmodianas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu sabia que estava certo em contar com você por isso.</p>
+<p> </p>
+<p>Você desempenhou um papel vital na recuperação da fortaleza e pode ter certeza de que vou dizer isso no meu relatório a Teminon.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os membros do[%dic:STR_DIC_M_1806_all] e leve a prova para [%dic:STR_DIC_N_Nemea].</p>[%collectitem]</step>
+</steps>
+<p>A melhor época para recuperar a fortaleza de enxofre é quando os asmodianos estão ocupando a fortaleza, e a fortaleza é vulnerável. Elimine as tropas de elite da guarnição asmodiana e retorne com suas insígnias espinhosas de videira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nemea disse para atacar a fortaleza de enxofre enquanto está ocupada pelos asmodianos e acaba com a guarnição de elite.</p>
+<p> </p>
+<p>Depois de derrotar a guarnição de elite, você retornou a Nemea com suas insígnias espinhosas de videira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

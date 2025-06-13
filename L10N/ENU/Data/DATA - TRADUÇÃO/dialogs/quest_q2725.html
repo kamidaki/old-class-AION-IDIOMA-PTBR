@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve Daeva! Há um momento, recebi uma mensagem de Sinjah, que está realizando uma missão de escotismo no Cracóvia.</p>
+<p> </p>
+<p>Ela solicita reforço, pois tem apenas três tropas para explorar e proteger o ponto de ligação. Ela pediu especificamente a Mokkurkalfi, ex-legionária. Sinjah quer que ele forneça novamente suas tropas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Certa vez, Mokkurkalfi foi o melhor dos legionários. Sozinho, ele poderia tirar cinco ou seis Elyos e nunca deixar um rastro. Ele não era apenas excelente em combate, mas também era nosso principal escoteiro e assassino.</p>
+<p> </p>
+<p>No entanto, ele era ... ahem ... difícil. Ele continuou começando brigas com outros legionários-eventualmente deixou a Guilda.</p>
+<p> </p>
+<p>Desde que ele foi desonesto, ele está vagando sozinho em Reshanta, assassinando o major Elyos. Ele se tornou seu bicho -papão pessoal. [%username], você tentaria encontrar [%dic:STR_DIC_N_Mokkurkalfi] e convencê -lo a ajudar Sinjah a sair?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. [%dic:STR_DIC_N_Mokkurkalfi]foi visto pela última vez na ilha solitária a sudoeste do pouso de Primum.</p>
+<p> </p>
+<p>Por favor, tente convencê -lo a nos ajudar pelos velhos tempos. Sinjah foi um dos poucos que mantiveram bons termos com ele. Mencione -a, e Mokkurkalfi pode concordar em ajudar.</p>
+<p> </p>
+<p>Relatório de volta a Sinjah. Se você não conseguir convencer Mokkurkalfi, ela pode precisar da sua ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinjah não teria perguntado se ela não estava em uma situação desesperada.</p>
+<p> </p>
+<p>Ela pediu Mokkurkalfi porque estamos desesperados.</p>
+<p> </p>
+<p>Agora até você recusou, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá embora, você me incomoda.</p>
+<p> </p>
+<p>Você deve ser verde, ou saberia que eu trabalho sozinho. E estou sempre trabalhando.</p>
+<p> </p>
+<p>Saia daqui e pare de respirar meu ar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Hisui me enviou, Sinjah precisa da sua ajuda."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... a Guilda Red Hasia deve estar com sérios problemas se estiverem enviando para mim. O velho Hisui alado chique nunca me afastou. Lamento que Sinjah esteja em tais retas. Ela é uma boa criança, mas não é o meu problema. Nunca vou voltar para a Guilda Red Hasia.</p>
+<p> </p>
+<p>Eu poderia ajudar Sinjah pessoalmente, porém, se ela perguntar bem.</p>
+<p> </p>
+<p>Então ... Hora de você se sair.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Lamento ter incomodado você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi uma mensagem da General da Brigada Hisui dizendo que você foi defender nosso caso a Mokkurkalfi.</p>
+<p> </p>
+<p>Você o convenceu? Ele concordou em voltar à Guilda?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Mokkurka conseguiu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, eu esperava tanto ... Mokkurkalfi nunca foi adequado à vida militar, mas esperava que ele reconsiderasse se o general da brigada e eu perguntei a ele.</p>
+<p> </p>
+<p>Pelo menos ele está aberto a me ajudar. Há alguma esperança nisso. Obrigado por tentar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Mokkurkalfi].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Asynja].</p></step>
+</steps>
+<p>Sinjah, responsável por explorar o Cracóvia, pediu reforço. Vá ver Mokkurkalfi e convencê -lo a retornar à Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hisui, o general da Brigada Vermelha de Hasia disse que Sinjah pediu reforços.</p>
+<p> </p>
+<p>No entanto, Hisui não tinha reservas para enviar. Então Hisui pediu que você persuadiu Mokkurkalfi a retornar à Guilda.</p>
+<p> </p>
+<p>Mokkurkalfi, que é um excelente lutador, mas também um desajustado, recusado categoricamente.</p>
+<p> </p>
+<p>Sinjah ficou desapontado, mas animado por Mokkurkalfi prometeu ajudá -la pessoalmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

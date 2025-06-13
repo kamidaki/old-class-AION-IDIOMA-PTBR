@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q9685</questid>
+<questname>[테스트] 스크립트 퀘스트 천족 2</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com NPC Secundila e recebimento de uma missão</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Primeira conversa com NPC iaetia</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você caça o Balaur na fazenda Drana.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Segunda conversa com npc iaetia</p>
+<p> </p>
+<p>Contém cena</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você recebe um item descartado pelo Klaw.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Relatório à NPC Diana</p>
+<p> </p>
+<p>Verifique os 5 itens para Quest_9685a</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Mude para conversar com Maloren depois de revisar o item Quest_9685a</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem os 5 itens para Quest_9685a.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem os 5 itens para Quest_9685a.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com NPC Maloren</p>
+<p> </p>
+<p>Disponibilidade do item Quest_9685b</p>
+<p> </p>
+<p>Teleport</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO5">Mude para conversar com Jamanok</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com NPC Jamanok</p>
+<p> </p>
+<p>Disponibilidade do item Quest_9685c</p>
+<p> </p>
+<p>Teleport</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO6">Mude para conversar com Diana</act>
+</selects>
+</htmlpage>
+<htmlpage name="select7">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com NPC Diana</p>
+<p> </p>
+<p>Coleta: Quest_9658b, Quest_9658C</p>
+<p> </p>
+<p>Disponibilidade: Quest_9658d</p>
+<p> </p>
+<p>Teleport</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO7">Mudança no nível de uso do item para Drana Fobj</act>
+</selects>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com NPC Secundila</p>
+<p> </p>
+<p>Coleção Quest_9689D</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO9">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversação final com NPC Outremus</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Informações sobre a recompensa</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com Iaetia.</p></step>
+<step><p visible="[%3]">Elimine o Balaur na fazenda Drana ([%5]/5).</p></step>
+<step><p visible="[%6]">Fale com Iaetia.</p></step>
+<step><p visible="[%9]">Hunt Klaw para obter Quest_9685a e trazê -lo para Diana.</p>[%collectitem]</step>
+<step><p visible="[%12]">Fale com Maloren.</p></step>
+<step><p visible="[%15]">Fale com Jamanok.</p></step>
+<step><p visible="[%18]">Fale com Diana.</p></step>
+<step><p visible="[%21]">Use o item no Drana Fobj ([%23]/5).</p></step>
+<step><p visible="[%24]">Fale com Secundila.</p></step>
+<step><p visible="[%27]">Relatório a Outremus.</p></step>
+</steps>
+<p>[Progress] elyos Script Quest 2</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[Progress] elyos Script Quest 2</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

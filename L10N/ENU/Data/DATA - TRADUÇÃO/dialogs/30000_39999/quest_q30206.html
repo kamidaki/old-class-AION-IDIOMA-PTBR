@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], suas viagens já o levaram ao templo de Udas?</p>
+<p> </p>
+<p>É um antigo templo de Balaur perto de Undirborg. Receio que esteja cheio do dragão, mas ninguém parece ter certeza.</p>
+<p> </p>
+<p>Como esses monumentos não nos ofereceram pistas, receio que o Temple seja nossa última esperança de encontrar algo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você sabe sobre o templo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_E_IDTemple_LF4]foi construído há um milênio atrás, de acordo com minha pesquisa.</p>
+<p> </p>
+<p>Ao contrário de sua condição atual, os historiadores dizem que já foi um templo próspero. Até tinha uma rica biblioteca de documentos e literatura de outras culturas.</p>
+<p> </p>
+<p>A maioria dos livros e documentos provavelmente já desapareceu agora, mas o que quer que resta seja muito útil. Alguma chance eu poderia fazer com que você procure no templo por mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um verdadeiro salva -vidas, [%username]. No fundo do templo de Udas, há um lugar chamado o caminho da reflexão.</p>
+<p> </p>
+<p>Dentro deste corredor está o caminho da sabedoria, que costumava ser a biblioteca do templo.</p>
+<p> </p>
+<p>Pesquise lá por um[%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]. Duvido que você encontre muito mais uso, mas se você puder colocar as mãos nisso ... podemos finalmente ter a vantagem nesses selvagens!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Se estiver lá, eu vou encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que você hesita em ir-sempre há a chance de você não encontrar nada no templo.</p>
+<p> </p>
+<p>Mas mesmo que o documento não esteja lá, você ainda terá um olhar em primeira mão dentro desse lugar. Talvez tenha a chance de praticar suas habilidades um pouco ....</p>
+<p> </p>
+<p>Se você mudar de idéia, eu realmente poderia usar sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma! É bom ver você de volta em uma peça, [%username]!</p>
+<p> </p>
+<p>O Templo Udas sustentou o antigo documento de dragão que precisávamos?</p>
+<p> </p>
+<p>Estamos acordados em Balaur Creek, se eu tiver que relatar de volta sem nada para mostrar ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o documento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, Daeva, Daeva ... eu sei o [%dic:STR_DIC_E_IDTemple_LF4] não é um lugar fácil para chegar, mas eu esperava que você tivesse pelo menos tentado.</p>
+<p> </p>
+<p>Eu não quero ter que dizer a Outremus que você não seguiu ordens, [%username]. Basta ir ao templo de Udas e encontrar o [%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]. Ainda temos algum tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ir lá agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... muito peculiar ... acho que temos algo aqui. A linguagem deles é complicada ... mas acho que isso diz ....</p>
+<p> </p>
+<p>Algo chamado A Stormwing Blumbers, no fundo do templo de Beshmundir. Sem descrições ou locais ... apenas que ela diminui ou repousa ... por muitos anos.</p>
+<p> </p>
+<p>Oh! O que é isso aqui ...? Outra coisa que é muito interessante. Vou precisar estudar isso antes mesmo de especular o que é ... mas pode ser muito útil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206] e trazê -lo para [%dic:STR_DIC_N_Pilomenes].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o caminho da sabedoria no templo de Udas e encontre o antigo documento de dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pilomenes disse que sua última esperança de encontrar pistas é o templo de Udas.</p>
+<p> </p>
+<p>Você trouxe de volta o antigo documento de dragão do caminho da sabedoria e descobriu que algo chamado Stormwing permanece selado dentro do templo de Beshmundir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

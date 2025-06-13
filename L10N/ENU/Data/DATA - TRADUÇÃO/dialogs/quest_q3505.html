@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado a você, [%username], Consegui comer alguma coisa. Mas agora devo me preocupar em alimentar os vigilantes da vila.</p>
+<p> </p>
+<p>Isso é pior que a batalha! Tudo o que eles fazem é comer! Preciso encontrar ingredientes suficientes, além de um pouco de lenha, cozinhar a refeição e fazer toda a lavagem depois.</p>
+<p> </p>
+<p>Às vezes acho que prefiro pegar minha espada e voltar nas trincheiras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ninguém ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses vigilantes nem se incomodam em lavar seus pratos depois de terminarem. É como ver Drakes comer.</p>
+<p> </p>
+<p>Você me daria uma mão, [%username]? Eu sei que você provavelmente não é muito cozinheiro, mas se você pudesse encontrar uma lenha, isso me ajudaria tanto.</p>
+<p> </p>
+<p>Você tem tempo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se apenas os vigilantes fossem tão atenciosos quanto você, Daeva. Obrigado.</p>
+<p> </p>
+<p>Você já fez isso antes, então você sabe o que eu preciso, sim? Apenas me encontre cerca de uma dúzia [%dic:STR_DIC_I_quest_1591a] S ... os funcionários do[%dic:STR_DIC_M_Spectre_41_An] S das ruínas do patema.</p>
+<p> </p>
+<p>Eles parecem queimar para sempre. Nem mesmo os ventos fortes aqui podem colocá -los fora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria saber melhor do que perguntar, [%username]. Está bem. Eu sei que você está ocupado.</p>
+<p> </p>
+<p>Terei uma palavra com o padre. Mas a última vez que pedi um assistente, ele me enviou um shulack. Pequena besta comeu tudo na frente de seu rosto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um shulack, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma! Você trouxe as equipes?</p>
+<p> </p>
+<p>Eu peguei uma série de potcrabs de areia enquanto você se foi. Agora eu posso fervê -los para que os carnívoros imprudentes possam dormir com barrigas cheias hoje à noite.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho esses doze."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Matar os espectros cruéis é muito mais difícil do que parece. Mas isso não é um motivo para desistir, é?</p>
+<p> </p>
+<p>Como ainda há algum tempo antes de comer, obtenha alguns[%dic:STR_DIC_I_quest_1591a]do[%dic:STR_DIC_M_Spectre_41_An].</p>
+<p> </p>
+<p>Por favor, traga 10 deles como concordamos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estes são ótimos, Daeva! Eles são frescos e secos-seco, como o lendário sagacidade de Andu-perfeito para a queima.</p>
+<p> </p>
+<p>Você realmente me ajudou aqui. Isso não é muito, mas por favor, leve.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_1591a] S de [%dic:STR_DIC_M_Spectre_41_An] e leve-os para [%dic:STR_DIC_N_Camana].</p>[%collectitem]</step>
+</steps>
+<p>Ajude Camana reunindo a lenha necessária para preparar a refeição para os vigilantes da vila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Camana foi ordenada pelo padre para preparar refeições para os vigilantes da vila.</p>
+<p> </p>
+<p>Ela precisava de ajuda e pediu que você traga de volta várias equipes de chamas dos espectros cruéis, que você realizou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

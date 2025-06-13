@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! Aqueles Grifos infernais na ascensão do Dragonspina estão impedindo minha pesquisa de minerais balaurenses.</p>
+<p> </p>
+<p>Os Grifos sobreviveram aqui em Balaurea há séculos, e sua ferocidade é incomparável. Até eu tenho um pouco de medo deles.</p>
+<p> </p>
+<p>Eu prefiro ignorá -los, mas não há como coletar minerais com os bestas bicando na minha cabeça!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso seria perturbador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Pedi a outros danos que colecionassem minério da ascensão Dragonspine, mas a maioria não está disposta a fazê -lo por causa do Grifo.</p>
+<p> </p>
+<p>Você parece um pouco mais forte do que os Daevas que eu enviei antes, no entanto ... acho que você pode até ser uma combinação para o Grifo.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_DF4_Condor_DR_51_An] S são uma preocupação, mas o verdadeiro problema é[%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An], o alfa do rebanho. Acho que você poderia cuidar deles por mim, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Primeiro, erradique o [%dic:STR_DIC_M_DF4_Condor_DR_51_An] S. Em seguida, encontre e descarte [%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An].</p>
+<p> </p>
+<p>Eu imagino que uma vez que Skraw cai, o restante do rebanho se dispersará e me permitirá pesquisar o aumento de Dragonspine em paz.</p>
+<p> </p>
+<p>Obrigado por fazer isso, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ei, é para isso que estou aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos, [%username].</p>
+<p> </p>
+<p>Eu preciso daqueles que Grifo lidam para que eu possa continuar minha pesquisa sobre a ascensão Dragonspine.</p>
+<p> </p>
+<p>O canyon afundado meio que me dá arrepios também ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Lide com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]! Ouvi dizer que a maior parte do Predator Grifo voou para longe depois que Skraw foi morto.</p>
+<p> </p>
+<p>Foi você, não foi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Pssssh ... quem mais seria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é tão forte e corajoso, [%username].... se eu não tivesse muito o que fazer aqui em Gelkmaros ... eu estaria em você como lama em um porgus.</p>
+<p></p>
+<p>Obrigado por me ajudar a continuar minha pesquisa da região ... e por me dar um motivo para deixar o Sunken Canyon. Este lugar me dá arrepios!</p>
+<p> </p>
+<p>Aqui, pegue isso e não seja um estranho!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o Grifo em Dragonspine Rise.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_Condor_DR_51_An]([%2]/9)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_Condor_DR_NmdQ_52_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Carabel].</p></step>
+</steps>
+<p>Diz -se que o Grifo Carnal atacam passageiros no ascensão Dragonspine. Vá para a ascensão Dragonspina e mate o Grifo e o Skraw com a língua comprida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Carabel disse que precisava reunir minério da ascensão de Dragonspina para concluir sua pesquisa, mas o Grifo a estava assediando. Ela pediu que você matasse o Predator Grifo e seu líder Skraw.</p>
+<p> </p>
+<p>Você matou o Grifo e, quando voltou a Carabel, ela agradeceu e lhe deu uma recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

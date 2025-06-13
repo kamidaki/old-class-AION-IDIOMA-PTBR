@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Taygas na área estão cada vez mais próximos da fortaleza.</p>
+<p> </p>
+<p>Para resolver esse problema de uma vez por todas, temos que atingir o medo e o terror neles. Eles nunca devem aparecer perto da fortaleza novamente.</p>
+<p> </p>
+<p>A melhor coisa seria se matássemos o líder deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma caverna perto do campo de neve de Morheim. [%dic:STR_DIC_M_DireBeastDNamedQ_22_An], o líder do Tayga, foi visto lá. Se for morto, eles demorarão muito tempo.</p>
+<p> </p>
+<p>O que você acha? Você vai nos dar uma mão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="PLAYEMOTION_angry;HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão difíceis quanto os Taygas regulares, [%dic:STR_DIC_M_DireBeastDNamedQ_22_An]é ainda mais difícil. Traga de volta [%dic:STR_DIC_I_QUEST_2305a]como prova de sua morte.</p>
+<p> </p>
+<p>Puxando suas garras terá aterrorização do Tayga!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente você não tem medo ...?</p>
+<p> </p>
+<p>Se um Daeva não suportar um Tayga, imagine como os moradores se sentirão?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta seguro e som. Você matou[%dic:STR_DIC_M_DireBeastDNamedQ_22_An]? Você tem o [%dic:STR_DIC_I_QUEST_2305a]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Kalsek está desarrumado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você pode ter outros deveres importantes, mas isso é sobre a segurança dos moradores. Por favor, cuide disso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta garra é tão afiada! Eu posso fazer uma arma com ela.</p>
+<p> </p>
+<p>Ótimo trabalho. Os moradores vão dormir mais profundamente sabendo o que você fez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DireBeastDNamedQ_22_An] e trazer a prova para [%dic:STR_DIC_N_Bragi]</p>[%collectitem]</step>
+</steps>
+<p>Parar o Tayga requer matar o líder. Mate Kalsek Paw de ferro e leve sua garra para Bragi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bragi pediu que você matasse a cabeça Tayga para que o resto não se atreva a chegar perto da fortaleza novamente.</p>
+<p> </p>
+<p>Você derrotou Kalsek em seu covil de caverna e trouxe de volta sua garra como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, [%username].</p>
+<p> </p>
+<p>Você superou todos os obstáculos para atingir um nível de habilidade que poucos pensavam possível.</p>
+<p> </p>
+<p>Não tenho mais a ensinar você, mas isso não significa que você deve parar de aprender. Se você quer ser um verdadeiro[%userclass], você deve fazer um esforço ainda maior do que antes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu próximo ato será apresentá -lo a um novo preceptor.</p>
+<p> </p>
+<p>O nome dele é Traufnir - talvez você já o conheça? Ele é conhecido por Atreia como um mestre da destruição divina.</p>
+<p> </p>
+<p>Ele pode ajudá -lo a alcançar uma compreensão mais profunda da maneira de se tornar um[%userclass], Assim, [%username].</p>
+<p> </p>
+<p>Pegue esta carta de recomendação e apresente -se a Traufnir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Traufnir] estará no edifício do Capitólio.</p>
+<p> </p>
+<p>Mostre a ele a carta, e ele o levará como aluno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, e obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu garanto que Traufnir pode fazer de você melhor [%userclass].</p>
+<p> </p>
+<p>Volte para mim quando você perceber seu erro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu vá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A ascensão é apenas o primeiro passo no caminho para se tornar um verdadeiro Daeva.</p>
+<p> </p>
+<p>Excluindo as asas e a imortalidade, você é basicamente diferente dos seres humanos.</p>
+<p> </p>
+<p>Para se tornar um verdadeiro Daeva, você deve sempre fazer um esforço e se esforçar para seus limites.</p>
+<p> </p>
+<p>Mas não deixe isso perturbar você. Afinal, estamos aqui para ajudá -lo no seu caminho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de Kalsten."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê a carta de recomendação) A julgar por seu louvor, Kalsten pensa muito bem de você.</p>
+<p> </p>
+<p>Parece que você trabalhou duro até agora. No entanto, não consigo ver se o elogio dele está bem fundamentado.</p>
+<p> </p>
+<p>Afinal, há muitos que trabalham duro no começo.</p>
+<p> </p>
+<p>Isso não quer dizer que não estou interessado em você.</p>
+<p> </p>
+<p>Os estudantes diligentes são sempre bem -vindos. Então, se você encontrar alguma dificuldade em se tornar um[%userclass], você sempre pode vir me ver.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a carta de recomendação para [%dic:STR_DIC_N_Traufnir].</p></step>
+</steps>
+<p>Mostre a carta de recomendação de Kalsten a Traufnir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kalsten disse que não tinha mais nada para lhe ensinar e que ele escreveria uma carta de recomendação a Traufnir para você.</p>
+<p> </p>
+<p>Depois que Traufnir leu a carta de recomendação, ele disse que você ainda tinha muito a aprender para se tornar um excelente Daeva e que você poderia vê -lo a qualquer momento se tivesse um problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

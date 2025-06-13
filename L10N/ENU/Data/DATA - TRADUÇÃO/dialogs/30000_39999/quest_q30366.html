@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja aqui, [%username]. Existem problemas com a lasca abissal.</p>
+<p> </p>
+<p>Meus superiores estão me pressionando a resolvê -lo, então acho que não posso esperar até que a situação segue seu curso.</p>
+<p> </p>
+<p>É por isso que eu preciso de você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os investigadores estão tendo dificuldades para se aprofundar na lasca abissal.</p>
+<p> </p>
+<p>Ir ao santuário de Pazuzu não é mais um problema, mas eles não conseguem passar pelo[%dic:STR_DIC_W_IDAbRe_Core_SZ_C]por causa de [%dic:STR_DIC_M_IDAbRe_Core_Agrint_Kn_55_Ah] S.</p>
+<p> </p>
+<p>Talvez eles melhorem em lidar com problemas como esse com o passar do tempo, mas por enquanto não há tempo de sobra. Você pode nos ajudar, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu disse anteriormente, [%dic:STR_DIC_M_IDAbRe_Core_Agrint_Kn_55_Ah] S proteger a caverna da tempestade. Se você puder se livrar deles, os investigadores poderão explorar as partes mais profundas da lasca.</p>
+<p> </p>
+<p>Eu também posso mencionar que, como o Pandaemonium se interessou, a recompensa por concluir esta tarefa é muito boa.</p>
+<p> </p>
+<p>Mas, obviamente, essa é uma motivação secundária para você, certo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obviamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza? Você está perdendo um trabalho bastante lucrativo aqui.</p>
+<p> </p>
+<p>Mas acho que não posso forçar você. Vou procurar danos mais pobres, eu acho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta. Como estão as coisas na lasca abissal?</p>
+<p> </p>
+<p>Você cuidou do nosso pequeno problema? Esses observadores da enos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O problema está resolvido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]! O Pandaemonium ficará bastante satisfeito.</p>
+<p> </p>
+<p>Aqui está a recompensa que prometi por todo o seu trabalho duro. Espero que você fique satisfeito!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_IDAbRe_Core_Agrint_Kn_55_Ah] S ([%2]/3).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da].</p></step>
+</steps>
+<p>Os investigadores estão tendo dificuldade em investigar a lasca abissal por causa de um problema de observador da eNOS. Limpe a caverna da tempestade desta praga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gwal disse que os investigadores estão tendo dificuldade em investigar a lasca abissal por causa de um problema de observador da eNOS.</p>
+<p> </p>
+<p>Você se livrou dos observadores da eNOS, conforme solicitado e recebeu uma medalha de platina como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

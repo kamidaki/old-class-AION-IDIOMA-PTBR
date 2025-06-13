@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Exploda esses balaur! Vou cortá -los e usar suas entranhas como colares!</p>
+<p> </p>
+<p>Eu sei, eu sei ... eu realmente não faria isso. Mas os covardes enviaram draxies para roubar suprimentos de nosso acampamento!</p>
+<p> </p>
+<p>É a guerra básica da guerrilha-corte os suprimentos do inimigo para enfraquecê-los. Mas eu nunca pensei que os demônios inteligentes faria isso para nós!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tudo é justo na guerra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Apaixonado e guerra, [%username], embora um verdadeiro asmodiano tenha apenas paixão pelo último. Espero que Arango tenha ouvido isso. Ele continua olhando para mim quando deveria estar ... pensando em maneiras de esmagar nossos inimigos!</p>
+<p> </p>
+<p>Tenho certeza que ele ouviu isso. De qualquer forma, por mais que eu queira marchar até o quartel de Balaur e cortar seus corações, tenho uma ideia melhor.</p>
+<p> </p>
+<p>Nós invadimos seus suprimentos e damos a eles um gostinho de suas próprias táticas. O que você diz, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Se os invadirmos, não podemos apenas reabastecer nossos próprios cofres, mas enfraquecer nossos inimigos.</p>
+<p> </p>
+<p>Vá para o campo de batalha de Vorgaltem e prenda o [%dic:STR_DIC_OBJ_DF4_Box_Q21205], mas tenha cuidado.</p>
+<p> </p>
+<p>O Balaur não leva gentilmente para você roubar seus Vittles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você acabou de dizer Vittles ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me diga que você tem algo melhor para fazer, [%username].</p>
+<p> </p>
+<p>Eu poderia me importar menos se eu passar fome, mas se pudermos enfraquecer o Balaur, isso valerá o risco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho coisas melhores para fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pensado-na verdade não sei o que há nesses suprimentos de Balaur ... talvez seja melhor nós não os comemos ....</p>
+<p> </p>
+<p>Independentemente disso, roubar os suprimentos enfraquecerá o Balaur.</p>
+<p> </p>
+<p>Bem, [%username]? Você conseguiu obter os suprimentos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu os peguei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entorpece!</p>
+<p> </p>
+<p>Quem te ensinou a contar, um tático Elyos?</p>
+<p> </p>
+<p>Volte e pegue o [%dic:STR_DIC_OBJ_DF4_Box_Q21205]. Eles devem estar dentro do quartel de Balaur no campo de batalha de Vorgaltem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe ... estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, [%username]!</p>
+<p> </p>
+<p>Vamos ver o que há nesses suprimentos agora. Ugh ... isso cheira a falta, isso parece ... principalmente comestível, isso é ... nojento! É tudo fino!</p>
+<p> </p>
+<p>Explosão! Não podemos usar nada disso! Bem, pelo menos o Balaur também não o usará. Obrigado pela ajuda, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue comida e bens do[%dic:STR_DIC_OBJ_DF4_Box_Q21205] e trazê -los para Ankea.</p>[%collectitem]</step>
+</steps>
+<p>O post de Vorgaltem Battlefield Scout tem um pouco de suprimentos devido a ladrões de Drakie. Aproveite o fornecimento de Balaur no campo de batalha de Vorgaltem e os leve para Ankea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ankea ficou furioso por o Balaur ter roubado suprimentos do acampamento e propôs que você se vinguei ao Balaur.</p>
+<p> </p>
+<p>Você apreendeu os suprimentos do quartel de Balaur no campo de batalha de Vorgaltem e voltou para ela. Ela disse que, embora os suprimentos não pareciam úteis, isso ainda ajudou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

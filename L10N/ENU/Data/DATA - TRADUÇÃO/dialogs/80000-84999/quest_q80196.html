@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação.</p>
+<p> </p>
+<p>Lamento incomodá -lo, mas gostaria de lhe perguntar uma coisa.</p>
+<p> </p>
+<p>Você poderia me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero confessar meu amor a alguém hoje.</p>
+<p> </p>
+<p>Gostaria de dar uma carta amada e uma bolsa luxuosa, mas preciso de mais couro para a bolsa.</p>
+<p> </p>
+<p>O couro é fácil de obter aqui na área.</p>
+<p> </p>
+<p>Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito gentil. Que sorte que eu tenho por ter conhecido você.</p>
+<p> </p>
+<p>Por favor, me pegue 12 peças de couro do Basilisco Vermelho, que podem ser encontradas nas proximidades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não ouve o que as pessoas dizem para você, apenas vá em frente e aceita o pedido deles, não é?</p>
+<p> </p>
+<p>Você acha que esse tipo de comportamento ganhará pontos de experiência? Como você dorme à noite?</p>
+<p> </p>
+<p>Volte quando você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu adquirir o couro Basilik para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o couro de basilisco.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é tudo?</p>
+<p> </p>
+<p>Para fazer uma bolsa de luxo, você precisará de mais. Por favor, faça o seu melhor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, muito obrigado. [%username]!</p>
+<p> </p>
+<p>Bom. Agora vou costurar o couro aqui, e esse pedaço de couro aqui, então ...</p>
+<p> </p>
+<p>Agora está terminado!</p>
+<p> </p>
+<p>Por favor, pegue esta bolsa e esta carta para minha amada. O nome dela está escrito no envelope.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%9]">Obter 12 couro de basilisco</p>[%collectitem]</step>
+<step><p visible="[%15]">Quando você colecionar o couro, converse com Dejigon.</p></step>
+</steps>
+<p>Colete 12 couro de basilisco para completar o presente do amor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dejigon fez uma bolsa de luxo para sua namorada e a enviou para ela junto com uma carta que professava seu amor.</p>
+<p> </p>
+<p>Ele estava nervoso sobre como seu amado reagiria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

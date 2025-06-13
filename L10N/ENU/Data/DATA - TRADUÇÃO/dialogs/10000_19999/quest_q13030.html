@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode ver, aqui em[%dic:STR_DIC_W_LDF5b_SZ_D1], tudo está flutuando no ar.</p>
+<p> </p>
+<p>O voo foi possível graças à sua ajuda. Mas, como esse fenômeno não está presente em outras regiões, muitos agora estão interessados.</p>
+<p> </p>
+<p>Acredita -se que um acidente nos tempos antigos tenha causado essa falta de peso.</p>
+<p> </p>
+<p>A HQ criou instrumentos especiais para examinar isso e atualmente está coletando materiais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para determinar se esse fenômeno está relacionado à fonte de energia chamada ID, que atualmente é frequentemente o caso, realizamos análises usando[%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_L_all]. Infelizmente, esses dispositivos agora estão quebrando com frequência.</p>
+<p> </p>
+<p>Nosso problema é que esses dispositivos estão instalados em uma área bastante perigosa, para que não possamos corrigi -los até que a situação aqui esteja de volta sob controle.</p>
+<p> </p>
+<p>Então seria bom se você pudesse levar este equipamento para ser reparado, [%username]. O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Muito obrigado.</p>
+<p> </p>
+<p>Há[%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_L01], Assim, [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_L02] e [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_L03]Dos três dispositivos de pesquisa.</p>
+<p> </p>
+<p>Inspecione o dispositivo de pesquisa correspondente e reative -o.</p>
+<p> </p>
+<p>Então, se você quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você parece estar ocupado com outra missão no momento.</p>
+<p> </p>
+<p>Não há nada que possa ser feito.</p>
+<p> </p>
+<p>Mas eu não poderia dar essa missão a mais ninguém, por isso, não deixe de voltar e me ver depois de concluir sua missão atual, [%username].</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Você voltou!</p>
+<p> </p>
+<p>E as máquinas?</p>
+<p> </p>
+<p>Você conseguiu tudo funcionando de novo?</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Tudo foi ativado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a tarefa! Impressionante!</p>
+<p> </p>
+<p>Agora que todos os dispositivos de pesquisa foram reparados, podemos aprender mais sobre o idgel encontrado na base de Bassen.</p>
+<p> </p>
+<p>Trabalho muito bom!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É ótimo que todos os dispositivos tenham sido reparados, mas não sei por que eles continuam parando.</p>
+<p> </p>
+<p>Acho que devemos chamar um engenheiro de shugo hábil, pois a causa da falha não foi identificada.</p>
+<p> </p>
+<p>De qualquer forma, quero agradecer sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Ativar [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_L_all]([%2]/3).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5b_Mele_E].</p></step>
+</steps>
+<p>Ative os dispositivos de pesquisa de identificação para a investigação perto da fortaleza de Bassen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Melle disse que os dispositivos de investigação instalados perto da fortaleza de Bassen não funcionam mais e pediu que você os iniciasse novamente.</p>
+<p> </p>
+<p>Depois que você começou todos os dispositivos novamente, ele disse que agora precisaria descobrir por que eles quebraram em primeiro lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

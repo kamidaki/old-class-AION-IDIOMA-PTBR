@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar do[%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_T1]?</p>
+<p> </p>
+<p>Há rumores de que a tribo Rune se estabeleceu lá.</p>
+<p> </p>
+<p>Aparentemente, os olheiros viram alguns espíritos há um tempo, em um local que poderia muito bem ser a cripta do templo.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LDF5_Under_SensoryArea_Q23616]primeiro e avalie a situação. Se você deve ver [%dic:STR_DIC_E_LDF5_Under_Shadow], destrua -os e colete evidências.</p>
+<p> </p>
+<p>Se essa é realmente a cripta do templo, você deve encontrar evidências da tribo Rune lá. Por favor me ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar do[%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_T1]?</p>
+<p> </p>
+<p>Há rumores de que a tribo Rune se estabeleceu lá.</p>
+<p> </p>
+<p>Aparentemente, os olheiros viram alguns espíritos há um tempo, em um local que poderia muito bem ser a cripta do templo.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LDF5_Under_SensoryArea_Q23616]primeiro e avalie a situação. Se você deve ver [%dic:STR_DIC_E_LDF5_Under_Shadow], destrua -os e colete evidências.</p>
+<p> </p>
+<p>Se essa é realmente a cripta do templo, você deve encontrar evidências da tribo Rune lá. Por favor me ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu[%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_T1]?</p>
+<p> </p>
+<p>Estava lá realmente [%dic:STR_DIC_E_LDF5_Under_Shadow]lá?</p>
+<p> </p>
+<p>Para investigações adicionais, uma quantidade suficiente de [%dic:STR_DIC_I_QUEST_23616a]deve ser obtido para evidências. Uma certa quantia deve ser coletada como evidência para convencer os chefes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o legado da runa amaldiçoada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o [%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_T1]!</p>
+<p> </p>
+<p>Agora que muito legado de Rune foi descoberto, não há dúvida sobre isso.</p>
+<p> </p>
+<p>Quão emocionante, que consegui encontrar evidências vitais para a pesquisa da Rune!</p>
+<p> </p>
+<p>Agora podemos começar a investigação real!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">A conversa continua.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, isso é todo o [%dic:STR_DIC_I_QUEST_23616a]?</p>
+<p> </p>
+<p>Não poderei convencer meus superiores com isso.</p>
+<p> </p>
+<p>Seria bom se você pudesse obter mais[%dic:STR_DIC_I_QUEST_23616a]. Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>As relíquias estão de fato em más condições, mas isso será suficiente para se reportar aos superiores e lançar uma investigação da cripta do templo.</p>
+<p> </p>
+<p>Agora podemos começar a estudar a história da tribo Rune corretamente. Isso não é emocionante?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na análise final, pode -se dizer que a tribo Rune já viveu na cripta do templo.</p>
+<p> </p>
+<p>Maravilhoso, essa redescoberta de uma civilização antiga que floresceu séculos atrás e depois desapareceu de repente. E eu fazia parte disso.</p>
+<p> </p>
+<p>É por isso que preparei uma pequena recompensa para você, [%username], que você pode achar útil.</p>
+<p> </p>
+<p>Não é nada de especial, mas eu fiz o meu melhor com isso. Por favor, aceite com isso em mente!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LDF5_Under_SensoryArea_Q23616].</p></step>
+<step><p visible="[%3]">Juntar [plur][%dic:STR_DIC_I_QUEST_23616a] e leve tudo para [%dic:STR_DIC_N_LDF5_Under_Nibella_E].</p>[%collectitem]</step>
+</steps>
+<p>Ajude Nivella, examine a cripta do templo e a reunir relíquias da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nabella pediu que você encontrasse a cripta do templo, a antiga casa da tribo Rune, e traz à prova de volta.</p>
+<p> </p>
+<p>Havia uma grande alegria ao entregar o amaldiçoado legado de Rune como evidência, porque era a prova de que um antigo assentamento da tribo Rune existia, então agora a investigação poderia começar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

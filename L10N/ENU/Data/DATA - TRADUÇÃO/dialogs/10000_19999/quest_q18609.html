@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você planeja fazer com a lágrima de Kromede?</p>
+<p> </p>
+<p>Pena para desperdiçar seu poder usando -o como um colar, [%username].</p>
+<p> </p>
+<p>Você pode derreter e usá -lo para revestir o Warhammer do juiz ... você vai embora com uma arma muito forte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sério? Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisará de três coisas para alcançá -lo: a lágrima de Kromede, a casa de guerra do juiz e um ferreiro muito talentoso.</p>
+<p> </p>
+<p>Você já tem a primeira coisa e, comigo, você tem a terceira coisa. Agora você só precisa do Warhammer do juiz. Se você conseguir, eu cuidarei do resto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Considere -se bastante sortudo por ter me encontrado, [%username].</p>
+<p> </p>
+<p>Não pretendo me gabar, mas eu realmente sou um dos melhores ferreiros em toda a Elysea. Eu posso até lhe dizer onde começar a procurar o Warhammer.</p>
+<p> </p>
+<p>Eu ouvi rumores de que [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]no templo do fogo em Asmodae tem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é o ferreiro informativo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não confia em mim, [%username]? Você não acha que eu sou um Daeva que mantém sua palavra?</p>
+<p> </p>
+<p>Eu sou o ferreiro mais famoso de Elysea! Meu nome é sinônimo de confiança e satisfação!</p>
+<p> </p>
+<p>Pelo menos pense.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou feliz com minha arma."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o Warhammer do juiz, [%username]?</p>
+<p> </p>
+<p>Conceda-me o martelo e a lágrima de Kromede, e eu começarei a refiná -los.</p>
+<p> </p>
+<p>Não deveria demorar muito ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está tudo o que você precisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está preocupado que eu arruine o Warhammer do juiz?</p>
+<p> </p>
+<p>Eu ... sou o ferreiro mais famoso em toda a Elysea, e você realmente acha que vou danificar isso?</p>
+<p> </p>
+<p>Apenas dê a mim junto com a lágrima de Kromede e eu vou te mostrar! Eu preciso deles no seu cubo. Não equipar o Warhammer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sempre há um favor envolvido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi ... mais difícil do que eu pensava! Não suo tanto há anos!</p>
+<p> </p>
+<p>Mas acabou ... pegue. O Warhammer de Kromede está completo.</p>
+<p> </p>
+<p>Eu preciso descansar agora. Eu me cansei, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna os materiais necessários para refinar o Warhammer do juiz e trazê -los para [%dic:STR_DIC_N_Ukon].</p>[%collectitem]</step>
+</steps>
+<p>Ukon disse que refinará o Warhammer do juiz para você. Pegue o martelo e a lágrima de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ukon disse que a lágrima de Kromede é boa para fortalecer o Warhammer do juiz. Ele disse que poderia fazer isso por você.</p>
+<p> </p>
+<p>Você confiou nele e deu -lhe a lágrima de Kromede e a martelo de guerra do juiz, e ele manteve sua palavra, criando a Warhammer de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

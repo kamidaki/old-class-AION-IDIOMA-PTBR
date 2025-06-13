@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A batalha no campo de batalha de Bastion Bastion está chegando ao fim.</p>
+<p> </p>
+<p>A defesa do Exército de Beritra é muito forte e a dos Elyos.</p>
+<p> </p>
+<p>Nossa única opção é matar [%dic:STR_DIC_M_IDF5_TD_War_Vri_Boss_65_Al] e assim, leve o campo de batalha para os asmodianos.</p>
+<p> </p>
+<p>Eu quero confiar você a esta tarefa, [%username]. Se você e seus camaradas entrarem na batalha, você ganhará.</p>
+<p> </p>
+<p>Venha para [%dic:STR_DIC_W_LDF5_Fortress_SZ_A1_Start]Depois de concluir sua missão. Vou esperar por você lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]. Eu estive esperando por você.</p>
+<p> </p>
+<p>Você matou Pashid?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que o matou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é inacreditável, [%username]!</p>
+<p> </p>
+<p>[%username], então os rumores sobre suas ações heróicas são verdadeiras.</p>
+<p> </p>
+<p>[%username], essa recompensa é para você.</p>
+<p> </p>
+<p>Você matou Pashid e lutou pela honra dos asmodianos. Você merece muito respeito por fazê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_IDF5_TD_War_Vri_Boss_65_Al]([%2]/1).</p></step>
+<step><p visible="[%15]">Retornar ao[%dic:STR_DIC_W_LDF5_Fortress_SZ_A1_Start] e reportar a [%dic:STR_DIC_N_LDF5b_Latkel_E].</p></step>
+</steps>
+<p>Derrote o comandante supremo Pashid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma missão de Latkel para matar o comandante supremo Pashid.</p>
+<p> </p>
+<p>Quando ele apareceu no campo de batalha do bastião da parede de aço, você o derrotou.</p>
+<p> </p>
+<p>Você voltou ao assentamento Rubininer e relatou a Latkel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

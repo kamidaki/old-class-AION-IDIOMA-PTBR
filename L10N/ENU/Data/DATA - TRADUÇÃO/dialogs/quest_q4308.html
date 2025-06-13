@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu informante me diz que os trabalhadores lefaristas não estão recebendo mais poção com Yakomer morto.</p>
+<p> </p>
+<p>Eles também não estão felizes com isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Alguma pista de onde vem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sabemos quem está fazendo isso.</p>
+<p> </p>
+<p>Seu nome é Conky Hororuke.</p>
+<p> </p>
+<p>A boa notícia é que ele é o único que sabe como fazê -lo, e ele carrega a receita com ele em todos os lugares que vai.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Conky Horroruke, hein?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi o que eu disse, [%dic:STR_DIC_M_DF2_LehparKnNamedQ_39_Ae]. Seu próximo trabalho é levá -lo para fora.</p>
+<p> </p>
+<p>Isso vai acabar com esse negócio de poções.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele estará em algum lugar no[%dic:STR_DIC_W_DF2_SUB_D5]. Ah, e traga essa receita de volta para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hum, claro. Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não volte para mim agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, eu tenho que estar em algum lugar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cuida de Conky?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, e aqui está a receita."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não foi para a Cidadela Lefarista? Que tipo de Asmodian você é?</p>
+<p> </p>
+<p>Vá lá e mate [%dic:STR_DIC_M_DF2_LehparKnNamedQ_39_Ae].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei isso no meu próprio tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo trabalho. Vou verificar isso. Tenho certeza de que o Pandaememonium estará bastante interessado em como essas coisas são feitas.</p>
+<p> </p>
+<p>Nem uma palavra disso para ninguém, entende?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_DF2_LehparKnNamedQ_39_Ae], pegue tudo o que encontrar nele e leve para [%dic:STR_DIC_N_Gelkugin].</p>[%collectitem]</step>
+</steps>
+<p>Derrote Conky Hororuke e procure seu corpo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gelkugin pediu que você derrotasse Conky Hororuke, o homem que fazia a poção suspeita. Você encontrou a receita da poção em seu corpo e a trouxe de volta a Gelkugin, que disse que o pandaemonium estaria muito interessado nele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], posso pedir outro favor?</p>
+<p> </p>
+<p>Um amigo meu vive não muito longe daqui.</p>
+<p> </p>
+<p>Eu acho que ele está perto da ascensão do cristal. A última notícia que ouvi foi perturbadora.</p>
+<p> </p>
+<p>Aparentemente, seu laboratório de pesquisa foi destruído.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Ele está bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi que o esconderijo dele não está longe daqui.</p>
+<p> </p>
+<p>O nome dele é[%dic:STR_DIC_N_Kistig]. Você o encontraria e perguntaria como ele é para mim, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphelumbra, Daeva! Peço desculpas por minha humilde casa, mas tudo o que os espíritos me deixaram.</p>
+<p> </p>
+<p>Não entendo o que os fez atacar! Eles não me incomodaram antes.</p>
+<p> </p>
+<p>Eles ainda são tão agressivos que não posso chegar perto do meu laboratório.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Diga a ele como Medéia se preocupa com ele.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Medea! Ela deve ter ouvido falar que eu tinha que abandonar meu laboratório.</p>
+<p> </p>
+<p>As circunstâncias me fizeram esquecer tudo o mais.</p>
+<p> </p>
+<p>Obrigado por entregar esta mensagem. Isso me dá força para saber que ela está pensando em mim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kistig].</p></step>
+</steps>
+<p>Medéia está preocupada porque sua amiga Kistig perdeu seu laboratório e teve que encontrar abrigo. Encontre Kistig e dê -lhe os cumprimentos de Medéia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Medéia temia por seu amigo Kistig, que teve que fugir depois que seu laboratório em Crystal Rise foi destruído.</p>
+<p> </p>
+<p>Você fez como Medéia se deparou e visitou Kistig em uma cabana no bosque de Patamor para perguntar como ele estava se saindo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

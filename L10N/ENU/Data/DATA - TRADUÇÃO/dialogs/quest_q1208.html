@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você esteve no santuário antes, não é?</p>
+<p> </p>
+<p>Você sabe, Silver está se mostrando poderosamente lucrativo lá em cima agora. Está em quase tudo o que você pode chegar lá, que vale a pena chegar.</p>
+<p> </p>
+<p>Eles costumavam ser capazes de obtê -lo de uma das aldeias locais, mas agora foi assumido pelos Dukaki Kobolds ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Então, como eles recebem prata agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótima pergunta! Resposta engraçada!</p>
+<p> </p>
+<p>É muito difícil de encontrar. Principalmente, ele tem que ser comprado agora, mas ... de vez em quando um corajoso, jovem ... er, mercenário virá por aí ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você quer que eu pegue prata por santuário."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Fechar! Sempre tão perto!</p>
+<p> </p>
+<p>Há dinheiro a ser ganho aqui. Eu quero que você pegue o [%dic:STR_DIC_I_noblemetal_10a]do[%dic:STR_DIC_FLA13] e traga para mim. Por sua vez, vou vendê -lo para o santuário e podemos dividir o lucro!</p>
+<p> </p>
+<p>Há mais dinheiro a ser ganho aqui do que você já viu. O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente!</p>
+<p> </p>
+<p>Eu tinha ouvido falar do seu passado mercenário, então figurado em todos os daevas, você teria menos escrúpulos em ganhar dinheiro do que a maioria.</p>
+<p> </p>
+<p>Lembre -se, você só precisa minerar cinco amostras de [%dic:STR_DIC_I_noblemetal_10a]do[%dic:STR_DIC_FLA13].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oi ho, aqui vou eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recusado por um ex -mercenário!</p>
+<p> </p>
+<p>Para que o mundo está chegando, não é?</p>
+<p> </p>
+<p>Vá em frente então. Claramente você não tem negócios conosco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, Saminel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]!</p>
+<p> </p>
+<p>Como você se beijou com a prata?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Entendi aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso não está certo! Eu pedi cinco amostras de [%dic:STR_DIC_I_noblemetal_10a].</p>
+<p> </p>
+<p>Vá buscar o resto-e rapidamente, antes que os outros fiquem desconfiados!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito! Eu não pedi seis amostras? Não me lembro ... cinco vão se sair bem!</p>
+<p> </p>
+<p>Aqui está o pagamento que prometi. Mantenha isso para si mesmo, tudo bem? Se os outros descobrirem que eu tenho ganho dinheiro ao lado, eles terão minhas entranhas para ligas!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Meu[%dic:STR_DIC_I_noblemetal_10a]no[%dic:STR_DIC_FLA13] e leve para [%dic:STR_DIC_N_Saminel].</p>[%collectitem]</step>
+</steps>
+<p>Aparentemente, a prata está sendo negociada a um preço alto no santuário. Colete um pouco de minério de prata na mina de Dukaki e leve -o para Saminel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Saminel], um miliciário da vila de Tolbas, disse que o minério de prata estava sendo negociado a preços altos no santuário e queria saber se você gostaria de trabalhar com ele.</p>
+<p> </p>
+<p>Ele lhe ofereceu um bom preço, então você aceitou a oferta dele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É incrível, [%username], mas com tanto combate quanto tivemos com o dragão, ainda sabemos muito pouco sobre eles.</p>
+<p> </p>
+<p>Aqueles moradores perigosos de Undirborg ... não sabemos o quão fortes são, a melhor maneira de matá -los, o que os diminui ... nada.</p>
+<p> </p>
+<p>Eles são diferentes dos nossos outros inimigos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu sei que eles sangraram!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos aprender tudo o que pudermos sobre esses dragão para que possamos combatê -los adequadamente ... assim como nos defender adequadamente contra eles. Eles são muito diferentes dos Reians que eram antes.</p>
+<p> </p>
+<p>[%username], isso pode ser uma missão de suicídio, mas precisamos entender suas habilidades de luta. Eu preciso do melhor dos melhores ... preciso de você por aí.</p>
+<p> </p>
+<p>Para o bem de todos os Elyos, você assumirá[%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An] S, [%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An] Areia [%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An] para descobrir o que melhor os mata?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia depender de você para as missões sangrentas, [%username].</p>
+<p> </p>
+<p>Só não pense por um segundo que você está conflitando lâminas com membros da tribo de Reian simples. Esses inimigos ficaram loucos!</p>
+<p> </p>
+<p>Depois de lidar com o [%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An] S, [%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An] Areia [%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An] S, deixe -me saber como você fez isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer anotações vívidas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estranho. Ouvi de vários danos que você era um dos mais difíceis que eles conheciam ... mas você recusar uma missão que só é capaz de lidar.</p>
+<p> </p>
+<p>Não tenho certeza se é de medo ou obrigações anteriores, mas se você mudar de coração, volte. Precisamos de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou o mais difícil ... e mais movimentado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi, [%username]? Você conseguiu matar sozinho os assassinos do apóstata, emboscadores e frades?</p>
+<p> </p>
+<p>Se você puder sobreviver a um duelo com eles, isso me dá esperança de que outros Daevas também possam.</p>
+<p> </p>
+<p>Algum conselho a oferecer?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles sangraram. E eles morrem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que seu conselho pudesse ser um pouco mais ... abrangente. Mas saber que eles sangraram e morrem funcionarão para mim.</p>
+<p> </p>
+<p>Obrigado, [%username]. Vou relatar suas descobertas às minhas tropas e deixar que elas saibam seu mais novo inimigo ... sangramento e morre.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os seguidores de Undirborg.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF4_B5_FanaticFi_53_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF4_B5_FanaticAs_53_An]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF4_B5_FanaticCh_53_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Barus].</p></step>
+</steps>
+<p>Segundo Barus, os seguidores devem ser investigados em termos de força de combate e armamentos. Para fazer isso, lute contra os olheiros, freiras e atacantes e diga a Barus como foi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Barus foi despachado para Undirborg para pesquisa e pediu que você testasse a força de luta do dragão.</p>
+<p> </p>
+<p>Quando você relatou os resultados de matar agentes apóstatas, emboscadores e frades, ele ficou um pouco decepcionado com o seu conselho simples, mas o recompensou de qualquer maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

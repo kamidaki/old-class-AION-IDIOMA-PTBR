@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(A carta parece ser da mãe de Rikanelly.)</p>
+<p> </p>
+<p>(Diz "para minha querida filha Rikanelly".)</p>
+<p> </p>
+<p>(É melhor pegar a carta para Rikanelly.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que aconteceu?</p>
+<p> </p>
+<p>Você encontrou minha mãe?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você entrega a carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso ... é a letra da minha mãe?!</p>
+<p> </p>
+<p>(A expressão de Rikanelly fica mais escura enquanto ela lê a carta.)</p>
+<p> </p>
+<p>(As mãos dela começam a tremer e a letra cai no chão)</p>
+<p> </p>
+<p>Isso é impossível ... mãe ... Karjannke ... não !!!</p>
+<p> </p>
+<p>Karjannke e eu somos irmãos! Aparentemente, ele é meu irmão mais novo !!!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você pergunta se está tudo bem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O mundo inteiro virou de cabeça para baixo ...</p>
+<p> </p>
+<p>(Os olhos de Rikanelly olham para o espaço)</p>
+<p> </p>
+<p>[%username], por favor, passe o seguinte para Karjannke.</p>
+<p> </p>
+<p>Diga a ele ... que não posso aceitar sua proposta.</p>
+<p> </p>
+<p>(Rikanelly parece triste e murmura para si mesma)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Você gostou dela? Ela gostava muito do anel?</p>
+<p> </p>
+<p>Ela disse que está esperando por isso há muito tempo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você devolve o anel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, eu não entendo ...</p>
+<p> </p>
+<p>Ela está me transformando? É isso que você está tentando me dizer? !!</p>
+<p> </p>
+<p>Eu não acredito !!!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dê a Rikanelly a carta.</p></step>
+<step><p visible="[%3]">Devolva o anel a Karjannke.</p></step>
+</steps>
+<p>Dê a Rikanelly a carta e devolva a Karjannke a Karjannke.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A carta de sua mãe revela que Rikanelly e Karjannke são irmãos. Rikanelly está chocado.</p>
+<p> </p>
+<p>Você deu o anel de Karjannke de volta a ele a pedido de Rikanelly.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

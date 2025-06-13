@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é apenas a pessoa que eu preciso.</p>
+<p> </p>
+<p>A tarefa é simples. Você só precisa trazer um livro para qualquer pessoa no salão dos protetores.</p>
+<p> </p>
+<p>O livro é um texto sobre os segredos do caminho do[%userclass].</p>
+<p> </p>
+<p>A Anyte está atualmente mantendo os livros em segurança e emprestei um deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de devolver o livro. Mas não posso confiar um livro tão valioso a ninguém, é claro.</p>
+<p> </p>
+<p>Certamente posso confiar o livro a um[%userclass]como você, [%username].</p>
+<p> </p>
+<p>Você poderia devolver este livro a qualquer coisa com meus agradecimentos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já aprendeu tudo neste livro, [%username].</p>
+<p> </p>
+<p>Você precisa do segundo volume do livro misterioso.</p>
+<p> </p>
+<p>Anyte tem os outros volumes.</p>
+<p> </p>
+<p>Leve este volume para [%dic:STR_DIC_N_LC1_Anyte_M]no salão dos protetores. Ela vai te ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece não pensar que meu pedido é muito importante.</p>
+<p> </p>
+<p>Mas há uma razão pela qual eu escolhi você, [%username].</p>
+<p> </p>
+<p>Veja isso como uma recomendação para Anyte.</p>
+<p> </p>
+<p>Mas se você não quiser, [%username], não há nada que possa ser feito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que você quer?</p>
+<p> </p>
+<p>Você quer saber a verdade sobre o espaço?</p>
+<p> </p>
+<p>Talvez tenha algo a ver com o livro em sua mão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o livro secreto.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este livro emprestado por Damocles não pode ser confiado a todos.</p>
+<p> </p>
+<p>Como Damocles lhe deu este livro, isso deve significar que ele confia em você.</p>
+<p> </p>
+<p>Você parece promissor, [%username]. Mas você ainda tem muito a aprender se quiser se tornar um verdadeiro[%userclass].</p>
+<p> </p>
+<p>Vou ajudá -lo, caso você tenha algum problema para estudar o próximo volume do livro misterioso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LC1_Anyte_M]%.</p></step>
+</steps>
+<p>Passe a inscrição secreta Damocles deu a você a qualquer pessoa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Damocles pediu que você levasse o livro misterioso para Anyte.</p>
+<p> </p>
+<p>Depois que Anyte recebeu o livro, ela disse que você ainda tinha muito a aprender para se tornar um Daeva e prometeu ajudá -lo se tivesse alguma dificuldade em aprender o próximo livro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

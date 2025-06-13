@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaagh! Não é outra picada de abelha! Minha má sorte foi impressionada de novo!</p>
+<p> </p>
+<p>Sim, [%username], as abelhas estão de volta. Você esperava mais alguma coisa com a minha sorte? Estou de volta à minha armadura o dia todo todos os dias.</p>
+<p> </p>
+<p>Como eles foram criados pelo Balaur, eu tenho consultado Herka no meu próprio tempo, mesmo que apenas por minha própria segurança e sanidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que ela disse?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ela disse que, como as abelhas normais, desde que haja raios vivos, a colméia acabará reformando.</p>
+<p> </p>
+<p>É por isso que existem[%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017] está em todo lugar novamente.</p>
+<p> </p>
+<p>Com a minha sorte, eu seria blindado em abelhas em dez segundos. Você poderia destruir as colméias novamente para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um grande alívio! Espero que você se lembre de onde o [%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017] S estava no campo de batalha de Antagor.</p>
+<p> </p>
+<p>Precisamos matar as rainhas para realmente resolver o problema. Mas, por enquanto, este é o melhor que podemos fazer, apenas para reduzir seus números.</p>
+<p> </p>
+<p>Boa sorte, [%username]. Não seja picado demais ... como eu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou tentar não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ugh, é claro que você está ocupado. Com a minha sorte, como poderia sair de outra maneira?</p>
+<p> </p>
+<p>Oh, bem, de volta a usar armadura quente toda a TI-arrase! Arrrgh, outra picada!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Confie no destino, não sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas oito picadas desde que você se foi! Essa é uma grande melhoria nos últimos dias.</p>
+<p> </p>
+<p>Comprei essa pomada de um comerciante Shulack que deveria aliviar a dor, mas parece atrair mais abelhas.</p>
+<p> </p>
+<p>Claro, funciona para todos os outros. Mas ainda assim, parece que você cuidou das colméias?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu com certeza o fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por tornar minha vida amaldiçoada um pouco mais tolerável.</p>
+<p> </p>
+<p>Ainda assim, é apenas uma medida temporária. Gostaria de saber se o general Valetta poderia enviar algumas tropas para cuidar das rainhas?</p>
+<p> </p>
+<p>De qualquer forma, pegue isso, antes que minha má sorte me faça perdê -lo ou jogá -lo na sua cara ou algo assim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar e destruir [%dic:STR_DIC_OBJ_DF4_BeeNest_Q21017] S ([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Vyuin].</p></step>
+</steps>
+<p>Vyuin está sendo picado novamente. Encontre e destrua as recém -reformadas Gelkmaros Beehives.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vyuin disse que as abelhas irritadas se multiplicaram mais uma vez. As colméias de Gelkmaros devem ser destruídas novamente para reduzir seus números.</p>
+<p> </p>
+<p>Você foi ao Antagor Battlefield e destruiu as colméias. Você voltou aos louvores de Vyuin (e mais queixas sobre a sorte dele).</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

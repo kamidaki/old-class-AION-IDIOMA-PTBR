@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- DESEJADO -</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Sinis (também conhecido como "a viúva negra") é procurada pelos seguintes crimes:</p>
+<p></p>
+<p>1. Fraude do casamento: Ela entrou em casamentos sob falsos pretextos.</p>
+<p>2. Homicídio: Ela se casou e depois envenenou quatro homens.</p>
+<p></p>
+<p>3. Voo da acusação: tendo sido condenado por esses crimes e condenado à morte, ela escapou da custódia.</p>
+<p></p>
+<p>Uma recompensa é oferecida para qualquer informação que leve a [%dic:STR_DIC_M_CriminalLightWiNamedQ_24_An]localização e prisão. Uma recompensa adicional é oferecida por sua eliminação. Uma fechadura do cabelo é necessária como evidência de sua morte.</p>
+</body>
+</html>
+</contents>
+<background name="Doc_bg_q3019"></background>
+<selects>
+<act href="HACTION_SETPRO1">"Eu posso pegar a viúva negra."</act>
+<act href="HACTION_FINISH_DIALOG">"Vou deixar isso para os profissionais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca me interessou muito pelo casamento, mas agora estou ainda menos. Sinis, a Viúva Negra, matou quatro de seus maridos para roubar seus bens. Terrível, não é?</p>
+<p> </p>
+<p>Ela era realmente meticulosa. Ela saborou o ensopado com um cogumelo venenoso, mas não o suficiente para matar imediatamente. Ela o alimentava com os maridos todos os dias. Eles ficaram doentes com o tempo e acabaram morrendo, mas pareciam estar doentes, não envenenados.</p>
+<p> </p>
+<p>Então, o que te traz aqui?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"O cabelo dela é prova, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, se você tem o cabelo dela, pode reivindicar a recompensa. Temos maneiras de garantir que seja realmente dela.</p>
+<p> </p>
+<p>Se você conseguir fazer isso, venha aqui imediatamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é o cabelo dela? Deixe-me ver!</p>
+<p> </p>
+<p>Incrível! Você sabe quantas pessoas tentaram pegá -la? Você ganhou essa recompensa.</p>
+<p> </p>
+<p>Não compre nenhum ensopado, no entanto. Ha!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_CriminalLightWiNamedQ_24_An], obtenha as evidências e leve para [%dic:STR_DIC_N_Crios].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se de Sinis, a Viúva Negra, corte os cabelos de Sinis e leve -o a Crios para uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se livrou de Sinis, a Viúva Negra, procurada por homicídio de quatro maridos usando veneno, e levou o cabelo de Sinis a Crios como evidência da recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

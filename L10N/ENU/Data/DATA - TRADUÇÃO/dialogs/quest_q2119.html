@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos dar uma olhada neste mapa ...</p>
+<p> </p>
+<p>Sim, isso é ishalgen. Olha, aqui está o campo de prisão ... e isso é ... espere, eu já vi este mapa antes.</p>
+<p> </p>
+<p>Uma mulher chamada Kirtai apareceu aqui há alguns meses. Ela disse que estava procurando um túmulo e tinha um mapa mal desenhado.</p>
+<p> </p>
+<p>Eu disse a ela para ir ao cemitério se ela estivesse procurando um túmulo, mas ela insistiu que estava em outro lugar. Para 200 Kinah, eu acreditaria em qualquer coisa.</p>
+<p> </p>
+<p>Nós nunca o encontramos e ela nunca mais voltou, mas ela deixou o mapa. Eu mantive -o à mão, caso eu a visse novamente.</p>
+<p> </p>
+<p>Oh não...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tente comparar os dois mapas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso fazer melhor do que isso. Este mapa é de pele de cebola, para que eu possa colocá -lo no topo do outro.</p>
+<p> </p>
+<p>Ele se alinha perfeitamente! A opala negra-e o túmulo que Kirtai estava procurando-está em uma caverna logo acima da colina. Os lefaristas estão próximos, mas o mapa deles não é detalhado o suficiente para mostrar exatamente para onde ir.</p>
+<p> </p>
+<p>Há um problema: a caverna não está vazia. Você terá que enfrentar [%dic:STR_DIC_M_KalnifNamed_8_An]para chegar à opala negra. Perdemos muitos invasores tentando matar Carak, mas tenho certeza que você pode fazer isso, [%username]! Imagine o tesouro ... os sonhos são feitos!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Nós vamos ser ricos! Rico!</p>
+<p> </p>
+<p>Tudo bem, rapidamente agora! NAB aquela pérola! Corra para a caverna, derrota [%dic:STR_DIC_M_KalnifNamed_8_An] e traga de volta o tesouro da caverna!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta-espero."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Mas ... nós poderíamos ser ricos!</p>
+<p> </p>
+<p>Você é o primeiro[%userclass]capaz de assumir [%dic:STR_DIC_M_KalnifNamed_8_An]! Você não pode simplesmente fugir por causa de ... er ... o que aconteceu com os outros!</p>
+<p> </p>
+<p>Oh, vá embora! Vou conseguir o tesouro ou morrer tentando. Mantenha isso em sua consciência, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]Retornos, com quantidades indecorosas de tesouro!</p>
+<p> </p>
+<p>Certo? Você matou o [%dic:STR_DIC_M_KalnifNamed_8_An] e me trouxe seu tesouro?</p>
+<p> </p>
+<p>Diga-me!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Você ainda não foi?</p>
+<p> </p>
+<p>[%username], estamos tão perto de serem ricos! Eu posso provar o Kinah ... não que eu comesse, você entende, apenas ...</p>
+<p> </p>
+<p>Apenas continue com isso, vai?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter na próxima vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dê isso aqui!</p>
+<p> </p>
+<p>O que? É isso?!</p>
+<p> </p>
+<p>Isso é falso! Eu não poderia vender isso em Aldelle, não importa o Pandaemonium. Onde está o poder? O poder!</p>
+<p> </p>
+<p>Todo esse problema por nada! Eu não posso acreditar. Mantenha a coisa, [%username]-Há alguma mágica residual lá. Não é nada para mim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Roubar o tesouro guardado pelo[%dic:STR_DIC_M_KalnifNamed_8_An], então leve para [%dic:STR_DIC_N_Lidun].</p>[%collectitem]</step>
+</steps>
+<p>Você descobriu que o local marcado no mapa do tesouro era o Den de Carak. Entre na cova, roube o tesouro e leve -o para Lidun.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lidun lhe disse que o local marcado no mapa do tesouro era [%dic:STR_DIC_M_KalnifNamed_8_An] S'S den. Depois de entrar na cova, você matou Carak e trouxe a opala negra de volta à base.</p>
+<p> </p>
+<p>No entanto, depois de examinar a opala negra, Lidun devolveu -a, dizendo que era uma falsa com apenas uma magia menor dentro dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

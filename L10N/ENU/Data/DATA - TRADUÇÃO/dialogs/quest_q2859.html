@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... esta é uma situação insuportável. O poder de nossos oponentes está crescendo, mas nossos reforços ainda não chegaram.</p>
+<p> </p>
+<p>Meu povo está me dizendo que devemos começar a atacar em breve. Mas se atacarmos agora, acabaremos perdendo nossos lutadores atuais.</p>
+<p> </p>
+<p>Meus soldados já estão perdendo a vontade de lutar ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, ajude -nos a enfraquecer os poderes de nossos oponentes.</p>
+<p> </p>
+<p>Dê a meus soldados um exemplo de espírito de combate para estimulá -los e destruir os Elyos.</p>
+<p> </p>
+<p>Você poderia se livrar do[%dic:STR_DIC_E_1221_guard_Li_fi]?</p>
+<p> </p>
+<p>Se você carregar essa tarefa com sucesso, reportarei o alto comando sobre suas realizações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Só podemos realizar a tarefa quando o refúgio de Krotan foi capturado pelos Elyos.</p>
+<p> </p>
+<p>Quando o refúgio de Krotan é controlado pelos Elyos, você receberá um sinal. Então os guardiões Elyos Krotan aparecem.</p>
+<p> </p>
+<p>Esses[%dic:STR_DIC_E_1221_guard_Li_fi] São fortes. Então você deve ter cuidado. Não deixe o inimigo cercar você!</p>
+<p> </p>
+<p>Ah, alguns oponentes têm um[%dic:STR_DIC_I_QUEST_2859a].</p>
+<p> </p>
+<p>Pegue essas bandeiras. Quero mostrá -los aos meus soldados, para dar coragem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez eu lhe pedisse algo desnecessário.</p>
+<p> </p>
+<p>Não se preocupe com isso.</p>
+<p> </p>
+<p>Fiquei impaciente porque a unidade de reforços foi adiada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou muito confuso.</p>
+<p> </p>
+<p>Meu povo reclama demais. Eles me atormentam o dia todo.</p>
+<p> </p>
+<p>Você completou sua missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as bandeiras de refúgio de Krotan.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Seja honesto.</p>
+<p> </p>
+<p>Você esqueceu as bandeiras?</p>
+<p> </p>
+<p>Eu não ligo.</p>
+<p> </p>
+<p>Se você quiser uma recompensa, traga -me [plur][%dic:STR_DIC_I_QUEST_2859a]. Esse foi o nosso acordo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz por ter escolhido confiar essa tarefa a você.</p>
+<p> </p>
+<p>Você foi um exemplo fabuloso de espírito de luta e coragem para meus lutadores.</p>
+<p> </p>
+<p>Por favor, continue a nos ajudar.</p>
+<p> </p>
+<p>Aqui, aceite isso. Esta é uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_1221_guard_Li_fi], colete evidências e traga -as para [%dic:STR_DIC_N_Rathgrid].</p>[%collectitem]</step>
+</steps>
+<p>Uma vez que os Elyos tomem o refúgio de Krotan, eles implantarão Krotan Guardians. Derrote esses guardiões e tire suas bandeiras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Radgrid pediu que você eliminasse os Elyos para reforçar o moral de seus soldados.</p>
+<p> </p>
+<p>Você observou o refúgio de Krotan. Os Guardiões Elyos Krotan apareceram assim que os Elyos o haviam capturado.</p>
+<p> </p>
+<p>Você eliminou os guardiões Elyos Krotan e pegou suas bandeiras. Radgrid agradeceu por dar coragem ao povo e pediu que você continuasse lutando por ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

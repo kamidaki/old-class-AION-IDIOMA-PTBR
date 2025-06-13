@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você viu uma alma no seu caminho aqui? Parece uma massa flutuante de rocha carregando uma carga de minerais nas costas.</p>
+<p> </p>
+<p>Eu nunca tinha visto ou ouvido falar dessas coisas, mas o padre ganglot diz que sente a energia das almas dentro dela. Mas o Ganlot se tornou um pouco estranho ultimamente, para que ele possa estar com fome ou com sede por tudo o que sei.</p>
+<p> </p>
+<p>Ele acha que as almas dos Daevas que desapareceram em Reshanta poderiam ter sido absorvidas por um mineral que acabou se transformando nessa criatura hedionda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Essa é uma teoria interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei se ele está certo ou não-não sei nada sobre minerais ou almas.</p>
+<p> </p>
+<p>Mas o Ganlot é bastante sério e insiste que reunimos fragmentos de almas e os enviamos para o Pandaemonium para pesquisa. Ele os quer examinados por um protetor de divindade com melhores habilidades do que as dele.</p>
+<p> </p>
+<p>Você poderia me ajudar a reunir fragmentos de alma, [%username]? Não posso deixar o padre em paz. Elyos pode aparecer a qualquer momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, bom. Agora, o Ganglot diz que existem dois tipos de almas:[%dic:STR_DIC_M_Ab1_1132_SouledStone_25_An] e [%dic:STR_DIC_M_Ab1_1132_SouledStoneB_25_An].</p>
+<p> </p>
+<p>Precisamos reunir fragmentos de ambos para uma análise melhor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pensar que ganhei minhas asas por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma massa de rocha em movimento imbuída de almas. Bobagem, certo?</p>
+<p> </p>
+<p>Você pode ser franco comigo. Eu pensei que ele era louco quando ouvi pela primeira vez sobre isso também.</p>
+<p> </p>
+<p>No entanto, depois de trabalhar com o Ganglot nessas semanas e ver e ouvir pelo menos três coisas incríveis todas as manhãs antes do café da manhã, agora acredito. Se você não puder, eu entendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta mais cedo do que eu esperava.</p>
+<p> </p>
+<p>Você se reuniu[%dic:STR_DIC_I_QUEST_2744a] e [%dic:STR_DIC_I_QUEST_2744b]?</p>
+<p> </p>
+<p>Aqui, me dê os fragmentos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão os fragmentos ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é exatamente uma missão urgente. Mesmo se você os reunir agora, não posso enviá -los imediatamente para o Pandaemonium.</p>
+<p> </p>
+<p>Mas, por favor, não demore muito tempo. Eu tenho que enviar os fragmentos pelo mensageiro que entrega nossos suprimentos.</p>
+<p> </p>
+<p>Eu ficaria muito aliviado se você pudesse coletá -los o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para esses fragmentos. Eles brilham com uma luz escura e azul. Eles não são bonitos?</p>
+<p> </p>
+<p>Até eu sinto uma energia misteriosa. Eu posso ter ouvido muita conversa sobre a alma imbuindo e similares.</p>
+<p> </p>
+<p>Bem, eu não tenho ideia do que eles são. Eu só preciso embalá -los com segurança para o Pandaemonium. Obrigado pela ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar os fragmentos de [%dic:STR_DIC_M_Ab1_1132_SouledStone_25_An] e [%dic:STR_DIC_M_Ab1_1132_SouledStoneB_25_An], e leve-os para [%dic:STR_DIC_N_Gjalf].</p>[%collectitem]</step>
+</steps>
+<p>Ganglot acredita que a alma Blue Crystal e a alma em evolução contêm as almas de Daevasas mortos. Derrote as almas e colete seus fragmentos para estudos adicionais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gjalf foi dito pelo padre ganglot que a alma Blue Crystal e a alma evoluída vagando pelo túmulo do aço podem conter as almas dos Daevas.</p>
+<p> </p>
+<p>Gjalf queria enviá -los para o Pandaemonium para um exame atento. Você derrotou a alma Blue Crystal e a alma evoluída e levou os fragmentos de almas para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q21523</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com licença, [%userclass]. Você poderia me fazer um favor se não estiver muito ocupado?</p>
+<p> </p>
+<p>Por favor, pergunte ao armazém de armazém[%dic:STR_DIC_N_Vort]Onde o brilhante éter mágico que eu pedi é.</p>
+<p> </p>
+<p>Eu solicitei há três dias para reparar o motor do navio, mas ainda não o tenho. Você pode perguntar enquanto eu tendem ao meu trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O brilhante Aether mágico? Enviei -o de Pandaemonium por Messenger há dois dias. Quer dizer que não chegou?</p>
+<p> </p>
+<p>Meu mensageiro também não foi visto ultimamente. Oh, querida ... algo terrível deve ter acontecido com ele.</p>
+<p> </p>
+<p>Não que esta resposta ajude Riger ... mas pergunte ao corretor comercial[%dic:STR_DIC_N_Shugo_LDF4a_08] Se ela pode ajudar. E dê a Riger minhas desculpas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou fazer isso, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, olá! O que Daeva quer negociar hoje?</p>
+<p> </p>
+<p>Aéter mágico brilhante? Oooh, aquela demanda muito valiosa e muito alta. Berinerk não é visto por muito tempo.</p>
+<p> </p>
+<p>Melhor olhar em Pandaemonium. Não há muita chance de aparecer aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Shards! Obrigado de qualquer maneira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... você não parece muito feliz.</p>
+<p> </p>
+<p>Eu também percebo que você não parece estar carregando meu brilhante Aether Magical. O que aconteceu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho más notícias ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é lamentável. Eu me pergunto o que aconteceu com o mensageiro. Ele foi vítima de monstros? O Balaur? Ou outra pessoa?</p>
+<p> </p>
+<p>Entrarei em contato com o pandaemonium-depois de relatar esse incidente e obter o Brilliant Magical Aether.</p>
+<p> </p>
+<p>Você fez o que pôde, então ganhou a recompensa. Por favor, pegue.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o armazenamento[%dic:STR_DIC_N_Vort].</p></step>
+<step><p visible="[%3]">Fale com o corretor comercial[%dic:STR_DIC_N_Shugo_LDF4a_08].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_Rigr].</p></step>
+</steps>
+<p>Riger não recebeu seu brilhante Aether mágico do armazém. Descubra o que aconteceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Riger pediu que você descobrisse por que ele não conseguiu o brilhante Aether mágico necessário para reparar o navio do armazém.</p>
+<p> </p>
+<p>Você aprendeu com Vord que o mensageiro enviado com o item havia desaparecido. Você tentou o corretor comercial, mas sem sucesso.</p>
+<p> </p>
+<p>Riger ficou desgastado, mas decidiu entrar em contato com Pandaemonium para relatar o desaparecimento do Mensageiro e obter outro Aether Mágico brilhante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

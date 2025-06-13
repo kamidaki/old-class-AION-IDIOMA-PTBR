@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, eu não acredito!</p>
+<p> </p>
+<p>o [%dic:STR_DIC_W_LF4_SZ_2021_A]caiu em mãos inimigas!</p>
+<p> </p>
+<p>[%username], você está ciente da importância estratégica do altar da avareza?</p>
+<p> </p>
+<p>Quem ocupa o altar da avareza tem poder sobre toda a inggison. Agora você entende por que não podíamos deixar o altar cair nas mãos inimigas?</p>
+<p> </p>
+<p>Graças a Kaisinel, conseguimos manter nossa supremacia em Inggison, mas o ataque do Exército de Beritra nos impediu de realizar nossos próximos passos.</p>
+<p> </p>
+<p>O Exército de Beritra está reunindo suas forças perto da fortaleza. Os asmodianos também invadiram Akaron e estão esperando uma oportunidade de atacar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O pior cenário seria perder o altar da avareza e o templo das escalas. Se isso acontecer, é apenas uma questão de tempo até que o portão de anúncios caia para o inimigo.</p>
+<p> </p>
+<p>Devemos recuperar o altar da avareza a todo custo!</p>
+<p> </p>
+<p>[%username], não há tempo a desperdiçar.</p>
+<p> </p>
+<p>Você está atualmente realizando outra tarefa? Qualquer que seja essa tarefa, nunca poderia ser tão importante quanto retomar o altar da avareza.</p>
+<p> </p>
+<p>O apoio do Senhor e de seus agentes não é suficiente. Temos que reunir nossas forças e atacar imediatamente.</p>
+<p> </p>
+<p>As forças devem ser reunidas imediatamente. Derrubar o inimigo matando o Guardian General e recuperando o controle do[%dic:STR_DIC_W_LF4_SZ_2021_A]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Sua promessa me tranquiliza.</p>
+<p> </p>
+<p>Pedi aos outros que ajudassem, mas não sei o quanto posso confiar neles diante do perigo.</p>
+<p> </p>
+<p>Você é praticamente uma lenda por aqui. Use sua reputação para organizar um pequeno grupo de ataque.</p>
+<p> </p>
+<p>A todo custo, derrota [%dic:STR_DIC_M_QUEST_11306] e recuperar o [%dic:STR_DIC_W_LF4_SZ_2021_A]Para todos os Elyos! Então[%dic:STR_DIC_N_Ingnie]irá recompensá -lo de acordo por suas ações.</p>
+<p> </p>
+<p>Desejo -lhe sorte e sucesso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, diga que você está brincando, [%username]!</p>
+<p> </p>
+<p>Devemos recuperar o altar da avareza ou tudo está perdido!</p>
+<p> </p>
+<p>Repense sua decisão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Defender uma fortaleza é mais difícil do que capturá -la!</p>
+<p> </p>
+<p>A queda do altar da avareza é uma catástrofe para todo o exército de Elyos.</p>
+<p> </p>
+<p>Temos que parar todas as ações tentadas pelo Balaur.</p>
+<p> </p>
+<p>Só não sei como podemos eliminar ainda mais soldados de Balaur. Você pode nos ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que derrotou o Guardian General.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você...?</p>
+<p> </p>
+<p>Katia parece estar realizando bem a tarefa no post de observação de angressação.</p>
+<p> </p>
+<p>Sou grato por Katia ter escolhido você para esta tarefa.</p>
+<p> </p>
+<p>Aqui está uma recompensa digna de seus esforços. Para a vitória dos Elyos!</p>
+<p> </p>
+<p>Por favor, continue trabalhando para a vitória do Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrubar o general guardião e reconquistar o [%dic:STR_DIC_W_LF4_SZ_2021_A].</p>
+<p visible="[%0]">Eliminar o [%dic:STR_DIC_M_QUEST_11306]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ingnie].</p></step>
+</steps>
+<p>O altar da avareza foi capturado pelo inimigo. Faça todo o possível para recuperar o altar. Elimine o Guardian General no altar de Avarice e depois reporte -se a Ingnie.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Katia disse que o altar da avareza teve que ser recapturado por causa de sua importância estratégica.</p>
+<p> </p>
+<p>Você e seus camaradas viajaram para a região, derrotaram o Guardian General e recuperaram o altar da avareza. Então Ignie lhe deu uma recompensa adequada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

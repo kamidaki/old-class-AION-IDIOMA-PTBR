@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>"Defenda sua cidade natal", meu pai sempre me disse. "Foi uma vez seu berço, e algum dia será o seu túmulo."</p>
+<p> </p>
+<p>O que ele não me disse foi que eu estaria lutando contra a logística e a papelada com mais frequência do que monstros e saqueadores.</p>
+<p> </p>
+<p>Ontem, recebi um pedido de suprimentos do relógio da vila de Tolbas. Eu tive que preencher doze formas diferentes apenas para pegar as armas aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Espere. Eles estão se armando agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, Tolbas se cansou de nos pedir ajuda sempre que eram atacados por monstros, então formaram um relógio.</p>
+<p> </p>
+<p>Eles estão entusiasmados, pelo menos. Como eles estão apenas solicitando suprimentos e não mão de obra, Spatalos decidiu ajudá -los.</p>
+<p> </p>
+<p>Eles são liderados[%dic:STR_DIC_LA24]. Eu adquiri as armas, mas agora preciso de alguém para levá -las à vila para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Você está me salvando uma tonelada de papelada. Obrigado, [%username]!</p>
+<p> </p>
+<p>Enquanto estiver lá, dê às tropas algumas dicas sobre como não quebrar suas armas para que não precise enviar mais substituições.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certa coisa. Fé e armas, centurião."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Bem, agora vou ter que passar mais uma hora em formulários de requisição de correio. Na próxima vez que o relógio quebrar suas espadas, eles precisarão consertá -las.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Provavelmente faça -os bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde estão esses suprimentos que William nos prometeu? Vamos ter que começar a preparar o relógio com alças de vassoura e vasos de cozinha.</p>
+<p> </p>
+<p>Seria mais rápido forjar nossas próprias armas nesse ritmo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho seus suprimentos aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Vaizel! Isso é tudo o que pedi! Segatus e Lusis vão adorar essas novas lâminas.</p>
+<p> </p>
+<p>Obrigado por isso, [%userclass]. Estamos todos em sua dívida.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar suprimentos de William para [%dic:STR_DIC_LA24].</p></step>
+</steps>
+<p>William contou sobre o Tolbas Village Watch e pediu que você trazia suprimentos para Abolos, o líder do relógio.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>William queria enviar suprimentos para a vila de Tolbas, mas não encontrou ninguém para fazer o trabalho.</p>
+<p> </p>
+<p>Você entregou os suprimentos a Abolos, o líder do relógio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessado em fazer um pouco de Kinah ao lado?</p>
+<p> </p>
+<p>Eu tenho um acordo para você. Porém, ele precisa ser mantido quieto, ou os outros lucram com minha pequena ideia.</p>
+<p> </p>
+<p>Agora, isso vai nos ganhar muito dinheiro, mas eu não estou bagunçando-isso tem que ser silencioso, mesmo dos outros invasores.</p>
+<p> </p>
+<p>O que diz, diga, [%userclass]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Estou ouvindo ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está o negócio. Existem todos os tipos de sujeiras no[%dic:STR_DIC_FLA187]. É tão difícil lá em cima que a maioria dos invasores não vai perto do local.</p>
+<p> </p>
+<p>Mas eu não tenho medo de histórias de fantasmas, e não vou hesitar quando houver dinheiro a ser feito.</p>
+<p> </p>
+<p>Mencionar "fantasmas" chamou sua atenção, hein? Aquele cemitério está cheio de [%dic:STR_DIC_M_GhostD_7_An] S, ex -moradores de Pandaemonium com muitas roupas e jóias sofisticadas. Veja para onde vou com isso?</p>
+<p> </p>
+<p>Há rumores de que há até um Elyos morto vagando. Aposto que ele tem algumas bugigangas chiques nele ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Você quer que eu saqueie os mortos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O "saque" não é muito útil para eles, é?</p>
+<p> </p>
+<p>Agora, eu tenho que te avisar ... aqueles[%dic:STR_DIC_M_GhostD_7_An] S não são pushvers. A única razão pela qual estou falando sobre o trabalho é porque eu vi você quebrando crânios, e eu acho que você também não tem medo de fantasmas.</p>
+<p> </p>
+<p>O trabalho é simples. Vá para o [%dic:STR_DIC_FLA187], matar [%dic:STR_DIC_M_GhostD_7_An] S e roubar o [%dic:STR_DIC_I_QUEST_2003A].</p>
+<p> </p>
+<p>Continue com isso, [%userclass]. É apenas uma questão de tempo até que os outros descubram e façam um pouco de compras noturnas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Volto em breve."</act>
+</selects>
+<voice file="Q2003-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A palavra está se espalhando sobre você, [%username]. Os outros invasores dizem que você é do tipo que faz as coisas.</p>
+<p> </p>
+<p>Falando em fazer as coisas, já esteve no[%dic:STR_DIC_FLA187] Ainda?</p>
+<p> </p>
+<p>Mostre -me o que você tem. Aposto que é brilhante ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Pode ser apenas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?</p>
+<p> </p>
+<p>Você não tem medo de não fantasmas, é você?</p>
+<p> </p>
+<p>Prossiga, [%username]. O trabalho não é tão difícil.</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_FLA187] e esmagar [%dic:STR_DIC_M_GhostD_7_An] até que você obtenha todos os bits que você precisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A maioria das pessoas morria para colocar as mãos nelas ... entendeu? Ah, não importa.</p>
+<p> </p>
+<p>Estes são ótimos. É bom saber que eles não perdem o brilho depois de gastar tanto tempo em um lugar tão surrado. Eu posso transformá -los em Kinah, sem dúvida.</p>
+<p> </p>
+<p>Parece que eu deveria encontrar mais alguns empregos para você, não é? Isso pode ser uma parceria real gratificante.</p>
+<p> </p>
+<p>Leve isso por enquanto. Haverá mais mais tarde.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LA415].</p></step>
+<step><p visible="[%3]">Roubar [%dic:STR_DIC_I_QUEST_2003A]do[%dic:STR_DIC_M_GhostD_7_An] S, e trazê -los para [%dic:STR_DIC_LA415].</p>[%collectitem]</step>
+</steps>
+<p>Ordem: Obtenha ordens de [%dic:STR_DIC_LA415] e roubar tesouros dos fantasmas que assombram o [%dic:STR_DIC_FLA187].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>DeRot disse que os fantasmas no campo de prisão de Ishalgen carregavam jóias valiosas e pediam que você as roubasse.</p>
+<p> </p>
+<p>Depois de terminar a missão, DeRot ficou claramente feliz e sugeriu futuras colaborações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

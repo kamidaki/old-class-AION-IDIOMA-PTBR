@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q11514</questid>
+<questname>드래곤플라이 사냥</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um plano, [%username].</p>
+<p> </p>
+<p>O Balaur, forte e mortal como são, ainda exigem que os escravos façam o trabalho básico em suas bases e acampamentos. E se ... e se eles fossem mortos? As funções básicas que mantêm qualquer estabelecimento militar em funcionamento cessarão, e as bases de Balaur serão deixadas no caos.</p>
+<p> </p>
+<p>Eu quero que você teste minha teoria, meu amigo. Eu quero que você vá para [%dic:STR_DIC_W_LDF4a_SZ_D] e matar todo o [%dic:STR_DIC_M_LDF4A_D_DragonFly_58_An]unidades que você encontra. Você poderia?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah. Eu esperava que você voltasse.</p>
+<p> </p>
+<p>Como você fez? Os vigias estão mortos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles são."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Agora apenas sentamos e assistimos aos resultados.</p>
+<p> </p>
+<p>Talvez o Balaur os substitua em meros momentos. Talvez eles não. O tempo vai nos dizer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Watchmen de Leowasp em[%dic:STR_DIC_W_LDF4a_SZ_D]([%2]/11).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Boeyazu].</p></step>
+</steps>
+<p>Mate os escravos de Balaur e veja que efeito sua perda tem no Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yazu acha que simplesmente destruir os trabalhadores de Drakan colocaria o Drakan em grandes dificuldades.</p>
+<p> </p>
+<p>Depois que você matou os devoradores de libélula no selo do Guardian Destruído e retornou a Yazu, ele ficou feliz com os pequenos, mas contínuos danos causados às forças de Drakan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

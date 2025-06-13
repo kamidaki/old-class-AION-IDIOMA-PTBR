@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor coloque um fim para [%dic:STR_DIC_M_LDF5A_B5_Fana] e matar [%dic:STR_DIC_M_LDF5A_B5_Fana_Kn_SN_63_An]também.</p>
+<p> </p>
+<p>Ellohum está correndo o dragão na vila em ruínas e adora Jormungand como se ele fosse uma verdadeira divindade.</p>
+<p> </p>
+<p>Os membros da Dragonbound na vila em ruínas são diferentes de outras facções da Dragonbound. No entanto, eles também são bem organizados.</p>
+<p> </p>
+<p>Mate todos os membros do Jormungand Dragonbound!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você expulsou Ellohum e o resto do dragão?</p>
+<p> </p>
+<p>Ellohum não apenas se encarregou dos seguidores de Jormungand, mas ele ainda parece estar planejando outra coisa.</p>
+<p> </p>
+<p>Que vilão astuto!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou o oponente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Pelo menos o dragão não causará problemas aqui por algum tempo.</p>
+<p> </p>
+<p>Devemos aproveitar esta oportunidade e descobrir qual era o plano deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua o dragão.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_B5_Fana]([%2]/12).</p>
+<p visible="[%0]">Derrota [%dic:STR_DIC_M_LDF5A_B5_Fana_Kn_SN_63_An]([%5]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Rokaus_E].</p></step>
+</steps>
+<p>Dirija o dragão para fora da vila abandonada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rokaus encarregou você de derrotar Ellohum e o Dragonbound.</p>
+<p> </p>
+<p>Você destruiu Ellohum e o restante do dragão que adorava Jormungand. Rokaus lhe deu uma recompensa por fazê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

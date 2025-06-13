@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12407</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você carrega a espada de Adella, [%username]? Huh! A última vez que a ouvi falar de você, ela não parecia terrivelmente impressionada, então você deve ter feito algo para mudar de idéia.</p>
+<p> </p>
+<p>As armas de Adella são boas, mas minha filosofia pessoal é que tudo pode ser melhorado. Quem quer se contentar com 'bom' quando você pode ter 'incrivelmente incrível o cérebro', certo?</p>
+<p> </p>
+<p>Posso melhorar essa arma para você, mas você precisará coletar alguns itens de outros feiticeiros, e pode não ser fácil. Se eu fosse você, eu falaria com[%dic:STR_DIC_N_Gneise]. Se ela estiver disposta a ajudar, você poderá convencer [%dic:STR_DIC_N_Lumen]também.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deseja encantar a espada de Adella?</p>
+<p> </p>
+<p>Se você possuía um upsorceller, poderia dotar sua arma com maior poder.</p>
+<p> </p>
+<p>Esse [%dic:STR_DIC_I_ldf4b_weapon_upgrade_01]é extremamente valioso, pois eu o carrego constantemente de magia há muito tempo.</p>
+<p> </p>
+<p>Então, eu não posso simplesmente dar a você.</p>
+<p> </p>
+<p>Eu só darei a você se você me provar que tem excelentes habilidades e paciência.</p>
+<p> </p>
+<p>Se você concluir uma missão e me trazer o mármore dourado, eu lhe darei o upsorceller.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou encontrar o lúmen."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulian quer melhorar a espada de Adella? Claro que ele faz! Esse boor não aprecia a beleza das limitações. Seu jovem Daevas! Você é o mesmo, sempre caçando o melhor e o melhor e um se apóia.</p>
+<p> </p>
+<p>Bem, que pena, [%userclass]. Se você quiser o [%dic:STR_DIC_I_ldf4b_weapon_upgrade_02], então você o ganhará realizando tarefas que eu atribuir. Se você provar que você se provaria, posso considerar sua solicitação.</p>
+<p> </p>
+<p>E você precisará de mais itens do que apenas o meu[%dic:STR_DIC_I_ldf4b_weapon_upgrade_02]. Oh, você já falou com Grais, não é? Bem, você também precisará de um[%dic:STR_DIC_I_ldf4b_weapon_upgrade_03], mas[%dic:STR_DIC_N_Ruaka]vende -os.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Então talvez eu comece por aí."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], como foi?</p>
+<p> </p>
+<p>Você convenceu Grais e o lúmen a emprestar os materiais?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu sobrevivi, embora tenha sido um pouco humilhante".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo valerá a pena no final. Agora ... só você ... espere ....</p>
+<p> </p>
+<p>Lá! Tudo feito! Agora você olharia para isso, [%username]!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gneise].</p></step>
+<step><p visible="[%3]">Encontrar [%dic:STR_DIC_N_Lumen] em Kamar e convencê -lo a ajudá -lo.</p></step>
+<step><p visible="[%6]">Colete o [%dic:STR_DIC_E_Q12407] e trazê -los para [%dic:STR_DIC_N_Uquini].</p>[%collectitem]</step>
+</steps>
+<p>Você pode melhorar a espada de Adella se falar com Grais e Lumen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulian se ofereceu para melhorar a espada de Adella para você, mas você precisava de materiais adicionais para fazê -lo.</p>
+<p> </p>
+<p>Você coletou materiais de Grais e lúmen, embora nenhum deles os tenha desistido prontamente.</p>
+<p> </p>
+<p>Ulian usou os materiais para transformar seu item em uma espada rica de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

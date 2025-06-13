@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza está um pouco bagunçada, não é? Não se preocupe, estamos consertando.</p>
+<p> </p>
+<p>Os reparos deveriam começar assim que o recuperamos, mas tudo o que conseguimos realizar até agora está reconstruindo o campo e os guardas de estacionamento.</p>
+<p> </p>
+<p>Há um longo caminho a percorrer-não devemos demorar tanto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que é que?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles Elyos criticados! Três deles:[%dic:STR_DIC_N_Garpedo], Assim, [%dic:STR_DIC_N_Aimele], e [%dic:STR_DIC_N_Sione] Só não desistirá! Eles estão atacando incansavelmente desde que recuperamos a fortaleza.</p>
+<p> </p>
+<p>No começo, pensei que eles desistiriam quando ficaram sem suprimentos, mas aqueles comerciantes de shugo balfados, [%dic:STR_DIC_N_Shugo_AB1_L5], Assim, [%dic:STR_DIC_N_Shugo_AB1_L6] estão ajudando -os.</p>
+<p> </p>
+<p>Augh! Eu só quero que todos saiam do meu cabelo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Antes, eu ficaria feliz em tê -los fora da ilha, mas agora ...</p>
+<p> </p>
+<p>Agora, eu os quero mortos. Antes de atacar novamente.</p>
+<p> </p>
+<p>Vá para o relógio liso e derrota [%dic:STR_DIC_N_Shugo_AB1_L5], Assim, [%dic:STR_DIC_N_Shugo_AB1_L6], Assim, [%dic:STR_DIC_N_Garpedo], Assim, [%dic:STR_DIC_N_Aimele], e [%dic:STR_DIC_N_Sione].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é como se eles fossem uma Guilda plena, mas não posso poupar tropas da fortaleza agora.</p>
+<p> </p>
+<p>Eles estão ficando mais ousados ​​e mais ousados. Em breve eles se tornarão lendas, e não podemos ter isso.</p>
+<p> </p>
+<p>Eu gostaria de poder deixar meus deveres aqui e ensinar -lhes uma lição. Mas eu não posso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta!</p>
+<p> </p>
+<p>Você cuidou daqueles sabotadores de Elyos e de seus co-conspiradores shugo de pandering?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão fora do seu cabelo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem aqueles Elyos Skulling por aí, fizemos muito hoje!</p>
+<p> </p>
+<p>A fortaleza é mais forte para o seu trabalho por aí.</p>
+<p> </p>
+<p>Você não apenas agradece, mas consegui coletar uma pequena recompensa por você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_N_Shugo_AB1_L5], Assim, [%dic:STR_DIC_N_Shugo_AB1_L6], Assim, [%dic:STR_DIC_N_Garpedo], Assim, [%dic:STR_DIC_N_Aimele], e [%dic:STR_DIC_N_Sione]. ([%2]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1251_Quest_Da].</p></step>
+</steps>
+<p>Os Elyos da planície do relógio continuam invadindo a fortaleza de Asteria. Derrote os Elyos e seus ajudantes e depois se reporte a Snori.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Snori ficou perturbado com os ataques de Elyos à fortaleza de Asteria desacelerando o trabalho de reparo.</p>
+<p> </p>
+<p>Você derrotou os guardiões Elyos e os comerciantes Shugo na planície do relógio para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Oh, estou tão feliz em ver você. Precisamos tanto de ajuda.</p>
+<p> </p>
+<p>É claro que você ouviu que perdemos a fortaleza de Asteria. Isso não teria acontecido se tivéssemos mais força militar aqui na época!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que deve ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos obter mais soldados. Não podemos lutar sem mais força.</p>
+<p> </p>
+<p>Eu tenho um plano que facilitará a aquisição de fortaleza com menos Daeva, mas ainda precisaremos de ajuda para fazê -lo funcionar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o plano? Que tipo de ajuda você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A guerra total é impossível com nossos números, mas ataques ... ataques são algo que podemos gerenciar.</p>
+<p> </p>
+<p>Poderíamos confundir o [%dic:STR_DIC_M_Asteria_Guard], distraindo -os de seu trabalho construindo um muro de defesa. Isso deve nos ajudar até que nossos reforços cheguem.</p>
+<p> </p>
+<p>Vamos realmente precisar de uma ajuda de Daeva para isso, [%username]. Você vai ajudar? Para Elysea?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você estará ajudando muito.</p>
+<p> </p>
+<p>Pegue um grupo de Daevas e livre -se do[%dic:STR_DIC_M_Asteria_Guard]. Se você fizer isso, os Daevas que vieram depois que você poderá acessar a fortaleza com mais facilidade.</p>
+<p> </p>
+<p>Vá assim que estiver pronto. Que a luz de Ariel brilhe sobre você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Outro negócio, não é?</p>
+<p> </p>
+<p>Claro-um daeva de suas habilidades deve ter muitos pedidos.</p>
+<p> </p>
+<p>Por favor, volte para ajudar quando puder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Daeva ....</p>
+<p> </p>
+<p>Por favor, diga -me como foi para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O ataque foi bem -sucedido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por seus esforços.</p>
+<p> </p>
+<p>Por favor, pegue isso. Você saiu do seu caminho para ajudar seus colegas Elyos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_Asteria_Guard] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Garpedo].</p></step>
+</steps>
+<p>Livre -se da guarnição da Fortaleza de Asteria com seus colegas e relate o resultado a Garped.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garped disse que estava com pouco número e não conseguiu lançar um grande ataque contra o inimigo. Ele pediu que você se juntasse a uma festa de invasão. Você fez, e você derrotou a guarnição lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

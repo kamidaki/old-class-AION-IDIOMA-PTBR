@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Por fim, os asmodianos ocuparam a cidadela de Vorgaltem.</p>
+<p> </p>
+<p>Agora, a tropa da Expedição de Pandaemonium nos deu ainda mais a fazer.</p>
+<p> </p>
+<p>Ainda há mais tarefas a serem concluídas em Akaron do que em Gelkmaros.</p>
+<p> </p>
+<p>Na verdade, acabei de receber uma mensagem de Akaron. Eles precisam urgentemente ajuda no platô de Valpurah. Você cuidaria disso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A missão não é especialmente complicada, mas você ainda deve ter cuidado. Akaron é uma região cheia de perigos, afinal.</p>
+<p> </p>
+<p>Quando o trabalho na cidadela de Vorgaltem estiver concluído, as tropas podem voltar sua atenção para outras tarefas.</p>
+<p> </p>
+<p>Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Você concluiu a tarefa de maneira confiável.</p>
+<p> </p>
+<p>Mas permaneça cauteloso. O perigo está em toda parte.</p>
+<p> </p>
+<p>Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_J_Rottentree_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Ranack].</p></step>
+</steps>
+<p>Faça o pedido do Centurion Ranack e derrote os rotrons errantes!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Após a Batalha da Cidadela de Vorgaltem, Centurion Ranack encarregou você de viajar para Akaron.</p>
+<p> </p>
+<p>Em Akaron, você partiu para o platô de Valpurah. Você derrotou rotrons errantes enquanto estava lá.</p>
+<p> </p>
+<p>Você recebeu uma recompensa por concluir com sucesso esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>1. Remetente: Tropa de Comando Katalam, [%dic:STR_DIC_N_LDF5_Under_Kurius_E]de [%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_M1]</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Ordens: elimine 2 asmodianos que se infiltraram no subsolo de Katalam.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que os asmodianos querem determinar a força do nosso esquadrão de comando de Katalam aqui no Katalam Underground.</p>
+<p> </p>
+<p>Você não deve subestimar uma tropa de elite, por menor que fosse quando invadiu.</p>
+<p> </p>
+<p>Mate os asmodianos invasores, antes que o assunto fique fora de controle.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Confio que você vem com boas notícias.</p>
+<p> </p>
+<p>Com sua ajuda, conseguimos impedir que a pequena tropa de inteligência asmodianas seja reduzida ainda mais.</p>
+<p> </p>
+<p>Por favor, continue nos ajudando no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que penetraram no katalam subterrâneo ([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Under_Kurius_E].</p></step>
+</steps>
+<p>Ordem urgente: Mate os asmodianos que penetraram no Katalam subterrâneo e se reporte a Kurius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos estão visando o Katalam Underground e avançaram até aqui.</p>
+<p> </p>
+<p>Você matou os invasores asmodianos e se reportou a Kurius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

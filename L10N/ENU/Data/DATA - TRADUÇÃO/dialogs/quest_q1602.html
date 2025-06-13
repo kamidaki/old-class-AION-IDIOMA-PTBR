@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho uma dúzia de tarefas a serem concluídas, todas irritantes. Os tigricos, no entanto, realmente ganharam minha ira.</p>
+<p> </p>
+<p>É por isso que estou enviando você para a aldeia deles. O rebanho precisa de abate.</p>
+<p> </p>
+<p>Eu preciso da sua ajuda, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Fico feliz em ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Procure os saqueadores tigrados vagando e traga -me alguns[%dic:STR_DIC_I_QUEST_1602a].</p>
+<p> </p>
+<p>É de alta qualidade e busca um bom preço no santuário. Dessa forma, matamos dois pássaros com uma pedra.</p>
+<p> </p>
+<p>O que você acha? Você vai me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a vila tigric, caça o [plur][%dic:STR_DIC_M_Tauric_39_An] e traga -me 10 pedaços de [%dic:STR_DIC_I_QUEST_1602a].</p>
+<p> </p>
+<p>Por favor, tente não danificar o couro. Caso contrário, é inútil.</p>
+<p> </p>
+<p>Eu deveria me preparar para finalmente ensinar uma lição a essas criaturas.</p>
+<p> </p>
+<p>E, é claro, precisarei tirar o couro deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo purrfectadamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olha, eu realmente preciso da sua ajuda.</p>
+<p> </p>
+<p>Isso é rápido, fácil, Kinah e tornamos os caminhos mais seguros para todos.</p>
+<p> </p>
+<p>Espero que você reconsidere, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu fiz outros planos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Entrei em contato com o Santuário e contei a Benes sobre nosso pequeno plano. Ele está muito animado.</p>
+<p> </p>
+<p>Benes está sempre tentando ser um criador de tendências, por isso não é difícil vendê -lo com a idéia de couro tigric.</p>
+<p> </p>
+<p>Agora, você realmente conseguiu qualquer [%dic:STR_DIC_I_QUEST_1602a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Assim como você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já fiz um acordo com Benes em santuário!</p>
+<p> </p>
+<p>A primeira prioridade é, obviamente, acabar com o saqueador tigral, mas minha reputação e minha carteira estão em jogo!</p>
+<p> </p>
+<p>Por favor, traga -me 10 peças de couro tigrico antes que elas mudem de idéia. Se apresse!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estas são amostras esplêndidas. Benes ficará satisfeito.</p>
+<p> </p>
+<p>Você sabe, eu posso fazer minha fortuna se as roupas de couro Tigric venderem como bolos quentes.</p>
+<p> </p>
+<p>Ouvi um boato interessante de um morador. Vou verificar a história primeiro e voltar para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Tire o couro de [%dic:STR_DIC_M_Tauric_39_An]para [%dic:STR_DIC_N_Seniferes].</p>[%collectitem]</step>
+</steps>
+<p>Garrett quer ganhar algum dinheiro enquanto se livra da Tigria. Ele pediu que você colecionasse couro tigric e o trazia para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garrett sugeriu ganhar algum dinheiro enquanto se livrava dos tigricos. Quando você coletou o couro Tigric e o trouxe para Garrett, ele lhe disse que um designer de moda no santuário estava interessado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

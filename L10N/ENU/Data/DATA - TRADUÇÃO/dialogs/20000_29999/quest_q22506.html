@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma ótima notícia que o dragão Lord Tiamat foi derrotado. Mas ainda há alguns problemas neste caso que devem ser limpos.</p>
+<p> </p>
+<p>Provavelmente seria útil estabelecer algumas perguntas em movimento.</p>
+<p> </p>
+<p>Você poderia interrogar o cativo[%dic:STR_DIC_N_LDF5a_Egant_E]para mim?</p>
+<p> </p>
+<p>Egant era um oficial da Guilda de Tiamat, que pegamos prisioneiros.</p>
+<p> </p>
+<p>Ele parece saber de algo. Por favor, descubra o que ele está tentando manter de nós, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá embora ... eu não vou te dizer nada ...</p>
+<p> </p>
+<p>Agora importa com que frequência você pergunta, não vou dizer uma palavra ...</p>
+<p> </p>
+<p>Sou oficial da Guilda Tiamat. Por que devo falar com um Daeva como você ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você fala sobre o fato de que Tiamat já foi derrotado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa não é a razão!</p>
+<p> </p>
+<p>A razão para a derrota do exército de Tiamat!</p>
+<p> </p>
+<p>Bom. Vou te dizer algo que você não sabe.</p>
+<p> </p>
+<p>Vá para o Katalam Underground e encontre [%dic:STR_DIC_M_LDF5_Under_VriCU_As_SN_65_An].</p>
+<p> </p>
+<p>Antes de ser preso, eles roubaram meus registros.</p>
+<p> </p>
+<p>Recuperar meu[%dic:STR_DIC_I_doc_quest_22506a]do protetor de Drakan da equipe de investigação.</p>
+<p> </p>
+<p>Leia as notas e você saberá tudo ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Disseram -me que você estava no metrô.</p>
+<p> </p>
+<p>Você já está de volta, e em uma peça?</p>
+<p> </p>
+<p>O que você ouviu que fez você parar na região subterrânea?</p>
+<p></p>
+<p>Você está segurando algo em suas mãos. Isso me diz que você descobriu algo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as notas de Egant.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Pega e lê rapidamente.) Oh, isso é certamente um grande negócio.</p>
+<p> </p>
+<p>Algumas coisas são claras para mim depois de ler esses registros.</p>
+<p> </p>
+<p>Agora finalmente entendo por que Tiamat foi tão facilmente conquistado.</p>
+<p> </p>
+<p>Se isso for verdade, tivemos muita sorte de o Mensageiro desaparecer.</p>
+<p> </p>
+<p>Obrigado por este documento importante.</p>
+<p> </p>
+<p>Eu deveria ligar para algumas pessoas para descobrir mais. Enquanto isso, vou manter este documento seguro, para que você não precise se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o oficial cativo da Guilda Tiamat, [%dic:STR_DIC_N_LDF5a_Egant_E].</p></step>
+<step><p visible="[%3]">Pegue o [%dic:STR_DIC_I_doc_quest_22506a]do[plur][%dic:STR_DIC_M_LDF5_Under_VriCU_As_SN_65_An]no Katalam Underground e levá -lo a [%dic:STR_DIC_N_LDF5A_Phone_E].</p>[%collectitem]</step>
+</steps>
+<p>Interrogar o prisioneiro eGant.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O comandante Phon achou estranho que o dragão Lord Tiamat pudesse ser tão facilmente derrotado. Ele pediu que você interrogasse Egant, um oficial da Guilda de Tiamat, que está sendo mantido em cativeiro na Torre da Luz reconstruída.</p>
+<p> </p>
+<p>O EGANT cativo afirmou que você descobriria a verdade se lesse o diário dele. É por isso que você matou os guardas de Drakan da equipe de inspeção no metrô de Katalam e tirou os registros de Egant. Dentro foi escrito que Tiamat, o Lorde do Dragão, aparentemente pediu ajuda a Fegion.</p>
+<p> </p>
+<p>Quando você deu os registros de Egant ao comandante Phon, ele ficou muito surpreso e decidiu manter o diário por enquanto</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

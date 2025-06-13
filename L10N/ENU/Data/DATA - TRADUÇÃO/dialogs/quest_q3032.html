@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sal salgado! Ela vende, sal salgado! Old Salty ... Nyerk ... por favor, desculpe meu canto, Daeva.</p>
+<p> </p>
+<p>Theobomos é famoso por seu sal. As pessoas pensam que tem um gosto bom ... Caochenrinerk acha que tem gosto de sal. Akakakak!</p>
+<p> </p>
+<p>É muito desejado sal de sal da costa de Latheron. Se eles soubessem que tipo de sal é, eles não seriam capazes de comê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que? Que tipo de sal é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O mar de Lateron seco quando terrível e assustador Fregion prendeu chamas por toda parte. Aprendi isso no joelho de vovó Shugo, Nyerk.</p>
+<p> </p>
+<p>Vila pacífica à beira-mar, o Lorde do Dragão aparece, sopra o fogo-toda a água do mar seca ...</p>
+<p> </p>
+<p>Esse tipo de sal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sal do mar Balaur Breath. Ewww."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, ewww! Caochenriner não comerá esse sal, mas muitas pessoas procurando por ele. Eu tenho um bom lucro disso.</p>
+<p> </p>
+<p>Acabei de receber um novo pedido de sal. Daeva irá ir [%dic:STR_DIC_W_LF2B_SZ_B1] e obter sal para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Viajar para [%dic:STR_DIC_W_LF2B_SZ_B1] e procurar [%dic:STR_DIC_OBJ_LF2a_SmallCrystal_Q3032] está no mar seco.</p>
+<p> </p>
+<p>Traga -me um pouco disso, e eu vou te pagar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva tem medo da costa de Latheron porque o Senhor Dragão apareceu lá, certo?</p>
+<p> </p>
+<p>Você é Daeva, e você está assustado como nós Shugos. É tão engraçado! Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não tenho medo de Balaur ... muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Em uma ampla beira -mar, em uma ampla beira -mar, há uma cabana de grama, Nyerk Nyerk.</p>
+<p> </p>
+<p>Lá vive uma avó que cava sal e uma garotinha fofa. Costa de Lateron, costa de Latheron.</p>
+<p> </p>
+<p>Nyerk, quando você veio? Você gosta de cantar a música de Caochenriner, Daeva?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão seus cristais de sal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Você esqueceu que eu te pedi por [%dic:STR_DIC_OBJ_LF2a_SmallCrystal_Q3032] S?</p>
+<p> </p>
+<p>Caochenriner confiou em você, Daeva, e estava cantando uma música sem se preocupar. O que devo fazer agora ... Nyerk?</p>
+<p> </p>
+<p>Se eu não posso enviar o sal em breve, Daeva deve assumir a responsabilidade, sim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem um prazo? Volto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você trouxe. Ele brilha tão intensamente que será vendido a um bom preço ... não importa que seja feito de Balaur Breath. Akakakak!</p>
+<p> </p>
+<p>Obrigado. Aqui está a recompensa que prometi, Nyerk.</p>
+<p> </p>
+<p>Isso é suficiente, certo? Talvez façamos negócios de novo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_OBJ_LF2a_SmallCrystal_Q3032] e trazê -los para [%dic:STR_DIC_N_Shugo_LF2a_10].</p>[%collectitem]</step>
+</steps>
+<p>O sal da costa de Latheron está vendendo a um preço alto. Obtenha cristais de sal para Caochenrinerk para que ela possa fazer negócios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Caochenrinerk disse que ela o recompensaria se você trouxesse cristais de sal da costa de Latheron.</p>
+<p> </p>
+<p>Você coletou cristais de sal e os trouxe para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

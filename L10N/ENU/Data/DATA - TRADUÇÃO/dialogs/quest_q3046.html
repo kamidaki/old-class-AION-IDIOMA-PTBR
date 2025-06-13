@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3046</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se houvesse um prêmio por caçar paindons, eu o teria! É claro que eu odeio me gabar de minhas proezas como arqueiro, mas se não for para mim, toda essa área seria invadida por eles.</p>
+<p> </p>
+<p>Eu os caço dia e noite, mas seus números nunca parecem diminuir. Aprecio ter tantos alvos para minhas flechas, mas está ficando velho.</p>
+<p> </p>
+<p>Eles são tão tenazes! Por que eles continuam voltando para mais?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Talvez sejam os despojos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade. Eles geralmente conseguem se safar com uma purga de moedas ou alguns objetos de valor.</p>
+<p> </p>
+<p>Relatos de seus assaltos estão se tornando mais frequentes, apesar dos meus esforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você poderia usar ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, se você estiver disponível, gostaria de contratá -lo. Este é um acampamento de caçadores de recompensas. Quando as pessoas matam coisas por aqui, são pagas.</p>
+<p> </p>
+<p>Conheço muito bem os Calydons e, se não lhes der um nariz ensanguentado, eles nunca se afastarão. Eles estão gostando muito desses sucessos.</p>
+<p> </p>
+<p>Confie em mim, amigo. Combate [%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An] Areia [%dic:STR_DIC_M_LF2A_CalydonMage_47_An] S é lucrativo e boa prática.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Calydon é o melhor jogo. Surpreende -me o quão resiliente eles são contra golpes de espada e flechas.</p>
+<p> </p>
+<p>Apenas um caçador experiente pode caçá -los. Não confie muito em suas próprias habilidades e tenha cuidado.</p>
+<p> </p>
+<p>Primeiro caça 8[%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An] e 5[%dic:STR_DIC_M_LF2A_CalydonMage_47_An]. Vou aguardar seu retorno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles são tão bons quanto mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Você prefere apenas assistir os Calydons invadirem essa área? Onde está seu orgulho? Por esse motivo, como estou me oferecendo para pagar, onde está sua ganância?!</p>
+<p> </p>
+<p>Mesmo alguém tão incrível quanto eu não posso fazer tudo. Deixe -me saber se você mudar de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra vez, talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter ouvido os gritos dos paindons encontrando seu final bagunçado e merecido. Eu aceito que você está fazendo?</p>
+<p> </p>
+<p>Quem mais seria?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que aconteceu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que você ganhou seu salário.</p>
+<p> </p>
+<p>Espero que o resto leve este exemplo a sério e pare seus assaltos por um tempo.</p>
+<p> </p>
+<p>Aqui está o Kinah que eu prometi a você, [%username]. Não gaste tudo em um só lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Calydon, que está atacando o povo.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_CalydonAssassin_47_An]([%2]/8)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_CalydonMage_47_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Maeleagros].</p></step>
+</steps>
+<p>Aparentemente, o Calydon está roubando transeuntes no local de perseguição. Ajude Melleas a combater o Calydon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hunter Melleas disse que um número crescente de pessoas está sendo roubado por Calydons e pediu que você o ajudasse a diminuir suas fileiras.</p>
+<p> </p>
+<p>Então você o ajudou matando bandidos de Calydon e feiticeiros de Calydon. Ele pagou a você pelo seu trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

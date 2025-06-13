@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora eu pense que você pode ser um especialista em ser ousado, não sei como você realmente é bom, [%username].</p>
+<p> </p>
+<p>Você precisa ser capaz de fazer um item raro para receber o título de 'especialista'.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo seu ponto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero que você faça a nobre espada de Fasimedes.</p>
+<p> </p>
+<p>É um item raro e difícil de criar. Criação isso definitivamente provará seu talento, [%username].</p>
+<p> </p>
+<p>Você está pronto para o desafio?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para fazer o Espada Grande Nobre de Fasimedes, você precisará comprar o design[%dic:STR_DIC_N_Nakia].</p>
+<p> </p>
+<p>É um design mais complexo do que [%dic:STR_DIC_E_Q1973], mas eu sei que você é bom o suficiente, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu também sei!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você era bom o suficiente para fazer uma arma rara.</p>
+<p> </p>
+<p>Eu ainda acho que sim. Algum dia você concorda em fazê -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mas não hoje."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo Daeva oferece algo de si para a terra e as pessoas, e cada sacrifício difere. Sirvo Atreia fazendo ótimas armas.</p>
+<p> </p>
+<p>Estou feliz em ver você servir fazendo mais do que lutar, [%username]. Você fez o Espada Grande Nobre de Fasimedes?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta não é a Espada Grande Nobre de Fasimedes.</p>
+<p> </p>
+<p>Você deve ter estado ocupado. Eu estarei esperando.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parabéns! Você fez uma ótima arma!</p>
+<p> </p>
+<p>Sobre a força dessa conquista, tenho o prazer de chamá -lo de especialista em ser ourbor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o Espada Grande Nobre de Fasimedes e leve para [%dic:STR_DIC_N_Anteros].</p>[%collectitem]</step>
+</steps>
+<p>Anteros diz que você deve ser capaz de fazer uma arma rara para receber o título de especialista em armas. Faça a nobre espada de Fasimedes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Anteros disse que você deve ser capaz de fazer uma arma rara para receber o título de especialista em armas.</p>
+<p> </p>
+<p>Você fez a nobre espada de Fasimedes e levou para ele. Ele ficou satisfeito e parabenizou você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

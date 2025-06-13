@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente chegou a hora de mostrar o verdadeiro poder da Ordem dos Cavaleiros da Expedição do Santivo.</p>
+<p> </p>
+<p>De acordo com minhas informações, o Exército de Beritra trará uma enorme tropa de suprimentos para a linha de defesa.</p>
+<p> </p>
+<p>Se pudermos interromper o fornecimento de suprimentos ao Exército de Beritra, atacando a tropa de suprimentos, poderíamos mudar a situação com um único ataque.</p>
+<p> </p>
+<p>[%username], você poderia eliminar o [%dic:STR_DIC_E_LDF5b_F123_Vri]imediatamente e traga o [%dic:STR_DIC_I_QUEST_13052A]como prova.</p>
+<p> </p>
+<p>Se pudermos adquirir mérito através desta operação, o comando HQ terá que reconhecer as habilidades da ordem dos cavaleiros.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como se lutam contra os soldados de Beritra?</p>
+<p> </p>
+<p>Se o suficiente [%dic:STR_DIC_I_QUEST_13052A] São coletados, terei uma boa oportunidade desta vez para alcançar amplos elogios.</p>
+<p> </p>
+<p>Claro que você também se tornará famoso, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você alcançou um excelente sucesso.</p>
+<p> </p>
+<p>Com esse sucesso, podemos escrever um excelente relatório.</p>
+<p> </p>
+<p>Agora todo o destacamento me notará a glória de Heres.</p>
+<p> </p>
+<p>Muito bom trabalho!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_13052A] e trazê -lo para [%dic:STR_DIC_N_LDF5b_Heres_E].</p>[%collectitem]</step>
+</steps>
+<p>Ataque a unidade de fornecimento de Beritra e relate aos Heres.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Heres disse que o poder dos Elyos realmente precisava ser posto à prova desta vez e que ele teve que eliminar todas as tropas da Beritra Supplies.</p>
+<p> </p>
+<p>Heres ficou muito satisfeito por as tropas de suprimentos de Beritra terem sido eliminadas e as insígnias coletadas, e ele disse que teria que escrever um relatório agora.</p>
+<p> </p>
+<p>Heres parece ter esquecido tudo sobre o pedido de tropa de escoteiros por causa de todo o caos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

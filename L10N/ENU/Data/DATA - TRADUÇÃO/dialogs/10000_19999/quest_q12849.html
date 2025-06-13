@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard06_L]do[%dic:STR_DIC_W_LDF5a_B3_6]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: derrotar o asmodiano que se infiltrou[%dic:STR_DIC_W_LDF5a_B2_B3] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É claro que essa gangue feia de asmodianos está de olho na conquista de Katalam.</p>
+<p> </p>
+<p>Se esse não fosse o plano deles, eles não teriam chegado a esse lugar remoto.</p>
+<p> </p>
+<p>Assim, temos que matar todos os asmodianos, não importa quantos existam.</p>
+<p> </p>
+<p>Você fez os pedidos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>[%username], com sua ajuda, os asmodianos não serão capazes de ganhar uma posição aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5a_B2_B3] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard06_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou nas terras contaminadas no norte de Katalam e se reporte a Morin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Seguindo ordens urgentes de Morin, você matou os asmodianos que invadiram as terras contaminadas no norte de Katalam.</p>
+<p> </p>
+<p>Morin expressou seus agradecimentos e ficou feliz com o fato de que os asmodianos não conseguiriam ganhar uma posição graças à sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

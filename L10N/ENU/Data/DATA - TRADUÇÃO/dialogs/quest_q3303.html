@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os lefaristas têm uma posição muito forte nesse bastião, e eu tenho pensado muito em como podemos contornar isso. Eu poderia ter vindo com uma ideia. Água potável!</p>
+<p> </p>
+<p>Pense nisso. Eles devem precisar de uma quantidade incrível de água para todos esses trabalhadores e estagiários, especialmente neste clima quente e seco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, estou investigando o suprimento de água. Espero que examinar a composição da água que eles bebam nos levem à sua fonte.</p>
+<p> </p>
+<p>Se de alguma forma pudéssemos negar a eles acesso à água, isso colocaria um verdadeiro dente em sua capacidade de operar aqui. Além disso, também não faria um acesso a outra fonte de água.</p>
+<p> </p>
+<p>Eu preciso de amostras da água que eles bebem. Você estaria disposto a obtê -los?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu os observei por um tempo, e todo o [%dic:STR_DIC_M_LF2_3303all]carregar [%dic:STR_DIC_I_QUEST_3303a] está ao redor da cintura.</p>
+<p> </p>
+<p>Presumo que eles sejam água, então, por favor, pegue -me algumas dessas garrafas.</p>
+<p> </p>
+<p>Se o fizer, eu lhe darei uma insígnia lefarista de ouro como recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Considere isso feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não parece importante o suficiente?</p>
+<p> </p>
+<p>Eu acho que é muito mais importante do que apenas matar alguns lefaristas.</p>
+<p> </p>
+<p>Obviamente, se isso der certo, poderemos forçar suas operações completamente a sair de Eltnen.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me considerar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]!</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_3303a] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Peguei -os bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não esteve lá?</p>
+<p> </p>
+<p>O objetivo desta missão não é lidar com os lefaristas, mas me trazer suas garrafas para análise.</p>
+<p> </p>
+<p>Por favor, volte para lá e me traga o [%dic:STR_DIC_I_QUEST_3303a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deus ... estes são bastante pesados. A maioria deles está vazia, mas vou ver o que posso tirar deles.</p>
+<p> </p>
+<p>De qualquer forma, como você trouxe as garrafas, eu lhe darei o que prometi. Por favor, aceite esta insígnia lfarista de ouro.</p>
+<p> </p>
+<p>Ouvi Laigas está coletando -os. Visite -me novamente quando tiver tempo e terei mais trabalho para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_3303a] S de [%dic:STR_DIC_M_LF2_3303all] em[%dic:STR_DIC_W_LF2_SZ_J] e leve-os para [%dic:STR_DIC_N_Deurone].</p>[%collectitem]</step>
+</steps>
+<p>Para ajudar Deurone a descobrir a fonte de água dos revolucionários lefaristas, coloque as garrafas de água que os lefaristas no bastião lefarista carregam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Deurone queria investigar como os lefaristas no bastião lefarista poderiam adquirir água.</p>
+<p> </p>
+<p>Você coletou as garrafas de madeira bruta que os lefaristas iniciantes usam para transportar água e os trouxe para ela. Ela agradeceu e recompensou você com uma insígnia lfarista de ouro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

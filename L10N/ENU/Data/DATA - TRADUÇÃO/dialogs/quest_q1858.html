@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu não aguento! Será que venceremos esta batalha?</p>
+<p> </p>
+<p>Eu adoraria atacar a fortaleza com toda a nossa força de luta, mas infelizmente isso é impossível.</p>
+<p> </p>
+<p>Porque existem várias fortalezas e nosso povo é dividido entre várias regiões.</p>
+<p> </p>
+<p>Meus guerreiros estão perdendo a vontade de continuar lutando ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos podem se tornar uma enorme ameaça para nós. Se permitirmos que eles nos derrotem, isso trará desgraça a nosso Senhor.</p>
+<p> </p>
+<p>Você poderia matar alguns dos oficiais da Asmodianos para dar coragem às nossas tropas?</p>
+<p> </p>
+<p>A tarefa é simples. Mate o [%dic:STR_DIC_E_1221_guard_Da_gu] e o [%dic:STR_DIC_E_1221_guard_Da_wi]. Não se esqueça de trazer o [plur][%dic:STR_DIC_I_QUEST_1858a]como prova de sua vitória.</p>
+<p> </p>
+<p>Você poderia aceitar esta tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não deve subestimar os asmodianos.</p>
+<p> </p>
+<p>Eles são tão experientes quanto seguimos suas batalhas no abismo.</p>
+<p> </p>
+<p>É por isso que sugiro que você entre na fortaleza secretamente quando a batalha para capturar a fortaleza começa.</p>
+<p> </p>
+<p>Observe a situação e depois saia no momento oportuno. Mate o [%dic:STR_DIC_E_1221_guard_Da_gu] e o [%dic:STR_DIC_E_1221_guard_Da_wi]. Reunir o [plur][%dic:STR_DIC_I_QUEST_1858a]como prova.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem medo dos inimigos na fortaleza?</p>
+<p> </p>
+<p>Se você tem medo, continue caçando o Klaw por perto.</p>
+<p> </p>
+<p>Agradecemos por esse tipo de ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou muito confuso. Lyaeus é uma pessoa competente, mas ele fala demais.</p>
+<p> </p>
+<p>Então, você completou sua missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">De nada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Seja honesto ...</p>
+<p> </p>
+<p>Você esqueceu as capas?</p>
+<p> </p>
+<p>Eu não ligo.</p>
+<p> </p>
+<p>Se você quiser uma recompensa, traga -me [plur][%dic:STR_DIC_I_QUEST_1858a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou satisfeito por você ter concluído esta tarefa.</p>
+<p> </p>
+<p>Você é um bom exemplo para todos os meus soldados.</p>
+<p> </p>
+<p>Por favor, continue a estar disponível para tarefas.</p>
+<p> </p>
+<p>Aqui, pegue isso. Esta é uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_1221_guard_Da_gu] e o [%dic:STR_DIC_E_1221_guard_Da_wi], colete evidências e traga -as para [%dic:STR_DIC_N_Menelaus].</p>[%collectitem]</step>
+</steps>
+<p>Mate os oficiais de Krotan e os oficiais da equipe da Asmodian Krotan e reporte -se a Centurion Menelaus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Menelaus pediu que você matasse os oficiais da Asmodian em Krotan Fortaleza para dar um exemplo para os soldados e ajudar a construir sua confiança.</p>
+<p> </p>
+<p>Você matou os oficiais de Krotan e os oficiais da equipe de Krotan asmodianos e reuniu suas capas como prova. Menelaus ficou encantado com o seu sucesso e pediu que você permanecesse disponível para futuras tarefas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem a tempo, [%username]. Eu tenho uma missão investigativa com seu nome por toda parte.</p>
+<p> </p>
+<p>Eu poderia teoricamente enviar a alguém, mas não há legionários suficientes para proteger essa área como é.</p>
+<p> </p>
+<p>Se eu lhe enviar, não precisarei enviar um exército inteiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é a missão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma área inexplorada no Silentera Canyon, guardada por Jotuns.</p>
+<p> </p>
+<p>Não sabemos nada sobre o que está além, e é hora de mudarmos isso. A informação é poder, especialmente em tempos de guerra.</p>
+<p> </p>
+<p>Acho que você pode fazer um pouco de observação por mim, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_E_Underpass_SensoryArea_Q30057]é a área que precisa de investigar. Se você caminhar em direção à parte norte da Jotun Square, verá para onde precisa ir.</p>
+<p> </p>
+<p>Descubra para onde leva essa passagem, o que está conectado e o que está no final.</p>
+<p> </p>
+<p>Sangue para sangue, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que era demais perguntar.</p>
+<p> </p>
+<p>Suponho que possa esperar. Quando a situação aqui estiver mais estável, enviarei alguns dos meus legionários.</p>
+<p> </p>
+<p>Se nada mais, posso pedir ajuda ao general da brigada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Muitas opções."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username].</p>
+<p> </p>
+<p>Como foram as coisas? Você conseguiu explorar a passagem ao norte da Jotun Square?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Havia uma porta e ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Curioso. Uma porta enorme com algo por trás dela. Enquanto permanecer lá, suponho que estou satisfeito com isso.</p>
+<p> </p>
+<p>Teremos que passar pela porta eventualmente, mas enquanto não for uma brecha da Elysea, estou feliz.</p>
+<p> </p>
+<p>Você fez bem, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Patrulha [%dic:STR_DIC_E_Underpass_SensoryArea_Q30057][%2].</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Vergelan].</p></step>
+</steps>
+<p>Patrulha a área desconhecida no Canyon Silentera, ao norte da Jotun Square.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Veregelan disse que havia uma área inexplorada no Silentera Canyon. Ele pediu que você patrulhasse.</p>
+<p> </p>
+<p>Conforme solicitado, você foi para a área ao norte da Jotun Square. Você encontrou uma porta enorme, bem fechada, com algo gritando atrás dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

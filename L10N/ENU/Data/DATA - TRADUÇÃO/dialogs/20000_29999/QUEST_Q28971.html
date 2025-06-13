@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se importaria de me fazer um favor, [%username]?</p>
+<p> </p>
+<p>Você poderia se livrar do[plur][%dic:STR_DIC_M_DF5_C_Elementalearth2Re_58_An], o [plur][%dic:STR_DIC_M_DF5_E2_FlyingWorm_ED_60_n] e o [plur][%dic:STR_DIC_M_DF5_G_Varanus_61_An]perto da vila?</p>
+<p> </p>
+<p>Estamos fazendo o possível para defender as bases nas aldeias.</p>
+<p> </p>
+<p>As criaturas nas proximidades da base representam uma ameaça. Também temos que considerar que os Elyos estão prontos para atacar.</p>
+<p> </p>
+<p>Há um[%dic:STR_DIC_I_IDLDF5Re_solo_Key_00] em todas as regiões como uma recompensa por concluir esta tarefa.</p>
+<p> </p>
+<p>Se você concluiu a missão, vá para o responsável[%dic:STR_DIC_E_DF5_IDF5_Mini_01_Officer_D_all]na região.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Prazer em conhecê-lo.</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você concluiu a tarefa na região?</p>
+<p> </p>
+<p>Você se saiu muito bem, [%username].</p>
+<p> </p>
+<p>As bases mais importantes do Vengar estão nessas regiões.</p>
+<p> </p>
+<p>Ainda há muito a ser feito.</p>
+<p> </p>
+<p>Vamos pedir sua ajuda com essas tarefas no futuro também, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os problemas.</p>
+<p visible="[%3]">[plur][%dic:STR_DIC_M_DF5_C_Elementalearth2Re_58_An]([%5]/4)</p>
+<p visible="[%6]">[plur][%dic:STR_DIC_M_DF5_E2_FlyingWorm_ED_60_n]([%8]/4)</p>
+<p visible="[%9]">[plur][%dic:STR_DIC_M_DF5_G_Varanus_61_An]([%11]/4)</p></step>
+<step><p visible="[%12]">Relatório para [%dic:STR_DIC_E_DF5_IDF5_Mini_01_Officer_D_all].</p></step>
+</steps>
+<p>Cumpre o pedido de Vigrik e mate os encrenqueiros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vigrik pediu que você matasse os criadores de problemas, causando problemas com a defesa da base.</p>
+<p> </p>
+<p>Você completou com êxito a missão do supervisor da estrada de campo Aetica e ele o elogiou por seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

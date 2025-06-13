@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso pedir para você matar [%dic:STR_DIC_M_LDF5A_A1_Agrint_62_An] e trazer [%dic:STR_DIC_I_quest_12810a]com você?</p>
+<p> </p>
+<p>Houve tantas batalhas e agora são necessários reparos dentro e fora da base.</p>
+<p> </p>
+<p>Temos pedras suficientes, terra e madeira, mas depois de iniciar a construção, percebemos que ainda estamos perdendo a corda para amarrar todos os materiais.</p>
+<p> </p>
+<p>Eu acho que galhos da Agrint Drytwig podem ser úteis porque são flexíveis e robustos. Você poderia ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ninguém sabe quando a batalha começará. É por isso que os reparos nos lados interno e externo do poste são tão urgentes.</p>
+<p> </p>
+<p>Nós reparamos provisoriamente pontos em colapso aqui e ali. Mas os reparos não são perfeitos sem galhos flexíveis.</p>
+<p> </p>
+<p>As pedras empilhadas certamente entrarão em colapso em um pequeno golpe, a menos que estejam devidamente protegidas.</p>
+<p> </p>
+<p>Isso requer galhos flexíveis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o galho de árvore flexível.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou a Agrint Drytwig e obteve galhos flexíveis para mim, como solicitado.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Não teremos problemas para reparar a postagem, pelo menos por enquanto.</p>
+<p> </p>
+<p>Por favor, pegue isso. É um símbolo de meus agradecimentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5A_A1_Agrint_62_An], obtenha [%dic:STR_DIC_I_quest_12810a] e trazer o material para [%dic:STR_DIC_N_LDF5_Village_Guard03_L].</p>[%collectitem]</step>
+</steps>
+<p>Elimine a agrografia e obtenha galhos flexíveis para reparar a postagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>SERAS estava tendo algumas dificuldades para limpar os detritos de guerra porque não havia galhos flexíveis suficientes.</p>
+<p> </p>
+<p>Você matou a Agrint Drytwig e trouxe os galhos flexíveis, e ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

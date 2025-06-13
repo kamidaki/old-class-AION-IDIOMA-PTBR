@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pepe acabou de receber ordens.</p>
+<p> </p>
+<p>As instruções dizem impedir o desmatamento, mas isso não pode ser feito imediatamente.</p>
+<p> </p>
+<p>[%username], você poderia matar [%dic:STR_DIC_M_LDF5A_G3_Brownie_Woker_63_n]no campo de madeira e tirar o [%dic:STR_DIC_I_quest_12540a]?</p>
+<p> </p>
+<p>A ferramenta de reparo que os peões Momoki carregam com eles ajuda a reparar os eixos dos leilões.</p>
+<p> </p>
+<p>É uma ferramenta que eles podem usar para criar seus eixos usados ​​e desgastados como novos.</p>
+<p> </p>
+<p>Se você tirar essa ferramenta deles, não é uma solução perfeita, mas deve reduzir a taxa na qual eles estão cortando as árvores.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já está de volta?</p>
+<p> </p>
+<p>Estou apenas escrevendo um relatório para o mestre Pepe.</p>
+<p> </p>
+<p>Precisamos encontrar uma maneira de parar o desmatamento de uma vez por todas.</p>
+<p> </p>
+<p>Eu criei algumas opções, mas não tenho certeza de qual seria o melhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Entregue uma ferramenta de reparo portátil.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso entregar esta coleção com meu relatório de que conseguimos parar o registro até certo ponto.</p>
+<p> </p>
+<p>Não há ferramenta de reparo, o que significa que os eixos quebrados não podem ser reparados.</p>
+<p> </p>
+<p>E isso significa que não é possível cair mais árvores, certo?</p>
+<p> </p>
+<p>Obrigado, [%username], para concluir a tarefa tão bem.</p>
+<p> </p>
+<p>Não é nada de especial, mas é um sinal de gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_G3_Brownie_Woker_63_n] e levar [%dic:STR_DIC_I_quest_12540a]para [%dic:STR_DIC_N_LDF5a_Skillros_E].</p>[%collectitem]</step>
+</steps>
+<p>Mate os peões Momoki para evitar o desmatamento e traga suas ferramentas de reparo com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Skillos disse que as ordens para acabar com o desmatamento vieram de Pepe.</p>
+<p> </p>
+<p>Você matou os peões Momoki, roubou suas ferramentas de reparo e foi recompensado ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

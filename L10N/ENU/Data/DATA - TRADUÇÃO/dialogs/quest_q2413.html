@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bastante simples, [%username]. Para me ajudar, você precisará limpar os espíritos da água ao longo da Fall Road.</p>
+<p> </p>
+<p>A tarefa pode não ser tão fácil quanto você imaginaria.</p>
+<p> </p>
+<p>Os espíritos da água se movem em grupos; portanto, se você soltar sua guarda por um momento, se encontrará cercado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ouvi dizer que existem vários tipos de espíritos".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Correto. Três tipos de espíritos da água se escondem na estrada de outono;[%dic:STR_DIC_M_ElementalWater2D_35_An] S, [%dic:STR_DIC_M_ElementalWater3D_36_An] Areia [%dic:STR_DIC_M_ElementalWater4D_37_An] S.</p>
+<p> </p>
+<p>Os espíritos do lago são mais fortes que os espíritos da água, e os espíritos de névoa são mais fortes que os espíritos do lago. Então você tem que ter cuidado.</p>
+<p> </p>
+<p>Mate todos os três tipos e traga suas pedras elementares como evidência, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cada tipo de espírito de água carrega um tipo diferente de pedra elementar.</p>
+<p> </p>
+<p>Você precisará de três[%dic:STR_DIC_I_QUEST_2413a] S dos espíritos da água, dois[%dic:STR_DIC_I_QUEST_2413b] S dos espíritos do lago e um[%dic:STR_DIC_I_QUEST_2413c]de um espírito de névoa de água.</p>
+<p> </p>
+<p>Sou responsável por esta tarefa, mas sinto que posso confiar em você para concluí -la.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Posso perder minhas asas se eu falhar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Esta tarefa é mais difícil do que você esperava?</p>
+<p> </p>
+<p>Os espíritos da água são difíceis, mas não são impossíveis de matar. Um Daeva com suas habilidades, [%username]... Eu pensei que você voaria para a ligação.</p>
+<p> </p>
+<p>Vou te dar mais tempo para pensar sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você. Você ficou ferido?</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_ElementalWater4D_all] S não teria desistido das pedras elementares sem lutar ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Você estava certo, não foi fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, essa não é uma tarefa fácil. Apesar de serem feitos de água, os espíritos podem realmente dar um soco.</p>
+<p> </p>
+<p>Você não pode parar agora. A segurança dos outros está descansando em suas asas.</p>
+<p> </p>
+<p>Vou esperar aqui pelo seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou te decepcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, você reuniu todas as pedras elementares.</p>
+<p> </p>
+<p>Obrigado a você, [%username], Não precisarei me preocupar com espíritos da água por um tempo.</p>
+<p> </p>
+<p>Pegue isso, você merece. Tyr me deu, para o Brave Daeva que me ajudou com minha missão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_ElementalWater4D_all] S Reunir três tipos de pedras elementares. Traga as pedras para [%dic:STR_DIC_N_Gullveig].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se dos espíritos da água, espíritos do lago e espíritos da névoa de água na estrada de outono. Reúna pedras elementares e traga as pedras para Gullveig.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>GullVeig explicou sobre os perigos dos espíritos da água ao longo da Fall Road e pediu que você os caçasse e trazia pedras espirituais da água, pedras espirituais do lago e pedras espirituais de névoa como evidência.</p>
+<p> </p>
+<p>Quando você trouxe as pedras elementares para ela, ela ficou satisfeita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

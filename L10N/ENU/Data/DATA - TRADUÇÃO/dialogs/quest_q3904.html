@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lady Yustiel vigia você, [%userclass]. Eu esperava encontrar você.</p>
+<p> </p>
+<p>Existem livros que contêm as habilidades de Lady Yustiel e outros Daevas que a seguiram, como este livro esotérico da vida.</p>
+<p> </p>
+<p>Peguei emprestado este recentemente e preciso devolvê -lo. Tais tomos são cuidadosamente confiados àqueles que os carregam.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu ficaria honrado em ajudá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os livros esotéricos da vida são mantidos por thrasymedes no protetores Hall. Este volume específico cobre nossos mistérios elementares.</p>
+<p> </p>
+<p>[%username], você entregaria este Livro esotérico da Vida aos Thrasymedes?</p>
+<p> </p>
+<p>Sinto que posso confiar em você, dedicado[%userclass]que você é.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente você deve estar interessado no conteúdo do livro esotérico. Afinal, você está procurando o significado da vida, [%username].</p>
+<p> </p>
+<p>Obviamente, o primeiro volume não tem interesse para você.</p>
+<p> </p>
+<p>Isso porque você já possui todas as habilidades que ele descreve dentro, [%username].</p>
+<p> </p>
+<p>Thrasymedes está guardando os outros volumes que você ainda não estudou.</p>
+<p> </p>
+<p>Ele será capaz de responder a todas as suas perguntas. Você deve encontrá -lo imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Yustiel o sustenta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu temo que você entenda mal. O livro é importante, é verdade, mas não é a única razão pela qual eu queria vê -lo.</p>
+<p> </p>
+<p>Eu realmente queria que você conhecesse thrasymedes. Ele não é apenas o mordomo de nossos livros esotéricos da vida, ele instrui alguns em nossos mistérios mais profundos.</p>
+<p> </p>
+<p>Muito bem. Nem todos são chamados. Eu entendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Yustiel esteja com você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Para controlar e manipular a própria essência da vida, é preciso ser disciplinado e focado.</p>
+<p> </p>
+<p>Distrações, impulsos ... esses prejudicam seu foco, tornam você menos eficaz.</p>
+<p> </p>
+<p>Seguimos o próprio poder da vida em nossas mãos. Como não podemos nos dedicar totalmente a isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu me dediquei a isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os livros esotéricos são a soma dos esforços do templo da vida.</p>
+<p> </p>
+<p>Desde que a hygea lhe confiou o livro, ela deve ser da opinião de que você é um Daeva altamente promissor.</p>
+<p> </p>
+<p>Se você deseja melhorar a si mesmo como um Daeva, deve estudar esses livros em detalhes.</p>
+<p> </p>
+<p>Eu não acho que você terá dificuldades ao longo do caminho, [%username]. No entanto, se você tiver algum problema em aprender as habilidades descritas nos livros, poderá me encontrar a qualquer momento.</p>
+<p> </p>
+<p>Eu vou te ajudar a se tornar um verdadeiro[%userclass], como tenho com muitos Daevas antes de você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Thrasymedes].</p></step>
+</steps>
+<p>Entregue o Livro esotérico da Vida a Thrasymedes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Hygea pediu que você entregasse um livro que contém as habilidades secretas de clérigos e cantores a Thrasymedes.</p>
+<p> </p>
+<p>Ao receber o livro esotérico da vida, Thrasymedes disse que, para se tornar um Daeva melhor, você deve aprender todas as lições nos livros esotéricos e que ele o ajudaria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

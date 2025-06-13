@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Helgund Patrol, [%dic:STR_DIC_N_LDF4_Advance_Helgund_E]do[%dic:STR_DIC_W_LDF4_Advance_SZ_OP_D]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Comando: Mate os dois Elyos Daevas que invadiram Akaron.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você realiza a missão.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos capturar Akaron.</p>
+<p> </p>
+<p>Não podemos permitir que os Elyos reivindiquem essa região por conta própria.</p>
+<p> </p>
+<p>Elimine os Elyos que continuam chegando aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Você lhes ensinou uma lição.</p>
+<p> </p>
+<p>Se você continuar contra os Elyos, logo nenhum deles se atreverá a vir aqui.</p>
+<p> </p>
+<p>Por favor, continue fazendo sua parte para a vitória da Asmodian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram[%dic:STR_DIC_W_LDF4_Advance]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF4_Advance_Helgund_E].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que invadiram Akaron e depois falam com Helgund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as instruções de Helgund, você matou os Elyos que invadiram Akaron.</p>
+<p> </p>
+<p>Helgund ficou satisfeito e perguntou se você poderia fazer mais para alcançar uma vitória da Asmodian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

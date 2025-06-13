@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Om nome de nome .... oh, [%username]! Perdoe minha grosseria. Não, isso definitivamente não é um ovo de Aranha mexido.</p>
+<p> </p>
+<p>Ok, pode ser um ovo aracha mexido, mas também tenho que comer! Enviei mais para minha família ... assim como eu prometi que eu faria ... eles enviaram seus cumprimentos.</p>
+<p> </p>
+<p>Mas agora minha esposa acabou de ter outro bebê! Minha família continua crescendo e estou preocupada que eles não tenham o suficiente para comer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Deixe -me adivinhar ... mais ovos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Somente se você tiver tempo de sobra para uma família faminta ... quero dizer, meu filho mais novo pode perecer, mas tenho muitos filhos e filhas.</p>
+<p> </p>
+<p>Seria ótimo se você pudesse ajudar. Você não tem um trabalho regular como eu, então tem tempo de sobra para buscar alguns ovos, certo? Tenho certeza que pouco[%username]vai apreciar isso. É isso mesmo, tenho orgulho de ter um filho que compartilha um nome com um Daeva tão venerável ....</p>
+<p> </p>
+<p>Claro que é verdade, [%username]!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu mais profundo obrigado[%username]. Por favor, vá ao covil de Octanu e traga -me alguns[%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329] S.</p>
+<p> </p>
+<p>Eu acho que cerca de 7 ovos serão suficientes. Lembre -se, as conchas são frágeis!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh[%username], pense em pouco[%username]! Seu homônimo pode morrer de fome!</p>
+<p> </p>
+<p>Que tipo de Daeva deixaria isso acontecer? Eu mesmo faria isso se não estivesse tão ocupado!</p>
+<p> </p>
+<p>Vou ter que esperar até ter um dia de folga ... Espero que minha família possa esperar tanto tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem ovo no rosto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero meu pequeno[%username] está indo bem, e o resto da minha família. Eles apreciariam tanto esses ovos ....</p>
+<p> </p>
+<p>Bem[%username], você conseguiu pegar os ovos de Aranha?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui, eu os trouxe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você ainda não os conseguiu? Não é pressa, [%username]. Tenho certeza que minha família pode sobreviver um pouco mais ....</p>
+<p> </p>
+<p>Mas por favor, pegue [%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329] S Quando você tem tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Minha família apreciará muito esses ovos. Agora ... onde está essa frigideira?</p>
+<p> </p>
+<p>Quero dizer ... onde está aquela caixa de embalagem?! Por favor, tome isso como uma recompensa [%username]. Espero que isso seja útil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_OBJ_DF2_OctasideEgg_Q2329] e leve-os para [%dic:STR_DIC_N_Jorund].</p>[%collectitem]</step>
+</steps>
+<p>Pegue a Jorund mais ovos de Aranha para que ele possa alimentar sua família.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jorund lhe disse que precisava de mais ovos de Aranha para alimentar sua família.</p>
+<p> </p>
+<p>Você foi ao covil de Octanu e pegou os ovos para Jorund. Ele então agradeceu sua ajuda e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

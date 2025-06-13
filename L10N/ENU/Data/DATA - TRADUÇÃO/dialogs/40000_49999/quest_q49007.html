@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem de operação urgente -</p>
+<p></p>
+<p>Remetente: Pandaemonium High Command</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens:</p>
+<p></p>
+<p>Eliminar os soldados Elyos do[%dic:STR_DIC_E_Q49007] e enfraquecer a força inimiga.</p>
+<p></p>
+<p>Vá para o teatro de operações imediatamente. Relatório para [%dic:STR_DIC_N_Sala]no Priorado do Marchutan após a missão ter sido concluída.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolsa o pedido de operação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que isto significa?! Os Elyos avançaram para Brusthonin!</p>
+<p> </p>
+<p>É ainda mais surpreendente porque nenhuma fenda no espaço-tempo foi aberta lá, até agora.</p>
+<p> </p>
+<p>Gostaria de saber se eles também têm a capacidade de criar fendas portal ...</p>
+<p> </p>
+<p>Diga -me como foi sua missão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, quão afortunado. Sem os intendente, eles terão mais problemas para travar a batalha.</p>
+<p> </p>
+<p>Eu não sabia que as tropas Elyos estavam estacionadas em Brusthonin. Aconteceu que as tropas pousaram no sul de Brusthonin.</p>
+<p> </p>
+<p>Como subestimamos o número de tropas, queríamos confiar o assunto aos arcontes a princípio, mas isso quase deu terrivelmente errado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os membros do[%dic:STR_DIC_E_Q49007]([%2]/15).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Operação de operação urgente: Relatório a Sala depois de eliminar a unidade de suporte do alto comando do santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a missão urgente de alto comando do Pandaemonium e eliminou a unidade de apoio do Santum Alto Comando, que invadiu Brusthonin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak! Há lucro em todos os lugares, mesmo em lugares inesperados.</p>
+<p> </p>
+<p>Essas ruínas, por exemplo, podem parecer velhas e empoeiradas, mas quem sabe que tesouros existem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Lixo velho, provavelmente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, mas o que parece velho e inútil pode ser raro e valioso para os compradores certos.</p>
+<p> </p>
+<p>As probabilidades e fins antigos podem ter valores que não podem ser vistos pelos olhos errados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tinha alguma coisa em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Que estranho você deve perguntar isso, Daeva! As ruínas de Roah aqui, elas podem ter algumas coisas que estou procurando.</p>
+<p> </p>
+<p>Estudiosos e outros, eles pagavam preços altos por lixo antigo lá.</p>
+<p> </p>
+<p>Mas é perigoso. Você poderia ir em vez de mim, compartilhar os lucros, como sempre?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, maravilhoso! O que eu quero em particular é[%dic:STR_DIC_I_QUEST_1776a] S.</p>
+<p> </p>
+<p>Eu já vi muitos[%dic:STR_DIC_E_small_box] es-talvez você o encontrará em um desses?</p>
+<p> </p>
+<p>Procure as ruínas, encontre -as, traga -as para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou voltar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, não ajuda desta vez? Eu pensei que tínhamos nos tornado parceiros.</p>
+<p> </p>
+<p>Talvez até ... um amigo? Akakak.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um shugo? Amigo? Ha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você os trouxe? Encontrei um comprador e não gostaria de decepcionar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Isso vai fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, não é isso que prometi ao comprador.</p>
+<p> </p>
+<p>Se eu levar isso para ele, ele ficará com raiva. E quem sabe o que ele fará então.</p>
+<p> </p>
+<p>Por favor! Vá pegar mais garrafas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe, pequeno companheiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes são garrafas com padrão dourado, como perguntei.</p>
+<p> </p>
+<p>Mas talvez não seja a melhor qualidade. Vou manter minha pechincha, mas não posso pagar muito a você desta vez.</p>
+<p> </p>
+<p>Você é um bom Daeva, mas talvez não seja um bom caçador de tesouros.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre garrafas do[%dic:STR_DIC_E_small_box] es e leve-os para [%dic:STR_DIC_N_Shugo_AB1_10].</p>[%collectitem]</step>
+</steps>
+<p>Encontre garrafas com padrão dourado das antigas caixas de tesouro enterradas nas ruínas de Roah e leve-as a Kuenunerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kuenunerk disse que muitos tesouros preciosos estão escondidos nas ruínas de Roah.</p>
+<p> </p>
+<p>Ele pediu que você encontrassem garrafas com padrão dourado contidas em pequenas caixas de tesouro antigas.</p>
+<p> </p>
+<p>Ele afirmou que as garrafas que você trouxe não eram muito de alta qualidade e pagou menos do que prometeu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

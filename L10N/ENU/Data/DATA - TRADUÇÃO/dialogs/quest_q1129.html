@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fui despachado aqui há algumas semanas para espionar o Tursin Krall. Mais especificamente, para observar seus movimentos dentro e ao redor da mina de Timolia abandonada.</p>
+<p> </p>
+<p>Isso se mostrou difícil ultimamente. Os Tursin estão gastando mais tempo dentro das minas, onde é quase impossível pisar sem serem vistas.</p>
+<p> </p>
+<p>As coisas também não parecem mudar, forçando -me a uma posição difícil. Eu preciso de alguém para ir para a mina e descobrir o que está acontecendo lá. É um lugar perigoso, com caminhos estreitos e possíveis pontos de emboscada-você precisaria do seu ... agh ... seu juízo sobre você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está ferido?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Rachou meu pulso ontem. Caí de uma árvore enquanto eu tentava ter uma visão melhor da Krall. Me serve certo.</p>
+<p> </p>
+<p>De qualquer forma, eu precisaria que você vá para as minas, matasse um pouco de Krall e leve o que encontrar para o capitão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>Vá para o abandonado[%dic:STR_DIC_FLA08], matar [%dic:STR_DIC_MLA57] S, [%dic:STR_DIC_MLA14_1] Areia [%dic:STR_DIC_MLA14_2] S, e leve o que você encontrar para Kalio.</p>
+<p> </p>
+<p>Você pode estar melhor tirando o menor [%dic:STR_DIC_MLA137]Primeiro, depois focando no Krall. É fácil ficar inundado lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo conselho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha!</p>
+<p> </p>
+<p>Isso é o que eu pensei. Seria preciso grande coragem para entrar nas eixas das minas sozinhas. Honestamente, também não estou sentindo o trabalho, especialmente com meu pulso do jeito que é.</p>
+<p> </p>
+<p>Enviarei um pedido de alguns reforços.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Poa enviou uma notícia de que eu deveria esperar você.</p>
+<p> </p>
+<p>Você já lutou com o Krall? A maioria volta com a pele tão machucada que parece quase asmodiana, mas você não tem um arranhão em você ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eles são fortes, mas estúpidos, capitão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Verdadeiro o suficiente. Agora, vamos ver o que você trouxe.</p>
+<p> </p>
+<p>Hum. Não ... não posso tirar conclusões razoáveis ​​com uma amostra tão pequena. Você precisará trazer de volta mais do que isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Verdadeiro o suficiente. Agora, vamos ver o que você trouxe.</p>
+<p> </p>
+<p>Ah, eu reconheço isso. Deixe -me apenas montar isso ... e ... lá vamos nós. Oh ... estranho. Este é um gerador de energia. Mas o que o Krall poderia querer com um gerador de energia?</p>
+<p> </p>
+<p>Devo pensar nisso por um tempo, meu amigo. Obrigado por trazer as peças para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga pistas de [%dic:STR_DIC_MLA57] S, [%dic:STR_DIC_MLA14_1] Areia [%dic:STR_DIC_MLA14_2] para [%dic:STR_DIC_LA139].</p>[%collectitem]</step>
+</steps>
+<p>Você está ajudando POA a investigar o enredo de Krall. Caçar [%dic:STR_DIC_MLA57] S, [%dic:STR_DIC_MLA14_1] Areia [%dic:STR_DIC_MLA14_2] S, e encontre pistas que você pode mostrar ao Capitão Kalio.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Poa estava espionando o Tursin Krall na mina de Timolia abandonada há algum tempo. No entanto, eles estavam agindo cada vez mais estranhos recentemente, forçando a POA a pedir sua ajuda.</p>
+<p> </p>
+<p>Você entrou na mina e matou o Krall, depois levou pistas para o capitão Kalio. Segundo ele, esses eram parte de algum tipo de gerador de energia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É um lugar horrível.</p>
+<p> </p>
+<p>A contaminação aqui foi supostamente causada por experimentos de armas conduzidos pelo Exército de Beritra.</p>
+<p> </p>
+<p>Você precisa descobrir quais experimentos o Exército de Beritra realizou.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LDF5B_b2_Vri_Weabind_Ri_SN_NmdQ_65_Ae] e obter as informações que ele possui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu descobrir alguma coisa?</p>
+<p> </p>
+<p>Precisamos determinar os detalhes do experimento para que possamos interromper a propagação da contaminação.</p>
+<p> </p>
+<p>O Exército de Beritra saberá. Eles conduziram o experimento, afinal.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LDF5B_b2_Vri_Weabind_Ri_SN_NmdQ_65_Ae]tem certeza de ter algumas pistas sobre ele em algum lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de pesquisa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, é um relatório de pesquisa.</p>
+<p> </p>
+<p>Preciso dar uma olhada mais de perto para descobrir quais testes foram realizados.</p>
+<p> </p>
+<p>Obrigado por esta importante evidência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_23300A] e trazê -lo para [%dic:STR_DIC_N_LDF5_Village_Guard10_D].</p>[%collectitem]</step>
+</steps>
+<p>Mate Uzak para promover a investigação e procurar evidências dos experimentos de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herbo pediu que você matasse Uzak e trazia informações que lançarão alguma luz sobre os experimentos realizados aqui.</p>
+<p> </p>
+<p>Cumprindo seu pedido, seu trouxe o relatório de pesquisa. Ele agradeceu, dizendo que continha informações valiosas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

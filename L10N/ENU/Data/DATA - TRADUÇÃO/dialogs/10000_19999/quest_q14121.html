@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo estranho nas ruínas do posto avançado em Eltnen.</p>
+<p> </p>
+<p>Havia um fluxo de Aether notável na área ao redor das ruínas do posto avançado, mas agora parece ter retornado ao normal.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LF2_SZ_G1_NPC], encontrar [%dic:STR_DIC_N_Lakaias] e peça a ele mais detalhes.</p>
+<p> </p>
+<p>Eu encarreguei Lakaias de monitorar as ruínas do posto avançado, mas ele provavelmente não pode fazer isso sozinho. [%username], por favor, ajudaria ele?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+<voice file="Q1034-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Valerius enviou você aqui?</p>
+<p> </p>
+<p>Por alguns dias, houve grandes mudanças no fluxo de Aether aqui ...</p>
+<p> </p>
+<p>O fluxo de Aether do artefato parou completamente. O artefato foi descoberto em pedaços e apenas a parte inferior podia ser encontrada.</p>
+<p> </p>
+<p>Tudo isso é muito estranho.</p>
+<p> </p>
+<p>[%username], por favor, descubra quem é responsável por isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre os detalhes da situação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os artefatos podem ser encontrados em todos os lugares, mas esse artefato era algo especial.</p>
+<p> </p>
+<p>Um objeto tão poderoso quanto um artefato não pode ser movido sem deixar alguns traços para trás.</p>
+<p> </p>
+<p>Se você investigar o [plur][%dic:STR_DIC_M_Maidengolem_26_An]que estavam guardando o artefato, você pode encontrar pistas.</p>
+<p> </p>
+<p>Colete pistas para descobrir quem destruiu o artefato.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<voice file="Q1034-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou algo que poderia servir como prova?</p>
+<p> </p>
+<p>Porque quem gostaria de roubar o artefato?</p>
+<p> </p>
+<p>Quem fez isso deve ter se esforçado muito para destruir o artefato e apenas tomar a parte superior.</p>
+<p> </p>
+<p>Eu deveria ter guardado melhor essa área ... é minha culpa que algo assim tenha acontecido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o símbolo revolucionário.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente achou isso nas ruínas do posto avançado? Eu já vi esse item antes, com os revolucionários lefaristas!</p>
+<p> </p>
+<p>Então foram os revolucionários lefaristas!</p>
+<p> </p>
+<p>O artefato desapareceu e a situação parece ter algo a ver com os revolucionários lefaristas. Isso torna a situação ainda pior do que alguém pensava.</p>
+<p> </p>
+<p>Centurion Valerius deve ouvir sobre isso imediatamente!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LF2_SZ_G1_NPC] e Fale com [%dic:STR_DIC_N_Lakaias]lá.</p></step>
+<step><p visible="[%3]">Eliminar o [%dic:STR_DIC_M_Maidengolem_26_An], encontre provas e leve de volta para [%dic:STR_DIC_W_LF2_SZ_G1_NPC]. Mostrar [%dic:STR_DIC_N_Lakaias]O que você encontrou.</p>[%collectitem]</step>
+</steps>
+<p>Vá e explore as ruínas do posto avançado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valerius pediu ajuda porque havia problemas com o artefato nas ruínas do posto avançado.</p>
+<p> </p>
+<p>Lakaias disse que o artefato foi destruído e a parte superior do artefato desapareceu. Ele encarregou você de combater cariatídeos e procurar pistas.</p>
+<p> </p>
+<p>Você eliminou os cariatídeos e encontrou evidências. Estes indicam que os revolucionários lefaristas destruíram o artefato.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

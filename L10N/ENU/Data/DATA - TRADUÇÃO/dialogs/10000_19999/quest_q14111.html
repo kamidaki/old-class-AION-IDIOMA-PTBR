@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu tempo é perfeito. Precisamos desesperadamente de um capaz [%userclass] Aqui.</p>
+<p> </p>
+<p>Você já ouviu falar sobre os rebeldes chamados revolucionários lefaristas?</p>
+<p> </p>
+<p>Alguns querem que você acredite que eles são apenas uma faixa comum de ladrões, mas esses criadores de problemas são claramente uma séria ameaça ao santuário.</p>
+<p> </p>
+<p>[%username], Gostaria de pedir algo porque parece que você nasceu para esta tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os revolucionários lefaristas são a gangue mais perigosa nas proximidades da vila de Tolbas.</p>
+<p> </p>
+<p>Quando eles levaram a fazenda de Belbua, as pessoas pensavam que eram apenas saqueadores comuns.</p>
+<p> </p>
+<p>Todo mundo pensou que eles eram somente depois das disposições.</p>
+<p> </p>
+<p>Mas agora os revolucionários lefaristas transformaram a fazenda em sua fortaleza.</p>
+<p> </p>
+<p>E os revolucionários lefaristas com fome de poder estão tentando atrair os moradores para o seu lado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+<cutscene id="25"></cutscene>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos simplesmente assistir e deixá -los fazer o que quiserem.</p>
+<p> </p>
+<p>Portanto, será seu trabalho eliminar o [plur][%dic:STR_DIC_MLA122] e deles[%dic:STR_DIC_MLA123], Assim, [%username].</p>
+<p> </p>
+<p>O Guardian Leto também está aqui, mas é impossível para ela enfrentar essa gangue sozinha. Além disso, como guardião, ela tem mais a fazer do que apenas defender a vila.</p>
+<p> </p>
+<p>Como não temos chance contra os revolucionários lefaristas por conta própria, queremos pedir ajuda a você, [%username].</p>
+<p> </p>
+<p>Aliás, Cavil, o líder dos revolucionários lefaristas, está supostamente escondido em um[%dic:STR_DIC_FLA24] edifício nas proximidades. Você o eliminaria, por favor?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+<voice file="Q1013-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você ficaria feliz em aceitar esta tarefa, [%username].</p>
+<p> </p>
+<p>Eu só estava preocupado por causa do grande número de oponentes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia ter provado suas habilidades para deixar nessa ocasião ...</p>
+<p> </p>
+<p>Então, suponho que não tenho outra escolha a não ser pedir a outro Daeva que realize esta tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os revolucionários lefaristas não apenas convenceram os moradores; Eles os forçaram a se unirem ameaçando os moradores.</p>
+<p> </p>
+<p>Primeiro, eles tomam uma fazenda de um homem honesto e agora tentam inchar suas fileiras pela força!</p>
+<p> </p>
+<p>Você eliminou o líder dos revolucionários lefaristas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou aliviado por você ter cuidado dele!</p>
+<p> </p>
+<p>Os revolucionários lefaristas nunca mais podem exercer poder sobre a vila de Tolbas.</p>
+<p> </p>
+<p>Graças a você, os moradores são libertados do reinado de terror dos revolucionários lefaristas.</p>
+<p> </p>
+<p>Agradeço o nome de toda a vila de Tolbas, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os revolucionários lefaristas ocupando[%dic:STR_DIC_FLA24].</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_MLA122]([%2]/9).</p>
+<p visible="[%0]">Derrota [%dic:STR_DIC_MLA123]([%5]/1).</p></step>
+<step><p visible="[%15]">Vá para a vila de [%dic:STR_DIC_FLA10] e Fale com [%dic:STR_DIC_LA24]lá.</p></step>
+</steps>
+<p>Ajuda Abolos a varrer os revolucionários lefaristas da fazenda de Belbua.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Em nome de Abolos, você varreu os revolucionários lefaristas e seu líder Cavil da fazenda de Belbua.</p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

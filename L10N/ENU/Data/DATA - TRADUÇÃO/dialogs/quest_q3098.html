@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3098</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um influxo constante de Daevas que querem nos ajudar.</p>
+<p> </p>
+<p>Eu me pergunto quais são seus motivos?</p>
+<p> </p>
+<p>Claro, alguns estão apenas seguindo as ordens que receberam ...</p>
+<p> </p>
+<p>Mas a maioria está aqui por curiosidade!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Aquela porta! Sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma criatura impedindo minha pesquisa.</p>
+<p> </p>
+<p>Você já conheceu Pocaching?</p>
+<p> </p>
+<p>Assim que eu entro no laboratório secreto, ele não me deixará em paz.</p>
+<p> </p>
+<p>Você poderia se livrar dele para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia fazer isso por mim?</p>
+<p> </p>
+<p>Estou contando com você, [%username].</p>
+<p> </p>
+<p>Por favor, elimine [%dic:STR_DIC_E_D_LF2a_Q4119]no[%dic:STR_DIC_W_NAME_IDLF2A_Lab]. Tome cuidado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Podemos lidar com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não acho que você entende a magnitude do problema. Se essa coisa sair, devorará cada vez mais poder até que destrua o mundo inteiro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez isso tire o Balaur."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo tem seu preço. Isso também vale para os eventos no laboratório Theobomos.</p>
+<p> </p>
+<p>Muito dinheiro teve que ser pago pela pesquisa de petralith. Os efeitos ainda estão sendo sentidos.</p>
+<p> </p>
+<p>E tudo por causa da luxúria pelo poder.</p>
+<p> </p>
+<p>Temos que terminar a guerra o mais rápido possível.</p>
+<p> </p>
+<p>Como foi? Você eliminou[%dic:STR_DIC_E_D_LF2a_Q4119]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você não precisará mais se preocupar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um bom trabalho, embora eu tenha certeza de que não foi fácil.</p>
+<p> </p>
+<p>O problema finalmente foi resolvido.</p>
+<p> </p>
+<p>Agora posso finalmente continuar minha pesquisa no laboratório Theobomos.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_D_LF2a_Q4119]no[%dic:STR_DIC_W_NAME_IDLF2A_Lab]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Pyrrha]no[%dic:STR_DIC_W_LF2B_SZ_B4_2].</p></step>
+</steps>
+<p>Elimine Pocaching, que está causando caos no laboratório Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pyrrha pediu que você elimine Pocaching no laboratório Theobomos.</p>
+<p> </p>
+<p>Você foi agradecido depois de concluir a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

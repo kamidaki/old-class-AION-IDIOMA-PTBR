@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você reconhece uma mistura de letras de Balaur na esfera.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu me pergunto o que diz?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você não pode fazer cabeças ou caudas. Talvez você possa aprender mais se remover a bola de cristal para exame.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Com cuidado, você deposita a bola no seu cubo.)</p>
+<p> </p>
+<p>([%dic:STR_DIC_N_Silion]pode ter uma ideia do que é.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esse cara conhece tudo o Balaur."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os personagens brilham, mas seu interesse diminuiu.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Provavelmente é uma lista de compras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Outro Daeva! Eu já vi mais do seu tipo ultimamente.</p>
+<p> </p>
+<p>Mas nós nos conhecemos antes, não é?</p>
+<p> </p>
+<p>Sempre um prazer ver velhos camaradas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu pensei que você poderia precisar desse cristal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que um Elyos, capitão Redien, queria um cristal de Balaur.</p>
+<p> </p>
+<p>Ele está sempre muito ocupado para mim, mas você pode dar isso ao seu assessor de Camp, Piran.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sempre mais recados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Redien tem um rancor especialmente profundo contra os asmodianos ....</p>
+<p> </p>
+<p>Eu me preocupo com como ele o formou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Uhhhh, Silion disse ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Isso conta uma história de Kumbanda!</p>
+<p> </p>
+<p>Redien começou a investigar Kumbanda desde que soube que o exército asmodiano perseguiu um balaur com esse nome.</p>
+<p> </p>
+<p>Obrigado pela Intel.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Silion].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Piran].</p></step>
+</steps>
+<p>Você encontrou um cristal de informações de Balaur. Leve isso para o SILION.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um cristal de informações de Balaur na fortaleza do ATURAM SKY.</p>
+<p> </p>
+<p>Quando você o mostrou ao SILION, ele o enviou para Piran, o assessor de Camp de Redien.</p>
+<p> </p>
+<p>Piran teve o prazer de receber inteligência sobre um balaur chamado Kumbanda, e ele o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

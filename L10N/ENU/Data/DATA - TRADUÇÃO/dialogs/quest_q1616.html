@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O clima em Asmodae é tão sombrio-frio e nublado. Eu odeio isso.</p>
+<p> </p>
+<p>Sinto falta de florestas quentes e profundas de Heiron ....</p>
+<p> </p>
+<p>Como está o Nerison? Suponho que ele foi quem lhe deu a senha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Preocupado com a caixa suspeita ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A caixa suspeita pode conter o assunto do teste humano remodelado?</p>
+<p> </p>
+<p>A fortaleza de Alquimia finge ser uma base de treinamento, mas há muitos pesquisadores entrando e saindo para que isso seja verdade.</p>
+<p> </p>
+<p>Além disso, acho que há um laboratório de pesquisa no norte da fortaleza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Boas observações."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Com base no que sabemos, há uma ligação entre o Centro de Pesquisa Lefarista em Hion e a fortaleza de Alquimia em Beluslan.</p>
+<p> </p>
+<p>Precisamos descobrir o que está na caixa suspeita. E também descobriremos o que [%dic:STR_DIC_M_EeA_LehparWiD_44_Ae] S estão fazendo.</p>
+<p> </p>
+<p>[%username], você vai lidar com isso para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se os cientistas estão trabalhando no experimento de remodelação humana, eles devem fazer parte do Laboratório de Pesquisa Oculta.</p>
+<p> </p>
+<p>Você precisará de um dos seus[%dic:STR_DIC_I_QUEST_1616a] S. o [%dic:STR_DIC_M_EeA_LehparWiD_44_Ae]provavelmente mantém aqueles com eles, então faça o que você deve conseguir.</p>
+<p> </p>
+<p>E se você vir outros itens suspeitos, pegue -os também.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou entrar e sair como o vento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio até asmodae e agora não quer me ajudar?</p>
+<p> </p>
+<p>Por que você veio aqui?</p>
+<p> </p>
+<p>Se você não vai ajudar, pode simplesmente sair.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estou indo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o [%dic:STR_DIC_M_EeA_LehparWiD_44_Ae] S?</p>
+<p> </p>
+<p>Você conseguiu um dos[%dic:STR_DIC_I_QUEST_1616a]?.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você veio a Asmodae se não vai ajudar?</p>
+<p> </p>
+<p>Estou ocupado com a coleta de informações. Eu tenho que fazer seu trabalho também?</p>
+<p> </p>
+<p>Não há mais ninguém para me ajudar. Por favor, vá buscar um[%dic:STR_DIC_I_QUEST_1616a].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Este é apenas um cartão de acesso comum à fortaleza de Alquimia. Eu tenho um gosto.</p>
+<p> </p>
+<p>Obrigado de qualquer maneira. Agradeço seus esforços. Eu preciso pensar em outra maneira.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_EeA_LehparWiD_44_Ae], encontre o cartão de acesso e leve -o para [%dic:STR_DIC_N_NPC_Lethe].</p>[%collectitem]</step>
+</steps>
+<p>Enquanto Lethe assistia a fortaleza de Alquimia, ela viu muitos pesquisadores de elite em Alquimia voltando e contornando a fortaleza e achou desconfiado. Livre -se deles e tome qualquer coisa desconfiada de que eles têm.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lethe achou suspeito que os pesquisadores venham secretamente e tornem o Alquimia Stronghold, a base de treinamento e logística. Especialmente quando eles trouxeram a caixa suspeita.</p>
+<p> </p>
+<p>Você se livrou dos pesquisadores da Alquimia Elite e revistou seus pertences, encontrando um cartão de acesso lefarista.</p>
+<p> </p>
+<p>Era o mesmo que seu cartão de acesso à fortaleza de Alquimia. Lethe procurará outros meios para investigar a caixa suspeita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

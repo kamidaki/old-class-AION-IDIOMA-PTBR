@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está ocupado, Daeva?</p>
+<p> </p>
+<p>Temos um pedido urgente ... se você tiver algum tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O posto avançado da caldeira precisa muito de suprimentos, mas não há ninguém que possa entregá -los.</p>
+<p> </p>
+<p>Nem Beramones nem eu podemos deixar nosso post, nem podemos atribuir um trabalho tão arriscado ao relógio.</p>
+<p> </p>
+<p>Não posso enviar humanos para um lugar onde trolls e revolucionários lefaristas estão à espreita. [%username], você vai me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Que alívio! Os suprimentos deveriam ter sido entregues há vários dias.</p>
+<p> </p>
+<p>Por favor, pegue isso. Tenha cuidado, é mais pesado do que parece.</p>
+<p> </p>
+<p>Entregue para [%dic:STR_DIC_N_Hylas]. Ele deve estar esperando ansiosamente por isso, então por favor se apresse. Pena que não há oéter o suficiente para você voar-você o faria lá sem tempo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meus pés serão minhas asas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que devo fazer? Eles já podem estar sem suprimentos.</p>
+<p> </p>
+<p>Mesmo que os daevasas não morram de fome, eles ainda sofrem.</p>
+<p> </p>
+<p>Eu entendo: você está ocupado. De uma maneira ou de outra, eu terei que encontrar o tempo sozinho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma! O que você está fazendo neste lugar leve ao esgotamento? Se você está procurando amor, você veio ao lugar errado! Haha! Ah, ahem ....</p>
+<p> </p>
+<p>Sério, o que te traz aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Arkel me enviou suprimentos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suprimentos! De todos os lugares esquecidos nesta terra que você entrou na minha-com suprimentos! Eu poderia te beijar!</p>
+<p> </p>
+<p>Eu estava prestes a ficar sem comida. Obrigado. Você deve ter se esforçado para vir aqui, então aceite isso. É pequeno, mas é meu sinal de gratidão.</p>
+<p> </p>
+<p>Você tem certeza que não quer esse beijo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar os suprimentos para [%dic:STR_DIC_N_Hylas].</p></step>
+</steps>
+<p>Vá para o posto avançado da caldeira e entregue os suprimentos a Hylas, conforme solicitado a Arkel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arkel disse que tinha que receber alguns suprimentos para o posto avançado da caldeira, mas ainda não havia encontrado a pessoa certa para entregá -los.</p>
+<p> </p>
+<p>Você entregou o pacote de suprimentos para Hylas no posto avançado. Hylas agradeceu e lhe deu um sinal de gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

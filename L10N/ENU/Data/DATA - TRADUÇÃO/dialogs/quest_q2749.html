@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico acordado à noite porque, se eu durmo, sonho com o ataque à fortaleza e acordo gritando.</p>
+<p> </p>
+<p>Eu nunca imaginei uma batida de asa que perderíamos a fortaleza ocidental de Siel tão de repente.</p>
+<p> </p>
+<p>Agora devemos planejar uma estratégia para recuperar a fortaleza e não nos debruçar sobre nossos erros.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Som pensamento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos ocuparam a fortaleza quando explicamos pela última vez. No entanto, houve um ataque do Balaur, por isso ainda não sabemos qual lado segura a fortaleza.</p>
+<p> </p>
+<p>No final, não importa qual a mão do inimigo segura a fortaleza. Devemos recuperá -lo. Oh, dormir novamente, sonhar com casa e escuridão!</p>
+<p> </p>
+<p>Ahem. Reúna seus aliados e derrota [%dic:STR_DIC_M_2749_all], incluindo todos os combatentes da fortaleza e arqueiros da fortaleza. Quero dizer tudo: Elyos e Balaur.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece o caminho para a fortaleza ocidental de Siel? Você tem um esquadrão para ajudá -lo?</p>
+<p> </p>
+<p>Recentemente, relata que os Elyos reforçaram as defesas da fortaleza. Traga amigos-lotes de amigos-de preferência com armas afiadas e corações ousados.</p>
+<p> </p>
+<p>Retornar seguro após derrotar [%dic:STR_DIC_M_2749_all].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É preciso nervos fortes e um coração ousado para entrar no território inimigo. Nem todos os Daevas possuem tanta coragem.</p>
+<p> </p>
+<p>Não se desculpe por recusar a missão. Se você não tem confiança, é melhor dizer não.</p>
+<p> </p>
+<p>Prefiro que você se recuse do que abaixar o moral com falha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Você conseguiu se infiltrar na fortaleza ocidental de Siel?</p>
+<p> </p>
+<p>Diga -me quantos[%dic:STR_DIC_M_2749_all]você derrotou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós limpamos a fortaleza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, [%username], parece que você faz jus à sua reputação! Você fez um ataque ousado contra o inimigo e facilitou a recuperação da fortaleza.</p>
+<p> </p>
+<p>Podemos ter que enviar mais missões, pois há mais guarnições para tirar. Eu apreciaria se você nos ajudasse novamente.</p>
+<p> </p>
+<p>Tudo o que você pode fazer ajudará a garantir nosso sucesso. Talvez agora eu possa dormir e sonhar com a vitória!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_2749_all]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Aslak].</p></step>
+</steps>
+<p>Recorrer a fortaleza ocidental de Siel, é imperativo enfraquecer a defesa do inimigo. Penetre na fortaleza e derrote os lutadores da fortaleza e os arqueiros da fortaleza. Traga amigos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aslak pediu que você enfraquecesse a defesa do inimigo para recuperar a fortaleza ocidental de Siel.</p>
+<p> </p>
+<p>Quando você voltou depois de derrotar a guarnição da fortaleza, Aslak agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

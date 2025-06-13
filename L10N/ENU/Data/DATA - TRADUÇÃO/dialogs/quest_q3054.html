@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um grande problema.</p>
+<p> </p>
+<p>Eu saí de [%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]! Bosco sem cogumelo sem gosto bom.</p>
+<p> </p>
+<p>Boscando sem gosto bom, a senhora Jamanok ficar louco. Você não gosta da senhora Jamanok quando ela está brava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, vá buscar alguns cogumelos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh claro! Apenas vá pegar! Tão fácil para um Daeva com grandes asas e arma mágica! Jabala Cook, não luta. Olhe os músculos insignificantes em Jabala!</p>
+<p> </p>
+<p>Cogumelos reunidos perigosos! Distante![%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]Cresça em Valley para baixo por Calydon Village e Dirmoi Valley. Quem cozinha enquanto Jabala se foi?</p>
+<p> </p>
+<p>Jabala não vai. Pague um que vai. Você quer ir, Daeva. Recompensa legal! Jabala Promise!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom bem![%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054]crescer em baixo vale. Senhora Jamanok Ame os cogumelos, então traga muitos!</p>
+<p> </p>
+<p>Jabala prepara a carne enquanto você se foi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... isso não é bom. Jabala assustou.</p>
+<p> </p>
+<p>Se a senhora Jamanok fica brava, ela fica muito assustadora.</p>
+<p> </p>
+<p>Jabala não quero bater!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem substituições, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Jabala estava esperando por você, Daeva.</p>
+<p> </p>
+<p>Carne está pronta. Só preciso de cogumelos.</p>
+<p> </p>
+<p>Dê Jabala [%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054] S, Jabala Dê um presente especial da Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oooooh ... seu mau Daeva.</p>
+<p> </p>
+<p>A senhora Jamanok aparece agora. Ela pergunta quando os bolinhos são feitos!</p>
+<p> </p>
+<p>Pressa! Trazer [%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054] S. Pressa!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh alegria! Alegria! Jabala pode fazer bolinhos!</p>
+<p> </p>
+<p>Senhora Jamanok ficará satisfeita. Sem bater hoje!</p>
+<p> </p>
+<p>Aqui um presente para o bom Daeva!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_OBJ_LF2a_Mushroom_Q3054] e trazê -los para [%dic:STR_DIC_N_LF2A_NPC_Jabala].</p>[%collectitem]</step>
+</steps>
+<p>Jabala, o cozinheiro, ficou sem cogumelo gigante de parasol, que é um dos principais ingredientes para bolinho. Obtenha cogumelos gigantes de parasol na área inferior do vale e leve -os para Jabala.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jabala, a cozinheira de Jamanok Inn, implorou para você trazer cogumelos gigantes para parasol.</p>
+<p> </p>
+<p>Ele precisava deles porque Jamanok adora os cogumelos com bolinhos de massa e fica com raiva se a comida dela não for perfeita.</p>
+<p> </p>
+<p>Quando você lhe trouxe cogumelos gigantes de parasol, Jabala lhe deu um presente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

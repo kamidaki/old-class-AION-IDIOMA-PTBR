@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30111</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho que admitir, [%username].... Esse veneno está me sujando completamente.</p>
+<p> </p>
+<p>É como nada que eu já vi-muito potente para ser baseado em plantas, viscoso demais para ser baseado em animais, muito puro para ser artificial.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então de onde veio?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A única possibilidade restante é que ele foi criado com algo nativo apenas para Gelkmaros ... talvez até exclusivo do Templo de Udas.</p>
+<p> </p>
+<p>Isso significa que precisaremos ir para a fonte. É a única maneira de descobrir o suficiente para um antídoto.</p>
+<p> </p>
+<p>Você está disposto a voltar ao UDAS mais uma vez para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha análise indica que o veneno é mais semelhante ao veneno de insetos. Ainda nada parecido em Asmodae, no entanto.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30011]Deve estar em UDAs. É a única maneira de usar muito sem transporte óbvio.</p>
+<p> </p>
+<p>Se você encontrar, destrua -o. Enviarei outros Daevas para trazer de volta amostras de tudo o que resta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É tão bom quanto se foi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eu poderia enviar outro Daeva, mas você já esteve no Udas Temple.</p>
+<p> </p>
+<p>Há muito em jogo para arriscar a inexperiência, fazendo com que a missão falhe.</p>
+<p> </p>
+<p>Você está arriscando vidas com sua hesitação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não posso evitar, desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há mais nada para eu fazer-isso me faz sentir fraca e desamparada.</p>
+<p> </p>
+<p>Mas eu sei que as rodas estão girando. Isso me mantém na ponta dos pés.</p>
+<p> </p>
+<p>Você achou a fonte do veneno? O que foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um Aranha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Um Aranha? Isso não pode ser ...</p>
+<p> </p>
+<p>Oh. Tão grande? Realmente? É incrível! É o maior inseto veneno que já ouvi!</p>
+<p> </p>
+<p>Vou enviar alguns legionários para o site. Eles vão me trazer os sacos de veneno de Kingspin. Com isso, um antídoto é garantido.</p>
+<p> </p>
+<p>Eu vou levar daqui, [%username]. Em nome dos aflitos, agradeço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30011]. [%2].</p></step>
+<step><p visible="[%3]">Matar [%dic:STR_DIC_E_IDTemple_OctacideNamed_54_Ah]([%5]/1).</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_Sulbanyer].</p></step>
+</steps>
+<p>Sulbanyer precisa encontrar a fonte do veneno usado pelo dragão. Pesquise Udas Temple pela fonte de veneno.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">You discovered Kingspin's Nest! Destroy Kingspin!</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sulbanyer lhe disse que o veneno era completamente novo para ele. A única esperança de um antídoto foi examinar sua fonte diretamente.</p>
+<p> </p>
+<p>Pesquisando o Templo Udas pela fonte, você descobriu as cavernas tóxicas. Lá você encontrou Kingspin, um enorme Aranha que era obviamente a fonte de veneno.</p>
+<p> </p>
+<p>Você exterminou o Kingspin e retornou a Sulbanyer. Ele prometeu fazer um antídoto dos restos mortais de Kingspin e agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

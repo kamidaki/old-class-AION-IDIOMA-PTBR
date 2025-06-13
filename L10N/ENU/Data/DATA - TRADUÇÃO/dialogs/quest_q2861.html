@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O tempo é essencial, então não posso lhe dar uma explicação completa no momento. Vou te dizer o que é mais importante.</p>
+<p> </p>
+<p>A fortaleza de Kys é um dos pontos -chave mais importantes, junto com o Refúgio Krotan e a Fortaleza Miren. Portanto, não podemos permitir que ele caia nas mãos de nossos inimigos.</p>
+<p> </p>
+<p>Eu gostaria de aventurar um ataque abrangente agora, mas a última batalha realmente nos enfraqueceu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos arcontes e Daevas estão tentando a guerra de guerrilha para ganhar tempo para um ataque total.</p>
+<p> </p>
+<p>Não sei se os Elyos elaboraram nossa estratégia. Mas recebi a notícia de que eles pretendem enviar reforços para a fortaleza.</p>
+<p> </p>
+<p>Planejamos permanecer o que acontecer, para que a situação só possa piorar.</p>
+<p> </p>
+<p>Felizmente, os da Asmodian Daevas estão se reunindo para nos ajudar. Você quer lutar conosco, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por concordar.</p>
+<p> </p>
+<p>Sua tarefa é matar o [%dic:STR_DIC_E_1231_guard_Li_fi]na fortaleza de Kysis e traga o [%dic:STR_DIC_I_QUEST_2861a].</p>
+<p> </p>
+<p>Quando os Elyos capturam a fortaleza de Kysis, observe seus movimentos. Quando as forças adicionais aparecem, depois de ver o sinal para conquistar a fortaleza, você pode realizar a tarefa.</p>
+<p> </p>
+<p>Enquanto isso, reorganizaremos nossas forças de luta. Desejo -lhe sorte e sucesso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Daevas são todos assim hoje em dia? Ou você é a exceção?</p>
+<p> </p>
+<p>Eu não vou forçá -lo; Você não é um membro da nossa Guilda.</p>
+<p> </p>
+<p>Mas, por favor, pense sobre isso ... o que tantos Daevas estão lutando tão desesperadamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que houve uma batalha na fortaleza de Kysis.</p>
+<p> </p>
+<p>Suponho que isso foi graças a você, [%username]?</p>
+<p> </p>
+<p>Estou curioso sobre o resultado. Por favor me mostre o [plur][%dic:STR_DIC_I_QUEST_2861a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a crista do guardião.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você esqueceu de obter os emblemas?</p>
+<p> </p>
+<p>Não importa quantos Elyos você matou. Você precisa de evidências.</p>
+<p> </p>
+<p>Por favor, pegue o [plur][%dic:STR_DIC_I_QUEST_2861a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, os rumores sobre suas ações heróicas são verdadeiras. Devo dizer que eu pensei que tudo tinha sido exagerado.</p>
+<p> </p>
+<p>Você instilou medo nos Elyos.</p>
+<p> </p>
+<p>Descanse agora. Você fez bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_1231_guard_Li_fi], junte a prova e leve -o para [%dic:STR_DIC_N_Menglad].</p>[%collectitem]</step>
+</steps>
+<p>Quando a fortaleza de Kys é ocupada, os guardiões Elyos Kys apareceram. Mate -os e traga Menglad a evidência de seu sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Menglad pediu que você ajudasse a recuperar a fortaleza.</p>
+<p> </p>
+<p>A pedido dela, você matou o Elyos Kysy Guardian, coletou o emblema do Guardian e o trouxe a Menglad, que elogiou seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

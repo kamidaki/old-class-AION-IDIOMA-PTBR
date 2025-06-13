@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma energia de incêndio em relação a você, [%username].</p>
+<p> </p>
+<p>Como você não é um daeva de chama, você deve estar carregando algo com forte energia de fogo.</p>
+<p> </p>
+<p>Qualquer coisa relacionada a bombeiros da minha curiosidade-eu pergunto o que você está carregando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu tenho essa espada de fogo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espada de fogo? A verdadeira espada de fogo? Posso ver?</p>
+<p> </p>
+<p>Ah, uma boa espada. Ainda ... não em perfeitas condições. Perdeu muito de sua energia de incêndio.</p>
+<p> </p>
+<p>É muito ruim ver uma espada tão boa tendo perdido tanta força.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pode ser consertado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso ser capaz de reviver a energia nela, se você me trazer um item que tenha energia própria-quanto mais forte, melhor.</p>
+<p> </p>
+<p>Se você me trazer algo adequado, posso tentar imbuir a espada com energia mais uma vez.</p>
+<p> </p>
+<p>Você gostaria de tentar isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem. Bem, [%dic:STR_DIC_M_ElementalFire2_26_An] S tem a energia de incêndio mais forte de qualquer coisa nesta área.</p>
+<p> </p>
+<p>Caça o espírito da chama e me traga seu[%dic:STR_DIC_I_QUEST_1334a].</p>
+<p> </p>
+<p>Eu deveria ser capaz de usar isso para colocar o poder de volta na sua espada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você só vai deixar essa espada maravilhosa desperdiçar em seu cubo?</p>
+<p> </p>
+<p>Se você deixar a espada assim, ela não funcionará. Não é nada além de um clube.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu gosto mais de clubes, de qualquer maneira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_1334a]?</p>
+<p> </p>
+<p>Espero que você aprecie o que estou fazendo por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de ambos[%dic:STR_DIC_I_QUEST_1334a] e a espada de fogo para fazer isso corretamente. O que exatamente você propõe que eu faço com apenas um desses?</p>
+<p> </p>
+<p>Não consigo fazer algo do nada, você sabe.</p>
+<p> </p>
+<p>Volte com os dois e eu posso ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select7">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sim ... esta essência é rica em energia de fogo.</p>
+<p> </p>
+<p>Sua espada será muito eficaz quando eu terminar de restaurá -la.</p>
+<p> </p>
+<p>Conceda-me sua espada ... agora me dê apenas um momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Tudo bem ... eu vou esperar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está feito, [%username].</p>
+<p> </p>
+<p>Se você tiver a chance de visitar o Santuário, tente conversar com o Daeva de Flame lá. Ele sabe muito sobre essa espada e pode imbuir com poder ainda mais forte.</p>
+<p> </p>
+<p>Por enquanto, porém, é muito melhor do que antes. Vá, teste seu poder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_1334a] e leve para [%dic:STR_DIC_N_Garperos].</p>[%collectitem]</step>
+</steps>
+<p>Faça a essência da chama de espíritos de chama a garperos para que ele possa atualizar sua espada de fogo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de verificar a espada de fogo que você estava carregando, Garperos concluiu que havia perdido a maior parte de sua energia de fogo e não funcionaria mais bem.</p>
+<p> </p>
+<p>Enquanto ele instruiu, você caçou espíritos de chama e levou sua essência de chama a Garperos, que atualizou a espada de fogo para a espada de chama.</p>
+<p> </p>
+<p>Ele disse que o Daeva de Flame em Santum poderia atualizar a espada para um nível superior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

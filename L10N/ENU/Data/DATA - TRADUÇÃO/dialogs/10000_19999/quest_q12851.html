@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard08_L]do[%dic:STR_DIC_W_LDF5a_E1_8]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: mate o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5a_E1_QUEST] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, estamos monitorando o esquadrão de apoio a Beritra, que agora está se tornando cada vez mais difícil.</p>
+<p> </p>
+<p>Os asmodianos apareceram e nos perturbaram.</p>
+<p> </p>
+<p>Você vai matar esses asmodianos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Se não houvesse asmodianos, o monitoramento do exército de Beritra seria um pouco mais fácil.</p>
+<p> </p>
+<p>Esses asmodianos. O fato de eles aparecer até aqui demonstra que ainda estão muito confiantes - apesar de sua falta de habilidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5a_E1_QUEST] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard08_L].</p></step>
+</steps>
+<p>Mate o asmodiano que avançou para o caminho para a fortaleza de Sillus no norte de Katalam e se reporte a Sallin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma ordem urgente de Sallin para derrotar o asmodiano que avançou para o caminho para a fortaleza de Sillus, no norte de Katalam. Você puniu o intruso como a ordem comandada.</p>
+<p> </p>
+<p>Sallin observou o exército de Beritra e disse que os asmodianos, que demonstravam falta de habilidades e autoconfiança superflada, estavam perturbando-o em seu trabalho cada vez mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

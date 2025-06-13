@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de lançar um ataque contra a sede da Kaidan.</p>
+<p> </p>
+<p>À luz dos desenvolvimentos recentes, fica claro que temos uma oportunidade de ouro. Krall é inerentemente preguiçoso e covarde. Se aproveitarmos essa chance para machucá -los, eles relutarão em abordar nossas forças por um tempo.</p>
+<p> </p>
+<p>Além disso, agora temos alguém em que podemos confiar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Agradeço sua confiança."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho a maior confiança em você. E é por isso que vou confiar em você com esta missão.</p>
+<p> </p>
+<p>O Krall confia em seus combatentes veteranos para motivar e liderar um grande número de tropas não disciplinadas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A classificação e o arquivo não são desmotivados por conta própria".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está correto. Apenas tirando alguns de seus melhores lutadores, podemos jogar o Krall Krall em desordem.</p>
+<p> </p>
+<p>Vá para a sede da Kaidan e mate alguns[%dic:STR_DIC_M_all_KrallWarrior] S. Coletar seus[%dic:STR_DIC_I_QUEST_1415a] S e nós os colocamos na parede do troféu.</p>
+<p> </p>
+<p>Crack Kaidan Warmonger, crack kaidan slashers, Kaidan Juggernaut, crack kaidan smashers e crack kaidan skullcrackers são as principais forças de combate, mas acho que eles encontraram sua partida em você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Livre -se do[%dic:STR_DIC_M_all_KrallWarrior] está na sede da Kaidan. Eles são a força motivadora do Kaidan Krall.</p>
+<p> </p>
+<p>Remova o crack kaidan warmonger, crack kaidan slashers, kaidan juggernaut, crack kaidan smashers e crack kaidan skullcrackers. Então colete o deles[%dic:STR_DIC_I_QUEST_1415a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, eu estava confiando em você, [%username]. Eu não esperava que você recusasse ....</p>
+<p> </p>
+<p>O futuro de Eltnen depende dessa importante missão.</p>
+<p> </p>
+<p>Por favor, pense.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou esperando relatos dos meus olheiros, mas não ouvi nada sobre sua missão.</p>
+<p> </p>
+<p>Você se livrou do[%dic:STR_DIC_M_all_KrallWarrior] S e coletar o [%dic:STR_DIC_I_QUEST_1415a] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tirei isso de seus corpos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você cumpriria essa missão fielmente, mas aparentemente eu estava errado, [%username]?</p>
+<p> </p>
+<p>Eltnen está enfrentando uma grande crise.</p>
+<p> </p>
+<p>Vá imediatamente e se livrar do[%dic:STR_DIC_M_all_KrallWarrior] S, e trazer o seu[%dic:STR_DIC_I_QUEST_1415a] para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você removeu os Kaidan Warriors? Isso é notícia bem -vinda. Eu recebo poucas notícias encorajadoras hoje em dia. Suas forças serão muito enfraquecidas.</p>
+<p> </p>
+<p>Você realizou com sucesso uma missão muito difícil, [%username].</p>
+<p> </p>
+<p>Eu tenho uma recompensa por você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Remover [%dic:STR_DIC_M_all_KrallWarrior] S e traga as evidências para [%dic:STR_DIC_N_Aeolus].</p>[%collectitem]</step>
+</steps>
+<p>Enfraquecer o exército Kaidan Krall. Remova alguns de seus principais lutadores e colete as marcas de guerreiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tumblusen disse para você remover as principais forças de combate para enfraquecer o exército de Krall Krall.</p>
+<p> </p>
+<p>Como ele solicitou, você removeu alguns dos lutadores de elite da sede da Kaidan e trouxe as marcas de seus guerreiros como evidência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você tem que tentar isso! Os livros antigos estavam certos! A carne Kselliki aumenta sua energia e força!</p>
+<p> </p>
+<p>Claro, é um pouco nítido, mas nada um pouco de tempero não pode consertar. Tem um pouco mais. Você pode sentir essa energia saudável?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uau! Isso é coisa potente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou preparar um grande pote de ensopado Kselliki para todos. Isso nos ajudará a chutar algumas asmodianas sérias ... garras.</p>
+<p> </p>
+<p>E certamente não vai prejudicar minha reputação! Agora, eles terão que admitir que uma boa dieta pode fazer a diferença.</p>
+<p> </p>
+<p>[%username], você poderia me ajudar a obter mais[%dic:STR_DIC_I_QUEST_1353a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem várias subespécies de Ksellikis no deserto de Eracus.</p>
+<p> </p>
+<p>O que estou procurando é[%dic:STR_DIC_M_ShellizardBaby_28_An], Assim, [%dic:STR_DIC_M_ShellizardBabyL_28_An], Assim, [%dic:STR_DIC_M_ShellizardBaby_30_An], ou[%dic:STR_DIC_M_ShellizardBabyL_30_An].</p>
+<p> </p>
+<p>Apenas certifique -se de evitar o Kselliki adulto. Acontece que sua carne é completamente ineedível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De alguma forma, não estou surpreso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh vamos lá! Isso é importante! O aumento extra de energia pode ser a diferença entre um guardião vencendo ou perdendo uma batalha.</p>
+<p> </p>
+<p>Você não quer que tenhamos todas as vantagens contra aqueles demônios escurosos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esqueça. Estou ocupado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O ensopado de Kselliki se desgastou. Estou começando a me sentir um pouco exausta. Eu gostaria de poder justificar comer Kselliki para todas as refeições, mas precisamos de todo o ensopado para quem entra em batalha.</p>
+<p> </p>
+<p>Você foi capaz de conseguir mais[%dic:STR_DIC_I_QUEST_1353a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim. Agora, posso ter uma tigela?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não teve a chance de obter mais[%dic:STR_DIC_I_QUEST_1353a]?</p>
+<p> </p>
+<p>Você pode colocar um pouco de pressa? Estou no meu último pote de ensopado e há uma grande ofensiva planejada amanhã.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sim, isso é reconfortante. Devo começar a cozinhar imediatamente. Não apenas para mim, mas para meus companheiros também.</p>
+<p> </p>
+<p>Eles ficarão felizes em comer este ensopado.</p>
+<p> </p>
+<p>Muito obrigado pela sua ajuda, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_M_ShellizardBaby_28_An], Assim, [%dic:STR_DIC_M_ShellizardBabyL_28_An], Assim, [%dic:STR_DIC_M_ShellizardBaby_30_An], ou[%dic:STR_DIC_M_ShellizardBabyL_30_An]carne para [%dic:STR_DIC_N_Acaste].</p>[%collectitem]</step>
+</steps>
+<p>Traga a aquaste a carne kselliki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que a a a aquária comeu a carne de Kselliki, ela disse que se sentiu recuperada e desejava dar a carne aos companheiros também.</p>
+<p> </p>
+<p>É por isso que você matou o Kselliki no deserto do leste de Eracus e adquiriu a carne que você trouxe para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

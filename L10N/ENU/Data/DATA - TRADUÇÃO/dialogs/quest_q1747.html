@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pensado nessa fatídica batalha novamente.</p>
+<p> </p>
+<p>Talvez se tivéssemos recuado mais cedo, estaríamos preparados para o Balaur ...</p>
+<p> </p>
+<p>Mas suponho que não há sentido em considerar isso agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que foi quebrado, está quebrado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, devemos olhar para o futuro, não o passado.</p>
+<p> </p>
+<p>Os preparativos estão sendo feitos para retomar a fortaleza, mesmo quando falamos.</p>
+<p> </p>
+<p>Mas é difícil planejar um ataque com todos esses Mortos Vivos voando por aí. Eles são um incômodo e podem ser perigosos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que pode ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles devem ser eliminados, é claro. Infelizmente, não posso poupar ninguém no momento.</p>
+<p> </p>
+<p>Talvez se você fizesse isso .... [%username], você vai eliminar o [%dic:STR_DIC_M_Ab1_1131_Specter_27_An] está voando por aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode não ser um trabalho glorioso, mas é um trabalho importante.</p>
+<p> </p>
+<p>Até os Daevas devem limpar os pisos de tempos em tempos, por assim dizer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Palavras sábias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece uma tarefa servil, eu sei.</p>
+<p> </p>
+<p>Mas se há uma lição que aprendi ao perder a fortaleza ocidental, é que as menores coisas podem ser as mais cruciais ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bons conselhos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos planos para recuperar a fortaleza estão quase completos.</p>
+<p> </p>
+<p>Mas você eliminou[%dic:STR_DIC_M_Ab1_1131_Specter_27_An] S?</p>
+<p> </p>
+<p>Com isso feito, podemos nos concentrar em assuntos mais importantes-recuperando a fortaleza!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Se apenas outros DAEVAs pudessem ter sua dedicação ao dever.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_Ab1_1131_Specter_27_An]([%2]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Chrysaor].</p></step>
+</steps>
+<p>A Chrysaor lhe disse que a memória Cheia poderia interferir nos preparativos para recuperar a fortaleza ocidental. Ele pediu que você os elimine.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chrysaor estava preparando um plano para retomar a fortaleza ocidental de Siel, mas ele precisava de alguém para eliminar os espectros voando para que as coisas corressem bem.</p>
+<p> </p>
+<p>Você aceitou o emprego, servindo como um bom exemplo para todos os danos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

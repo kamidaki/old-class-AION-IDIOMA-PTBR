@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todas as coisas urgentes foram finalizadas. Mas o que precisamos fazer agora é examinar por que o teste falhou.</p>
+<p> </p>
+<p>Kuretes está supostamente testando a influência do ID nos seres vivos.</p>
+<p> </p>
+<p>Provavelmente ainda existe um cubo de Idgel que Kuretes usou em seus testes. Por favor, vá para a área de teste de Kuretes e traga -me o cubo idgel abandonado.</p>
+<p> </p>
+<p>Se examinarmos o [%dic:STR_DIC_N_LDF5b_FOBJ_C2_Idgel], certamente podemos descobrir por que os resultados dos testes saíram da maneira que eles fizeram.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que é perigoso fazer testes com energia desconhecida. Um exame cuidadoso é realmente necessário desta vez.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_N_LDF5b_FOBJ_C2_Idgel]Na área de teste de Kuretes, é extremamente importante para o exame. Por favor, obtenha isso para mim.</p>
+<p> </p>
+<p>Como está a busca pelo cubo idgel abandonado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cubo Idgel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo estranho no idgel neste cubo.</p>
+<p> </p>
+<p>Embora eu nunca tenha visto Idgel antes, este tem uma cor diferente e parece ser diferente de outras maneiras.</p>
+<p> </p>
+<p>Kuretes provavelmente não verificou a condição do Idgel e acabou de realizar experimentos sem pensar.</p>
+<p> </p>
+<p>Essa não é a atitude certa para um pesquisador. Suspirar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_QUEST_13022A]para [%dic:STR_DIC_N_LDF5b_Arodos_E].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o cubo idgel abandonado que pode ajudar na investigação sobre o experimento fracassado e levá -lo a Arodos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arodos pediu o cubo de Idgel abandonado, que ele deseja examinar para analisar o experimento fracassado de Kuretes.</p>
+<p> </p>
+<p>Depois de examinar o idgel no cubo, Arodos descobriu que o próprio Idgel tinha problemas e se queixou da imprudência de Kuretes, pois não havia verificado seus materiais de experimentação corretamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

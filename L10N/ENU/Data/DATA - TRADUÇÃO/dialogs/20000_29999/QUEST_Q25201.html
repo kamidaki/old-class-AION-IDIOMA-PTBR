@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho uma tarefa para você, [%username].</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_DF5_SZ_P1_01] e eliminar o [plur][%dic:STR_DIC_M_DF5_P1_NewMerman_Fi_Normal_58_Ae] e o [plur][%dic:STR_DIC_M_DF5_P1_NewMerman_As_Normal_58_Ae], que nos consideram asmodianas como inimigos.</p>
+<p> </p>
+<p>Os anciãos aquáticos querem fazer um acordo conosco, mas seus companheiros no vale de Aquan ainda agem hostis em nossa direção.</p>
+<p> </p>
+<p>Não temos opção: teremos que atacar sua sede para garantir que eles não nos atacem mais os modianos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A tropa da expedição tem grandes expectativas de você, [%username].</p>
+<p> </p>
+<p>Você eliminou os soldados de elite no vale de Aquan?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um trabalho magnífico.</p>
+<p> </p>
+<p>O Exército de Beritra já está nos causando problemas suficientes em Vengar.</p>
+<p> </p>
+<p>Não podemos permitir que o ataque dessa tribo nos pare.</p>
+<p> </p>
+<p>Por favor, continue nos ajudando, [%username] e eliminar ainda mais aquans.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_DF5_P1_NewMerman_Fi_Normal_58_Ae] e o [plur][%dic:STR_DIC_M_DF5_P1_NewMerman_As_Normal_58_Ae]no vale de Aquan ([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Grangund_E].</p></step>
+</steps>
+<p>O comandante em exercício Grangund pediu que você eliminasse os combatentes da elite aquana e os guerreiros de elite aquan no vale de Aquan. Realize a missão de Grangund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O comandante em exercício Grangund pediu que você eliminasse os combatentes da elite aquana e os guerreiros de elite aquan no vale de Aquan.</p>
+<p> </p>
+<p>Você realizou a missão no vale de Aquan. Grangund então pediu que você aceitasse missões adicionais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

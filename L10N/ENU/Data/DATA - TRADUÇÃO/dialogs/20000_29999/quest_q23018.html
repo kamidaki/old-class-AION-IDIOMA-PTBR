@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava interessado no cubo Idgel e fiz alguns cubos.</p>
+<p> </p>
+<p>De vez em quando, como teste, tentei usá -los, mas eles não mostraram poder real.</p>
+<p> </p>
+<p>O teste foi bom, mas o problema é que eu o fiz sem a aprovação de cima. Tentei limpar os restos do teste, mas acabei de receber instruções diferentes, então não pude sair daqui.</p>
+<p> </p>
+<p>Você pode, [%username], colete [%dic:STR_DIC_I_quest_23018a]para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o robusto cubo idgel?</p>
+<p> </p>
+<p>Mesmo se você não apoiar pessoalmente a pesquisa da IDGEL, ainda não deve bloqueá -la completamente!</p>
+<p> </p>
+<p>Quem deve pesquisar e como o desenvolvimento deve ocorrer, se a busca pela verdade foi bloqueada?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cubo IDGEL duro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Isso é realmente um alívio.</p>
+<p> </p>
+<p>[%username], Acho que posso confiar em você, pois você sabe como manter um segredo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_quest_23018a] e trazê -lo para [%dic:STR_DIC_N_LDF5b_Peniun_E].</p>[%collectitem]</step>
+</steps>
+<p>Recupere o cubo de Idgel que a penion fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido da Penion, você obteve o robusto cubo de Idgel que foi deixado para trás após o teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

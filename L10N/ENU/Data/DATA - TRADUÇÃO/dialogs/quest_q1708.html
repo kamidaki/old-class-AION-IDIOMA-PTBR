@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho nessa última missão, [%username].</p>
+<p> </p>
+<p>Isso me diz que posso confiar em você para tarefas ainda mais difíceis.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tem outra tarefa em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu faço. É o [%dic:STR_DIC_E_Dgrade3] S desta vez.</p>
+<p> </p>
+<p>Eu acho que você é a experiência de lidar com eles agora. Você concorda?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que sua bravura apareceria.</p>
+<p> </p>
+<p>Vá caçar o [%dic:STR_DIC_E_Dgrade3] está imediatamente. Os que apresentam um desafio, ou seja. Se você pode matá -los com pouco esforço, então qualquer um pode. Enviamos o nosso melhor para combater o seu melhor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com medo? Eu deveria ter conhecido.</p>
+<p> </p>
+<p>Você parecia um pouco magro para lidar com qualquer coisa além da última tarefa. Volte para a terra daqueles que têm medo de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hum ... tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu com o [%dic:STR_DIC_E_Dgrade3] S?</p>
+<p> </p>
+<p>Diga -me todos os detalhes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu lidei com a situação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Espero que você continue com o bom trabalho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_E_Dgrade3] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Sakmis].</p></step>
+</steps>
+<p>Para enfraquecer o poder dos asmodianos, livre -se dos soldados asmodianos de nível 3.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sakmis disse que confiava em você o suficiente para lhe dar uma missão mais difícil.</p>
+<p> </p>
+<p>Ela pediu que você se livrasse dos soldados asmodianos de nível 3, o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

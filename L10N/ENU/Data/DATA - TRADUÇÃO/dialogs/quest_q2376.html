@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva aceitou o pedido de Padiner. Gentil, gentil Daeva.</p>
+<p> </p>
+<p>Quando Daeva retornar, diga a Padiner que Sarinerk está bem, mas sente falta dele.</p>
+<p> </p>
+<p>E você pode fazer Sarinerk mais uma bondade, se quiser, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarinerk tem medo dos obscuras! Cada vez que ela atravessa a ponte, eles estão, sim! Nyerk!</p>
+<p> </p>
+<p>Daeva caçará obscuras perto da ponte, sim? E entregar a mensagem ao padiner?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarinerk é um shugo afortunado!</p>
+<p> </p>
+<p>É o [%dic:STR_DIC_M_ShadowstalkerFi_30_Ae] Areia [%dic:STR_DIC_M_ShadowstalkerreWi_30_Ae] S Sarinerk mais teme mais.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nyerk!</p>
+<p> </p>
+<p>Daeva não ajudará Sarinerk ... ela terá que encontrar outra maneira ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu possa ajudar mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você a viu, Nyerk? Você viu Sarinerk? Ela está bem?</p>
+<p> </p>
+<p>Ela teve uma mensagem ...?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ela disse para te contar ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, tipo Daeva. Daeva tão útil.</p>
+<p> </p>
+<p>Pegue este presente de ambos os shugos. Obrigado, obrigado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos obscuras que ameaçam o sariner.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ShadowstalkerFi_30_Ae]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ShadowstalkerreWi_30_Ae]([%5]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_DF2_3].</p></step>
+</steps>
+<p>Sarinerk pediu que você entregasse uma mensagem ao padiner e matasse os obscuras do poder e obscuras da magia sobre a ponte no seu caminho de volta. Você aceitou o pedido dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os monstros a pedido de Padinerk. Quando você contou a Sarinerk sobre isso, ela queria que você se reportasse ao Padinerk que ela estava segura. Ela também pediu que você se livrasse dos obscuras na ponte.</p>
+<p> </p>
+<p>Então, você removeu as obscuras e entregou os cumprimentos de Sarinerk ao Padiner.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

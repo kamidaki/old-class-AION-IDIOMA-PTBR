@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard06_D]do[%dic:STR_DIC_W_LDF5a_B3_6]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: mate os Elyos que se infiltraram[%dic:STR_DIC_W_LDF5a_B2_B3] em North Katalam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A conquista de Katalam é uma recompensa que só pode ser concedida aos asmodianos.</p>
+<p> </p>
+<p>Você deve nos ajudar, [%username], para garantir que os Elyos não possam nem sonhar com isso.</p>
+<p> </p>
+<p>Relate para mim assim que você concluir a missão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou satisfeito por você ter eliminado os Elyos e voltou em uma peça.</p>
+<p> </p>
+<p>Obrigado, do fundo do meu coração.</p>
+<p> </p>
+<p>Eu me sinto mais forte porque você está aqui, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram[%dic:STR_DIC_W_LDF5a_B2_B3] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard06_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que se infiltraram nas terras contaminadas no norte de Katalam e se reporte a Sabik.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções urgentes de Naat, que solicitou que você matasse os Elyos que penetraram na região de explosão no norte de Katalam e os matou.</p>
+<p> </p>
+<p>Quando você voltou e relatou, Sabik parecia muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

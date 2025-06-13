@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu gostaria de pedir que você passe algo para mim.</p>
+<p> </p>
+<p>Por favor, dê esta carta a que escrevi[%dic:STR_DIC_N_LDF5_Under_Brief_E].</p>
+<p> </p>
+<p>Tudo o que você precisa fazer é entregar a carta. Não há tarefas adicionais.</p>
+<p> </p>
+<p>Você sabe, é claro, que cartas militares estão sujeitas à lei do sigilo?</p>
+<p> </p>
+<p>Então, eu gostaria de informá -lo de que você não pode abrir a carta em nenhuma circunstância.</p>
+<p> </p>
+<p>Se surgir que você levou o menor pico, poderá ser transportado perante o Tribunal Militar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Otur disse que estaria me enviando uma mensagem através de você, [%username]. Você tem isso com você?</p>
+<p> </p>
+<p>O que poderia ser tão importante que deve ser anunciado duas vezes? Estou repleto de curiosidade.</p>
+<p> </p>
+<p>Meu irmão nunca faz nada sem um bom motivo, então deve ser algo importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de Otur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a carta que eu estava esperando. O que diz?</p>
+<p> </p>
+<p>(Abre a letra e desliza sobre o conteúdo.) Hmm ... então é assim que é.</p>
+<p> </p>
+<p>Não posso entrar em detalhes, mas as informações da OTUR são muito úteis.</p>
+<p> </p>
+<p>[%username], como um asmodiano honesto e leal, acredito que você não leu a carta.</p>
+<p> </p>
+<p>Um exemplo brilhante dos Asmoidans não se comportaria de maneira tão desonravelmente. Certo?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_doc_quest_23604a]para [%dic:STR_DIC_N_LDF5_Under_Brief_E].</p></step>
+</steps>
+<p>Encontre Brif e dê -lhe a carta de Otur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Otur pediu que você recebesse ordens que ele próprio havia escrito para Brif, enfatizando que você não deveria olhar para o conteúdo.</p>
+<p> </p>
+<p>Você procurou Brif e entregou o documento da OTUR, momento em que Brif acreditava que você não havia dado uma olhada no conteúdo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

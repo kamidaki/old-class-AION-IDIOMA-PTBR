@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A cidadela de Vorgaltem foi levada pelo inimigo.</p>
+<p> </p>
+<p>Não me interpretem mal, [%username], Tenho certeza de que Krizarid está se esforçando - o homem é um monstro.</p>
+<p> </p>
+<p>Mas ele é apenas um homem, e ele não pode vencer contra centenas! De qualquer forma ... eu não acredito assim. Se isso continuar, mesmo a base de defesa de Gelkmaros pode estar com problemas.</p>
+<p> </p>
+<p>Temos que fazer algo para recuperar a cidadela de Vorgaltem.</p>
+<p> </p>
+<p>[%username], por favor, participe desta missão.</p>
+<p> </p>
+<p>Ajude -nos a recuperar a cidadela de Vorgaltem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mesmo com o apoio de Lord Marchutan e do agente, não podemos garantir que seremos vitoriosos se o Balaur e o Elyos atacarem simultaneamente.</p>
+<p> </p>
+<p>É por isso que é ainda mais importante que você participe da Batalha pela Cidadela de Vorgaltem também, [%username].</p>
+<p> </p>
+<p>Então, por favor, elimine os soldados para romper a linha de defesa na Cidadela de Vorgaltem. Então será ainda mais fácil para nós retomar a fortaleza.</p>
+<p> </p>
+<p>Você pode aceitar esta tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Porque a cidadela de Vorgaltem foi capturada pelo inimigo, nossa chance de derrotar o Balaur e seu Senhor está diminuindo.</p>
+<p> </p>
+<p>Muitos asmodianos já se sacrificaram em batalha. [%username], você certamente veio nos ajudar, não é?</p>
+<p> </p>
+<p>Se você estiver pronto, comece imediatamente.</p>
+<p> </p>
+<p>Não é tarde demais para recuperar a cidadela de Vorgaltem. Eliminar o todo[%dic:STR_DIC_E_Q21306all] e derrubar a linha de defesa.</p>
+<p> </p>
+<p>Essa tarefa provavelmente não pode ser concluída sozinha. Portanto, convoce seus camaradas e esteja a caminho. Por favor, relate -se [%dic:STR_DIC_N_Krizarid]Depois de concluir a tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não está pronto?</p>
+<p> </p>
+<p>Ou existe uma razão específica pela qual você não pode ir à cidadela de Vorgaltem?</p>
+<p> </p>
+<p>[%username], não sabe o quão importante é a cidadela de Vorgaltem para nós? Por favor, reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A cidadela de Vorgaltem finalmente foi retomada!</p>
+<p> </p>
+<p>Só fomos vitoriosos graças aos muitos bravos ajudantes como você.</p>
+<p> </p>
+<p>[%username], por favor me fale sobre a batalha da fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], obrigado.</p>
+<p> </p>
+<p>Vejo que você derrotou os soldados da Cidadela de Vorgaltem.</p>
+<p> </p>
+<p>Mas isso não significa que a batalha acabou.</p>
+<p> </p>
+<p>Então, estou pedindo que você continue nos ajudando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os soldados do[%dic:STR_DIC_E_Q21306all]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Krizarid].</p></step>
+</steps>
+<p>Vorgaltem Citadel caiu em mãos inimigas. Mate os soldados inimigos e destrua sua defesa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Linar diz que a cidadela de Vorgaltem foi capturada pelo inimigo. Ele está recrutando Daevas para retomá -lo.</p>
+<p> </p>
+<p>Você derrotou os soldados na Cidadela de Vorgaltem e recebeu agradecimentos do notório Krizarid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

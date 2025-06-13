@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assumimos o controle da fortaleza ocidental, mas nossa aderência é fraca. Precisamos estabelecer linhas de comunicação adequadas na base, juntamente com as instalações para logística e reforços.</p>
+<p> </p>
+<p>Este relatório, no entanto ... as notícias aqui são piores. Estamos tão ocupados derrotando os Asmodianos de volta que o Balaur teve tempo de reagrupar e rearmar.</p>
+<p> </p>
+<p>Eles estão planejando uma invasão, [%username]. Aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Afaste -os agora, antes de se reunirem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente minhas intenções-só precisamos de combatentes agora.</p>
+<p> </p>
+<p>O relatório afirma que o balaur está se reunindo no[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]. Precisamos de bons danos confiáveis ​​para ir para lá e matá -los para onde estão.</p>
+<p> </p>
+<p>Deixe -os saber que não somos fracos, [%username]. Ilumine seus sentidos e faça -os estremecer com medo toda vez que vêem nossas formas brilhantes nos céus.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim que você estiver pronto, basta bater na Noble Magic Ward que leva ao Balaur's[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All]. Quando você estiver lá, seus pedidos são simples-Wreak Havoc.</p>
+<p> </p>
+<p>Um rápido de lado-desde que você seja detectado, o Balaur começará a esconder seus tesouros. Se você quiser roubar deles, ataque com força e ataque rápido, caso contrário, não será nada para roubar assim que seus corpos pararem de se contorcer.</p>
+<p> </p>
+<p>Ah, e uma última coisa. Matar [%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]para mim. Ele me deve algumas boas cicatrizes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou. Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Você está muito ocupado, eu confio. O brilho de Ariel envolve sua forma-seria realmente uma pena se o favor dela fosse extraviado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo. Fé e braços."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o [%userclass]retorna! Sua tarefa foi concluída?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, inteiramente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho, Daeva!</p>
+<p> </p>
+<p>Agora, nossos dois inimigos devem estar se recuperando de suas respectivas perdas. Mas agora não é a hora de comemorar. Devemos atacar novamente, empurre a lâmina ainda mais em direção ao coração de nossos inimigos!</p>
+<p> </p>
+<p>Você se saiu bem, meu amigo. Aqui está a sua recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o balauro no[%dic:STR_DIC_W_IDAbRe_Low_Wciel_SZ_All].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Low_Wciel]([%2]/40)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LeftCiel_NagaWiNamedQ_35_Ah]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1131_TreasureGate_Li].</p></step>
+</steps>
+<p>Ajuda a Hippodamia atingindo preventivamente o balaur na câmara da ala esquerda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Hippodamia recebeu relatórios sugerindo que o Balaur poderia invadir em breve.</p>
+<p> </p>
+<p>Você concordou em dar um golpe no Balaur, atacando -os enquanto eles preparavam uma força de invasão na câmara da ala esquerda.</p>
+<p> </p>
+<p>Você voltou depois de destruir a força de Balaur e foi elogiado e recompensado por seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

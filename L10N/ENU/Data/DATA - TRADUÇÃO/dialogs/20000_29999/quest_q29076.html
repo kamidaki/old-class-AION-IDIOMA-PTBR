@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você, [%username].</p>
+<p> </p>
+<p>Faz o nome [%dic:STR_DIC_N_DC2_Litanbid_M]parece familiar, [%userclass]?</p>
+<p> </p>
+<p>Ela já ouviu falar de suas realizações excelentes e está muito interessado em você, [%username].</p>
+<p> </p>
+<p>Isso é conveniente, como eu o ajudei tanto quanto sou capaz. Pegue esta carta de recomendação para [%dic:STR_DIC_N_DC2_Litanbid_M].</p>
+<p> </p>
+<p>Ela te aceitaria com prazer, mesmo sem uma carta de recomendação, mas não vai doer.</p>
+<p> </p>
+<p>Você realmente fez um bom trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, quem é isso então?</p>
+<p> </p>
+<p>Seu status como um[%userclass] está crescendo todos os dias, [%username]!</p>
+<p> </p>
+<p>Haha, bem -vindo! Estou querendo conhecê -lo há muito tempo.</p>
+<p> </p>
+<p>Você veio de Hadubrand?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação de Hadubrand.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma recomendação da Hadubrant!</p>
+<p> </p>
+<p>Você pode não estar ciente disso, mas Hadubrant é extremamente exigente quando se trata de fazer recomendações.</p>
+<p> </p>
+<p>Se ele recomendar alguém, não pode haver razão para negá -lo.</p>
+<p> </p>
+<p>Venha me ver se precisar de ajuda para aprender. Vou ajudá -lo a descobrir os segredos da engenharia de Atreia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a carta de recomendação de Hadubrand para [%dic:STR_DIC_N_DC2_Litanbid_M]no templo do marchutan.</p></step>
+</steps>
+<p>Mostre a carta de recomendação de Hadubrand a Litanbid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hadubrant disse que não tinha mais nada que ele pudesse lhe ensinar, deu uma carta de recomendação e enviou você para ir ver litânico.</p>
+<p> </p>
+<p>Depois que a Litanbid leu a carta de recomendação, ela disse que queria conhecê -lo por um longo tempo e isso pode chegar a ela a qualquer momento, se você tiver alguma dificuldade em seu aprendizado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

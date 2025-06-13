@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Um shugo nos disse algo interessante.</p>
+<p> </p>
+<p>Os Elyos estão roubando o tesouro do refúgio da tribo Rune e transportando -o para [%dic:STR_DIC_W_LF5].</p>
+<p> </p>
+<p>Temos que verificar isso. [%username], então por favor vá para [%dic:STR_DIC_W_LF5] e investigar se realmente existe um[%dic:STR_DIC_N_OBJ_IDLDF5_Under_02_Entrance_In_L].</p>
+<p> </p>
+<p>Não demorei muito para pensar em quem posso confiar essa missão. [%username], somente você pode nos ajudar a ter sucesso nesse assunto.</p>
+<p> </p>
+<p>Ajude -nos, por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava apenas me preocupando com nossos recursos financeiros quando recebo uma mensagem como essa.</p>
+<p> </p>
+<p>Como foi a investigação?</p>
+<p> </p>
+<p>Você encontrou o corredor de Elyos Refuge?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim, os enormes suprimentos militares de Elyos vieram do refúgio da tribo Rune.</p>
+<p> </p>
+<p>Diz -se que há muito mais riquezas lá.</p>
+<p> </p>
+<p>Um ladrão de túmulos Shugo nos contou sobre isso. De acordo com suas informações, os Elyos agora querem usar todas as suas forças para conquistar o refúgio.</p>
+<p> </p>
+<p>Se isso for verdade, então temos que nos apressar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [%dic:STR_DIC_N_OBJ_IDLDF5_Under_02_Entrance_In_L] em[%dic:STR_DIC_W_LF5].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Qusak_E].</p></step>
+</steps>
+<p>Descubra onde está o corredor de refúgio Elyos em Signia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Primenc descobriu que os Elyos haviam construído um corredor que lhes permite acesso ao refúgio da tribo Rune.</p>
+<p> </p>
+<p>Você descobriu que o corredor está conectado à Signia e transmitiu isso a Kusak. Ele ficou grato pelas informações e começou a formular um plano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

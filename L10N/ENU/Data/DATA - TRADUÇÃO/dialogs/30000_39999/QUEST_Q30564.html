@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda Vasharti penetrou no centro de comando e conquistou toda a base a partir daí.</p>
+<p> </p>
+<p>Isso significa que temos que retomar o centro de comando primeiro.</p>
+<p> </p>
+<p>O acesso ao centro de comando é controlado por [%dic:STR_DIC_M_IDYun_Nmd_4Named_60_Ah]. o [%dic:STR_DIC_M_IDYun_Nmd_PortalWi_60_Ae] esconde para dentro.</p>
+<p> </p>
+<p>Por favor, mate -os.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá está você.</p>
+<p> </p>
+<p>Você sobreviveu à luta contra os lacaios de Vasharti ilesos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que você está bem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ser sincero, nunca confiei nos asmodianos.</p>
+<p> </p>
+<p>Mas eles aumentaram em minhas estimativas desde que eu te conheci.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os lacaios de Vasharti.</p>
+<p visible="[%3]">[%dic:STR_DIC_M_IDYun_Nmd_4Named_60_Ah]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_IDYun_Nmd_PortalWi_60_Ae]([%8]/1)</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Ariana].</p></step>
+</steps>
+<p>Os lacaios de Vasharti devem ser derrotados para avançar para o centro de comando Rentus. Mate os lacaios de Vasharti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ariana disse que os lacaios de Vasharti tiveram que ser derrotados para avançar para o centro de comando Rentus.</p>
+<p> </p>
+<p>Você matou os subordinados de Vasharti e, assim, fortaleceu a confiança de Ariana nos asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

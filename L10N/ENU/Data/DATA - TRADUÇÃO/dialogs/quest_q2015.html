@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois do fiasco da espada do Tiamat-eu sei, eu sei, você fez o seu melhor-estamos levando os revolucionários lefaristas muito mais a sério.</p>
+<p> </p>
+<p>Antes, atravessamos lâminas com eles apenas quando eles passeavam pela vila basfelosa.</p>
+<p> </p>
+<p>Mas agora o comandante Suthran está lívido. É intolerável que um monte de revolucionários tenha um esconderijo tão perto da vila. Suas ordens são bastante explícitas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Ordens?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me citar parte das ordens: "... sua melhor chance de expiar essas falhas é decapitar o líder dessa gangue de criminosos lefaristas, [%dic:STR_DIC_M_LehparAsChD_15_An]... "</p>
+<p> </p>
+<p>E essa é a sua missão, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sangue para sangue! A missão não será fácil.</p>
+<p> </p>
+<p>Vá além da vila ao norte do lago de Idun e você verá uma ponte. Do outro lado da ponte, há uma caverna-essa é a esconderijo deles.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_LehparWaD_14_An] Areia [%dic:STR_DIC_M_LehparAsD_14_An] está ao redor da caverna e depois se livra do líder da célula, [%dic:STR_DIC_M_LehparAsChD_15_An].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Considere isso feito."</act>
+</selects>
+<voice file="Q2015-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Toda a vila estava esperando, [%username].</p>
+<p> </p>
+<p>Você se livrou de [%dic:STR_DIC_M_LehparAsChD_15_An] e os ladrões de túmulos lefaristas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu o decapitei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. O comandante Suthran gosta de soldados rápidos.</p>
+<p> </p>
+<p>Vou me reportar à Altgard Fortaleza que [%dic:STR_DIC_M_LehparAsChD_15_An] e muitos criminosos menores não existem mais. Isso deve fazer o comandante feliz. Ou pelo menos menos zangado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Nokirjar].</p></step>
+<step><p visible="[%3]">Livre -se dos revolucionários lefaristas.</p>
+<p visible="[%3]">Matar [%dic:STR_DIC_M_LehparAsChD_15_An]([%5]/1)</p>
+<p visible="[%3]">Matar [%dic:STR_DIC_M_LehparWaD_14_An] S ([%8]/5)</p>
+<p visible="[%3]">Matar [%dic:STR_DIC_M_LehparAsD_14_An]([%11]/5)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Nokirjar].</p></step>
+</steps>
+<p>Ordem: Livre -se de Sumarhon, líder de uma célula lefarista e ladrões de túmulos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nokir recebeu ordens para manter os revolucionários lefaristas longe da vila basfet e matar seu líder. Em seu nome, você foi ao esconderijo deles e se livrou de Sumarhon e seus rebeldes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

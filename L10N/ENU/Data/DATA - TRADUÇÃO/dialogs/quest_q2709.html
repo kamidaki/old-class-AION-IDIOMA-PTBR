@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vim a Reshanta para repelir Elyos e Balaur a qualquer custo. Eu nunca vou me submeter ao governo deles!</p>
+<p> </p>
+<p>Promoto na ligação de sangue do Red Hasia de que não vou me afastar até o dia em que os asmodianos governamos Atreia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pelas minhas asas, estou com você!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho, [%username], uma missão importante que será o próximo passo para terminar esta guerra incessante.</p>
+<p> </p>
+<p>Você deve derrotar [%dic:STR_DIC_E_Lgrade2] S desta vez. O fracasso não é uma opção!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua fama está crescendo aqui em Reshanta. Em breve Elyos e Balaur tremerão com medo ao som do seu nome, [%username]!</p>
+<p> </p>
+<p>Vá agora, derrote o [%dic:STR_DIC_E_Lgrade2] S quem lutou!</p>
+<p> </p>
+<p>Dê a eles pesadelos!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está cansado de batalha perpétua? Você deve estar ou não recusaria essa chance de glória.</p>
+<p> </p>
+<p>Talvez você deva ir a Atreia e se refrescar. Volte com um vigor e foco renovados, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Voltarei à luta em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou mais cedo do que eu esperava, [%username].</p>
+<p> </p>
+<p>Você obliterou tudo[%dic:STR_DIC_E_Lgrade2]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua reputação é bem merecida, [%username]. Você causou grandes danos aos Elyos.</p>
+<p> </p>
+<p>Graças a você, os Ellies não arriscarão prontamente seus Daevas. A hesitação deles nos dará vantagem na guerra. Esta vitória é sua!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lutar e derrotar [%dic:STR_DIC_E_Lgrade2]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Semotor].</p></step>
+</steps>
+<p>Derrote os soldados do Exército de Elyos Rank 2 para uma vitória da Asmodian no Abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Semotor pediu que você derrote os soldados do Exército Elyos. Derrotá -los seria o próximo passo para terminar a guerra.</p>
+<p> </p>
+<p>Quando você voltou depois de derrotar o Rank 2 Elyos, ele o elogiou por seu excelente trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que tal um coquetel refrescante?</p>
+<p> </p>
+<p>É grátis, realmente.</p>
+<p> </p>
+<p>Você está em uma festa, afinal! As coisas não são tão ruins que eu não pudessei tratá -lo como uma bebida por dia.</p>
+<p> </p>
+<p>Mas isso é tudo. Uma bebida por dia.</p>
+<p> </p>
+<p>[%username], você quer um coquetel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere um momento ...</p>
+<p> </p>
+<p>Você tem que misturar tudo e depois sacudi -lo, assim!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, que tocante.</p>
+<p> </p>
+<p>Então você voltará para tomar uma bebida fresca, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, espere um momento.</p>
+<p> </p>
+<p>Quase lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, [%username], um coquetel para você.</p>
+<p> </p>
+<p>Não sei que tipo de coquetel ele contém.</p>
+<p> </p>
+<p>Agite bem e abra.</p>
+<p> </p>
+<p>Coloquei muito gelo para que seja incrivelmente refrescante. Ha ha ha. Venha de novo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue um coquetel de [%dic:STR_DIC_N_Event_Rezar].</p></step>
+</steps>
+<p>Pegue um coquetel de [%dic:STR_DIC_N_Event_Rezar].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você só pode obter um coquetel grátis por dia.</p>
+<p> </p>
+<p>Hoje você recebeu um coquetel refrescante de [%dic:STR_DIC_N_Event_Rezar].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

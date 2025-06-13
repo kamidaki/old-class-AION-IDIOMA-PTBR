@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os documentos do Exército de Beritra descrevem seus planos de se infiltrar no bastião da parede de aço em detalhes.</p>
+<p> </p>
+<p>Eles montaram vários locais de pouso em frente ao bastião da parede de aço.</p>
+<p> </p>
+<p>Se você quiser nos ajudar, elimine o [plur][%dic:STR_DIC_E_Q18031all]que guardam os locais de pouso.</p>
+<p> </p>
+<p>Então devemos estar em posição de defender o bastião da parede de aço.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio do bastião da parede de aço?</p>
+<p> </p>
+<p>Ainda não recebi relatórios, por isso estou muito curioso sobre como foi.</p>
+<p> </p>
+<p>Se você matou todo o [plur][%dic:STR_DIC_E_Q18031all], devemos ser capazes de defender melhor o bastião da parede de aço.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que as tropas de Beritra ficaram surpresas. Especialmente porque você atacou os comandantes diretamente.</p>
+<p> </p>
+<p>É culpa deles se eles não conseguirem criptografar seus documentos importantes corretamente.</p>
+<p> </p>
+<p>Isso realmente foi muito bem feito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDLDF5b_TD] e matar o invasão[plur][%dic:STR_DIC_E_Q18031all].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Headquater1_N_65_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Headquater2_N_65_Ah]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_LDF5b_Demades_E].</p></step>
+</steps>
+<p>Obtenha vitória ao eliminar os comandantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demades explicou que havia recebido informações sobre o ataque do Exército de Beritra ao bastião da parede de aço.</p>
+<p> </p>
+<p>Você eliminou seus comandantes, pelos quais DeMades agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas! Eu nunca pensei em vê -lo aqui. Como você tem estado?</p>
+<p> </p>
+<p>Volups, lembra? A cerimônia do Daeva no Lyceum? Ficamos um ao lado do outro ... ah. Bem, eu também estava lá. Deixa para lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não, é bom ver você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, bom ver você também. Devo dizer que você fez um progresso incrível desde então. Eu ouço sobre você o tempo todo. Muito impressionante.</p>
+<p> </p>
+<p>Como é, estou prestes a iniciar minha primeira grande triagem também. Estamos saindo em breve para atacar Bollvig e estou liderando as tropas. É uma grande honra.</p>
+<p> </p>
+<p>Ei, eu poderia pedir um favor a você, por causa dos velhos tempos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O caminho para o círculo de tempestades é traiçoeiro. Para manter o moral e meus soldados juntos, eu gostaria de usar tochas e acender a rota lá.</p>
+<p> </p>
+<p>Precisamos de todas as vantagens que possamos obter, e não é como se houvesse muitas avenidas que podemos usar para atacar. Fazer isso não dará nada.</p>
+<p> </p>
+<p>Existem sete tochas nas ruínas do patema. Um cara chamado Luric os levou do Sury Mountain em Calon, mas não temos óleo suficiente para todos eles. Você poderia me conseguir algum combustível para mantê -los queimando? Vou pedir ao Almirante que o recompense adequadamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Eu realmente aprecio isso. Agora, o melhor substituto para o óleo de tocha é[%dic:STR_DIC_I_QUEST_1625a].</p>
+<p> </p>
+<p>Existem muitos[%dic:STR_DIC_M_Starturtle_40_n] está ao longo da costa ao redor da vila. Se você pudesse caçar alguns e coletar [%dic:STR_DIC_I_QUEST_1625a], podemos fazer esse plano funcionar. Precisamos de pelo menos sete pedaços de gordura para usar nas tochas, então você precisará se apressar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... certo. Tenho certeza que você tem muito o que fazer. Desculpe por isso. Vou ver se consigo fazer novamente um dos meus soldados. Eu esperava que eles pudessem descansar antes da batalha, mas fazemos o que devemos.</p>
+<p> </p>
+<p>De qualquer forma, foi bom vê -lo novamente. Caminhe na luz, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O mesmo para você, volupes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você conseguiu o [%dic:STR_DIC_I_QUEST_1625a]? Temos que sair em breve ... estamos ficando sem tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Isso deve alimentar as tochas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você tem outras tarefas, mas devo ter uma gordura inicial para acender as tochas. É a única maneira de levar meus homens lá com segurança. Precisamos de todos os soldados que temos para ter uma chance contra o Bollvig.</p>
+<p> </p>
+<p>Para Elysea, certo? E se apresse.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para Elysea."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Starturtle gordura! Graças a Aion. Agora essas tochas permanecerão iluminadas. Meus agradecimentos, [%username]. Fé e armas e morte para Bollvig!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Starturtle_40_n] S, colete sua gordura e leve para [%dic:STR_DIC_N_Voluptes].</p>[%collectitem]</step>
+</steps>
+<p>Hunt Cobalt tartarugas e leve sua gordura para volupes para que ele possa acender o caminho para as ruínas do patema para seus soldados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Volups, o adjunto da frota azul, queriam acender tochas ao longo da rota de ataque nas ruínas do patema para proteger suas tropas a caminho de atacar Bollvig.</p>
+<p> </p>
+<p>Ele pediu a Starturtle Fat para abastecer as tochas, pois estavam sem petróleo. Você caçou os tartarugas e recebeu o combustível que ele precisava, dando a ele a vantagem que suas tropas precisam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

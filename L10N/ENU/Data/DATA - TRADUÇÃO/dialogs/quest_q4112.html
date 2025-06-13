@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4112</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>O que posso fazer para você? Você não falou comigo do tédio, não é?!</p>
+<p> </p>
+<p>Se você acabou de falar comigo sem motivo, siga seu próprio caminho. Eu tenho muitos problemas no momento em que não há tempo para conversas vazias</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não posso, mas não pode ser agradável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Só de pensar nisso me faz querer explodir com raiva! Você já ouviu o boato sobre o [%dic:STR_DIC_W_NAME_IDDF2A_Adma]?</p>
+<p> </p>
+<p>Há uma criatura que vive lá que se alimenta de sangue. Muitas almas curiosas foram lá para vê -lo com seus próprios olhos.</p>
+<p> </p>
+<p>Mas a maioria deles nunca voltou. Os que conseguiram voltar se trancam em suas casas e não saíram mais.</p>
+<p> </p>
+<p>O motivo é o estranho poder que [%dic:STR_DIC_M_Adma_DeathknightNamed_50_Ah]tem sobre suas vítimas. É abominável! Mesmo que ele morra, ele ressuscita logo depois. Ele também tem alegria em torturar pessoas e Daevas.</p>
+<p> </p>
+<p>Você poderia derrotá -lo e, assim, restaurar a paz aos habitantes de Brusthonin.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente o que eu esperava. Você tem um forte senso de justiça.</p>
+<p> </p>
+<p>Mas o que espera você não é oponente fácil.</p>
+<p> </p>
+<p>Derrota [%dic:STR_DIC_E_L_DF2a_Q3118]. Desejo -lhe boa sorte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto antes que você perceba."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que você tem seus motivos para se recusar.</p>
+<p> </p>
+<p>Eu sabia que poderia contar com você. Eu devo ter sido enganado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, isso é tudo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil garantir justiça.</p>
+<p> </p>
+<p>Você nem sempre é recompensado ou respeitado por isso.</p>
+<p> </p>
+<p>Mas você também não acredita que se tem que agir por justiça?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sua existência blasfêmica acabou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você poderia fazer isso!</p>
+<p> </p>
+<p>Um morto -vivo ... A única coisa que importa é que estamos seguros novamente agora.</p>
+<p> </p>
+<p>Pegue isso. Não é nada de especial, mas é melhor do que nada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_Adma_DeathknightNamed_50_Ah]na fortaleza da ADMA ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Lukmann]na beira do tormento.</p></step>
+</steps>
+<p>Vá para a fortaleza da ADMA e mate Lord Lannok, que está ameaçando a segurança dos Daevas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lukmann, o Daeva da Justiça, relatou que alguns guerreiros não haviam retornado da fortaleza da ADMA ou estavam se comportando estranhamente.</p>
+<p> </p>
+<p>Você eliminou Lord Lannok na fortaleza da ADMA e foi recompensado por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

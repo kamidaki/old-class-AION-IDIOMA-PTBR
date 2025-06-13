@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que dor de cabeça!</p>
+<p> </p>
+<p>Recebemos um relatório de que há Krall estranho aparecendo na costa de Cantas. Eles se parecem exatamente com Tursin Krall, mas agem estranhamente.</p>
+<p> </p>
+<p>Esses Krall-mesmo todos amputados e sangrentos-têm atacado revolucionários lefaristas, e eles continuam lutando muito passando quando normalmente desistiriam, como se estivessem sob algum tipo de feitiço.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Muito estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo o relatório, isso se parece com o trabalho de um asmodiano chamado Hamerun. Não sabemos como ele fez uma lavagem cerebral nessas Krall, mas não podemos simplesmente sentar aqui e assistir.</p>
+<p> </p>
+<p>Eu nem quero imaginar o que aconteceria se estes Krall começarem a atacar o Observatório de Campo Aetérico Verteron. Devemos detê -los antes que esse desastre ocorra.</p>
+<p> </p>
+<p>Se você nos ajudar, [%username], certamente podemos cuidar disso imediatamente. Você poderia?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Considerando que o Tursin Krall com lavagem cerebral está aparecendo na costa de Cantas, a entrada para [%dic:STR_DIC_W_IDNovice_SZ_IDNovice]-Onde Hamerun está sem dúvida escondido-deve estar perto lá.</p>
+<p> </p>
+<p>Se você conseguir entrar em Haramel, encerrar [%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an] S com toda a pressa possível.</p>
+<p> </p>
+<p>Quanto mais cedo pudermos manter aqueles Krall com lavagem cerebral longe da costa de Cantas, melhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm .... acho que você deve estar ocupado? Ah bem. Eu acho que pode esperar outro dia.</p>
+<p> </p>
+<p>Ainda assim, eu gostaria que pudéssemos nos livrar de toda essa lavagem cerebral Krall ....</p>
+<p> </p>
+<p>Pense nisso e deixe -me saber se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você! Era a entrada para [%dic:STR_DIC_W_IDNovice_SZ_IDNovice]Na costa de Cantas?</p>
+<p> </p>
+<p>Quantos[%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an] S você enfrentou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Alguns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Krall e sapiens juntos? Este Hamerun é mais perigoso do que eu esperava. Teremos que investigar mais.</p>
+<p> </p>
+<p>De qualquer forma, é um alívio que você encerrou todos os guardas do posto avançado da Tursin.</p>
+<p> </p>
+<p>Aqui está uma marca de Krall como uma recompensa-acredito que vai fazer você bem, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_IDNovice_07_TKrallWa_prion_18_an] S in[%dic:STR_DIC_W_IDNovice_SZ_IDNovice]([%2]/3).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_LA18].</p></step>
+</steps>
+<p>Você ouviu que Tursin Krall, lavado cerebral pelo Asmodian Hamerun, havia aparecido na costa de Cantas. Para a segurança do Observatório de Campo Aégico Verteron, você deve encerrar os guardas do posto avançado da Tursin Cativados por Hamerun.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hyacinte disse que o Tursin Krall está atacando os revolucionários lefaristas na costa de Cantas e mencionou que um asmodiano chamado Hamerun estava por trás dos ataques.</p>
+<p> </p>
+<p>Ele estava preocupado com o fato de o Krall atacar o Observatório de Campo Aégico de Verteron. Ele pediu que você matasse os guardas do posto avançado de Tursin em Haramel para diminuir a velocidade.</p>
+<p> </p>
+<p>Você fez o que lhe foi perguntado, matando o Tursin Krall antes de voltar para uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

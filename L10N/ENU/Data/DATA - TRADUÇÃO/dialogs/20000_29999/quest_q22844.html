@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard01_D]do[%dic:STR_DIC_W_LDF5a_A2_1]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: mate os Elyos que se infiltraram[%dic:STR_DIC_W_LDF5A_A2] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses tipos desprezíveis que direcionaram a terra dos asmodianos devem ser punidos.</p>
+<p> </p>
+<p>Um pequeno número significa menos inimigos.</p>
+<p> </p>
+<p>Se não fizermos nada agora, eles ficarão mais fortes e se transformarão em um grande incômodo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você derrotou os Elyos em nome do esquadrão de limpeza.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>[%username], nunca esqueceremos suas ações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram[%dic:STR_DIC_W_LDF5A_A2] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard01_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que se infiltraram na floresta de Hadradim no norte de Katalam e se reportar ao abus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma ordem urgente do Abus, que solicitou que você matasse os Elyos que invadiram a floresta Hadradim no norte de Katalam, e assim os eliminou.</p>
+<p> </p>
+<p>Depois de devolver e entregar seu relatório, o Abus mostrou -se muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

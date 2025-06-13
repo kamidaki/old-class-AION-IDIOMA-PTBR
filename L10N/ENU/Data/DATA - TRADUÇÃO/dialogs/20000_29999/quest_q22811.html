@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], seria ótimo se você pudesse matar [%dic:STR_DIC_M_LDF5A_A1_Rafflesia_Dr_62_An] e obter [%dic:STR_DIC_I_quest_22811a].</p>
+<p> </p>
+<p>As raízes finas do Malodor da agulha aparentemente funcionam bem como uma droga para dormir.</p>
+<p> </p>
+<p>Como não temos como saber quando o Balaur ou os Elyos atacarão, não consigo dormir corretamente.</p>
+<p> </p>
+<p>Eu gostaria de quarenta piscadelas hoje, pelo menos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Dormindo.)</p>
+<p> </p>
+<p>Oh não![%username], perdoe meu comportamento, isso não deveria ter acontecido.</p>
+<p> </p>
+<p>Como não consigo dormir à noite, cochilar durante o dia.</p>
+<p> </p>
+<p>Eu pensei que tinha força de vontade forte o suficiente, mas não há nada a ser feito sobre fadiga.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você distribui Fineroot emaranhado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>UM! Uma raiz fina da agulha malodor!</p>
+<p> </p>
+<p>Sinto -me um pouco culpado, pois era um pedido pessoal, mas você o adquiriu tão rapidamente. Estou muito grato.</p>
+<p> </p>
+<p>Eu vou dormir bem esta noite.</p>
+<p> </p>
+<p>Não é muito, mas aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5A_A1_Rafflesia_Dr_62_An], obtenha [%dic:STR_DIC_I_quest_22811a] e leve para [%dic:STR_DIC_N_LDF5_Village_Guard03_D].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha a raiz fina do Malodor da agulha para Savankel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Savankel reclamou que não é possível dormir profundamente em uma região capturada, porque ele está muito tenso.</p>
+<p> </p>
+<p>Quando você trouxe as raízes finas que crescem em volta da agulha Malodor, ele ficou satisfeito e disse que iria dormir bem hoje à noite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

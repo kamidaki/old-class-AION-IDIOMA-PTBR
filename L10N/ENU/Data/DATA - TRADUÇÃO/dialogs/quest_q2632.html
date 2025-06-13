@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q2632</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que as tropas de Balaur se tornaram significativamente mais fortes.</p>
+<p> </p>
+<p>Mesmo em Pandaemonium, isso parece suspeito e esse assunto foi secretamente investigado ...</p>
+<p> </p>
+<p>Segundo relatórios recentes, o Balaur está aparentemente criando draxes na caverna de Draupnir.</p>
+<p> </p>
+<p>Para batalha!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Squish!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles treinam os drama muito jovens, por isso não é de admirar que fiquem tão fortes.</p>
+<p> </p>
+<p>O Balaur está se tornando cada vez mais perigoso.</p>
+<p> </p>
+<p>Primeiro, a notícia de que eles desenvolveram biológicos e agora drama também ...</p>
+<p> </p>
+<p>Isso me dá calafrios na minha espinha quando penso o que eles podem estar planejando a seguir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Drakies? Você está brincando comigo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não seria melhor enviar mais algumas tropas e atacar a base do Balaur em uma situação como essa? Monitorar a situação dia a dia não nos levará mais.</p>
+<p> </p>
+<p>Precisamos de mais asmodianos para poder aceitá -los. Mesmo que as perdas do nosso lado sejam ótimas, ainda lhes causaremos danos significativos.</p>
+<p> </p>
+<p>O que você diz, você vai nos ajudar?</p>
+<p> </p>
+<p>Entre na caverna de Draupnir e mate os draxes, que estão sendo criados lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você seja razoável.</p>
+<p> </p>
+<p>Não é melhor eliminar um risco antes que ele se torne um problema real?</p>
+<p> </p>
+<p>[plur][%dic:STR_DIC_M_IDDF3_05_AddDrakyD_46_Ae] e [plur][%dic:STR_DIC_M_DDF3_05_BombDrakyD_46_Ae] estão sendo criados na caverna de Draupnir.</p>
+<p> </p>
+<p>Eles são mais agressivos do que os drama em Asmodae.</p>
+<p> </p>
+<p>Não os subestime apenas porque eles são jovens. Tome cuidado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazer um de volta para ela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já parece ter uma missão que precisa cuidar. Não há nada que possa ser feito.</p>
+<p> </p>
+<p>Mas não sei nada que possa ser mais urgente do que esta tarefa.</p>
+<p> </p>
+<p>Portanto, se você fez sua missão e deseja ajudar, poderá vir a mim a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como está indo destruir os drama?</p>
+<p> </p>
+<p>Desde então, algumas pessoas dizem que também querem ajudar. Mas eu quero esperar até que você voltasse em uma peça.</p>
+<p> </p>
+<p>Agora, como está a situação na caverna de Draupnir?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você estava certo. Eles eram difíceis ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, a situação é grave.</p>
+<p> </p>
+<p>Enviar você foi a decisão certa. Esta informação será extremamente útil.</p>
+<p> </p>
+<p>Vou informar a todos que estão a caminho da caverna de Draupnir.</p>
+<p> </p>
+<p>Agora é o trabalho da tropa do Archon Shield para limpar a área ao redor da caverna de Draupnir do Balaur.</p>
+<p> </p>
+<p>Mas eu ainda quero recompensá -lo antes disso, Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua os draxes que foram criados em[%dic:STR_DIC_W_STR_DF3_SZ_H]para fins de combate.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDDF3_05_AddDrakyD_46_Ae]([%2]/4)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DDF3_05_BombDrakyD_46_Ae]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_DF3_Alberihi_E]perto da entrada da caverna de Draupnir.</p></step>
+</steps>
+<p>Os drama estão sendo criados para fins de combate no local do experimento na caverna de Draupnir. Mate os drama antes que eles se transformem em máquinas de luta aterrorizantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Albrich lhe disse que os Drakies na caverna de Draupnir estavam sendo criados pelo Balaur para fins de combate.</p>
+<p> </p>
+<p>Albrich mencionou que os drama tinham que ser eliminados antes que pudessem amadurecer e, assim, apresentar uma ameaça real. Então você eliminou os minúsculos draxies e os draxes instáveis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

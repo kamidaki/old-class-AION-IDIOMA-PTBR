@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41100</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username].</p>
+<p> </p>
+<p>Nós, da Guilda da Sandstorm, fazemos todos os esforços possíveis para eliminar as criaturas fora do controle que ameaçam os Daevas e refugiados em Sarpan.</p>
+<p> </p>
+<p>Mas percebi que não estamos conseguindo fazer isso com sucesso com as ferramentas que temos à nossa disposição.</p>
+<p> </p>
+<p>Por esse motivo, peço sua ajuda.</p>
+<p> </p>
+<p>Você derrotaria um dos[%dic:STR_DIC_E_Q41113a]?</p>
+<p> </p>
+<p>Você terá nossa gratidão e será recompensado de acordo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já testemunhou uma dança de namoro de Sheluk? É espetacular assistir, mas muitas vezes sangrento. Uma dança da morte, tudo por uma chance na vida.</p>
+<p> </p>
+<p>Você voltou, [%username]. Então você mostrou uma tremenda habilidade em matar [%dic:STR_DIC_E_Q41113a]Ou você ainda não encontrou um.</p>
+<p> </p>
+<p>Posso tirar um desses demônios da lista de "a fazer"?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um alvo não mais ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA!</p>
+<p> </p>
+<p>Eu adoraria ouvir mais detalhes, mas imagino que você esteja muito ocupado, [%username].</p>
+<p> </p>
+<p>Verdadeiramente ótimo trabalho. Aqui está a sua recompensa.</p>
+<p> </p>
+<p>Os outros bestas também precisam derrotar, é claro, então venha novamente em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate um dos[%dic:STR_DIC_E_Q41113a]([%2]/1).</p></step>
+<step><p visible="[%15]">Retornar a [%dic:STR_DIC_N_Betios].</p></step>
+</steps>
+<p>Encontre e mate um dos alvos perigosos das sombras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Betios pediu que você matasse os alvos perigosos das sombras que apresentam ameaças aos refugiados.</p>
+<p> </p>
+<p>Você perdeu e matou um dos alvos e recebeu uma recompensa e gratidão da Guilda da Sandstorm.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

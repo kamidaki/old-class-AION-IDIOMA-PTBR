@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe sobre a situação na base Rentus, [%username]?</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_ZONE_NAME_IDYun] e ajudar a matar o [plur][%dic:STR_DIC_M_Q30511_ALL]. Coletar [plur][%dic:STR_DIC_I_QUEST_30511A]como prova.</p>
+<p> </p>
+<p>Acredito firmemente que os reianos e asmodianos devem trabalhar juntos.</p>
+<p> </p>
+<p>Essa prova será o sinal de amizade entre os reianos e os asmodianos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você eliminou a Guilda Vasharti e me levou à prova?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Acho que isso fará a diferença."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por me trazer esta prova.</p>
+<p> </p>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Como tenho certeza, você sabe, esse não é o tipo de tarefa em que é uma vez e feito.</p>
+<p> </p>
+<p>Então, vou pedir ajuda novamente na próxima vez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [plur][%dic:STR_DIC_I_QUEST_30511A] e trazê -los para [%dic:STR_DIC_N_Ekios].</p>[%collectitem]</step>
+</steps>
+<p>Derrote os legionários de Vasharti na base Rentus e colete seus selos para o registro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ekios pediu que você colecionasse insígnias de Vasharti na base Rentus.</p>
+<p> </p>
+<p>Você matou os soldados de Vasharti e recuperou as insígnias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

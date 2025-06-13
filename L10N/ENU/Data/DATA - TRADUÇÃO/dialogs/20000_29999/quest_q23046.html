@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu as tendas abandonadas do trabalhador espalhadas em torno de Pandarung?</p>
+<p> </p>
+<p>Eles são muito feios, e Skurv e Kobolds podem voltar se os deixarmos lá.</p>
+<p> </p>
+<p>[%username], seria ótimo se você pudesse desmontar [%dic:STR_DIC_N_LDF5b_FOBJ_E2_Pondok].</p>
+<p> </p>
+<p>Os Skurv e Kobolds nesta área funcionaram para o Shugo, assim como em Atreia.</p>
+<p> </p>
+<p>E eles são tão sujos e não higiênicos como nunca.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde o Skurv e Kobold poderiam ter?</p>
+<p> </p>
+<p>Não que eu esteja derramando alguma lágrimas, lembre -se.</p>
+<p> </p>
+<p>Se eles voltassem, porém, não terão em casa se a barraca tiver sido demolida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a você, fui poupado de trabalho chato.</p>
+<p> </p>
+<p>(Enquanto cheirava com o nariz) Ugh, o que é esse cheiro? Estou te implorando, vá se lavar.</p>
+<p> </p>
+<p>Sinto muito, mas não posso mais falar com você por causa do odor vindo do seu corpo, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_N_LDF5b_FOBJ_E2_Pondok]([%2]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Berenoos_E].</p></step>
+</steps>
+<p>Desmontam as tendas que os trabalhadores de Skurv e Kobold costumavam viver.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Berenus, você derrubou a tenda suja que abrigava os skurvs e Kobolds.</p>
+<p> </p>
+<p>Berenus descobriu que eles deixaram o local muito sujos e espera que não voltem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

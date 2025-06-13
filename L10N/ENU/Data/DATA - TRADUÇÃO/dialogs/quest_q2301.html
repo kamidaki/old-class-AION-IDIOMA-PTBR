@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O teletransporte requer tanto Aether. Infelizmente, isso é escasso hoje em dia. E minha estátua de teletransporte tem agindo bastante estranho ultimamente ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso parece ruim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito ruim. Não sei se o dispositivo é apenas antigo ou danificado, mas cada ativação consome mais éter do que deveria.</p>
+<p> </p>
+<p>Eu acho que precisa de um reparo e estou preocupado que a estátua possa funcionar mal antes que eu possa fazer o trabalho.</p>
+<p> </p>
+<p>Por enquanto, posso me contentar com cristais extras. Mas como preciso cuidar da estátua e ativá -la, não tenho tempo para recolhê -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso reunir cristais de Aether."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado pelo voluntariado, [%username].</p>
+<p> </p>
+<p>Você conhece os vórtices que flutuam no céu acima da fortaleza? o [%dic:STR_DIC_I_od_d_n_c_20a] S deles me segurará até que eu possa fazer os reparos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Vários vórtices flutuam no céu acima da fortaleza. Você só tem que conseguir o [%dic:STR_DIC_I_od_d_n_c_20a]deles.</p>
+<p> </p>
+<p>Eu preciso de 10, eu acho. Por favor, traga -os para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nem quero pensar no que aconteceria se você não pudesse sair para o seu destino durante um teleporte!</p>
+<p> </p>
+<p>Isso é importante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, a estátua não causou nenhum problema, mas tenho medo do que poderia acontecer. Você trouxe os cristais de Aether que eu pedi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Espero que isso ajude."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não há cristais suficientes?</p>
+<p> </p>
+<p>Você teve problemas? Por favor, apresse -se!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com isso, a estátua deve se sustentar até que eu possa obter reparos no lugar.</p>
+<p> </p>
+<p>Obrigado por fazer isso por mim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Extrair [%dic:STR_DIC_I_od_d_n_c_20a] e trazê -los para [%dic:STR_DIC_N_Orhe].</p>[%collectitem]</step>
+</steps>
+<p>Orhe disse que precisa de cristais para alimentar a estátua. Extrai -os dos vórtices acima da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Orhe disse que a estátua de teletransporte estava consumindo a éter excessiva e pediu que você extraia cristais de Aether para alimentar a estátua até que seja reparada.</p>
+<p> </p>
+<p>Você voou acima da fortaleza e extraiu cristais dos vórtices lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

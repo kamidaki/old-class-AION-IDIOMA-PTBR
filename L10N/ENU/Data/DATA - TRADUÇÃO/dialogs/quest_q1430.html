@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu disse a ela: "O teletransporte é complicado, não algo para mexer". Claro, ela não ouviu, não é?</p>
+<p> </p>
+<p>Ela tem que experimentar seus pequenos experimentos. "Eu posso fazer isso sem a máquina", diz ela. "Apenas assista", diz ela.</p>
+<p> </p>
+<p>Eu assisti, tudo bem. Tem sido ... festivo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Desculpe, de quem você está falando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Sonirim], claro. Ela tem coragem, eu vou dar isso a ela, mas é uma loucura pensando que pode se teletransportar qualquer um manipulação de Aether sozinha!</p>
+<p> </p>
+<p>Ela não vai me ouvir, é claro. Apenas me pede para enviar seu povo em que ela possa praticar.</p>
+<p> </p>
+<p>E você, [%username]? Você está se sentindo corajoso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Você está disposto a ajudar? Uau. Verdade seja dita, eu estava apenas passando pelos movimentos perguntando a você em primeiro lugar.</p>
+<p> </p>
+<p>Bem, não diga que não te avisei. Ela está no segundo andar, se você estiver pronto para ser experimentado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Seria bom não precisar da máquina ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Chocante.</p>
+<p> </p>
+<p>Eu estava apenas passando pelos movimentos perguntando, a verdade seja dita. Na verdade, eu não recomendaria que alguém fosse experimentado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, um visitante! Não recebo muitos hoje em dia, por algum motivo.</p>
+<p> </p>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Oniimus me enviou para te ver ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu posso teleportar você?! SIM!</p>
+<p> </p>
+<p>Oh obrigado, [%username]! Eu realmente acho que isso será ótimo quando eu puder pegar o jeito. Sem máquinas! Pense na liberdade! Farei o meu melhor para mantê -lo em uma peça.</p>
+<p> </p>
+<p>Então, para onde você gostaria que eu lhe enviasse? Isso é tão emocionante!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Bem, para onde você pode me enviar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu tentei poeta, verteron e santuário até agora. É melhor ficar com isso, espero.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Ok, vamos tentar poeta."</act>
+<act href="HACTION_SETPRO1">"Que tal Verteron então?"</act>
+<act href="HACTION_SETPRO1">"Vamos tentar o santuário."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está vivo! SIM!</p>
+<p> </p>
+<p>Espere espere ... deixe -me olhar. Dois braços, duas pernas, asas-sim! Vou me livrar dessas máquinas ainda!</p>
+<p> </p>
+<p>Para onde eu te enviei de novo? Foi onde você queria chegar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_sorry;HACTION_SELECT_QUEST_REWARD">"Erm ... era asmodae, então ... não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Asmodae?! Não de novo!</p>
+<p> </p>
+<p>Não! Isso vai funcionar, eu não me importo com o que o ONSIMUS diz! Não estou desistindo.</p>
+<p> </p>
+<p>Me desculpe, porém, [%username]. Deixe -me dar isso para compensar isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sonirim].</p></step>
+<step><p visible="[%3]">Volte a Elysea e converse com[%dic:STR_DIC_N_Sonirim].</p></step>
+</steps>
+<p>Oniimus, o teleportador, pediu que você ajudasse Sonirim. Vá para o segundo andar da fortaleza e encontre -a.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="3" progress="1" showframe="true" time="5">Sonirim sent you to Asmodae! Find a way back!</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Oniimus pediu que você ajudasse Sonirim, um jovem Daeva que está tentando encontrar uma maneira de teletransportar as pessoas, manipulação de Aether sozinha. Você falou com ela e permitiu que ela o enviasse para uma região de Elysea, mas ela acidentalmente o teletransportou para Asmodae.</p>
+<p> </p>
+<p>Você voltou para Elysea e contou a Sonirim o que havia acontecido. Ela lamentou que tenha lhe dado um presente como um sinal de desculpas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

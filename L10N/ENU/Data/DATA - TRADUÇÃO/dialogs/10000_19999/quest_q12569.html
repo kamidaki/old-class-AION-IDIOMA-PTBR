@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um pedido veio de Portis.</p>
+<p> </p>
+<p>A ordem é não apenas matar o Sheluk, que foi feito um exemplo de, mas também os outros.</p>
+<p> </p>
+<p>Uma vez um ladrão, sempre um ladrão. É por isso que todos eles precisam ser mortos.</p>
+<p> </p>
+<p>[%username], você pode cumprir a missão de matar o [%dic:STR_DIC_M_LDF5A_G2_Sheluk_63_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou todos os abritos lentos?</p>
+<p> </p>
+<p>Portis está certo.</p>
+<p> </p>
+<p>Uma vez um ladrão, sempre um ladrão.</p>
+<p> </p>
+<p>Seu personagem nunca mudará.</p>
+<p> </p>
+<p>Eles vão roubar nossos bens novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Começarei relatando que você concluiu bem a tarefa.</p>
+<p> </p>
+<p>Isso vai por favor Portis.</p>
+<p> </p>
+<p>Mas como nem todos os abriços preguiçosos foram eliminados, eu pediria que você ajudasse na próxima vez também.</p>
+<p> </p>
+<p>Por favor, tome isso como uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_G2_Sheluk_63_An]([%2]/9) conforme ordenado por Portis</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5a_Rasir_E].</p></step>
+</steps>
+<p>Mate Shulack, conforme encomendado por Portis!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rasir disse que uma instrução chegou de Portis dizendo que devemos matar todos os outros Scheluk preguiçosos.</p>
+<p> </p>
+<p>Quando você matou o Scheluk preguiçoso, você foi recompensado. E ele disse que você o ajudará novamente mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

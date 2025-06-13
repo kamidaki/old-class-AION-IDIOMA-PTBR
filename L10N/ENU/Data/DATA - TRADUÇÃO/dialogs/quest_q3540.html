@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3540</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Confira isso, [%username].</p>
+<p> </p>
+<p>Você já sentiu o cheiro parecido? Estranho, hein?</p>
+<p> </p>
+<p>É um cogumelo perfumado. Eles são usados ​​localmente em vários pratos e medicamentos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Cheira a flores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! E ainda mais interessante, o [%dic:STR_DIC_I_QUEST_3540A] está só crescendo[%dic:STR_DIC_M_XipetoMove_34_An] S. Ninguém sabe o porquê.</p>
+<p> </p>
+<p>Atalante, nosso Daeva local de Zephyr, pediu alguns.</p>
+<p> </p>
+<p>Não sei para que ela vai usá -los. Ela não é do tipo que girou a mão, mas conhecendo -a, deve ser para algo importante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ela é bastante séria."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria de levar os cogumelos para ela o mais rápido possível, mas não posso fazer com que ninguém caia de cogumelos. Todo mundo parece estar atrasado hoje.</p>
+<p> </p>
+<p>Como você gostaria de nos dar uma mão? Você poderia reunir alguns[%dic:STR_DIC_I_QUEST_3540A] para nós, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Você pode coletar o [%dic:STR_DIC_I_QUEST_3540A] S de [%dic:STR_DIC_M_XipetoMove_34_An] está no bosque decapado.</p>
+<p> </p>
+<p>Quando você tiver o suficiente, leve -os diretamente para [%dic:STR_DIC_N_Atalante]. Talvez você possa fazê -la derramar sobre o que ela fará com eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"As bênçãos do sol, meu amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que é uma missão de tolo?</p>
+<p> </p>
+<p>Eu tenho pensado que eu mesmo.</p>
+<p> </p>
+<p>Vou apenas dizer a Atalante que ela terá que ir buscar os cogumelos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fique firme!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É frustrante que todo mundo pense que estou apenas relaxando.</p>
+<p> </p>
+<p>Você sabe, há mais em guerra do que lutar. A Intel é tão importante. Como é a pesquisa científica.</p>
+<p> </p>
+<p>Mas chega de meus problemas. O que te traz aqui hoje?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe para você isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está trazendo o [%dic:STR_DIC_I_QUEST_3540A] S em vez de vermelho?</p>
+<p> </p>
+<p>Ou não ... vendo como você é de mãos vazias.</p>
+<p> </p>
+<p>Realmente, não me importo com quem os traz, apenas me pegue aqueles cogumelos perfumados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, senhora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, os cogumelos que pedi a Piros buscar.</p>
+<p> </p>
+<p>Você os pegou em vez disso? Bem, obrigado, [%username]. Isso foi gentil.</p>
+<p> </p>
+<p>Estou ansioso para estudá -los. Ouvi rumores de que eles têm algumas propriedades de cura interessantes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_3540A] e trazê -los para [%dic:STR_DIC_N_Atalante].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha cogumelos perfumados de gnarls estalados e leve -os a Atalante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Piros pediu que você assumisse uma tarefa que Aalante lhe deu em seu lugar.</p>
+<p> </p>
+<p>Você reuniu cogumelos perfumados de gnarls estalados e os levou para Atalante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, enquanto você está aqui, posso te perguntar um favor?</p>
+<p> </p>
+<p>Você não pode dizer aos meus irmãos o que estou perguntando, ok? Eles nunca vão me deixar ouvir o fim disso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Depende ... o que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>São esses bigfoot mosbebars ...</p>
+<p> </p>
+<p>Eu vim aqui para prender Komu Silverclaw. Mas esses outros moscas continuam interferindo!</p>
+<p> </p>
+<p>Se você pode se livrar do[%dic:STR_DIC_M_MosbearS_16_An] S, terei Komu onde o quero.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Se você pode matar três deles, eu posso lidar com Komu.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_MosbearS_16_An] S eu preciso que você mate está no[%dic:STR_DIC_W_DF1A_11].</p>
+<p> </p>
+<p>Ah, e não se esqueça-esse é o nosso segredo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meus lábios estão selados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo caçador sonha em derrubar Komu-você não quer fazer parte dessa lenda?</p>
+<p> </p>
+<p>Bem, o que posso dizer quando você recusou sem rodeios?</p>
+<p> </p>
+<p>Suspiro .... Só não conte aos meus irmãos, tudo bem?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Seu segredo está seguro comigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você matou o [%dic:STR_DIC_M_MosbearS_16_An] S?</p>
+<p> </p>
+<p>Com eles fora do caminho, prender Komu Silverclaw será fácil!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Muito obrigado! Pegue algo para o seu trabalho duro.</p>
+<p> </p>
+<p>Eu só preciso consertar minha espada e meu arco, então posso começar a rastrear Komu!</p>
+<p> </p>
+<p>Meus irmãos não vão rir de mim por muito tempo ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_MosbearS_16_An] S ([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kaibekk]%.</p></step>
+</steps>
+<p>Hunt the Bigfoot Mosbears que incomodam Kaibech.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mosbeares de Bigfoot estavam impedindo Kaibech em sua caçada por Komu Silverclaw. Você foi ao habitat do MosBear e os limpou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

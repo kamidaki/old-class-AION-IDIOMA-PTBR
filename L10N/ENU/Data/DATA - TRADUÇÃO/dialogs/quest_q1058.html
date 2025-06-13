@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em Heir é uma tribo chamada Kishar. Kishar serve Balaur. Como Kaidan.</p>
+<p> </p>
+<p>Mas mais estúpido que Kaidan, Hoho. Não foi possível manter o poder de Aether.</p>
+<p> </p>
+<p>Kishar corrompeu o corpo, louco na cabeça.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Parece uma ameaça perigosa".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade que o poder do Aether tornou o Kishar Krall mais forte, mas suas mentes sofreram como resultado.</p>
+<p> </p>
+<p>Eles não reconhecem mais os seus e atacam ninguém e qualquer coisa à vista, Kraark.</p>
+<p> </p>
+<p>O Kishar Krall será extinto se nada for feito.</p>
+<p> </p>
+<p>[%username], por favor! Vá ver o guardião de Heiron.</p>
+<p> </p>
+<p>Peça a ele para ajudá -lo a eliminar o enlouquecido Kishar Krall, Krraarrkk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"É melhor dizer a Sarantus. Obrigado."</act>
+</selects>
+<voice file="Q1058-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não tenho nenhuma missão para você no momento. O que é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"É sobre o Kishar Krall ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma ameaça bastante séria. É melhor você ir ao posto avançado de Kunpapa e matar todos os[%dic:STR_DIC_M_KrallWarriorMMad_all].</p>
+<p> </p>
+<p>Traga -me de volta o [%dic:STR_DIC_I_QUEST_1058a]no corpo deles para que possamos determinar o que aconteceu com eles.</p>
+<p> </p>
+<p>Retire o líder deles, [%dic:STR_DIC_M_KrallFighterMadQ_42_Ae]. Dessa forma, podemos ter certeza de que eles não lideram nenhum ataque contra nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta com segurança, eu vejo. Você lidou com o Krall?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a sua resposta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi que você era honesto e capaz. Eu estava confundindo você com outra pessoa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, eu sou bom para isso.".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A espada de Kabaltu, você diz? Duvido que você apenas o roubasse enquanto ele estava dormindo-você não olha o tipo.</p>
+<p> </p>
+<p>Bravura e iniciativa como a sua merece uma recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_NPC_Mabangta].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Sarantus].</p></step>
+<step><p visible="[%6]">Matar [%dic:STR_DIC_M_KrallWarriorMMad_all] Areia [%dic:STR_DIC_M_KrallFighterMadQ_42_Ae] e trazer as evidências para [%dic:STR_DIC_N_Sarantus].</p>[%collectitem]</step>
+</steps>
+<p>Ordem: Mabangtah enviou uma mensagem pedindo sua assistência. Vá para Eltnen e encontre -se com ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mabangtah disse a você como o Kishar Krall não poderia lidar com o poder de Aether e se tornou monstros insanos. Você contou a Centurion Sarantus sobre a ameaça, e ele fez você sair e lidar com isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Caso você tenha esquecido desde a última vez, lembro -o mais uma vez: Destrua as esferas do Vigilante no Sky Fortaleza Warehouse Zone.</p>
+<p> </p>
+<p>Não finja que você se lembrou. Existem até alguns soldados que esquecem, embora eu os conte repetidamente.</p>
+<p> </p>
+<p>Existem 7[plur][%dic:STR_DIC_N_IDStation_FOBJ_Dr_CM]na zona do armazém.</p>
+<p> </p>
+<p>Você tem que destruir todos eles para abrir a porta para o laboratório de Hugen.</p>
+<p> </p>
+<p>Não se esqueça de entrar no segundo taquysfera a vapor primeiro, quando chegar ao centro de comando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu estive esperando por você.</p>
+<p> </p>
+<p>Você se lembrou do que eu disse durante sua missão?</p>
+<p> </p>
+<p>Se você usasse a segunda taquia de vapor, poderia ter ficado perigoso. Eu estava preocupado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz a ele o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Sortudo.</p>
+<p> </p>
+<p>Obrigado. Você sempre realiza seu trabalho diligentemente.</p>
+<p> </p>
+<p>Avisarei você se houver mais alguma coisa para fazer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_IDStation_SZ_01_A] e destruir o [plur][%dic:STR_DIC_N_IDStation_FOBJ_Dr_CM]instalado lá ([%2]/7).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Hariken].</p></step>
+</steps>
+<p>Faça o que Hariken solicitou e destruiu as esferas do Vigilante na Zona do Armazém da Fortaleza do Sky.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hariken pediu que você destruísse as esferas do observador na zona do armazém do Sky Fortaleza.</p>
+<p> </p>
+<p>Você conseguiu destruir as esferas do observador e retornou aos louvores de Hariken.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

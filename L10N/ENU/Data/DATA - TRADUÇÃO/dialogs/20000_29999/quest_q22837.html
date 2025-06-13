@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Estou implorando para você matar [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]como nosso representante.</p>
+<p> </p>
+<p>Talvez você já tenha ouvido falar de [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]?</p>
+<p> </p>
+<p>Ele deve ser morto por todos os meios para o futuro.</p>
+<p> </p>
+<p>Ele é tão forte quanto eles dizem, então você deve levar alguns camaradas com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o capitão Bashid?</p>
+<p> </p>
+<p>Os rumores dizem que ele é bastante perigoso. Como foi?</p>
+<p> </p>
+<p>Se ele estava liderando a 2ª tropa como capitão, ele certamente deve ter sido um forte oponente?</p>
+<p> </p>
+<p>Muitas perguntas. Eu estava preocupado com você.</p>
+<p> </p>
+<p>Por favor, me diga como foi.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou Bashid, o infame líder da 2ª equipe?!</p>
+<p> </p>
+<p>Você realmente é incrível.</p>
+<p> </p>
+<p>Eu já sabia disso, mas isso me fez perceber de novo.</p>
+<p> </p>
+<p>A história de sua ação heróica, como você conquistou o capitão Bashid, será informado nos próximos anos, [%username].</p>
+<p> </p>
+<p>Quero agradecer do fundo do meu coração por matar esse inimigo por nós.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard08_D].</p></step>
+</steps>
+<p>Mate o infame capitão Bashid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Travin pediu que você matasse o capitão Bashid, que tem uma má reputação, em seu nome.</p>
+<p> </p>
+<p>Você matou Bashid, o líder da 2ª unidade, conforme instruído. Travin ficou muito emocionado e agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

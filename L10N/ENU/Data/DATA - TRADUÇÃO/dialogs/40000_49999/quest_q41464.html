@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41464</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos ingredientes são necessários para fazer água de Luminaciel.</p>
+<p> </p>
+<p>Mas em vez de metais ou fluxo valiosos, você deve obter [plur][%dic:STR_DIC_E_Q41464all].</p>
+<p> </p>
+<p>Eles são absorvidos pela forma básica da arma Luminaciel.</p>
+<p> </p>
+<p>Obtenha o [%dic:STR_DIC_E_Q41464all], que estão em todo o sarpão, e levam -os a [%dic:STR_DIC_N_Morphiuss].</p>
+<p> </p>
+<p>Ele lhe dirá o que fazer a seguir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é você, [%username].</p>
+<p> </p>
+<p>Kahrun já me contou sobre você.</p>
+<p> </p>
+<p>Você me trouxe o [plur][%dic:STR_DIC_E_Q41464all]?</p>
+<p> </p>
+<p>Espero que você esteja ciente de que a quantidade precisa estar certa - nem um pouco pode estar faltando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as essências dos sentimentos sombrios.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver ...</p>
+<p> </p>
+<p>Bom. Você trouxe a quantidade certa.</p>
+<p> </p>
+<p>Enviarei as essências ao templo depois de refinar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_E_Q41464all] e leve tudo para [%dic:STR_DIC_N_Morphiuss].</p>[%collectitem]</step>
+</steps>
+<p>Colete as essências dos sentimentos sombrios como um ingrediente para a água de Luminasiel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com Kahrun, você deve coletar as essências dos sentimentos sombrios como ingrediente da arma Luminasiel.</p>
+<p> </p>
+<p>Você reuniu os ingredientes em Sarpan e alcançou Morphius. Ele prometeu a você que enviaria tudo para o templo após o processo de refinamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

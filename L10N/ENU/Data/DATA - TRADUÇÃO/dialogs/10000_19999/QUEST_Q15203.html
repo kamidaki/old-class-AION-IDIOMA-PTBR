@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15203</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A tribo Black Fins no Black FinS Canyon está colocando em risco o sucesso de nossa Guilda.</p>
+<p> </p>
+<p>Normalmente, não teríamos problemas para lidar com esse tipo de situação. Mas tudo é diferente nesta região, e acidentes terríveis estão ocorrendo.</p>
+<p> </p>
+<p>O que você acha, [%username]? Você pode remover esses perigos e garantir a segurança de nossos legionários?</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF5_SZ_P1_01] e matar o [plur][%dic:STR_DIC_M_LF5_P1_Varanus_58_n], o [plur][%dic:STR_DIC_M_LF5_P1_XipetoRage_58_n] e o [plur][%dic:STR_DIC_M_LF5_P1_Dionaea_58_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns acidentes aconteceram, apesar de nossos cuidadosos preparativos.</p>
+<p> </p>
+<p>Infelizmente, irrelevâncias aparentes podem resultar em grandes complicações rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou as criaturas perigosas no Black FinS Canyon?</p>
+<p> </p>
+<p>Isso é incrível. Sinceramente, não achei que você administraria.</p>
+<p> </p>
+<p>Bom trabalho! Continue a dedicar seus esforços à segurança da nossa Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_E_LF5_Q15203_All]no[%dic:STR_DIC_W_LF5_SZ_P1_01].</p>
+<p visible="[%0]">Mate os monitores da escala ([%5]/5).</p>
+<p visible="[%0]">Elimine o Thorn Xipetos ([%8]/3).</p>
+<p visible="[%0]">Mate o Thorn Dionaes verde ([%11]/2).</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_LF5_Eukraton_E].</p></step>
+</steps>
+<p>Elimine os perigos no Black FinS Canyon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eukraton o convenceu de que os Green Thorn Dionaes, os monitores de escala e o Thorn Xipetos tiveram que ser expulsos do Black Fins Canyon.</p>
+<p> </p>
+<p>Você limpou os encrenadores. Quando você disse a Eukraton sobre o sucesso de sua missão, ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

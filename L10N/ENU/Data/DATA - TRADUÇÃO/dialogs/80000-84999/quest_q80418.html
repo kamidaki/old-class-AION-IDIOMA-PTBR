@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que existem valiantes Daevas, como você que faz a parte deles para proteger Elysea.</p>
+<p> </p>
+<p>Daeva! Por favor, vá e veja [%dic:STR_DIC_W_IDLF1]!</p>
+<p> </p>
+<p>O futuro da Atreia não parece muito brilhante. Precisamos de apoio e precisamos dele com urgência.</p>
+<p> </p>
+<p>Eliminar os soldados de elite de Anuhart e [%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah]nas ruínas da vila de Akarios.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você eliminou os soldados de elite de Anuhart e [%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine um balaur nas ruínas da vila de Akarios.</p>
+<p visible="[%0]">Soldados de elite de Anuhart ([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_FERMAT].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_FERMAT]Pediu que você elimine um balaur nas ruínas da vila de Akarios.</p>
+<p>Eliminar os soldados de elite de Anuhart e [%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_FERMAT]pediu que você elimine os soldados de elite de Anuhart e [%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah]nas ruínas da vila de Akarios.</p>
+<p> </p>
+<p>Você eliminou os soldados de elite de Anuhart e [%dic:STR_DIC_M_IDLF1_B_NagaElementalist_50_Ah]no[%dic:STR_DIC_N_EVENT_GUARD_FERMAT] Solicitação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

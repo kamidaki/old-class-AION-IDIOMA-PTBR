@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Uma lápide na qual algo parece ter sido selado.)</p>
+<p> </p>
+<p>(Há palavras de aviso no antigo script de runas.)</p>
+<p> </p>
+<p>(Tenho a sensação de que tudo o que foi capaz de se libertar do selo ainda está em algum lugar por perto.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você achou algo interessante?</p>
+<p> </p>
+<p>Você descobriu algo novo sobre a tribo Rune?</p>
+<p> </p>
+<p>O que está errado? Por favor, diga.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você fala sobre Dalanoah.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você disse que um espírito da tribo Rune apareceu, que se libertou de uma sepultura selada, e ela também falou?</p>
+<p> </p>
+<p>"Grendal deve ser destruído", disse ...</p>
+<p> </p>
+<p>O nome parece familiar. Ah, sim! O nome apareceu em um dos comprimidos de pedra que examinamos recentemente.</p>
+<p> </p>
+<p>Não sei quem estava deitado naquele grave, mas parece que há um link para Grendal da tribo Rune.</p>
+<p> </p>
+<p>Talvez haja realmente uma chance de falar com um sobrevivente da tribo Rune. Excelente trabalho!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5_Under_GraveWitch_Q2_Wi_N_65_Ae]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Under_Liponia_E].</p></step>
+</steps>
+<p>Examine o túmulo de runa fechada e relate à Liponia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A maldição no túmulo de runa selada foi levantada. Você derrotou o espírito inquieto de Dalanoah.</p>
+<p> </p>
+<p>Você derrotou Dalanoah e relatou à Liponia. Liponia agora espera que 
+Grendal, da tribo Rune, ainda pode estar vivo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

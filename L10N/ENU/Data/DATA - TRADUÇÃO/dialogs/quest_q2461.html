@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], querida, posso pedir um favor a você?</p>
+<p> </p>
+<p>Há algo que devo fazer, mas estou muito doente para fazê -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, colete alguns[%dic:STR_DIC_E_herb_d_n_c_20a]para mim.</p>
+<p> </p>
+<p>Prometi isso a alguém, mas fiquei doente e não me sinto bem o suficiente para colecioná -lo.</p>
+<p> </p>
+<p>Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então por favor me traga 10[%dic:STR_DIC_E_herb_d_n_c_20a]plantas.</p>
+<p> </p>
+<p>Theonia pode ser encontrada no Caminho de Patamor Ridge ou no Patamor Biret.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito importante, é?</p>
+<p> </p>
+<p>Bem, não importa então. Vou descobrir algo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Azz Peterbra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, [%username].</p>
+<p> </p>
+<p>Você conseguiu o [%dic:STR_DIC_E_herb_d_n_c_20a] eu te pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Restam apenas alguns dias até que eu prometeu entregar o [%dic:STR_DIC_E_herb_d_n_c_20a].</p>
+<p> </p>
+<p>Por favor, colete para mim-estou contando com você!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são 10 plantas Theonia, certo?</p>
+<p> </p>
+<p>Obrigado por cumprir meu pedido.</p>
+<p> </p>
+<p>Aqui está uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_herb_d_n_c_20a] e trazê -lo para [%dic:STR_DIC_N_Medea].</p>[%collectitem]</step>
+</steps>
+<p>Medéia está pedindo que você colete Theonia. Colete -o no caminho de Patamor Ridge ou no Patamor Curvente e leve -o para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Medéia disse que tinha que coletar Theonia, mas não podia porque estava doente.</p>
+<p> </p>
+<p>Então você o coletou para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

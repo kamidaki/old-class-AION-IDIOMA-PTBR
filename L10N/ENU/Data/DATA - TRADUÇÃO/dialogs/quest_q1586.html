@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece Liske? Ela está sediada no acampamento de Chugarnerk. Ela está investigando os Mortos Vivos.</p>
+<p> </p>
+<p>De vez em quando, ela se passa para pesquisar Medeus Manor e toda a atividade lá.</p>
+<p> </p>
+<p>A última vez que ela esteve aqui, ela me pediu para que ela soubesse algo novo que eu descobri sobre os Mortos Vivos locais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Aprendemos muito ultimamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não poderíamos ter feito isso sem você, [%username].</p>
+<p> </p>
+<p>Agora que confirmamos que alguns dos Mortos Vivos estão fazendo rituais que arruinam a terra, podemos entregar as informações a Liske com confiança.</p>
+<p> </p>
+<p>Você iria para o acampamento de Chugarnerk e a avisaria?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você seguir o byway através de Puitonen Bogs e Nolantis Ruins, encontrará o acampamento de Chhargarnerk. A menos que ela esteja em uma pesquisa, [%dic:STR_DIC_N_Lisidike]geralmente está lá.</p>
+<p> </p>
+<p>Toda a área está assombrada. Eu sei que você lidou com os Mortos Vivos antes, mas tenha cuidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo aviso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Feito com os Mortos Vivos, você está? Justo, [%username].</p>
+<p> </p>
+<p>Obrigado pela ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tem sido interessante ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, Daeva! Não temos muitos do seu tipo por aqui.</p>
+<p> </p>
+<p>Estou impressionado-entre as ruínas, o pântano e os mortos-vivos, este não é exatamente o local de férias de Elysea.</p>
+<p> </p>
+<p>O que o traz ao nosso canto pequeno de Hiário, esgotado por Aion?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">"Rance me enviou ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, isso é interessante-magos de 60 fazendo magia.</p>
+<p> </p>
+<p>Mas por que eles amaldiçoariam um lugar que já está arruinado? Interessante de fato. Vou ter que pensar sobre isso.</p>
+<p> </p>
+<p>Obrigado pela dica, [%userclass]. Grande ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Lisidike].</p></step>
+</steps>
+<p>Rance quer que você diga a Liske, que estuda os Mortos Vivos, sobre o ritual realizado pelas almas dos antigos gladiadores e magos em Medeus Manor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Liske pediu a Rance que compartilhasse qualquer nova informação que aprendeu sobre os Mortos Vivos.</p>
+<p> </p>
+<p>Você foi ao acampamento de Chhargarnerk e disse a Liske que as almas dos antigos gladiadores e magos devastaram Medeus Manor com um ritual estranho. Ela ficou fascinada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui[%username]. Ouça -me, quero falar com você sobre algo.</p>
+<p> </p>
+<p>Nossos Daevas aqui estão ameaçados de todas as direções; Às vezes lutamos por dias por meros polegadas de território. Enfrentamos perigo muito real em cada esquina e, por causa disso, nossas forças são espalhadas.</p>
+<p> </p>
+<p>Veja a fortaleza, por exemplo. Eu adoraria nada mais do que mobilizar uma Guilda e substituir o lugar de volta, mas essa operação requer tempo e mão de obra, e não temos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como as tropas lidam?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está bem, infelizmente. Uma campanha tão longa invariavelmente amortece seus espíritos, mas as coisas estão parecendo especialmente sombrias nos dias de hoje. Perder a fortaleza apenas exacerbou os problemas.</p>
+<p> </p>
+<p>Quero elevar o ânimo deles, mostrar a eles que há um fim à vista. Eu preciso de um grupo de danos altamente qualificados para entrar na fortaleza e despachar o [%dic:STR_DIC_M_Crohtan_Guard].</p>
+<p> </p>
+<p>Isso deve fazer o truque. A guarnição é poderosa e eliminando -a será uma demonstração de força para o nosso lado. O que você diz, [%username]? Você gostaria de aceitar o desafio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não leve a guarnição de ânimo leve. Derrotá -los exigirá coordenação e determinação em quantidades iguais. Sabemos que muito bem.</p>
+<p> </p>
+<p>Lutamos contra eles muitas vezes, você vê, mas isso apenas os tornou mais fortes. Agora eles podem ficar de pé até os nossos melhores guardiões.</p>
+<p> </p>
+<p>Reúna sua Guilda antes de ir. Você não vai sobreviver sozinho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Se você insiste. Fé e armas, Centurion."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma recusa?! Eu tinha ouvido muitas histórias sobre você, [%username]. Vergonha para perceber que eles eram simplesmente fabricações e exageros.</p>
+<p> </p>
+<p>Correr agora, [%userclass]. Eu tenho meus deveres para participar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, centurião."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo, [%username]? Pena, eu estava me preparando para gritar com Myrrha novamente. Algumas pessoas simplesmente não são capazes de realizar seu trabalho.</p>
+<p> </p>
+<p>Você não é uma dessas pessoas, é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não, eu fiz como você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho!</p>
+<p> </p>
+<p>Talvez agora os outros se permitam esperar um fim a esse conflito. Vou garantir que as notícias sejam passadas o mais rápido possível.</p>
+<p> </p>
+<p>Obrigado, [%username]. Espero que você esteja disposto a nos ajudar novamente em algum momento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_Crohtan_Guard]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Menelaus].</p></step>
+</steps>
+<p>Reúna seus companheiros e elimine a guarnição no refúgio de Krotan e depois reporte -se a Centurion Menelaus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Menelaus estava preocupado com o fato de o moral de seus guardiões estar caindo após a perda do refúgio de Krotan para o inimigo e pediu que você ajudasse a aumentar seu ânimo, derrotando parte do inimigo.</p>
+<p> </p>
+<p>Você voltou depois de derrotar a guarnição como o Centurion perguntou, quando Menelau pediu mais ajuda no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

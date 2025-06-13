@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos Daevasas corajosos vão para o [%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame].</p>
+<p> </p>
+<p>No entanto, muitos deles são engolidos pelas chamas quentes, que atingem seu objetivo.</p>
+<p> </p>
+<p>Não suporto mais ver a dor deles.</p>
+<p> </p>
+<p>Foi emitido um pedido especial para que medidas adequadas sejam tomadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que está acontecendo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>As criaturas no[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame]possuir</p>
+<p> </p>
+<p>Os corações dos danos desaparecidos.</p>
+<p> </p>
+<p>Eles ajudam a aquecer o [%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame].</p>
+<p> </p>
+<p>Vá lá com seus companheiros e obtenha os corações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A entrada para o [%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame] está localizado no templo de Kyola.</p>
+<p> </p>
+<p>Se você entrar no[%dic:STR_DIC_W_LF2_SZ_D], você encontrará a entrada no canto direito na parte de trás da sala.</p>
+<p> </p>
+<p>Por favor, obtendo os itens dos danos desaparecidos.</p>
+<p> </p>
+<p>Vou esperar por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há nada que possa ser feito.</p>
+<p> </p>
+<p>Eu devo ter sido enganado.</p>
+<p> </p>
+<p>Você não é o Daeva que a Alta Sacerdotisa falou de ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente encontrou os corações dos danos desaparecidos lá?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 20 corações vermelhos brilhantes.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aha ...</p>
+<p> </p>
+<p>É muito doloroso. O rugido de chamas quentes em chamas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem?</p>
+<p> </p>
+<p>[%username], você os salvou das chamas de tormento.</p>
+<p> </p>
+<p>Este é um sinal de gratidão do santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter os corações vermelhos brilhantes em[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame] e levá -los ao Netalion.</p>[%collectitem]</step>
+</steps>
+<p>NETALION O padre deu a você a tarefa de obter os corações vermelhos brilhantes. Mate as criaturas mais perigosas em[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame] e obter os corações.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Netalion, o padre da bênção, levou você a obter os corações vermelhos brilhantes.</p>
+<p> </p>
+<p>Você assim matou as criaturas mais perigosas em[%dic:STR_DIC_W_DF2_SUB_toDF2_DFlame] e trouxe -lhe os corações vermelhos brilhantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao lutar contra o Balaur, é crucial que você nunca desista do seu ataque. Se eles tiverem tempo para colocar sua linha de batalha em ordem e consertar suas feridas ... bem, as coisas vão mal. Para nós.</p>
+<p> </p>
+<p>Tenho um plano de ataque, mas preciso da sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou sob seu comando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza, [%username]? Eu sei que você é bastante habilidoso, mas para esta missão eu preciso de dedicação e paixão.</p>
+<p> </p>
+<p>Não basta pensar que você está comigo. Você deve estar comigo.</p>
+<p> </p>
+<p>Você está comigo, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Aqui está o plano. Primeiro, infiltrar -se na draga. Você deve pressionar o ataque e nunca desistir do chão. Continue lutando, continue pressionando, mantenha -os na defensiva.</p>
+<p> </p>
+<p>Durante o conflito, faça o possível para se concentrar no[%dic:STR_DIC_M_IDAb1_Dreadgion_NagaPr_50_Ae] S. Se eles não podem curar, não podem lutar.</p>
+<p> </p>
+<p>Votan gostaria de ouvir um relatório sobre esta tática, [%username], mas não sei se podemos tirar conclusões de apenas uma tentativa. Que tal você tentar três vezes e depois se reportar a ele?</p>
+<p> </p>
+<p>Você causará danos graves do Balaur e provará sua paixão ao mesmo tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, a menos que você tenha certeza, eu não quero que você participe. Preciso de alguém que possa dedicar algum tempo a esse plano.</p>
+<p> </p>
+<p>Se você tem planos de se infiltrar de qualquer maneira, não deve ser um problema. Talvez eu esteja errado ....</p>
+<p> </p>
+<p>Se você conhece algum outro Daeva que possa estar interessado, [%username], envie -os do meu jeito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando pelo seu relatório, [%username].</p>
+<p> </p>
+<p>Henir disse que você foi realizar uma missão importante. Diga -me o que aconteceu em detalhes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Primeiro, embarcamos na draga ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]. Parece que essa tática pode muito bem funcionar para nós. Vou espalhar a palavra.</p>
+<p> </p>
+<p>Eu sei que já faz um bom tempo desde que você subiu, e estou satisfeito por você ainda ser tão apaixonado. Você é um Daeva verdadeiramente extraordinário. Esta deve ser uma recompensa digna por sua diligência e dedicação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Assalte a draga e elimine os curandeiros inimigos.</p>
+<p visible="[%0]">Batalha de dragião ([%2]/3)</p>
+<p visible="[%3]">[%dic:STR_DIC_M_IDAb1_Dreadgion_NagaPr_50_Ae]([%5]/8)</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Votan].</p></step>
+</steps>
+<p>Você concordou em agredir a draga e eliminar os dendentes de carne de Baranath.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Henir disse que é necessário um ataque contínuo para causar danos à draga.</p>
+<p> </p>
+<p>Você agrediu a draga e eliminou os Merçadores de Baranath enquanto ele perguntou, demonstrando sua dedicação a Asmodae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

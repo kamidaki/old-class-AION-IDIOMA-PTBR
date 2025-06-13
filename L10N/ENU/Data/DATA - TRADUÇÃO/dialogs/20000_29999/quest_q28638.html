@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento, [%username], o que você quer fazer com isso?</p>
+<p> </p>
+<p>Quero dizer com a lágrima de Kromede que eu te dei.</p>
+<p> </p>
+<p>Seria um bom colar, mas isso seria uma pena.</p>
+<p> </p>
+<p>Se você derreter e cobrir o canhão mágico, poderá melhorar significativamente seu desempenho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta sobre o método.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você deseja aprimorar o canhão mágico do juiz, precisará de três coisas.</p>
+<p> </p>
+<p>A lágrima de Kromede, o canhão mágico do juiz e um talentoso Smith.</p>
+<p> </p>
+<p>No primeiro que você já tem, agora você só precisa se apossar do canhão mágico!</p>
+<p> </p>
+<p>Obtenha o canhão mágico. Então eu vou criar uma arma para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem muita sorte.</p>
+<p> </p>
+<p>Não me lisonjear aqui, mas não há muitas pessoas em Asmodae que podem produzir essa arma. Este é um material sensível, um pequeno erro e é tudo para nada.</p>
+<p> </p>
+<p>De qualquer forma, pegue -me o canhão mágico do juiz.</p>
+<p> </p>
+<p>Pelo que ouvi, [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]do templo de fogo de Morheim supostamente tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não confia em mim?</p>
+<p> </p>
+<p>Sou conhecido em toda parte como mestre em Asmodae ...</p>
+<p> </p>
+<p>Vou fazer de você um canhão de magia verdadeiramente externo, então pense.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu obter o canhão mágico do juiz?</p>
+<p> </p>
+<p>Conceda-me o canhão mágico do juiz e a lágrima de Kromede.</p>
+<p> </p>
+<p>Vou fazer o canhão mágico de uma só vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as lágrimas e armas de Kromede.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não disse isso já? A lágrima de Kromedes e a arma mágica do juiz são necessárias para processar a arma.</p>
+<p> </p>
+<p>Não é esse o canhão mágico de um juiz que você tem com você lá?</p>
+<p> </p>
+<p>Ho Ho Ho, como devo começar meu trabalho se você tiver em você?</p>
+<p> </p>
+<p>Você talvez esteja preocupado que eu possa danificar o canhão mágico do juiz?</p>
+<p> </p>
+<p>Minhas habilidades são reconhecidas como tal por muitos. Eu criei armas de chama para Daevas aqui.</p>
+<p> </p>
+<p>Então, confie em mim e me dê o canhão mágico do juiz e a lágrima de Kromede.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(limpando o suor) Ufa, isso é um trabalho árduo!</p>
+<p> </p>
+<p>Aqui, pegue isso. Eu prometo que você vai gostar.</p>
+<p> </p>
+<p>Ah, eu não me concentrei tanto há muito tempo. Estou cansado agora.</p>
+<p> </p>
+<p>Eu preciso descansar agora e você deve ir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete os materiais necessários para produzir o canhão mágico do juiz e trazê -los para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter concordou em trabalhar no canhão mágico do juiz. Precisamos buscar o canhão mágico do juiz e as lágrimas de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Walter, a arma do juiz pode ser aprimorada usando a lágrima de Kromede, e ele pediu que você obtenha o canhão mágico do juiz.</p>
+<p> </p>
+<p>Você confiou a ele a lágrima de Kromede e o canhão mágico do juiz e, como prometido, Walter produziu um canhão mágico de um juiz mais poderoso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

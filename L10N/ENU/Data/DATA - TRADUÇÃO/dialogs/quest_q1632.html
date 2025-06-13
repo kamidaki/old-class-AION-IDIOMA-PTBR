@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, [%username]. Eu tenho uma proposta para você.</p>
+<p> </p>
+<p>Ainda não sabemos muito sobre a geografia e a situação aqui. Isso nos coloca em uma posição difícil, tanto estrategicamente quanto taticamente.</p>
+<p> </p>
+<p>Seu conhecimento da área seria muito valioso para nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você tem em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos de alguém para explorar as ruínas de Nolantis e o círculo da tempestade. Sabemos que a área está cheia de Mortos Vivos, mas precisamos saber onde eles estão e como eles lutam.</p>
+<p> </p>
+<p>Também precisamos impedi -los de ressuscitar. Já temos algumas pesquisas que apontam para uma solução-seu trabalho será coletar os itens específicos de que precisamos.</p>
+<p> </p>
+<p>Acha que você pode lidar com isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu sabia que poderia contar com você.</p>
+<p> </p>
+<p>Concentre -se no[%dic:STR_DIC_M_UndeadLightFi_43_AN] Areia [%dic:STR_DIC_M_UndeadLightWi_44_AN] S.</p>
+<p> </p>
+<p>Um estigma é impresso nos corpos daqueles que ressuscitaram através do obelisco amaldiçoado. Precisamos disso[%dic:STR_DIC_I_QUEST_1632a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços, Gorgos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sentindo -se um pouco gritoso? Olha, ninguém quer lidar com os Mortos Vivos.</p>
+<p> </p>
+<p>Mas se não agirmos agora, eles ameaçarão a segurança não apenas do Heiron, mas também de Elysea.</p>
+<p> </p>
+<p>Você está melhor equipado para esta missão do que qualquer um. Por favor, reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não mais Mortos Vivos, por favor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu não pensei que te veria tão cedo.</p>
+<p> </p>
+<p>Estamos nos preparando para a batalha, mas ainda não estamos prontos.</p>
+<p> </p>
+<p>Então você tem o [%dic:STR_DIC_I_QUEST_1632a] S pedi.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Stones de estigma, conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Belos fragmentos de panela. Onde estão as pedras?</p>
+<p> </p>
+<p>Temos que parar os Mortos Vivos antes de Bollvig montar um ataque à vila.</p>
+<p> </p>
+<p>Eu não posso fazer isso sem o [%dic:STR_DIC_I_QUEST_1632a] S. O que você está olhando? Ir!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, senhor. Desculpe, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O estigma é impresso profundamente em seus ossos, não é? Hum....</p>
+<p> </p>
+<p>Vou queimar cada marca de todos os ladrões que vejo! Sem isso, os Mortos Vivos acabarão retornando ao Aether.</p>
+<p> </p>
+<p>Obrigado pelo seu trabalho duro, [%username]. Com essas informações, nos livraremos dos Mortos Vivos sem mais dificuldades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1632a] e leve-os para [%dic:STR_DIC_N_Gorgos].</p>[%collectitem]</step>
+</steps>
+<p>Colete as marcas de 5 ladrões e leve -os a Gorgos, para que as almas dos magos escuros antigos e os combatentes antigos não possam ressuscitar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entregou a mensagem de Liske a Gorgos, mas Gorgos pediu para você ficar, pedindo para você trabalhar com ele. Você conhecia a região melhor do que ele e sua frota azul, disse ele, e seu conhecimento pode ser útil.</p>
+<p> </p>
+<p>Ele pediu que você se livrasse dos Mortos Vivos nas ruínas de Nolantis e no círculo da tempestade e traziam 5 marcas de ladrões.</p>
+<p> </p>
+<p>Quando você levou as marcas do ladrão com você e informe onde estão os Mortos Vivos e como eles lutam, eles disseram que cuidariam do resto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

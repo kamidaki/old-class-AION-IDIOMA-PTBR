@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um novo comandante na ponte de Jormungand.</p>
+<p> </p>
+<p>Esse novo comandante foi obviamente destacado após a destruição de Katalam.</p>
+<p> </p>
+<p>Mas, independentemente de quem ele é, ele deve ser aniquilado!</p>
+<p> </p>
+<p>Por favor, mate o comandante Belkur na ponte de Jormungand.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso ferve toda vez que vejo o que o Exército de Beritra fez com Balaurea.</p>
+<p> </p>
+<p>Como eles poderiam apenas destruir várias regiões ...? É doentio.</p>
+<p> </p>
+<p>Nós absolutamente temos que detê -los.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que realizou a tarefa com sucesso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Mas minha raiva pelo Exército de Beritra está longe de ser atenuada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Belkur na ponte de Jormungand ([%2]/1).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_IDLDF5_Under_01_Theano_E].</p></step>
+</steps>
+<p>Derrote Belkur e depois retorne a Theano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O agente Theano pediu que você derrotasse Belkur.</p>
+<p> </p>
+<p>Você foi à ponte de Jormungand, derrotou Belkur e relatou a Teano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você de novo, [%username].</p>
+<p> </p>
+<p>Você obviamente está treinando muito. Seu progresso não pode ser esquecido.</p>
+<p> </p>
+<p>É tão admirável que eu gostaria de fazer de você uma oferta muito especial. Você quer tentar fazer o teste do poder divino?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O teste de poder divino?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>As habilidades divinas de poder são habilidades especiais que Aion concedeu aos DAEVAs. Mas como eles raramente são usados, mesmo alguns veteranos são bastante inexperientes com eles.</p>
+<p> </p>
+<p>O Teste de Poder Divino é um incentivo proposto pelo governador para resolver esse problema.</p>
+<p> </p>
+<p>Chamamos isso de teste, mas é realmente mais uma sessão de treinamento. Termina quando você usa uma habilidade escolhida dez vezes. O que você acha? Você gostaria de experimentar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se saiu muito bem. Você aprendeu a se transformar em um Mau.</p>
+<p> </p>
+<p>Um teste de poder divino consiste em executar [%dic:STR_DIC_E_DP_Ra2]10 vezes. Então volte para mim.</p>
+<p> </p>
+<p>Você sabe como preencher o poder divino? Ele enche automaticamente em batalha. Se isso for muito lento para você, você também pode ir ao abismo.</p>
+<p> </p>
+<p>Como alternativa, há geléia que restaurará seu poder divino.</p>
+<p> </p>
+<p>Espero que você volte com boas notícias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você recusa?</p>
+<p> </p>
+<p>Não me diga que você não sabe como recarregar seu poder divino?</p>
+<p> </p>
+<p>Ele se acumulou naturalmente enquanto você luta. Você sempre pode ir ao abismo se quiser acumulá -lo mais rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Você quer fazer o teste de poder divino?</p>
+<p> </p>
+<p>Deixe -me verificar se você realmente usou[%dic:STR_DIC_E_DP_Ra2]dez vezes.</p>
+<p> </p>
+<p>Chegue mais perto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Toca você na cabeça.) Hmmm ... o fluxo do seu poder divino é suave e ininterrupto. Parece que você executou sua tarefa diligentemente.</p>
+<p> </p>
+<p>(Remove a mão.) Parabéns, você passou no teste do seu poder divino.</p>
+<p> </p>
+<p>A transformação da habilidade: o MAU agora não deve ser um problema para você. Este teste certamente o ajudará a progredir em sua evolução como um daeva.</p>
+<p> </p>
+<p>Por favor, receba esta recompensa. Damos a todos aqueles que passam no teste. Isso deve ser útil para você como caçador.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Ra2]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Sigyn].</p></step>
+</steps>
+<p>O governador apóia o teste de poder divino. Use a transformação: MAU dez vezes para passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sigyn convidou você a participar do teste de poder divino que está sendo realizado para treinar Daevas que são inexperientes no uso de poder divino.</p>
+<p> </p>
+<p>Você seguiu a recomendação de Sigyn e usou a transformação: Mau dez vezes. Quando você voltou a Sigyn, ela parabenizou você por passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

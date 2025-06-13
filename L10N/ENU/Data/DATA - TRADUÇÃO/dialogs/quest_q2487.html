@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claramente, devemos ir a Elysea para descobrir mais sobre precedentes.</p>
+<p> </p>
+<p>Se o Micorunerk nos contou a verdade, o bastião lefarista em Eltnen é onde descobriremos.</p>
+<p> </p>
+<p>Vai ser muito perigoso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o seu plano?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É tudo sobre você, [%username]?</p>
+<p> </p>
+<p>Vá para Eltnen em Elysea através da fenda e realize a missão.</p>
+<p> </p>
+<p>Desde que você já viu um pretor na Cidadela Lefarista, você é o melhor candidato.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A brecha aparece com frequência ao redor [%dic:STR_DIC_W_DF2_SUB_D3].</p>
+<p> </p>
+<p>Quando você chegar a Eltnen, obtenha uma amostra do tecido celular de Pretor no[%dic:STR_DIC_W_LF2_SZ_J]. Além disso, tente se apossar de um diário de pesquisa pretor.</p>
+<p> </p>
+<p>Depois de coletar [%dic:STR_DIC_I_QUEST_2487a] e [%dic:STR_DIC_I_QUEST_2487b], leve -os ao capitão[%dic:STR_DIC_N_Kvasir]. Ninguém aqui pode analisá -los adequadamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você não quer ir para Elysea, não é?</p>
+<p> </p>
+<p>Eu entendo. Eu hesitaria também se fosse você.</p>
+<p> </p>
+<p>Vou pegar outra pessoa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, [%username].</p>
+<p> </p>
+<p>Você montou um plano com Mirka e completou sua missão?</p>
+<p> </p>
+<p>Relatório!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Nosso plano está em movimento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou sem nada? Mirka não disse para você coletar informações? Ou você acabou de falhar?</p>
+<p> </p>
+<p>Mirka sempre cria um plano ....</p>
+<p> </p>
+<p>Você deve honrar nossas preocupações. Temos o futuro de Asmodae em que pensar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não vou falhar com você de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a amostra que você recuperou da Elysea? HM ... eu deveria enviá -lo para alguém que possa investigar adequadamente isso.</p>
+<p> </p>
+<p>Essas notas de pesquisa são igualmente interessantes. Agora podemos confirmar que o Pretor é uma criatura criada por revolucionários lefaristas em Elysea.</p>
+<p> </p>
+<p>Bom trabalho. Agora temos muitas informações boas sobre essas monstruosidades, graças a você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_2487a] e [%dic:STR_DIC_I_QUEST_2487b], e leve-os para [%dic:STR_DIC_N_Kvasir].</p>[%collectitem]</step>
+</steps>
+<p>Mirka disse que você deve ir a Elysea para coletar informações sobre precedentes. Vá para o bastião lefarista em Eltnen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirka recebeu ordens de Kvasir sobre precedentes e decidiu enviar alguém para a Elysea para obter mais informações.</p>
+<p> </p>
+<p>Você foi ao bastião lefarista em Eltnen para obter tecido celular pretor e um diário de pesquisa, e depois os entregou a Kvasir em Pandaememonium.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

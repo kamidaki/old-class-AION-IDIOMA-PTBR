@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Daeva! Estou aqui no deserto Scout Camp para promover um programa de recompensa especial! Deixe -me falar sobre isso!</p>
+<p> </p>
+<p>Veja bem, há um problema crescente com animais perigosos no deserto de Eracus. Mas não podemos nos dar ao luxo de enviar sentinelas e guardiões correndo pela caça ao deserto, por isso decidimos oferecer incentivos a outros Daeva para nos ajudar.</p>
+<p> </p>
+<p>A missão é perigosa, mas as moedas que você ganha podem ser negociadas por armaduras e armas não encontradas em nenhum outro lugar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou interessado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esplêndido! Então, vá para o deserto de Eracus e caça alguns desses animais perigosos.</p>
+<p> </p>
+<p>Quanto mais difícil a missão, maior será a recompensa. Você terá que caçar alguns animais para se qualificar para a recompensa.</p>
+<p> </p>
+<p>Se você quiser experimentar, explicarei em detalhes o que você deve fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É muito simples, realmente. Apenas caça [%dic:STR_DIC_M_Sheluk_30_An] S, [%dic:STR_DIC_M_MimicRe2_31_An] Areia [%dic:STR_DIC_M_Catos_31_An] es.</p>
+<p> </p>
+<p>Eles serão fáceis de encontrar; Eles parecem estar em toda parte no deserto de Eracus.</p>
+<p> </p>
+<p>Pode demorar um pouco, mas não desista. Eu sei que você pode fazer isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me para eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço sua natureza reservada, Daeva.</p>
+<p> </p>
+<p>Você não se compromete com algo até estar pronto. Eu entendo.</p>
+<p> </p>
+<p>Volte mais tarde quando estiver preparado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A luz de Ariel está com você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso levou um pouco mais do que o esperado.</p>
+<p> </p>
+<p>Oh bem, você teve que lidar com três animais diferentes ...</p>
+<p> </p>
+<p>Você concluiu a tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É isso que eu colecionei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Agradeço muito sua ajuda!</p>
+<p> </p>
+<p>Aqui está a recompensa que prometi.</p>
+<p> </p>
+<p>Ainda temos muitas moedas para doar, então volte sempre que estiver disposto a assumir outra missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o animal no deserto de Eracus.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Sheluk_30_An]([%2]/4)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_MimicRe2_31_An]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Catos_31_An]([%8]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sandinas].</p></step>
+</steps>
+<p>Você recebeu uma moeda depois de matar o animal perigoso no deserto de Eracus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial do governo Sandinas sugeriu que você caçasse animais perigosos no deserto, prometendo recompensá -lo com moedas preparadas pelo santuário.</p>
+<p> </p>
+<p>Você caçou os animais que ele instruiu e recebeu as moedas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

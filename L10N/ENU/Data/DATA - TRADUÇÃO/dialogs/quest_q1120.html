@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username]! Você tem um minuto?</p>
+<p> </p>
+<p>Se você tiver tempo, poderia me ajudar? Os ataques vêm de todos os lados e simplesmente não temos forças suficientes para fazer uma resistência suficiente.</p>
+<p> </p>
+<p>Fui enviado aqui para observar a atividade do Krall e Dukaki no[%dic:STR_DIC_FLA07].</p>
+<p> </p>
+<p>Mas recentemente nosso trabalho foi dificultado pelo[%dic:STR_DIC_MLA10] S.</p>
+<p> </p>
+<p>Eles estão saqueando nossos suprimentos. Nossas perdas são tremendas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles parecem cruéis!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>E eles são, [%userclass]!</p>
+<p> </p>
+<p>Eles cheiram nossos estoques de alimentos e entram esgueirando -se em nosso acampamento à noite.</p>
+<p> </p>
+<p>Mas você pode caçá -los por nós. Algumas peles penduradas ao redor do nosso acampamento devem diminuir sua curiosidade!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito!</p>
+<p> </p>
+<p>Você pode matar nove [%dic:STR_DIC_MLA10] S?</p>
+<p> </p>
+<p>Pagarei do meu próprio bolso se Melponeh se recusar a mergulhar nos fundos de reserva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta quando estiver pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah. OK.</p>
+<p> </p>
+<p>Eu sei que você tem assuntos prementes para participar. Se você mudar de idéia, venha me encontrar-eu vou te pagar bem.</p>
+<p> </p>
+<p>Oh, e [%username]-Se você vê algum mercenário em pé em frente, envie-os aqui!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom ver você de volta em uma peça, [%username]!</p>
+<p> </p>
+<p>Diga -me, quantos worgs cinzentos você derrubou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Perdi a conta, mas pelo menos nove."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente deu tudo de você. A quantidade de pilhagem diminuiu.</p>
+<p> </p>
+<p>Os Krall e Dukaki parecem estar planejando algo. Os Worgs tornaram meu trabalho um pouco mais difícil nessa situação.</p>
+<p> </p>
+<p>Aqui está a sua recompensa prometida.</p>
+<p> </p>
+<p>Vamos tomar algumas bebidas depois de terminar sua tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_MLA10] S que estão invadindo as lojas de alimentos ([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA144].</p></step>
+</steps>
+<p>Tula, um mercenário no acampamento de Melponeh, pediu que você matasse nove worgs cinza.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tula disse que Worgs cinza estava invadindo o acampamento de Melponeh todas as noites.</p>
+<p> </p>
+<p>Você caçou nove para expulsar o resto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41460</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tive a tarefa de ajudá -lo a completar seu Koligran, [%username]. Posso entregar sinais de sacrifício, os itens que você deve reunir para passar neste poderoso teste.</p>
+<p> </p>
+<p>Mas, para ganhar, devo definir tarefas bastante assustadoras. Este desafio em particular exige que você dizime o [%dic:STR_DIC_E_Q41460all]que foram desviados pelos vícios e elementos rasos do nosso mundo.</p>
+<p> </p>
+<p>Quando estiverem totalmente arruinados, volte para sua recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você concluiu seu trabalho? Tem o [%dic:STR_DIC_E_Q41460all]foi tratado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Esmagado ao pó, Pascal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Notável. Até os traidores de Reian sabem lutar-para você esculpir literalmente centenas deles com tanta velocidade é algo.</p>
+<p> </p>
+<p>Mas talvez eu não deva ficar surpreso. O fato de você ter sido considerado para a lança de Siel fala muito sobre seu caráter e habilidade.</p>
+<p> </p>
+<p>Parabéns, [%username]. Você ganhou isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_Q41460all]([%2]/242).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Pasquale].</p></step>
+</steps>
+<p>Açougueiro dos traidores Reian como parte do seu Koligran.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Como parte do seu Koligran, você recebeu ordens para ir à fortaleza dos traidores e matar os casacos de Reian lá. Seu trabalho foi longo e árduo, mas você foi bem -sucedido e voltou ao seu prêmio: um curio de sacrifício.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

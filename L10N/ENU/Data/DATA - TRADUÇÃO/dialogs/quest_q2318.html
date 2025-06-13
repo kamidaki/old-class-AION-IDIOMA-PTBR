@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É incrível que qualquer pessoa possa ganhar a vida neste terreno baldio gelado. Ainda mais incríveis são os animais que sobrevivem aqui.</p>
+<p> </p>
+<p>Biólogos e ecologistas seriam fascinados por esses animais, mas minha preocupação é controlar seus números para impedir que eles prejudiquem os moradores.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Segurança primeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os residentes da fortaleza têm medo de se aventurar até até Alsig Village.</p>
+<p> </p>
+<p>Animais perigosos estão por toda parte, desde o campo de neve de Morheim, bem em frente à fortaleza até o caminho de Patamor Ridge.</p>
+<p> </p>
+<p>Você poderia se livrar de alguns deles, [%username]? Eu posso oferecer moedas de bronze para fazer valer a pena!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tomou a decisão certa.</p>
+<p> </p>
+<p>Por favor, mate 3[plur][%dic:STR_DIC_M_Zaif2D_21_An], 3[plur][%dic:STR_DIC_M_DaruD_21_n] e 3[plur][%dic:STR_DIC_M_Ettin_all].</p>
+<p> </p>
+<p>Por favor, você precisa se ater a esse valor porque a tarefa foi dividida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, deve ser demais para você.</p>
+<p> </p>
+<p>Deixa para lá. Tenho certeza de que há outros danos capazes que querem moedas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu todos eles? Isso foi rápido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A tarefa está completa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Aqui estão as moedas que prometi.</p>
+<p> </p>
+<p>Nossos moradores agradecem também, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os animais selvagens perto da fortaleza.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Zaif2D_21_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_DaruD_21_n]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Ettin_all]([%8]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Nott].</p></step>
+</steps>
+<p>Existem tantas criaturas selvagens perto da fortaleza que os cidadãos não ousam mais sair. Eliminar os animais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nott prometeu a você moedas de bronze se você caçar os animais ferozes ao redor da fortaleza.</p>
+<p> </p>
+<p>Você caçou Worgs, Ettins e Darus e recebeu as moedas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

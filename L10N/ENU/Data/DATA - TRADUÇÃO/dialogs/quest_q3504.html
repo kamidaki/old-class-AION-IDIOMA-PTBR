@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shhhhh ... mantenha sua voz baixa, [%username]. Todo-Uunnnn vai ouvi-lo. Se você não se importa, poderia me ajudar de novo? Soluço!</p>
+<p> </p>
+<p>A cerveja abriu meus olhos. Eu tive um predum ... um prenumico ... uma premonição que Luke Ishh vai me fazer patrulhar os arredores da vila para matar Mortos Vivos. Eles estão por toda parte! Eles são ... hic!</p>
+<p> </p>
+<p>Eu não consigo lidar com Mortos Vivos! Eles são ... Mortos Vivos. Shhkin está caindo de seus ossos ... horrível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você deveria ficar sóbrio para isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nããão, não, não. Eu tenho uma melhor ideia de mushhhh. Você faz isso! Hic!</p>
+<p> </p>
+<p>Somos um bom time, certo? Eu pago, você faz a parte de matar ....</p>
+<p> </p>
+<p>Eu vou te dar a quantidade de Kinah como lasshhht, não é? Me ajude, hein?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shhhhh, Luke está parecendo esse caminho ... Aja normal ... aponte para alguma coisa.</p>
+<p> </p>
+<p>Eu acho que ele está conosco, [%username]. Você deveria ir. Vá matar aqueles shhheven[%dic:STR_DIC_M_Zombie_38_An] S e dez [%dic:STR_DIC_M_Bookie_38_An] para mim. Você é um rei, cara. Um rei real. Mate -os bem, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou matá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O que? Você está atirado ... frado ... assustado ou algo assim? Hic!</p>
+<p> </p>
+<p>Eu sei que não é muito Kinah. Considere um favor a ele. Somos Elyos ... Somos bruvvers e shisters, todos nós.</p>
+<p> </p>
+<p>Esqueça! Eu vou fazer isso myssshhelf! Vou usar este Kinah e ficar o mais bêbado possível ... e eu os matarei Myshhelf! Eu não preciso de você ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Quem ... quem é isso lá? Você parece ... Hic ... você parece familiar. Você é meu pai? Pai, você voltou para casa para mim?</p>
+<p> </p>
+<p>Oh, [%username]. Excussshhhh me ... a cerveja sheesh o que ela quer para ela. Ha ha ha.</p>
+<p> </p>
+<p>Como foi a caça dos Mortos Vivos? Você cuidou de ... Hic! ... cuidou disso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seus Mortos Vivos agora estão todos mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahhh, maravilhoso! Que deshhherves uma torrada então! Para o meu ... para o meu ... hic!</p>
+<p> </p>
+<p>Oh, Luke, você se levantando em mim! Vou sair da vila agora ... e matar todos os ... os Mortos Vivos e tudo mais. Tudo! Eu não sou sshhhcared de nada! Não, não ... eu não quero ajuda ... Soluço!</p>
+<p> </p>
+<p>(Sussurrando) obrigado, [%username]. Aqui ... Shhh ... pegue isso. Fé e ... hic! Braços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Mortos Vivos do lado de fora da vila.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Zombie_38_An]([%2]/4).</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Bookie_38_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kravis].</p></step>
+</steps>
+<p>Mate os Mortos Vivos do lado de fora da vila para que os Zephyr Daevasas possam patrulhar em paz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kravis disse que Luke pediria que ele patrulhasse os arredores da vila por fedorentos de zumbis e boggarts zombeteiros. Ele estava bêbado e assustado e pediu sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

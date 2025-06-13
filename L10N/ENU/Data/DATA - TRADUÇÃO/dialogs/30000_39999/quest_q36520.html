@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Nome: Botta Watcher, foi[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An].</p>
+<p> </p>
+<p>2. Carga: Espionagem.</p>
+<p></p>
+<p>3. Detalhes do crime: camuflado como[%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An], este operador de Balaur de capa profunda obteve e transmitiu informações confidenciais sobre a fortaleza de Ilusão Inggison e suas defesas.</p>
+<p></p>
+<p>Quem mata este vigia de Balaur e traz seu[%dic:STR_DIC_I_QUEST_36520a]como a prova será recompensada generosamente.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Damn Bally Spies!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username].</p>
+<p> </p>
+<p>Eu posso sentir o cheiro do doce aroma do sangue de Balaur sobre você, fortuneer! Eu chamaria isso de recompensa completa.</p>
+<p> </p>
+<p>Você me trouxe a falsa barbatana de [%dic:STR_DIC_M_LF4_DayQ_Cellatu_Frog_51_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a sua prova."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que em nome de tudo o que você tem, você está fazendo madrugando?</p>
+<p> </p>
+<p>Não somos pagos até que você cumpra essa recompensa! Savvy?</p>
+<p> </p>
+<p>Eu poderia facilmente emitir uma nova recompensa com seu nome no topo! Agora, pule para isso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar disso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles Balaur sangraram como lesmas, não é? Aquele branco suave que eles murmuram ... gostam de música para meus ouvidos!</p>
+<p> </p>
+<p>Você fez um bom trabalho por aí hoje, [%username]. Aqui está o seu corte da ação.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_I_QUEST_36520a]para [%dic:STR_DIC_E_36500].</p>[%collectitem]</step>
+</steps>
+<p>Os fortuários lhe enviaram uma proclamação "desejada: morta ou viva". Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os fortuários lhe enviaram uma proclamação "desejada: morta ou viva".</p>
+<p> </p>
+<p>Você matou um observador de Balaur camuflado e cortou sua barbatana falsa. Quando você trouxe a barbatana para o gerente dos fortunes, recebeu o corte da recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

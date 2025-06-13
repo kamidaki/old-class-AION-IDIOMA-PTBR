@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá ... Aposto que posso te sugerir em "Brusthonin Trivia!" Quero jogar? Claro que você faz! Tudo bem, responda a esta pergunta: Quais são os Mortos Vivos mais perigosos na fazenda Havenjark?</p>
+<p> </p>
+<p>Desistir? Claro que você faz. Prepare -se ... é o porgus. Você pode acreditar? Porgues Mortos Vivos vagando. Seria engraçado se ... bem, ok, é meio engraçado quando você passar pelo horror.</p>
+<p> </p>
+<p>Como se vê, um porgus Mortos Vivos carrega doenças horríveis. A última equipe que tentou cultivar perto do Porgus sucumbiu a doenças vil dentro de uma semana.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é horrível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É sim![%dic:STR_DIC_M_UndeadPorgussD_23_An]Os ES continuam procurando comida como fizeram na vida. Eles enfiam suas partes de porgues Mortos Vivos na sujeira e na água, contaminando e infectando tudo o que tocam.</p>
+<p> </p>
+<p>Não ousamos enviar os colonos para a fazenda Havenjark enquanto eles vivem. É aí que você entra, naturalmente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estou pedindo para você matar todo o Porgus-isso seria demais. Apenas limpe alguns deles.</p>
+<p> </p>
+<p>Vá para a fazenda Havenjark e se livrar de um[%dic:STR_DIC_M_UndeadPorgussD_23_An]ou dez.</p>
+<p> </p>
+<p>Eles deveriam ter morrido durante o cataclismo, Daeva. Termine -os.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós viemos aqui com o sonho de restaurar Brusthonin.</p>
+<p> </p>
+<p>Esse sonho é ameaçado por esses Mortos Vivos ... Porgus. Eles são demais para nossas forças, mas nossas forças são apenas humanas. É compreensível se infeliz.</p>
+<p> </p>
+<p>Você, por outro lado, admite ser superado por carne sanduíche expirada reanimada no casco? Isso é ... possivelmente mais engraçado do que os Mortos Vivos, são apenas sozinhos. Patético e triste, mas engraçado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu sonho de agricultura foi reservado quando peguei a espada para proteger meus colegas colonos. Se pudermos limpar esses Mortos Vivos, no entanto, podemos bater nossas espadas em arados.</p>
+<p> </p>
+<p>O que aconteceu com os porgues gulosos? Você se livrou deles?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já matou os porgues famintos?</p>
+<p> </p>
+<p>Eu ouvi de suas habilidades incríveis, [%username]. Eles não estavam exagerando.</p>
+<p> </p>
+<p>Muito obrigado. Deixe -me dar -lhe esse presente em nome dos vigilantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_UndeadPorgussD_23_An] es ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Dehen].</p></step>
+</steps>
+<p>Porgues glutões estão carregando doenças infecciosas. Vá para Havenjark Farm e se livre deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dehen, o líder do relógio, disse que não poderia cultivar a fazenda Havejark porque os porgues estão espalhando doenças infecciosas.</p>
+<p> </p>
+<p>Você se livrou dos porgues gulosos da fazenda Havenjark, limpando o caminho para o cultivo. Dehen agradeceu a sua parte na restauração de Brusthonin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

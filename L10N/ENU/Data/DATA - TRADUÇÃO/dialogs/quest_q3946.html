@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu não esperava que você atingisse o nível de especialista em um período tão curto de tempo.</p>
+<p> </p>
+<p>Muitos Daevas estudaram aqui, mas nenhum pode combinar com você.</p>
+<p> </p>
+<p>Não tenho mais nada para te ensinar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou honrado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou honrado por ter te ensinado.</p>
+<p> </p>
+<p>O título de especialista em armadura é concedido àqueles que atingiram o mais alto nível em armadura.</p>
+<p> </p>
+<p>Você gostaria de receber o título?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Governador [%dic:STR_DIC_N_Fasimedes] Aprova todos os títulos de especialistas, mas é uma formalidade.</p>
+<p> </p>
+<p>Eu escrevi uma carta de recomendação para você. Vá para Fasimedes, receba seu título e participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito modesto. Ou talvez você não ache que a formalidade seja importante.</p>
+<p> </p>
+<p>Se você quer ser um mestre, no entanto, é melhor receber formalmente o título de especialista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito, mas tenho muito o que lidar agora.</p>
+<p> </p>
+<p>Se você não precisa de mim pessoalmente, fale com Lavirintos ou Ettamirel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de recomendação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vulcanus elogia você muito, [%username]. Sua armadura protegerá Daevas em vários campos de batalha.</p>
+<p> </p>
+<p>Volte para [%dic:STR_DIC_N_Vulcanus] e pergunte a ele uma última vez para ensinar.</p>
+<p> </p>
+<p>Parabéns, novo especialista em armadura!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Fasimedes].</p></step>
+</steps>
+<p>Vulcanus, um mestre de armadura, recomendou que você recebesse o título de especialista. Vá para o governador Fasimedes e participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vulcanus, um mestre de armadura, disse que você alcançou o nível de especialista.</p>
+<p> </p>
+<p>Depois de receber sua carta de recomendação, você foi ao governador Fasimedes e recebeu o título de especialista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

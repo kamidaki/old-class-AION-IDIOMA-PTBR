@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia cuidar do[%dic:STR_DIC_M_LDF5A_A1_Lupyllini_62_n]Para garantir a fronteira?</p>
+<p> </p>
+<p>A pluma gritando certamente cumprirá seu nome quando vir Daeva.</p>
+<p> </p>
+<p>O barulho da pluma gritante aqui no posto de guarda é quase insuportável.</p>
+<p> </p>
+<p>A maior prioridade para defender as fronteiras é matar a pluma gritante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou toda a pluma gritando por aqui que está constantemente nos perturbando com seus gritos altos?</p>
+<p> </p>
+<p>[%username], seus gritos foram reduzidos após sua visita.</p>
+<p> </p>
+<p>Mas quem sabe se eles estão apenas tirando a soneca da tarde ...</p>
+<p> </p>
+<p>[%username], você realmente matou toda a pluma gritante?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade então que se você tiver algum problema para resolver, [%username]é a pessoa para entrar em contato.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Desde que a Pluma gritando desapareceu, você pode acelerar o relógio no poste.</p>
+<p> </p>
+<p>Desta vez, também lhe darei uma pequena recompensa. Eu quero agradecer novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_A1_Lupyllini_62_n]que estão interferindo no reforço da defesa ([%2]/11)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard03_D].</p></step>
+</steps>
+<p>Mate a pluma gritando para fortalecer as defesas do Post.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Savankel queria que você eliminasse as plumas gritando que gritam alto e o perturbam quando ele está dormindo.</p>
+<p> </p>
+<p>Depois que você fez isso e voltou, ele ficou muito grato a você por restaurar a paz e o silêncio ao ambiente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

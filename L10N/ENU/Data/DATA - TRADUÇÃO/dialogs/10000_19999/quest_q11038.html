@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você! Coisa de aparência estranha!</p>
+<p> </p>
+<p>Você é um reian?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não, eu sou um Elyos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Elyos? Nunca ouvi falar deles. Mas acho que temos que conseguir novos caras de algum lugar.</p>
+<p> </p>
+<p>Criaturas com pernas estão sempre roaming, estou certo?</p>
+<p> </p>
+<p>A propósito, você come mookies?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Errr, não. Por que você pergunta?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, bom. 'Porque se você tentasse me comer, eu teria feito algo também. Eu ia esfaquear você com um espinho. Shtunk!</p>
+<p> </p>
+<p>Não pode ter muito cuidado, já que os refugiados Shulack chegaram a essa área.</p>
+<p> </p>
+<p>Heeeey ... você disse que não nos come. Você pode ajudar talvez? Os shulacks criticados estão sempre atrás de mim e de meus filhos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses shulacks estão ficando mais gordos todos os dias e agora não consigo encontrar todos os meus filhos. Meus pobres bebês!</p>
+<p> </p>
+<p>Por favor, livre -se do[%dic:STR_DIC_M_LF4_A5_ShulackAs_51_Ae] Areia [%dic:STR_DIC_M_LF4_A5_ShulackWi_51_Ae] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para as crianças."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que é verdade o que eles dizem: os Elyos realmente são de coração frio. Bem, eles ainda não dizem isso porque nunca tinha ouvido falar de você, mas eles dirão agora!</p>
+<p> </p>
+<p>Somos como vocês, você sabe. Nós nos sentimos felizes e nos sentimos tristes. Temos filhos. Sangemos quando somos cortados.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mas seu sangue é mais saboroso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está fazendo aqui, de aparência engraçada? Você não deveria estar por aí protegendo mookies dos temidos shulacks?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É seguro para seus filhos brincarem agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ser mais forte que um balaur! Vou contar minha família inteira-um Elyos salvou o dia!</p>
+<p> </p>
+<p>Gosto de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os Shulacks que estão comendo todos os jovens mookies.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LF4_A5_ShulackAs_51_Ae]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LF4_A5_ShulackWi_51_Ae]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tuca_01].</p></step>
+</steps>
+<p>Ajude Squip. Ele reclamou que os refugiados Shulack estavam comendo seus filhos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Squip está triste porque os refugiados de Shulack estão comendo seus bebês.</p>
+<p> </p>
+<p>Você se livrou de soldados Shulack Elite para ela, tornando a área segura para o tipo mocinho-mookie. Ela disse que gosta de você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

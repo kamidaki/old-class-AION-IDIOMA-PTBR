@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava procurando por você, [%username]!</p>
+<p> </p>
+<p>Por favor, pegue isso. É uma ordem urgente da Radiant Ops.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vamos dar uma olhada ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Confidencial -</p>
+<p></p>
+<p>De: sede da Radiant Ops</p>
+<p></p>
+<p>Para: agente [%username]</p>
+<p></p>
+<p>Assunto: Confirmação da presença asmodiana em Silentera Canyon obtido. O status atual pode levar à desvantagem tática na região. Resolução rápida crítica para estabilizar a localização.</p>
+<p></p>
+<p>Ordens: eliminar pelo menos cinco asmodianas dignas de combate no[%dic:STR_DIC_E_UnderPass_Li]. Isso deve causar interrupções adequadas em suas fileiras e garantir nossa posição. Quando os alvos forem eliminados, relate ao[%dic:STR_DIC_E_35503].</p>
+<p></p>
+<p>Fé e armas!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_E_Daily_1]desacelerou nossos avanços no Balaur.</p>
+<p> </p>
+<p>Agora, é claro, estamos pedindo lutadores de grande reputação que realizem ordens especiais para nós.</p>
+<p> </p>
+<p>Tenha cuidado lá fora, amigo. O perigo se esconde atrás de cada esquina!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Você disse que não?</p>
+<p> </p>
+<p>Bem, não posso forçá -lo a ajudar, mas considerando que meus superiores divulgam essa ordem urgente ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como os outros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. De volta tão cedo?</p>
+<p> </p>
+<p>Vamos ver, quais foram seus pedidos hoje? Ah, sim ... Silentera Canyon. Fico feliz em ver que o QG estava ciente dessa situação.</p>
+<p> </p>
+<p>O que você tem para relatar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os asmodianos não são mais um problema".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho, [%username]. Os asmodianos em Silentera Canyon parecem estar fugindo. Sua missão foi um grande sucesso.</p>
+<p> </p>
+<p>Receba essa recompensa pelo seu serviço para o Ops Radiant.</p>
+<p> </p>
+<p>Para a glória do santuário!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_Daily_1]no[%dic:STR_DIC_E_UnderPass_Li]([%2]/5).</p></step>
+<step><p visible="[%3]">Quando sua missão estiver concluída, relate ao[%dic:STR_DIC_E_35503].</p></step>
+</steps>
+<p>Ordem urgente: elimine os asmodianos causando distúrbios no Silentera Canyon e relate os resultados da missão ao agente de Ops Radiant Inggison.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A sede da Radiant Ops emitiu uma ordem urgente para a eliminação de asmodianos, causando distúrbios no Silentera Canyon.</p>
+<p> </p>
+<p>Você completou a missão e relatou a Operações Radiantes por interrogatório e uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

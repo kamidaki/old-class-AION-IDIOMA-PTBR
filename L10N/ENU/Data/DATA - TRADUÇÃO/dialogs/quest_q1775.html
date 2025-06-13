@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As lendas dizem que o povo antigo de Atreia tinha muitos poderes maravilhosos, incluindo a capacidade milagrosa de conceder vida à pedra.</p>
+<p> </p>
+<p>A prova está aqui nas ruínas de Roah. É uma visão verdadeiramente surpreendente!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim, surpreendente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>E a visão mais surpreendente de todas? Essa estrutura colossal no meio da rocha Krotan-uma arma enorme e antiga!</p>
+<p> </p>
+<p>Mas nem todos de Roah estão mortos. Os Garcikhans, aquelas criaturas artificiais, ainda se movem.</p>
+<p> </p>
+<p>Mais do que se mover, eles se reproduzem e se espalham, muito tempo depois que seus criadores se voltaram para a poeira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso pode apresentar um problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, um grande problema. Se Garcikhans puder criar mais Garcikhans, em breve todas as ruínas serão invadidas.</p>
+<p> </p>
+<p>No entanto, eles não são um perigo em pequenos números, e abate suas fileiras de tempos em tempos manterá sua população sob controle.</p>
+<p> </p>
+<p>Se você ajudaria [%username], seria apenas um pequeno fardo para sua agenda lotada.</p>
+<p> </p>
+<p>As coisas serão muito mais fáceis se você me ajudar, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, isso deve ser uma grande ajuda.</p>
+<p> </p>
+<p>Você pode encontrar [%dic:STR_DIC_M_Ab1_1211_GargoyleB_32_An] Areia [%dic:STR_DIC_M_Ab1_1211_GargoyleC_33_An] está nas ruínas de Roah.</p>
+<p> </p>
+<p>Voe entre os fragmentos do templo outrora subterrâneo e afine o número de Garcikhans. Isso deve retardar sua expansão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar. Fé e armas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você pense que pode voltar para ajudar mais tarde? Mas então, talvez não haja mais tarde.</p>
+<p> </p>
+<p>É uma matemática simples. Se cada Garcikhan puder fazer, digamos, mais dois, e cada um deles deixa mais dois imóveis, então em pouco tempo ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Matemática me entedia. Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já matei minha cota de Garcikhans durante o dia. E você, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu morei minha parte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Se todos se lançam e matem Garcikhans, talvez possamos levá -los de volta.</p>
+<p> </p>
+<p>Mas você matou sua parte agora e eu ofereço minha gratidão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos Garcikhans nas ruínas de Roah.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1211_GargoyleB_32_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1211_GargoyleC_33_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Mercus].</p></step>
+</steps>
+<p>Ajude Mercus a manter a população de Garcikhan nas ruínas de Roah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mercus disse que os Garcikhans nas ruínas de Roah estavam constantemente reproduzindo. Se eles não fossem mantidos sob controle, poderiam invadir toda a área.</p>
+<p> </p>
+<p>Você matou seu quinhão de Garcikhans para ajudar, e Mercus agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

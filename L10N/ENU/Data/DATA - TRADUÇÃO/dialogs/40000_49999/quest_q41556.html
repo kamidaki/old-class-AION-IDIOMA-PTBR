@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41556</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso confiar em alguém, e pode muito bem ser você. Apenas ... não repita o que estou prestes a dizer.</p>
+<p> </p>
+<p>O moral está caindo entre os expedicionários de Tiamaranta. Precisamos fazer algo ou eles se acalmarão em deslocamento.</p>
+<p> </p>
+<p>Eu tenho uma ideia. Mas primeiro eu preciso[%dic:STR_DIC_I_quest_41556a]. Você poderia conseguir isso para mim andando[%dic:STR_DIC_M_Q41556_All] S e tirando[%dic:STR_DIC_M_LDF4b_C3_Dragon_General2_Named_60_Ae].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o banner?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu entendi! Qual é o plano?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu só preciso de um momento para rasgá -lo para empurrar. Hah!</p>
+<p> </p>
+<p>Plante esta bandeira rasgada no[%dic:STR_DIC_W_LDF4b_SZ_C3_S2].</p>
+<p> </p>
+<p>Pode não desmoralizar muito o drakan, mas deve ser um símbolo da vitória e esperar para qualquer um de nossos aliados que passasse por esse caminho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Engenhoso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O coração e as espadas de nossos aliados vacilam demais.</p>
+<p> </p>
+<p>Você deve trazer [%dic:STR_DIC_I_quest_41556a]de [%dic:STR_DIC_M_LDF4b_C3_Dragon_General2_Named_60_Ae] Antes que seja tarde demais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pode contar comigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando os Daevas verem nossa destruição simbólica, eles se animam.</p>
+<p> </p>
+<p>Pela lança de Siel, é bom reforçar nossos aliados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu plantei proeminentemente o galhardete."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso acalma minha mente e dispara meu braço de luta.</p>
+<p> </p>
+<p>Obrigado por trabalhar comigo neste projeto secreto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_Q41556_All] S ([%2]/7).</p></step>
+<step><p visible="[%3]">Matar [%dic:STR_DIC_M_LDF4b_C3_Dragon_General2_Named_60_Ae], e levar [%dic:STR_DIC_I_quest_41556a]para [%dic:STR_DIC_N_Eden].</p>[%collectitem]</step>
+<step><p visible="[%6]">Plante o banner rasgado em[%dic:STR_DIC_W_LDF4b_SZ_C3_S2] [%8].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Eden].</p></step>
+</steps>
+<p>Para o plano secreto de Eden para aumentar o moral, você deve trazer a bandeira de Kunati.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eden disse que Tiamarantanta Daevass sofria de baixo moral, embora implorasse que você não tornasse esse conhecimento público.</p>
+<p> </p>
+<p>Por seu plano secreto de recuperar o espírito de luta na região, ela o enviou para matar o guardião Drakan e assaltar o líder da equipe Kunati.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

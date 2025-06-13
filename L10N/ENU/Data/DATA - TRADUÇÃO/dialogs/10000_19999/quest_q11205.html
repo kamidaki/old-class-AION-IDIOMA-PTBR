@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você serviu bem os Elyos, [%username]. A Fortaleza Inggison está de volta em nossas mãos de novo ... e você lutou bravamente a batalha inteira.</p>
+<p> </p>
+<p>Se devemos perdê -lo novamente, podemos não ter tanta sorte ....</p>
+<p> </p>
+<p>A guerra cresce dia após dia. O Balaur e os Asmodianos se tornam mais ferozes com cada uma de nossas vitórias.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E minha lâmina fica mais nítida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos ter a fortaleza novamente, mas não podemos nos alegrar muito cedo. Devemos fortalecer suas defesas o mais rápido possível.</p>
+<p> </p>
+<p>O Balaur ainda percorre os resíduos de agricultura-eles estão planejando outro ataque. Eu posso sentir isso. Eles nos assistem ... apenas nos observe, esperando que deixemos nossa guarda por um mero segundo.</p>
+<p> </p>
+<p>Eu sei que você acabou de voltar da batalha, [%username], mas você diminuirá algumas de suas forças restantes?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que você aceitasse, [%username]. Você é um Daeva virtuoso e tenho orgulho de lutar ao seu lado.</p>
+<p> </p>
+<p>Por favor, se apresse. Vá para os desperdícios de Angief e destrua o [%dic:STR_DIC_M_11205] e [%dic:STR_DIC_M_LF4_C2_Spaller_mini_55_An] S. Isso deve diminuir o ataque de Balaur.</p>
+<p> </p>
+<p>Se você trazer de volta as garras de Dracuni e os restos dos vermes de reunião como prova, eu lhe darei uma recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços, Keios!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, eu sei que você está ferido. Eu só esperava ...</p>
+<p> </p>
+<p>Não dê a isso um pensamento de outro momento, [%username]. Você fez seu serviço por hoje. Esteja bem e descanse. Haverá outras batalhas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para outras batalhas, Keios."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito é segredo dentro da região chave de Inggison.</p>
+<p> </p>
+<p>O Balaur não simplesmente construiu a fortaleza para fins de defesa.</p>
+<p> </p>
+<p>Se você conquistar o altar da avareza ou do templo das escalas, um portão para a entrada para Silentera será aberto.</p>
+<p> </p>
+<p>Ninguém sabe que outros segredos o Balaur se escondeu. Mas se possuímos o altar da avareza, o segredo poderia ser revelado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as garras e o verme permanecem".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu? Eu lhe pedi para destruir [%dic:STR_DIC_M_11205] e [%dic:STR_DIC_M_LF4_C2_Spaller_mini_55_An] S ou podemos perder a fortaleza novamente!</p>
+<p> </p>
+<p>Ou você fez? Todo Daeva dá a sua palavra de que farão o que é solicitado a eles. É por isso que pedi para você voltar com a prova!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar sua prova!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou surpreso que você massacrou os dracunis e os vermes que reuniam cratera tão rapidamente, [%username]! Sua armadura é mal arranhada.</p>
+<p> </p>
+<p>Prometi a você uma recompensa e sou um Daeva que não dá suas promessas de ânimo leve. Obrigado e aceite este sinal de minha gratidão.</p>
+<p> </p>
+<p>Sempre podemos usar um confiável[%userclass]por aqui. Pense nisso. Fé e armas!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_11205] e [%dic:STR_DIC_M_LF4_C2_Spaller_mini_55_An] e trazer evidências para [%dic:STR_DIC_N_Keios].</p>[%collectitem]</step>
+</steps>
+<p>Como Keios solicitou, destrua os remanescentes do Balaur perto dos resíduos de anreção e colete evidências.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Keios disse que, com o altar da avareza capturado, agora precisava ser defendido.</p>
+<p> </p>
+<p>Você destruiu Dracunis e reunindo vermes perto da fortaleza e trouxe de volta evidências. Ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

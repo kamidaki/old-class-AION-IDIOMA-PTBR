@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais e mais Daevas estão chegando a Brusthonin para ajudar a recuperar a terra.</p>
+<p> </p>
+<p>Você também está aqui para ajudar, presumo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"De qualquer maneira que eu puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu tenho algo com o qual você pode ajudar. A escuridão na floresta primitiva de Magaro é perigosa, mesmo para os asmodianos.</p>
+<p> </p>
+<p>Havia lâmpadas ao longo das estradas que o levaram, mas elas ficam escuras há séculos.</p>
+<p> </p>
+<p>Se pudéssemos fazê -los brilhar intensamente mais uma vez ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ter sua ajuda. Agora, precisaremos de uma fonte de luz mais permanente.</p>
+<p> </p>
+<p>O fogo queima muito rapidamente. O que precisamos é[%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n] S.</p>
+<p> </p>
+<p>Se eu trabalhar um pouco de encantamento neles, podemos amarrá -los aos postes da lâmpada e eles brilharão por um longo tempo. Não ficarei feliz com isso, mas ... apenas bata em alguns e trazê -los para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso pode parecer uma tarefa servil, mas salvará muitas vidas. Existem muitas criaturas do pântano à espreita nas sombras.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez outra hora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses moskies estão no seu cubo ou você está feliz em me ver?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Muito engraçado. Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Moskies devem ter acordado e voado. Preste mais atenção na próxima vez!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Todo esse trabalho, desperdiçado ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me vê -los. Vou apenas dizer algumas palavras sobre eles ... Mumble-Murphle ....</p>
+<p> </p>
+<p>As lâmpadas estão ao longo da estrada antiga que leva para o oeste através do pântano ... embora possa ter mudado, então tente pesquisar no pântano se não as vir.</p>
+<p> </p>
+<p>Basta amarrar os moskies às lâmpadas e deixar -as brilhar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vi as luzes brilhando no pântano. Esses moskies devem manter as coisas bem iluminadas por um tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não é muito caminho ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, bem, até alguns oásis de iluminação são mais seguros que a escuridão total.</p>
+<p> </p>
+<p>Depois que a contaminação é liberada da floresta, podemos começar a reparar a estrada a sério.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Bater [%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n] está inconsciente e leve -os a [%dic:STR_DIC_N_Helmut].</p>[%collectitem]</step>
+<step><p visible="[%3]">Iluminar [%dic:STR_DIC_OBJ_DF2a_Light_Q4078A] [%5].</p></step>
+<step><p visible="[%6]">Iluminar [%dic:STR_DIC_OBJ_DF2a_Light_Q4078B] [%8].</p></step>
+<step><p visible="[%9]">Iluminar [%dic:STR_DIC_OBJ_DF2a_Light_Q4078C] [%11].</p></step>
+<step><p visible="[%12]">Relatório para [%dic:STR_DIC_N_Helmut].</p></step>
+</steps>
+<p>Colete Moskies de Grove e leve -os para Helmut, depois use -os para iluminar a estrada na floresta.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Élder Daeva Helmut queria iluminar a floresta escura Magaro Primeval. Você capturou Grove Moskies para ele.</p>
+<p> </p>
+<p>Ele os encantou e depois pediu que você os anexasse aos postes de luz da floresta, o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

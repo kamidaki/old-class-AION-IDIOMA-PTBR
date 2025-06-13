@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso trabalho aqui é inspirador e decepcionante. Os colonos trabalham para exaustão todos os dias, mas para quê?</p>
+<p> </p>
+<p>A essa altura, eles pensaram que estariam cultivando o desperdício poluído! Quanto tempo antes de quebrar seus espíritos?</p>
+<p> </p>
+<p>E depois há o Centurion Vinduer. Ele se preocupa com os Elyos com exclusão de todos os outros problemas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Segurança é o trabalho dele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é inquieto de Havenjark uma preocupação de segurança? Se eu fosse o Centurion, veria ameaças imediatas primeiro.</p>
+<p> </p>
+<p>O Centurion diz que não sei nada sobre combate, mas curo de todas as almas quebradas que o obelisco se recupera. Sou eu quem ouve como e onde eles caíram!</p>
+<p> </p>
+<p>Se você os parar, quantos Daevas estarão livres para outras coisas? Quantos colonos salvos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Abençoe! Essas almas merecem nossa pena, mas devem seguir em frente agora.</p>
+<p> </p>
+<p>Vá para a fazenda Havenjark ou o cemitério público. Enviar o [%dic:STR_DIC_M_UndeadDarkFiD_23_An] S, [%dic:STR_DIC_M_UndeadDarkRaD_24_An] S, [%dic:STR_DIC_M_UndeadDarkWiD_23_An] Areia [%dic:STR_DIC_M_UndeadDarkPrD_23_An] S.</p>
+<p> </p>
+<p>Mesmo com o seu poder, [%username], Eu seria muito cauteloso. Eu os vi enviar esquadrões inteiros de Daevas para o obelisco!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou limpar a terra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu tão seriamente que pensei que você concordaria. Mas está tudo bem, [%username].</p>
+<p> </p>
+<p>Esta seria uma sentença de morte para um Daeva menor. Se você diz que não pode ser feito, eu acredito em você.</p>
+<p> </p>
+<p>Uma pena, no entanto! A luta nos confere força, mas lutar em vão ... Esta terra nunca pode ser recuperada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu assisti o obelisco, apenas por precaução, [%username]. Estou tão feliz que você voltou com segurança!</p>
+<p> </p>
+<p>Você parece cansado. Você ganhou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Foi uma luta, mas sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aion te abençoe! Eu pensei assim! Eu tive muito menos a fazer hoje, e o obelisco está quase em silêncio!</p>
+<p> </p>
+<p>Se eu puder encontrar o dinheiro, você continuaria o trabalho? Pode levar meses para silenciar todos os horrores do passado deste lugar, mas se mostrarmos que funciona, Vinduer poderá finalmente notar!</p>
+<p> </p>
+<p>Obrigado, amigo, por sua fé e força!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Disperse as almas errantes de Havenjark:</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadDarkFiD_23_An] S ([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadDarkRaD_24_An] S ([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadDarkWiD_23_An] S ([%8]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadDarkPrD_23_An] S. ([%11]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Vehova].</p></step>
+</steps>
+<p>Clear Havenjark Farm e cemitério público de almas inquietas para Vehova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vehova acha que limpar os Mortos Vivos de Havenjark aceleraria o projeto de recuperação.</p>
+<p> </p>
+<p>Como o centurião dela a ignora, ela o enviou para dispersá -los.</p>
+<p> </p>
+<p>Você fez isso, reduzindo substancialmente as baixas. Animado, a Vehova se ofereceu para pagar a você sempre que quiser tentar novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

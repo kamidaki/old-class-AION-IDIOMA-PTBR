@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdoe -me, Daeva. Perdão ... mas é o seu nome [%username]? Eu não acredito que ainda nos conhecemos. Eu sou Estenor, com a Guilda de Lança do Siel.</p>
+<p> </p>
+<p>Você provavelmente não ouviu muito sobre minha Guilda, mas fomos originalmente liderados pela própria Lady Siel ... há muito, muito tempo.</p>
+<p> </p>
+<p>Apenas alguns de nós ficam em Atreia agora ... espalhando -se entre amigos e inimigos ... Elysea e Asmodae.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer por você, Estenor?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho tido esses sonhos, [%username]. Eles envolvem o Divino Hisen ... mas eu não vi ou ouvi dele desde o cataclismo.</p>
+<p> </p>
+<p>Ele aparece em meus sonhos agora ... e ele simplesmente chora. Ele não diz nada, ele apenas olha para mim e chora. Ele era um homem muito forte quando eu o conhecia. Algo deve estar errado ... e acho que tem algo a ver com esses estigmas falsos.</p>
+<p> </p>
+<p>Eu conheci outras pessoas que também sonhavam com ele, e pedi que tivessem misericórdia de sua alma matando -o ... mas ninguém o fará. Você poderia, [%username]? Você vai libertar a alma dele para o Aether? Eu não posso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que Lady Siel o abençoe por sua gentileza, Daeva. Divino Hisen era um homem muito santo ... acreditava no bem de todas as criaturas.</p>
+<p> </p>
+<p>Conhecendo -o, ele estará no cofre do templo ... mesmo na morte. A missão de sua vida era manter as relíquias malignas seladas lá. Ele sabia que eles eram perigosos demais para se manter desprotegidos.</p>
+<p> </p>
+<p>Por favor, [%username], vá para o [%dic:STR_DIC_W_IDCromede_Seal_Room] e matar [%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An]. Por favor, faça -o da maneira mais indolor e decente que puder. Ele era um bom e gentil Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou sussurrar a morte sobre ele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... eu entendo.</p>
+<p> </p>
+<p>Pedir a alguém que matasse o espírito de inocência é mais do que a maioria pode suportar.</p>
+<p> </p>
+<p>Eu entendo, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vá na luz dela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu dormi enquanto você se foi, [%username], e eu vi Divine Hisen novamente no meu sonho.</p>
+<p> </p>
+<p>Mas ele era diferente agora. Ele sorriu para mim ... suas lágrimas se foram. Ele parecia feliz ... perdoado.</p>
+<p> </p>
+<p>Se o que eu vi era verdadeiro, você deve ter concluído sua tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele morreu de maneira rápida e indolor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que ele descanse nos braços de Lady Siel agora. Que ele descanse para sempre agora ....</p>
+<p> </p>
+<p>Você tem uma vontade mais forte do que a maioria dos Daevas. Por favor, pegue esse sinal de agradecimento.</p>
+<p> </p>
+<p>Que Siel o abençoe por sua coragem, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para dentro[%dic:STR_DIC_W_IDCromede] e ajuda [%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An]Descanse em paz ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Estenor].</p></step>
+</steps>
+<p>Ajude a Divine Hisen, a guarda do cofre do templo no julgamento de Kromede, a descansar em paz eterna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Estenor disse que seu querido amigo, Divine Hisen, apareceu em seu sonho. Ele pediu que você matasse Divine Hisen para permitir que ele descansasse em paz.</p>
+<p> </p>
+<p>Você entrou no julgamento de Kromede e matou Divine Hisen. Quando você voltou, Esternor ficou agradecido e o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

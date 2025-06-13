@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kentari são bestas mal -humoradas, mas, apesar de todas as suas falhas, os mais inteligentes são excelentes cozinheiros.</p>
+<p> </p>
+<p>Surpreendente, não é? Descobri que o ingrediente secreto em sua culinária é um tempero especial. Eu tentei replicar, mas é impossível. Os Kentari mantêm os ingredientes em segredo.</p>
+<p> </p>
+<p>Como a produção do tempero é impossível, agora sucumbi a roubá -lo. Não me julgue, [%username]! Você não conhece o sabor real até que tenha provado ensopado feito com especiarias de Kentari.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você é estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não quero prejudicar o Kentari-eu não gostaria que eles parassem de fazer as especiarias, afinal. No entanto, consegui roubar um saco de especiarias quando vesti uma armadura pesada e entrei em seu acampamento.</p>
+<p> </p>
+<p>Pode parecer estúpido e imprudente ... mas funcionou muito bem!</p>
+<p> </p>
+<p>A armadura foi uma ideia fantástica, mas então começou a se desgastar depois de ser espancada, esmagada e cortada algumas centenas de vezes ao sair do acampamento. Agora eu preciso de materiais para fazer outro conjunto de armaduras. Você acha que pode ajudar, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas me traga as peles de [%dic:STR_DIC_M_ShellizardD_29_An] Areia [%dic:STR_DIC_M_merdionD_29_n] S. A pele de Balaur seria ideal ... mas as peles desses animais funcionarão. Bem, pelo menos por alguns minutos.</p>
+<p> </p>
+<p>As criaturas devem estar por aqui. Por favor, pegue as peles o mais rápido possível ... estou com pouca especiarias!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entende, [%username]! As especiarias de Kentari são a coisa mais deliciosa que já provei!</p>
+<p> </p>
+<p>Eu preciso dessas especiarias! Não consigo parar de pensar neles!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é ilusório."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade, eu deveria me concentrar mais nos meus deveres do que nos meus interesses pessoais ... mas simplesmente não consigo tirar essas especiarias de Kentari da minha cabeça!</p>
+<p> </p>
+<p>Bem, [%username]? Estou tremendo de antecipação! Você trouxe as peles para a armadura?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as peles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>A armadura se desgasta rapidamente com algumas dezenas de Kentari em mim ... preciso de mais materiais. Por favor, traga o número exato de couros preguiçosos de ksellid e blindado de ferro que solicitei.</p>
+<p> </p>
+<p>Não me mantenha esperando, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Recebendo couro) só de ver isso me faz sentir tranquilo.</p>
+<p> </p>
+<p>Eu posso usar essa quantidade de couro para vários ternos de armadura!</p>
+<p> </p>
+<p>Pegue este item como sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer as peles de [%dic:STR_DIC_M_ShellizardD_29_An] Areia [%dic:STR_DIC_M_merdionD_29_n] para [%dic:STR_DIC_N_Jorund].</p>[%collectitem]</step>
+</steps>
+<p>Jorund precisa de Ksellid e Squidler se esconde para fazer armaduras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jorund disse que precisava de armaduras para pesquisar o Kentari de perto.</p>
+<p> </p>
+<p>Ele ficou muito agradecido por você ter obtido couro Ksellid e couro de rapé.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

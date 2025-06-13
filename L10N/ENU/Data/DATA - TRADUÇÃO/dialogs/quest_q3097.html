@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3097</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não estava apenas sentado por aqui enquanto você estava me ajudando, [%username].</p>
+<p> </p>
+<p>Eu estava usando os documentos trazidos a mim por vários ajudantes para investigar uma ou duas coisas.</p>
+<p> </p>
+<p>É estranho que o Malekor esteja tão bem conectado ao gerador de energia.</p>
+<p> </p>
+<p>Você sabia que há Malekor em[%dic:STR_DIC_W_NAME_IDLF2A_Lab], Assim, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por favor, compartilhe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_IDLF2A_HolyServantVioletNmd_50_Ah]... Eu tenho feito mais pesquisas e acho que descobri seu objetivo original.</p>
+<p> </p>
+<p>Como todos os malekors, ele pode absorver e descarregar energia. Talvez Theobomos o tenha usado para controlar o fluxo de energia dos dispositivos de extração.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não é isso que faz agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Estava quebrado-por tempo, a destruição do projeto Drakanhammer ou a morte de Theobomos.</p>
+<p> </p>
+<p>Agora ele desenha toda a energia que pode em si, atacando qualquer coisa que tenta impedi -la.</p>
+<p> </p>
+<p>Se não destruímos o [%dic:STR_DIC_M_IDLF2A_HolyServantVioletNmd_50_Ah], poderia muito bem drenar toda a instalação seca. E quem sabe que dano isso faria ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não deveria estar ficando. Quanto mais poder o Silikor absorve, mais difícil será lutar.</p>
+<p> </p>
+<p>Eu odeio destruir um artefato tão valioso, mas se não o fizermos, toda a instalação poderá ser destruída.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o que deve ser feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está interessado?</p>
+<p> </p>
+<p>Você não tem nada no laboratório de Theobomos para cuidar agora?</p>
+<p> </p>
+<p>Por favor, pense novamente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já lidou com o [%dic:STR_DIC_M_IDLF2A_HolyServantVioletNmd_50_Ah]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Foi uma luta difícil ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que o Silikor ficou muito louco de poder. Literalmente.</p>
+<p> </p>
+<p>Uma pena que tenha sido destruído, mas tenho certeza de que muitos outros malekors estudam na instalação.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua o controle [%dic:STR_DIC_M_IDLF2A_HolyServantVioletNmd_50_Ah] em[%dic:STR_DIC_W_NAME_IDLF2A_Lab]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Pyrrha]no[%dic:STR_DIC_W_LF2B_SZ_B4_2].</p></step>
+</steps>
+<p>Realize a solicitação de Pyrrha e elimine o silique da memória que ficou fora de controle no laboratório Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pyrrha disse que o Silikor no laboratório Theobomos já foi um dispositivo importante que controlava a energia, mas com defeito e ficou louco.</p>
+<p> </p>
+<p>Você destruiu o silicor da memória, como Pyrrha perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

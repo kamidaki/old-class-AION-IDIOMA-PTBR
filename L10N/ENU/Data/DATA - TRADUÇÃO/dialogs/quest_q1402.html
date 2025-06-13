@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga-me, [%username]-Há muito tempo desde que você ascendeu?</p>
+<p> </p>
+<p>Não é realmente importante, mas de todos os Daevas aqui, eu sou o mais velho.</p>
+<p> </p>
+<p>Eu aprendi algumas coisas nesse tempo. Como ganhar um pouco de Kinah extra, por exemplo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sério? Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É assim. Toda postagem tem pelo menos um ou dois bens especiais que podem ser vendidos a um preço mais alto em outro lugar.</p>
+<p> </p>
+<p>Aqui, é[%dic:STR_DIC_I_QUEST_1402a]. Os couros de górgonos de granito vendem muito bem no santuário como um material de armadura ideal.</p>
+<p> </p>
+<p>Eles não queimam tão fácil, veja?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um tipo curioso, não é? O que mais você precisa saber além de Kinah, [%username]?</p>
+<p> </p>
+<p>Eu acho que você precisa de muito para mantê -lo em toda aquela armadura e armas sofisticadas.</p>
+<p> </p>
+<p>Apenas vá até a caldeira de Geroch e traga -me granito[%dic:STR_DIC_I_QUEST_1402a] S. Vou garantir que você tenha cuidado-você pode confiar em makis antigos em questões de Kinah.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Duas coisas para lembrar:</p>
+<p> </p>
+<p>Primeiro, o Granite Gorgon tem uma buzina enorme. Nunca tire os olhos e você não deve ter problemas.</p>
+<p> </p>
+<p>Segundo, o acordo é para três[%dic:STR_DIC_I_QUEST_1402a] S. Não sou tão velho que não posso contar, e três é o que é preciso para fazer uma venda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você já deve ter Kinah suficiente. Eu posso obter mais lucro se eu fizer isso sozinho de qualquer maneira.</p>
+<p> </p>
+<p>Volte depois das suas asas secas, você verá que Makis estava certo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu me saio bem sozinho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma coisa que vou te dizer de graça: nunca pense em me enganar.</p>
+<p> </p>
+<p>Eu posso dizer se é a pele de uma gorgon de granito sozinha.</p>
+<p> </p>
+<p>Deixe -me ver o que você trouxe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu tenho ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhar. Ou você é surdo ou eu perdi minha voz. Não é isso que eu preciso.</p>
+<p> </p>
+<p>Eu pago apenas por couros genuínos. Hides, plural.</p>
+<p> </p>
+<p>Volte e pegue três[%dic:STR_DIC_I_QUEST_1402a] S. Você entende?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não há necessidade de ser rude sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o cheiro de enxofre! Real Granite Gorgon Hide.</p>
+<p> </p>
+<p>E em boa forma, com isso.</p>
+<p> </p>
+<p>Aqui, pegue isso. É um preço justo de mercado. Nada mal dinheiro para um trabalho lateral rápido, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Gorgon_35_An] S e traga seus couros para [%dic:STR_DIC_N_Makis].</p>[%collectitem]</step>
+</steps>
+<p>Makis pagará a você bom Kinah se você lhe trazer alguns couros de Granite Gorgon. Eles podem ser encontrados na caldeira de Geroch.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Makis disse que ele ganha alguma renda extra vendendo a Granite Gorgon Hides.</p>
+<p> </p>
+<p>Você trouxe três peças de couro Gorgon, e ele lhe deu um preço de mercado justo para isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

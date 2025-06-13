@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar de Udas Temple, [%username]?</p>
+<p> </p>
+<p>É um antigo templo de Balaur mantido pelo dragão. Está localizado perto de Undirborg.</p>
+<p> </p>
+<p>É a nossa próxima melhor esperança de encontrar as informações de que precisamos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que precisa ser feito lá?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizem que o primeiro dragão o construiu durante a Guerra do Milênio e que abrigou um vasto tesouro de tomes e rolos.</p>
+<p> </p>
+<p>Meus estudos confirmaram essas lendas, embora ainda não saibamos se alguma das bibliotecas do templo sobreviveu.</p>
+<p> </p>
+<p>Sua tarefa seria ir para lá e ver por si mesmo se o conhecimento ainda estiver dentro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dentro[%dic:STR_DIC_E_IDTemple_DF4], existe um corredor chamado Caminho de Reflexão. Lá você encontrará o caminho da sabedoria.</p>
+<p> </p>
+<p>Eu acho que é aí que as bibliotecas antigas já estavam. Procurar [%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206] S.</p>
+<p> </p>
+<p>Quase tudo de valor provavelmente foi destruído quando a Guilda de Siel de Siel atacou o templo, mas vale a pena tentar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso pode ser outra perseguição de qooqoo selvagem, como nas torres memoriais.</p>
+<p> </p>
+<p>Ainda assim, a pesquisa oferece apenas a chance de fracasso. Não pesquisar em tudo transforma essa chance em ter certeza.</p>
+<p> </p>
+<p>Não caia em desespero, [%username]. Por favor, volte depois de reunir novamente sua coragem e resolver.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minha coragem e resolução estão bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quase invejo você. Você andou pelos corredores de um lugar sussurrado apenas em gerações de mito.</p>
+<p> </p>
+<p>Mas isso não é hora de reflexões melancólicas. Você encontrou algum documento antigo para o Dragonbound?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você procurou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei o quão difícil deve ser penetrar no templo de Udas, especialmente com o dragão guardando o local.</p>
+<p> </p>
+<p>Mas temos pouca escolha. Se isso falhar, não tenho muitos leads mais promissores.</p>
+<p> </p>
+<p>Por favor, encontre pelo menos um[%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206]. Dessa forma, posso dizer se o esforço realmente é infrutífero.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, vou tentar de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fascinante .... Oh, isso é ...? Mas ... hmmm ....</p>
+<p> </p>
+<p>Bem, isso menciona algo chamado "Stormwing" sendo selado no fundo do templo de Beshmundir. Mas é apenas essa referência. Nem mesmo uma sugestão do que é "Stormwing", ou por que ele, ela, ou foi selada.</p>
+<p> </p>
+<p>Mas espere ...! Ah! Agora, aqui está algo com o qual podemos trabalhar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre um[%dic:STR_DIC_OBJ_IDTemple_AncientDocu_Q30206] e trazê -lo para [%dic:STR_DIC_N_Herka].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o caminho da sabedoria no templo de Udas e encontre um documento antigo de dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herka sugeriu que o Templo Udas pudesse conter as informações de que você precisa.</p>
+<p> </p>
+<p>Você trouxe um documento antigo do Dragonbound do caminho da sabedoria. Herka descobriu que mencionava algo chamado "Stormwing" selado no templo de Beshmundir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

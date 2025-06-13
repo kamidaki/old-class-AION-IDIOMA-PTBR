@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se quisermos manter nossa força, temos que comer, certo? Mas nenhum dos meus companheiros aqui se preocupa muito com comida, então a tarefa cai para mim.</p>
+<p> </p>
+<p>Eu preferiria refeições quentes, mas pode ficar difícil com três de nós. Encontrar o suficiente dos ingredientes leva tanto tempo.</p>
+<p> </p>
+<p>Eu finalmente comecei a fazer sequestres. A secagem da carne faz com que a dura mais e eu posso fazê -lo a granel, para que não precise fazer isso em cada refeição.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Boa ideia. Foi bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, muito bem. Descobri que a carne de costela magra e o lombo de ettinas são as melhores para isso.</p>
+<p> </p>
+<p>Recebi algumas moedas para usar enquanto ajudava aqui. Se você reunir um pouco da carne para mim, ficarei feliz em lhe dar um deles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Você pode encontrar o que eu preciso perto da fortaleza e no pico de Vaizel--[%dic:STR_DIC_I_QUEST_1506a] e [%dic:STR_DIC_I_QUEST_1506b]de [%dic:STR_DIC_M_Ettin_32_An] Areia [%dic:STR_DIC_M_EttinBig_32_An] S.</p>
+<p> </p>
+<p>Vou polir sua moeda e aguardar seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor ser brilhante quando eu voltar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Não parece que seria tão difícil para você, [%username].</p>
+<p> </p>
+<p>Mas se você não puder, acho que você não pode.</p>
+<p> </p>
+<p>Vou encontrar outra pessoa. Apresse -se agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido.</p>
+<p> </p>
+<p>Deve ter sido fácil para você. Rápido, mostre -me o que você tem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, isso não pode ser permitido.</p>
+<p> </p>
+<p>Você não gostaria de me enganar embora? Deixe -me dizer -lhe novamente.</p>
+<p> </p>
+<p>Traga 6 pedaços de [%dic:STR_DIC_I_QUEST_1506a] e 4 pedaços de [%dic:STR_DIC_I_QUEST_1506b].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Er ... eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>6[%dic:STR_DIC_I_QUEST_1506a] e 4[%dic:STR_DIC_I_QUEST_1506b]precisamente.</p>
+<p> </p>
+<p>Agora devo transformá -los em carne seca rapidamente. Eu não sou um cozinheiro particularmente bom, mas a carne seca sempre tem um gosto bom de qualquer maneira.</p>
+<p> </p>
+<p>Aqui estão as moedas que prometi.</p>
+<p> </p>
+<p>Se você conseguir obter mais carne, traga -a para mim. Vou te dar moedas em troca sempre.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Ettin_32_An] Areia [%dic:STR_DIC_M_EttinBig_32_An] para trazer a carne para [%dic:STR_DIC_N_Ibelia].</p>[%collectitem]</step>
+</steps>
+<p>Ibelia diz que dará uma moeda para a carne de ettina. Traga as costelas magras da ettin e o lombo para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ibelia precisava de carne para fazer espasmódicos.</p>
+<p> </p>
+<p>Quando você caçou ettinas e trouxe a carne de costela magra e o lombo para ela, ela lhe deu uma moeda e disse que lhe daria mais moedas cada vez que você trazia mais carne para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

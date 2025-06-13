@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A última vez que saímos para pegar uma lenha, Benyar, do relógio, disse algo que me fez pensar.</p>
+<p> </p>
+<p>Ele perguntou se ficaríamos aqui e os protegíamos até que eles envelhecessem e morressem. Ele disse que estamos tornando -os dependentes demais de nós.</p>
+<p> </p>
+<p>Eu me senti insultado a princípio, mas o que ele disse não estava errado. Podemos ter que sair a qualquer momento se nossos superiores o encomendarem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eles fariam?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pensado sobre isso. Precisamos encontrar maneiras de levar os humanos a viver de forma mais independente. Eu os ensino como lutar sempre que tenho tempo e mando os membros do relógio para lugares menos perigosos por conta própria.</p>
+<p> </p>
+<p>Mas agora eles querem ir ao porto para verificar o estado dos navios e forragem. Eu acho que é muito perigoso, mas não quero esmagar o espírito deles.</p>
+<p> </p>
+<p>Então eu estava me perguntando, você estaria disposto a ir para lá com antecedência e tornar a área mais segura, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você, [%username]. Vá para o porto de Anair e limpe a área de [%dic:STR_DIC_M_WaterwormIceD_37_An] Areia [%dic:STR_DIC_M_WaterwormIceD_39_An] S.</p>
+<p> </p>
+<p>Sem eles, será muito mais fácil para o relógio, e eles ganharão ainda mais confiança quando voltarem com segurança.</p>
+<p> </p>
+<p>Por favor, mantenha isso para si mesmo. Os membros do relógio seriam humilhados se soubessem disso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É o nosso segredo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu vejo. Se você tem outras coisas para cuidar, eu entendo.</p>
+<p> </p>
+<p>Eu sempre posso perguntar outro Daeva, ou ir lá sozinho se tudo mais falhar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username]. Você já esteve no porto?</p>
+<p> </p>
+<p>Você fez o que eu pedi a você?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito.</p>
+<p> </p>
+<p>Vou dizer a Vonduca que agora seria um bom momento para levar uma festa ao porto.</p>
+<p> </p>
+<p>Obrigado por manter isso entre nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as lombadas de água em Anair Harbor.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_WaterwormIceD_37_An](%2/4).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_WaterwormIceD_39_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Noarynt].</p></step>
+</steps>
+<p>As minhocas precisam ser mortas para que o comitê de guarda possa permanecer no porto sem ser prejudicado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Noarynt quer apoiar o esforço dos humanos para se tornarem independentes e pediu que você secretamente tornasse a área ao redor do porto segura para os humanos explorarem e forragerem.</p>
+<p> </p>
+<p>Então você foi e erradicou as linhas d'água do lago e as lombadas aquáticas sem que os humanos soubessem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

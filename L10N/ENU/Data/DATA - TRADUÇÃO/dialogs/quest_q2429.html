@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se uma pessoa é consumida por alguma coisa, ela não tem tempo para outras coisas.</p>
+<p> </p>
+<p>Apenas olhe para mim. Na verdade, coleciono ervas, mas para ganhar uma aposta que fiz com Spedor, vou ficar aqui neste frio congelante.</p>
+<p> </p>
+<p>Mas há outros que vão muito além de mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta quem é isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso seria [%dic:STR_DIC_N_Medea], que é de fato um pesquisador de ervas. Como ela apenas lida com ervas, ela não sabia o quanto isso afetaria sua saúde.</p>
+<p> </p>
+<p>Então, eu gostaria de dar -lhe alguns couros para que ela melhore novamente.</p>
+<p> </p>
+<p>No entanto, não posso sair aqui. Nunca se sabe quando Spedor termina com seu treinamento ...</p>
+<p> </p>
+<p>Você me ajudaria, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez o couro Crasaur e a pele do Brax nas proximidades sejam bons.</p>
+<p> </p>
+<p>Caçar [plur][%dic:STR_DIC_M_BraxD_21_n] e [plur][%dic:STR_DIC_M_PhainiD_22_n] e trazer seus couros para [%dic:STR_DIC_N_Medea].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você acha que eu sou patético. Alguém que não fez nada para ajudar Asmodae na guerra!</p>
+<p> </p>
+<p>Mas você sabe o que? Eu já fui bastante famoso em Reshanta. Eles chamam isso de batalha interminável por um motivo. Eu servi Atreia por mais tempo do que você está vivo!</p>
+<p> </p>
+<p>Agora, eu mereço relaxar. O que há de errado em desfrutar de um bom jogo de acaso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nada, eu acho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu corpo inteiro está tremendo de frio. Vou ficar doente se isso continuar por muito mais tempo.</p>
+<p> </p>
+<p>O que traz um Daeva como você para um lugar como este?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Favyr me pediu para trazer seu couro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Favyr? Eu não achei que ele ainda se lembrasse de mim.</p>
+<p> </p>
+<p>Muito obrigado. Como você apenas matou os animais há pouco tempo, ainda pode sentir o quão quente eles estão. Talvez eu deva fazer um saco de dormir fora das peles.</p>
+<p> </p>
+<p>Aqui, pegue isso. É um presente para você Daeva porque você veio até aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete as peles do[plur][%dic:STR_DIC_M_BraxD_21_n] e [plur][%dic:STR_DIC_M_PhainiD_22_n] e trazê -los para [%dic:STR_DIC_N_Medea].</p>[%collectitem]</step>
+</steps>
+<p>Favyr pediu que você recebesse couro de Crasaur e peles de Brax para Medéia, já que ela sempre fica em lugares frios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Favyr lhe disse que Medéia estava em um local frio e úmido, que havia danificado sua saúde.</p>
+<p> </p>
+<p>Como ele não conseguiu tirar o olho do SPEDOR, ele não conseguiu o couro de Crasaur e o Brax Skins.</p>
+<p> </p>
+<p>Então você pegou o couros para Medéia e os levou para ela. Ela ficou muito grata e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

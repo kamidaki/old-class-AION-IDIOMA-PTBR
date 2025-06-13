@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%userclass]! Você está gostando do Festival do Millenium?</p>
+<p></p>
+<p>Podemos estar em guerra, mas isso não significa que não podemos comemorar ocasionalmente. De fato, eventos como esse são especialmente importantes para nós, Daevas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ser imortal facilita para alguém perder a perspectiva e esquecer as raízes. O Festival do Millenium ajuda a evitar isso.</p>
+<p></p>
+<p>Ao nos fazer contemplar o quão longe chegamos, isso nos faz lembrar onde estamos, e quem éramos e estamos e se tornaremos.</p>
+<p></p>
+<p>Ainda assim, o festival também deve ser divertido. Você gostaria de saber como obter prêmios especiais?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós do Festival do Millennium espalhamos itens especiais em todo o mundo para você coletar de monstros.</p>
+<p></p>
+<p>O item que tomo é[%dic:STR_DIC_I_WORLD_EVENT_COIN_AU_07]-Como no vegetal, você não sabe.</p>
+<p></p>
+<p>Tudo o que você precisa é me trazer uma quantidade suficiente, e eu posso lhe dar um prêmio. Talvez você possa até ter o suficiente agora?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Vamos ver ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Admito que alguns Daevas expressaram aversão que o festival continua enquanto há uma guerra acontecendo.</p>
+<p> </p>
+<p>Mas é por isso que semeamos os itens dessa maneira-para que você pudesse continuar lutando por Elysea enquanto participamos do festival ao mesmo tempo.</p>
+<p> </p>
+<p>Ainda assim, se você tem assuntos mais prementes a serem atendidos, suponho que isso não possa ser ajudado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, com certeza não pode."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós deliberadamente fizemos o [%dic:STR_DIC_I_WORLD_EVENT_COIN_AU_07] não oscastáveis, para que os monstros se apegassem a ele em vez de comê -lo.</p>
+<p></p>
+<p>Embora eu suponha que isso traga a questão de por que eles não jogam fora. Eu acho que talvez os organizadores façam algo com isso?</p>
+<p></p>
+<p>Ainda assim, eles são bons para uma coisa: prêmios. Isto é, se você tem o suficiente ...</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu acho que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisará de mais[%dic:STR_DIC_I_WORLD_EVENT_COIN_AU_07]do que isso, tenho medo.</p>
+<p></p>
+<p>Queremos dar a todos que celebram o Festival do Millenium uma chance dos prêmios que oferecemos. Além disso, não é divertido se for muito fácil.</p>
+<p></p>
+<p>Se você tiver outras tarefas a serem concluídas, talvez você tenha o suficiente enquanto as faz. Mas fique consciente da época; O festival não é para sempre.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nada de bom nunca é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esplêndido! Você certamente esteve ocupado, não é? Bem, isso é bom para Atreia, Elysea e você!</p>
+<p></p>
+<p>Selecione o que você quiser. Você terá dificuldade em receber esses itens assim que o Millenium Festival terminar!</p>
+<p></p>
+<p>Se você tiver mais dado doce seco, volte amanhã e eu lhe darei outro prêmio. Até lá, caminhe na luz!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_WORLD_EVENT_COIN_AU_07] e dar para [%dic:STR_DIC_N_event_hc_Draphios].</p>[%collectitem]</step>
+</steps>
+<p>Colete o doce dado seco e troque -o com draphios por prêmios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os funcionários do festival Draphios ofereceram prêmios para o doce dado seco, encontrado em monstros durante o Millenium Festival.</p>
+<p></p>
+<p>Você coletou os itens e trocou com ele por prêmios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

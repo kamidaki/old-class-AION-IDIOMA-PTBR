@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30709</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia me fazer um favor na próxima vez que for à fortaleza de Tiamat?</p>
+<p> </p>
+<p>De acordo com as informações que coletei, há um[%dic:STR_DIC_W_IDTiamat_SZ_S6]. Você poderia procurar este jardim e ver se há estátuas lá?</p>
+<p> </p>
+<p>Não conseguimos verificar se isso [%dic:STR_DIC_W_IDTiamat_SZ_S6]Realmente existia até agora.</p>
+<p> </p>
+<p>O Senhor Dragão aparentemente transformou seus inimigos em pedra para se divertir e os colocou lá. Eu gostaria de saber se isso é verdade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>Estou apenas classificando meus documentos ... é urgente?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Então é verdade?</p>
+<p> </p>
+<p>Segundo rumores, o dragão Lord supostamente transformou seus inimigos em pedra para se divertir ...</p>
+<p> </p>
+<p>(Fica completamente zangado.)</p>
+<p> </p>
+<p>Eu esperava que esses rumores não fossem verdadeiros. Isso me enche de horror que esse lugar realmente existe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_W_IDTiamat_SZ_S6] em[%dic:STR_DIC_W_IDTiamat_SZ_R1] e verifique se há estátuas lá.</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Hank_E].</p></step>
+</steps>
+<p>Procure o Jardim do Lorde do Dragão, que não pôde ser descoberto até agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hank pediu que você verificasse as informações que ele encontrou durante a pesquisa da fortaleza. Sua tarefa era encontrar o Jardim do Lorde do Dragão para ele e investigar se havia estátuas ali.</p>
+<p> </p>
+<p>Você usa a estátua da glória para chegar ao Jardim do Lorde do Dragão e viu as estátuas lá. Quando você voltou a Hank, você relatou isso a ele e isso o deixou com muita raiva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

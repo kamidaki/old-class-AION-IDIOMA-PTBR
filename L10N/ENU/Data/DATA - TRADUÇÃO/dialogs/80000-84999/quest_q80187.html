@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username].</p>
+<p> </p>
+<p>Eu gostaria de pedir uma última coisa.</p>
+<p> </p>
+<p>Você vai me ajudar e Karjannke?</p>
+<p> </p>
+<p>Vou voltar meu destino e encontrar minha mãe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Reunir os fungos destemidos no[%dic:STR_DIC_W_DF1A_1].</p>
+<p> </p>
+<p>Reúna -os para obter fragmentos de esquecimento.</p>
+<p> </p>
+<p>Se você os levar para mim ... Karjannke e eu poderemos apagar essas terríveis lembranças.</p>
+<p> </p>
+<p>Você pode nos ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pegue os fungos destemidos e traga -me 10 fragmentos de pensamentos perversos.</p>
+<p> </p>
+<p>Diz -se que eles estão morando perto do[%dic:STR_DIC_W_DF1A_1]. Eles não serão difíceis de encontrar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O destino deseja me privar de tudo?</p>
+<p> </p>
+<p>Que cruel ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você reuniu todos os fragmentos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os fragmentos de pensamentos perversos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso ainda não é suficiente.</p>
+<p> </p>
+<p>Precisamos de mais para fazer cristais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado pela sua ajuda, [%username]!</p>
+<p> </p>
+<p>Agora vou criar os cristais e usá -los para apagar as terríveis lembranças.</p>
+<p> </p>
+<p>Tanto o Karjannke quanto minhas próprias memórias desaparecerão.</p>
+<p> </p>
+<p>Eu tenho que ceder ao destino.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 10 fragmentos de pensamentos perversos e leve -os a Rikanelly.</p>[%collectitem]</step>
+</steps>
+<p>Rikanelly pede que você obtenha fragmentos de pensamentos perversos. Reúna 5 deles e transformá -los em cristais. Então leve -os para ela.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rikanelly usou os cristais de pensamentos perversos para apagar a de Karjannke e suas próprias memórias.</p>
+<p> </p>
+<p>Depois de aplicar os cristais, as memórias de Karjannke de Rikanelly e as memórias de Rikanelly de Karjannke foram apagadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, vamos começar.</p>
+<p> </p>
+<p>Seu primeiro trabalho envolve o [%dic:STR_DIC_MLA131] S. Um dos agricultores aqui, Ager, já perdeu sua fazenda para eles, e agora eles se mudaram para os campos próximos.</p>
+<p> </p>
+<p>Se não agirmos rápido, a poeta corre o risco de perder a maioria da colheita desta temporada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E sem colheita, sem comida?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente.</p>
+<p> </p>
+<p>Meus soldados mais experientes já saíram para cuidar dos problemas do lago Cliona. Então, o que eu preciso de você para fazer, [%username], é caçar alguns[%dic:STR_DIC_MLA131] para mim.</p>
+<p> </p>
+<p>Eles não devem ser muito difíceis de abaixar. Eles são mais fracos de sua tribo e acabam fugindo com a mesma frequência que a maioria dos asmodianos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrará[%dic:STR_DIC_MLA131] está por aqui, mas você precisará seguir em frente ou as colheitas serão arruinadas antes da colheita.</p>
+<p> </p>
+<p>Lembre -se, esses são seus motivos de prova, [%username]. Você falha nesses primeiros empregos, pode beijar seu mercenário.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aqui não vai nada!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você está recusando um emprego?!</p>
+<p> </p>
+<p>Bem, há muitos outros esperando para encher seus sapatos. Saia daqui-tenho um trabalho importante a fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ajuste -se."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta, já[%username]?</p>
+<p> </p>
+<p>Então, você fez o trabalho que eu te dei?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Matou -os, assim como você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Talvez o ELPAS estivesse certo em recomendar você, afinal.</p>
+<p> </p>
+<p>Aqui está o seu Kinah. Não gaste tudo de uma vez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_MLA131] S nas planícies de Akarios ([%2]/3).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_LA148].</p></step>
+</steps>
+<p>Mires quer que você pegue o [%dic:STR_DIC_MLA131] S que ameaçam fazendas em toda a Akarios Plains.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mires disse para você se livrar dos berros listrados que estavam saqueando fazendas em todas as planícies de Akarios. Você conseguiu admiravelmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

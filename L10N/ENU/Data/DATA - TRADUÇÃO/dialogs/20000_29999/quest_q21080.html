@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ohhhhhh ... o que fazer? Por que isso está acontecendo comigo ...? Estou prestes a arrancar meu cabelo!</p>
+<p> </p>
+<p>Ah, [%username]! Eu pensei que você já deixou a fortaleza.</p>
+<p> </p>
+<p>Estou feliz que você esteja aqui. Você se importaria de me ajudar com apenas uma pequena coisa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quão pouco?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Gelastra ordenou que eu trazia uma carta urgente a Faruth na bacia de Krug.</p>
+<p> </p>
+<p>Ele disse que eu deveria usar um Windstream no Dragonrest para chegar lá mais rápido, mas não estou realmente confortável com esse meio de viajar. O que quero dizer é que estou com medo de morte, basicamente.</p>
+<p> </p>
+<p>Você poderia levar a carta a Faruth para mim, [%username]? Eu realmente apreciaria isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado! Lord Marchutan realmente me enviou um verdadeiro salvador em você, [%username]!</p>
+<p> </p>
+<p>Vellun disse [%dic:STR_DIC_W_SZ_DF4_A2] e depois levar outro para o [%dic:STR_DIC_W_SZ_DF4_A6].</p>
+<p> </p>
+<p>Aqui está a carta. Pegue [%dic:STR_DIC_NPC_Vafuth]O mais rápido possível, e então me avise que funcionou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto antes que você saiba."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que foi demais pedir que você faça meu trabalho sujo, [%username].</p>
+<p> </p>
+<p>Eu já tomei muito do seu tempo.</p>
+<p> </p>
+<p>Vou lidar com isso sozinho, suponho. De alguma forma.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Enfrente seus medos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está aqui? Se você não tiver um motivo para estar aqui, deve sair imediatamente.</p>
+<p> </p>
+<p>Oh! A menos que você tenha sido à fortaleza. Você tem algo de mim, talvez?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">"Sim, uma carta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Do Centurion Gelastra?</p>
+<p> </p>
+<p>Infelizmente, não é uma boa notícia, mas eu aprecio que você me trazia para mim.</p>
+<p> </p>
+<p>Por favor, informe o Centurion que recebi a carta e prosseguirei conforme instruído.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO4">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta finalmente! Eu estava tão assustado por você, [%username].</p>
+<p> </p>
+<p>Eu tinha medo que você pudesse ter colidido com o chão ou deslizado para um esconderijo de Balaur enquanto tomava o Windstream.</p>
+<p> </p>
+<p>O que aconteceu com a missão que eu te dei? Você deu a Carta de Faruth?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Tudo correu bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou contar a Gelastra exatamente o que você disse que Faruth disse. Isso é muitas ditas?</p>
+<p> </p>
+<p>Não importa. Eu sou um arconte, mas estou com muito medo de montar o Windstream? É melhor eu estar praticando imediatamente.</p>
+<p> </p>
+<p>Aqui, pegue isso. É um sinal da minha gratidão, então nem pense em recusar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_SZ_DF4_A2] Através do[%dic:STR_DIC_DF4_SensoryArea_Q21080A].</p></step>
+<step><p visible="[%3]">Pegue o Windstream em[%dic:STR_DIC_W_SZ_DF4_A2]para [%dic:STR_DIC_W_SZ_DF4_A6].</p></step>
+<step><p visible="[%6]">Deixe a estrada de vento e aterrisse no penhasco onde [%dic:STR_DIC_NPC_Vafuth]é.</p></step>
+<step><p visible="[%9]">Entregar a carta de Gelastra para [%dic:STR_DIC_NPC_Vafuth].</p></step>
+<step><p visible="[%12]">Pegue a estrada de vento perto[%dic:STR_DIC_NPC_Vafuth] e volte para a fortaleza de Gelkmaros.</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Niamela].</p></step>
+</steps>
+<p>Niela tem medo do Windstream e pediu que você o usasse para entregar uma carta de Gelastra a Faruth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Niela tem uma ordem de Centurion Gelastra para receber uma carta urgente a Faruth na Bacia de Krug.</p>
+<p> </p>
+<p>Ela poderia entregar a letra mais rapidamente se usasse o Windstream do jeito que Gelastra disse a ela. Mas como ela não consegue encontrar a coragem de fazê -lo, ela pediu sua ajuda.</p>
+<p> </p>
+<p>Você fez o que Niamela perguntou e levou o Windstream para a bacia de Krug. Você encontrou Faruth por perto, deu -lhe a carta e voltou a Niamela para uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

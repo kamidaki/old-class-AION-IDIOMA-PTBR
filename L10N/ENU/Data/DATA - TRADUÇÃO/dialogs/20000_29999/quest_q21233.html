@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Estou morrendo de fome aqui, [%username]!</p>
+<p> </p>
+<p>Eu não fiz uma refeição saborosa há semanas, e nem mesmo financiar o destemido pode lutar com o estômago vazio. Bem, na verdade ... posso passar dias, até semanas sem comida ... mas me preocupo com os outros. É isso.</p>
+<p> </p>
+<p>Eu apenas penso em Shaenna Fair e como ela deve sofrer com o estômago vazio. Eu quero sair e matar cem, não, milhares dessas bestas balauresas, e levar a carne suculenta de volta para ela.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então por que não?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Tais tarefas servil estão abaixo dos fundos dos destemidos. É por isso que Daevas como você existe-para apoiar os verdadeiros heróis de Asmodae.</p>
+<p> </p>
+<p>Os suprimentos da fortaleza de Gelkmaros não chegaram tão rápido quanto eu gostaria, então precisamos de um plano de backup.</p>
+<p> </p>
+<p>Os Ksellids na área contribuem para um delicioso ensopado, e tenho certeza de que podemos nos alimentar por algumas semanas se mantermos parte da carne em reserva. Você trará honra ao seu nome, servindo fundos para os destemidos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Conseguimos garantir alguns recursos, mas estamos tendo problemas para obter rações alimentares suficientes.</p>
+<p> </p>
+<p>Os Daevas podem ficar sem comer por um longo tempo, mas depois se cansam rapidamente e perdem suas forças ao travar uma batalha feroz.</p>
+<p> </p>
+<p>Traga -me 20 pedaços de [%dic:STR_DIC_I_QUEST_21233]%. A carne do ksellid que habita nessa área não é tão ruim.</p>
+<p> </p>
+<p>Tem um gosto melhor do que parece e está cheio de nutrientes - boa comida para nossos soldados.</p>
+<p> </p>
+<p>Agora, então, vamos voltar nossa atenção para o altar da avareza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"... tudo o que ... eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me deixa com raiva, [%username]. Você não gostaria de financiar os destemidos quando ele estiver com raiva ....</p>
+<p> </p>
+<p>Eu sugiro que você reconsidere, a menos que deseje incorrer na minha ira!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pode vir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma pena que você não possa desfrutar de comida e bebida no altar da avareza.</p>
+<p> </p>
+<p>Veja bem, a comida que nosso campo cozinheiro prepara é nojento.</p>
+<p> </p>
+<p>Acho que vou ter que esperar até que a guerra termine antes que eu possa realmente gostar de comida e bebida novamente.</p>
+<p> </p>
+<p>Mas seria bom pelo menos ser capaz de comer carne ksellid no conteúdo do meu coração ... [%username]%, por favor me traga 20 peças de [%dic:STR_DIC_I_QUEST_21233].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim ... eu me certifiquei disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você ainda não conseguiu?</p>
+<p> </p>
+<p>Venha agora, [%username], levaria segundos para concluir uma tarefa insignificante como essa.</p>
+<p> </p>
+<p>Mas você parecia tão ansioso para ajudar um verdadeiro herói ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo ... voltarei em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, é isso que eu queria! Eu posso dizer que você tomou cuidado extra para escolher apenas as melhores peças. Eu sou um pouco gourmand, você sabe.</p>
+<p> </p>
+<p>Obrigado, [%username]. Não ficaremos fome tão cedo.</p>
+<p> </p>
+<p>Pegue esta recompensa. É muito mais do que você merece, mas financiar o destemido é um herói generoso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_21233] e trazê -los para [%dic:STR_DIC_N_Fundin].</p>[%collectitem]</step>
+</steps>
+<p>Fundin (The Fearless) solicitou sua ajuda. Obtenha carne ksellid para alimentar os soldados no altar da avareza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Fundin disse que o altar da Avarice requer comida, e nenhum suprimento chegou de Gelkmaros.</p>
+<p> </p>
+<p>Você obteve a carne de Ksellids de Madshell, Ksellids e Steelscale Ksellikis para os soldados no altar de Avarice, pelo qual Fundin ficou encantado, mas um pouco menos do que agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

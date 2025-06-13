@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos tendo problemas por causa dos Karnifs que continuam em busca de comida.</p>
+<p> </p>
+<p>[%username], por favor, mate o [%dic:STR_DIC_M_LDF5B_F4_Hyena_65_An]que estão causando problemas.</p>
+<p> </p>
+<p>Talvez seja a fome, mas ultimamente eles têm se aventurando nas lojas.</p>
+<p> </p>
+<p>Quase certamente haverá um incidente sério em breve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [%dic:STR_DIC_M_LDF5B_F4_Hyena_65_An]?</p>
+<p> </p>
+<p>No começo, eu estava me perguntando, que dano os Karnifs poderiam ter causado.</p>
+<p> </p>
+<p>Mas mudei de idéia quando vi que eles foram atrás de suprimentos de tropas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu os olhos daqueles animais famintos?</p>
+<p> </p>
+<p>Felizmente você está de volta.</p>
+<p> </p>
+<p>Eu não gostaria de encontrar um Karnif de planícies selvagens novamente.</p>
+<p> </p>
+<p>Obrigado por seus esforços, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_LDF5B_F4_Hyena_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard19_D]%.</p></step>
+</steps>
+<p>Mate os Karnifs que estão aparecendo em direção aos suprimentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rolf pediu que você matasse os Karnifs das planícies selvagens que estavam invadindo os suprimentos.</p>
+<p> </p>
+<p>Você cuidou dos Karnifs das planícies selvagens e, quando voltou, ele disse que não havia mais necessidade de se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento, [%username], o que você está fazendo com isso?</p>
+<p> </p>
+<p>Quero dizer a chama de Kromede.</p>
+<p> </p>
+<p>Seria um bom colar, mas isso seria uma pena.</p>
+<p> </p>
+<p>Se você derreter e cobrir o canhão mágico, poderá melhorar significativamente seu desempenho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta sobre o método.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Três itens são necessários para reparar o instrumento de cordas do juiz.</p>
+<p> </p>
+<p>Esse seria o fogo de Kromede, o instrumento de cordas do juiz e um Smith competente.</p>
+<p> </p>
+<p>No primeiro, agora você só precisa se apossar do instrumento de cordas do juiz!</p>
+<p> </p>
+<p>Obtenha o instrumento de cordas do juiz. Então eu vou criar uma arma para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você tenha tido sorte.</p>
+<p> </p>
+<p>Não tem nada a ver com auto-elogio, mas não há muitos em Asmodae que podem produzir essa arma. É um material sensível, um pequeno erro e é tudo para nada.</p>
+<p> </p>
+<p>De qualquer forma, obtenha o instrumento mágico de cordas do juiz.</p>
+<p> </p>
+<p>Pelo que ouvi, [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]do templo de fogo de Morheim supostamente tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que as pessoas não confiam em mim?</p>
+<p> </p>
+<p>Sou um mestre de renome de Asmodae ...</p>
+<p> </p>
+<p>Pense mais de novo, farei de você um bom instrumento de cordas em troca.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu obter o instrumento de cordas do juiz?</p>
+<p> </p>
+<p>Conceda-me o instrumento de cordas do juiz e a chama de Kromede.</p>
+<p> </p>
+<p>Farei o instrumento de cordas para você imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a chama e a arma de Kromede.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já mencionei? Só posso melhorar as armas quando a chama de Kromede e o canhão mágico estiverem presentes.</p>
+<p> </p>
+<p>Isso não é em sua mão o instrumento de cordas do juiz?</p>
+<p> </p>
+<p>Haha, se você tem na sua mão, como posso trabalhar na arma?</p>
+<p> </p>
+<p>Você talvez esteja preocupado que eu possa danificar o instrumento de cordas do juiz?</p>
+<p> </p>
+<p>Tenho muitas habilidades de renome. Eu até criei a arma da chama Daeva.</p>
+<p> </p>
+<p>Você pode confiar em mim, então me dê o instrumento de cordas do juiz e a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Limpa o suor.) Ufa, isso é um trabalho árduo.</p>
+<p> </p>
+<p>Aqui, pegue isso. Eu prometo que você vai gostar.</p>
+<p> </p>
+<p>Oh, eu não me concentrei tanto há muito tempo. Estou cansado agora.</p>
+<p> </p>
+<p>Vá com calma, preciso descansar um pouco primeiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir material necessário para reparar o instrumento de cordas do juiz e entregá -lo[%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter disse que consertaria o instrumento de cordas do juiz. Obtenha o instrumento de cordas do juiz e a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Walter, a arma do juiz pode ser aprimorada com a chama de Kromede, e ele pediu que você obtenha o instrumento de cordas do juiz.</p>
+<p> </p>
+<p>Você confiou a ele a chama de Kromede e o instrumento de cordas do juiz e, como prometido, Walter criou um instrumento de cordas de juiz mais poderoso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

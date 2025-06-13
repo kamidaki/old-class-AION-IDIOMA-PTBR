@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para onde você está indo agora, [%username]?</p>
+<p> </p>
+<p>Se você não tem negócios urgentes, gostaria de sugerir uma missão.</p>
+<p> </p>
+<p>Conheço um lugar que pode usar toda a assistência que pode obter.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh? Onde está isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma base de escoteiros no deserto de Eracus. Os guardiões são frequentemente enviados para lá, mas nunca o suficiente-eles são sempre com curta mão.</p>
+<p> </p>
+<p>Com todos os lugares que eles precisam para explorar, juntamente com o perigo adicional de todas as criaturas por aí, elas não podem se dar ao luxo de não ter mais ajuda.</p>
+<p> </p>
+<p>Você irá para a base de escoteiros lá e conversará com[%dic:STR_DIC_N_Demokritos], se você não está muito ocupado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Eles precisam de Daevas habilidosos como você e eu sei que eles apreciarão isso.</p>
+<p> </p>
+<p>Rapidamente agora-por favor, apresse-se!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que você é um negócio urgente para atender? Eu entendo.</p>
+<p> </p>
+<p>Quando você tiver algum tempo livre, lembre -se dos guardiões de lá.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Salve, Daeva! O que te traz aqui?</p>
+<p> </p>
+<p>Espero que você possa ajudar enquanto está aqui. Somos terrivelmente curtos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ando me enviou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ando cumpriu sua promessa!</p>
+<p> </p>
+<p>Ele disse que nos enviaria um Daeva o mais rápido possível. Com todas as dificuldades que ele está enfrentando por aí, sou grato por ele poder poupar a ajuda.</p>
+<p> </p>
+<p>Muito obrigado por vir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Demokritos]no deserto de Eracus.</p></step>
+</steps>
+<p>Vá para a base de escoteiros no deserto de Eracus e converse com Demokritos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ando sugeriu que você ajudasse a base de escoteiros no deserto de Eracus, se tivesse tempo.</p>
+<p> </p>
+<p>Por sua sugestão, você foi à base de escoteiros do deserto e Demokritos o recebeu, dizendo que eles eram de mão curta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

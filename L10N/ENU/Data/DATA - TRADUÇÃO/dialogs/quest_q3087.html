@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva acha que este é o mapa do tesouro?</p>
+<p> </p>
+<p>Jiufariner decifra mapas antigos para a união de escavação, então este é um pedaço de bolo, Akakak.</p>
+<p> </p>
+<p>Daeva, conte a verdade agora. Onde você conseguiu mapa?  O que você está procurando?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Meu ancestral perdeu há muito tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva acha que o jiufarinerk se apaixona por mentira simples?</p>
+<p> </p>
+<p>Somente um tolo esconderia algo lá de propósito. Lugar perigoso e perigoso.</p>
+<p> </p>
+<p>Esta pista é uma conversa louca de qualquer maneira. Puxa, apenas Daevas pode ir para este lugar, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Conceda-me a localização ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Definitivamente [%dic:STR_DIC_W_LF2B_SZ_C5_2]. Não está nem no mapa de Theobomos.</p>
+<p> </p>
+<p>Não pode chegar sem asas, então o jiufarinerk não esteve lá.</p>
+<p> </p>
+<p>Daeva, por que você não vai ao vale da gust e explora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ir [%dic:STR_DIC_W_LF2B_SZ_C5_2], Daeva deve deslizar da vila de Calydon. Vale muito perigoso, muito profundo.</p>
+<p> </p>
+<p>Se Daeva deslizar da ponte desconectada, você chegará ao vale da gust.</p>
+<p> </p>
+<p>Mas o julgamento incorreto, e Daeva colidirá com o vale. Não se esqueça do jiufariner se Daeva encontrar tesouro e ficar rico.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou esquecer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está tão ansioso para deslizar, Nyerk?</p>
+<p> </p>
+<p>Eu acho que nem todos os Daevas são corajosos.</p>
+<p> </p>
+<p>Terrível para desperdiçar essa chance. Se Jiufariner fosse uma Daeva, ela voaria para lá agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(É uma caixa resistente. Talvez seja uma caixa de tesouro de verdade.)</p>
+<p> </p>
+<p>(A caixa antiga contém apenas uma placa de madeira.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Talvez Talos possa entender isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está tão atrasado, [%userclass]?</p>
+<p> </p>
+<p>Eu estive louco esperando por você.  Eu pensei que você havia pegado o tesouro e correu.</p>
+<p> </p>
+<p>Mostre -me o que você encontrou!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu encontrei este prato ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Diz: "A paixão teimosa de encontrar isso. Esse é o tesouro".</p>
+<p> </p>
+<p>Apenas um louco deixaria esse tipo de trilha para trás.</p>
+<p> </p>
+<p>Lamento incomodá -lo, Daeva. Por favor, leve isso para seus esforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o tesouro em[%dic:STR_DIC_W_LF2B_SZ_C5_2].</p></step>
+<step><p visible="[%3]">Pegue o que você encontrou para [%dic:STR_DIC_N_Talos].</p></step>
+</steps>
+<p>O tesouro está localizado em Gust Valley. Vá lá e recupere -o.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jiufarinerk disse que o lugar onde o tesouro está escondido é o vale da gust e que apenas os Daevas podem ir para lá.</p>
+<p> </p>
+<p>Você encontrou a caixa de tesouros em Gust Valley, mas havia apenas um prato de madeira dentro de uma frase escrita nela.</p>
+<p> </p>
+<p>Quando você mostrou o prato de madeira para Talos, ele pediu desculpas por colocá -lo em muitos problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

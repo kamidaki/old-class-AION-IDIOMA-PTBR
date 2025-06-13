@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo.</p>
+<p> </p>
+<p>[%username], você adquiriu muitas habilidades?</p>
+<p> </p>
+<p>Para um artilheiro, a resistência e um alto grau de concentração são de extrema importância.</p>
+<p> </p>
+<p>Em particular, um artilheiro deve ser capaz de distinguir alvos por meio de uma mente rápida e depois atacar com força.</p>
+<p> </p>
+<p>Portanto, a técnica deve se fundir com carne e sangue até que o ponto seja atingido no qual o corpo e a técnica se tornem um.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Gostaria de lhe dar uma tarefa para ver até onde você se desenvolveu. O que você diz para isso?</p>
+<p> </p>
+<p>A tarefa é repetir o [%dic:STR_DIC_E_DP_Gu]10 vezes. É uma técnica importante para um atirador de elite, que sempre precisa ser capaz de fazer rapidamente um julgamento e ataque.</p>
+<p> </p>
+<p>Se você é um atirador capaz, dominará a tarefa facilmente. Se você ficar curto, também é uma boa oportunidade para aprender a técnica corretamente.</p>
+<p> </p>
+<p>Você quer ter arriscado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua resposta me incomoda, e isso me agrada.</p>
+<p> </p>
+<p>Mas essa tarefa não pode ser concluída sem paciência e resistência.</p>
+<p> </p>
+<p>Felizmente, tenho essa geléia para lhe dar DP, o que deve ajudá -lo muito.</p>
+<p> </p>
+<p>Se você pensa em desistir, lembre -se de que não é fácil se tornar um excelente atirador.</p>
+<p> </p>
+<p>Mas, de um certo nível, o mundo será diferente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você ainda não está pronto, não há nada que possa ser feito.</p>
+<p> </p>
+<p>Há um tempo para tudo. Melhore suas habilidades primeiro.</p>
+<p> </p>
+<p>Redir não fará de você um excelente artilheiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A julgar pelo seu rosto, você vem com boas notícias.</p>
+<p> </p>
+<p>Você tem o resultado da última tarefa para melhorar sua técnica?</p>
+<p> </p>
+<p>Agora, você conseguiu pegar [%dic:STR_DIC_E_DP_Gu] Sem problemas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>Se você treinou tanto, não há necessidade de pedir que você me mostre.</p>
+<p> </p>
+<p>Lembro -me do momento em que [%username] escolheu o caminho do artilheiro. Ele era realmente poderoso então.</p>
+<p> </p>
+<p>Quero que você continue a melhorar suas habilidades e se tornar um excelente artilheiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_DP_Gu]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LC1_Anyte_M].</p></step>
+</steps>
+<p>Cumprir a tarefa que foi confiada a você e se reporte a Anyte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Anyte queria testar sua habilidade como atirador de elite e lhe deu a tarefa de usar a energia mágica I 10 vezes.</p>
+<p> </p>
+<p>Depois de concluir a tarefa e reportar a Anyte, você foi incentivado a trabalhar para melhorar suas habilidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

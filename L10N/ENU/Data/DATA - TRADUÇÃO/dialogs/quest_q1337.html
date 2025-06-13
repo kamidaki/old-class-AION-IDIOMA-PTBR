@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ...? Pode realmente ser ...?</p>
+<p> </p>
+<p>[%username]!</p>
+<p> </p>
+<p>Mesmo aqui sabemos de suas grandes ações em Verteron! É verdade que você raramente recusa uma pessoa necessitada?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu tento ajudar onde posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia, as histórias devem ser verdadeiras!</p>
+<p> </p>
+<p>Você deve me ajudar, ou melhor, meu amigo em Theobomos. Ele me pediu para enviar -lhe alguns itens básicos daqui, mas o pacote é muito grande, então o Zephyr Express Mail disse que não pode fazê -lo.</p>
+<p> </p>
+<p>Estamos em estado de emergência no momento, com os inimigos olhando a fortaleza constantemente. Por favor, se você for para [%dic:STR_DIC_W_ZONE_Path_LF2A], você poderia levá -los para ele?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pela luz de Ariel, eu sabia que você ajudaria. Entregue para [%dic:STR_DIC_N_Crios]na tenda da União de Escavação Meniherk.</p>
+<p> </p>
+<p>Se você não consegue se lembrar do nome dele, basta pedir o caçador de recompensas. Ele é conhecido lá; Outros podem direcioná -lo para ele.</p>
+<p> </p>
+<p>Mesmo se eu fizer uma viagem rápida para [%dic:STR_DIC_W_ZONE_Path_LF2A] Através do sistema de teletransporte, essa área seria inferior, então você está realmente nos ajudando!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fico contente em ajudar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... eles disseram .... quero dizer, é apenas uma viagem rápida ....</p>
+<p> </p>
+<p>Eu entendo, no entanto-você deve estar ocupado ajudando alguém mais importante.</p>
+<p> </p>
+<p>Mas, por favor, se você tiver tempo, volte quando terminar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um rosto novo, o que você quer?</p>
+<p> </p>
+<p>Se você venha vender algumas informações, seja rápido e me diga.</p>
+<p> </p>
+<p>Não posso definir um preço justo se nem souber o tópico.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">"Seu amigo Tran estava pensando em você ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deveria ter dito isso imediatamente!</p>
+<p> </p>
+<p>Enviei essa carta há muito tempo. Comecei a pensar que ele havia sido designado em outro lugar.</p>
+<p> </p>
+<p>Você o conhece bem? Este é um favor para trazer esse pacote todo esse caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o pacote para [%dic:STR_DIC_N_Crios] em[%dic:STR_DIC_W_ZONE_Path_LF2A].</p></step>
+</steps>
+<p>Entregue um pacote de itens para Crios na barraca da União de Escavação Meniherk em Theobomos, em nome de Tran, que está ocupado demais para ser ele mesmo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tran disse que seu amigo Crios em Theobomos havia enviado uma carta pedindo suprimentos e, como ele não podia deixar seu post devido à emergência em andamento, ele pediu que você entregasse os itens a Crios.</p>
+<p> </p>
+<p>Você foi à tenda da União de Escavação Meniherk em Theobomos, como lhe foi convidado e entregou os itens em nome de Tran.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

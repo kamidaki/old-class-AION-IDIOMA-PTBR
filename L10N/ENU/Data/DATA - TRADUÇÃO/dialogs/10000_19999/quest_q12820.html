@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Mensageiro enviado por Nezekan encontrou perigo!</p>
+<p> </p>
+<p>Aparentemente, Nezekan ordenou um mensageiro com o nome de [%dic:STR_DIC_N_LDF5a_Lettering_E]Para entregar uma carta.</p>
+<p> </p>
+<p>Mas ele parece ter desaparecido no caminho aqui.</p>
+<p> </p>
+<p>[%username], você poderia ir procurar por letra e me trazer a carta que Nezekan me enviou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe, AK!</p>
+<p> </p>
+<p>Fui forçado a defensivo brevemente, mas pelo menos posso me proteger, Akakak.</p>
+<p> </p>
+<p>Pegue isso primeiro, AK! É uma carta de Nezekan, Akakak.</p>
+<p> </p>
+<p>Eu vou fugir, por favor, dê esta carta a Lanzen.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nezekan não terá dado a carta a ninguém. O mensageiro está faltando, e isso é preocupante.</p>
+<p> </p>
+<p>Além disso, a carta pode conter algo importante.</p>
+<p> </p>
+<p>Você já tentou encontrar a letra do Mensageiro?</p>
+<p> </p>
+<p>Parece melhor realizar uma pesquisa intensiva pela floresta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Você trouxe a carta!</p>
+<p> </p>
+<p>Graças ao Senhor! Meu coração quase parou. Eu estava tão preocupado que tivesse perdido uma carta importante.</p>
+<p> </p>
+<p>(Examina a carta) Mas ... o que é isso? Quem é Niel?</p>
+<p> </p>
+<p>Temos um problema aqui. Esta não é uma carta de Nezekan, foi escrita por alguém chamado Niel. Eu acho que o letteriner cometeu um erro.</p>
+<p> </p>
+<p>Obrigado por me trazer a carta, mas não sei como vou resolver a situação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procurar [%dic:STR_DIC_N_LDF5a_Lettering_E].</p></step>
+<step><p visible="[%3]">Pegar [%dic:STR_DIC_I_quest_12820a]para [%dic:STR_DIC_N_LDF5_Village_Guard05_L].</p></step>
+</steps>
+<p>Procure letra que desapareceu enquanto entregava a carta de Nezekan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você soube que a letra do Mensageiro, que deveria entregar a carta de Nezakan, desapareceu, você lançou uma campanha de pesquisa.</p>
+<p> </p>
+<p>Você encontrou letra e trouxe a carta para Lanzen. Mas não era a carta de Nezakan.</p>
+<p> </p>
+<p>Lanzen ficou confuso, mas disse que estava agradecido de qualquer maneira por você ter trazido uma carta a ele do Letteriner.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente:[%dic:STR_DIC_N_Corridor_D_PangeaQuest_E], Administrador no Templo de Honra em Pandaemonium, Jurisdição: Pangea</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>3. Comando: conquista uma fortaleza em Pangea, derrotando um[%dic:STR_DIC_E_GAb1_Boss_all].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Pangea é composto pelos quatro territórios de Belus, Aspida, Athanos e Deylon. Há uma fortaleza em cada um dos territórios.</p>
+<p> </p>
+<p>Conquistar essas fortalezas seria de importância estratégica para obter controle sobre a Pangea, então apenas tentou e testou Daevas pode tentar essa tarefa.</p>
+<p> </p>
+<p>Devemos ganhar o controle desses pontos estrategicamente importantes a qualquer custo. É por isso que eu vim até você, [%username]. Como você está se saindo com a eliminação do general guardião?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou o Guardian General e foi capaz de conquistar a fortaleza. Bom trabalho, Daeva.</p>
+<p> </p>
+<p>Agora, nós, asmodianos, estamos no controle de um ponto estrategicamente importante na Pangea, então nossa posição para as próximas batalhas deve melhorar.</p>
+<p> </p>
+<p>Uma tarefa tão difícil e perigosa - e ainda assim você chegou no final. Eu realmente não sei o que dizer!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar um[%dic:STR_DIC_E_GAb1_Boss_all]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Corridor_D_PangeaQuest_E].</p></step>
+</steps>
+<p>Derrote um dos quatro generais guardiões das fortalezas de Pangea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eldran, o administrador encarregado de Pangea, enviou ordens urgentes com a tarefa de conquistar uma fortaleza localizada em um dos quatro territórios de Pangea ao se livrar do Guardian General na área.</p>
+<p> </p>
+<p>Você seguiu as ordens dele e se livrou do general do Guardian, e depois voltou para ele. Ele ficou muito feliz com suas realizações na batalha pelas fortalezas de Pangea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

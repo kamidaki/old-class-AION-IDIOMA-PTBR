@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei! Você está trabalhando para Garuntat, certo?</p>
+<p> </p>
+<p>Ele fica pedindo para me curar! Mas estou bem! Eu não preciso de nenhuma cura.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Se você diz isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Volte ao seu mestre, [%dic:STR_DIC_N_Garuntat]! Agora mesmo!</p>
+<p> </p>
+<p>Diga a ele para nunca mais incomodar Lord Gornak!</p>
+<p> </p>
+<p>Ele nunca vai me envenenar! Vou abrir os portões do meu castelo, e trovões e raios choverão sobre todos vocês!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rasteje de volta para [%dic:STR_DIC_N_Garuntat]. Diga a ele o que eu disse.</p>
+<p> </p>
+<p>Nunca mais me incomoda!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não estava planejando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ousa falar assim comigo? Um Senhor?</p>
+<p> </p>
+<p>Oh, eu vejo ... você ainda não acredita que eu seja sã.</p>
+<p> </p>
+<p>Saia da minha vista! Não me force a abrir os portões!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estou indo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você voltou. Como está Gornak?</p>
+<p> </p>
+<p>Você fez com que ele pegasse o quartzo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, mas acho que não funcionou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Funciona gradualmente. Ele deve melhorar com o tempo.</p>
+<p> </p>
+<p>Espero que ele se recupere em breve, no entanto. Às vezes acho que posso ver esse castelo ...</p>
+<p> </p>
+<p>Obrigado por ajudá -lo. Isto é para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dizer [%dic:STR_DIC_N_Garuntat]O que Gornak disse.</p></step>
+</steps>
+<p>Diga a Garuntat o que Gornak disse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gornak pediu que você dissesse a Garuntat para não incomodá -lo novamente.</p>
+<p> </p>
+<p>Quando você se reportou ao Garuntat, ele agradeceu por ajudar Gornak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Atenção, todos os Daevas! Atenção, todos os Daevas!</p>
+<p> </p>
+<p>Venha se juntar à faixa espetacular do dia da cabeça do Daeva espetacular!</p>
+<p> </p>
+<p>Ganhe uma faixa de coração especial entregue exclusivamente no dia de Daeva!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eu precisaria fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá, Daeva! Interessado na faixa do coração, está? Não estou surpreso!</p>
+<p> </p>
+<p>Tudo o que você precisa fazer é coletar cupons espalhados por Elysea e entregá -los para a faixa da cabeça.</p>
+<p> </p>
+<p>Você gostaria de participar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! O que você está procurando são[%dic:STR_DIC_I_QUEST_80004a] S.</p>
+<p> </p>
+<p>Você os encontrará anexados a [%dic:STR_DIC_M_MutaREBig_39_An] S, [%dic:STR_DIC_M_UndeadLightFi_40_An] Areia [%dic:STR_DIC_M_Spectre_44_An] S.</p>
+<p> </p>
+<p>Reúna cupons suficientes, e esta faixa para a cabeça do coração será sua! Boa sorte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Cupons em monstros? Hmmm."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente não está interessado? Este evento está sendo executado apenas durante o dia de Daeva, você sabe!</p>
+<p> </p>
+<p>Mas então, percebo que há muito o que fazer hoje, é impossível ver todas as vistas e fazer toda a celebração que você poderia fazer!</p>
+<p> </p>
+<p>Bem, se você tiver algum tempo livre, volte!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo! Você veio participar da faixa da cabeça do Dia da Daeva espetacular?</p>
+<p> </p>
+<p>O que? Você já se inscreveu? Desculpe; Este tem sido um dia muito agitado. Eu tive tantos participantes que perco nomes e rostos!</p>
+<p> </p>
+<p>Então, o que eu deveria perguntar é: você recebeu todos os cupons necessários para a faixa do coração?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu penso que sim...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que sim-sim, você fez!</p>
+<p> </p>
+<p>Parabéns pela sua caça bem -sucedida! Tenha uma faixa de cabeça para o coração!</p>
+<p> </p>
+<p>Você deve usá -lo o mais rápido possível. Eu acho que você ficaria fofo com isso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, vou precisar de mais[%dic:STR_DIC_I_QUEST_80004a] antes de lhe dar uma faixa de cabeça.</p>
+<p> </p>
+<p>Se você precisar de um lembrete, pode obtê -los de [%dic:STR_DIC_M_MutaREBig_39_An] S, [%dic:STR_DIC_M_UndeadLightFi_40_An] Areia [%dic:STR_DIC_M_Spectre_44_An] S.</p>
+<p> </p>
+<p>Burbante! Eu sei que você pode fazer isso! Lembre -se, o sol sempre brilha nos Elyos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Caminhe na luz dela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_80004a] e leve-os para [%dic:STR_DIC_N_event_Regan].</p>[%collectitem]</step>
+</steps>
+<p>Colete cupons para uma faixa de coração e entregue -os a Regan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Regan, um membro da equipe do evento, está dando bandanas do coração em comemoração ao dia de Daeva. Você coletou cupons de monstros e os entregou para a sua faixa da cabeça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

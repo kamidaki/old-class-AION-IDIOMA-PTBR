@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi muito sobre você, [%username].</p>
+<p> </p>
+<p>Você não é um Daeva há muito tempo, mas se distinguiu muito em Elysea.</p>
+<p> </p>
+<p>Talvez você possa usar seus talentos aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ter ouvido dizer que perdemos a fortaleza da Asteria.</p>
+<p> </p>
+<p>É um golpe, mas devemos sair do nosso mergulho e retomá -lo, como antes.</p>
+<p> </p>
+<p>O principal obstáculo é a nossa falta de tropas, por isso precisamos desenvolver uma estratégia para superar isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de estratégia?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Envolve ataques surpresos. Acreditamos que será mais eficaz do que um ataque em massa.</p>
+<p> </p>
+<p>Os asmodianos têm apoio à draga, por isso não queremos dar a eles uma concentração de tropas para focar seu poder de fogo.</p>
+<p> </p>
+<p>Lançaremos vários ataques ao mesmo tempo, com pequenos esquadrões ágil. O objetivo é colocar os asmodianos em total confusão. Eu acho que você poderia desempenhar um papel fundamental nesse plano.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Temos um bom plano, mas com sua ajuda, estou ainda mais confiante em sucesso.</p>
+<p> </p>
+<p>Enquanto certamente matamos alguns asmodianos, o objetivo principal é desmoralizá -los. Se pudermos reduzir sua vontade de lutar, nossos números menores ainda podem vencer o dia.</p>
+<p> </p>
+<p>Seu papel será para derrotar [%dic:STR_DIC_M_1807_all] está lá dentro e pegue o seu[%dic:STR_DIC_I_QUEST_1807a] S. Você deve sair quando a fortaleza estiver no estado vulnerável e a batalha está em andamento. Devemos atacar tudo de uma vez.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Este plano é pura elegância em sua simplicidade!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente?</p>
+<p> </p>
+<p>Eu esperava melhor de você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desejo -lhe boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando seu retorno.</p>
+<p> </p>
+<p>Isso não poderia ter sido fácil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho o que você pediu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Concordo. Descanse um pouco antes de partir, então.</p>
+<p> </p>
+<p>Não queremos comprometer essa missão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito impressionado com o seu desempenho, [%username].</p>
+<p> </p>
+<p>Você merece essa recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_1807_all] S, pegue suas armas e volte para [%dic:STR_DIC_N_Sione].</p>[%collectitem]</step>
+</steps>
+<p>Para retomar a fortaleza de Asteria, é importante invadir a fortaleza enquanto é ocupada pelos asmodianos. Derrote a guarnição asmodiana enquanto a fortaleza está no estado vulnerável e retorne a Sione com as armas tiradas deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sione disse que está enviando pequenos ataques à medida que a falta de tropas evita que elas se esforçam. Ela pediu que você se juntasse a eles.</p>
+<p> </p>
+<p>Quando você derrotou a guarnição Asmodiana na Fortaleza de Asteria e voltou com as armas, Sione agradeceu por seus esforços e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

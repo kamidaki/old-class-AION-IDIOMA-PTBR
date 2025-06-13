@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual você acha que é a característica mais importante, quando se trata de trabalhar em grupos?</p>
+<p> </p>
+<p>Eu acho que é confiança. A menos que você confie em seus amigos e colegas, não pode depender um do outro.</p>
+<p> </p>
+<p>Posso confiar em você, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe quem é o icaronix? Esse traidor fará qualquer coisa-quero dizer qualquer coisa-perseguir seus próprios interesses.</p>
+<p> </p>
+<p>Ultimamente, ele se tornou uma ameaça maior para os Elyos. Francamente, acho que devemos nos livrar dele e terminar com isso.</p>
+<p> </p>
+<p>O que você acha? Você quer ensinar [%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]Como trabalhar com os outros, da maneira mais difícil?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você concordaria. Excelente. Prenda -se [%dic:STR_DIC_W_LF3_Lehpar].</p>
+<p> </p>
+<p>Vou orar pelo seu retorno seguro, [%username]. Espero que não seja por obelisco.</p>
+<p> </p>
+<p>Vou ter uma moeda esperando por você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou demorar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, ouvi dizer que você era bastante corajoso ... talvez tenha sido um exagero?</p>
+<p> </p>
+<p>Eu acho que não importa. Não vou incomodá -lo ainda mais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Pessoas como Icaronix têm uma aura suja sobre elas. Eu juro, isso me deixa suspeito de outras pessoas ao meu redor.</p>
+<p> </p>
+<p>Não incluindo você, é claro. Eu confio em você além de toda dúvida.</p>
+<p> </p>
+<p>Falando nisso-como eram coisas[%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O problema está resolvido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho! É bom se livrar dessa praga.</p>
+<p> </p>
+<p>Aqui, pegue isso. É a moeda que eu prometi a você. Você ganhou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Rescindir [%dic:STR_DIC_M_IDLF3CL_LehparIcaronixQ_45_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Belakade].</p></step>
+</steps>
+<p>Vá para a fortaleza do Azoturão e encerre a traição Icaronix.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial de administração Belakade pediu que você demitisse a traição Icaronix para os Elyos.</p>
+<p> </p>
+<p>Conforme solicitado, você terminou a traição Icaronix na fortaleza de Azoturan. Ela ficou muito satisfeita com o seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

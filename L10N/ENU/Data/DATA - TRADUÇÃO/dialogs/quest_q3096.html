@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3096</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minhas investigações me permitiram descobrir sobre a estrutura do laboratório Theobomos.</p>
+<p> </p>
+<p>Existem quartos associados aos elementos fogo, água, vento e terra. Cada um está conectado ao outro através de uma série de corredores.</p>
+<p> </p>
+<p>Segundo os registros, o Secret Lab era uma instalação gigante para estudar petralith.</p>
+<p> </p>
+<p>Não é incrível?</p>
+<p> </p>
+<p>Vou continuar com minhas investigações para que eu possa descobrir ainda mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso seria impressionante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estaria pronto para outra viagem dentro? Eu adoraria ter amostras dessa maquinaria de extração.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não quebraria nada?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho que pedir outro favor a você, [%username].</p>
+<p> </p>
+<p>Você vai me ajudar?</p>
+<p> </p>
+<p>Por favor, vá ao Theobomos Lab na Theobomos Fortaleza e investiga dispositivos especiais.</p>
+<p> </p>
+<p>Me pegue o [%dic:STR_DIC_I_QUEST_3096a], Assim, [%dic:STR_DIC_I_QUEST_3096b], Assim, [%dic:STR_DIC_I_QUEST_3096c] e [%dic:STR_DIC_I_QUEST_3096d].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Digite Theobomos Lab ...</p>
+<p> </p>
+<p>Se apossar do[plur][%dic:STR_DIC_I_QUEST_3096all]lá.</p>
+<p> </p>
+<p>Só não deixe cair!</p>
+<p> </p>
+<p>Tome cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ... fazer o meu melhor ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você planeja voltar em breve, me avise.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O edifício ainda está de pé, então você não deve ter quebrado nada explosivo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terá que me trazer de volta mais algumas amostras. É a única maneira de descobrir como funciona.</p>
+<p> </p>
+<p>Lembre -se, eu preciso de um[%dic:STR_DIC_I_QUEST_3096a], um[%dic:STR_DIC_I_QUEST_3096b], um[%dic:STR_DIC_I_QUEST_3096c], e um[%dic:STR_DIC_I_QUEST_3096d].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja o intrincado artesanato neles ... está muito além do que podemos fazer hoje.</p>
+<p> </p>
+<p>Se você quiser me trazer mais peças, ficaria feliz com a chance de estudá -las.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_3096all] S in[%dic:STR_DIC_W_NAME_IDLF2A_Lab] e trazê -los para [%dic:STR_DIC_N_Pyrrha].</p>[%collectitem]</step>
+</steps>
+<p>Investigue os dispositivos no laboratório Theobomos, como Pyrrha perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pyrrha perguntou que você trazia as amostras dela dos dispositivos de extração no laboratório Theobomos.</p>
+<p> </p>
+<p>Você entrou na instalação novamente, investigou os dispositivos e voltou com as amostras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

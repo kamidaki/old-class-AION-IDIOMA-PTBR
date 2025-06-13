@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta carta parece ter sido composta por Tariksha.)</p>
+<p> </p>
+<p>(Ele contém observações sobre Pashid, o comandante do exército de Beritra, que lidera a invasão do bastião da parede de aço.)</p>
+<p> </p>
+<p>(Você deve dizer [%dic:STR_DIC_N_LDF5b_Demades_E] Sobre a carta.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é, [%username]?</p>
+<p> </p>
+<p>Você descobriu algo importante?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você transmitia o conteúdo da carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, a inteligência de Beritra está de olho no pashid ...</p>
+<p> </p>
+<p>Parece que Beritra, que o mestre da intriga, nem sequer confia no seu próprio povo.</p>
+<p> </p>
+<p>Informações importantes como essa devem ser encaminhadas para nossos superiores imediatamente. Você pode fazer isso?</p>
+<p> </p>
+<p>Basta relatar [%dic:STR_DIC_N_LF5_Brontte_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz para mim, [%username]?</p>
+<p> </p>
+<p>Você recebeu informações importantes sobre a situação no bastião da parede de aço?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você transmitia o conteúdo da carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito interessante. Esta informação é muito valiosa.</p>
+<p> </p>
+<p>Já sabíamos que Beritra era um lorde de dragão muito desconfiado, mas nunca poderíamos imaginar que sua desconfiança era tão grande.</p>
+<p> </p>
+<p>Obviamente, é uma vantagem para nós se Beritra coloca suas próprias tropas uma contra a outra, fora da desconfiança. Mas tenho a sensação de que há uma intenção sinistra por trás de tudo isso.</p>
+<p> </p>
+<p>Ele não é o primeiro Senhor Dragão a usar essa tática para manter os seguidores poderosos sob controle, mas ninguém esperaria isso no meio de uma batalha.</p>
+<p> </p>
+<p>Temos que analisar isso mais. Você fez um bom trabalho e agora ganhou uma breve pausa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Transmitir o conteúdo da carta para [%dic:STR_DIC_N_LDF5b_Demades_E].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Brontte_E].</p></step>
+</steps>
+<p>Relate que Beritra está usando a inteligência para espionar seus seguidores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma carta que o leva a acreditar que Tariksha está assistindo Pashid sob ordens de Beritra.</p>
+<p> </p>
+<p>Depois que você contou a DeMades sobre isso, ele pediu que você leve Branth à velocidade.</p>
+<p> </p>
+<p>Quando você se reportou a Branth, ela expressou sua preocupação de que poderia haver mais por trás disso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

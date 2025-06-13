@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você aproveitaria os planos de operação das unidades de Beritra?</p>
+<p> </p>
+<p>As tropas do Fatebound começaram a se mover, mas quando comparadas às tropas de Beritra, são uma noz dura de quebrar. Você precisa ter informações precisas para transformar uma situação decisiva em sua vantagem.</p>
+<p> </p>
+<p>Os capitães de Beritra têm importantes planos de operação em sua posse.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LDF5B_f1_Vri2_Poison_As_SN_NmdQ_65_Ae], Assim, [%dic:STR_DIC_M_LDF5B_f2_Vri2_Weabind_Ri_SN_NmdQ_65_Ae] e [%dic:STR_DIC_M_LDF5B_f3_Vri2_Confuse_El_SN_NmdQ_65_Ae], aproveite o [%dic:STR_DIC_I_quest_23053_all]Das unidades individuais, então podemos realizar algum tipo de milagre e quebrar essa noz.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como está o plano de operação?</p>
+<p> </p>
+<p>A enorme quantidade de movimento pelo Exército de Beritra indica que eles têm um plano específico.</p>
+<p> </p>
+<p>O capitão da tropa em questão tem um plano de operação.</p>
+<p> </p>
+<p>Se matarmos os capitães da 43ª tropa de cerco, o 43º Regimento de Cavalaria e a 43ª Tropa de Suprimentos e obtiverá seus planos de operação, podemos descobrir suas intenções.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o plano de operações.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu se apossar de todos os planos de operação? Você é tão confiável, [%username].</p>
+<p> </p>
+<p>Definitivamente, poderemos descobrir quais são os pontos fracos do Exército de Beritra depois de passarmos por esses planos em detalhes.</p>
+<p> </p>
+<p>Bom trabalho, realmente!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_23053_all] e leve para [%dic:STR_DIC_N_LDF5b_Quage_E].</p>[%collectitem]</step>
+</steps>
+<p>Reúna todos os três planos de operação da 43ª unidade e leve -os para a Quaging.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os capitães de cada tropa para poder obter seus planos de operações e transmiti -los para a estraga, para que ele pudesse descobrir sobre os movimentos dos soldados de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

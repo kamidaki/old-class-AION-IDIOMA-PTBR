@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30755</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username].</p>
+<p> </p>
+<p>Agora eu penso nisso, o Banakin em[%dic:STR_DIC_W_IDTiamat_SZ_R1]Parece ser a mesma pessoa que o Banakin do evento em Dark Poeta.</p>
+<p> </p>
+<p>Se pudermos matar [%dic:STR_DIC_M_IDLF1_ShulackScientist_50_Ae] Agora, é possível que sua morte afete o evento em Dark Poeta no futuro.</p>
+<p> </p>
+<p>Eu acho que vale a pena tentar. [%username], você vai tentar?</p>
+<p> </p>
+<p>Ou Poeta Dark pode não acontecer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou[%dic:STR_DIC_M_IDTiamat_ShulackScientist_60_Ae]?</p>
+<p> </p>
+<p>Ouvi dizer que ele é um feiticeiro poderoso ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Sinto muito, mas depois de ter refogado novamente, acho que a morte de Banakin dificilmente afetaria o evento em Dark Poeta.</p>
+<p> </p>
+<p>Isso já aconteceu uma vez no futuro. Nós dois sabemos que já havia algo assim.</p>
+<p> </p>
+<p>Se o futuro pudesse ser alterado matando Banakin. Não devemos saber esse fato, certo?</p>
+<p> </p>
+<p>Parece paradoxal, mas ninguém compreende totalmente os conceitos de tempo, dimensão e espaço.</p>
+<p> </p>
+<p>Mas seu serviço, sem dúvida, será de grande ajuda para a invasão, pois um poderoso feiticeiro foi morto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDTiamat_SZ_R1] e matar [%dic:STR_DIC_M_IDTiamat_ShulackScientist_60_Ae]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Garthenion].</p></step>
+</steps>
+<p>O evento em Dark Poeta pode ser evitável. Vá para a fortaleza de Tiamat e mate Banakin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gartenion disse que Banakin, na fortaleza de Tiamat, em breve surgiria o evento em Dark Poeta e que você poderia impedir o evento se matasse Banakin agora.</p>
+<p> </p>
+<p>Quando você voltou depois de matar Banakin, ele mudou sua música e disse que a morte de Banakin teria muito pouco impacto no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

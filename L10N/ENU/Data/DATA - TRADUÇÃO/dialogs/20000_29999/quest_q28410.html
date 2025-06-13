@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Desde que estive aqui, tentamos de tudo para acompanhar aqueles prisioneiros de Balaur. Mas eles continuam desaparecendo sem evidências de uma fuga.</p>
+<p> </p>
+<p>Até disfarçei nossos Daevas como balaur e os trancei. Mas nossos chamarizes se sentam em suas células, enquanto os monstros reais ficam livres.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez eles saibam algo que não sabemos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não é o primeiro a sugerir isso. Um Tribesman Reian falou de uma passagem secreta dentro de nossa fortaleza. É isso lá.</p>
+<p> </p>
+<p>Claro, eu tenho que limpar a investigação com Relyt antes de ir, ou ele me acusará de tirar férias.</p>
+<p> </p>
+<p>Mas se você começar a analisar as coisas com antecedência, ele não pode me culpar, pode?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Boa sorte rastreando os prisioneiros.</p>
+<p> </p>
+<p>Fale com o Reian, [%dic:STR_DIC_N_Nepion]. Ele disse que esperaria por mim do outro lado.</p>
+<p> </p>
+<p>Não tenho certeza de quão perigoso será o lugar, então você pode querer levar alguns aliados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, desconsidere tudo o que eu disse, especialmente o pouco sobre Relyt.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sobre quem agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ser um daqueles "asmodianos". Estou satisfeito por seu povo estar se interessando pela esoterrace.</p>
+<p> </p>
+<p>Este é um lugar famoso, mas por uma razão bastante trágica: produz mais Drana do que qualquer outro território em Tiamaranta.</p>
+<p> </p>
+<p>Por favor, dê uma olhada nesta imagem de mármore .... ela contém a pouca vigilância que eu consegui obter.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Tenho que amar os mármores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Consegui coletar essas imagens antes que o Balaur me expulsasse. Você deve passar a imagem em mármore para seus superiores ao retornar a Gelkmaros.</p>
+<p> </p>
+<p>Se você subir um pouco a estrada, verá alguns dos meus colegas. Eles vão abrir o Windstream para você.</p>
+<p> </p>
+<p>Desejo -lhe boa sorte contra os horrores do esoterrace. Deixe Siel guiá -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Espero que ela o faça."</act>
+</selects>
+<cutscene id="473"></cutscene>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conheceu Nepion agora, não é? Normalmente não gosto de Reians, mas há algo nele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele disse para dar isso a você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo relatar isso imediatamente. Bom trabalho coletando inteligência.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_IDf4re_Drana_Da] e encontrar [%dic:STR_DIC_N_Nepion].</p></step>
+<step><p visible="[%3]">Escoteiro o interior do[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_02_1].</p></step>
+<step><p visible="[%6]">Entregar o mármore da imagem de Nepion para [%dic:STR_DIC_N_Luigir].</p></step>
+</steps>
+<p>Uma brecha dimensional é descoberta graças à Nepion, uma tribo Reian da esoterrace. Digite a brecha e conheça a Nepion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O inspetor de expedição de Pandaemonium disse que não foram encontrados pistas sobre os prisioneiros que desaparecem.</p>
+<p> </p>
+<p>Mas, graças à ajuda de um tribos de esoterrace Reian chamado Nepion, foi encontrada uma brecha dimensional oculta.</p>
+<p> </p>
+<p>Ela pediu que você se encontrasse com Nepion e investigasse a esoterrace além da passagem.</p>
+<p> </p>
+<p>Você conheceu Nepion e entregou a imagem em mármore que ele lhe deu a Luigir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

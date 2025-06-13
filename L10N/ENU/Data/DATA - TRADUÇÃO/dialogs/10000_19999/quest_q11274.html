@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, [%username]. Fique e converse comigo um pouco.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você trabalha muito, Veille."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você está certo. É por isso que quero lhe dar parte da minha autoridade e poder.</p>
+<p> </p>
+<p>Você está interessado em lutar para recuperar as fortalezas inimigas? E ganhando um pouco de prestígio?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado pela sua constância. Sei que não falamos com frequência, mas considero você um amigo íntimo.</p>
+<p> </p>
+<p>E como seu amigo, devo lhe dizer: quando você vai lá para capturar uma fortaleza, coletar [%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A] S.</p>
+<p> </p>
+<p>Nome bobo, eu sei, mas Kaisinel insistiu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não poderia levar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, é claro. Você deve estar ocupado, tão ocupado quanto eu.</p>
+<p> </p>
+<p>Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tente descansar um pouco, amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo ao meu cantinho do mundo, mais uma vez.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe seis favores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não vejo seus favores, [%username], mas eu tenho fé em você.</p>
+<p> </p>
+<p>Agora que você entendeu a maneira de adquiri -los, você vai longe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, V. Vejo você em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seis? Estou impressionado, [%username]. Eu sei quanto trabalho é para ganhar cada um deles.</p>
+<p> </p>
+<p>Eu não poderia ter feito melhor eu mesmo.</p>
+<p> </p>
+<p>Por favor, pegue este símbolo prático do meu-e o Senhor Kaisinel's-Estestee. Para a glória de Elysea!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_JUNK_KAISINEL_REWARD_01A] e trazê -los para [%dic:STR_DIC_N_Heranas].</p>[%collectitem]</step>
+</steps>
+<p>Destrua Mastarius, agente do Marchutan, e traga o símbolo do seu triunfo para Veille.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O agente de Lord Kaisinel, Veille, disse que daria seu escudo a um Daeva que lutou para capturar fortalezas inimigas.</p>
+<p> </p>
+<p>Quando você trouxe os favores de seis Veille, ela lhe deu o escudo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

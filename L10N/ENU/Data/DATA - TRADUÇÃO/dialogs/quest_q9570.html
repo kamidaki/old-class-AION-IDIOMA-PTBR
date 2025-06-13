@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Adicione o SimpleTalk, Função SimpleuseItem</p>
+<p> </p>
+<p>Você pode adicionar vários NPCs em apenas uma etapa.</p>
+<p> </p>
+<p>Independentemente do número de etapas, até 30 NPCs podem ser inseridos.</p>
+<p> </p>
+<p>Dentro de uma única sequência da conversa, não é importante.</p>
+<p> </p>
+<p>Colete itens, o movimento de saída se move o mesmo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Seguindo a ordem dos NPCs, que são inseridos na planilha do Excel, independentemente da etapa, uma página select_talknpc01, 02 ... pode ser aberta.</p>
+<p> </p>
+<p>No momento, apenas uma página pode ser aberta. Atualmente, uma solução está sendo considerada.</p>
+<p> </p>
+<p>Onde a Haction foi realizada até agora usando o setPro, use agora Haction_SetPro_Next.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os NPCs do jardineiro são usados ​​como um exemplo difícil.</p>
+<p> </p>
+<p>Town_shugo_gardener_from 1001 a 1025</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você recusa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc01">
+<contents cdata="true">
+<html>
+<body>
+<p>1º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc02">
+<contents cdata="true">
+<html>
+<body>
+<p>2º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc03">
+<contents cdata="true">
+<html>
+<body>
+<p>3º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc04">
+<contents cdata="true">
+<html>
+<body>
+<p>4º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc05">
+<contents cdata="true">
+<html>
+<body>
+<p>5º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc06">
+<contents cdata="true">
+<html>
+<body>
+<p>6º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc07">
+<contents cdata="true">
+<html>
+<body>
+<p>7º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc08">
+<contents cdata="true">
+<html>
+<body>
+<p>8º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_talknpc09">
+<contents cdata="true">
+<html>
+<body>
+<p>9º NPC</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO_NEXT">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>SELECT5 Após a conversa para unificar com o formulário de conversa original.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, espero que não haja bugs.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step>
+<p visible="[%0]">Primeiro grupo</p>
+<p visible="[%0]">Fale com o jardineiro da vila das clarabóias[%2].</p>
+<p visible="[%0]">Fale com o jardineiro do Gold Valley Village [%5].</p>
+<p visible="[%0]">Fale com o jardineiro da vila do Firefly[%8].</p>
+</step>
+<step>
+<p visible="[%9]">Segundo grupo</p>
+<p visible="[%9]">Fale com o jardineiro do Sea Breeze Village [%11].</p>
+<p visible="[%9]">Fale com o jardineiro da vila da costa [%14].</p>
+<p visible="[%9]">Fale com o jardineiro Thornbush Village [%17].</p>
+</step>
+<step>
+<p visible="[%18]">Terceiro grupo</p>
+<p visible="[%18]">Fale com o jardineiro da estátua da vila [%20].</p>
+<p visible="[%18]">Fale com o brilhante jardineiro da Isle Village [%23].</p>
+<p visible="[%18]">Fale com o jardineiro da Palm Tree Village [%26].</p>
+</step>
+<step><p visible="[%27]">Fale com Rebecca.</p></step>
+</steps>
+<p>Experimente a nova função SimpleTalk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, organize -o para que os jogadores falem com os vários NPCs, independentemente da ordem.</p>
+<p> </p>
+<p>O próximo inverno provavelmente será frio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

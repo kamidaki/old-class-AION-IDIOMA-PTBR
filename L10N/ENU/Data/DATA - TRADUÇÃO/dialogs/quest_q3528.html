@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdoe -me, Daeva. Eu ouvi que você logo partirá para Theobomos?</p>
+<p> </p>
+<p>Eu esperava pedir um favor a você. Eu preciso entregar algo para alguém ali.</p>
+<p> </p>
+<p>É um item pequeno, por isso não deve sobrecarregá -lo. Você se importaria terrivelmente?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas esse crachá de prata, não é grande, veja? Tivemos alguns fortunes aqui antes de você chegar ... e um se interessou por mim.</p>
+<p> </p>
+<p>Ele era muito doce, mas me deu esse distintivo como algum tipo de sinal de seu amor por mim. Surpreendente, certo? Um fortuneer? Eu pensei que eram todos caçadores de tesouros sem coração.</p>
+<p> </p>
+<p>De qualquer forma, não posso aceitar o Ficha dele ou seu amor. Ele é um vagabundo, sabe? Mas eu mal posso ir até Theobomos para dizer isso a ele. E estou um pouco assustado com a forma como ele pode reagir. Você poderia ... se você está indo para lá?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, pegue. O nome dele é[%dic:STR_DIC_N_Esclados].</p>
+<p> </p>
+<p>Por favor, diga a ele o que eu acabei de te dizer. Diga a ele que aprecio o pensamento, mas acho que não devemos ser. Diga a ele docemente, no entanto. Você sabe como esses fortuários levam tudo a sério ....</p>
+<p> </p>
+<p>Ele disse que estava indo para a vila do Observatório de Campo Aetico Theobomos, então você pode querer começar por aí.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é uma senhora tão honesta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava enganado, [%username]? Eu tinha certeza de que ouvi você dizer que estava saindo para Theobomos.</p>
+<p> </p>
+<p>Você mudou de idéia ou tem medo do que esse fortuneer fará com você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um pouco de ambos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Daeva! O que te traz até Theobomos?</p>
+<p> </p>
+<p>Seja a cerveja ou as atividades recreativas? Ha ha ha. Este lugar é um lar longe de casa para nós fortunes.</p>
+<p> </p>
+<p>Você tem alguma notícia de outras margens para compartilhar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui ... AIFEMIS não está interessado em você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei! Onde você o encontrou? Eu tenho procurado todo esse crachá. Eu pensei ter perdido na vila de Jeiaparan.</p>
+<p> </p>
+<p>Eu dei ... eu dei a alguma mulher? Qual era o nome dela? AIFE? AIFO? Doce Ariel, não tenho lembrança disso!</p>
+<p> </p>
+<p>Acho que bati na taberna com muita força naquela noite ... Devo ter sido levado por ela. Eu nunca daria esse crachá ... é para fortuários, o melhor e o mais brilhante! Bem, obrigado. Eu devo a você um.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o crachá de prata para [%dic:STR_DIC_N_Esclados].</p></step>
+</steps>
+<p>De acordo com Aifemis, Esclades, o fortuneer, partiu para Theobomos depois de dar a ela um crachá de prata como um sinal de seu amor. Devolva o crachá e diga a ele que seus sentimentos não podem ser aceitos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aifemis disse que o fortuneer Esclados deu a ela um crachá de prata como um sinal quando ele confessou seu amor, mas ela não devolve seus sentimentos e pediu que você devolvesse o crachá em Theobomos.</p>
+<p> </p>
+<p>Quando você entregou o crachá de prata a Esccados, ele agradeceu porque pensou que o havia perdido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

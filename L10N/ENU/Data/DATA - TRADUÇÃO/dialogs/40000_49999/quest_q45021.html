@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Honorável diretor de campo:</p>
+<p> </p>
+<p>Até recentemente, o campo ético era estável em Gelkmaros-notícias boas, enquanto nos preparamos para elevar um campo eetérico sobre toda a Balaurea.</p>
+<p> </p>
+<p>No entanto, o movimento atmosférico de Gelkmaros está mostrando sinais de aumento da intensidade e devemos monitorar a situação mais de perto.</p>
+<p> </p>
+<p>Imediatamente prossiga para Gelkmaros e recupere o registro do monitor de um[%dic:STR_DIC_OBJ_FOBJ_Q45021], então traga -o para um[%dic:STR_DIC_E_45021].</p>
+<p> </p>
+<p>Nada deve ficar no seu caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E nada vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Há muito mais para proteger asmodae do que monitorar o campo afastador, mas temos que começar em algum lugar. Gostaria de saber se é possível criar um campo etérico sobre toda a balaurea. A menos que possamos garantir o éter suficiente, pode ser inútil.</p>
+<p> </p>
+<p>Você traz notícias?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu acho que isso pode ser de interesse para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você não tem nada para me entregar, diretor.</p>
+<p> </p>
+<p>Os guardas de campo têm um grande interesse na situação em Balaurea, [%username]. Se você está aqui, significa que recebeu uma carta para esse efeito, solicitando a recuperação de certos registros do monitor? Não?</p>
+<p> </p>
+<p>Talvez eu esteja enganado ... talvez eu esteja esperando por outro diretor de campo mais e mais honrado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minhas desculpas. Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>São os dados exatos que sua carta solicitou? Deixe -me ver o que diz. A precisão é essencial ....</p>
+<p> </p>
+<p>Bem, acho que não é hora. Ainda não parece haver nenhuma mudança importante em Gelkmaros. Você pode ir, [%username]. O restante desta tarefa é minha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar o registro de um[%dic:STR_DIC_OBJ_FOBJ_Q45021] e trazê -lo para o [%dic:STR_DIC_E_45021].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com uma carta dos guardas de campo, um monitor de campo éetico em Gelkmaros está sendo usado para monitorar e registrar o status do campo etérico.</p>
+<p> </p>
+<p>Você localizou o dispositivo e trouxe o registro do monitor a um agente de campo de Gelkmaros, que disse que a situação permaneceu inalterada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

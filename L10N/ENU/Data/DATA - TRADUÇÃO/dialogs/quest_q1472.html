@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Para vencer a guerra, usaremos todas as armas disponíveis para nós.</p>
+<p> </p>
+<p>Temos que fazer os aliados que pudermos, não importa se gostamos ou não deles. Qualquer coisa para fazer o trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">"Aliados como ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Shugos, por exemplo. Os Shugos têm vários grupos e tribos. Às vezes, podemos tocar um no outro.</p>
+<p> </p>
+<p>Os comerciantes da nuvem negra são particularmente interessantes. Eles parecem saber muitas coisas além de Elysea.  O que me leva a Ganimerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ganimerk?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Shugo_DF2_14]é um shugo que contratamos como espião entre os comerciantes da nuvem negra, mas recentemente perdemos o contato com ele.</p>
+<p> </p>
+<p>Sua última mensagem indicou que ele estava indo para a região de Mau em Asmodae para coletar informações. Mas, dado o que sabemos sobre ele, estamos um pouco preocupados.</p>
+<p> </p>
+<p>Precisamos encontrá -lo o mais rápido possível. Para nossa proteção, não para a dele. Se os asmodianos o comprassem, ele nos trairia por dinheiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Vá para [%dic:STR_DIC_W_DF2_SUB_E4] em Morheim agora e encontre [%dic:STR_DIC_N_Shugo_DF2_14].</p>
+<p> </p>
+<p>Esteja ciente, os Mau são hostis aos asmodianos, mas isso não significa que eles são amigáveis ​​conosco.</p>
+<p> </p>
+<p>Use o [%dic:STR_DIC_E_directportal]perto da sede da Kaidan para chegar a Asmodae.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como é o meu dever."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Bem, se fosse uma missão direta, qualquer Daeva poderia fazê -lo, mas não forçarei ninguém a assumir algo tão arriscado ....</p>
+<p> </p>
+<p>Vou procurar outro Daeva que esteja pronto para lidar com asmodae.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra hora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é de Elysea, Nyerk. Para me resgatar?</p>
+<p> </p>
+<p>Obrigado, Daeva. De agora em diante, nunca mais vou chegar perto de um Mau.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eles são realmente ferozes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me incomode a menos que você tenha boas notícias. Gerenciar nossos infiltradores de Asmodae é um trabalho complicado.</p>
+<p> </p>
+<p>Os contatos na mesma região enviam informações completamente contraditórias, e tenho que me perguntar quem está tocando quem.</p>
+<p> </p>
+<p>Enfim, você encontrou[%dic:STR_DIC_N_Shugo_DF2_14], e ele estava vivo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele está vivo e de volta ao seu trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia! Limpa de tempo completa sendo capturada pelo Mau.</p>
+<p> </p>
+<p>Não era um lugar útil para descobrir informações importantes, então por que ele estava lá em primeiro lugar? Provavelmente ele estava mentindo sobre as informações, apenas procurando lucrar.</p>
+<p> </p>
+<p>Bom trabalho. Você tem sido uma grande ajuda para nós, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_Shugo_DF2_14] em Morheim em Asmodae.</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Valerius].</p></step>
+</steps>
+<p>Procure Ganimerk dos comerciantes da Black Cloud, que está trabalhando como um espião pago em Asmodae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valerius havia feito um infiltrador de Ganimerk, um shugo dos comerciantes da nuvem negra.</p>
+<p> </p>
+<p>Ele havia perdido contato com Ganimerk, que estava espionando o Mau em Asmodae. Você foi a Asmodae, encontrou Ganimerk e o resgatou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

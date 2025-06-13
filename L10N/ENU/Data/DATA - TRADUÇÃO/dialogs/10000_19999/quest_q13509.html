@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você não quer tentar um grande empreendimento e ajudar os Elyos?</p>
+<p> </p>
+<p>Completo[%dic:STR_DIC_I_quest_13510a] e [%dic:STR_DIC_I_quest_fortress_04] e traga -os para mim.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_quest_13510a]Pode ser concluído com um relatório que você recebe depois de ocupar todas as bases no norte de Katalam e no Sul Katalam.</p>
+<p> </p>
+<p>Você pode obter os relatórios de Pepe e Portis, que cumprem uma função -chave em nossa Patrulha Katalam.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_quest_fortress_04]Pode ser obtido se você participar de todas as batalhas da fortaleza de Katalam e demonstrar um desempenho brilhante.</p>
+<p> </p>
+<p>Eu confio que você não esqueceu por que veio para Katalam.</p>
+<p> </p>
+<p>Chegamos a Katalam para ganhar esta terra para os Elyos.</p>
+<p> </p>
+<p>A batalha continuará até esse dia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu concluir o diário de invasão de Katalam e a pérola do caos?</p>
+<p> </p>
+<p>Não há razão para ter vergonha se você não teve sucesso.</p>
+<p> </p>
+<p>Afinal, essa é uma tarefa difícil.</p>
+<p> </p>
+<p>[%username], seu talento para desafios é altamente valorizado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de invasão de Katalam e a pérola do caos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Surpreendente, você completou o diário de invasão de Katalam e a pérola do caos.</p>
+<p> </p>
+<p>Os Elyos têm o prazer de ter alguém como você ao seu lado.</p>
+<p> </p>
+<p>Sua grande ação agora será recompensada.</p>
+<p> </p>
+<p>Este diário, pelo qual você derramou sangue e suor, será mantido completamente seguro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_I_quest_13510a] e [%dic:STR_DIC_I_quest_fortress_04]para [%dic:STR_DIC_LDF5a_Tiryns_Commander].</p>[%collectitem]</step>
+</steps>
+<p>Tente completar o diário de invasão de Katalam e a pérola do caos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tirins perguntou se você queria participar da conclusão do diário de invasão de Katalam, bem como da pérola do caos.</p>
+<p> </p>
+<p>Depois de completar o diário de invasão de Katalam e o caos Pearl e os deu aos Tirins, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

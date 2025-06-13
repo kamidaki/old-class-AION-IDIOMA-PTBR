@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... salvou nossas vidas, [%username]. No entanto, à medida que um problema desaparece ... outro recebe destaque.</p>
+<p> </p>
+<p>O solo mudou. Algo novo está nele, e agora ... devemos enfrentar outras pessoas para nossos minerais ... e água.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O quê? Quem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_Mudthorn_23_An] S Tire nutrientes do chão que ... nos alimentaria. Normalmente ... nós lidaríamos, mas depois do veneno do lodo, as árvores ... e os elimes ... são fracos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Remova ... o [%dic:STR_DIC_M_Mudthorn_23_An] S.</p>
+<p> </p>
+<p>A tarefa é simples, assim como ... as consequências da ... inação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Faça pressa ... [%username].</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_Mudthorn_23_An] S está em ... e ao redor da lama pútrida. Eles devem ser mortos antes de tomarem ... tudo o que é bom ... do solo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar deles para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então ... você deve encontrar outro que possa ... ajudar.</p>
+<p> </p>
+<p>Você deve se lembrar que se morrermos ... a floresta morre. Se a ... floresta morre, Eltnen morre ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo. Vou encontrar ajuda."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]....</p>
+<p> </p>
+<p>Você matou o [%dic:STR_DIC_M_Mudthorn_23_An] S? As raízes da floresta ... estão se aprofundando em Atreia ... procurando comida. Nós morremos de fome ...!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você pediu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado ... de novo.</p>
+<p> </p>
+<p>Com o tempo ... a floresta se recuperará. Vamos florescer novamente e ficar orgulhoso ... e alto ... de novo. Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_Mudthorn_23_An] está ao redor da lama pútrida ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tree_Move_virdi].</p></step>
+</steps>
+<p>Caça os mortos que sugam nutrientes do solo, privando as árvores e o eliminação de seu alimento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Virdi estava preocupado com o fato de o Mudthorns do pântano estar consumindo todos os nutrientes no solo, deixando nenhum para as árvores.</p>
+<p> </p>
+<p>Você matou o Mudthorns como ele perguntou, dando -lhe esperança de que a floresta logo seja revivida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

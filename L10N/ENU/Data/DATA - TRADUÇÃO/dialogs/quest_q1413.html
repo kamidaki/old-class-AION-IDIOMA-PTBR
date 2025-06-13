@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Assim, [%username], Assim, [%username]....</p>
+<p> </p>
+<p>Seu nome ecoa em torno desses salões, diferente de qualquer outro, você sabe.</p>
+<p> </p>
+<p>Embora você deva estar preparado. O fato de você ter sido tão bem -sucedido em suas tarefas anteriores só me deu motivos para testá -lo além do que você foi testado até agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou pronto, general."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua mente está pronta, talvez. Mas seu corpo, ainda tão jovem e frágil pode não enfrentar os rigores que estou prestes a enviá -lo. O tempo dirá, [%userclass]. O tempo dirá ....</p>
+<p> </p>
+<p>Eu quero que você se infiltre na sede da Kaidan Krall.</p>
+<p> </p>
+<p>Você aceita esse desafio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Lembre -se de que eu te avisei duas vezes agora sobre a natureza dessa tarefa.</p>
+<p> </p>
+<p>Agora, você deve viajar para o Observatório Eltnen e Fale com [%dic:STR_DIC_N_Aeolus]. Ele lhe dirá o que é necessário.</p>
+<p> </p>
+<p>Fé e armas, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas, gerais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim seja. Um Daeva que está ciente de seus limites é um Daeva que não os superará.</p>
+<p> </p>
+<p>Vou me reunir novamente com o santuário e organizarei uma ofensiva da Guilda novamente a sede da Kaidan Krall. Você está desculpado, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, general."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você é o único Telêmaco Geral enviado. [%username]. Sim, o nome se encaixa.</p>
+<p> </p>
+<p>Espero que você esteja preparado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta tarefa exigirá que você se infiltrar na sede da Kaidan Krall. É um lugar de pesadelo, e entrar sozinho é o suicídio virtual.</p>
+<p> </p>
+<p>Pegue apenas aqueles em quem você confia completamente, [%username]. Aqueles em quem você confiaria com sua vida.</p>
+<p> </p>
+<p>Agora, se você estiver pronto, podemos começar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_N_Aeolus] e aprenda os detalhes da operação.</p></step>
+</steps>
+<p>Você foi encarregado de se infiltrar na sede da Kaidan Krall. Fale com o Tumblusen para descobrir os detalhes da missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Telêmaco ordenou que você se infiltasse na sede da Kaidan Krall. Você concordou em assumir a missão e depois foi enviado ao Tumblusen para obter detalhes.</p>
+<p> </p>
+<p>Tumblusen avisou que a missão seria muito desafiadora e aconselhou você a trazer colegas bem temperados com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

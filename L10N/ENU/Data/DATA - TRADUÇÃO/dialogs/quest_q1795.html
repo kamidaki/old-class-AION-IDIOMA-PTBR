@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora que eles capturaram a fortaleza Miren, nossos inimigos estão preparando vários ataques em todo o abismo.</p>
+<p> </p>
+<p>Os Elyos sofrerão vítimas incapacitantes se esses ataques forem autorizados a prosseguir.</p>
+<p> </p>
+<p>Devemos retomar a fortaleza e perturbar seus planos. Devemos recuperar e manter o controle!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, devemos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Também há muito dessas baratas para subjugar em um único golpe, mas se as invadirmos periodicamente, acredito que podemos quebrar suas defesas.</p>
+<p> </p>
+<p>Precisamos de DAEVAs de qualidade para fazer isso funcionar.</p>
+<p> </p>
+<p>Você está disposto a ajudar, [%username]? Você será nossa vanguarda e acabará com o [%dic:STR_DIC_M_Lamiren_Guard]Dentro da fortaleza?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Voltar depois de eliminar o [%dic:STR_DIC_M_Lamiren_Guard]Inside Miren Fortaleza.</p>
+<p> </p>
+<p>Esta não é uma tarefa para a luz do coração, e os colegas que você trazem devem ser seus iguais, embora eu tenha certeza de que você já reuniu isso.</p>
+<p> </p>
+<p>Continuaremos para a próxima fase depois de retornar com segurança.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você veio ao abismo se não tem interesse em promover a causa de Elyos?</p>
+<p> </p>
+<p>Se você não conseguir lidar com a luta, volte para Atreia, onde essas coisas não serão solicitadas a você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username]!</p>
+<p> </p>
+<p>Sua missão foi bem -sucedida?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Era."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Boas notícias, embora a situação pareça pior do que eu pensava.</p>
+<p> </p>
+<p>Ainda assim, espero que seja muito mais fácil recuperar a fortaleza agora.</p>
+<p> </p>
+<p>Para a glória do santuário!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_Lamiren_Guard]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Monerva].</p></step>
+</steps>
+<p>Elimine as tropas da guarnição dentro da fortaleza Miren para ajudar Minerva, que está planejando um ataque surpresa para recuperar a fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Minerva estava planejando um ataque surpresa para recuperar a fortaleza Miren. Seu plano envolvia causar um distúrbio na linha inimiga, invadindo as tropas da guarnição defendendo a fortaleza.</p>
+<p> </p>
+<p>Você eliminou a fortaleza Miren Guarnição e retornou a Minerva para relatar seu sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

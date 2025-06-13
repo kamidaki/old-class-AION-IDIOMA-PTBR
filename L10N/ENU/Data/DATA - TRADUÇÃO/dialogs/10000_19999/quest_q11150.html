@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando o Balaur costumava governar aqui, muito Drana foi obtido em Inggison.</p>
+<p> </p>
+<p>A maioria das fazendas Drana não existe mais, mas o Balaur continua tentando recuperar esses lugares.</p>
+<p> </p>
+<p>Até agora, nós os levamos com sucesso de volta, mas não podemos gastar todos os nossos recursos em defesa.</p>
+<p> </p>
+<p>Enquanto estamos defendendo o posto avançado e o caminho para a fortaleza, eu quero você, [%username], para atacar o [%dic:STR_DIC_W_LF4_SZ_B4] e matar o [%dic:STR_DIC_M_LF4_B4_DrakanWorkerFi_54_An] e [plur][%dic:STR_DIC_E_10022two]lá.</p>
+<p> </p>
+<p>Eles não estão preparados para um ataque, então explore a oportunidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já está de volta?</p>
+<p> </p>
+<p>Você parece muito relaxado. Acho difícil acreditar que você já fez o que eu pedi a você.</p>
+<p> </p>
+<p>Não me diga que você voltou sem sequer ter começado?</p>
+<p> </p>
+<p>Continue, diga -me. Eu quero saber.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Imagine que a força expedicionária do santuário me enviou um Daeva razoável.</p>
+<p> </p>
+<p>Obrigado novamente pelo seu trabalho duro. O Balaur não saberá o que os atingiu.</p>
+<p> </p>
+<p>Aposto que eles nunca esperavam que atacassemos. Pelo menos eles terão problemas para obter suprimentos da Drana por um tempo.</p>
+<p> </p>
+<p>Graças a você, finalmente fizemos algum progresso em nossos planos de atacar Balaurea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o balauro no[%dic:STR_DIC_W_LF4_SZ_B4].</p>
+<p visible="[%0]">Derrotar o [%dic:STR_DIC_M_LF4_B4_DrakanWorkerFi_54_An]([%2]/10).</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_E_10022two]([%5]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Iaetia].</p></step>
+</steps>
+<p>Elimine o Balaur na fazenda Mephistis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Iaetia falou sobre a grande ofensiva iminente lançada do posto avançado de Inggison e pediu que você matasse o Balaur na fazenda Mephistis antes de começar.</p>
+<p> </p>
+<p>Você derrotou o Balaur e voltou a Iaetia, que elogiou seus esforços e o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

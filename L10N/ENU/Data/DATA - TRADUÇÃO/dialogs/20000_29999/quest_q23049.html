@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando penso no fato de que Klara desapareceu, tenho esse mau senso de presunção.</p>
+<p> </p>
+<p>[%username], eu poderia pedir que você encontre Klara e trazê -la de volta antes que algo ruim aconteça?</p>
+<p> </p>
+<p>Alguém deve ter visto minha irmã ir ao esquadrão de limpeza. Eu penso[%dic:STR_DIC_N_LDF5b_Berenoos_E] Sabe alguma coisa.</p>
+<p> </p>
+<p>Eu a vi lendo um livro cheio de fotos de dragões há pouco tempo. Isso me preocupa. Por favor, encontre Klara para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que está procurando uma asmodiana?</p>
+<p> </p>
+<p>Se você diz feminino asmodiano, não tenho certeza. Embora houvesse uma mulher de dragão que tivesse alguns acessórios de primeira linha nela ...</p>
+<p> </p>
+<p>Talvez fosse ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando eu estava patrulhando, uma membro feminina do dragão apareceu de repente e me atacou.</p>
+<p> </p>
+<p>Ela era tão selvagem que eu tinha que matá -la. Quando procurei nas coisas dela, encontrei um acessório valioso que parecia ser de Pandaemonium.</p>
+<p> </p>
+<p>Os acessórios não têm sentido neste campo de batalha, então eu o vendi para um shugo chamado Storinerk.</p>
+<p> </p>
+<p>Ela provavelmente nem era uma mulher de dragão.</p>
+<p> </p>
+<p>Se você quiser aprender mais sobre esse acessório, vá para [%dic:STR_DIC_N_LDF5b_Storing_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo devolver o acessório que me foi dado por Berenus, AK?</p>
+<p> </p>
+<p>Pertence a mim agora, AK.</p>
+<p> </p>
+<p>Paguei muito Kinah para comprá -lo da Storinerk, AK.</p>
+<p> </p>
+<p>Que tipo de ladrão você é, me pedindo agora, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você explica sua situação e apresenta sua solicitação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Phon, você quer dizer o Phon, AK?</p>
+<p> </p>
+<p>Se isso tem a ver com o capitão Asmodiano, fico cauteloso.</p>
+<p> </p>
+<p>Tudo bem, tudo bem, aqui está, AK.</p>
+<p> </p>
+<p>Storinerk adora acessórios bonitos, mas ele ama mais sua vida, Ak.</p>
+<p> </p>
+<p>Aqui está. Apenas pegue, AK.</p>
+<p> </p>
+<p>Que dia ruim, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou Klara?</p>
+<p> </p>
+<p>Ou há algumas notícias?</p>
+<p> </p>
+<p>Nada de ruim aconteceu, não é?</p>
+<p> </p>
+<p>Oh, saia e diga!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega os acessórios e encaminha a mensagem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso pertence a Klara.</p>
+<p> </p>
+<p>Ela ficou muito feliz quando comprou em pandaemonium ...</p>
+<p> </p>
+<p>(Ele está tão triste que não consegue continuar) como Klara ...</p>
+<p> </p>
+<p>Não, não pode ser verdade que Klara é um dragão!</p>
+<p> </p>
+<p>Não acredito que ela morreu.</p>
+<p> </p>
+<p>(Ele tem um olhar estranho no rosto.)</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Berenoos_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Storing_E]%.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_LDF5b_Phone_E]%.</p></step>
+</steps>
+<p>Descubra onde Klara, a irmã de Phon, está.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Phon teve um mau pressentimento sobre o desaparecimento de sua irmã. Depois de seguir o pedido dele para procurar a irmã, você ouviu que Berenus havia matado uma mulher do dragão.</p>
+<p> </p>
+<p>Quando você se encontrou com o armazenamento, você recebeu um acessório da mulher da Dragonbound, que você passou para o Phon. Phon ficou chateado porque o acessório era um dos Klara. O rosto de Phon inquieu você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

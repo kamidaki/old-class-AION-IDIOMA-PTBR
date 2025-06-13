@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu desejo[%dic:STR_DIC_N_Motgar] estava aqui. Eu torceria o pescoço dele.</p>
+<p> </p>
+<p>Nós o enviamos para o [%dic:STR_DIC_W_DF1_13] Algumas semanas atrás. Sua preguiça estava ficando intolerável aqui. Ele é do tipo que não levanta um dedo, a menos que você fique logo atrás dele e grite em seu ouvido. Não é exatamente o jeito Asmodiano, não é?</p>
+<p> </p>
+<p>Eu iria gritar com ele novamente, mas tenho muito o que fazer aqui. Nosso armeiro, [%dic:STR_DIC_N_Dalot], não posso fazer seu trabalho porque o Motgar não vai lhe dar a seiva que ele precisa.</p>
+<p> </p>
+<p>Espere ... você é[%username], certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA! Ouvi dizer que você foi o lacaio de Vanar por um tempo. Fico feliz em ver que você seguiu em frente. Aquele Vanar é inútil, sentado ali em sua barraca e xingando a escuridão.</p>
+<p> </p>
+<p>É verdade que ele enviou a Tobu uma cesta de frutas? Não é exatamente o tipo de presente que um invasor de verdade como Tobu aprecia.</p>
+<p> </p>
+<p>De qualquer forma, [%username]... A melhor maneira de ganhar um prestígio conosco e chamar a atenção de Ulgorn é ser voluntário. Sempre há mais uma coisa a fazer, não é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo para onde você está indo com isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu imaginei que você faria. [%dic:STR_DIC_N_Motgar]Precisa de outra dose de grito antiquado para que ele extraia seiva novamente. E estou muito ocupado, classificando as defesas do acampamento para correr para frente e para trás.</p>
+<p> </p>
+<p>Você poderia "convencê -lo" a voltar ao trabalho? Ele está na floresta de Munihele</p>
+<p> </p>
+<p>Deve ser fácil. Motgar é manso e ele dobra como uma camisa quando você entra no rosto dele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você não está conosco há muito tempo, mas você está começando a andar e falar como um invasor. Isso vai te ajudar com[%dic:STR_DIC_N_Motgar].</p>
+<p> </p>
+<p>Então, a mensagem: diga a ele que eu preciso de três baldes de seiva em dois dias. Nossos novos recrutas precisam de armadura, por isso é vital que recebamos a seiva em breve.</p>
+<p> </p>
+<p>Se ele falhar, ele estará dançando com os fantasmas desta vez na próxima semana. Você pode dizer isso a ele também, se você acha que isso obterá resultados dele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendido. No meu caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito para você? Nem todo mundo é forte o suficiente para entrar no[%dic:STR_DIC_FLA195], então não vou arrancar sua cabeça. Suponho que é bom que você mantenha seus limites agora, em vez de morder mais do que você pode mastigar.</p>
+<p> </p>
+<p>Avise -me quando você se sentir bem, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Kaindal te enviou ...? Não está na cara! Por favor, não meu rosto!</p>
+<p> </p>
+<p>Olha, estou trabalhando duro! As pessoas estão me checando o tempo todo ... minhas mãos estão cruas pelo trabalho ... eu não dormi ... por favor, apenas não me mate!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Três baldes, Motgar. Em dois dias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dois dias? Dois ... dias?</p>
+<p> </p>
+<p>Você sabe quanto tempo leva para ... para ... dois dias! Isso é impossível!</p>
+<p> </p>
+<p>Você também pode me matar agora. Talvez então eu possa descansar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a mensagem de Kaindal para [%dic:STR_DIC_N_Motgar].</p></step>
+</steps>
+<p>Você ouviu que o Motgar, um dos Raiders ordenado a extrair SAP, é preguiçoso. Vá até ele e entregue a mensagem de Kaindal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu que os Raiders não conseguem fazer mais armadura porque o Motgar, que trabalha na fazenda da SAP, é preguiçoso e não está reunindo a seiva com rapidez suficiente.</p>
+<p> </p>
+<p>Como Kaindal solicitou, você foi à floresta de Munihele e deu ao Motgar um prazo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

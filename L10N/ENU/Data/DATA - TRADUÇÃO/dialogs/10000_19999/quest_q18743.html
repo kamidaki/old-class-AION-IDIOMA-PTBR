@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu descobri quem é responsável pelas tropas de Beritra.</p>
+<p> </p>
+<p>Mas não será fácil chegar até ele.</p>
+<p> </p>
+<p>Se conseguirmos matar Nasto, podemos impedir que as tropas de Beritra se tornem ainda mais fortes.</p>
+<p> </p>
+<p>Talvez os recrutas sejam libertados da lavagem cerebral se nos livrarmos de Nasto.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_IDRaksha_Re_Boss_Named_63_An] e reportar a [%dic:STR_DIC_N_LF5_Averse_E]. Pessoalmente, monitorarei as mudanças após a queda de Nasto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que foi Nasto quem inventou o plano.</p>
+<p> </p>
+<p>Estou preocupado. Este é um inimigo que não esperávamos.</p>
+<p> </p>
+<p>Não temos absolutamente nenhuma informação sobre ele. Não sei como devemos proceder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cuidou de Nasto?</p>
+<p> </p>
+<p>Se isso é verdade, isso é realmente uma boa notícia.</p>
+<p> </p>
+<p>Eu pensei que poderia haver más notícias, já que não ouvi de Aviso.</p>
+<p> </p>
+<p>Aqui está um sinal da minha estima. Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_IDRaksha_Re_Boss_Named_63_An]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Averse_E].</p></step>
+</steps>
+<p>Faça o pedido de Aviso, mate Nasto e depois se reporte à Aver.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aviso disse que todos os problemas seriam resolvidos se Nasto fosse derrotado.</p>
+<p> </p>
+<p>Você derrotou o NASTO e relatou a média. Ele ficou satisfeito e agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

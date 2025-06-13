@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles lefaristas ladrões são uma praga no santuário. Eles estão por toda parte!</p>
+<p> </p>
+<p>Ultimamente, eles estão se disfarçando de grupos de pesquisa e passeando por aí, caçando e roubando.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não posso acreditar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu poderia usar alguma ajuda para cuidar disso, [%username].</p>
+<p> </p>
+<p>Se você estiver pronto, retornarei os bens roubados que recuperamos, enquanto você trabalha para fugir daqueles lefaristas vil.</p>
+<p> </p>
+<p>Não acho que os lefaristas suspeitos representem muito desafio para um daeva de sua estatura. Eles são um grupo de Ragtag de Raiders e Fighters.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os relatórios indicam que os lefaristas planejam se infiltrar na base de escoteiros do deserto.</p>
+<p> </p>
+<p>Tudo que você precisa fazer é surpreendê -los lá e eliminar cinco[%dic:STR_DIC_M_LehparAs_25_An] S e cinco[%dic:STR_DIC_M_LehparWa_25_An] S. Simples.</p>
+<p> </p>
+<p>Vou recompensá -lo generosamente por seus problemas em seu retorno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou indo para o deserto então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sou grato por você ter trazido de volta as coisas roubadas.</p>
+<p> </p>
+<p>Teria sido ótimo ter sua ajuda para limpar esses ladrões Darkspawn, mas entendo que seus serviços estão em alta demanda.</p>
+<p> </p>
+<p>Por favor, volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão rápido? Esses lefaristas devem ser ainda mais patéticos do que eu pensava!</p>
+<p> </p>
+<p>Um monte de ladrões mesquinhos. As pessoas lhes dão muito crédito por terem planos brilhantes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Missão cumprida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você seria capaz de lidar com eles. Felizmente, seu esforço assustou os lefaristas desta área por um tempo.</p>
+<p> </p>
+<p>Aqui está a recompensa que prometi. Espero que seja adequado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Aniquilia o "grupo de pesquisa" do ladrão de revolucionários lefaristas.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparAs_25_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparWa_25_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Alexis].</p></step>
+</steps>
+<p>Alexis pediu que você aniquilasse os revolucionários lefaristas que estão roubando suprimentos. Você aceitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de recuperar itens roubados para Alexis, ele pediu que você erradique os revolucionários lefaristas roubando suprimentos da cidade.</p>
+<p> </p>
+<p>Você conseguiu sua tarefa, e Alexis agradeceu com uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

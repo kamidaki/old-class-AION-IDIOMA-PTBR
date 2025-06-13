@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q20053</questid>
+<questname>유물 수호자</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá está você, [%username]!</p>
+<p> </p>
+<p>Eu não tinha ouvido falar de você há um tempo e esperava que você tivesse algumas informações sobre o protetor. Você já a encontrou? Ou alguma pista, pelo menos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Nada ainda, Garnon. É um trabalho árduo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, tenho certeza que é. O estúdio está cheio de todos os tipos de bestas, principalmente o Jotun. Ainda assim, eu esperava que algo tivesse aparecido até agora.</p>
+<p> </p>
+<p>Bem, suponho que é melhor deixar você voltar a isso. E ... oh! Por que você não leva este colar com você? Isso o ajudará sempre que estiver com problemas e deve ajudá -lo a encontrar o protetor muito mais rápido.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado! É melhor eu voltar a isso."</act>
+</selects>
+<voice file="Q20053-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os arredores combinam com as descrições no recorde de Zayedan.)</p>
+<p> </p>
+<p>(Apresse -se para dentro e encontre [%dic:STR_DIC_N_Oriatia].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Aqui vamos nós ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Um visitante? Quão peculiar. Eu não tive companhia ... bem, não tenho certeza de que seja honesto.</p>
+<p> </p>
+<p>Suponho que você veio para mais do que bate-papo ocioso, Daeva. Então, fora com isso. Para que eu tenho sido acordado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT5_1">"Precisamos de ajuda. Tiamat tem relíquias de Siel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não pode ser verdade ...</p>
+<p> </p>
+<p>Mas ... mas o fato de você ter vindo para mim significa, no mínimo, que Atreia ainda não conheceu sua queda.</p>
+<p> </p>
+<p>Pensar que pensei que finalmente seria capaz de descansar ... que pensamento equivocado.</p>
+<p> </p>
+<p>Muito bem, Daeva. Parece que vou precisar intervir.</p>
+<p> </p>
+<p>No entanto, parece que as forças do mal fizeram uso de meus poderes enquanto eu estava dormindo. Não posso ajudar você no meu estado atual.</p>
+<p> </p>
+<p>Se você sair daqui, você encontrará[%dic:STR_DIC_M_LDF4A_C1_Elementalking_Cristal_57_An] S, que estão carregados com a energia de Tiamat. Tire o deles[%dic:STR_DIC_I_QUEST_10053B], e traga para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO5">"Espere aqui! Conserve sua energia!"</act>
+</selects>
+<voice file="Q20053-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava pensando no poder de Tiamat enquanto dormia. Minha mente correu em círculos e eu escorreguei cada vez mais da realidade. Eu quase caí do reino do próprio tempo, asmodianos! Eu estava quase perdido.</p>
+<p> </p>
+<p>Por favor ... se você tem o [%dic:STR_DIC_I_QUEST_10053B] S, entregue -os a mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Está feito. Você tem meus poderes e agora pode impedir que Tiamat destrua nosso mundo.</p>
+<p> </p>
+<p>Um aviso: o poder que eu concedi a você só deve ser usado para selar as relíquias de Siel. Se eles forem usados ​​por razões pessoais ou para o seu povo, deixarei este mundo e o abandonarei de maneira inconstante.</p>
+<p> </p>
+<p>Agora vá. O mundo assiste, asmodianos. Não coloque em risco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, Oriata."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não! Eu preciso do[%dic:STR_DIC_I_QUEST_10053B] S Se eu for para restaurar meu poder! Se eu não posso, então você e eu estamos condenados, seu idiota!</p>
+<p> </p>
+<p>Pressa! Destruir o [%dic:STR_DIC_M_LDF4A_C1_Elementalking_Cristal_57_An] S, e traga -me seus cristais de poder!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito! Espere!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você está de volta!</p>
+<p> </p>
+<p>Tudo foi conforme o plano? Você encontrou o protetor?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso!</p>
+<p> </p>
+<p>Trabalho incrível, [%username]! O Conselho de Pandaemonium ficará muito feliz com suas realizações aqui hoje. Além do mais, os Elyos e os Reians concordaram em fornecer os poderes.</p>
+<p> </p>
+<p>Uma grande batalha começa hoje, amigo. Tiamat irá sacudir com medo quando ouvir seus passos que se aproximam e os gritos e cantando "sangue por sangue!"</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Garnon].</p></step>
+<step><p visible="[%3]">Encontre o [%dic:STR_DIC_OBJ_LDF4a_10053_20053_door]Isso o levará à sala do protetor [%dic:STR_DIC_N_Oriatia].</p></step>
+<step><p visible="[%6]">Quebrar o selo do protetor.</p></step>
+<step><p visible="[%9]">Afastar o ataque de Balaur.</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Oriatia].</p></step>
+<step><p visible="[%15]">Recuperar [%dic:STR_DIC_I_QUEST_10053B] S das próximas[%dic:STR_DIC_M_LDF4A_C1_Elementalking_Cristal_57_An] S, e volte para [%dic:STR_DIC_N_Oriatia].</p>[%collectitem]</step>
+<step><p visible="[%18]">Relatório de volta para [%dic:STR_DIC_N_Aimah].</p></step>
+</steps>
+<p>Ordem: encontre protetor Oriata e receba seus poderes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Trabalhando secretamente com Antah, você se reportou de volta a Garnon e disse a ela que não conseguiu encontrar o protetor antes de partir para encontrá -la pela primeira vez.</p>
+<p> </p>
+<p>Você tentou quebrar o selo na sala do protetor, apenas para ser atacado pelo Balaur. No entanto, você foi capaz de combatê -los, em grande parte graças ao colar dado a você por Garnon. Oriata então apareceu. Você pediu a ela o poder de selar as relíquias de Siel, mas ela estava enfraquecida e precisava de economizar. Você trouxe os cristais que ela precisava e, quando você voltou, Garnon e o líder de Elyos surgiram, atestando por você receber os poderes que ela tinha.</p>
+<p> </p>
+<p>Você recebeu o poder da Oriata, juntamente com um aviso severo para usar o poder para o benefício de toda Atreia, caso contrário, o planeta estaria condenado para sempre.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

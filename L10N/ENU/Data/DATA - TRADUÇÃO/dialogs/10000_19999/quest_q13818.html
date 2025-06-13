@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], surgiu uma boa oportunidade de dar um grande golpe para as forças asmodianas.</p>
+<p> </p>
+<p>Os asmodianos estão planejando se infiltrar no[%dic:STR_DIC_W_LDF5_Fortress_SZ_D1_Raid] e quebrar o selo[%dic:STR_DIC_N_LDF5_Fortress_Named_Spawn_FOBJ].</p>
+<p> </p>
+<p>Diz -se que o espírito de [%dic:STR_DIC_N_LDF5_Fortress_Anoha_Dead_E] está preso nesta espada. Ele era o comandante da fortaleza.</p>
+<p> </p>
+<p>Se este selo deve ser quebrado, [%dic:STR_DIC_N_LDF5_Fortress_Anoha_Dead_E] Aparecerá e provavelmente haverá uma luta.</p>
+<p> </p>
+<p>Os asmodianos certamente estarão totalmente concentrados em quebrar o selo[%dic:STR_DIC_N_LDF5_Fortress_Named_Spawn_FOBJ].</p>
+<p> </p>
+<p>Use esta oportunidade para eliminá -los. Eles nem vão notar você se estão se concentrando na espada de Anoha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os asmodianos maliciosos?</p>
+<p> </p>
+<p>Não perdemos a batalha da fortaleza porque éramos muito fracos.</p>
+<p> </p>
+<p>Só perdemos por causa das intrigas insidiosas de nossos inimigos.</p>
+<p> </p>
+<p>Se não queremos perder a próxima batalha, também precisamos usar estratégias tão cruéis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse ataque foi uma surpresa desagradável para os asmodianos.</p>
+<p> </p>
+<p>Você os atingiu onde eles estavam vulneráveis. Sortudo.</p>
+<p> </p>
+<p>Bom trabalho. [%username], Eu valorizo ​​suas habilidades em batalha.</p>
+<p> </p>
+<p>Nossa determinação em ganhar a vitória não pode mais ser quebrada!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5_Fortress_SZ_D1_Raid] e eliminar os asmodianos, que estão lutando[%dic:STR_DIC_M_LDF5_Fortress_Boss_Anoha_65_Al].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Fortress_Reton_E]. Ele aparece no[%dic:STR_DIC_W_LDF5_Fortress_SZ_A2_Start] Se os Elyos não conseguiram conquistar o [%dic:STR_DIC_W_LDF5_Fortress_7011].</p></step>
+</steps>
+<p>Conheça Reton e receba uma tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Reton disse que os asmodianos querem quebrar o selo na espada de Anoha. Você recebeu a tarefa de eliminar os asmodianos.</p>
+<p> </p>
+<p>Reton agradeceu quando você voltou depois de concluir a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

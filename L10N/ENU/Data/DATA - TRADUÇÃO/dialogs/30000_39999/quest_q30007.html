@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um documento fica na mesa. Parece Drakan, mas você não consegue entender o que diz.)</p>
+<p> </p>
+<p>(Centurion[%dic:STR_DIC_N_Sueros] Saberá o que fazer.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero não estressá -lo com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem paz ultimamente, não, você[%username]?</p>
+<p> </p>
+<p>Missões importantes da fortaleza, pedidos de Honeus ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"E agora eu encontrei este documento estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que não consigo ler isso? Eu conheço Balaur! Eu preciso, eu preciso ...</p>
+<p> </p>
+<p>Eu preciso respirar fundo. Estou vendo um médico agora sobre meus níveis de estresse, você sabe.</p>
+<p> </p>
+<p>Tudo bem. [%dic:STR_DIC_N_Honeus]pode ser capaz de contar mais sobre isso. Ele está em Inggison há tanto tempo que é completamente fluente em Balaur.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Boa sorte com a respiração!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua inquietação trai seu nervosismo. Pergunte -me o que quiser.</p>
+<p> </p>
+<p>Perguntas idiotas podem ser gratuitas, mas boas respostas são sempre inestimáveis.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você pode traduzir Balaur?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A linguagem é um código comum, mas os códigos incomuns podem ser mais difíceis de decifrar.</p>
+<p> </p>
+<p>Sim, isso está escrito na língua Balaur, mas também é ridicularizado por sigilo.</p>
+<p> </p>
+<p>Felizmente, tenho experiência com esse tipo de documento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sueros].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Honeus].</p></step>
+</steps>
+<p>Você encontrou um documento incomum dentro do Udas Temple. Mostre -o para Sueros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um documento de Drakan dentro do Templo Udas.</p>
+<p> </p>
+<p>Você mostrou isso a Sueros. Mas, incapaz de interpretá -lo, ele disse para você perguntar a Honeus.</p>
+<p> </p>
+<p>Honeus estudou o documento e você decidiu esperar enquanto ele decifrava o texto codificado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

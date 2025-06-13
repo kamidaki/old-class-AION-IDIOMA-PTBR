@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pedi que você fizesse o nobre peitoral de Vulcanus, porque achei que você era bom o suficiente para ser um especialista em ourivinhamento.</p>
+<p> </p>
+<p>Eu sei que você tem uma paixão pelo ofício, então este próximo teste deve provar seu talento além de qualquer dúvida.</p>
+<p> </p>
+<p>Eu preciso que você demonstre sua habilidade na elaboração de armaduras raras para recomendá -lo como especialista.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para provar sua capacidade, faça as nobres placas de peitoral de Fasimedes e traga -a para mim.</p>
+<p> </p>
+<p>Este item raro não é fácil de criar, por isso, se você o gerenciar, provará seu talento, [%username].</p>
+<p> </p>
+<p>Você decide.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente o que um verdadeiro especialista diria! Eu sabia desde o momento em que te conheci que você tinha isso em você.</p>
+<p> </p>
+<p>Você pode comprar o Noble Pleasplates de fasimedes de design e materiais de [%dic:STR_DIC_N_Menomes].</p>
+<p> </p>
+<p>É semelhante a [%dic:STR_DIC_E_Q1975] S, mas requer mais controle e habilidade para fazer. Este será um exemplo brilhante do seu trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou desistir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode fazer armadura rara? Ou talvez você não esteja interessado em receber o título de especialista.</p>
+<p> </p>
+<p>Se você não quer fazer isso, não posso forçá -lo.</p>
+<p> </p>
+<p>Algum dia, poderei encontrar um Daeva que tenha um talento real e interesse em armadura.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez algum dia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitas pessoas pensam que as armas são o elemento mais importante em combate, mas acho que a qualidade da armadura é mais vital. Como você pode lutar de maneira eficaz se está constantemente preocupado em se machucar ou morto?</p>
+<p> </p>
+<p>A boa armadura lhe dá confiança para lutar bem. É por isso que tenho um grande interesse em nutrir armaduras talentosos. Eu espero muito de você, [%username].</p>
+<p> </p>
+<p>Você fez o nobre peitoral de Fasimedes para provar seu talento?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Como é isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso não está pronto para o padrão que eu espero. Eu pensei que você teria dominado fazendo o nobre peitoral de Fasimedes agora.</p>
+<p> </p>
+<p>Vá e trabalhe por mais um pouco. Se você trabalha duro, eu sei que poderá fazê -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou desistir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Isso é mais do que eu esperava.</p>
+<p> </p>
+<p>Eu definitivamente acho que isso o qualifica para receber o título de especialista em armadura.</p>
+<p> </p>
+<p>Seu trabalho árduo em armadura finalmente está valendo a pena, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o peitoral nobre de Fasimedes e leve para [%dic:STR_DIC_N_Vulcanus].</p>[%collectitem]</step>
+</steps>
+<p>Vulcanus diz que você deve ser capaz de fazer com que a armadura rara seja elegível para o título de especialista em armadura. Faça nobre peitoral de Fasimedes e leve -o a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vulcanus disse que você deve ser capaz de fazer com que a armadura rara seja elegível para o título de especialista em armadura.</p>
+<p> </p>
+<p>Quando você trouxe o nobre peitoral de Fasimedes, como ele solicitou, ele disse que seu trabalho duro finalmente havia suportado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

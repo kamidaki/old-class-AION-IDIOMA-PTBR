@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Estou muito feliz em vê -lo novamente, [%username].</p>
+<p> </p>
+<p>Depois de diminuir os rynoces e Drynacs, percebi que se preocupar com os animais era a única coisa que mantinha minha mente da insuportável escassez de calor e fornecimento! Bem, eles e Kibelle, mas ela também deve atender aos seus deveres.</p>
+<p> </p>
+<p>De qualquer forma, isso não importa, porque parece que havia mais bestas escondidas nas colinas. Eles são uma dor nas penas da cauda!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eles estão fazendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles atacaram um comboio de vagões que estava trazendo comida fresca para nós. Várias pessoas ficaram feridas, e os habitantes locais não trazem mais suprimentos até que possamos garantir que os animais tenham sido derrubados novamente.</p>
+<p> </p>
+<p>Acho que não tenho que dizer o quanto precisamos desses suprimentos, mas simplesmente não podemos deixar o post indefesa enquanto perseguimos bestas através das rochas e sujeira. Eu poderia impor a você para nos emprestar uma manutenção[%dic:STR_DIC_M_Rhinoce_35_An] es e [%dic:STR_DIC_M_Driton_35_An] está de novo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por vir para nos ajudar novamente.</p>
+<p> </p>
+<p>Mate o feroz Rynoce e o venenoso Drynac e traga provas de sua morte.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_QUEST_1408a] e [%dic:STR_DIC_I_QUEST_1408b], 5 de cada por favor.</p>
+<p> </p>
+<p>Agora vou tirar de você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não haverá problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu te disse antes, Kibelle e eu não podemos eliminar os monstros aqui sozinhos; Eles são muito ferozes, e há muitos deles.</p>
+<p> </p>
+<p>Sua ajuda é desesperadamente necessária.</p>
+<p> </p>
+<p>Se você mudar de idéia mais tarde, venha a mim a qualquer momento. Nós realmente precisamos da sua ajuda aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Que Arieluma cuide de você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou o [%dic:STR_DIC_M_Rhinoce_35_An] es e [%dic:STR_DIC_M_Driton_35_An] S?</p>
+<p> </p>
+<p>Você me trouxe as coisas que eu pedi? Vou mostrá -los às tropas para incentivá -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim. É assim que é feito, você vê."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Desta vez, eu pediria para você me pegar 5[%dic:STR_DIC_I_QUEST_1408a] e 5[%dic:STR_DIC_I_QUEST_1408b].</p>
+<p> </p>
+<p>Parece haver um mal -entendido aqui.</p>
+<p> </p>
+<p>Não posso lhe dar uma recompensa sempre quando você me traz itens individuais. Então, traga -me exatamente a quantidade certa de prova.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Light Guide Our Way."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você também concluiu esta tarefa com êxito.</p>
+<p> </p>
+<p>Aqui está a recompensa como prometido.</p>
+<p> </p>
+<p>Agora eu posso realmente ter certeza. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_Rhinoce_35_An] es e [%dic:STR_DIC_M_Driton_35_An] S e traga as evidências para [%dic:STR_DIC_N_Dionera].</p>[%collectitem]</step>
+</steps>
+<p>Cuide dos rynoces e Drynacs que estão enxameando o observatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou Rynoces e Drynacs que estavam enxameando o observatório e trouxe as evidências para Dionera.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

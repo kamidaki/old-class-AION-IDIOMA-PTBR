@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um documento secreto escrito no dragão.)</p>
+<p> </p>
+<p>(Você reconhece as insígnias do exército de Beritra.)</p>
+<p> </p>
+<p>(Parece ser importante. É melhor você levar para [%dic:STR_DIC_N_LDF5_Fortress_Village_Guard02_D].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p>[%username], Acho que você está aqui por causa de uma questão urgente. O que aconteceu?</p>
+<p> </p>
+<p>Talvez isso tenha algo a ver com o documento em sua mão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de comando.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu queria descobrir por que o exército de Beritra queria conquistar soldados remanescentes. Mas isso está claro agora!</p>
+<p> </p>
+<p>Eles querem invadir Kaldor.</p>
+<p> </p>
+<p>Eles esperam que os soldados que lutaram pelo Tiamat os ajudem com esse plano.</p>
+<p> </p>
+<p>Esta informação não poderia ter chegado em um momento melhor.</p>
+<p> </p>
+<p>Vou informar meus superiores imediatamente. Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Se os asmodianos ocupam o [%dic:STR_DIC_W_LDF5_Fortress_SZ_A2_v02], Assim, [%dic:STR_DIC_N_LDF5_Fortress_Village_Guard02_D]vai aparecer. Fale com ele.</p></step>
+</steps>
+<p>Pegue a carta de comando para Tiros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu a carta de comando do feiticeiro da 55ª unidade, um dos soldados remanescentes de Tiamat.</p>
+<p> </p>
+<p>Você o trouxe para Tiros, que poderia ler o documento. A carta de comando contém informações sobre o plano Balaur para avançar para Kaldor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

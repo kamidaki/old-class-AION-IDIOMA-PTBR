@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso. Mais mercenários. E para onde exatamente está o nosso dinheiro? E o que temos que mostrar para isso?</p>
+<p> </p>
+<p>Eu já vi a fazenda de Ager e os berros que ainda a infestam. Nós, agricultores, observamos você e seus companheiros ocasionalmente matam um enquanto ficamos mais fome a cada dia que passa.</p>
+<p> </p>
+<p>Agora, os vermes chegaram à minha porta e devo usar minhas ferramentas como armas. O que mais devo fazer? Não posso trabalhar, não posso vender minha colheita, e o pouco dinheiro que tenho é gasto pagando mercenários.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sinto muito, mas o que posso fazer sobre isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito se parecia direto demais. Eu não pretendi insultá -lo.</p>
+<p> </p>
+<p>Por favor me ajude, eu vou te pagar também.</p>
+<p> </p>
+<p>Estou assistindo todas as horas da noite por causa dos Kerubim. Mas não tenho dinheiro para obter velas ou petróleo. A pobre colheita não trouxe muito dinheiro aos cofres.</p>
+<p> </p>
+<p>Então os Sparkies cruzaram minha mente!</p>
+<p> </p>
+<p>Por que não pensei sobre isso antes? Seus abdomens iluminam! Eu poderia iluminar meus campos à noite com a ajuda dos Sparkie Luciferins.</p>
+<p> </p>
+<p>Você poderia derrotar o [%dic:STR_DIC_MLA08] S e se apossar do[%dic:STR_DIC_QILA12] para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]!</p>
+<p> </p>
+<p>Talvez os mercenários sejam pessoas decentes, afinal. Peço desculpas se eu era muito duro mais cedo.</p>
+<p> </p>
+<p>Eu acho que três pedaços de [%dic:STR_DIC_QILA12] Será mais do que suficiente para iluminar minha fazenda. Por favor, traga -os assim que puder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Típico!</p>
+<p> </p>
+<p>Eu não deveria ter perdido minha respiração! Sou mais tolo por pensar que um mercenário estaria disposto a ajudar.</p>
+<p> </p>
+<p>Ouvi dizer que você perdeu sua memória, mas é compaixão que você não tem, [%username]. Agora vá, tenho certeza que você tem dinheiro para ganhar em outro lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está certo. Estou perdendo meu tempo aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já derrotou o [%dic:STR_DIC_MLA08] S?</p>
+<p> </p>
+<p>Você conseguiu se apossar do[%dic:STR_DIC_QILA12] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu consegui encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não estava em[%dic:STR_DIC_FLA04] Ainda?</p>
+<p> </p>
+<p>Seria ótimo ter o [%dic:STR_DIC_QILA12] antes da noite cair. Você acha que vai demorar muito mais?</p>
+<p> </p>
+<p>Espero que você me traga 3 luciferinas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou cuidar disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fantástico!</p>
+<p> </p>
+<p>Estes são perfeitos, [%username]. Serei capaz de ver claramente a noite toda agora.</p>
+<p> </p>
+<p>Obrigado pela ajuda. Por favor, não é muito, mas receba essa pequena recompensa como um sinal de minha apreciação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir três pedaços de luciferina e trazê -los para [%dic:STR_DIC_LA08]para iluminar sua fazenda.</p>[%collectitem]</step>
+</steps>
+<p>Pranoa tem guardado sua fazenda sozinho e precisava de algo para iluminar seus campos à noite. Caça faíscas adultas e traga três pedaços de luciferina para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pranoa se esforçou para proteger sua fazenda dia e noite.</p>
+<p> </p>
+<p>No entanto, desde a invasão do querubo, ele não teve dinheiro para comprar nem uma vela para iluminar sua fazenda durante as horas da escuridão. Você concordou em trazer a ele um Sparkie Luciferin como substituto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

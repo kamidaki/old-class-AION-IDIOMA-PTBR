@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você aceite a tarefa de matar o [%dic:STR_DIC_E_LDF5_Recon_v13_DR].</p>
+<p> </p>
+<p>A limpeza da vanguarda Balaur atrasará seu ciclo subsequente de ataques.</p>
+<p> </p>
+<p>Devemos mostrar que uma raça como o Balaur nunca poderia nos parar.</p>
+<p> </p>
+<p>Por favor, demonstre o verdadeiro poder dos Elyos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Despachar uma vanguarda pode ser equiparada diretamente a uma declaração de guerra.</p>
+<p> </p>
+<p>Isso significa que um ataque é iminente.</p>
+<p> </p>
+<p>[%username], mate o [%dic:STR_DIC_E_LDF5_Recon_v13_DR]. Você estaria nos ajudando muito se fizer isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, o Balaur terá um bom gosto do poder dos Elyos.</p>
+<p> </p>
+<p>Mesmo que seus ataques não possam ser completamente decorados, com essa energia, seremos capazes de vencer.</p>
+<p> </p>
+<p>Muito obrigado por seus esforços, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_LDF5_Recon_v13_DR]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard13_L].</p></step>
+</steps>
+<p>Mate a 83ª Vanguard Balaur, perto da 83ª guarnição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Feriander queria que os próximos ataques de Balaur fossem atraídos e queriam que as pessoas mantenham a força dos Elyos em mente.</p>
+<p> </p>
+<p>Como ordenado, você matou a vanguarda Balaur e foi agradecido por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

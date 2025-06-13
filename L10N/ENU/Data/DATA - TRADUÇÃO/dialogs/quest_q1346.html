@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os caçadores de tesouros vêm aqui o tempo todo, querendo as riquezas escondidas na Caverna do Templo de Eracus, mas o verdadeiro tesouro é a própria estrutura.</p>
+<p> </p>
+<p>As únicas pessoas que fazem Kinah aqui são curandeiros da alma. O lugar está em casa para muitas criaturas perigosas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Fácil riqueza, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos que vão descuidadamente no templo são mortos. É por isso que o ramo de ouro foi postado aqui. A General da Brigada Castor construiu um campo eetérico para controlar o acesso ao templo.</p>
+<p> </p>
+<p>Agora temos menos vítimas, mas aqueles que vêm investigar o templo enfrentam um pequeno desafio.</p>
+<p> </p>
+<p>Para acesso, eles devem passar em um teste o general estabelecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Deixe -me adivinhar ...."</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O teste não deve ser muito difícil para Daevasas capazes.</p>
+<p> </p>
+<p>Você só tem que derrotar o [%dic:STR_DIC_E_LF2_Q1346_all].</p>
+<p> </p>
+<p>A General da Brigada Castor calcula que você pode sobrecarregar as criaturas da Caverna do Templo sem nenhum perigo se você passar no teste.</p>
+<p> </p>
+<p>Existem outras missões para você na Caverna do Templo também. Seria melhor se você tentar obter acesso, [%username].</p>
+<p> </p>
+<p>Você quer participar do teste agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui? Espere, eu sei a resposta.</p>
+<p> </p>
+<p>Quem veio aqui, além do templo subterrâneo?</p>
+<p> </p>
+<p>E ... há sangue de basilisco na manga.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_yes;HACTION_SELECT_QUEST_REWARD">"Sim, você adivinhou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caça bem o suficiente para permitir que você acesse a caverna do templo de Eracus</p>
+<p> </p>
+<p>Mas lembre -se, é um lugar proibido. Seja cauteloso e evite ir sozinho, se puder.</p>
+<p> </p>
+<p>Os monstros são inteligentes, poderosos e muitos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_LF2_Q1346_all]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Castor].</p></step>
+</steps>
+<p>A entrada da Caverna do Templo de Eracus é bloqueada por um campo átile. Você pode passar pela barreira com a permissão da General da Brigada Castor. Passe as metas para o teste de entrada para a Eracus Temple Cavern e prove suas habilidades no processo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Desde que a Caverna do Templo de Eracus enxame com criaturas perigosas, um campo éterico limita o acesso a ele.</p>
+<p> </p>
+<p>Como Tellarius ordenou, você supera os alvos para o teste de entrada para a Caverna do Templo de Eracus, passando no teste para acesso ao templo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

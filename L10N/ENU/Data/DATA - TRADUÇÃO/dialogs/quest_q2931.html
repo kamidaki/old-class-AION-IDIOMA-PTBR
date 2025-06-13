@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso, [%username]!</p>
+<p> </p>
+<p>Você ganhou classificação de especialistas através do foco, paixão ardente e teimosia de asmodianas simples. Eu gosto disso.</p>
+<p> </p>
+<p>Você não é mais meu aprendiz. Eu nada de ensinar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é uma honra, mestre."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não "mestre". Apenas logi. Você ganhou o direito.</p>
+<p> </p>
+<p>Você não é mais um artesão ou Smith simples. Seu título adequado é "especialista em armas".</p>
+<p> </p>
+<p>Há apenas a cerimônia até ser oficial.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Você deve ser formalmente reconhecido pelo governador [%dic:STR_DIC_N_Vidar]. Ele realizará uma pequena cerimônia e você terminará.</p>
+<p> </p>
+<p>Minha carta de recomendação e você vai. Você está atrapalhando minha forja.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sombras te abençoe, logi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?</p>
+<p> </p>
+<p>Olhar. Ares e graças viram meu estômago. Mas você desonra a si mesmo, e minha forja por não ter seu título de direito.</p>
+<p> </p>
+<p>Você ganhou essa honra, jovem. Faça isso significar algo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Logo, mestre logi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é, [%userclass]? Eu tenho muito em minha mente.</p>
+<p> </p>
+<p>Prefiro que você fale com Skadi ou Kvasir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Logi envia isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é um Asmodiano exemplar. Onde outros fazem seus nomes em batalha, as muitas lâminas que você forja venceu uma centena de batalhas e faz cem nomes.</p>
+<p> </p>
+<p>Você coloca garras em mãos asmodianas, presas em nossas bocas. Você aprimora nossa vínculo sanguínea a uma vantagem de assassinato para se separar de nossos inimigos e libertar asmodae! Parabéns!</p>
+<p> </p>
+<p>Agora volte para [%dic:STR_DIC_N_Logi]. Juntos, você criará armas que o próprio Zikel exerceria orgulhosamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_N_Vidar]para a cerimônia de especialista.</p></step>
+</steps>
+<p>O mestre de armas Logi declarou um especialista. Veja o governador Vidar para uma cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O mestre de armas Logi não tem mais nada para lhe ensinar. Você atingiu o nível de especialista.</p>
+<p> </p>
+<p>Dada a recomendação dele, o governador Vidar concedeu seu título.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

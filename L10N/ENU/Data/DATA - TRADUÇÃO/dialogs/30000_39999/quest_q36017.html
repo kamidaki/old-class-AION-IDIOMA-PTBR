@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho procurado por você, [%username]!</p>
+<p> </p>
+<p>Isto é para você! Você deve abri -lo agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"OK...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Proclamação dos Fortuários -</p>
+<p> </p>
+<p>Meus colegas fortuários, uma nova recompensa em Mitrakand, foi decretada.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_OBJ_FOBJ_Q36017a]</p>
+<p> </p>
+<p>2. Resumo: Este baú de ouro contém inúmeros tesouros de Balaur, juntamente com revelações para alguns de seus segredos mais guardados. Se for encontrado, valerá uma fortuna para o comprador certo. Há rumores de que está escondido em algum lugar em[%dic:STR_DIC_W_SZ_DF4_C2_2], Gelkmaros.</p>
+<p></p>
+<p>O primeiro fortário que localiza esse baú e entrega seus tesouros para nós será recompensado de maneira muito generosa.</p>
+<p></p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você ajudaria, [%username]!</p>
+<p> </p>
+<p>Eu sei que você sabe o que está fazendo, mas o balaur de [%dic:STR_DIC_W_SZ_DF4_C2_2] São fortes, então tenha cuidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh. Eu pensei que você gostaria de ajudar ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sim, mas não posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde no grande abismo você esteve, [%username]? Estou tentando administrar um negócio aqui!</p>
+<p> </p>
+<p>Por esse sorriso no seu rosto, posso dizer que você teve sucesso! Eu realmente não achei que você durasse muito em nossa Guilda quando o vi pela primeira vez-nós apenas levamos o melhor. Mas agora acho que você vai se sair bem.</p>
+<p> </p>
+<p>Não me faça esperar mais ... onde está? Onde está aquele tesouro de Balaur brilhante?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Tudo bem, mantenha seus Protetores de Ombro!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Que ... por que você não está em[%dic:STR_DIC_W_SZ_DF4_C2_2] Agora?</p>
+<p> </p>
+<p>Eu tenho vários clientes esperando por este tesouro de Balaur, [%username]! Não é assim que os fortuários fazem negócios. Somos uma roupa profissional.</p>
+<p> </p>
+<p>Se você não consegue lidar com uma tarefa simples, como invadir um covil de Balaur mortal para roubar algo precioso e querido a eles, então talvez eu deva encontrar alguém que possa! Agora, chegue a Mitrakand, [%username]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou saindo para Mitrakand agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Senhora da luz! É lindo! É a coisa mais linda que eu já vi!</p>
+<p> </p>
+<p>É feito inteiramente de ouro ... sinta isso. Eu odiaria ver esse leu de batalha correndo para mim no calor do combate. Só posso imaginar o valor dessa peça deslumbrante no mercado.</p>
+<p> </p>
+<p>Você deixou os fortuários orgulhosos, [%username]. Receba sua recompensa e vá na luz dela e tudo isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_FOBJ_Q36017a] escondido em[%dic:STR_DIC_W_SZ_DF4_C2_2], Gelkmaros, e entregue -o ao[%dic:STR_DIC_E_36500].</p>[%collectitem]</step>
+</steps>
+<p>Uma proclamação de fortunes foi dada a você. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma proclamação de fortunes foi entregue a você.</p>
+<p> </p>
+<p>Quando você encontrou o Balaur Golden Treasure Band em Mitrakand e o entregou ao capitão do fortuno, ele elogiou seus heroicos e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

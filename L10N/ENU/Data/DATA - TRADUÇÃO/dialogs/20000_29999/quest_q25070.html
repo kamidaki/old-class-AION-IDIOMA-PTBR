@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], finalmente eu te encontrei.</p>
+<p> </p>
+<p>Ouvi dizer que você se apossou de um cristal estranho para os aquans.</p>
+<p> </p>
+<p>Eu acho que deveria haver algo semelhante aqui também. Você poderia me trazer um[%dic:STR_DIC_OBJ_DF5_FOBJ_icecrystal_Q25070]?</p>
+<p> </p>
+<p>Ouvi os aquans considerarem o cristal como algo sinistro. Naturalmente, isso desperta minha ambição como pesquisador.</p>
+<p> </p>
+<p>Por que os aquans consideram esse cristal ser perigoso?</p>
+<p> </p>
+<p>Talvez esteja contaminado ... este é um poder perigoso.</p>
+<p> </p>
+<p>Talvez possamos usá -lo para descobrir o segredo da incrível adaptabilidade em[%dic:STR_DIC_W_DF5].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um cristal de geada.)</p>
+<p> </p>
+<p>(Parece semelhante ao que você trouxe os aquans.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você quebra o cristal.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, [%username].</p>
+<p> </p>
+<p>Você me trouxe o cristal de geada que eu pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o cristal.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que coisa boa você encontrou. Vamos dar uma olhada então, vamos!</p>
+<p> </p>
+<p>(A expressão de Brandon se torna cada vez mais séria.)</p>
+<p> </p>
+<p>Inacreditável ... nunca pensei que encontraríamos algo assim aqui.</p>
+<p> </p>
+<p>Este cristal contém traços de id.</p>
+<p> </p>
+<p>Então os aquans tinham boas razões para vê -lo como estranho.</p>
+<p> </p>
+<p>Eu nunca vi ID de uma forma tão fria em Katalam antes.</p>
+<p> </p>
+<p>Parece tão ... estável.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a [%dic:STR_DIC_OBJ_DF5_FOBJ_icecrystal_Q25070].</p></step>
+<step><p visible="[%3]">Traga a [%dic:STR_DIC_I_quest_25070a]para [%dic:STR_DIC_N_DF5_Branddun_E].</p></step>
+</steps>
+<p>Brandon disse que os aquans não confiam no poder do cristal de geada e pediu que você adquirisse um para ele. Cuide do pedido de Brandon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brandon disse que os aquans não confiam no poder do cristal de geada e pediu que você adquirisse um para ele.</p>
+<p> </p>
+<p>Você encontrou um cristal de geada e o trouxe para Brandon. Para sua surpresa, Brandon determinou que o cristal estava cheio de identificação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

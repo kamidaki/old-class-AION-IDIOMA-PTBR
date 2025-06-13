@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando cheguei aqui, pensei em ficar louco com o tédio.</p>
+<p> </p>
+<p>Ninguém nunca vem aqui. Quero dizer ninguém. As únicas pessoas que encontrei foram as pessoas que se perderam na floresta.</p>
+<p> </p>
+<p>Ultimamente, isso mudou, no entanto. Todos os tipos de pessoas estão atravessando por aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso está causando problemas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é fácil iniciar o obelisco para tantas pessoas.</p>
+<p> </p>
+<p>Parece fácil operar os obeliscos, mas é preciso muita concentração.</p>
+<p> </p>
+<p>Acho que vou conseguir conceder melhor se beber um pouco de suco de vinna. Infelizmente, não posso sair desta sala ...</p>
+<p> </p>
+<p>Você poderia me ajudar? Por favor me traga 10[%dic:STR_DIC_E_berry_d_n_c_20a]frutas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você tem uma alma tão linda.</p>
+<p> </p>
+<p>Não será difícil encontrar [%dic:STR_DIC_E_berry_d_n_c_20a] S, pois existem muitos deles no bosque de Patamor.</p>
+<p> </p>
+<p>Eu teria tudo o que precisava se pudesse conseguir alguém para me aliviar aqui por um tempo. Eu realmente poderia usar uma pausa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece um favor fácil de fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Bem, você deve ter um bom motivo, [%username].</p>
+<p> </p>
+<p>Não se preocupe comigo. Vou encontrar alguém.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Azz Peterbra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta com o [%dic:STR_DIC_E_berry_d_n_c_20a]já é?</p>
+<p> </p>
+<p>Não faz muito tempo que você saiu ...</p>
+<p> </p>
+<p>Você é muito eficiente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Estes parecem deliciosos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode fazer suco de vinna suficiente com isso.</p>
+<p> </p>
+<p>Portanto, obtenha 10[%dic:STR_DIC_E_berry_d_n_c_20a]Frutas para mim, como concordamos originalmente.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão feliz por te perguntar.</p>
+<p> </p>
+<p>Muito obrigado. Agora eu posso fazer meu suco.</p>
+<p> </p>
+<p>Pegue isso, por favor. É um preço pequeno a pagar por algo que eu desejo tanto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_berry_d_n_c_20a] e leve-os para [%dic:STR_DIC_N_Snor].</p>[%collectitem]</step>
+</steps>
+<p>Colete vinnas no bosque de Patamor e leve -os para Sora para que ela possa fazer suco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sora disse que a operação do obelisco é muito cansativa, mas esse suco de beber aumentaria sua energia.</p>
+<p> </p>
+<p>Ela pediu que você colecionasse Vinnas por ela, e ficou agradecida quando você cumpriu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é realmente [%username]?</p>
+<p> </p>
+<p>Você parece bem diferente da última vez que nos conhecemos. Suponho que você já passou por muito tempo desde então.</p>
+<p> </p>
+<p>Eu tenho um pedido de Kasir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de pedido?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça com cuidado-não podemos correr o risco de ser ouvido. Kasir me contrabandeou uma mensagem-algo sobre uma nova estrela aparecendo sobre Atreia. Eu realmente não conseguia entender a referência, mas ele me pediu para enviá -lo para ele.</p>
+<p> </p>
+<p>Ele ainda está na biblioteca oculta. Tente se encontrar discretamente-eles sempre o observam.</p>
+<p> </p>
+<p>Não tenho certeza do que isso significa, mas Kasir parece pensar que é importante.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou imediatamente."</act>
+</selects>
+<voice file="Q2096-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu conheço todos os livros aqui. Tudo o que preciso é um título.</p>
+<p> </p>
+<p>... [%username]-Eu não esperava você tão cedo. Apenas me diga um título de livro. Gaminart está nos observando ....</p>
+<p> </p>
+<p>Qualquer título, e eu o encontrarei para você. Eu conheço todos eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Estou procurando o Impetússio da Glória."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>"Impetússio glorioso"? Um momento, por favor, acho que vi aquele livro aqui em algum lugar ...</p>
+<p> </p>
+<p>(Em voz baixa.) Encontre Munin.</p>
+<p> </p>
+<p>Ele me avisou através de Skuld que uma nova estrela se levantaria em Atreia. Eu deveria encontrar essa pessoa e enviá -la para ela.</p>
+<p> </p>
+<p>Mesmo quando nos conhecemos pela última vez, tive a sensação de que poderia ser você, mas agora tenho certeza disso. Munin certamente já sentiu sua energia e está esperando por você.</p>
+<p> </p>
+<p>Vou mandar você para ele imediatamente.</p>
+<p> </p>
+<p>Por favor, diga a Munin que duas estrelas aumentaram em Atreia, uma das quais é vermelha.</p>
+<p> </p>
+<p>Então, tenha cuidado e cuidado com a corte das sombras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Teleporte para Munin</act>
+</selects>
+<voice file="Q2096-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio de Kasir, certo? Tem certeza de que não foi seguido?</p>
+<p> </p>
+<p>Você quer se observar. Eles ficariam felizes em colocá -lo aqui também.</p>
+<p> </p>
+<p>Kasir disse mais alguma coisa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Algo sobre duas estrelas ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dois. E um sangue vermelho. Ameaçoso, não?</p>
+<p> </p>
+<p>Lembre -se de Hellion? Aparentemente, ele continuou a crescer em poder e habilidade, como você tem. Mas esse não é o problema. Você é. Talvez aquele que destruirá Atreia ....</p>
+<p> </p>
+<p>Não, o futuro ainda é incerto até certo ponto. Venha aqui e coloque suas mãos nas minhas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Tudo bem...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaaahhhh !! Ruim! Pior do que eu esperava.</p>
+<p> </p>
+<p>Eu me pergunto como podemos frustrar isso ... ou se pode ser frustrado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o pandaemonium e converse com[%dic:STR_DIC_N_Mimir].</p></step>
+<step><p visible="[%3]">Encontrar -se [%dic:STR_DIC_N_Kasir]na biblioteca oculta.</p></step>
+<step><p visible="[%6]">Vá para Ishalgen e converse com[%dic:STR_DIC_N_Muninn].</p></step>
+</steps>
+<p>Ordem: Arch Sage Cavalorn está procurando por você. Vá ao templo do conhecimento em Pandaemonium para encontrá -lo.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arch Sage Cavalorn disse que Kasir queria vê -lo.</p>
+<p> </p>
+<p>Kasir disse que Munin disse a ele há muito tempo para enviar -lhe a nova estrela quando se levanta a Atreia. Ele pediu para você ir ver Munin, como você é a nova estrela.</p>
+<p> </p>
+<p>Ele também pediu que você desse uma mensagem de Munin de que duas estrelas subiram sobre Atreia, e uma é o sangue vermelho.</p>
+<p> </p>
+<p>Quando você entregou a mensagem de Kasir a Munin, ele o lembrou sobre Hellion em Elysea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

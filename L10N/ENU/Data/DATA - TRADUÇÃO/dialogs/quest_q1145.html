@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É inútil, não há nada que eu possa fazer.</p>
+<p> </p>
+<p>Não posso escolher frutas nas florestas por causa das nó da carne, não consigo obter comida da fazenda por causa dos ladrões. Temos que escolher o que podemos ao longo da estrada.</p>
+<p> </p>
+<p>Eu disse [%dic:STR_DIC_N_Eradis]Na vila de Tolbas, eu buscava alguns[%dic:STR_DIC_I_vegetable_n_c_10a]. Mas parece que vou ter que voltar de mãos vazias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o sabor?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas o vegetal mais saboroso do mundo!</p>
+<p> </p>
+<p>Bom e doce e muito saboroso com manteiga e pimenta.</p>
+<p> </p>
+<p>Belbua estava cultivando uma pequena colheita, mas agora aqueles ladrões lefaristas assumiram a fazenda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece uma situação ruim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Olha, Daeva, eu odeio presumir, mas você me ajudaria a manter minha palavra para erradis?</p>
+<p> </p>
+<p>Ele cozinha para toda a vila, e eu não quero vê -los passar fome.</p>
+<p> </p>
+<p>Se você lutar com esses ladrões, você pode me trazer de volta alguns[%dic:STR_DIC_I_vegetable_n_c_10a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Descer para o campo em[%dic:STR_DIC_FLA24], e você deve encontrar muito[%dic:STR_DIC_I_vegetable_n_c_10a].</p>
+<p> </p>
+<p>Quatro grandes grandes devem ser suficientes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto com seu Kukuru."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah.</p>
+<p> </p>
+<p>Aw, explodi -lo. Parece que vou ter que quebrar minha palavra.</p>
+<p> </p>
+<p>Acho que vamos ter que começar a comer grama e galhos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Continue olhando ... ignore o estômago estrondoso ... continue procurando ...</p>
+<p> </p>
+<p>Daeva! Você encontrou algum[%dic:STR_DIC_I_vegetable_n_c_10a]?</p>
+<p> </p>
+<p>Esses lefaristas não saquearam tudo isso, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei alguns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é uma piada?</p>
+<p> </p>
+<p>Não sei se você me ouviu, mas essa vila está contando com você.</p>
+<p> </p>
+<p>Por favor, busque alguns[%dic:STR_DIC_I_vegetable_n_c_10a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]!</p>
+<p> </p>
+<p>Deixe -os comigo. Vou levá -los a Eradis quando terminar.</p>
+<p> </p>
+<p>Obrigado por reservar um tempo para ajudar. Você realmente fez a diferença.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_vegetable_n_c_10a] e trazê -lo para [%dic:STR_DIC_N_Ondanius].</p>[%collectitem]</step>
+</steps>
+<p>[%dic:STR_DIC_N_Ondanius]Pediu para você colher Kukuru. Desça até o campo na fazenda de Belbua e junte alguns.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ondanius concordou em recolher alguns Kukuru, mas os lefaristas da fazenda o impediam.</p>
+<p> </p>
+<p>Você reuniu um pouco de Kukuru da fazenda de Belbua e a trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

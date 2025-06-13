@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, veja quem é! O poderoso[%username]! Soprou todo o seu dinheiro viajando com lanches de bebida e taberna, não é?</p>
+<p> </p>
+<p>Talvez eu tenha uma tarefa trivial em que posso enviá -lo, para que eu possa justificar Tipping para você alguns Kinah para o seu problema. Deixe -me pensar, agora ...</p>
+<p> </p>
+<p>Ah, sim. Acho que tenho algo adequado ao seu talento comprovado para pular pela cidade e entregar mensagens. A menos que você já esteja ocupado fazendo recados para outra pessoa, é claro?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Cusa, Doman."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, Haven deveria me trazer um pouco da Apellbine Tavern-tenho certeza de que você sabe o lugar-mas não a vi o dia todo.</p>
+<p> </p>
+<p>Corra para lá e colete meu pedido, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Eu aprecio isso, sério.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Herpa] estará em seu local habitual do lado de fora do Apelbine, espero, tentando aumentar alguns clientes. Eu iria sozinho, mas, você sabe ... eu tenho que operar o teleporter o dia todo.</p>
+<p> </p>
+<p>Apresse -se, se puder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, se você não precisa do dinheiro, não importa.</p>
+<p> </p>
+<p>Mas se você estiver preso pela sua tarifa, sabe para onde vir.</p>
+<p> </p>
+<p>Eu sempre posso encontrar algo para você fazer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, Doman."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo!</p>
+<p> </p>
+<p>Venha direto para a ApelBine Tavern!</p>
+<p> </p>
+<p>Conide fresco no espeto, ótimo licor na torneira. Você não vai querer sair!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Doman está esperando seu pedido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, explosão! Eu esqueci completamente!</p>
+<p> </p>
+<p>Aqui, pegue isso. É o suco de Doman. Por favor, pegue -o para [%dic:STR_DIC_N_Doman] Agora mesmo.</p>
+<p> </p>
+<p>Quando terminar, você deve voltar aqui e tomar algumas bebidas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Talvez eu vá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Graças a Azphel você está de volta! Você poderia ter demorado mais?!</p>
+<p> </p>
+<p>Você tem meu pedido, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Claro, Doman."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Alguns dias eu mal consigo passar pelo meu turno, mas ouvi falar desse suco de Odella, então tentei.</p>
+<p> </p>
+<p>É uma coisa boa! Faz suas mãos e pés formularem. No entanto, é difícil parar de beber, depois de adotar o hábito. É bom para você, no entanto! O mantém saudável! Melhora sua velocidade de reação! Eu posso sentir isso me fazendo bem agora!</p>
+<p> </p>
+<p>Obrigado, [%username]. Precisa que eu lhe enviasse para algum lugar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Herpa].</p></step>
+<step><p visible="[%3]">Entregar suco de odella para [%dic:STR_DIC_N_Doman].</p></step>
+</steps>
+<p>Colete o que Doman pediu de Haven e entregue a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Doman disse que Haven deveria enviar algo a ele, mas ela não havia aparecido. Ele pediu para você ir à Apellbine Tavern e pegar seu pedido.</p>
+<p> </p>
+<p>Aconteceu que Haven esqueceu o suco de Odella de Doman novamente, então ela deu a você.</p>
+<p> </p>
+<p>Quando você trouxe o suco de Odella para Doman, ele explicou que precisava dele para ajudar a manter sua energia, porque trabalhar o teleportador o dia todo foi tão cansativo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

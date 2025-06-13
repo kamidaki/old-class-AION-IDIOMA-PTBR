@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um livro de contas de couro molhado.)</p>
+<p> </p>
+<p>(Há algo escrito na frente em Shugo Writing.)</p>
+<p> </p>
+<p>(Parece ser registros relativos ao tempo de operação do sistema de produção de água da primavera, bem como quantidades de produção.)</p>
+<p> </p>
+<p>(Leve -o ao comandante da tropa de guerrilha vermelha de presa, [%dic:STR_DIC_N_LDF5b_Denitz_E].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem o livro de contas para a produção de água da primavera?</p>
+<p> </p>
+<p>Houve coisas estranhas acontecendo. Algumas dessas coisas podem ser verificadas com o livro de contas.</p>
+<p> </p>
+<p>Posso dar uma olhada no[%dic:STR_DIC_I_QUEST_23060A]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Retira seu livro de contas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem várias coisas que me deixam desconfiado.</p>
+<p> </p>
+<p>Olhe para o registro e você notará que a quantidade de água da primavera produzia flutuados e que muitas vezes são produzidas mais água do que a entrega.</p>
+<p> </p>
+<p>O registro não fornece uma explicação por si só, por isso precisaremos investigar de perto o assunto.</p>
+<p> </p>
+<p>Ulvari é responsável por fazê -lo. Relatório para [%dic:STR_DIC_N_LDF5b_Ulvali_E] Sobre isso e, por favor, transmitam que uma investigação adicional será necessária.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há problemas com a produção de água da primavera!</p>
+<p> </p>
+<p>Trabalhei com a Waterinerk há muito tempo. Se houvesse algo estranho acontecendo, tenho certeza de que saberia imediatamente.</p>
+<p> </p>
+<p>O Waterinerk está sempre um pouco estressado, mas a água da primavera entregue é perfeita. É por isso que uma investigação adicional não é necessária.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5b_Denitz_E] está obviamente com ciúmes do meu sucesso. Pense em rumores estranhos, embora não haja problemas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulvari diz que não há problema, mesmo que haja evidências claras em contrário?</p>
+<p> </p>
+<p>Que Daeva patética, apenas pensando em seu próprio sucesso. Como Daeva, sinto -me envergonhado por ele.</p>
+<p> </p>
+<p>Se Ulvari não quiser fazer nada, você precisará encontrar ajuda de fora.</p>
+<p> </p>
+<p>A Aliança Green Hat irá aceitar com prazer.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_E_LDF5a_Greenhat_BA], entregue este livro de contas e comissionar uma investigação, eu imploro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A Aliança Green Hat pensa em nada além da natureza.</p>
+<p> </p>
+<p>O Wateriário é um comerciante sem escrúpulos que só pensa em dinheiro, AK.</p>
+<p> </p>
+<p>O Waterinerk lida na água da primavera, mas ele está destruindo o pântano no processo, Ak.</p>
+<p> </p>
+<p>Shugo faria qualquer coisa para parar o Waterinerk, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei tanto, Ak.</p>
+<p> </p>
+<p>Pareceu -me estranho desde o início.</p>
+<p> </p>
+<p>Não é possível obter água de primavera potável deste pântano contaminado.</p>
+<p> </p>
+<p>Não apenas a água está destruindo nosso ambiente, ele também está prejudicando nossa saúde, AK. A Aliança Green Hat deve olhar para o assunto, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Denitz_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Ulvali_E]%.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_LDF5b_Denitz_E]%.</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_E_LDF5a_Greenhat_BA]%.</p></step>
+</steps>
+<p>Examine o livro sujo encontrado no pântano esquecido e descubra o segredo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de entregar o livro de contas sujas descobertas aleatoriamente ao membro do grupo de expedição, Tenitz, ele disse que parecia haver problemas com a produção de água da primavera e exigiu uma investigação.</p>
+<p> </p>
+<p>Ulvari negou veementemente tudo, exceto Tenitz, encomendou a Green Hat Alliance para realizar uma investigação completa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

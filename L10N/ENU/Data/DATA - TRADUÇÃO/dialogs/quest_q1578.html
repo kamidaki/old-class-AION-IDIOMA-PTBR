@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem estranhas ... energias na floresta da morte.</p>
+<p> </p>
+<p>Eu andei lá ... para aprender mais ... e encontrei uma substância estranha ....</p>
+<p> </p>
+<p>Tinha um gosto ... como fertilizante ... mas como nenhum fertilizante que eu já ... tinha um gosto antes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Interessante...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos perguntar ... [%dic:STR_DIC_N_Tree_Nomove_Trajanus]Para conselhos. Ele é o mais sábio ... talvez ele saiba ... o que é essa substância.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acredito que isso pode ser o que ... está criando os rotrons ... mas eu não poderia dizer com certeza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Trajanus saberá, espero."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez ... eu devo aprender a fazer as coisas ... por mim mesmo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... esta substância é ... estranha. Estranho e ... perigoso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Poderia estar criando os Rotrons?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ... minha suspeita. Mas o que ... ou quem ... está causando isso?</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Trou]... tem conhecimento de coisas que eu ... não sou.</p>
+<p> </p>
+<p>Talvez ele ... tivesse uma ideia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou conferir com ele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bênçãos de Old Class Aion sobre você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"O que você faz dessa substância?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se for artificial, pode ser o trabalho dos hereges lefaristas.</p>
+<p> </p>
+<p>Um sentinela nomeado[%dic:STR_DIC_N_Aiokina]passou por aqui. Ela disse que estava sendo designada para um post assistindo os lefaristas na selva.</p>
+<p> </p>
+<p>Se eles estão tramando alguma coisa, ela deve ser informada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Eu vou contar a ela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação. Você tem negócios aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os lefaristas estão tramando alguma coisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, é claro que eles estão tramando algo. Isso é claro para qualquer pessoa com uma lambida de sentido.</p>
+<p> </p>
+<p>Esta é a primeira vez que ouvi sobre eles estarem envolvidos com os Rotrons. Obrigado pela dica-eu vou olhar para ela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Tree_Nomove_Trajanus].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Trou].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Aiokina].</p></step>
+</steps>
+<p>Descubra qual é a estranha substância na floresta Deathsong.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Terba queria que você perguntasse a Trajanus que substância estranha que ele descobriu na floresta Deathsong e se ela estava conectada aos Rotrons. Trajano fez você falar com o problema.</p>
+<p> </p>
+<p>Trould disse que, se uma substância artificial fez com que o Elim se tornasse rotrons, provavelmente estava conectado aos lefaristas. Ele o encaminhou a Aiokina, um sentinela de rastreamento dos lefaristas na selva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

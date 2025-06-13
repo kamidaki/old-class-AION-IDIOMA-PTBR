@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu apenas me lembrei do que ia perguntar a você, [%username].</p>
+<p> </p>
+<p>Você poderia cuidar do[plur][%dic:STR_DIC_M_DF5_B_Harpy_56_An]?</p>
+<p> </p>
+<p>Eu estava esperando alguém como você aparecer, [%username]... agora eu quase deixei você sair.</p>
+<p> </p>
+<p>Como você pode ver, atualmente estamos examinando as relíquias encontradas nesta região. Infelizmente, este lugar está repleto de [plur][%dic:STR_DIC_M_DF5_B_Harpy_56_An].</p>
+<p> </p>
+<p>Eles estão nos impedindo de progredir em nossa pesquisa.</p>
+<p> </p>
+<p>Por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Daeva!</p>
+<p> </p>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>(...)</p>
+<p> </p>
+<p>Oh! É você, [%username]. Sim...</p>
+<p> </p>
+<p>Erm ... eu pedi que você cuide do[plur][%dic:STR_DIC_M_DF5_B_Harpy_56_An] Ainda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que já lidou com eles e dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... oh querido! Estou muito grato!</p>
+<p> </p>
+<p>Costumo ser esquecido quando me concentro na minha pesquisa. Provavelmente vai piorar após a nossa última descoberta.</p>
+<p> </p>
+<p>Obrigado a você, [%username], Finalmente posso dar toda a minha atenção à minha pesquisa novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_DF5_B_Harpy_56_An]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Nixie_E].</p></step>
+</steps>
+<p>Mate o Gold Viragos para ajudar Nixie em sua pesquisa sobre civilizações antigas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nixie pediu que você eliminasse o ouro Viragos para que ela pudesse pesquisar as ruínas.</p>
+<p> </p>
+<p>Você matou o ouro Viragos e voltou a Nixie, que ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

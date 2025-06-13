@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que o Manastones é bastante comum, mas nossos pesquisadores não têm tempo de caçar por eles.</p>
+<p> </p>
+<p>A maioria das Manastones é vendida em uma pechincha para as lojas, e isso é realmente uma pena-tanto a pesquisa em potencial foi desperdiçada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe, talvez você possa nos ajudar. Precisamos de alguns Manastones-HP +40, precisão +16 e bloqueio +16 especificamente.</p>
+<p> </p>
+<p>Se você tem todos os três e está disposto a se separar deles, posso trocá -los por um muito melhor.</p>
+<p> </p>
+<p>Será mais benéfico para você do que vendê -los a uma loja por quase nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Isso será uma grande ajuda!</p>
+<p> </p>
+<p>Se você os possui, poderá entregá -los imediatamente. Caso contrário, estou disposto a esperar enquanto você os coleciona.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Excelente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não vai vendê -los para uma loja depois de rejeitar minha oferta, está?</p>
+<p> </p>
+<p>Isso seria bastante rude, você sabe ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sei. Eu não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É incrível como podemos ter tantos de um tipo de Manatone e tão poucos de outro ....</p>
+<p> </p>
+<p>Oh, [%username]! Ótimo momento! Você trouxe os Manastones que eu pedi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... bem, então eles parecem ter caído do seu cubo.</p>
+<p> </p>
+<p>Lembre -se, o que estamos realmente curtos agora são os HP +40, precisão +16 e bloqueiam +16 Manastones.</p>
+<p> </p>
+<p>Você deve refazer seus passos e depois voltar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Exatamente o que precisávamos!</p>
+<p> </p>
+<p>Nós os usaremos bem, garanto -lhe.</p>
+<p> </p>
+<p>Obrigado, e por favor, pegue isso-espero que seja útil para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>O avanço do conhecimento de Manastone depende dos esforços de pessoas como você.</p>
+<p> </p>
+<p>Tanto é assim que, se você tiver mais a negociar, eu os aceitava com prazer.</p>
+<p> </p>
+<p>Outro conjunto de HP +40, precisão +16 e bloco +16 Manastones seriam melhores.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Aceitar.</act>
+<act href="HACTION_FINISH_DIALOG">"Volto mais tarde com mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, isso não será nada.</p>
+<p> </p>
+<p>Juntos, podemos ter sucesso, mas apenas se você me trazer o que eu preciso.</p>
+<p> </p>
+<p>HP +40, precisão +16 e bloco +16 MANASTONS. Volte quando puder contar para três</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não há necessidade de ser rude ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete o Manastones e leve -os a Protesias.</p>[%collectitem]</step>
+</steps>
+<p>Você aceitou a oferta de Protesias para trocar três manostones comuns por um valioso Manastone.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A PRESIAS, um removedor de Manastone, ofereceu -se para trocar três manostones comuns por um valioso Manatone.</p>
+<p> </p>
+<p>Você trouxe um dos HP +40, precisão +16 e bloqueio +16 Manastones, como ele solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

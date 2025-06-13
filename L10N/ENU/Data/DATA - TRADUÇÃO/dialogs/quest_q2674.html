@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando vi um Drake pela primeira vez, pensei que o Balaur tinha algo a ver com isso.</p>
+<p> </p>
+<p>O nome e a aparência apontaram para isso.</p>
+<p> </p>
+<p>Depois que vi os draconutos, tinha certeza de que tinha adivinhado certo. Eles são muito parecidos com Drakes - suas caudas e chifres, por exemplo.</p>
+<p> </p>
+<p>No entanto, Drakes pode voar, essa é a única diferença.</p>
+<p> </p>
+<p>Eu me disfarcei para poder descobrir mais. Eu estava certo, minhas suspeitas estavam corretas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu posso estar com vontade de matar alguns".</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur usa Drakes para batalha.</p>
+<p> </p>
+<p>Existem até domadores especiais que se preocupam apenas com os Drakes.</p>
+<p> </p>
+<p>Eles nos infligem com muitos danos.</p>
+<p> </p>
+<p>[%username], por favor, mate o [plur][%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae], Assim, [plur][%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae] e [plur][%dic:STR_DIC_M_G6_LizardBreederD_44_Ae_tune].</p>
+<p> </p>
+<p>É melhor matá -los antes que eles nos matassem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para o quartel de bakarma e elimine o [plur][%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae], o [plur][%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae] e o [plur][%dic:STR_DIC_M_G6_LizardBreederD_44_Ae_tune].</p>
+<p> </p>
+<p>Os guarda -roupas e os draxes de combate ainda podem ser jovens, mas você não deve subestimá -los. Além disso, eles sempre são acompanhados por domadores, por isso tenha cuidado.</p>
+<p> </p>
+<p>Tenho certeza de que você está ciente de que só deve partir para aliados, já que entrará na sede do inimigo nessa missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza que não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... você não quer mais matar Balaur para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só não estou nisso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os guarda -roupas e os draxes de combate ainda podem ser jovens, mas não devemos subestimá -los. Há também o fato de que você nunca os vê sem os domadores.</p>
+<p> </p>
+<p>Você eliminou o [plur][%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae], o [plur][%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae] e o [plur][%dic:STR_DIC_M_G6_LizardBreederD_44_Ae_tune]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. Você se vingou agora, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, a vingança é doce. Muito doce. Quase me lembra de estar vivo ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os Drakes, os Drakies e seus domadores.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_G6_LizardPet_DrakyD_44_Ae]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_G6_LizardPet_DrakeD_44_Ae]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_G6_LizardBreederD_44_Ae_tune]([%8]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_DF3_Fafner_E].</p></step>
+</steps>
+<p>Elimine os Drakes, os Drakies e seus domadores para poder derrotar o Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Fafner disse que, primeiro, os guarda -roupas, os drama e seus domadores tiveram que ser eliminados para poder vencer contra o Balaur.</p>
+<p> </p>
+<p>Então você eliminou os guarda -roupas e os draxes de combate e os domadores de elite bakarma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

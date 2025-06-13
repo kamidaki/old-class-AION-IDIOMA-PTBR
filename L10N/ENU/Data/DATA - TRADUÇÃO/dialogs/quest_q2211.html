@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Serei honesto, essa não foi minha primeira escolha de tarefas de serviço. Dito isto, não é tão ruim.</p>
+<p> </p>
+<p>As coisas são lentas e pacíficas e o Mumu mantém para si. Eu nem vejo muito comandante Suthran-graça a bondade para pequenas bênçãos.</p>
+<p> </p>
+<p>Se não fosse pelos Karnifs, nada aconteceria aqui. Eles são suficientes para nos manter ocupados, porém, é triste dizer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está acontecendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eles costumavam viver profundamente na floresta, mas algo deve ter acontecido para expulsá -los. Ultimamente, eles rasgaram a estrada, atacando a todos!</p>
+<p> </p>
+<p>Muitas vezes os caçamos enquanto assistimos ao Mumu, mas os ataques estão aumentando. Eles podem ser demais apenas para nós.</p>
+<p> </p>
+<p>Se você pudesse ajudar, [%username], isso realmente ajudaria.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente!</p>
+<p> </p>
+<p>Se você derrotar 10[%dic:STR_DIC_M_Kalnif_10_An], o resto ficará assustado e fugirá.</p>
+<p> </p>
+<p>Estamos contando com você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Não é o seu problema?</p>
+<p> </p>
+<p>Acho que entendo, mas receio que haja mais vítimas.</p>
+<p> </p>
+<p>Se você pode poupar algum tempo, por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o [%dic:STR_DIC_M_Kalnif_10_An] S?</p>
+<p> </p>
+<p>Eles podem ser bastante ferozes. Eles machucaram você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nada que eu não conseguia lidar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Você derrotou 10[%dic:STR_DIC_M_Kalnif_10_An] S!</p>
+<p> </p>
+<p>Eles geralmente apenas atacam os fracos, [%username]-Eu acho que não teremos mais problemas.</p>
+<p> </p>
+<p>Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os Karnifs em[%dic:STR_DIC_W_DF1A_3].</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_Kalnif_10_An]([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Okkolenja].</p></step>
+</steps>
+<p>Karnifs tem atacado pessoas que passam pela floresta. Limpe os Karnifs perto da estrada para ajudar Olenja, que está ocupado assistindo o Mumu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Olenja estava preocupado com o fato de os Karnifs, que costumavam viver profundamente na floresta, tenham chegado ao caminho para atacar as pessoas.</p>
+<p> </p>
+<p>Você derrotou Karnifs por Olenja. Ela ficou muito feliz em ouvir a notícia e agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

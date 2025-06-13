@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca vi um Daeva lidar com uma Máquina de Tecelagem tão habilmente quanto você, [%username].</p>
+<p> </p>
+<p>Você aprendeu a Máquina de Tecelagem antes de se tornar um Daeva?</p>
+<p> </p>
+<p>Eu acho que você tem algum talento natural. Na verdade, eu gostaria de testá -lo. É muito simples. Vou pedir que você faça um item especial. Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu amo um desafio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, faça a faixa nobre de Daphnis e traga -a para mim.</p>
+<p> </p>
+<p>Você fez muita alfaiataria, então você sabe que é preciso dedicação para fazer uma faixa tão. Para criar os melhores bens, você deve diminuir os cuidados com eles em todas as etapas.</p>
+<p> </p>
+<p>Há uma coisa que você deve ter em mente. Se você se tornar um especialista em alfaiataria, só poderá se tornar um especialista em outro campo e, mesmo assim, deve esperar até terminar seus estudos. Então, por favor, considere cuidadosamente antes de responder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode comprar o design de faixa nobre dos Daphnis de [%dic:STR_DIC_N_Proserpina]. Não confunda com o [%dic:STR_DIC_E_Q1982]projeto. Eles são semelhantes, mas[%dic:STR_DIC_E_Q1982]é um padrão muito menos complexo.</p>
+<p> </p>
+<p>Pode ser melhor se você terminar o seu negócio mais urgente antes de iniciar isso. Depois de começar, você não terá tempo para se preocupar com mais nada. Sabe, muitas vezes esqueço de comer enquanto estou trabalhando duro.</p>
+<p> </p>
+<p>Quando você terminar, traga -o para mim. Eu estarei esperando por você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou decepcioná -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu pensei que você estava realmente interessado em adaptar.</p>
+<p> </p>
+<p>Eu não posso forçá -lo, é claro. Você tem que querer. Se você mudar de idéia mais tarde, por favor, venha até mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh olá, [%username]!</p>
+<p> </p>
+<p>Eu estava pensando em você.</p>
+<p> </p>
+<p>Você fez a faixa nobre de Daphnis?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Como isso está?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... eu simplesmente não acho que essa seja a faixa nobre de Daphnis.</p>
+<p> </p>
+<p>Eu pensei que você já teria feito isso agora.</p>
+<p> </p>
+<p>Eu sei que você provavelmente está ocupado, mas encontre tempo para fazer essa faixa e trazê -la para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou continuar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu sabia que você poderia fazer isso, [%username]!</p>
+<p> </p>
+<p>Apenas alguns minutos de observação é suficiente para eu dizer quando alguém é verdadeiramente talentoso.</p>
+<p> </p>
+<p>Estou muito feliz em confirmar minha avaliação de suas habilidades!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que é restritivo, [%username], mas você pode trabalhar em apenas um tipo de teste de especialista por vez. Se você estiver caminhando pelo caminho de um especialista em outro campo, não pode se tornar um especialista em alfaiataria.</p>
+<p> </p>
+<p>Receio que você não possa progredir mais por enquanto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça a faixa nobre de Daphnis e traga -a para [%dic:STR_DIC_N_Daphnis].</p>[%collectitem]</step>
+</steps>
+<p>Daphnis diz que você parece ter um talento para alfaiataria e pediu que você fizesse o nobre faixa de Daphnis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Daphnis disse que você parecia ser hábil em lidar com uma Máquina de Tecelagem e perguntou se sua paixão estava na alfaiataria.</p>
+<p> </p>
+<p>Você trouxe a faixa nobre de Daphnis como ela perguntou, e ela ficou feliz por fazer sua avaliação de você justificou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

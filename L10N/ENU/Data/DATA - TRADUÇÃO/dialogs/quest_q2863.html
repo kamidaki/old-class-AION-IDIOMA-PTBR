@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com nossas informações mais recentes, os Elyos estão planejando um grande ataque.</p>
+<p> </p>
+<p>Se eles começarem o ataque, os asmodianos sofrerão danos críticos.</p>
+<p> </p>
+<p>Mas nós, a Guilda da Rothasia, não permitiremos que isso aconteça.</p>
+<p> </p>
+<p>Devemos impedir o avanço dos Elyos e alterar a situação de guerra a nosso favor!</p>
+<p> </p>
+<p>Para fazer isso, devemos conquistar a fortaleza Miren primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para que tenhamos alguma chance nas próximas batalhas, devemos primeiro eliminar os Guardiões da Fortaleza.</p>
+<p> </p>
+<p>Mas eles não são oponentes fáceis. É por isso que não devemos começar um grande ataque imediatamente, mas enfraquecer o inimigo com pequenas escaramuças.</p>
+<p> </p>
+<p>É importante para nós quebrarmos as linhas inimigas ... mas não podemos fazer isso sozinho.</p>
+<p> </p>
+<p>Estamos lutando contra o Balaur, assim como os Elyos. Não podemos estar em todos os lugares de uma só vez.</p>
+<p> </p>
+<p>O que você acha, [%username]? Você se atreve a vencer o [%dic:STR_DIC_E_1241_guard_Li_fi]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Fique de olho na situação assim que os Elyos capturam a fortaleza Miren. É quando os Miren Guardians aparecerão.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_E_1241_guard_Li_fi] e coletar o [plur][%dic:STR_DIC_I_QUEST_2863a].</p>
+<p> </p>
+<p>Você deve ter cuidado para não ser descoberto, pois os Elyos estarão guardando de perto a fortaleza.</p>
+<p> </p>
+<p>Relate para mim assim que você concluir a missão.</p>
+<p> </p>
+<p>[%username], se você é bem -sucedido, podemos iniciar a próxima operação imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Capturar a fortaleza Miren é a parte mais importante de nossa estratégia.</p>
+<p> </p>
+<p>[%username], Eu esperava que você nos ajudasse ...</p>
+<p> </p>
+<p>Você não poderia reconsiderá -lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>O ataque à fortaleza Miren foi bem -sucedido?</p>
+<p> </p>
+<p>Você trouxe o [plur][%dic:STR_DIC_I_QUEST_2863a]com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Aqui.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma razão pela qual eu pedi para você reunir os Kisks.</p>
+<p> </p>
+<p>Nossos oponentes ressuscitarão com esses kisks. Então todos os nossos esforços seriam em vão.</p>
+<p> </p>
+<p>Então traga o [plur][%dic:STR_DIC_I_QUEST_2863a]com você. Seria bom se você pudesse fazer isso antes da ressurreição de nossos inimigos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem feito. Os Elyos se tornaram ainda mais fracos agora que perderam seus guardiões muito estimados.</p>
+<p> </p>
+<p>[%username], graças a você, agora podemos realizar a próxima operação sem problemas.</p>
+<p> </p>
+<p>Você pode ir e descansar agora. Eu tenho que transmitir novos pedidos ao meu povo.</p>
+<p> </p>
+<p>A sombra está com você, irmão[f:"sister"].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute com o [%dic:STR_DIC_E_1241_guard_Li_fi], colete evidências e traga -as para [%dic:STR_DIC_N_Rossjof].</p>[%collectitem]</step>
+</steps>
+<p>Os Guardiões Miren serão despachados assim que a fortaleza Miren estiver sob controle de Elyos. Elimine -os e colete os Kisks.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Rossjof planejava quebrar o poder de luta dos Elyos.</p>
+<p> </p>
+<p>Seu plano era eliminar os Guardiões Elyos Miren para privar o inimigo de alguns de seus lutadores mais importantes.</p>
+<p> </p>
+<p>Você deu um golpe debilitante aos Elyos Miren Guardians. Rossjof agradeceu por seus esforços e começou imediatamente com a próxima parte da estratégia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

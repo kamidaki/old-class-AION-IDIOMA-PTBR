@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A natureza é equilibrada, [%username]. Um ciclo uniforme ... um círculo perfeito.</p>
+<p> </p>
+<p>A planta é comida por ... o Brax. O Brax ... é comido pelo Karnif. O Karnif morre e ... os nutrientes são absorvidos por ... a planta.</p>
+<p> </p>
+<p>Você vê?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora este círculo perfeito ... ainda pode ... ser quebrado. Mudanças em nosso ambiente vão ... alterar o círculo.</p>
+<p> </p>
+<p>Eltnen ... está secando. Estamos lutando ... para proteger os limites da floresta. Agora ... algo mais está dobrando nossos galhos.</p>
+<p> </p>
+<p>Se o círculo estiver ... quebrado, o próprio Eltnen será ... quebrado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é isso 'outra coisa'?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_Cherubim2_23_n] S. Eles ... prendem as árvores com sua imprudência. Se as árvores ... morrem, as criaturas que comem das árvores morrerão ... começando o colapso do ciclo ....</p>
+<p> </p>
+<p>Não podemos ... detê -los nós mesmos, mas eles devem ... ser parados.</p>
+<p> </p>
+<p>Você vai nos ajudar, Daeva?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A floresta ... obrigado.</p>
+<p> </p>
+<p>Os coletores de querrubianos construíram suas tocas na ... lama pútrida. Vá lá, mate dez deles ... e traga de volta [%dic:STR_DIC_I_QUEST_1317a] para mim.</p>
+<p> </p>
+<p>Ande suavemente, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei o mais rápido possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum....</p>
+<p> </p>
+<p>Eu tinha ouvido, [%username], que em poeta você era o escudo da floresta .... ainda aqui ... você é diferente.</p>
+<p> </p>
+<p>Saia então. Faremos ... o que pudermos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu te desejo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Aí ... você está.</p>
+<p> </p>
+<p>O seu trabalho é feito? A floresta é segura?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pedi ... mais do que isso, [%username]. Agradeço ... seus esforços, mas você deve se aprofundar ... para arrancar a árvore do querrubiano.</p>
+<p> </p>
+<p>Volte. Volte ... e termine o que você começou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou sair agora. Espere aqui!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... perfeito.</p>
+<p> </p>
+<p>Você ajudou a manter o ciclo intacto ... e o círculo perfeito ... perfeito. Os querbianos sentiram ... nossa raiva. Espero ... eles aprenderem.</p>
+<p> </p>
+<p>Obrigado, Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_N_Tree_Move_Demro]prova de que você caçou o [%dic:STR_DIC_M_Cherubim2_23_n] S.</p>[%collectitem]</step>
+</steps>
+<p>Mate os querbianos que atormentam o eliminação e leve seus chifres para Demro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demro queria que você punisse os querbianos que atormentam o elimismo.</p>
+<p> </p>
+<p>Você fez o que ele pediu e trouxe os chifres como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

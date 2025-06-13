@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Outra vez, [%username], Eu preciso de suas habilidades.</p>
+<p> </p>
+<p>É o [%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]. Ainda estou preocupado com o que está em andamento naquele local sujo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está em sua mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com seus relatórios, os inimigos mais ameaçadores no[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs] São o Balaur sob o comando direto de Tiamat.</p>
+<p> </p>
+<p>Nosso caminho é claro. Vá em frente e elimine o [%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard] S que infestam a caminhada de Beshmundir, o cofre do herói e o pátio da eternidade.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Conquistar Balaurea e destruir o Tiamat exigirá muitos daevas corajosa, de quem você é um excelente exemplo, [%username].</p>
+<p> </p>
+<p>Eu sei que podemos fazer isso. Vá para o templo de Beshmundir ... e não deixe um único[%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard]vivo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu perguntei muito de você? Você ainda não se recuperou de sua missão anterior?</p>
+<p> </p>
+<p>Vou confiar essa tarefa a outros guardiões. Vá, descanse um pouco.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Estou bastante exausto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você voltou. Você parece exausto.</p>
+<p> </p>
+<p>Você teve sucesso? Você destruiu todos os protetores de Beshmundir Balaur?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles não nos incomodarão mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você teria sucesso, [%username]!</p>
+<p> </p>
+<p>Você nos deixou orgulhosos. Vá, descanse, coma. Venha me ver novamente mais tarde e conte os detalhes do seu triunfo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os protetores de Beshmundir Balaur.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_Entrance]([%2]/20)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_tomb]([%5]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_priest]([%8]/40)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Cainus].</p></step>
+</steps>
+<p>Outremus pediu que você elimine os protetores de Beshmundir Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Outremus estava preocupado com as forças de Balaur defendendo o templo de Beshmundir e pediu que você podasse seus números.</p>
+<p> </p>
+<p>Você foi ao templo e fez algumas podas de protetor de Balaur ... com preconceito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

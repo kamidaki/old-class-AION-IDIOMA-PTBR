@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que o Pandaemonium decidiu que Morheim é um excelente lugar para enviar novos colonos.</p>
+<p> </p>
+<p>Força através da adversidade e tudo isso.</p>
+<p> </p>
+<p>E eles decidiram que a vila de Kentari seria o local ideal para iniciar um assentamento-já foi construído, afinal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há um problema com esse plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, mas eles planejaram isso também. Eu tenho uma dispensação de moedas de bronze para dar a qualquer pessoa disposta a matar Kentari.</p>
+<p> </p>
+<p>Suponho que você estaria interessado em ajudar nossos humildes colonos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para limpar o [%dic:STR_DIC_W_DF2_SUB_B2], você deve derrotar [%dic:STR_DIC_M_TauricReBD_27_An] Areia [%dic:STR_DIC_M_TauricReAD_27_An] S.</p>
+<p> </p>
+<p>Faça isso por pandaemonium, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para os senhores Shedim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece saber que as tarefas pagas com moedas de bronze são difíceis.</p>
+<p> </p>
+<p>Bem, não é fácil matar o Kentari.</p>
+<p> </p>
+<p>Há alguns danos que se recusam a combatê -los porque já foram pessoas.</p>
+<p> </p>
+<p>Eu entendo. Há muitos outros além de você, [%username], quem estaria preparado para assumir o trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar minhas moedas em outro lugar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez sua parte para limpar a vila?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu matei aqueles brutos de Kentari."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso. O Pandaemonium ficará satisfeito ao saber que houve progresso.</p>
+<p> </p>
+<p>Vamos expulsar aqueles Kentari em pouco tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua o Kentari.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_TauricReBD_27_An]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_TauricReAD_27_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Fulla].</p></step>
+</steps>
+<p>Mate os Kentari para que os moradores possam morar na vila de Kentari.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial do governo Fulla é responsável por eliminar Kentari da vila de Kentari, para que as pessoas possam se mudar.</p>
+<p> </p>
+<p>Você derrotou combatentes e sentinelas de Kentari e recebeu moedas de bronze.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

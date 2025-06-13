@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Azphelumbra, daemons -</p>
+<p> </p>
+<p>Um "asmodiano" preocupado "nos contratou para derrotar uma besta mutada particularmente cruel.</p>
+<p></p>
+<p>Como sempre, o orgulho dos daemons de Charlirunerk está em jogo. Não devemos falhar!</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An]</p>
+<p></p>
+<p>2. Localização:[%dic:STR_DIC_W_SZ_DF4_D1_Od]</p>
+<p></p>
+<p>3. Detalhes: Uma criatura não natural e cruel. Disse ter sido mutado por um minério estranho nas proximidades.</p>
+<p> </p>
+<p>Aviso: Arges pode diminuir a presa e torná -los incapazes de voar. Os daemons devem trazer minério torcido para receber recompensas.</p>
+<p> </p>
+<p>- Charlirunerk, fundador, daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu odeio mutantes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É importante derrotar arges, mas mais importante para recuperar minério torcido.</p>
+<p> </p>
+<p>Isso ocorre porque o minério distorcido criou arges, e todo mundo quer ter certeza de que não faz outro!</p>
+<p> </p>
+<p>É claro que deve matar arges para começar o minério torcido, para que tudo dê certo! Você está relatando sucesso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu certamente sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, isso não será, Daeva! Eu pensei com toda a sua experiência, você já saberia!</p>
+<p> </p>
+<p>A necessidade do cliente era muito específica. Mesmo se você matar [%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An], você também deve trazer [%dic:STR_DIC_I_quest_46528a].</p>
+<p> </p>
+<p>Se não o fizer, o próximo mutante pode ser ainda maior, ainda mais poderoso! Espere, isso pode fazer uma história emocionante ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um que eu não quero fazer parte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então isso é minério torcido? Gostaria de saber se isso pode sofrer shugos? Yipe! Imagine Shugo Giant Hulking Green Shugo, Nyerk!</p>
+<p> </p>
+<p>Vou levar isso ao cliente imediatamente para que ele possa levá -lo daqui antes que isso aconteça!</p>
+<p> </p>
+<p>Você parece bem, no entanto. Estou feliz! Aqui está a recompensa. E se você se sentir doente, procure ajuda imediatamente!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar o minério guardado por [%dic:STR_DIC_M_DF4_DayQ_CyclopsOd_55_An] e trazê -lo para [%dic:STR_DIC_E_46500].</p>[%collectitem]</step>
+</steps>
+<p>Você tem uma tarefa dos daemons de Charlirunerk. Realizar o pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma tarefa dos daemons de Charliruners para coletar minério torcido, disse ter transformado uma besta normal nos arges monstruosos.</p>
+<p> </p>
+<p>Você derrotou o mutante e pegou o minério. Você tem um token de daemon para concluir a solicitação do cliente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu estava apenas procurando um Daeva que possa me ajudar.</p>
+<p> </p>
+<p>Algum tempo atrás, todos os moradores adoeceram de repente com estômagos e febre.</p>
+<p> </p>
+<p>Como assumimos que eles comiam ou bebiam algo contaminado, lançamos uma investigação e identificamos o riacho pela vila como a causa. Desde que os bem secos, os moradores têm recebido água daquele riacho.</p>
+<p> </p>
+<p>Coletamos amostras de água e as enviamos a Jumentis em santuário para determinar a causa de uma vez por todas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas recebemos uma resposta inesperada do santuário.</p>
+<p> </p>
+<p>Era o mesmo veneno que contaminou Verteron. Pode muito bem ser o sangue de Meslamtaeda ... Felizmente, Jumentis prometeu enviar um antídoto. Ainda estou esperando por isso.</p>
+<p> </p>
+<p>Como determinamos a causa tão rapidamente, os moradores não precisam sofrer mais danos.</p>
+<p> </p>
+<p>Também encontramos os autores que contaminavam o riacho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta quem são os autores.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei quem contaminou Verteron. Mas este rio está claramente para os revolucionários lefaristas.</p>
+<p> </p>
+<p>Eu os vi derramando algo no rio com meus próprios olhos. Quando os guardiões tentaram detê -los, eles fugiram.</p>
+<p> </p>
+<p>O acampamento deles fica em algum lugar perto da mística da primavera de Agairon Village. Mate o [plur][%dic:STR_DIC_M_LehparAs_33_An] e [plur][%dic:STR_DIC_M_LehparWa_33_An]lá.</p>
+<p> </p>
+<p>Eles devem estar tramando algo. Temos que fazer algo o mais rápido possível para impedir que os moradores sofram.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+<voice file="Q1039-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>As ações do mal que os revolucionários lefaristas estão perpetrantes estão piorando a cada dia.</p>
+<p> </p>
+<p>Agora eles envenenaram a água potável. Devemos ensinar a eles uma lição que eles não esquecem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se Daeva está tão ocupado, não há nada que possamos fazer.</p>
+<p> </p>
+<p>Vou ter que encontrar outra pessoa então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Todos os moradores foram curados com o antídoto que Jumentis nos enviou.</p>
+<p> </p>
+<p>Agora, tudo o que precisamos fazer é descontaminar o riacho.</p>
+<p> </p>
+<p>Você eliminou os revolucionários lefaristas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Isso manterá os revolucionários lefaristas de perpetrar mais críticas por um tempo.</p>
+<p> </p>
+<p>Seria bom se pudéssemos afastar todos eles da área ao redor da vila, mas isso não é possível agora.</p>
+<p> </p>
+<p>Primeiro, precisamos cuidar da administração da fonte de água doce. Essa é a coisa mais importante para os moradores agora.</p>
+<p> </p>
+<p>Obrigado por realizar a tarefa tão bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os revolucionários lefaristas.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_LehparAs_33_An]([%2]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_LehparWa_33_An]([%5]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Asclepius]no[%dic:STR_DIC_W_LF2_SZ_G3_SUB_1].</p></step>
+</steps>
+<p>Elimine os revolucionários lefaristas que estão contaminando a fonte de água doce em Agairon Village.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Asclepius, que foi enviado para a Agairon Village, pediu que você eliminasse os revolucionários lefaristas que estão envenenando a fonte de água dos moradores.</p>
+<p> </p>
+<p>A seu pedido, você foi ao acampamento lefarista e os eliminou para impedir que eles contaminassem ainda mais a primavera.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

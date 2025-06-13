@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hoje em dia, é difícil se sentir seguro em Beluslan, entre uma fortaleza em colapso, as pessoas sendo atingidas por fragmentos caindo ... e também não há fim de criaturas perigosas por aqui.</p>
+<p> </p>
+<p>Claro, também somos abreviados. Os arcontes que temos estão muito ocupados para tender a abater os bestas locais.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece um problema, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é. Felizmente, recebemos algumas moedas de prata para recompensar outros Daevas que podem assumir empregos pelos quais os arcons não podem ser poupados.</p>
+<p> </p>
+<p>No momento, precisamos de alguém para caçar as vespinas e os gnarls de ramo preto. Isso é algo em que você está interessado, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há muito[%dic:STR_DIC_M_VespaD_29_n] está do lado de fora da fortaleza. Eles são um incômodo sangrento para os moradores.</p>
+<p> </p>
+<p>e [%dic:STR_DIC_M_XipetoD_30_An] S está em toda a planície preta, espessa como pudim.</p>
+<p> </p>
+<p>Então saia e mate essas pragas para nós, e eu estarei acenando com sua moeda de prata quando voltar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha, Govanon."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso culpar você por não ficar animado com uma caça às pragas, [%username].</p>
+<p> </p>
+<p>É melhor recusar a missão agora do que sair no meio, suponho.</p>
+<p> </p>
+<p>Ainda assim, se você mudar de idéia, salvarei uma moeda para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bom saber."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta, [%username]. Como foi com o [%dic:STR_DIC_M_VespaD_29_n] Areia [%dic:STR_DIC_M_XipetoD_30_An] S?</p>
+<p> </p>
+<p>Conte -me a história toda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem, demorou um pouco ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez uma coisa boa para Beluslan. Obrigado.</p>
+<p> </p>
+<p>Agora as pessoas poderão sair da fortaleza sem medo.</p>
+<p> </p>
+<p>E eu também não esqueci sua moeda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute contra a criatura que está ameaçando os habitantes da fortaleza de Beluslan.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_VespaD_29_n]([%2]/12).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_XipetoD_30_An]([%5]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Govanon].</p></step>
+</steps>
+<p>Atualmente, vespinas e gnarls estão supostamente ameaçando habitantes na área ao redor da fortaleza. Mate as planícies Vespines e o Black Branch garls em frente à fortaleza de Beluslan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Govanon disse que as criaturas locais ameaçaram os habitantes da fortaleza, mas ele estava dando o emprego a Daevas porque estava com falta de arcontes. Ele pediu que você realizasse uma caçada pela segurança dos habitantes da fortaleza.</p>
+<p> </p>
+<p>Você se livrou das vespinas das planícies e dos gnarias de ramo preto e recebeu uma moeda de prata como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

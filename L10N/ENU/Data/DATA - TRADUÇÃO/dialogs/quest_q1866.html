@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com nossas informações, nossos inimigos estão planejando um ataque completo em todo o abismo depois de capturar a fortaleza Miren.</p>
+<p> </p>
+<p>Tal ataque devastaria os Elyos.</p>
+<p> </p>
+<p>Mas nós, na Guilda do Vento Cinzento, não o permitiremos.</p>
+<p> </p>
+<p>Vamos capturar a fortaleza, parar o ataque e alterar a situação de guerra a nosso favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os oponentes protegem suas fortalezas, colocando muitos guardas.</p>
+<p> </p>
+<p>Então está claro que temos que atacar a fortaleza!</p>
+<p> </p>
+<p>Mas será difícil causar danos graves, porque há muitos deles. É por isso que devemos enfraquecê -los através de repetidos ataques.</p>
+<p> </p>
+<p>Essa fortaleza é importante para nós quebrarmos as linhas inimigas ... mas não podemos fazer isso sozinhos.</p>
+<p> </p>
+<p>E você, [%username]? Você poderia eliminar o [%dic:STR_DIC_E_1241_Defender_Dr]ou o [%dic:STR_DIC_E_1241_Defender_Da]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Reúna seus amigos e vá para a fortaleza Miren.</p>
+<p> </p>
+<p>A fortaleza é fortemente guardada, [%username], então você deve ter cuidado. Pegue apenas aqueles que são pelo menos tão fortes quanto você.</p>
+<p> </p>
+<p>Relate de volta depois de concluir a missão.</p>
+<p> </p>
+<p>[%username], quando você retornar, podemos iniciar a próxima operação imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza Miren deve ser capturada.</p>
+<p> </p>
+<p>[%username], Eu esperava que você nos ajudasse ...</p>
+<p> </p>
+<p>Eu imploro que você reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>O ataque à fortaleza Miren foi bem -sucedido?</p>
+<p> </p>
+<p>Qual é a situação da fortaleza?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, a situação é pior do que eu pensava.</p>
+<p> </p>
+<p>A missão foi concluída com sucesso. Agora podemos realizar a operação sem dificuldades.</p>
+<p> </p>
+<p>Devo transmitir as próximas ordens para o meu povo.</p>
+<p> </p>
+<p>Lealdade e armas!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_1241_Defender_Dr]ou o [%dic:STR_DIC_E_1241_Defender_Da]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Monerva].</p></step>
+</steps>
+<p>Derrote o Esquadrão de Defesa de Asmodian Miren ou o esquadrão Balaur Miren Conquest para completar a missão de Minerva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Minerva planejou uma operação para recuperar a fortaleza de Miren.</p>
+<p> </p>
+<p>Você derrotou o Esquadrão de Defesa de Asmodian Miren ou o esquadrão Balaur Miren Conquest. Minerva ficou encantada com o seu sucesso e conseguiu prosseguir com a próxima fase de seu plano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

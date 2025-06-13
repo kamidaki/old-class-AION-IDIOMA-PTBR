@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], enquanto você está aqui, você poderia caçar o [plur][%dic:STR_DIC_M_LDF5B_G_VespaN_65_n]que estão contaminando o pântano com suas excreções?</p>
+<p> </p>
+<p>As vespinas gigantes são um perigo, mas o envenenamento é um problema ainda maior. Eles comem tudo o que encontram e envenenam o ambiente com seus enormes excrementos.</p>
+<p> </p>
+<p>Isso tem um efeito ruim no meio ambiente, naqueles lugares onde a água da primavera é produzida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A primavera sem dúvida ficará contaminada se não fizermos nada.</p>
+<p> </p>
+<p>São criaturas que se multiplicam muito rapidamente, e é por isso que, se não fizermos nada, o suprimento de água se tornará um problema.</p>
+<p> </p>
+<p>A propósito, como você se saiu ao remover o lixo, não, as vespinas gigantes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Agora que esse problema irritante foi resolvido, posso pedir para que a quantidade de produção de água seja regulamentada.</p>
+<p> </p>
+<p>Afinal, a água é extremamente importante em tempos de guerra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_LDF5B_G_VespaN_65_n]([%2]/9)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Ulvali_E]%.</p></step>
+</steps>
+<p>Caça as vespas que estão poluindo o pântano esquecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Após o pedido de Ulbari, você matou a vespa gigante que estava cobrindo o pântano esquecido em excremento. Quando você voltou, Ulbari estava feliz que agora era possível fornecer um suprimento constante de água.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

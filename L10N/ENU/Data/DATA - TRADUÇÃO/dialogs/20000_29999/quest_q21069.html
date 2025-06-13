@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. Permita -me explicar minhas deduções anteriores sobre você. A pequena cicatriz no seu pulso é uma marca dada apenas aos Raiders de Ulgorn.</p>
+<p> </p>
+<p>Aqueles que passam uma quantidade significativa de tempo em Gelkmaros têm botas cobertas com pólen de Plia. O seu, no entanto, só tem um pó leve.</p>
+<p> </p>
+<p>E reconheci a crista naquele sinete que você carrega como o do general Suthran. Daí suas viagens a Altgard.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Excelente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Elementar. Agora, minha querida [%username], Shawster viu sua esposa pela última vez perto do[%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069]no Antagor Canyon.</p>
+<p> </p>
+<p>As pedras na área ainda devem ter pequenos traços de sangue, ou quaisquer que fossem as manchas que Shawster viu.</p>
+<p> </p>
+<p>Eu também preciso de uma amostra da grama na área para examinar. Você vai ser meus olhos e ouvidos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Capital! Agora, para esta amostra, preciso que você corte um grande pedaço de grama e levantá -lo diretamente do chão. Vou te dizer por que mais tarde.</p>
+<p> </p>
+<p>E memorize como era a grama antes de perturbá -la.</p>
+<p> </p>
+<p>Estas são águas escuras, [%username]. Temo pelo que podemos encontrar, mas a verdade deve ser descoberta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu concordo. Vou sair imediatamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece meus métodos, [%username]. Eu preciso de dados. Não posso fazer tijolos sem barro.</p>
+<p> </p>
+<p>Eu tenho suposições, suposições, mas sem evidências concretas, elas permanecem nada além de pensamentos efêmeros, inúteis na realidade.</p>
+<p> </p>
+<p>Eu vou atender a este crime sozinho, então. Lamento que você não veja o fim deste caso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username]. Enquanto você se foi, tenho conduzido minhas próprias perguntas.</p>
+<p> </p>
+<p>Este assistente desaparecido, Maron, é a figura interessante. Eu ouvi muito sobre ele que foi esclarecedor.</p>
+<p> </p>
+<p>Mas minha investigação não pode prosseguir sem sua ajuda! Vamos ver o que você trouxe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu tenho ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é totalmente insuficiente para meus propósitos!</p>
+<p> </p>
+<p>Eu iria para o [%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069] eu mesmo, mas outras avenidas de investigação me afastam.</p>
+<p> </p>
+<p>Eu confiei em você para fazer o que eu teria feito. Não traia essa confiança!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pode contar comigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, vamos dar uma olhada ... hmmm, eu vejo ... então isso seria ... sim ... sim!</p>
+<p> </p>
+<p>Deixe -me procurar isso ... agora onde está esse tomo ...? Ah! Agora onde está ... aqui! Hmmm ... como eu pensei!</p>
+<p> </p>
+<p>Obrigado, [%username]. Isso confirma todas as minhas deduções anteriores. Este mistério é resolvido!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar evidências no[%dic:STR_DIC_SEN_DF4_SensoryArea_Q21069] e trazê -lo para [%dic:STR_DIC_N_Sherockian].</p>[%collectitem]</step>
+</steps>
+<p>Shorleck precisa que você colete evidências no local do crime: o local onde a esposa de Shawster desapareceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shorleck pediu sua ajuda para coletar evidências no desaparecimento da esposa de Shawster.</p>
+<p> </p>
+<p>Você foi ao lugar que ela foi vista pela última vez e coletou evidências como rochas e gramíneas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

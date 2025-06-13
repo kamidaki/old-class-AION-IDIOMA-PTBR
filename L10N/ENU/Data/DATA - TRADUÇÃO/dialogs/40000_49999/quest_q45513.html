@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: Cruzados de Sangue</p>
+<p></p>
+<p>Para: agente [%username]da cruzada sanguínea</p>
+<p></p>
+<p>A Cruzada Sangue quer derrubar os Elyos arrogantes de uma vez por todas e, portanto, está chamando todas as regiões de Signia para iniciar a guerra. Que nossas lâminas sejam embebidas no sangue dos Elyos ... o tempo todo.</p>
+<p></p>
+<p>Por favor, faça o seguinte pedido sem demora.</p>
+<p></p>
+<p>1. Infiltrate Signia e encontre os Elyos.</p>
+<p></p>
+<p>2. Se você encontrar Elyos, mate cinco deles. Qual método você usa não tem conseqüência.</p>
+<p></p>
+<p>3. No entanto, pode danificar a imagem da cruzada no sangue se você matar inimigos que são fracos.</p>
+<p></p>
+<p>4. Relatório para [%dic:STR_DIC_N_DF5_Salas_E]Depois de matar o inimigo.</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Quantos inimigos você derrotou hoje?</p>
+<p> </p>
+<p>Você matou os Elyos trazendo honra à cruzada no sangue?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu verifiquei se você completou a missão, [%username].</p>
+<p> </p>
+<p>Aqui está uma recompensa da cruzada no sangue.</p>
+<p> </p>
+<p>Para a glória de Pandaemonium!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os inimigos em[%dic:STR_DIC_W_LF5]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Salas_E].</p></step>
+</steps>
+<p>Ordem diária: mate os Elyos que invadiram a Signia e depois se reportam ao agente Salas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada Sangue emitiu a Ordem para Matar os Elyos que invadiram a Signia.</p>
+<p> </p>
+<p>Você realizou a missão e depois relatou ao agente Salas, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

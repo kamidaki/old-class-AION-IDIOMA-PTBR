@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Há uma pequena caixa de jóias no chão. Está em boas condições, por isso é improvável que tenha sido deliberadamente jogado fora.)</p>
+<p> </p>
+<p>(Alguém deve ter perdido. Talvez a resposta esteja dentro.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu me pergunto o que está dentro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você abre a caixa e encontra um pingente delicado por dentro. Você olha mais de perto para o design e percebe uma gravura do rosto de uma mulher gravado no metal.)</p>
+<p> </p>
+<p>(O pingente é claramente de valor para alguém. Talvez você deva tentar rastrear seu dono.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>([%dic:STR_DIC_N_Tree_NoMove_Lodas] está por perto. Veja se ele sabe alguma coisa.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso deve pertencer a alguém ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os itens parecem pessoais, talvez seja melhor deixá -los. Algumas pedras são mais bem deixadas sobre o uso.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez alguém venha procurando por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahhh ... aquela caixa ....</p>
+<p> </p>
+<p>Eu notei isso ... ontem. O que está ... nele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Um pequeno pingente gravado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum....</p>
+<p> </p>
+<p>O único daeva ... eu vi recentemente foi ... [%dic:STR_DIC_N_Justachys]. E você, é claro ....</p>
+<p> </p>
+<p>Fale com ele. Talvez ele possa ajudar ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou. Obrigado, Lodas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde eu estive? Onde?? Novan não viu, nem Heropres. Talvez eu deva perguntar ao telamone também.</p>
+<p> </p>
+<p>Desculpe, [%username], mas não tenho tempo para falar agora. Perdi algo muito importante e realmente tenho que encontrá -lo.</p>
+<p> </p>
+<p>Talvez Lakaiias saiba! Ei, lak ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não foi esse pingente, foi? Lodas me enviou aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, foi! Oh, obrigado Yustiel por Lodas!</p>
+<p> </p>
+<p>Este pingente pertencia a um bom amigo meu, você vê. Ele me deu antes de sair, pedindo -me para protegê -lo até que ele voltasse, ou entregue ao filho se ele não o fizesse. Isso foi há vários meses agora ....</p>
+<p> </p>
+<p>Obrigado, amigo, e agradeça a Lodas por mim. Agora posso voltar ao santuário e cumprir meus deveres ... não como um daeva, mas como amigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_Tree_NoMove_Lodas] Sobre a caixa de jóias.</p></step>
+<step><p visible="[%3]">Entregar o pendente para [%dic:STR_DIC_N_Justachys].</p></step>
+</steps>
+<p>Encontre o proprietário do pingente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma caixa de jóias abandonada perto de Lodas. Ele sugeriu que isso poderia pertencer a Justachys, um Sentinel Guardian.</p>
+<p> </p>
+<p>Então você levou o pingente a Justachys. Logo surgiu que o pingente lhe foi confiado por um bom amigo que havia sido morto, e Justachys agora teve que levá -lo ao filho de seu amigo. Ele havia perdido a caixa andando pelo deserto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

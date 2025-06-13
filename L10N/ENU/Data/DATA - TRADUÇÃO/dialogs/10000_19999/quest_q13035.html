@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Dragonbound pretende criar algo malvado chamado JormundGand.</p>
+<p> </p>
+<p>Para a magia do encantamento, eles prepararam um navio que serve como um meio ...</p>
+<p> </p>
+<p>Você, [%username], não foi capaz de destruir [%dic:STR_DIC_N_LDF5b_FOBJ_D2_Pot]?</p>
+<p> </p>
+<p>Se o navio for destruído, o dragão não poderá usar truques de magia estranhos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Aquela gangue vil dragão!</p>
+<p> </p>
+<p>Aposto que eles pensaram que nada aconteceria com eles!</p>
+<p> </p>
+<p>o [%dic:STR_DIC_N_LDF5b_FOBJ_D2_Pot]foi muito importante para os seguidores de dragão. Certamente seria prejudicial para eles se fosse destruído.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Como todos os navios que eles coletaram foram destruídos, eles não serão capazes de realizar sua cerimônia de invocação por um tempo.</p>
+<p> </p>
+<p>Graças à sua ajuda, não precisamos mais temer que um monstro estranho apareça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_N_LDF5b_FOBJ_D2_Pot]([%2]/6)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5b_Aphetos_E].</p></step>
+</steps>
+<p>Destrua o navio a ser usado durante o ritual de convocação de Jormungand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Apeta, você entrou no esconderijo do dragão, onde uma cerimônia para despertar Jormungand estava em andamento e destruiu o navio da dragão.</p>
+<p> </p>
+<p>O Dragonbound não será capaz de manter nenhuma cerimônia de despertar por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

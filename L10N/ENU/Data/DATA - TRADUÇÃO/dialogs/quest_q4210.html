@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O velho Haorunerk preso no navio pirata? Doente também?</p>
+<p> </p>
+<p>Viagem foi sua última antes de se aposentar ... que triste, Nyerk, Nyerk ....</p>
+<p> </p>
+<p>A missão de resgate deve começar rapidamente!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece uma boa ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas espere ... Daeva foi o último para ver o Haorunerk ... Nyerk.</p>
+<p> </p>
+<p>Daeva já esteve no Shulack Ship, sim?</p>
+<p> </p>
+<p>Forte, corajoso, experiente ... tolo .... Daeva irá para aço e resgate haorunerk?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva vê Chantinerk ali? Ela é filha do velho Haorunerk.</p>
+<p> </p>
+<p>Talvez seja melhor não dizer nada para cantar até que o pai seja resgatado, sim?</p>
+<p> </p>
+<p>Perguntar [%dic:STR_DIC_N_Shugo_Shulack_02]Para obter ajuda para escapar do aço de aço, Daeva. Que as bênçãos de um grande número de senhores e senhoras asmodianos vão com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou levar todas as bênçãos que posso obter."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorinerk entende que Daeva está ocupado-voando aqui e ali em tarefas importantes, Nyerk.</p>
+<p> </p>
+<p>Mas esta é a missão da misericórdia. Esta é a chance de reunir pai e filha.</p>
+<p> </p>
+<p>Mooriners espera que Daeva mude de mente, sim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você reconhece a forma sem vida de Haorunerk.)</p>
+<p> </p>
+<p>(Há um pedaço de papel saindo do bolso.)</p>
+<p> </p>
+<p>(Talvez diga algo importante.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Vou ler e ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Polas de sangue obscurecem algumas das palavras.)</p>
+<p> </p>
+<p>("... Destrua o navio ... derrota [%dic:STR_DIC_M_IDShip_KrallKeeperKnmd_44_Ae] e [%dic:STR_DIC_M_IDShip_ShulackEngineerNmd_45_Ah].... ")</p>
+<p> </p>
+<p>("... então diga [%dic:STR_DIC_N_Shugo_Shulack_02].... diga a Chantinerk .... o pai a ama. ")</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"É melhor ficar ocupado então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O velho Haorunerk está morto? Ele estava a bordo deste navio?</p>
+<p> </p>
+<p>Se ao menos Rabinerk soubesse ... não o deixaria morrer sozinho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele nos deixou esta nota ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rabinerk sabe que ela é a partida para Tanta ou Lahulahu.</p>
+<p> </p>
+<p>O pobre morto Haorunerk encontrou um Daeva para fazer o trabalho.</p>
+<p> </p>
+<p>Obrigado por vingá -lo, Daeva.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Resgatar [%dic:STR_DIC_N_Shugo_Shulack_01], quem está no[%dic:STR_DIC_E_Ship_Da].</p></step>
+<step><p visible="[%3]">Mate os piratas mencionados na nota de Haorunerk.</p>
+<p visible="[%6]">[%dic:STR_DIC_M_IDShip_KrallKeeperKnmd_44_Ae]([%8]/1)</p>
+<p visible="[%9]">[%dic:STR_DIC_M_IDShip_ShulackEngineerNmd_45_Ah]([%11]/1)</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Shugo_Shulack_02].</p></step>
+</steps>
+<p>Encontre haorunerk a bordo do ancinho de aço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorinerk pediu que você resgatasse Haorunerk, a bordo do aço.</p>
+<p> </p>
+<p>Você foi ao aço de aço apenas para encontrar o corpo de Haorunerk e uma nota contendo instruções para matar o diretor Tantaka e o engenheiro Lahulahu.</p>
+<p> </p>
+<p>Você foi ao Rabinerk depois de matar o diretor e o engenheiro -chefe. Ela estava feliz que você vingou Haorunerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

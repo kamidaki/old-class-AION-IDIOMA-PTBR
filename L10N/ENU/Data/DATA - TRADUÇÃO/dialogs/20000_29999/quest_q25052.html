@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Consultamos mais uma vez sobre os aquans e chegamos à conclusão de que devemos demonstrar nossas boas intenções.</p>
+<p> </p>
+<p>De acordo com as informações que recebemos de um membro da tropa da expedição nas proximidades[%dic:STR_DIC_W_DF5_SZ_E_02], os aquans têm uma fraqueza para o [%dic:STR_DIC_I_quest_25052a].</p>
+<p> </p>
+<p>[%username], você poderia se apossar disso e trazê -lo para os aquans em[%dic:STR_DIC_W_DF5_SZ_E_02]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um cristal, que os gigantes do mar adoram.)</p>
+<p> </p>
+<p>(Você deve poder remover este cristal gigante do mar.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você pega o cristal gigante do mar.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz para mim, Outlander?</p>
+<p> </p>
+<p>Você quer me perguntar algo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o tesouro dos gigantes do mar e transmite o que Redalf disse.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os antigos gigantes do mar podem ficar com muita raiva quando você tira algo deles ...</p>
+<p> </p>
+<p>Muito obrigado, Outlander.</p>
+<p> </p>
+<p>Somos muito gratos a você pelos sinceros esforços do seu povo.</p>
+<p> </p>
+<p>Deixe -nos saber se pudermos ajudar você a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Remova a [%dic:STR_DIC_I_quest_25052a]do[%dic:STR_DIC_OBJ_DF5_FOBJ_giantcrystal_Q25052].</p></step>
+<step><p visible="[%3]">Leve o cristal gigante do mar para [%dic:STR_DIC_N_DF5_Soglo_E].</p></step>
+</steps>
+<p>Redalf queria dar um presente aos aquans e pediu que você encontrasse o tesouro dos gigantes do mar. Cuide do pedido de Redalf.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Redalf queria dar um presente aos aquans e pediu que você encontrasse o tesouro dos gigantes do mar.</p>
+<p> </p>
+<p>Você encontrou o tesouro dos gigantes do mar e o trouxe para Soglo, que ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

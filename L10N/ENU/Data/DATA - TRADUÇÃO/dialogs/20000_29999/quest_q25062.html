@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, Outlander. Venha aqui, por favor. Eu tenho que te perguntar uma coisa.</p>
+<p> </p>
+<p>Você poderia me pegar um[%dic:STR_DIC_I_quest_25062a]?</p>
+<p> </p>
+<p>Eu sempre quis ter um, mas os adultos não permitem.</p>
+<p> </p>
+<p>Mume -me me ajudando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem isso?</p>
+<p> </p>
+<p>Você tem com você, Outlander?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o fragmento de cristal azul.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Lembre -se de que os adultos não conseguem descobrir isso.</p>
+<p> </p>
+<p>Eles apenas tirariam isso de mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não obteve o [%dic:STR_DIC_I_quest_25062a]?</p>
+<p> </p>
+<p>Outlander, você deve trazer para mim antes que os adultos descubram.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você tem um cristal azul para Runil.</p>
+<p> </p>
+<p>Claro, sou muito grato por você estar nos ajudando aquans. Mas você não deve cumprir todos os pedidos, especialmente para as crianças.</p>
+<p> </p>
+<p>Eles ainda não levam isso a sério o suficiente quando nós, adultos, alertam um perigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que ele quer dizer com isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O cristal de geada que você obteve é ​​um item muito fraco.</p>
+<p> </p>
+<p>Aviso sobre isso em nossa tribo há muito tempo.</p>
+<p> </p>
+<p>Você também deve ter um pouco mais de cuidado com o poder do cristal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_N_DF5_Runli_E]um[%dic:STR_DIC_I_quest_25062a].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Sorg_E].</p></step>
+</steps>
+<p>O Aquan Girl Runil pediu que você trazia para ela um fragmento de cristal azul brilhante. Realizar o pedido de Runil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Aquan Girl Runil pediu que você trazia para ela um fragmento de cristal azul brilhante. Depois que você trouxe o fragmento, ela agradeceu e lembrou que você não deixou nada escapar para os aquans adultos.</p>
+<p> </p>
+<p>Sorg assistiu a coisa toda e pediu que você não realizasse mais pedidos para as crianças, porque os cristais irradiam uma energia estranha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

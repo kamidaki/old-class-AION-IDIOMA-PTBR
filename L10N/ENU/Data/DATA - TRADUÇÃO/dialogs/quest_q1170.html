@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um ar de mistério paira em torno da antiga estátua de pedra. A superfície fria leva as cicatrizes da história.)</p>
+<p> </p>
+<p>(Você sente uma estranha tristeza em seu silêncio.)</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Esta estátua, parece ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Enquanto sua mão pressiona contra ela, a estátua começa a tremer.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estranho ... eu me pergunto ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Depois de examinar o resto da estátua, você olha para cima e percebe que está faltando a cabeça.)</p>
+<p> </p>
+<p>(Com os olhos no pescoço privado, a estátua mais uma vez tremia, desta vez mais violentamente. Você sente frustração.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O calor emana da estátua, correntes de gratidão derramando das rachaduras em sua superfície.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou tentar restaurar você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um calafrio gelado enche o ar ao seu redor, e a estátua se resolve em um tom quase imperceptivelmente mais difícil e escuro.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hmm, eu me pergunto o que se trata?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(A estátua balança com excitação quando manchas de poeira e pedra caem dela. Você se sente compelido a substituir a cabeça.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Aqui, acho que essa cabeça pertence a você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a cabeça da estátua de pedra.</p></step>
+<step><p visible="[%3]">Restaure a cabeça da estátua de pedra.</p></step>
+</steps>
+<p>Você se deparou com uma estátua de pedra sem cabeça enquanto estava a caminho[%dic:STR_DIC_FLA18]. Encontre sua cabeça.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma estátua de pedra sem cabeça enquanto estava no seu caminho para [%dic:STR_DIC_FLA18].</p>
+<p> </p>
+<p>A estátua parecia ter uma história própria, então você a tocou e começou a tremer. Parecia querer algo de você.</p>
+<p> </p>
+<p>Você encontrou a cabeça e a colocou na estátua.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

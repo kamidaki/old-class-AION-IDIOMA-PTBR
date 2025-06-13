@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em[%dic:STR_DIC_W_LDF5a_E3]Os soldados de investigação de Ramparts apareceram.</p>
+<p> </p>
+<p>Não tenho dúvida de que eles estão inventando algo.</p>
+<p> </p>
+<p>Stelman nos ordenou que matassem o inimigo assim que eles aparecem.</p>
+<p> </p>
+<p>Esta tarefa vou passar para você[%username].</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_LDF5A_E3_Vritra_Fi_Drain_63_An], Assim, [%dic:STR_DIC_M_LDF5A_E3_Vritra_As_Poison_63_An], Assim, [%dic:STR_DIC_M_LDF5A_E3_Vritra_Wi_63_An] e [%dic:STR_DIC_M_LDF5A_E3_Vritra_Pr_63_An].</p>
+<p> </p>
+<p>Quando você concluir a tarefa, por favor relate para [%dic:STR_DIC_N_LDF5a_Notis_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Quem pensaria que uma unidade de Beritra estaria localizada tão perto de nós?</p>
+<p> </p>
+<p>E movimentos muito suspeitos também foram avistados ...</p>
+<p> </p>
+<p>Agora não sou capaz de continuar minhas pesquisas de Ramparts em paz.</p>
+<p> </p>
+<p>Por favor, elimine o esquadrão de investigação Ramparts antes que algo pior aconteça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que matou a tropa de investigação Ramparts.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é assim que foi.</p>
+<p> </p>
+<p>Os soldados de Beritra me interromperam durante minha pesquisa, então pedi ajuda a Stelman.</p>
+<p> </p>
+<p>Pedi que ele matasse os soldados de Beritra no momento em que eles reapareceram.</p>
+<p> </p>
+<p>Foi uma boa ideia perguntar a Stelman, e é por isso que você está me ajudando, [%username].</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5A_E3_Vritra_all]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5a_Notis_E].</p></step>
+</steps>
+<p>Elimine a tropa de investigação Ramparts e vá para Notis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gamien disse que viu o exército de Beritra na parte sul das montanhas Sillus e pediu que você os matasse antes que eles se tornem um sério perigo. Você foi convidado a se livrar dos pesquisadores das Ramparts e relatar essa tarefa concluída a Notis, que está pesquisando o baluarte. Quando Notis soube que os pesquisadores das Ramparts estavam fora do caminho, ele estava muito feliz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

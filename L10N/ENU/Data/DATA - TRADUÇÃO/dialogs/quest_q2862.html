@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Lifras, os Elyos estão planejando um ataque completo em todo o abismo.</p>
+<p> </p>
+<p>O que acontecerá aos asmodianos se os Elyos conquistarem Reshanta?</p>
+<p> </p>
+<p>Devemos balançar esta situação de guerra a nosso favor!</p>
+<p> </p>
+<p>É por isso que devemos reconquistar a fortaleza Miren.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Lifras disse que a situação melhorará quando o tamanho da guarnição na fortaleza Miren for reduzido.</p>
+<p> </p>
+<p>Mas aparentemente é muito grande. Portanto, pode ser difícil infligir danos críticos em um único ataque. Portanto, devemos enfraquecer o poder de nossos oponentes gradualmente através de ataques repetidos.</p>
+<p> </p>
+<p>É crucial que alguém rompe as linhas inimigas. Eu não acho que podemos administrá -lo sozinho.</p>
+<p> </p>
+<p>Já temos problemas suficientes nos defendendo contra os Elyos.</p>
+<p> </p>
+<p>O que você acha, [%username]? Posso pedir que você mate o [%dic:STR_DIC_E_1241_guard_Li_ra], Assim, [%dic:STR_DIC_E_1241_guard_Li_gu] e [%dic:STR_DIC_E_1241_guard_Li_wi]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por aceitar.</p>
+<p> </p>
+<p>Os oponentes aparecem se os Elyos levaram a fortaleza Miren.</p>
+<p> </p>
+<p>Observe a situação na fortaleza Miren. Elimine os Elyos assim que eles aparecem e pegue o [plur][%dic:STR_DIC_I_QUEST_2862a]longe deles.</p>
+<p> </p>
+<p>Os Elyos estarão guardando de perto a fortaleza. Então lembre -se de que você não é descoberto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você não tem medo do crescente poder dos Elyos?</p>
+<p> </p>
+<p>[%username], se eu fosse tão habilidoso quanto você, já teria deixado para cuidar do inimigo.</p>
+<p> </p>
+<p>Você não poderia reconsiderá -lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>O ataque à fortaleza Miren foi bem -sucedido?</p>
+<p> </p>
+<p>Qual é a situação da fortaleza? Você trouxe o [plur][%dic:STR_DIC_I_QUEST_2862a]com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Aqui está a evidência.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um problema.</p>
+<p> </p>
+<p>[%username], Confio em você, mas preciso deste emblema para relatar para comandar sobre esse resultado.</p>
+<p> </p>
+<p>Por favor me traga o [plur][%dic:STR_DIC_I_QUEST_2862a]. Sinto muito incomodando você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Agora posso entender por que os outros o elogiaram.</p>
+<p> </p>
+<p>Descanse agora. Enviarei as insígnias para o Centurion Rossjof.</p>
+<p> </p>
+<p>Claro que vou dizer que você os obteve, [%username]. Não se preocupe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_1241_guard_Li_ra][%dic:STR_DIC_E_1241_guard_Li_gu] e [%dic:STR_DIC_E_1241_guard_Li_wi], colete evidências e traga -as para [%dic:STR_DIC_N_Magnair].</p>[%collectitem]</step>
+</steps>
+<p>Uma vez que os Elyos ocuparem a fortaleza Miren, eles implantarão oficiais de Miren, Miren Triaris e Miren, oficiais da equipe. Elimine esses Elyos e junte seus emblemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Magnair estava planejando enfraquecer o poder de luta dos Elyos e precisava do seu apoio para fazê -lo.</p>
+<p> </p>
+<p>Você derrotou os oficiais de Miren, Miren Triarises e Elyos Miren, oficiais da equipe e coletaram emblemas. A Magnair agradeceu seus esforços e prometeu contar o centurião de suas realizações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

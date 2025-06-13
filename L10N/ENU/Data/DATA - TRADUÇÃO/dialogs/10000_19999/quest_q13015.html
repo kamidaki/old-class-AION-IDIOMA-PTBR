@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diz -se que os seguidores perversos do Dragonbound agora ergueram um altar para homenagear e adorar Jormungand.</p>
+<p> </p>
+<p>Como se não fosse suficiente para que eles zombem da história atreia com esse culto.</p>
+<p> </p>
+<p>[%username], por favor destrua o [%dic:STR_DIC_N_LDF5a_FOBJ_C1_Altar], que foi construído pelos membros do Dragonbound.</p>
+<p> </p>
+<p>Este símbolo sacrílego e vergonhoso deve ser removido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, os membros do adoro o dragão essa figura, não o Balaur. Mas não me importo se eles adoram um balaur ou um dragão fictício.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5a_FOBJ_C1_Altar]é um insulto aos Senhores Empíreanos e em si!</p>
+<p> </p>
+<p>Para o Santo Senhor, você deve definitivamente eliminar o [%dic:STR_DIC_N_LDF5a_FOBJ_C1_Altar].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você destruiu o altar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, todos os símbolos blasfêmicos foram destruídos.</p>
+<p> </p>
+<p>Ainda me enfurece que eles fizeram e usaram esses símbolos.</p>
+<p> </p>
+<p>Se Portis ouvisse o relatório, ele também aprovaria a destruição final do Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_N_LDF5a_FOBJ_C1_Altar]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Henis_E].</p></step>
+</steps>
+<p>Destrua o altar que os seguidores de Jormungand construíram.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você destruiu o altar de Jormungand em conformidade com o pedido de Henis.</p>
+<p> </p>
+<p>Henis ficou zangado com a conduta sacrílega dos seguidores de Jormungand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30712</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O rancor de [%dic:STR_DIC_E_Apsu]... Um item de pesquisa tão precioso, seu valor não pode ser medido em Kinah.</p>
+<p> </p>
+<p>Mas você pode não tocar a adaga, pode enlouquecer se o fizer.</p>
+<p> </p>
+<p>O mais importante é extrair o rancor da APSU. Sem ele, a adaga é apenas uma arma comum ...</p>
+<p> </p>
+<p>[%username]. Você pode trazer o [%dic:STR_DIC_I_quest_30712a]do[%dic:STR_DIC_M_IDTiamat_S2_StealthUnit_60_Ae] em[%dic:STR_DIC_W_IDTiamat_SZ_R1]?</p>
+<p> </p>
+<p>Eu acho que posso extrair o rancor da APSU seguindo as instruções do livro de feitiços da tribo Reian.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você voltou!</p>
+<p> </p>
+<p>Eu estava deitado à espera de você.</p>
+<p> </p>
+<p>Você conseguiu [%dic:STR_DIC_I_quest_30712a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o dispositivo de enfraquecimento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, exatamente o que eu estava procurando.</p>
+<p> </p>
+<p>Hum ...</p>
+<p> </p>
+<p>(Ele verifica o absorvedor de escudo de energia.)</p>
+<p> </p>
+<p>É a primeira vez que estou vendo este dispositivo ... a tecnologia Balaur está progredindo.</p>
+<p> </p>
+<p>Bom. Posso usar este dispositivo para fabricar uma ferramenta que me permitirá extrair o rancor da APSU.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Adquirir [%dic:STR_DIC_I_quest_30712a]% e leve este item para [%dic:STR_DIC_N_Uquini].</p>[%collectitem]</step>
+</steps>
+<p>Procure um dispositivo adequado para obter o rancor da APSU, que é imensamente valioso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulian disse que o rancor da APSU era um item de pesquisa muito valioso e pediu que você obtenha os ingredientes necessários para extrair o rancor.</p>
+<p> </p>
+<p>Você trouxe o absorvedor de escudo de energia do núcleo do indutor de transparência de Balaur na fortaleza de Tiamat. Ulian disse que poderia extrair o rancor da APSU usando este dispositivo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

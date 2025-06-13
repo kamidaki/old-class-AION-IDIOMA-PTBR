@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41547</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com fome! Tão com fome! Gurr gurrp.</p>
+<p> </p>
+<p>Nosso pântano está lotado e é difícil encontrar comida. E agora gorda, gorda [%dic:STR_DIC_N_NPC_Gururu_07]rouba minha comida! Rouba minha comida!</p>
+<p> </p>
+<p>Estou morrendo de fome por causa da gorda, Rukikor gordo! Daeva, faça -o parar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não tenho escolha! Eu devo tomar comida!</p>
+<p> </p>
+<p>Se eu não alimentar [%dic:STR_DIC_M_LDF4b_C1_Cellatu_Named_58_Ae], ele diz que comerá Gurriki! Eu só roubo para alimentar Lamaz!</p>
+<p> </p>
+<p>Ele é ruim, não eu!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou aceitar isso com ele, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão faminto, Gurr Gurrp ...</p>
+<p> </p>
+<p>A gorda e gorda Rukikor parará de levar minha comida?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele diz que estava protegendo você de Lamaz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rukikor estava me protegendo?</p>
+<p> </p>
+<p>Bem, se você diz isso. Eu ainda acho que ele é apenas ganancioso, ganancioso.</p>
+<p> </p>
+<p>Mas obrigado pela sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_NPC_Gururu_07]para parar de roubar a comida de Curikor.</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_LDF4b_C1_Cellatu_Named_58_Ae]([%11]/1).</p></step>
+<step><p visible="[%24]">Dizer [%dic:STR_DIC_N_NPC_Gururu_06]o que aconteceu.</p></step>
+</steps>
+<p>Curikor está morrendo de fome, e ele precisa da sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Curikor disse que estava morrendo de fome porque Rukikor continuou roubando sua comida.</p>
+<p> </p>
+<p>Rukikor afirmou que estava apenas roubando comida para poder alimentar Lamaz impiedoso, que ameaçava comer Gurriki de outra forma. Você decidiu intervir matando o impiedoso Lamaz, que deve resolver a disputa de Curikor e Rukikor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

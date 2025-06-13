@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Santuário acha que os Krall estão planejando algo, então devemos investigar, reforços ou não.</p>
+<p> </p>
+<p>Se conseguirmos encontrar evidências de um enredo ou de outro, podemos obter os guardiões extras de que precisamos.</p>
+<p> </p>
+<p>Você tem sido confiável até agora-eu gostaria que você assumisse esta missão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou enviando você para investigar. Você terá a melhor sorte de pesquisar cadáveres, por isso não deixe de fazer alguns. Vá para o [%dic:STR_DIC_FLA23], derrota [%dic:STR_DIC_MLA151] S e veja se você não consegue encontrar algumas evidências dessa suposta conspiração.</p>
+<p> </p>
+<p>Considerando a hierarquia do comando de Krall, os líderes da Sentinel provavelmente teriam as evidências de que precisamos.</p>
+<p> </p>
+<p>Você vai precisar de aliados para isso. A caça sozinha vai matar você, e eu já tenho heróis mortos suficientes na minha consciência.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava nada menos.</p>
+<p> </p>
+<p>E correndo o risco de me repetir, leve alguns aliados. Esta não é uma tarefa do DAEVA.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou assumir que sua relutância deriva da falta de aliados dispostos, em vez de uma mudança repentina de coração.</p>
+<p> </p>
+<p>Nesse ritmo, o Krall nos quebrará através de um peso de números.</p>
+<p> </p>
+<p>Se quisermos armar Verteron contra o ataque próximo, precisamos de evidências daquela conspiração explodida para que possamos convencer o santuário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta da guarnição de Tursin? Você encontrou alguma coisa?</p>
+<p> </p>
+<p>Não me importo com o quão insignificante parece-relate qualquer coisa incomum!</p>
+<p> </p>
+<p>O santão não enviará reforços, a menos que possamos provar que o Krall está tramando alguma coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu sei que o abate de Krall sempre vale a pena. Eu nunca vou condenar você por isso.</p>
+<p> </p>
+<p>Mas você tinha um objetivo claro e voltou de mãos vazias.</p>
+<p> </p>
+<p>Eu preciso que você encontre evidências de uma conspiração de Krall, não apenas aumente a contagem do corpo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um colar Krall? Isso é tudo que você precisa mostrar para ...</p>
+<p> </p>
+<p>Espere. Isso é Ódio. Eles decoraram a coisa quebrada com Odium!</p>
+<p> </p>
+<p>Santum estava certo. Os Krall estão definitivamente tramando alguma coisa. Talvez agora eles nos enviem mais tropas! Excelente trabalho, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_MLA151] S no[%dic:STR_DIC_FLA23] e trazer as evidências para [%dic:STR_DIC_LA19].</p>[%collectitem]</step>
+</steps>
+<p>Vá à guarnição de Tursin para encontrar algumas evidências da suposta trama de Krall.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Para convencer o Santuário a enviar reforços, Spatalos foi forçado a levar a sério a sugestão de uma conspiração de Krall.</p>
+<p> </p>
+<p>Ele disse para você levar alguns aliados para a guarnição de Tursin, derrotar Krall e trazer de volta algo que possa esclarecer esse assunto.</p>
+<p> </p>
+<p>Você encontrou um colar cravejado de odium, mas apenas confirmou que o Krall está tramando alguma coisa. Não revelou mais nada.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

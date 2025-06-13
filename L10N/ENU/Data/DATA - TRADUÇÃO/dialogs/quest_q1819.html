@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é como se já estivesse ocupado o suficiente, não é? Oh não!</p>
+<p> </p>
+<p>Ouça isso. Enviei dois olheiros para o arquipélago de enxofre para ver se há algum asmodianos lá e, antes que eu o conheça, eles foram devolvidos ao obelisco.</p>
+<p> </p>
+<p>Eles foram mortos e você sabe o que os conseguiu?!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não como asmodianas, presumo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Worms! Eles foram mortos por vermes!</p>
+<p> </p>
+<p>Na defesa de meus soldados, esses não são vermes comuns. Eles cuspiram ácido e podem esmagar um homem em segundos. Eles são letais e precisamos garantir que eles não interfiram em nosso reconhecimento novamente.</p>
+<p> </p>
+<p>Eu preciso de alguém para ir ao arquipélago e obliterar essas monstruosidades. Você vai realizar a tarefa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas um dos escoteiros infelizes recuperou a consciência até agora, e ela nos diz que existem centenas de [%dic:STR_DIC_M_Ab1_1141_Worm_28_An] Areia [%dic:STR_DIC_M_Ab1_1141_WormB_29_An] S no fluxo de enxofre e no pântano de enxofre.</p>
+<p> </p>
+<p>Mate -os, arrancá -los e depois me traga seus[%dic:STR_DIC_I_QUEST_1819a]como prova.</p>
+<p> </p>
+<p>E, uma última coisa. A seiva deles é incrivelmente ácida. A menos que você queira as mãos marcadas pelo resto da sua vida, manuseie -as com cuidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo aviso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi você corretamente? Você recusou o trabalho?</p>
+<p> </p>
+<p>Que tipo de daeva você é, [%username]? Você deve ter vergonha de si mesmo.</p>
+<p> </p>
+<p>Como nenhum outro DAEVA está disponível para ajudar, só espero que você reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Por que você está de volta tão cedo?</p>
+<p> </p>
+<p>Você não está machucado, está? Você parece bem ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Estou bem. Aqui ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O ácido corroiu sua mente?</p>
+<p> </p>
+<p>Eu preciso de mais seiva, [%username]. Lembre -se, ambos[%dic:STR_DIC_M_Ab1_1141_Worm_28_An] Areia [%dic:STR_DIC_M_Ab1_1141_WormB_29_An] S excretá -lo.</p>
+<p> </p>
+<p>Apresse -se agora e traga -me o [%dic:STR_DIC_I_QUEST_1819a].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oof! Aquele fedor! Esta seiva certamente é potente, não é?</p>
+<p> </p>
+<p>Acho que vou enviar para o Santum para testes. Talvez nossos cientistas possam encontrar uma maneira de usar a seiva contra aqueles asmodianos de arrastar.</p>
+<p> </p>
+<p>Se você se deparar com mais da seiva, traga -o para mim e eu o enviarei para o santuário. E, é claro, vou recompensá -lo por isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_M_Ab1_1141_Worm_28_An] e [%dic:STR_DIC_M_Ab1_1141_WormB_29_An], então colete sua seiva e leve -a para [%dic:STR_DIC_N_Ab1_1141_Quest_Li].</p>[%collectitem]</step>
+</steps>
+<p>Você aprendeu que os vermes canibais haviam se espalhado por todo o arquipélago de enxofre, dificultando o exploração da ilha. Destrua o maior número possível de vermes de enxofre e vermes de enxofre pegajosos, colete sua seiva e leve -o para Pontus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pontus lhe disse que dois batedores foram mortos por vermes canibais, e ele precisava eliminar as criaturas do arquipélago de enxofre para salvar futuras vítimas.</p>
+<p> </p>
+<p>A seu pedido, você destruiu os vermes canibais, coletando sua seiva como evidência. Quando você devolveu a seiva a Pontus, ele o recompensou e prometeu fazê -lo novamente se você o trouxe mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

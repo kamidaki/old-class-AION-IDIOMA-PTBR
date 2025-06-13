@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora devemos ... garantir que todos ... os humanos possam reunir ... os cogumelos.</p>
+<p> </p>
+<p>Caso contrário, eles vão apenas ... morrer de fome novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o perigo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode ter esquecido ... mas ... a maioria dos humanos não consegue lidar com os monstros da floresta da Deathsong.</p>
+<p> </p>
+<p>Mas ... você pode.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Limpe ... o [%dic:STR_DIC_M_SlimeRE_36_An] Areia [%dic:STR_DIC_M_OctasideRE_35_An] para que os humanos possam se reunir ... cogumelos ... sem medo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para o refúgio de Arbolu!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho ... eles terão que morrer de fome ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles vão ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você perdeu ... o grande banquete de cogumelos. Disseram -me ... foi delicioso ... por humanos que comem esses alimentos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Desculpe, eu perdi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez ... haverá outro grande banquete de cogumelos ... no futuro.</p>
+<p> </p>
+<p>De qualquer forma ... os humanos não vão morrer de fome.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate as criaturas perigosas na Floresta Deathsong.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_SlimeRE_36_An]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_OctasideRE_35_An]([%5]/7)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tree_Move_Terba].</p></step>
+</steps>
+<p>Elimine os perigos na floresta Deathsong para que os moradores possam reunir cogumelos sem interrupção.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Terba disse que você deve limpar os monstros da floresta da Deathsong para que os moradores pudessem reunir cogumelos com segurança.</p>
+<p> </p>
+<p>Você se livrou dos slimes e Aranhas lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

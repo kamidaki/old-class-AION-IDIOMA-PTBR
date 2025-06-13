@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caramba, olá!</p>
+<p> </p>
+<p>Eu estava tão distraído brincando na água que nem percebi que você chegava.</p>
+<p> </p>
+<p>O festival de Ivankufalla está acontecendo no minuto, você não gostaria de experimentar um jogo de água também?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você diz que ainda não experimentou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não teve um respingo? Em um festival como esse, você não quer perder se divertindo na água.</p>
+<p> </p>
+<p>Estou reunindo brasas mágicas para manter essa fogueira sagrada.</p>
+<p> </p>
+<p>Se você reunir 10 deles para mim, vou lhe dizer como você pode aproveitar os jogos de água em qualquer lugar e a qualquer momento. Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que receberá 10 brasas mágicas.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, muito obrigado.</p>
+<p> </p>
+<p>Por favor, pegue -me as brasas mágicas agora, então.</p>
+<p> </p>
+<p>Enquanto isso, vou aproveitar a água por mais um tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Está tudo bem se você não sabe como aproveitar a água em qualquer lugar e a qualquer momento?</p>
+<p> </p>
+<p>Eu acho que você vai se arrepender, mas se você não quiser ... espero que goste do festival.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, você está de volta.</p>
+<p> </p>
+<p>Você me trouxe as 10 brasas mágicas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 10 brasas mágicas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito. Você fez um bom trabalho com a reunião.</p>
+<p> </p>
+<p>Isso manterá a fogueira sagrada por mais tempo.</p>
+<p> </p>
+<p>Muito obrigado, verdadeiramente. Vou lhe dizer como você pode aproveitar a água em qualquer lugar e a qualquer momento, como prometi.</p>
+<p> </p>
+<p>Aqui, use este cartão. Em seguida, selecione um jogo de água sob moções sociais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não conseguiu reunir tudo?</p>
+<p> </p>
+<p>Então eu acho que não há nada que possa ser feito. Vou continuar esperando um pouco mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 10 brasas mágicas e leve tudo para Amira.</p>[%collectitem]</step>
+</steps>
+<p>Pegue 10 brasas mágicas para Amira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe Amira, que tende a fogueira sagrada, algumas brasas mágicas.</p>
+<p> </p>
+<p>Amira lhe deu uma túnica branca e uma coroa de flores selvagens em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

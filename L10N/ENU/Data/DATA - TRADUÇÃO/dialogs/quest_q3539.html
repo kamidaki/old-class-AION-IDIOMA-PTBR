@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles Krall com certeza parecem ameaçadores, não pensa, [%username]?</p>
+<p> </p>
+<p>Estou me acostumando com eles, mas lutar com eles ainda me deixa enjoado.</p>
+<p> </p>
+<p>Claro, eu nunca admitiria isso para minhas coortes! Mas você é tão fácil de conversar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como você está lidando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bastante bem, mas, bem ... há algo que você poderia fazer por mim.</p>
+<p> </p>
+<p>Vê minha espada? Aquele grande buraco aí? A moeda de Orichalcum que estava inserida foi lançada na semana passada, em algum lugar do pântano. Sem chance de encontrá -lo.</p>
+<p> </p>
+<p>Estou me sentindo bastante nervoso desde então. Essa moeda era meu charme de sorte. Eu esperava poder convencê -lo a me trazer algo para substituí -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Eu agradeço. Eu sei que é um pedido bobo, mas isso realmente me ajudaria a me sentir mais confiante.</p>
+<p> </p>
+<p>Você poderia me trazer alguns[%dic:STR_DIC_I_QUEST_3539A] S? Eles são um ornamento de espada popular, e se diz que os esfregam para acalmar o espírito.</p>
+<p> </p>
+<p>Você pode pegá -los caçando[%dic:STR_DIC_M_BATRe2_34_An] está no bosque decapado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou te pegar um pouco."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas, acho que meu pedido foi um pouco pessoal demais.</p>
+<p> </p>
+<p>Desculpe. Eu não queria te envergonhar.</p>
+<p> </p>
+<p>Vou fazer uma respiração profunda e tentar encontrar um charme de sorte substituto mais tarde.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espere lá!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Eu estive esperando por você.</p>
+<p> </p>
+<p>Você pegou as garras de Bloodwing?</p>
+<p> </p>
+<p>Espero que eles ajudem a acalmar meus nervos. Vou apenas polir e colocá -los no punho, bem aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as garras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de mais[%dic:STR_DIC_I_QUEST_3539A] S do que isso, apenas para garantir que eu tenha um ajuste para a minha espada.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_BATRe2_34_An] S deve estar voando perto dos penhascos ao lado do campo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Em breve. Eu os pego em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, essas são as lendárias garras.</p>
+<p> </p>
+<p>Eles são bastante bonitos. E ... interessante. Você notou como eles parecem esquentar quando você os segura?</p>
+<p> </p>
+<p>Eu acho que isso fará bem o truque. Obrigado novamente, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_3539A] e trazê -los para [%dic:STR_DIC_N_Brosia].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha garras de Bloodwing para Brosia usar como um charme de sorte e decorar sua espada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brosia estava se sentindo abatida depois de perder o charme da sorte do punho de sua espada.</p>
+<p> </p>
+<p>Você encontrou -lhe algumas garras que podiam ser usadas para criar um novo charme, e ela ficou muito satisfeita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

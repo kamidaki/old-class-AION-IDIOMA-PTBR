@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tentamos há tanto tempo para entender por que o Balaur toma nossas posses.</p>
+<p> </p>
+<p>Inicialmente, assumimos que eles levaram os itens que pareciam ser de valor e basearam essa suposição no fato de que a maioria dos itens era feita de ouro. Mas então descobrimos os tesouros no ninho de enxofre, o que nos colocou de volta na estaca zero.</p>
+<p> </p>
+<p>Tudo o que sabemos ao certo é que o Balaur está muito interessado em levar nossos tesouros e artefatos. Agora só precisamos saber o porquê.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por quê? Devemos destruí -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Suas palavras traem seu treinamento-você é um soldado, não um estudioso.</p>
+<p> </p>
+<p>Ainda assim, você fala alguma aparência de sentido. Talvez devêssemos mandá -lo para o [%dic:STR_DIC_W_IDAbRe_Low_Divine_SZ_All], e veja quais resultados você obtém através da força bruta.</p>
+<p> </p>
+<p>Afinal, o Balaur ainda precisa matar. Talvez matar esses demônios em particular nos conceda novas informações. O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Espero que seu trabalho produza resultados, mas, mesmo que não, teremos removido um grande número de balaur da região.</p>
+<p> </p>
+<p>Sem dúvida, suas habilidades também melhorarão, [%userclass]. Um daeva de sua posição deve ser testado contra o melhor que nossos inimigos têm a oferecer e no[%dic:STR_DIC_W_IDAbRe_Low_Divine_SZ_All] eu acredito que você encontrará sua partida.</p>
+<p> </p>
+<p>Agora vá. Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Então você sugere combate, mas quando é você quem tem a chance de lutar, você diz não?</p>
+<p> </p>
+<p>[%username], não podemos lutar apenas com os asmodianos. Ignorar o Balaur apenas permite que seus números cresçam e, em números, o Balaur encontra sua confiança.</p>
+<p> </p>
+<p>Lembre -se disso. Devemos lutar com duas guerras de uma só vez. Nenhum inimigo pode ser ignorado, mesmo por um momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi os sons de lutar e rugir Balaur enquanto você estava fora. Foi isso que você está fazendo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Foi. Eles estão todos mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho!</p>
+<p> </p>
+<p>E você aprendeu com a experiência? O que acho tão fascinante são as diferenças de estilo e abordagem que as várias criaturas de Balaur empregam. Eles são inteligentes e confiam em mais do que força bruta.</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa por seus esforços. Coisas boas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe todo o Balaur no[%dic:STR_DIC_W_IDAbRe_Low_Divine_SZ_All]([%2]/63).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1141_TreasureGate_Li].</p></step>
+</steps>
+<p>Thestios disse que ele lhe daria uma recompensa se você destruísse todo o Balaur na área do ninho de enxofre. Vá para o ninho de árvore de enxofre e faça seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Thestios ofereceu uma recompensa se você matasse todo o Balaur na área do ninho de enxofre.</p>
+<p> </p>
+<p>Você pegou a oferta dele e eliminou todos os balauros lá.</p>
+<p> </p>
+<p>Ele lhe deu uma recompensa como prometido e o elogiou por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

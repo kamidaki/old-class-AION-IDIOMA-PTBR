@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você é[%username]! Eu ouvi sobre você de Tellarius. Ele disse que você se livrou dos Klaws no deserto. Eu estava apenas tentando descobrir como resolver esse problema aqui.</p>
+<p> </p>
+<p>Todo mundo está preocupado com os revolucionários de Balaur e Lefa, mas acho que precisamos ficar de olho nos Klaws.</p>
+<p> </p>
+<p>Muitas pessoas os consideram insetos, mas na verdade são bastante inteligentes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que inteligente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles são perigosamente inteligentes. Tão inteligente que, se não reduzirmos seus números em breve, talvez não precisemos nos preocupar em defender essa área do Balaur.</p>
+<p> </p>
+<p>Você já lidou com eles antes. Não preciso lhe dizer como eles podem ser complicados.</p>
+<p> </p>
+<p>Se queremos manter este acampamento, precisamos agir agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O ninho de Klaw pode ser encontrado no passe heilon, mas você os verá por toda a selva.</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_M_NeutH1_38_An] e o [plur][%dic:STR_DIC_M_NeutL1_37_An]onde quer que você vá.</p>
+<p> </p>
+<p>Seria suficiente se você matar 5 de cada. Por favor, eu imploro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dez é, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza de que é o mesmo[%username]Quem lutou com Klaws em Eltnen? Essas coisas são uma ameaça! Uma praga horrível em todas as nossas terras! Direto do coração da própria escuridão!</p>
+<p> </p>
+<p>Eles esperavam que mostramos fraqueza, para voltar nossa atenção de sua insidiosa invasão e, quando menos esperamos, eles atacarão!</p>
+<p> </p>
+<p>Klaaaaaaaaaaws!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um...okay."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]!</p>
+<p> </p>
+<p>Você já terminou? Parece que você acabou de sair. Você matou os Klaws?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu cuidei deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um bom trabalho. Embora houvesse alguns deles, você lidou com tudo rapidamente.</p>
+<p> </p>
+<p>Isso deve ser suficiente para não precisarmos nos preocupar por um tempo.</p>
+<p> </p>
+<p>Você tem minha apreciação. Por favor, aceite isso, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Klaws que preenchem a selva de Poya.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_NeutH1_38_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_NeutL1_37_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Zeuclid]</p></step>
+</steps>
+<p>Você deve reduzir a velocidade com que os Klaws se reproduzem. Mate os Klaws na selva de Poya.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Zeuclid acredita que Klaws poderia ameaçar toda a Elysea algum dia se seus números crescerem desmarcados.</p>
+<p> </p>
+<p>Ele ouviu que você lutou contra Klaws em Eltnen e pediu que você trazia sua experiência de matar o Klaw-Killing sobre o problema na selva de Poya. Você matou Klaws como ele solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

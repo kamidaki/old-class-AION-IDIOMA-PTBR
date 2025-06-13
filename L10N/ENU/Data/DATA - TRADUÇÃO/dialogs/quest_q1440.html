@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As tempestades de areia são muito pesadas hoje. Você deve tomar cuidado extra em dias como este; Os animais do deserto se tornam ainda mais violentos.</p>
+<p> </p>
+<p>Bem, você lidou com eles, [%username]--você sabe. Os animais aqui são muito ferozes, especialmente os abritos, ânfas e gnarls.</p>
+<p> </p>
+<p>Sentinels se machucam por eles com bastante frequência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"É necessária vigilância constante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você foi ferido depois de lutar contra animais, pode se curar rapidamente usando o purê de umblia, mas como há tantos feridos ...</p>
+<p> </p>
+<p>Não posso lidar com a reunião sozinha.</p>
+<p> </p>
+<p>Se você não estiver ocupado, adoraria pedir sua ajuda.</p>
+<p> </p>
+<p>Obter 10[plur][%dic:STR_DIC_E_herb_n_c_20b]para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Não há tempo para se perder!</p>
+<p> </p>
+<p>[%dic:STR_DIC_E_herb_n_c_20b]é uma erva que cresce perto do deserto, para que você possa coletá -lo facilmente por aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou sair."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nem todo mundo pode pagar poções, você sabe. Às vezes, você só tem que fazer o assunto.</p>
+<p> </p>
+<p>Bem, suponho que você não viria ao deserto se não tivesse negócios aqui.</p>
+<p> </p>
+<p>Não se preocupe com isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho que ir agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, esse é o último disso. [%username], você foi capaz de encontrar algum umblia?</p>
+<p> </p>
+<p>É comum o suficiente, mas existem plantas de ervas daninhas com aparência muito semelhante.</p>
+<p> </p>
+<p>Deixe -me ver o que você tem, para que eu possa verificar a qualidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não tem problema. Dê uma olhada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu temia tanto.</p>
+<p> </p>
+<p>Eu te pedi 10[%dic:STR_DIC_E_herb_n_c_20b].</p>
+<p> </p>
+<p>A flor com folhas verdes e pétalas roxas pálidas é um Umblia. Traga o certo desta vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ok. Obrigado pela informação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou impressionado!</p>
+<p> </p>
+<p>A maioria das pessoas não consegue distinguir entre Umblia e outras plantas, mas você trouxe as certas.</p>
+<p> </p>
+<p>Leve isso, como uma recompensa por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_herb_n_c_20b] e trazê -lo para [%dic:STR_DIC_N_Makarios].</p>[%collectitem]</step>
+</steps>
+<p>É necessária uma erva para curar os feridos. Colete Umblia no deserto e leve -o para Makarion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Makarion estava preocupado com o fato de ter havido tantos ataques de animais desertos violentos que ele não podia coletar ervas suficientes para tratar os feridos.</p>
+<p> </p>
+<p>Você coletou Umblia no deserto e os trouxe para ele. Ele pediu que você traga mais por que você colecionou mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

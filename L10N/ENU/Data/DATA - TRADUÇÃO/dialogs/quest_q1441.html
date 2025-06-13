@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento! Procurando algo ... estava em algum lugar por aqui ... Ah! Sim, é isso! Ruta Ruta Lapia!</p>
+<p> </p>
+<p>Desculpe, é a minha vez de preparar a refeição, e eu estava olhando a receita.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Lapia? Você encontrou peixes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo mundo está exausto depois de longos dias no deserto. Comprei o peixe ontem no santuário como um deleite refrescante! Pense como eles ficarão satisfeitos!</p>
+<p> </p>
+<p>Mas Lapia é a única parte difícil, o resto são ingredientes comuns. Ruta, Verteron Pepper e Abex Butter ... espere ... oh não!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh não?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem Rutas! Como podemos estar fora disso?</p>
+<p> </p>
+<p>Eles crescem loucos aqui, mas eu tenho que refletir esse peixe a cada cinco minutos ....</p>
+<p> </p>
+<p>Que tal isso? Você escolhe alguns[%dic:STR_DIC_E_vegetable_n_c_20b] S Enquanto eu mantenho os filetes assados ​​de secar, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que nos entendemos, então, [%username]?</p>
+<p> </p>
+<p>Então, por favor, 10[%dic:STR_DIC_E_vegetable_n_c_20b], AK. Diz -se que há muitos ruta nas proximidades do deserto de Eracus e da mística da mística de Anathe. Você deveria ir lá.</p>
+<p> </p>
+<p>Depressa, não há muito tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para boa comida, qualquer coisa!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza de que não pode ajudar?</p>
+<p> </p>
+<p>Não tivemos nada além de rações de trilhas, cerveja e queijo Brax a semana toda. É por isso que perguntei a este favor a você, [%username]!</p>
+<p> </p>
+<p>Ouça, eu vou te pagar também!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, para."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], bem a tempo!</p>
+<p> </p>
+<p>O Lapia é um marrom dourado perfeito, firme, mas amanteigado!</p>
+<p> </p>
+<p>Tudo o que preciso são Rutas para finalizar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Como estes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer me ver morrer?</p>
+<p> </p>
+<p>Nesse caso, sua ajuda foi desnecessária.</p>
+<p> </p>
+<p>Bah, como se fosse de alguma utilidade dizendo isso agora. Por favor me pegue 10[%dic:STR_DIC_E_vegetable_n_c_20b]. Rapidamente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! E fresco também! Um momento ... tenho que enxaguar e cortar isso.</p>
+<p> </p>
+<p>Ufa, agora posso respirar. Mmmm! Prove isso, Daeva? É perfeito!</p>
+<p> </p>
+<p>Ah, e aqui ... algo meu, como obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_vegetable_n_c_20b] S, e trazê -los para [%dic:STR_DIC_N_Aron].</p>[%collectitem]</step>
+</steps>
+<p>Escolha alguns rutas para um prato que Aron está fazendo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Golden Gough Legionary Aron está fazendo Ruta Lapia rolar como um deleite para sua Guilda, mas ficou sem Rutas.</p>
+<p> </p>
+<p>Enquanto ele cozinha o peixe delicado, você escolheu os Rutas para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

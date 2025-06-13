@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de serviço -</p>
+<p> </p>
+<p>Você recebeu a missão de matar o Iron Stish.</p>
+<p></p>
+<p>Leia as seguintes informações com cuidado e siga as instruções.</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_LF5_A_Starfish_55_DQ]</p>
+<p></p>
+<p>2. Localização: ele foi avistado perto do[%dic:STR_DIC_W_LF5_SZ_H_01].</p>
+<p></p>
+<p>3. Detalhes: Ele está atacando agentes asmodianos e impedindo seu trabalho.</p>
+<p> </p>
+<p>Quem nos entrega pistas sobre o seu paradeiro ou mata o Iron Stish diretamente receberá uma recompensa.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_DF5_Fishring_E], Daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você aceita a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Se Daeva concluir com êxito a missão, Shugo dará a Daeva a recompensa que foi prometida, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo estava se perguntando quem seria o primeiro a aceitar a missão, Daeva.</p>
+<p> </p>
+<p>Se Daeva resolver com sucesso o assunto, uma recompensa estará esperando por Daeva, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LF5_A_Starfish_55_DQ]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Fishring_E].</p></step>
+</steps>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk. Realizar esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk.</p>
+<p> </p>
+<p>Você realizou a tarefa e matou o Iron Stish. Você então relatou a um membro dos daemons de Charlirunerk, que lhe deu uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

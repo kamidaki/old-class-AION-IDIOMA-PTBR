@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que existem valiantes Daevas, como você que faz a parte deles para proteger Elysea.</p>
+<p> </p>
+<p>Daeva! Por favor, elimine [%dic:STR_DIC_M_LF2A_Centipede_49_An]no[%dic:STR_DIC_W_LF2B_SZ_D]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você conseguiu eliminar o [%dic:STR_DIC_M_LF2A_Centipede_49_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LF2A_Centipede_49_An]([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_MIONE].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_MIONE]pediu para você eliminar [%dic:STR_DIC_M_LF2A_Centipede_49_An]no[%dic:STR_DIC_W_LF2B_SZ_D].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_MIONE]pediu para você eliminar [%dic:STR_DIC_M_LF2A_Centipede_49_An]no[%dic:STR_DIC_W_LF2B_SZ_D].</p>
+<p> </p>
+<p>Você os eliminou em[%dic:STR_DIC_N_EVENT_GUARD_MIONE] Solicitação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

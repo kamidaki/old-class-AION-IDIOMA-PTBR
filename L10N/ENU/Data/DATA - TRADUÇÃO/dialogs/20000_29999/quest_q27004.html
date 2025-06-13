@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q27004</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem da Guilda, todas as missões que precisam ser realizadas foram distribuídas entre os membros da Guilda. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para a fortaleza da ADMA e mate [%dic:STR_DIC_E_L_DF2a_Q3118].</p>
+<p> </p>
+<p>Em seguida, relate -se ao Asmodae Battlemaster, [%dic:STR_DIC_N_Kellin].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já encontrou Lord Lannok entre os monstros da fortaleza da ADMA?</p>
+<p> </p>
+<p>Ele é malévolo e desonesto. Ele causou ferimentos a muitos Daevas.</p>
+<p> </p>
+<p>Ele deve morrer, caso contrário, não podemos completar a missão da Guilda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um membro impressionante da Guilda!</p>
+<p> </p>
+<p>Espero que você continue a garantir que nossos inimigos sejam destruídos e que as tarefas sejam concluídas.</p>
+<p> </p>
+<p>Esta é a sua recompensa pela missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_L_DF2a_Q3118]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Kellin].</p></step>
+</steps>
+<p>Missão da Guilda: A ordem foi dada para matar Lord Lannok. Completar a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você matasse o Senhor Lannok.</p>
+<p> </p>
+<p>Você ajudou a matar Lord Lannok para que a missão da Guilda possa ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

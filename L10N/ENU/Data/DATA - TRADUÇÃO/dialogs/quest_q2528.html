@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Kirris e Karnifs estão ficando tão ferozes ultimamente que as pessoas nem conseguem passear pela área sem serem atacadas por eles.</p>
+<p> </p>
+<p>Repetidas vezes, nós os observamos atacar os transeuntes. Os pobres animais estão apenas morrendo de fome, então atacam qualquer coisa. É triste, mas, no entanto, não pode ser tolerado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu deveria dizer não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você concorde, [%username].</p>
+<p> </p>
+<p>Eu preciso de alguém disposto a ir lá e limpá -lo. Você se sente pronto para o trabalho?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você deve concentrar seus esforços no[%dic:STR_DIC_M_KuillusReD_33_An] Areia [%dic:STR_DIC_M_KalnifReD_34_An] está vagando por aí.</p>
+<p> </p>
+<p>Vou esperar pelo seu retorno.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso é tão problemático.</p>
+<p> </p>
+<p>Não sei quem mais podemos poupar para cuidar disso, mas simplesmente deve ser feito.</p>
+<p> </p>
+<p>Ah bem. Isso é bom. Saia e faça o que você deve. Vou ter que encontrar outra maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Cinco caixas de comida ... muito remédio ...</p>
+<p> </p>
+<p>Ah, [%username]! Você voltou!</p>
+<p> </p>
+<p>Esplêndido. E como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>Estou ansioso para não ouvir as pessoas gritarem enquanto passam. É tão desconcertante.</p>
+<p> </p>
+<p>Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os animais selvagens que atacam as pessoas.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_KuillusReD_33_An]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_KalnifReD_34_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Alfgeir].</p></step>
+</steps>
+<p>Você deve atacar os Kirris nevados e os karnifs que atacam as pessoas porque estão morrendo de fome.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alfgeir disse que Kirris e Karnifs estavam atacando as pessoas porque estavam morrendo de fome.</p>
+<p> </p>
+<p>Ele pediu que você cuide do problema antes que ele se afastasse mais, o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

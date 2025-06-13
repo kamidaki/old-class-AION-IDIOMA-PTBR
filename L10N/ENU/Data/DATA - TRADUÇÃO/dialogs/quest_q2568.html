@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe como as pessoas apenas juravam por Shugo Couriers? Tão confiável, tão pontual.</p>
+<p> </p>
+<p>Pilhas Heapang de Mamut!</p>
+<p> </p>
+<p>Não juro mais os Shugos, apenas juro por eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual parece ser o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um entregador do Shugo Express acabou de deixar uma carta, mas não era minha, era o de Centurion Freyja.</p>
+<p> </p>
+<p>Briana soa como Freyja para você? Eu não acho!</p>
+<p> </p>
+<p>E quem tem minha carta? Shugo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O shugo anel duas vezes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Deve ser uma carta urgente se alguém pagou por um entregador do Shugo Express.</p>
+<p> </p>
+<p>Não quero usar outro shugo e não posso deixar meu post. O que posso fazer?</p>
+<p> </p>
+<p>Você parece bastante capaz, [%username]....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para Red Mane Cavern e entregue esta carta ao Centurion[%dic:STR_DIC_N_Freyja].</p>
+<p> </p>
+<p>Parece ser importante, então sugiro sair de uma só vez.</p>
+<p> </p>
+<p>Então eu vou deixar em suas garras capazes, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você se acha acima de tais tarefas?</p>
+<p> </p>
+<p>Até os possíveis arcontes aprendem a servir, [%userclass].</p>
+<p> </p>
+<p>Muito bem. Eu posso ver que não adianta falar com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez outra vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>O que te traz a Red Mane Cavern?</p>
+<p> </p>
+<p>Espero que você esteja aqui para nos emprestar sua força. Sempre podemos usar outro conjunto de garras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Presumo que esta carta seja para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta do meu irmão mais velho! Fantástico!</p>
+<p> </p>
+<p>Ele deve tê -lo enviado via entrega do Shugo Express, para que eu o recebesse rapidamente. Sinto muito por fazer com que você e Briana tenha algum problema.</p>
+<p> </p>
+<p>Garanto -lhe que vou apresentar uma queixa formal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar uma carta para [%dic:STR_DIC_N_Freyja].</p></step>
+</steps>
+<p>Um entregador do Shugo Express a carta errada a Briana. Vá para o Red Mane Cavern e entregue a carta a Freyja.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Briana ficou irritada com o fato de a entregador do Shugo Express cometeu outro erro com seu correio.</p>
+<p> </p>
+<p>Você foi ao Red Mane Cavern e entregou a carta a Freyja e ela pediu desculpas pelo inconveniente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

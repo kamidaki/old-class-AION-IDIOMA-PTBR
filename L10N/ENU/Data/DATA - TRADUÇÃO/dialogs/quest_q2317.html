@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabia que os spriggans e os cprisgles são as criaturas mais poderosas em Patamor Bshuret, [%username]?</p>
+<p> </p>
+<p>Eles costumavam ficar do outro lado do lago, mas ultimamente eles expandiram seu território para o próprio embrulho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles estão causando problemas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você sabia? Essas criaturas são pequenas, mas ferozes, e estão se multiplicando como ... bem, spriggans. Em breve, toda a área será invadida.</p>
+<p> </p>
+<p>A fortaleza está em estado de emergência no momento, por isso não pode enviar ajuda agora. Os habitantes locais contribuíram para um fundo para recompensar qualquer pessoa que caça essas pragas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você está oferecendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Erradicar o [%dic:STR_DIC_M_Sprigg2_23_An] Areia [%dic:STR_DIC_M_Sprigg3_25_An] S, [%username], e eu vou te pagar com uma moeda de bronze.</p>
+<p> </p>
+<p>Você pode trocá-los por armadura-não é um mau negócio. O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, por favor, mate 6[plur][%dic:STR_DIC_M_Sprigg2_23_An] e 4[plur][%dic:STR_DIC_M_Sprigg3_25_An] e volte aqui.</p>
+<p> </p>
+<p>Não será fácil pegar 10 deles. Mas se você vir um deles enquanto estiver realizando outra tarefa, mate imediatamente. Isso facilitará todo o trabalho.</p>
+<p> </p>
+<p>Desejo -lhe sucesso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles não têm chance."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Capturar 10 deles não é uma tarefa fácil.</p>
+<p> </p>
+<p>Se você não tiver habilidades suficientes, seria melhor recusar o trabalho imediatamente.</p>
+<p> </p>
+<p>Isso seria melhor do que ser totalmente sobrecarregado, você não acha?</p>
+<p> </p>
+<p>Volte quando achar que é capaz de fazer o trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso fazer isso. Estou apenas ... ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Você caçou aqueles spriggnses e cambalhotas?</p>
+<p> </p>
+<p>Estou assumindo que você fez. Caso contrário, você não estaria aqui agora ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que eu tenho até agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pegou todos os 10.</p>
+<p> </p>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Aqui está a moeda de bronze que você foi prometido. Faça bom uso disso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os coletores do spriggan e os guardas do spriggle.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Sprigg2_23_An]([%2]/6).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Sprigg3_25_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gundalpun].</p></step>
+</steps>
+<p>Destrua os coletores do spriggan e os guardas do Spriggle que estão ameaçando os habitantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kellan lhe disse que o número de spergrans e os spriggles aumentou de repente e que isso era um perigo para os habitantes. Infelizmente, ele não foi capaz de enviar um arconte para fazer o trabalho. Isso foi um problema.</p>
+<p> </p>
+<p>Você assumiu o trabalho e eliminou os Spriggans e os Spriggles. Você recebeu uma moeda de bronze como recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

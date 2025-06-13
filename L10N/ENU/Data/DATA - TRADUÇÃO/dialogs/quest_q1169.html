@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos muitos problemas do Krall aqui. São os Kobolds. Eles são menores e mais rápidos e invadiram nossos suprimentos regularmente.</p>
+<p> </p>
+<p>A milícia faz o que pode, mas o que realmente precisamos fazer é quebrar o moral daqueles pequenos amantes de sombras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um Kobold em particular-do que podemos dizer, ele é um herói folclórico por lá.</p>
+<p> </p>
+<p>Eles o chamam de Lightningfoot Tuka. Ele pode correr rápido como ... bem ... um raio, e pode se esquivar de qualquer coisa.</p>
+<p> </p>
+<p>Na última vez em que ele liderou um ataque aqui, eles levaram todos os porgues antes que pudéssemos soar o alarme.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então você precisa levá -lo para fora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente. Precisamos mostrar aos Kobolds que o herói deles não é imortal.</p>
+<p> </p>
+<p>Não será fácil. Ele é tão rápido que você mal consegue entrar antes de estar fora do seu alcance.</p>
+<p> </p>
+<p>Que tal?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Muitos tentaram antes, mas eu tenho fé em você.</p>
+<p> </p>
+<p>[%dic:STR_DIC_MLA23] estará explorando o caminho da vila para [%dic:STR_DIC_FLA13], planejando seu próximo ataque.</p>
+<p> </p>
+<p>Pare com aquele pequeno jogo em suas trilhas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Entendo, [%username]. Você tem medo de não ser rápido o suficiente para derrubá -lo.</p>
+<p> </p>
+<p>Tudo bem. Fico feliz que você conheça seus limites. Você pode deixar a milícia lidar com isso e depois voltar a fazer suas penas ou o que quer que você faça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu algum sinal de [%dic:STR_DIC_MLA23]?</p>
+<p> </p>
+<p>Eu sei que isso parece um trabalho impossível, mas por favor, não desista ainda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">"Eu o encontrei ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahahahaha! Sim! Tente fugir agora, Lightningfoot!</p>
+<p> </p>
+<p>Tenho certeza de que os Kobolds já estão chorando pelo seu herói caído. Você não verá lágrimas deste lado do rio, no entanto.</p>
+<p> </p>
+<p>Os moradores queriam agradecer, então eles coletaram isso para você. Eu sei que não é muito, mas por favor, leve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_MLA23], que ataca regularmente a vila ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA24]%.</p></step>
+</steps>
+<p>Abolos, líder do The Tolbas Watch, pediu que você caçar Lightningfoot Tuka, o famoso Raider que os Kobolds consideram um herói. Encontre -o no caminho para a mina de Dukaki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Abolos, líder do The Tolbas Watch, disse que Lightningfoot Tuka estava liderando ataques repetidos na vila e ninguém poderia pegá -lo.</p>
+<p> </p>
+<p>A seu pedido, você matou o raio Tuka, perto da mina de Dukaki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

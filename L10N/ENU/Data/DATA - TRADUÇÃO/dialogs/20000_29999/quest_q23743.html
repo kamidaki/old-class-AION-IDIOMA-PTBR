@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], há uma nova missão relativa à conquista de Akaron.</p>
+<p> </p>
+<p>Para garantir o vale da invasão, você precisará primeiro libertar a área de fatores perturbadores.</p>
+<p> </p>
+<p>Eliminar [plur][%dic:STR_DIC_M_LDF4_Advance_FakeTree_65_An], Assim, [plur][%dic:STR_DIC_M_LDF4_Advance_Xipeto_Drana_65_An], Assim, [plur][%dic:STR_DIC_M_LDF4_Advance_Dionaea_65_An] e [plur][%dic:STR_DIC_M_LDF4_Advance_FrillFaimam_65_n]. Reúna prova de que essas criaturas foram destruídas.</p>
+<p> </p>
+<p>Quanto mais tarefas você realiza, mais rápido conquistaremos Akaron.</p>
+<p> </p>
+<p>Por favor, faça um esforço!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A presença do Balaur está nos dando grandes problemas aqui em Akaron. No entanto, seria imprudente enviar nossas tropas, pois ainda não estamos familiarizados com o terreno.</p>
+<p> </p>
+<p>Então, antes de tudo, devemos nos familiarizar com o terreno.</p>
+<p> </p>
+<p>Você garantiu o vale de invasão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as evidências do Vale da Invasão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu inspecionei todas as evidências do Vale da Invasão.</p>
+<p> </p>
+<p>Tenho a sensação de que chegamos um passo mais perto de conquistar Akaron.</p>
+<p> </p>
+<p>Agora podemos nos concentrar em combater o Balaur do Vale da Invasão.</p>
+<p> </p>
+<p>Muito obrigado. Você é apenas o melhor!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_LDF4_Advance_Q23743_all] e trazer tudo para [%dic:STR_DIC_N_LDF4_Advance_Helgund_E].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o Vale da Invasão e livre -se de Akaron Dionaes, Agrints de Black Branch, Garrilhas de Frillcks de dente de serra e pântanos traiçoeiros. Traga de volta à prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Helgund pediu que você limpasse a área em torno do vale de invasão de criaturas problemáticas.</p>
+<p> </p>
+<p>De acordo com o pedido de Helgund, você eliminou Akaron Dionaes, Agrints de ramo preto, escrevidas de dente de serra e gnarls de pântano traiçoeiros e trouxeram a prova para Helgund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem irmãos, [%username]? Eu costumava ir à praia com meu irmãozinho quando éramos crianças, e eu o enterrava no pescoço dele na areia ... Ahh, esses eram os dias. Eu pensei que talvez pudéssemos reviver esses tempos, e eu tinha os veleiros prontos para ir ...</p>
+<p> </p>
+<p>Somente nossos barcos precisam reparar do ano passado, e os monstros saíram com todos os materiais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, isso é inconveniente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Eu tinha o perfeito[%dic:STR_DIC_I_QUEST_80044A] S, e eles foram comidos tudo por [%dic:STR_DIC_M_Agrint_34_An] S, [%dic:STR_DIC_M_Rottentree_34_An] S, [%dic:STR_DIC_M_ElementalEarth2_34_An] Areia [%dic:STR_DIC_M_ElementalEarth2_35_An] S.</p>
+<p> </p>
+<p>Eu ia pedir que você os recuperasse, mas isso não está realmente no espírito de recuperar sua juventude, agora é?</p>
+<p> </p>
+<p>Oh, espere! Eu tive uma onda cerebral! Que tal chamamos de desafio? Você deve ter feito alguns ousados ​​bastante ultrajantes em seu tempo, um Daeva ousado como você ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, bem, abençoe suas asas, [%username]! Teremos a chance de ser crianças novamente, e será graças a você!</p>
+<p> </p>
+<p>Como eu disse, o [%dic:STR_DIC_I_QUEST_80044A] S foram comidos pelos monstros do bosque decapado. Só não me pergunte por que pensei que seria uma boa ideia usar essa rota. O mais curto nem sempre é o mais rápido, meu velho pai costumava me dizer. Bem, acho que ainda sou criança em alguns aspectos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nunca cresça, Tallas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você gosta de quebrar o coração das crianças, tudo bem.</p>
+<p> </p>
+<p>Oh, não me dê esse absurdo sobre não ser realmente uma criança. Eu sou uma criança de coração! Um coração que você quebrou agora. Então lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, definitivamente um bebê."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Doce senhora Ariel! Você está de volta! Você tem minhas tábuas, certo? Quanto mais cedo começarmos os reparos, mais cedo eu posso mergulhar no convés do meu próprio veleiro nas águas tropicais ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão suas tábuas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... sim, estes são os[%dic:STR_DIC_I_QUEST_80044A] S eu tinha feito. Meu veleiro está salvo!</p>
+<p> </p>
+<p>Obrigado, [%username]! Você fez meus sonhos se tornarem realidade. Assim que eu conserto esse bebê, você está convidado a veio navegar comigo sempre que quiser.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi, [%username]? Você até começou a procurar o [%dic:STR_DIC_I_QUEST_80044A] Ainda?</p>
+<p> </p>
+<p>Ou o bosque decapado é muito assustador para você? Talvez da próxima vez eu faça o ousar algo mais sua velocidade ... como ficar em uma perna por um minuto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não estou com medo, estou apenas ocupado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o bosque em decomposição e recupere [%dic:STR_DIC_I_QUEST_80044A] para [%dic:STR_DIC_N_event_Tallas].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o bosque decapado e recupere tábuas vermelhas para Tallas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tallas havia planejado algumas festividades infantis para recuperar sua juventude, mas as tábuas para reparar o veleiro foram roubadas por monstros.</p>
+<p> </p>
+<p>Você recuperou as tábuas, mas parece improvável que o barco esteja pronto a tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

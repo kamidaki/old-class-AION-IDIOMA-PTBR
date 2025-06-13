@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Há um papel dobrado na caixa de jóias junto com o colar.)</p>
+<p> </p>
+<p>(Uma carta, escrita em pequeno e elegante script, começa :)</p>
+<p> </p>
+<p>"Meu querido menino ..."</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou dar isso a Arekedil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você encontrou meus pais?</p>
+<p> </p>
+<p>O que está errado? Eles estão mortos? Eu esperei muito tempo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você deveria ler isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta? O que diz ...?</p>
+<p> </p>
+<p>Oh. Agora eu entendo por que você estava tão quieto. E por que você voltou sozinho.</p>
+<p> </p>
+<p>Minha mãe está viva. Mas eu não posso conhecê -la. Eu não posso nem falar com ela. "Ninguém pode saber a verdade do nosso passado", diz ela. Isso faz muito doer meu coração!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga a caixa de jóias para [%dic:STR_DIC_N_Arekedil].</p></step>
+</steps>
+<p>Entregue a caixa de jóias que contém o colar e a carta ao Arekedil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você abriu a caixa de jóias Annemari pediu que você entregasse ao Arekedil, você encontrou uma carta dentro.</p>
+<p> </p>
+<p>Depois de ler a carta, Arekedil ficou perturbado. Sua mãe estava viva, mas ele ainda nunca a encontra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

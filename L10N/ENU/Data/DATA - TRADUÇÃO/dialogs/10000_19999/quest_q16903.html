@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Kishar Krall parece estar planejando um contra-ataque.</p>
+<p> </p>
+<p>De acordo com o padre [%dic:STR_DIC_N_Maloren] em[%dic:STR_DIC_W_LF3_SZ_004], os Kishar-Krall ergueram um posto e estão expandindo seus poderes.</p>
+<p> </p>
+<p>Ouvi dizer que o Krall também começou a lançar ataques em Eltnen. Há uma forte suspeita de que alguém está colocando o Krall.</p>
+<p> </p>
+<p>Vá rapidamente para [%dic:STR_DIC_N_Maloren] em[%dic:STR_DIC_W_LF3_SZ_004]. Você deve manter seu juízo sobre você, pois eles estão por perto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Kishar Krall está reunindo reforços para atacar o posto de guarda neste local.</p>
+<p> </p>
+<p>Segundo o relatório do Guardian patrulhando a vila, Krall acredita -se que esteja formando uma tropa de guerrilha que consiste em guerreiros particularmente agressivos.</p>
+<p> </p>
+<p>Vamos deixar Kishar Krall, que ousa testar a força de um guardião, sentir a ira do santuário.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LF3_1_Light_Raider]no poste e leve [%dic:STR_DIC_W_LF3_Village_01]. BATE O Líder, o moral dos subordinados cairá automaticamente.</p>
+<p> </p>
+<p>A proteção de Ariel vigiará você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Para conquistar o post, você precisa se livrar de [%dic:STR_DIC_M_LF3_1_Light_Raider].</p>
+<p> </p>
+<p>Derrubar seu líder diminuirá o moral do esquadrão brutal de Guerrilha Krall.</p>
+<p> </p>
+<p>À medida que a situação aqui está mudando constantemente e os asmodianos estão esperando sua oportunidade, os asmodianos são capazes de ocupar [%dic:STR_DIC_W_LF3_Village_01].</p>
+<p> </p>
+<p>Demonstrar o poder do santuário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você matou o líder de guerrilha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pegou a postagem? Sou muito grato a você, sabia que você era o Daeva selecionado por Santuário.</p>
+<p> </p>
+<p>O chilar do protetorado Heiron estará aqui em breve, mas nem Kishar Krall nem os Asmodianos desistirão rapidamente.</p>
+<p> </p>
+<p>Tenho a sensação de que a batalha por este post não acabará rapidamente.</p>
+<p> </p>
+<p>Você deveria estar em sua guarda, [%username]. A proteção de Ariel irá guardá -lo.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Maloren]no[%dic:STR_DIC_W_LF3_SZ_004].</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_LF3_1_Light_Raider]([%11]/1).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_Maloren].</p></step>
+</steps>
+<p>Conquista o [%dic:STR_DIC_W_LF3_Village_01]do Kishar Krall, que está fortalecendo suas forças para o ataque ao posto de observação de Kishar, e matar [%dic:STR_DIC_M_LF3_1_Light_Raider].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>No comando de Perento, você ocupou o posto de Kishar Guard, perto do posto de observação de Kishar, e removeu o líder da guerrilha.</p>
+<p> </p>
+<p>Malloren, do Post de observação de Kishar, disse que os Asmodians e Krall também atacariam o cargo no futuro.</p>
+<p> </p>
+<p>A batalha não terminou tão facilmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

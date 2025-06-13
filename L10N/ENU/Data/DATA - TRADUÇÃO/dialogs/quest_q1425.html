@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Outra operação para eliminar o Kaidan Krall. Se for bem -sucedido, teremos muito menos batalhas contra os sapiens no futuro.</p>
+<p> </p>
+<p>Poderíamos mudar nossa atenção de lutar contra o Krall para lutar contra o Balaur.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso não seria bom?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seria bom mesmo! No entanto, primeiro devemos lidar com o Krall.</p>
+<p> </p>
+<p>O general da brigada nos ordenou que nos livrarmos daqueles que curam os feridos e lançam feitiços com Odium.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece lógico."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Concordo. Precisamos de alguém experiente e confiável para cuidar dessa missão.</p>
+<p> </p>
+<p>Você vai fazer isso? Você pode trazer o deles[%dic:STR_DIC_I_QUEST_1425a] para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. É o [%dic:STR_DIC_E_LF2_1424_group2_1] e o [%dic:STR_DIC_E_LF2_1424_group2_2]Isso nos dá problemas agora.</p>
+<p> </p>
+<p>Não se esqueça de trazer o [%dic:STR_DIC_I_QUEST_1425a] para mim, e para trazer seus aliados.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca esperava que você rejeitasse meu pedido.</p>
+<p> </p>
+<p>Seja qual for o seu motivo, repense -o.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso estar de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se saiu, [%username]?</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_1425a] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não foi? Você não conseguiu encontrar ninguém para ir com você?</p>
+<p> </p>
+<p>Eu preciso disso[%dic:STR_DIC_I_QUEST_1425a] S. Apresse -se e traga -os de volta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado pelo que você fez. Isso tornará as coisas muito mais fáceis para nós daqui para frente.</p>
+<p> </p>
+<p>Por favor, pegue isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1425a] e trazê -los para [%dic:STR_DIC_N_Aurelius].</p>[%collectitem]</step>
+</steps>
+<p>Remova os curandeiros e xamãs de Krall na sede da Kaidan e colete suas marcas de Ódio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aurelius recebeu ordens para se livrar dos curandeiros e xamãs de Krall na sede da Kaidan. Você removeu o Krall como ele ordenou, coletou suas marcas de Ódio e as trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, punir o traidor Jamanok é um objetivo, mas ainda é mais importante encontrar o [plur][%dic:STR_DIC_OBJ_LF2a_Portal_Box_Q49004]que ela roubou.</p>
+<p> </p>
+<p>Nossos informantes nos dizem que ela colocou os documentos em vários baús e os escondeu perto de sua pousada.</p>
+<p> </p>
+<p>Encontre todos os baús que contêm documentos e destrua -os.</p>
+<p> </p>
+<p>Então relate -se [%dic:STR_DIC_N_Sala].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Dromik já me informou.</p>
+<p> </p>
+<p>Você recebeu a missão de destruir os documentos roubados por Jamanok?</p>
+<p> </p>
+<p>Você encontrou e destruiu todas as caixas que continham documentos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os documentos contêm os nomes dos espiões que enviamos para Elysea, bem como os locais das unidades militares asmodianas.</p>
+<p> </p>
+<p>Qualquer informação que Jamanok consegue transmitir para os Elyos é extremamente prejudicial para o nosso povo.</p>
+<p> </p>
+<p>Em outras palavras, a vida de muitas de nossas pessoas dependem desse assunto, [%username].</p>
+<p> </p>
+<p>Isso foi um trabalho muito bom.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [plur][%dic:STR_DIC_OBJ_LF2a_Portal_Box_Q49004]perto de Jamanok's Inn e destruí -los ([%2]/7).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Encontre os baús escondidos contendo os documentos secretos perto da Inn Jamanok e os destruam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dromik pediu que você destruísse os baús dos documentos secretos perto da Inn Jamanok. A própria Jamanok os escondeu, eles não devem cair nas mãos dos Elyos.</p>
+<p> </p>
+<p>Quando você disse a Sala que todos os documentos secretos haviam sido destruídos, ele o recompensou por realizar uma ação tão grande para Asmodae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

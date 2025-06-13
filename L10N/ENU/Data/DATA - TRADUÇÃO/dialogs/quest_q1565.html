@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que você sabe que os daevas de Zephyr são despachados para a HEIRON para coletar informações sobre o Balaur e os Mortos Vivos. Precisamos de inteligência sobre o Balaur para ajudar nossa luta no abismo.</p>
+<p> </p>
+<p>Outros Daevas, como eu, investigam Mortos Vivos ... tentando entender a fonte da contaminação. Mais importante ainda, devolvemos almas perdidas ao fluxo de Aether.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, devemos fazer o que pudermos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou encarregado de toda a área, mas este lugar é tão enorme que não posso exagerar todos os detalhes. Meus superiores não aceitam desculpas.</p>
+<p> </p>
+<p>Então. Eu quero te perguntar isso. Você iria para a fazenda Orton e destruiria [%dic:STR_DIC_M_Banshee_37_An] Areia [%dic:STR_DIC_M_Bookie_37_An] S?</p>
+<p> </p>
+<p>Seus números aumentaram e não tenho tempo ou pessoas para lidar com eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso. Orton Farm fica a leste daqui.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_Banshee_37_An] Areia [%dic:STR_DIC_M_Bookie_37_An] S, então relate de volta.</p>
+<p> </p>
+<p>Estou contando com você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Matar os mortos é uma honra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você nunca entenderá meus problemas.</p>
+<p> </p>
+<p>Eu escolhi me tornar um Daeva de Zephyr por causa de sua reputação de liberdade, mas não sou tão livre quanto esperava.</p>
+<p> </p>
+<p>Eu não sei a quem mais posso recorrer ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez você deva começar a trabalhar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está de volta. Estou preocupado em classificar as informações que reuni até agora.</p>
+<p> </p>
+<p>As coisas seriam melhores se os Daevas no campo apenas enviassem seus relatórios ao templo e os deixassem resolvê -lo.</p>
+<p> </p>
+<p>Como você se saiu com os Banshees e Boggarts? Eles lhe causaram algum problema?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nem um pouco-eles estão feitos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Vou anexar mais uma linha ao meu relatório.</p>
+<p> </p>
+<p>Aqui está uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dirija os Banshees e os Boggarts da fazenda Tártaro.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Banshee_37_An]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Bookie_37_An]([%5]/4)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gamedes].</p></step>
+</steps>
+<p>Mate os Banshees Sobbing e Boggarts irregulares na fazenda Tartaron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gamedes disse que queria os Mortos Vivos na Orton Farm removidos, mas ele não teve tempo devido à sua carga de trabalho pesada.</p>
+<p> </p>
+<p>Então você foi à fazenda de Orton para se livrar dos Banshees Sobbing e Boggarts irregulares.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

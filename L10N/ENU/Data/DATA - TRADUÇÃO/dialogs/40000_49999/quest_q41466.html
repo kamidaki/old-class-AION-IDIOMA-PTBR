@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41466</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todas as inseguranças e problemas do mundo fluem para a forma básica da arma Luminaciel.</p>
+<p> </p>
+<p>Eles são limpos usando o poder divino e a bênção de Siel.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Salomone] Será capaz de falar mais sobre os ingredientes necessários para a limpeza.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF4a_SZ_OP_11].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer fazer a arma Lummasiel?</p>
+<p> </p>
+<p>Então você deve estar aqui por causa do[%dic:STR_DIC_I_Q41466a]. Hum...</p>
+<p> </p>
+<p>A luz pura é um material raro que só pode ser criado através do[%dic:STR_DIC_I_Q41466b]processo de criação. É preciso energia divina e muita sorte.</p>
+<p> </p>
+<p>É por isso que o sucesso só é possível com uma enorme quantidade de poder divino.</p>
+<p> </p>
+<p>Detalhes dos métodos de fabricação podem ser encontrados no projeto que está sendo vendido por [%dic:STR_DIC_N_Safadorn].</p>
+<p> </p>
+<p>Depois de coletar luz pura suficiente, traga -a para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É você, [%username].</p>
+<p> </p>
+<p>Você conseguiu conseguir o [%dic:STR_DIC_I_Q41466a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a luz pura.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso!</p>
+<p> </p>
+<p>É realmente a luz pura!</p>
+<p> </p>
+<p>Eu posso imaginar tudo o que você tinha que passar para isso.</p>
+<p> </p>
+<p>Mas como posso dizer isso ...</p>
+<p> </p>
+<p>Outro ingrediente é necessário ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Salomone]%.</p></step>
+<step><p visible="[%3]">Juntar [%dic:STR_DIC_I_Q41466a] e leve tudo para [%dic:STR_DIC_N_Salomone].</p>[%collectitem]</step>
+</steps>
+<p>Crie o material para fazer a arma Luminaciel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kahrun diz que Salomão sabe mais sobre como criar a arma de Lummasiel e os ingredientes necessários.</p>
+<p> </p>
+<p>Depois que Salomão revelou como criar luz pura, e você criou a luz e deu a Salomão, ele lhe disse que mais ingredientes eram necessários.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós ... nós os matamos e os matamos, mas eles continuam chegando! Os Klaws, eles apenas ... se reproduzem tão rápido!</p>
+<p> </p>
+<p>Não vai funcionar. Eu deveria matar algo grande em vez disso. Bem conhecido ... temido em toda a região.</p>
+<p> </p>
+<p>[%username], você me ajudou antes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, eu ajudei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é tudo o que peço.</p>
+<p> </p>
+<p>Eu conheço o alvo perfeito. [%dic:STR_DIC_M_ZombieNamedD_28_Ae]é uma verdadeira lenda por aqui. Duro, forte, aterrorizante. O preço em sua pele morta -viva tem dado anos.</p>
+<p> </p>
+<p>Você poderia matá -lo, [%username]? Mantenha o que você encontrar, a recompensa também. Eu só quero o reconhecimento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_ZombieNamedD_28_Ae]vive profundamente dentro da caverna de Taran. Você terá que passar pelos Klaws novamente.</p>
+<p> </p>
+<p>Não vá sozinho, [%username]. Vimos outros tentarem. Leve outros, leve muitos outros. Pegue sua Guilda, se puder!</p>
+<p> </p>
+<p>Ele é astuto, assassino e séculos de idade. Boa sorte, [%userclass]!! Kalbak aguarda!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gosto de desafios."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... mas .... tudo o que eu quero fazer é fazer algo de mim mesmo, para provar que sou algo ... alguém!</p>
+<p> </p>
+<p>Eu matei o Klaw, [%username], mas eu preciso de algo que eles acreditem! Por favor!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Honra repousa sobre a verdade, Kimssi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que parece melhor, "Kimssi the Mighty", ou "Mighty Kimssi"? Ou "Kimssi the Slayer" ... hmm.</p>
+<p> </p>
+<p>Oh, estou me adiantando! Está pronto, [%username]? Kalbak foi morto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, ele está morto ... uh, de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado!</p>
+<p> </p>
+<p>Agora lembre -se, este é o nosso segredo, [%username]! Se as pessoas descobrissem que você matou a besta, haveria um tumulto. Eu ficaria arruinado.</p>
+<p> </p>
+<p>Pegue a recompensa, então devo ir. Eu não sou mais "Skurv". Eu sou Kimssi!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_ZombieNamedD_28_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kimci].</p></step>
+</steps>
+<p>Derrote o servil Kalbak para ajudar Kimssi a Gerner fama.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kimssi não conseguiu esvaziar as cavernas de Klaws. Em desespero, ele considerou matar um inimigo lendário. Você concordou em ajudá -lo e derrotou o Servil Kalbak, mas deu ao crédito a Kimssi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

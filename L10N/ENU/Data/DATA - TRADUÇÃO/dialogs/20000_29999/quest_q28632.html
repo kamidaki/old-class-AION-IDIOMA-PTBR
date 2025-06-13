@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não saia, [%username]. O que você planeja fazer com a chama de Kromede lá?</p>
+<p> </p>
+<p>Você não vai usá -lo, é? TSK.</p>
+<p> </p>
+<p>Eu tive uma ideia melhor. Derreta a chama e use -a para revestir o tomo do juiz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como você faria isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É complicado, mas se você quiser ver como é feito, precisará me trazer os dois itens.</p>
+<p> </p>
+<p>Você tem a chama de Kromede, então está no meio do caminho. Agora você só precisa do tomo do juiz.</p>
+<p> </p>
+<p>Felizmente, posso lhe dizer onde conseguir isso ... se você estiver interessado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Boa escolha. Você não vai se arrepender. Agora, quanto a esse tomo do juiz ....</p>
+<p> </p>
+<p>Palavra em Morheim é aquela pequena senhora que você conhece nomeada [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]tem. Ela está em algo chamado The Fire Temple.</p>
+<p> </p>
+<p>Se você perguntar, tenho certeza de que alguém pode lhe dizer como chegar lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que eu não posso colocar um colar e um livro dentro de uma chama furiosa sem destruir os dois itens?</p>
+<p> </p>
+<p>Eu sei que isso parece louco, mas não sou amador.</p>
+<p> </p>
+<p>Pense sobre isso. Tenho certeza que você vai mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não tenho tanta certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me trouxe o tomo do juiz? Tudo o que preciso é essa e a chama de Kromede, e podemos prosseguir conforme o planejado.</p>
+<p> </p>
+<p>Não chore por Kromede ... ela foi assumida pela tristeza e ódio. Ela não merece mais sua compaixão.</p>
+<p> </p>
+<p>Agora, deixe -me apenas nocautear essa chama e jogaremos esse livro lá ... você parece nervoso. Existe um problema?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"N ... não. Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça, eu não sou apenas um Raider simples com alguns galhos e um grande martelo.</p>
+<p> </p>
+<p>Depois que peguei um polear e a transformei em uma adaga e depois voltei a um polearmo. Um polearm muito menor, verdadeiro ....</p>
+<p> </p>
+<p>Independentemente disso, não tenho dúvida de que posso combinar o tomo do juiz e da chama de Kromede. Venha para mim com os dois no seu cubo, e eu provarei isso para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho que pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem! Aqui vamos nós. Primeiro eu jogo o livro em chamas-eu vai, lá vai ...</p>
+<p> </p>
+<p>Ou, espere ... a chama de Kromede entra primeiro? Eu acho que peguei isso ao contrário. Bem, muito tarde agora. Vamos ver o que acontece ....</p>
+<p> </p>
+<p>Ei, funcionou. É o tomo de Kromede! É bom saber. É melhor eu escrever isso para a próxima vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete materiais para refinar o tomo do juiz e trazê -los para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter disse que poderia refinar o tomo do juiz para você usando a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Walter disse que a chama de Kromede pode ser usada para reforçar o tomo do juiz e pediu que você lhe trazia os dois itens.</p>
+<p> </p>
+<p>Ao contrário da lógica, você confiou nele e deu a ele a chama de Kromede e o tomo do juiz. Walter de alguma forma conseguiu não destruir os dois itens, dando a você o tomo de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

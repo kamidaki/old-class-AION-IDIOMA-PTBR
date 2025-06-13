@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3542</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, [%username].</p>
+<p> </p>
+<p>Você cheira algo? Algo ... podre?</p>
+<p> </p>
+<p>Eck! Sou eu! Explosão. Ainda não consigo me livrar desse cheiro!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Potente. O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Zumbi lento. Sim. Bruto.</p>
+<p> </p>
+<p>Nós encontramos um monte de patrulha no bosque decapado ontem.</p>
+<p> </p>
+<p>Faz meus olhos lacrimejarem só de pensar no cheiro. Eu tropecei em um tronco e pousei em um! O material de pesadelos, eu digo a você! E agora, sinto o cheiro de meias de um ano!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sabão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Toneladas de sabão. Cinco chuveiros quentes. Suspirar. Eu acho que estou preso com isso até que ele desapareça.</p>
+<p> </p>
+<p>Umm ... então ... [%username], qualquer chance de convencê -lo de se livrar daqueles[%dic:STR_DIC_M_Zombie_34_An]para mim?</p>
+<p> </p>
+<p>Você é tão rápido e ágil que duvido que você tenha algum problema em evitar ficar de mata.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Ariel! Eu não acho que poderia suportar outro[%dic:STR_DIC_M_Zombie_34_An].</p>
+<p> </p>
+<p>Vá para o bosque em decomposição, derrube -os e traga -me [%dic:STR_DIC_I_QUEST_3542A] S, então eu posso destruí -los. Então, ninguém mais fica fedorento como eu.</p>
+<p> </p>
+<p>Hum, você pode querer colocá -los em um saco, para que o fedor não se espalhe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um saco, verifique."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não posso dizer que te culpo. O fedor é bastante horrível.</p>
+<p> </p>
+<p>Só porque você é um lutador fabuloso não significa que você está imune a esse tipo de odor horrível.</p>
+<p> </p>
+<p>Azedo ... err..ente na luz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bênçãos do sol."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Whew, acho que o fedor acabou sendo finalmente desaparecido.</p>
+<p> </p>
+<p>Lavei essas roupas tantas vezes que posso praticamente ver através delas agora.</p>
+<p> </p>
+<p>Como foi com os zumbis lentos? Você não cheira como se tivesse problemas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as bandagens podres."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não abordou o [%dic:STR_DIC_M_Zombie_34_An]problema?</p>
+<p> </p>
+<p>Sentindo -se um pouco relutante em lidar com o fedor, não é?</p>
+<p> </p>
+<p>Eu não vou te apressar. Sem pressa. Apenas me traga aqueles[%dic:STR_DIC_I_QUEST_3542A] S quando você terminar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eco! Eu posso sentir o cheiro daqui e nem estou respirando pelo nariz!</p>
+<p> </p>
+<p>Você até conseguiu algum em você, [%username]? Não cheira a isso. Você é ágil.</p>
+<p> </p>
+<p>Bem, vou queimar isso antes que o fedor consiga buracos no pano de saco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete o [%dic:STR_DIC_I_QUEST_3542A] e trazê -los para [%dic:STR_DIC_N_Rahelio].</p>[%collectitem]</step>
+</steps>
+<p>Destrua os zumbis lentos com cheiro sujo e colete suas ataduras podres.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rahelio pegou zumbis fedos em todo ele enquanto tentava combater um zumbi lento.</p>
+<p> </p>
+<p>Ele pediu que você matasse os zumbis lentos e voltasse com suas ataduras podres, para que ele pudesse queimá -los.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

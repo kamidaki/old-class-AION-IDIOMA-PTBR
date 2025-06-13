@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau! Os negócios estão crescendo! Em breve, até estocarei o Licor Odella.</p>
+<p> </p>
+<p>Ei![%userclass]! Bom amigo! Patrono leal da Apelbine! Amigo meu! Posso te perguntar um favor?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de favor?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou nevada com clientes-que é bom, obviamente-mas não tenho ajuda suficiente! O que devo dizer aos clientes? "Desculpe, não há grub na famosa Apellbine Tavern porque os daevasas consideram cozinhar embaixo deles."</p>
+<p> </p>
+<p>Existe uma chance, qualquer chance, você pode enferrujar alguns[%dic:STR_DIC_I_shell_d_n_c_10a] S e assar um lote para esta equipe faminta? Se você puder, vou fazer o seu tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso! O assado Conide é um favorito da Asmodian ... e mantém os clientes com sede. E não apenas não tenho funcionários para cozinhá -lo, como estou fora dos ingredientes primários.</p>
+<p> </p>
+<p>Existem muitos[%dic:STR_DIC_I_shell_d_n_c_10a] S em Altgard. Você precisará de sal. Você pode usar o [%dic:STR_DIC_E_LF3_Cook_production]no templo dos artesãos. Só não fique do lado ruim de Lainita ... ela vai arrancar você, encher você e assá -lo ... possivelmente nessa ordem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mantenha minha cadeira quente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, vamos lá! Não estou perguntando muito, e vou te pagar bem!</p>
+<p> </p>
+<p>Este lugar não é como uma segunda casa para você? Você não quer ajudar seus amigos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Eu estive enlouquecendo esperando por você.</p>
+<p> </p>
+<p>Você fez Conides assados? Por favor, diga sim. Estou inundado de ordens!</p>
+<p> </p>
+<p>Basta colocá -lo no bar lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim. Eu os tenho aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaaargh! Que parte de cozinhar a comida e trazê -la aqui, você não entendeu? Você está tentando sabotar meu negócio? Abrindo um lugar próprio, é isso?</p>
+<p> </p>
+<p>Por favor ... basta desenterrá -los, assá -los e trazê -los aqui antes que meus clientes me comam vivo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você salvou minha vida. Todo mundo está bebendo para a saúde de Lord Azphel, e a história que ele gosta, ele gosta de um bom conide assado, então de repente todo mundo quer.</p>
+<p> </p>
+<p>Leve isso para o seu problema. Duvido que alguém tenha pago um preço tão alto pelo conide assado, mas você ganhou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Assar [%dic:STR_DIC_I_shell_d_n_c_10a] S e leve para [%dic:STR_DIC_N_Genpels].</p>[%collectitem]</step>
+</steps>
+<p>Jeckrow não tinha funcionários da cozinha e comida. Assim, você precisa coletar Conides em Altgard, fazer com que os assados ​​no templo dos artesãos em Pandaemonium e entreguem o prato a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizendo que ele era de mão curta, Jeckrow pediu que você fizesse comida.</p>
+<p> </p>
+<p>Você cozinhou alguns conidentes assados ​​e os trouxe para ele. Ele agradeceu e recompensou você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

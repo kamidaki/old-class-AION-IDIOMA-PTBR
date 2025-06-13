@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Confidencial -</p>
+<p></p>
+<p>De: sede da Radiant Ops</p>
+<p></p>
+<p>Para: agente [%username]</p>
+<p></p>
+<p>Assunto: trazendo a guerra aos asmodianos. A filial de Reshanta não tolerará asmodianos em nenhum lugar.</p>
+<p></p>
+<p>Ordens: Localize e destrua cinco asmodianas dignas de combate por dia para evitar operações inimigas. Terminar com preconceito extremo. Na conclusão da missão, relate -se a [%dic:STR_DIC_E_35502].</p>
+<p></p>
+<p>Fé, braços e sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazê -los sangrar, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você de novo, [%username].</p>
+<p> </p>
+<p>Como vai a missão?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Cinco asmodianos para baixo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles asmodianos atingidos precisam aprender que em nenhum lugar está a salvo da luz dos abençoados.</p>
+<p> </p>
+<p>A cada vitória, semeamos a glória!</p>
+<p> </p>
+<p>Bom trabalho, agente [%username]. Aqui está sua recompensa por serviço meritório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_Daily_1] em[%dic:STR_DIC_W_Daily]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_E_35502].</p></step>
+</steps>
+<p>Ordem diária: elimine os asmodianos em qualquer lugar e em qualquer lugar. Relatório ao Agente de Ops Radiant Reshanta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A sede da Radiant Ops emitiu uma ordem diária para eliminar os asmodianos em qualquer lugar em que pudessem mostrar seus rostos.</p>
+<p> </p>
+<p>Você completou a missão e recebeu sua recompensa da Radiant Ops.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Missão Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

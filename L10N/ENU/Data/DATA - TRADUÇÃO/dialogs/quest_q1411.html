@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, ouça -me com cuidado, enquanto detesto a repetição.</p>
+<p> </p>
+<p>A situação na sede da Kaidan está ficando mais preocupante a cada dia. Os Krall sempre foram agressivos, mas estão entendendo mais-e parecem estar ficando mais fortes também.</p>
+<p> </p>
+<p>Minha única teoria é que o Krall está fazendo algo que lhes dá força e resiliência aprimoradas. Provavelmente um derivado de ódio. É a única explicação para a maneira como eles estão se comportando.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que faz você pensar isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É apenas uma conjectura neste momento, mas a exposição ao Odium tende a ter esses efeitos. Isso aumenta a força e o torna quase impermeável à dor. Também acabará matando você, mas não acho que os Krall estejam especialmente preocupados com os efeitos da saúde a longo prazo.</p>
+<p> </p>
+<p>Mas alguém precisa entrar na sede da Kaidan e descobrir com certeza.</p>
+<p> </p>
+<p>Telêmaco parece acreditar que você é a escolha ideal. Não sei por que ele daria essa missão importante a alguém que não é um guardião, mas, diferentemente de alguns daevas, sigo as ordens do meu comandante.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, pelo menos sua fé em você é justificada até longe.</p>
+<p> </p>
+<p>Não há tempo a desperdiçar. Vá para a sede da Kaidan imediatamente e investiga a situação. Meus batedores relataram caixas suspeitas perto de seus abrigos, mas não conseguiram chegar perto o suficiente para descobrir o que contêm.</p>
+<p> </p>
+<p>Você provavelmente deve montar um grupo. A sede da Kaidan é muito perigosa para alguém ir para lá sozinho. A luz mostra o caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A luz protege você e seus soldados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem medo? Por que você tem tanta falta de confiança?</p>
+<p> </p>
+<p>Estou tão desapontado que alguém que o comandante da fortaleza recomendou tenha acabado de ser um covarde.</p>
+<p> </p>
+<p>Se você não fará isso, não se preocupe em mostrar seu rosto por aqui novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minhas razões para recusar são as minhas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa missão certamente não foi fácil, então devo dizer que estou um pouco surpreso ao ver você voltar tão rapidamente.</p>
+<p> </p>
+<p>O fato de você ter conseguido sair de lá viva significa que os cinco Senhores Empíreanos estavam com você.</p>
+<p> </p>
+<p>Então, você encontrou alguma pista?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho algo que você vai querer ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Nada útil, eu te digo.</p>
+<p> </p>
+<p>Você não acabou de espiar na entrada e voltou, não é?</p>
+<p> </p>
+<p>O comandante está esperando por essas informações. Volte e faça um trabalho adequado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não voltarei de mãos vazias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ... uma garrafa de poção? Do jeito que está brilhando, eu acho ... acho que Aether está misturado nele!</p>
+<p> </p>
+<p>Se os Krall estivessem bebendo poções como essa, explicaria seu súbito aumento de força. Isso deve ser relatado de uma só vez.</p>
+<p> </p>
+<p>Muito bom trabalho, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [%dic:STR_DIC_I_QUEST_1411a] es na sede da Kaidan, encontre algumas pistas e trazê -las para [%dic:STR_DIC_N_Aeolus].</p>[%collectitem]</step>
+</steps>
+<p>Os Kaidan Krall de repente se tornaram mais fortes. Vá para a sede da Kaidan e procure pistas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tumblusen disse que Kaidan Krall ficou mais forte de repente e que deve haver uma razão para isso. Por recomendação do Comandante Telemachus, ele pediu para você ir à sede da Kaidan e trazer de volta qualquer coisa que possa ser uma pista.</p>
+<p> </p>
+<p>Quando você apresentou a garrafa de poção suspeita que encontrou na sede, ele disse que a poção parecia conter Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

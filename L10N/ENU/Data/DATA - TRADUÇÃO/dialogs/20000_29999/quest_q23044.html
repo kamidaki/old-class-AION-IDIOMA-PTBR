@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido, [%username].</p>
+<p> </p>
+<p>Obter [%dic:STR_DIC_I_quest_23044a]da tribo Ruruba e leve -a para [%dic:STR_DIC_N_LDF5b_Phone_E].</p>
+<p> </p>
+<p>Na verdade, é a minha tarefa, mas provavelmente não seria capaz de concluir a tarefa corretamente, porque tenho muitas dúvidas sobre o meu trabalho.</p>
+<p> </p>
+<p>Desculpe. Mas estou pedindo para você fazer isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É você, [%username].</p>
+<p> </p>
+<p>O que te traz aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">(Você entrega os itens roubados.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este item foi roubado!</p>
+<p> </p>
+<p>Lembro -me de encomendar kitus para obter este item. Não importa isso, no entanto.</p>
+<p> </p>
+<p>Não é grande coisa, mas eu ainda gostaria de agradecer seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_23044a] e trazê -lo para [%dic:STR_DIC_N_LDF5b_Phone_E].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o objeto que foi roubado pela tribo Ruruba e trazê -lo para Phon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você devolveu o item roubado da tribo Ruruba para Phon, ele disse que não era nada de especial, mas ele agradeceu de qualquer maneira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

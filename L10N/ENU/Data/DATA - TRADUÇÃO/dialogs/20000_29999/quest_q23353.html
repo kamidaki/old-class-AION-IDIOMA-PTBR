@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard13_D]do[%dic:STR_DIC_W_LDF5b_D2_v13]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: mate os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_D2_3]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Elyos está nos incomodando nas montanhas Sauro.</p>
+<p> </p>
+<p>Eles também devem saber que as montanhas Sauro trazem uma vantagem estratégica.</p>
+<p> </p>
+<p>[%username], por favor, passe com frequência para que nenhum Elyos possa invadir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você faria isso, [%username].</p>
+<p> </p>
+<p>Eu sabia que você me traria boas notícias.</p>
+<p> </p>
+<p>Paramos os Elyos por um tempo.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram[%dic:STR_DIC_W_LDF5b_SZ_D2_3]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard13_D].</p></step>
+</steps>
+<p>Ordens urgentes: elimine os Elyos que se infiltraram nas terras altas silenciosas no sul de Katalam e se reportarem a Torpin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O infiltrador de Elyos estava visando as terras altas silenciosas no sul de Katalam.</p>
+<p> </p>
+<p>Você destruiu o infiltrando Elyos e relatou a torpin.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

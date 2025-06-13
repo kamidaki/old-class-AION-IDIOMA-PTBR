@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A força de Beritra teve um aumento significativo recentemente.</p>
+<p> </p>
+<p>De alguma forma, tenho a sensação de que eles adquiriram novas armas.</p>
+<p> </p>
+<p>[%username], mate o [%dic:STR_DIC_E_LDF5b_F123_Vri] e me traga o [%dic:STR_DIC_I_QUEST_23336A].</p>
+<p> </p>
+<p>Eu tenho que verificar e ver se algo mudou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Exército de Beritra sempre foi forte, mas seu poder de luta agora é mais do que suspeito.</p>
+<p> </p>
+<p>É por isso que me pergunto se suas armas foram aprimoradas.</p>
+<p> </p>
+<p>Simplesmente não parece possível que eles tenham desenvolvido um método de luta especial tão rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as armas dos soldados de Beritra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A solução era, de fato, a arma.</p>
+<p> </p>
+<p>Essa arma parece ser um pouco diferente das armas usuais das tropas de Beritra.</p>
+<p> </p>
+<p>Há pouca diferença em sua aparência, mas sua intensidade é visivelmente mais forte.</p>
+<p> </p>
+<p>A tropa de Beritra certamente obteve armas muito fortes de algum lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_23336A] e trazê -lo para [%dic:STR_DIC_N_LDF5_Village_Guard17_D].</p>[%collectitem]</step>
+</steps>
+<p>Elimine alguns soldados de Beritra do 43º Exército e obtenha suas armas para fins de pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O poder de combate subitamente aumentado do exército de Beritra parecia desconfiado de Helga, e ela queria investigar.</p>
+<p> </p>
+<p>Então você eliminou a 43ª unidade de suprimentos e trouxe de volta suas armas, que acabaram sendo muito mais fortes que as armas normais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

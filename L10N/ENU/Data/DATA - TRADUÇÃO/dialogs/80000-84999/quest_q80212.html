@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cresceu muito, [%username]</p>
+<p> </p>
+<p>Você está pronto para testar suas habilidades?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você diz que está pronto.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur tem seu próprio sistema de treinamento, como nós.</p>
+<p> </p>
+<p>Eles treinam[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All].</p>
+<p> </p>
+<p>O Balaur que é treinado lá apresentará uma ameaça para nós no futuro.</p>
+<p> </p>
+<p>[%username], sua primeira tarefa é matar o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah].</p>
+<p> </p>
+<p>A área é perigosa demais para entrar sozinha. Junte -se a seus companheiros para ir para lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É maravilhoso ter companheiros com quem perseguir um objetivo comum.</p>
+<p> </p>
+<p>A bênção do Senhor estará sobre você ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não se encontrou com seus companheiros?</p>
+<p> </p>
+<p>A área é perigosa demais para entrar sozinha.</p>
+<p> </p>
+<p>Ally a si mesmo com companheiros que estão perseguindo o mesmo objetivo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah] Assistindo ao campo de treinamento?</p>
+<p> </p>
+<p>Eu pensei tanto.</p>
+<p> </p>
+<p>Você pode ser o Daeva do destino que a Alta Sacerdotisa falou de ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você concluiu com êxito sua primeira tarefa.</p>
+<p> </p>
+<p>Eu tenho que transmitir as notícias sobre a destruição do campo de treinamento para o santuário imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah] em[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All]([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com o Netalion.</p></step>
+</steps>
+<p>Netalion pediu que você elimine o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah]. Eliminar o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah] em[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A primeira tarefa que você recebeu do padre da bênção foi matar o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah].</p>
+<p> </p>
+<p>É por isso que você e seus companheiros mataram o [plur][%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

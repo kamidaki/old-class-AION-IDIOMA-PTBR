@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], É hora de atacar a sede da Bakarma Legion.</p>
+<p> </p>
+<p>Então, vamos atacar Caverna de Draupnir.</p>
+<p> </p>
+<p>Precisamos da sua força para esta tarefa, [%username].</p>
+<p> </p>
+<p>Mas você não será capaz de conseguir isso sozinho. Você deve procurar camaradas em armas.</p>
+<p> </p>
+<p>Então vá se encontrar [%dic:STR_DIC_N_DF3_Alberihi_E]. Ele estará esperando por você na entrada da caverna de Draupnir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Você sabe onde está? O que é este lugar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que já ouviu falar disso antes.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Então você sabe que não poderá ir nesta tarefa sozinho.</p>
+<p> </p>
+<p>Isso será muito mais difícil do que todas as tarefas que você concluiu até agora.</p>
+<p> </p>
+<p>Dê uma olhada para ver se você e seus camaradas estão prontos para realizar esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá me encontrar [%dic:STR_DIC_N_DF3_Alberihi_E].</p></step>
+</steps>
+<p>Fafner disse que era hora de atacar Caverna de Draupnir. Vá conhecer Albrich.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Fafner disse que o momento havia chegado para atacar Caverna de Draupnir. Ele encarregou você de encontrar aliados e depois se encontrar com Albrich nos arredores de Caverna de Draupnir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

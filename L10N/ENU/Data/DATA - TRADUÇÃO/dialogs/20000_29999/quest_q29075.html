@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], parece que seu destino não é fácil.</p>
+<p> </p>
+<p>Na verdade, desde que te conheci, tive esse sentimento ... mas nunca falei sobre isso, porque não queria machucá -lo.</p>
+<p> </p>
+<p>Mas você não precisa se preocupar. Se você praticar de forma consistente e acumular a experiência de combate, poderá lidar com esse destino.</p>
+<p> </p>
+<p>Há uma boa oportunidade para você. Você participará da competição de DP?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Isso é um teste de dp?</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você não sabia disso.</p>
+<p> </p>
+<p>Você sabia que apenas Daevas pode usar a habilidade DP?</p>
+<p> </p>
+<p>Ao contrário de outras habilidades, as habilidades de DP têm muitas limitações e não podem ser usadas com frequência. É por isso que, realisticamente, existem muitas pessoas que não podem usar as habilidades do DP corretamente.</p>
+<p> </p>
+<p>Para combater esse problema, o comandante supremo criou o teste de DP como um incentivo.</p>
+<p> </p>
+<p>Este, no entanto, é um tipo de treinamento que termina quando a habilidade selecionada foi usada dez vezes.</p>
+<p> </p>
+<p>Você quer participar do teste DP?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você é um bardo, você já tentou a sinfonia da destruição eu?</p>
+<p> </p>
+<p>Desta vez, o teste de DP é sobre essa habilidade. Vá e use [%dic:STR_DIC_E_DP_Ba]10 vezes, depois volte.</p>
+<p> </p>
+<p>Você pode melhorar seu DP em uma luta, ou pode usar o gel Aether se uma luta for muito difícil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mesmo que seja uma boa oportunidade de treinamento, se você não quiser fazer isso, não há nada que possa ser feito.</p>
+<p> </p>
+<p>Se você mudar de idéia, venha a qualquer momento. Os testes continuarão por um tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Isso foi mais rápido do que o esperado.</p>
+<p> </p>
+<p>Vamos ver se [%dic:STR_DIC_E_DP_Ba]foi usado mais de 10 vezes. Chegue mais perto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você se aproxima.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Coloca a mão na cabeça.) É incrível a rapidez com que você terminou a tarefa.</p>
+<p> </p>
+<p>(Tira a mão da cabeça.) Você passou no teste DP! Parabéns!</p>
+<p> </p>
+<p>Como é? Você pode usar [%dic:STR_DIC_E_DP_Ba]Mesmo com os olhos fechados? Isso será uma grande ajuda para quaisquer dificuldades futuras.</p>
+<p> </p>
+<p>Aqui está uma recompensa para aqueles que passaram no teste. Espero que você continue treinando duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Ba]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_DC1_Brinhild_M].</p></step>
+</steps>
+<p>Um exame de DP ocorrerá sob a orientação do comandante supremo. Passe no exame DP usando a Sinfonia de Destruição do DP em dez vezes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brinhild sugeriu que você participasse de um teste que o treine em como usar o DP.</p>
+<p> </p>
+<p>Seguindo as instruções de Brinhild, você usou a música da ilusão 10 vezes e foi parabenizada por passar no teste quando você retornou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

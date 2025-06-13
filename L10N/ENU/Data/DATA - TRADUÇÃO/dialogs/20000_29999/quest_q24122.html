@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu? Os daevas estão desaparecendo em Morheim há algum tempo.</p>
+<p> </p>
+<p>Ninguém nunca encontrou traços deles, e a investigação não está avançando. Eu, suspeito dos revolucionários lefaristas.</p>
+<p> </p>
+<p>Algum tempo atrás, pedi a um daeva que chamasse Pagimkin para monitorar os revolucionários lefaristas. Ele relatou que havia encontrado um lugar estranho chamado[%dic:STR_DIC_W_DF2_SUB_D5_ID], mas eu não ouvi dele desde então.</p>
+<p> </p>
+<p>Você poderia procurá -lo, [%username]?</p>
+<p> </p>
+<p>Estou certo de que você não apenas descobrirá onde ele está, mas também onde todos os Daevas ausentes foram se você der uma olhada ao redor deste laboratório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+<voice file="Q2038-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso levou você mais tempo do que eu esperava, [%username].</p>
+<p> </p>
+<p>O que aconteceu com o laboratório de Wonshikutz?</p>
+<p> </p>
+<p>Você encontrou alguma prova de que Pagimkin ou os revolucionários lefaristas sequestraram os Daevas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o relatório de Pagimkin.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pagimkin estava morto?</p>
+<p> </p>
+<p>(Lê cuidadosamente o relatório de Pagimkin.) Torre de Old Class Aion! Daeva, os revolucionários lefaristas ousaram ...</p>
+<p> </p>
+<p>Você leu este relatório? Eles desviaram as habilidades dos Daevasas e fizeram pedras de estigma ... que realmente fazem minha carne rastejar!</p>
+<p> </p>
+<p>Estou bastante aliviado por você voltar seguro e soar de um lugar perigoso como esse.</p>
+<p> </p>
+<p>Mas não vamos ficar todo em pânico agora. Vou relatar isso ao capitão Kvasir imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_I_doc_quest_24122a] e leve para [%dic:STR_DIC_N_Mirka] em[%dic:STR_DIC_W_DF2_SUB_D1].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o laboratório de Wonshikutz e procure sinais dos Daevas ausentes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirka contou sobre os Daevas que haviam sido sequestrados e também sobre Pagimkin, a Daeva que ela havia enviado. Ele desapareceu depois de descobrir o laboratório de Wonshikutz, que parecia estar ligado à cidadela lefarista de alguma forma. Ela pediu que você investigasse o local mais de perto.</p>
+<p> </p>
+<p>Enquanto você estava investigando, encontrou o cadáver de Pagimkin e levou o relatório de pesquisa dele.</p>
+<p> </p>
+<p>O relatório de Pagimkin disse que os revolucionários lefaristas estavam abrindo as habilidades dos Daevasas pela força para criar pedras de estigma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

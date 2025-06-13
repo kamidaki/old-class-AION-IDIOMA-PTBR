@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3116</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar do gigante Abismo Rift que apareceu no campo de escavação de Anangke?</p>
+<p> </p>
+<p>A região sempre foi estável em comparação com outras regiões e agora de repente a brecha apareceu.</p>
+<p> </p>
+<p>Há uma escassez de ajudantes para investigar a situação.</p>
+<p> </p>
+<p>Talvez você possa ajudar, [%username]? Vá para [%dic:STR_DIC_N_Klotho].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>ATROPOS enviou você?</p>
+<p> </p>
+<p>Você veio bem a tempo!</p>
+<p> </p>
+<p>Já estávamos prestes a procurar alguém para nos ajudar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não entendo por que caçadores de recompensas temos que investigar a brecha ...</p>
+<p> </p>
+<p>Honestamente, a investigação é um trabalho tedioso. É por isso que todos deixamos para a Rovilance.</p>
+<p> </p>
+<p>Ele acabou de voltar recentemente e disse que a fortaleza da ADMA está do outro lado da brecha.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_L_DF2a_entrance]... Eu me pergunto o que vai acontecer agora ... eu quero terminar esta tarefa antes que as questões piorem.</p>
+<p> </p>
+<p>[%username], você poderia ir para o [%dic:STR_DIC_W_LF2B_SZ_B4_2] e ajuda [%dic:STR_DIC_N_Rovilance]?</p>
+<p> </p>
+<p>Como você sabe, eu trabalho sozinho ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio me ajudar?</p>
+<p> </p>
+<p>Isso é ótimo!</p>
+<p> </p>
+<p>Há uma pilha de trabalho com quem você pode ajudar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe o que está além[%dic:STR_DIC_OBJ_Entrance_L_Adma]?</p>
+<p> </p>
+<p>A fortaleza da ADMA! O lugar que visitei foi a fortaleza da ADMA em Asmodae!</p>
+<p> </p>
+<p>Recentemente me tornei um caçador de recompensas, mas já estou envolvido em um caso sério ... Estou um pouco nervoso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Klotho] em[%dic:STR_DIC_W_LF2B_SZ_A_Town].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Rovilance]no[%dic:STR_DIC_W_LF2B_SZ_B4_2].</p></step>
+</steps>
+<p>Uma Rift Abismo supostamente apareceu no campo de escavação de Anangke. Fale com os caçadores de recompensas responsáveis ​​pela investigação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Atropos disse que poderia fazer algo pelos caçadores de recompensas que investigam a enorme brecha no abismo.</p>
+<p> </p>
+<p>Klotho disse que um recém -chegado havia assumido a investigação sobre a brecha e que ela não queria participar de um trabalho tão incômodo.</p>
+<p> </p>
+<p>Quando você falou com a Rovilance da brecha, ele lhe disse que a fortaleza da ADMA estava localizada além da fenda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

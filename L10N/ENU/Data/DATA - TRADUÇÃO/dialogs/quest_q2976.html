@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ensinei a deficiência para muitos Daevas, mas nunca vi alguém atingir um nível tão alto tão rapidamente. Eu acho que você tem um talento especial para a desvantagem, [%username].</p>
+<p> </p>
+<p>Vamos testar essa teoria, vamos ...?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pode vir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Faça o colar nobre de Lanse e traga -o para mim.</p>
+<p> </p>
+<p>Como você sabe, este colar não é fácil de fazer. É por isso que é um item perfeito para testar sua capacidade.</p>
+<p> </p>
+<p>Ah, e se você concorda em se tornar um especialista em desvantagens, só poderá se tornar um especialista em outro campo e, mesmo assim, deve esperar até terminar seus estudos. Então pense com cuidado antes de responder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você iria enfrentar o desafio, [%username]. Você tem uma paixão por desvantagens e a ambição de tornar seu talento reconhecido.</p>
+<p> </p>
+<p>Tudo bem, [%dic:STR_DIC_N_Shugo_DC1_5]tem o design do colar nobre de Lanse. Não confunda com[%dic:STR_DIC_E_Q2976]. Eles parecem semelhantes, mas são terras separadas.</p>
+<p> </p>
+<p>Agora, vá me fazer o nobre colar de Lanse.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Apenas me dê espaço para trabalhar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava errado sobre você? Eu pensei que você era ambicioso.</p>
+<p> </p>
+<p>Mas não posso arrastá -lo para uma bancada de trabalho e forçá -lo a fazê -lo.</p>
+<p> </p>
+<p>Tudo bem, esteja a caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>As pessoas pensam que a desvantagem é apenas fazer colares e anéis.</p>
+<p> </p>
+<p>Se você não colocar seu coração e alma em deficiência, nunca verá o potencial do ofício. O que torna o ofício realmente fascinante é que você pode criar itens para aprimorar a capacidade de um Daeva.</p>
+<p> </p>
+<p>Então você fez o colar nobre de Lanse?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu acho que é lindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, que decepção. Eu pensei que havia dado a você tempo suficiente.</p>
+<p> </p>
+<p>Mas não vou desistir facilmente.</p>
+<p> </p>
+<p>Vá tentar novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou perseverar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. É tão bom quanto qualquer coisa que eu pudesse fazer. Você é quase um especialista.</p>
+<p> </p>
+<p>Fico feliz em ver que fiz a ligação certa.</p>
+<p> </p>
+<p>Tenho o prazer de encontrar um Daeva com talento e ambição.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você pode ser muito ambicioso. Sei que é proibitivo, mas você pode optar por se tornar apenas um tipo de especialista por vez.</p>
+<p> </p>
+<p>Se você estiver caminhando pelo caminho de um especialista em outro campo, não poderá se tornar um especialista em desvantagem até terminar seu teste.</p>
+<p> </p>
+<p>Você terá que dobrar seu tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Devo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o colar nobre de Lanse e leve -o para [%dic:STR_DIC_N_Lanse].</p>[%collectitem]</step>
+</steps>
+<p>LANSE queria ver como você é bom na deficiência e pediu que você fizesse colar nobre de Lanse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>LANSE queria ver como você é bom na deficiência e pediu que você fizesse colar nobre de Lanse.</p>
+<p> </p>
+<p>Quando você fez a equipe que ela solicitou, ela ficou satisfeita por ter encontrado um Daeva com talento e ambição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

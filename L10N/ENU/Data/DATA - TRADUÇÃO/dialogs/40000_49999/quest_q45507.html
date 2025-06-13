@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Isto é para você.</p>
+<p> </p>
+<p>É uma ordem urgente da cruzada no sangue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p> </p>
+<p>A cruzada sanguínea confirmou que o número de Elyos se infiltrando asmodae de Eltnen e Hiário aumentou. Para conter a escalada, devemos impedir que os Elyos entrem completamente asmodae. Estamos emitindo a seguinte ordem de morte para ser realizada com a máxima urgência:</p>
+<p></p>
+<p>1. Infiltrado[%dic:STR_DIC_E_LF2_name]ou[%dic:STR_DIC_E_LF3_name] Através de um[%dic:STR_DIC_E_directportal].</p>
+<p></p>
+<p>2. Localize as forças de Elyos e envie pelo menos um de seus guerreiros mais capazes em Eltnen e Heir. Você pode ignorar com segurança os inimigos que possuem pouco poder de combate, pois não foram vistos em Asmodae e não representam ameaça direta.</p>
+<p></p>
+<p>3. Uma vez que o inimigo perder a vontade de lutar, reporte -se a [%dic:STR_DIC_N_Tostig].</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A hora finalmente chegou.</p>
+<p> </p>
+<p>Faça o que você nasceu para fazer, amigo. Sangue para sangue!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer nos ajudar com esta operação?</p>
+<p> </p>
+<p>Bem, acho que encontraremos outra pessoa ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username].</p>
+<p> </p>
+<p>Como foi sua missão em Elysea? Por favor, seja concisa-eu tenho recompensas para outros cruzados sanguíneos se prepararem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os Elyos sofreram muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Outra missão de sucesso. Excelente trabalho, [%username].</p>
+<p> </p>
+<p>Infiltrar-se em Elysea não é uma tarefa fácil-muitas brechas se abrem em áreas perigosas-, então seus esforços são muito apreciados.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Sangue para sangue!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Infiltrar [%dic:STR_DIC_E_LF2_name]ou[%dic:STR_DIC_E_LF3_name] e se livrar de [%dic:STR_DIC_E_Daily_2]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Tostig].</p></step>
+</steps>
+<p>Ordem urgente: Infiltrado Eltnen ou Heiron. Depois de matar Elyos, relate -se a um agente de Ramo de Reshanta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada de Sangue emitiu uma Ordem de Matas Urgente sobre os Elyos em Eltnen e Heir.</p>
+<p> </p>
+<p>Depois de concluir a missão, você visitou um agente da Ramo de Reshanta e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

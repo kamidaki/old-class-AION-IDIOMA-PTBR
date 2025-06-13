@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Parece um mapa do Centro de Pesquisa Lefarista.)</p>
+<p> </p>
+<p>(Ele detalha uma estrutura subterrânea no complexo.)</p>
+<p> </p>
+<p>(Talvez você deva levá -lo para [%dic:STR_DIC_N_Kuobe].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Kuobe estará interessado nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho minhas próprias missões para cuidar. Não tenho tempo para cuidar de Kalione.</p>
+<p> </p>
+<p>Ela é uma Daeva. Ela estava ausente no dia em que eles ensinaram o combate Daeva?</p>
+<p> </p>
+<p>Nunca falha. A pequena princesa sai para o mundo e eu tenho que ir com ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu encontrei este mapa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, o que é isso? Um mapa do Centro de Pesquisa Lefarista! Excelente!</p>
+<p> </p>
+<p>Pelo menos agora sabemos por que existem tão poucas estruturas acima do solo. Pequenos buggers inteligentes.</p>
+<p> </p>
+<p>Vá para o local marcado no mapa e certifique -se de que isso não seja uma fraude. Relate seus resultados para [%dic:STR_DIC_N_Kalendros].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Para Elysea!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]. Kuobe me contou muito sobre você.</p>
+<p> </p>
+<p>Então, você encontrou o mapa do Centro de Pesquisa Lefarista.</p>
+<p> </p>
+<p>O que você encontrou? O mapa foi legítimo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Parece genuíno."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por fim, a vantagem é nossa. Essa pode ser a chave que estamos esperando.</p>
+<p> </p>
+<p>Vou estudar o mapa e ver como podemos abrir a operação deles.</p>
+<p> </p>
+<p>Trabalho superlativo, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kuobe].</p></step>
+<step><p visible="[%3]">Patrulha o laboratório subterrâneo em[%dic:STR_DIC_W_LF3_SZ_003].</p>
+<p visible="[%6]">[%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607a] [%8]</p>
+<p visible="[%9]">[%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607b] [%11]</p>
+<p visible="[%12]">[%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607c] [%14]</p>
+<p visible="[%15]">[%dic:STR_DIC_E_SEN_LF3_SensoryArea_Q1607d] [%17]</p></step>
+<step><p visible="[%18]">Relatar os resultados para [%dic:STR_DIC_N_Kalendros].</p></step>
+</steps>
+<p>Você encontrou um mapa detalhado do Centro de Pesquisa Lefarista e o trouxe para Kuobe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu um mapa e o levou para Kuobe, ele queria ter certeza de que era genuíno</p>
+<p> </p>
+<p>Você investigou o laboratório subterrâneo para verificar a autenticidade dos mapas e relatou de volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

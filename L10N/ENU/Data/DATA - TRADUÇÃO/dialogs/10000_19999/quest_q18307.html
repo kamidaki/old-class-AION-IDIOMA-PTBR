@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu me ofereci para participar da missão de se infiltrar na fortaleza do ATURAM SKY.</p>
+<p> </p>
+<p>Um dos meus amigos Reian que trabalha como cientista me pediu um favor.</p>
+<p> </p>
+<p>Faz muito tempo que ele me perguntou, mas ainda não consegui cumprir seu pedido.</p>
+<p> </p>
+<p>Infelizmente, eu não ouvi dele desde a grande ofensiva ... Não sei quando o vejo novamente, mas quero fazer o que ele me pediu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Observe quem você chama de 'ignorante', Rei-Boy."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O nome dele era Rifon. O Balaur tirou todos os seus documentos de pesquisa, que ele estava coletando toda a sua vida.</p>
+<p> </p>
+<p>Enquanto procurava seus documentos, ele descobriu que eles haviam levado seus registros para a Fortaleza do Sky do Aturam.</p>
+<p> </p>
+<p>[%username]. Se você voltar para a Fortaleza do Sky do Aturam, poderia procurar a caixa de Rifon?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitas coisas que as tropas de Tiamat coletavam são mantidas na zona do armazém do Sky Fortaleza. A caixa do meu amigo também pode ser encontrada entre essas coisas.</p>
+<p> </p>
+<p>Há um símbolo de Reian na caixa. Então você poderá identificá -los facilmente. Por favor, traga de volta [%dic:STR_DIC_I_quest_18307a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como é o selo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é mais frio do que eu pensava.</p>
+<p> </p>
+<p>Mesmo que eu te pergunte bem ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Por que eu deveria me sentir por sapiens não abençoados?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já perguntei[%dic:STR_DIC_N_Hariken] Sobre o favor, mas ele não parecia muito interessado nele.</p>
+<p> </p>
+<p>Bem ... é por isso que eu vim até você, [%username]. Você encontrou[%dic:STR_DIC_I_quest_18307a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a caixa de Rifon.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado!</p>
+<p> </p>
+<p>Eu não vi meu amigo desde então ...</p>
+<p> </p>
+<p>Mas algum dia eu posso provar minha amizade com ele com isso.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_I_quest_18307a]no[%dic:STR_DIC_W_IDStation_SZ_01_A] e trazê -lo para [%dic:STR_DIC_N_LF5_Nimrod_E].</p>[%collectitem]</step>
+</steps>
+<p>Faça o que Nimrod perguntou e encontre a caixa roubada de Rifon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nimrod pediu que você recuperasse a caixa roubada de seu amigo Reian da zona do armazém da Sky Fortaleza.</p>
+<p> </p>
+<p>Você foi à zona do armazém e encontrou a caixa. Nimrod agradeceu ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

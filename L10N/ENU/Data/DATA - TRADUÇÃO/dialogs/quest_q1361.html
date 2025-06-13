@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para nós, Daeva. Olhe para nós e olhe para você.</p>
+<p> </p>
+<p>Que viemos da mesma semente parece ... inimaginável para mim. Você ... tão linda, e nós quase prontos para bater na porta da morte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_otl;HACTION_SELECT1_1">"Você está seguro agora, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seguro ... a palavra tem pouco significado para mim agora.</p>
+<p> </p>
+<p>Vimos nossa aldeia virar para o deserto. Enquanto fugíamos, alguns escaparam, capturados pelo calor e pelo sol empolgante. Andamos por dias e depois encontramos uma primavera. Enquanto nos ajoelhamos para beber em suas margens, os lefaristas atacaram. O que você vê aqui é tudo o que sobreviveu.</p>
+<p> </p>
+<p>Então, estamos seguros? Não, a morte simplesmente vestiu outra máscara e voltou. Estamos morrendo, [%username]. Desta vez, a sede será o fim de nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, deixe -me ajudá -lo então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma serva de ala branca da própria Ariel ... nos ajudaria?</p>
+<p> </p>
+<p>Temos um balde. É velho e quebradiço, mas ainda mantém água bem o suficiente. Talvez você possa viajar para a mística mística de Anathe e preenchê -la ... para nós?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu Deus. Eu faria ... eu choraria se tivesse lágrimas de sobra.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF2_SZ_F2] e encha o balde com água da primavera. Quando você voltar, basta transferir a água para o [%dic:STR_DIC_E_LF2_watertank].</p>
+<p> </p>
+<p>Obrigado, [%username]. Obrigado....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De nada. Eu serei o mais rápido possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, [%username]! O abraço frio está apertando em torno de nossos ombros. Não se afaste quando puder ajudar tão facilmente ....</p>
+<p> </p>
+<p>Eu te imploro! Eu imploro por ajuda!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu simplesmente não tenho tempo. Sinto muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]....</p>
+<p> </p>
+<p>O jovem Teos veio a mim um momento atrás ... implorando por água. Meu coração sangria para sempre se ele escapasse diante de mim.</p>
+<p> </p>
+<p>Você fez o que perguntamos? Você encheu o tanque de água?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_thanks;HACTION_SELECT_QUEST_REWARD">"Sim, todos vocês podem beber agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você salvou todos nós, [%username]! Você é uma luz orientadora, um farol da humanidade neste mundo terrível e terrível!</p>
+<p> </p>
+<p>Obrigado não seria suficiente, mas posso oferecer pouco mais. Por favor, pegue isso. Se houver alguma coisa que pudéssemos fazer por você, você só precisa perguntar.</p>
+<p> </p>
+<p>Obrigado, [%username]. Muito obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o balde vazio para desenhar água do[%dic:STR_DIC_W_LF2_SZ_F2].</p></step>
+<step><p visible="[%3]">Despeje a água do balde no[%dic:STR_DIC_E_LF2_watertank]no centro do campo de refugiados.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Turiel].</p></step>
+</steps>
+<p>Os refugiados estão morrendo de sede. Colete água para eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os refugiados da vila de Dartas estavam descansando na mística da primavera de Anathe quando os revolucionários lefaristas apareceram de repente, forçando -os a fugir.</p>
+<p> </p>
+<p>Você concordou em ajudá -los, então tirou água da primavera e a entregou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você for para a parte sul do templo das escalas, verá um vale onde a terra se divide em dois.</p>
+<p> </p>
+<p>O Aether flui livremente por essa área, para que Daevas possa espalhar suas asas e voar para o conteúdo de seu coração.</p>
+<p> </p>
+<p>É incrível encontrar um rico local de aether nesta terra privada de Aether.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"É sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este vale é chamado de ravina do conquistador. É onde os senhores Empíreo e Balaur lutaram muitos, muitos anos atrás.</p>
+<p> </p>
+<p>A força desta feroz batalha dividiu a terra ao meio. Quando as espadas entraram em conflito, havia um raio. Quando as setas dispararam, havia chuva.</p>
+<p> </p>
+<p>Nenhum dos lados venceu-eles simplesmente se afastaram e espancados-mas a poderosa arma do Senhor Empíreo foi deixada lá na parede daquele vale desde então.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que arma?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso dizer quem é o líder deles. Provavelmente é Lady Siel, mas não tenho certeza.</p>
+<p> </p>
+<p>No entanto, esta arma sagrada é cercada por uma luz peculiar.</p>
+<p> </p>
+<p>Até os dragões falharam em capturar essa região, e apenas os tricos ainda o protegem agora.</p>
+<p> </p>
+<p>Os traços deixados por esta guerra santa são uma herança importante do Senhor. Felizmente, conseguimos reunir pelo menos um pouco de Aether.</p>
+<p> </p>
+<p>Infelizmente, os Tricos parecem discordar. Cada vez que tentamos reunir Aether, eles agem como se fôssemos intrusos.</p>
+<p> </p>
+<p>Eles podem ser animais sagrados, mas estão interferindo no nosso avanço para Balaurea. Você não concorda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF4_SZ_C5_Od] e lutar contra o [plur][%dic:STR_DIC_M_LF4_C5_Trico_55_n] e o [plur][%dic:STR_DIC_M_LF4_C5_Tricon_55_An].</p>
+<p> </p>
+<p>Eles há muito guardam a arma do Senhor, mas agora a tarefa deles está realizada.</p>
+<p> </p>
+<p>Nós, Elyos, voltamos a esta terra, então a arma é nossa agora. E nós o usaremos para conquistar Balaurea.</p>
+<p> </p>
+<p>A velocidade é essencial, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, reconsidere meu pedido, jovem Daeva.</p>
+<p> </p>
+<p>Nosso Senhor Empíreo deixou a ravina do conquistador para nós. Devemos levá -lo de volta! Para Elysea!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu concordo! Apenas pergunte a outra pessoa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou realmente ansioso para ver o que está por trás dessa parede.</p>
+<p> </p>
+<p>Você não está animado também?</p>
+<p> </p>
+<p>Somos apenas uma ponta de espada para longe do nosso velho inimigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A costa é clara."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom de ouvir, [%username]. Talvez possamos investigar essa arma Empíreo enquanto estamos lá.</p>
+<p> </p>
+<p>Em sua sabedoria infinita, eles podem ter deixado essa arma lá para usarmos hoje.</p>
+<p> </p>
+<p>Talvez eles soubessem que Inggison sediaria outra batalha entre luz e escura.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Tricos que estão guardando[%dic:STR_DIC_W_LF4_SZ_C5_Od].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF4_C5_Trico_55_n]([%2]/4)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF4_C5_Tricon_55_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LF4_2011_DynTeleporter_Li].</p></step>
+</steps>
+<p>Mate os Tricoss inggison que estão guardando a ravina do conquistador, conforme o pedido de Jennathea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jennathea disse que os Tricoss tiveram que ser "removidos" para que Aether pudesse ser coletado na ravina do conquistador.</p>
+<p> </p>
+<p>Você se livrou de Inggison Tricoss e Trico -Foals. Quando você voltou, ela lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

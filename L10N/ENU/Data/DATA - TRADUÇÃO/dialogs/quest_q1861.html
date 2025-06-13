@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que iniciar o ataque o mais rápido possível. Então, eu só posso lhe dar uma explicação rápida.</p>
+<p> </p>
+<p>A fortaleza de Kysis, o Refúgio Krotan e a Fortaleza Miren são importantes para a nossa vitória. Portanto, não podemos permitir que eles sejam levados pelo oponente.</p>
+<p> </p>
+<p>Eu adoraria nada além de lançar uma grande ofensiva imediatamente, mas as últimas batalhas nos enfraqueceram demais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ganhar tempo para um grande ataque, nossos Daevas sempre começam os ataques de uma emboscada.</p>
+<p> </p>
+<p>Mas os asmodianos enviaram mais forças para a fortaleza, o que piora a nossa situação.</p>
+<p> </p>
+<p>Felizmente, muitos Elyos estão em nosso auxílio. [%username]? Você quer entrar em batalha ao nosso lado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Você tomou uma decisão sábia.</p>
+<p> </p>
+<p>Você deve sair assim que o inimigo tomou a fortaleza. Quando você chegar lá, mate [%dic:STR_DIC_E_1231_guard_Da_fi] e traga de volta [plur][%dic:STR_DIC_I_QUEST_1861a].</p>
+<p> </p>
+<p>Enquanto isso, nos prepararemos para levar a fortaleza para nossos próprios propósitos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não esperava que você recusasse assim. É uma pena, mas não posso mudar de idéia.</p>
+<p> </p>
+<p>Mas, por favor, pense por que tantos Daevas lutam por nós.</p>
+<p> </p>
+<p>Se você mudar de idéia, poderá voltar para mim a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Ouvi dizer que você matou os asmodianos.</p>
+<p> </p>
+<p>Um soldado em uma missão de reconhecimento na fortaleza me contou com que coragem você lutou, [%username].</p>
+<p> </p>
+<p>Estou curioso para saber como a batalha terminou. Mostre -me o [%dic:STR_DIC_I_QUEST_1861a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">De nada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não reuniu as armas?</p>
+<p> </p>
+<p>Isso também faz parte da sua tarefa.</p>
+<p> </p>
+<p>Traga -me o [%dic:STR_DIC_I_QUEST_1861a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deve ter havido muito Balaur na área. É um milagre que você tenha conseguido isso em tal situação.</p>
+<p> </p>
+<p>Foi uma escolha sábia confiar você a esta tarefa, [%username].</p>
+<p> </p>
+<p>Vou contar ao governador Michalis sobre suas realizações, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_1231_guard_Da_fi], junte a prova e leve -o para [%dic:STR_DIC_N_Bellona].</p>[%collectitem]</step>
+</steps>
+<p>Elimine os guardiões da Kysis Asmodian enquanto eles ocupam a fortaleza de Kys e se reportam a Bellona.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bellona pediu ajuda na batalha pela fortaleza de Kys.</p>
+<p> </p>
+<p>Você derrotou o Asmodian Kys Guardians e Bellona recompensou sua ação heróica.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

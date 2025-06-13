@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que eu sou louco, não é?</p>
+<p> </p>
+<p>Eu não sou, você sabe. Aqueles na vila nem podem imaginar meu poder.</p>
+<p> </p>
+<p>Se eu fiz uma chave para o meu castelo, poderia mostrar minhas habilidades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim, eu ... ouvi falar do seu castelo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu tom de voz reflete sua opinião, [%userclass].</p>
+<p> </p>
+<p>Vou mostrar a prova, no entanto, se você só me conseguir o material da chave.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que material é esse?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Cristais de Espírito! Você pode encontrá -los caçando[%dic:STR_DIC_M_WElemental1stD_13_An] S.</p>
+<p> </p>
+<p>Você vai fazer isso para que eu possa provar minha sanidade para você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fantástico! Caçar [%dic:STR_DIC_M_WElemental1stD_13_An] S e traga -me 3 cristais espirituais!</p>
+<p> </p>
+<p>Você não vai se arrepender, oh não.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, timer velho. Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não acredita em mim, não é?</p>
+<p> </p>
+<p>Ou é que você é fraco demais para enfrentar o espírito do lago?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, Gornak."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Você voltou!</p>
+<p> </p>
+<p>Rápido! Entregue -me o material para a chave!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Venha provocar um velho?</p>
+<p> </p>
+<p>Se você acreditasse em mim, você teria me trazido os cristais espirituais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso?</p>
+<p> </p>
+<p>Peço que os cristais espirituais façam uma chave para o castelo ... e você me traz isso?</p>
+<p> </p>
+<p>Se você acha que eu posso fazer uma chave tão especial com cristais de baixa qualidade como esses, então você claramente pensa muito pouco do castelo. Se foi, demônio!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_WElemental1stD_13_An] S, obtenha cristais espirituais e trazê -los para [%dic:STR_DIC_N_Gor].</p>[%collectitem]</step>
+</steps>
+<p>Gornak disse que precisava do material para a chave abrir o castelo. Caça os espíritos do lago e leve três cristais espirituais para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gornak disse que precisava do material para a chave abrir o castelo. Ele disse para você caçar espíritos do lago por seus cristais espirituais.</p>
+<p> </p>
+<p>Quando você trouxe os cristais espirituais, ele ficou bravo, alegando que você trouxe cristais de baixa qualidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

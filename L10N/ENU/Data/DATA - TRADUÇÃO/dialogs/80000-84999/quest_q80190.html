@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa reunião pode significar que você, [%username], são essa uma pessoa.</p>
+<p></p>
+<p>Mas as chances são muito pequenas.</p>
+<p> </p>
+<p>De qualquer forma, seja bem -vindo! Devemos chegar ao básico então?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua a ouvir.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma questão simples. Vá para [%dic:STR_DIC_FLA10] e mate o worg faminto. Isso não será difícil para você agora, não é?</p>
+<p> </p>
+<p>Eles causam problemas e causam muito estragos.</p>
+<p> </p>
+<p>Estou contando com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, caça 17 worgs famintos.</p>
+<p> </p>
+<p>Você deve ser recompensado por isso também.</p>
+<p> </p>
+<p>Vá agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem medo dos worgs, não é?</p>
+<p> </p>
+<p>Você também pode ligar para seus amigos para obter ajuda.</p>
+<p> </p>
+<p>(Fala suavemente :) que covarde. TSK TSK.</p>
+<p> </p>
+<p>Volte se você reconsiderar. (Suavemente :) que covarde.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, você matou o worg faminto?</p>
+<p> </p>
+<p>Isso não foi tão grande, foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que seria fácil como torta para você. Se você não tivesse conseguido, isso significaria que você não era a pessoa que alegou ser.</p>
+<p> </p>
+<p>Desculpe? Oh, vou contar mais sobre essa pessoa na próxima vez.</p>
+<p> </p>
+<p>Não é muito, mas aceite isso como uma recompensa.</p>
+<p> </p>
+<p>Há um novo trabalho para você. Não se preocupe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Worgs famintos em[%dic:STR_DIC_FLA10]([%2]/17).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_event_Kerasiss].</p></step>
+</steps>
+<p>Kerasys pede que você mate Worgs famintos. Eliminar worgs famintos em[%dic:STR_DIC_FLA10].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kerasys pediu que você matasse os worgs famintos.</p>
+<p> </p>
+<p>Você eliminou os worgs famintos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

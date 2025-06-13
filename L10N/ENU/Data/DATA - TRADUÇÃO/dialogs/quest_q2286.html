@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu desenhei uma estratégia fantástica para a batalha contra a Tribo Garra Negra. Nós os pegamos de surpresa e esmagamos -os com um poderoso golpe de martelo!</p>
+<p> </p>
+<p>Mas decidi jogar um osso nos meus centuriões. Afinal, não posso lidar pessoalmente com todos os pequenos detalhes. E eles poderiam usar alguma experiência no campo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uh, sim. Experiência ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Decidi que a manhã assassinará o xamã da tribo da garra negra.</p>
+<p> </p>
+<p>Ele conhece os gatos tão bem quanto eu, então ele deve ser adequado o suficiente.</p>
+<p> </p>
+<p>Você faria as ordens dele?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui estamos-ordens assinadas para [%dic:STR_DIC_N_Morn].</p>
+<p> </p>
+<p>Ele deveria estar perto do obelisco em frente ao Nobelium.</p>
+<p> </p>
+<p>Esta é uma missão vital, então pule para isso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, senhor, general."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito ocupado?! Como você se atreve?</p>
+<p> </p>
+<p>Parece que a disciplina foi negligente em sua última postagem!</p>
+<p> </p>
+<p>Bem, se você mantiver essa atitude, pode esquecer de avançar na classificação!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Eu só estava pensando em você! Eu tinha uma pergunta sobre a sociedade Mau e pensei que você poderia saber a resposta. Seu conhecimento deles até superou o meu!</p>
+<p> </p>
+<p>Ou você está aqui no negócio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ordens do general para você ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver: "... para impedir ... por furtividade ... Shaman preto da garra!"</p>
+<p> </p>
+<p>Então, finalmente estamos nos movendo. Oh, ele fez o discurso sobre "um poderoso golpe de martelo?"</p>
+<p> </p>
+<p>Bem, sangue para sangue, meu amigo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar as ordens de Suthran a [%dic:STR_DIC_N_Morn].</p></step>
+</steps>
+<p>Encontre a manhã e dê a ele suas ordens do general Suthran.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Suthran está organizando um ataque total à Tribo Garra Negra.</p>
+<p> </p>
+<p>Você trouxe a manhã a ordem do general de assassinar o xamã de garra preta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

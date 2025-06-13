@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos lutar contra o [%dic:STR_DIC_M_LDF4_Advance_Chapire_West_all]!</p>
+<p> </p>
+<p>[%username], por favor, junte -se à luta contra os recrutas teimosos do Chapir. Eles são parte do[%dic:STR_DIC_M_LDF4_Advance_Chapire_West_all].</p>
+<p> </p>
+<p>A União Asmodiana estará em apuros sem seus recrutas.</p>
+<p> </p>
+<p>Não duvido que, com sua ajuda, emergiremos vitoriosos desta batalha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acabou de voltar de lutar contra a União Asmodiana?</p>
+<p> </p>
+<p>Você provavelmente está pensando que é uma perda de tempo lutando contra eles.</p>
+<p> </p>
+<p>Mas se não os eliminarmos agora, eles podem causar problemas para nós mais tarde.</p>
+<p> </p>
+<p>Temos que nos livrar deles para garantir uma vitória honrosa para os Elyos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por seus esforços.</p>
+<p> </p>
+<p>[%username], com seu forte apoio, venceremos todas as batalhas. Isso é fantástico!</p>
+<p> </p>
+<p>Você derrotou todos eles tão rapidamente. Verdadeiramente incrível!</p>
+<p> </p>
+<p>Agora não precisamos nos preocupar com a próxima batalha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LDF4_Advance_A_DaChapire_Wi_65_n]que aparecem quando duas das guarnições ocidentais estão ocupadas ([%2]/5).</p></step>
+<step><p visible="[%3]">Fale com um dos[plur][%dic:STR_DIC_E_LDF4_Advance_Village_Guard_L_West].</p></step>
+</steps>
+<p>Atenda ao pedido de um dos comandantes da tropa de escudo e derrote os recrutas teimosos do Chapir, que são membros da União Asmodiana Ocidental.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um dos comandantes do oeste o enviou para separar a União Asmodiana.</p>
+<p> </p>
+<p>Você derrotou a União Asmodiana e recebeu gratidão em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

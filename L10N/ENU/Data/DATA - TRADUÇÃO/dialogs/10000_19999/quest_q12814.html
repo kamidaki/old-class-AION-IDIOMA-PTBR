@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem problemas com o fornecimento de água potável, o recurso mais importante da vila.</p>
+<p> </p>
+<p>Posso pedir que você mate o [%dic:STR_DIC_M_LDF5A_A5_El_water1_62_An], quem está interferindo no fornecimento de água potável?</p>
+<p> </p>
+<p>Aparentemente, o espírito da água do turbilhão continua interferindo no suprimento de água.</p>
+<p> </p>
+<p>O suprimento de água está caindo dramaticamente, é por isso que estamos realmente preocupados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não achei que você teria que se preocupar com a água potável.</p>
+<p> </p>
+<p>Por que o espírito da água do turbilhão está furioso?</p>
+<p> </p>
+<p>Queremos obter apenas um pouco de água e não temos intenção de atacá -lo.</p>
+<p> </p>
+<p>Bem, se eu soubesse o motivo de não ter pedido sua destruição.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por ouvir meu pedido.</p>
+<p> </p>
+<p>Agora que os espíritos do Maelstrom se foram, a água não contaminada pode ser entregue a tempo.</p>
+<p> </p>
+<p>Felizmente, o problema foi resolvido antes que as coisas realmente ficassem apertadas.</p>
+<p> </p>
+<p>Não é muito, mas aceite isso como um sinal da minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_A5_El_water1_62_An], como eles estão interferindo no suprimento de água potável. ([%2]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard04_L].</p></step>
+</steps>
+<p>Mate todos os espíritos da água do turbilhão que estão interferindo no suprimento de água potável.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Diena pediu que você elimine o espírito da água do turbilhão que está interrompendo o suprimento de água potável.</p>
+<p> </p>
+<p>Você matou o espírito da água do turbilhão e voltou. Você foi agradecido, pois agora era possível garantir a água potável.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que boas notícias! Eles estão enviando uma equipe para investigar a fazenda Havenjark para o norte, e Dehen quer que eu os mantenha seguros durante a investigação.</p>
+<p> </p>
+<p>Dehen poderia ter escolhido qualquer um de nós. Mas ele me escolheu, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato! Mas estou um pouco preocupado-ouvi dizer que a fazenda Havenjark está repleta de mortos-vivos, e serei o único soldado treinado por aí.</p>
+<p> </p>
+<p>E se eles atacarem de uma só vez? Eu ficaria impressionado!</p>
+<p> </p>
+<p>[%username], você poderia limpar os Mortos Vivos da fazenda Havenjark antes de chegar lá.?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode ajudar? Obrigado-muito obrigado!</p>
+<p> </p>
+<p>Dizem que o [%dic:STR_DIC_M_BookieD_23_An] Areia [%dic:STR_DIC_M_BansheeD_23_An] S são os mais terríveis. Mas com o poder de Aether atrás de um Daeva como você, tenho certeza que você os obliterará facilmente.</p>
+<p> </p>
+<p>Outra coisa: não diga a ninguém que eu pedi para você fazer isso. Não é grande coisa dizer que estou preocupado, [%username], mas eu deveria colocar um rosto corajoso para que os pesquisadores civis não se preocupem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito para perguntar, suponho. Você deve estar ocupado com os deveres de um Daeva.</p>
+<p> </p>
+<p>O grupo de pesquisa sairá em vários dias, e eu só terei que protegê -los da melhor maneira possível.</p>
+<p> </p>
+<p>Talvez seja a vontade dos senhores Shedim que eu sou testado na fazenda. A adversidade está o solo onde a força cresce, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É de fato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia abaixar sua voz?</p>
+<p> </p>
+<p>Snill pode ouvir uma voz alta sobre o estalido desse fogo, você sabe.</p>
+<p> </p>
+<p>A fazenda Havenjark está livre de Mortos Vivos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você não precisa mais se preocupar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os Banshees e Boggarts?</p>
+<p> </p>
+<p>Que alívio! Agora eu posso ir à fazenda Havenjark sem me preocupar.</p>
+<p> </p>
+<p>Sua força me inspirou. Se você pode limpar a fazenda de Mortos Vivos, o mínimo que posso fazer é mantê -lo seguro a partir de agora, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os Mortos Vivos na fazenda Havenjark.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BookieD_23_An]([%2]/20)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BansheeD_23_An]([%5]/15)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Dettil].</p></step>
+</steps>
+<p>Elimine Boggarts e Banshees vagando pela fazenda Havenjark para que Dettil possa proteger o grupo de pesquisa sem medo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dettil ficou orgulhoso de que Dehen a tenha escolhido para cuidar de um grupo de pesquisadores indo para a Havenjark Farm.</p>
+<p> </p>
+<p>Mas seu orgulho se voltou para se preocupar quando ela aprendeu sobre os Mortos Vivos que infestam a fazenda. Ela pediu que você eliminasse boggarts robustos e banshees de chorinos antes do grupo de pesquisa partir para a fazenda.</p>
+<p> </p>
+<p>Depois de derrotar os Boggarts e Banshees, você se reportou de volta a ela. Dettil prometeu trabalhar tão duro para manter a fazenda livre de Mortos Vivos quanto você para torná -lo seguro em primeiro lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

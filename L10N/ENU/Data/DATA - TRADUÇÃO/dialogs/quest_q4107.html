@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está olhando para mim assim? Há algo no meu ombro? É um bug, não é?</p>
+<p> </p>
+<p>Eu pensei que você disse que se livrou dos insetos. Baltasar não ficará feliz com isso ....</p>
+<p> </p>
+<p>Se você matar mais alguns insetos na floresta Primeval Magaro, não terei que acordá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Olha, existem milhões de insetos ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não ligo. Isto é pelo bem de Baltasar. Não deixe pedra sobre pedra.</p>
+<p> </p>
+<p>Para iniciantes, você pode ir depois do[%dic:STR_DIC_M_DF2A_SpakleVioletD_45_n] S, [%dic:STR_DIC_M_DF2A_MutaMantisD_45_n] Areia [%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n] S.</p>
+<p> </p>
+<p>Você vai ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz. Baltasar vai agradecer.</p>
+<p> </p>
+<p>Como eu.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou decepcionado, [%username]. Mas suponho que não posso forçá -lo a ajudá -lo.</p>
+<p> </p>
+<p>Você deve sair antes que Baltasar acorde, para não decepcioná -lo ainda mais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou muito ocupado ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, você volta da floresta Primeval Magaro. Você fez o trabalho?</p>
+<p> </p>
+<p>Você não acabou de pisar em alguns insetos por acidente e encerrou o dia, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, em nome de Baltasar. Peço desculpas se parecia ... curto, mais cedo. Como protetor de uma árvore sagrada, eu sei que deveria tentar ser mais gentil.</p>
+<p> </p>
+<p>Mas, ao mesmo tempo, minha posição me deixa muito preocupada com o bem-estar de Baltasar. Por favor, entenda.</p>
+<p> </p>
+<p>Espero que seja uma ampla compensação pelo seu tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os insetos na floresta Primeval Magaro.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_SpakleVioletD_45_n]([%2]/5)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_MutaMantisD_45_n]([%5]/4)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_SpakyButterflyD_45_n]([%8]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ervin].</p></step>
+</steps>
+<p>Elimine os insetos na floresta primária de Magaro para Ervin, que odeia insetos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ervin está preocupado com os insetos na floresta Primeval Magaro novamente. Ela pediu que você matasse mais deles.</p>
+<p> </p>
+<p>Você erradicou brilhos de colina, cornadia Sylphens e Grove Moskies na floresta primitiva Magaro para Ervin. Ela agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

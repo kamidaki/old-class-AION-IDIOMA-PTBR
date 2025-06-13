@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Concluí minha pesquisa sobre as sementes aprimoradas, mas ainda temos que plantá -las.</p>
+<p> </p>
+<p>Teremos que cultivar a fazenda Havenjark no norte se quisermos obter um rendimento adequado.</p>
+<p> </p>
+<p>Infelizmente, há um problema com a fazenda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os agricultores que morreram no cataclismo se levantaram novamente e agora vagam pela área.</p>
+<p> </p>
+<p>Como você pode imaginar, isso torna o cultivo ... hum, difícil-impossível, até.</p>
+<p> </p>
+<p>Os colonos humanos simplesmente não são capazes disso. [%username]... Você poderia limpar os Mortos Vivos na fazenda Havenjark?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a fazenda Havenjark e destrua o [%dic:STR_DIC_M_ZombieFarmerD_23_An] Areia [%dic:STR_DIC_M_ZombieMiddleageD_23_An] está vagando lá.</p>
+<p> </p>
+<p>Quando terminar, os agricultores vivos podem começar a trabalhar sem medo.</p>
+<p> </p>
+<p>Aion sabe que vamos precisar da comida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A última missão foi muito difícil?</p>
+<p> </p>
+<p>Se você é fraco demais para continuar, descanse por todos os meios.</p>
+<p> </p>
+<p>Talvez eu encontre outro para nos ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu devo sair."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Brusthonin tem tanta promessa e frustração de uma só vez.</p>
+<p> </p>
+<p>Como você se saiu? Você se livrou dos Mortos Vivos na fazenda Havenjark?</p>
+<p> </p>
+<p>Quanto mais cedo eles se foram, mais cedo pudermos plantar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lumiel será elogiado!</p>
+<p> </p>
+<p>Não podemos varrer completamente os Mortos Vivos, mas graças a você, [%username], podemos gerenciar aqueles que permanecem.</p>
+<p> </p>
+<p>Por favor, leve isso para seus esforços.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos Mortos Vivos na fazenda Havenjark.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ZombieFarmerD_23_An]([%2]/11)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ZombieMiddleageD_23_An]([%5]/11)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Randet].</p></step>
+</steps>
+<p>Livre -se de moradores de Mortos Vivos e trabalhadores agrícolas Mortos Vivos assombrando a fazenda Havenjark para que os verdadeiros agricultores possam cultivar a terra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Randet disse que os agricultores precisam plantar as sementes aprimoradas na fazenda Havenjark.</p>
+<p> </p>
+<p>Infelizmente, os agricultores Mortos Vivos de lá tornaram a tarefa impossível.</p>
+<p> </p>
+<p>Você se livrou dos moradores de Mortos Vivos e trabalhadores agrícolas Mortos Vivos para que os colonos possam cultivar com segurança a fazenda Havenjark.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

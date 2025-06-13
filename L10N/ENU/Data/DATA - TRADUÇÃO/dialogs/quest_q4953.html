@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], com dois testes concluídos, você provou estar qualificado para se tornar um especialista em desvantagem.</p>
+<p> </p>
+<p>Estou satisfeito com sua capacidade e tenho o prazer de escrever a carta de recomendação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Obrigado. Estou honrado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Receber o título de especialista significa que suas habilidades e esforços de deficiência serão oficialmente reconhecidos.</p>
+<p> </p>
+<p>Você assumirá a responsabilidade de ajudar a desenvolver a indústria de desvantagens.</p>
+<p> </p>
+<p>Que tal? Você quer receber o título?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para obter o título de especialista, você deve obter a aprovação do governador [%dic:STR_DIC_N_Vidar].</p>
+<p> </p>
+<p>Escreverei uma carta de recomendação, então vá para Vidar e obtenha seu título oficial. Em seguida, participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece ser muito modesto.</p>
+<p> </p>
+<p>Ou talvez você não ache que a formalidade seja importante.</p>
+<p> </p>
+<p>Se você quiser ser um mestre no futuro, seria melhor você receber o título de especialista agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não agora, não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim? É urgente?</p>
+<p> </p>
+<p>Se você não precisar de mim absolutamente, diga para Skadi ou Kvasir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É sobre esta carta ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você é tão bom quanto Lanse diz, é bom o suficiente para dedicar seus trabalhos aos senhores Shedim.</p>
+<p> </p>
+<p>A partir de agora, use seu talento para contribuir para o desenvolvimento da desvantagem em Pandaemonium.</p>
+<p> </p>
+<p>Agora, volte para [%dic:STR_DIC_N_Lanse], mostre seu respeito e peça a ela mais ensino.</p>
+<p> </p>
+<p>Parabéns. Especialista em desvantagem!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Lanse, um mestre de desvantagem, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lanse, uma mestre de desvantagem, disse que não tinha mais nada para ensinar-você atingiu o nível de um especialista.</p>
+<p> </p>
+<p>Você levou a carta de recomendação dela ao governador Vidar e recebeu o título de especialista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

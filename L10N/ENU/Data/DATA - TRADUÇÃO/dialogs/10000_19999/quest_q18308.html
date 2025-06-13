@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho outro pedido, [%username]. É sobre os Shulacks na fortaleza do céu.</p>
+<p> </p>
+<p>Eu não conseguia investigar, mas Nimrod parecia muito interessado.</p>
+<p> </p>
+<p>Você sabe [%dic:STR_DIC_N_LF5_Nimrod_E]? Recentemente, ele se encarregou das missões na fortaleza do céu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mas você é praticamente irmãos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Um dos meus amigos uma vez me disse algo interessante: talvez apenas vejamos o que queremos ver ...</p>
+<p> </p>
+<p>Pense nisso. Os Shulacks da Liga de Engenharia de Kaichin não são shulacks comuns. Eles operam o gerador de dragião sem esforço e até constroem pequenos aviões.</p>
+<p> </p>
+<p>A Tiamat usou a tecnologia dos sapiens? Isso não faz sentido.</p>
+<p> </p>
+<p>Mas Nimrod ...</p>
+<p> </p>
+<p>Não, não vou espalhar rumores.</p>
+<p> </p>
+<p>Quando você atender ao pedido de Nimrod, eu vou lhe dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu vou te dizer. Nimrod acredita que outro Senhor Dragão poderia estar envolvido, não apenas Tiamat e Beritra.</p>
+<p> </p>
+<p>Nimrod acha que Beritra capturou a fortaleza do céu para fazer mais do que apenas invadir a nova região.</p>
+<p> </p>
+<p>Eu quero descobrir mais. A fortaleza do céu ainda está cheia de shulacks que ficaram para trás.</p>
+<p> </p>
+<p>Se eles têm algo a ver com outro Senhor Dragão, podem ter algumas evidências sobre eles.</p>
+<p> </p>
+<p>Por favor, derrote o [%dic:STR_DIC_E_QUEST_18308All_1] e procure pistas.</p>
+<p> </p>
+<p>Só conseguimos derrotar Tiamat com o máximo esforço. A batalha contra Beritra não é mais fácil. Se apenas mais um Senhor Dragão aparecer, não temos chance de vencer. Por favor, tenha cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O germe de pesadelos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda bem que não disse nada.</p>
+<p> </p>
+<p>Pedirei a outros danos para fazê -lo para que você possa ir.</p>
+<p> </p>
+<p>Bem, eu realmente não tinha ideia de que os Daevas que cresceram no campo etérico de Atreia poderiam ser tão frios.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"La La La. Eu não consigo ouvi -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A Liga de Engenharia de Kaichin ... isso não é estranho?</p>
+<p> </p>
+<p>Como eles poderiam se tornar seguidores de Tiamat?</p>
+<p> </p>
+<p>Não sabemos, mas talvez haja um acordo por escrito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Estes funcionam para Ereshkigal, Rei-Boy."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O terceiro dragão Lord Ereshkigal tem algo a ver com este lugar ... isso é impossível!</p>
+<p> </p>
+<p>Embora ... é difícil dizer se ela estava pessoalmente envolvida.</p>
+<p> </p>
+<p>Não houve avistamentos de Ereshkigal nos últimos tempos. Talvez os Shulacks da Liga de Engenharia de Kaichin só tenham ajudado Tiamat porque foram bem pagos pelo seu trabalho.</p>
+<p> </p>
+<p>Precisamos de um pouco de tempo. Continue nos ajudando enquanto coletamos e analisamos informações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_QUEST_18308All_1] e encontrar [%dic:STR_DIC_I_quest_18308a]. Trazer o selo para [%dic:STR_DIC_N_LF5_Nimrod_E].</p>[%collectitem]</step>
+</steps>
+<p>Faça o que Hariken solicitou e procure pistas de um lorde de dragão na fortaleza do céu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hariken disse que Nimrod suspeitava dos Shulacks que trabalham para a Tiamat.</p>
+<p> </p>
+<p>Você derrotou os shulacks. Nimrod então pediu que você continuasse trabalhando com ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

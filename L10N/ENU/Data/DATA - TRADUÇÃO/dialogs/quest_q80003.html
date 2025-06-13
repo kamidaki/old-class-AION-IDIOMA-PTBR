@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! No dia, o dia em que sinto falta de uma reunião do comitê e Bam! Eu "me voluntariei" para executar eventos do dia de Daeva!</p>
+<p> </p>
+<p>Eu não odeio o dia de Daeva. Eu prefiro estar correndo coisas nos bastidores, ou até mesmo, você sabe, comemorando!</p>
+<p> </p>
+<p>Ainda assim, é melhor eu fazer um bom trabalho, ou então serei "voluntário" novamente no próximo ano. Então, você gostaria de participar de um evento?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de evento?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma caça ao tesouro ... de espécie. Exceto que há um pouco menos de busca e um pouco mais de batalha.</p>
+<p> </p>
+<p>Parece que você viu um pequeno combate, por isso deve ser bem simples para você.</p>
+<p> </p>
+<p>Mas você recebe um prêmio: uma faixa de coração. Por que não participar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo o que você precisa fazer para obter seu prêmio é comércio em 10[%dic:STR_DIC_I_QUEST_80003a] S.</p>
+<p> </p>
+<p>Você pode encontrá -los anexados a [%dic:STR_DIC_M_Cherubim2Wp_24_An] S, [%dic:STR_DIC_M_Skeleton_24_An] Areia [%dic:STR_DIC_M_DIC_M_DigCherubimL_24_n] S.</p>
+<p> </p>
+<p>Eu retiro minha queixa mais cedo; Pelo menos eu não "não me voluntaria" para fazer esse trabalho. Boa sorte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você não quer participar, tudo bem. Lembre -se de que você não pode obter as bandanas do coração a qualquer dia, exceto o dia de Daeva.</p>
+<p> </p>
+<p>Então, se você é um colecionador ou apenas gosta de chapéus engraçados, é melhor aproveitar essa oportunidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hats engraçados me dão colmeia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você é um dos participantes da caça ao Dia da Daeva especial, não é?</p>
+<p> </p>
+<p>Se você coletou todos os cupons necessários, poderá entregá -los para uma faixa de coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, são todos os cupons. Aqui está a faixa do seu coração!</p>
+<p> </p>
+<p>Você tem sorte, sabe; Na verdade, houve muita demanda por eles. Acho que o comitê não está errado sobre tudo.</p>
+<p> </p>
+<p>Falando nisso, eu tenho que planejar minha vingança contra eles ... gostaria de ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Desculpe, isso não é suficiente [%dic:STR_DIC_I_QUEST_80003a] S. Eu tenho que ser justo com todos.</p>
+<p> </p>
+<p>Se você lutar o suficiente [%dic:STR_DIC_M_Cherubim2Wp_24_An] S, [%dic:STR_DIC_M_Skeleton_24_An] Areia [%dic:STR_DIC_M_DIC_M_DigCherubimL_24_n] S, você deve obter tudo o que precisa.</p>
+<p> </p>
+<p>Estarei aqui por mais um tempo, mas obviamente, quanto mais cedo você os entregar, melhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gotcha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_80003a] e leve-os para [%dic:STR_DIC_N_event_Kahlen].</p>[%collectitem]</step>
+</steps>
+<p>Colete cupons para uma faixa de coração e entregue -os a Kahlen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kahlen, membro da equipe do evento, está dando bandanas do coração em comemoração ao dia de Daeva. Você coletou cupons de monstros e os entregou para a sua faixa da cabeça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

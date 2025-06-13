@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, segure um segundo! Indo para a Caverna do Templo de Eracus?</p>
+<p> </p>
+<p>Bem, eu tenho uma forte sugestão quando você o faz. [%dic:STR_DIC_N_Marana], O melhor instrutor de vôo de Elysea, guarda a entrada da Caverna do Templo de Eracus.</p>
+<p> </p>
+<p>Não é não se gabar. Santuário a certificou oficialmente. Ela pode lhe ensinar coisas sobre o voo conhecido em nenhum outro lugar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Realmente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema é que a Marana é muito particular sobre seus alunos. Ela só aceita estudantes de habilidade excepcional.</p>
+<p> </p>
+<p>Eu acho que você se qualifica. Você está disposto a tentar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caça o [%dic:STR_DIC_M_4C_Gargoyle_30_Ae] S de Eracus Temple Cavern e leve a Marana 10 de seus[%dic:STR_DIC_I_QUEST_1351a] S. Até Marana vai admitir que você tem promessa.</p>
+<p> </p>
+<p>É um desafio difícil. Primeiro, é difícil encontrar [%dic:STR_DIC_M_4C_Gargoyle_30_Ae] está entre as pedras.</p>
+<p> </p>
+<p>Além disso, existem várias torres e o tempo é limitado. E, claro, as gárgulas enxameam todos os intrusos. Então ... tenha cuidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso é um eufemismo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh. Filhote jovem, você não conhece a oportunidade quando é empurrado na sua cara?</p>
+<p> </p>
+<p>Marana oferece as habilidades que você precisa para dominar o abismo. Acredite, você vai querer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez ainda não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ser o 'excelente' Daeva Castor descrito.</p>
+<p> </p>
+<p>Ele fala muito bem de você. Vamos ver como você se compara.</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_1351a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Castor poderia escrever uma ópera cantando seus louvores, mas você não recebe treinamento sem provas.</p>
+<p> </p>
+<p>Mostre -me que você pode voar, Daeva.</p>
+<p> </p>
+<p>Traga -me 10[%dic:STR_DIC_I_QUEST_1351a] S e eu vou ... considerar você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hmph. Considere isso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Desde que você colheu o [%dic:STR_DIC_I_QUEST_1351a] S, você tem pelo menos as habilidades básicas de voo.</p>
+<p> </p>
+<p>Você tem alguma promessa.</p>
+<p> </p>
+<p>Sim, eu vou te ensinar. Falaremos novamente quando você quiser sua primeira lição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote agachando Gargoyles Eracus, colete [%dic:STR_DIC_I_QUEST_1351a] S, e leve-os para [%dic:STR_DIC_N_Marana].</p>[%collectitem]</step>
+</steps>
+<p>Para obter a instrutora de voo Marana para ensinar, você deve mostrar capacidade. Reúna pedras negras de agachamento Gargoyles Eracus para provar seu talento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Castor aconselhou você a aprender com Marana, instrutora de vôo da Eracus Temple Cavern.</p>
+<p> </p>
+<p>Após suas instruções, você derrotou as gárgulas de Eracus e levou Black Stones a Marana para provar a si mesmo. Ela concordou em instruí -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

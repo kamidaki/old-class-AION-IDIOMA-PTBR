@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], tirou uma carga de nossos ombros quando você examinou o deserto de Eracus.</p>
+<p> </p>
+<p>Existem outras missões, mas eu não devo perguntar. Para ser franco, precisamos de muita ajuda aqui.</p>
+<p> </p>
+<p>Os outros guardiões me perguntaram se eles também poderiam oferecer tarefas, mas eu queria falar com você primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou feliz em ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Eu penso[%dic:STR_DIC_N_Kalikrates]pode usá -lo mais.</p>
+<p> </p>
+<p>Ele sempre assume muito, mas é tão confiável que eu odeio dizer a ele não.</p>
+<p> </p>
+<p>Vá e diga a ele que eu te enviei e, para me informar imediatamente se ele precisar de ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, eu estava preocupado que pudéssemos levá -lo embora perguntando demais.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Kalikrates]Vou perguntar a muitas coisas de você, mas ele é um homem justo.</p>
+<p> </p>
+<p>Por favor, não o rejeite.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu poderia ter perguntado muito de você.</p>
+<p> </p>
+<p>Eu não posso evitar; Somos tão curtos.</p>
+<p> </p>
+<p>Quando você tiver algum tempo de sobra, volte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tanta coisa para fazer .... como posso terminar ...?</p>
+<p> </p>
+<p>[%username]! Você surgiu tão silenciosamente que eu não percebi que você estava lá.</p>
+<p> </p>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Demokritos me enviaram para ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, graças aos Senhores Empíreanos!</p>
+<p> </p>
+<p>Quero dizer, agradeço a ambos os democritos e você, [%username].</p>
+<p> </p>
+<p>Eu realmente posso usar a ajuda. Ainda há muitas coisas para fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Transmitir a mensagem de Demokritos para [%dic:STR_DIC_N_Kalikrates].</p></step>
+</steps>
+<p>Os kalitratos precisam desesperadamente da sua ajuda. Vá e entregue a mensagem de Demokritos para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demokritos disse que os kalitratos podem ser trabalhados demais e pediram que você o ajudasse.</p>
+<p> </p>
+<p>Depois de ouvir o que Demokritos disse, Kalitratos ficou aliviado e muito satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para [%username]:</p>
+<p> </p>
+<p>Algo impensável aconteceu. Um grupo de asmodianos, presumiu-se ser juízes de sombra, emboscou um de nossos membros de alto escalão e apreendeu uma lista de nomes e senhas de membros.</p>
+<p> </p>
+<p>Embora a lista esteja protegida por um feitiço, sem mencionar a barreira do idioma, estamos mudando nossas senhas ... apenas por precaução. A nova senha é "Cellatu Cellatu nas montanhas, Leowasp Leowasp nas planícies".</p>
+<p> </p>
+<p>Nós chamamos você, [%username], membro da Ordem de Alabastro da Mão Divina de Old Class Aion, para ir imediatamente ao Soteria Santuário em Inggison e entregar a nova senha para [%dic:STR_DIC_N_Atalos], e então para [%dic:STR_DIC_E_35021]também.</p>
+<p> </p>
+<p>Devemos preservar nosso sigilo. Para o bem de todos os Elyos!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Cellatu Cellatu nas montanhas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então a senha mudou?</p>
+<p> </p>
+<p>Como sei que você está dizendo a verdade?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Pluma, Red Feather tocam um sino?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>"Cellatu Cellatu nas montanhas, Leowasp Leowasp nas planícies", HM?</p>
+<p> </p>
+<p>Isso é tão longo! E estranhamente repetitivo! Pluma, Red Feather era agradável e curta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu não faço as senhas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já viu Atalos?</p>
+<p> </p>
+<p>Se ele falou com você, você provavelmente é um Daeva razoável. Então, qual é a minha nova senha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Cellatu Cellatu nas montanhas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>"Cellatu Cellatu nas montanhas, Leowasp Leowasp nas planícies". Está certo?</p>
+<p> </p>
+<p>Um pouco redundante, mas funciona. Mal posso esperar para experimentar!</p>
+<p> </p>
+<p>Caminhe na luz, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Atalos].</p></step>
+<step><p visible="[%3]">Fale com um[%dic:STR_DIC_E_35021].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Asmodians presumiu que os juízes sombreados apreciassem um documento que contém a lista de membros e as senhas da Ordem Alabaster. Você foi escolhido para entregar a nova senha aos membros em Inggison.</p>
+<p> </p>
+<p>Então você entregou a nova senha para Atalos e um membro da filial da Inggison.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

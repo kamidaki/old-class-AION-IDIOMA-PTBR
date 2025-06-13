@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, por favor me perdoe se eu não for uma boa companhia.</p>
+<p> </p>
+<p>Oh ... é como uma faca na minha barriga. Não consigo manter nada baixo. Eu pensei que era algo que eu comi, mas não tenho comida sólida há um dia. É melhor dar um passo atrás.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Diga -me o que aconteceu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que é algo na água. É sujo!</p>
+<p> </p>
+<p>Há muitos animais nando na água! Caçadores da cidadela costumavam abatê -los regularmente, mas ninguém mais se incomoda! Agora, os aeronsores e os slinks estão remando na água, deixando coisas semi-comidas apodrecendo no fundo. Eco!</p>
+<p> </p>
+<p>Você vai nos ajudar? Alguém tem que manter nossa água potável limpa!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado!</p>
+<p> </p>
+<p>Por favor, saia do[plur][%dic:STR_DIC_MLA141] e o [plur][%dic:STR_DIC_MLA142]Isso pode ser encontrado nos rios e lagoas em frente à fortaleza.</p>
+<p> </p>
+<p>Por favor, mate 6 de cada. Então o resto vai fugir.</p>
+<p> </p>
+<p>Por favor, você pode ... ai! Meu estômago dói muito. É melhor pedir ao padre algum remédio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ... vá agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pelo amor de pena! Você gosta de ver as pessoas sofrerem?</p>
+<p> </p>
+<p>Bem -vindo a Verteron. Não posso esperar até você sair.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É bom ver você também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Você dirigiu o [%dic:STR_DIC_MLA141] Areia [%dic:STR_DIC_MLA142] está longe das piscinas?</p>
+<p> </p>
+<p>A água é segura para beber agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Deveria ser."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... eu me sinto melhor apenas sabendo disso!</p>
+<p> </p>
+<p>Sinto muito se parecia histérico ou rude antes. Eu estava apenas ... desesperado.</p>
+<p> </p>
+<p>Deixe -me dar -lhe um sinal de agradecimento. Não se atreva a recusar!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os animais poluindo a água perto da cidadela.</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA141]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA142]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA74].</p></step>
+</steps>
+<p>Aerons e Slinks estão poluindo os rios e lagoas perto da Cidadela da Verteron. Mate alguns deles para purificar a água.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Anaka e Parine tiveram dor de bebida por beber água incrustada. Anaka pensou que os aeronsivos e os slinks, que poluem os rios e piscinas perto da cidadela, eram a raiz do problema.</p>
+<p> </p>
+<p>Você caçou as criaturas para que os habitantes da Cidadela pudessem beber água limpa novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Você tem filhos?</p>
+<p> </p>
+<p>Não? Você tem a sorte de uma maneira. Eu tenho uma filha, meu único filho. O nome dela é Orlan.</p>
+<p> </p>
+<p>Eu a amo muito. Quando ascendi, fiquei feliz por poder protegê -la de danos, mas estava errado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">"O que aconteceu com ela?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas vida, [%username]. Ela se casou, me presenteou com netos e viveu uma vida maravilhosa. Mas agora ela é bastante velha e perto da morte.</p>
+<p> </p>
+<p>Não há destino pior do que ver seu filho morrer. Se eu pudesse morrer e dar a ela minha imortalidade, eu o faria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sinto muito, Kamer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Orlan tem um desejo-tomar banho em uma primavera quente. Infelizmente, ela é fraca demais para sair de casa e, claro, os revolucionários lefaristas estão ao redor do[%dic:STR_DIC_W_DF2_SUB_D3].</p>
+<p> </p>
+<p>Eu nunca poderia lutar pelo meu caminho através deles e voltar. Mas você poderia. Você poderia me trazer água das fontes termais?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está um recipiente isolado para manter a água da primavera quente.</p>
+<p> </p>
+<p>Isso significará muito para Orlan tomar banho na água do[%dic:STR_DIC_W_DF2_SUB_D3]. Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro. Não pense nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Duvido que eu possa sobreviver à tarefa sozinho, mas talvez eu tente de qualquer maneira.</p>
+<p> </p>
+<p>Não posso deixar minha filha morrer sem pelo menos tentar cumprir seu último desejo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Orlan pode parecer uma velha dama para os outros, ela ainda é uma garotinha para mim.</p>
+<p> </p>
+<p>Suponho que é sempre assim com os pais.</p>
+<p> </p>
+<p>Oh, aí está você! Você trouxe a água da primavera?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado, [%username].</p>
+<p> </p>
+<p>Não sei como lhe dizer isso ... quando disse a Orlan que a água chegaria em breve, ela disse que não era o que ela quis dizer.</p>
+<p> </p>
+<p>Ela quer visitar as fontes termais. Sinto muito ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a água da fonte termal no[%dic:STR_DIC_W_DF2_SUB_D3] e trazê -lo para [%dic:STR_DIC_N_Kamer]([%2]/1).</p></step>
+</steps>
+<p>Traga a água da primavera quente para Kamer para que sua única filha possa ter seu desejo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kamer disse que sua filha envelheceu e seu único desejo morrendo era tomar banho na água da fonte termal. Ele pediu que você reunisse um pouco de água das fontes termais em um recipiente e voltasse para ele.</p>
+<p> </p>
+<p>Você foi para as fontes termais de Halabana, mergulhou a água quente no recipiente e a levou para Kamer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

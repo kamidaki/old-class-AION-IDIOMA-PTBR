@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os movimentos dos soldados de Beritra são suspeitos.</p>
+<p> </p>
+<p>Eles realmente precisariam de todas as suas forças para restaurar a draga. Mas agora todos eles estão indo separados.</p>
+<p> </p>
+<p>Temos que analisar o que aconteceu.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LDF5B_d1_Vri_Poison_As_SN_NmdQ_65_Ae], você provavelmente já tem a ideia. Por favor, elimine -os e me traga algumas evidências.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem que haver uma razão para isso</p>
+<p> </p>
+<p>Só podemos lidar com incidentes futuros descobrindo o motivo.</p>
+<p> </p>
+<p>Precisamos da informação de que o [%dic:STR_DIC_M_LDF5B_d1_Vri_Poison_As_SN_NmdQ_65_Ae]tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a carta do pedido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê cuidadosamente através da carta do pedido.)</p>
+<p> </p>
+<p>Idium?</p>
+<p> </p>
+<p>De acordo com essas ordens, as amostras estão sendo coletadas para testes de idium.</p>
+<p> </p>
+<p>Então havia um plano por trás de tudo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_23327A] e trazê -lo para [%dic:STR_DIC_N_LDF5_Village_Guard15_D]</p>[%collectitem]</step>
+</steps>
+<p>Mate o ancião do 43º Esquadrão de Assalto para o experimento e leve provas para a UBE.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ube disse que os Beritra são suspeitos e que o ancião do 43º Esquadrão de Assalto pode saber algo sobre isso.</p>
+<p> </p>
+<p>Mate o ancião do 43º Esquadrão de Assalto e traga as ordens como evidência. Ube disse que contém informações sobre idium.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

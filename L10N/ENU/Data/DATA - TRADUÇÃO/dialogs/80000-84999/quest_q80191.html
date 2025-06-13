@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Desta vez, a tarefa é bastante mais difícil. Nossa associação não está faltando em membros, é mais um teste de suas habilidades, [%username].</p>
+<p> </p>
+<p>Pode ser uma tarefa um tanto difícil, mas acreditamos que você pode fazê -lo.</p>
+<p> </p>
+<p>No final, você foi capaz de matar os worgs famintos sem ajuda.</p>
+<p> </p>
+<p>Você vai partir agora? Vou explicar o que você tem que fazer.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você concorda.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, este é bom e simples. Vá para [%dic:STR_DIC_FLA09]% e matar slinks que escaparam do laboratório. Então obtenha [%dic:STR_DIC_I_QUEST_80190a]% e traga para mim.</p>
+<p> </p>
+<p>Oh, há mais criaturas que escaparam do laboratório. Mate os lobnitos e obtenha [%dic:STR_DIC_I_QUEST_80190b].</p>
+<p> </p>
+<p>Que tal? Você vai aceitar, é claro?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu sabia que não estava errado sobre você.</p>
+<p> </p>
+<p>Então vá para [%dic:STR_DIC_FLA09]% e caçar os slinks e lobnitos que escaparam do laboratório.</p>
+<p> </p>
+<p>Em seguida, obtenha 4[plur][%dic:STR_DIC_I_QUEST_80190a]% e 4[plur][%dic:STR_DIC_I_QUEST_80190b]para mim.</p>
+<p> </p>
+<p>Vá rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer virar a cauda e correr agora?</p>
+<p> </p>
+<p>A covardia não vai te deixar muito longe.</p>
+<p> </p>
+<p>Se você tem medo, pode levar seus amigos junto com você. Vou te contar mais uma vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta! Você realmente é incrível.</p>
+<p> </p>
+<p>Você obteve 4[plur][%dic:STR_DIC_I_QUEST_80190a]% e [plur][%dic:STR_DIC_I_QUEST_80190b]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega [%dic:STR_DIC_I_QUEST_80190a] e [%dic:STR_DIC_I_QUEST_80190b].</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda está aqui?</p>
+<p> </p>
+<p>Vamos, continue rapidamente!</p>
+<p> </p>
+<p>Você não tem medo? Então vá, já vá embora!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece terrível. Eu não achei que você achasse tão difícil.</p>
+<p> </p>
+<p>Bom trabalho! A Associação de Craftsmen não esquecerá suas ações, [%username].</p>
+<p> </p>
+<p>Isso é uma recompensa justa, não é?</p>
+<p> </p>
+<p>Os negócios não estão indo tão bem no momento. Até a próxima vez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_FLA09] em[%dic:STR_DIC_I_QUEST_80190a] e [%dic:STR_DIC_I_QUEST_80190b] e leve tudo para [%dic:STR_DIC_N_event_Kerasiss].</p>[%collectitem]</step>
+</steps>
+<p>Como um teste adicional de suas habilidades, Kerese exigiu que você obtenha [%dic:STR_DIC_I_QUEST_80190a] e [%dic:STR_DIC_I_QUEST_80190b]. Vá para [%dic:STR_DIC_FLA09] e caçar slink e lobnitos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kerasys é um cientista da Associação de Artesãos. Para testar suas habilidades, você foi solicitado a fornecer [%dic:STR_DIC_I_QUEST_80190a] e [%dic:STR_DIC_I_QUEST_80190b].</p>
+<p> </p>
+<p>É por isso que você caçou slinks e lobnitos[%dic:STR_DIC_FLA09] e obtido[%dic:STR_DIC_I_QUEST_80190a] Assim como[%dic:STR_DIC_I_QUEST_80190b].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ao lugar errado se estiver depois de informações. Eu só cheguei aqui recentemente. Você provavelmente já ouviu mais do que eu, preso aqui na costa. Não que eu esteja reclamando.</p>
+<p> </p>
+<p>Ainda assim, seria bom colocar minhas mãos em algo um pouco mais substancial do que os trabalhos estranhos.</p>
+<p> </p>
+<p>Quando não estou reunindo Flotsam ou lutando contra o Potcrabs, estou preparando refeições para todos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você faz toda a cozinha?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! E há tantas bocas para alimentar. Você pensaria que pelo menos um deles perguntaria se eu precisava de ajuda.</p>
+<p> </p>
+<p>E eles estão sempre choramingando-nada pode agradá-los! Algo está sempre errado, não importa o que eu faça.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece frustrante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Frustrante. Isso está colocando -o delicadamente.</p>
+<p> </p>
+<p>Pelo menos todos eles gostam do[%dic:STR_DIC_E_shell_n_c_10b]. Ainda não consegui separar esse prato, então estou mantendo -o. O truque agora está recebendo o suficiente para alimentar todos.</p>
+<p> </p>
+<p>Eu não acho que você tem tempo para ajudar? Você não parece muito ocupado, e eu realmente poderia usar uma mão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ter você a bordo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_E_shell_n_c_10b] S pode ser encontrado em abundância ao longo da costa por aqui.</p>
+<p> </p>
+<p>Por favor, apresse -se, no entanto. Estou ficando para trás e as tropas estão ficando inquietas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei o mais rápido possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você nem vai considerar isso?</p>
+<p> </p>
+<p>Você não ouviu que um Daeva solitário não é Daeva?</p>
+<p> </p>
+<p>Vou me lembrar disso se você precisar de ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não mexe, não é? Tenho o [%dic:STR_DIC_E_shell_n_c_10b]já é, não é?</p>
+<p> </p>
+<p>Bem, deixe -me dar uma olhada então. É melhor eu ter certeza de que você não pulava sobre a coleta de conchas.</p>
+<p> </p>
+<p>Onde eles estão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você estava fazendo? Assumindo o cenário?</p>
+<p> </p>
+<p>Eu reuni vinte sozinho. Eu teria trabalhado mais se eu percebesse que você não iria se incomodar.</p>
+<p> </p>
+<p>Eu pensei ter explicado isso claramente. Você tem mais uma chance de reunir aqueles[%dic:STR_DIC_E_shell_n_c_10b] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... eles poderiam ter sido um pouco maiores. Realmente, porém, isso se sairá bem. Não estou alimentando os Serafim Lords aqui.</p>
+<p> </p>
+<p>Agora, é melhor lavá -los e preparar o fogo.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Você me tirou de um local apertado lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_shell_n_c_10b] e leve-os para [%dic:STR_DIC_N_Une].</p>[%collectitem]</step>
+</steps>
+<p>Reúna veneras e leve -as para a UNE para que ela possa preparar uma refeição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Une, o único cozinheiro do observatório, reclamou que é difícil satisfazer todos porque seus gostos são muito variados.</p>
+<p> </p>
+<p>Como todo mundo parece gostar de veneras, ela pediu que você reunisse alguns para ela.</p>
+<p> </p>
+<p>Você coletou o que ela pediu e os levou para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

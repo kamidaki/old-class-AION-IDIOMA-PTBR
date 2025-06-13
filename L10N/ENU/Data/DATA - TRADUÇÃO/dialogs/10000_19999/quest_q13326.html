@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], chegou a hora.</p>
+<p> </p>
+<p>Mate o estacionado[plur][%dic:STR_DIC_E_LDF5b_D1_Vri43] e demonstrar a grandeza dos Elyos.</p>
+<p> </p>
+<p>Prove que eles não são oponentes dignos, nem mesmo que sejam numerosos.</p>
+<p> </p>
+<p>Para a vitória dos Elyos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A batalha com o Exército de Beritra começou.</p>
+<p> </p>
+<p>Devemos quebrar o espírito deles em nosso primeiro ataque, conquistando uma vantagem.</p>
+<p> </p>
+<p>Mobilize todas as forças e derrubar o [%dic:STR_DIC_E_LDF5b_D1_Vri43].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço seus esforços, [%username].</p>
+<p> </p>
+<p>Você mostrou ao mundo onde os Elyos estão. Excelente.</p>
+<p> </p>
+<p>Graças a você, o espírito de luta deles será reduzido substancialmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_LDF5b_D1_Vri43]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard15_L]%.</p></step>
+</steps>
+<p>Mate a 43ª equipe de ataque, que está na loja.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kleon disse que a hora da guerra chegou e pediu que você acabasse com o 43º Esquadrão de Ataque.</p>
+<p> </p>
+<p>Você lidou com a 43ª equipe de ataque, conforme instruído e foi recompensado ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

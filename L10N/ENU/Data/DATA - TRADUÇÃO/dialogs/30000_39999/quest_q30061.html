@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30061</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você é[%username]. Quão conveniente.</p>
+<p> </p>
+<p>Você poderia ir o [%dic:STR_DIC_W_LF4_SZ_OP] e encontrar -se [%dic:STR_DIC_N_Versetti]?</p>
+<p> </p>
+<p>Algo novo foi descoberto no[%dic:STR_DIC_E_UnderPass_Li]... Mas a Guilda da Luz Fantasma precisa de todos os seus soldados por causa da guerra com os asmodianos.</p>
+<p> </p>
+<p>Não podemos poupar ninguém por causa da situação em Sarpan.</p>
+<p> </p>
+<p>Até onde eu sei, você é incomparável entre seus colegas no[%userclass] Aula! Versetti ficará satisfeito com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava esperando um legionário hushblade. Por que você está aqui?</p>
+<p> </p>
+<p>Hmm, você parece confiável, por isso não importa de onde você vem.</p>
+<p> </p>
+<p>Talvez você tenha ouvido falar do[%dic:STR_DIC_E_Underpass_SensoryArea_Q30057]que está localizado no[%dic:STR_DIC_E_UnderPass_Li]? Diz -se que é encontrado ao norte da Jotun Square.</p>
+<p> </p>
+<p>Não podemos descobrir o que está por trás do grande portão nas terras desconhecidas.</p>
+<p> </p>
+<p>No entanto, os escoteiros observaram algum drakan saindo de um corredor atrás do portão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Continue ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando os questionamos, veio à luz que eles eram Drakan, que faziam parte da Guilda Raksha.</p>
+<p> </p>
+<p>Rakshaka escondeu o [%dic:STR_DIC_W_IDUnderpassRe_SZ] Atrás do portão, para que ele pudesse usar as relíquias reunidas para orquestrar uma rebelião.</p>
+<p> </p>
+<p>Havia uma razão pela qual Rakshaka queria proteger o templo de Beshmundir.</p>
+<p> </p>
+<p>Enfim, novos problemas surgiram no[%dic:STR_DIC_E_UnderPass_Li].</p>
+<p> </p>
+<p>Então faça o seu caminho para [%dic:STR_DIC_N_Asinelli] e pergunte como você pode ajudar no assunto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Versetti enviou você?</p>
+<p> </p>
+<p>Mas eu te disse que não havia necessidade de se preocupar ...</p>
+<p> </p>
+<p>É claro que é perturbador descobrir que um campo de Balaur, desconhecido até o momento, foi descoberto no Silentera Canyon.</p>
+<p> </p>
+<p>Mas ainda acredito que não há necessidade de ação no momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você retoma a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza de Tiamat cairá em breve e Rakshaka será finalmente derrotado, não é certo?</p>
+<p> </p>
+<p>Em seguida, será mais fácil implantar soldados para ocupar o corredor da traição.</p>
+<p> </p>
+<p>Ainda há muito trabalho a fazer. A missão de conter os asmodianos ainda não foi feita. E, com uma situação como essa, não podemos nos dar ao luxo de enviar tropas para outro lugar.</p>
+<p> </p>
+<p>Vou dizer a Versetti que tudo será completamente preparado quando chegar o momento certo.</p>
+<p> </p>
+<p>Parece que você chegou a esse lugar perigoso em vão. Por favor me perdoe!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF4_SZ_OP] e fale com[%dic:STR_DIC_N_Versetti].</p></step>
+<step><p visible="[%3]">Vá para o [%dic:STR_DIC_E_UnderPass_Li] e fale com[%dic:STR_DIC_N_Asinelli].</p></step>
+</steps>
+<p>Sua assistência é necessária no Silentera Canyon. Encontre -se com Versetti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi ver Versetti a pedido de Palenon e descobriu que o acampamento da unidade Rakshaka estava escondido no Silentera Canyon. O acampamento também é chamado de corredor da traição.</p>
+<p> </p>
+<p>Versetti pediu para você encontrar Lania e perguntar se você pode ajudar. Mas Lania disse que o tempo ainda não estava certo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard03_D]do[%dic:STR_DIC_W_LDF5a_A1_3]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: mate os Elyos que se infiltraram[%dic:STR_DIC_W_LDF5a_A1_A6] em North Katalam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos que estão invadindo o território ocupado precisam aprender uma lição.</p>
+<p> </p>
+<p>Se não fizermos nada, eles simplesmente esperarão pela próxima oportunidade sem medo.</p>
+<p> </p>
+<p>Não podemos permitir que isso aconteça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um bom trabalho.</p>
+<p> </p>
+<p>Você, [%username], realmente são incríveis!</p>
+<p> </p>
+<p>Você carregou sua tarefa perfeitamente em um período tão curto de tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram[%dic:STR_DIC_W_LDF5a_A1_A6] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard03_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que se infiltraram na região de Stelman, no norte de Katalam, e se reporte a Savankel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu ordens urgentes de Savankel, que solicitou que você matasse os Elyos que haviam invadido a área do rio Stelman, no norte de Katalam, e assim os eliminou.</p>
+<p> </p>
+<p>Quando você voltou e relatou o resultado, Savankel ficou muito surpreso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

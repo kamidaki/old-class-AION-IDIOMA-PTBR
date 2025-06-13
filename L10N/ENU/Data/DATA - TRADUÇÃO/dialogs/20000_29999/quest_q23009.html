@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], agora que você está aqui, tenho uma tarefa maravilhosa para você.</p>
+<p> </p>
+<p>O chifre de gelo está vagando perto das muralhas e comendo todas as raízes das árvores.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LDF5B_A2_Fethlot_65_n] e [%dic:STR_DIC_M_LDF5B_A2_Fethlot_64_n] e reunir o [%dic:STR_DIC_I_quest_23009a]para mim.</p>
+<p> </p>
+<p>Eu mesmo lidaria com esse caso se eu não tivesse ficado ferido contra o Balaur ontem, então ficaria muito feliz se você pudesse concluir esta tarefa, [%username].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>Você matou o chifre de gelo ABEX?</p>
+<p> </p>
+<p>Você matou o Fethlot e trouxe de volta a carne?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Deus.</p>
+<p> </p>
+<p>Eu tenho que cumprir meu dever, apesar de estar ferido ... acho que Stelman não tem coração.</p>
+<p> </p>
+<p>Quem eu poderia culpar? Eu simplesmente não deveria estar doente. Eu deveria estar agradecendo, em vez disso, apenas te contei sobre meus problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o chifre de gelo ABEX, junte [%dic:STR_DIC_I_quest_23009a] e leve tudo para [%dic:STR_DIC_N_LDF5b_Dorf_E].</p>[%collectitem]</step>
+</steps>
+<p>Reúna a carne de abex em vez de Dorph, que está ferido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o chifre de gelo ABEX pelo Dorph ferido e reuniu carne de abex.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

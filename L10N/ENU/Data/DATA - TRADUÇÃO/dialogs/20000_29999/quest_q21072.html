@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Mas se você não pode ir para Gelkmaros cai pela linha aérea, tenho um pouco de problema.</p>
+<p> </p>
+<p>Não tenho permissão para deixar a fortaleza. Veja bem, eu sou humano.</p>
+<p> </p>
+<p>Eu só consegui vir a Gelkmaros por causa do nome do mestre Svasuth!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"É para sua própria proteção."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei. Mas isso torna difícil para mim fazer o meu trabalho. Claro, o mestre Svasuth faz isso sozinho.</p>
+<p> </p>
+<p>Mas você é um daeva .... posso perguntar mais um favor a você?</p>
+<p> </p>
+<p>Você poderia ir para [%dic:STR_DIC_W_SZ_DF4_A3] e procurar por mestre svasuth?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é extremamente gentil de sua parte. Eu gostaria que o mestre Svasuth pudesse ser tão atencioso.</p>
+<p> </p>
+<p>Oh, não me interpretem mal. Ele é bastante gentil e me trata muito bem. Ele é apenas ... de espírito livre ao extremo.</p>
+<p> </p>
+<p>Ele deveria estar perto da base da cachoeira. Caso contrário, procure sua mala. Pode ter pistas ... ou pelo menos atrai -lo de volta aqui quando ele não pode trocar de roupa ou comer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é um homem paciente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Eu entendo. Você tem seus próprios chefes para satisfazer.</p>
+<p> </p>
+<p>Mas isso me deixa em um local apertado. O que devo fazer?</p>
+<p> </p>
+<p>Pergunte a outro Daeva? Entre em contato com o patrono do mestre Svasuth? Oh, mas ela ficará com tanta raiva ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, não posso te ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta ... mas não vejo o mestre Svasuth em lugar nenhum.</p>
+<p> </p>
+<p>Então, ele não estava em Gelkmaros Falls, não é? Claro que não ... ele nunca tornaria tão fácil para mim.</p>
+<p> </p>
+<p>Você encontrou alguma coisa dele lá? Alguma coisa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada? Isso não pode ser. Mestre Svasuth não é um guarda florestal ... ele não pode sobreviver na natureza sem algo de civilização!</p>
+<p> </p>
+<p>Além disso, ele é mais esquecido do que um Elyos com um ferimento na cabeça.</p>
+<p> </p>
+<p>Não consigo imaginar que ele não deixasse algo para trás. Sua mala é a melhor aposta. Por favor, olhe novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou começando a não gostar de Svasuth."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, pelo menos o mestre Svasuth está vivo ... ou estava naquele momento, e sabemos onde ele esteve.</p>
+<p> </p>
+<p>De qualquer forma, quando ele achar que está sentindo falta de sua mala, ele voltará mais cedo ou mais tarde.</p>
+<p> </p>
+<p>Agora tudo o que posso fazer é esperar. Obrigado por fazer isso por mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre alguns[%dic:STR_DIC_OBJ_DF4_Q21072] em Gelkmaros e trazê -lo para [%dic:STR_DIC_N_Skilving].</p>[%collectitem]</step>
+</steps>
+<p>Pesquisar Gelkmaros se apaixona por algum sinal de svasuth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Skilving não pode sair da fortaleza porque ele é humano. Ele pediu que você localizasse Svasuth para ele.</p>
+<p> </p>
+<p>Você foi a Gelkmaros Falls para procurar Svasuth, mas só encontrou sua mala.</p>
+<p> </p>
+<p>Você trouxe a mala para desgosto, que esperava que seu mestre voltasse em breve agora que ele estava sem seus pertences.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

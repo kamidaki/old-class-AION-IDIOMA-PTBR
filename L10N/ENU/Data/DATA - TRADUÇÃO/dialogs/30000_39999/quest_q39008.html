@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q39008</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p></p>
+<p>1. Remetente: Ginikki da sala de operações do santuário</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Ordens: Mate 5 Daevos Asmodian que se infiltraram em Theobomos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos que marcharam para Theobomos através da brecha do portal estão atacando o Jamanok Inn.</p>
+<p> </p>
+<p>A intenção deles é certamente atacar Jamanok, que deixou o pai.</p>
+<p> </p>
+<p>É uma situação muito infeliz, mas espero que você me traga notícias positivas, [%username].</p>
+<p> </p>
+<p>Diga -me os resultados em detalhes.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você me traria boas notícias.</p>
+<p> </p>
+<p>Os Elyos foram uma grande ajuda para nós na batalha.</p>
+<p> </p>
+<p>Estou pedindo que você continue ajudando.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que estão atacando Theobomos (%2/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_NPC_Arena_Geniki_E_LHM].</p></step>
+</steps>
+<p>Ordem de operação urgente: mate os asmodianos em Theobomos e relate o resultado a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos marcharam para Theobomos através da fenda do portal. Você matou os asmodianos e relatou de volta a Ginikki.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

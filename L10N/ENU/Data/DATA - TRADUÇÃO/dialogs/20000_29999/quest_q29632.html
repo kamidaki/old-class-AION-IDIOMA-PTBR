@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O lago Nahor é nomeado para o antigo castelo de Nahor, localizado em seu centro.</p>
+<p> </p>
+<p>Você não concorda que o lago deve ter sido bonito antes do cataclismo?</p>
+<p> </p>
+<p>Infelizmente, a contaminação o tornou um lugar muito perigoso.</p>
+<p> </p>
+<p>Vá para o lago e elimine o [plur][%dic:STR_DIC_DF2A_CellatuD_47_An]ou o [plur][%dic:STR_DIC_DF2A_BigCellatuD_47_An].</p>
+<p> </p>
+<p>O lago deve ser limpo dessas criaturas contaminadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já estava aposentado e depois voltei ao trabalho. Demorou algum tempo até eu me acostumar com as coisas novamente.</p>
+<p> </p>
+<p>Se você está ausente há algum tempo, o trabalho geralmente é muito mais difícil de voltar, não é?</p>
+<p> </p>
+<p>Claro, isso não significa que estou apenas sendo preguiçoso aqui.</p>
+<p> </p>
+<p>Somente as contaminações em tantos lugares em todo o Brusthonin tornam isso impossível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que eliminou a contaminação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Como você fez um bom trabalho com esta tarefa, darei a você um pouco de ajuda gastronômica do Pandaemonium.</p>
+<p> </p>
+<p>Você gostaria de continuar com a próxima tarefa imediatamente?</p>
+<p> </p>
+<p>Levará muito tempo até que Brusthonin esteja livre da contaminação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para Nahor Lake e elimine o [plur][%dic:STR_DIC_DF2A_CellatuD_47_An]ou o [plur][%dic:STR_DIC_DF2A_BigCellatuD_47_An]([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Surt]no[%dic:STR_DIC_W_DF2B_SZ_A_Town].</p></step>
+</steps>
+<p>Elimine os monstros envenenados em Brusthonin e depois retorne a Surt.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Surt pediu que você elimine a Web Cellatus ou Big Web Cellatus em Brusthonin.</p>
+<p> </p>
+<p>Quando você eliminou os monstros, você encontrou Surt e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

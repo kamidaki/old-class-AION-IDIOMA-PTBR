@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É estranho que haja muito menos material para investigar as muralhas do que antes.</p>
+<p> </p>
+<p>Os Shulack Sentinels parecem estar roubando alguns, embora não haja provas. Como esses são objetos que podem ser vendidos, deve ser assim. Afinal, estamos falando de Shulack aqui, Akakak.</p>
+<p> </p>
+<p>Você poderia, [%username], Vá para [%dic:STR_DIC_N_LDF5b_ShulackGuard_03] e diga que a quantidade de material de pesquisa de muralhas foi reduzida e sente as coisas?</p>
+<p> </p>
+<p>Mas não pense que tenho muito medo de me perguntar, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum, [%username]?</p>
+<p> </p>
+<p>Então, o que você quer de mim, um simples guardião?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre os materiais de inspeção nas muralhas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O número diminuiu?</p>
+<p> </p>
+<p>Não sei.</p>
+<p> </p>
+<p>Ah, sim, enquanto estamos nisso, continuo vendo o [%dic:STR_DIC_M_LDF5B_A1_Cherubim_63_n]Pagando por perto!</p>
+<p> </p>
+<p>Eu os estava ignorando até agora, pois parecia uma luta inútil para mim, mas nunca pensei que eles fizessem algo assim.</p>
+<p> </p>
+<p>Deve ter sido eles quem o roubou!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você! Como foi, Akakak?</p>
+<p> </p>
+<p>Todos sabíamos que o Shulack Sentinel era um criminoso.</p>
+<p> </p>
+<p>Vou denunciá -lo aos meus superiores imediatamente e eles o demitirão, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, então é assim que foi.</p>
+<p> </p>
+<p>Os Wanderer Kerbiel Gatherers adotaram o material de pesquisa Ramparts para que eles possam usá -lo em algum lugar ...</p>
+<p> </p>
+<p>Não me olhe assim, Akakak!</p>
+<p> </p>
+<p>Todo mundo sabe que tenho minhas dúvidas sobre Shulacks.</p>
+<p> </p>
+<p>De qualquer forma, muito obrigado por lidar com o verdadeiro culpado, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_LDF5b_ShulackGuard_03] Sobre o material de pesquisa das muralhas.</p></step>
+<step><p visible="[%9]">Mate o [%dic:STR_DIC_M_LDF5B_A1_Cherubim_63_n], que estão roubando o material de pesquisa ([%11]/10).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_LDF5b_wallring_E].</p></step>
+</steps>
+<p>Descubra se o gatekeeper Shulack está roubando o material de pesquisa para as muralhas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Wallinerk disse que o portão Shulack parecia roubar os materiais para investigar as muralhas e pediu que você olhasse para o assunto.</p>
+<p> </p>
+<p>Quando você perguntou sobre as muralhas, ele lhe disse que poderia ter sido Kerbiels que roubou os materiais. É por isso que você matou o Kerbiel Gatherer e relatou -se ao Wallinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

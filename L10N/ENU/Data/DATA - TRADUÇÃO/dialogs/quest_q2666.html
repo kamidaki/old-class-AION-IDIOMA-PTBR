@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou frustrado, [%username]. Você pode me ajudar?</p>
+<p> </p>
+<p>Estou procurando um Daeva forte e trabalhador. Você acha que poderia ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, acho que sou bastante forte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisará de suas pernas e voltar para este trabalho, não suas asas.</p>
+<p> </p>
+<p>Eu preciso de um Daeva que possa ir para Alquimia Stronghold e empurrar [%dic:STR_DIC_OBJ_DF3_OreCart_Q2666]. É bastante pesado e de topo segredo.</p>
+<p> </p>
+<p>Pedi a outros para empurrá -lo, mas eles não conseguiram cutucá -lo. Espero que você me ajude, [%username]. Você poderia?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os lefaristas estão se infiltrando em todos os cantos de Atreia sob o disfarce de exploradores. Ninguém suspeita de um explorador. Isso é tática inteligente. Brax rissóis! Eu eu mesmo uso!</p>
+<p> </p>
+<p>Os exploradores estão realmente distribuindo ordens escondendo -os em lugares como o carrinho de minas. Esses carrinhos de minério carregam rolos de pedidos com mensagens sobre metas-alvos de asasmodianos.</p>
+<p> </p>
+<p>Podemos arruinar a rede de inteligência do inimigo se pesquisarmos o carrinho de minas e trocarmos o pedido rolam com os falsos de nosso próprio design. Se você empurrar o [%dic:STR_DIC_OBJ_DF3_OreCart_Q2666]Para um canto escondido, eu lidarei com o resto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Existe uma nova senha?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recusa? Esta é uma missão importante, [%username]!</p>
+<p> </p>
+<p>Por favor, não me rejeite. Reconsiderar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde. É bastante frio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Este deve ser o carrinho de minas que Dewi disse para você avançar até o final do trilho.)</p>
+<p> </p>
+<p>(Você dá um empurrão. Não se move.)</p>
+<p> </p>
+<p>(Você respira fundo.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Heave! Arrrggh!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, pela sombra de Azphel! Esses lefaristas explodidos estavam espionando -nos!</p>
+<p> </p>
+<p>Devo me reportar ao general da brigada rapidamente.</p>
+<p> </p>
+<p>Oh, você está de volta. Phowww! Você fede e está pingando suor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Obrigado ... o carrinho de minério é onde você queria."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu assisti você de um canto escondido. Você empurrou o carrinho com todas as suas forças-você realmente colocou suas garras nele! Eu queria ajudá -lo, mas tive que ficar escondido. Eu não queria explodir minha capa.</p>
+<p> </p>
+<p>Enfim, obrigado a você, [%username], Consegui trocar os rolos de ordem.</p>
+<p> </p>
+<p>Agora, precisamos apenas estabelecer uma emboscada nos lugares que nomeamos na ordem falsa rolos e capturar os lefaristas. Então a rede de inteligência dos lefaristas será destruída. Este plano é mais apertado que a bolsa de um shugo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Empurrar [%dic:STR_DIC_OBJ_DF3_OreCart_Q2666] Até o fim da ferrovia.</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Você empurra o carrinho de minas até o final da ferrovia para que o Dewi possa pesquisar no carrinho e trocar o pedido com os falsos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dewi disse que os espiões lefaristas estavam operando em toda parte em Atreia e os lefaristas estavam escondendo rolos de ordem em um carrinho de minas em Alquimia Stronghold.</p>
+<p> </p>
+<p>A Dewi tem um plano para arruinar a rede de inteligência dos lefaristas, mas para realizar o plano, você precisava empurrar o carrinho de minas para a esquina onde ninguém podia ver.</p>
+<p> </p>
+<p>Quando você voltou depois de empurrar o carrinho de minas, ele disse que mudou os rolos com sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

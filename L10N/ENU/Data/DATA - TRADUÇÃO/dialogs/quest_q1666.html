@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A situação em Hiário já estava tensa mesmo antes da chegada do Balaur.</p>
+<p> </p>
+<p>Desde que o Balaur abriu o portão do Abismo, porém, a situação se deteriorou drasticamente.</p>
+<p> </p>
+<p>Nossos piores medos foram realizados.</p>
+<p> </p>
+<p>O objetivo do esquadrão de limpeza agora é expulsar a Guilda Indratu e tornar a Interdika um local seguro novamente.</p>
+<p> </p>
+<p>Isso significa ensinar inimigos uma lição.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu poderia atrapalhar as coisas para eles."</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você nos ajudaria, [%username].</p>
+<p> </p>
+<p>Mate o [plur][%dic:STR_DIC_M_LF3E3_FeB_LizardAs_44_Ae_Tune] e [plur][%dic:STR_DIC_M_LF3E3_FeA_LizardFi_44_Ae_Tune]no posto avançado no Nute Warrens.</p>
+<p> </p>
+<p>Há alguns menos fora dos Warrens, mas a maioria está dentro.</p>
+<p> </p>
+<p>Leve -os!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Estou feliz que você voltou com segurança.</p>
+<p> </p>
+<p>Como foi a batalha contra o Balaur?</p>
+<p> </p>
+<p>Você só pode realmente julgar a força deles depois de enfrentá -los no campo de batalha.</p>
+<p> </p>
+<p>Você realizou a tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muito menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora o Balaur experimentou em primeira mão o quão forte somos.</p>
+<p> </p>
+<p>Agora eles sabem que não devemos ser insignificantes.</p>
+<p> </p>
+<p>Tudo graças a você, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine a Guilda Indratu perto do posto avançado do esquadrão de limpeza e mostre o poder do esquadrão de limpeza.</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF3E3_FeB_LizardAs_44_Ae_Tune]([%2]/5).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF3E3_FeA_LizardFi_44_Ae_Tune]([%5]/5).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Javlantia].</p></step>
+</steps>
+<p>Yavlantia quer mostrar ao Balaur o poder do esquadrão de limpeza. Vá para o quartel de Indratu e mate os draconutos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yavlantia queria mostrar ao Balaur o poder do esquadrão de limpeza.</p>
+<p> </p>
+<p>Você partiu para o quartel de Indratu e matou os draconute ou os defensores de Draconute.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

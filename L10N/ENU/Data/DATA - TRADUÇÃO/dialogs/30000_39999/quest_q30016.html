@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sobre a espada suprema do seu Siel, Daeva ... posso restaurar seus poderes, mas não será fácil.</p>
+<p> </p>
+<p>É necessário um pouco de dano. O que você fez com a coisa pobre?</p>
+<p> </p>
+<p>Agora ... eu posso consertar, mas exigirá uma pequena ajuda de você. Você vai ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que for preciso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa espada não era feita como as espadas padrão que você usa. Você não pode simplesmente derrubar as falhas em uma bigorna.</p>
+<p> </p>
+<p>O que eu preciso para consertar a espada suprema de seu filho é extremamente raro.</p>
+<p> </p>
+<p>Se você pode encontrar esse material para mim, certamente posso restaurar os verdadeiros poderes da sua espada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar de [%dic:STR_DIC_I_Insidium_01] S? É um pouco antes do seu tempo.</p>
+<p> </p>
+<p>É um minério nascido do imenso calor e energia produzidos quando Lady Siel lutou com Tiamat antes do cataclismo. Isso é o que Honeus diz, de qualquer maneira.</p>
+<p> </p>
+<p>Você pode perguntar a ele você mesmo. Se [%dic:STR_DIC_N_Honeus]Tome um brilho para você, ele lhe dará o NOXALLON NOTOT ... mas ele pode pedir que você faça uma tarefa para ele primeiro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver Honeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você quiser andar com uma espada suprema de Siel Siel, é sua escolha.</p>
+<p> </p>
+<p>Mas no momento em que você se depara com um pacote de Balaur zangado e puxa aquele pedaço de metal morto da sua bainha, gostaria de ter me levado à minha oferta.</p>
+<p> </p>
+<p>Estarei aqui por mais algumas horas ... volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Chunk of Dead Metal?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que Honeus levou com calma para você, [%username]. Eu não achei que você voltaria até hoje à noite ... se fosse.</p>
+<p> </p>
+<p>Ainda bem que tenho os carvões acionados e o forge oleado e pronto ....</p>
+<p> </p>
+<p>Conceda-me o NOXALLON LINGOT e a espada suprema de Siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você nunca começou um emprego que não poderia terminar, [%username]? Eu realmente não sei como sua cultura sobreviveu tanto quanto ela.</p>
+<p> </p>
+<p>Vá encontrar [%dic:STR_DIC_N_Honeus], faça sua tarefa para ele e me traga o [%dic:STR_DIC_I_Insidium_01] então eu posso consertar sua maldita espada! E lembre-se-eles precisam estar no seu cubo. Não consigo consertar uma espada que você está segurando, posso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver Honeus agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de uma velha magia de Reian agora. Isso não deve levar mais de um minuto ... apenas espere.</p>
+<p> </p>
+<p>(Ele coloca o NOXALLON NOTOT em uma forja e temperam a espada.)</p>
+<p> </p>
+<p>Lá vamos nós ... tudo consertado, bom como novo. Dê um balanço. Você notará a diferença imediatamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30016] e trazê -lo para [%dic:STR_DIC_N_Gefeios].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o NOXALLON LINGOT, um material que pode restaurar o poder da espada suprema do Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios disse que precisava de um material especial para restaurar os verdadeiros poderes da espada suprema de Siel.</p>
+<p> </p>
+<p>Você foi ver Honeus e recebeu o NOXALLON LINGOT depois de fazê -lo um favor. Com o lingote, o Gefeios restaurou sua espada na espada suprema de uma nobre siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

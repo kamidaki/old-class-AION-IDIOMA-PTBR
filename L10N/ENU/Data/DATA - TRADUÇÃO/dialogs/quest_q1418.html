@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho assistido a situação em Eltnen-as mudanças ambientais e tudo isso. Os animais parecem estar se adaptando muito melhor do que os humanos. Alguns até prosperam no deserto agora.</p>
+<p> </p>
+<p>Infelizmente, eles são, sem dúvida, muito mais violentos agora do que nunca. Devemos pedir ajuda à Daevas se os habitantes locais estiverem seguros.</p>
+<p> </p>
+<p>Somente aqueles que passaram no teste se qualificam para ajudar, é claro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Naturalmente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A missão não é muito diferente do teste-caça os animais perigosos que cercam a fortaleza.</p>
+<p> </p>
+<p>Você deve ter poucos problemas com eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mate 3[%dic:STR_DIC_M_lupyllini_19_n], 3[%dic:STR_DIC_M_ManduriT_21_An] e 3[%dic:STR_DIC_M_ManduriB_21_An], por favor.</p>
+<p> </p>
+<p>Isso pode ser muito útil para a segurança dos moradores.</p>
+<p> </p>
+<p>Pode levar muito tempo para realizar a tarefa, mas a recompensa será todo o Graeter. Seus esforços valerão a pena.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você quer fazer o exame se você nem deseja realizar esta tarefa?</p>
+<p> </p>
+<p>As tarefas estão se tornando um fardo demais para você?</p>
+<p> </p>
+<p>Não importa, isso não importa. Há muitos outros que querem as moedas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta mais cedo do que eu esperava.</p>
+<p> </p>
+<p>Você fez um pouco nas populações ofensivas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Mais do que um dente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deve ter sido um trabalho duro matando todos eles. Bom trabalho. Obrigado.</p>
+<p> </p>
+<p>Agora, o habitante pode viver novamente fora da fortaleza sem ter que se preocupar.</p>
+<p> </p>
+<p>Aqui está a moeda que eu prometi a você. Use -o para comprar uma boa arma ou alguma armadura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os animais que ameaçam os moradores.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_lupyllini_19_n]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriT_21_An]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriB_21_An]([%8]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ferenna].</p></step>
+</steps>
+<p>Elimine os animais que estão colocando uma ameaça na área ao redor da fortaleza e obtenha uma moeda de Ferenna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Santuário tem um sistema de recompensa de moedas para incentivar o Daevas a assumir missões perigosas para proteger os moradores de cada região.</p>
+<p> </p>
+<p>Você recebeu uma missão de Ferenna, caçou animais ao redor da fortaleza e recebeu moedas dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

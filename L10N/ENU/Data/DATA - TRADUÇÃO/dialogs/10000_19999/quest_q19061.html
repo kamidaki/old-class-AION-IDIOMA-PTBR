@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente deseja seguir o caminho de um[%userclass], Assim, [%username]?</p>
+<p> </p>
+<p>Eu acredito que você está pronto para tentar seu próximo passo. Portanto, apresentarei a você um novo preceptor.</p>
+<p> </p>
+<p>Você conheceu[%dic:STR_DIC_N_Tanoria]? Ela é muito apaixonada por instruir.</p>
+<p> </p>
+<p>Vou lhe dar uma carta de recomendação, que você pode mostrar a Tanoria.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A comunicação é importante se você deseja manter contato com as pessoas.</p>
+<p> </p>
+<p>Mas muitas palavras podem esconder a verdade.</p>
+<p> </p>
+<p>Eu acho que as fofocas estão no caminho da sabedoria.</p>
+<p> </p>
+<p>Mas quando se trata de sabedoria, sempre estarei disponível. O que você quer saber, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sempre há mais que se pode aprender, [%username].</p>
+<p> </p>
+<p>Embora as pessoas me chamem de preceptor, ainda sou estudante também.</p>
+<p> </p>
+<p>Mas acredito que serei útil para você, [%username].</p>
+<p> </p>
+<p>Venha me ver se você encontrar dificuldades no caminho para se tornar um[%userclass]. Ficarei feliz em ajudá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue esta carta de recomendação para [%dic:STR_DIC_N_Tanoria].</p></step>
+</steps>
+<p>Vamos mostrar a Tanoria a carta de recomendação da Juventus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jumentis elogiou seu desenvolvimento até agora e o enviou a Tanoria com uma carta de recomendação.</p>
+<p> </p>
+<p>Depois que Tanoria leu a carta de recomendação, ela disse que você tinha muito a aprender para se tornar um excelente Daeva e prometeu ensiná -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

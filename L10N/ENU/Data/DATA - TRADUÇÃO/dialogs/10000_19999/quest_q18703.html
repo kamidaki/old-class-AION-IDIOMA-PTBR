@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso é ... um ovo de Balaur! Você pode ser o primeiro daeva a tocar em uma coisa dessas!)</p>
+<p> </p>
+<p>(Porém, não parece sentir ... vivo. Sua concha está fria como mármore.)</p>
+<p> </p>
+<p>([%dic:STR_DIC_N_Horian]Tem experiência aqui. Ele pode ser capaz de lhe contar mais.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero estar fazendo a coisa certa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, para encontrar um Daeva em tal lugar. Como vai você--</p>
+<p> </p>
+<p>Espere ... o que é isso? É isso ...</p>
+<p> </p>
+<p>Isso é! Incrível! Onde você encontrou isso? Por favor, devo dar uma olhada!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Seja meu convidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Incrível. Se pudermos estudar o ciclo de vida de Balaur desde o início, podemos descobrir mais sobre como derrotá -los!</p>
+<p> </p>
+<p>Está muito frio, no entanto. Talvez exposição ao calor de [%dic:STR_DIC_W_IDRaksha_ItemUseArea_Q28703]Pode ajudar.</p>
+<p> </p>
+<p>Não se preocupe; Este ovo é mais difícil que a mera lava. Experimente e depois retorne se algo acontecer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Lava? Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta. Aqui, deixe -me dar uma olhada.</p>
+<p> </p>
+<p>Sim, sim. Isso com certeza fez o truque. O ovo está agradável e quente agora. E tudo o que está dentro está definitivamente vivo.</p>
+<p> </p>
+<p>Mas o tempo afetou; A força vital é fraca. Devemos reforçar isso, ou não terá valor de pesquisa para nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"O que eu preciso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sugiro o [%dic:STR_DIC_FOBJ_IDRaksha_mandali]. É uma planta resistente que pode florescer em algum lugar em Raksang.</p>
+<p> </p>
+<p>É tão resistente por causa do[%dic:STR_DIC_I_QUEST_18703g]dentro dele. Encontre e extrai -o, e traga e ovo para [%dic:STR_DIC_NPC_Amis].</p>
+<p> </p>
+<p>Como uma experiência em animais de estimação e ovos de eclosão, eu esperaria que ela saberia melhor como proceder a partir daí-ou pelo menos sabe quem o faria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Balaur como animais de estimação. Assustador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ter um animal de estimação não é uma experiência maravilhosa? Eles emprestam tanta energia, tanta alegria!</p>
+<p> </p>
+<p>Na verdade, eu tenho correspondido a Reians sobre animais de estimação! A causa está se espalhando até para Balaurea!</p>
+<p> </p>
+<p>Posso recomendar animais de estimação se você estiver interessado. Que tal um Aukwi? Um elroco?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Que tal um Balaur?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dragão? Oh, [%username], um senso de hum-espera ... você estava falando sério! Isso é um ... e isso ... é maravilhoso aether! Apenas o que eu preciso ... uau.</p>
+<p> </p>
+<p>Isso é surpreendente! Conheço estudiosos que matariam para poder estudar o ciclo de vida de Balaur desde o primeiro dia!</p>
+<p> </p>
+<p>E eu tenho uma mão nisso! Estou ... estou tão honrado! Eu terei certeza de que você sabe se alguma coisa acontecer!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha conselhos de [%dic:STR_DIC_N_Horian].</p></step>
+<step><p visible="[%3]">Encontre o [%dic:STR_DIC_W_IDRaksha_ItemUseArea_Q28703] e exponha o ovo de Balaur ao seu calor.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Horian].</p></step>
+<step><p visible="[%9]">Pegar [%dic:STR_DIC_I_QUEST_18703g].</p></step>
+<step><p visible="[%12]">Conheça o CAP menos[%dic:STR_DIC_NPC_Amis].</p></step>
+</steps>
+<p>O ovo Balaur que você recebeu de Raksang é velho, mas pode estar vivo. Obtenha conselhos de Umrian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um ovo Balaur em Raksang. Você não tinha ideia de quantos anos tinha, mas parecia estar vivo. Umrian sugeriu que você o aqueceu no magma.</p>
+<p> </p>
+<p>Depois de aquecê -lo, você encontrou o Aether maravilhoso e o trouxe e o ovo para Pet Minder Amis, que ficou impressionado com a perspectiva de eclodir um Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

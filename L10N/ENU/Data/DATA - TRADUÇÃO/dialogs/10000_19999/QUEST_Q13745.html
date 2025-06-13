@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Elger Expedition Troop, [%dic:STR_DIC_N_LDF4_Advance_Elger_E]no[%dic:STR_DIC_W_LDF4_Advance_SZ_OP_L]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Comando: Mate dois asmodianos que invadiram Akaron.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você realiza a missão.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você recebeu meu pedido.</p>
+<p> </p>
+<p>O número de asmodianos em Akaron continua aumentando.</p>
+<p> </p>
+<p>Se queremos ocupar essa área, eliminar os asmodianos é a nossa principal prioridade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você realmente é algo especial.</p>
+<p> </p>
+<p>Se você permanecer ativo agora, os asmodianos em breve se renderão.</p>
+<p> </p>
+<p>Trabalhe duro para uma vitória do Elyos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos em[%dic:STR_DIC_W_LDF4_Advance]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p></step>
+</steps>
+<p>Ordens urgentes: Derrote os asmodianos que invadiram Akaron e se reportarem a Elger.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as instruções de Elger, você matou os asmodianos que invadiram Akaron.</p>
+<p> </p>
+<p>Elger ficou satisfeito e perguntou se você poderia fazer mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

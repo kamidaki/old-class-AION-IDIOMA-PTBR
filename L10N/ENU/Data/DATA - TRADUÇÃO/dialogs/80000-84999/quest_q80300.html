@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Queremos compartilhar não apenas nossas vidas com um parceiro, mas também o chocolate, Akakak.</p>
+<p> </p>
+<p>Mas existem inimigos que procuram arruinar nosso mundo rosado. Estou falando sobre aqueles shulacks solteiros! Akakak!</p>
+<p> </p>
+<p>Aqueles bestas maus ... com seu personagem horrível, eles nunca encontrarão um parceiro de qualquer maneira, Akakak.</p>
+<p> </p>
+<p>O chocolate doce é apenas um luxo para aqueles seres malignos!</p>
+<p> </p>
+<p>Vá e punir o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo] e pegue o [%dic:STR_DIC_I_QUEST_50011a]longe deles, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo], Akikak?</p>
+<p> </p>
+<p>Eles afirmam que estamos tentando nos irritar. A inveja deles é inacreditável, AK!</p>
+<p> </p>
+<p>Você tomou o [%dic:STR_DIC_I_QUEST_50011a]de volta deles?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você tem sobre o chocolate doce.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Adornaremos a cidadela de chocolate com decorações feitas de chocolate doce, para torná -la ainda mais bonita, Ak.</p>
+<p> </p>
+<p>Feito! Fiz decorações de chocolate com o chocolate dos singles, Akakak.</p>
+<p> </p>
+<p>Adorne a cidadela de chocolate com essas decorações, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O chocolate doce é um luxo para o povo solteiro, AK! Akakak!</p>
+<p> </p>
+<p>Você não deve sentir pena deles, AK. Eles vivem sozinhos porque estão com raiva e irritadiços, Akakak.</p>
+<p> </p>
+<p>Devemos ter chocolate para a cidadela de chocolate que pretendemos construir para nossos casais Lovestruck, AK.</p>
+<p> </p>
+<p>Vá imediatamente, mate o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo] e obter o [%dic:STR_DIC_I_QUEST_50011a], e.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo o amor como coisas doces e bonitas, Akakak.</p>
+<p> </p>
+<p>O namorado de Shugo ficará emocionado quando ele vir a cidadela de chocolate lindamente decorada, Akakak.</p>
+<p> </p>
+<p>Você decorou a cidadela de chocolate com as decorações de chocolate, AK? Akakak!</p>
+<p> </p>
+<p>Espero que os solteiros do mal não te perturbem no processo, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A bela cidadela de chocolate é ainda mais magnífica agora, Akakak.</p>
+<p> </p>
+<p>Se tirarmos chocolate dos singles e decorarmos a cidadela de chocolate, traremos ainda mais amor a Elysea, Akakak.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>[%username], diga ao seu parceiro que Shugo diz olá, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo] e leve o chocolate ao Shugo Lovestruck.</p>[%collectitem]</step>
+<step><p visible="[%3]">Use as decorações de chocolate na cidadela de chocolate.</p></step>
+<step><p visible="[%6]">Fale com o shugo Lovestruck.</p></step>
+</steps>
+<p>Os singles têm o chocolate para decorar a cidadela de chocolate. Leve o chocolate de volta deles e leve -o para o Lovestruck Shugo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Lovestruck Shugo disse que Shulacks amargos e solitários roubaram o chocolate, e é por isso que a cidadela de chocolate não pôde ser decorada.</p>
+<p> </p>
+<p>Você levou o chocolate de volta dos shulacks e fez decorações de chocolate com ele.</p>
+<p> </p>
+<p>Você decorou a cidadela de chocolate com as decorações de chocolate e recebeu uma recompensa do Shugo Lovestruck.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

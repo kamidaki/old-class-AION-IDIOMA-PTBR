@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Daeva de Zephyr [%dic:STR_DIC_N_Ibelia]Na Torre de Vigia Destruída, pediu ajuda.</p>
+<p> </p>
+<p>Mais Daevas de Zephyr foram implantados em HEIRON do que em qualquer outro lugar.</p>
+<p> </p>
+<p>Isso ocorre porque eles querem reunir informações sobre o inimigo na luta contra o Balaur.</p>
+<p> </p>
+<p>No entanto, eles também estão interessados ​​em outras informações.</p>
+<p> </p>
+<p>Entre outras coisas, eles pretendem pesquisar várias relíquias.</p>
+<p> </p>
+<p>[%username], o que você diz? Você ajudaria o Daeva de Zephyr?</p>
+<p> </p>
+<p>Eu recomendo que você aproveite esta oportunidade para trabalhar em conjunto com um dos Daevas de Zephyr.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarantus te enviou para mim?[%username]... Por que esse nome parece familiar?</p>
+<p> </p>
+<p>Oh, você é o mercenário que ascendeu. [%username]...</p>
+<p> </p>
+<p>Ouvi dizer que você perdeu sua memória. É verdade que você não consegue se lembrar de nada?</p>
+<p> </p>
+<p>Prefiro ter alguém com uma mente mais estável para este trabalho, mas acho que você fará.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pedi por você porque tenho um pedido ...</p>
+<p> </p>
+<p>Se você veio da fortaleza, deve ter visto heironopolis.</p>
+<p> </p>
+<p>Estou estudando as antigas ruínas da heironopolis. A cidade já foi o centro da civilização atreiana antiga. Você está bocejando?</p>
+<p> </p>
+<p>De qualquer forma, apenas as relíquias da antiga glória da heironopolis permanecem hoje.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_2">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_2">
+<contents cdata="true">
+<html>
+<body>
+<p>Algum tempo atrás, várias paredes de pedra com comprimidos de pedra gravados foram descobertas no pico de Vaizel. Eles retrataram cenas da vida cotidiana da antiga civilização.</p>
+<p> </p>
+<p>Mas eles também incluíram algo que poderia estar relacionado ao Balaur.</p>
+<p> </p>
+<p>Parece que há ainda mais[plur][%dic:STR_DIC_OBJ_LF3_FOBJ_Q14150]. Portanto, você poderia ir para [%dic:STR_DIC_W_LF3_SZ_B] e procurá -los?</p>
+<p> </p>
+<p>Essa civilização antiga aparentemente lutou contra o Balaur também. Certamente podemos aprender algo com eles sobre o Balaur.</p>
+<p> </p>
+<p>Portanto, pesquise tudo bem e não deixe um único detalhe nos escapar.</p>
+<p> </p>
+<p>Em seguida, traga suas descobertas para [%dic:STR_DIC_N_Sarantus].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você de volta, [%username].</p>
+<p> </p>
+<p>Recebi uma mensagem da Ibelia. Ela queria ter um achado arqueológico trazido para mim. Você tem algo para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o comprimido de pedra gravado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... não consigo encontrar nada que possa ter nada a ver com o Balaur ...</p>
+<p> </p>
+<p>Também não tem nada a ver com o pico de Vaizel ... infelizmente! Isso só pode ser as ruínas de Roah!</p>
+<p> </p>
+<p>Segundo a lenda, essa cidade que outrora na saúde diminuiu durante a grande catástrofe.</p>
+<p> </p>
+<p>Eu tenho que contar ao meu povo em Reshanta. Você não pode imaginar o que essa descoberta significa para a arqueologia do abismo!</p>
+<p> </p>
+<p>Eu tenho que contar a Ibelia também.</p>
+<p> </p>
+<p>[%username], Fiz uma ótima descoberta graças a você. Não posso agradecer o suficiente!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LF3_SZ_001] e Fale com [%dic:STR_DIC_N_Ibelia]lá.</p></step>
+<step><p visible="[%3]">Encontre o [%dic:STR_DIC_OBJ_LF3_FOBJ_Q14150]no pico de Vaizel e trazê -lo para [%dic:STR_DIC_N_Sarantus].</p>[%collectitem]</step>
+</steps>
+<p>Sarantus pediu que você ajudasse a Ibelia, a Daeva de Zephyr.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarantus encarregou você de ajudar Ibelia, o Daeva de Zephyr.</p>
+<p> </p>
+<p>Ibelia pediu que você pesquise comprimidos de pedra gravados no pico de Vaizel.</p>
+<p> </p>
+<p>Você trouxe os relevos a Sarantus. Ele ficou encantado, porque sua descoberta não tinha nada a ver com o pico de Vaizel, mas tinha uma conexão com as ruínas de Roah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

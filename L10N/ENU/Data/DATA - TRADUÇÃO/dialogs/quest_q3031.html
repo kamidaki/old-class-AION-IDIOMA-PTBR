@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">-Desejado-</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LF2A_TesinonSeamanM_46_An] Areia [%dic:STR_DIC_M_LF2A_TesinonSeamanR_46_An]é procurado, morto. Deixar ninguém vivo. Encerrar esses marinheiros amaldiçoados e pôr um fim ao seu pilhagem, matar, seqüestrar, espalhar e mutilar. Recompensa generosa.</p>
+<p></p>
+<p>Postado por [%dic:STR_DIC_N_Eunomia], Oficial de Administração</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<background name="Doc_bg_q3031"></background>
+<selects>
+<act href="HACTION_SETPRO1">"ARR, há marinheiros amaldiçoados querendo matar!"</act>
+<act href="HACTION_FINISH_DIALOG">"Eu não sou caçador de recompensas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles marinheiros escaldados na Costa de Latheron ficam mais descarados todos os dias.</p>
+<p> </p>
+<p>Em sua busca implacável por pilhagem e pilhagem, eles até atacaram guardiões!</p>
+<p> </p>
+<p>Eu postei um pôster "procurado" na vila, mas não ouvi nada ... ainda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu cuidei do seu problema de marinheiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, alguém chegou a reivindicar a recompensa!</p>
+<p> </p>
+<p>Parabéns. Aqueles derrotados com crosta de cracos mereciam o que conseguiram.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos marinheiros amaldiçoados na lista procurada.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_TesinonSeamanM_46_An] S ([%2]/15)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_TesinonSeamanR_46_An] S ([%5]/12)</p></step>
+<step><p visible="[%6]">Reivindicar a recompensa do oficial de administração[%dic:STR_DIC_N_Eunomia].</p></step>
+</steps>
+<p>Mate os marinheiros de Krahumus e os marinheiros do KraNuum e reivindique a recompensa do oficial de administração Eunomia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu o pôster procurado no conselho de avisos da vila do observatório.</p>
+<p> </p>
+<p>Você foi para a costa de Latheron, matou os marinheiros de Krahumus e os marinheiros de Kranuum. Você relatou o resultado ao oficial de administração Eunomia e reivindicou a recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

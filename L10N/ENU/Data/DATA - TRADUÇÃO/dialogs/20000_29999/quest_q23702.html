@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por vir, [%username].</p>
+<p> </p>
+<p>Como você sabe, a segurança do[%dic:STR_DIC_W_LDF4_Advance_SZ_V20]é uma questão importante. Precisamos dessa base para continuar realizando missões.</p>
+<p> </p>
+<p>Você poderia ir para o [%dic:STR_DIC_W_LDF4_Advance_SZ_V20] e dar [%dic:STR_DIC_N_LDF4_Advance_Toleriand_E]meus pedidos?</p>
+<p> </p>
+<p>Então, se você quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos em pânico porque perdemos contato com o posto avançado.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LDF4_Advance_LiPopoku_all]deve ser o culpado. Eles cortaram as comunicações porque os Elyos os colocaram nisso.</p>
+<p> </p>
+<p>Isso significa que o Popoku cruel precisa ser eliminado.</p>
+<p> </p>
+<p>Você vai lidar com isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que é difícil se livrar de Cruel Popoku.</p>
+<p> </p>
+<p>Mas se não os eliminarmos, a operação será inevitavelmente atrasada.</p>
+<p> </p>
+<p>Você queria me reportar sobre a situação?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por cuidar desses problemas.</p>
+<p> </p>
+<p>Mas ainda deveríamos estar em nossa guarda perto da base.</p>
+<p> </p>
+<p>Ainda há muito trabalho a ser feito antes que a conquista de Akaron seja garantida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Se os asmodianos ocuparem[%dic:STR_DIC_W_LDF4_Advance_SZ_V20], Assim, [%dic:STR_DIC_N_LDF4_Advance_Toleriand_E]vai aparecer. Fale com ele.</p></step>
+<step><p visible="[%9]">Eliminar [%dic:STR_DIC_M_LDF4_Advance_LiPopoku_all]perto da base ([%11]/4).</p></step>
+<step><p visible="[%24]">Se os asmodianos ocuparem[%dic:STR_DIC_W_LDF4_Advance_SZ_V20], Assim, [%dic:STR_DIC_N_LDF4_Advance_Toleriand_E]vai aparecer. Fale com ele.</p></step>
+</steps>
+<p>Derrote o cruel Popoku perto da base sendo controlado pelos asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Helgund pediu que você transmitisse uma ordem para Toriand.</p>
+<p> </p>
+<p>Toriand pediu que você eliminasse o Popoku Cruel.</p>
+<p> </p>
+<p>Você cumpriu o pedido de Toriand e foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

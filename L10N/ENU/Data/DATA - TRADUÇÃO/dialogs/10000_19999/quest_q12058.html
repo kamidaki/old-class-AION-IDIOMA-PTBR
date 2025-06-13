@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12058</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi falar das ruínas errantes, [%username]? É um lugar antigo, tão marcado que ninguém conseguiu datá -lo com precisão, ou mesmo verificar quem o construiu! Meu palpite é que as ruínas são Reian, mas preciso de confirmação antes de poder enviar meu relatório para Kamar.</p>
+<p> </p>
+<p>Eu quero que você vá lá e destrua o [%dic:STR_DIC_M_LDF4b_T2_Gargoyle_58_An] S, [%dic:STR_DIC_M_LDF4b_T2_SouledStone_58_An] Areia [%dic:STR_DIC_M_LDF4b_T2_Sam_58_An] S. Colete os fragmentos que puder deles e depois os leve para mim para que eu possa estudá -los.</p>
+<p> </p>
+<p>Vá agora, antes que o local seja perdido para o Balaur.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta. Você fez o que eu perguntei?</p>
+<p> </p>
+<p>Eu sei que meu pedido foi estranho vindo de um simples guardião do armazém, mas quero ajudar meu povo mais diretamente, e isso parecia uma maneira de fazê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Sim. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Interessante.</p>
+<p> </p>
+<p>Vê essas peças? Eles são claramente asas, mas sem a escultura completa, não sei dizer se são asas de Reian. E essas peças aqui parecem seguir as filosofias arquitetônicas de Reian, mas novamente ... não posso confirmar.</p>
+<p> </p>
+<p>Parece que vou precisar de mais ajuda nesse assunto. Ainda assim, obrigado pelo seu tempo. Aqui está o seu pagamento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete alguns[%dic:STR_DIC_I_Q12058all] e leve-os para [%dic:STR_DIC_N_Iali].</p>[%collectitem]</step>
+</steps>
+<p>Iali quer saber se as relíquias das ruínas errantes pertencem aos reianos. Destrua as gárgulas da asa de bronze, os kalgolemas da relíquia e arruina os mugolemas lá e colete fragmentos de relíquias deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Iali queria saber se as relíquias das ruínas errantes pertenciam aos Reians, então o enviou para destruir as criaturas lá e coletar as relíquias que eles tinham.</p>
+<p> </p>
+<p>Infelizmente, as relíquias não deram informações, deixando Iali muito desapontado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

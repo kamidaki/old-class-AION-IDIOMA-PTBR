@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4915</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho informações preliminares sobre as mutações.</p>
+<p> </p>
+<p>Infelizmente, só posso adivinhar o que exatamente está acontecendo.</p>
+<p> </p>
+<p>No momento, estou interessado principalmente em Drana e Dragel para obter mais informações. Mas isso parece ser difícil.</p>
+<p> </p>
+<p>Devo descobrir como induzir mutações com Dragel.</p>
+<p> </p>
+<p>Para isso, preciso das amostras certas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E um Daeva disposto a reuni -los?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia obter as amostras de dragel para mim de Dark Poeta?</p>
+<p> </p>
+<p>Tenho vergonha de dizer isso, mas nunca fiquei cara a cara com o Balaur. Então, me arrastar está fora de questão.</p>
+<p> </p>
+<p>Eu preciso urgentemente das amostras para minha pesquisa.</p>
+<p> </p>
+<p>Meus resultados definitivamente serão úteis na luta contra o Balaur.</p>
+<p> </p>
+<p>Você vai me ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Com sua ajuda, conseguimos colocar as mãos em amostras de dragel.</p>
+<p> </p>
+<p>De acordo com nossas informações, os Kobolds e os fungos foram mutados com o Dragel. Se você os matar, você receberá[%dic:STR_DIC_I_quest_3915a].</p>
+<p> </p>
+<p>Tenho certeza de que o Balaur também tem amostras. Mas eu não sei quais.</p>
+<p> </p>
+<p>Você vai me ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta pesquisa é realmente importante, [%username].</p>
+<p> </p>
+<p>Também é importante para os asmodianos com isso que podemos encontrar uma solução que podemos usar para ganhar vantagem em batalha contra o Balaur.</p>
+<p> </p>
+<p>Por favor mude de idéia e obtenha o [plur][%dic:STR_DIC_I_quest_3915a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá está você!</p>
+<p> </p>
+<p>Eu esperava que você voltasse rapidamente.</p>
+<p> </p>
+<p>Você tem as amostras?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que você ainda não foi para o Dark Poeta.</p>
+<p> </p>
+<p>Não posso fazer nada além de esperar até que você obtenha as amostras ... estou lentamente ficando inquieto.</p>
+<p> </p>
+<p>Sem[plur][%dic:STR_DIC_I_quest_3915a], Não consigo descobrir como o dragel está sendo usado.</p>
+<p> </p>
+<p>Eu imploro que você os segure o mais rápido possível!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazê -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os obteve como prometido. Obrigado!</p>
+<p> </p>
+<p>Graças a você, posso continuar minha pesquisa.</p>
+<p> </p>
+<p>Espero que as amostras me ajudem a descobrir como as criaturas de Balaur são transformadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [plur][%dic:STR_DIC_I_quest_3915a] em[%dic:STR_DIC_W_IDLF1] e leve-os para [%dic:STR_DIC_N_Hresvelgr].</p>[%collectitem]</step>
+</steps>
+<p>Precisamos de amostras de arrast para a pesquisa de mutação. Leve -os para Hresvelgr.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Hresvelgr descobriu as mutações, ele queria saber como Dragel funciona. Então ele perguntou a você obter amostras.</p>
+<p> </p>
+<p>Depois que você os obteve em Dark Poeta, ele agradeceu sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

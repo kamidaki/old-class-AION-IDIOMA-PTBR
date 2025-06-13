@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebemos informações confidenciais de que os revolucionários lefaristas estão atualmente aumentando sua influência no deserto de Eracus.</p>
+<p> </p>
+<p>O governador Fasimedes também está preocupado com Krall e os revolucionários lefaristas, que estão constantemente causando problemas, e ordenou que a situação fosse tratada rapidamente.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Castor] em[%dic:STR_DIC_W_LF2_SZ_C2_SUB_1] explicará os detalhes para você.</p>
+<p> </p>
+<p>Por favor, vá para [%dic:STR_DIC_W_LF2_SZ_C2_SUB_1]de uma vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os revolucionários lefaristas ergueram um posto no meio do deserto de Eracus.</p>
+<p> </p>
+<p>A postagem em si não é particularmente grande. Os asmodianos provavelmente também estão depois disso, pois é uma localização estratégica essencial para atacar Eltnen.</p>
+<p> </p>
+<p>Devemos capturar este post para impedir que os revolucionários lefaristas ou os asmodianos o façam e fortalecendo seus poderes.</p>
+<p> </p>
+<p>O apoio dos guardas de Eltnen deve chegar, mas porque o [%dic:STR_DIC_M_LF2_1_Light_Raider] está localizado no poste, ele precisa ser eliminado.</p>
+<p> </p>
+<p>[%username], vá e mate o [%dic:STR_DIC_M_LF2_1_Light_Raider]. Eu te imploro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você deseja conquistar o post, você absolutamente precisa eliminar o [%dic:STR_DIC_M_LF2_1_Light_Raider].</p>
+<p> </p>
+<p>Uma vez que o comandante caia, os restantes Soliers fugirão inteiramente por conta própria.</p>
+<p> </p>
+<p>E então eu queria perguntar como as coisas estavam indo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você matou o líder da guerrilha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Agora que o líder de guerrilha está fora do caminho, o posto de protetorado em Eltnen pode ser defendido.</p>
+<p> </p>
+<p>Seria ótimo se os revolucionários lefaristas e os asmodianos se afastassem agora, mas como eles iniciaram ataques ativos, não será fácil.</p>
+<p> </p>
+<p>Eles continuarão enviando batedores e aguardarão o momento certo.</p>
+<p> </p>
+<p>Não acho que essa batalha termine tão facilmente. Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Castor] em[%dic:STR_DIC_W_LF2_SZ_C2_SUB_1].</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_LF2_1_Light_Raider]([%11]/1).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_Castor].</p></step>
+</steps>
+<p>Ocupar o [%dic:STR_DIC_W_LF2_Village_01] e matar [%dic:STR_DIC_M_LF2_1_Light_Raider]Portanto, os revolucionários lefaristas não se tornam ainda mais poderosos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você atacou e ocupou o posto de guarda no deserto de Eracus, conforme ordenado pelo comandante supremo Fasimedes.</p>
+<p> </p>
+<p>Castor disse que nem os revolucionários lefaristas nem os asmodianos provavelmente desistirão, então a luta será longa e prolongada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

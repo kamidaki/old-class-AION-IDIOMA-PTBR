@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ugh .... minha dor de cabeça está piorando ....</p>
+<p> </p>
+<p>Você sabe se a lavagem cerebral da Dragonbound funciona em Daevas, como acontece com os Reians?</p>
+<p> </p>
+<p>Como posso proteger meus soldados do dragão quando não podemos nem lidar com os Wargs?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece que você tem uma infestação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os wargs? Sim. Eles caçam em grupos e atacam qualquer coisa que pareça comida. Eu mal posso mais fazer minhas patrulhas!</p>
+<p> </p>
+<p>Ooouh ... minha dor de cabeça fica piorando ....</p>
+<p> </p>
+<p>Você pode ajudar com os wargs, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você verá o [%dic:STR_DIC_M_LF4_B_Warg_MeerkatBaby_53_An] Areia [%dic:STR_DIC_M_LF4_B_Warg_Meerkat_53_An] S Quando você passa pelo portão da serra.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou resolver o problema para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou deitar e ter um bom pensamento.</p>
+<p> </p>
+<p>Você pode sair.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você não pode deitar! Você precisa fazer as coisas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Lembro -me de quando era jovem e forte, inexperiente demais para temer qualquer coisa, desde que eu tivesse uma espada na minha mão.</p>
+<p> </p>
+<p>Às vezes eu gostaria de poder ser tão soldado ingênuo e jovem novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem, eu me livrei de seus Wargs."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Isso significa que podemos divulgar os soldados patrulhando.</p>
+<p> </p>
+<p>... e eu posso voltar a me preocupar com o dragão.</p>
+<p> </p>
+<p>Uma questão de cada vez. Uma questão de cada vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os grumats que estão atacando as patrulhas no posto Undirborg.</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LF4_B_Warg_MeerkatBaby_53_An]([%2]/7).</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LF4_B_Warg_Meerkat_53_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Sueros].</p></step>
+</steps>
+<p>Mate os grumats do vale de Sawtooth, para que os soldados Sueros possam patrulhar em paz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Sueros hipocondríacos tiveram dor de cabeça, exacerbados pelos Wargs atacando suas patrulhas.</p>
+<p> </p>
+<p>Você limpou os Wargs Shortmane e Longmane, e ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi você lidar com Haramel extremamente bem, [%username].</p>
+<p> </p>
+<p>E você conseguiu fazer Hamerun desaparecer e deixar sua pequena operação de Ódio à deriva ao vento? Impressionante.</p>
+<p> </p>
+<p>Enviei alguns soldados para limpar alguns dos destroços que você deixou, mas ainda precisamos desmontar essa situação desde o início.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você estava pensando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, Haramel é muito maior do que eu pensava pela primeira vez. Muitos Kinah foi derramado nessa operação. Há equipamentos de última geração em todo o lugar.</p>
+<p> </p>
+<p>Meu primeiro pensamento foi matar todos os Dukakis e Skurvs lá, mas qualquer um poderia entrar, pegar o equipamento e iniciar a operação em algum lugar novo.</p>
+<p> </p>
+<p>O que precisamos fazer é destruir o equipamento! Destrua tudo! Queime -o no chão. Você pode lidar com isso, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Esta orb de chama irá ajudá -lo. Vai queimar qualquer coisa, até itens que têm aether neles.</p>
+<p> </p>
+<p>A primeira etapa desta operação é queimar esses carrinhos, para que eles não possam mover nada desse local.</p>
+<p> </p>
+<p>A segunda parte é incinerar toda essa má Odella. É contaminado ... perigoso. Não é de utilidade para nós.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai subir de fumaça."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você só vai lavar as mãos de Haramel, então?</p>
+<p> </p>
+<p>Bem, acho que você já fez o suficiente, [%username], mas com certeza poderíamos usá -lo lá fora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou assistir pela fumaça de casa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Aion você está de volta, [%username].</p>
+<p> </p>
+<p>Haramel queimou como uma pira funerária? Algum problema?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Haramel está fora do negócio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, isso é uma grande notícia, [%username]. Grande notícia.</p>
+<p> </p>
+<p>Se dependesse de mim, teríamos queimado todo esse lugar no chão. Mas acho que o Santuário tem algo na manga para o setor imobiliário.</p>
+<p> </p>
+<p>Pelo menos aquela má Odella não vai chegar às ruas agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_IDNovice_Ore_cart]([%2]/3).</p></step>
+<step><p visible="[%3]">Queimar [%dic:STR_DIC_OBJ_IDNovice_Burning_Odella]com a orb de chama ([%5]/3).</p></step>
+<step><p visible="[%6]">Relatar o resultado[%dic:STR_DIC_N_Zephyros].</p></step>
+</steps>
+<p>Como Zephyros solicitou, livre -se dos carrinhos de Aether e processou Odella em Haramel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Zephyros disse que as instalações restantes em Haramel devem ser destruídas para que a má Odella não atinja as ruas.</p>
+<p> </p>
+<p>Então você destruiu os carrinhos de Aether e queimou a Odella ilegal. Quando você voltou, ele lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

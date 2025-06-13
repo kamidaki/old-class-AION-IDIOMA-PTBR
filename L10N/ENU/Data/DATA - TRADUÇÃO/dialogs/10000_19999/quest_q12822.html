@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matar [%dic:STR_DIC_M_LDF5A_B6_Cactus_62_An] e me traga [%dic:STR_DIC_I_quest_12822a].</p>
+<p> </p>
+<p>Existem muitos tukapo de esponada de ferro nessa área, devo obter a seiva deles.</p>
+<p> </p>
+<p>Os Guardiões não têm água potável.</p>
+<p> </p>
+<p>Muitas vezes, não temos suprimentos suficientes, mas nunca nos falta água potável, é uma catástrofe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como não há água potável suficiente, bebi a água da poça, algo que não concordava com meu corpo.</p>
+<p> </p>
+<p>Até os guardas estão reclamando de ter sede, e é por isso que eles não têm energia para lutar.</p>
+<p> </p>
+<p>Não demorará muito para o dia em que esse posto avançado seja levado pelos asmodianos.</p>
+<p> </p>
+<p>Você eliminou os tukapos com touca de ferro na área?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a seiva clara de mocinho-mookie.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe muita resina tuka clara!</p>
+<p> </p>
+<p>Posso usá -lo como uma solução temporária para uma situação de emergência.</p>
+<p> </p>
+<p>Vou distribuí -lo aos soldados que sofrem de sede de uma só vez.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_B6_Cactus_62_An] e trazer [%dic:STR_DIC_I_quest_12822a]para [%dic:STR_DIC_N_LDF5_Village_Guard05_L].</p>[%collectitem]</step>
+</steps>
+<p>Mate o tukapo com espinção de ferro para obter a água potável e pegar a resina Tuka também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lanse achou que os suprimentos não estavam sendo reabastecidos adequadamente e que mesmo a água potável era escassa.</p>
+<p> </p>
+<p>Quando você trouxe a água clara da árvore do tukapo com espinção de ferro, ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

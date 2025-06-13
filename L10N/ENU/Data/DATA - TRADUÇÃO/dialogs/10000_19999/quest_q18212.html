@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Chega de falar, é hora de lutar!</p>
+<p> </p>
+<p>Vá para o coliseu Crisol e prove seu valor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual arena devo escolher?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Disciplina ou caos, não importa o que, apenas derrote pelo menos um oponente.</p>
+<p> </p>
+<p>Basta escolher a arena que lhe atrair mais, matar um oponente e voltar para mim com as notícias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se esqueça de pegar um ingresso na arena do Perbano. Você não poderá entrar no Coliseu sem um.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo lembrete."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é que foi isso? "N-N-N-não obrigado!" Eu ouvi uma aljava na sua voz? Bem, eu não gostaria de enviar um chorão de chicote como Grist para o moinho. Você não duraria cinco minutos.</p>
+<p> </p>
+<p>Vá e desperdiçar o tempo de Molfus. Quem sabe? Talvez você possa encontrar sua coragem extraviada em um dos outros Crisols.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Y-yes, senhora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Feito com seu treinamento? Vamos ouvir o relatório.</p>
+<p> </p>
+<p>Você está parecendo um pouco menos do que composto. Presumo que eles limpassem o chão com você?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não, eu ganhei ... mas eu encontrei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu oponente caiu isso? I-bem, parabéns, [%username], você me trouxe algo que eu realmente não esperava. Muitas vezes isso acontece mais.</p>
+<p> </p>
+<p>O problema é, e eu normalmente não mencionaria isso, mas seus oponentes no coliseu pretendem ser fantasmas, como nos outros Crisols. Mas nenhum fantasma poderia ter caído isso. Passe aqui para que eu possa dar uma olhada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar um oponente no[%dic:STR_DIC_W_IDArena_pvp_L]([%2]/1).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Junos].</p></step>
+</steps>
+<p>É hora do seu primeiro treinamento no coliseu Crisol. Entre na arena e derrote pelo menos um oponente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Junos instruiu você a derrotar um oponente no coliseu Crisol. Quando você os derrotou, eles abandonaram uma insígnia estranha, que você mostrou a Junos.</p>
+<p> </p>
+<p>Junos deixou você entrar no fato de que os oponentes do Coliseu geralmente são fantasmas e que isso deve ter vindo de alguém real.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

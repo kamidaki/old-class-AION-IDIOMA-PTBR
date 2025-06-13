@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos certeza se poderemos proteger a fortaleza com os soldados que foram enviados.</p>
+<p> </p>
+<p>Faremos o nosso melhor, mas não sabemos qual será o resultado.</p>
+<p> </p>
+<p>Devemos suportar o ataque dos Elyos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta se pode ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ajude -nos a matar [%dic:STR_DIC_Branch_Event_GuardLiFi_25_An]na área ao redor da fortaleza.</p>
+<p> </p>
+<p>Não podemos sentar e não fazer nada.</p>
+<p> </p>
+<p>Se você nos ajudar, [%username], certamente seremos vitoriosos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Mate 12[%dic:STR_DIC_Branch_Event_GuardLiFi_25_An], por favor. Vou cuidar do resto.</p>
+<p> </p>
+<p>À vitória da Asmodiana!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos um problema! Precisamos de ajuda.</p>
+<p> </p>
+<p>[%username], se você nos recusar também ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu todos eles?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou todos eles.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. [%username], se não tivéssemos tido sua ajuda ...</p>
+<p> </p>
+<p>O protetorado vai se mover.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, tente um pouco mais.</p>
+<p> </p>
+<p>Os Elyos são oponentes difíceis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_Branch_Event_GuardLiFi_25_An]([%2]/12).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_event_Ziva] Sobre o resultado da tarefa.</p></step>
+</steps>
+<p>Mate o Elyos Guardian em[%dic:STR_DIC_W_DF2_SUB_OP].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com o pedido de Fabiola, você matou um guarda Elyos.</p>
+<p></p>
+<p>Parece que o espírito de luta dos membros da guarda de Morheim aumentou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em breve vou sair aqui para encontrar minha tribo, mas há algo que quero fazer primeiro.</p>
+<p> </p>
+<p>Eu não posso fazer isso sozinho ... você vai me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdemos nossa casa para os mosbos. Se não fosse por eles, ainda estaríamos vivendo felizes em uma vila pacífica e eu não estaria sozinha, sofrendo de fome.</p>
+<p> </p>
+<p>Eu quero me vingar daqueles moscas. Você pode entender isso, não é? Você pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. O lugar que agora se chama Mosbear Snowfield costumava ser nossa adorável casa.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_MosbearReD_33_An] Areia [%dic:STR_DIC_M_MosbearReBigD_34_An] Agora está ocupado. Ficarei feliz se você matar todos eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uau, você está falando sério!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Sim eu faço.</p>
+<p> </p>
+<p>Não quero levar mais tempo.</p>
+<p> </p>
+<p>Mas encontrarei uma maneira de se vingar dos moscas. Algum dia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que você faça."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Nossa adorável casa deve estar enxameando com moscas. Você matou todos eles? Todos os odiados mosbos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os matei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso me deixa aquecido por dentro para saber que eles pagaram com suas vidas. Obrigado.</p>
+<p> </p>
+<p>Agora posso dizer à minha tribo que fomos vingados. Os MosBears que nos perseguiram pagaram o preço!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe os moscas em nome dos Spriggs.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_MosbearReD_33_An]([%2]/7).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_MosbearReBigD_34_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Gark].</p></step>
+</steps>
+<p>O habitat atual dos moscas nevados já foi a casa dos Spriggs. Vinge -se aos Mosbes, que ocuparam o campo de neve, em nome de Gark e sua tribo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gark disse que o campo de neve do Mosbear era originalmente o lar de sua tribo.</p>
+<p> </p>
+<p>Antes de sair para encontrar seus homens da tribo, ele queria ser vingado em moscas que levaram sua casa, e ele pediu que você os derrotasse.</p>
+<p> </p>
+<p>Quando você voltou depois de derrotar os Mosbears, o Sprigg vingativo agradeceu sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

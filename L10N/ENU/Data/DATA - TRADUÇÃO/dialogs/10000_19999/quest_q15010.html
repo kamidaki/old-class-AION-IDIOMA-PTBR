@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15010</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos pouco apoio e a Guilda está sempre ocupada, por isso continuamos experimentando escassez de alimentos.</p>
+<p> </p>
+<p>Logo depois que fui encarregado de apoiar a Guilda, comecei a pensar em que coisas comestíveis poderíamos encontrar aqui. Felizmente, encontrei algo que posso usar como ingrediente para refeições:</p>
+<p> </p>
+<p>Fungie Peels e Fungen Tentacles!</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF5_SZ_B_01] e me traga [plur][%dic:STR_DIC_I_quest_15010a] e [%dic:STR_DIC_I_quest_15010b]. Vou usá -los para fazer algo sobre nossas rações alimentares inadequadas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você pode encontrar comida no deserto. Quando você precisa sobreviver, pode fazer comida com os ingredientes mais improváveis. Então, novamente, eu tenho um estômago muito forte.</p>
+<p> </p>
+<p>Esses ingredientes são totalmente novos para mim, mas tenho certeza de que as cascas e tentáculos terão um sabor delicioso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as cascas de fungos e os tentáculos de fungen.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm ... as peelings de fungos e os tentáculos de fungen têm um sabor ainda melhor do que eu pensava. Graças aos ingredientes que você trouxe, [%username], o jantar será fabuloso hoje.</p>
+<p> </p>
+<p>Infelizmente ... por onde começar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Pergunte se há algo que ele esqueceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>A fome está me fazendo alucinar agora?</p>
+<p> </p>
+<p>O que você quer me dar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm ... as cascas e os tentáculos têm um sabor ainda melhor do que eu pensava. Graças aos ingredientes que você trouxe, [%username], o jantar será fabuloso hoje.</p>
+<p> </p>
+<p>Infelizmente ... por onde começar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Pergunte se há algo que ele esqueceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, oh! Exatamente! Eu estava tão preocupado com os ingredientes ... por favor, desculpe -me!</p>
+<p> </p>
+<p>Muito obrigado! Não é muito, mas é do meu coração.</p>
+<p> </p>
+<p>Por favor, traga -me mais ingredientes quando tiver a oportunidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Adquirir [plur][%dic:STR_DIC_I_quest_15010a] e [%dic:STR_DIC_I_quest_15010b]. Então fale com[%dic:STR_DIC_N_LF5_Mosphera_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Mosphera_E].</p></step>
+</steps>
+<p>Ajude a Masphera a garantir rações de alimentos para a Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Masphera lhe disse que a Guilda estava tendo problemas para garantir que tivesse comida suficiente. Por esse motivo, você deveria obter cascas de fungos e tentáculos de fungen.</p>
+<p> </p>
+<p>Você reuniu as cascas de fungos e os tentáculos de fungen, e Moshera descobriu que eles têm um sabor melhor do que ela esperava.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

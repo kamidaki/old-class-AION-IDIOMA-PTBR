@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você se sente estranha de energia se reunindo ao seu redor e depois vê o fragmento de orkanimum.)</p>
+<p> </p>
+<p>(É melhor você mostrar ao oficial de informações[%dic:STR_DIC_N_Rentia].)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso me dá arrepios, isso faz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você chegou longe, viajante! Eu posso vê -lo no pó de suas asas e nas linhas em seu rosto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Sobre este fragmento de orkanimum ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm .... isso é novo para mim, e você ficaria surpreso com a frequência com que eu ainda digo isso.</p>
+<p> </p>
+<p>Mas eu tenho um colega, [%dic:STR_DIC_N_Ab1_NPC_LugBug], quem passa tempo em[%dic:STR_DIC_W_AB1_Sub_add20]No meio da camada inferior de Reshanta.</p>
+<p> </p>
+<p>Talvez ele tenha uma resposta para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado pela sugestão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você! Você!</p>
+<p> </p>
+<p>Nós já nos conhecemos antes?</p>
+<p> </p>
+<p>Irrelevante!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Umm ... Rentia disse ... umm, eu tenho isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shhh! Estou ouvindo, ouvindo ....</p>
+<p> </p>
+<p>Sim! Eu ouço! Há Aether da torre da eternidade nas proximidades, e uma nova criatura pode crescer a partir dela a qualquer momento.</p>
+<p> </p>
+<p>ACK! Por que você está segurando isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Obrigado pela informação ... eu acho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Rentia falou comigo. Ela disse que você conversou com ela sobre algo que encontrou.</p>
+<p> </p>
+<p>A partir de agora, não deixe de falar comigo primeiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu aprendi que é feito de Aether condensado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se os fragmentos de Orkanimum forem condensados ​​da Torre da Eternidade, poderíamos ter um grande problema pesar em nossas asas.</p>
+<p> </p>
+<p>Especialmente porque esses fragmentos podem ser a fonte de novas criaturas</p>
+<p> </p>
+<p>Obrigado por sua diligência e relatórios, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Rentia].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Ab1_NPC_LugBug].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li].</p></step>
+</steps>
+<p>Na lasca abissal, você encontrou um fragmento de orkanimum com uma estranha energia de Aether. Leve para a Rentia na Fortaleza de Teminon e pergunte a ela o que é.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Na lasca abissal, você encontrou um fragmento de orkanimum com uma estranha energia de Aether.</p>
+<p> </p>
+<p>Você levou para a Rentia na Fortaleza Teminon. Ela não sabia muito, mas o enviou para Lugbug na ilha de Leibo.</p>
+<p> </p>
+<p>Lugbug disse que você encontrou um fragmento de Aether condensado da Torre da Eternidade, e que novas criaturas surgiriam dela. Você relatou essas informações a Aratus, que se preocupou com suas implicações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

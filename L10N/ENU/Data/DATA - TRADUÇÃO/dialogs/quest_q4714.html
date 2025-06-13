@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os ataques à draga estão valendo a pena.</p>
+<p> </p>
+<p>O comandante da Guilda de Baranath despachou um auditor para o navio para investigar a situação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles estão com problemas e sabem disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é verdade. Mas também é um problema.</p>
+<p> </p>
+<p>Se o auditor descobrir como estamos nos infiltrando na draga e apresentar uma contramedida, perderemos nossa vantagem.</p>
+<p> </p>
+<p>O auditor é nosso próximo alvo. Ele não é o único que pode aprender nosso segredo, mas é o mais provável. [%username], você vai lidar com isso para nós?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia confiar em você.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]pode investigar o navio inteiro, mas ele deve ir à ponte para se reportar a seus superiores. É aí que é mais provável que você o encontre.</p>
+<p> </p>
+<p>Eu sei, eu sei-enfrentar um auditor de Balaur na ponte de um navio de guerra não será fácil. Mas não temos escolha se queremos preservar nossa vantagem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está relutante agora? Você enfrentou o Balaur antes.</p>
+<p> </p>
+<p>Todos os nossos esforços terão sido em vão se o auditor Nirshaka descobrir como entrarmos na draga.</p>
+<p> </p>
+<p>Por favor, pense e volte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou considerar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou impressionado, [%username]. Eu não acho que ninguém tenha sobrevivido a tantas missões para a draga.</p>
+<p> </p>
+<p>E foi bem -sucedido?</p>
+<p> </p>
+<p>Você eliminou o auditor Nirshaka?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nirshaka não fará um relatório ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é o que eu queria ouvir! Excelente trabalho!</p>
+<p> </p>
+<p>Aqui está uma recompensa por seus esforços-você já ganhou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Henir].</p></step>
+</steps>
+<p>O auditor Nirshaka foi despachado para a draga para descobrir a fonte de ataques recentes. Você foi enviado para interceptá -lo antes que ele pudesse aprender e relatar como estava entrando no navio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Henir lhe disse que o auditor Nirshaka enviou o auditor de Baranath para descobrir por que a draga foi atacada e como resolver o problema.</p>
+<p> </p>
+<p>Você eliminou o auditor para impedi -lo de descobrir e relatar como estava entrando no navio</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

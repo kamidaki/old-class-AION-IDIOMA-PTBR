@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30752</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], as dragas de Chantra e Terath estão nos causando dores de cabeça nas principais dores de cabeça.</p>
+<p> </p>
+<p>Portanto, tenho uma missão para você no[%dic:STR_DIC_W_IDTiamat_SZ_R1], no[%dic:STR_DIC_W_IDTiamat_SZ_S3]para ser preciso.</p>
+<p> </p>
+<p>Se queremos colocar as dragiões fora de comissão, precisamos descobrir mais sobre elas. Eu iria sozinho, mas tenho que cuidar de nossas tropas agora.</p>
+<p> </p>
+<p>Eu sei que você tem muito o que fazer, [%username]. Mas você poderia ir para o [%dic:STR_DIC_W_IDTiamat_SZ_S3] e me faça um favor?</p>
+<p> </p>
+<p>Por favor, investigue o [%dic:STR_DIC_N_IDTiamat_FOBJ_Model] e descubra sua trajetória de vôo. Então cuide de [%dic:STR_DIC_M_IDTiamat_Sardha_Named_60_Ah].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Perto do modelo, você encontra informações sobre os tempos de partida e rotas da draga.)</p>
+<p> </p>
+<p>(Você deve tentar lembrar as informações da melhor maneira possível, pois não terá tempo para anotar)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina sua investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está finalmente de volta!</p>
+<p> </p>
+<p>Como foi na sala de controle da draga?</p>
+<p> </p>
+<p>Se soubéssemos o caminho, saberíamos o que eles pretendem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um ótimo trabalho!</p>
+<p> </p>
+<p>Terath é finalmente derrotado ... agora não precisamos nos preocupar com a draga por enquanto.</p>
+<p> </p>
+<p>No entanto, se as informações que você obteve sobre a trajetória de vôo estiver correta, [%username], então a draga já partiu. Mas podemos usar a sala de controle para fazer algo sobre isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Digitar [%dic:STR_DIC_W_IDTiamat_SZ_S3] e use o [%dic:STR_DIC_N_IDTiamat_FOBJ_Model]Para descobrir o caminho de vôo da draga.</p></step>
+<step><p visible="[%9]">Derrota [%dic:STR_DIC_M_IDTiamat_Sardha_Named_60_Ah]([%11]/1).</p></step>
+<step><p visible="[%24]">Digite o [%dic:STR_DIC_W_IDTiamat_SZ_S1] e reportar a [%dic:STR_DIC_N_IDTiamat_Sorus].</p></step>
+</steps>
+<p>Vá para a sala de controle da draga para descobrir qual é o caminho da draga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sorus pediu que você colete mais informações sobre a trajetória de vôo da draga e eliminasse o general da brigada Terath.</p>
+<p> </p>
+<p>Graças ao modelo da draga de Terath, você conseguiu descobrir a trajetória de vôo. Depois de derrotar Terath, você voltou a Sorus, que ficou muito satisfeito.</p>
+<p> </p>
+<p>No entanto, as informações que você reuniu mostraram que a draga já estava em movimento. Agora Sorus quer usar a sala de controle para agir contra a draga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

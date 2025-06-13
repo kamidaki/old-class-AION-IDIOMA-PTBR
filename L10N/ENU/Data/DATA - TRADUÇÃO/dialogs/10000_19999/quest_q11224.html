@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como pesquisador em Balaurea, você deve esperar se envolver em uma batalha de vez em quando.</p>
+<p> </p>
+<p>Você vê o que está na minha bolsa aqui? Eu tenho uma adaga, poções, um fragmento de poder, uma pedra de reavivamento, bandagens ... estou preparado para qualquer coisa.</p>
+<p> </p>
+<p>A verdade do passado sempre se esconde em lugares perigosos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O mesmo acontece com a verdade do presente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso lidar um pouco, [%username], mas aqueles que murcharam rotrons e agripastas de folha de folha ... há muitos deles. Não consigo nem colocar mais os pés nas planícies de Hanarkand.</p>
+<p> </p>
+<p>Existe alguma maneira de fazer você me fazer um favor? Eu pagaria ....</p>
+<p> </p>
+<p>Você vai erradicar alguns[%dic:STR_DIC_M_LF4_C_Rottentree_Green_54_An] Areia [%dic:STR_DIC_M_LF4_C_Agrint_Green_54_An] para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu aprecio isso, [%username].</p>
+<p> </p>
+<p>Há muito trabalho a ser feito nas planícies de Hanarkand.</p>
+<p> </p>
+<p>Apenas mate o suficiente para que eles não incomodem minha pesquisa. Talvez isso envie uma mensagem para o resto deles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Duvido, mas veremos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ocupado? Eu sou quem está ocupado! Eu tenho pesquisa!</p>
+<p> </p>
+<p>Mas você é um soldado atrevido em armas ... um guerreiro. Você cortou e cortam e é isso!</p>
+<p> </p>
+<p>Esqueça, [%username]! Eu vou fazer isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou verificar você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta. Bom, bom. Estou brincando com um dilema filosófico em sua ausência, e talvez você possa me ajudar com isso.</p>
+<p> </p>
+<p>Você já se perguntou por que você luta tão bem? Experiência no campo, ou você nasceu com ele? Pense nisso ....</p>
+<p> </p>
+<p>A propósito, você matou aqueles que murcharam e agrotos de folhas de folhas curtas para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Pesquise o quanto você quiser agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é o melhor, [%username]!</p>
+<p> </p>
+<p>Tudo bem, tenho muito trabalho a fazer agora. Mas pense na minha pergunta ... dê alguns dias e me avise.</p>
+<p> </p>
+<p>Aqui está um pouco para o seu tempo, meu amigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Rotrons e Agrints.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF4_C_Rottentree_Green_54_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF4_C_Agrint_Green_54_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Yereos].</p></step>
+</steps>
+<p>Mate rotrons e agriformas que estão interrompendo as investigações de Yereos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yereos disse que não conseguiu se concentrar em sua pesquisa porque Rotrons murcha e agrites de folhas curtas estavam por toda parte.</p>
+<p> </p>
+<p>Ele pediu sua ajuda, então você se livrou das criaturas interferentes em Hanarkand Plains para ele. Quando você voltou, ele agradeceu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

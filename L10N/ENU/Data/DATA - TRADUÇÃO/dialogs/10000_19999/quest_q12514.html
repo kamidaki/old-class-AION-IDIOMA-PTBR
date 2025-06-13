@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Loras me deu uma missão secreta para garantir a área ao redor das ruínas da tristeza.</p>
+<p> </p>
+<p>Ela provavelmente quer fazer os preparativos para uma batalha.</p>
+<p> </p>
+<p>Não entendo por que ela era secreta sobre esse pedido. Afinal, temos isso para os asmodianos e devemos nos preparar para a batalha.</p>
+<p> </p>
+<p>[%username], seria útil para os Elyos se você pudesse matar o [plur][%dic:STR_DIC_M_LDF5A_B6_Crestlich_Head_62_n]nas ruínas da tristeza.</p>
+<p> </p>
+<p>Oh sim, por favor informe [%dic:STR_DIC_LDF5a_Ambros_E]Depois de matar os Crowncomb Crestliches.</p>
+<p> </p>
+<p>Centurion Loras disse que essa pessoa deve ser informada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>As ruínas da tristeza parecem ser mais perigosas do que o esperado.</p>
+<p> </p>
+<p>Mas há uma saída.</p>
+<p> </p>
+<p>Os elementos perturbadores devem ser removidos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que a paz foi restaurada nas ruínas da tristeza.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Centurion Loras enviou você?</p>
+<p> </p>
+<p>Agora o trabalho pode começar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LDF5A_B6_Crestlich_Head_62_n]([%2]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_LDF5a_Ambros_E].</p></step>
+</steps>
+<p>Elimine os presos de Crowncomb perto das ruínas da tristeza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rigas contou sobre a missão de Loras de proteger as ruínas da tristeza e solicitou sua ajuda.</p>
+<p> </p>
+<p>A pedido dela, você destruiu os Crowncomb Crestliches nas ruínas da tristeza. Quando você se reportou a Ambros, ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

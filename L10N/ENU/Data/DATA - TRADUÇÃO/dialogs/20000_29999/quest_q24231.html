@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os aldeões basfetados reclamaram que alguns itens haviam sido roubados deles há vários meses.</p>
+<p> </p>
+<p>A maioria dos itens roubados foi feita de metal.</p>
+<p> </p>
+<p>Investigei o caso e determinei que os revolucionários lefaristas tinham algo a ver com isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">O que posso fazer?</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_LehparAsD_14_An]No túmulo, os ladrões den têm uma espada muito especial.</p>
+<p> </p>
+<p>Parece que essa arma foi forjada usando itens de metal roubado da Altgard.</p>
+<p> </p>
+<p>Você estaria me fazendo um ótimo serviço com este caso se pudesse adquirir o [%dic:STR_DIC_I_quest_24231a].</p>
+<p> </p>
+<p>Pode não ser possível devolver os itens aos aldeões Basfelt, mas tenho certeza de que eles poderiam usar os materiais. Portanto, não se preocupe com isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você foi capaz de obter o [%dic:STR_DIC_I_quest_24231a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a velha espada da gangue de ladrões graves.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A espada está muito desgastada ... é praticamente inútil agora. O que os ladrões estavam fazendo com isso?</p>
+<p> </p>
+<p>Gostaria de saber se os moradores ainda podem usá -lo?</p>
+<p> </p>
+<p>Pelo menos eu posso fechar este caso agora. Gostaria de agradecer o nome dos moradores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_quest_24231a]do[%dic:STR_DIC_M_LehparAsD_14_An] e trazê -lo para [%dic:STR_DIC_N_DF1A_Brodir_E].</p>[%collectitem]</step>
+</steps>
+<p>Pegue a espada do esgrimista do túmulo e leve -o para Brodir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brodir contou sobre os ladrões de sepultura em Altgard.</p>
+<p> </p>
+<p>Você tirou a velha espada de um ladrão grave e a trouxe para Brodir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

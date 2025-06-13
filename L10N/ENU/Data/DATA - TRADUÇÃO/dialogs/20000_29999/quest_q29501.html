@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Eu tenho um pequeno problema. Eu tenho discutido com um colega meu. Ele diz que o termo "meatshield" não é depreciativo aos templários.</p>
+<p> </p>
+<p>Discordo. Os templários podem ser protetores em primeiro lugar, mas há muito que eles podem realizar no campo de batalha não relacionados a serem atingidos.</p>
+<p> </p>
+<p>Chamando um templário de "campo de carne", mesmo que ele esteja protegendo você, ganha uma viagem de mão única ao obelisco na minha experiência. O que você acha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Prefiro não entrar nisso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hits muito perto de casa? Muito bem-eu respeitarei sua privacidade.</p>
+<p> </p>
+<p>De qualquer forma, tenho algo que pode interessar a um templário de sua habilidade. O templo da destruição emitiu recentemente uma declaração oficial promovendo o uso de maior estigma. Você usou maior estigma antes, não é?</p>
+<p> </p>
+<p>O que estou dizendo? Claro que você tem! Você é o renomado[%username]! Agora então ... O Templo da Destruição também me forneceu um novo estigma em folha para emitir os melhores templários. Você está interessado em ganhar um?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você não podia resistir, [%username].</p>
+<p> </p>
+<p>Agora, então, o templo da destruição não está procurando uma homenagem chique. Eles só querem saber que seu maior estigma está sendo utilizado no campo de batalha.</p>
+<p> </p>
+<p>Eles só querem recompensar os templários dignos que não deixam o estigma maior desperdiçar. Então ... para provar a si mesmo, por que você não usa *** ... 10 vezes. Faça isso, e eu o recompensarei com um novo estigma maior.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma tarefa fácil, [%username]. A recompensa vale bem o esforço mínimo necessário.</p>
+<p> </p>
+<p>Não apenas diminua isso-o templo da destruição não está emitindo esse novo estigma maior para nenhum templário que pede.</p>
+<p> </p>
+<p>Apenas pense nisso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, eu vou pensar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terminou sua prática, [%username]?</p>
+<p> </p>
+<p>Diga -me, você usou *** 10 vezes?</p>
+<p> </p>
+<p>Não tenho como saber com certeza, mas vou aceitar a palavra de um templário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você tem minha palavra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sabia que essa tarefa não era demais para um templário de sua habilidade. Na verdade, acho que foi um pouco fácil demais, para ser honesto.</p>
+<p> </p>
+<p>No entanto, tome esse estigma maior como sua recompensa. O Templo da Destruição ficará satisfeito por estar sendo bem utilizado.</p>
+<p> </p>
+<p>Agora ... pessoalmente ... eu recomendo ir para Gelkmaros e usá -lo para fazer guerra contra o Balaur e os Elyos. Os Daevas poderiam usar sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use uma maior habilidade de estigma ([%2]/10)</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Traufnir].</p></step>
+</steps>
+<p>O templo da destruição está emitindo um maior estigma a templários dignos. Use *** para provar que você é proficiente usando maior estigma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Traufnir, com o apoio do templo da destruição, está emitindo um maior estigma a templários que são proficientes em usá -los.</p>
+<p> </p>
+<p>Você seguiu as instruções de Traufnir e retornou depois de se tornar mais proficiente com foder. Ele lhe deu um novo estigma maior, conforme prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

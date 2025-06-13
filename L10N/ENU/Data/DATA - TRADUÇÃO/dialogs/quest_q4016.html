@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando os Elyos chegaram a Brusthonin? Quantos deles existem? Se atacarmos sem mais informações, pediremos uma surra.</p>
+<p> </p>
+<p>Se nada mais, a equipe trabalhista provavelmente derrubou os Elyos que estamos em algum lugar por perto, para que não possamos hesitar.</p>
+<p> </p>
+<p>Antes de fazer qualquer coisa, devemos explorar o posto avançado de Elyos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tem pessoas suficientes para isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade. É por isso que estou falando com você.</p>
+<p> </p>
+<p>Você se infiltrou no acampamento Elyos e descobriu os mortos sem ser detectado. Não tenho certeza de que um do meu povo poderia ter feito isso.</p>
+<p> </p>
+<p>Precisamos de alguém que possa lidar com várias tarefas de uma só vez. Você está dentro?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que você diria isso.</p>
+<p> </p>
+<p>Precisamos abaixar o moral deles, descobrir o quão fortes eles são e quais armas estão usando-e, por fim, precisamos retaliar para os trabalhadores mortos.</p>
+<p> </p>
+<p>Dado que a equipe foi morta com armas tão nítidas, [%dic:STR_DIC_M_LightDevaAsD_24_An] S ou[%dic:STR_DIC_M_LightDevaFiD_24_An] S deve ser seus principais alvos.</p>
+<p> </p>
+<p>Como prova do seu sucesso, traga de volta um[%dic:STR_DIC_I_QUEST_4016a] em que o sigilo do santuário está gravado. Vá em frente na sombra de Azphel-e apaga a luz Elyos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu os cadáveres abatidos da equipe-como você pode recusar?</p>
+<p> </p>
+<p>Eu só ... eu não posso acreditar.</p>
+<p> </p>
+<p>Vamos resolver nosso problema por nós mesmos, [%username]. Se foi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nunca imaginei que encontrei os Elyos em Brusthonin.</p>
+<p> </p>
+<p>Por que eles viriam aqui? Eles esperam criar um pouso para atacar asmodae?</p>
+<p> </p>
+<p>Me desculpe, [%username]. Eu estava perdido em pensamento. Você lidou com os Elyos? Você tomou[%dic:STR_DIC_I_QUEST_4016a]é como evidência?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu coloquei a luz deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, estamos falando o mesmo idioma?</p>
+<p> </p>
+<p>Volte para as planícies Vigrid agora! Livre -se dos Únidos do Guardian e dos combatentes do Guardian e leve [%dic:STR_DIC_I_QUEST_4016a] S como evidência.</p>
+<p> </p>
+<p>Estamos ficando sem tempo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vingou nossa equipe de trabalho, [%username]. Eu gostaria que seu ataque os assustasse. Ainda assim, você tem minha gratidão.</p>
+<p> </p>
+<p>Agora devemos contar aos colonos as notícias-os Elyos estão em Brusthonin. E o combate já começou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_LightDevaAsD_24_An] Areia [%dic:STR_DIC_M_LightDevaFiD_24_An] S, e leve as evidências para [%dic:STR_DIC_N_Vinduer].</p>[%collectitem]</step>
+</steps>
+<p>Vá para as planícies Vigrid, livre -se dos Elyos e colete marcas de Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vinduer disse para você lançar um ataque preventivo contra os Elyos em retaliação pelo assassinato da equipe trabalhista. O ataque também pretendia enfraquecer o inimigo antes de descobrirem as forças asmodianas.</p>
+<p> </p>
+<p>Você foi para as planícies Vigrid, se livrou dos assassinos e gladiadores de Elyos, coletou as evidências e a levou para Vinduer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

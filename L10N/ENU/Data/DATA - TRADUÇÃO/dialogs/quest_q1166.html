@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As criaturas da floresta estão se tornando vítimas dessa contaminação cruel. Mais e mais são afetados a cada dia.</p>
+<p> </p>
+<p>Ninguém vem mais aqui, e não é surpreendente. Quem quer dar uma caminhada pacífica na clareira quando mutantes vorazes se escondem nas sombras ao redor?</p>
+<p> </p>
+<p>Temos que fazer algo! Devemos parar o envenenamento da floresta ... antes que seja tarde demais ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que podemos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os gigantes Rakeclaw Frillnecks, Aranhas venenosas e plumas glade parecem ser as criaturas mais afetadas. Você pode querer ajudá -los, mas não se deixe enganar. Eles são muito perigosos.</p>
+<p> </p>
+<p>Recentemente, fui picado, o que significa que não posso coletar as amostras de que preciso. Se eu pudesse analisá -los, poderia chegar ao fundo de tudo isso.</p>
+<p> </p>
+<p>Você poderia coletar amostras para mim, Daeva?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você é um amigo da floresta.</p>
+<p> </p>
+<p>Você precisará caçar gigantes gigantes do rakeclaw, Aranhas venenosas e plumas glade. Esta é a única maneira de obter as amostras de que preciso.</p>
+<p> </p>
+<p>Vou precisar de pelo menos 10 para progredir em minha pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você subestima o significado disso. Qual é a utilidade em combater uma guerra, quando o mundo que você espera herdar está sendo envenenado?</p>
+<p> </p>
+<p>Você, Daeva, é o único que pode fazer a diferença aqui.</p>
+<p> </p>
+<p>Peço que você reconsidere, em nome da floresta!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você coletou as amostras que pedi?</p>
+<p> </p>
+<p>Eu realmente temi pela sua segurança, Daeva ou não. Estou aliviado por vê -lo sem ferimentos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu colecionei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não coletou nada?!</p>
+<p> </p>
+<p>Eu pensei ter deixado claro. Sem essas amostras, também podemos desistir da floresta.</p>
+<p> </p>
+<p>Por favor, estou ansioso para continuar minha pesquisa e terminar esta praga para sempre.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Muito obrigado. Essas amostras podem resolver um enorme problema antes que ele sai do controle.</p>
+<p> </p>
+<p>Dedicarei todos os meus recursos ao estudo das amostras que você trouxe e determinar a causa da contaminação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar amostras de criaturas contaminadas para [%dic:STR_DIC_LA29].</p>[%collectitem]</step>
+</steps>
+<p>A contaminação da floresta está se tornando extremamente grave. Para encontrar sua causa, a gigante gigante do Rakeclaw Frillcks, Aranhas venenosas e plumas glade, pegue amostras de seus fluidos corporais e os leve para Lepios.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lepios estava preocupado com o fato de a floresta estar se tornando cada vez mais contaminada.</p>
+<p> </p>
+<p>Você coletou amostras de fluidos corporais contaminados de nó setães, Aranhas e plumas, e as trouxe para Lepios para que ele pudesse encontrar a causa da contaminação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

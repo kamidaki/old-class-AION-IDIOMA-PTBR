@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua aparência não faz justiça à sua reputação, [%username]. Eu já vi muitos Daevas como você vir e ir ... atirando em estrelas, nada mais. Eles brilham e depois desaparecem rapidamente.</p>
+<p> </p>
+<p>Mas eles dizem que você é um Daeva qualificado! Talvez o mais hábil[%userclass] em todo o inggison.</p>
+<p> </p>
+<p>Então, estou pedindo sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provavelmente já está ciente disso, mas Inggison tem muitos problemas. É a terra de Balaur, então os problemas vêm naturalmente para este lugar.</p>
+<p> </p>
+<p>Minha Guilda Hushblade não tem mão de obra para lidar com todos os problemas aqui. É por isso que você e eu estamos conversando, [%username].</p>
+<p> </p>
+<p>Não me importo com o que você pensa de mim e tenho certeza de que o sentimento é mútuo do seu lado. Isso é apenas negócios. Você nos ajuda, eu vou te pagar. Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu imaginei tanto, [%username]. O único caminho para a consciência de um Daeva é através de sua bolsa de moedas. A honra tem um preço hoje em dia.</p>
+<p> </p>
+<p>Se você concluir minhas tarefas, tenho uma pequena recompensa por você. Ok, é muito mais do que "Little".</p>
+<p> </p>
+<p>Eu preciso que você colete um[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]Defina e mostre -os para mim. Quero ver como você se lida antes de lhe dar grandes empregos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você verá como um verdadeiro Daeva funciona agora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria ter conhecido o mesmo, [%username]. Eu não disse a palavra mágica: Kinah.</p>
+<p> </p>
+<p>Vocês recentes do Daevas não têm senso de dever ou honra ... apenas um senso de direito.</p>
+<p> </p>
+<p>Você pode deixar minha visão sempre que quiser.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aqui está um plano-faça seu próprio trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada mal, Daeva, nada mal. Eu estimei que você demoraria um pouco mais para concluir a missão.</p>
+<p> </p>
+<p>É bom ficar surpreso às vezes.</p>
+<p> </p>
+<p>Vamos ver o que você conseguiu ... mostre -me os decretos da bravura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"São o suficiente para você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está brincando? Eu imaginei tanto, [%username].</p>
+<p> </p>
+<p>Daevas hoje em dia são todos conversas. Nenhum senso de orgulho em suas missões. Você quer me impressionar?</p>
+<p> </p>
+<p>Então vá completar missões importantes como a que acabei de ordenar que você completasse! Traga -me o [%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]definir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certificados importantes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz por estar errado sobre você ... os rumores são verdadeiros. Você é um muito bom[%userclass].</p>
+<p> </p>
+<p>Com tantos decretos de valor, não tenho escolha a não ser reconhecer seus serviços em Inggison.</p>
+<p> </p>
+<p>Aqui está a sua recompensa ... é um círculo. Um dos melhores que você já encontrará.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar um[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]defina e leve -os para [%dic:STR_DIC_N_Yulia].</p>[%collectitem]</step>
+</steps>
+<p>Yulia, general da Brigada da Guilda Hushblade, prometeu lhe dar uma boa recompensa se você concluísse missões importantes. Traga de volta decretos de bravura para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yulia disse que sua Guilda não pode lidar com todos os problemas em Inggison, e ela prometeu recompensá -lo se você concluísse missões importantes.</p>
+<p> </p>
+<p>Depois de concluir com êxito missões suficientes, você deu a ela decretos de valor e recebeu um círculo como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

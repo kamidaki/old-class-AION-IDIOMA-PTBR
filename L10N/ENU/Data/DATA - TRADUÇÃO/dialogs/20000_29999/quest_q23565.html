@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo está frio e tudo dói, AK ...</p>
+<p> </p>
+<p>Shugo quer ir ao hospital, mas sem dinheiro não é possível, AK ...</p>
+<p> </p>
+<p>Por favor, pergunte [%dic:STR_DIC_N_LDF5b_Nursringring_E] Se Shugo pode ter algum remédio barato, Akakak ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo ao Hospital Goldrinyerk, onde temos o melhor serviço médico, AK.</p>
+<p> </p>
+<p>O que você precisa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Declare as condições de Illinrk.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é muito infeliz, Ak.</p>
+<p> </p>
+<p>Mas o Nurserinriner não pode dar remédios gratuitamente, Akakak.</p>
+<p> </p>
+<p>Mas como a situação parece tão sombria, Shugo deve fornecer um conselho gratuito, Akak.</p>
+<p> </p>
+<p>Se Daeva eliminar [%dic:STR_DIC_M_LDF5B_E_Hiiv_64_n]Perto aqui, Daeva pode receber [%dic:STR_DIC_I_QUEST_23565A]. Cozinhe aqui e coma. Você então se sentirá melhor, AK.</p>
+<p> </p>
+<p>Illinerk está doente. Daeva pode obter um pouco e trazê -lo, Akak?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tosse e</p>
+<p> </p>
+<p>Isso dói, Ak.</p>
+<p> </p>
+<p>Daeva recebeu medicamentos do berçário, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o remédio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deveria ser remédio do Wild Wasteland Airon?</p>
+<p> </p>
+<p>Não há nada que possa ser feito, terei que me contentar com isso, pois não tenho dinheiro ...</p>
+<p> </p>
+<p>Obrigado, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Nursringring_E]%.</p></step>
+<step><p visible="[%3]">Obter [%dic:STR_DIC_I_QUEST_23565A] e leve para [%dic:STR_DIC_N_LDF5b_Iring_E].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o remédio que você rapidamente obteve de aeronsores de terrenos selvagens e trazê -lo para Illinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obteve um remédio para Illinerk, que não tinha dinheiro para medicina.</p>
+<p> </p>
+<p>É triste ver que Illiner está doente, mas ele parece estar se sentindo um pouco melhor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Shugos estão realizando trabalhos de reparo nas muralhas do sul, mas os brilhos do campo de neve estão incomodando e pediram ajuda.</p>
+<p> </p>
+<p>Como você sabe, os Shugos dominam o mercado comercial, e é por isso que não estamos em posição de recusar o pedido deles.</p>
+<p> </p>
+<p>[%username], você poderia eliminar o [%dic:STR_DIC_M_LDF5B_A2_Spakle_65_n]que estão incomodando os trabalhadores?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>As muralhas ajudam a proteger a região, mas precisam constantemente de reparo.</p>
+<p> </p>
+<p>O extremo sul das muralhas, em particular, foi negligenciado por um longo tempo e precisa de muito trabalho.</p>
+<p> </p>
+<p>Os Shugos são responsáveis ​​pelo trabalho de construção, mas os brilhos dos campos de neve estão causando atrasos.</p>
+<p> </p>
+<p>O que aconteceu com o Snowfield brilha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu pensei, você realizou a tarefa perfeitamente.</p>
+<p> </p>
+<p>Vou dizer ao comerciante de Shugo que o trabalho de construção pode continuar quando o brilho do campo de neve foi morto.</p>
+<p> </p>
+<p>Ufa, e agora eu deveria cuidar dos Shugos também.</p>
+<p> </p>
+<p>Mas tenho menos coisas com que me preocupar agora, graças à sua ajuda, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_A2_Spakle_65_n]que estão interferindo nas investigações. ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Ratia_E].</p></step>
+</steps>
+<p>Mate o campo de neve brilha para que o shugo possa fazer o progresso construir o muro de defesa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Lathia, você matou o campo de neve brilha. Eles estavam interrompendo o trabalho de reparo do Bulwark dos Shugos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

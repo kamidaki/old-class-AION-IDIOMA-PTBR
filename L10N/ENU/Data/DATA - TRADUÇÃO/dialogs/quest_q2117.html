@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem tempo para um emprego, [%username]?</p>
+<p> </p>
+<p>Certamente você viu os pesados ​​números de [%dic:STR_DIC_M_Kalnif_6_An] está ao redor do cruzamento de Anturoon. Eles não são nada além de problemas-entre atacando nossos corredores e comendo nossa principal fonte de alimento, é uma maravilha que ainda estamos vivos!</p>
+<p> </p>
+<p>Oh, comida ... veja, comemos muito Brax aqui em cima. Mas Brax também é a principal presa para o [%dic:STR_DIC_M_Kalnif_6_An] S.</p>
+<p> </p>
+<p>Se isso continuar por muito mais tempo, o Brax será caçado para fora da área e voltaremos a mastigar brilhos e grama. Isso não faz muito pela força de um invasor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não posso imaginar que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você vê nosso dilema.</p>
+<p> </p>
+<p>Não tenho tempo para chegar lá-não com os relatórios que Tobu espera-mas certamente você pode nos ajudar.</p>
+<p> </p>
+<p>Saia para os campos e mate alguns[%dic:STR_DIC_M_Kalnif_6_An] para nós. Não podemos nos livrar de todos eles, mas se você puder cortar os números deles, ficaríamos agradecidos.</p>
+<p> </p>
+<p>Se você precisar de motivação, imagine morder um inseto agradável e quente. Mmm ... crocante ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Heh-que nunca deixa de motivar! Já tentou brilhar, a propósito? As asas ficam presas nos meus dentes ...</p>
+<p> </p>
+<p>Tudo bem, vá lá e caça nove [%dic:STR_DIC_M_Kalnif_6_An] para mim.</p>
+<p> </p>
+<p>Volte quando terminar e verei que você é bem pago.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem tempo?</p>
+<p> </p>
+<p>O que você gosta de um bom inseto churrasco nesta época do ano?</p>
+<p> </p>
+<p>Então saia daqui. Vou encontrar tempo para fazer isso sozinho. E você se chama de Raider ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Experimente com molho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga -me direto, garoto.</p>
+<p> </p>
+<p>Devo começar a estocar bugs?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não há necessidade-muito menos Karnifs agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>Obrigado pela mão, [%username]. É bom saber que podemos esperar a carne. E poderíamos usar mais[%userclass]é como você por aí.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Use -o com sabedoria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_Kalnif_6_An]%s, que estão dizimando a população de bráxia local ([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mijou].</p></step>
+</steps>
+<p>Mijou está preocupado com o fato de os Karnifs estarem comendo todo o Brax local. Hunt Karnif suficiente para proteger a população de Brax.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mijou disse que estava preocupada com o fato de Karnifs estar caçando o Brax local da área de travessia de Anturoon. Ela pediu que você abate a população de Karnif para proteger a melhor fonte de alimento dos Raiders. Você fez o que lhe foi perguntado e recebeu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

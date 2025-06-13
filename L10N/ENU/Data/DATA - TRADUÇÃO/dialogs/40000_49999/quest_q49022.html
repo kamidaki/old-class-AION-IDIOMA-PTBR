@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q49020</questid>
+<questname>드미트로의 지령</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: o Centurion Relyt da tropa da Expedição de Pandaemonium</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: Destrua os Elyos que invadiram Gelkmaros quando a brecha foi aberta!</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho grandes problemas, acredite em mim!</p>
+<p> </p>
+<p>Eu tenho muito o que fazer, e agora também tenho que lidar com o ataque de Elyos.</p>
+<p> </p>
+<p>[%username] estou tão satisfeito que você está aqui.</p>
+<p> </p>
+<p>Os jovens aqui têm aversão ao trabalho.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua ajuda evitou uma situação perigosa.</p>
+<p> </p>
+<p>Nós dois parecem ter algumas coisas em comum.</p>
+<p> </p>
+<p>Coisas como bravura e determinação.</p>
+<p> </p>
+<p>De qualquer forma, você tem meus sinceros agradecimentos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os Elyos que estão atacando Gelkmaros ([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Dmytro].</p></step>
+</steps>
+<p>Ordem de operação urgente: Derrote os Elyos que estão atacando Gelkmaros enquanto a brecha está aberta e se reporte a Relyt.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos atacaram Gelkmaros através da fenda. Você venceu os Elyos atacantes e relatou a Relyt.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

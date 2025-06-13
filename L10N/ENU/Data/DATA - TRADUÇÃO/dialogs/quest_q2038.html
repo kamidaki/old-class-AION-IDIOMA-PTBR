@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Presumo que você ouviu os rumores? Daevasas respeitáveis ​​desaparecendo em Morheim? Causou um tumulto.</p>
+<p> </p>
+<p>A busca atingiu uma parede de pedra, mas meu intestino diz revolucionários lefaristas.</p>
+<p> </p>
+<p>Pense nisso. Ninguém além dos lefaristas teria a audácia ou capacidade de conseguir isso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um tempo atrás, enviei um Daeva chamado Pagimkin para assistir aos revolucionários lefaristas. Ele descobriu algo sobre [%dic:STR_DIC_W_DF2_SUB_D5_ID], mas então ele desapareceu.</p>
+<p> </p>
+<p>Meu pedido para você, [%username], é entrar lá e resgatar Pagimkin.</p>
+<p> </p>
+<p>Estou apostando Pagimkin e todos os Daevas que estão faltando estão naquele laboratório.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"O que eles estão planejando?"</act>
+</selects>
+<voice file="Q2038-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está uma bagunça, [%username]!</p>
+<p> </p>
+<p>Você descobriu se a Cidadela Lefarista está por trás de nossos danos desaparecidos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT5_1">"Isso, e mais ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Isso ... isso é verdade?</p>
+<p> </p>
+<p>Eles usam força para extrair o Aether de Daevas sequestrado para obter pedras de estigma?</p>
+<p> </p>
+<p>Então é verdade ... mesmo que eu não queira acreditar.</p>
+<p> </p>
+<p>O pandaemonium precisa saber sobre isso de uma só vez.</p>
+<p> </p>
+<p>Vou mandar você diretamente para o pandaemonium. Por favor, relate -se [%dic:STR_DIC_N_Kvasir], o capitão dos Fenris Fangs, assim que você estiver lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Teleporte para Kvasir</act>
+</selects>
+<voice file="Q2038-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É sempre urgente quando um Daeva que não é um dos meus homens vem procurando por mim pessoalmente.</p>
+<p> </p>
+<p>Vamos ouvir isso, [%userclass].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Notícias graves, senhor ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O QUE? Você está falando sério?!</p>
+<p> </p>
+<p>Eu não posso acreditar nisso. Escalas, como os revolucionários lefaristas podem fazer ... é apenas ... doente!</p>
+<p> </p>
+<p>Ok, não há tempo para ficar agitado. Estou nisso, [%username]. Você vai comprar uma bebida grande.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Mirka].</p></step>
+<step><p visible="[%3]">Vá para [%dic:STR_DIC_W_DF2_SUB_D5_ID] e encontre pagimkin.</p></step>
+<step><p visible="[%6]">Descartar de [%dic:STR_DIC_M_LehparFiCrazyNamedQ_39_Ae].</p></step>
+<step><p visible="[%9]">Voltar para [%dic:STR_DIC_N_Mirka].</p></step>
+<step><p visible="[%12]">Relatar o resultado[%dic:STR_DIC_N_Kvasir].</p></step>
+</steps>
+<p>Ordem: Houve notícias sobre vários Daevas ausentes. Vá ver Mirka.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O agente de Mirka, Pagimkin, desapareceu enquanto investigava Daevas, em um local chamado Laboratório de Wonshikutz, na Cidadela Lefarista. Ela o enviou para encontrá -lo.</p>
+<p> </p>
+<p>Quando você encontrou o laboratório, descobriu que Pagimkin estava morto e os lefaristas estavam tirando as almas do Daevas para criar pedras de estigma artificial.</p>
+<p> </p>
+<p>Depois de explodir Wonshikutz, gerente do laboratório, você escapou e relatou o plano diabólico a Mirka e o capitão das presas dos Fenris, Kvasir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

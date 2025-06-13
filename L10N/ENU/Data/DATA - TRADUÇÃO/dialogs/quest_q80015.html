@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei por que você está aqui, [%username]. Eu ouvi as histórias sobre todos os doces em todos os lugares.</p>
+<p></p>
+<p>Sim, foram as coisas que eu fiz. Sim, os Shulacks roubaram. Não, não estou feliz. Sim, eu gostaria de um pouco de cerveja. Não, eu não vou pagar por isso. Sim, sinto muito. Não, eu não quero que você me bata.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Er, o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, nada. Estou apenas ... farto.</p>
+<p></p>
+<p>Os Shulacks se tornaram socialistas, ou algo assim. Roubou o [%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A] S eu fiz para todos e comecei a entregá -los aos monstros explodidos do lado de fora! Monstros! Comer doces!</p>
+<p></p>
+<p>Enfim, eu preciso deles de volta. A Harvest Revel está em andamento, e o rei de abóbora deve ter suas guloseimas para distribuir. Talvez ... talvez você possa buscá -los?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>R ... realmente? Obrigado, [%username]! Talvez a folga da colheita fique bem, afinal!</p>
+<p></p>
+<p>Eu preciso que você colete dez [%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A] S. Eles devem ser fáceis de ver, e duvido que os monstros realmente se preocupem em tentar comê -los.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não se preocupe. Vamos ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu vejo.</p>
+<p> </p>
+<p>Bem, não posso pedir mais de você, suponho-não posso me apoiar em você por tudo.</p>
+<p> </p>
+<p>Aproveite o seu dia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p></p>
+<p>Você tem o [%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A] S? Todos os dez?</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu penso que sim!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, isso não está certo!</p>
+<p></p>
+<p>Por favor, apresse -se e colete o [%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A] antes que seja tarde demais. Vou precisar de cerca de dez de você antes de poder recompensá -lo pelo seu tempo.</p>
+<p></p>
+<p>Sangue para sangue! Boa sorte!</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Eu já posso sentir o cheiro!</p>
+<p></p>
+<p>Bem, eles estão um pouco sujos, mas nada irreversível. Vou limpá -los e entregar a todos imediatamente.</p>
+<p></p>
+<p>Obrigado, amigo! Sangue para sangue!</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o [%dic:STR_DIC_I_WORLD_EVENT_POTION_HP_MP_40A] S você se recupera para [%dic:STR_DIC_N_event_Tali].</p>[%collectitem]</step>
+</steps>
+<p>Encontre os pirulitos de abóbora deixados por aí e devolvam -os a Tali.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou os pirulitos de abóbora deixados deitado e os trouxeram para Tali.</p>
+<p></p>
+<p>Tali ficou claramente aliviado e agradeceu por sua ajuda antes de recompensá -lo bem por todo o seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah ... ahhh ... ahhhhchoo!</p>
+<p> </p>
+<p>Uhhh ... Estou lá fora há muito tempo, longe do conforto de uma lareira quente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você está doente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Doente? Não, eu assumi espirrando como um esporte competitivo. Indo bem, você não diria?</p>
+<p> </p>
+<p>Claro que estou doente! O que mais me colocaria ... aaah ... ahchooo! Ugh, o que mais me colocaria em um estado tão miserável?</p>
+<p> </p>
+<p>Talvez você possa me ajudar em vez de ficar ali zombando dos doentes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É mais parecido.</p>
+<p> </p>
+<p>Eu preciso de Rubus e Ruko. Então poderei fazer suco de rubus e cobertores, para que eu possa me recuperar.</p>
+<p> </p>
+<p>Você vai fazer isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rubus e Ruko são abundantes por aqui. Você provavelmente teria mais problemas para evitá -los.</p>
+<p> </p>
+<p>Certifique -se de manter a vigilância! Os Kalgolems e Aranhas não hesitarão em atacar se você dar as costas a eles.</p>
+<p> </p>
+<p>Apesar do seu snark, eu não seria capaz de me perdoar se algo acontecesse com você enquanto você estava me ajudando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É muito difícil pegar coisas que você tropeçaria?</p>
+<p> </p>
+<p>Um bom daeva que você é.</p>
+<p> </p>
+<p>Vou apenas deitar aqui, então, e espero que me torne bem simplesmente pela pura força da vontade! Bom dia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pode melhor sorte em seu caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ughh ... eu sinto que os Krall estão estampados pela minha cabeça.</p>
+<p> </p>
+<p>E eu não consigo parar de tremer. Espero que você tenha encontrado o que pedi. Eu preciso encerrar e ter um gole de algo saudável o mais rápido possível!</p>
+<p> </p>
+<p>Você tem meus suprimentos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, não!</p>
+<p> </p>
+<p>Cinco Rubus e dez grupos de Ruko-é isso que eu pedi. Meus olhos estão perfeitamente saudáveis, eu vou saber!</p>
+<p> </p>
+<p>Desculpe. Não pretendo gritar. Eu me sinto horrível .... por favor, volte quando você coletar meus suprimentos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, é isso. Você trouxe todos os Rubus e Ruko que eu preciso. Isso é maravilhoso, realmente maravilhoso.</p>
+<p> </p>
+<p>Finalmente, posso fazer algo sobre esse frio assustador. Vou ter esses rubus espremidos em pouco tempo.</p>
+<p> </p>
+<p>Por favor. Você deve aceitar isso como pagamento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir rubus e ruko e trazê -los para [%dic:STR_DIC_N_Leipos].</p>[%collectitem]</step>
+</steps>
+<p>Reúna Rubuses e Ruko do Altamia Ridge e leve -os para Vascus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vascus estava se sentindo doente e pediu que você encontrasse alguns Rubus e Ruko para que ele pudesse fazer suco nutritivo e cobertores quentes.</p>
+<p> </p>
+<p>Você coletou os suprimentos e os trouxe de volta para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A propósito ... na fazenda Trieed, alguma coisa ... aconteceu?</p>
+<p> </p>
+<p>Você viu algo estranho?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Estranho? O quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmph. Você saberia.</p>
+<p> </p>
+<p>Bestas perseguem nossos campos à noite ... não sou o único a vê -las!</p>
+<p> </p>
+<p>Várias pessoas escaparam por pouco do ataque!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O quê, Spriggs? Worgs?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>No começo, pensei que era apenas uma conversa. Você vê as coisas pelo canto do olho quando trabalha até tarde. Mas eu vi um[%dic:STR_DIC_M_TrifidMon]Com meus próprios olhos, em minha própria fazenda!</p>
+<p> </p>
+<p>Eu estava fertilizando tarde uma noite. Eu senti essa sensação estranha, como se algo estivesse logo atrás de mim. Eu olhei para trás, e lá estava!</p>
+<p> </p>
+<p>Eu estressei minhas costas caindo, fiquei tão chocado! Agora a cura das minhas costas e eu preciso ervas daninhas. Mas tenho medo do monstro! Você me ajudou uma vez. Você fugiria isso [%dic:STR_DIC_M_TrifidMon]para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Se você matar o [%dic:STR_DIC_M_TrifidMon], Vou te dar uma recompensa bonita.</p>
+<p> </p>
+<p>Não se preocupe com o dinheiro. Esta colheita foi incrível!</p>
+<p> </p>
+<p>Vou esperar pelo seu retorno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sou só eu, [%username]. Essas coisas perseguem todos os nossos campos.</p>
+<p> </p>
+<p>Se nada for feito, alguém será ferido!</p>
+<p> </p>
+<p>Por favor, saia desses monstros para que possamos trabalhar sem medo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles são inventores, agricultor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão nervoso!</p>
+<p> </p>
+<p>Os monstros vieram, não?</p>
+<p> </p>
+<p>Você os matou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Colheu -lhes, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahhhh! Não há mais medo naquelas noites tarde!</p>
+<p> </p>
+<p>Aqui, pegue isso. Não, você ganhou!</p>
+<p> </p>
+<p>Mais uma coisa? Não conte a Balom sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_M_TrifidMon] S que aparecem à noite ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tekor].</p></step>
+</steps>
+<p>À noite, os monstros aparecem na fazenda Tripeed. Vá para a fazenda de Tekor e mate -os.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tekor temia monstros que se levantassem da fazenda Tripeed à noite para perseguir os moradores.</p>
+<p> </p>
+<p>Você foi à fazenda de Tekor e transformou os monstros em cobertura morta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

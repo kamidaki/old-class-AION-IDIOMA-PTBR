@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41510</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se saiu bem até agora, [%username], mas você ainda chegou tarde demais.</p>
+<p> </p>
+<p>Os Twisters espalharam o [%dic:STR_DIC_OBJ_LDF4b_FOBJ_TankParts1] em toda a área. Se eles não forem recuperados em breve, enfrentaremos longos atrasos à medida que as peças de reposição são fabricadas.</p>
+<p> </p>
+<p>Sua incontestação causou isso. Você pode sair e buscar as peças.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou as peças de Trebuchet?</p>
+<p> </p>
+<p>Fale agora, [%username]. Não tenho tempo a perder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu fiz. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Um pouco empoeirado, mas parece não haver danos.</p>
+<p> </p>
+<p>Bom trabalho, [%username]. Você se redimiu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_LDF4b_FOBJ_TankParts1] e leve-os para [%dic:STR_DIC_N_Debron].</p>[%collectitem]</step>
+</steps>
+<p>Twisters de poeira soaram as peças de Trebuchet em todos os lugares. Traga -os de volta para que DeBron possa iniciar sua montagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>DeBron, um pouco injustamente, culpou você pela presença do Twister de poeira, mesmo sendo você quem os destruiu. Ele encarregou você de coletar as peças de Trebuchet que haviam sido espalhadas pelos Twisters e, em seu retorno, aparentemente ganhou o perdão de DeBron.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

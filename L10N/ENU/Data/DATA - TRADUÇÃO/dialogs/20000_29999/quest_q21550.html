@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q21550</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Acho que agora você está pronto para um estigma maior.</p>
+<p> </p>
+<p>Mas ... como você sabe, essa é uma força extremamente poderosa.</p>
+<p> </p>
+<p>Dar poderes como esses a alguém que não pode controlá -los pode ser perigoso. O Balaur deu um bom exemplo para isso.</p>
+<p> </p>
+<p>Então vá e junte -se ao[%dic:STR_DIC_E_LDF4B_Occupation_Combat] em Tiamaranta, o [%dic:STR_DIC_W_LDF4a_SZ_B1_08]ou o [%dic:STR_DIC_W_IDArena_pvp_D] e prove que você é digno desse poder.</p>
+<p> </p>
+<p>Você também pode provar sua força de luta caçando.</p>
+<p> </p>
+<p>Deixe -me saber qual local combina com você. Vou então expandir seu slot de estigma usando o [%dic:STR_DIC_I_Q11550_stigma].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora me devolva o [%dic:STR_DIC_I_Q11550_stigma]que eu te dei.</p>
+<p> </p>
+<p>[%username], você participou do[plur][%dic:STR_DIC_E_LDF4B_Occupation_Combat]?</p>
+<p> </p>
+<p>Ou com o [%dic:STR_DIC_W_IDArena_pvp_D]...?</p>
+<p> </p>
+<p>Talvez você tenha sido para o [%dic:STR_DIC_W_LDF4a_SZ_B1_08] em vez de?</p>
+<p> </p>
+<p>Enfim, se você me der o estigma misterioso, eu usarei sua energia, [%username], que se manifestou no estigma, para expandir seu maior slot de estigma.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Obrigado, mestre."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>De nada, [%username]. Agora você tem um slot de estigma extra maior! Confira e capacite -se.</p>
+<p> </p>
+<p>Espero que você lute ao lado da tribo Reian até Tiamat e o Balaur se ajoelhar diante de nós!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Prove que você é capaz de lidar [%dic:STR_DIC_N_Vaut]'s[%dic:STR_DIC_I_Q11550_stigma].</p>[%collectitem]</step>
+<step><p visible="[%15]">Traga o [%dic:STR_DIC_I_Q11550_stigma]de volta para [%dic:STR_DIC_N_Vaut].</p></step>
+</steps>
+<p>Prove -se na guerra de cerco em Tiamaranta, no coliseu Crisol ou na colina de Macori, e mostre que você está qualificado para lidar com um estigma maior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vaut diz que agora é hora de usar outro estigma maior.</p>
+<p> </p>
+<p>No entanto, ele aconselhou que você teria que fornecer evidências de que você pode lidar com esse tipo de poder imenso. É por isso que você deve seguir o caminho para a guerra de cerco, o coliseu Crisol ou a colina de Macori, a fim de provar suas habilidades.</p>
+<p> </p>
+<p>Não foi particularmente difícil e, depois que você apresentou sua qualificação, ele usou o estigma misterioso para expandir seus slots de estigma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminaria [%dic:STR_DIC_M_LDF5b_B2_Vri_Zombie_Id_Fi_Nmd_65_Ae]Da inteligência de Beritra?</p>
+<p> </p>
+<p>Parece -me que ele tem algo a ver com essa contaminação.</p>
+<p> </p>
+<p>Por favor, elimine -o, mesmo que você não possa extrair nenhuma informação dele.</p>
+<p> </p>
+<p>Fico louco ao pensar que ele causou esse terrível incidente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou[%dic:STR_DIC_M_LDF5b_B2_Vri_Zombie_Id_Fi_Nmd_65_Ae]?</p>
+<p> </p>
+<p>Ver a poluição no ambiente me fez sofrer muito.</p>
+<p> </p>
+<p>A existência de uma conexão com esse assunto é uma razão pela qual não posso ser tolerante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>[%username], Eu já me sinto muito melhor agora que você os matou.</p>
+<p> </p>
+<p>Agora eu posso esticar minhas pernas e dormir bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5b_B2_Vri_Zombie_Id_Fi_Nmd_65_Ae]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard10_L]%.</p></step>
+</steps>
+<p>Mate Belgoros apodrecendo que tem algo a ver com a contaminação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Theron acredita que os Belgoros apodrecidos têm algo a ver com o envenenamento e pediu que você os matasse.</p>
+<p> </p>
+<p>Você matou o Belgoros apodrecido a seu pedido e foi agradecido por seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

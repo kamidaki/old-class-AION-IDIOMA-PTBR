@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma busca de teste para a área em que o monstro ocasionalmente surge.</p>
+<p> </p>
+<p>Você está pronto para a caça?</p>
+<p> </p>
+<p>Por favor, caça dois[plur][%dic:STR_DIC_M_LDF4A_A1_FennecFox_56_n], dois[plur][%dic:STR_DIC_M_LDF4A_A1_FennecFox_N_56_An], dois[plur][%dic:STR_DIC_M_LDF4A_D_DragonFly_58_An] e dois[plur][%dic:STR_DIC_M_LDF4A_D_SandShark_58_An].</p>
+<p> </p>
+<p>Além dos Watchmen Leowasp e do Zanthays, nojolfs de pó e nojolfs de pó selvagem também aparecem às vezes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O teste correu bem?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta sobre sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que não haja erros.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os monstros de teste.</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4A_A1_FennecFox_56_n]que aparecem ocasionalmente ([%2]/2).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4A_A1_FennecFox_N_56_An]que aparecem ocasionalmente ([%5]/2).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4A_D_DragonFly_58_An]que aparece ([%8]/2).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4A_D_SandShark_58_An]que aparece ([%11]/2).</p></step>
+<step><p visible="[%15]">Fale com Rebecca_8.</p></step>
+</steps>
+<p>Remova os monstros de teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os monstros de teste.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

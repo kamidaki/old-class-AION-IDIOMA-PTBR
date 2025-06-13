@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é sua primeira visita aqui, [%username]? Nesse caso, você deve se familiarizar com o lugar.</p>
+<p> </p>
+<p>Obviamente, você fará muitas missões vitais, mas é igualmente importante conhecer as pessoas aqui.</p>
+<p> </p>
+<p>Que tal você conhecer o teleporter que o ajudará sempre que precisar voltar para Atreia com urgência?</p>
+<p> </p>
+<p>O teleporter é chamado[%dic:STR_DIC_N_DF5_OP1_ZoneTeleport_D].</p>
+<p> </p>
+<p>Fale com ele e ele lhe dirá os melhores lugares para comprar mercadorias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Prazer em conhecê-lo.</p>
+<p> </p>
+<p>Você já falou com Logan?</p>
+<p> </p>
+<p>Se você quiser visitar outras regiões, precisa se teletransportar para lá.</p>
+<p> </p>
+<p>Venha me ver se você sentir saudades de casa e Miss Atreia.</p>
+<p> </p>
+<p>Você chegou aqui recentemente, não é? Que tal você Fale com [%dic:STR_DIC_N_DF5_op_a_Middleman_01], o corretor comercial?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Daeva, Ak.</p>
+<p> </p>
+<p>No Toorinerk, o Daeva pode comprar ou vender itens diferentes, AK.</p>
+<p> </p>
+<p>O Topinerk dá à Daeva um desconto especial, AK.</p>
+<p> </p>
+<p>É a primeira vez de Daeva aqui. Shugo viu imediatamente, Ak. Então Shugo quer ajudar Daeva, Ak.</p>
+<p> </p>
+<p>Talvez Daeva pudesse Fale com [%dic:STR_DIC_N_DF5_op_a_goods_Seller]?</p>
+<p> </p>
+<p>Daeva estará visitando Punan com frequência, então Daeva pode muito bem se apresentar [f:"herself"], e.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vendo todos os tipos de itens variados.</p>
+<p> </p>
+<p>Você é de Atreia, então provavelmente conheceu muitas pessoas da minha linha de negócios.</p>
+<p> </p>
+<p>Se você assumir missões, encontrará ainda mais pessoas que não vão à batalha e, em vez disso, executam outras tarefas vitais como eu.</p>
+<p> </p>
+<p>Confie em mim, [%username], meus produtos são da melhor qualidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você deu uma olhada no[%dic:STR_DIC_W_DF5_SZ_OP_01]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você menciona com quem falou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aha, vejo que você já encontrou alguns amigos aqui?</p>
+<p> </p>
+<p>Todos aqui têm uma tarefa importante.</p>
+<p> </p>
+<p>Não é uma questão de classificação, mas da qualidade do trabalho.</p>
+<p> </p>
+<p>[%username], Espero que você também se dedique às suas tarefas com fervor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o Teleporter [%dic:STR_DIC_N_DF5_OP1_ZoneTeleport_D].</p></step>
+<step><p visible="[%3]">Fale com o corretor comercial[%dic:STR_DIC_N_DF5_op_a_Middleman_01].</p></step>
+<step><p visible="[%6]">Fale com o General Trader [%dic:STR_DIC_N_DF5_op_a_goods_Seller].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_DF5_CogelHogan_E].</p></step>
+</steps>
+<p>Preste atenção ao conselho de Logan e a familiarizar com os habitantes locais mais importantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Logan queria que você se encontrasse com as pessoas mais importantes da área antes de participar de missões.</p>
+<p> </p>
+<p>Você prestou atenção ao conselho de Logan e se familiarizou com os habitantes locais mais importantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que vou fazer ... posso perder meu emprego! Se eu fosse um daeva de tempo e espaço, eu voltaria no tempo e me avisava.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estávamos transferindo alguns itens de um armazém em Eltnen ... o navio foi atacado por piratas.</p>
+<p> </p>
+<p>Piratas Shugo! Você pode imaginar algo tão ridículo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Na verdade, eu posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles roubaram a remessa. Perdemos os objetos de valor de nossos clientes! Como eles vão confiar em nós novamente?</p>
+<p> </p>
+<p>Santum diz que não há nada que eles possam fazer. Mas talvez se algum itinerante Daeva quisesse ajudar um pobre mortal ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que recuperar a carga daqueles[%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae] S! Havia dez [%dic:STR_DIC_I_quest_3215a] S em todos.</p>
+<p> </p>
+<p>Se os bens das pessoas não estão seguros em seus armazéns, onde estão seguros?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer tudo certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu vejo. Suponho que terei que encontrar outra pessoa para me ajudar, talvez contratar um daqueles caçadores de recompensas Shugo.</p>
+<p> </p>
+<p>Defina um shugo para pegar um shugo e tudo mais.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Lá vai você!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você tenha recebido os pacotes de volta. Estou preocupado que um daqueles Daevas pedirá as coisas dele em breve, e não sei o que vou dizer ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh céus! Estes não são meus pacotes. Eu acho que não há nada para isso, mas você voltar e olhar novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Suspirar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles estão todos aqui! Isso é maravilhoso! Você salvou minha carreira, Daeva.</p>
+<p> </p>
+<p>Aqui, pegue isso. Não é muito, mas é tudo o que posso lhe dar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae] S, colete pacotes e leve -os a [%dic:STR_DIC_N_Lukania].</p>[%collectitem]</step>
+</steps>
+<p>Recupere os itens que os Shulacks roubaram da remessa entre armazéns da Lukania.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O goleiro do armazém Lukania teve alguns itens roubados de sua remessa entre armazéns quando os piratas de aço a interceptaram. Você os recuperou para ela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

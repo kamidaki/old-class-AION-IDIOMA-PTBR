@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos um grande problema, AK.</p>
+<p> </p>
+<p>Temos muito o que fazer e os trabalhadores estão desaparecendo um após o outro, AK.</p>
+<p> </p>
+<p>Suponho que eles estão fugindo pelo porto, Ak.</p>
+<p> </p>
+<p>Até mobilizamos os porteiros Shulack para impedir que os trabalhadores fugissem, mas sem sucesso, AK. Os porteiros Shulack também me parecem suspeitos, Ak. Akakak!</p>
+<p> </p>
+<p>Por favor, vá para [%dic:STR_DIC_N_LDF5b_ShulackGuard_01] e investigue por que os trabalhadores estão desaparecendo, AK! Por favor, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você veio até mim?</p>
+<p> </p>
+<p>Tenho pouco a fazer e estou entediado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta a ele sobre o trabalhador desaparecido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu, não tenho nada a ver com isso!</p>
+<p> </p>
+<p>Acabei de ver como os shulacks selvagens com lenços de cabeça vermelhos levaram os trabalhadores embora.</p>
+<p> </p>
+<p>Eu os ajudei porque estava sob pressão, por favor, não o segure contra mim! Eu não farei de novo!</p>
+<p> </p>
+<p>Tenho medo de [%dic:STR_DIC_E_LDF5b_E_Shulack]. Eu não posso evitar, sou um shulack fraco!</p>
+<p> </p>
+<p>Se os mercenários forem mortos, os trabalhadores deixarão de desaparecer!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você não ajudou a contrabandear os porteiros Shulack?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rosa de aço? Você quer dizer a rosa piratas do aço, AK?</p>
+<p> </p>
+<p>Há pessoas que lidam com piratas terríveis como esses em Pandarung ... difícil de acreditar, Ak. Akakak!</p>
+<p> </p>
+<p>Vou fazer algo sobre isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_ShulackGuard_01]%.</p></step>
+<step><p visible="[%3]">Coletar [%dic:STR_DIC_I_QUEST_23563A] e trazê -lo para [%dic:STR_DIC_N_LDF5b_Sparing_E].</p>[%collectitem]</step>
+</steps>
+<p>Relatório a Sperinerk para a investigação sobre os motivos do desaparecimento dos trabalhadores de Kobold.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sperinerk disse que o desaparecimento dos trabalhadores de Kobold estava desconfiado e pediu que você investigasse.</p>
+<p> </p>
+<p>A investigação revelou que o esquadrão mercenário de aço Rose é de fato um grupo de piratas que sequestrou os Kobolds.</p>
+<p> </p>
+<p>Sperinerk ficou chocado com o crime do esquadrão mercenário de rosa de aço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! Perdemos a cidadela de Vorgaltem! Como o Krizarid poderia deixar isso acontecer? Ouvi os arcontes sussurrando que Krizarid nunca dorme, ele só espera ... mas talvez isso seja apenas um boato.</p>
+<p> </p>
+<p>No entanto, precisamos controlar que a Base de Defesa da Cidadela ou Gelkmaros esteja em risco.</p>
+<p> </p>
+<p>Nossos inimigos estão se aproximando, e não é apenas o Balaur-os Elyos também estão aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como podemos retomar a torre?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não vai ser fácil, [%username]. Precisamos de toda a força que asmodae possam reunir.</p>
+<p> </p>
+<p>A Guilda do Senhor Empíreo Marchutan está lá, assim como a força expedicionária do Pandaemonium, mas mesmo seus números não derrotam o general do guardião sozinho.</p>
+<p> </p>
+<p>[%username], Eu preciso que você reunisse uma força e marchar na cidadela de Vorgaltem. O general do guardião deve morrer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já enviei vários Daevas para a Cidadela. Espero que eles ainda estejam vivos e capazes de ajudá -lo.</p>
+<p> </p>
+<p>Precisamos derrotar o [%dic:STR_DIC_M_QUEST_21228]Ou isso vai para o sul com pressa.</p>
+<p> </p>
+<p>Depois de capturar a Cidadela, não deixe de encontrar [%dic:STR_DIC_N_Krizarid]. Só não o acuse de dormir no trabalho ... a menos que você não valorize seus membros ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ... manter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos recuperar a cidadela, [%username]!</p>
+<p> </p>
+<p>A guerra em Gelkmaros depende disso.</p>
+<p> </p>
+<p>Enfrentar o Guardian General não é fácil, mas você deve colocar sua resolução e marchar para a glória de Asmodae!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou ocupado agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Glória para Asmodae!</p>
+<p> </p>
+<p>Mas essa vitória é agridoce para mim ... Parece que alguém matou o general do Guardian.</p>
+<p> </p>
+<p>É verdade, [%username], que você foi quem venceu o general do Guardian?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Linar disse que você estava dormindo, então ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Linar disse isso?! Bem, tudo bem. Ele ainda vai lutar bem com apenas um braço.</p>
+<p> </p>
+<p>Não, eu não estava dormindo! Bem ... eu posso ter focado tão intensamente em canalizar minha raiva que entrei em um estado catatônico ....</p>
+<p> </p>
+<p>Mas o Krarizar não dorme! Embora ele agradeça por derrotar o Guardian General em sua ausência.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Venceu o guardião inimigo para recuperar o [%dic:STR_DIC_W_DF4_SZ_3011_A].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_QUEST_21228]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Krizarid].</p></step>
+</steps>
+<p>A cidadela de Vorgaltem deve ser recuperada. VanQuish o Guardian General da Cidadela de Vorgaltem e reporte -se ao notório Krizarid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Linar disse que a cidadela de Vorgaltem deve ser recapturada.</p>
+<p> </p>
+<p>Você marchou lá com seus aliados e venceu o Guardian General para retomar a cidadela. Enquanto Krizarid estava desapontado por não matar o próprio Guardian General, ele agradeceu por seu esforço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

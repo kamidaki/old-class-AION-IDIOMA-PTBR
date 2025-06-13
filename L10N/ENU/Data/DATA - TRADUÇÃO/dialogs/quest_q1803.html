@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como poderíamos ter conseguido perder a fortaleza ocidental de Siel?! Eu pensei que tínhamos tudo coberto!</p>
+<p> </p>
+<p>Devemos recuperá -lo! Devemos!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ok, nós vamos acalmar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não posso me acalmar! Isso é importante demais para se aproximar com calma!</p>
+<p> </p>
+<p>Olha, precisamos atacar suas defesas. Essa é a única maneira de ganhar a fortaleza de volta!</p>
+<p> </p>
+<p>Você vai ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A melhor época para atacar é quando os asmodianos têm controle-eles são muito mais fáceis de lutar do que o Balaur. Haverá uma batalha durante o estado vulnerável.</p>
+<p> </p>
+<p>Você deve ir à fortaleza então e acabar com o [%dic:STR_DIC_M_1803_all]-Fightersasmodianos, arqueiros asmodianos, magos asmodianos e sacerdotes asmodianos. Não importa se eles são veteranos, experientes ou novatos.</p>
+<p> </p>
+<p>Traga de volta o deles[%dic:STR_DIC_I_QUEST_1803a] S, também. Por favor, apresse -se! Devemos recuperar o controle o mais rápido possível!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que isso é perigoso, mas precisamos da sua ajuda!</p>
+<p> </p>
+<p>Você deve mudar de idéia!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez se você se acalmar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você está de volta!</p>
+<p> </p>
+<p>Você derrotou o [%dic:STR_DIC_M_1803_all]? E trazer de volta o [%dic:STR_DIC_I_QUEST_1803a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não foi?! Você não entende o perigo que enfrentamos!</p>
+<p> </p>
+<p>Vá para a fortaleza ocidental de Siel quando estiver no estado vulnerável e derrote o [%dic:STR_DIC_M_1803_all]! Volte com o [%dic:STR_DIC_I_QUEST_1803a]!</p>
+<p> </p>
+<p>Rapidamente, rapidamente, vá ir!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Oh, graças às muitas bênçãos de Ariel, você as derrotou e trouxe as insígnias, exatamente como prometeu.</p>
+<p> </p>
+<p>Oh, deve ser muito mais fácil recuperar a fortaleza agora. Obrigado, Daeva. Muito obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_1803_all] e leve a prova para [%dic:STR_DIC_N_Liber].</p>[%collectitem]</step>
+</steps>
+<p>Você deve dar um golpe nos asmodianos que levaram a fortaleza ocidental de Siel. Quando a fortaleza estiver no estado vulnerável e uma batalha está em andamento, derrote a guarnição inimiga e retorne com as insígnias da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Liber disse que, para recuperar a fortaleza ocidental do Siel, um golpe significativo deve ser causado ao inimigo usando uma pequena força e pediu que você derrote a guarnição asmodiana que defende a fortaleza.</p>
+<p> </p>
+<p>Então, depois de derrotar os combatentes, arqueiros, magos e sacerdotes asmodianos, você voltou a libertar suas insígnias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

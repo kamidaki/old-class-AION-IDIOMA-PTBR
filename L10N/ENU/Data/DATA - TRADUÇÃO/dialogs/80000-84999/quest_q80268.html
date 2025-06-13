@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este café é administrado pelas criadas mais bonitas de Atreia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós vendemos pratos deliciosos, que as lindas empregadas se prepararam.</p>
+<p> </p>
+<p>Você pode obter um contrato de serviço como presente especial.</p>
+<p> </p>
+<p>Você quer vir visitar o café algum dia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para [%dic:STR_DIC_N_EVENT_Cebath]no[%dic:STR_DIC_W_Housing_lf_personal_agora].</p>
+<p> </p>
+<p>Ele terá o prazer de falar sobre o café.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo.</p>
+<p> </p>
+<p>Por favor, venha quando você tiver um momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso café oferece pratos cuidadosamente preparados, preparados por empregadas talentosas.</p>
+<p> </p>
+<p>É o único café em Atreia que oferece excelente serviço desse tipo.</p>
+<p> </p>
+<p>É por isso que temos muitos clientes regulares.</p>
+<p> </p>
+<p>[%username], Acho que você também visitará o café com frequência.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que virá com frequência.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei tanto.</p>
+<p> </p>
+<p>Então eu vou te dar um rolo de retorno para Oriel.</p>
+<p> </p>
+<p>É um presente para os visitantes que vêm por causa do anúncio de Edward.</p>
+<p> </p>
+<p>Por favor, use o rolagem de retorno para retornar com frequência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_event_Cebath].</p></step>
+</steps>
+<p>Vá para [%dic:STR_DIC_N_EVENT_Cebath], o supervisor dos trabalhadores da pousada na empregada empregada.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se encontrou com[%dic:STR_DIC_N_EVENT_Cebath], que contou sobre o café e deu um rolagem de retorno como um presente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

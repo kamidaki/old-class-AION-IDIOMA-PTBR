@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Medéia continua escrevendo para mim, e está partindo meu coração.</p>
+<p> </p>
+<p>Ela é infeliz naquele trabalho disfarçado em Asmodae.</p>
+<p> </p>
+<p>Eu sei que ela se ofereceu para a missão, mas acho que ela não percebeu o quão difícil seria.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não é tarde demais para fazer nada a respeito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ela era muito teimosa para ouvir quando tentei dissuadi -la de aceitar o emprego.</p>
+<p> </p>
+<p>Mas ... talvez agora ela tenha gostado de muito dificuldades, ela repensará seus caminhos. Você iria a Asmodae e entregaria uma carta a Medéia?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere um momento enquanto eu rabisque esta nota.</p>
+<p> </p>
+<p>... Atenciosamente ... Jinus.</p>
+<p> </p>
+<p>Aqui está! E se você puder, [%username], por favor, persuadiu Medéia a retornar a Elysea.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Desculpe. Eu nunca deveria ter pedido que você se virasse e voltasse para asmodas quando você acabou de voltar.</p>
+<p> </p>
+<p>Meu desespero tirou o melhor de mim. Eu deveria ter mantido entre mim e Medéia ... encontrarei de outra maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim ... desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Que notícia, [%username]?</p>
+<p> </p>
+<p>Alguma resposta de Medéia?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ela enviou isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>"Caro Jinus ..."</p>
+<p> </p>
+<p>"... tocado por sua bondade ... impossível para mim interromper minha missão ..."</p>
+<p> </p>
+<p>"... deveres .... por favor, obrigado[%username]Para entregar isso ... "</p>
+<p> </p>
+<p>Bem, o resto é pessoal, então não vou ler. Obrigado por tentar, de qualquer forma.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Medea].</p></step>
+</steps>
+<p>Retorne a Morheim e entregue a carta de Jinus a Medéia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jinus estava preocupado com Medéia, que está trabalhando disfarçada em Asmodae. Ele escreveu a ela uma carta pedindo que ela voltasse para casa.</p>
+<p> </p>
+<p>Medéia o enviou de volta a Jinus com uma resposta que o agradeceu por sua preocupação, mas explicou que ela deveria continuar sua missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

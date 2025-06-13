@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pouparia um momento para ouvir?</p>
+<p> </p>
+<p>Eu possuo uma estátua que amo acima de tudo. Ontem eu poli até brilhar.</p>
+<p> </p>
+<p>Mas hoje de manhã vejo que isso quebrou em um milhão de pedaços.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta quem era.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode dizer rapidamente! Esse foi o Dukaki!</p>
+<p> </p>
+<p>Eles realmente vivem em[%dic:STR_DIC_FLA13]%.</p>
+<p> </p>
+<p>Por que eles estão entrando na vila e fazendo problemas?!</p>
+<p> </p>
+<p>Ah, isso me deixa com tanta raiva! Mas o que pode ser feito?![%username], você poderia se vingar deles?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Vá lá e amenize minha raiva</p>
+<p> </p>
+<p>matando os mineiros de Dukaki.</p>
+<p> </p>
+<p>18 deve ser suficiente para satisfazer minha raiva.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Você se atreve a recusar um pedido de mim?!</p>
+<p> </p>
+<p>Você está errado na cabeça?!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você puniu o Dukaki o suficiente?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que deu tudo de si.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau! De volta?</p>
+<p> </p>
+<p>Você realmente é fantástico! E eu me acalmei um pouco.</p>
+<p> </p>
+<p>Não é muito, mas aqui está uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os mineiros de Dukaki ([%2]/18).</p></step>
+<step><p visible="[%15]">Relatório de Insias.</p></step>
+</steps>
+<p>Chute as bundas dos mineiros de Dukaki[%dic:STR_DIC_FLA13].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou mineiros de Dukaki até que a ira de Inisya diminua.</p>
+<p></p>
+<p>Inisya sorriu, satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

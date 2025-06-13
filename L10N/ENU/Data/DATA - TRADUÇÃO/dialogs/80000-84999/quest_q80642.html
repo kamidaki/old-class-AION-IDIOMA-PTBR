@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo gostaria de comer alguns deliciosos abacaxi.</p>
+<p> </p>
+<p>Shugo precisa de abacaxis. Akakak.</p>
+<p> </p>
+<p>Shugo não gosta de figs. Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta como obter abacaxi.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo ouviu que o Senhor deu a Daeva uma misteriosa cesta de frutas.</p>
+<p> </p>
+<p>Daeva encontrará abacaxi na misteriosa cesta de frutas. Akakak.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que concorda.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você diz que não os entrega.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então Shugo confiará em Daeva e esperará por Daeva aqui.</p>
+<p> </p>
+<p>Daeva deve trazê -los para Shugo. AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é cruel.</p>
+<p> </p>
+<p>Daeva recebe as esperanças de Shugo e depois se recusa a ajudar. AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva realmente trouxe abacaxi, AK? Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 100 abacaxis.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Shugo disse definitivamente 100.</p>
+<p> </p>
+<p>Daeva deve obter 100 abacaxi. Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo é muito grato a Daeva.</p>
+<p> </p>
+<p>Então Shugo dará a Daeva 1 fig. Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha abacaxi e traga -os para o Huruner.</p>[%collectitem]</step>
+</steps>
+<p>Hurunerk pediu para você pegar 100 abacaxi. Atender a este pedido.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hurunerk prometeu uma recompensa se você o trazer abacaxi.</p>
+<p> </p>
+<p>Hurunerk disse que não gosta de figos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p> </p>
+<p>1. Remetente: Chiliarca Pepe do destacamento de Katalam</p>
+<p> </p>
+<p>2. RECENDIENTE:[%username]</p>
+<p> </p>
+<p>3. Ordens: observe os asmodianos próximos[%dic:STR_DIC_W_LDF5A_OP_D] e mate os guardiões do Arconte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou falar em silêncio por um momento.</p>
+<p> </p>
+<p>É sobre um assunto que Portis não sabe nada.</p>
+<p> </p>
+<p>Você matou a Sentry do Arconte?</p>
+<p> </p>
+<p>Eu enviei ordens urgentes para [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que sim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Aposto que os asmodianos sofreram o choque de suas vidas. Tenho certeza de que eles desistiram de seu sonho de conquistar Katalam.</p>
+<p> </p>
+<p>Se Portis soubesse desse plano, ele teria estragado tudo na pressa de provar a si mesmo.</p>
+<p> </p>
+<p>[%username], uma coisa boa que você completou seu trabalho tão rapidamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua o Arconte Sentinel perto do[%dic:STR_DIC_W_LDF5A_OP_D].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_OP_D_Guard_Fi_D_Q_61_An]([%2]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Pepe_E]%.</p></step>
+</steps>
+<p>Instruções urgentes: Mate o Arconte Sentinel perto do Templo Rune, a fortaleza dos asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você estava dando uma olhada na base Asmodiana, recebeu um pedido do Chiliarch Pepe do Comando Katalam.</p>
+<p> </p>
+<p>Você eliminou uma sentinela de arconte perto do templo de Rune e relatou de volta ao Chiliarch Pepe.</p>
+<p> </p>
+<p>O Chiliarch Pepe ficou encantado, pois isso teria dado aos asmodianos um susto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

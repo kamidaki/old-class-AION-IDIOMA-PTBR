@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algo está me incomodando. Bem, eu deveria dizer duas coisas-na torre de guarda de Elyos, perto de nossa fortaleza.</p>
+<p> </p>
+<p>Eu pensei que devia ter sido enganado a princípio. Nenhum Elyos mostraria seus rostos bonitos aqui, a menos que estivessem fora de suas mentes ...</p>
+<p> </p>
+<p>Eu os peguei me observando, no entanto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é assustador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei! Em um minuto, eles pareciam estar me observando, então eles desapareceriam. Eu nem consigo dormir, eles estão apenas me assustando tanto.</p>
+<p> </p>
+<p>Meu comandante acha que eles são apenas batedores bem treinados, observando nossos movimentos, mas acho que é algo mais pessoal.</p>
+<p> </p>
+<p>Você iria ensinar uma lição para aqueles brilhos irritantes? Nunca mais quero vê -los ao redor da fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles são chamados[%dic:STR_DIC_N_Livy] e [%dic:STR_DIC_N_Mercus]. Retire -os e traga -me uma fechadura de seus ricos cabelos castanhos.</p>
+<p> </p>
+<p>Sim, cabelo. Cabelos Elyos. Como evidência. Oh, apenas faça isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O que você disser."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, bem, acho que estou seguro o suficiente deles dentro da fortaleza.</p>
+<p> </p>
+<p>Mas se meu comandante estiver certo e eles são batedores, alguém deve lidar com eles de qualquer maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez alguém o faça."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pegou o cabelo? Uh, quero dizer, obter as evidências?</p>
+<p> </p>
+<p>Eles me mencionaram?</p>
+<p> </p>
+<p>Você os derrotou, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está sua 'evidência'."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está tentando me enganar com isso?</p>
+<p> </p>
+<p>Esses dois fios de cabelo são idênticos em cores e comprimentos e cheiro. Eles devem pertencer a uma pessoa, não a dois.</p>
+<p> </p>
+<p>Por favor, cuide dos dois caras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ambos, entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm ... o cabelo Elyos cheira a ... Uh, não importa. Eu posso ... dormir melhor sabendo que eles não vão me incomodar agora.</p>
+<p> </p>
+<p>Por favor, aceite estes. E por favor, não mencione a ninguém sobre o cabelo.</p>
+<p> </p>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Tome evidências de sua derrota [%dic:STR_DIC_N_Livy] e [%dic:STR_DIC_N_Mercus]na torre de guarda de Elyos para [%dic:STR_DIC_N_Ab1_1211_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>Dois batedores da Torre do Guarda Elyos foram vistos perto da fortaleza. Derrote Livius e Mercus e pegue seus cabelos como evidência para Herat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herat pediu que você elimine os batedores de Elyos.</p>
+<p> </p>
+<p>Seguindo suas instruções, você derrotou Livius e Mercus na Torre do Guarda Elyos e levou seus cabelos para Herat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

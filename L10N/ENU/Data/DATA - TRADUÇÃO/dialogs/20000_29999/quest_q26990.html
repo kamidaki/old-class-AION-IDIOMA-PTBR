@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você chegou bem a tempo de defender a torre do escudo.</p>
+<p> </p>
+<p>O escudo de proteção para a região rico em ID em Balaurea pode ser ativado em[%dic:STR_DIC_W_ZONE_NAME_IDLDF5_Under_03].</p>
+<p> </p>
+<p>O Exército de Beritra destruiu a entrada da torre, mas você ainda pode usar o corredor em Akaron.</p>
+<p> </p>
+<p>O Balaur assumiu que eles poderiam colocar a torre fora de ação fazendo isso, mas estavam errados.</p>
+<p> </p>
+<p>Vá para a torre do escudo passando pelo[%dic:STR_DIC_W_IDF5_U3_FOBJ_Entrance]no assentamento do capítulo ou na floresta do silêncio e encontre [%dic:STR_DIC_N_IDLDF5_Under_03_Kamenz_E].</p>
+<p> </p>
+<p>Kamens fornecerá detalhes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi a runa que construiu a torre do escudo. O escudo de proteção para toda a região pode ser ativado a partir da torre.</p>
+<p> </p>
+<p>Seu objetivo é fornecer proteção contra ataques de fora.</p>
+<p> </p>
+<p>A torre geralmente processa o ID automaticamente para ativar o escudo.</p>
+<p> </p>
+<p>Mas os ataques destruíram partes das máquinas. Agora temos que ativar os geradores de energia manualmente.</p>
+<p> </p>
+<p>Mas isso é muito difícil de fazer, o que com o esquadrão de destruição constantemente nos atacando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A energia precisa ser alimentada nos geradores de escudo manualmente, a fim de manter o escudo protetor até que o dano seja reparado.</p>
+<p> </p>
+<p>Nossos oponentes tentarão destruir a Rune Shield Tower destruindo primeiro os geradores e depois continuando a atacar para que o escudo não possa ser ativado novamente.</p>
+<p> </p>
+<p>Pare o 43º esquadrão de destruição, que estará atacando de todos os lados, e reunirá os fragmentos transparentes de idium perto do[%dic:STR_DIC_E_IDF5_U3_FOBJ_Box_Fill] e use -os para carregar os quatro[%dic:STR_DIC_E_IDF5_U3_Defence_all].</p>
+<p> </p>
+<p>Se você não conseguir cobrar a instalação dentro de um determinado tempo, a torre do escudo entrará em colapso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<cutscene id="895"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], sua missão é interromper o 43º Esquadrão de Destruição e ativar o Escudo Protetor.</p>
+<p> </p>
+<p>O esquadrão de destruição atacará de diferentes direções e tentará destruir os geradores de energia. Você e seus companheiros precisam detê -los. É melhor você se separar!</p>
+<p> </p>
+<p>Além disso, os quatro geradores de energia devem ser carregados para ativar o escudo protetor.</p>
+<p> </p>
+<p>Use a arma de defesa de Rune para impedir temporariamente o Balaur de atacar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que fará o seu melhor.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve estar em guarda, mesmo que todos os quatro geradores de energia tenham sido totalmente carregados.</p>
+<p> </p>
+<p>Você nunca sabe o que o Balaur pode estar planejando a seguir, afinal.</p>
+<p> </p>
+<p>Portanto, você deve sempre ficar de olho, mesmo que o escudo protetor na câmara de escudo da torre esteja ativo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_IDLDF5_Under_03_Kamenz_E]na Rune Shield Tower e peça que ele fale sobre isso.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_IDLDF5_Under_03_Kamenz_E]de novo.</p></step>
+</steps>
+<p>Vá para a Rune Shield Tower, encontre Kamens e ouça suas explicações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um pedido de reforços veio da Rune Shield Tower.</p>
+<p> </p>
+<p>Você foi encontrar Kamens, que então explicou o papel da torre de Shield Rune para você. Ele relatou que o 43º esquadrão de destruição queria enfraquecer o escudo protetor para invadir e destruir a torre.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

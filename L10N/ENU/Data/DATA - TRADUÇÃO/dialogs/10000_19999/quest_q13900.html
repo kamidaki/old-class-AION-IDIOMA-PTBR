@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Bem-vindo.</p>
+<p> </p>
+<p>O agente Outremus da fortaleza de Ilusão Inggison disse que os muitos perigos que os Elyos enfrentaram exigiram um herói especial[f:"heroine"]. Ele gostaria de ver você.</p>
+<p> </p>
+<p>Ele deve ter ouvido falar de suas façanhas em Balaurea.</p>
+<p> </p>
+<p>Por favor, vá para a fortaleza de Ilusão Inggison e converse com[%dic:STR_DIC_N_Cainus].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma ameaça inimaginável está se aproximando de Atreia!</p>
+<p> </p>
+<p>Tiamat pode ter sido derrotado, mas a invasão pelo Exército de Beritra está progredindo rapidamente. O caos reina, e não sabemos o que nos espera.</p>
+<p> </p>
+<p>Em tempos como esses, precisamos de Daevas que lutam por Elysea com convicção e coragem.</p>
+<p> </p>
+<p>Ouvi falar de suas ações, mas não sei se você se colocará contra os novos perigos que Elysea enfrenta com a mesma convicção.</p>
+<p> </p>
+<p>Se quiser, darei a você a oportunidade de provar sua convicção e sua lealdade à Elysea. Você vai provar para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que deseja provar suas habilidades.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você quer dizer isso, vou te dar uma chance.</p>
+<p> </p>
+<p>Vá para o Hall da Fama e fale com[%dic:STR_DIC_N_Corridor_L_MainQuest_E]. Ele lhe dará a oportunidade de provar sua convicção e lealdade.</p>
+<p> </p>
+<p>Primeiro, vá para o Santum e converse com[%dic:STR_DIC_N_Polyidus]. Ele lhe dirá a rota para o Hall da Fama.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que um Daeva está indo para o Hall da Fama. Esse deve ser você, [%username].</p>
+<p> </p>
+<p>Um boato está fazendo as rondas que não apenas os asmodianos, mas também as grandes tropas de Balaur pretendem atacar o santuário. Vendo você indo para o Hall da Fama, [%username], me faz pensar se há verdade no boato.</p>
+<p> </p>
+<p>O Hall da Fama está em[%dic:STR_DIC_W_Arena_L_Lobby].</p>
+<p> </p>
+<p>Usar [%dic:STR_DIC_OBJ_LC1_LC2_TELEPORT]No caminho exaltado para chegar à Academia Kaisinel. Em seguida, passe pelo escritório de recompensas e você verá o Hall da Fama.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Corridor_L_MainQuest_E] estarei esperando por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é você!</p>
+<p> </p>
+<p>Você estava me procurando?</p>
+<p> </p>
+<p>Você deve ser o do Senhor escolhido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que o agente do Senhor havia atribuído a você.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou aliviado por um lutador experiente como você foi escolhido para esta tarefa.</p>
+<p> </p>
+<p>A ameaça da invasão de Beritra continua aumentando e nossa posição em batalha contra os asmodianos está constantemente mudando.</p>
+<p> </p>
+<p>Até agora, tomamos todas as medidas necessárias e continuamos observando a situação. É por isso que nossos inimigos não podem simplesmente nos atacar. Mas temos muito o que fazer para que possamos manter essa situação vantajosa.</p>
+<p> </p>
+<p>Vou lhe dizer o que deve ser feito em Balaurea. [%dic:STR_DIC_N_Corridor_L_PangeaQuest_E] e vou contar mais sobre as tarefas relacionadas à invasão de Beritra.</p>
+<p> </p>
+<p>Essas missões não são fáceis. Você deve estar preparado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Cainus]na fortaleza de Ilusão Inggison.</p></step>
+<step><p visible="[%3]">Fale com o Teleporter [%dic:STR_DIC_N_Polyidus]O santo.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Corridor_L_MainQuest_E].</p></step>
+</steps>
+<p>Vá para o agente de Kaisinel Outremus e receba suas ordens.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Outremus, agente de Lord Kaisinel, disse que um herói especial[f:"heroine"]é necessário para enfrentar o perigo de que os Elyos enfrentam. Ele disse que você deveria ir ao Hall da Fama.</p>
+<p> </p>
+<p>Você foi à Kaisinel Academy e conheceu Adras no Hall of Fame. Ele lhe disse que haveria muito o que fazer no futuro, e não seria fácil. Ele pediu que você dedique seus esforços para garantir uma vitória de Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

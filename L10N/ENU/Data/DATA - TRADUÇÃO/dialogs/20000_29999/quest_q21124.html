@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Subterranea é um verdadeiro labirinto, e estou com pouca energia. Estou muito grato.</p>
+<p> </p>
+<p>Isso tornará muito mais fácil resgatar nosso povo.</p>
+<p> </p>
+<p>Muito obrigado por me trazer algo tão útil.</p>
+<p> </p>
+<p>(Examina o pedaço de papel com cuidado.) Mas o que isso significa aqui?</p>
+<p> </p>
+<p>Algo foi observado aqui na língua Balaur, mas não consigo lê -la. Você fala a língua Balaur?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Esse nome é significativo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Derren? Derren realmente ficou lá?</p>
+<p> </p>
+<p>Isso é inacreditável ... isso é realmente um achado significativo.</p>
+<p> </p>
+<p>Derren é um hipnotizador que fez uma lavagem cerebral de muitas pessoas.</p>
+<p> </p>
+<p>Talvez Hildisvini já tenha lhe dito que o Senegal também era uma de suas vítimas.</p>
+<p> </p>
+<p>[%username], Vou mantê -lo curto e gostaria de pedir alguma coisa. Por favor, elimine [%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O X parece designar a posição de [%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae]. Por favor, vá lá e procure por ele.</p>
+<p> </p>
+<p>Não o subestime; Ele também pode lutar.</p>
+<p> </p>
+<p>Além disso, ele provavelmente será protegido pelos membros do Dragonbound, então fique em guarda.</p>
+<p> </p>
+<p>[%username], você deve ter sucesso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ele já está morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você não aceita? Bem, eu entendo de onde você vem.</p>
+<p> </p>
+<p>Afinal, pedi para você ir a Subterranea e matar Derren, o hipnotizador. E ele nunca havia causado nenhum mal para você.</p>
+<p> </p>
+<p>Eu entendo. É nosso próprio caso, e não podemos deixar mais ninguém lidar com isso.</p>
+<p> </p>
+<p>Não poderemos detê -lo imediatamente, mas um dia o pegamos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu desejo -lhe sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, abençoado Siel.</p>
+<p> </p>
+<p>Desde que você saiu, orei a Siel na esperança de que ela permitisse que você retornasse ileso.</p>
+<p> </p>
+<p>Agora, você está diante de mim ileso, então minhas orações devem ter sido ouvidas.</p>
+<p> </p>
+<p>Você conseguiu derrotar Derren o hipnotizador?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele não levará mais o seu povo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, Siel seja elogiado!</p>
+<p> </p>
+<p>Estou muito grato a você, [%username]! Você nos vingou.</p>
+<p> </p>
+<p>É claro que os seguidores do Dragonbound não impedem seu trabalho apenas porque o hipnotizador foi eliminado. Mas pelo menos será mais difícil para eles agora.</p>
+<p> </p>
+<p>Uma grande sombra foi levantada de todos nós hoje. Pensar quantas pessoas foram vítimas dele ....</p>
+<p> </p>
+<p>(Limpa os olhos rapidamente.) Sob ... eu só tenho algo nos olhos.</p>
+<p> </p>
+<p>Por favor, tome isso como uma recompensa por seus esforços, [%username]. E me perdoe por não poder mais lhe dar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DF4_FanaticPr_NmdQ_54_Ae]. ([%2]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Ortiz].</p></step>
+</steps>
+<p>O plano revela a localização de um dragão chamado Derren, o hipnotizador. Destrua -o em nome da tribo Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O plano que você encontrou marcou o laboratório de um dragão chamado Derren, o hipnotizador.</p>
+<p> </p>
+<p>Ortiz conhecia esse nome bem como um homem que havia lavado o cérebro muitos de seus colegas reianos. Matar Derren causaria um golpe grave até o dragão.</p>
+<p> </p>
+<p>Você matou o hipnotizador sujo e voltou à gratidão de Ortiz, Hildisvini e toda a tribo Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

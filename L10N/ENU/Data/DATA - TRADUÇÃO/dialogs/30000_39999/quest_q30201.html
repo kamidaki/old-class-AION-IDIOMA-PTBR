@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar de Hanarkand-a vila de Drakan?</p>
+<p> </p>
+<p>Relatórios de atividades suspeitas estão chegando a partir dessa região.</p>
+<p> </p>
+<p>Não tenho confirmação final, mas parece que o dragão está transportando algo da vila para as ruínas de agricultura.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você acha que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei o que ou por quê, mas eles estão transportando algo, e isso não pode ser bom. Precisamos descobrir o que eles estão fazendo.</p>
+<p> </p>
+<p>Você é bom em manter um perfil baixo, [%username]? Sim? Eu pensei assim.</p>
+<p> </p>
+<p>Você pode conferir? Precisamos ver o que está acontecendo, mas mantenha -o no QT até descobrirmos com o que estamos lidando. É sempre melhor planejar a partir de uma posição de conhecimento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esplêndido. Localize e remova o [%dic:STR_DIC_M_LF4_FanaticFi_Q_54_An], então veja se você consegue colocar as mãos em uma cópia do[%dic:STR_DIC_I_QUEST_30201a].</p>
+<p> </p>
+<p>Supondo que esses bestas sigam estratégias de contabilidade militares padrão, que devem nos fornecer todas as informações de que precisamos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A contabilidade tem estratégias?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Eu pensei que você gostaria da chance de fazer um pouco de skulking.</p>
+<p> </p>
+<p>Bem, vou ter certeza de não incomodá -lo com missões desse tipo no futuro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, tanto faz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi capaz de lidar com o pretas de Hanarkand e colocar as mãos no relatório de transporte?</p>
+<p> </p>
+<p>Nossas tropas podem controlar a maior parte do inggison, mas não podemos nos dar ao luxo de subestimar a ingenuidade de Balaur.</p>
+<p> </p>
+<p>Quem sabe o quão longe essas tonalidades estão dispostas a recuperar o controle das terras que liberamos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Um relatório de transporte ligeiramente esfarrapado".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se tornou complacente agora que Inggison é nosso. Apesar de ser conquistado, o Balaur ainda tem a vantagem aqui em seu antigo território.</p>
+<p> </p>
+<p>Devemos estar preparados! Até um ligeiro lapso de concentração abre a porta para um contra-ataque de Balaur.</p>
+<p> </p>
+<p>Ir! Descarte o [%dic:STR_DIC_M_LF4_FanaticFi_Q_54_An] e me traga isso [%dic:STR_DIC_I_QUEST_30201a]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem! Não se preocupe com a cabeça bonita."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eles não tinham nada com eles? Isso deve significar que eles já enviaram tudo.</p>
+<p> </p>
+<p>(Abre o relatório.) Talvez eu encontre algumas pistas no relatório.</p>
+<p> </p>
+<p>Sem chance! É criptografado. Eu não consigo ler.</p>
+<p> </p>
+<p>Temos que descriptografá -lo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_LF4_FanaticFi_Q_54_An], encontre o [%dic:STR_DIC_I_QUEST_30201a] e leve para [%dic:STR_DIC_N_Cainus].</p>[%collectitem]</step>
+</steps>
+<p>O dragão está transportando algo de Hanarkand a ruínas de vigor. Vá conferir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Fortremus disse que o dragão está transportando algo de Hanarkand para ruínas de angriagem.</p>
+<p> </p>
+<p>A seu pedido, você descartou o intendente de Hanarkand e obteve o relatório de transporte.</p>
+<p> </p>
+<p>Infelizmente, o relatório estava em código para que você não tenha sido incapaz de avaliar os planos do Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

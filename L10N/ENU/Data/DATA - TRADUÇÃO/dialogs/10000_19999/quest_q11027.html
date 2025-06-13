@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já toquei em Drana? Não! E eu vim especificamente a Inggison para estudá -lo.</p>
+<p> </p>
+<p>Nem planta nem animal, nem mineral nem energia. O que eles são exatamente?</p>
+<p> </p>
+<p>Essa foi uma pergunta retórica, [%username]. Você não saberá a resposta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não faço ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas sua curiosidade está despertada? Claro que é. Você é inteligente o suficiente para obter o mistério.</p>
+<p> </p>
+<p>Aqui está o que vamos fazer. Você vai para a fazenda Hikiron e distrair o [%dic:STR_DIC_M_LF4_A2_LizardAs_52_An] Areia [%dic:STR_DIC_M_LF4_A2_LizardFi_52_An] S. Matá -los é provavelmente o melhor.</p>
+<p> </p>
+<p>Enquanto eles estão ocupados com você, coletarei Drana e amostras de solo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A propósito, Hikiron Farm está a um caminho daqui. Eu não mencionei isso antes?</p>
+<p> </p>
+<p>Bem, não se importe de mim. Basta sair quando estiver pronto. Eu vou alcançar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Siga o líder? Cobra!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem coisas melhores para fazer? Você acha que seu estilo de hackers e redução irracional faz a diferença para o Balaur?</p>
+<p> </p>
+<p>Não. Minha pesquisa é o que vai ganhar esta guerra, com ou sem a sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Se você terminar, talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Respire, Ambred, respire. Você não está mais lá.</p>
+<p> </p>
+<p>O Balaur estava simplesmente aterrorizante! Obrigado por vir para lidar com eles, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho sete emboscadores e oito assassinos".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Na verdade, é claro que não foi. Matar Balaur era irrelevante. Distraí -los enquanto eu colecionava as amostras ao vivo de Drana e do solo era a parte importante. Tente mostrar um pouco de força cerebral aqui.</p>
+<p> </p>
+<p>Essa recompensa é por seus esforços equivocados, da mesma forma. Talvez façamos isso de novo algum dia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Desvie os sobreviventes de Balaur para a fazenda Hikiron.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF4_A2_LizardAs_52_An]([%2]/4).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF4_A2_LizardFi_52_An]([%5]/6).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ambrosini].</p></step>
+</steps>
+<p>Desvie os sobreviventes de Balaur para a fazenda Hikiron para que Ambred possa pegar amostras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ambred disse que veio a Inggison para estudar Drana, mas o Balaur continuou atrapalhando seu caminho.</p>
+<p> </p>
+<p>Então você foi à fazenda Hikiron e exterminou o Balaur, permitindo que Ambred colecionasse amostras de Drana e solo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

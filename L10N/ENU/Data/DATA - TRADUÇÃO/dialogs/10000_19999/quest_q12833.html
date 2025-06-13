@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você poderia obter [%dic:STR_DIC_I_quest_12833a]para mim?</p>
+<p> </p>
+<p>Você receberá isso quando matar [%dic:STR_DIC_M_LDF5A_B9_RottenTree_Id_64_An]fora.</p>
+<p> </p>
+<p>O Rottentrunk Rotron pode ser um pouco selvagem, mas você deve me trazer as raízes de qualquer maneira.</p>
+<p> </p>
+<p>Eu preciso disso para minha inspeção de amostra. Sinceramente peço sua ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você já está de volta?</p>
+<p> </p>
+<p>O motivo do exame de amostra não foi compartilhado com você.</p>
+<p> </p>
+<p>Ou seja, para descobrir o motivo da mutação de Rotron e investigar a ecologia de seu ambiente.</p>
+<p> </p>
+<p>Quando você conhece seu ambiente, pode reagir claramente melhor aos problemas, não é certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o galho de árvore contaminado por ID.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por concluir a tarefa tão rapidamente.</p>
+<p> </p>
+<p>Com esta amostra valiosa que você me trouxe, posso realizar pesquisas importantes, [%username].</p>
+<p> </p>
+<p>A propósito, é estranho que um tronco de árvore seja tão mutado.</p>
+<p> </p>
+<p>Esta mutação não parece ser natural.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_B9_RottenTree_Id_64_An] e obter [%dic:STR_DIC_I_quest_12833a] e leve para [%dic:STR_DIC_N_LDF5_Village_Guard07_L].</p>[%collectitem]</step>
+</steps>
+<p>Mate o Rottentrunk Rotron e traga uma amostra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Basarian quer entender o ecossistema da área e o motivo da mutação do Rotron. Ele, portanto, pediu que você adquirisse algumas amostras.</p>
+<p> </p>
+<p>A pedido da Basarian, você rasgou o ramo podre Rotron e coletou os ramos contaminados com ID, pelos quais agradecemos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

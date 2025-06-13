@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Reconheço sua assistência contínua, Asmodian, mas deixe -me ser franco: eu sei que o que o inimigo está escondido naquele templo é provavelmente mais importante para você do que para nós.</p>
+<p> </p>
+<p>Desejamos apenas derrotar o Balaur e seus seguidores para que possamos viver em paz, enquanto você deseja conquistar todo o Gelkmaros.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não posso negar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço sua honestidade, Daeva. No entanto, apesar da agenda de longo prazo do seu povo, devemos cooperar no curto prazo para derrotar o dragão.</p>
+<p> </p>
+<p>Eu temo que você não encontre mais nada de uso fora do[%dic:STR_DIC_E_IDTemple_DF4]. Você deve entrar e descobrir o que o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003]é.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisará passar novamente por subterranea para alcançar o [%dic:STR_DIC_E_IDTemple_DF4]. Uma vez lá dentro ... eu gostaria de poder dizer exatamente para onde ir e o que fazer, mas o templo de Udas é completamente estranho para mim.</p>
+<p> </p>
+<p>Uma coisa é certa, no entanto-seu líder estará dentro. Derrota [%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah], e você pode encontrar uma pista útil para o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou demorar muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com medo, você está? É apenas natural-a determinação por si só não é suficiente para ninguém se aventurar no território de Balaur, para um lugar invadido por Dragonbound. Eu não vou segurar contra você.</p>
+<p> </p>
+<p>Que pena ... eu queria desesperadamente colaborar com os asmodianos e erradicar o dragão. Talvez eu encontre outro ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não tenho medo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu o que são os dragões, depois, [%username]? O que está dentro do templo de Udas?</p>
+<p> </p>
+<p>Diga -me tudo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Devemos ir mais fundo ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm .... Os motivos do inimigo nos escalam mais uma vez, mas você se saiu bem. Agora sabemos que nossa pesquisa deve incluir o templo inferior dos Udas. O portão para essa área realmente abrirá com a chave que você carrega, mas apenas se estiver em sintonia corretamente ... aqui, deixe -me ....</p>
+<p> </p>
+<p>Lá. A chave está sintonizada com sua energia. Ele aceitou você e, portanto, o portão para o templo inferior dos Udas será aberto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrubar [%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah] e encontre o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003].</p>[%collectitem]</step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Aglauros].</p></step>
+</steps>
+<p>Infiltrar o templo de Udas e derrotar o nexo para descobrir os verdadeiros motivos do dragão.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">Entrance to Lower Udas Temple found! Report to Aglauros.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Agulauros disse que se infiltrar no templo de Udas era a única esperança de descobrir os motivos de Dragonbound.</p>
+<p> </p>
+<p>Você não conseguiu revelar os motivos do inimigo, mas encontrou uma passagem para um nível mais baixo, que será aberto com os principais Aglauros sintonizados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

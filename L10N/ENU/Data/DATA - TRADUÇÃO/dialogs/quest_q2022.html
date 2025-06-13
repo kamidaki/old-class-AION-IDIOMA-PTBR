@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Estou decepcionado com a forma como nossos esforços contra a tribo da garra negra foram até agora.</p>
+<p> </p>
+<p>Azphel certa vez alertou seus soldados para atacar a raiz do inimigo, não seus galhos. Até agora, seus esforços removeram muitos galhos, mas a própria árvore-a tribo da garra negra, se você estiver me seguindo-remene tão saudável como sempre.</p>
+<p> </p>
+<p>Você está pronto para atacar a raiz por uma mudança, [%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus subordinados falharam em me fornecer inteligência útil, mas eu juntei o objetivo do MAU: abrir um Portão do Abismo.</p>
+<p> </p>
+<p>A primeira pista foi a Odella refinada que eles estavam estocando-a Odela é útil para manipular o Aether e alimentando um ritual de abertura do portão.</p>
+<p> </p>
+<p>A segunda pista foi Zemurru. O Mau começou a venerar Zemurru porque ele está enterrado perto de um portal antigo que poderia ser redirecionado para o abismo. Eles devem estar tentando levar o Balaur para Asmodae.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Você tem certeza disso?"</act>
+</selects>
+<voice file="Q2022-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, tenho certeza ... não que você tenha credibilidade para adivinhar seus superiores. Você tem credibilidade quando se trata de fechar o Portão do Abismos, ou então me disseram.</p>
+<p> </p>
+<p>Para o bem ou para o mal, você é o melhor soldado para este trabalho</p>
+<p> </p>
+<p>Teleport</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Entendi. Estou pronto para ir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Venha rapidamente! Fico feliz que você tenha voltado ileso.</p>
+<p> </p>
+<p>Vendo que você está de volta, aceito que a missão foi um sucesso?</p>
+<p> </p>
+<p>Você verificou se o Balaur está tentando trazer a tribo da garra negra para asmodae?</p>
+<p> </p>
+<p>Você os matou e fechou o portão da dimensão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz e destruí o portão do Abismo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim como eu supus. Os Mau estavam tentando convocar o Balaur para Asmodae. Acho que apenas salvamos Asmodae de uma invasão de Balaur de pleno direito.</p>
+<p> </p>
+<p>Vou relatar nosso sucesso a Kvasir em Pandaemonium. E tome nota, Meiyer ... espero que todos os meus soldados forneçam resultados como[%username] Só o fiz.</p>
+<p> </p>
+<p>Aqui está uma recompensa para você. Você fez bem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sueron].</p></step>
+<step><p visible="[%3]">Vá para [%dic:STR_DIC_W_DF1A_31] e encontre o [%dic:STR_DIC_E_14]. Em seguida, entre na área selada.</p></step>
+<step><p visible="[%6]">Interrompe a pedra do guardião do portão, que mantém o [%dic:STR_DIC_E_14].</p></step>
+<step><p visible="[%9]">Derrota [%dic:STR_DIC_M_NagaFighterSQ_20_An].</p></step>
+<step><p visible="[%12]">Destruir o [%dic:STR_DIC_E_14].</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Sueron].</p></step>
+</steps>
+<p>Ordem: Fale com a General da Brigada Suthran e receba ordens de uma missão secreta imperativa à sobrevivência de Altgard.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada Suthran acredita que os Mau estão tentando abrir um portão do abismo.</p>
+<p> </p>
+<p>Você encontrou o portão do abismo dentro de uma árvore e entrou na área selada. Havia uma grande pedra guardiana do portão lá.</p>
+<p> </p>
+<p>Quando você estava interrompendo a pedra do Guardian, um Nagarant apareceu. Você derrotou o Nagarant e destruiu o portão do Abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

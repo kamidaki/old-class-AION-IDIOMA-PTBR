@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele disse que minha mãe teve que morrer por causa do Balaur?</p>
+<p> </p>
+<p>Não posso deixar isso passar. Vou fazê -los pagar.</p>
+<p> </p>
+<p>Não vou deixar ninguém que atacasse a vila de Nunglark ao vivo por mais tempo, Awul.</p>
+<p> </p>
+<p>A propósito, qual é o seu nome?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Diga a ele seu nome.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Que nome único.</p>
+<p> </p>
+<p>[%username], pode me ajudar?</p>
+<p> </p>
+<p>Devo vingar minha mãe sozinha, mas ter jovens filhos, awul.</p>
+<p> </p>
+<p>Eles ainda precisam de cuidado antes que possam lutar por si mesmos.</p>
+<p> </p>
+<p>Então, você vai vingar a morte de minha mãe no Balaur por mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Eu nunca vou esquecer o seu favor.</p>
+<p> </p>
+<p>A propósito, quem são aqueles balaur deixados na vila destruída de Nunglark?</p>
+<p> </p>
+<p>São eles [%dic:STR_DIC_M_DF4_DrakanFi_Re_B1_53_An] e [%dic:STR_DIC_M_DF4_DrakanPr_Re_B1_53_An]? Desça. Todos eles, awul.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem, awul.</p>
+<p> </p>
+<p>Eu não deveria ter lhe pedido para vingar minha mãe.</p>
+<p> </p>
+<p>Estou profundamente grato por você me dizer como meu irmão está.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], não é?</p>
+<p> </p>
+<p>Você está voltando da vila destruída de Nungulark?</p>
+<p> </p>
+<p>Você já vingou no Balaur?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Diga a ele o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado, Daeva.</p>
+<p> </p>
+<p>Você salvou meu rosto e eu posso me encontrar com meu irmão mais tarde, awul.</p>
+<p> </p>
+<p>Pegue isso. Eu valorizo ​​isso mais do que tudo, além de você merece.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o Balaur na vila destruída de Nungulark.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_DrakanFi_Re_B1_53_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_DrakanPr_Re_B1_53_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Owlau_DF4_01].</p></step>
+</steps>
+<p>Você deve se vingar do Balaur que destruiu a vila de Nunglark, no lugar de Ulakin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulakin disse que deve vingar a morte de sua mãe como filho dela, mas teve que pedir que você faça isso por ele, porque ele precisa cuidar de seus jovens descendentes.</p>
+<p> </p>
+<p>Conforme solicitado, você eliminou o Balaur na vila destruída de Nunglark e Ulakin agradeceu e deu -lhe algo que ele tesou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

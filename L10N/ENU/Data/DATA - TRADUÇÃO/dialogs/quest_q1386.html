@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ridículo. Meu grupo de soldados está diminuindo, e nossa missão aqui continua se expandindo!</p>
+<p> </p>
+<p>Quando encontramos o bastião lefarista, eu os coloquei sob vigilância. Mas nosso sentinela nunca relatou.</p>
+<p> </p>
+<p>Lemia e eu saímos para encontrá -lo quase morto, escondendo -se no sopé da montanha de Kuriullu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"A mão de Yustiel!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Horas depois, ele teria morrido. A caminho da fortaleza, ele me disse que foi emboscado por um bando de Viragos.</p>
+<p> </p>
+<p>Ele disse que não havia lugar para assistir o bastião sem tropeçar em Virago Polhests.</p>
+<p> </p>
+<p>Para rastrear os lefaristas, essas fúrias têm que ir, mas isso levaria muitos homens!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso levá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Uh, [%username], são bestas realmente mortais e viajam em rebanhos.</p>
+<p> </p>
+<p>Meu sentinela é treinado aqui por meses, e eles o comeram vivo! Você esteve aqui, o que, dias?</p>
+<p> </p>
+<p>Eu realmente duvido que você possa acabar com o [%dic:STR_DIC_M_Harpy_32_An] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, ok. Vá direto para a montanha Kuriullu daqui. Você saberá[%dic:STR_DIC_M_Harpy_32_An] S Quando você os vê. Cabeça humana, corpo de Carrion Bird.</p>
+<p> </p>
+<p>E me traga cinco[%dic:STR_DIC_I_QUEST_1386a] S. Oh, uh ... eu confio em você, mas eu, aah, quero provas para mostrar meus superiores!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Prova, hein?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Heh. Sim, eu pensei que você mudaria de idéia.</p>
+<p> </p>
+<p>Eu não estou te brincando, [%username]. Eu só não quero que você se machuque!</p>
+<p> </p>
+<p>Prefiro pedir reforços à fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Que bom que você se importa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito tempo sem ver. O que te traz aqui?</p>
+<p> </p>
+<p>Whoah, o que estou pensando? Você saiu procurando por Viragos!</p>
+<p> </p>
+<p>Não me diga ... você fez isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu honro minha palavra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Uh, você esqueceu?</p>
+<p> </p>
+<p>Eu te disse, eu quero[%dic:STR_DIC_I_QUEST_1386a] S como evidência.</p>
+<p> </p>
+<p>Você não está inventando isso, você está, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você vai comer essas palavras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Coloração tão rica em esmeralda! Definitivamente, uma pena de cauda de virago.</p>
+<p> </p>
+<p>Eu te devo um pedido de desculpas, [%username]. Você conhece muitos idiotas obstinados no deserto. Eu fiquei cético.</p>
+<p> </p>
+<p>Você é um verdadeiro herói.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga provas dos mortos[%dic:STR_DIC_M_Harpy_32_An] para [%dic:STR_DIC_N_Leone].</p>[%collectitem]</step>
+</steps>
+<p>O bastião lefarista é protegido por Viragos, reunindo os penhascos da montanha Kuriullu. Mate os sentinelas de Virago. Colete suas penas de cauda como evidência para Leone.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Scout Sentinel de Leone foi atacado por Viragos enquanto espionava o bastião lefarista.</p>
+<p> </p>
+<p>Você se ofereceu para eliminar os sentinelas de Virago da Montanha Kuriullu.</p>
+<p> </p>
+<p>Leone assumiu que você estava se gabando. Quando você trouxe um punhado de penas sangrentas de cauda de Virago, ela se desculpou e chamou você de um herói de verdade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

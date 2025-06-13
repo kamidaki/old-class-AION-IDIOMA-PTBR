@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado a você, [%username], agora sabemos sobre o laboratório IDGEL.</p>
+<p> </p>
+<p>Eles estavam pesquisando uma fonte de energia alternativa para o IDGEL. Os mutantes injetados com ID estavam extraindo energia vital dos sujeitos do teste em laboratório.</p>
+<p> </p>
+<p>Sendo um cientista que pesquisa armas antigas, estou muito interessado nessa energia. Ainda existem sujeitos de teste que não foram submetidos a extração. Você não poderia extrair [%dic:STR_DIC_I_quest_18013a]deles para mim?</p>
+<p> </p>
+<p>Os assuntos injetados com ID não serão adversários fáceis, mas você poderá mantê -los sob controle, jogando um contra o outro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A espera quase me deixou louco.</p>
+<p> </p>
+<p>Você viu os assuntos do teste? e [%dic:STR_DIC_I_quest_18013a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a energia da vida.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, essa é a energia vital diretamente do laboratório?</p>
+<p> </p>
+<p>Estou curioso para ver quanto poder ele tem.</p>
+<p> </p>
+<p>Seria um grande sucesso se eu pudesse usar uma arma antiga com ela.</p>
+<p> </p>
+<p>Vou experimentar imediatamente.</p>
+<p> </p>
+<p>Oh, estou tão animado que nem te agradece. Obrigado por me trazer isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Extrair [%dic:STR_DIC_I_quest_18013a]dos sujeitos do teste no laboratório de Idgel e leve tudo para [%dic:STR_DIC_N_LDF5b_Gadoron].</p>[%collectitem]</step>
+</steps>
+<p>Vamos pegar energia vital mutada do Laboratório Tiamat para Gadoron para que ele possa experimentá -la.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gadoron lhe disse que ainda havia experimentos usando o ID no laboratório IDGEL e pediu que você extraia energia vital para que estes pudessem ser pesquisados.</p>
+<p> </p>
+<p>Quando você trouxe Gadoron Motated Life Energy do laboratório, ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

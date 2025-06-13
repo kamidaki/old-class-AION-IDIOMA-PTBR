@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma grande doença na vila. Um aldeão é coberto com feridas abertas. É uma maravilha que ele tenha uma pele saudável!</p>
+<p> </p>
+<p>Tentamos de tudo, mas nada lhe traz alívio. A água hroving pode curar a doença ... mas é muito perigoso para os seres humanos conseguirem a água.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é a dificuldade?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A própria água da fonte termal não é difícil de desenhar. O problema é que esta água da primavera é eficaz quando está quente-muito quente.</p>
+<p> </p>
+<p>Nenhum humano é rápido o suficiente para levá -lo de volta antes que a água fique fria. Mas um Daeva poderia coletar a água e depois usar o obelisco para retornar enquanto a água ainda está quente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso estar útil?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você nos ajudasse, [%username], ficaríamos muito agradecidos.</p>
+<p> </p>
+<p>Por favor, vá para [%dic:STR_DIC_W_LF2_SZ_G4] e traga -nos água da fonte termal. Não podemos levar nosso paciente para a fonte termal, então teremos que levar a fonte termal para ele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você for para [%dic:STR_DIC_W_LF2_SZ_G4], você encontrará um gêiseador que fala água quente. Você pode desenhar a água com este frasco. Tente não obter nenhuma espuma nela. Por favor, volte rapidamente. A água é eficaz apenas enquanto está quente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei tão rápido quanto um pleuro de dardos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é sério. Se você o visse, veria a agonia dele.</p>
+<p> </p>
+<p>Por favor, tenha pena dele. Eu imploro a você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso!</p>
+<p> </p>
+<p>Eu sabia que você poderia fazer isso, [%username].</p>
+<p> </p>
+<p>Por favor, Conceda-me a água da fonte termal.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a água. Tenha cuidado-é muito quente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, você voltou no tempo. Mas para quê? Você não trouxe a água da fonte termal!</p>
+<p> </p>
+<p>Por favor, corra para o [%dic:STR_DIC_W_LF2_SZ_G4] e traga de volta, muito quente!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Água extra de fonte termal, sem espuma, entendi!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ariel ser elogiado-você trouxe de volta a água da fonte termal a tempo!</p>
+<p> </p>
+<p>Com isso, a pele escorrendo do paciente será finalmente curada.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Desenhe água de fonte termal do gêiseador em[%dic:STR_DIC_W_LF2_SZ_G4].</p></step>
+<step><p visible="[%3]">Traga o frasco que contém a água da fonte termal para [%dic:STR_DIC_N_Aerope]dentro do limite de tempo.</p></step>
+</steps>
+<p>Desenhe a água da fonte termal e leve -a para o paciente, conforme solicitado a Aerope.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aerope estava preocupado com um paciente na vila cuja pele não podia ser curada com nenhum dos medicamentos habituais. Você coletou água de fonte terminosa e a trouxe para ela para que ela pudesse usá -la para curar o paciente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

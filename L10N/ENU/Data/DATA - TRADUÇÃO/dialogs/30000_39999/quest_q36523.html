@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An].</p>
+<p> </p>
+<p>2. Charge: assassinato de refugiados.</p>
+<p></p>
+<p>3. Detalhes do crime: Ricardo é procurado para os múltiplos assassinatos dos refugiados de Elyos. Ele é um assassino em série registrado que usa Grim Puca para rastrear e matar suas vítimas.</p>
+<p></p>
+<p>Qualquer pessoa que prenda ou assassine [%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An] Será pago generosamente.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Este não está voltando vivo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Assassinos não merecem uma onça de nossa simpatia, [%username].</p>
+<p> </p>
+<p>Estou feliz que você estivesse ... incapaz de trazê -lo vivo. A espada gera a espada, como dizemos.</p>
+<p> </p>
+<p>Ricardo teve alguma última palavra?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Difícil de dizer com um bocado de sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha ha ha ... bom ouvir.</p>
+<p> </p>
+<p>Esse selvagem foi responsável por muito sangue inocente ser derramado.</p>
+<p> </p>
+<p>Vamos ficar bem e bêbados esta noite, [%username]. Bom e bêbado! Aqui, aqui está sua opinião sobre a recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LF4_DayQ_LWizard_53_An], um assassino em série em fuga ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_E_36500].</p></step>
+</steps>
+<p>Os fortuários lhe enviaram uma proclamação "desejada: morta ou viva". Siga as instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os fortuários lhe enviaram uma proclamação "desejada: morta ou viva".</p>
+<p> </p>
+<p>Você matou Ricardo, que matou os refugiados inocentes de Elyos antes de fugir para Balaurea. Você recebeu uma recompensa por pegar o assassino.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

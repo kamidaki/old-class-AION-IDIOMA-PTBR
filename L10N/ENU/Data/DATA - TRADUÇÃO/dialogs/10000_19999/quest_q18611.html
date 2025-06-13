@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você estava planejando fazer com a lágrima de Kromede? Usá -lo em volta do seu pescoço é ... bastante berrante, [%username].</p>
+<p> </p>
+<p>Se você derreter e cobrir a jóia do juiz, será a jóia mais poderosa que você já lidou!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, você precisará de três coisas: a lágrima de Kromede, a jóia do juiz e um ferreiro muito talentoso.</p>
+<p> </p>
+<p>Você já tem a primeira coisa e, agora que me encontrou, você tem a terceira coisa. Você só precisa da jóia do juiz. Se você conseguir isso, eu cuidarei do resto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deveria estar agradecendo Ariel que você me encontrou, [%username].</p>
+<p> </p>
+<p>Eu realmente sou um dos melhores ferreiros em toda a Elysea. Lendário, alguns até dizem. Eu posso até lhe dizer onde começar a procurar a jóia.</p>
+<p> </p>
+<p>Eu ouvi rumores de que [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]no templo do fogo em Asmodae tem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é um ferreiro muito útil, Ukon."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode não confiar em mim, [%username]?</p>
+<p> </p>
+<p>Eu sou UKON! Eu sou o ferreiro mais famoso de Elysea! Essas mãos podem funcionar mágica!</p>
+<p> </p>
+<p>Pense nisso, Daeva. Você nunca receberá outra oferta como essa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu pensei! Não, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe a jóia do juiz, [%username]?</p>
+<p> </p>
+<p>Conceda-me a jóia e a lágrima de Kromede, e eu começarei a trabalhar.</p>
+<p> </p>
+<p>Não deveria demorar muito ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está tudo o que você precisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está preocupado que eu danifique a jóia do juiz?</p>
+<p> </p>
+<p>Eu ... sou o ferreiro mais famoso em toda a Elysea, e você realmente acha que vou danificar isso? Tenha alguma fé, Daeva.</p>
+<p> </p>
+<p>Apenas me dê com a lágrima de Kromede e eu te mostrarei! Ambos precisam estar no seu cubo também. Não consigo trabalhar na jóia se estiver em suas mãos, posso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Jóias e ferreiros não se misturam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! Isso foi muito trabalho para uma jóia tão pequena! Mais forte do que parece!</p>
+<p> </p>
+<p>Mas acabou ... pegue. A jóia de Kromede está completa.</p>
+<p> </p>
+<p>Vá na luz dela agora, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir os materiais necessários para refinar a jóia do juiz e trazê -los para [%dic:STR_DIC_N_Ukon].</p>[%collectitem]</step>
+</steps>
+<p>Ukon disse que refinaria a jóia do juiz para você se você trouxe os itens necessários.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ukon disse que a lágrima de Kromede seria boa para fortalecer a jóia do juiz, e ele disse que faria isso se você encontrasse os itens necessários.</p>
+<p> </p>
+<p>Você confiou nele e lhe deu a lágrima de Kromede e a jóia do juiz. Ele manteve sua palavra e melhorou sua arma na jóia de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Há mais uma coisa que precisamos de você quando você se infiltra na draga.</p>
+<p> </p>
+<p>As vidas de Elyos estão em jogo.</p>
+<p> </p>
+<p>Mencionei que muitos arriscaram suas vidas para descobrir o segredo para se infiltrar na draga? Estudiosos e guardiões que havíamos enviado a bordo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim. Lembro -me."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns ainda estão vivos-prisioneiros a bordo da draga.</p>
+<p> </p>
+<p>Sempre tentamos resgatar nosso povo, mas desta vez é ainda mais importante. Esses[%dic:STR_DIC_N_IDAB1_Dreadgion_prisoner_light] S Ter informações que o Balaur deseja. Tenho certeza de que é por isso que eles ainda estão vivos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não sei muito mais do que isso, [%username].</p>
+<p> </p>
+<p>Você terá que localizá -los e resgatá -los você mesmo. Por causa do caos que você causa, sugiro que você os encontre antes de atacar o capitão Adhati.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algumas das melhores mentes de Elysea, capturadas e provavelmente sendo torturadas pelos seres mais repreensíveis conhecidos.</p>
+<p> </p>
+<p>Você não tem honra, nem respeito pelos outros? Como você dorme à noite?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso estar de volta ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi horrível! O Balaur ... meus rolos de retorno não funcionariam. Provavelmente a porta da prisão está sob um feitiço.</p>
+<p> </p>
+<p>Mas tudo o que aprendemos será em vão, a menos que retornemos essas informações ao governador.</p>
+<p> </p>
+<p>Você salvou minha vida, [%username]. Muito obrigado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Esses rolos funcionam agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Disseram -me que os prisioneiros da draga e suas informações voltaram com segurança, graças a você.</p>
+<p> </p>
+<p>Você tem algo a acrescentar ao relatório do estudioso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles também tinham prisioneiros asmodianos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estudiosos e Arcontes da Asmodianos? HM ... eles devem estar coletando informações também.</p>
+<p> </p>
+<p>Vou relatar isso aos meus superiores. Veremos o movimento deles um pouco mais. Obrigado, [%username], para tudo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Abra o [%dic:STR_DIC_E_Dreadgion_Prison_Door] e converse com[%dic:STR_DIC_N_IDAB1_Dreadgion_prisoner_light].</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Mias].</p></step>
+</steps>
+<p>Alguns estudiosos e suas acompanhantes do guardião foram pegos enquanto investigam a draga e agora são prisioneiros. Vá e resgate -os</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Maiias disse que estudiosos e guardiões foram capturados pelo Balaur enquanto investigavam a draga, e ele pediu que você os resgatasse.</p>
+<p> </p>
+<p>Quando você se reportou a Maiias depois de se infiltrar na draga e libertar os prisioneiros, ele ficou muito surpreso que os estudiosos da Asmodianos também tenham sido presos na draga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está a sua segunda tarefa.</p>
+<p> </p>
+<p>Destruir o [plur][%dic:STR_DIC_M_LF4_A2_Kuillus_Drana_51_An]ou o [plur][%dic:STR_DIC_M_LF4_A2_BAT_Drana_51_An].</p>
+<p> </p>
+<p>Então a rota de Inggison para o sul terá sido limpa.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_Elim_DF4_01]Quando você concluir a tarefa.</p>
+<p> </p>
+<p>Ele lhe dará a terceira e quarta tarefas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um amigo do elim?</p>
+<p> </p>
+<p>Eu estava esperando o Daeva que o agente de Kaisinel, Outremus está me enviando.</p>
+<p> </p>
+<p>Você vai me ajudar, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a segunda tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É um prazer, Daeva.</p>
+<p> </p>
+<p>Aqui está um presente de Outremus para você.</p>
+<p> </p>
+<p>Vou te dar a terceira tarefa em um minuto também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF4_A2_Kuillus_Drana_51_An]ou o [plur][%dic:STR_DIC_M_LF4_A2_BAT_Drana_51_An] em inglês ([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Elim_DF4_01] em[%dic:STR_DIC_W_LF4_SZ_A3].</p></step>
+</steps>
+<p>Realize a segunda tarefa e encontre Lothas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A segunda tarefa que Outremus lhe deu foi destruir Rubyback Neokins ou Murmurs Highland em Inggison.</p>
+<p> </p>
+<p>Depois de eliminar os monstros, você encontrou Lothas e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

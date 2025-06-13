@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu posso restaurar a adaga suprema de seu filho à sua força original ... mas será difícil. Está muito danificado ... vi muitas batalhas.</p>
+<p> </p>
+<p>Esta é uma arma construída do meu povo; portanto, apenas a verdadeira habilidade Reian pode restaurar seu poder. True Reian Hands, juntamente com os verdadeiros materiais Reian ...</p>
+<p> </p>
+<p>Como nosso inimigo é o mesmo que o seu, vou consertar essa adaga para você se você obtiver os materiais de que preciso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vou encontrar esse material Reian."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que eu preciso é desconhecido para o seu povo ... e quase esquecido por meu próprio. Um minério de uma época em que todos ainda éramos humanos.</p>
+<p> </p>
+<p>Apenas um Reian que eu conheço ainda possui conhecimento deste mineral ... e pode ainda ter alguns. Você deve encontrá -lo e trazê -lo de volta para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve encontrar [%dic:STR_DIC_N_Honeus] e conte a ele o arco que você procura reparar.</p>
+<p> </p>
+<p>Se você o ajudar em uma tarefa, ele certamente lhe dará o [%dic:STR_DIC_I_Insidium_01]Nós precisamos. É um minério antigo que foi criado quando Lady Siel e Tiamat lutaram um ao outro antes do cataclismo. A energia que eles produziram foi magnífica ... transformou carvão nesse minério.</p>
+<p> </p>
+<p>Apenas Honeus tem lingotes de Noxallon. Lembre -se, você deve fazer o que ele pergunta, e só então ele dará a você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrar Honeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria ter conhecido melhor do que levar um Elyos em Sua Palavra.</p>
+<p> </p>
+<p>Às vezes, meu povo diz que os Elyos são como o Kerubar ... sempre colhendo, colhendo, colhendo, mas nunca semeando.</p>
+<p> </p>
+<p>Talvez você ouça essas palavras e mude ... talvez você não.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu quebre seu nariz!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você levou seu tempo, [%username]. Mas não importa ... deu tempo ao incêndio para aquecer.</p>
+<p> </p>
+<p>Entregue -me o NOXALLON NOTO e a adaga suprema de seu Siel.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a adaga e o lingot."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei por que esperava algo diferente de um Daeva, [%username]!</p>
+<p> </p>
+<p>Se você quiser que sua adaga seja reparada, você deve fazer o que [%dic:STR_DIC_N_Honeus]pede a você para receber o [%dic:STR_DIC_I_Insidium_01]. E lembre-se-os dois componentes devem estar no seu cubo quando você se aproxima de mim.</p>
+<p> </p>
+<p>Não existe uma maneira simples de restaurar seu poder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho estado ocupado, Reian."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, esse lingote é perfeito, assim como eu esperava. Isso só levará apenas um minuto, [%username].</p>
+<p> </p>
+<p>(Ele derrete o NOXALLON NOTOT em um forno e aplica cuidadosamente o líquido derretido à lâmina de punhal.)</p>
+<p> </p>
+<p>A pomada de minério e as ervas estão se misturando com os metais ... ele absorverá rapidamente. Lá, isso deve fazer isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30030] e trazê -lo para [%dic:STR_DIC_N_Gefeios].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o NOXALLON LINGOT, o material que pode restaurar os poderes da Suprema Dagger de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios disse que precisava de um material especial para restaurar os verdadeiros poderes da Suprema Dagger de Siel.</p>
+<p> </p>
+<p>Você foi ver Honeus e recebeu o NOXALLON LINGOT depois de fazê -lo um favor. Com o lingote, Gefeios transformou sua adaga na adaga suprema de Noble Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho um pedido! Você poderia trazer minha irmã, que está em[%dic:STR_DIC_W_LDF5b_SZ_E1_1], aqui para mim?</p>
+<p> </p>
+<p>O nome dela é[%dic:STR_DIC_N_LDF5b_Sister01_E].</p>
+<p> </p>
+<p>Klara realmente me seguiu porque queria olhar para Klara, mas ela desapareceu em um piscar de olhos. Agora ela foi encontrada perto[%dic:STR_DIC_W_LDF5b_SZ_E1_1].</p>
+<p> </p>
+<p>Eu ficaria feliz em buscá -la sozinho, mas não posso sair aqui agora. Então eu gostaria de confiar você, [%username], com esta tarefa.</p>
+<p> </p>
+<p>Seus pais a mimaram demais, e é por isso que suas maneiras estão um pouco faltando, mas ela não é uma criança ruim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Murmura) Como devo avaliar essa pessoa ...</p>
+<p> </p>
+<p>Ah, não é fácil ver Katalam de uma só vez.</p>
+<p> </p>
+<p>É uma oportunidade que estou esperando há muito tempo e agora estou sendo puxada novamente.</p>
+<p> </p>
+<p>Deveria haver muitos monstros aqui. Por favor me acompanhe para [%dic:STR_DIC_W_LDF5b_SensoryArea_Q13048a], é aí que meu irmão está.</p>
+<p> </p>
+<p>Depois disso, poderei continuar sozinho. Devemos sair de uma só vez!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você começa a escoltá -lo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde está Klara? Você a liderou aqui bem?</p>
+<p> </p>
+<p>Ela não está murmurando coisas estranhas sozinhas em algum lugar?</p>
+<p> </p>
+<p>Ela é uma criança estranha e me dá grandes dores de cabeça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles disseram a ele que a criança poderia encontrar o caminho de volta da entrada da vila por si só, e ele apenas deixou para lá?</p>
+<p> </p>
+<p>Como confiar!</p>
+<p> </p>
+<p>A criança não voltou. Deve ter escapado em algum lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Sister01_E]%.</p></step>
+<step><p visible="[%3]">Escort Klara para [%dic:STR_DIC_W_LDF5b_SensoryArea_Q13048a].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5b_Phone_E].</p></step>
+</steps>
+<p>Certifique -se de que a irmã de Phon, Klara, chegue à cidade brilhante com segurança.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Phon disse que sua irmã Klara, que desapareceu durante uma viagem a Katalam, foi encontrada. Ele pediu para você buscá -la.</p>
+<p> </p>
+<p>Quando você chegou à entrada de Bright Town, ela insistiu teimosamente que poderia ir sozinha. Então você voltou sozinho.</p>
+<p> </p>
+<p>Mas depois que você voltou, Phon disse que Klara não havia chegado.</p>
+<p> </p>
+<p>Eu acho que você foi mentido por Klara.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

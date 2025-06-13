@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Esta pena está quebrada! Estou com pouco tempo e agora minha pena não cooperará?</p>
+<p> </p>
+<p>Eu tenho que enviar este relatório para a fortaleza hoje!</p>
+<p> </p>
+<p>Oh, olá, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há algo que eu possa fazer para ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a minha última pena, e eu só uso[%dic:STR_DIC_I_quest_2214a] para fazê -los. Eles realmente são os melhores.</p>
+<p> </p>
+<p>Se você quiser ajudar, poderia me trazer os materiais para fazer uma nova pena?</p>
+<p> </p>
+<p>Você pode obter [%dic:STR_DIC_I_quest_2214a] S de [%dic:STR_DIC_M_lupylliniD_10_n] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. [%dic:STR_DIC_M_lupylliniD_10_n] S são fáceis de encontrar-eles estão em toda a floresta de Moslan.</p>
+<p> </p>
+<p>Traga -me 5 penas. Eu não quero ser pego vazio de mão novamente.</p>
+<p> </p>
+<p>Eu gostaria de terminar este relatório imediatamente, por isso, se você puder apressá -lo, eu apreciaria.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Eu sempre pensei que a caridade e a boa vontade faziam parte de ser um Daeva. Eu acho que os padrões estão escorregando hoje em dia.</p>
+<p> </p>
+<p>Se você não puder me ajudar, certamente vou chegar atrasado ao meu relatório.</p>
+<p> </p>
+<p>Isso não vai ficar bem para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Mumu está contido ... Karnif ataques à ascensão ... agora, o que mais havia?</p>
+<p> </p>
+<p>Ah, [%username]. Apenas analisando meu relatório. Você encontrou os Plumas?</p>
+<p> </p>
+<p>Eu realmente preciso dar isso a isso ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu os tenho aqui bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não rastreou o [%dic:STR_DIC_M_lupylliniD_10_n] Ainda?</p>
+<p> </p>
+<p>Você não tem medo de pássaros, não é?</p>
+<p> </p>
+<p>Eu os teria reunido se soubesse que levaria tanto tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes devem fazer bem!</p>
+<p> </p>
+<p>Eu não deveria ter que me preocupar com as penas por algum tempo.</p>
+<p> </p>
+<p>Muito obrigado! Leve isso para seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_quest_2214a] e leve-os para [%dic:STR_DIC_N_Lovinja].</p>[%collectitem]</step>
+</steps>
+<p>Loriniah disse que sua pena foi quebrada. Pegue as penas da pluma para que ele possa terminar seu relatório com uma nova pena de penas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Loriniah estava fazendo um relatório quando sua pena quebrou. Você caçou Plumas por penas para fazer uma nova pena para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

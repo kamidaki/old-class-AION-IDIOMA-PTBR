@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tolos, cada um deles ....</p>
+<p> </p>
+<p>Desculpe, [%username]. Você me pegou em um momento ruim. Acabei de falar com um Daeva que disse que o Armoursroursmithing é uma habilidade infinitamente mais importante do que criar pano e armadura de couro. Você pode acreditar?!</p>
+<p> </p>
+<p>Você pensaria que alguém que trabalhou ao lado de feiticeiros, mestres, guardas florestais e assassinos teria desenvolvido entendimento e apreciação. Ele é um tolo ignorante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que ele diria isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei. Talvez ele esteja tentando me machucar. Eu já fui um centurião, mas quando chegou a chance de deixar as linhas de frente, pulei nele. Algumas pessoas mantiveram isso contra mim.</p>
+<p> </p>
+<p>Levei anos para aperfeiçoar minhas habilidades, mas eventualmente meus ex -amigos voltaram para a armadura e as roupas que faço.</p>
+<p> </p>
+<p>Veja bem, os humanos têm tempo limitado-eles nunca têm a chance de aperfeiçoar seu trabalho. Mas minhas habilidades com couro e pano refletem o tempo oferecido um Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Acabei de subir recentemente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, então você tem muito a aprender!</p>
+<p> </p>
+<p>Eu ficaria feliz em treiná -lo na arte da alfaiataria. A profissão não é fácil, mas com trabalho duro, você pode dominar a criação de pano e armadura de couro.</p>
+<p> </p>
+<p>O que você acha, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Estou emocionado ao ver que nem todos os Daevas são tão pequenos.</p>
+<p> </p>
+<p>Seu primeiro trabalho será tratar os couros de couro para que eles possam ser usados ​​para criar armaduras. Esta é uma habilidade simples, porém fundamental.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_FLA09] e matar slinks e worgs até você coletar pelo menos seis peles. Vou precisar de apenas três tiras de couro, mas você pode arruinar alguns enquanto os trabalha.</p>
+<p> </p>
+<p>Quando você tiver as peles, volte aqui e use os teares para transformá -los em tiras de couro! Boa sorte!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece bastante simples."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu vejo.</p>
+<p> </p>
+<p>Não estou surpreso que você não leve meu comércio a sério. Talvez com o tempo ...</p>
+<p> </p>
+<p>Tomar cuidado, [%username]. Por favor, volte se tiver uma mudança de coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se saiu?</p>
+<p> </p>
+<p>Esses slinks e worgs não parecem ter lhe dado nenhum problema. Talvez você seja mais manipulador em uma luta do que eu te dei crédito.</p>
+<p> </p>
+<p>Então, deixe -me ver as peles então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso está errado. Você não fez como eu perguntei, [%username].</p>
+<p> </p>
+<p>Lembre -se de que matar o animal não garante uma boa pele. Alguns foram danificados em combate, enquanto outros não serão de alta qualidade para justificar a pele.</p>
+<p> </p>
+<p>Depois de ter as peles, você também precisa tratá -las nos teares. Você pode arruinar acidentalmente algumas peles até pegar o jeito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto com o que você precisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho!</p>
+<p> </p>
+<p>Esse couro é perfeito, quase impecável, de fato. Você fez isso sozinho? Estou atordoado!</p>
+<p> </p>
+<p>Pegue isso. Espero que isso seja útil para você, à medida que você se torna mais proficiente na alfaiataria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue o couro fino que você processou nos teares para [%dic:STR_DIC_N_Daphnis].</p>[%collectitem]</step>
+</steps>
+<p>Hunt Slinks e Worgs perto da Cidadela da Verteron até você obter couros finos suficientes e, em seguida, use uma Máquina de Tecelagem para fazer três pedaços de couro fino e levá -los a Daphnis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns Daevas consideram o pano e a armadura de couro como sem importância em comparação com o trabalho em metal. Daphnis, um pano, se ofendeu com isso e argumentou que aqueles que só podem usar armaduras de pano e couro exigem proteção igualmente bem feita.</p>
+<p> </p>
+<p>Ela pediu que você obtenha couro cru e tratá -lo para ver por si mesmo quanto conhecimento técnico está envolvido. Você caçou slinks e worgs para obter os couros crus e depois usou uma Máquina de Tecelagem para fazer couro fino.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

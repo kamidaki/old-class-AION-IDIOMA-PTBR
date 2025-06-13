@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]![%username] [%username] [%username]!</p>
+<p> </p>
+<p>Estou esperando por você há tanto tempo agora, sim sim! Esqueci seu rosto, perguntei a todos os danos que passam "você está[%username]? "Mas não! Agora aqui está você!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Aqui estou eu. O que há de errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Pago Bom Kinah por um homem, instruído a enviar um Daeva nomeado[%username]para a Brigada Geral[%dic:STR_DIC_N_Nerthus].</p>
+<p> </p>
+<p>Não me olhe assim, Daeva-eu não sei mais! Paguei Bom Kinah, disse para não fazer perguntas, então não. Mas não importa! Nerita quer você, então vá-Hurry to Beluslan Fortaleza!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom bem. Deve ser importante se [%dic:STR_DIC_N_Nerthus]Quer falar com Daeva pessoalmente, sim?</p>
+<p> </p>
+<p>Vá, se apresse! A fortaleza de Beluslan não vai até você!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado por me avisar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva estúpido! Não importa para mim! Só foi instruído a lhe contar, mas o estúpido Daeva!</p>
+<p> </p>
+<p>Nerita é general de brigada de toda a Beluslan! Ela pede para você, você deve correr!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Observe sua língua, Shugo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ser [%username]?</p>
+<p> </p>
+<p>Eu deveria me desculpar por entrar em contato com você de uma maneira tão indireta. Infelizmente, minha mão foi forçada-você era difícil de acompanhar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Por que estou aqui, general?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por causa dos lefaristas, [%username]. Eles criaram algum tipo de base na mina de Malek, e não sabemos o porquê. A mina fica ao lado dos ladrões de Kidorun, e entendemos que você desenvolveu uma relação de trabalho com eles.</p>
+<p> </p>
+<p>Queremos saber o que mais está na mina. Examinamos a área e os lefaristas existem soldados, não mineiros.</p>
+<p> </p>
+<p>Fale com seus contatos nos ladrões de Kidorun e relate de volta. Sangue para sangue.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Fácil. Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo?</p>
+<p> </p>
+<p>O que Nerita queria? Daeva pode dizer? Você pode, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Diga -me o que há na mina de Malek. Agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Malek Mine? Daeva me pergunta? Look B-mas! Braços pequenos magros, frágil b-b body!  Os lefaristas matariam Huarinrinerk, sim, sim!</p>
+<p> </p>
+<p>Não me pergunte, D-Daeva! Vamos conversar sobre outra coisa, sim? SIM SIM!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Nerthus].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_DF3_12].</p></step>
+</steps>
+<p>Huarinrinerk disse que a General da Brigada Nerita estava procurando por você. Vá para a fortaleza e encontre -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Huarinrinerk disse que Nerita, o general da brigada da fortaleza de Beluslan, estava procurando por você.</p>
+<p> </p>
+<p>Você foi à fortaleza e conheceu Nerita, que disse que havia algo estranho nos lefaristas que ocupavam a mina de Malek. Ela queria investigá -los e a mina.</p>
+<p> </p>
+<p>No entanto, ela não conseguiu despachar espiões devido a terrenos complexos por lá e pediu que você investigasse os lefaristas com a ajuda dos ladrões de Kidorun que cresceram para conhecê -lo.</p>
+<p> </p>
+<p>Você voltou a Huarinriner e perguntou a ela sobre a mina, fazendo com que ela entrasse em pânico enquanto fingia ignorância.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... sim, esses sintomas correspondem ao de uma doença anterior em que trabalhei. Eu fiz uma pomada naquela época que parecia fazer maravilhas.</p>
+<p> </p>
+<p>Se bem me lembro, marinei os frutos de eliminar [%dic:STR_DIC_I_quest_11452a], purou -os e apliquei a pasta na pele.</p>
+<p> </p>
+<p>Foi uma mistura muito difícil de fazer ... levou quase um mês para acertar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Mas você pode fazer isso de novo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, é claro ... eu mantive notas muito completas sobre o assunto.</p>
+<p> </p>
+<p>Mas fiquei sem os ingredientes necessários. Vou precisar de alguém para me encontrar o que preciso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se não me engano ... eu vou precisar [%dic:STR_DIC_I_quest_11452a]. Parece ameaçador, mas precisamos matar a febre para acabar com a doença.</p>
+<p> </p>
+<p>Eu posso fazer a cura se você puder me encontrar o veneno.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, [%dic:STR_DIC_I_quest_11452a]é a parte mais importante deste tratamento.</p>
+<p> </p>
+<p>Levei mais de cem experimentos para descobri-lo da última vez-não deve demorar tanto tempo.</p>
+<p> </p>
+<p>Se Ariel está do nosso lado, é ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ariel está sempre do nosso lado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você disse que estava aqui para ajudar a Crosia ... mas você não vai encontrar o ingrediente de que preciso?</p>
+<p> </p>
+<p>Eu não vim até você, [%username]. Você veio até mim, lembra?</p>
+<p> </p>
+<p>Os Guardiões certamente morrerão sem minha cura. Você não tem empatia por seus colegas Daevas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A empatia recebe um Daeva matado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, [%username], você trouxe [%dic:STR_DIC_I_quest_11452a]Como eu perguntei?</p>
+<p> </p>
+<p>Desta vez, farei um grande lote da pomada, caso essa doença se espalhe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o veneno de Mosqua."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não vejo[%dic:STR_DIC_I_quest_11452a] em você. Houve um problema em encontrá -lo?</p>
+<p> </p>
+<p>Talvez você o tenha perdido no seu caminho aqui, hmm? Eu sugeriria procurar por isso novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, maravilhoso, maravilhoso. Esta será a quantidade perfeita para a pomada.</p>
+<p> </p>
+<p>O veneno de Mosqua é bastante pegajoso, então isso deve criar um lote muito eficaz. Vamos ver aqui ... dois traços disso ... uma pitada de ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_IDElim_2F_NeutWorkmanfly_Qeen_52_Ae] e trazer o ingrediente necessário para [%dic:STR_DIC_N_Phailos].</p>[%collectitem]</step>
+</steps>
+<p>Traga o veneno de Mosqua para Phailos para que ele possa fazer uma pomada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Phailos disse que saiu de sua pomada para tratar os soldados feridos.</p>
+<p> </p>
+<p>Ele perguntou se você encontraria o veneno de Mosqua para fazer a cura, o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Não há madeira suficiente para construir o quartel, AK. Por favor, vá para o acampamento de madeira rubirinerk, obtenha [%dic:STR_DIC_I_quest_49605a] e levá -lo ao escritório administrativo responsável.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Dumurinerk, Silverine Company</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa tarefa foi fácil, não foi, AK?</p>
+<p> </p>
+<p>Afinal, Daeva só teve que ir ao acampamento de madeira rubinista e pegar a madeira do chão.</p>
+<p> </p>
+<p>Deixe Shugo dar uma olhada na madeira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a madeira dura.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem feito todo esse tempo, AK?</p>
+<p> </p>
+<p>Daeva só precisa pegar a madeira. Ninguém está pedindo a Daeva para cair as árvores, Ak.</p>
+<p> </p>
+<p>Shuga está decepcionada com Daeva, [%username], E.</p>
+<p> </p>
+<p>Traga rapidamente o [%dic:STR_DIC_I_quest_49605a], se você não quiser perder mais confiança.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um alerta de aviso, AK.</p>
+<p> </p>
+<p>A madeira de tal qualidade também é adequada para entrega a Goldrinyerk e Daeva, AK.</p>
+<p> </p>
+<p>[%username], certo, AK? Vou colocar seu nome nos livros, AK.</p>
+<p> </p>
+<p>Esta é a sua recompensa pelo último emprego. Pegue, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_49605a]no acampamento de madeira rubinista e levá -lo a [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p>[%collectitem]</step>
+</steps>
+<p>Você recebeu instruções da Silverine Limited. Leia -os e age.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois de reunir madeira dura no acampamento de madeira rubinista e o trouxe para o ramo da Silverine Limited no norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

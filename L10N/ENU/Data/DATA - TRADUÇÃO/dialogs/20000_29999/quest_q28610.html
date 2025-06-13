@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe, [%username], A lágrima de Kromede pode ser um poderoso colar fino, mas você não pode matar um drakan com ele.</p>
+<p> </p>
+<p>Mas, graças aos materiais com os quais é feito, ele tem uma conexão especial com uma das armas de Kromede.</p>
+<p> </p>
+<p>Tudo o que preciso fazer é juntar os dois, e você tem uma força a ser reconhecida!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma conexão ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo. A adaga do juiz é a arma de que estou falando.</p>
+<p> </p>
+<p>Sozinho, eles são poderosos o suficiente. Mas junte -os, e o resultado o levará a novas alturas!</p>
+<p> </p>
+<p>Tudo o que você precisa fazer é pegar a adaga do juiz, e eu farei o resto! O que você acha?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que você diria isso! Isso vai provar ao mundo que eu sou um dos principais ferreiros de Asmodae!</p>
+<p> </p>
+<p>Quanto à adaga do juiz, o real[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]tem.</p>
+<p> </p>
+<p>Ela está no templo do fogo em Morheim. Pode ser um pouco estranho para você, mas você pode fazê -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"'Estranho' é uma palavra, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso é um colar muito bonito, não é?</p>
+<p> </p>
+<p>Mas "bonito" não vale um fragmento hoje em dia. Agora, "forte" ... é onde está!</p>
+<p> </p>
+<p>E a adaga do juiz junto com a lágrima de Kromede é forte! Você deve pensar sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Suponho que eu poderia ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você não se sinta muito mal. Se o que você me disse é verdadeiro, Kromede foi consumido pela tristeza e pelo ódio.</p>
+<p> </p>
+<p>Se ela era inocente antes, não é mais. Ela é uma ameaça que precisa ser tratada.</p>
+<p> </p>
+<p>Ela teve a adaga do juiz como eu disse? Nesse caso, posso iniciar o processo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Então comece."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sem tudo em ordem.</p>
+<p> </p>
+<p>Lembre -se, eu preciso da lágrima de Kromede e da arma em seu cubo quando você vier até mim. Caso contrário, não poderei trabalhar.</p>
+<p> </p>
+<p>Caso contrário, você precisará derrotar [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]Para a adaga do juiz.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja isso. Você nunca verá uma exibição mais fina de habilidade do que isso.</p>
+<p> </p>
+<p>Hah! Har! Ho! Ufa, essas faíscas certamente voaram.</p>
+<p> </p>
+<p>E acho que ficou muito bem. Experimente a adaga de Kromede e veja por si mesmo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reivindicar a adaga do juiz e trazê -lo para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter acha que pode melhorar uma arma poderosa com a lágrima de Kromede. Encontre a adaga do juiz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Walter disse que a lágrima de Kromede pode ser usada para reforçar uma arma poderosa de propriedade de Kromede: a adaga do juiz.</p>
+<p> </p>
+<p>Você obteve a adaga e deu a ele, junto com a lágrima de Kromede. Walter fundiu os dois e lhe deu uma arma fortalecida, a adaga de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

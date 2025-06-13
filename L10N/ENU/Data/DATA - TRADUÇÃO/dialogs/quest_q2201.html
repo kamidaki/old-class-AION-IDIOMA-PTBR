@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se eu pudesse apenas ... ZZZZ ...</p>
+<p> </p>
+<p>... Mas os Crasaurs ... na competição Chili ... conquistaram o primeiro lugar ... Melhor pimentão ao redor ... Zzzzz ...</p>
+<p> </p>
+<p>WH ... o que ... oh! Você me assustou, [%username]! Eu estava apenas, er, pensando. Profundamente. Sobre ... trabalho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Trabalho, hein?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, tecnicamente sim.</p>
+<p> </p>
+<p>Oh, é o Centurion[%dic:STR_DIC_N_Valuerin]! Ele está determinado que os cidadãos devem se sentir seguros andando pela fortaleza, o que é admirável, mas-oh, ele está apenas colocando muito em mim!</p>
+<p> </p>
+<p>"Patrulha a fortaleza o dia todo", diz ele, "e depois caça as criaturas fora a noite toda".</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quando você dorme?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Ah-hah! Essa é a pergunta, não é? Quando, quando, quando vou dormir um pouco? Eu apenas continuo cochilando em patrulha ... e tendo ... sonhos estranhos ...</p>
+<p> </p>
+<p>Por favor, [%username], você poderia me ajudar?</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_PhainiD_10_n]Dê-me mais problemas-eles me mantêm mais tempo. Você acha que poderia caçar alguns para que eu possa dormir um pouco hoje à noite?</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado! Pensar que posso dormir hoje à noite ... e eu tenho um desejo tão estranho por chili ....</p>
+<p> </p>
+<p>Enfim, você pode encontrar [%dic:STR_DIC_M_PhainiD_10_n] S in[%dic:STR_DIC_W_DF1A_2], do lado de fora da fortaleza.</p>
+<p> </p>
+<p>Eles passam a maior parte do tempo na água. Se você puder caçar talvez 10 deles, isso liberaria algumas horas para ... Zzzzz ...</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso. Aproveite sua soneca."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Bem, tenho certeza de que seu dia já está cheio de problemas e loucura. Não há necessidade de adicionar a ele.</p>
+<p> </p>
+<p>Eu esperava que você tenha pena da minha situação .... talvez você volte depois de ... pensou em ... zzzzz ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ... nada de errado com ... minhas asas ... zzzz ...</p>
+<p> </p>
+<p>Oh, [%username]! Er, você caçou[%dic:STR_DIC_M_PhainiD_10_n] para mim?</p>
+<p> </p>
+<p>Eu estive tão ansioso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_salute;HACTION_SELECT_QUEST_REWARD">"As criaturas estão mortas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado!</p>
+<p> </p>
+<p>Agora posso me reportar ao Centurion Valurion. Estou em sua dívida!</p>
+<p> </p>
+<p>Isso não é muito, mas é tudo o que posso pagar. Por favor, pegue.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_PhainiD_10_n] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Heidunn].</p></step>
+</steps>
+<p>A ajuda Heidunn mata os cruzamentos de gelo para poder dormir um pouco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Heidunn é um arconte que foi recentemente transferido para a fortaleza de Altgard.</p>
+<p> </p>
+<p>Ele foi ordenado a limpar todos os animais perigosos perto da fortaleza, mas suas ordens não deixaram tempo para dormir. Ele pediu ajuda.</p>
+<p> </p>
+<p>Você matou 10 cruzamentos de gelo para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

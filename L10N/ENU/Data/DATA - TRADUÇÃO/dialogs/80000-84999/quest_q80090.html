@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, do tipo[%userclass]!</p>
+<p> </p>
+<p>Essas almas que você me trouxe foram realmente úteis.</p>
+<p> </p>
+<p>Eu tenho tentado divinações e incanações diferentes, tentando desbloquear seu segredo, mas acho que não tenho material suficiente para trabalhar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não está funcionando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, eu recebo vislumbres e impressões das almas, mas nada concreto.</p>
+<p> </p>
+<p>Posso incomodá -lo para me trazer um pouco mais? Na verdade, aposto que seria capaz de obter uma leitura melhor se você me traga essências da alma.</p>
+<p> </p>
+<p>O que? Não, eu não fiz nada de ruim. Esses caçadores de bruxas são perturbados e perigosos. Tenho certeza de que é de muita exposição a essas almas fantasmagóricas! Na verdade, acho que essas almas são contagiosas!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! É isso ... a força por trás desses fantasmas, deve ter se entrelaçado em sua alma!</p>
+<p> </p>
+<p>Eu sei que há[%dic:STR_DIC_M_Branch_Event_LehparAs_18_An] está na área. Eu posso senti -los, como um milhão de aranhas minúsculas, subindo minhas costas. Ewwww!</p>
+<p> </p>
+<p>Por favor, ajude -os! Libertá -los de sua corrupção e traga -me o [%dic:STR_DIC_I_QUEST_80090A] S. Com essas almas extras, tenho certeza de que poderei descobrir por que eles estão atrás de mim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem ... tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou perguntando muito? Pedindo para você libertar aqueles pobres caçadores de bruxas?! Livre da mancha que atacou suas almas?</p>
+<p> </p>
+<p>Oh, por favor, reconsidere. Eu preciso dessas almas ... o calor ... o poder! Eles devem ser libertados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Creepy, muito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Existe algo mais bonito do que uma alma fresca, se contorcendo e calorosa?</p>
+<p> </p>
+<p>Linda ... e tão necessária para descobrir por que estou sendo perseguido. O que eu poderia ter feito de errado?</p>
+<p> </p>
+<p>Oh, [%username], quando você chegou aqui? Você trouxe o que eu perguntei?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Ummm, aqui está a essência da alma."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Isso é perfeito! Com isso, serei poderoso o suficiente para Kil ... Continue minha pesquisa.</p>
+<p> </p>
+<p>Tenho certeza de que isso me ajudará a descobrir o que deu errado com meu pequeno feitiço. Oh, como eu desejo fazê -los parar de me perseguir!</p>
+<p> </p>
+<p>Você fez bem. É melhor você sair agora ... para que você não fique contaminado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é suficiente [%dic:STR_DIC_I_QUEST_80090A] Ainda?</p>
+<p> </p>
+<p>Um inquérito! Pegue -me essas essências da alma ou eu vou transformá -lo em uma pergunta! Serviço insuportável de má qualidade ...</p>
+<p> </p>
+<p>Err ... apenas um pequeno humor de bruxa lá. Eu nem sei como as transformações funcionam. Eu não sou esse tipo de bruxa. Por favor, se apresse e ajude aqueles pobres caçadores de bruxas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está começando a me assustar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_80090A] e entregá -los a [%dic:STR_DIC_N_event_Blair].</p>[%collectitem]</step>
+</steps>
+<p>Colete as essências da alma branca dos caçadores de bruxas e entregue -os a Blair.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Blair pediu que você resgatasse os caçadores de bruxas coletando suas almas corrompidas.</p>
+<p> </p>
+<p>Embora ela estivesse começando a assustá -lo, você coletou as almas solicitadas e foram recompensadas por seus problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

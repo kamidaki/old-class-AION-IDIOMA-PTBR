@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver o que isso diz.</p>
+<p> </p>
+<p>"O assunto do teste, designado RM-78C, está mostrando excelentes habilidades que se encontram-e em alguns casos excedem-nossas expectativas".</p>
+<p> </p>
+<p>Oh ... isso realmente não parece promissor, não é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Acho que isso depende da perspectiva ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perspectiva? Isso é horrível!</p>
+<p> </p>
+<p>Deve haver algo que podemos fazer ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O governador ainda sabe?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O governador! Claro! Devo relatar isso ao governador imediatamente.</p>
+<p> </p>
+<p>Mas ... oh, não há tempo para a cadeia de comando! Quando recebemos suas ordens, pode ser tarde demais. Temos que agir agora.</p>
+<p> </p>
+<p>[%username], Eu preciso que você encontre [%dic:STR_DIC_M_ID5R_PerfectWaBossQ_45_Ae]... e destruí -lo. Se é humano ... oh, não podemos nos arriscar. Mesmo que seja humano, destrua -o.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de destruir o RM-78C, junte alguns de seus[%dic:STR_DIC_I_QUEST_1934a]. Precisamos examiná -lo para descobrir o que eles estão fazendo lá.</p>
+<p> </p>
+<p>Tome cuidado. Vou informar o governador enquanto você se foi.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Com medo de que seja humano?</p>
+<p> </p>
+<p>Eu não posso te culpar ... mas ...</p>
+<p> </p>
+<p>Apenas ... por favor, reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]...</p>
+<p> </p>
+<p>Como foi ... foi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem ... eu trouxe isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não encontrou?</p>
+<p> </p>
+<p>Bem, eu não sei o que te dizer, [%username]. Continue procurando por isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Vou tentar de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por cuidar disso, [%username].</p>
+<p> </p>
+<p>É melhor examinarmos esse tecido imediatamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete tecido de [%dic:STR_DIC_M_ID5R_PerfectWaBossQ_45_Ae] e dar para [%dic:STR_DIC_N_Xenophon].</p>[%collectitem]</step>
+</steps>
+<p>Xenophon descobriu de um relatório de pesquisa que os lefaristas conseguiram produzir algumas alterações espetaculares em um sujeito de teste que chamam de RM-78C. Infiltrar o [%dic:STR_DIC_W_IDLF3LP_SZ_1], destrua RM-78C e colete uma amostra de tecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Xenophon descobriu do relatório de pesquisa que os lefaristas conseguiram fazer alterações em um sujeito de teste humano.</p>
+<p> </p>
+<p>Como a situação era pior do que ele pensava, Xenophon pediu que você se infiltre o laboratório secreto no Centro de Pesquisa Lefarista e destruísse o sujeito do teste.</p>
+<p> </p>
+<p>Quando você trouxe uma amostra de tecido da RM-78C, ele disse que o examinaria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

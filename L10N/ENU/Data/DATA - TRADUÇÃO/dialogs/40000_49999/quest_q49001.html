@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho mais uma coisa a perguntar a você, porém, [%username].</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_E_Q49001] e limpe o caminho para o Jamanok Inn. Só para que a retaguarda possa se juntar a nós mais cedo.</p>
+<p> </p>
+<p>(Ondas ao redor do relatório.) Os Elyos parecem ter ficado sinuosos em nosso plano.</p>
+<p> </p>
+<p>Há mais guardas a caminho do Jamanok Inn Al de repente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se sente, tendo acabado de voltar da Elysea através da fenda do portal?</p>
+<p> </p>
+<p>Pode não ser perfeito ainda e precisamos da bênção de Inggness, mas é fantástico que possamos ir a Elyos sempre que quiser!</p>
+<p> </p>
+<p>Enfim, você conseguiu executar meu pedido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suas habilidades são realmente magistrais, [%username]!</p>
+<p> </p>
+<p>Você contribuiu muito para o nosso sucesso na batalha do tempo espacial, [%username].</p>
+<p> </p>
+<p>Espero que você continue no comando de operações especiais do Pandaemonium.</p>
+<p> </p>
+<p>Ao bem-estar de Asmodae!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_Q49001]([%2]/32).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Destrua o guarda dos Theobomos vigiando o Jamanok Inn, para que as tropas que avançam possam enfrentar a outra tropa mais rapidamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sala relatou que havia mais guardas na rua levando ao Jamanok Inn e pediu que você elimine o protetorado Theobomos para que as tropas traseiras pudessem avançar e se juntar a eles mais rapidamente.</p>
+<p> </p>
+<p>Você recebeu palavras de louvor e uma recompensa por eliminar a Guarda do Protetorado de Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

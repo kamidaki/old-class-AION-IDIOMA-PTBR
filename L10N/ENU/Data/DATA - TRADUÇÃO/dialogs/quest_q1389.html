@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo podre em Eltnen, temo, algo escamosa.</p>
+<p> </p>
+<p>Ontem, perto da montanha Kuriullu, me deparei com algumas pessoas. Eles eram revolucionários lefaristas, então eu escondi até eles passaram.</p>
+<p> </p>
+<p>Mas entre os lefaristas estavam ... outros.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Outros homens?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não! Monstros esverdeados, com a cabeça de um peixe. Eu já vi minha parte de criaturas, mas nada como essas. Eles os chamaram de 'pretor', mas ....</p>
+<p> </p>
+<p>Devo identificá -los! Eles são de algum lugar, mas por quê? Para que fim?</p>
+<p> </p>
+<p>Você deve me ajudar, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, prenda alguns saqueadores de pretor e traga alguns[%dic:STR_DIC_I_QUEST_1389a]de volta aqui.</p>
+<p> </p>
+<p>Com pelo menos dez amostras, provavelmente posso deduzir suas origens.</p>
+<p> </p>
+<p>Com isso, podemos aprender por que eles foram trazidos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não! Por favor, [%username]! Qualquer uso que os lefaristas têm para essas bestas deve significar derramamento de sangue, pelo menos.</p>
+<p> </p>
+<p>Não podemos deixá-los sem check. Eu gostaria de ter o seu[%userclass]proezas.</p>
+<p> </p>
+<p>Talvez eu pudesse atrair um poço com rabanetes ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Continue pensando, esaias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o [%dic:STR_DIC_I_QUEST_1389a]!</p>
+<p> </p>
+<p>Você viu? Criaturas tão estranhas e corrompidas!</p>
+<p> </p>
+<p>Espero que você esteja bem. Dentes tão afiados!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Espero que seja o suficiente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Era dez bits de [%dic:STR_DIC_I_QUEST_1389a]Muitos? Hmmm....</p>
+<p> </p>
+<p>Explosão. Não, isso requer testes destrutivos, por isso tenho medo de que Ten seja o mínimo.</p>
+<p> </p>
+<p>Você pode fazer isso, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mais uma tentativa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eeeugh. Coisas sujas.</p>
+<p> </p>
+<p>Mas há o suficiente aqui para estudar.</p>
+<p> </p>
+<p>Vamos torcer para que isso nos diga algo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar amostras de [%dic:STR_DIC_I_QUEST_1389a] e trazê -los para [%dic:STR_DIC_N_Esaias].</p>[%collectitem]</step>
+</steps>
+<p>Esaias viu alguns revolucionários lefaristas com uma criatura estranha. Traga -lhe amostras de tecido do 'Pretor'.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Esaias viu alguns lefaristas com uma besta estranha, um pretor, e estava preocupado com o que poderia ser. É vital, ele disse, descobrir.</p>
+<p> </p>
+<p>Você obteve amostras de pele dos saqueadores de pretor e as trouxe para Esaias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

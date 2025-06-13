@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos estão atacando a fortaleza novamente! Devemos levá -los de volta a todo custo!</p>
+<p> </p>
+<p>Eles até construíram uma torre de guarda! Certamente nosso portão não vai durar muito sob esse ataque!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Precisamos agir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um plano ousado. Vamos destruir sua torre de guarda!</p>
+<p> </p>
+<p>Sem ele, eles certamente fugirão como os covardes que são.</p>
+<p> </p>
+<p>Obviamente, precisamos de todos os Daeva da fortaleza para ficar para fortalecer os portões. Você deve destruir a torre de guarda sozinha, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">"Aceitar."</act>
+<act href="HACTION_QUEST_REFUSE_1">"Declínio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles contarão histórias desta gloriosa batalha por vir por vir:[%username] e a Torre da Batalha da Guarda!</p>
+<p> </p>
+<p>A fortaleza da ala esquerda de Siel não deve cair!</p>
+<p> </p>
+<p>Destruir [%dic:STR_DIC_OBJ_1131_AttackTower_Da]! Esmague o nome de Lady Ariel!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para Lady Ariel!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há tempo para o backup! Você deve pressionar o ataque agora!</p>
+<p> </p>
+<p>Se sua coragem vacilar, então estamos todos condenados! Onde está o seu senso de dever?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou procurar por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>OHO, você conseguiu! Tudo é granizo[%username], Herói da Fortaleza da ala esquerda de Siel!</p>
+<p> </p>
+<p>Diga -me, quantas baratas asmodianas você esmagou ao longo do caminho?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Dezenas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este dia viverá para sempre nos anais da história!</p>
+<p> </p>
+<p>No entanto, os asmodianos não fugiram como eu pensava. Talvez eles tenham um plano secreto que não antecipamos.</p>
+<p> </p>
+<p>Talvez eles tenham-eu me importo-outra torre de guarda?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_OBJ_1131_AttackTower_Da]que ataca o portão da fortaleza ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1131_Quest_Li].</p></step>
+</steps>
+<p>Os asmodianos construíram uma torre de guarda para capturar a fortaleza. Okeanos disse que você e você sozinho poderia destruí -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Asmodianos atacaram o portão da fortaleza, e as coisas pareciam sombrias. Você destruiu a torre de guarda e salvou sozinho o dia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

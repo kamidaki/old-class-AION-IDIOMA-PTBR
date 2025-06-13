@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41526</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta área está repleta de interessantes[%dic:STR_DIC_OBJ_LDF4B_FOBJ_LavaRock1] S. Tenho certeza de que você os viu-eles são as rochas explosivas.</p>
+<p> </p>
+<p>É um novo fenômeno fascinante. Eu acho que o que está acontecendo é que o poder que emana do coração da ira está coletando dentro da rocha porosa. Então, se a rocha for perturbada, ela se encaixa.</p>
+<p> </p>
+<p>Eu realmente gostaria de estudar a energia expulsa pelo coração da ira. Você poderia usar essa orbe de onda nos piroclastos para me trazer uma amostra?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], de volta em uma peça.</p>
+<p> </p>
+<p>Isso é bom. Eu sempre me preocupo que esses piroclastos vão explodir e me levar para fora com eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a amostra. Cuidado para não abandoná -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entendeu? A Orb da onda não funcionou com o [%dic:STR_DIC_OBJ_LDF4B_FOBJ_LavaRock1] S?</p>
+<p> </p>
+<p>Não é tão difícil de fazer.</p>
+<p> </p>
+<p>Eu mesmo faria isso, mas tenho azar com esses piroclastos. A última vez que cheguei perto de um, quase soprou minha perna.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, mas se eu perder um membro, estou levando um dos seus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo, obrigado, [%username].</p>
+<p> </p>
+<p>Ao subestimar a maneira como o coração da ira afeta a paisagem, espero isolar uma maneira de enfraquecer o poder de Tiamat.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar amostras de [%dic:STR_DIC_OBJ_LDF4B_FOBJ_LavaRock1] S com a orbe de onda e trazê -los para [%dic:STR_DIC_N_Viaus].</p>[%collectitem]</step>
+</steps>
+<p>Os piroclastos ao redor dos campos de fogo poderiam fornecer informações sobre como subverter o poder da ira de Tiamat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Viaus pediu que você coletasse amostras da energia emanada do coração da ira.</p>
+<p> </p>
+<p>Você usou a Orb Wave para amostrar a energia dos piroclastos, que você entregou ao Viaus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

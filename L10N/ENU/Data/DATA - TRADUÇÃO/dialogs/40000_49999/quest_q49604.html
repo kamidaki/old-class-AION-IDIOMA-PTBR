@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q49604</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Foi dito que está se tornando difícil operar o campo de madeira devido a ataques frequentes do Hurukuku indígena. Por esse motivo, estamos pedindo que você elimine o [%dic:STR_DIC_M_LDF5A_C3_Owllau_all] e reportar ao escritório administrativo.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere um momento, você acabou de vir do acampamento de madeira rubinista, AK?</p>
+<p> </p>
+<p>Você deve eliminar o Hurukuku indígena! Está ficando muito mais difícil, pois eles são ainda mais fortes que os insetos.</p>
+<p> </p>
+<p>Diga a Shugo como foi a missão, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já ouvi falar do Hurukuku indígena antes, mas não sabia que eles ainda são tão persistentes, Ak.</p>
+<p> </p>
+<p>Adquirimos o título para o campo de madeira dos Rubirinerks há algum tempo. Mas eles ainda estão olhando e não estão de bom, Ak.</p>
+<p> </p>
+<p>De qualquer forma, Shugo enviará uma notícia de que Daeva realizou a tarefa para toda a minha satisfação, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LDF5A_C3_Owllau_all]que estão atacando o acampamento de madeira rubinista ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p></step>
+</steps>
+<p>Você recebeu instruções da Silverine Limited. Leia -os e age.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você matou o Hurukuku indígena que estava atacando o acampamento da Lumber Rubininer e relatou-se ao ramo da Silverine Limited em North Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

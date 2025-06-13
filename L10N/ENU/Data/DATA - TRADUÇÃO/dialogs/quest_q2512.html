@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou pronto para puxar minha juba! Eu tenho comida que precisa ser entregue aos meus reforços.</p>
+<p> </p>
+<p>Eles vieram aqui para resolver o problema de Beluslan. Não podemos morrer de fome, podemos?</p>
+<p> </p>
+<p>As Black Plains e Kurngalfberg não são ótimos lugares para forragem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Um exército viaja de estômago ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles já estão sofrendo aqui. Se eles ficarem sem comida, será insuportável.</p>
+<p> </p>
+<p>Você poderia entregar a comida, [%username]? Nem todo mundo pode realizar essa jornada perigosa.</p>
+<p> </p>
+<p>Sua reputação o precede. Eu sei que você não deixará bons soldados sofrer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado! Eu sabia que poderia contar com você.</p>
+<p> </p>
+<p>Vou te dar dois sacos de comida. Entregar um deles para [%dic:STR_DIC_N_Gigrite]nas planícies negras.</p>
+<p> </p>
+<p>O outro vai para [%dic:STR_DIC_N_Kistenian] em Kurngalfberg.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tinha certeza de que você aceitaria o emprego. Não me ocorreu que você poderia dizer não.</p>
+<p> </p>
+<p>Acho que vou ter que encontrar um Daeva mais compassivo e capaz.</p>
+<p> </p>
+<p>Você me decepciona, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe por te decepcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando cheguei de Pandaemonium, sabia que as coisas seriam difíceis.</p>
+<p> </p>
+<p>Certo. Eu não sabia de nada. Tough não começa a cobri -lo.</p>
+<p> </p>
+<p>Não é suficiente que lutemos contra a noite e o dia dos Mortos Vivos, mas agora os únicos rosnados que recebo dos meus soldados vêm de suas barrigas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Isso pode ajudar a silenciar esses ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Loki não se esqueceu de nós! Eu estava tão preocupado. Nossas ações estão quase esgotadas.</p>
+<p> </p>
+<p>Obrigado por trazer esta comida.</p>
+<p> </p>
+<p>Por favor, transmita minha gratidão a Loki. Ninguém gosta de se sentir cortado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu coração sangra sempre que penso em como Kurngalfberg costumava ser.</p>
+<p> </p>
+<p>A arrogância de um homem trouxe uma tragédia tão grande ... Não importa o custo, restaurá -la à sua antiga glória!</p>
+<p> </p>
+<p>O que te traz aqui, [%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Time de Chow, soldado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe comida! Quase tínhamos acabado e não sabíamos o que fazer.</p>
+<p> </p>
+<p>Estávamos pensando em pegar worgs pálidos para comida, pois eles são a única coisa que temos.</p>
+<p> </p>
+<p>Isso ajudará bastante a restaurar o moral e nossos esforços.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar um saco de comida para [%dic:STR_DIC_N_Gigrite].</p></step>
+<step><p visible="[%3]">Entregar um saco de comida para [%dic:STR_DIC_N_Kistenian].</p></step>
+</steps>
+<p>Entregue o saco de comida para Gigrite nas Planícies Negras e Kistenian, perto de Kurngalfberg.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Loki teve que entregar comida aos soldados de Pandaemonium, mas era de mão curta.</p>
+<p> </p>
+<p>Você entregou os sacos de comida para Gigrite, que vieram aqui para lutar contra os Mortos Vivos e o kisteniano que veio aqui para restaurar Kurngalfberg.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

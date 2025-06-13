@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], bem vindo de volta! Eu queria pedir outro favor rápido.</p>
+<p> </p>
+<p>Não tenho certeza se disse antes, mas envio os minerais que coleciono aqui para o pouso de Teminon para fazer armas.</p>
+<p> </p>
+<p>Quaisquer novos tipos que eu descubro vão direto ao santuário para pesquisas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso acontece com frequência?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim! Existem muitos tipos que eu nunca vi em Atreia. Especialmente no arquipélago de enxofre, onde mais minerais estão enterrados do que outros lugares.</p>
+<p> </p>
+<p>Mas é difícil chegar a todos eles devido a [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An] S. Eles dizem que o efeito do abismo é o que mudou para eliminar em brasas.</p>
+<p> </p>
+<p>O que você diz, [%username], você pode fazer isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você quer que eu colete minerais?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, não. Quero dizer, precisamos de minerais, mas enquanto você se livra de [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An] S vagando, nós os recolhemos.</p>
+<p> </p>
+<p>Você mostrou talento real quando se livrou de soldados draconute-essas brasas serão fáceis para você.</p>
+<p> </p>
+<p>E estou autorizado a recompensá -lo com uma moeda de bronze. Fiquei impressionado quando eles me disseram, realmente vale alguma coisa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente o que eu estava esperando! Eu sabia que você aceitaria a tarefa.</p>
+<p> </p>
+<p>Por favor, elimine 15[plur][%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An].</p>
+<p> </p>
+<p>Depois de terminar o trabalho, você receberá uma moeda de bronze.</p>
+<p> </p>
+<p>Que você se sai bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"25. Certo. Vou começar agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que não está certo da minha parte continuar perguntando assim.</p>
+<p> </p>
+<p>Na verdade, não peço favores a ninguém. Eu apenas me sinto amigável com você, [%username]...</p>
+<p> </p>
+<p>Mas isso não está aqui nem ali. Se você encontrar tempo, pense sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], bem a tempo de resolver uma aposta.</p>
+<p> </p>
+<p>Dactyl disse que você não poderia ter terminado agora, mas eu disse a ele que seria fácil para você.</p>
+<p> </p>
+<p>E como você está aqui agora, acho que ganhei a aposta. Diga-me. Estou certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Acho que nós dois somos vencedores ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia! Eu estava certo!</p>
+<p> </p>
+<p>Eu ganhei a aposta graças a você, [%username]. E agora existem menos brasas, embora seus números continuem aumentando.</p>
+<p> </p>
+<p>Aqui está a moeda de bronze que prometi. E estamos autorizados a oferecer outro, se você nos ajudar novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]([%2]/15).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Nike].</p></step>
+</steps>
+<p>Kenia e Dactyl têm dificuldades em reunir minerais por causa dos Rotrons. Mate as brasas secas para que os dois possam fazer seu trabalho.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kenia chegou ao arquipélago de enxofre por causa dos minerais. O Rotron a impediu de fazer sua coleção. Então Kenia pediu sua ajuda.</p>
+<p> </p>
+<p>Como você foi perguntado, você matou as brasas secas e recebeu uma moeda de bronze como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

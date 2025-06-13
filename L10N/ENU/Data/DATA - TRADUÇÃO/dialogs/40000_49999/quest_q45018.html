@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Querido[%username], Assim,</p>
+<p> </p>
+<p>Tenho uma mensagem importante para transmitir aos guardas de campo em Brusthonin, sobre seus esforços aqui.</p>
+<p> </p>
+<p>Meus deveres não me permitem deixar meu post, então eu apreciaria se você se encontrasse comigo e transmitisse minha mensagem para o [%dic:STR_DIC_E_45014].</p>
+<p> </p>
+<p>Nossa reunião não deve despertar suspeitas, e é por isso que entrei em contato diretamente com você-como você é um guarda de campo mais novo, ninguém suspeitará de nada.</p>
+<p> </p>
+<p>A mensagem é confidencial, é claro, então, por favor, destrua -a ao ler.</p>
+<p> </p>
+<p>-Centurion[%dic:STR_DIC_N_Vinduer]</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Make a letra.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, [%username]. Você tem um momento para falar sobre algum trabalho de cultivo em Brusthonin?</p>
+<p> </p>
+<p>Devemos ser discretos. Tenho certeza que você entende.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Sim claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A área de "cultivo" ainda está quieta. Nem Elyos nem os Mortos Vivos aparecem lá. No entanto, a fortaleza da ADMA precisa de colher.</p>
+<p> </p>
+<p>Você precisa que eu repita alguma disso? Vou entregar uma mensagem mais detalhada quando puder, mas por enquanto você pode dizer isso a um agente de campo de Brusthonin. Eles vão entender o significado.</p>
+<p> </p>
+<p>Estou bastante aliviado que os guardas são capazes de cooperar nesse assunto ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Entendido. Sangue por sangue, amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Este lugar está bastante ocupado ultimamente. Tantas pessoas passando, sem saber de assuntos maiores. Felizmente, eles têm guardas de campo para cuidar de problemas maiores. Como o campo isetérico, é claro.</p>
+<p> </p>
+<p>O que te traz aqui hoje? Talvez você carregue uma mensagem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu faço...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vinduer disse isso, e nada mais? Chance....</p>
+<p> </p>
+<p>Não se preocupar. A mensagem parece bastante dramática, mas garanto que não há nada inesperado nela.</p>
+<p> </p>
+<p>Vou cuidar disso daqui, [%username]. Aqui está a sua devida recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Vinduer].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_E_45014].</p></step>
+</steps>
+<p>Uma carta encaminhada chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta particular explica que um centurião de Archon que coopera com os guardas deseja transmitir uma mensagem.</p>
+<p> </p>
+<p>Você conheceu Vinduer e entregou sua mensagem ao agente de campo de Brusthonin, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

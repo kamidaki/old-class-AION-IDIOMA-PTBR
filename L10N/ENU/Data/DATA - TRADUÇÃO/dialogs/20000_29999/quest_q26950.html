@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q26950</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Bom que você está aqui.</p>
+<p> </p>
+<p>Um agente Shugo atribuiu uma missão secreta, mas todo mundo está tão ocupado que não há mais ninguém que eu possa perguntar.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5a_Damiring_E]é o cliente.</p>
+<p> </p>
+<p>Vá vê -la, se você tiver tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>PSST, você está lá! Kirik enviou Daeva, AK? Então Daeva está bem a tempo. Shugo é Damirinerk da Goldrinyerk Limited.</p>
+<p> </p>
+<p>Os piratas estão atacando um importante shugo da Goldrinyerk Limited há algum tempo, Ak. Shugo acredita que o assassino é alguém de dentro que fez um acordo com os piratas.</p>
+<p> </p>
+<p>Shugo descobriu que Bosaraki, da rosa de aço, recebeu uma ordem de morte do traidor. Se Shugo pudesse obter essa ordem de morte, Shugo pode aprender quem é o traidor, AK!</p>
+<p> </p>
+<p>Pegue o [%dic:STR_DIC_I_quest_26950a]de Bosaraki no[%dic:STR_DIC_W_IDShulackShip_02_SZ_1F], depois volte para Shugo, Ak.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_IDShulack_Rose_Ent_1FD_E] em North Katalam, dirá a Daeva como encontrar a rosa de aço, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você encontrar os pedidos planejando o engano, poderá descobrir o traidor entre nós, AK.</p>
+<p> </p>
+<p>Uma investigação indica que Bosaraki da rosa de aço tem ordens, AK.</p>
+<p> </p>
+<p>Mate -a e traga prova da traição, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">A missão é emitida.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak! Mas isso é uma ordem de morte, AK!</p>
+<p> </p>
+<p>Damiriiner pode usar o selo na missão para descobrir quem é o traidor, AK.</p>
+<p> </p>
+<p>Damirinerk está preocupado com Dindauerk, Nyerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5a_Damiring_E] em North Katalam.</p></step>
+<step><p visible="[%3]">Obtenha o [%dic:STR_DIC_I_quest_26950a] e reportar a [%dic:STR_DIC_N_LDF5a_Damiring_E].</p>[%collectitem]</step>
+</steps>
+<p>Elimine o encantador Bosaraki na fase de desembarque da rosa de aço e obtenha a ordem de morte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recuperou um contrato de assassinato que estava com o selo do traidor de Bosaraki enfeitiçado na rosa de aço.</p>
+<p> </p>
+<p>A Goldrinyerk Limited decidiu pensar no traidor interno e no futuro relacionamento com a rosa de aço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard01_L]do[%dic:STR_DIC_W_LDF5a_A2_1]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: derrotar o asmodiano que se infiltrou[%dic:STR_DIC_W_LDF5a_A2] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos estão esperando o ataque começar.</p>
+<p> </p>
+<p>Os asmodianos devem ser mortos no momento em que parecem impedir que eles se reúnam em grandes grupos.</p>
+<p> </p>
+<p>Você recebeu o comando que enviei com pressa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, você deve ser [%username]!</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Claro, é bom ter um senso de dever, mas você deve pensar em si mesmo também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5a_A2] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard01_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou na floresta de Hadradim no norte de Katalam e se reporte a Arandel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu ordens urgentes de Arandel para matar os asmodianos que haviam invadido a floresta Hadradim no norte de Katalam, e assim os eliminou.</p>
+<p> </p>
+<p>Arandel agradeceu e disse a você não esquecer de ficar de olho nele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

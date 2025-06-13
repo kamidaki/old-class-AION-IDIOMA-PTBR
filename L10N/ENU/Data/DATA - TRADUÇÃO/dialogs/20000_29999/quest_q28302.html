@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar dos shulacks?</p>
+<p> </p>
+<p>A Liga de Engenharia de Kaichin é composta por shulacks que utilizam apenas sua tecnologia altamente avançada para fins malignos.</p>
+<p> </p>
+<p>Embora Tiamat não pudesse suportar shulacks, sua tecnologia significava que eles eram necessários para a draga.</p>
+<p> </p>
+<p>Agora Beritra parece querer a tecnologia para si.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como encontraremos os lugares certos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A Liga de Engenharia de Kaichin achou que estaria trabalhando em uma draga normal. Mas isso foi uma mentira.</p>
+<p> </p>
+<p>Esta é uma fortaleza do céu.</p>
+<p> </p>
+<p>É controlado por [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An]. Ele é completamente agressivo, então eu me preparei para um possível ataque.</p>
+<p> </p>
+<p>Você vai me ajudar, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Use o teleporter para viajar para o [%dic:STR_DIC_W_IDStation_SZ_02_A].</p>
+<p> </p>
+<p>Haverá muitos shulacks lá. Mas você não deve ter nenhuma dificuldade se tomar o [%dic:STR_DIC_N_IDStation_ShulackAirplane_01].</p>
+<p> </p>
+<p>Em toda a zona de controle, sempre existem[plur][%dic:STR_DIC_N_IDStation_FOBJ_TOWER1]que controlam o Surkana.</p>
+<p> </p>
+<p>Se você os destruir, a porta da sala de operações abrirá.</p>
+<p> </p>
+<p>Lá você terá que matar [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An] e então volte para mim.</p>
+<p> </p>
+<p>Eu quase esqueci algo importante: trazer [%dic:STR_DIC_I_IDStation_FOBJ_S_BOX]para mim. Tenho certeza de que contém informações importantes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O horário comercial está aberto!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você está se aproximando da área de comando. Por que parar agora?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito pelo inocente Balaur."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Uma placa na caixa desgastada e polida diz: "Popuchin's. Fique de fora!")</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT6">"Por favor, perdoe minha transgressão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você cava suavemente através dos escombros preciosos de Popuchin.)</p>
+<p> </p>
+<p>(Debaixo de fotos e bugigangas está um documento que diz: "Top Secret: Sky Fortaleza Blueprint".)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Obrigado por sua doação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Este traje de Balaur se irritando.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você gostaria de um esquema de arranhar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Haha! Seria que eu poderia, irmão.</p>
+<p> </p>
+<p>Mas este documento tem uma jornada a fazer, e eu não o manteria adormecido por uma mera coceira nem por todo o Kinah do Shugo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_N_IDStation_FOBJ_TOWER1]no[%dic:STR_DIC_W_IDStation_SZ_02_A]([%2]/5).</p></step>
+<step><p visible="[%3]">Matar [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An] e tomar o conteúdo de [%dic:STR_DIC_I_IDStation_FOBJ_S_BOX].</p></step>
+<step><p visible="[%6]">Retornar a [%dic:STR_DIC_N_Hariken].</p></step>
+</steps>
+<p>Siga as instruções de Hariken, destrua o gerador da draga e mate Popuchin para revelar seus segredos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hariken pediu que você tirasse o Popuchin do caminho.</p>
+<p> </p>
+<p>Você se infiltrou na zona de controle, destruiu o gerador da draga e depois entrou na sala de operações para derrotar a popuchina. Ele largou uma caixa que continha as plantas para a fortaleza do céu.</p>
+<p> </p>
+<p>Quando você voltou a Hariken e deu a ele os planos, ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

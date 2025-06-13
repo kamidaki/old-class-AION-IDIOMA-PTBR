@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A borda de espada próxima é notória por aqui. Seu nome veio da gigante espada de Balaur presa nela.</p>
+<p> </p>
+<p>Logo depois que o Balaur apareceu no Abismo, Elyos e Asmodians se uniram-no entanto, brevemente-para combatê-los.</p>
+<p> </p>
+<p>No final, o Balaur fugiu. Satbas, o capitão de Balaur, deixou a espada para trás. Então a história vai.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Seria, se o Balaur não tivesse conseguido capturá -lo novamente. Não há fortaleza lá, então nós e os asmodianos acabamos abandonando -o.</p>
+<p> </p>
+<p>Claro, agora o Balaur tem controle disso. O controle deles é ruim para nós, mas esta ilha está perto o suficiente da fortaleza do lago Asteria para que isso possa se tornar um problema para nós.</p>
+<p> </p>
+<p>Vá para a borda da espada. Mate os draconutos estacionados lá. Relate -me quando terminar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Você precisará matar [%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An] S, [%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An] S, [%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An] Areia [%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An] S.</p>
+<p> </p>
+<p>Sua ação será o primeiro passo para recapturar a borda da espada, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parecia tão interessado ....</p>
+<p> </p>
+<p>Não importa. Encontrarei de outra maneira, e da próxima vez não seremos tão tolos a ponto de abandoná -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou.</p>
+<p> </p>
+<p>Como você se saiu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O Balaur é morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]. Bem feito de fato.</p>
+<p> </p>
+<p>Obrigado pela ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Balaur, que pegou a beira da espada.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1251_LizardmanFi_33_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1251_LizardmanAs_33_An]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1251_LizardmanRa_33_An]([%8]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1251_LizardmanPr_33_An]([%11]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sione].</p></step>
+</steps>
+<p>Os draconutos estacionados na beira da espada devem ser eliminados para garantir a segurança da fortaleza de Asteria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sione disse para você se livrar de Balaur, que capturou a beira da espada para a segurança da fortaleza do lago Asteria, perto da ilha.</p>
+<p> </p>
+<p>Você foi para a ilha e se livrou dos grunhidos de Dakaer, Raiders, Churl e médicos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

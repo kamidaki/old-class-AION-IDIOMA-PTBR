@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você recebeu o pedido de conquistar todas as guarnições e para concluir posteriormente o [%dic:STR_DIC_I_quest_23510a].</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_N_LDF5_Village_Guard01_L]da 71ª guarnição ([%2]/1). Derrota [%dic:STR_DIC_N_LDF5_Village_Guard02_L]da 72ª guarnição ([%5]/1) e [%dic:STR_DIC_N_LDF5_Village_Guard03_L]da 73ª guarnição ([%8]/1). Destruir [%dic:STR_DIC_N_LDF5_Village_Guard04_L]da 74ª guarnição ([%11]/1). Todos esses capitães de Elyos devem ser derrotados.</p>
+<p> </p>
+<p>Esta é a única maneira de nós, os asmodianos, podemos colocar todo o katalam sob nosso controle.</p>
+<p> </p>
+<p>Esta tarefa é muito importante para o nosso plano conquistar Katalam.</p>
+<p> </p>
+<p>Claro, você receberá uma recompensa. Mas essa tarefa também ajuda os asmodianos, então peço que você a faça integralmente sem falhar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não pense que os esforços para completar o diário de invasão de Katalam não foram por nada!</p>
+<p> </p>
+<p>Mostre orgulho de que você está lutando pela vitória da Asmodian.</p>
+<p> </p>
+<p>As coisas difíceis de obter são ainda mais valiosas.</p>
+<p> </p>
+<p>Lembre -se disso e faça o seu melhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou nossos arqui-inimigos, os capitães de Elyos.</p>
+<p> </p>
+<p>[%username], você lutou pela honra dos asmodianos e mostrou grande força.</p>
+<p> </p>
+<p>Aqui, [%dic:STR_DIC_I_quest_23511a]. Use isso para completar o diário da conquista do katalam.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os capitães da patrulha Elyos Katalam.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_N_LDF5_Village_Guard01_L]da 71ª guarnição ([%2]/1).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_N_LDF5_Village_Guard02_L]da 72ª guarnição ([%5]/1).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_N_LDF5_Village_Guard03_L]da 73ª guarnição ([%8]/1).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_N_LDF5_Village_Guard04_L]da 74ª guarnição ([%11]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Stelman_E].</p></step>
+</steps>
+<p>Elimine os capitães Elyos dos 71º, 72º, 73 e 74º guarnições.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Para obter o primeiro relatório de limpeza, você aceitou uma tarefa do tribuno de mais alto escalão do esquadrão de limpeza Katalam, Stelman.</p>
+<p> </p>
+<p>De acordo com as ordens de Stelman, você eliminou o capitão de Elyos Arandel da 71ª guarnição, o capitão de Elyos Verden, do 72º Guarnição, o capitão de Elyos do 73º Guarnição e do capitão de Elyos Diena da 74ª guarnição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

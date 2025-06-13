@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as políticas oficiais, deveríamos ter vários guardiões estacionados aqui, mas olhe em volta. Não é um!</p>
+<p> </p>
+<p>Somos perigosamente com falta de pessoal. Precisamos de algum backup, explodi -lo!</p>
+<p> </p>
+<p>Tudo o que posso fazer é perguntar a qualquer Daeva que passasse para ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Houve um tempo em que eu preferia cortar minhas próprias asas do que implorar por ajuda. Mas os dias em que eu podia pagar esse tipo de arrogância estão muito atrás de mim.</p>
+<p> </p>
+<p>Precisamos da sua ajuda, [%username].</p>
+<p> </p>
+<p>Esses lefaristas infernais se tornaram uma força a ser reconhecida. Deles[%dic:STR_DIC_M_LehparFiSoldier_38_An] Areia [%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An] age como se eles possuíssem essa área e, se você não nos ajudar a detê -los, suponho que eles o façam.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom pensamento. Se não[%username], quem mais poderia matar esses tolos?</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LehparFiSoldier_38_An] e o [%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An]; 5 de cada por favor.</p>
+<p> </p>
+<p>Por favor, se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E com você, meu amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você deve estar a caminho de um lugar muito importante, suponho.</p>
+<p> </p>
+<p>Bem, ahem. Por favor, volte quando tiver mais tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Luz e fortuna para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Você não parece estar machucado. Você completou sua missão sem problemas?</p>
+<p> </p>
+<p>Por favor, fale -me sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estava bem dentro das minhas habilidades."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim como eu esperava.</p>
+<p> </p>
+<p>Muito obrigado por eliminar os revolucionários lefaristas.</p>
+<p> </p>
+<p>Aqui, um sinal da minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os revolucionários lefaristas em seu bastião.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparFiSoldier_38_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_AeC_LehparAsSoldier_39_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Elram].</p></step>
+</steps>
+<p>Diz -se que os revolucionários lefaristas e os escoteiros no bastião revolucionário lefarista estão em tumulto. Elimine esses bolsistas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os lefaristas estavam ameaçando a ordem pública de Eltnen. Você foi ao bastião lefarista e eliminou combatentes e outiders lefaristas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

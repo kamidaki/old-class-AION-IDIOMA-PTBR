@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está hesitando, [%username]?</p>
+<p> </p>
+<p>Use cada minuto para treinamento!</p>
+<p> </p>
+<p>Você não quer ficar mais forte?</p>
+<p> </p>
+<p>Então vá, vá, vá!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, o treinamento no coliseu Crucol é muito simples.</p>
+<p> </p>
+<p>Temos apenas uma regra clara.</p>
+<p> </p>
+<p>Entre na arena e derrote seu oponente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Habilidades sensacionais? Guerra psicológica surpreendente? Sobrevivência inteligente? Ou um massacre implacável?</p>
+<p> </p>
+<p>Isso não desempenha nenhum papel no processo.</p>
+<p> </p>
+<p>É inteiramente com você se você derrubar seu oponente com um ataque impressionante ou se apegar a ele até o ponto de exaustão e até que ele jogue na toalha.</p>
+<p> </p>
+<p>Apenas fique vivo! Apenas seja vitorioso!</p>
+<p> </p>
+<p>Essas são as regras do terceiro Crisol.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu forço ninguém a treinar.</p>
+<p> </p>
+<p>Mas quando você se deparar com muitos inimigos em Balaurea, se arrependerá de não ter treinado o suficiente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou o treinamento?</p>
+<p> </p>
+<p>Você sempre pode voltar ao crisol, mesmo se você entrar em colapso. Não é difícil derrotar seu oponente 5 vezes lá.</p>
+<p> </p>
+<p>Não é isso mesmo, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Eu realmente gostaria de dar a você tarefas de treinamento ainda mais rigorosas, mas vou me restringir porque Molfus aconselha contra isso.</p>
+<p> </p>
+<p>Mantenha seus esforços.</p>
+<p> </p>
+<p>Em algum momento, você até sentirá quando uma espada se aproxima de você por trás.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar 5 oponentes no[%dic:STR_DIC_W_IDArena_pvp_L]([%2]/5).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Junos]%.</p></step>
+</steps>
+<p>Derrote seus oponentes na arena da disciplina, na arena da veemência, na arena da cooperação ou na arena da glória.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Junos aconselhou você a continuar treinando e derrota os oponentes no coliseu Crisol.</p>
+<p> </p>
+<p>Você seguiu o conselho dela e lutou contra os oponentes na arena da disciplina, na arena da veemência, na arena da cooperação e na arena da glória, reportando -se a Junos depois.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

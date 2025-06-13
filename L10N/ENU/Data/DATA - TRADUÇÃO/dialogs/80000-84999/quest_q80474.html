@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta?</p>
+<p> </p>
+<p>Nenhum tempo é desperdiçado ao usar esse método, então é claro que você está interessado.</p>
+<p> </p>
+<p>É um método novo e especial, e apenas alguns Daevas sabem sobre isso.</p>
+<p> </p>
+<p>Vou precisar de alguns itens também; Vou deixar você saber o que eles são quando tiver a chance.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta sobre o método.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sacerdotisa de Blessing Royan</p>
+<p> </p>
+<p>Por favor, vá vê -la algum dia. Ela é uma mulher maravilhosa.</p>
+<p> </p>
+<p>Ela está ao meu lado, então não será difícil de encontrar.</p>
+<p> </p>
+<p>Ela negocia itens especiais.</p>
+<p> </p>
+<p>Você poderia primeiro se encontrar e depois pegá -la para o aéter azul brilhante?</p>
+<p> </p>
+<p>Veja bem, é necessário o Blue Aether para treinar a próxima geração de sacerdotes.</p>
+<p> </p>
+<p>Por favor, faça isso por mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entrega a Royan o Aether azul.</p>
+<p> </p>
+<p>Eu estive esperando por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Volte se você mudar de idéia.</p>
+<p> </p>
+<p>Eu sou o padre da bênção, afinal.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se encontrou com ela?</p>
+<p> </p>
+<p>Uma linda mulher está vendendo Aether Azul e um item especial também.</p>
+<p> </p>
+<p>Pode ser de grande benefício.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o aether azul.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não entendeu?</p>
+<p> </p>
+<p>Mas ele está ao meu lado ... eu me pergunto se ele teve que ir a algum lugar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>[%username], graças à sua ajuda, terei mais tempo para ver o treinamento dos jovens.</p>
+<p> </p>
+<p>Aqui está um pequeno presente.</p>
+<p> </p>
+<p>Que a bênção divina esteja com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha azul de Rojan, a sacerdotisa da bênção, e leve -a para Luca.</p>[%collectitem]</step>
+</steps>
+<p>Luca, o padre, pediu que você o traga azul. Compre de Rojan e leve para ele.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O sacerdote de abençoar Luca pediu que você o traga azul.</p>
+<p> </p>
+<p>Então você foi ver sacerdotisa de abençoar Rojan e descobriu que ela estava vendendo muitos itens especiais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

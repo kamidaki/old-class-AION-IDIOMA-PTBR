@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta carta parece importante. Eu deveria dar uma olhada)</p>
+<p> </p>
+<p>(Meu querido filho Netalion. A saúde de sua mãe se deteriorou. E embora ela esteja exausta, ela tem falado muito sobre você recentemente ...)</p>
+<p> </p>
+<p>(Uma carta sobre a saúde da mãe?!)</p>
+<p> </p>
+<p>(A carta foi destinada ao Netalion, um guardião em santuário.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você pega a carta do pai.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está errado?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">Você entrega a carta do pai.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Chama desanimado) Oh ... mãe ...</p>
+<p> </p>
+<p>Minha mãe está tão doente e não posso fazer mais nada por ela, além de pensar nela de longe.</p>
+<p> </p>
+<p>Não consigo nem fazer meus deveres como filho, posso ser chamado de verdadeiro Daeva? Isso me anguere profundamente ...</p>
+<p> </p>
+<p>Mas eu nem saberia as notícias sobre minha mãe sem você.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga a carta de seu pai.</p></step>
+</steps>
+<p>Encontre a Netalion, um guardião em santuário, e dê a ele a carta de seu pai.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A carta que você acertou conta a triste história da saúde fraca da mãe.</p>
+<p> </p>
+<p>Você não pode simplesmente ignorar a história trágica, então resolve levar a carta à Netalion em santuário.</p>
+<p> </p>
+<p>Você entregou a carta ao Netalion e recebeu palavras de gratidão.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já experimentou o [%dic:STR_DIC_I_wrap_event_xenophon_shinecard] Ainda?</p>
+<p> </p>
+<p>Você recebe o mapa do comandante quando combina a metade esquerda e a metade direita do mapa do comandante.</p>
+<p> </p>
+<p>[O.C.A]Metade direita do mapa do comandante metades não emparelhadas são inúteis.</p>
+<p> </p>
+<p>A julgar pela conversa entre os Daevas, parece que há um grande excedente de metades esquerdas do mapa do comandante.</p>
+<p> </p>
+<p>Então, se você me trazer 10[plur][%dic:STR_DIC_I_assembly_newyearcard_left], você receberá um pequeno presente.</p>
+<p> </p>
+<p>Deixe -me saber se você quiser trocar metades esquerdas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>As pérolas devem ser enfiadas e as metades do mapa rasgado devem ser reunidas para que valessem qualquer coisa!</p>
+<p> </p>
+<p>Se você tem o [plur][%dic:STR_DIC_I_assembly_newyearcard_left]Com você, por favor, dê -os a mim.</p>
+<p> </p>
+<p>Você pode fazer uma troca depois de ter 10 metades do mapa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a metade esquerda do mapa do comandante.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente 10!</p>
+<p> </p>
+<p>[%username], você é muito preciso.</p>
+<p> </p>
+<p>Pegue este presente. É apenas uma coisinha comparada aos seus esforços, mas espero que seja útil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [plur][%dic:STR_DIC_I_assembly_newyearcard_left] e leve-os para [%dic:STR_DIC_N_DC1_Event_Matiu].</p>[%collectitem]</step>
+</steps>
+<p>Pegue as metades esquerda restantes do mapa do comandante para Matia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O líder rebelde Matiyu disse que você receberia um pequeno presente pelas restantes metades esquerdas do mapa do comandante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

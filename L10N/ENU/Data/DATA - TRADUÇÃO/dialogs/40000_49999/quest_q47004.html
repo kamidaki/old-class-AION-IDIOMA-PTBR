@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Titorea], Marchutan anterior</p>
+<p>Tarefa: Derrote os principais guardiões do templo do céu de Arkanis.</p>
+<p> </p>
+<p>Há rumores de problemas no templo do céu de Arkanis. Devemos detê -los uma vez.</p>
+<p>Você deve derrotar [%dic:STR_DIC_M_Elementalwater3NMDQ_31_An], Assim, [%dic:STR_DIC_M_ElementalEarth3NamedD_32_Ae], e [%dic:STR_DIC_M_ElementalFire4NamedQ_33_Ae]</p>
+<p>O templo é muito perigoso, então trabalhe em estreita colaboração com um[%dic:STR_DIC_E_Mentor]todos os momentos. Relate para mim quando a missão estiver concluída. Mantenha os olhos abertos e esteja disposto a aprender.</p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece emocionante ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que parece repentino empurrá -lo para o templo do céu, mas descobrimos que ele funciona.</p>
+<p> </p>
+<p>Agora você está melhor preparado para seus perigos.</p>
+<p> </p>
+<p>Suponho que sua presença aqui, relativamente inteira, significa que sua tarefa está completa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Claro é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, esse brilho em seus olhos me diz que você se divertiu. Espero que seu relacionamento com seu mentor tenha sido bom.</p>
+<p> </p>
+<p>Tenho certeza de que ele ou ela aprendeu tanto com você quanto o contrário. É um relacionamento simbiótico, mentor e acusação.</p>
+<p> </p>
+<p>Bom trabalho. Já posso ver você desenvolvendo seu potencial ao máximo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], derrote os principais guardiões do templo do céu de Arkanis.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Elementalwater3NMDQ_31_An]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth3NamedD_32_Ae]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalFire4NamedQ_33_Ae]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Titorea].</p></step>
+</steps>
+<p>O Priorado tem uma tarefa. Encontre um mentor e derrote os principais guardiões do templo do céu de Arkanis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Priorado do Marchutan o enviou ao Templo do Sky de Arkanis para derrotar seus principais guardiões.</p>
+<p> </p>
+<p>Com a ajuda do seu mentor, você matou grandes demônios, retornando triunfante ao Priorado pela sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

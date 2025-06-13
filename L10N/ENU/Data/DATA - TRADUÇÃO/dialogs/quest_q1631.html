@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ser bom no meu trabalho nem sempre é uma bênção. Eu não posso fazer uma pausa!</p>
+<p> </p>
+<p>O acampamento de Chugarnerk precisa de assistência, mas há coisas aqui na vila de Jeiaparan que também precisam da minha atenção.</p>
+<p> </p>
+<p>Eu gostaria de ser gêmeos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que incomoda o acampamento?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles me dizem que são aswisps etéreos. Eles são muito difíceis de ver e estão emboscando pessoas quando se aproximam. Felizmente, os guarda -costas Troll mantêm o acampamento em si segura, mas as pessoas que vêm e passando pelos pântanos de Puitonen estão em risco.</p>
+<p> </p>
+<p>O que você diz, você pode lidar com isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere! Deixe -me verificar a carta de Miobera.</p>
+<p> </p>
+<p>"Nós temos[%dic:STR_DIC_M_Vapor_41_An] S emboscando pessoas da entrada do acampamento para [%dic:STR_DIC_W_LF3_SZ_F2]. "Cuide deles, e ela pagará o que ela teria me pago.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não pense em outro pensamento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, tudo bem. Eu entendo.</p>
+<p> </p>
+<p>Pelo menos o acampamento em si é seguro ... pelo menos enquanto seus suprimentos se destacam.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Um mensageiro veio de Miobera. Ela diz que os windwisps etéreos recuaram.</p>
+<p> </p>
+<p>Você cuidou deles, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei assim.</p>
+<p> </p>
+<p>Aqui está você-Miobera me enviou a recompensa, pensando que eu havia cuidado disso. É seu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_Vapor_41_An] está bloqueando a entrada do acampamento de Chugarnerk ([%2]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tegis].</p></step>
+</steps>
+<p>Os Windwisps etéreos bloqueiam a entrada do acampamento de Chugarnerk. Livre -se deles para Tegis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tegis recebeu um pedido de ajuda do acampamento de Chugarnerk, mas tinha tarefas que o mantiveram na vila.</p>
+<p> </p>
+<p>Você foi ao acampamento de Chhargarnerk e se livrou de Windwisps etéreos, e ganhou a recompensa de Tegis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, agora tenho que descobrir como levar esse Adamantium a Hannet ....</p>
+<p> </p>
+<p>[%username], você entregaria o minério para Hannet?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Certamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Espere aqui por um momento enquanto eu o empacota.</p>
+<p> </p>
+<p>Desculpe por fazer você esperar! Por favor, entregue esta bolsa para [%dic:STR_DIC_N_Hagne]para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você entrega a bolsa, envie esta mensagem a ela.</p>
+<p> </p>
+<p>Diga a ela que eu a ajudarei sempre que ela precisar de mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou entregar os dois presentes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve estar muito ocupado. Bem, se você diz isso.</p>
+<p> </p>
+<p>Vou enviá -lo para Hannet usando o Shugo Express Mail, para que você possa ir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, querida, você assustou essa velha senhora!</p>
+<p> </p>
+<p>Você entregou a carta a Ophelos?</p>
+<p> </p>
+<p>Ele deveria ter me enviado os materiais agora ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o seu minério e uma mensagem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, que Ophelos tem um coração gentil ....</p>
+<p> </p>
+<p>Oh, o que estou pensando? Aqui estou chorando. Você deve pensar que eu sou um velho tolo!</p>
+<p> </p>
+<p>Muito obrigado por toda a sua ajuda, Daeva! Agora eu posso fazer a espada para Asclepius.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a bolsa de Ophelos para [%dic:STR_DIC_N_Hagne].</p></step>
+</steps>
+<p>Entregue o saco de Adamantium a Hannet.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ophelos disse que não podia sair, pois tinha tantas coisas para fazer, então ele pediu que você entregasse o saco de Adamantium a Hannet.</p>
+<p> </p>
+<p>Quando você entregou a bolsa para Hannet, ela agradeceu e recompensou você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

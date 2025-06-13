@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um mal[%dic:STR_DIC_LDF5A_NPC_Q_WondedGuardian].)</p>
+<p> </p>
+<p>(Você tenta falar com ele.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você decide falar com a pessoa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não posso me mover.</p>
+<p> </p>
+<p>A lesão ... a lesão parece ser pior do que eu pensava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que ninguém precisa se mudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor me ajude!</p>
+<p> </p>
+<p>Vá e diga ao médico[%dic:STR_DIC_LDF5a_Marke_E]!</p>
+<p> </p>
+<p>Rapidamente! Não vou durar muito mais!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p>Você tem algum ferimento que precisa ser tratado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você disse que viu um guarda ferido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O conflito entre Elyos e Asmodians significa que cada vez mais guardiões estão ficando gravemente feridos.</p>
+<p> </p>
+<p>Eu irei o mais rápido possível para ajudar.</p>
+<p> </p>
+<p>Muito obrigado por me trazer esta novidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LDF5A_NPC_Q_WondedGuardian].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_LDF5a_Marke_E].</p></step>
+</steps>
+<p>Você contou a Marga sobre os guardas feridos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu um guardião ferido e relatou isso a Marga.</p>
+<p> </p>
+<p>Marga prometeu ajudar.</p>
+<p> </p>
+<p>Ela agradeceu e lhe deu uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

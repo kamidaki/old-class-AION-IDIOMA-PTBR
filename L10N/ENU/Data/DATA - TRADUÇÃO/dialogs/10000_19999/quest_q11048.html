@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Você não é o Daeva que descobriu sobre Taloc? Todos aqueles fragmentos da torre de Old Class Aion embutiram dentro do Taloc, e todas as criaturas perversas que infestam a árvore sagrada? Foi você, certo?</p>
+<p> </p>
+<p>Então você merece saber o que o santão está fazendo agora. Fomos ordenados a obter a ajuda de Taloc por qualquer meio necessário. O éter que ele tem é essencial para a nossa sobrevivência ... e ele tem muito.</p>
+<p> </p>
+<p>Sem a ajuda dele, o canhão éter é inútil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu ouvi rumores".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles não são mais apenas rumores! Os elim são de forte mente e espírito. Às vezes, nossos objetivos combinam e outras vezes-as vezes-elas não.</p>
+<p> </p>
+<p>Basicamente, ele não confia em nós. Esse sempre foi o problema. Tentamos ganhar seu favor algum tempo antes, removendo os parasitas de seu domínio, mas Daevass não são os melhores exterminadores.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então, e agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos lançando uma operação em larga escala. Estamos chamando isso de operação de renascimento do Taloc, e nosso objetivo é matar todos os parasitas que vivem dentro do Taloc de uma vez por todas.</p>
+<p> </p>
+<p>Temos que fazer isso, [%username]. Sem a ajuda dele, não temos chance nesta guerra.</p>
+<p> </p>
+<p>É por isso que estou pedindo sua ajuda. Precisamos de você lá fora. Precisamos do seu[%userclass]Habilidades para a operação de renascimento do Taloc. Podemos contar com você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ouvir isso! Embora o nome da operação pareça um pouco provocativo, é realmente apenas um trabalho de fatia e doutor ... do tipo, tenho certeza que você gosta.</p>
+<p> </p>
+<p>Basta entrar e destruir todos os parasitas que você vê dentro do Taloc. Mas há uma coisa que você deve ter cuidado ...</p>
+<p> </p>
+<p>Ouvi dizer que você tem forte resistência a baixos níveis de Aether. Mas ainda não é aconselhável ficar muito tempo dentro do Taloc. Fatia e dados, [%username], então saia!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fatia e dados, entendi!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso dizer que você tem algumas reservas sobre a confiança do Taloc ... todos nós fazemos.</p>
+<p> </p>
+<p>Mas esta é a nossa única opção agora. Precisamos colocar esse canhão em funcionamento, e confiar no Taloc é a nossa única escolha no assunto.</p>
+<p> </p>
+<p>Além disso, é uma ordem direta do santuário. Está acima da nossa escala de pagamento para questionar os pedidos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um dia eles vão me ouvir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Senhora da luz! Você realmente lutou por isso, não é? Eu não te vi isso bateu há algum tempo.</p>
+<p> </p>
+<p>Como a operação do Rebirth Taloc acabou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os parasitas estão mortos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você era o Daeva certo para esta missão.</p>
+<p> </p>
+<p>O Taloc agora deve perceber que trabalhar com os Elyos é a única maneira de sobreviver à guerra que se aproxima.</p>
+<p> </p>
+<p>Mas lembre -se de que todos esses parasitas têm larvas se contorcendo por aí. Precisamos voltar em algumas semanas e descartá -los também.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua os parasitas encontrados dentro do Taloc.</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_1F]([%2]/329)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_2F]([%5]/231)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_3F]([%8]/77)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Dorsia].</p></step>
+</steps>
+<p>Exterminar os parasitas atormentando o Taloc.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Santuário ordenou a execução da operação de renascimento do Taloc para obter a ajuda de Taloc.</p>
+<p> </p>
+<p>Você entrou e destruiu todos os parasitas dentro do Taloc para ganhar sua confiança, e Tialla o recompensou após a conclusão da operação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

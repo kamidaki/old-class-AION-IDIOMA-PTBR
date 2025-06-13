@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma olhada nos periódicos de pesquisa da Beritra Information Troop mostra que algo havia sido escrito sobre lombadas aquáticas.</p>
+<p> </p>
+<p>A análise ainda não está completa, mas assumimos que os testes foram realizados em vermes.</p>
+<p> </p>
+<p>Se a lombada aquática foi o primeiro objeto de teste, eles definitivamente serão infectados.</p>
+<p> </p>
+<p>Vá e mate [%dic:STR_DIC_M_LDF5B_B2_WaterWorm_64_An]como eles o encontram.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode deixar o [%dic:STR_DIC_M_LDF5B_B2_WaterWorm_64_An]que foram usados ​​no experimento por aí.</p>
+<p> </p>
+<p>A contaminação pode se espalhar e piorar.</p>
+<p> </p>
+<p>Não temos uma maneira de limpá -los agora. Eles apenas precisam ser destruídos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Não é realmente culpa da lombada aquática, mas por causa da contaminação, nada mais pode ser feito.</p>
+<p> </p>
+<p>Eu acredito que o esquadrão de Beritra também é responsável por isso. Não consigo pensar em nenhuma outra explicação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_B2_WaterWorm_64_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard10_D]%.</p></step>
+</steps>
+<p>Mate as lama envenenada, que foram usadas como objetos de teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herbo disse que o relatório da pesquisa afirmava que havia a possibilidade de que as linhas de água tivessem sido usadas no experimento e foram envenenadas no processo, e que essas lombadas aquáticas teriam que ser eliminadas.</p>
+<p> </p>
+<p>Quando você voltou depois de eliminar as lama envenenada, Herbo fumou que a tropa de Beritra era a causa de todo esse mal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

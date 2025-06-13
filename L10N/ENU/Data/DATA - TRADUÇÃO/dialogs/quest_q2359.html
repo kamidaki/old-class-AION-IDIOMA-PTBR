@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Eu preciso da sua ajuda, se você tiver tempo. Não posso falar em detalhes da minha missão, mas é urgente.</p>
+<p> </p>
+<p>Eu posso te dizer isso ... Estou procurando o Daevas. Bem, armas, notas, trabalho, suas descobertas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Então eu ajudaria a pesquisar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, preciso de ajuda para descobrir, literalmente.</p>
+<p> </p>
+<p>Aqui está algo que encontrei recentemente. É de uma espada, provavelmente quebrada em combate. Esses depósitos minerais da lava dificultam a visão, mas possui gravuras ricas.</p>
+<p> </p>
+<p>Olhe aqui, e aqui. Isso não era uma arma antiga. Isso foi feito sob medida. Pertencia a um Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Precisa de limpeza, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é a coisa. Não posso. Eu não tenho os materiais.</p>
+<p> </p>
+<p>É onde você entra. o [%dic:STR_DIC_M_FlyingEyeD_28_An] S produz um líquido ácido que dissolverá a escala.</p>
+<p> </p>
+<p>Eu preciso de alguém para matar Oculazens e me trazer suas íris. Isso seria você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou precisar de vários[%dic:STR_DIC_I_QUEST_2359a] es, [%username]. Melhor um suprimento grande do que dribs e monótonos e viagens extras.</p>
+<p> </p>
+<p>Pressa! Se é isso que eu acho que é, as vidas estão em jogo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"SHARDS! Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Estou surpreso. Imaginei você para o tipo heróico.</p>
+<p> </p>
+<p>Bem, você está certo, [%username]. Não é como se a alma de um Daeva fosse importante!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não há necessidade de ser mau!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo, [%username]Você está de volta!</p>
+<p> </p>
+<p>Encontrei isso perto dos penhascos de lava vermelho. Se é realmente uma arma Daevic, nos dá um lugar para concentrar nossa atenção.</p>
+<p> </p>
+<p>Passe -me isso [%dic:STR_DIC_I_QUEST_2359a] es ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, eu pedi dez! Dez, lembra?</p>
+<p> </p>
+<p>Mova -o, [%username]! Se os Daevas ausentes são .... ouça, o tempo que você leva faz a diferença entre "resgatar" e "enterrar", me pegue?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estou indo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito. Agora eu apenas extrai o fluido ... misture -o com esses outros materiais ... e crie o solvente!</p>
+<p> </p>
+<p>Obrigado, Daeva. Tenho que ir, mas seu nome irá no meu relatório. Azphelumbra!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_M_FlyingEyeD_28_An]Íris para [%dic:STR_DIC_N_Embla].</p>[%collectitem]</step>
+</steps>
+<p>A EMBLA precisa de Oculazen Irises para seguir uma pista para os Daevas ausentes. Hunt observando oculazens e leve suas íris para embla.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Encla encontrou uma pista do caso Daeva que faltava, um fragmento de espada quebrada, perto do penhasco vermelho de lava. As marcações do fragmento foram obscurecidas pela crosta mineral, e ela precisava de um solvente para limpá -lo.</p>
+<p> </p>
+<p>Você concordou em caçar observar oculazens e coletou suas íris para o solvente de Embla.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

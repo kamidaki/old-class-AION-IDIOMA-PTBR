@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Posso pedir outro favor a você?</p>
+<p> </p>
+<p>Enquanto eu estava distraído por ... zumbi fedor ... um pacote de querratões começou a causar estragos ao redor do Observatório de Campo Aetico.</p>
+<p> </p>
+<p>Temos os motivos do observatório cobertos, mas não podemos proteger os moradores enquanto eles viajam de e para o observatório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Acho que vejo para onde você está indo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, porque eu realmente preciso de alguém para expulsar esses querratões, mas não posso poupar ninguém do dever de proteção do Observatório agora.</p>
+<p> </p>
+<p>Você viu isso [%dic:STR_DIC_M_CatosRE_34_An] ataque antes, não é? Não há como um aldeão sobreviver a um comando completo.</p>
+<p> </p>
+<p>Você acha que poderia lidar com eles para fora da lama sombria?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente é generoso, [%username].</p>
+<p> </p>
+<p>Você encontrará o [%dic:STR_DIC_M_CatosRE_34_An] está logo abaixo do Observatório de Campo Aetico.</p>
+<p> </p>
+<p>Mate todos eles, se puder. Mesmo um único keraton perdido poderia causar danos incalculáveis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nenhum keraton sobreviverá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ter uma agenda muito movimentada.</p>
+<p> </p>
+<p>Isso é lamentável para nós, mas bom para quem está em sua programação.</p>
+<p> </p>
+<p>Terei que me contentar com alertar os viajantes para serem cautelosos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Você é totalmente incrível, [%username].</p>
+<p> </p>
+<p>Havia tantos deles! Como você os atravessou tão rápido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não havia muitos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Isso deve manter a população baixa por um tempo.</p>
+<p> </p>
+<p>Agora posso parar de me preocupar com os moradores mutilados e consentir em proteger o observatório.</p>
+<p> </p>
+<p>Esta recompensa é para você. Por favor, pegue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_CatosRE_34_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Rahelio].</p></step>
+</steps>
+<p>Mate os queratons cegos que estão causando problemas próximos ao observatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rahelio disse que os moradores estavam em perigo porque os queratons estavam causando estragos perto do Observatório de Campo Aetico.</p>
+<p> </p>
+<p>Você eliminou os querratões cegos para impedir que eles machucassem alguém.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

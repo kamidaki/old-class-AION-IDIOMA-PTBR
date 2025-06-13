@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Percebo, Elyos, que é impróprio pedir um favor a alguém que acabei de conhecer, mas me encontro em uma situação muito pegajosa aqui.</p>
+<p> </p>
+<p>Eu sei que você tem seus próprios problemas, mas minha reputação profissional e meus negócios estão agora em jogo ....</p>
+<p> </p>
+<p>Eu realmente não sei a quem mais posso recorrer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vê, [%username], Recebi uma grande ordem para minhas picaretas artesanais ... uma quantia de Kinah também.</p>
+<p> </p>
+<p>Levei semanas para fazê -los ... acabei de terminar no ano passado. Então, eu acordo esta manhã, e tudo se foi ... todas as minhas picaretas, desapareceram.</p>
+<p> </p>
+<p>O pedido é devido amanhã-alguns dos seus generais da brigada os encomendaram. Não há como fazer tantos novamente em uma noite. Não posso me dar ao luxo de perder esta venda ou este cliente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você quer que eu te compre algum tempo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso seria bom, mas eu precisaria de mais tempo do que você poderia me dar. Eu não tenho muitos negócios há algum tempo, e há muitos ferreiros procurando trabalho atualmente.</p>
+<p> </p>
+<p>O que eu preciso é uma mensagem entregue a um de seu povo. Ele sempre foi gentil comigo, e ele me deve um favor.</p>
+<p> </p>
+<p>Ele está no posto de observação Undirborg. O nome dele é[%dic:STR_DIC_N_Sueros], e ele é um centurião. Você transmitiria a mensagem para ele por mim? Os guardas não me deixam passar sem os documentos adequados.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você é muito gentil, [%username]. Obrigado.</p>
+<p> </p>
+<p>Quando você encontrar [%dic:STR_DIC_N_Sueros], pergunte se ele tem uma fonte confiável de ferramentas ... picaretas, de preferência. O máximo que ele pode obter.</p>
+<p> </p>
+<p>Espero que isso possa me comprar um pouco de tempo ... até encontrar o selvagem sem coração que roubou meu pedido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou entregar a mensagem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu entendo, [%username]. Acabamos de nos conhecer e já estou pedindo um favor.</p>
+<p> </p>
+<p>Deixe para lá ... mas se você ver uma pilha de novas picaretas em suas viagens, por favor me diga.</p>
+<p> </p>
+<p>Vou encontrar o selvagem que roubou minhas mercadorias e cortarei as mãos dele para que isso nunca aconteça com outra pessoa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ficar de olho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username].</p>
+<p> </p>
+<p>Você parece que algo está em sua mente.</p>
+<p> </p>
+<p>Por favor, compartilhe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nosso amigo Gefeios teve um problema ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... esses reianos são um grupo estranho de personagens, não são?</p>
+<p> </p>
+<p>Eu colocaria meu Kinah no culpado sendo um de seus próprios gentis-alguns reianos não gostam de ver seus compatriotas trabalhando conosco Elyos.</p>
+<p> </p>
+<p>Ainda assim, recebi ordens para tentar promover melhores relacionamentos com esses reianos ... é por isso que pedi ao general que faça a ordem com o Gefeios em primeiro lugar. Deixe -me ver o que posso fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sueros].</p></step>
+</steps>
+<p>Gefeios, um ferreiro da tribo Reian, teve sua ordem de picaretas roubadas. Você concordou em entregar sua mensagem a Sueros, um centurião.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios, um ferreiro de uma vila da tribo Reian, teve sua ordem de picaretas roubadas.</p>
+<p> </p>
+<p>Você foi a Sueros e entregou a mensagem do ferreiro pedindo sua ajuda. Sueros disse que investigaria o problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

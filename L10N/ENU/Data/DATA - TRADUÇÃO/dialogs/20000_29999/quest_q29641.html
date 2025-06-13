@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A quinta tarefa é ... erm ...</p>
+<p> </p>
+<p>(Pensa muito.) Ah, sim ... trata -se de eliminar o [plur][%dic:STR_DIC_DF4_Griffon_DR_53_An] e o [plur][%dic:STR_DIC_DF4_Dionae_DR_53_An].</p>
+<p> </p>
+<p>Eles não chegam perto da bacia de Krug, então não posso lhe dizer nada sobre eles.</p>
+<p> </p>
+<p>Oh, certo. A tarefa tem a ver com subterranea e o posto de observação.</p>
+<p> </p>
+<p>Cuide dessa situação e depois vá para [%dic:STR_DIC_N_Fjoelnir].</p>
+<p> </p>
+<p>Talvez nos vejamos novamente em breve, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você está, Daeva?</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+<p> </p>
+<p>Posso ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a quinta tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, certo. Prazer em conhecê-lo.</p>
+<p> </p>
+<p>Eu sou fjoelnir da tropa da Expedição de Pandaemonium.</p>
+<p> </p>
+<p>Tenho uma recompensa para você de Richelle em troca de concluir a quinta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_DF4_Griffon_DR_53_An]ou o [plur][%dic:STR_DIC_DF4_Dionae_DR_53_An] em Gelkmaros ([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Fjoelnir]no posto de observação de Subterranea.</p></step>
+</steps>
+<p>Realize a quinta tarefa e encontre fjoelnir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A quinta tarefa que Vesvola lhe deu foi destruir Shredding Manticores ou Carnal Dionae em Gelkmaros.</p>
+<p> </p>
+<p>Quando você eliminou os monstros, encontrou Fjoelnir e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], nosso inimigo de longa data, o Balaur, deve ser esfregado!</p>
+<p> </p>
+<p>Você assumiria a missão de matar o [%dic:STR_DIC_M_LDF5A_D_DrakanGhost_Fi_64_An], Assim, [%dic:STR_DIC_M_LDF5A_D_DrakanGhost_Wi_64_An] e [%dic:STR_DIC_M_LDF5A_D_BoneDrake_64_An]?</p>
+<p> </p>
+<p>Todos são sobreviventes da Guilda de Tiamat.</p>
+<p> </p>
+<p>Precisamos terminar esse grupo de coisas boas, até o último homem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os espíritos do exército de Kurum e do Kurum Acheron Drake?</p>
+<p> </p>
+<p>Considerando as coisas cruéis que eles fizeram, foi uma misericórdia.</p>
+<p> </p>
+<p>Você não pode pagar a eles nenhuma misericórdia ou deixe -os não contestados.</p>
+<p> </p>
+<p>Vi tropas remanescentes se tornaram perigosas várias vezes porque ninguém cuidava deles ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se livrou deles.</p>
+<p> </p>
+<p>Agora posso dormir em paz à noite.</p>
+<p> </p>
+<p>É melhor se livrar de todos os sobreviventes da Guilda de Tiamat.</p>
+<p> </p>
+<p>Muito obrigado por concluir a tarefa tão rapidamente, mesmo que não fosse fácil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os desertores do exército de Tiamat.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_D_DrakanGhost_all]([%2]/12)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_D_BoneDrake_64_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5a_Rimona_E]</p></step>
+</steps>
+<p>Livre -se dos espíritos dos sobreviventes da Guilda do Kurum do Exército de Tiamat e do Kurum Acheron Drake.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Limona atribuiu a você a tarefa de matar os restantes soldados do Tiamat.</p>
+<p> </p>
+<p>Você venceu os fantasmas do exército de Kurum e do Kurum Acheron Drake. Limona agradeceu e elogiou seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

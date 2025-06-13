@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deveríamos ter planejado melhor antes de partirmos a grande peregrinação.</p>
+<p> </p>
+<p>Tivemos que passar pelo acordo de Dukaki para chegar aqui, e eu pensei que seria fácil depois disso. Acontece que nada vale a pena fazer é fácil, Daeva.</p>
+<p> </p>
+<p>Os Grifos nos prenderam. Eles roubaram nossa comida e não comemos há dias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Desde que meu marido e eu nos conhecemos, compartilhamos nosso sonho de fazer a grande peregrinação.</p>
+<p> </p>
+<p>O terreno sagrado de Miraju me chama. Não devo deixar meu ânimo falhar.</p>
+<p> </p>
+<p>Estou tão exausto, no entanto. Não tenho energia para lutar contra o Grifo. Você me ajudaria?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claramente, você entende o significado da grande peregrinação.</p>
+<p> </p>
+<p>Na caverna logo à frente, você encontrará[%dic:STR_DIC_QILA81] está crescendo em abundância. Estes não são apenas fungos comuns-eles têm o poder de induzir o sono. Espero usá -los no Grifo.</p>
+<p> </p>
+<p>Se você pudesse me levar cinco deles, eu poderia colocá -los para dormir, o que é mais fácil na minha consciência do que matá -los.</p>
+<p> </p>
+<p>Tenha cuidado na caverna, no entanto-eu já vi Aranhas correndo por lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah ... se é assim que é, então eu aceito. Mesmo que eu tenha chegado tão perto ...</p>
+<p> </p>
+<p>Não se preocupe conosco. Por favor, concentre -se em suas tarefas mais prementes e pode assistir a você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E sobre você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que não tenha sido muito problemas, Daeva. Diga -me, você trouxe os cogumelos?</p>
+<p> </p>
+<p>[%dic:STR_DIC_QILA81] S Só cresce nas sombras mais escuras e não é fácil de identificar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>A semana de peregrinação está chegando ao fim-então, eu temo, são nossas chances de alcançar os motivos sagrados.</p>
+<p> </p>
+<p>Por favor, se você deseja ajudar, deve buscar o [%dic:STR_DIC_QILA81] S sem demora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>São eles! Oh, muito bem, Daeva. Você trouxe todo o [%dic:STR_DIC_QILA81] S precisamos.</p>
+<p> </p>
+<p>Agora, tudo o que preciso fazer é espalhá -los pela grama, e o Grifo se tornará vítimas de sua própria ganância. Há uma lição lá, e eu vou me lembrar bem.</p>
+<p> </p>
+<p>Você tem minha sincera gratidão. O solo sagrado de Miraju aguarda!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga os cogumelos para [%dic:STR_DIC_LA71], para que ela possa fazer o Grifo adormecer.</p>[%collectitem]</step>
+</steps>
+<p>Grifus agressivos estão impedindo que os peregrinos continuem em sua jornada. Colete cogumelos soporíficos para colocar o Grifo para dormir para que a peregrinação possa continuar.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conheceu um casal de peregrinos, Anasia e Dronoa, perto de Talun's Nest. Eles estavam a caminho do terreno sagrado de Miraju, mas não puderam continuar sua jornada por causa do grfo agressivo.</p>
+<p> </p>
+<p>Você adquiriu cogumelos soporíficos para os peregrinos problemáticos para que eles pudessem colocar o Grifo para dormir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

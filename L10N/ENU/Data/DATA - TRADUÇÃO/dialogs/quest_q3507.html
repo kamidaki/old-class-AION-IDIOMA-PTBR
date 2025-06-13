@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. Você se lembra daquele prato delicioso que eu preparei para você e os marinheiros da Frota Azul algumas noites atrás? As costelas de basilisco que eram tão macias que a carne simplesmente deslizou logo de osso.</p>
+<p> </p>
+<p>Ahh, essa era a magnum opus das festas, não foi? Vou tentar superar desta vez. Eu quero marinar as costelas na seiva de espinheiro de lama e depois cozinhá -las sobre uma chama suave.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece delicioso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiquei sem alguns ingredientes, no entanto. Teremos um tumulto em nossas mãos se eu não conseguir esses marinheiros suas costelas de basilisco e seiva de espinheiro lamaceiro para o jantar.</p>
+<p> </p>
+<p>Você já viu uma equipe de marinheiros zangados e famintos? Não é uma visão agradável.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está salvando minha reputação, [%username]! Obrigado. Sem você, esses marinheiros seriam submetidos ao meu ensopado Maeki listrado novamente. Você já provou um Maeki listrado? Não é agradável.</p>
+<p> </p>
+<p>Então, vou precisar de cinco[%dic:STR_DIC_I_QUEST_1622a] S e cinco garrafas de [%dic:STR_DIC_I_QUEST_1622b]. Esses marinheiros têm um apetite como um Warg no inverno.</p>
+<p> </p>
+<p>Estou começando o ensopado, então, por favor, se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar suas costelas e seiva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo, [%username]. Não é a tarefa mais gloriosa.</p>
+<p> </p>
+<p>Eu acho que os marinheiros da Frota Azul terão que preparar seus gavetas para mais uma rodada de ensopado Maeki listrado. Suponho que também devo avisar os guardiões do banheiro ... bastante a bagunça da última vez.</p>
+<p> </p>
+<p>Volte se você mudar de idéia, no entanto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é provável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou! Você conseguiu os ingredientes certos?</p>
+<p> </p>
+<p>Você ficaria assustado com quantos soldados peço para encontrar costelas de basilisco apenas para serem apresentadas com ossos do pescoço ou aristão da cauda ....</p>
+<p> </p>
+<p>Eu sei que você não é tão sem sentido, mas deixe -me ver o que você trouxe apenas para ter certeza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Estes o que você queria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não deveria estar recebendo meu[%dic:STR_DIC_M_BasiliskRe_41_An]Costelas e [%dic:STR_DIC_M_Mudthorn_41_An] Seiva?</p>
+<p> </p>
+<p>Está quase na hora do banquete ... e eu não tenho banquete! Eu já prometi aos marinheiros que eles comeriam minhas costelas especiais hoje à noite!</p>
+<p> </p>
+<p>Você viu do que os marinheiros famintos são capazes? Esses selvagens vão me cozinhar se eu não lhes der suas costelas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou te salvar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm, perfeito, perfeito ... as costelas parecem boas, úmidas, firmes ao toque.</p>
+<p> </p>
+<p>Deixe -me provar a seta de espinheiro de lama aqui ... Tart, doce ... encanta a língua.</p>
+<p> </p>
+<p>Perfeito! Este será o meu melhor banquete de todos os tempos! Aqui, esta é a recompensa que eu prometi a você. Embora a verdadeira recompensa esteja jantando nesta refeição esta noite!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_M_BasiliskRe_41_An] Areia [%dic:STR_DIC_M_Mudthorn_41_An] para trazer os ingredientes para [%dic:STR_DIC_N_Senir].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha costelas de basilisco e seiva de espinheiro de lama para Senir, para que ele possa preparar um banquete para os marinheiros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Senir queria fazer um prato de costelas de basilisco e seiva de espinheiro de lama para os marinheiros da Frota Azul.</p>
+<p> </p>
+<p>Quando você trouxe os ingredientes necessários, ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

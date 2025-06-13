@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username]. Este é o seu primeiro festival de mortalidade?</p>
+<p></p>
+<p>Eu gostaria que estivesse em melhores circunstâncias. O festival deste ano pode não ter muito do soco do ano passado.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, são as pipas de papel! Todo o festival gira ao redor deles. As crianças aprendem sobre a fragilidade da vida através das pipas frágeis.</p>
+<p></p>
+<p>Mas eles estão todos esfarrapados e quebrados este ano, e então alguém roubou nosso[%dic:STR_DIC_I_WORLD_EVENT_CHILDREN_SCROLL_SHIELD_ALL_30A] S, é assim que os reparamos.</p>
+<p></p>
+<p>Sem[%dic:STR_DIC_I_WORLD_EVENT_CHILDREN_SCROLL_SHIELD_ALL_30A], não temos pipas utilizáveis. E sem pipas, não podemos realizar o festival. Você pode...?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode parecer um pouco sombrio para alguns, mas o festival de mortalidade realmente ensina lições importantes para as crianças.</p>
+<p></p>
+<p>Eles aprendem a apreciar o tempo que têm e a aproveitar ao máximo cada momento. E há muita diversão também.</p>
+<p></p>
+<p>Você já esteve em Haramel, Nochsana Training Camp, Kromede's Trial, The Fire Temple, Aço Rake ou Poeta Dark recentemente? Você pode ter algumas escalas de papel no seu cubo, se tiver.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Deixe -me verificar ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bah, muito bem, [%username]!</p>
+<p> </p>
+<p>Você nunca teria passado no Festival de Mortalidade se eu fosse o mestre de cerimônias no seu tempo! Boa Riddance!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não me empurre!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que sei quem levou nossas escalas de papel, mas não tenho provas.</p>
+<p></p>
+<p>Hoje, esses jovens Daevas não levam à tradição às vezes. Mas todas as crianças adoram, felizmente.</p>
+<p></p>
+<p>Você conseguiu colocar as mãos em qualquer [%dic:STR_DIC_I_WORLD_EVENT_CHILDREN_SCROLL_SHIELD_ALL_30A] S?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Hmmm, vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, não posso trabalhar com o que você tem.</p>
+<p></p>
+<p>Diga ... eu poderia conseguir uma passagem para você para o festival de mortalidade deste ano, se você puder me encontrar cerca de 20[%dic:STR_DIC_I_WORLD_EVENT_CHILDREN_SCROLL_SHIELD_ALL_30A].</p>
+<p></p>
+<p>Eles estão em Haramel, Nochsana Training Camp, Kromede's Trial, The Fire Temple, Aço Rake e Poeta Dark. Eu só preciso de 20.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, nada mal ... isso fará bem. As crianças ficarão tão felizes!</p>
+<p></p>
+<p>[%username], você realmente salvou o dia para nós. Por favor, fique à vontade para voltar durante o festival. Vou ter um assento com seu nome.</p>
+<p></p>
+<p>E apenas no caso de você não voltar, pegue isso ... algo para seus problemas.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_WORLD_EVENT_CHILDREN_SCROLL_SHIELD_ALL_30A] para [%dic:STR_DIC_N_event_Negin].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha escalas de papel para que o Negin possa reparar pipas para o festival.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Negin está tentando reparar pipas de papel para o festival de mortalidade que se aproximava, mas alguém roubou as escalas de papel que precisava.</p>
+<p></p>
+<p>Você encontrou as escalas de papel e os deu para Negin. Ele agradeceu e lhe deu uma recompensa.</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

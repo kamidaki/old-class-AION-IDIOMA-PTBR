@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode ser embaraçoso para eu admitir, mas há um poderoso líder de Balaur perto aqui e uma luta é inevitável.</p>
+<p> </p>
+<p>[%username], você poderia nos ajudar a eliminar [%dic:STR_DIC_M_LDF5B_f4_Vri_Poison_As_SN_NmdQ_65_Ae]?</p>
+<p> </p>
+<p>Eu tentei superá -lo várias vezes, mas até agora sem sucesso.</p>
+<p> </p>
+<p>O capitão do 43º esquadrão de eliminação deve ser derrotado para ser vitorioso nas planícies do Prades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Quantos soldados do capitão do 43º esquadrão de eliminação foram mortos ... isso é uma pena para mim.</p>
+<p> </p>
+<p>Eu desejo que você, [%username], definiria essa desgraça agitada para mim.</p>
+<p> </p>
+<p>Você absolutamente deve matar o capitão do 43º esquadrão de eliminação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi ótimo.</p>
+<p> </p>
+<p>Não importa o quão bom ele possa ter sido, ele não foi páreo para você, [%username].</p>
+<p> </p>
+<p>Isso deve atenuar o moral do 43º esquadrão de eliminação por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5B_f4_Vri_Poison_As_SN_NmdQ_65_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Niame_E].</p></step>
+</steps>
+<p>Mate o capitão do 43º esquadrão de eliminação que está torturando Niame.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Em vez de matar Niame, você matou o capitão do 43º esquadrão de eliminação, que estava constantemente falhando em seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

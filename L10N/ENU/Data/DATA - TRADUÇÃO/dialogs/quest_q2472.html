@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que não faz muito tempo, um Daeva que estava acampando nas proximidades desapareceu! Você pode acreditar?</p>
+<p> </p>
+<p>O acampamento estava intocado, mas o Daeva se foi! Não consigo imaginar o que aconteceu ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é meio assustador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>E o que é realmente assustador é que esta não é a primeira vez! Há rumores de que alguns Daevas desapareceram em torno de Morheim!</p>
+<p> </p>
+<p>Já mal podemos pisar do lado de fora da vila por medo de ataques de animais selvagens. Tenho medo de reunir o Xilix de que preciso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, gostaria de te perguntar uma coisa ...</p>
+<p> </p>
+<p>Você poderia me trazer 10[%dic:STR_DIC_G_plant_d_n_c_30a]?</p>
+<p> </p>
+<p>Eu preciso das fibras para fazer roupas novas. Meu estoque já está exausto!</p>
+<p> </p>
+<p>Eu sei que meu pedido é um pouco impertinente, mas tenho muito medo de deixar a vila.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Por favor me traga 10[%dic:STR_DIC_G_plant_d_n_c_30a].</p>
+<p> </p>
+<p>Existem muitos Xilix na área ao redor da vila. Você os encontrará facilmente enquanto eles brilham em branco.</p>
+<p> </p>
+<p>Existem muitos rumores fazendo as rondas. Por favor, cuide de si mesmo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou desapontado, mas não vou pressioná -lo a fazer algo que você não quer. Talvez Securis me ajude quando ele estiver fora de serviço.</p>
+<p> </p>
+<p>Ele não é tão habilidoso quanto você, Daeva, mas certamente é mais habilidoso do que eu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o que eu pedi? Você trouxe o [%dic:STR_DIC_G_plant_d_n_c_30a] S?</p>
+<p> </p>
+<p>Deixe -me ver se você escolheu as coisas certas. Estou feliz que você esteja de volta em uma peça. Eu estava preocupado que algo ruim acontecesse com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as fibras Xilix."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não conseguiu, não é?</p>
+<p> </p>
+<p>Estou contando com você, Daeva. Você se apressaria, por favor?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro, eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado!</p>
+<p> </p>
+<p>Finalmente, posso fazer roupas novas para substituir essas coisas antigas desgastadas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir fibras de [%dic:STR_DIC_G_gb_source_plant_d_30a] e trazê -los para [%dic:STR_DIC_N_Capone].</p>[%collectitem]</step>
+</steps>
+<p>Escolha fibras Xilix e leve -as para Cabon para que ela possa fazer roupas novas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Cabon disse que tinha medo de sair da vila por causa dos animais, apesar de precisar de fibras Xilix para suas roupas novas.</p>
+<p> </p>
+<p>Você escolheu Xilix e trouxe para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

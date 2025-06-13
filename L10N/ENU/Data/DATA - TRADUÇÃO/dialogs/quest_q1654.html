@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma! Tenho um pedido para pedir a você.</p>
+<p> </p>
+<p>Mate o [plur][%dic:STR_DIC_M_LF3E3_FeB_LizardFi_43_Ae_Tune] e [plur][%dic:STR_DIC_M_LF3E3_FeC_LizardFi_44_Ae_Tune]perto da base.</p>
+<p> </p>
+<p>Eles são a principal força militar da Guilda Indratu que protege a rota para o Nute Warrens.</p>
+<p> </p>
+<p>Temos que acabar com toda a Guilda, mas isso seria um começo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você solicita apoio da fortaleza.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, informei o general da brigada.</p>
+<p> </p>
+<p>Eu até pedi ajuda na fortaleza de Eltnen.</p>
+<p> </p>
+<p>Mas a única resposta que recebemos foi ser paciente.</p>
+<p> </p>
+<p>Espero que o Balaur não se arrisque e ocupe todo o Heiron ...</p>
+<p> </p>
+<p>[%username], por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Eu estava preocupado com você porque não ouvi mais de você depois que você saiu.</p>
+<p> </p>
+<p>Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os draconutos não são mais um problema".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Agora podemos esperar calmamente a chegada dos reforços.</p>
+<p> </p>
+<p>[%username], graças a você, os Elyos finalmente derrotarão a Guilda Indratu.</p>
+<p> </p>
+<p>Obrigado por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute contra a Guilda Indratu e proteja uma rota para o Nute Warrens.</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF3E3_FeB_LizardFi_43_Ae_Tune]([%2]/5).</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LF3E3_FeC_LizardFi_44_Ae_Tune]([%5]/4).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Javlantia].</p></step>
+</steps>
+<p>Mate os grunhidos de Indratu e Indratu, que representam a principal força militar dos quartéis de Indratu e garantem um caminho para os náteis guerreiros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yavlantia estava esperando por reforços e temia que o Balaur pudesse ocupar o Heiron nesse meio tempo.</p>
+<p> </p>
+<p>Então você matou os grunhidos de Indratu e Indratu que representam a principal força militar do quartel de Indratu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O guarda da fortaleza de Roah só está ficando mais forte. Fui enviado lá para Scout porque me disseram que alguém havia eliminado a guarnição para nós.</p>
+<p> </p>
+<p>Quando cheguei lá, mal evitei correr direto para a guarnição de elite que tomou o seu lugar.</p>
+<p> </p>
+<p>Não sou fraco, mas admito que não acho que posso assumir uma guarnição inteira de elite sozinha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sensível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que nos livrar dessa guarnição. Fiquei autorizado a dar uma recompensa a qualquer DaeVas procurando trabalho freelance.</p>
+<p> </p>
+<p>O que você diz? Você acha que está pronto para reunir algum backup e enfrentar esses ellies?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é o espírito de luta asmodianos!</p>
+<p> </p>
+<p>Vá matar aqueles[%dic:STR_DIC_M_2810_all], com seus amigos para apoiá -lo, é claro.</p>
+<p> </p>
+<p>Cada soldado deve carregar um[%dic:STR_DIC_I_QUEST_2810a]. Traga -os de volta para mim. E diga a seus amigos para fazer o mesmo.</p>
+<p> </p>
+<p>Você não precisa se livrar de todos eles, mas isso seria apreciado. Sangue para sangue.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se sente à vontade para ser um líder? Eu entendo, é difícil.</p>
+<p> </p>
+<p>Talvez você não seja tão forte quanto você parece, Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou forte o suficiente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que você está lutando. Por que você não me diz como foi?</p>
+<p> </p>
+<p>Melhor ainda, mostre -me o [%dic:STR_DIC_I_QUEST_2810a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Dê uma olhada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso não é bom. Você sabe, se você não tomar seus kisks, eles voltarão à vida no mesmo local.</p>
+<p> </p>
+<p>Não estamos pagando para matá -los duas vezes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, eu vou pegar os Kisks."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Normalmente não sou o tipo de pessoa que, ah, elogia outras pessoas. Simplesmente não é minha natureza.</p>
+<p> </p>
+<p>Mas, bem ... você fez um bom trabalho por aí.</p>
+<p> </p>
+<p>Aqui está o seu pagamento. E não diga a ninguém que eu elogiei você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_2810_all] e volte com a prova para [%dic:STR_DIC_N_Dullaha].</p>[%collectitem]</step>
+</steps>
+<p>Derrote a Elite Elyos Guarnição e retorne a Dullaha com Kisks do Guardian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dullaha pediu sua ajuda para derrotar a Elite Elyos Guarnição na fortaleza de Roah.</p>
+<p> </p>
+<p>Você derrotou a Elite Elyos Guarnição enquanto ele pediu e voltou a ele com os Kisks do Guardian para impedir que as tropas de elite ressuscitem facilmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

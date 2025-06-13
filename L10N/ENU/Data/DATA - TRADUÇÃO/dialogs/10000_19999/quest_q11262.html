@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, dia ensolarado!</p>
+<p> </p>
+<p>E, eis, aqui está[%username]. Olá, [%username]!</p>
+<p> </p>
+<p>O agente de Kaisinel, Veille, tem uma missão importante para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ela faz?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm-hmmm. Mas deixe -me falar sobre sua recompensa primeiro.</p>
+<p> </p>
+<p>Então, que o Polearm de Laestrygos? Quando você terminar um certo número de missões para mim, vou pedir a Anusis-um mestre artesão de santuário e um Daeva que me deve inúmeros favoritos-para atualizá-lo para você.</p>
+<p> </p>
+<p>E tudo o que você precisa fazer é matar alguns generais guardiões inimigos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está o que você faz. Vá para o [%dic:STR_DIC_W_DF4_SZ_3011_A] e o [%dic:STR_DIC_W_DF4_SZ_3021_A], e ajudar o agente Veille a recuperar.</p>
+<p> </p>
+<p>O que é um general guardião de um Daeva como você, sim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está certo! Eu posso levá -los!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ... realmente? Tem certeza?</p>
+<p> </p>
+<p>O agente realmente queria que você trabalhasse nesta missão, [%username]. E eu estava ansioso para lhe dar essa recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Alguns dias são mais ensolarados que outros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Whee! Voltaremos Vorgaltem e Crimson, e talvez haja paz em Atreia. Algum dia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Eu tenho a parte um deles coberto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter ouvido seus bate-pau vitoriosos!</p>
+<p> </p>
+<p>Mas ... onde está o Polearm de Laestrygos? Só posso recompensá -lo se você tiver.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O quê? Onde eu pego um?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter ouvido seus bate-pau vitoriosos!</p>
+<p> </p>
+<p>Mas ... onde está o Polearm de Laestrygos? Só posso recompensá -lo se você tiver.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso é apenas sombrio, L. muito cruel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter ouvido seus bate-pau vitoriosos! Bom trabalho.</p>
+<p> </p>
+<p>Logo, posso lhe dar a melhor coisa da minha loja: um pedaço de Aegis!</p>
+<p> </p>
+<p>Isso aumentará o poder do seu polearmo como você não acreditaria.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os generais do Guardião Inimigo que ocupam fortalezas Balauren.</p>
+<p visible="[%0]">Guardian General de [%dic:STR_DIC_W_DF4_SZ_3011_A]([%5]/1).</p>
+<p visible="[%0]">Guardian General de [%dic:STR_DIC_W_DF4_SZ_3021_A]([%8]/1).</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Laestrygos].</p></step>
+</steps>
+<p>Laestrygos pediu que você matasse os generais guardiões inimigos que ocupam fortalezas. Se você tiver sucessos suficientes, ele atualizará o Polearm de seus Laestrygos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laestrygos entregou o pedido do agente Veille: mate os generais do Guardião Inimigo que ocupam a Cidadela de Vorgaltem e o Templo Carmesim.</p>
+<p> </p>
+<p>Após o seu 30º triunfo, ele lhe deu um pedaço de égide para aprimorar o polearmo de seus Laestrygos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

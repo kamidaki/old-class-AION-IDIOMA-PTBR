@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41462</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. Ouvi dizer que você está procurando o [%dic:STR_DIC_E_60lvDeva_wepon].</p>
+<p> </p>
+<p>Se você completar minha missão para mim, eu lhe darei uma das essências dos sentimentos sombrios que reuni.</p>
+<p> </p>
+<p>Isso me irrita, mas minhas habilidades ainda são insuficientes para se tornar dono da arma Lummasiel.</p>
+<p> </p>
+<p>Minha missão é matar também[%dic:STR_DIC_M_IDRaksha_05_Raksha_Nmd_60_Ae], Assim, [%dic:STR_DIC_M_IDYun_Nmd_7Named_60_Ah]ou[%dic:STR_DIC_M_IDTiamat_Tahabata_Named_60_Ah]... realmente nenhuma tarefa fácil.</p>
+<p> </p>
+<p>Que tal? Você quer arriscar isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou.</p>
+<p> </p>
+<p>Você terminou a missão, não é?</p>
+<p> </p>
+<p>Se você matou um desses três, [%dic:STR_DIC_M_IDRaksha_05_Raksha_Nmd_60_Ae], Assim, [%dic:STR_DIC_M_IDYun_Nmd_7Named_60_Ah]ou[%dic:STR_DIC_M_IDTiamat_Tahabata_Named_60_Ah], então me diga isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, é contra as regras dos soldados de lança do Siel para usar toda a essência coletada de alguém.</p>
+<p> </p>
+<p>Mas não acho que minha ajuda lhe dará vantagem em obter a arma de Luminaciel com mais facilidade.</p>
+<p> </p>
+<p>E aceite minha ajuda como agradecimento por todos os seus esforços para o Reian.</p>
+<p> </p>
+<p>Mas se houver problemas, assumirei total responsabilidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate um dos três adversários seguintes:[%dic:STR_DIC_M_IDRaksha_05_Raksha_Nmd_60_Ae], Assim, [%dic:STR_DIC_M_IDYun_Nmd_7Named_60_Ah]ou[%dic:STR_DIC_M_IDTiamat_Tahabata_Named_60_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Bargeni].</p></step>
+</steps>
+<p>Realize a missão de Bargeni para ele e obtenha o material necessário para fazer uma arma Luminaciel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bargeni prometeu a você todas as suas essências de sentimentos sombrios se você fizer sua missão por ele.</p>
+<p> </p>
+<p>Depois que você voltou de uma missão de sucesso, ele lhe deu as essências perdidas para a elaboração da arma Luminasiel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

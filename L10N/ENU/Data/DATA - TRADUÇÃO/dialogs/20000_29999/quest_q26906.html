@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Má notícia.</p>
+<p> </p>
+<p>Diz -se que o névoa Mane Mau estabeleceu um novo post na entrada da Mist Mane Village.</p>
+<p> </p>
+<p>Os movimentos do Mau foram suspeitos ultimamente e agora eles querem atacar.</p>
+<p> </p>
+<p>Rapidamente, vá para [%dic:STR_DIC_N_Tyr] em[%dic:STR_DIC_W_DF2_SUB_E1_1] e pergunte a ele sobre a situação, como o almirante Vidar em Pandaemonium solicitou em sua ordem especial.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer dizer a névoa Mane Mau?</p>
+<p> </p>
+<p>É realmente uma situação em que Vidar deve cuidar.</p>
+<p> </p>
+<p>A névoa Mane Mau está montando posição e reunindo suas forças.</p>
+<p> </p>
+<p>O esquadrão Elyos Morheim Guerilla também foi visto perto da entrada da vila de Mist Mane.</p>
+<p> </p>
+<p>Como isso é uma questão de urgência, você deve ir rapidamente para o posto avançado perto da entrada de Mist Mane Village, matar [%dic:STR_DIC_M_DF2_2_Dark_Raider] e capturar [%dic:STR_DIC_W_DF2_Village_02].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já tomou[%dic:STR_DIC_W_DF2_Village_02]?</p>
+<p> </p>
+<p>Se o Mau ou o Esquadrão de Guerrilha Elyos[%dic:STR_DIC_M_DF2_2_Dark_Raider], Eu posso escapar.</p>
+<p> </p>
+<p>Se você não deseja agravar a situação, não devemos deixar o post cair nas mãos do Mau ou do Esquadrão de Guerrilha Elyos.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você matou o líder da guerrilha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Felizmente, eles estão tendo problemas.</p>
+<p> </p>
+<p>Eu já estava preocupado com a segurança do Observatório Morheim por causa da névoa Mane Mau, mas agora posso respirar com calma.</p>
+<p> </p>
+<p>O protetorado de Morheim está envolvido, portanto a defesa do post parece estar segura por um tempo.</p>
+<p> </p>
+<p>O Mau me preocupa, mas a tropa de guerrilha Elyos me preocupa ainda mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Tyr]de [%dic:STR_DIC_W_DF2_SUB_E1_1].</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_DF2_2_Dark_Raider]([%11]/1).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_Tyr].</p></step>
+</steps>
+<p>Ataque [%dic:STR_DIC_W_DF2_Village_02] e ocupar a instalação na saída da vila de névoa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Aegir, você atacou e venceu o posto na entrada da vila de Mist Mane.</p>
+<p> </p>
+<p>Tyr, protetor do campo etérico, disse que a tropa de Elyos Guerilla o tornou mais desconfortável que o Mau, mas deve ser seguro por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

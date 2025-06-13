@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você concordou comigo que o Flarestorm deveria ser libertado de sua prisão de Balaur?</p>
+<p> </p>
+<p>Eu disse que poderia levar várias tentativas de devolvê -lo ao fluxo de Aether. A coisa pobre está fortemente saturada em sua sujeira.</p>
+<p> </p>
+<p>Ele só pode ser ressuscitado através de sua forma pura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mas ele já é um com o Aether."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele é apenas em parte um com o Aether, [%username]. Ele precisa ser totalmente vencido agora.</p>
+<p> </p>
+<p>Você precisará da chave do incinerador para libertar o espírito. Não, essa não é a chave que você usou anteriormente ... é especial.</p>
+<p> </p>
+<p>Posso criar a chave através da magia, mas exigirá muitos itens diferentes e muita concentração. Pode me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas, [%username]. Você primeiro precisará conseguir [%dic:STR_DIC_I_QUEST_30228a] S de Hoodwink Gnarls e [%dic:STR_DIC_I_QUEST_30230a] S dos dracunis.</p>
+<p> </p>
+<p>Depois disso, obtenha [%dic:STR_DIC_I_QUEST_30229a] S de Vilethorn Laupedes e Burrowing Laupedes.</p>
+<p> </p>
+<p>Por fim, puxe [%dic:STR_DIC_I_QUEST_30231a] Sfrom Steelbeak Grifo. Eu acho que você já adquiriu a maioria deles, então não deve ser tão difícil fazê -lo novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Apenas certifique -se de que funcione desta vez!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza de que você é um Elyos, [%username], e não um asmodiano selvagem e sem sentido?</p>
+<p> </p>
+<p>Você deu uma boa chance uma vez, e agora é isso? Para onde foi o seu orgulho, Daeva?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É seu amigo, não meu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso vira meu estômago toda vez que penso nessa pobre flarestorm ainda em grilhas.</p>
+<p> </p>
+<p>Por favor me diga que você encontrou os materiais que eu preciso, [%username]? Eu não suporto mais um momento esperando ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão seus materiais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Olha, só porque você já ajudou a Flarestorm uma vez não lhe dá o direito de levar isso menos a sério.</p>
+<p> </p>
+<p>Quantas vezes você achou que seria necessário para devolver o Flarestorm ao fluxo de Aether? Você pode esquecer uma vez. Está preso lá desde antes do cataclismo! Pode levar milhares de vezes para libertá -lo.</p>
+<p> </p>
+<p>Então, por favor, traga -me o [%dic:STR_DIC_I_QUEST_30228a] S, [%dic:STR_DIC_I_QUEST_30229a] S, [%dic:STR_DIC_I_QUEST_30230a] Areia [%dic:STR_DIC_I_QUEST_30231a] para que eu possa criar uma chave para o incinerador de chama azul.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Milhares de vezes? Não para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo, ótimo, você trouxe tudo o que pedi. Eu posso fazer de você uma chave para o incinerador de chama azul agora.</p>
+<p> </p>
+<p>(Ela reúne os itens com as duas mãos e os cânticos um feitiço.)</p>
+<p> </p>
+<p>Está terminado. Pegue esta chave e abra a porta para o incinerador agora. O Flarestorm deve ser libertado e retornado ao fluxo de Aether quando você o fizer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30233_All] e leve-os para [%dic:STR_DIC_N_Aiola].</p>[%collectitem]</step>
+</steps>
+<p>Tessa diz que é incrivelmente difícil fazer uma chave de incinerador de chama azul. Ela precisa de galhos cinzentos, conchas duras, escalas de Balaur e penas da cabeça de Grifo para fazer a chave.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tessa disse que o Flarestorm deve ser devolvido ao fluxo de Aether várias vezes para libertá -lo completamente.</p>
+<p> </p>
+<p>Ela disse que precisava de muitos materiais para fazer uma chave do incinerador. Você trouxe para ela os materiais necessários e ela fez de você a chave como prometido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

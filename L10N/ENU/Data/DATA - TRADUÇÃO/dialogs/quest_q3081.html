@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você foi pegar Ashulagens e Petrahulks, enviei cartas a estudiosos especializados nesse campo, perguntando -lhes sobre a chama de Fregion.</p>
+<p> </p>
+<p>Recebi respostas, mas nenhuma é satisfatória.</p>
+<p> </p>
+<p>Tudo o que consigo pensar é perguntar a alguém que sabe tudo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quem seria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já pode ter conhecido ela. Ela é uma mulher chamada Fuchsia, bem informada em muitos tópicos.</p>
+<p> </p>
+<p>Ela nos ajudou a resolver o problema do artefato, e acredito que ela também está interessada no Balaur.</p>
+<p> </p>
+<p>Lamento perguntar, mas você pode ir para [%dic:STR_DIC_N_Vatonia] e pergunte a ela como lançar a chama de Fregion?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Vatonia]deve estar na biblioteca dos sábios. Eles dizem que ela não deixou isso em mais de quatrocentos anos.</p>
+<p> </p>
+<p>Por favor, explique a situação aqui o mais especificamente possível. Mais informações facilitam o foco.</p>
+<p> </p>
+<p>Além disso, ela é um pouco louca e pode matá -lo se ela pensa que você está perdendo o tempo dela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro, vou ... esperar, o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso agradecer o suficiente pela sua ajuda até agora. Se eu pudesse deixar o observatório e ir mesmo, eu o faria.</p>
+<p> </p>
+<p>Por favor, reconsidere. Não há mais ninguém que eu possa enviar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez. Deixe -me pensar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Fora com isso! Posso ser imortal, mas isso não significa que tenho tempo a perder.</p>
+<p> </p>
+<p>Ou você é a pessoa com os sanduíches? Eu perco a pista. Você tem sanduíches ou perguntas?</p>
+<p> </p>
+<p>Fale, criança! Se são sanduíches, eu gostaria de saber.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"É ... Atropos me enviou ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Atropos? Ela provavelmente disse que eu era louca. Eles vão um pouco loucos lá fora na fronteira.</p>
+<p> </p>
+<p>Fregion's Flame? Você está falando sobre Theobomos. Existem textos sobre o assunto, mas eles estão cheios de bobagens.</p>
+<p> </p>
+<p>Vou revisá -los para você, mas você aprenderá mais conversando com[%dic:STR_DIC_N_Shugo_c20]. Você o encontrará na biblioteca secreta, no segundo andar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Daeva. Daarunerk já conheceu você antes? Os rostos mais estranhos não são tão familiares quanto os seus.</p>
+<p> </p>
+<p>Você tem perguntas, sim?</p>
+<p> </p>
+<p>Se você veio à biblioteca secreta para pedir, não é comum, com certeza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Como alguém divulga a chama de Fregion?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o grande arroto do Senhor Balaur!</p>
+<p> </p>
+<p>Sim, sim, Daarunerk conhece um livro. Está em algum lugar por aqui ...</p>
+<p> </p>
+<p>Espere um momento, Daeva. Possivelmente dois, não muito tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Vatonia].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_c20].</p></step>
+</steps>
+<p>Pergunte a fúcsia "Enciclopédia ambulante" na Biblioteca dos Sábios de como lançar a chama de Fregion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Como Atropos solicitou, você conheceu Fuchsia em Santum e perguntou a ela como lançar a chama de Fegion.</p>
+<p> </p>
+<p>Fuchsia se referiu a você o Shugo, Daarunerk. Você foi à biblioteca secreta para encontrá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

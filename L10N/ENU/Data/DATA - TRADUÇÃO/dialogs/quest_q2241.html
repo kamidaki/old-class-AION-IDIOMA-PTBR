@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este canyon é o único lugar que posso coletar [%dic:STR_DIC_I_quest_2241a] S. À luz do dia, eles são bastante claros, mas à noite eles têm um brilho fantasmagórico para eles-daí o nome.</p>
+<p> </p>
+<p>Eles são deliciosos, mas mais do que isso, são curativos. Misture -os em um cataplasma e uma ferida que pode apodrecer por semanas em um dia ou dois!</p>
+<p> </p>
+<p>Muito útil, muito raro! Tenho sorte de encontrar até um em cada três dias de pesquisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é muito tempo gasto pesquisando!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, acho que sei por que-eu não sou o único que os está escolhendo!</p>
+<p> </p>
+<p>Eu vejo[%dic:STR_DIC_M_SpriggD_15_n] estar aqui em Gribade todos os dias, desenterrando larvas para comer. Mas ontem, um deles parou de forragear e começou a dançar como um bêbado!</p>
+<p> </p>
+<p>Você nunca viu nada tão estranho em sua vida. E o que ele tinha sido devorado-cogumelos ampliando!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Muito inteligente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses cogumelos são muito procurados, você sabe. Os gourmets pagam generosamente, e soldados e escoteiros também.</p>
+<p> </p>
+<p>Eu escolhi o lugar limpo, eu acho. Não vejo um há vários dias. Mas se os Spriggs os estiverem coletando, eles ainda podem ter alguns.</p>
+<p> </p>
+<p>Se você matar alguns[%dic:STR_DIC_M_SpriggD_15_n] e me traga qualquer [%dic:STR_DIC_I_quest_2241a]Você encontra, vamos dividir os lucros!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito! Vou pagar extra; o [%dic:STR_DIC_M_SpriggD_15_n] S HEREABOUTS são cruéis!</p>
+<p> </p>
+<p>Eles colecionam bugigangas, então provavelmente acumulam[%dic:STR_DIC_I_quest_2241a] S também.</p>
+<p> </p>
+<p>Boa sorte. E observe seus dedos!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vejo você em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem interesse em dinheiro? Eu posso pagar generosamente.</p>
+<p> </p>
+<p>Bem, eu não posso culpar você. Os spriggs aqui mordem com força.</p>
+<p> </p>
+<p>Vou esperar a próxima chuva por uma nova colheita.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou considerar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pesquisou o [%dic:STR_DIC_M_SpriggD_15_n] S?</p>
+<p> </p>
+<p>Eu estava certo sobre o [%dic:STR_DIC_I_quest_2241a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, você era."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem sorte?</p>
+<p> </p>
+<p>Ouça, eles vão coletar qualquer coisa. Eles devem ter alguns cogumelos brilhantes!</p>
+<p> </p>
+<p>Por favor, pesquise mais alguns[%dic:STR_DIC_M_SpriggD_15_n] S. Um deles está obrigado a ter [%dic:STR_DIC_I_quest_2241a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cogumelos brilhantes!</p>
+<p> </p>
+<p>Eu estava preocupado que os Spriggs pudessem danificá -los, mas eles parecem bem!</p>
+<p> </p>
+<p>Muito bem, meu amigo. Aqui está a sua parte dos lucros.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_quest_2241a] S de [%dic:STR_DIC_M_SpriggD_15_n] e trazê -los para [%dic:STR_DIC_N_Vovetirn].</p>[%collectitem]</step>
+</steps>
+<p>Vovetirn diz que os Spriggs coletam cogumelos brilhantes valiosos. Você prometeu roubar alguns e levá -los a Vovetirn para vender.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vovetirn se perguntou se Spriggs poderia estar acumulando cogumelos brilhantes, uma planta rara e valiosa que ele coleta.</p>
+<p> </p>
+<p>Então você roubou alguns spriggs para vovetirn e trouxe -lhe cogumelos extras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um diário com nomes criminais, recompensas e outros detalhes escritos.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Que caçador de recompensas mantém anotações? Rosina?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, [%username]. Estou pronto para deixar este deserto, mas o capitão Oileus nem sequer pensa em sair.</p>
+<p> </p>
+<p>Há um ditado que o trabalhador ocupado pode ficar muito absorvido no hobby. Eu acho que é verdade, já que parece que o capitão se apaixonou seriamente desta vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Este diário é o seu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Eu mantenho todas as minhas anotações na minha cabeça.</p>
+<p> </p>
+<p>Você olhou para isso? Isso é assustador. As armadilhas deste caçador matam os criminosos procurados. E se alguma pessoa inocente vaga ...?</p>
+<p> </p>
+<p>Você quer trazer para isso [%dic:STR_DIC_N_Tityus] e pergunte a ele?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu não quero, mas ... com certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está me incomodando?</p>
+<p> </p>
+<p>Esses bolinhos estão prestes a sair. Eles não fazem o suficiente. Se você perder meu tempo, outros podem chegar até eles primeiro.</p>
+<p> </p>
+<p>O que você quer? Rapidamente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Desculpe! Isso é seu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que, um livro? Um diário? Por que eu guardaria um diário?</p>
+<p> </p>
+<p>Mas isso parece familiar .... onde eu vi isso?</p>
+<p> </p>
+<p>Ah! Certo. Nagrunerk! Eu vi[%dic:STR_DIC_N_LF2a_Tavern_TrollBodyguard] Segurando isso. Eu pensei que era engraçado, um livro tão pequeno em uma mão tão grande.</p>
+<p> </p>
+<p>É tudo? Não me incomode quando os bolinhos estiverem na linha.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Oh ... Kay."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Grr, ocupado ...</p>
+<p> </p>
+<p>Grrr, chicote do mestre ...</p>
+<p> </p>
+<p>Grr, vá ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">"Este não é seu, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Grr, não ...</p>
+<p> </p>
+<p>Grrr, mestre ...</p>
+<p> </p>
+<p>Grr, mestre [%dic:STR_DIC_N_Shugo_LF2a_14]Livro ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Uau. Eu até entendi a maior parte disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, o que te traz aqui? Você está procurando alguém?</p>
+<p> </p>
+<p>Você veio para o lugar certo. Nagrunerk é o melhor, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você perdeu isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei! Isso é .... onde você achou isso?!</p>
+<p> </p>
+<p>Titirunerk levou isso junto com todos os meus .... espere! Você não leu, você, Nyerk?</p>
+<p> </p>
+<p>Aqui, pegue isso! E esqueça que você viu aquele diário!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mostre o diário vermelho para [%dic:STR_DIC_N_Rosina].</p></step>
+<step><p visible="[%3]">Mostre o diário vermelho para [%dic:STR_DIC_N_Tityus].</p></step>
+<step><p visible="[%6]">Mostre o diário vermelho para [%dic:STR_DIC_N_LF2a_Tavern_TrollBodyguard].</p></step>
+<step><p visible="[%9]">Mostre o diário vermelho para [%dic:STR_DIC_N_Shugo_LF2a_14].</p></step>
+</steps>
+<p>Encontre o proprietário do The Red Journal que você encontrou em Marla Cave.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um diário vermelho em Marla Cave. No interior, havia listas, incluindo nomes, recompensas e características dos criminosos procurados e algumas representações horríveis de morte.</p>
+<p> </p>
+<p>Você pensou que pertencia a um caçador de recompensas. Você o trouxe para Rosina e Tityus e perguntou se eles sabiam alguma coisa sobre isso. Tityus disse que viu o guarda -costas de Nagruners segurando -o.</p>
+<p> </p>
+<p>Quando você o mostrou ao guarda -costas, ele disse que pertencia ao seu mestre. Quando Nagrunerk viu o diário, ele ficou surpreso, disse que ele pertencia a ele e lhe deu dinheiro para mantê -lo quieto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O comandante da fortaleza nos faz com que os principais ataques para limparem diferentes grupos de Krall.</p>
+<p> </p>
+<p>Ele enviou mensagens para todos os centuriões desta manhã, dizendo que estamos prestes a começar nossa principal ofensiva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Parece um ataque enorme."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Será exatamente isso-um ataque maciço. Ele tinha ordens especiais para mim, no entanto.</p>
+<p> </p>
+<p>Vou remover o krall do[%dic:STR_DIC_E_LF2_1424_group3], enquanto protegem instalações importantes e Krall de alto escalão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Impressionante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é. Eu só preciso encontrar alguns Daevas muito capazes para o trabalho.</p>
+<p> </p>
+<p>Você se sente pronto, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu preciso que você derrote o [%dic:STR_DIC_E_LF2_1424_group3] e me traga o seu[%dic:STR_DIC_I_QUEST_1426a] S.</p>
+<p> </p>
+<p>Boa sorte, [%username]. Fé e armas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você ficaria com muito medo. Você provavelmente não é bom o suficiente para entrar na sede da Kaidan.</p>
+<p> </p>
+<p>Se você encontrar alguns colegas competentes, poderá tentar novamente mais tarde.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Diga -me como você realmente se sente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você já esteve na sede da Kaidan?</p>
+<p> </p>
+<p>Vamos ver isso [%dic:STR_DIC_I_QUEST_1426a] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso confiar em meus superiores ou em meus subordinados-não é um confiável por aqui?</p>
+<p> </p>
+<p>Não me faça perguntar novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse foi um bom trabalho que você fez na sede da Kaidan.</p>
+<p> </p>
+<p>Espero que você aceite isso pelo seu problema.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1426a] e trazê -los para [%dic:STR_DIC_N_Maximianus].</p>[%collectitem]</step>
+</steps>
+<p>Mate os membros da missão Krall Guarding na sede da Kaidan e colete suas marcas de guarda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Malonimus foi ordenado a limpar a Krall que estava encarregada de guardar instalações importantes e Krall de alto escalão na sede da Kaidan. Você os tirou, coletou suas marcas de guarda e os trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: comandante knut</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Comando: pegue as sementes do governo do exército de Beritra.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos emitir pedidos urgentes rapidamente, graças ao nosso sistema de comunicação bem estruturado.</p>
+<p> </p>
+<p>Você completou esta missão tão extraordinariamente rápida, [%username]. Não teríamos conseguido sem um daeva como você.</p>
+<p> </p>
+<p>Você trouxe o [plur][%dic:STR_DIC_I_quest_28739a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as sementes da regra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas alguém com habilidades tão impressionantes quanto as suas, [%username], poderia ter realizado a missão tão rapidamente. Obrigado.</p>
+<p> </p>
+<p>Enviarei as sementes da regra para meus superiores.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não esperava que você achasse a missão tão fácil.</p>
+<p> </p>
+<p>Eu esperava que alguém recebesse o pedido e concluísse a missão rapidamente.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Para que meus superiores querem essas sementes de regra?</p>
+<p> </p>
+<p>Eles não terão nenhuma intenção ruim, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda há muito a ser feito, mas como você realizou esse pedido de maneira tão confiável, agora estamos um passo adiante.</p>
+<p> </p>
+<p>Você fez bem.</p>
+<p> </p>
+<p>Obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir tudo[%dic:STR_DIC_M_IDRaksha_solo_Vri_all] e trazer o deles[plur][%dic:STR_DIC_I_quest_28739a]para [%dic:STR_DIC_N_DF5_Cnut_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_DF5_Cnut_E].</p></step>
+</steps>
+<p>Ordens urgentes: Colete as sementes de regra do Exército de Beritra e os leve ao comandante Knut.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você seguiu uma ordem urgente e coletou sementes de regras do exército de Beritra. Você então se reportou ao comandante Knut.</p>
+<p> </p>
+<p>Knut lhe entregou uma recompensa por sua lealdade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

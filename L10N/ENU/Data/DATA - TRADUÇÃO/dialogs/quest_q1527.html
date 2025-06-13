@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que quer que aflique esses rotrons não seja óbvio.</p>
+<p> </p>
+<p>Precisamos de um especialista Elim para descobrir o que está errado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você conhece alguém?"</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Sirilis]Certamente poderia fazer mais com esta concha do Rotron.</p>
+<p> </p>
+<p>Você está indo para o Haven de Arbolu por acaso?</p>
+<p> </p>
+<p>Se você estiver indo para lá, dê a concha a Sirilis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve, Daeva. Bênçãos da luz sobre você.</p>
+<p> </p>
+<p>Descanse um pouco sob o abrigo de Arbolu. Você não encontrará uma paz maior em todo o seu ponto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Você vai olhar para isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é uma concha do Rotron? A julgar por sua cor, apodreceu além do reconhecimento.</p>
+<p> </p>
+<p>Huh? O interior não é podre. Isso é estranho. Isso não é nenhum tipo de casca de árvore. É mais do que tem ... semelhanças com um estigma.</p>
+<p> </p>
+<p>Nenhum estigma comum, no entanto. Parece que alguém intencionalmente o alterou assim.</p>
+<p> </p>
+<p>Você quer dar uma olhada, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você olha para o item na mão de Sirilis.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você finalmente vem novamente.)</p>
+<p> </p>
+<p>Está tudo bem?</p>
+<p> </p>
+<p>Você estava inconsciente. Parece que você também teve um sonho.</p>
+<p> </p>
+<p>Eu sugiro que você fale com[%dic:STR_DIC_N_Raninia] Sobre isso. Tenho certeza que ela pode ajudá -lo mais.</p>
+<p> </p>
+<p>É melhor se você procurá -la imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<cutscene id="189"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Daeva!</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que aconteceu até agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ela remove o item do tipo estigma.) Então você provavelmente teve a mesma experiência.</p>
+<p> </p>
+<p>Eu já tenho apenas esse item. A pessoa que eu consegui me contou sobre um pesadelo.</p>
+<p> </p>
+<p>Assim como eu queria interpretar esse sonho, tive a sensação de esperar por outra pessoa.</p>
+<p> </p>
+<p>Agora eu sei que essa pessoa é você.</p>
+<p> </p>
+<p>Agora que você está aqui, vou tentar descobrir que tipo de item é esse. Por favor, espere um momento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga a concha do Rotron para [%dic:STR_DIC_N_Sirilis].</p></step>
+<step><p visible="[%3]">Vá me encontrar [%dic:STR_DIC_N_Raninia].</p></step>
+</steps>
+<p>Traga a concha de Rotron incomumente alterada para Sirilis no refúgio de Arbolu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirborante decidiu que a concha do Rotron precisava ser investigada e pediu que você o levasse para Sirilis.</p>
+<p> </p>
+<p>Sirilis percebeu que, embora a concha estivesse podre do lado de fora, o interior não era. Quando ela olhou dentro da concha, viu que a concha havia sido intencionalmente alterada. Assim como ela estava mostrando sua descoberta, você perdeu a consciência e teve um sonho.</p>
+<p> </p>
+<p>Quando você apareceu, ela sugeriu que você fosse procurar Raninia. Raninia disse que estava esperando você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

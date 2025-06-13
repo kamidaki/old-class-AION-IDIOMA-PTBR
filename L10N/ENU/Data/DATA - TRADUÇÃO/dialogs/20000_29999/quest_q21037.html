@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu cubo está cheio de Manastones, não é?</p>
+<p> </p>
+<p>Pode ser difícil decidir quais usar. Você deve selecionar Manastones que aprimoram seus pontos fortes ou complementam suas fraquezas?</p>
+<p> </p>
+<p>Tantas decisões. Tantas opções ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tem uma solução?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se meu palpite estiver certo, seu cubo está preenchido com Manastones para o qual você não tem muito utilidade. Caso contrário, você já os usaria agora.</p>
+<p> </p>
+<p>Se você tiver certos tipos de manotones comuns (HP +70, precisão +22 e bloquear +22 manotones), eu ficaria feliz em trocá -los por você.</p>
+<p> </p>
+<p>Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Pandaemonium acredita que este programa de troca de Manastone ajudará a aumentar o moral da Asmodian.</p>
+<p> </p>
+<p>Não sei tudo isso, mas você ainda deve aproveitar a oportunidade enquanto puder. A política pode muito bem mudar novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você decide. Lembre -se, porém, se você tiver algum Manastones sobressalente (HP +70, precisão +22 e bloco +22), trocarei por você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você gostaria que eu removesse seus Manastones?</p>
+<p> </p>
+<p>Ou você tem Manastones para negociar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu gostaria de trocar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm ... estes não parecem muito certos.</p>
+<p> </p>
+<p>Só posso trocar certos manotones (HP +70, precisão +22 e bloco +22). Eu não faço a política, você entende.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver .... o tipo e a quantidade adequados .... tudo parece estar em ordem.</p>
+<p> </p>
+<p>Ficarei feliz em trocá -los por novos Manastones.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso trocar o máximo de manostones que você quiser, desde que sejam o tipo certo (HP +70, precisão +22 e bloco +22).</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu tenho mais um pouco."</act>
+<act href="HACTION_FINISH_DIALOG">"Eu terminei por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm ... estes não parecem muito certos.</p>
+<p> </p>
+<p>Só posso trocar certos manotones (HP +70, precisão +22 e bloco +22). Eu não faço a política, você entende.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir manotones não utilizados e levá -los a [%dic:STR_DIC_N_Mexes].</p>[%collectitem]</step>
+</steps>
+<p>Pegue qualquer MANASTONS que você não precise para Greger e trocá -los por novos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Greger se ofereceu para trocar manostones que você não precisa para os outros.</p>
+<p> </p>
+<p>Você negociou em algumas HP +70, precisão +22 e/ou bloco +22 MANASTONS.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

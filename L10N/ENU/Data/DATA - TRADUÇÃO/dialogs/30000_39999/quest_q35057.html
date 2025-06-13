@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Estamos fazendo um grande progresso em Signia, graças aos esforços de muitos de Daevas.</p>
+<p> </p>
+<p>Mas agora é hora do próximo passo.</p>
+<p> </p>
+<p>Com isso, quero dizer estabelecer observatórios em Signia.</p>
+<p> </p>
+<p>Alguns membros já receberam uma missão para procurar locais. Por favor, dê uma olhada neles.</p>
+<p> </p>
+<p>Primeiro vá para [%dic:STR_DIC_N_LF5_Brontte_E] e deixe -o explicar a situação para você. Então vá para [%dic:STR_DIC_N_LF5_Richbald_E] e dê a ele um relatório.</p>
+<p> </p>
+<p>Mas tenha cuidado e discreto o tempo todo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você aceita a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você explica seu negócio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de receber o pedido e estava prestes a lê -lo. Não parece que podemos construir observatórios aqui no momento.</p>
+<p> </p>
+<p>Este lugar pertence ao Balaur por tanto tempo.</p>
+<p> </p>
+<p>Enquanto houver traços da energia de Balaur aqui, a construção dos observatórios será um problema. Por favor, relate isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho o prazer de encontrar um colega da ordem em[%dic:STR_DIC_W_LF5].</p>
+<p> </p>
+<p>Você falou com[%dic:STR_DIC_N_LF5_Brontte_E]?</p>
+<p> </p>
+<p>O que ele disse?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assim como eu esperava. Eu sempre pensei que seria difícil estabelecer observatórios em[%dic:STR_DIC_W_LF5].</p>
+<p> </p>
+<p>Ainda existem vestígios do Balaur.</p>
+<p> </p>
+<p>Não podemos estabelecer observatórios sagrados em um lugar tão instável.</p>
+<p> </p>
+<p>Mas muito obrigado por seus esforços. Vou relatar o que você disse aos meus superiores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LF5_Brontte_E].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Richbald_E].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com a Ordem da Alabastro, chegou a hora de construir observatórios na Signia. Branth ordenou que você descobrisse mais sobre a situação.</p>
+<p> </p>
+<p>Você descobriu que é impossível construir observatórios, desde que o Balaur ainda domine nesta região. Você compartilhou essas informações com o Ribald da ordem do Alabaster.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

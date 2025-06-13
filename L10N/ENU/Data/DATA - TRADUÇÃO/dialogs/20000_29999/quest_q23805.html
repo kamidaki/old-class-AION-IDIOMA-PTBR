@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur apareceu no[%dic:STR_DIC_W_LDF5_Fortress_SZ_B3].</p>
+<p> </p>
+<p>Eles querem pesquisar nos arredores da base.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LDF5_Fortress_SZ_B3]rapidamente e derrotar o [%dic:STR_DIC_E_LDF5_Fortress_Recon_V02_DR].</p>
+<p> </p>
+<p>Não podemos permitir que o Balaur apreenda a base.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não importa se eles só vieram aqui para explorar ou realmente atacar, o Balaur deve ser eliminado.</p>
+<p> </p>
+<p>Eles são nossos piores inimigos.</p>
+<p> </p>
+<p>Não podemos permitir que eles nos prejudiquem.</p>
+<p> </p>
+<p>Seria melhor se você os eliminasse todos para proteger a base.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse problema finalmente foi esclarecido.</p>
+<p> </p>
+<p>Não acredito que o Balaur tenha sido tolerado nesta área por tanto tempo. Então eu sou muito grato a você, [%username].</p>
+<p> </p>
+<p>Você não apenas evitou essa ameaça à base, mas também demonstrou um admirável espírito de luta e coragem a todos os nossos aliados.</p>
+<p> </p>
+<p>Quero fazer de você meu modelo e defender a base com a mesma coragem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LDF5_Fortress_SZ_B3] e eliminar o [%dic:STR_DIC_E_LDF5_Fortress_Recon_V02_DR]([%2]/5).</p></step>
+<step><p visible="[%15]">Se os asmodianos ocupam o [%dic:STR_DIC_W_LDF5_Fortress_SZ_A2_v02], Assim, [%dic:STR_DIC_N_LDF5_Fortress_Village_Guard02_D]vai aparecer. Fale com ele.</p></step>
+</steps>
+<p>Realize o pedido de Tiros e elimine a 702ª Vanguard Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tiros pediu que você eliminasse a ameaçadora 702ª Vanguard Balaur.</p>
+<p> </p>
+<p>Depois de concluir a missão com sucesso, ele agradeceu repetidamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

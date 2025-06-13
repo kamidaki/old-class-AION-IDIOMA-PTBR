@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento, [%username]!</p>
+<p> </p>
+<p>Eu estava procurando alguém para fazer um trabalho para mim. Não é difícil, e se você já estava indo para a mina de Kabarah, então não demorará muito para você fazer.</p>
+<p> </p>
+<p>Por favor, por favor escute. É Melponeh, ela é ... ela é ...</p>
+<p> </p>
+<p>Sinto muito, estou achando essa coisa toda difícil de lidar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não há necessidade de desculpas. O que há de errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Eu tenho uma pomada aqui que precisa ser dada a [%dic:STR_DIC_LA11]. Ela foi atacada durante um[%dic:STR_DIC_MLA10]Raid, e agora parece que suas feridas foram infectadas. Para ser sincero, se ela não receber esse tratamento, Melponeh pode em breve ... ela poderá morrer em breve.</p>
+<p> </p>
+<p>Por favor ... por favor, leve a pomada para ela, [%username]. Você a encontrará perto do[%dic:STR_DIC_FLA07].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Aion!</p>
+<p> </p>
+<p>Ah, e tenha cuidado, [%username]. o [%dic:STR_DIC_MLA10] S que machucar Melponeh são altamente agressivos e provavelmente o atacarão à vista. Melponeh precisa melhorar, mas você também não precisa se machucar.</p>
+<p> </p>
+<p>Se você tem o Kinah, sugiro que você fale com[%dic:STR_DIC_N_Kustanon] Sobre uma rocha rápida de vôo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo conselho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua falta de empatia choque e me entristece, [%username].</p>
+<p> </p>
+<p>Eu tinha certeza de que você estaria disposto a ajudar, visto que a tarefa era tão simples. Claramente, eu pensei muito bem de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, [%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu esperava que você pudesse me contar sobre o transporte de vôo".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você nunca usou o voo antes? Interessante.</p>
+<p> </p>
+<p>É simples, mercenário. Posso enviar você para o acampamento de Melponeh usando canais específicos do AetherStream. Toda região tem seus próprios caminhos, embora geralmente apenas nos dêmos ao trabalho de estabelecer caminhos quando eles levam a áreas ou perto de áreas povoadas.</p>
+<p> </p>
+<p>Ah, e o serviço não é gratuito. Eu tenho que comer, assim como você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado pela informação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá? Quem ... quem está lá?</p>
+<p> </p>
+<p>Por favor, fale rapidamente. Eu sou fraco. Até a conversa me esgota.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho algum tratamento para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Remédio do templo? Oh meu, eu tenho bons amigos.</p>
+<p> </p>
+<p>Os Worgs que atacaram nosso acampamento eram tão fortes. Eventualmente ... lutamos contra eles, mas não antes que um deles cortasse minhas costas.</p>
+<p> </p>
+<p>Obrigado por toda a sua ajuda, [%username]. Tenho certeza de que teria morrido se você não tivesse me ajudado. Por favor, pegue isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kustanon].</p></step>
+<step><p visible="[%3]">Entregar a pomada para [%dic:STR_DIC_LA11] em[%dic:STR_DIC_FLA05_1].</p></step>
+</steps>
+<p>Polinia pediu que você entregasse uma pomada preciosa a Melponeh, que foi ferida por um worg. Você deve chegar até ela rapidamente.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Polinia, um padre da vila de Akarios, pediu que você entregasse uma pomada preciosa a Melponeh, um historiador que havia sido atacado por um bando de worgs.</p>
+<p> </p>
+<p>Você foi ao acampamento de Melponeh e entregou a pomada, quase certamente salvando sua vida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

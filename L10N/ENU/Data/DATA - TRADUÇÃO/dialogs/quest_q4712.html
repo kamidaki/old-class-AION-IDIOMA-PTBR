@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se distinguiu, [%username] e exibi exatamente as habilidades de que preciso-então tenho outra missão para você.</p>
+<p> </p>
+<p>Muito do que sabemos sobre a draga que devemos a um pequeno bando de estudiosos e os arcons que os protege.</p>
+<p> </p>
+<p>Eles arriscaram suas vidas várias vezes-seu trabalho possibilitou que você se infiltre o navio para nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O trabalho deles é orgulhoso de Asmodae."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato, e nos coloca em suas dívidas.</p>
+<p> </p>
+<p>Mesmo quando você sabia a draga, descobrimos que vários estudiosos e arcontes foram capturados e agora estão sendo mantidos prisioneiros lá. Disseram -nos que eles reuniram novas informações desde o último relatório, o que deve ser recuperado também.</p>
+<p> </p>
+<p>Você está disposto a resgatar o [%dic:STR_DIC_N_IDAB1_Dreadgion_prisoner_dark] S da draga?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que torna o trabalho particularmente difícil é que não temos informações sobre onde os cativos estão sendo mantidos.</p>
+<p> </p>
+<p>Você terá que pesquisar no navio e aprender o máximo possível.</p>
+<p> </p>
+<p>Faça o que puder-o que for necessário-resgatar esses cativos. Eles são indispensáveis!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Enfrentando o Balaur novamente um pouco demais para você? Eu entendo. Eles são inimigos formidáveis.</p>
+<p> </p>
+<p>Você fez um bom trabalho, [%username].</p>
+<p> </p>
+<p>Eu me preocupo com a vida desses cativos ... encontraremos alguém para tirá -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Caminhe na sombra de Azphel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estávamos em terror absoluto, [%username]. Temíamos o que o Balaur poderia fazer conosco.</p>
+<p> </p>
+<p>E agora, tudo o que fizemos será em vão, a menos que forneçamos as informações que coletamos ao governador. Eu tenho um pergaminho, mas não consegui usá-lo-suspeito que as portas da sala de espera estejam sob um feitiço.</p>
+<p> </p>
+<p>Você salvou minha vida, [%username]. Estou em sua dívida. Voltarei à Fortaleza Primum agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Que a sombra de Azphel o proteja."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de ouvir que os cativos retornaram com segurança à fortaleza. Todos estavam exaustos de prisão, por isso pode demorar um pouco para que sejam interrogados.</p>
+<p> </p>
+<p>O que você pode me dizer da situação dentro da draga, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Houve algumas surpresas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os estudiosos e guardiões de Elyos também estavam sendo mantidos prisioneiros? Agora isso é novidade.</p>
+<p> </p>
+<p>Os Elyos devem ter descoberto como se infiltrar na draga também. Sinto que estaremos nos encontrando com mais frequência a partir de agora.</p>
+<p> </p>
+<p>Você fez bem, [%username]. Agradeço em nome dos cativos e do governador.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Abra o [%dic:STR_DIC_E_Dreadgion_Prison_Door] e converse com[%dic:STR_DIC_N_IDAB1_Dreadgion_prisoner_dark].</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Henir].</p></step>
+</steps>
+<p>Alguns estudiosos e arcontes foram pegos enquanto investigam a draga e estão sendo mantidos prisioneiros. Vá e resgate -os</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Henir disse que alguns estudiosos e arcontes foram capturados pelo Balaur enquanto investigavam a draga e pediu que você os resgatasse.</p>
+<p> </p>
+<p>Quando você relatou o resultado a Henir depois de se infiltrar na draga e libertar os cativos, ele ficou surpreso que também havia cativos de Elyos atualmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

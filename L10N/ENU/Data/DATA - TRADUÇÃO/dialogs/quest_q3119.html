@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3119</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há tantos Mortos Vivos na fortaleza da ADMA que você realmente pode chamá -lo de fortaleza.</p>
+<p> </p>
+<p>Talvez devêssemos investigar os Mortos Vivos mais de perto para decidir o que fazer a seguir.</p>
+<p> </p>
+<p>[%username], você poderia obter [%dic:STR_DIC_I_Q3118a] e trazê -los para mim?</p>
+<p> </p>
+<p>Você estaria prestando um ótimo serviço para a pesquisa, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Todos em Theobomos estão falando sobre a fenda.</p>
+<p> </p>
+<p>Eu não entendo o que é tão interessante nisso ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as quedas de sangue mortas mortas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, essas são as gotas de sangue que eu pedi!</p>
+<p> </p>
+<p>Vou pegar muito Kinah se os vender para os cientistas.</p>
+<p> </p>
+<p>Eu sou um aprendiz rápido. Mesmo quando criança, eu sabia o que ganharia dinheiro.</p>
+<p> </p>
+<p>Enfim, aqui está a sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para a fortaleza da ADMA e colete [%dic:STR_DIC_I_Q3118a], então traga -os para [%dic:STR_DIC_N_Rovilance].</p>[%collectitem]</step>
+</steps>
+<p>Colete gotas de sangue para pesquisar os Mortos Vivos e entregá -los à rovilance.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Rovilance pediu que você encontrasse gotas de sangue Mortos Vivos para fins de pesquisa.</p>
+<p> </p>
+<p>Ele ficou satisfeito quando você os trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

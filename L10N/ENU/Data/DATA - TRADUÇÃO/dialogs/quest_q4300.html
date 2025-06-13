@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oficiais de informação como eu são o principal meio de divulgar notícias para o povo da cidade. Tudo, desde notícias locais, como anúncios de casamento e nascimento até proclamações oficiais de Pandaemonium.</p>
+<p> </p>
+<p>As notícias devem ser ouvidas e serão ouvidas por todos os cantos da cidade.</p>
+<p> </p>
+<p>Obviamente, minha voz não pode ser ouvida em todos os lugares em Asmodae, e nem todo assentamento tem um oficial de informação ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sinto que você tem uma tarefa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. O acampamento dos colonos em Brusthonin mal é uma vila e, portanto, não possui um oficial de informação.</p>
+<p> </p>
+<p>A Guilda da Orb da Sabedoria está estacionada lá, mas eles realmente não prestam atenção aos trabalhadores cotidianos e moradores como eu. O povo comum merece ser informado como todos os outros!</p>
+<p> </p>
+<p>Eu mesmo entregava as notícias à mão, mas estou muito ocupado aqui. Talvez você possa visitar o acampamento dos colonos e deixar algo para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso! Eu tenho algumas dezenas de letras de todos os tipos, mas seria demais pedir a você para entregar cada um deles ao proprietário certo. Basta levar esse envelope para o Vitda.</p>
+<p> </p>
+<p>Sei que sugeri que todos os membros da Guilda da Orb da Sabedoria são tacadas, mas Vitda certamente não é.</p>
+<p> </p>
+<p>Obrigado novamente por sua ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Esta não é uma tarefa difícil, [%username]. Você pode chegar a Brusthonin com a ajuda de um teleporter, e então tudo o que você precisa fazer é entregar um envelope ao Vitda e terminar.</p>
+<p> </p>
+<p>Você recusaria uma tarefa fácil como essa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou muito ocupado. Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, [%username].</p>
+<p> </p>
+<p>O que o leva a esta parte de Brusthonin?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma entrega para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, outro pacote de Feimdal .... obrigado. Eu gostaria que ele fizesse a viagem algum dia. Eu não o vejo há muito tempo.</p>
+<p> </p>
+<p>Eu acho que talvez ele tenha uma queda por mim. Estranho, ele não me parece do tipo tímido.</p>
+<p> </p>
+<p>De qualquer forma, fico feliz em receber notícias. A vida é difícil aqui, e uma espiada no resto do mundo ajuda a diminuir por um tempo.</p>
+<p> </p>
+<p>Eu vou levar daqui, [%username]. Tenha isso e descanse um pouco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Vitda].</p></step>
+</steps>
+<p>Entregue o pacote de Feimdal ao Vitda em Brusthonin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Feimdal tinha um pacote de informações para o acampamento dos colonos em Brusthonin, que não possui seu próprio oficial de informações.</p>
+<p> </p>
+<p>Você entregou um pacote para a Vitda e ela agradeceu pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É a hora de trocar gentilezas, [%username]? o [%dic:STR_DIC_W_LF4_SZ_2011_A]caiu para o inimigo. Não acredito como todos podem ficar tão calmos!</p>
+<p> </p>
+<p>Estou chateado porque não sei como escapar desse perigo.</p>
+<p> </p>
+<p>Não me diga que você não sabe o quão importante é o templo das escalas?</p>
+<p> </p>
+<p>A perda do templo das escalas significa que o altar da avareza também não será seguro. Se o inimigo tomar os dois, o posto avançado de Inggison também estará em perigo.</p>
+<p> </p>
+<p>É verdade que o segundo em comando está no posto avançado, mas isso não me faz sentir melhor. Uma vez que o inimigo avançar até longe, mesmo a fortaleza da ilusão não estará mais segura.</p>
+<p> </p>
+<p>Chegamos a Inggison para derrubar Balaurea. Não deve ser forçado a entrar em um canto!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu conheço bem a área."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa é a primeira boa notícia que ouvi o dia todo. Devemos recuperar o [%dic:STR_DIC_W_LF4_SZ_2011_A], e você vai nos levar à vitória!</p>
+<p> </p>
+<p>[%username], Eu preciso que você se livre dos guardas no templo. Reúna alguns soldados em que você confia e sai o mais rápido possível!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta não é uma missão elaborada, [%username].... É um trabalho simples de fatia e doutor! Só precisamos causar caos entre suas tropas ... o resto se encaixará.</p>
+<p> </p>
+<p>Retornar ao templo das escalas e atacar o [%dic:STR_DIC_M_QUEST_11214all]. Se ficar muito peludo lá fora, retire.</p>
+<p> </p>
+<p>Se você puder se livrar de guardas suficientes, a Guilda Wisplight será despachada para cuidar do resto. [%dic:STR_DIC_N_Queesia]terá uma recompensa por você se você puder fazer isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certifique -se de que minha recompensa seja Mithril."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não teria dado essa missão a alguém que pensei que não poderia lidar com isso. Aparentemente, eu estava enganado.</p>
+<p> </p>
+<p>Espero que você precise da minha ajuda algum dia, [%username]. Espero poder dar minhas costas para você também!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu nunca vou precisar da sua ajuda."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Desde que descobrimos o abismo, estamos lutando contra uma guerra de atrito contra os asmodianos e o Balaur.</p>
+<p> </p>
+<p>Você apenas desempenhou seu papel nesta ópera de Millenium. Mas desta vez é diferente. Desta vez, temos que ganhar a todo custo.</p>
+<p> </p>
+<p>Não podemos perder o templo das escalas. Não podemos ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu abatei os guardas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas, [%username]! Você fez o que tantos outros Daevas não conseguiram ... ou não.</p>
+<p> </p>
+<p>Poderíamos realmente usar sua lâmina e inteligência por aqui, se você decidir ficar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_QUEST_11214all]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Queesia]%.</p></step>
+</steps>
+<p>O templo das escamas caiu em mãos inimigas. Instigar o caos ao derrotar os guardiões inimigos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moras pediu que você perturbasse o templo de Scales Guards para recuperar a fortaleza, que caiu nas mãos inimigas.</p>
+<p> </p>
+<p>Você matou muitos guardas e se reportou a Siaqua, que então pediu mais ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, olá, [%username]. Você tem algo que deseja negociar?</p>
+<p> </p>
+<p>Não? Então talvez você seja do tipo de rastreamento de tabernas. Quais são os especiais atuais da Dionysia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O qooqoo deprimido jura colorido lá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, você foi enviado por ...!</p>
+<p> </p>
+<p>Deixa para lá. Não sou espião, apenas um cara tentando ganhar a vida. Mas seus empregadores atuais não facilitam as coisas para mim.</p>
+<p> </p>
+<p>Se eles querem suas informações preciosas, terão que me compensar. E desde que você trabalha para eles agora ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe. Não estou pedindo Kinah.</p>
+<p> </p>
+<p>Eu preciso de [%dic:STR_DIC_I_QUEST_80060A]. Não é um pergaminho comum. Possui recursos especiais que serão úteis para o trabalho de espionagem de seus empregadores.</p>
+<p> </p>
+<p>Você me pega um pouco de [%dic:STR_DIC_M_FrillfaimamA_14_An] S, você terá sua carta. Simples assim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então eu sei o que devo fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Multar. Seu funeral, se você deseja decepcionar seus empregadores e não obter informações vitais para a guerra ....</p>
+<p> </p>
+<p>Eu amo Elysea tanto quanto o próximo homem, mas também preciso comer. Não posso continuar pagando por materiais do bolso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está começando a me irritar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não demorou muito. Ver? Tudo o que você precisava era um pouco de motivação.</p>
+<p> </p>
+<p>Eu tenho essa carta pronta para você, supondo que você tenha algo pronto para mim ...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, sim, eu entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, finalmente. Acabei de salvar Kinah suficiente para um bom jantar hoje à noite ... no Dionysia.</p>
+<p> </p>
+<p>Então aqui está essa carta. Francamente, estou aliviado por dar a você. Esta informação fará muito bem.</p>
+<p> </p>
+<p>Não que eu leia. Claro que não. Isso seria bobo. E perigoso para minha saúde. Ah ... Vejo você mais tarde.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, eu tenho o tempo todo no mundo. Seus empregadores não. Eles não ficarão chateados se seus planos preciosos der errado?</p>
+<p> </p>
+<p>Eu ainda preciso disso[%dic:STR_DIC_I_QUEST_80060A]de [%dic:STR_DIC_M_FrillfaimamA_14_An] S e você precisa dessa carta. Você faz as contas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você mais a dor é igual a sorrir?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_QUEST_80060A]de [%dic:STR_DIC_M_FrillfaimamA_14_An] e dê a [%dic:STR_DIC_N_event_Kardinal].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha pergaminho difícil e entregue -o ao Kardinal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conheceu Kardinal, seu contato na corretora comercial.</p>
+<p> </p>
+<p>Cansado de trabalhar de graça, ele só lhe daria a carta necessária se você tivesse um pergaminho difícil.</p>
+<p> </p>
+<p>Você recuperou um pouco, e ele finalmente lhe deu sua carta em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

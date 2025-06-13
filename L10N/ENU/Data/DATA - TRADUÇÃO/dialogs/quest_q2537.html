@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles sabem que estou aqui. Eu sei que eles sabem. Eles sabem que eu sei que eles sabem.</p>
+<p> </p>
+<p>Não me importo que eles saibam que eles sabem que sabem, mas é lamentável que eles saibam que eu sei que sabem que eles sabem.</p>
+<p> </p>
+<p>É terrivelmente estressante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu sei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu disse a você da última vez que conhecemos que a razão pela qual estou escondendo aqui é que fui embora depois de espancar meu chefe lefarista. Eu o odiava, e ele estava chegando.</p>
+<p> </p>
+<p>Mas ele é um homenzinho mesquinho e aposto que ele está segurando um rancor.</p>
+<p> </p>
+<p>Na verdade, estou um pouco preocupado com o fato de ele ter enviado alguém depois de mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você deve agir primeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, você está certo. Talvez melhor eu os atingisse antes que eles me atingissem.</p>
+<p> </p>
+<p>Aposto que aqueles assassinos profissionais que ouvi sobre a fortaleza de Alquimia foram enviados por ele!</p>
+<p> </p>
+<p>Por favor, vá e se livre deles antes de virem me matar, [%username]. Eu posso te pagar muito bem!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ir depois do[%dic:STR_DIC_M_AeB_LehparAsD_44_Ae] S, [%dic:STR_DIC_M_AeB_LehparAsG4D_43_Ae] Areia [%dic:STR_DIC_M_AeB_LehparAsExplorD_43_Ae] S. Eles são os piores dos assassinos lefaristas.</p>
+<p> </p>
+<p>A fortaleza de Alquimia é um viveiro de lefaristas, então fique em guarda.</p>
+<p> </p>
+<p>Você realmente deve levar alguns amigos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pelo aviso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É porque a fortaleza de Alquimia está longe demais? Ou porque você tem medo dos lefaristas?</p>
+<p> </p>
+<p>Não posso fazer nada se você não me ajudar, você sabe.</p>
+<p> </p>
+<p>É melhor encontrar outro lugar para me esconder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eek! Não! Oh ... desculpe, [%username].</p>
+<p> </p>
+<p>Eu pensei que você era um lefarista vindo para me matar.</p>
+<p> </p>
+<p>Mas eles não podem me matar se você os matar primeiro. Você fez?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, graças aos senhores Shedim! Estou tão aliviado!</p>
+<p> </p>
+<p>Entrei para os revolucionários lefaristas para ajudar a Atreia. Aprendi a verdade eventualmente, mas todo mundo na minha cidade natal sabe que me juntei, então não posso voltar para lá.</p>
+<p> </p>
+<p>Bem, eu vou inventar algo. De qualquer forma, provavelmente é melhor se você não souber para onde estou indo. Muito obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os assassinos na fortaleza de Alquimia.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_AeB_LehparAsD_44_Ae]([%2]/5).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_AeB_LehparAsG4D_43_Ae]([%5]/2).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_AeB_LehparAsExplorD_43_Ae]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Freki].</p></step>
+</steps>
+<p>Freki está muito assustado porque está preocupado que os revolucionários lefaristas o matem. Você, portanto, prometeu ir à fortaleza de Alquimia e matar os assassinos, espiões e executores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Freki ficou nervoso porque seu antigo chefe nos revolucionários lefaristas enviou assassinos atrás dele.</p>
+<p> </p>
+<p>Então você foi para Alquimia Stronghold e se livrou dos assassinos de Alquimia, matadores de Alquimia e infiltradores de Alquimia.</p>
+<p> </p>
+<p>Quando você disse a Freki, ele agradeceu e disse que provavelmente deveria se mudar para longe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

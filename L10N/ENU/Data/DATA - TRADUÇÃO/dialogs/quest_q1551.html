@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso acreditar como é difícil conseguir Sobi hoje em dia. Tange também, para esse assunto.</p>
+<p> </p>
+<p>Costumava haver Sobi e Tange em todos os lugares por aqui. Poderíamos simplesmente coletá -los sempre que precisávamos. Mas hoje em dia eles são tão raros ... estou relutante em me separar de qualquer um, caso eu precise disso mais tarde.</p>
+<p> </p>
+<p>Eu com certeza odeio aqueles manduris.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que os manduris?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Manduris cavar e comer todas as ervas que eles podem cheirar, não importa o que seja, e isso inclui Sobi e Tange.</p>
+<p> </p>
+<p>Se não fizermos nada, toda planta útil por aqui será extinta!</p>
+<p> </p>
+<p>Você estaria disposto a ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O número de manduri deve ser reduzido.</p>
+<p> </p>
+<p>Se você pudesse matar 5[plur][%dic:STR_DIC_M_ManduriBRe_39_An] e 5[plur][%dic:STR_DIC_M_ManduriTRe_39_An]Isso seria uma grande ajuda.</p>
+<p> </p>
+<p>Parado então. Eu vou esperar por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou gerenciar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que a caça manduris está abaixo de você? Talvez você tenha negócios mais importantes do que se livrar de Manduris?</p>
+<p> </p>
+<p>Hmm, bem, talvez você faça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu realmente faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, ei[%username]. Depois que você saiu, fiz algumas pesquisas sobre o que mais os manduri comem.</p>
+<p> </p>
+<p>Pegue isso! Eles também comem asas de Sylphen e ossos da cauda. Eles são mais difíceis do que parecem!</p>
+<p> </p>
+<p>Enfim, como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Deixe -me falar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, acho que foi muito fácil para você, afinal.</p>
+<p> </p>
+<p>Eu deveria saber que um grande problema para mim seria trivial para um Daeva.</p>
+<p> </p>
+<p>Muito obrigado por me ajudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reduza o número de manduri que está destruindo o equilíbrio do ecossistema na selva.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriBRe_39_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriTRe_39_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sillen].</p></step>
+</steps>
+<p>Por causa do manduri, certas ervas podem se extinguir. Devemos reduzir o número de manduri para preservar o equilíbrio da selva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sillen estuda Manduris e lhe disse que eles estão comendo plantas úteis como Sobi e Tange.</p>
+<p> </p>
+<p>Essas plantas podem se extinguir se nada for feito, então você concordou em caçar alguns dos manduris.</p>
+<p> </p>
+<p>Quando você se reportou, Sillen agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>([%dic:STR_DIC_E_LDF5A_NPC_Q_WondedArchon]parece estar aqui.)</p>
+<p> </p>
+<p>(Dizer algo.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você decide falar com a pessoa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode se mover.</p>
+<p> </p>
+<p>A ferida ... a ferida é pior do que eu pensava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que ninguém precisa se mudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido.</p>
+<p> </p>
+<p>Por favor, traga -me um médico. Meu nome é[%dic:STR_DIC_LDF5a_Rimo_E].</p>
+<p> </p>
+<p>Parece que você não pode aguentar muito tempo. Eu preciso de assistência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p>Sua ferida, [%username], não será reaberto, será?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que viu um arconte ferido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Houve uma batalha há pouco tempo que custou os amores de muitos arcon. Eu acho que você pode ter visto um deles.</p>
+<p> </p>
+<p>Eu irei ajudar o mais rápido possível.</p>
+<p> </p>
+<p>Muito obrigado pela dica.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_E_LDF5A_NPC_Q_WondedArchon].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_LDF5a_Rimo_E].</p></step>
+</steps>
+<p>Diga a Rimo que os arcontes feridos estão pedindo ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Após uma olhada no Arconte Ferido, o Medicus Rimo foi informado.</p>
+<p> </p>
+<p>Rimo acreditava que este era um arconte que havia caído na guerra e prometeu ajudar o mais rápido possível.</p>
+<p> </p>
+<p>Rimo agradeceu e lhe deu uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

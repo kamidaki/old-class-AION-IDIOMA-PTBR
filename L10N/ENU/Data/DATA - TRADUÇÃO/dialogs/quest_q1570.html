@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão, mas eu odeio Luke! Ele pode se gabar de tudo o que quer e me dizer que eu sou um bêbado, mas sei a verdade!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual seria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá ... chegue mais perto.</p>
+<p> </p>
+<p>Eu disse a Luke que quero explorar a área fora da vila. Mas ele me proibiu por causa dos zumbis. Hick!</p>
+<p> </p>
+<p>Eu disse a ele que ele pode enfiar suas ordens onde o sol não brilha e que os Mortos Vivos são brincadeiras para crianças para mim.</p>
+<p> </p>
+<p>Talvez eu corresse minha boca um pouco demais ... Hick!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, há muitos Mortos Vivos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou pedir a ajuda de Luke sobre meu corpo frio! Eu ainda tenho meu orgulho, você sabe. Hick!</p>
+<p> </p>
+<p>Não vou dar esse nó de nó a satisfação de recuar. Hick!</p>
+<p> </p>
+<p>Você poderia me ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, elimine o [plur][%dic:STR_DIC_M_Zombie_39_An] e [plur][%dic:STR_DIC_M_Zombie_38_An]fora da vila.</p>
+<p> </p>
+<p>Eu ouvi apenas grandes coisas sobre você. Esta tarefa provavelmente será a brincadeira de criança para você. Hick!</p>
+<p> </p>
+<p>É bom ver alguém de novo que não é um prisioneiro ou um balaur. Luke parece estar escutando em nós ...</p>
+<p> </p>
+<p>Por favor, cuide dos zumbis. Hick!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece um plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu queria rasgar todos os zumbis para fazer Luke parecer um idiota. Hick!</p>
+<p> </p>
+<p>Ele, ele ... eu tive essa ideia grandiosa de que eu poderia fazer por conta própria para lhe ensinar uma lição. Hick!</p>
+<p> </p>
+<p>Devemos dois rapazes Bonny ir e matá -los?</p>
+<p> </p>
+<p>Hick! Se ao menos eu não me sentisse tão enjoado ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você deveria reconsiderar isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Quem é você então? Hick!</p>
+<p> </p>
+<p>Oh sim, [%username]. Eu me lembro vagamente de você.</p>
+<p> </p>
+<p>Você não queria se livrar dos zumbis?</p>
+<p> </p>
+<p>E? Como foi? Hick!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você poderia fazer isso, [%username]! Esse era o seu nome, certo? Hick!</p>
+<p> </p>
+<p>Ei Luke, seu velho Windbag! Os zumbis já se foram agora, então eu vou para fora da vila.</p>
+<p> </p>
+<p>Porque eu me livrei de todos eles sozinhos, o que seus cérebros de ervilha eram incapazes de fazer. Hick!</p>
+<p> </p>
+<p>(Vira -se para você novamente.) Esse pequeno segredo deve ficar entre nós, Daeva. Tome isso como pagamento pelo seu silêncio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Mortos Vivos do lado de fora da mansão.</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_Zombie_39_An]([%2]/4).</p>
+<p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_Zombie_38_An]([%5]/6).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kravis].</p></step>
+</steps>
+<p>Ajude o Daeva de Zephyr a matar os Mortos Vivos do lado de fora da mansão, porque ele já andava por aí proclamando alto que poderia destruí -los.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kravis queria ir à patrulha do lado de fora da vila, mas é claro que Luke não o deixou.</p>
+<p> </p>
+<p>Você destruiu os zumbis por Kravis para que ele pudesse salvar a cara. Ele ficou muito grato por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

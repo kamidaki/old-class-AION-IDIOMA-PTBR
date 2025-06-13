@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q49607</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário[%username]</p>
+<p> </p>
+<p>2. Tarefa: Mate o [%dic:STR_DIC_M_LDF5A_D_UndeadLight_all]que está bloqueando o caminho para o sul de Katalam. Em seguida, relate -se ao escritório administrativo, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, gerente de recursos da equipe da Silverine Limited</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva eliminou as almas do esquadrão de ataque, AK?</p>
+<p> </p>
+<p>Shugo deve transportar kokonat e madeira, mas essas almas estão bloqueando o caminho, AK!</p>
+<p> </p>
+<p>É triste que essas almas vagam, mas se estão impedindo Shugo de completar o trabalho, isso é algo que Shugo não pode aceitar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(De bom humor) HM HM.</p>
+<p> </p>
+<p>Agora as mercadorias podem ser transportadas com segurança novamente, AK.</p>
+<p> </p>
+<p>Com a ajuda de Daeva, conseguimos manter nossos custos de transporte baixos, AK.</p>
+<p> </p>
+<p>Vou verificar as informações importantes para os registros da empresa. [%username], certo? e [%userclass]?</p>
+<p> </p>
+<p>Está feito agora. Você pode ir, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_LDF5A_D_UndeadLight_all]([%2]/10)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p></step>
+</steps>
+<p>Você recebeu instruções da Silverine Limited. Leia -os e age.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Você derrotou as almas da equipe de ataque que estavam bloqueando o caminho e relatou ao ramo da Silverine Limited no norte de Katalam. Você foi recompensado por concluir a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

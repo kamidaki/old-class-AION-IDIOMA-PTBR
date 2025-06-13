@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Foi dito que a operação do campo de madeira está ficando difícil devido a ataques frequentes de Dadar. Por esse motivo, pedimos que você mate o [%dic:STR_DIC_M_LDF5A_G3_Gururu_all] em Katalam e reporte -se ao Escritório Administrativo.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BL]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere um momento, desta vez foi sobre a matéria do Dadar, certo?</p>
+<p> </p>
+<p>Agora, as coisas ficarão difíceis, pois são ainda mais fortes do que as moscas, Ak.</p>
+<p> </p>
+<p>Diga -me como foi a missão, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi falar deles, mas não sabia que o Dadar é tão persistente, AK.</p>
+<p> </p>
+<p>Adquirimos o título para o Saphirunerk Lumber Camp há muito tempo. Mas eles ainda estão olhando e não estão de bom, Ak.</p>
+<p> </p>
+<p>De qualquer forma, Shugo enviará uma notícia de que Daeva realizou a tarefa para toda a minha satisfação, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_W_LDF5a_G3] Atacantes, o [%dic:STR_DIC_M_LDF5A_G3_Gururu_all]. ([%2]/10)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5a_Silverlin_BL].</p></step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois de destruir os nativos Dadar, atacou o campo de madeira e relatou -se ao ramo de Silverine, no norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

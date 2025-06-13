@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode pensar que eu sou tolo, indo contra os desejos de Jafnhar. Mas você não entende o tribunal das sombras. Ele não é seguro, mesmo no abismo.</p>
+<p> </p>
+<p>Receio que eles não parem de procurá -lo. Eu já vi isso antes, [%username], fiz isso sozinho ....</p>
+<p> </p>
+<p>Devo oferecer -lhe o santuário aqui em Pandaemonium.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Essa é a sua escolha, é claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você escolheu manter um segredo perigoso para mim. Devo confiar em sua confiança por mais um tempo.</p>
+<p> </p>
+<p>Quero que você volte ao abismo, resgate Jafnhar e o traga de volta aqui.</p>
+<p> </p>
+<p>Você está arriscando sua vida e imortalidade ao concordar com isso, mas não posso perguntar não outro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns o chamarão de traidor para suas ações, mas confiavam nos irmãos até que a verdade completa seja revelada não é crime.</p>
+<p> </p>
+<p>Convencer Jafnhar a voltar para mim. Vou preparar um lugar seguro para ele e fazer tudo ao meu alcance para garantir sua proteção.</p>
+<p> </p>
+<p>Se pudermos convencê -lo a divulgar informações sobre os anciãos das sombras, eu poderia afirmar que o enviou em uma missão secreta. Apresse -se, antes que seja tarde demais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O aço deixou seu sangue, quando a força é mais necessária?</p>
+<p> </p>
+<p>Não vou trair você, mas também não posso estender minha proteção.</p>
+<p> </p>
+<p>[%username], você é sua única esperança. Você deve reconsiderar, caso contrário, corre o risco de ter sangue em suas mãos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou considerar mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você! Você não deveria estar aqui, [%userclass]. Eu disse para você dizer a Khrudgelmir que eu estava morto.</p>
+<p> </p>
+<p>Como você poderia falhar em uma missão tão simples?</p>
+<p> </p>
+<p>Ele não acha que estou vivo, não é? Nesse caso, ele não vai parar por nada para me proteger.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Ele diz que vai mantê -lo seguro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seguro?! Sou um homem que busca a verdade, uma verdade não encontrada em Pandaemonium ou como uma asmodiana.</p>
+<p> </p>
+<p>Eu deixei essa vida e entrei em algo ... diferente. Voltar zomba de tudo o que eu representa.</p>
+<p> </p>
+<p>Os anciãos das sombras são minha família agora. Diga a Khrudgelmir que eu não desejo ser encontrado. Se ele enviar mais alguém, eu os matarei para onde eles estão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está sozinho?</p>
+<p> </p>
+<p>Diga -me tudo o que aconteceu.</p>
+<p> </p>
+<p>Rapidamente, [%username], antes que outros nos vejam juntos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele disse para te contar ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... devo respeitar seus desejos. Vou dizer ao tribunal que lidei com Jafnhar. Talvez então eles parem de procurá -lo.</p>
+<p> </p>
+<p>Para ele se juntar aos anciãos das sombras, matar por eles ... o que deu errado?</p>
+<p> </p>
+<p>Perdi um amigo querido e não entendo o porquê. Devo pensar nisso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Jafnhar].</p></step>
+<step><p visible="[%3]">Transmitir as palavras de Jafnhar para [%dic:STR_DIC_N_Srudgelmir].</p></step>
+</steps>
+<p>Khrudgelmir quer resgatar Jafnhar e trazê -lo de volta com segurança. Retorne à ilha de nuvem negra e persuadiu Jafnhar a retornar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Khrudgelmir pediu que você traga Jafnhar de volta, prometendo protegê -lo a todo custo.</p>
+<p> </p>
+<p>Jafnhar disse que ele agora trabalhava ao lado dos anciãos das sombras e, se os outros o viessem, eles seriam mortos.</p>
+<p> </p>
+<p>Khrudgelmir estava preocupado com seu ex -amigo e não entendeu sua decisão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já faz um tempo desde que vi alguém com suas habilidades de caça, [%username]. Estou mais do que impressionado.</p>
+<p> </p>
+<p>Tenho certeza de que você terá que passar para alguns negócios importantes da Daeva em breve, mas eu realmente gostaria de mantê -lo por perto. Precisamos de você por aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que mais está acontecendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, desde que você perguntou .... eu sei de um particular cálydon que chamamos[%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An]. Fiz uma aposta com o resto do acampamento que ninguém poderia pegá -lo. Como você pode imaginar, ele tem um dente feito inteiramente de ouro.</p>
+<p> </p>
+<p>Se você pode matar [%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An] e me traga o dele [%dic:STR_DIC_I_QUEST_3047a], Vou recolher nessa aposta. Claro que haverá algo nele para você ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matar [%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An]deve ser divertido. Realmente eu deveria apenas matá -lo e economizar meu dinheiro, mas ... eu amo ver você trabalhar, [%username].</p>
+<p> </p>
+<p>Aposto que você estará de volta em um flash com isso [%dic:STR_DIC_I_QUEST_3047a].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pedaço de bolo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Você não quer matá -lo?</p>
+<p> </p>
+<p>Bem, eu só estava falando sobre isso como um favor de qualquer maneira. Eu posso me matar mais tarde.</p>
+<p> </p>
+<p>Se você mudar de idéia antes de eu chegar a ela, me avise.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou avisar você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou[%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An]?</p>
+<p> </p>
+<p>Ele não é algo? Você o derrubou?</p>
+<p> </p>
+<p>Você conseguiu o dele [%dic:STR_DIC_I_QUEST_3047a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou[%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An] Ainda?</p>
+<p> </p>
+<p>Não se preocupe se demorar um pouco. Os paindons são cautelosos! Apenas continue nisso e você o derrubará.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau. Este é o dente dele, tudo bem.</p>
+<p> </p>
+<p>É muito maior do que eu pensava!</p>
+<p> </p>
+<p>Aqui está o pagamento que eu prometi a você. Eu provavelmente deveria vender isso para recuperar um pouco desse dinheiro, mas acho que vou mantê -lo como lembrança.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An], retire o dente de ouro e leve -o para [%dic:STR_DIC_N_Maeleagros].</p>[%collectitem]</step>
+</steps>
+<p>Remova o dente de ouro de [%dic:STR_DIC_M_LF2A_CalydonAsNamedQ_47_An] e trazê -lo para Melleas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Melleas falou a você um calydon com um dente de ouro e pediu que você o levasse a ele para resolver uma aposta.</p>
+<p> </p>
+<p>Quando você trouxe o molar de ouro para Melleas, ele pagou a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

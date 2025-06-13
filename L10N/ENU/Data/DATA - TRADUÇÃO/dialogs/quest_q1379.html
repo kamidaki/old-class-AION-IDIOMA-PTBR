@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, ei! Shoo! Scram!</p>
+<p> </p>
+<p>Oh, ah ... Olá!</p>
+<p> </p>
+<p>Eu não estava gritando com você, [%username], apenas os drakes criticados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que motivo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Porque são pragas terríveis, é por isso!</p>
+<p> </p>
+<p>Enquanto a terra seca, eles se reuniram perto de todas as fontes de água, crescendo ousadas e pegando o que querem. Até a primavera não é segura. Se eu voltar aos meus estudos por um momento ...</p>
+<p> </p>
+<p>Eu os cercei, mas com a força deles, eles vão rasgar facilmente em breve.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então mate alguns. Isso funciona!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tentado, acredite em mim. Mas eu sou ... não um guerreiro, realmente.</p>
+<p> </p>
+<p>Você é um experiente [%userclass]. Você não poderia me ajudar?</p>
+<p> </p>
+<p>São apenas aqueles que pairam em torno da primavera mística.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Então, por favor, mate 6[plur][%dic:STR_DIC_M_Drake_28_An] e 4[plur][%dic:STR_DIC_M_Drake_30_An].</p>
+<p> </p>
+<p>Você precisa matar o suficiente deles para que o resto fique com medo e fuga vôo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso parece certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, suponho que você está muito procurado!</p>
+<p> </p>
+<p>Só tenho que pensar em outra solução.</p>
+<p> </p>
+<p>Carne de gorgon envenenada, talvez ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você encontrará um caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que não seja o seu sangue!</p>
+<p> </p>
+<p>As contas dessas criaturas são bastante nítidas, e muitas vezes as feridas apodrecem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não, é Drake Blood."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sim! O barulho já diminuiu.</p>
+<p> </p>
+<p>Eu me perguntei bem, querida [%username].</p>
+<p> </p>
+<p>Embora tenha medo de ter esquecido algo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os drakes ao redor da mística da primavera de Laquepin.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Drake_28_An]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Drake_30_An]([%5]/4)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Esaias].</p></step>
+</steps>
+<p>Os Drakes devem ser mortos para que os daevasas da vida possam examinar a contaminação da mística mística em segurança.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Drakes que fogem do deserto estão esgotando a água da primavera mística, e Esaias está muito ocupada lutando contra eles para fazer seu trabalho.</p>
+<p> </p>
+<p>Como os daevas da vida são pobres em combate, você saiu dos Drakes para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

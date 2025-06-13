@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizer, [%username], lembra -se do colar de chama de Kromede que eu te dei? O que você vai fazer com isso?</p>
+<p> </p>
+<p>Ainda não pensou nisso? Bem, você sabia que pode derreter e agravá -lo com o arco longo do juiz para fazer um atirador de flechas curiosamente forte?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mas eu não tenho o arco longo do juiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim. Você precisará obtê -lo primeiro. Você precisará de três coisas, na verdade.</p>
+<p> </p>
+<p>O primeiro é a chama de Kromede, que você já tem. O segundo é um ferreiro qualificado e realizado ... e esse seria eu, o lendário Ukon.</p>
+<p> </p>
+<p>E o terceiro e último item que você precisará é o arco longo do juiz. Mas você precisará arrancá -lo das mãos do proprietário primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há necessidade de me agradecer, [%username]. Eu tenho a parte fácil nesta transação. Por outro lado, você tem a parte difícil: obtendo o arco longo.</p>
+<p> </p>
+<p>Você terá que tirar de [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]no templo do fogo em Asmodae. E ela não ficará muito emocionada ao vê -lo ir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não esperaria nada menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Você não ... você não sabe quem eu sou, não é? Você nunca diria não para mim se soubesse quem eu era.</p>
+<p> </p>
+<p>Vou deixar deslizar desta vez. Você está pronto? Eu sou ... UKON! UKON, o lendário ferreiro do santão! Aqui para ajudar.</p>
+<p> </p>
+<p>... UKON! Nada? Você não está familiarizado com minha lenda? Oh, esqueça! Pegue sua chama de Kromede e bata!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você sabe o que significa 'lenda'?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca disse que seria fácil conseguir o arco longo do juiz, [%username]. Mas você parece ter mantido todos os seus membros.</p>
+<p> </p>
+<p>Agora, entregue o arco longo e a chama de Kromede, e eu vou esquentar minha bigorna.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está tudo o que você precisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você vê essas minhas mãos? Essas mãos são lendárias!</p>
+<p> </p>
+<p>Essas mãos fizeram armas para o governador do santuário! Os generais da brigada de nossas legiões estrangeiras! O ... o ....</p>
+<p> </p>
+<p>Basta pegar o arco longo do juiz e a chama de Kromede, e eu mostrarei por que sou considerado uma lenda!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que você esteja certo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Doce senhora Ariel! Isso foi muito trabalho! Mas terminei o que me propus a fazer.</p>
+<p> </p>
+<p>Aqui, pegue o arco longo do seu Kromede. Depois de todo esse trabalho, não quero encontrar esta arma na lixeira usada de alguma barraca de trader Shugo, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir os materiais necessários para refinar o arco longo do juiz e trazê -los para [%dic:STR_DIC_N_Ukon].</p>[%collectitem]</step>
+</steps>
+<p>Se você conseguir o arco longo do juiz, Ukon disse que o refinaria para você com a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você pegou o arco longo do juiz, Ukon disse que o fortaleceria para você com a chama de Kromede.</p>
+<p> </p>
+<p>Felizmente para você, Ukon manteve sua palavra e fez de você o arco longo de Kromede reforçado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

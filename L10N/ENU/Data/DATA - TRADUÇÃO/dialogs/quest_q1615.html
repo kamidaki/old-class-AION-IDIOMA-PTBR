@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato, meu ex -colega, [%dic:STR_DIC_N_NPC_Lethe], infiltrado em Beluslan em Asmodae.</p>
+<p> </p>
+<p>Ela se disfarçou de lefarista e observa os movimentos dos lefaristas na fortaleza de Alquimia.</p>
+<p> </p>
+<p>Eu trabalhei com ela há muito tempo. Ela é realmente talentosa. Talvez tão bom quanto eu. Eu gosto de trabalhar sozinho, mas Lethe é uma exceção.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Conte -me sobre esta caixa suspeita."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou chegando a isso. Ontem, recebi uma carta de [%dic:STR_DIC_N_NPC_Lethe].</p>
+<p> </p>
+<p>Era sobre a caixa suspeita.</p>
+<p> </p>
+<p>Chegou à fortaleza de Alquimia e ela não consegue se aproximar muito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você sabe?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não muito. Preciso entrar em contato com Lethe para obter mais detalhes.</p>
+<p> </p>
+<p>Suspeito que haja um assunto de teste humano remodelado na caixa. É uma chance de novas informações.</p>
+<p> </p>
+<p>Eu sei que ir para Asmodae é perigoso, mas você irá para Alquimia Stronghold e investigará a caixa suspeita?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça com cuidado, [%username]. Digitar [%dic:STR_DIC_W_LF3_SZ_003] e vá para o norte até a brecha.</p>
+<p> </p>
+<p>Você sairá dentro de Alquimia Stronghold ou no caos Brambles perto da fortaleza. Descobrir onde você está, então procure [%dic:STR_DIC_N_NPC_Lethe].</p>
+<p> </p>
+<p>Ela estará em algum lugar em[%dic:STR_DIC_W_STR_DF3_SZ_G4]. Quando você se encontrar, dê a ela a senha: "Quando um Grifo voa, a pena de uma pluma cai". Não se esqueça.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Grifo voa ... Penas cai ... entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A missão é perigosa demais para você?</p>
+<p> </p>
+<p>Talvez Xenophon te julgasse mal.</p>
+<p> </p>
+<p>Deixar. Não vou deixar um covarde colocar Lethe em perigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é um covarde. Apenas ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Inimigo! Como você ousa invadir aqui!</p>
+<p> </p>
+<p>Você é Daft, Elyos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Quando um Grifo voa, a pena de uma pluma cai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é de heiron? Entre. Pressa!</p>
+<p> </p>
+<p>Faz muito tempo que vi um Elyos Daeva. Obrigado por enfrentar os perigos para chegar aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para Alquimia Stronghold em Asmodae e converse com[%dic:STR_DIC_N_NPC_Lethe].</p></step>
+</steps>
+<p>Nerison diz que a caixa suspeita chegou à fortaleza de Alquimia. Conheça o infiltrador lethe e descubra os detalhes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nerison disse que seu ex -colega Lethe, que se infiltrou na fortaleza de Alquimia em Asmodae, lhe disse que a caixa suspeita chegou lá.</p>
+<p> </p>
+<p>Você foi para a fortaleza de Alquimia em Beluslan usando a fenda e conheceu Lethe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

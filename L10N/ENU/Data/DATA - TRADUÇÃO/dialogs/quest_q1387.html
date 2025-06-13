@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username], você ocupado? Eu odeio dizer isso, mas ....</p>
+<p> </p>
+<p>Enquanto você se foi, recebi uma mensagem do meu homem ferido. Você sabe, o atacado pelos Viragos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que isso disse?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ele diz agora que foram os catadores de Virago, não sentinelas, que o atacaram.</p>
+<p> </p>
+<p>Você não está louco, não é? Se eu pensasse que você estava falando sério, teria verificado duas vezes com ele!</p>
+<p> </p>
+<p>Então ... o que estou dizendo é, [%username], você pode voltar? Você fez ótimo antes!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Eu nunca deveria ter duvidado de você, [%username].</p>
+<p> </p>
+<p>Mesmo assim, seja cauteloso![%dic:STR_DIC_M_Harpy_33_An] S é muito mais violento e astuto do que o Virago Sentinels.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está bravo, não é?</p>
+<p> </p>
+<p>Olha, me desculpe! Você estava certo!</p>
+<p> </p>
+<p>[%username], você é o único que pode fazer isso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uh-huh."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Você os encontrou?</p>
+<p> </p>
+<p>Você não está machucado, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estou bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não esperava nada menos de você, [%username]. Você foi capaz de matar 10 desses companheiros horríveis com um único golpe.</p>
+<p> </p>
+<p>Agora posso enviar guardas. Agora, o inimigo saberá que não estamos brincando e eles pensarão duas vezes antes de atacar novamente.</p>
+<p> </p>
+<p>Aqui pegue isso. Sua recompensa por nos ajudar duas vezes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_Harpy_33_An]de Kuriullu Mountain ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Leone].</p></step>
+</steps>
+<p>Os caçadores de Mortos Vivos da fúria aparentemente atacaram os guardas. Mate a fúria que capturou a rocha do bastião lefarista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você estava caçando Sentinelas de Virago, Leone descobriu que o sentinela ferido havia identificado mal as fúrias que o atacaram.</p>
+<p> </p>
+<p>Você aceitou as desculpas de Leone e matou mais Viragos. Leone, cheio de gratidão, o recompensou generosamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

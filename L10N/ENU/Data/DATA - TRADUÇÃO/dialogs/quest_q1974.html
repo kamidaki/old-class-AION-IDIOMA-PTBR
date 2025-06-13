@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou de olho em você, [%username], e nunca vi um Daeva que atingiu um nível tão alto de proficiência em sererada tão rapidamente.</p>
+<p> </p>
+<p>Então ... eu quero ver como você realmente é bom.</p>
+<p> </p>
+<p>Você está pronto para um desafio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pode vir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Excelente espírito! Faça o peitoral nobre de Vulcanus, se puder, e traga -o para inspeção.</p>
+<p> </p>
+<p>Você precisa de mais do que talento para tornar algo tão raro. Somente a intensidade do espírito permitirá que você tenha sucesso, mas se meu julgamento estiver correto, você não terá nenhum problema.</p>
+<p> </p>
+<p>Mas você deve saber disso-se você se tornar um especialista em sererpíneo, só pode se tornar um especialista em um outro campo e, mesmo assim, deve esperar até terminar seus estudos. Então, por favor, pense com cuidado antes de responder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode comprar o design e os materiais de peitoral do Vulcanus[%dic:STR_DIC_N_Menomes].</p>
+<p> </p>
+<p>O design é exponencialmente mais difícil do que o [%dic:STR_DIC_E_Q1974]design, mas eu sei que você pode fazer isso, [%username].</p>
+<p> </p>
+<p>Eu ainda estarei aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou desistir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você era apaixonado por armadura. Eu estava errado?</p>
+<p> </p>
+<p>É verdade que tornar o peitoral nobre de Vulcanus não é fácil, mas eu pensei que você era persistente o suficiente, [%username]....</p>
+<p> </p>
+<p>Talvez você realmente não seja bom o suficiente para ser um especialista em sererpíneo, afinal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só preciso pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]!</p>
+<p> </p>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Você conseguiu fazer o nobre peitoral do Vulcanus?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não fez o peitoral nobre de Vulcanus?</p>
+<p> </p>
+<p>[%username], Eu pensei que você já teria concluído esta tarefa agora.</p>
+<p> </p>
+<p>Espero que você possa poupar algum tempo para fazer a peça que eu pedi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou continuar tentando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Eu sabia que você faria isso, [%username]!</p>
+<p> </p>
+<p>É bom saber que eu estava certo sobre você. Você se saiu tão bem.</p>
+<p> </p>
+<p>Fico feliz em ver que você tem uma paixão verdadeira por serralheiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo que você pode não entender. Você só pode fazer seu teste especializado em um ofício de cada vez.</p>
+<p> </p>
+<p>Se você está seguindo o caminho de um especialista em outro campo, ainda não pode se tornar um especialista em sererpíneo.</p>
+<p> </p>
+<p>Receio que você deva escolher.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho que pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o peitoral nobre de Vulcano e leve -o para [%dic:STR_DIC_N_Vulcanus].</p>[%collectitem]</step>
+</steps>
+<p>Vulcanus disse que você tinha um talento para serralheiro e pediu que você fizesse nobre peitoral de Vulcanus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vulcanus lhe disse que você parecia ter um talento especial para serralheiro e queria ver se você tem uma paixão pelo ofício.</p>
+<p> </p>
+<p>Quando você trouxe o nobre peitoral de Vulcanus, que você fez, ele ficou muito satisfeito com seu talento e paixão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

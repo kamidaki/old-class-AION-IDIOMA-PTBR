@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor nos ajude com a investigação, [%username].</p>
+<p> </p>
+<p>O objetivo é descobrir por que a draga caiu.</p>
+<p> </p>
+<p>É impossível que a grande balsa tenha caído por si só.</p>
+<p> </p>
+<p>O acidente da draga tem muito a ver com as mudanças nessa área, por isso é muito importante.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12829] e penteie o local para sinais úteis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um cubo idgel gravemente fragmentado.)</p>
+<p> </p>
+<p>(É tão fortemente danificado que uma restauração é impossível.)</p>
+<p> </p>
+<p>(Parece ter sido instalado na draga acidentada.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Descobrir qual era o motivo do travamento da Dregação permitiria que você entenda por que essa região mudou tanto.</p>
+<p> </p>
+<p>É por isso que essa é uma das perguntas que mais ocupa o comandante supremo.</p>
+<p> </p>
+<p>E até estou curioso sobre a resposta.</p>
+<p> </p>
+<p>Você terminou o experimento?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Relate o que você viu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que a draga que caiu foi transportar um cubo Idgel?</p>
+<p> </p>
+<p>Se isso for verdade, talvez o acidente tivesse algo a ver com o cubo Idgel.</p>
+<p> </p>
+<p>Mas isso também significa que há alguma conexão entre o Balaur e o Idgel ...</p>
+<p> </p>
+<p>Eu vejo o perigo à frente.</p>
+<p> </p>
+<p>Nada é certo ainda, então é muito cedo para tirar conclusões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12829] e descubra o que está acontecendo lá.</p></step>
+<step><p visible="[%3]">Examine o [%dic:STR_DIC_E_LDF5a_FOBJ_BrokenIdgel].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard06_L].</p></step>
+</steps>
+<p>Investigue o local do acidente de draga para determinar a causa do acidente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Morin pediu que você descobrisse por que a draga caiu.</p>
+<p> </p>
+<p>Após a investigação, foi descoberto um cubo de Idgel quebrado, que provavelmente estava a bordo da draga acidentada.</p>
+<p> </p>
+<p>Depois que você relatou a Morin, ele era da opinião de que a draga aparentemente queria mover o cubo de Idgel e que o exército de Beritra provavelmente estava conectado à identificação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

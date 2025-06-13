@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitas criaturas estranhas e perigosas nesse terrível abismo.</p>
+<p> </p>
+<p>Em Flinders, há um espectro aterrorizante chamado Ghost Virago.</p>
+<p> </p>
+<p>Embora tenhamos seres como os de Elysea, eles são tão diferentes que podem muito bem ser criaturas diferentes ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é a grande diferença?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em Elysea, os fantasmas e sombras ficam até os lugares escuros no subsolo e escondem seus rostos dos vivos.</p>
+<p> </p>
+<p>No abismo, eles atacam tudo o que se move.</p>
+<p> </p>
+<p>É como se eles se ressentem do calor e do calor dos vivos e procuram extinguidos onde quer que o encontrem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma criatura perigosa, de fato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Perigoso e, além disso, uma ameaça aos nossos planos.</p>
+<p> </p>
+<p>Já atrasamos as coisas por muito tempo devido ao perigo representado por esses espíritos malévolos.</p>
+<p> </p>
+<p>[%username], você parece ter alguma habilidade nesses assuntos. Você lidaria com eles para nós?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu agradeço muito.</p>
+<p> </p>
+<p>Envie o [%dic:STR_DIC_M_Ab1_1211_ShadowStalkerB_32_An] está de volta a quaisquer túmulos de onde eles surgiram, e você fornecerá assistência inestimável.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles não o incomodam mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recusaria um pedido humilde? Eu pensei que você era um Daeva melhor do que isso, [%username].</p>
+<p> </p>
+<p>Vejo agora que o que ouvi sobre você foi apenas fofocas exageradas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh, eu sou um excelente Daeva, garanto -lhe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles fantasmas aterrorizantes ... mesmo agora, eu posso imaginar suas garras geladas destruindo minha carne, escolhendo meus órgãos vitais com alegria bestial ....</p>
+<p> </p>
+<p>Ah! Não me esgueire assim!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você não tem nada a temer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sabia que poderia contar com você. Você tem um olhar confiável para você.</p>
+<p> </p>
+<p>Graças a você, posso explorar esta área à vontade, sem medo de ser atacado por espectros selvagens.</p>
+<p> </p>
+<p>Por favor, pegue este pequeno sinal de minha apreciação, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_Ab1_1211_ShadowStalkerB_32_An]vagando pelas fliperas ([%2]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Livy].</p></step>
+</steps>
+<p>Os espíritos da destruição estão interferindo na missão do Guardian Recon nos Flinders. Mate esses espíritos e relate a Livius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Livius disse que os fantasmas da demolição eram uma ameaça real e pediu que você os elimine.</p>
+<p> </p>
+<p>Você o fez e o salvou de ser potencialmente destruído por espíritos irritados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

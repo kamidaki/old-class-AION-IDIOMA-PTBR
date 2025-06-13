@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q24121</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece o templo do fogo?</p>
+<p> </p>
+<p>Foi aqui que Agnita, o daeva do fogo, guardava uma poderosa arma usada por Daevasas da antiga. Mas ... um Daeva com o nome de Kromede, que havia trabalhado nas fileiras da corte das sombras para se tornar um juiz, cobiçaram essa arma e entraram no templo sem permissão.</p>
+<p> </p>
+<p>Felizmente, Agnita foi capaz de deter Kromede em uma área secreta. Mas Kromede conseguiu lançar um feitiço em Agnita antes de ir embora.</p>
+<p> </p>
+<p>Servo de confiança de Agnita [%dic:STR_DIC_N_Bulagan]pediu ajuda neste assunto.</p>
+<p> </p>
+<p>Vá conhecê -lo e ouvir o que ele tem a dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, Daeva, você está aqui!</p>
+<p> </p>
+<p>Aparentemente, Agnita resistiu a Kromede, e agora está sendo mantido em cativeiro dentro de um item no templo do fogo.</p>
+<p> </p>
+<p>Eu posso sentir o item, mas é muito fraco, por isso provavelmente está escondido em algum lugar no fundo do templo do fogo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_DF2_Flamyar_E]venera muito agnita. Ele vai esperar por você na entrada do templo do fogo.</p>
+<p> </p>
+<p>Ele será capaz de lhe contar mais ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bulagan enviou você?</p>
+<p> </p>
+<p>Você está pronto para libertar [%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]De sua prisão no templo do fogo?</p>
+<p> </p>
+<p>O poder de Kromede deve ter proibido Agnita em um item. Se você eliminar o lacaio de Kromede [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae], você encontrará algo conectado à Agnita.</p>
+<p> </p>
+<p>Traga -me o item que segura a agnita em cativeiro. Boa sorte...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, Daeva.</p>
+<p> </p>
+<p>Como você se saiu em resgatar a agnita?</p>
+<p> </p>
+<p>Eu confio que você voltou para nós, dando notícias sobre mercadorias?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cálice sagrado selado e relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por seus esforços.</p>
+<p> </p>
+<p>Desde que você trouxe de volta o cálice no qual Agnita está preso, podemos ... o tribunal das sombras pode preservar sua honra.</p>
+<p> </p>
+<p>Em breve tentaremos libertar o agnita do cálice.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Bulagan]no[%dic:STR_DIC_W_DF2_SUB_C5].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF2_Flamyar_E]no[%dic:STR_DIC_OBJ_DF2_DragonDoor_In].</p></step>
+<step><p visible="[%6]">Derrota [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae]Para obter o [%dic:STR_DIC_I_quest_24121a] e leve para [%dic:STR_DIC_N_DF2_Flamyar_E]no[%dic:STR_DIC_OBJ_DF2_DragonDoor_In].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se do guarda de cálice Denlavis no templo do fogo e procure itens que possam ser conectados à Agnita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aegir pediu que você encontrasse o servo de Agnita para que você pudesse libertar o Daeva do fogo do templo do fogo.</p>
+<p> </p>
+<p>Você teve que enfrentar o guarda de cálice Denlavis dentro do templo do fogo, assim como Bulagan e Piyama tinham predito.</p>
+<p> </p>
+<p>Depois de derrotar o guarda de cálice Denlavis, você conseguiu segurar o cálice em que Agnita havia sido banido. Então você trouxe o cálice para Piyama para que Agnita pudesse ser lançado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

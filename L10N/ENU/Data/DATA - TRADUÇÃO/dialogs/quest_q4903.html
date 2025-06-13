@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você quer se tornar um verdadeiro[%userclass]?</p>
+<p> </p>
+<p>Quanto mais você domina o poder do Aether, mais você parece ter que aprender.</p>
+<p> </p>
+<p>Até os Daevasas imortais ficam chocados até o núcleo na escala da sabedoria.</p>
+<p> </p>
+<p>Mas você pode fazer um esforço para minimizar sua ignorância. Assim, sua compreensão do mundo cresce, passo a passo.</p>
+<p> </p>
+<p>E depois de chegar a uma realização em um campo, você deve se dedicar ao próximo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Concordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegou a hora de você dar um grande passo à frente, [%username].</p>
+<p> </p>
+<p>Gostaria de apresentá -lo a um novo preceptor, para que você seja capaz de ações ainda maiores no futuro.</p>
+<p> </p>
+<p>Ela se chama SIF e você pode encontrá -la no prédio da Assembléia Nacional. Ela se afastou das coisas mundanas para passar sua vida aspirando à sabedoria.</p>
+<p> </p>
+<p>Eu escrevi uma carta de recomendação que você pode apresentar ao SIF. Ela ficará muito satisfeita em vê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A carta a ajudará a entender o que eu já ensinei.</p>
+<p> </p>
+<p>Você precisará se encontrar com o SIF com frequência à medida que seu treinamento avança, então construa um bom relacionamento com ela.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu tenho que jogar fora a carta de recomendação.</p>
+<p> </p>
+<p>Se você recusar, não posso forçá -lo.</p>
+<p> </p>
+<p>Ah, e você não precisa vir a mim novamente no futuro.</p>
+<p> </p>
+<p>Não tenho mais nada a dizer a você agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A linguagem é uma ferramenta importante, mas muitas palavras podem diminuir a verdade.</p>
+<p> </p>
+<p>A conversa fiada é muitas vezes um obstáculo para buscar a sabedoria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de ve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sempre há mais que se pode aprender, [%username].</p>
+<p> </p>
+<p>Embora as pessoas me chamem de preceptor, ainda sou estudante também.</p>
+<p> </p>
+<p>Mas acredito que serei útil para você, [%username].</p>
+<p> </p>
+<p>Venha me ver se você encontrar dificuldades no caminho para se tornar um[%userclass]. Vou te ensinar tudo o que sei.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a carta de recomendação para [%dic:STR_DIC_N_Sif].</p></step>
+</steps>
+<p>Mostrar carta de recomendação de VE para SIF.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>VE recomendou que você visse um novo preceptor, para que você possa realizar ações ainda maiores. Para esse fim, ela lhe deu uma carta de recomendação, que você deveria apresentar ao SIF.</p>
+<p> </p>
+<p>Depois de ler a carta de recomendação, ela prometeu ajudá -lo a melhorar como uma Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi alguns daeva dizer que um cantor não pode curar seus aliados e um clérigo ... hah! Eu digo que Daeva nunca te conheceu!</p>
+<p> </p>
+<p>Os cantores são a espinha dorsal do exército asmodiano. Afinal, eles permitem que seus aliados realizem feitos de força e mágica que, de outra forma, não seriam possíveis, e eles pegam a folga quando um clérigo não puder fazer o trabalho.</p>
+<p> </p>
+<p>O Templo do Destino reconheceu recentemente as contribuições de todos os chanters Asmodian e me enviou um número de maior estigma para recompensar os mais dedicados.</p>
+<p> </p>
+<p>Você pode usar maior estigma, certo, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro que posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que eu me preocupei em perguntar? Claro que você pode! Um cantor de seu talento estaria bem ciente dos benefícios que o maior estigma proporciona na batalha.</p>
+<p> </p>
+<p>É o seu dia de sorte, porque estou preparado para recompensá -lo com um novo estigma maior do Templo do Destino. Se ... você pode passar um pequeno teste.</p>
+<p> </p>
+<p>O que você acha, [%username]? Você está pronto para o desafio?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem coragem, [%username]. Não são muitos que entrarão no desconhecido-eu assim em um cantor. Mesmo sem seus aliados, você está pronto para enfrentar quaisquer desafios que eu possa distribuir.</p>
+<p> </p>
+<p>Bem, então ... eu gostaria de ter preparado algo um pouco mais difícil! Mas suponho que, se você terminar isso rapidamente, haverá mais tempo para testar seu novo estigma maior no Balaur e nos Elyos.</p>
+<p> </p>
+<p>Tudo o que você precisa fazer é dominar um estigma maior. Vamos ver ... acho que *** vai se sair bem. Use *** 10 vezes e depois volte para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca soube que você recuou de um desafio, [%username].</p>
+<p> </p>
+<p>Você deve ter algo importante para fazer ....</p>
+<p> </p>
+<p>Justo. Volte quando terminar seus compromissos anteriores.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Eu estava pensando em você.</p>
+<p> </p>
+<p>Eu tive a sensação de que você seria feito rapidamente, mas ainda ficaria impressionado se você tivesse feito isso em breve.</p>
+<p> </p>
+<p>Bem, desde que você voltou, você deve ter dominado a merda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aceitarei sua homenagem que você concluiu esta tarefa.</p>
+<p> </p>
+<p>Por favor, pegue este estigma maior. Como vem do Templo do Destino, não tenho dúvidas de que isso o ajudará na batalha.</p>
+<p> </p>
+<p>Continue a treinar duro e lembre -se de que são os chanters como você que serão a razão pela qual asmodae conquistam Gelkmaros e toda a Balaurea. Sangue para sangue!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Usar [%dic:STR_DIC_E_DP_Pr]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Freyr].</p></step>
+</steps>
+<p>O Templo do Destino está emitindo um maior estigma a cantores dignos. Use *** para provar que você é proficiente em usá -los.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Freyr, com o apoio do Templo do Destino, está emitindo um maior estigma a Canters que são proficientes em usá -los.</p>
+<p> </p>
+<p>Você seguiu as instruções de Freyr e voltou depois de se tornar proficiente com foder. Ele lhe deu um novo estigma maior, conforme prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

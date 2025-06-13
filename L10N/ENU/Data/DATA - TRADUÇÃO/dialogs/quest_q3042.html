@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3042</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já pensou em se tornar um sentinela, [%username]? Você parece que seria muito bom nisso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não consigo ficar parado por tanto tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, mas acho que poderia ficar parado para sempre. É como se eu se tornasse a torre da própria eternidade, em pé orgulhosa e firme.</p>
+<p> </p>
+<p>Claro, isso me distrai da minha tarefa-dando-se com o [%dic:STR_DIC_M_LF2A_SalivadoRed_45_An] S.</p>
+<p> </p>
+<p>Talvez você possa me ajudar, já que você gosta de se mudar tanto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[plur][%dic:STR_DIC_M_LF2A_SalivadoRed_45_An] São seres muito selvagens.</p>
+<p> </p>
+<p>E há tantos deles que você poderia dizer que eles têm essa área sob controle.</p>
+<p> </p>
+<p>Se você matar 5 deles, poderá lidar com o resto, de alguma forma.</p>
+<p> </p>
+<p>Isso é possível, com certeza?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu poderia fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu ficarei aqui mesmo enquanto eles enxameiam ao meu redor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mantenha isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já matou os 5 Hornskulls?</p>
+<p> </p>
+<p>Eu certamente tentei duro, mas nem mesmo tenho dois deles.</p>
+<p> </p>
+<p>Você não desistiu, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Os lagartos estão mortos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi bastante útil. Isso deve impedir que os Hornskulls ultrapassem a todos nós.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [plur][%dic:STR_DIC_M_LF2A_SalivadoRed_45_An]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Noridia].</p></step>
+</steps>
+<p>Aparentemente, Atropos ordenou que Noridia não descansasse até que os Salibardos tenham sido mortos. Ajude Noridia a completar sua missão com sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Noridia gosta de ficar muito parado em um local. Você a ajudou a matar Hornskulls para que ela não precisasse se mover.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

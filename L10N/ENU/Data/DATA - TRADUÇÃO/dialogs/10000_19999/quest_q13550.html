@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá em frente, [%username] e matar um[%dic:STR_DIC_M_LDF5A_A2_Fana]ou a [%dic:STR_DIC_M_LDF5A_A4_Fana]. Você pode obter o [%dic:STR_DIC_I_quest_13550a]deles.</p>
+<p> </p>
+<p>Inúmeros reianos foram lavados no cérebro pelo Balaur.</p>
+<p> </p>
+<p>Com o pacote de incenso de Jormungand, deve ser possível reverter a lavagem cerebral.</p>
+<p> </p>
+<p>Não sei se realmente funciona, mas tendo em mente a situação sem esperança em que estamos, vale a pena tentar.</p>
+<p> </p>
+<p>Quando você obtiver um pacote de incenso, leve -o para laten que já está sofrendo dos efeitos da lavagem cerebral.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, oh, oh ... (os alunos estão muito dilatados.)</p>
+<p> </p>
+<p>(O corpo é destruído por cólicas.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a bolsa de incenso de Jormungand.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Gemido ... (ele finalmente vem.) Onde ...</p>
+<p> </p>
+<p>Onde estou ...?</p>
+<p> </p>
+<p>Eu tenho uma terrível dor de cabeça ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_LDF5A_A2_Fana]ou[%dic:STR_DIC_M_LDF5A_A4_Fana] e obter [%dic:STR_DIC_I_quest_13550a]. Leve para [%dic:STR_DIC_N_LDF5A_Raten_E].</p>[%collectitem]</step>
+</steps>
+<p>A lavagem cerebral pode ser removida com o pacote de incenso da dragão. Elimine os escoteiros ou soldados do dragão e obtenha o pacote de incenso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Asir disse que o dragão está forçando muitos reianos a sofrer lavagem cerebral e que pode haver uma possibilidade de neutralizar os efeitos da lavagem cerebral com um saco de incenso de Jormungard.</p>
+<p> </p>
+<p>Depois que você matou o ranking Jormungand Dragonbound, você trouxe Laten the Jormungand Incense Saco quando Laten sofreu uma lavagem cerebral e viu um sinal de que os efeitos da lavagem cerebral estavam desaparecendo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

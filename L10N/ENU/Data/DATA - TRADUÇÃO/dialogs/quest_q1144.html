@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este clima é adequado para um ensopado de abóbora quente. As abóboras da fazenda de Belbua são as melhores.</p>
+<p> </p>
+<p>Ah, apenas me ocorreu que não sei o que aconteceu com Belbua.</p>
+<p> </p>
+<p>Não ouvimos falar dele há muito tempo. Os moradores estão preocupados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Abóboras ...."</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitas abóboras maduras na fazenda de Belbua no momento.</p>
+<p> </p>
+<p>Belbua não está lá. Nola muito ocupado. Não é possível colher abóboras. As abóboras não podem estragar.</p>
+<p> </p>
+<p>Você poderia colher abóboras na fazenda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve, Daeva. Você tem abóboras com você?</p>
+<p> </p>
+<p>Alguns têm medo do espantalho na fazenda de Belbua e não vão para lá.</p>
+<p> </p>
+<p>Mas Nola é um belo espantalho. As pessoas devem apenas prestar menos atenção ao que está do lado de fora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu colhi suas abóboras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>A qualidade é muito boa.</p>
+<p> </p>
+<p>Eles foram obviamente colhidos na hora certa.</p>
+<p> </p>
+<p>Belbua ficará satisfeito quando ele chegar. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A qualidade é muito boa.</p>
+<p> </p>
+<p>Eles foram obviamente colhidos na hora certa.</p>
+<p> </p>
+<p>Belbua ficará satisfeito quando ele chegar. Muito obrigado.</p>
+<p> </p>
+<p>Eu pensei que não poderia comer nenhum ensopado com as abóboras da fazenda de Belbua este ano ...</p>
+<p> </p>
+<p>Aqui está o dinheiro para as abóboras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete abóboras e leve -as para [%dic:STR_DIC_LA76].</p>[%collectitem]</step>
+</steps>
+<p>NOLA O Espantalho quer que você colhe abóboras da fazenda de Belbua. Leve algumas abóboras para [%dic:STR_DIC_LA76] Antes de apodrecer.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realizou o pedido de Nola e vendeu abóboras para [%dic:STR_DIC_LA76] Antes que eles pudessem estragar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

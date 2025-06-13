@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A morte de Tiamat não significa que capturamos Tiamaranta.</p>
+<p> </p>
+<p>Muitas das tropas de Tiamat permanecem, e temos que combatê -las. A batalha contra os Elyos ainda não venceu ainda.</p>
+<p> </p>
+<p>Precisamos controlar a situação em Tiamaranta para controlar rapidamente, para que possamos voltar toda a atenção para Katalam.</p>
+<p> </p>
+<p>Por favor, vá e consulte o governador Skafir. Parece que ela tem algo para lhe dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], a batalha em Tiamaranta para continuará por enquanto.</p>
+<p> </p>
+<p>A morte do Balaur Lord não significa que tudo acabou.</p>
+<p> </p>
+<p>As batalhas ainda estão acabando para acabar com as tropas restantes da Guilda de Tiamat.</p>
+<p> </p>
+<p>Isso também se aplica aos olhos de Tiamaranta. Apenas me ocorreu que você nunca esteve nos olhos de Tiamaranta.</p>
+<p> </p>
+<p>Vá lá e ajude nosso povo.</p>
+<p> </p>
+<p>Vá ao olho de Tiamaranta e conheça [%dic:STR_DIC_N_Grimron].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O governador Skafir emitiu ordens.</p>
+<p> </p>
+<p>As lutas nos olhos de Tiamaranta continuam, mas a resistência de Tiamat Legion em breve será quebrada.</p>
+<p> </p>
+<p>O Balaur está lutando mais forte no caminho externo. Isso torna nosso avanço mais difícil.</p>
+<p> </p>
+<p>Mate os membros restantes da Guilda Tiamat e ajude a garantir o caminho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [%dic:STR_DIC_E_Q12068]?</p>
+<p> </p>
+<p>Todo mundo está esperando por você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Obrigado a você, [%username], nossos soldados foram capazes de continuar seu avanço.</p>
+<p> </p>
+<p>Vou contar a Skafir sobre isso.</p>
+<p> </p>
+<p>Seria bom se a batalha terminasse em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Udvi].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Grimron].</p></step>
+<step><p visible="[%9]">Eliminar o [%dic:STR_DIC_E_Q12068]([%11]/5).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_Grimron].</p></step>
+</steps>
+<p>Vá aos olhos de Tiamaranta, encontre Grimron e mate o Drakan lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Dragan, a batalha em Tiamaranta ainda não havia terminado. Ele pediu para você ir ver o governador Skafir.</p>
+<p> </p>
+<p>Skafir lhe disse que a batalha contra as tropas restantes da Guilda de Tiamat ainda estava acontecendo. Ela pediu para você ir ao olho de Tiamaranta por esse motivo.</p>
+<p> </p>
+<p>Você conheceu Grimron nos olhos de Tiamaranta e eliminou os soldados de Drakan a seu pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

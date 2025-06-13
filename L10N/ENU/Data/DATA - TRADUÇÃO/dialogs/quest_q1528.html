@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este couro parece estranho. Não se parece com o couro de mouros.</p>
+<p> </p>
+<p>A cor está errada. Normalmente, há um brilho vermelho, mas esse é azulado.</p>
+<p> </p>
+<p>Tem certeza de que pegou o mouros de malhada preta?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"É couro de mouros de cloding."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você insistir. Eu acredito em você. Ainda assim, isso é estranho. Não é apenas a cor. Até a textura está errada.</p>
+<p> </p>
+<p>O couro de minhoca é suave e macio, mas isso é duro e áspero. No entanto, ele tem o padrão circular de molhos de malha ....</p>
+<p> </p>
+<p>Estou confuso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu também sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que Agrints apareceram no Grove Decayed. Talvez eles tenham afetado as molhos no pântano de lágrimas pretas.</p>
+<p> </p>
+<p>Muita estranheza por aqui. Não sei como lidar com isso.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Aphesius]deve ser informado sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Leve este couro para [%dic:STR_DIC_N_Aphesius] e diga a ele onde você conseguiu.</p>
+<p> </p>
+<p>Ele é especialista em ecologia e sabe o que fazer com esse tipo de problema.</p>
+<p> </p>
+<p>Isso é importante. Obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece um plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não posso ir a Aphesius.</p>
+<p> </p>
+<p>Eu já relatei muitas coisas estranhas que acabaram sendo normais.</p>
+<p> </p>
+<p>Não posso lidar com ser humilhado assim novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pode fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo. Que dia lindo.</p>
+<p> </p>
+<p>Espero que você não esteja aqui com uma má notícia.</p>
+<p> </p>
+<p>Vou lidar com isso se for. Não pode ser pior do que um portão de abismo aberto, pode?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Não, não pior do que isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o couro de mouros? Não pode ser.</p>
+<p> </p>
+<p>Sua cor está errada e é muito difícil para couro de mouros.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Senemonea]precisa ver isso. Ela está na selva de Poya. Ela analisará o couro e dirá o que há de errado com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Ok, a selva de Poya é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estive às minhas ouvidas com as coisas para pesquisar.</p>
+<p> </p>
+<p>Há muito o que fazer que nada é feito.</p>
+<p> </p>
+<p>Enfim, o que posso fazer por você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">"É esse estranho couro de minhoca ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o couro de mouros?</p>
+<p> </p>
+<p>Se realmente é, parece algum tipo de mutação.</p>
+<p> </p>
+<p>Não sei dizer com certeza até analisá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Aphesius].</p></step>
+<step><p visible="[%3]">Pegue o estranho couro de minhocas para [%dic:STR_DIC_N_Senemonea].</p></step>
+</steps>
+<p>Terentius diz que o couro do mouco se tornou estranho e quer que Aphesius saiba sobre isso. Mostre o couro do mouco de Aphesius e peça sua opinião.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Terentius disse que o couro do mouco se tornou estranho e pediu que você o mostrasse a Aphesius. Quando Aphesius viu o couro, ele disse que o ecologista senemonea deve ser informado.</p>
+<p> </p>
+<p>Quando você mostrou o couro para Senemonea, ela disse que parecia mutagem, mas precisava estudá -lo para ter certeza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

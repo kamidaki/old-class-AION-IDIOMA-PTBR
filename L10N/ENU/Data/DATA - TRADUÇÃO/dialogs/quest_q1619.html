@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provavelmente acha que é absurdo, [%username], mas tenho boas razões para acreditar que o assunto do teste preenchido feita pelos lefaristas está no abismo.</p>
+<p> </p>
+<p>Eu ouvi os pesquisadores conversando. Eles disseram que estão experimentando[%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae]no lago Asteria e Azoturan!</p>
+<p> </p>
+<p>RM-114C deve ser o assunto do teste. Precisamos fazer algo sobre isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tem certeza?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei o que ouvi.</p>
+<p> </p>
+<p>Você precisa ir para Azoturan e matar [%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae]. E traga de volta algumas amostras de células.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para Reshanta através do gateway do Abismo. O lago Asteria está na parte superior do abismo.</p>
+<p> </p>
+<p>Use o fragmento oriental de Latesran. Isso facilitará as coisas.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae], colete algumas células, retorne ao santuário e entregue -as ao Xenophon. Desejo -lhe boa sorte, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer que todo o seu trabalho em asmodae seja em vão, [%username]?</p>
+<p> </p>
+<p>Se você acha que a honra não é importante, não tenho mais nada a dizer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Acho que vou viver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nerison me disse que você foi a Reshanta. Eu rezei para que você matasse RM-114C e voltasse com segurança.</p>
+<p> </p>
+<p>Lady Ariel deve ter ouvido minha oração.</p>
+<p> </p>
+<p>Você conseguiu algumas células de [%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Recém -saído do corpo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não foi para Reshanta?</p>
+<p> </p>
+<p>Ou você não poderia se livrar de [%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae] Antes de voltar?</p>
+<p> </p>
+<p>De qualquer maneira, eu esperava mais de você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você os terá na próxima vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]! Quando dei a você a missão de obter um relatório de pesquisa, eu nunca esperava que isso se tornasse um projeto tão grande.</p>
+<p> </p>
+<p>Você merece todo o crédito por derrubar os revolucionários lefaristas. O governador Fasimedes tem prestado atenção a esta missão. Vou contar a ele do seu sucesso.</p>
+<p> </p>
+<p>Por favor, receba essa recompensa por seus esforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá ao lago Asteria para coletar as células de [%dic:STR_DIC_M_Ab1_PerfectWa_40_Ae] e dê -los a [%dic:STR_DIC_N_Xenophon].</p>[%collectitem]</step>
+</steps>
+<p>Nerison disse que encontrou evidências de que os lefaristas estão executando um experimento no assunto do teste preenchido no abismo.  Vá para o lago Asteria, mate RM-114C e obtenha suas células.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nerison disse que há um assunto de teste preenchido chamado RM-114C feito pelos lefaristas no abismo.</p>
+<p> </p>
+<p>Você foi ao lago Asteria na camada superior de Reshanta, matou RM-114C e levou suas células para Xenophon como evidência. Ele o elogiou por seu excelente trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

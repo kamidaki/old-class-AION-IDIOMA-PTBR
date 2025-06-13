@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], coleta de informações é o número um prioridade.</p>
+<p> </p>
+<p>Não sabemos por que o louco Krall da tribo Kishar estão aqui.</p>
+<p> </p>
+<p>Só podemos fazer suposições ...</p>
+<p> </p>
+<p>Talvez estamos perdendo alguma coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você não está em nenhum estado para esmagar."</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi informações de Mabangtah.</p>
+<p> </p>
+<p>Parece que os Kishar Krall estão confusos pelo poder de Aether.</p>
+<p> </p>
+<p>Houve uma explosão durante o processo de refinamento do Odium e o Krall foi exposto a muito.</p>
+<p> </p>
+<p>Temos que investigar isso.</p>
+<p> </p>
+<p>Eliminar [%dic:STR_DIC_M_KrallWarriorMMad_all] e reunir evidências.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você encontrou prova de que o Kishar Krall está dopado no Aether?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Vou enviar as peças de ódio quebradas para análise.</p>
+<p> </p>
+<p>[%username], você nos forneceu informações muito importantes.</p>
+<p> </p>
+<p>Heiron é salvo!</p>
+<p> </p>
+<p>Vou relatar em santuário tudo sobre suas ações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_KrallWarriorMMad_all] e trazer de volta evidências ligadas ao Aether a [%dic:STR_DIC_N_Atalante].</p>[%collectitem]</step>
+</steps>
+<p>O Krall, na vila de Kishar, foi enlouquecido por um vício em Aether. Derrote -os para garantir a segurança do Heiron e trazer de volta evidências conectadas ao Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atalante recebeu as informações de que a tribo Kishar ficou confundida por Aether por causa de uma explosão que ocorreu durante o refinamento do Odium.</p>
+<p> </p>
+<p>Ela pediu que você analisasse isso derrotando Krall fanatic e obtendo provas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

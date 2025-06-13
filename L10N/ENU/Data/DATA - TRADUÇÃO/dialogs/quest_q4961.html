@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está interessado em se tornar um especialista em alfaiataria? Você tem talento e paciência para o ofício.</p>
+<p> </p>
+<p>Quem sabe? Algum dia você pode me suceder como um mestre de alfaiataria. Tudo isso pode ser seu! E eu poderia voltar para o campo finalmente ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Existe um teste?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, é claro que há um teste ... você acha que deixamos apenas alguém se tornar um especialista? Você deve provar que está qualificado para a adaptação do especialista antes de se tornar um.</p>
+<p> </p>
+<p>Por favor, faça a faixa nobre de Vidar e traga para mim. Eu acho que você pode fazer isso, [%username].</p>
+<p> </p>
+<p>O que você acha? Você vai tentar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A faixa nobre de Vidar é semelhante a [%dic:STR_DIC_E_Q2983], mas mais detalhado.</p>
+<p> </p>
+<p>Não é fácil. Mas não se preocupe-se você é paciente e continuar tentando, você descobrirá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou costurar entre matar Balaur."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer se tornar um especialista em alfaiataria?</p>
+<p> </p>
+<p>Eu sei que você não está interessado em títulos ou honras, mas pensei que você faria o trabalho, [%username].</p>
+<p> </p>
+<p>Tornar-se um especialista em alfaiataria não significa que você deve me suceder-mas você pode levar uma vida confortável aqui em Pandaemonium.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso, Zyakia-obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]!</p>
+<p> </p>
+<p>Como está o nobre faixa de Vidar?</p>
+<p> </p>
+<p>Você ainda não conseguiu, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho! Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso ter sido apressado. Eu espero muito de você. Mas não coloque suas penas em um babado.</p>
+<p> </p>
+<p>Tente relaxar ... leve seu tempo. Você ainda fará o nobre faixa nobre de Vidar.</p>
+<p> </p>
+<p>Mesmo se você falhar no começo, você aprenderá algo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Respiração profunda ... estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já terminou?</p>
+<p> </p>
+<p>Oooh! É impecável. Olhe para aquela tecelagem-que costura!</p>
+<p> </p>
+<p>Talvez você seja o único a me suceder. Aquela pequena casa de campo está se aproximando ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça a faixa nobre de Vidar e leve para [%dic:STR_DIC_N_Zyakia].</p>[%collectitem]</step>
+</steps>
+<p>Zyakia perguntou se você quer ser um especialista em alfaiataria e disse para você fazer a faixa nobre de Vidar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Zyakia disse que você tem talento para alfaiataria. Ela pediu que você testasse sua habilidade fazendo a faixa nobre de Vidar.</p>
+<p> </p>
+<p>Quando você fez um, ela ficou impressionada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

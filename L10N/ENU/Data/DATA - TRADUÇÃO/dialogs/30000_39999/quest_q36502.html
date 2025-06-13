@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Procurado:[%dic:STR_DIC_M_LF4_DayQ_ShulackPr_52_An]</p>
+<p> </p>
+<p>2. Charge: Tentativa de assassinato por envenenamento</p>
+<p></p>
+<p>3. Detalhes do crime: Venomiki foi observado por testemunhas tentando derramar veneno no abastecimento de água. Ele fugiu da cena do crime na queda de Sun e não foi visto desde então. Último paradeiro conhecido: Vila de Rokoros.</p>
+<p></p>
+<p>Qualquer pessoa que apreende ou assassinado Venomiki receberá uma recompensa substancial.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece que vou caçar Shulack."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Fortuneer.</p>
+<p> </p>
+<p>Como foi sua busca pelo fabricante de venenos? A recompensa é mais alta se você o trouxe de volta vivo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele não viria pacificamente. Então ele está morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que devemos nos considerar sortudos por Venomiki não ter sucesso em seu plano. Todos nós tiramos nossa água daquela cachoeira.</p>
+<p> </p>
+<p>Você sabe, fortuneer, eu simplesmente não entendo isso rancor que os shulacks têm contra os Elyos. Envenenando nosso suprimento de água? Isso é monstruoso. Mas eu suspeito que o Balaur ou os asmodianos o colocam nisso. Nenhum Shulack é tão perverso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">[%dic:STR_DIC_M_LF4_DayQ_ShulackPr_52_An]tentou derramar veneno no suprimento de água. Localize e assassinato este Shulack ([%2]/1).</p></step>
+<step><p visible="[%15]">Relate seus resultados para [%dic:STR_DIC_E_36500].</p></step>
+</steps>
+<p>A Guilda Fortuneers enviou a você uma proclamação "desejada morta ou morta". Siga todas as instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda Fortuneers enviou uma proclamação "desejada morta ou morta".</p>
+<p> </p>
+<p>Você assassinou Venomiki, que era procurado por tentativa de assassinato por envenenamento. O capitão lhe deu uma recompensa generosa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

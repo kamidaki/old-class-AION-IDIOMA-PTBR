@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que você é bom, [%username].</p>
+<p> </p>
+<p>Mas quão bom você é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Você é bom o suficiente para retomar a fortaleza da Asteria para nós?</p>
+<p> </p>
+<p>Você sabe como é: homens não suficientes, sem reforços, seus Daevas freelancers são tudo o que temos.</p>
+<p> </p>
+<p>Por isso, planejamos estratégias para recuperar a fortaleza, mas o problema é sempre o número de tropas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh, eu já estive lá antes de tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, talvez você tenha uma ideia de qual é o nosso plano.</p>
+<p> </p>
+<p>Vamos atingir -os em vários lugares ao mesmo tempo, dividindo suas tropas para que elas sejam mais fáceis de lidar.</p>
+<p> </p>
+<p>Obviamente, não podemos fazer isso sem ajuda voluntária. Você acha que pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, aqui está a sua parte do plano: você vai se livrar de suas armas. Eles não vão lutar sem armas.</p>
+<p> </p>
+<p>Deixe -me colocar mais concretamente: destruir [%dic:STR_DIC_M_2807_all], e trazer [%dic:STR_DIC_I_QUEST_2807a]para mim.</p>
+<p> </p>
+<p>Somente quando a fortaleza é vulnerável, obviamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você acha que é bom demais para trabalhar conosco ou o quê?</p>
+<p> </p>
+<p>O que mais você vai fazer aqui, mas lutar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu esteja aqui apenas para apreciar o cenário."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]. Você fez isso?</p>
+<p> </p>
+<p>Você parece um pouco cansado. Vamos torcer para que seja um bom sinal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as armas, como você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>"Como você perguntou?" Não há armas aqui.</p>
+<p> </p>
+<p>Eu acho que você deve ter se cansado apenas tirando uma soneca.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são as armas, tudo bem. Olhe para aqueles peças de lixo de Ellie vistosas.</p>
+<p> </p>
+<p>Todo talento, sem mordida.</p>
+<p> </p>
+<p>Enfim, aqui está a sua recompensa, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Esmague o [%dic:STR_DIC_M_2807_all], junte suas armas e retorne a [%dic:STR_DIC_N_Arnora].</p>[%collectitem]</step>
+</steps>
+<p>Ajude a recuperar a Fortaleza de Asteria. Derrote a guarnição de Elyos que aparece quando a fortaleza é vulnerável, pegue suas armas e retorne a Arnora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arnora pediu que você se juntasse aos ataques à Fortaleza de Asteria. Seu trabalho era pegar as armas do inimigo.</p>
+<p> </p>
+<p>Você derrotou os Elyos, pegou suas armas e ganhou sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

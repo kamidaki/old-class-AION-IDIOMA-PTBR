@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos informantes relataram movimentos suspeitos no armazém inimigo de Beritra.</p>
+<p> </p>
+<p>Eles descobriram outra ordem direcionada à mesma Guilda, e eu não tenho idéia do que está acontecendo.</p>
+<p> </p>
+<p>[%username], por favor, infiltrar -se no armazém inimigo e descubra se algo suspeito aconteceu.</p>
+<p> </p>
+<p>A situação não é extremamente clara.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É realmente curioso que dois conjuntos diferentes de ordens sejam enviados para a mesma tropa.</p>
+<p> </p>
+<p>Algo estranho parece estar acontecendo entre os Balaur.</p>
+<p> </p>
+<p>Precisamos de mais evidências e uma investigação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que existem infiltradores de inteligência de Beritra?</p>
+<p> </p>
+<p>É terrível que as pessoas se enganassem em um campo de batalha como esse.</p>
+<p> </p>
+<p>Talvez possamos controlar o Balaur mais facilmente do que pensávamos.</p>
+<p> </p>
+<p>Obrigado por esta boa informação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5B_f4_Vri2_Poison_As_SN_NmdQ_65_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard19_L]%.</p></step>
+</steps>
+<p>Procure soldados suspeitos de Beritra no campo do exército de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pormio pediu que você investigasse os movimentos suspeitos que acredita que o campo inimigo do Exército de Beritra está fazendo.</p>
+<p> </p>
+<p>No acampamento inimigo, você descobriu e eliminou agentes suspeitos de inteligência de Beritra. Quando você relatou, você foi agradecido pelas notícias de boas -vindas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

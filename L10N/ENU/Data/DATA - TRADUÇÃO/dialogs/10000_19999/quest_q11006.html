@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é maravilhoso? Foi -me pedido para fazer algo mais do que apenas levar mensagens! Vou verificar os obeliscos perto da floresta.</p>
+<p> </p>
+<p>Como essa é uma área importante de coleta de aether, os obeliscos precisam ser mantidos com cuidados especiais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bom para você, Clodia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer me ajudar?</p>
+<p> </p>
+<p>Encontraremos traços na água se o obelisco estiver funcionando corretamente, para que eu possa lhe dar algumas garrafas de vidro para desenhar água do[%dic:STR_DIC_QW_LF4_SZ_A1_Q1] e o [%dic:STR_DIC_W_LF4_SZ_A5].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, poderíamos detectar os obeliscos e examiná -los individualmente, mas dessa maneira é muito mais simples.</p>
+<p> </p>
+<p>Vamos fazê -los um de cada vez, tudo bem? Dessa forma, posso verificar a primeira garrafa de água enquanto você está recebendo a próxima.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pensou nisso sozinho?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é bom. Eu queria sujar minhas mãos.</p>
+<p> </p>
+<p>Prática na experiência! Isso faz um verdadeiro Daeva da vida!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você os entende, Clodia!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido, [%username]. Estou tão feliz que você esteja me ajudando.</p>
+<p> </p>
+<p>Hmmm, vou pegar a primeira garrafa para testar enquanto você usa a vazia no[%dic:STR_DIC_W_LF4_SZ_A5].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Lá eu vou!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A primeira garrafa de água produziu exatamente os resultados que eu esperava. Felizmente, o segundo será o mesmo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Vamos descobrir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabia que eu treinei por anos até que eu pudesse medir a concentração de Aether na água?</p>
+<p> </p>
+<p>E é uma coisa boa! Eu posso dizer que também há uma concentração acima da média de Aether nesta garrafa. Os obeliscos em ambos os lugares parecem estar funcionando perfeitamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encha uma garrafa de vidro vazia com água do[%dic:STR_DIC_QW_LF4_SZ_A1_Q1].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Clodia].</p></step>
+<step><p visible="[%6]">Encha uma garrafa de vidro vazia com água do[%dic:STR_DIC_E_11006].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Clodia].</p></step>
+</steps>
+<p>Auxiliar o Clodia na verificação se os obeliscos inggison estão funcionando corretamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Clodia estava empolgado em verificar se os obeliscos instalados perto da floresta estavam funcionando corretamente.</p>
+<p> </p>
+<p>Você a ajudou colecionando amostras de água do calma Coração e Dimaia Fountainhead. Ela disse que a concentração de Aether nessas amostras estava acima da média e que os obeliscos estavam funcionando lindamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

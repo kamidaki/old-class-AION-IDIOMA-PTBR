@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você vê vários cadáveres no espaço vazio.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gostaria de saber o que aconteceu aqui?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>(A julgar pelo equipamento, são ladrões graves que vieram saquear tesouros do cofre do templo.)</p>
+<p> </p>
+<p>(O mais bem vestido deve ser o chefe dos ladrões de túmulos.)</p>
+<p> </p>
+<p>(Após uma inspeção mais detalhada, você anota uma bolsa de couro na mão. Ele deve ter apreciado muito esse item.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Vamos ver o que está dentro ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Dentro da bolsa há um diário e um pequeno brinquedo que se parece com uma roda de metal.)</p>
+<p> </p>
+<p>(A revista contém uma lista de tesouros atreianos famosos e seus locais. Alguns dos itens têm um X ao lado deles.)</p>
+<p> </p>
+<p>(Um desses X está ao lado das palavras "Silver Blade Rotan". O pequeno brinquedo em forma de roda deve ser este item. Você pega o brinquedo de Rotan da bolsa do ladrão de sepultura e o coloca no seu cubo.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o brinquedo de Rotan de um corpo de ladrão morto.</p></step>
+</steps>
+<p>Corpos mortos de ladrões de sepulturas atingem o espaço aberto diante do portão de pedra. Pesquise -os para encontrar um brinquedo de rotan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vários cadáveres estavam espalhados na passagem para o cofre do templo. Você obteve um brinquedo que pode convocar Rotan do corpo do líder de ladrões graves.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

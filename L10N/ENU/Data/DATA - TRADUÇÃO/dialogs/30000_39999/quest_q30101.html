@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por vir, [%username]. Eu tenho um pedido urgente.</p>
+<p> </p>
+<p>Você já ouviu falar disso ... Tribo de sobreviventes em Balaurea? A tribo Reian, eles são chamados.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu já ouvi falar deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você provavelmente está ciente, a tribo Reian não é muito gentil para a nossa espécie. Eles não são abertamente hostis, é claro, mas também não são abertamente favoráveis. Devemos mudar isso.</p>
+<p> </p>
+<p>Nós e os Reians vemos do mesmo estoque, e o Balaur somos um inimigo comum para nós dois. Com muito o que fazer em Gelkmaros, melhorar nossos laços com os Reians significa muito.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Concordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Acredito que o primeiro passo que devemos dar é oferecer nossa assistência com seus problemas. Não podemos pedir ajuda até que o ofereçamos.</p>
+<p> </p>
+<p>Enviar mais de uma pessoa para ajudar apenas desperta suspeitas e, se eu precisar escolher apenas um, prefiro selecionar a única pessoa que eu conheço pode fazer o trabalho.</p>
+<p> </p>
+<p>Sem dúvida, você vê o que estou conseguindo, [%username]. Você vai fazer isso por mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Vá para o Marayas Wilds e encontre -se com o Reian conhecido como[%dic:STR_DIC_N_Aglauros]. Segundo Centurion Taustir, ele é parcial em cooperar com os asmodianos se isso significa derrotar o Balaur e seus seguidores.</p>
+<p> </p>
+<p>Ajude Agulauros com o que puder, o máximo que puder. Ganhar sua confiança agora nos ajudará no futuro-e direta e indiretamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece alheio à importância do nosso relacionamento com a tribo Reian, [%username].</p>
+<p> </p>
+<p>Você é dispensado do dever. Deixe -me agora. Volte quando tiver recuperado seus sentidos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm? O que você quer, Asmodian? Nada de bom, suponho.</p>
+<p> </p>
+<p>Continue, cuspe. Você deve querer algo se estiver aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu quero ajudá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm .... sem dúvida você tem um motivo oculto, mas quem não tem?</p>
+<p> </p>
+<p>Vou pegar toda a ajuda que puder. Com enxames de dragão não muito longe daqui, não tenho escolha.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Aglauros].</p></step>
+</steps>
+<p>As relações com a tribo Reian devem ser melhoradas para que os asmodianos assumam Gelkmaros. Encontre Aglauros no deserto de Marayas e ofereça sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valetta disse que as relações com a tribo Reian devem ser fortalecidas antes que seja possível conquistar Gelkmaros.</p>
+<p> </p>
+<p>Ela instruiu você a se encontrar com um Reian chamado Agulauros e oferecer sua ajuda.</p>
+<p> </p>
+<p>Você foi ver Aglauros e ele aceitou sua ajuda para derrotar o dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

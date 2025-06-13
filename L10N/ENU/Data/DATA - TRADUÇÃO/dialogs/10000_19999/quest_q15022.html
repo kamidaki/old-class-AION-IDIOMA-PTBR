@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15022</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um túmulo não marcado na tribo da vila da Black Fins.</p>
+<p> </p>
+<p>Estou certo de que este túmulo abriga uma história interessante ... positiva.</p>
+<p> </p>
+<p>De qualquer forma, uma espada enorme é empurrada no chão em frente ao túmulo, como uma lápide.</p>
+<p> </p>
+<p>É tão primitivo e tão bonito!</p>
+<p> </p>
+<p>Você poderia me pegar isso [%dic:STR_DIC_I_quest_15022a]Da próxima vez que você estiver no Black Fin Village? Você receberá uma recompensa decente por isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma arma pequena que é fácil de empunhar é extremamente prática, é claro, mas uma grande e poderosa arma parece muito mais ameaçadora.</p>
+<p> </p>
+<p>Você terá que ter isso em mente se quiser se tornar um Daeva distinto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a espada enferrujada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Então esta é a espada abandonada ...</p>
+<p> </p>
+<p>Hmm ... ele tem alguns remendos enferrujados, mas seu proprietário anterior parece ter valorizado.</p>
+<p> </p>
+<p>É peculiar, mas você pode ver à primeira vista que costumava fazer parte de um conjunto ... agora esta é a única parte que resta.</p>
+<p> </p>
+<p>Você se saiu muito bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou falando sobre a espada enferrujada na vila do Black Fins.</p>
+<p> </p>
+<p>Traga para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Então esta é a espada abandonada ...</p>
+<p> </p>
+<p>Hmm ... ele tem alguns remendos enferrujados, mas seu proprietário anterior parece ter valorizado.</p>
+<p> </p>
+<p>É peculiar, mas você pode ver à primeira vista que costumava fazer parte de um conjunto ... agora esta é a única parte que resta.</p>
+<p> </p>
+<p>Você se saiu muito bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, eu gostaria de ter as duas espadas do set ... mas já estou emocionado apenas por possuir este.</p>
+<p> </p>
+<p>Estou profundamente grato por você ter arriscado o perigo e me trouxe a arma.</p>
+<p> </p>
+<p>Agora posso adicionar outra arma à minha coleção.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_quest_15022a]na vila do Black Fin e reportar [%dic:STR_DIC_N_LF5_Banetta_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Banetta_E].</p></step>
+</steps>
+<p>Obtenha a espada enferrujada na vila do Black Fins e leve -a para Vaneta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vaneta está muito interessada em uma espada abandonada, que deveria estar no meio da vila das Finas Negras.</p>
+<p> </p>
+<p>Você puxou a espada de um túmulo não marcado na vila do Black Fins e a trouxe para Vaneta, que ficou muito feliz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

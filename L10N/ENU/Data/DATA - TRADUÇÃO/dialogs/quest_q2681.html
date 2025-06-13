@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, meu estômago ....</p>
+<p> </p>
+<p>Ah, olá de novo, [%username]. Desculpe, estou com muita dor recentemente. Meu estômago, quero dizer.</p>
+<p> </p>
+<p>Só não estou recebendo vegetais suficientes ultimamente. Meu corpo está reagindo mal à falta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso parece desconfortável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bastante. Eu tentei repetidamente encontrar alguns vegetais por aqui, mas tudo o que posso encontrar é Hasia, o que realmente não concorda comigo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não há vegetais a serem tomados?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Há alguns[%dic:STR_DIC_DF3_vegetable_d_n_c_30a]No Mosbear Snowfield, mas não tenho tempo para sair e colecioná -lo.</p>
+<p> </p>
+<p>Eu não acho que você tenha tempo para ir, não é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Delicioso.</p>
+<p> </p>
+<p>Cuidado com os moscas perto de lá. Eles também comem o Rogen e podem se tornar possessivos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Esta não é uma grande missão, nem é algo que afeta a todos. Apenas eu. Eu e meu pobre estômago.</p>
+<p> </p>
+<p>De qualquer forma, obrigado por me ouvir, pelo menos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Sinto como se estivesse esperando desde o início da Guerra do Milênio!</p>
+<p> </p>
+<p>Você encontrou o Rogen?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez, mas não os trouxe de volta? Devo ser franco-essa é uma escolha estranha.</p>
+<p> </p>
+<p>Que tal você voltar novamente quando os tiver?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou tão satisfeito. Essa dor passou por muito tempo.</p>
+<p> </p>
+<p>Muito obrigado, [%username]. Não posso te dizer o quanto eu aprecio isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_DF3_vegetable_d_n_c_30a] e trazê -lo para [%dic:STR_DIC_N_Alfgeir].</p>[%collectitem]</step>
+</steps>
+<p>Reúna Rogen que cresce no campo de neve Mosbear e traz -o para Alfgeir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alfgeir disse que tem uma dor de estômago há um tempo porque não conseguiu comer vegetais suficientes.</p>
+<p> </p>
+<p>Ele disse que Hasias cresce na área, mas eles incomodaram ainda mais seu estômago, então ele perguntou se você iria reunir algum rogen para ele, o que você fez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

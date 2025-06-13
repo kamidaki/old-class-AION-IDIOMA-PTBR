@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q28617</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Argh ... essa dor de cabeça é ...</p>
+<p> </p>
+<p>Eu faria qualquer coisa para não ficar mais presa neste pesadelo.</p>
+<p> </p>
+<p>Você poderia por favor me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é a mensagem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Olha em volta e começa a sussurrar.) Estou sofrendo de pesadelos terríveis há algum tempo.</p>
+<p> </p>
+<p>Nesses sonhos, eu vejo ... Kaliga Manor ... Sim, acho que é a mansão. E estou falando de Kaliga, o juiz das sombras.</p>
+<p> </p>
+<p>Eu provavelmente deveria ver meu pesadelo e me livrar da Kaliga se eu quiser que meu tormento termine. Mas estou com muito medo.</p>
+<p> </p>
+<p>Você poderia acabar com esse pesadelo para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, estou muito grato!</p>
+<p> </p>
+<p>Eu já tenho sofrido muito com esse pesadelo, e agora eu deveria entrar [%dic:STR_DIC_W_IDCromede] e derrotar alguém ... eu simplesmente não entendo.</p>
+<p> </p>
+<p>Disseram -me que Bridget poderia ajudar as pessoas a se livrar de seus pesadelos.</p>
+<p> </p>
+<p>Por favor, elimine [%dic:STR_DIC_M_IDCromede_Named_Judge_38_An]O mais rápido possível e pôr um fim a esse pesadelo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não ... como isso é possível ...</p>
+<p> </p>
+<p>Como eu adoraria dormir em paz apenas uma vez ...</p>
+<p> </p>
+<p>Por favor, volte para o caso de você mudar de idéia. Eu ficaria muito grato.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sério? Hmm."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sobreviveu ao pesadelo?</p>
+<p> </p>
+<p>Por favor, me diga o que aconteceu com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho confirmação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que matou Kaliga e viu o fim do pesadelo?</p>
+<p> </p>
+<p>Por fim, finalmente posso dormir em paz novamente.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Talvez você deva descansar por um tempo. Tenho certeza que você deve estar exausto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Digitar [%dic:STR_DIC_W_IDCromede] e eliminar [%dic:STR_DIC_M_IDCromede_Named_Judge_38_An]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Neinhalt].</p></step>
+</steps>
+<p>Karlatu pediu que você acabasse com o pesadelo sinistro. Entre no pesadelo e derrote a Kaliga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Karlatu, o pesadelo só poderia ser acabado se você o visse até o final.</p>
+<p> </p>
+<p>Você entrou no pesadelo e se livrou da Kaliga. Karlatu o recompensou quando você voltou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

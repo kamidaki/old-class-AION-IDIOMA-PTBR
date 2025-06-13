@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_W_DF1A_10]é uma relíquia deixada para trás pelo Balaur, que costumava governar este lugar.</p>
+<p> </p>
+<p>O altar tem seu próprio poder, mesmo agora. Afeta plantas e criaturas que se aproximam muito.</p>
+<p> </p>
+<p>Somente os coletores chegam perto dele agora-e eles, com extrema cautela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que se preocupar em ir?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma boa pesca perto do altar de Tiamat. Os coletores podem fazer um grande número de tempo, então há muitos que estão dispostos a correr o risco.</p>
+<p> </p>
+<p>Eles ignoram nossos avisos, vão pescar perto do altar e acabam sendo atacados por [%dic:STR_DIC_M_SlimeD_14_An] S.</p>
+<p> </p>
+<p>Como isso continua acontecendo, o Nokir decidiu que, como não podemos impedir que os coletores sejam[%dic:STR_DIC_W_DF1A_10].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece uma grande tarefa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, muito grande, e estou ocupado curando coletores tolos. Você limparia o [%dic:STR_DIC_M_SlimeD_14_An] S? Por favor?</p>
+<p> </p>
+<p>Se ignorarmos o problema, as vidas serão perdidas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso!</p>
+<p> </p>
+<p>Por favor, corra para o [%dic:STR_DIC_W_DF1A_10] e matar o [%dic:STR_DIC_M_SlimeD_14_An] está por perto.</p>
+<p> </p>
+<p>Lembre -se de ter cuidado com o veneno deles e que Azphel o proteja.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pense no efeito cascata que você vai causar recusando este trabalho.</p>
+<p> </p>
+<p>Peço que você reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto o cheiro de água estagnada ... você deve ter estado no[%dic:STR_DIC_W_DF1A_10].</p>
+<p> </p>
+<p>Você terminou o trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo trabalho! Obrigado.</p>
+<p> </p>
+<p>Os coletores ficarão satisfeitos quando ouvirem.</p>
+<p> </p>
+<p>Aqui está algo para o seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_SlimeD_14_An] S que ameaçam os coletores. ([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hunmir].</p></step>
+</steps>
+<p>Você ouviu que os coletores estavam sendo atacados por slimes perto do altar de Tiamat. Mate os slimes do arco -íris para que os coletores possam caçar sem se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hunmir estava preocupado com o fato de os coletores pescarem no altar de Tiamat estão sofrendo ataques com os slimes venenosos lá.</p>
+<p> </p>
+<p>Você foi ao altar e limpou a área de slimes arco -íris, depois voltou a Hunmir para dar a ele as notícias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

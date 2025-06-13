@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas uma razão me levou a Inggison-para descobrir um novo espírito que nenhum Daeva jamais viu.</p>
+<p> </p>
+<p>Do jeito que eu imagino, Balaurea tem criaturas diferentes da Elysea, então há uma boa chance de que Balaurea também tenha diferentes tipos de espíritos.</p>
+<p> </p>
+<p>Se eu pudesse encontrar um e aproveitar seu poder para o combate, serei a inveja de todo mestre de espírito daqui para o santuário. Eu serei uma lenda viva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você é seu maior admirador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sou tanto "vaidosa" como "autoconfiante". Se não tenho orgulho de mim mesmo, quem mais será?</p>
+<p> </p>
+<p>Então, você pode me ajudar? Preciso encontrar um determinado item para que eu possa começar.</p>
+<p> </p>
+<p>Como se costuma dizer, por trás de cada bom Daeva há uma sombra de Daeva. Você seria minha sombra neste?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que você concordasse. Você obviamente sabe como reconhecer o potencial da fama, [%username]. Fique comigo e eu colocarei seu nome nos livros, Daeva.</p>
+<p> </p>
+<p>O material que eu preciso é[%dic:STR_DIC_I_QUEST_30228a] S. Eles me permitirão convocar um espírito de árvore de um reino diferente.</p>
+<p> </p>
+<p>Você vai encontrar [%dic:STR_DIC_M_LF4_B_Xipeto_Stone_53_An] está no Scar Canyon. Peço que você seja o mais rápido possível-o tempo é essencial.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sticks? Bem, tudo bem ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessante .... Eu apenas assumi que você reconheceria meu grande talento e escolheria ajudar, sem perguntas.</p>
+<p> </p>
+<p>Você está desistindo de uma oportunidade maravilhosa de gravar seu nome nos livros de história de Atreia, Daeva.</p>
+<p> </p>
+<p>Mas se você está feliz permanecendo um simples[%userclass]Durante toda a sua vida, sinta -se livre ... viva isso. Vou contar tudo sobre como se sente a fama.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer minha própria história."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado pacientemente, [%username]. Eu sabia que você voltaria-eu esperava que fosse um pouco mais cedo.</p>
+<p> </p>
+<p>Eu pensei que você se aplicaria a essa tarefa, sabendo o quão importante eu ... é. Afinal, estou convocando um novo espírito e reescrevendo a história!</p>
+<p> </p>
+<p>Você recebeu meus galhos cinzentos do Hoodwink Gnarl para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito decepcionado, [%username]. Estou tentando abrir sozinhos os portões para o grande para sempre, afundar meu punho no mundo espiritual e apertar qualquer besta que eu puder!</p>
+<p> </p>
+<p>Mas você está muito ocupado para encontrar meu[%dic:STR_DIC_I_QUEST_30228a] S.</p>
+<p> </p>
+<p>O material está em todo o Scar Canyon ... cresce como sujeira em Asmodae. Está em todo lugar, tudo o que você precisa fazer é pegar um pouco para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então o que você precisa de mim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve funcionar perfeitamente, [%username]. Vou tentar convocar o espírito agora. Eu posso sentir a presença de algo ao nosso redor.</p>
+<p> </p>
+<p>(Ela segura o lote de galhos cinzentos nas duas mãos e nos cânticos um feitiço.)</p>
+<p> </p>
+<p>Hmmm ... nada está acontecendo. Deveria ter funcionado ... eu fiz tudo certo. Eu não entendo. Espírito de jeito, onde está você?!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30228a] e leve-os para [%dic:STR_DIC_N_Aiola].</p>[%collectitem]</step>
+</steps>
+<p>Tessa precisa de galhos cinzentos para convocar um novo espírito. Derrote o Hoodwink Gnarls e os leve para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tessa está tentando descobrir um novo espírito e precisa de um item especial para convocá -lo.</p>
+<p> </p>
+<p>Você derrotou os gnarls de Hoodwink e trouxe de volta os galhos cinzentos, conforme solicitado. No entanto, sua tentativa de convocar o espírito terminou no fracasso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

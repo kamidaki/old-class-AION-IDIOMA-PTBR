@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Exército de Beritra deseja mobilizar armas de cerco para ocupar esta base.</p>
+<p> </p>
+<p>De fato, no momento eles não podem usar as armas de cerco corretamente devido à falta de equipamento e munição. Quando eles finalmente obtêm seus suprimentos e nos atacam com as armas de cerco, no entanto, provavelmente não seremos capazes de afastar o ataque.</p>
+<p> </p>
+<p>Para proteger essa base sozinha, temos que impedir que o exército de Beritra use suas armas de cerco.</p>
+<p> </p>
+<p>Por favor, mate o [%dic:STR_DIC_E_LDF5b_F1_Vri]Transporte de suprimentos para as armas de cerco. Você só precisa nos ganhar um pouco de tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A arma de cerco da unidade de Beritra é poderosa.</p>
+<p> </p>
+<p>A resistência será muito difícil quando for ativada.</p>
+<p> </p>
+<p>Até o [%dic:STR_DIC_E_LDF5b_F1_Vri]Fica sem munição, a arma do cerco não deve ser usada.</p>
+<p> </p>
+<p>Tudo é para vitória.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>[%username], podemos respirar facilmente novamente graças à sua ajuda.</p>
+<p> </p>
+<p>Agora teremos paz de ataques de armas de cerco por um tempo.</p>
+<p> </p>
+<p>O próximo passo deve ser preparado agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_E_LDF5b_F1_Vri]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard17_L].</p></step>
+</steps>
+<p>Elimine a tropa de cerco que está transportando armas de cerco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Timoleon pediu para você eliminar a tropa de cerco que entregou os suprimentos para interromper o ataque por armas de cerco</p>
+<p> </p>
+<p>Você eliminou a tropa de cerco e foi recebida com palavras de gratidão ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

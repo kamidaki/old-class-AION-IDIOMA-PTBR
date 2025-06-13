@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ninguém deveria estar deitado no hospital em clima como este.</p>
+<p>É por isso que estou tão triste que minha filha está lá e não pode sair ...</p>
+<p> </p>
+<p>O mínimo que posso fazer é comprar um pouco de chocolate saboroso.</p>
+<p>Mas estou tão ocupado no momento que simplesmente não tenho tempo ...</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p> </p>
+<p>Se você não estiver muito ocupado, poderia me dar um pouco de chocolate saboroso?</p>
+<p>Aparentemente, você pode obter um pouco de graça em[%shoplink].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado, Daeva!</p>
+<p>Vou te dar algo legal quando você voltar com o chocolate.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, bem ... realisticamente, não há nada que possa ser feito ...</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p> </p>
+<p>Oh, você poderia me buscar um pouco de chocolate rapidamente?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você abre sua bolsa e mostra a ela.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O chocolate não derreteu?</p>
+<p>Você tem certeza de que não o embalou na outra bolsa?</p>
+<p>Você também verificou seu e -mail expresso?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, muito obrigado.</p>
+<p>Não é muito, mas aqui está um sinal da minha gratidão.</p>
+<p>Posso contar com sua ajuda novamente no futuro?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_junk_world_event_webshop_03a]para mãe estressada [%dic:STR_DIC_NPC_event_randrian].</p>[%collectitem]</step>
+</steps>
+<p>Obter chocolate saboroso em[%shoplink] e trazê -lo para Landria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Landria pediu que você trazia um pouco de chocolate saboroso para ela levar para a filha.</p>
+<p> </p>
+<p>Você pegou alguns de [%shoplink] e trouxe para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

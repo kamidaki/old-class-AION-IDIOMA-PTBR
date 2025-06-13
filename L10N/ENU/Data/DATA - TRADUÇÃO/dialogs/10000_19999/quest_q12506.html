@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma ótima notícia que o dragão Lord Tiamat foi derrotado. Mas ainda existem algumas coisas que não estão claras.</p>
+<p> </p>
+<p>Eu me sentiria muito aliviado se eles pudessem ser esclarecidos.</p>
+<p> </p>
+<p>Você poderia interrogar o cativo[%dic:STR_DIC_N_LDF5a_Avsada_E]para mim?</p>
+<p> </p>
+<p>Avsada era um oficial da Guilda de Tiamat, que pegamos prisioneiros.</p>
+<p> </p>
+<p>Eu acho que ele sabe de algo mais. Ele não quer me dizer nada, mas talvez ele fale com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me em paz ... eu não sei de nada ...</p>
+<p> </p>
+<p>Minha resposta ainda não mudou ...</p>
+<p> </p>
+<p>Eu sou um oficial da Guilda Tiamat. Eu nunca vou trair nada para os Elyos ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você convence a oposição de que Tiamat já foi derrotado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é isso!</p>
+<p> </p>
+<p>A razão para a derrota do exército de Tiamat!</p>
+<p> </p>
+<p>Bom. Vou te dizer algo que você não sabe.</p>
+<p> </p>
+<p>Vá para o Katalam Underground e encontre [%dic:STR_DIC_M_LDF5_Under_VriCU_As_SN_65_An].</p>
+<p> </p>
+<p>Antes de ser preso, eles roubaram meus registros.</p>
+<p> </p>
+<p>Recuperar meu[%dic:STR_DIC_I_doc_quest_12506a]do protetor de Drakan da equipe de investigação.</p>
+<p> </p>
+<p>Leia o relatório e você descobrirá tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Disseram -me que você estava no metrô.</p>
+<p> </p>
+<p>Houve algum incidente?</p>
+<p> </p>
+<p>Você descobriu alguma coisa?</p>
+<p> </p>
+<p>Eu posso dizer pela cor do seu rosto que algo ruim aconteceu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de Absada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Pega e lê rapidamente.) Oh, isso é certamente um grande negócio.</p>
+<p> </p>
+<p>E com esses registros, tudo faz sentido agora.</p>
+<p> </p>
+<p>Estou apenas entendendo por que Tiamat foi derrotado com tanta facilidade.</p>
+<p> </p>
+<p>As peças individuais estão começando a se unir para formar um grande quebra -cabeça na minha cabeça.</p>
+<p> </p>
+<p>Obrigado por este documento importante.</p>
+<p> </p>
+<p>Vou manter este documento por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o oficial cativo da Guilda Tiamat, [%dic:STR_DIC_N_LDF5a_Avsada_E].</p></step>
+<step><p visible="[%3]">Pegar [%dic:STR_DIC_I_doc_quest_12506a]do[plur][%dic:STR_DIC_M_LDF5_Under_VriCU_As_SN_65_An]no Katalam Underground e levá -lo a [%dic:STR_DIC_N_LDF5A_Pepe_E].</p>[%collectitem]</step>
+</steps>
+<p>Interrogar a avsada em cativeiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tribune Pepe achou estranho que o dragão Lord Tiamat possa ser tão facilmente derrotado. Ele pediu que você interrogasse Avsada, um oficial da Guilda de Tiamat, que está sendo mantido em cativeiro na Torre da Luz reconstruída.</p>
+<p> </p>
+<p>A Avsada em cativeiro afirmou que você descobriria a verdade se lesse o diário dele. É por isso que você matou os guardas de Drakan da tropa de inspeção no metrô de Katalam e tirou o diário de Avsada deles. Nele foi escrito que Tiamat, o Lorde do Dragão, aparentemente pediu ajuda a Fegion.</p>
+<p> </p>
+<p>Quando você deu o diário de Avsada ao Tribune Pepe, ele ficou muito surpreso e decidiu manter o diário por enquanto</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

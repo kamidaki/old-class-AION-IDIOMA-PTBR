@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15012</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Os tricos que vivem nas colinas do sul de coral têm belas chifres de coral.</p>
+<p> </p>
+<p>O mais especial desses chifres é que, enquanto eles crescem nos tricos, eles não fazem parte desses animais. Os chifres coexistem com eles.</p>
+<p> </p>
+<p>Um coral que cresce em outro animal ...! A mente do meu pesquisador está em chamas com curiosidade!</p>
+<p> </p>
+<p>Você poderia ir para o [%dic:STR_DIC_W_LF5_SZ_B_01], caçar [plur][%dic:STR_DIC_M_LF5_B_Trico_56_An]lá e me traga o seu[plur][%dic:STR_DIC_I_quest_15012a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses corais não fazem parte de uma criatura diferente, mas vivem em simbiose ...</p>
+<p> </p>
+<p>Este lugar é o lar de tantas criaturas fascinantes que não sei quais pesquisar primeiro. Hmm, acho que vou fazer esses chifres de coral parte do meu novo projeto de pesquisa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os chifres de coral.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses corais se disfarçam de tricoes.</p>
+<p> </p>
+<p>Eu nunca vi corais como esses antes.</p>
+<p> </p>
+<p>Eles crescem em tricos e se adaptam a eles ...</p>
+<p> </p>
+<p>Esta região é o lar de coisas verdadeiramente maravilhosas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se ela está feliz agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Os chifres de coral são lindos, mas reuni -los é tudo menos fácil.</p>
+<p> </p>
+<p>Por favor, me traga chifres de coral, se você conseguir adquirir alguns.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Para sobreviver, esses corais se disfarçam de chifres.</p>
+<p> </p>
+<p>Eu nunca vi corais como esses antes.</p>
+<p> </p>
+<p>Eles crescem em animais e se adaptam a eles ...</p>
+<p> </p>
+<p>Esta região é o lar de coisas verdadeiramente maravilhosas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se ela está feliz agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei se dizer que estou satisfeito faz justiça, mas, graças a você, fiz progressos em minha pesquisa.</p>
+<p> </p>
+<p>Obrigado.</p>
+<p> </p>
+<p>Por favor, continue a me ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_B_01] e reunir -se [plur][%dic:STR_DIC_I_quest_15012a]. Traga -os para [%dic:STR_DIC_N_LF5_Biologia_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Biologia_E].</p></step>
+</steps>
+<p>Obtenha chifres de coral e leve -os ao violão para sua pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Violia pediu que você reunisse chifres de coral.</p>
+<p> </p>
+<p>Você trouxe chifres de coral para o violão, que ficou muito satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

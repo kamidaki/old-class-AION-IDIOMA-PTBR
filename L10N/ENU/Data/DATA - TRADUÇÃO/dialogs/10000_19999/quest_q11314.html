@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Como ocupamos o templo das escalas, a linha de defesa parece estar garantida. Mas os asmodianos continuarão atacando.</p>
+<p> </p>
+<p>A Força da Expedição de Santuário quer garantir o território dos combatentes de Popoku, para que os asmodianos não possam atacar Inggison.</p>
+<p> </p>
+<p>Devemos controlar o território dos combatentes de Popoku antes que os asmodianos possam reivindicar a passagem em Inggison.</p>
+<p> </p>
+<p>O que você acha dessa estratégia?[%username], Estou pedindo seu suporte ativo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você garantiu o território?</p>
+<p> </p>
+<p>Devemos aproveitar esta oportunidade.</p>
+<p> </p>
+<p>É importante limpar o [plur][%dic:STR_DIC_E_LDF4Adv_Popoku_all]fora do caminho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Conseguimos implementar nosso plano graças à sua ajuda, [%username].</p>
+<p> </p>
+<p>Se houver outra missão para você, avisarei você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_LDF4Adv_Popoku_all]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Thalia].</p></step>
+</steps>
+<p>Faça o pedido de Thalia derrotando os Raiders Popoku!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que o templo das escalas foi conquistado, Thalia encarregou você de viajar para Akaron.</p>
+<p> </p>
+<p>Em Akaron, você partiu para o Vale da Invasão. Você derrotou os lutadores de Popoku por lá para proteger a área.</p>
+<p> </p>
+<p>Você foi agradecido por concluir a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

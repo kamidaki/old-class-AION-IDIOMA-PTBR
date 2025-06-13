@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ter visto almas errantes no seu caminho para o farol. Almas como eu, para sempre de plantão.</p>
+<p> </p>
+<p>Nenhum de nós se lembra do que nos matou. Na verdade, eu não percebi por décadas que estava morto.</p>
+<p> </p>
+<p>A única coisa que a maioria de nós lembrava foi que juramos proteger o porto e o farol. E aqui estamos nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Fale sobre o espírito de luta ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. E enquanto eu ainda tenho minhas faculdades, a maioria dos outros não. Eles esqueceram quem são.</p>
+<p> </p>
+<p>Não há mais nada neles, mas obsessão pela cidade e pelo farol. Eles atacam qualquer coisa e quem se aproxima.</p>
+<p> </p>
+<p>Receio que, se nada mudar, vou perder a cabeça como eles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que pode ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de enviá -los de volta ao fluxo de Aether. Vou manter a vigília sozinha.</p>
+<p> </p>
+<p>[%username], você os ajudaria a encontrar paz?</p>
+<p> </p>
+<p>Com sua nobreza e força, você poderá enviá -las como guerreiros, em vez de monstros.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_UndeadDarkWiD_39_An] Areia [%dic:STR_DIC_M_UndeadDarkFiD_39_An] S está vagando sobre a floresta sussurra e a Anair Harbor, perto do farol.</p>
+<p> </p>
+<p>Eles vão atacá -lo assim que o virem. Não hesite em derrotá -los, mas trate -os com respeito.</p>
+<p> </p>
+<p>Essas almas costumavam ser bons cidadãos de Anair, arcontes e meus colegas de honra ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A sombra de Azphel os receberá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então as almas dos meus colegas vão passear aqui para sempre até que alguém as mande de volta ao fluxo de Aether.</p>
+<p> </p>
+<p>É melhor você ter cuidado também, [%username], para que você não se torne uma alma errante, esperando que alguém mostre pena e respeito suficiente para enviá -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou me arriscar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava a esperança por tanto tempo que meus irmãos de armas fossem restaurados ou curados. Foi tudo o que me sustentava às vezes.</p>
+<p> </p>
+<p>Eu não quero ficar sozinho, mas eles não devem sofrer por meu egoísmo.</p>
+<p> </p>
+<p>Você os enviou de volta pacificamente para o fluxo de Aether?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles descansam com honra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo agradecer. Isso me pertencia quando o sangue fluía pelas minhas veias. Agora eu quero que você tenha.</p>
+<p> </p>
+<p>Ah, e eu tenho outro favor a pedir a você-devo perder minhas faculdades, não quero ser uma ameaça para todos.</p>
+<p> </p>
+<p>Se esse dia chegar, termine minha ilusão com dignidade.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coloque as pobres almas que estão vagando pelo farol da Anair para descansar.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_UndeadDarkWiD_39_An]([%2]/4).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkFiD_39_An]([%5]/6).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Valboner].</p></step>
+</steps>
+<p>Coloque os espíritos de feitiços e os espíritos guerreiros que vagam pelo porto e pelo farol para descansar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valconor disse que as almas vagando pelo porto de Anair e o farol da Anair eram seus camaradas.</p>
+<p> </p>
+<p>Como agora eles são espectros irracionais, ele pediu que você os devolvesse ao Aether, com dignidade.</p>
+<p> </p>
+<p>Você fez como Valconor Bade, o que lhe deu muito conforto. Ele pediu que você fizesse o mesmo por ele, se ele perdesse suas faculdades algum dia e expressou sua gratidão a você com um presente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

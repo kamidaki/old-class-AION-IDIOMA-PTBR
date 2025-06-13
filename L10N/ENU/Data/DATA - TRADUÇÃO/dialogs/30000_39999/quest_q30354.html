@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você nos ajudou a avançar além do ninho de Kaluva, mas acho que não vamos ficar mais longe sem você.</p>
+<p> </p>
+<p>Para investigar as partes mais profundas da lasca abissal, devemos atravessar o mezanino cristalino.</p>
+<p> </p>
+<p>Você é o único em que posso confiar, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu estou realmente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>No mezanino do cristal, você verá[%dic:STR_DIC_M_IDAbRe_Core_FiNmd_Combine]Parado bem no meio. Quando os investigadores se aproximam disso, ele se divide em[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al] e [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al].</p>
+<p> </p>
+<p>Acreditamos que os dois precisam ser mortos ao mesmo tempo para superar, mas não consigo imaginar que isso seja fácil.</p>
+<p> </p>
+<p>Você tem alguma idéia, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está o que sabemos. Depois de se dividir [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al] e [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al], o Dayshade se vira para discos deitado de dois lados.</p>
+<p> </p>
+<p>Quando você os luta, eles constroem um escudo. Rukril faz um fragmento de esplendor, e ebonsoul faz um fragmento de escuridão. Pensamos que, se você levar o fragmento de escuridão a Rukril, seu escudo desaparecerá e que a mesma coisa acontece se você levar o fragmento de esplendor a ebonsoul.</p>
+<p> </p>
+<p>Parece complicado, mas o mais importante é que você precisa matar os dois praticamente ao mesmo tempo. Se um desmoronar primeiro, o outro se tornará agressivo demais para lidar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dois pássaros com uma pedra, entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, suponho que não posso depender de você para sempre. Eu apenas pensei que, já que havia estabelecido um vínculo de confiança ....</p>
+<p> </p>
+<p>Ah, não importa. Vou tentar obter mais investigadores, mesmo que isso signifique enviar uma solicitação à fortaleza.</p>
+<p> </p>
+<p>Talvez então possamos lutar contra Rukril e ebonsoul ao mesmo tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Você se livrou de Rukril e Ebonsoul? Você chegou ao mezanino do cristal?</p>
+<p> </p>
+<p>O que você encontrou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um artefato estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Um artefato de proteção? Aqui?</p>
+<p> </p>
+<p>Isso é um problema. Nem esse artefato nem seus protetores serão ... normais. Precisamos encontrar uma maneira de voltar o artefato ao normal para que possamos usá -lo.</p>
+<p> </p>
+<p>Você fez um ótimo trabalho. Muito obrigado, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se da sentinela do mezanino de cristal.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da].</p></step>
+</steps>
+<p>Rukril e Ebonsoul bloqueiam o caminho para o mezanino cristalino. Destrua -os e patrulhe mais fundo dentro da lasca abissal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gwal lhe disse que os investigadores avançaram para o mezanino de cristal, mas não foram mais longe por causa dos protetores lá.</p>
+<p> </p>
+<p>Você se livrou de Rukril e Ebonsoul e encontrou um artefato de proteção. Essa descoberta perturbou muito Gwal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

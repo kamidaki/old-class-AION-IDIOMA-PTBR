@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard08_D]do[%dic:STR_DIC_W_LDF5a_E1_8]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: derrotar os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5a_E1_QUEST] em North Katalam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não deve relaxar.</p>
+<p> </p>
+<p>Tanto o Balaur como os Elyos tem o território ocupado à sua vista.</p>
+<p> </p>
+<p>Teremos um problema se os atacarmos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você executou com sucesso minhas instruções de emergência.</p>
+<p> </p>
+<p>Isso foi muito útil. Obrigado.</p>
+<p> </p>
+<p>Eu nunca vou esquecer os serviços de [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5a_E1_QUEST] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard08_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que avançaram para o caminho para a fortaleza de Sillus no norte de Katalam e se reportar a Travin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com a ordem urgente de Travin, você puniu os Elyos que avançaram para o caminho para a fortaleza de Sillus, no norte de Katalam.</p>
+<p> </p>
+<p>Depois de retornar e reportar a Travin, ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

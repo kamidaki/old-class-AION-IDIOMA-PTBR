@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], certo? Você me ajudou antes, não é?</p>
+<p> </p>
+<p>Graças a você, fiz um grande progresso. Meu estudo sobre armas de querrubes foi um grande sucesso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parabéns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu mudei para o estudo de armas mais primitivas, especificamente, o [%dic:STR_DIC_I_QUEST_1481a] S dos trolls.</p>
+<p> </p>
+<p>Você deve ser capaz de obtê -los facilmente.</p>
+<p> </p>
+<p>Quando você pode começar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_Troll_35_An] S na caldeira de Geroch, em Eltnen, usam martelos de pedra.</p>
+<p> </p>
+<p>É quase a arma mais cruel imaginável. Ainda assim, mortal eficaz.</p>
+<p> </p>
+<p>Glorioso. É por isso que estou interessado em estudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar com os martelos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo, você não está indo para lá nesta viagem.</p>
+<p> </p>
+<p>Quando você acha que pode se encaixar na sua programação?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De alguma forma, acho que não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Sem amostras para estudar, não posso fazer minha pesquisa.</p>
+<p> </p>
+<p>Você trouxe alguns[%dic:STR_DIC_M_Troll_35_An] Armas, espero?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Dê uma olhada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh? Sem martelos? Parece que minha pesquisa terá que esperar mais um tempo enquanto você aprender a contar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu vejo ... é muito mais suave do que eu esperava. Primitivo, mas não áspero.</p>
+<p> </p>
+<p>Há algum artesanato aqui. Fascinante...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter um[%dic:STR_DIC_M_Troll_35_An]é arma e leve para [%dic:STR_DIC_N_Coeus].</p>[%collectitem]</step>
+</steps>
+<p>Coeus estuda armas de trolls. Você prometeu derrotar os bandidos de Troll na caldeira de Geroch e levar suas armas para Coeus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O pesquisador de armas Coeus estudava armas Sapien. Seu último assunto era o armas de Troll, mas ele precisava de amostras para estudar.</p>
+<p> </p>
+<p>Você foi ao Geroch Caldera em Eltnen, derrotou os bandidos de Troll e levou suas armas a Coeus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

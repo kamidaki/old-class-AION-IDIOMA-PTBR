@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pensado, [%username]. Derrubar o MosBears um por um não vai resolver o problema. É uma solução temporária na melhor das hipóteses.</p>
+<p> </p>
+<p>Precisamos de algo que cuide do problema em um nível mais permanente. Eu acho que a melhor maneira de realmente chegar a esse assunto será tirar o líder deles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você não o mencionou antes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu o mencionei antes. Esse novo líder deles parece ser o que os tornou tão repentinamente violentos. Elimine -o, elimine a fonte do problema.</p>
+<p> </p>
+<p>Como você se sente ao cuidar disso para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. O MosBear que é assumido é chamado[%dic:STR_DIC_M_MosbearReBigNamedDQ_34_An].</p>
+<p> </p>
+<p>Ele mora em uma caverna na parte mais profunda do Mosbar Snowfield.</p>
+<p> </p>
+<p>Depois de cuidar dele, pegue o [%dic:STR_DIC_I_QUEST_2525a]Fora dele e traga de volta para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum.</p>
+<p> </p>
+<p>Realmente, é apenas mais um Mosbear. Sim, ele provavelmente é um pouco mais difícil, mas ... é apenas um.</p>
+<p> </p>
+<p>Tudo bem, no entanto. Vou encontrar outra pessoa. Certamente alguém passará dessa maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... você parece ... ileso.</p>
+<p> </p>
+<p>Como foi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Concluído."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece ter esquecido o couro que eu pedi.</p>
+<p> </p>
+<p>Por favor, saia e recupere se você o matou e mate -o se não o fizer!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho, [%username].</p>
+<p> </p>
+<p>Obrigado pelo seu trabalho duro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_MosbearReBigNamedDQ_34_An] e levar as evidências para [%dic:STR_DIC_N_Sorgrim].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se de Snowfur, o líder do MosBear, e entregue seu couro a Sorgrim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sorgrim queria eliminar a causa fundamental do problema do MOSBARE e decidiu que seu novo líder precisava ser eliminado.</p>
+<p> </p>
+<p>Você derrotou Snowfur e levou seu couro para Sorgrim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

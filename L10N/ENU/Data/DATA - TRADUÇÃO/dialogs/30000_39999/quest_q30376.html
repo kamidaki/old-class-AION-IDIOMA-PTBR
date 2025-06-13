@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você, [%username]. Eu tenho uma tarefa para você.</p>
+<p> </p>
+<p>Eu estava apenas procurando um Daeva adequado para esta tarefa. Mas, graças a você, posso economizar esse tempo agora.</p>
+<p> </p>
+<p>Primeiro de tudo, vá para Russet Plaza no[%dic:STR_DIC_W_AB1_3] e conhecer [%dic:STR_DIC_N_Vare]% lá.</p>
+<p> </p>
+<p>Vare o informará sobre esta missão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]. Não te vejo há muito tempo.</p>
+<p> </p>
+<p>Presumo que você tenha negócios comigo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que Crispin enviou você.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], o Daeva que Crispin iria enviar para mim.</p>
+<p> </p>
+<p>Eu descobri que o [%dic:STR_DIC_W_IDAbRe_Core_02_SZ_All] Aparentemente, é a causa do pequeno abismo que apareceu na fortaleza divina.</p>
+<p> </p>
+<p>Algo tem que ser feito, o fluxo de Aether é altamente instável lá.</p>
+<p> </p>
+<p>Vá para a fortaleza divina imediatamente e procure [%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou esperando por você desde que Vare me disse que você havia chegado, [%username].</p>
+<p> </p>
+<p>Estou satisfeito por você ter vindo.</p>
+<p> </p>
+<p>Eu preciso da sua ajuda novamente. Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que tem certeza sobre isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por sua vontade de aceitar esta missão.</p>
+<p> </p>
+<p>Esta missão não é fácil, mas tenho certeza de que você a concluirá com sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Vare].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Da]% na fortaleza divina.</p></step>
+</steps>
+<p>Você diz que tem uma missão importante. Vá para o pouso de Primum para encontrar Vare.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Crispin de Fatebound lhe disse que deve ir a uma missão importante.</p>
+<p> </p>
+<p>Quando você foi ver Vare, ele lhe disse que alguém era necessário para uma missão envolvendo lascas abissais do abismo quebrado. Assim, você foi à fortaleza divina e se encontrou com Gwal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho algo para você hoje, [%username].</p>
+<p> </p>
+<p>Por favor, pegue isso. É a minha carta de recomendação.</p>
+<p> </p>
+<p>Sim, [%username], isso mesmo. Finalmente chegou o dia para eu escrever uma carta de recomendação para [%username], assim como você foi recomendado para mim.</p>
+<p> </p>
+<p>Suas habilidades melhoraram tanto, que não posso mais ajudá -lo. Então, pegue esta carta de recomendação para [%dic:STR_DIC_N_Ehate].</p>
+<p> </p>
+<p>Ela possui excelentes habilidades e o ajudará a progredir ainda mais. O presidente Vellun em Gelkmaros também é seu aluno.</p>
+<p> </p>
+<p>Aparentemente, ela não está enfrentando mais estudantes no momento. Mas ela não vai te recusar se você mostrar isso a ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem um pedido especial para mim?</p>
+<p> </p>
+<p>Se você quiser ser aceito como estudante, eu preferiria rejeitar sua solicitação.</p>
+<p> </p>
+<p>Atualmente, estou muito ocupado apenas com minha pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação do SIF.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Dobrando a letra de recomendação) Oh, bem, nada que possa ser feito sobre isso.</p>
+<p> </p>
+<p>Como eu poderia recusar o pedido de SIF ...?</p>
+<p> </p>
+<p>Você deve sempre praticar e melhorar suas habilidades. Só então você os aperfeiçoará. Se você tiver alguma dúvida sobre o estudo de suas habilidades como um[%userclass], você pode vir a mim a qualquer momento.</p>
+<p> </p>
+<p>Você pode me procurar cem ou mil vezes. Isso é muito mais agradável do que ter que enviar meus amados alunos para o fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a carta de recomendação de Sif para [%dic:STR_DIC_N_Ehate]no templo do marchutan.</p></step>
+</steps>
+<p>Mostre a carta de recomendação de Sif a Heszti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sif disse que chegou a hora de apresentá -lo a um novo preceptor e enviou seu Heszti com uma carta de recomendação.</p>
+<p> </p>
+<p>Depois que Heszti leu a carta de recomendação, ela disse que você ainda tinha muito a aprender para se tornar um excelente Daeva e prometeu ajudá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

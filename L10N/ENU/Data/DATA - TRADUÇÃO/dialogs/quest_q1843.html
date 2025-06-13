@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos entender como eles fazem isso!</p>
+<p> </p>
+<p>Fechamos a entrada, a única entrada para a câmara, depois as reduzimos pouco a pouco. Mas seus números nunca diminuem! Se alguma coisa, parece que eles foram reforçados!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então há mais de uma entrada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, mas não temos ideia de onde. o [%dic:STR_DIC_W_IDAbRe_Up3_Dkisas_SZ_All]é um lugar assustador, de fato.</p>
+<p> </p>
+<p>Queremos que alguém entre lá e mate todas as criaturas de Balaur que podem encontrar. Talvez então pudéssemos encontrar sua passagem oculta.</p>
+<p> </p>
+<p>Você estaria disposto a ajudar, [%username]? Há muito tesouro lá para você saquear ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur parece ser liderado por [%dic:STR_DIC_M_Dkisas_DrakanNamed_45_Ah]. Mate -o e mate os outros.</p>
+<p> </p>
+<p>Terei sua recompensa pronta para o seu retorno. Fé e braços, soldado!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então volte quando puder, ok? Precisamos de ajuda, [%username], e bons Daevas são difíceis de aparecer aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Enviamos equipes especificamente para encontrar portais lá, você sabe-e nada. Se o Balaur descobriu ou aperfeiçoou um novo modo de transporte, as implicações são realmente aterrorizantes.</p>
+<p> </p>
+<p>Você fez tudo o que lhe pediu, [%username]? Você conseguiu descobrir como o Balaur estava reforçando suas tropas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não, mas estão todos mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é um começo. Vou ter que enviar uma equipe e ver se eles podem descobrir de onde estão vindo.</p>
+<p> </p>
+<p>Obrigado, [%username]. Receba essa recompensa e lembre -se de voltar sempre que puder. Tenho certeza de que teremos mais trabalho para você!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Balaur no[%dic:STR_DIC_W_IDAbRe_Up3_Dkisas_SZ_All].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Up3_Dkisas]([%2]/80)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Dkisas_DrakanNamed_45_Ah]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1231_TreasureGate_Li].</p></step>
+</steps>
+<p>Mate o Balaur na Câmara de Kysis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Paean ofereceu a você a missão de matar o Balaur estacionado na câmara de Kysis.</p>
+<p> </p>
+<p>Você aceitou e foi para a fortaleza, eliminando o Balaur, incluindo o líder, Ebonlord Nukuam. No seu retorno, Paean o recompensou e pediu que você o ajudasse novamente sempre que possível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

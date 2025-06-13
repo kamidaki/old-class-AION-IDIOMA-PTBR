@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um livro de contas de couro úmido moldado em Shugo Writing.)</p>
+<p> </p>
+<p>(Este livro parece conter uma descrição da vida útil da instalação e da produção de produção de Springs.)</p>
+<p> </p>
+<p>(Leve para [%dic:STR_DIC_N_LDF5b_Shinisto_E], o membro da equipe de expedição de penas de ouro que está examinando a primavera.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um livro estranho que tinha algo escrito nele sobre a instalação de produção de água da primavera?</p>
+<p> </p>
+<p>Já houve alguns acontecimentos estranhos que eu não conseguia explicar. Mas se eu ler este livro, chegarei ao fundo dele, certo?</p>
+<p> </p>
+<p>Posso dar uma olhada nisso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você entrega as contas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto como se algo não aumente aqui.</p>
+<p> </p>
+<p>Este livro prova que a produção de água da primavera flutua seriamente e volumes maiores de água potável são geralmente produzidos do que a água da primavera.</p>
+<p> </p>
+<p>Somente este livro não fornece uma explicação adequada. Temos que investigar isso mais de perto.</p>
+<p> </p>
+<p>Mopolio é responsável por isso. Por favor, diga [%dic:STR_DIC_N_LDF5b_Mopolrio_E]que uma investigação adicional é necessária.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo suspeito na fonte da produção de água da primavera, você não acha? Não pode ser!</p>
+<p> </p>
+<p>Eu trabalhei junto com a Waterinerk por tanto tempo que certamente teria notado primeiro se ele estivesse se comportando desconfiado.</p>
+<p> </p>
+<p>A água da primavera da Wateriner é perfeita. Portanto, nenhuma pesquisa adicional é necessária.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5b_Shinisto_E] espalhe o boato intencionalmente, porque ele me invejou pelos meus serviços. Tenho certeza disso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Mopolio realmente disse que não há problema, apesar das evidências esmagadoras?</p>
+<p> </p>
+<p>Que Daeva patética, apenas pensando em seu próprio sucesso. Tenho vergonha de ser um Daeva.</p>
+<p> </p>
+<p>Se Mopolio não aparecer, não poderemos resolver o assunto dentro da estrutura de comando Katalam e teremos que confiar na ajuda de fora.</p>
+<p> </p>
+<p>A Green Hat Alliance poderia se envolver nesse caso. Esse grupo é dedicado ao ambiente de Katalam.</p>
+<p> </p>
+<p>Por favor, leve esses livros para [%dic:STR_DIC_E_LDF5a_Greenhat_BA] e pedir uma investigação. Por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A Aliança Green Hat pensa em nada além da natureza.</p>
+<p> </p>
+<p>O Wateriário é um comerciante sem escrúpulos que só pensa em dinheiro, AK.</p>
+<p> </p>
+<p>O Waterinerk lida na água da primavera, mas ele está destruindo o pântano no processo, Ak.</p>
+<p> </p>
+<p>Shugo faria qualquer coisa para parar o Waterinerk, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei tanto, Akakak.</p>
+<p> </p>
+<p>Pareceu -me estranho desde o início.</p>
+<p> </p>
+<p>É impossível obter boa água na primavera deste pântano, Ak.</p>
+<p> </p>
+<p>O WateriRerk destrói não apenas o meio ambiente, mas também prejudica nossa saúde, AK. A Green Hat Alliance deve resolver esse problema o mais rápido possível, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Shinisto_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Mopolrio_E]%.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_LDF5b_Shinisto_E]%.</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_E_LDF5a_Greenhat_BA]%.</p></step>
+</steps>
+<p>Examine o livro secreto oculto do pântano esquecido para descobrir os segredos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você deu ao livro de conta secreta que você descobriu por acaso para Sinisto, um membro do grupo de expedição, Sinisto suspeitava Wateriário.</p>
+<p> </p>
+<p>Mopolio disse que não poderia ser possível, mas Sinisto alertou que a ajuda seria trazida de fora se o problema não pudesse ser resolvido entre o comando de Katalam, e atribuiu a Aliança Green Hat para fazer um relatório detalhado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

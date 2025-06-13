@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas pela longa jornada aqui, mas tive que falar com você.</p>
+<p> </p>
+<p>Vi aquelas brigas que você fez do Projeto Drakanhammer e fiz algumas pesquisas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Chegue a algo interessante?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada muito, apenas algumas menções a alguma arma de poder inimaginável.</p>
+<p> </p>
+<p>Precisamos encontrar mais pesquisas de Theobomos para descobrir o que era exatamente.</p>
+<p> </p>
+<p>Pesquisas de campo como essa estão mais na sua linha de trabalho do que a minha, receio.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou ver o que posso encontrar."</act>
+</selects>
+<voice file="Q1094-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi a notícia de Nestor de que você estaria procurando a pesquisa de Theobomos. Enviei alguém para pesquisar a fortaleza de Theobomos antes de você chegar.</p>
+<p> </p>
+<p>Parece que não há nada lá. Encontramos detritos velhos, quebrados e de raiva, mas nenhuma pesquisa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Alguma outra pista?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os guardiões da patrulha ao redor de Port Anangke nos disseram que viram alguns livros espalhados pela área ... talvez um deles possa nos dizer algo?</p>
+<p> </p>
+<p>Dê uma olhada ao redor e veja se você consegue encontrar um[%dic:STR_DIC_OBJ_LF2a_Book_Q1094A].</p>
+<p> </p>
+<p>E se você encontrar o laboratório de Theobomos ... procure informações sobre o Project Drakanhammer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Vamos torcer para encontrar esse livro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Este parece ser o diário de Theobomos! Este é o achado de sorte!)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Eu vou aceitar isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_2">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um livro muito antigo. Está caindo em pedaços, mas parece que é o que você está procurando.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hmm ... muito interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Fasimedes me perguntou o que aprendi sobre o projeto Drakanhammer.</p>
+<p> </p>
+<p>Não aprendi mais nada. Mas você tem, espero?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu encontrei uma biblioteca ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os petralith foram criados por Aion há muito tempo, e Theobomos foi capaz de montá -los novamente.</p>
+<p> </p>
+<p>Eles afastaram o drakan, mas o ataque do Senhor do Dragão foi suficiente para quebrá -los em pedaços.</p>
+<p> </p>
+<p>Eles não poderiam fazer nada contra o Senhor Dragão, mas sabendo que foram capazes de afastar o drakan é extremamente valioso.</p>
+<p> </p>
+<p>Anotarei os resultados de sua investigação e os enviarei para o Protetores Hall.</p>
+<p> </p>
+<p>Tenho certeza de que não foi fácil. Você fez um bom trabalho, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o Santum e converse com[%dic:STR_DIC_N_Nestor].</p></step>
+<step><p visible="[%3]">Vá para Theobomos e converse com[%dic:STR_DIC_N_Atropos].</p></step>
+<step><p visible="[%6]">Encontrar [%dic:STR_DIC_OBJ_LF2a_Book_Q1094A] em Port Anangke para obter uma possível vantagem sobre o laboratório secreto[%8].</p></step>
+<step><p visible="[%9]">Livrar-se de [%dic:STR_DIC_M_teobomos_all]para obter as chaves do laboratório e entrar [%dic:STR_DIC_OBJ_LF2a_Door_Q1094]Para encontrar o diário de pesquisa do assistente.</p>[%collectitem]</step>
+<step><p visible="[%12]">Depois de ler [%dic:STR_DIC_E_LF2B_Q1094], vá ao santuário e relate -se a [%dic:STR_DIC_N_Nestor].</p></step>
+</steps>
+<p>Ordem: Nestor disse que tinha algo para lhe contar sobre o Projeto Drakanhammer. Vá para a Biblioteca dos Sábios em Santum e encontre Nestor.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="3" progress="4" showframe="true" time="5">You found the Research Diary!</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nestor queria que você encontrasse mais informações sobre o trabalho de Theobomos no Projeto Drakanhammer, então voltou para a Atropos.</p>
+<p> </p>
+<p>A Atropos estava convencida de que Theobomos tinha um laboratório secreto em algum lugar da região. Ela o enviou para Port Anangke para encontrar um livro que possa ter realizado algumas pistas.</p>
+<p> </p>
+<p>O livro levou você ao laboratório, como ela pensava. Na biblioteca, você descobriu que o projeto Drakanhammer era imensamente poderoso, mas agora destruído.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

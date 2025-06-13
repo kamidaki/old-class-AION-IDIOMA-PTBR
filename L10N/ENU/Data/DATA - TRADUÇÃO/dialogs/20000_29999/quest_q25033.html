@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Examinei a área e descobri que existem muitas fontes de alimentos aqui para a tropa da expedição.</p>
+<p> </p>
+<p>Há principalmente muitos Karabi nas proximidades.</p>
+<p> </p>
+<p>Você poderia pegar alguns[%dic:STR_DIC_I_quest_25033a], Assim, [%username]?</p>
+<p> </p>
+<p>Vou então dar a carne direto para o nosso cozinheiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você conseguiu o [%dic:STR_DIC_I_quest_25033a]?</p>
+<p> </p>
+<p>Não foi tão fácil de julgar pela maneira como você parece ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a carne de Karabi.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve ser suficiente para a refeição da noite para os membros da tropa da expedição.</p>
+<p> </p>
+<p>Vou levá -lo para o cozinheiro imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se há mais alguma coisa que você possa fazer.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não conseguiu obter o [%dic:STR_DIC_I_quest_25033a]?</p>
+<p> </p>
+<p>Por favor, ajude -nos para que possamos finalmente desfrutar de um tempo agradável novamente depois de todo esse tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve ser suficiente para a refeição da noite para os membros da tropa da expedição.</p>
+<p> </p>
+<p>Vou levá -lo para o cozinheiro imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se há mais alguma coisa que você possa fazer.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, obrigado. Você já fez muito por todos nós.</p>
+<p> </p>
+<p>Como você sabe, os membros da tropa da expedição dificilmente têm tempo para se recuperar.</p>
+<p> </p>
+<p>Nós simplesmente não podemos poupar o tempo.</p>
+<p> </p>
+<p>Mas como um centurião ... também sinto muito por não poder fazer mais por eles a esse respeito.</p>
+<p> </p>
+<p>Mas graças a você, [%username], hoje à noite, podemos finalmente ter algo saboroso para comer novamente.</p>
+<p> </p>
+<p>Estou muito grato!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_I_quest_25033a]para [%dic:STR_DIC_N_DF5_Redelf_E].</p>[%collectitem]</step>
+</steps>
+<p>Redalf contou sobre a variedade de animais comestíveis na área e pediu que você pegasse um pouco de carne de Karabi. Cuide do pedido de Redalf.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Redalf contou sobre a variedade de animais comestíveis na área e pediu que você pegasse um pouco de carne de Karabi.</p>
+<p> </p>
+<p>Quando você levou a carne de Karabi para ele, ele ficou agradecido por os membros da tropa da expedição poderem desfrutar de um tempo agradável novamente e tomar uma ceia saborosa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

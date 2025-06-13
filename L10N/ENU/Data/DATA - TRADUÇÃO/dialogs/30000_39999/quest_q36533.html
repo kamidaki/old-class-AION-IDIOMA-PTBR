@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Proclamação -</p>
+<p> </p>
+<p>Maleo está sendo procurado pela seguinte ofensa.</p>
+<p></p>
+<p>Leia as seguintes informações com cuidado e siga as instruções.</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_LF5_C_Startutle_58_DQ]</p>
+<p></p>
+<p>2. Carga: obstruindo a tropa da expedição</p>
+<p></p>
+<p>3. Detalhes: A tropa de expedição está pedindo ajuda porque não pode cumprir seu objetivo.</p>
+<p> </p>
+<p>Quem nos entrega pistas sobre o seu paradeiro ou elimina Maleo diretamente receberá uma recompensa.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_LF5_Bertto_E], Fortunes -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolta a nota.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi com a missão de pesquisa?</p>
+<p> </p>
+<p>Você fez bem o seu trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Mas esse foi apenas o começo. Vou contar com sua ajuda novamente para a próxima pesquisa.</p>
+<p> </p>
+<p>Enfim, você ganhou a recompensa, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LF5_C_Startutle_58_DQ]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Bertto_E].</p></step>
+</steps>
+<p>Você recebeu uma proclamação da Guilda Fortuneers. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma proclamação da Guilda Fortuneers.</p>
+<p> </p>
+<p>Você matou Maleo. Você então relatou a um membro dos Fortunes e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

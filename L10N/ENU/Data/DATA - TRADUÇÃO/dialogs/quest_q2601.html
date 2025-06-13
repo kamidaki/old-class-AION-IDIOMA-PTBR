@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As vozes dos meus súditos estão sufocadas, Daeva. A água engrossa e nos esforçamos para respirar.</p>
+<p> </p>
+<p>Os sempre prolíficos Malodors estão crescendo além da capacidade da minha casa de sustentá-los.</p>
+<p> </p>
+<p>A água preciosa que usamos para respirar pode suportar apenas tantos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você me faria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu suporto os Malodors, falta de má vontade, mas o excesso de criação de uma única espécie não pode ter permissão para ameaçar todos nós.</p>
+<p> </p>
+<p>Não vou assistir minha casa lentamente se transformar em um túmulo.</p>
+<p> </p>
+<p>Se você deseja me mostrar sua boa vontade, deve ganhar as fileiras dos Malodors.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_RafflesiaSeaD_44_Ae] Areia [%dic:STR_DIC_M_RafflesiaSeaBigD_45_Ae] S habita principalmente no grande recife de coral acima de nós.</p>
+<p> </p>
+<p>O mais importante é purgar o maior número possível de malodores do mar.</p>
+<p> </p>
+<p>Com sua população sob controle, todos nós podemos respirar mais fácil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você ousa me recusar?</p>
+<p> </p>
+<p>Vejo agora que os asmodianos não devem ser confiáveis.</p>
+<p> </p>
+<p>Se foi. Não tenho mais uso para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, Esnu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O mar é mais claro e eu respiro mais facilmente.</p>
+<p> </p>
+<p>Suponho que tenho que agradecer por isso.</p>
+<p> </p>
+<p>Você limpou todos os malodores que esgotaram as águas do palácio de Alukina?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles serão um pouco de crescimento".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Estou satisfeito por ver um Daeva com um senso de honra.</p>
+<p> </p>
+<p>Não vou esquecer sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os Malodors que contaminam a água.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_RafflesiaSeaD_44_Ae]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_RafflesiaSeaBigD_45_Ae]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Esnu].</p></step>
+</steps>
+<p>O Palácio de Alukina está contaminado porque os Malodors estão se espalhando. Ajude Esnu limpando os Malodors.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Esnu disse que uma proliferação de malodors está encerrando o palácio de Alukina inabitável.</p>
+<p> </p>
+<p>Ela ficou agradecida quando você purificou os malodores do mar e os jovens maldores do mar por ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

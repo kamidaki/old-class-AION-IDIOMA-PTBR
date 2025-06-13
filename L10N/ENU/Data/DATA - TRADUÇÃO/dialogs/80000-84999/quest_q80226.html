@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Em breve, padres de bênção lhe darão nossa bênção.</p>
+<p> </p>
+<p>Eu acho que você tem idade suficiente para assumir o controle de seu próprio destino.</p>
+<p> </p>
+<p>Vamos lhe dar um presente de despedida especial se você concluir a tarefa final, [%username].</p>
+<p> </p>
+<p>Você está pronto?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Sim, estou pronto.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você já descobriu o suficiente sobre o Dark Poeta.</p>
+<p> </p>
+<p>Por favor, mate [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]lá.</p>
+<p> </p>
+<p>Eu acho que a localização é adequada para sua tarefa final, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quanto mais vezes você mata [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah], Assim,</p>
+<p> </p>
+<p>Quanto mais presentes pudermos dar a você.</p>
+<p> </p>
+<p>[%username], se você matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]Uma vez, forneceremos o item de que você mais precisará urgentemente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você tenha achado nossa bênção ser útil.</p>
+<p> </p>
+<p>[%username], por favor, permita -nos terminar de abençoá -lo e lhe dar presentes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou[%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, ninguém jamais voltou de Dark Poeta tão ileso quanto isso.</p>
+<p> </p>
+<p>Nossa bênção sempre estará com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] em Dark Poeta ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com Karjannke.</p></step>
+</steps>
+<p>Karjannke pediu para você matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]. Matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] em Dark Poeta. Dark Poeta está localizado perto do[%dic:STR_DIC_W_STR_DF3_SZ_G2_3].</p>
+<p><font font_xml="quest_summary"> </font></p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Karjannke pediu para você matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah].</p>
+<p> </p>
+<p>Você matou[%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] Sem um problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta é uma carta muito antiga. O papel molhado tornou a maioria das palavras ilegíveis.)</p>
+<p> </p>
+<p>(Examinando -o com cuidado, você determina que a carta é direcionada para "Sahnu" e é de "Ntuamu".</p>
+<p> </p>
+<p>(Você deve mostrar para [%dic:STR_DIC_N_DF2a_Seiren_Sahnu].)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem ... para o lago Nahor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer?! Estou esperando aqui algumas notícias da minha irmã, mas faz muito tempo que a preocupação está me deixando um pouco louco.</p>
+<p> </p>
+<p>Minhas outras irmãs dizem que eu deveria parar de procurá -la, que Ntuamu provavelmente está morto, mas acho que ela ainda está viva em algum lugar. Nós Seiren somos fortes!</p>
+<p> </p>
+<p>Mesmo se ela estiver morta ... devo descobrir com certeza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Esta carta é para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta para mim? Deixe -me ver .... oh ... isso é definitivamente a letra de Ntuamu, mas a escrita é tão borrada que não consigo lê -la.</p>
+<p> </p>
+<p>Oh, Ntuamu! Devo descobrir o que esta carta diz. É a única pista que tenho!</p>
+<p> </p>
+<p>Daeva, você me faria uma grande bondade? Eu ouvi que há um estudioso, [%dic:STR_DIC_N_Gunter], que restaura livros danificados. Não posso sair de casa-quero estar aqui caso o Ntuamu retorne. Você encontraria Gunter para mim? Talvez ele possa restaurar esta carta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, Daeva, muitas pessoas me pedem para restaurar documentos. Livros antigos que se deterioraram ou papéis que foram deixados para reunir mofo ou apodrecer.</p>
+<p> </p>
+<p>A restauração é um trabalho verdadeiramente gratificante, porque traz de volta memórias perdidas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Você poderia olhar para isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu ... esta carta é muito antiga, mas não está em mau estado.</p>
+<p> </p>
+<p>A tinta foi borrada, mas o papel está intacto, então acho que posso restaurá -la. Deixe -me escovar um pouco desse agente de restauração nele.</p>
+<p> </p>
+<p>Veja como a tinta borrada desaparece, revelando a tinta latente ainda restante do script original? Lá ... a carta está perfeitamente legível agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu estava esperando por você!</p>
+<p> </p>
+<p>A carta de Ntuamu é restaurada?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está legível agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado!</p>
+<p> </p>
+<p>Vou recompensar sua gentileza algum dia. Seirens têm um forte senso de gratidão.</p>
+<p> </p>
+<p>Mas por enquanto, por favor, deixe -me estar. Eu preciso ler esta carta da minha irmã há muito perdida.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer a carta para [%dic:STR_DIC_N_DF2a_Seiren_Sahnu].</p></step>
+<step><p visible="[%3]">Perguntar [%dic:STR_DIC_N_Gunter]Para restaurar a carta.</p></step>
+<step><p visible="[%6]">Retornar a [%dic:STR_DIC_N_DF2a_Seiren_Sahnu].</p></step>
+</steps>
+<p>Você encontrou uma carta dentro de uma garrafa. Leve para Sahnu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu uma carta dentro de uma garrafa velha em Nahor Lake.</p>
+<p> </p>
+<p>Quando você trouxe a carta a Sahnu, ela pediu que você a restaurasse dizendo que era de sua irmã perdida.</p>
+<p> </p>
+<p>Você trouxe a carta a Gunter, um especialista em restauração de documentos antigos, e depois a devolveu a Sahnu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perder a fortaleza oriental de Siel foi um grande golpe para nós. Devemos fazer tudo o que pudermos para recuperá -lo. Rapidamente.</p>
+<p> </p>
+<p>Primeiro, temos que abalar suas defesas. Nossa melhor chance de recuperar a fortaleza será atacar enquanto os asmodianos têm controle.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que os asmodianos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora os oponentes formidáveis, eles são mais fáceis de lutar do que o Balaur.</p>
+<p> </p>
+<p>É mais eficiente atacar quando a fortaleza entra no estado vulnerável.</p>
+<p> </p>
+<p>Você vai ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a fortaleza quando estiver no estado vulnerável e limpe o [%dic:STR_DIC_M_1801_all]-Todos os lutadores asmodianos, arqueiro asmodiano, mago asmodiano e padre asmodiano. Não importa se eles são veteranos, experientes ou novatos.</p>
+<p> </p>
+<p>Traga de volta o deles[%dic:STR_DIC_I_QUEST_1801a] S também. Podemos transformá -los em encantos.</p>
+<p> </p>
+<p>Prossiga. Fazer o trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claramente você está com medo. Não há espaço para o medo no abismo.</p>
+<p> </p>
+<p>Talvez você deva voltar para casa onde as coisas são mais simples.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou com segurança, [%username].</p>
+<p> </p>
+<p>Você fez o que eu perguntei? Você tem o [%dic:STR_DIC_I_QUEST_1801a] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu faço. Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Quanto mais você atrasa esta missão, [%username], mais difícil será para nós recuperarmos a fortaleza oriental de Siel.</p>
+<p> </p>
+<p>Por favor, corra para a fortaleza e volte com o [%dic:STR_DIC_I_QUEST_1801a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho-obrigado.</p>
+<p> </p>
+<p>Se retomarmos a fortaleza oriental de Siel, teremos seus esforços para agradecer, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_1801_all] S e leve a prova para [%dic:STR_DIC_N_Ruth].</p>[%collectitem]</step>
+</steps>
+<p>Para recuperar a fortaleza oriental de Siel, os asmodianos devem ser um golpe enquanto a fortaleza no estado vulnerável. Vá à fortaleza para derrotá -los e retornar com as insígnias da asa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ruth disse que, para recuperar a fortaleza oriental do Siel, um golpe significativo deve ser causado ao inimigo usando uma pequena força.  Ele aconselhou você a derrotar os asmodianos que defendiam a fortaleza enquanto a fortaleza estava no estado vulnerável.</p>
+<p> </p>
+<p>Então, depois de derrotar os combatentes, arqueiros, magos e sacerdotes asmodianos, você voltou a Ruth com as insígnias das asas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

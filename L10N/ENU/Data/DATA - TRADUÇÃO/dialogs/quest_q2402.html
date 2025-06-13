@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde você conseguiu esse veneno? Não parece venenoso.</p>
+<p> </p>
+<p>Não é o veneno de Scolopen de chalail, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"É sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>HM ... Venom Scolopen de Chantail ... bem, não é veneno. Se alguém bebesse uma xícara, ele poderia sofrer indigestão leve.</p>
+<p> </p>
+<p>Neior disse para você reunir isso? Ele pode conhecer remédios, mas não conhece a toxicologia.</p>
+<p> </p>
+<p>Explosão! Que perda de tempo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você ainda precisa do veneno certo, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Sim eu faço.</p>
+<p> </p>
+<p>[%username], como você se sentiria em matar [%dic:STR_DIC_M_ScorpionDF2_37_An] S e reunindo seu veneno?</p>
+<p> </p>
+<p>Até uma gota é mortal. Você deve ter cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não subestime [%dic:STR_DIC_M_ScorpionDF2_37_An] S! O veneno deles é cem vezes mais forte que o veneno de Scolopen, mil vezes!</p>
+<p> </p>
+<p>Vou precisar de dez gotas. Obrigado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Neior me falhou ... agora você está se recusando a ajudar ...</p>
+<p> </p>
+<p>Deve haver outra maneira!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, Modgud."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está seguro! Que alívio! Estou em patrulha em apenas alguns minutos.</p>
+<p> </p>
+<p>Você caçou[%dic:STR_DIC_M_ScorpionDF2_37_An] S e trazer o veneno?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria sair na minha patrulha ....</p>
+<p> </p>
+<p>É perigoso lá fora ... bem, eu tenho o obelisco de voltar, certo?</p>
+<p> </p>
+<p>Não consigo continuar fazendo isso sem veneno para minha arma. Por favor, se apresse e me traga veneno de Scolopen.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entendeu! Este é o apenas o veneno que precisávamos para nossas armas.</p>
+<p> </p>
+<p>Muito obrigado! Por favor, aceite alguma recompensa pelo seu problema</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_ScorpionDF2_37_An] e trazer seu veneno para [%dic:STR_DIC_N_Modgud].</p>[%collectitem]</step>
+</steps>
+<p>Modguud disse que o veneno de Scolopen da Chantail era inútil. Hunt Goldtail Scolopens e traga seu veneno para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Modguud disse que o veneno de Scolopen da Chantail praticamente não teve efeito venenoso.</p>
+<p> </p>
+<p>Você caçou Scolopens Goldtail e trouxe o veneno para ele enquanto ele perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

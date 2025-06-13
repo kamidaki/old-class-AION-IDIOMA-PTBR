@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário[%username]</p>
+<p> </p>
+<p>2. Tarefa: Há uma escassez de kokonats que são dados aos gerentes e funcionários da Silverine Limited como recompensa. Pegar [%dic:STR_DIC_I_quest_39603a]de [%dic:STR_DIC_M_LDF5A_G1_Ratman_Gather_63_n] e entregue -os no escritório administrativo, Ak.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BL]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva obteve os Kokonats, AK?</p>
+<p> </p>
+<p>Foi acordado que vários deles seriam usados ​​como recompensa, mas como as moscas da fruta danificaram algumas delas, agora não restam o suficiente, Ak.</p>
+<p> </p>
+<p>Dê a Shugo os cocos, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os cocos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não havia kokonat na árvore Kokonat, AK?</p>
+<p> </p>
+<p>Claro, tudo já foi colhido, Ak.</p>
+<p> </p>
+<p>Não é por isso que pedi para você obter um pouco de [%dic:STR_DIC_M_LDF5A_G1_Ratman_Gather_63_n]?</p>
+<p> </p>
+<p>Ele apenas começou a distribuir a recompensa diária dos kokonats, então ele deve ter um pouco de restante, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há nada mais bonito do que o perfume de Kokonat, Ak.</p>
+<p> </p>
+<p>E torna o casaco muito macio, Nyerk.</p>
+<p> </p>
+<p>Os trabalhadores ficarão muito satisfeitos com esses salários, eles não? Akakak.</p>
+<p> </p>
+<p>[%username], se você trabalha duro para a Silverine Limited, também desfrutará de tais vantagens, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_quest_39603a]de [%dic:STR_DIC_M_LDF5A_G1_Ratman_Gather_63_n] e leve para [%dic:STR_DIC_E_LDF5a_Silverlin_BL].</p>[%collectitem]</step>
+</steps>
+<p>As instruções chegaram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções da Silverine Limited chegaram.</p>
+<p> </p>
+<p>Depois que você obteve kokonats do coletor de Pupu e os levou ao ramo de Silverine em North Katalam, você recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

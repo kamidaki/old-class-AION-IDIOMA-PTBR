@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive em contato constante com o general Valetta, coordenando nossos ataques à draga de Chantra.</p>
+<p> </p>
+<p>Como você já sabe agora, o Balaur-ou pelo menos muitos deles-não são brutos irracionais. Eles são tão inteligentes quanto nós ... alguns ainda mais inteligentes.</p>
+<p> </p>
+<p>Vamos ter que intensificar nossa estratégia se quisermos vencê -los ... ou contra algo com o qual até a inteligência tem dificuldade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Força bruta!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo! Se você dominar seu oponente com força suficientemente, o valor da estratégia começa a quebrar.</p>
+<p> </p>
+<p>Precisamos manter a pressão-mantenha-os de se reagrupar e mudar as táticas, serem seus recursos para que eles não possam implementar seus planos.</p>
+<p> </p>
+<p>Isso se aplica ao Balaur em geral, e ao Chantra Dredgion em particular. Mas precisaremos da sua ajuda para fazê -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há duas coisas que você pode fazer por nós: a primeira é pressionar o Chantra Dredgion o máximo possível. Não desista, não deixe que eles se recuperem.</p>
+<p> </p>
+<p>O segundo é matar tantos[%dic:STR_DIC_M_IDDreadgion_02_DrakanFiHigh_55_Ae] es como você pode. Eles são as principais forças de combate a bordo, e menos delas significam mais danos causados.</p>
+<p> </p>
+<p>Tudo isso se destina a desgastar a draga de Chantra-o máximo possível e o mais rápido possível. Você precisa ser implacável.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então implacável eu estarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso foi inesperado. Comparado a algumas de suas outras missões, esta é relativamente simples ... pelo menos no conceito.</p>
+<p> </p>
+<p>Tudo o que precisa ser feito é se infiltrar na draga do Chantra. Nenhum assassinato de membros específicos da tripulação ou qualquer coisa.</p>
+<p> </p>
+<p>Bem, eu não vou arrastá -lo chutar e gritar. Espero que você tenha algo melhor para fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu certamente o faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho conversado com alguns outros Daevas que estão lutando a bordo da draga de Chantra.</p>
+<p> </p>
+<p>Alguns dizem que está ficando um pouco mais fácil todas as vezes. Um pouco menos resistência, um pouco mais de dano causado ....</p>
+<p> </p>
+<p>Eu acho que a estratégia de Yorgen está funcionando. Mas isso é apenas porque temos Daevas como você pressionando eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Na verdade, é um prazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, derrubar Balaur é sempre satisfatório, não é?</p>
+<p> </p>
+<p>Eu também entendo que eles estão lutando para substituir os soldados que você está matando. Isso por si só é um progresso significativo.</p>
+<p> </p>
+<p>Se continuarmos com isso, poderíamos destruir completamente as linhas de suprimentos do Balaur. Essa seria uma ótima vitória, e você seria uma parte importante dela!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mantenha a pressão sobre a draga de Chantra e mate [%dic:STR_DIC_M_IDDreadgion_02_DrakanFiHigh_55_Ae] S.</p>
+<p visible="[%0]">Luta a bordo do Chantra Dredgion ([%2]/6)</p>
+<p visible="[%3]">Mate o comissário do Chantra ([%5]/15)</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Barretta].</p></step>
+</steps>
+<p>Continue suas batalhas e encerre o Chantra Marotos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yorgen acredita que um fluxo constante de ataques implacáveis ​​à draga de Chantra pode ser a chave para eliminá -la completamente.</p>
+<p> </p>
+<p>Então você se envolveu em batalhas a bordo da draga de Chantra o máximo que pôde, matando soldados particulares ao longo do caminho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

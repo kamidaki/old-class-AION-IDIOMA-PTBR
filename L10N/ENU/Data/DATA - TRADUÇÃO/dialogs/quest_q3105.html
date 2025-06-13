@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username]. Você está indo para a costa de Latheron?</p>
+<p> </p>
+<p>Costumava ser chamado de Estreito de Latheron, embora não haja nada lá agora além da areia e do fantasma de um mar morto há muito tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você já esteve lá?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem o espírito de um verdadeiro guardião? Não posso abandonar meu post, mas nossos números são poucos e a necessidade é ótima. Você estaria disposto a ajudar a limpar o caminho?</p>
+<p> </p>
+<p>Enquanto a maioria das criaturas na costa é traiçoeira, os reais perigos são Karnifs e Scolopens. [%dic:STR_DIC_M_LF2A_Kalnif_45_An] S cortar com suas garras afiadas causando feridas pesadas, enquanto[%dic:STR_DIC_M_LF2A_ScorpionRough_45_An] S tem um veneno virulento que enfraquece até os danos mais fortes, deixando -os impotentes.</p>
+<p> </p>
+<p>Há pouco que posso lhe oferecer, mas nossos agradecimentos e a menção de seu nome em nossas bênçãos. Você estaria nos fazendo um ótimo serviço, no entanto. Você poderia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas! Você é verdadeiramente abençoado por Aion, e não vamos esquecer você.</p>
+<p> </p>
+<p>Se você realmente é escolhido para nos ajudar, elimine [%dic:STR_DIC_M_LF2A_Kalnif_45_An] Areia [%dic:STR_DIC_M_LF2A_ScorpionRough_45_An] está na costa de Latheron. Somente Aion conhece o número de vidas que você economizará, livrando -nos dessas ameaças.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou voltar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Você sabe, eu já conheci Daevas como você antes. Você vem aqui em busca de poder ou glória.</p>
+<p> </p>
+<p>Mas ser um Daeva é mais do que apenas poder. É o que fazemos que nos torna quem somos, não o que podemos ganhar.</p>
+<p> </p>
+<p>Se você mudar de idéia e decidir se provar digno da bênção de Old Class Aion, você sabe onde me encontrar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou me lembrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e braços, você voltou!</p>
+<p> </p>
+<p>A luz parece ter brilhado brilhantemente em você, [%userclass]. Você se aventurou na costa de Latheron?</p>
+<p> </p>
+<p>Quantos[%dic:STR_DIC_M_LF2A_Kalnif_45_An] Areia [%dic:STR_DIC_M_LF2A_ScorpionRough_45_An] S você matou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Tudo o que parecia necessário."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bênçãos do sol sobre você, [%userclass]. Seu trabalho aqui mostra que você tem o espírito de um verdadeiro guardião.</p>
+<p> </p>
+<p>O caminho para Bab-El-matoub agora é mais seguro por causa de você, pelo qual aqui no Observatório agradecem.</p>
+<p> </p>
+<p>Uma tarefa realizada por seu próprio mérito é a melhor recompensa, mas até os guardiões devem comer. Aceite essa pequena recompensa como um sinal de nossa apreciação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute contra as criaturas que estão dificultando as viagens ao longo da costa.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF2A_Kalnif_45_An]([%2]/8).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF2A_ScorpionRough_45_An]([%5]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Diokuroi].</p></step>
+</steps>
+<p>Diokuroi diz que Daevas e humanos têm dificuldades quando viajam pela costa de Lagdos. Vá e lute contra os Karnifs pretos e a cauda de veneno Scolopens.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Diokuroi disse que Daevas e humanos tiveram problemas para atravessar a costa de Latheron por causa de Karnifs e Scolopens.</p>
+<p> </p>
+<p>Ele pediu ajuda para se livrar dessas criaturas. Para ajudá -lo, você viajou para a costa de Latheron e matou Karnifs e Scolopens, ganhando sua gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

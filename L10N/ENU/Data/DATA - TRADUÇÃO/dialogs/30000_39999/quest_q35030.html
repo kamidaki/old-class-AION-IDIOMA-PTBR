@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para os olhos de [%username] Apenas:</p>
+<p> </p>
+<p>Este é um pedido urgente do Centurion[%dic:STR_DIC_N_Temenos], uma Ordem de Alabastro operacional disfarçado. Ele precisa de alguém discreto para carregar algumas informações importantes demais para anotar.</p>
+<p> </p>
+<p>Use o [%dic:STR_DIC_W_ZONE_NAME_Underpass]para se infiltrar em Gelkmaros e procurar o centurião temenos que atualmente está em uma missão para capturar o [%dic:STR_DIC_W_DF4_SZ_3021_A]lá.</p>
+<p> </p>
+<p>[%username], mova -se rapidamente e traga sua mensagem de volta a um[%dic:STR_DIC_E_35021].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido e guarde -o.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh uau. Não é um[%mainslotitem]?</p>
+<p> </p>
+<p>Isso é tão aiônico. Você acha que eu poderia experimentar mais tarde?</p>
+<p> </p>
+<p>Ah, e também, Cellatu Cellatu nas montanhas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Leowasp Leowasp nas planícies!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que eu vou entrar em mim mesmo em algum momento, dar uma mensagem daeva-to-daeva a um oficial da Ordem do Alabastro?</p>
+<p> </p>
+<p>Isso seria tão aiônico.</p>
+<p> </p>
+<p>Tudo bem, aqui está a mensagem: Estrela vermelha, barba de Shulack, Arqueiro Dourado, ouro transparente.</p>
+<p> </p>
+<p>Agora saia daqui antes que os asmodianos atacem novamente. No entanto, seria absolutamente aiônico ver que [%mainslotitem] em ação!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu tenho que voltar .."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus superiores estão me perseguindo sobre sua missão, [%username]. Onde você esteve?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estrela vermelha, barba de Shulack ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele disse 'Estrela vermelha, barba de Shulack, Arqueiro Dourado, ouro transparente'?</p>
+<p> </p>
+<p>Isso deve ser grande. Eu nem conheço um desses códigos, e supostamente conheço todos eles. Eu tenho que conversar com o presidente da Alabaster Order, Typhon, sobre isso.</p>
+<p> </p>
+<p>Por favor, pegue isso. Pense nisso como uma recompensa por conseguir que os altos superiores parem de me assediar sobre se você voltou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Temenos].</p></step>
+<step><p visible="[%3]">Fale com um[%dic:STR_DIC_E_35021].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Temenos, um operador da Ordem de Alabastro no Templo Crimson, precisava que você entregue sua mensagem.</p>
+<p> </p>
+<p>Você se infiltrou em Gelkmaros e conheceu o Centurion Temenos, que o memorizou para entregar a um chefe de ramo de Inggison que sabia que era de alto nível e sério.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

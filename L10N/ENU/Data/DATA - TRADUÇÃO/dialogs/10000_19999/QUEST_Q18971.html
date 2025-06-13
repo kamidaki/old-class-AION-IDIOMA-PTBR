@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um favor pessoal a perguntar a você, [%username].</p>
+<p> </p>
+<p>Você poderia se livrar do[plur][%dic:STR_DIC_M_LF5_C_RottentreeS_57_An], o [plur][%dic:STR_DIC_M_LF5_E_Gargoyle_59_An] e o [plur][%dic:STR_DIC_M_LF5_F_Slime_60_An]na região da Guilda?</p>
+<p> </p>
+<p>Estamos fazendo o possível para defender todas as base em todas as regiões.</p>
+<p> </p>
+<p>Obviamente, nos preocupamos em ser atacados por asmodianos, mas mesmo os encrenqueiros ao redor da base são uma ameaça para nós.</p>
+<p> </p>
+<p>Em toda região da Guilda, há um[%dic:STR_DIC_I_IDLDF5Re_solo_Key_00]como recompensa por esta tarefa.</p>
+<p> </p>
+<p>Vá para o [plur][%dic:STR_DIC_E_LF5_IDF5_Mini_01_Officer_L_all]Quando você está pronto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Prazer em conhecê-lo.</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você completou uma missão para a Guilda.</p>
+<p> </p>
+<p>Muito obrigado, [%username].</p>
+<p> </p>
+<p>As regiões da Guilda são bases importantes na Signia.</p>
+<p> </p>
+<p>É por isso que sempre há muito a ser feito.</p>
+<p> </p>
+<p>A partir de agora, precisaremos da sua ajuda regularmente, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os encrenadores que estão interferindo na defesa do armazém da Guilda.</p>
+<p visible="[%3]">Mate o [plur][%dic:STR_DIC_M_LF5_C_RottentreeS_57_An]([%5]/4).</p>
+<p visible="[%6]">Derrotar o [plur][%dic:STR_DIC_M_LF5_E_Gargoyle_59_An]([%8]/4).</p>
+<p visible="[%9]">Derrotar o [plur][%dic:STR_DIC_M_LF5_F_Slime_60_An]([%11]/4).</p></step>
+<step><p visible="[%12]">Relatório de volta para [%dic:STR_DIC_E_LF5_IDF5_Mini_01_Officer_L_all].</p></step>
+</steps>
+<p>Pekus precisa da sua ajuda. Elimine os encrenadores que ameaçam o armazém da Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pekus ordenou que você derrotasse os encrenqueiros que ameaçavam o armazém da Guilda.</p>
+<p> </p>
+<p>Você eliminou os encrenqueiros e relatou -se a um dos principais superintendentes da estrada de campo Aetica.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O, ho! É o Liberador! Meu, mas você está ansioso. Alinhando -se para o treinamento, mesmo enquanto seus camaradas estão sentados com os pés bebendo os coquetéis de Meon? Bem, eu gosto disso em um pântano.</p>
+<p> </p>
+<p>Lembre -me do seu nome verdadeiro de novo? O que é isso? Hum, [%username]... [%username]... Sim, você está na lista!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há uma lista?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que existe! Você não acha que desperdiçaríamos recursos valiosos de treinamento em apenas qualquer um, não é? Eles me deram uma lista de candidatos que devo deixar entrar no desafio do Crisol. Se dependesse de mim, eles cortariam metade dos nomes desta lista. Mas então, não depende de mim.</p>
+<p> </p>
+<p>Aparentemente, eles acham que você está pronto, e você acha que está pronto ... agora você só me deixa para convencer. Você vai tentar o treinamento pessoal?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria pensar assim! Agora, Liberator, deixe -me dizer o que você enfrentará.</p>
+<p> </p>
+<p>Se você já abordou o Crisol Empíreo antes, conhece a broca: vários estágios dos inimigos, cada um composto de várias rodadas. E um grande bandido chamado Vanktrist no final. Somente, desta vez, existem apenas 6 etapas, e você passará pela provação sozinho.</p>
+<p> </p>
+<p>Vejo você de volta aqui quando tiver sangue de vanktrist em suas mãos. Uh ... seu sangue ilusório, é isso. Não há inimigos reais aqui!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não temo ilusão!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é ótimo. Agora eu tenho que relatar aos poderes que um de seus animais de estimação Daevas não cumpriu a fé depositada neles.</p>
+<p> </p>
+<p>Há pessoas que imploram por esta oportunidade, você sabe.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só tenho muito no meu prato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O Liberador retorna!</p>
+<p> </p>
+<p>Diga -me como você se saiu no desafio do Crucol.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Veja isso? Sangue ilusório."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perbano, você ouve isso? Mudslime está dizendo que conquistou o vanktrist. Você pode confirmar?</p>
+<p> </p>
+<p>Bem, bem, bem. Parece que você está no nível. Temos um título para as pessoas que fizeram o que você fez: Challenger Crisol. Honestamente, eu não acreditava que você tivesse isso em você, mas estou feliz em admitir que estava errado!</p>
+<p> </p>
+<p>O desafio do Crisol será aberto a você novamente no futuro, para que você aprimore suas habilidades.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_E_IDArena_Solo_S6_VanqJr_55_An], o oponente final no desafio do Crucol ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Molfus].</p></step>
+</steps>
+<p>Derrote o Spacetwine do Vanktrist, o oponente final no desafio do Crisol, e reporte -se ao sargento de combate Crisol Molfus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu autorização dos superiores para fazer treinamento pessoal no desafio do Crisol.</p>
+<p> </p>
+<p>Você derrotou o Spacetwine do Vanktrist e relatou -se ao sargento de combate Crisol Molfus, que o recompensou, e convidou você a treinar o desafio do Crisol novamente no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

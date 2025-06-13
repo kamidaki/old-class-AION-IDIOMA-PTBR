@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, é ... segure, [%userclass]. Receio não poder deixar você passar.</p>
+<p> </p>
+<p>A biblioteca oculta contém alguns dos livros mais raros e mais procurados em toda a Atreia. Os documentos dentro dessas paredes anteriores ao cataclismo-as ​​obras da antiguidade não encontraram nenhum outro lugar.</p>
+<p> </p>
+<p>Eles são insubstituíveis e acessíveis apenas por nossos estudiosos mais instruídos ou pelos distintos servos do santuário.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não sou distinto o suficiente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você deseja entrar na Biblioteca Hidden, precisará de uma carta de recomendação da organização a que pertence.</p>
+<p> </p>
+<p>Você precisa de uma carta de recomendação do nível mais alto.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_Lavirintos], talvez ele possa ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já ouvi muitos dos seus serviços incríveis para o santuário, [%username].</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_Lavirintos]no salão dos protetores e peça -lhe uma carta de recomendação.</p>
+<p> </p>
+<p>Se ele está feliz com as missões que você completou até agora, ele deve lhe dar uma no local.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazer de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não parece ter nenhum interesse particular nos documentos na biblioteca oculta.</p>
+<p> </p>
+<p>Então você também não precisa se preocupar em receber uma carta de recomendação.</p>
+<p> </p>
+<p>Tudo bem, tudo bem. Vá agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou sempre feliz em ver você, [%username].</p>
+<p> </p>
+<p>O que te traz para mim hoje?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu preciso de uma carta de recomendação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você procura entrada para a biblioteca oculta.</p>
+<p> </p>
+<p>Seu serviço a Verteron é maior da moeda do que qualquer quantidade de Kinah, [%username]. Conceda-me um momento e você terá sua carta.</p>
+<p> </p>
+<p>Quase ... atravesse o "t" ... e aí está. Leve isso para a biblioteca e você certamente ganhará entrada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Obrigado, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso escrever uma carta de recomendação até que você tenha concluído a tarefa que lhe dei.</p>
+<p> </p>
+<p>Você entende, é claro? Se não tenho provas de suas habilidades, estou colocando meu nome em especulação e chamando -o de fato.</p>
+<p> </p>
+<p>Volte para mim quando você concluir a tarefa e ficarei feliz em escrever sua recomendação. No meu segundo papel, nada menos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como ... charmoso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, [%username].</p>
+<p> </p>
+<p>Você recebeu uma carta de recomendação de Lavirintos?</p>
+<p> </p>
+<p>Então eu vou te dar acesso à biblioteca oculta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu faço. Está bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê a carta de recomendação) Parece que Lavirintos confia muito em você, [%username].</p>
+<p> </p>
+<p>Não estou surpreso que todos no santuário estejam falando sobre você.</p>
+<p> </p>
+<p>Acordado. Vou te dar acesso à biblioteca oculta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_N_Lavirintos] e peça uma carta de recomendação.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Latri].</p></step>
+</steps>
+<p>É necessária uma carta de recomendação para entrar na biblioteca oculta. Converse com Lavirintos no salão dos protetores para receber a carta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Latri disse que você precisa de uma carta de recomendação que prova seu excelente serviço para o Santuário para acessar a Biblioteca Hidden.</p>
+<p> </p>
+<p>Você pediu a Lavirintos dos Miragent Sagd Templars no salão dos protetores para uma carta de recomendação. Isso lhe deu acesso à biblioteca oculta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

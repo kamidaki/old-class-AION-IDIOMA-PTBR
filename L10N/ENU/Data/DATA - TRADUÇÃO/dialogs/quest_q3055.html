@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- DESEJADO -</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>O escopo fugitivo foi considerado culpado das seguintes acusações:</p>
+<p></p>
+<p>1. Atacando a agência comercial e assassinando sete shugos.</p>
+<p>2. Trabalhando para revolucionários lefaristas.</p>
+<p>3. Partindo da prisão em santuário.</p>
+<p></p>
+<p>Uma recompensa generosa está disponível para quem captura ou mata [%dic:STR_DIC_M_LF2A_LehparFiPrisonerNMQ_50_An_1] e traz seu baú de ferramentas de tatuagem.</p>
+<p></p>
+<p>Postado por [%dic:STR_DIC_N_Iphigenia], Oficial de Administração</p>
+</body>
+</html>
+</contents>
+<background name="Doc_bg_q3055"></background>
+<selects>
+<act href="HACTION_SETPRO1">"Eu posso lidar com ele."</act>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho outras coisas para fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, Daeva!</p>
+<p> </p>
+<p>Sempre fico feliz em ver as mãos fortes prontas para trabalhar. Você está pronto para tirar suas mãos empoeirado aqui?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu já tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o escopo? Você terá que me trazer [%dic:STR_DIC_I_QUEST_3055a]como prova.</p>
+<p> </p>
+<p>Tenho certeza de que você é confiável. É que eu lidei com caçadores de recompensas e shugos por muito tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazer na próxima vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por trazer o baú da ferramenta de tatuagem do Scopind. Você certamente teve que matá -lo por isso. Eu sei que ele nunca teria desistido isso enquanto estava vivo.</p>
+<p> </p>
+<p>Oileus ficará com ciúmes. Isso é menos trabalho para esses outros caçadores de recompensas. Oh, isso me lembra, eu deveria ter Rosina atualizando seus registros.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer evidências de matar [%dic:STR_DIC_M_LF2A_LehparFiPrisonerNMQ_50_An_1]para [%dic:STR_DIC_N_Iphigenia].</p>[%collectitem]</step>
+</steps>
+<p>Mate o escopo fugitivo, um criminoso procurado, e leve seu baú de ferramentas de tatuagem para a Iphigenia para receber a recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o escopo fugitivo, um criminoso procurado por vários crimes, e trouxe seu baú de ferramentas de tatuagem para a ifigenia como evidência. Ela o recompensou com a recompensa por Scopind.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

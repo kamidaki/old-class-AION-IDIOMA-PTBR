@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu faço a maioria das missões de observação em torno do Centro de Pesquisa Lefarista. Eu gostaria que Aiokina pudesse me ajudar, mas ela está cansada demais.</p>
+<p> </p>
+<p>Estou cansado também, mas o que posso fazer? Devemos cuidar um do outro.</p>
+<p> </p>
+<p>Ah bem. Se eu for explorar, posso praticar contra os lefaristas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Escotismo é um trabalho necessário."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hoje em dia, o escotismo é difícil. Os lefaristas treinaram e liberaram dezenas de [%dic:STR_DIC_M_Pretor_40_An] Areia [%dic:STR_DIC_M_Kuillus_40_An] para proteger o Centro de Pesquisa Lefarista.</p>
+<p> </p>
+<p>Eles são mais sensíveis que os humanos e podem sentir até o menor ruído. Eu quase fui pego várias vezes.</p>
+<p> </p>
+<p>Talvez você tivesse mais sorte. Você se importaria de ir ao centro de pesquisa e diminuir os precedentes e Kirris? Seria uma grande ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem alguns[%dic:STR_DIC_M_Pretor_40_An] Areia [%dic:STR_DIC_M_Kuillus_40_An] está ao redor do Centro de Pesquisa Lefarista.</p>
+<p> </p>
+<p>Eles são irritantes, mas não devem ser problemas para alguém de sua habilidade.</p>
+<p> </p>
+<p>Limpe o máximo que puder. Não quero que eles interfiram nas minhas missões de escotismo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está ocupado?</p>
+<p> </p>
+<p>Sim, você deve estar ocupado.</p>
+<p> </p>
+<p>Você não tem medo de precestos e kirris, está?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não tenho medo. Simplesmente não está interessado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como os lefaristas treinaram precedentes e Kirris?</p>
+<p> </p>
+<p>Kalione disse algo sobre um experimento de corpo vivo. Você acha que os bestas têm algo a ver com isso?</p>
+<p> </p>
+<p>Não conheço ciência, mas o que esses lefaristas estão fazendo me dá arrepios. Você lidou com as bestas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Com certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Isso é ótimo.</p>
+<p> </p>
+<p>Graças a você, posso explorar sem encontrar constantemente essas criaturas.</p>
+<p> </p>
+<p>Os lefaristas reabastecerão seus números em breve, mas vou aproveitar a paz enquanto ela dura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Pretors e os Kirris, que estão guardando o centro de pesquisa.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Pretor_40_An]([%2]/15).</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Kuillus_40_An]([%5]/12)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kuobe].</p></step>
+</steps>
+<p>Fine os precedentes e os Kirris, perto do Centro de Pesquisa Lefarista, para que Kuobe possa realizar as missões de exploração imperturbáveis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kuobe disse que não podia realizar suas missões de escotismo devido a observadores pretornos e kirrinos ferozes treinados pelos lefaristas.</p>
+<p> </p>
+<p>Você caçou precedentes e Kirris ao redor do centro de pesquisa lefarista, e agora Kuobe pode explorar novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

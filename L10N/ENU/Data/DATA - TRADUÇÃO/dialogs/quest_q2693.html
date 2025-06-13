@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Eu tive uma mensagem para você. Você vai para a fortaleza de Beluslan e encontrar a General da Brigada Nerita.</p>
+<p> </p>
+<p>O pretantista que acabou de passar disse que o general da brigada estava procurando por você. Eu não perderia tempo-indo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei? Não tenho nada melhor para fazer aqui do que levar mensagens para você? Se a Brigada Geral[%dic:STR_DIC_N_Nerthus]Quer ver você, ela provavelmente lhe dará uma missão importante. Por que mais ela tentaria rastrear você?</p>
+<p> </p>
+<p>De qualquer forma, continue para que eu possa voltar ao trabalho. Sangue para sangue.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, e se você se sentir pronto, poderá passar uma boa palavra para nós aqui. Fora da vista, fora da mente, como eles dizem, e poderíamos usar alguma atenção aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu devo. Para Asmodae."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está ... recusando? Para ir ver o general da brigada? Você é louco? É melhor você ter algo realmente importante para ocupar sua atenção.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu te diria, mas teria que matá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você. Eu estive esperando que você apareça. Diga -me, você conhece o Krall?</p>
+<p> </p>
+<p>Eles são uma raça de sapiens que vive em Elysea.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu não ouvi falar deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espiões trouxeram informações de que podem usar o Aether. Eles provavelmente aprenderam com o Balaur.</p>
+<p> </p>
+<p>Alguns Krall ficaram loucos, no entanto, possivelmente de usar muito aether. Eles começaram a se atacar em grandes batalhas sem motivo aparente. Eu quero saber o porquê.</p>
+<p> </p>
+<p>Eu quero que você me traga uma amostra da energia de Aether que os deixou loucos. Dado para entender que está em algum lugar ao redor da vila de Kishar em Heiron. Vá para o posto de observação do Ghost Village e converse com[%dic:STR_DIC_N_Sorgrim]. Ele lhe dirá como chegar lá.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. Eu estive esperando por você. Esta é uma missão perigosa, mas a General da Brigada Nerita tem confiança em suas habilidades. Eu raramente a vi tão impressionada com alguém. Espero que você cumpra as expectativas dela.</p>
+<p> </p>
+<p>A primeira dificuldade que você enfrentará é que os Krall são pelo menos tão agressivos quanto o Mau. Não vai ser fácil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Como eu chego lá?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A brecha que você precisa geralmente aparece no ninho de Mahisha. É um pouco a sudoeste do acampamento de Kidorun. Parece apenas irregularmente, no entanto.</p>
+<p> </p>
+<p>A brecha o levará para as marchas de nevoeiro cinza ou o bosque de deterioração. Se você chegar ao bosque, pegue a estrada para o sul através do pântano de lágrimas pretas para chegar à vila. Passe a vila e suba a colina a leste. Você pode encontrar um Krall insano lá.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Nerthus].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Sorgrim].</p></step>
+</steps>
+<p>O Centurion Freyja disse que a General da Brigada Nerita estava procurando por você. Vá para a fortaleza e conheça Nerita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Freyja disse que a General da Brigada Nerita da fortaleza de Beluslan estava procurando por você. Você foi à fortaleza e conheceu Nerita. Ela disse que seu espião encontrou informações interessantes sobre o Sapiens em Heiron chamado Krall.</p>
+<p> </p>
+<p>Ela queria aprender mais sobre esses Krall, alguns dos quais enlouqueceram com muito uso de Aether. Ela pediu que você obtenha uma amostra da energia que os deixou louca.</p>
+<p> </p>
+<p>Você foi para Sorgrim e ele lhe deu instruções para chegar à vila de Kishar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

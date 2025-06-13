@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já esteve no olho de Tiamaranta?</p>
+<p> </p>
+<p>Ainda existem muitos soldados de Tiamat que continuam a luta nos olhos de Tiamarantara</p>
+<p> </p>
+<p>A situação deve ser monitorada. Você talvez pudesse ir ao olho de Tiamaranta, encontrar -se com[%dic:STR_DIC_N_Marmara] e vê que ele precisa da sua ajuda?</p>
+<p> </p>
+<p>Ele será capaz de contar mais sobre a situação nos olhos de Tiamaranta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu te vi de longe, [%userclass], e pensei comigo mesmo que você deve ser a pessoa sobre a qual Harold falou.</p>
+<p> </p>
+<p>Eu deveria falar sobre a situação nos olhos de Tiamaranta e informar se eu tiver algum problema, [%username].</p>
+<p> </p>
+<p>Antes de voltar, você poderia cuidar do[plur][%dic:STR_DIC_M_TDown_DrakanFi_Noble_60_An], o [plur][%dic:STR_DIC_M_TDown_DrakanSC_Noble_60_An] e o [plur][%dic:STR_DIC_M_TDown_DrakanFi_Noble_60_An_Deco]no caminho externo? Isso ajudaria muito a nossa operação.</p>
+<p> </p>
+<p>Embora a morte de Tiamat signifique que há menos uma ameaça, ainda estamos tendo dificuldades com o Drakan no caminho externo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Qual é a situação nos olhos de Tiamaranta?</p>
+<p> </p>
+<p>Ouvi dizer que Marmara lhe perguntou, [%username], para cuidar de algumas coisas no seu caminho de volta dos olhos de Tiamaranta.</p>
+<p> </p>
+<p>Haha, mas não o julgue muito severamente. Afinal, ele está realizando sua tarefa de maneira muito diligente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente conseguiu muito.</p>
+<p> </p>
+<p>Tiamat não existe mais, mas a guerra continua em Tiamaranta.</p>
+<p> </p>
+<p>Afinal, os soldados do Lord Balaur não desaparecem da noite para o dia.</p>
+<p> </p>
+<p>A resistência deles ainda é forte, mas seus dias são numerados.</p>
+<p> </p>
+<p>Aqui, isso é uma recompensa por seus esforços nos olhos de Tiamaranta. Por favor, aceite -os.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Marmara].</p></step>
+<step><p visible="[%9]">Destruir o [%dic:STR_DIC_E_Q12068]([%11]/6).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_Herald].</p></step>
+</steps>
+<p>Entre nos olhos de Tiamara e ajude Marmara matando o Drakan dos olhos de Tiamaranta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Harold pensou que seria instrutivo se você fosse a olho de Tiamaranta. Ele pediu que você se encontrasse com Marmara nos olhos de Tiamaranta. Você também teve a tarefa de obter uma visão geral da situação local.</p>
+<p> </p>
+<p>Depois de entrar nos olhos de Tiamaranta, você se encontrou com Marmara. Quando você soube que seu apoio era necessário, você eliminou o Drakan.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

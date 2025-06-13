@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Garra negra Scratchers são a principal força de combate da tribo da garra negra. Esses são os que devemos ter como alvo se queremos derrotá -los.</p>
+<p> </p>
+<p>Seus lutadores de elite são chamados[%dic:STR_DIC_M_LycanWarriorS_18_Ae] S, [%dic:STR_DIC_M_LycanSeekerS_18_Ae] Areia [%dic:STR_DIC_M_LycanFighterS_18_Ae] S.</p>
+<p> </p>
+<p>Eu gostaria que você os afine um pouco, se você estiver pronto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você faria, faria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Verdade seja dita, você é o único Daeva por aqui em que posso confiar para fazer o trabalho.</p>
+<p> </p>
+<p>Se você sobreviver, eu o recompensarei generosamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, e eu não iria lá sozinho se fosse você. Este é o tipo de trabalho que é melhor feito com alguns amigos corajosos.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_W_DF1A_20] e o [%dic:STR_DIC_W_DF1A_30] São áreas perigosas. Você quer alguém que esteja cuidando de suas costas em lugares assim.</p>
+<p> </p>
+<p>Lembre -se, você está procurando[%dic:STR_DIC_M_LycanWarriorS_18_Ae] S, [%dic:STR_DIC_M_LycanSeekerS_18_Ae] Areia [%dic:STR_DIC_M_LycanFighterS_18_Ae] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está com medo? Bem, você deveria estar, [%userclass]. Mas um Daeva de Pandaemonium faz o trabalho de qualquer maneira!</p>
+<p> </p>
+<p>Pense, junte sua coragem e volte para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se livrou daquelas garras pretas?</p>
+<p> </p>
+<p>Não poderia ter sido fácil, mas se você falhasse, não estaria aqui, seria?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu não falhei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Bom trabalho!</p>
+<p> </p>
+<p>Deixe a garra preta tentar voltar disso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos soldados pretos de elite da garra!</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LycanSeekerS_18_Ae]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LycanWarriorS_18_Ae]([%5]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LycanFighterS_18_Ae]([%8]/5)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Valuerin].</p></step>
+</steps>
+<p>Para prejudicar a Tribo Garra Negra, você decidiu se livrar dos soldados de elite primeiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valurion lhe disse que, para limpar a tribo da garra negra, os soldados de elite devem ser neutralizados primeiro. Você foi ao posto avançado da garra preta e destruiu sua força principal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

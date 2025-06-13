@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vir. Compartilhe os problemas de Girrinerk.</p>
+<p> </p>
+<p>As mercadorias devem ser preparadas, super urgentes. Girrierk tão ocupado que se esquece de preencher o Roll para Gojirunerk! Desastre, Nyerk!</p>
+<p> </p>
+<p>Gojirunerk Enviar apenas itens solicitados por escrito. Sem rolagem de pedido, sem suprimentos!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qualquer coisa que eu possa ajudar?".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Credibilidade!</p>
+<p> </p>
+<p>Girrik diz que os pedidos dos clientes sempre entregam a tempo. Rápido, rápido! Ordem para o importante Daeva vencido em breve ... e sem suprimentos!</p>
+<p> </p>
+<p>Daeva vai ajudar ...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Aqui está o scroll de pedidos.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Shugo_LF2a_7] está no campo de escavação de Meniherk. É uma viagem fácil para Big Daeva como você.</p>
+<p> </p>
+<p>Apresse -se, apresse -se! Cabelo solto do estresse a cada minuto! Bald shugo, sem clientes inspirar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De volta ao flash!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, Daeva! Como você poderia?</p>
+<p> </p>
+<p>Girrierk Não peça ajuda a qualquer Zellinia antiga! Mas ele te pergunta!</p>
+<p> </p>
+<p>Por favor, pense. Nyerk, Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ei, desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos, muitas ordens. Apenas um gojirunerk. Todo mundo quer cada vez mais! O que é bom para os negócios, mas ruim para a hora da soneca.</p>
+<p> </p>
+<p>Se não for uma questão urgente, volte mais tarde.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu tenho uma ordem urgente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, peça de Girriner. Esta não é a primeira vez que Girrinerk faz alguém correr, correr com ordem. Normalmente, o jovem Shugo, mas desta vez é digno daeva.</p>
+<p> </p>
+<p>Um dia, Gojirunerk deixou o esquecimento de Girriner arruiná -lo.</p>
+<p> </p>
+<p>Mas hoje bom dia para Shugo. Os suprimentos corretos estão aqui, e o GoJirunerk os adicionará à entrega. Girrierk Sorte de ter Daeva Handy para fazer recados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Err ... obrigado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas pequenos cabelos ainda deixados em Girriner. A maioria se preocupa que o cliente venha enquanto Daeva está fora.</p>
+<p> </p>
+<p>Mas não! Girrierk salvo!</p>
+<p> </p>
+<p>O Scroll é entregue ao Gojirunerk?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seu pedido está dentro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo, ótimo!</p>
+<p> </p>
+<p>A honra de Girrinerk salva! O cliente importante nunca sabe sobre preocupação e corrida!</p>
+<p> </p>
+<p>Obrigado Daeva. Por favor, pegue isso. Pequeno algo para fazer o dia feliz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Shugo_LF2a_7].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_LF2_6].</p></step>
+</steps>
+<p>Entregue o pergaminho do pedido de Girrinerk para Gojirunerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Girriner é um shugo distraído que administra uma farmácia. Ele pede que você entregue o rolagem do pedido ao Gojirunerk no último segundo.</p>
+<p> </p>
+<p>Você entregou o pergaminho, e Girrinerk foi muito agradecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

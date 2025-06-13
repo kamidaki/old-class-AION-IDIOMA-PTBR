@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você certamente percebe a importância das rações do exército.</p>
+<p> </p>
+<p>Eles são uma mercadoria essencial, permitindo -nos comer, beber e viver.</p>
+<p> </p>
+<p>E os preguiçosos Sheluk estão roubando essas rações, que passamos por grandes problemas para garantir.</p>
+<p> </p>
+<p>[%username], por favor, punir estes ladrões[%dic:STR_DIC_M_LDF5A_G2_Sheluk_63_An] e assustá -los.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o odioso Sheluk?</p>
+<p> </p>
+<p>Não podemos tolerá -los levando minhas disposições - não, as disposições do esquadrão.</p>
+<p> </p>
+<p>Precisamos mostrar a eles com quem eles estão lidando.</p>
+<p> </p>
+<p>Não mostramos misericórdia para ladrões.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], obrigado por seus esforços.</p>
+<p> </p>
+<p>Agora posso relaxar novamente.</p>
+<p> </p>
+<p>Como você derrotou alguns deles, eu cuidarei do resto.</p>
+<p> </p>
+<p>Agora eles entenderão que você não apropriou os suprimentos dos soldados e ficará impune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_G2_Sheluk_63_An]([%2]/11).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5a_Rasir_E]</p></step>
+</steps>
+<p>Mate o preguiçoso Sheluk que rouba as rações do Exército.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lassir pediu que você punisse o lento Sheluk que roubou as rações do Exército.</p>
+<p> </p>
+<p>Como comandado, você matou o lento Sheluk e relatou que algumas das bestas que você puniram e outras pessoas que você deixou viva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

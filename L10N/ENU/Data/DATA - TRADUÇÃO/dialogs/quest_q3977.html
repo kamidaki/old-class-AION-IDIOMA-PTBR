@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3977</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido para pedir a você, [%username].</p>
+<p> </p>
+<p>Você pode até chamá -lo de missão oficial.</p>
+<p> </p>
+<p>É sobre uma questão realmente importante que pode ter consequências abrangentes.</p>
+<p> </p>
+<p>Por favor, me escute.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu me encaixo nessa conta .... o que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A esperança para esta pesquisa é baseada nos recursos energéticos de Balaur que podem ser encontrados em Dark Poeta.</p>
+<p> </p>
+<p>Não posso mais te dizer. Mas você precisa acreditar em mim que a pesquisa pode levar a algo inovador.</p>
+<p> </p>
+<p>Mas não é para obter substâncias como Drana. Além disso, o próprio Balaur consome muita dessa substância.</p>
+<p> </p>
+<p>Se ao menos pudéssemos destruir as criações do Balaur. Eles consomem uma quantidade muito grande de Drana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me falar mais sobre as criações de Balaur. Todos eles usam Drana porque essa é sua fonte de energia.</p>
+<p> </p>
+<p>Na próxima vez que você for ao lago Marabata, você encontrará as criaturas mágicas chamadas[%dic:STR_DIC_M_IDLF1_NM_WaterGolem1_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_NM_WaterGolem2_50_Ah] e [%dic:STR_DIC_M_IDLF1_NM_WaterGolem3_50_Ah]lá.</p>
+<p> </p>
+<p>Os campos drana contêm[%dic:STR_DIC_M_IDLF1_F_Spaller_50_Ah], Assim, [%dic:STR_DIC_M_STR_IDLF1_F_Spaller2_50_Ah] e [%dic:STR_DIC_M_STR_IDLF1_F_Spaller3_50_Ah].</p>
+<p> </p>
+<p>Drana também é consumido pelo[%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah], o [%dic:STR_DIC_M_IDLF1_Generator1_50_Ah], o [%dic:STR_DIC_M_IDLF1_Generator2_50_Ah] e o [%dic:STR_DIC_M_IDLF1_Generator3_50_Ah]na mina de Timolia.</p>
+<p> </p>
+<p>Você deve destruir todas essas criações. Certamente não é uma missão fácil, mas, por favor, aceite porque é muito importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E eu vou! Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Entendo que você não quer ir para o Dark Poeta, porque é muito perigoso lá.</p>
+<p> </p>
+<p>Mas, por favor, pense no futuro de Elysea.</p>
+<p> </p>
+<p>Se você decidir me ajudar, fique à vontade para voltar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], você está de volta!</p>
+<p> </p>
+<p>Você completou a tarefa que eu perguntei?</p>
+<p> </p>
+<p>Conte -me sobre as criações de Balaur.</p>
+<p> </p>
+<p>O departamento de pesquisa também está aguardando seu relatório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Grande sucesso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem feito de fato, [%username].</p>
+<p> </p>
+<p>Estou admirado com você por cuidar de uma tarefa tão difícil tão rápido e tão confiável.</p>
+<p> </p>
+<p>Aqui, meus superiores me enviaram isso. É a sua merecida recompensa.</p>
+<p> </p>
+<p>Por favor, continue a nos ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Digitar [%dic:STR_DIC_W_IDLF1] e eliminar o [%dic:STR_DIC_M_IDLF1_Drakan_Creature]([%2]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Maloren]no[%dic:STR_DIC_W_LF3_SZ_004].</p></step>
+</steps>
+<p>Você recebeu uma missão para eliminar poderosas criações de Balaur que se escondem em Dark Poeta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Maloren relatou a você sobre as fontes de energia de Balaur em Dark Poeta.</p>
+<p> </p>
+<p>Para garantir energia, você destruiu as criações de Balaur, que incluíam um gerador de energia, Marabata, insetos Drana Spaller e um controlador de telepatia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk vê muitos dukakis e skurvs entre aqui e onde o irmão Moofrener está ... mas Daeva não deve ter problemas com eles, Nyerk.</p>
+<p> </p>
+<p>Daeva vai falar com o irmão Shugo agora? Conte a Moofrenerk sobre o nosso acordo de handshake?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vou esclarecer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk está preocupado com o Moofrenerk. O irmão está preso no meio de Haramel ... precisa de ajuda de Daeva para escapar, Nyerk.</p>
+<p> </p>
+<p>Talvez o bom Daeva se livre de alguns Dukakis no caminho de Moofrenerk? Ajude Moofrenerk?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, Daeva matará Dukakis para que Moofrenerk tenha um plano de fuga?</p>
+<p> </p>
+<p>Daeva e Shugos têm um acordo sólido de handshake se assim for ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu disse que lidaria com isso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Daeva só quer informações ... não quer ajudar, Nyerk?</p>
+<p> </p>
+<p>Esse é um terrível acordo de handshake, Daeva. Não é justo, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tanto a vida quanto a prisão são injustos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você foi o ruídos que o Moofrenerk ouviu, Daeva! O que te traz aqui?</p>
+<p> </p>
+<p>O Daeva está procurando um acordo especial de Ódio? O Moofrenerk não lida com isso ... apenas um trabalhador. Você deveria ver o grande chefe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seu irmão fez um acordo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Moorilerk fez um acordo com as autoridades da Daeva?</p>
+<p> </p>
+<p>Realmente? Nenhuma prisão por moofrener e irmão se ajudarmos o Daeva? Nyerk?</p>
+<p> </p>
+<p>Você também ajuda o Moofrenerk a escapar? Aqui ... pegue isso. Não é um pagamento ... apenas um obrigado. Um incentivo Shugo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encerrar Dukakis na refinaria Haramel Odium.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DbrownieWWa_smelt_18_an]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DBrownieMWa_18_an]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DBrownieWWa_18_an]([%8]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_IDNovice_2].</p></step>
+</steps>
+<p>Como sugeriu o Moorilerk, livre -se de Dukakis para que o Moofrenerk possa escapar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk disse que seu irmão estava preso dentro de Haramel e ele pediu que você matasse Dukakis para que ele pudesse escapar.</p>
+<p> </p>
+<p>Então, você terminou Dukakis e disse a Moofrenerk para correr. Ele agradeceu a Kinah, que você levou, mas nunca documentou em seu relatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

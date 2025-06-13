@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza de Roah é da maior importância estratégica. Não está apenas em uma posição vital, mas abriga vários artefatos poderosos.</p>
+<p> </p>
+<p>Obviamente, estamos planejando uma missão para capturar a fortaleza. Fazer isso exigirá inteligência precisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Escotismo é parte integrante da guerra".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você veja como é. Mas essa fortaleza está se mostrando mais difícil de explorar. É bastante preso.</p>
+<p> </p>
+<p>Fiquei autorizado a enviar alguém para eliminar o [%dic:STR_DIC_M_AncientCity_Guard]patrulhando a fortaleza. O que você diz, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Será uma tarefa difícil. Eu recomendaria reunir seus aliados.</p>
+<p> </p>
+<p>E cuidado com os olhos do sentinela flutuando acima da fortaleza. Os relatórios iniciais indicam que eles são bastante perigosos.</p>
+<p>Que a luz de Lady Ariel guie todos vocês.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve estar em outra missão importante.</p>
+<p> </p>
+<p>Não é preciso ter muitas obrigações de uma só vez. Eu entendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou feliz que você faça."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você voltou. Eu confio que sua missão foi um sucesso?</p>
+<p> </p>
+<p>Você parece ileso, então as coisas devem ter ido bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles preferem ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, excelente! Agora podemos prosseguir com o próximo estágio desta operação.</p>
+<p> </p>
+<p>Eu confio que você estará por perto para prestar sua assistência no futuro?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_M_AncientCity_Guard]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Livy].</p></step>
+</steps>
+<p>Reúna aliados para derrotar a guarnição da fortaleza para que Livius e Mercus possam coletar informações sobre a fortaleza de Roah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Livius disse que está coletando informações sobre a fortaleza estrategicamente importante de Roah e pediu sua ajuda para eliminar a segurança.</p>
+<p> </p>
+<p>Você fez o que ele solicitou e eliminou as patrulhas da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

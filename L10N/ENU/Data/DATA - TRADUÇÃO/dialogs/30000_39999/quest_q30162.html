@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30062</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_W_IDUnderpassRe_SZ]Isso foi descoberto no Silentera Canyon poderia se tornar perigoso para os asmodianos.</p>
+<p> </p>
+<p>Imagine o que poderia acontecer com o Balaur escondido se a fortaleza de Tiamat caísse!</p>
+<p> </p>
+<p>Eles poderiam atacar Gelkmaros ou este lugar aqui em desespero.</p>
+<p> </p>
+<p>Mas Vergelan está ocupado com os Elyos, por isso é difícil para mim dizer isso, mas preciso da sua ajuda ...</p>
+<p> </p>
+<p>[%username], você não poderia ir para [%dic:STR_DIC_W_IDUnderpassRe_SZ] e para matar o [plur][%dic:STR_DIC_E_Q30062all]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Você está de volta!</p>
+<p> </p>
+<p>Eu vi você e seus camaradas indo para a Jotun Square.</p>
+<p> </p>
+<p>Como estava o [%dic:STR_DIC_E_Q30062all]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você merece a boa reputação que tem, sem dúvida!</p>
+<p> </p>
+<p>Eu tinha medo de que o Drakan pudesse ser mais forte do que o previsto.</p>
+<p> </p>
+<p>Vou notificar Vergelan que o corredor da traição não é mais motivo de preocupação.</p>
+<p> </p>
+<p>Você quase certamente terá problemas por si mesmo, mas algo de bom saiu dele no final, e é isso que é mais importante, não é?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_E_Q30062all]que estão guardando o [%dic:STR_DIC_W_IDUnderpassRe_SZ].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q30062all_1]([%2]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q30062all_2]([%5]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDUnderpassRe_Drakan_Fi_N_57_Ae]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_IDUnderpass_Arne].</p></step>
+</steps>
+<p>Mate os lacaios de Rakshaka, que podem se tornar uma ameaça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arne temia que Vergelan estivesse tendo a idéia errada sobre o corredor da traição.</p>
+<p> </p>
+<p>Arne acredita que o Drakan se tornará imprevisível se Rakshaka for derrotado, e assim ele pediu que você os elimine.</p>
+<p> </p>
+<p>Você e seus camaradas eliminaram os seguidores de Rakshaka no corredor da traição. Arne então queria encaminhar um relatório de que o corredor da traição não era mais motivo de preocupação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

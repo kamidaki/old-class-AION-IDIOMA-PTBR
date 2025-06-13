@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Titorea], Marchutan anterior</p>
+<p>Tarefa: Reparo do Globo da Ward</p>
+<p> </p>
+<p>[%dic:STR_DIC_OBJ_Q47003] S instalado perto da fortaleza de gelo de Morheim está com defeito. Seu trabalho é descobrir o porquê.</p>
+<p>Encontre a [%dic:STR_DIC_E_Mentor], porque você não pode abrir os globos da ala sozinhos. Mantenha os olhos abertos e esteja disposto a aprender.</p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hora de se preparar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja nisso, [%username]. Os técnicos trabalham esse problema há um bom tempo.</p>
+<p> </p>
+<p>Eles estavam relutantes em realmente abrir os globos da ala, se você acreditar nisso.</p>
+<p> </p>
+<p>Qual foi a dificuldade?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Algo muito estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Slimes? No Globos da ala?!</p>
+<p> </p>
+<p>Esses técnicos devem ter suspeito! Covardes explosivos! Vou fazer com que seus superiores falem com eles de uma vez.</p>
+<p> </p>
+<p>Ainda assim, isso não foi uma perda total. Você e seu mentor aprenderam muito, tenho certeza. Receba essa recompensa, com minhas desculpas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], conserte o [%dic:STR_DIC_OBJ_Q47003] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Titorea].</p></step>
+</steps>
+<p>O Priorado do Marchutan tem uma tarefa. Encontre um mentor e verifique os globos da ala para a causa de seu fracasso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Priorado do Marchutan enviou você para encontrar e consertar o que fez com que o Morheim's Globes de Morheim funcione.</p>
+<p> </p>
+<p>Com a ajuda de um mentor, você descobriu que Slimes havia invadido os globos. Você os matou e relatou de volta ao Priorado por uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

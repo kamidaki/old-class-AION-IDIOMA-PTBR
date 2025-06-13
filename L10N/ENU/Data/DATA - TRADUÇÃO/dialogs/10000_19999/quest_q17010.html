@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q17010</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem da Guilda, todas as missões que precisam ser realizadas foram distribuídas entre os membros da Guilda. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para o bastião da parede de aço e mate o [%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al_nouse].</p>
+<p> </p>
+<p>Em seguida, relate à Battlemistress de Elysea [%dic:STR_DIC_N_Ceana].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou pashid?</p>
+<p> </p>
+<p>Se você realmente o derrotou, pode ter orgulho de denunciá -lo!</p>
+<p> </p>
+<p>[%username], muitos membros da Guilda estavam apenas esperando você concluir esta missão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora que o pashid foi derrotado, a energia escura do campo de batalha do Bastião da Parede de Aço desaparecerá em breve.</p>
+<p> </p>
+<p>Você continuará a concluir suas tarefas até que a missão da Guilda esteja completa?</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa da Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al_nouse]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ceana].</p></step>
+</steps>
+<p>Missão da Guilda: Você recebeu ordens para matar o comandante supremo Pashid. Completar a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você matasse o comandante supremo Pashid.</p>
+<p> </p>
+<p>Você participou de matar o comandante supremo Pashid para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

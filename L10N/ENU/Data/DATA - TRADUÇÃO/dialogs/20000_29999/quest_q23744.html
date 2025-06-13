@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: protetor do agente [%dic:STR_DIC_N_LDF4_Advance_Syrot_E]do[%dic:STR_DIC_W_LDF4_Advance_SZ_V01]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Comando: elimine os 12 Elyos que estão ameaçando o agente do Marchutan, mastarius.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Só podemos responder tão rapidamente às ações dos Elyos, porque nossa comunicação funciona tão bem.</p>
+<p> </p>
+<p>Claro, temos Daevas atenciosos como você para agradecer por isso, [%username].</p>
+<p> </p>
+<p>Você elimina os Elyos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão preocupado que algo pudesse acontecer com Mastarius porque os Elyos estão atacando continuamente.</p>
+<p> </p>
+<p>Você fez um bom trabalho.</p>
+<p> </p>
+<p>Obrigado por eliminar os Elyos, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que estão perturbando o agente do marchutan ([%2]/12).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF4_Advance_Syrot_E], que aparece se você vencer na batalha do agente.</p></step>
+</steps>
+<p>Ordens urgentes: eliminam os Elyos que estão ameaçando o agente do Marchutan, Mastarius. e reportar a Syrot. Ele aparece se você é vitorioso na batalha do agente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos ameaçaram os agentes de Marchutan.</p>
+<p> </p>
+<p>Você eliminou os Elyos atacantes e relatou a Syrot.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

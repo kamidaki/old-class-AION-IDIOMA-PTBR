@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso vai ser um problema.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O bastião lefarista. A construção está indo mais rápido do que eu pensava. Todos os dias eles trazem cada vez mais trabalhadores.</p>
+<p> </p>
+<p>Se não fizermos algo em breve, eles ficarão completamente entrincheirados.</p>
+<p> </p>
+<p>Parece que preciso de um voluntário ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se sairá de maneira excelente, se for tão bom quanto eles dizem.</p>
+<p> </p>
+<p>Para desacelerar, temos que eliminar sua força principal:[%dic:STR_DIC_M_LehparWa_38_An] S, [%dic:STR_DIC_M_LehparWorkerEM_37_An] Areia [%dic:STR_DIC_M_LehparWorkerFM_38_An] S.</p>
+<p> </p>
+<p>Faça isso bem e há a chance de uma recompensa. Fé e armas, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, bem, se alguém se voltasse, eu não teria esse problema.</p>
+<p> </p>
+<p>Alguém como você, por exemplo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu simplesmente não posso te ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como vai o trabalho? Diga -me que eles não terminaram o bastião antes de você chegar lá.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não, e eles não vão logo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve nos ganhar algum tempo para se preparar. Esperançosamente, a fortaleza enviará mais tropas em breve.</p>
+<p> </p>
+<p>Não podemos permitir que esses lefaristas ganhem uma posição muito forte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os revolucionários lefaristas do bastião lefarista.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparWa_38_An]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparWorkerEM_37_An]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparWorkerFM_38_An]([%8]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Laigas].</p></step>
+</steps>
+<p>O número de edifícios dentro do bastião lefarista está aumentando o tempo todo. Você deve matar os revolucionários lefaristas para impedir a conclusão da base.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laigas estava preocupada com o fato de o trabalho no bastião lefarista terminando muito rápido. Para impedi -los de completar o bastião, você eliminou o agressor, as cicatrizes e os plodders construindo o bastião.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva parece muito ocupado, mas Daeva talvez possa fazer um favor para Shugo, Ak?</p>
+<p> </p>
+<p>Os chefes de Shugo gostariam de abrir relações comerciais com os Aquans.</p>
+<p> </p>
+<p>Shugo já tentou conversar com eles muitas vezes, mas os aquans simplesmente não querem nada, Ak.</p>
+<p> </p>
+<p>Shugo não sabe o porquê. Daeva sabe alguma coisa sobre aquans, talvez?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">Você diz que todas as coisas que emitem calor são sagradas para os aquans.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é assim, AK? Então eu deveria encontrar algo na área que os aquans gostariam.</p>
+<p> </p>
+<p>Tenho certeza que eles adorariam o [%dic:STR_DIC_I_quest_25094a].</p>
+<p> </p>
+<p>Se Daeva traz um pouco, Shugo poderá embrulhá -lo bem.</p>
+<p> </p>
+<p>Daeva ajudará Shugo, AK?</p>
+<p> </p>
+<p>Daeva deve sempre considerar que Shugos nunca pede algo assim sem algo em troca, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva já está de volta, AK?</p>
+<p> </p>
+<p>Daeva encontrou os ossos de Balaur, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os ossos de Balaur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles ainda não esfriaram, Akakak.</p>
+<p> </p>
+<p>Os aquans vão assim, Ak.</p>
+<p> </p>
+<p>Então o plano de Shugo também será um sucesso, Ak.</p>
+<p> </p>
+<p>Daeva só tem que esperar um pouco até Shugo embalar tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva ainda não trouxe o [%dic:STR_DIC_I_quest_25094a]?</p>
+<p> </p>
+<p>Daeva não ouviu que Shugo recompensaria Daeva generosamente, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Está terminado, AK.</p>
+<p> </p>
+<p>Agora Daeva deve levá -lo para [%dic:STR_DIC_N_DF5_Daruku_E]Por favor, e.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Outlander.</p>
+<p> </p>
+<p>O que te traz aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a caixa de presente dos daemons de Charliruners e transmite as palavras de Bekrinerk.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Relações comerciais?</p>
+<p> </p>
+<p>Honestamente, eu não consigo nem suportar a visão dessas criaturas peludas estranhas.</p>
+<p> </p>
+<p>Não entraremos em relação às relações comerciais com eles. Mas muito obrigado pelo presente, Outlander.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_25094a] e trazê -los para [%dic:STR_DIC_N_DF5_Bakring_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Bakring_E].</p></step>
+<step><p visible="[%3]">Leve o presente de Bekrinerk para [%dic:STR_DIC_N_DF5_Daruku_E].</p></step>
+</steps>
+<p>Bekrinerk pediu que você pegasse os ossos de Balaur Hot para ele. Realize o pedido de Bekrinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bekriners queria fazer um acordo comercial com os aquans e, assim, pediu que você tivesse ossos de balaur quentes para ele.</p>
+<p> </p>
+<p>Você trouxe os ossos de Balaur quentes para Bekriner que os empacotaram cuidadosamente.</p>
+<p> </p>
+<p>Você levou o presente de Bekriner para o Aquan Daruku. Ele informou que ele não suporta Shugos e não tem intenção de negociar com eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

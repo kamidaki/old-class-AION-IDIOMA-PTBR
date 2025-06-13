@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algas e peixes, algas e peixes, algas e peixes ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Algas e peixes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É tudo o que como mais! Não tenho mais nada desde então ... bem, eu nem me lembro, por quanto tempo.</p>
+<p> </p>
+<p>Eu quero comer algo que cresça da terra. É por isso que saí da água.</p>
+<p> </p>
+<p>Estou tendo dificuldades com o terreno, embora ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você vai fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu ia pedir um bom transeunte para me ajudar-e aí está, passando!</p>
+<p> </p>
+<p>Eu ouvi sobre algo chamado[%dic:STR_DIC_G_vegetable_d_n_c_10b]. Disseram -me que é crocante, ao contrário de algas e peixes.</p>
+<p> </p>
+<p>Você pode conseguir um pouco para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você pode obter o [%dic:STR_DIC_G_vegetable_d_n_c_10b], e eu vou esperar aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com preguiça de escolher um vegetal ou dois do terreno, não é?</p>
+<p> </p>
+<p>Se eu puder sair da água, você pode descer e pegar uma planta. Sua ligação, é claro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu ... isso realmente não é muito bom."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta!</p>
+<p> </p>
+<p>Eu estive sentado aqui, me perguntando como[%dic:STR_DIC_G_vegetable_d_n_c_10b]gostos.</p>
+<p> </p>
+<p>Você trouxe alguns?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não recebeu nenhum[%dic:STR_DIC_G_vegetable_d_n_c_10b]?</p>
+<p> </p>
+<p>Entendo que sou fascinante e que você deve querer conversar o dia todo, mas realmente-estou com muita fome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso certamente é crocante!</p>
+<p> </p>
+<p>É muito mais saboroso do que eu esperava. Obrigado pela ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_G_vegetable_d_n_c_10b] e leve para [%dic:STR_DIC_N_DF3_NPC_Irlein].</p>[%collectitem]</step>
+</steps>
+<p>Irlein diz que está farta de peixe e algas marinhas. Ela gostaria de provar Krimer. Você concordou em coletar alguns para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Irlein lhe disse que estava cansada de algas e peixes, e que queria comer algo que crescia da terra.</p>
+<p> </p>
+<p>A pedido dela, você trouxe um pouco de Krimer, e foi ainda melhor do que ela esperava.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

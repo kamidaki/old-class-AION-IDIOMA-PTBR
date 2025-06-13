@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Hora do seu treinamento real para começar, [%username].</p>
+<p> </p>
+<p>O que? Que? Hah, isso quase não foi um aquecimento! Vou explicar o próximo, mas estou cansado de me repetir, então ouça com cuidado desta vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, senhor!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve derrotar 5 oponentes.</p>
+<p> </p>
+<p>Como antes, não importa se você entra na arena de veemência, na arena da disciplina, na arena da cooperação ou na arena da glória para fazê -lo, ou se você está lutando contra asmodianos ou Elyos.</p>
+<p> </p>
+<p>Retorne quando você derrotar 5 oponentes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você preferir um duelo individual, entre na arena da disciplina. Se você deseja combater vários oponentes, entre na arena da veemência. Se você deseja lutar em equipe contra outras equipes, entre na arena da cooperação.</p>
+<p> </p>
+<p>Você pode pegar ingressos para as arenas do oficial de administração Crisol, [%dic:STR_DIC_N_Reigar].</p>
+<p> </p>
+<p>Boa sorte!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos! Esta nem é a sua primeira vez lá!</p>
+<p> </p>
+<p>... Ahh, eu vejo. Suas experiências anteriores assustaram você, não é? Talvez se você pensar em todos os corajosos Daevas que estão realmente preparados para enfrentar esse desafio, você deve intensificar seu jogo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você os viu? Eles lutam sujo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo dizer, [%username], você colocou uma luta muito melhor do que eu esperava. Pelo menos você não é bom demais para ficar um pouco suado de vez em quando.</p>
+<p> </p>
+<p>Bem, você conseguiu cinco? Eu não estava contando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu certamente fiz!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que você ganhou isso. Lord Marchutan nos deu os concedidos aos competidores de sucesso.</p>
+<p> </p>
+<p>Talvez com esse incentivo, você continuará competindo e melhorar suas habilidades. Pensar, temos que subornar Daevas se queremos um exército adequado para lutar contra Tiamat! Eu nunca teria pensado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar cinco oponentes no[%dic:STR_DIC_W_IDArena_pvp_D]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Shinin].</p></step>
+</steps>
+<p>Entre no coliseu Crisol, derrote cinco oponentes e reporte -se a Shinin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O sargento de combate Shinin ordenou que você derrotasse cinco oponentes no coliseu Crisol, pelo qual ele lhe deu uma recompensa obrigatória pelo Empíreo Lord Marchutan. Mais recompensas serão futuras para mais sucessos no Coliseu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

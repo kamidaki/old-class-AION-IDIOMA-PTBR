@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: as necessidades de gerenciamento[%dic:STR_DIC_I_quest_49601a]de [%dic:STR_DIC_E_LDF5a_Idgel_Q39601]. Por favor, obtê -los e entregue -os ao escritório administrativo, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Dumurinerk, Silverine Company</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa tarefa foi fácil, não foi, AK?</p>
+<p> </p>
+<p>Você deve reunir idium de idium quebrado, AK.</p>
+<p> </p>
+<p>Quando eu estava em sua posição, [%username], Tive que desenterrar grandes pedras de safira, Ak.</p>
+<p> </p>
+<p>Agora vamos olhar para as coisas que você trouxe, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o idium quebrado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem feito todo esse tempo, AK?</p>
+<p> </p>
+<p>Se você fizer isso assim, não posso lhe dar uma recompensa, AK.</p>
+<p> </p>
+<p>Vou te dar uma pausa desta vez. Traga -me [%dic:STR_DIC_I_quest_49601a], conforme descrito nas instruções, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver, o nome do item está certo e o número também está certo, AK.</p>
+<p> </p>
+<p>Seu nome é[%username], certo? Seria bom se as coisas sempre pudessem ser como hoje, Ak.</p>
+<p> </p>
+<p>Mas por que as ordens vieram de cima para coletar essas coisas é um mistério para Shugo, Ak.</p>
+<p> </p>
+<p>Afinal, eles são brilhantes e bonitos, Akakak</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_49601a] e leve para [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p>[%collectitem]</step>
+</steps>
+<p>As instruções chegaram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Quando você coletou Idium quebrado e o entregou ao ramo de Silverine, no norte de Katalam, você foi elogiado e recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

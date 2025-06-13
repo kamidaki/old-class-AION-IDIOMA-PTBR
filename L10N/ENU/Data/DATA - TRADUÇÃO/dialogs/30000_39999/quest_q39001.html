@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ajude a Guilda da Garra de Griffon matando[%dic:STR_DIC_E_Q39001].</p>
+<p> </p>
+<p>O objetivo da operação de Brusthonin é salvar a Guilda da Garra de Griffon e limpar os asmodianos com a marcha para Baltasar Hill.</p>
+<p> </p>
+<p>Desde o pouso de emergência em Brusthonin, a Guilda da Garra de Griffon se sustentou bem, mas agora está com problemas por causa do esquadrão de limpeza de Brusthonin.</p>
+<p> </p>
+<p>Você pode ajudar a Guilda da Garra de Griffon?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O esquadrão de limpeza de Brusthonin que estava perseguindo a Guilda da Grada de Griffon era na verdade um grupo que matou Mortos Vivos.</p>
+<p> </p>
+<p>Mas agora ele está atacando os Elyos. Os asmodianos devem pensar que os Elyos não são mais fortes que os Mortos Vivos.</p>
+<p> </p>
+<p>Idiotas.</p>
+<p> </p>
+<p>Você demonstrou o poder do Elyos para o esquadrão de limpeza de Brusthonin?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">(Você diz sim.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Que isso sirva como um lembrete aos asmodianos de que eles não devem subestimar os Elyos.</p>
+<p> </p>
+<p>[%username], Não vou esquecer tudo o que você fez.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_Q39001]([%2]/32).</p></step>
+<step><p visible="[%15]">Entregar seu relatório para [%dic:STR_DIC_NPC_Arena_Geniki_E_LHM]</p></step>
+</steps>
+<p>Mate os membros da equipe de limpeza em Brusthonin e relate o resultado a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ginikki disse para você ajudar a Guilda da Grada de Griffon, matando membros do esquadrão de limpeza de Brusthonin. Você demonstrou a majestade dos Elyos matando membros do esquadrão de limpeza de Brusthonin.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

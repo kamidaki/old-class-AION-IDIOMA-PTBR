@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(É uma letra selada com cera.)</p>
+<p> </p>
+<p>("To Eron" está escrito na capa.)</p>
+<p> </p>
+<p>(É melhor você mostrar isso para [%dic:STR_DIC_N_Lisidike].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez ela saiba mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Uma carta ... hmmm ....</p>
+<p> </p>
+<p>Olhe para o selo! Ninguém usou cera assim em ... Oh, cem anos ou mais.</p>
+<p> </p>
+<p>Você diz que conseguiu isso de um dos Mortos Vivos? É muito velho. Eu me pergunto...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Alguma ideia de quem é Eron?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eron ... eu já ouvi o nome antes.</p>
+<p> </p>
+<p>Eu acho que o nome foi usado por Endyon antes de ele subir-você conhece Endyon? Um dos sentinelas da vila de Jeiaparan. Uma vez ouvi um aldeão sênior chamá -lo de Eron. Eles eram amigos de infância.</p>
+<p> </p>
+<p>Por que você não pega a carta para Endyon e vê se é para ele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Boa ideia. Estou indo para a vila."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, meu nome de nascimento era Eron.</p>
+<p> </p>
+<p>Você ouviu que o trauma pode causar ascensão? Esse foi o caso comigo ... dor terrível ... mudei meu nome quando ascendi como um daeva.</p>
+<p> </p>
+<p>Um novo nome para uma nova vida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Eu tenho esta carta ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deve ter mais de cem anos ... escrito quando eu era humano ...</p>
+<p> </p>
+<p>(As mãos de Endyon se agitam enquanto ele lê a carta.)</p>
+<p> </p>
+<p>Meu irmão ... meu irmão desapareceu anos atrás ... esta carta ... é dele! Mortos Vivos, você diz? Que destino terrível!</p>
+<p> </p>
+<p>Sou grato a você, mas ... preciso estar sozinho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Claro. Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você viu Endyon?</p>
+<p> </p>
+<p>A carta foi para ele? O que ele disse?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">"Agora notícias, Lisks ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pobre Endyon! Ouvi dizer que o irmão dele estava desaparecido, mas nunca esperava que ele fosse um dos Mortos Vivos.</p>
+<p> </p>
+<p>Quanto mais eu falo com os habitantes locais, mais as coisas parecem estar conectadas. Muitas pessoas locais desapareceram na mesma época e algumas também foram descobertas como Mortos Vivos.</p>
+<p> </p>
+<p>Devemos conversar com Miobera. Seus estudos incluem as pessoas desaparecidas de Jeiaparan.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Vou ter uma palavra com ela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja esta lista! Durante esse período, cerca de cem anos atrás, as pessoas começaram a desaparecer.</p>
+<p> </p>
+<p>Tantos-é de partir o coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Temos outro ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O irmão de Endyon, morto -vivo. Quão horrível! Mas você o devolveu ao Aether? Espero que sim.</p>
+<p> </p>
+<p>Incluindo o irmão de Endyon, oito pessoas que desapareceram de Heiron Rose e ficaram Mortos Vivos.</p>
+<p> </p>
+<p>Eu preciso aprender mais sobre esse fenômeno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_Lisidike] Sobre a carta.</p></step>
+<step><p visible="[%3]">Entregar a carta para [%dic:STR_DIC_N_Endyon].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Lisidike].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Miobera], um arqueólogo.</p></step>
+</steps>
+<p>Encontre o proprietário da carta que você tirou de um dos Mortos Vivos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A capa da carta que você recebeu de um morto -vivo disse: "Para Eron". Quando você perguntou a Liske sobre isso, ela lhe disse que Endyon, um Sentinel Guardian, usou esse nome antes de subir.</p>
+<p> </p>
+<p>Quando você entregou a carta a Endyon, ele disse que seu irmão há muito perdido havia escrito. Quando você disse a ele que recuperou a carta de um dos Mortos Vivos, ele derramou lágrimas. Você contou a Liske o que aconteceu, e ela lhe disse para contar a Miobera. Você disse a Miobera o conto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deseja trocar um baú de medalhas de honra?</p>
+<p> </p>
+<p>Assim como um lembrete, não é possível um reexange usando as medalhas de Mithril.</p>
+<p> </p>
+<p>Isso custará muitas medalhas de Mithril, você tem algum em você? Nesse caso, me dê 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>[%username] estou oferecendo a você um baú de medalhas de honra em troca.</p>
+<p> </p>
+<p>Se o número de medalhas de Mithril estiver correto, você receberá o baú de medalhas de honra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as medalhas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pense antes de trocar medalhas.</p>
+<p> </p>
+<p>Volte quando tiver tomado sua decisão.</p>
+<p> </p>
+<p>Eu aguardo seu retorno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Você tem as 10 medalhas de Mithril agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as medalhas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Infelizmente, você não tem medalhas de Mithril suficientes.</p>
+<p> </p>
+<p>Volte quando tiver todos eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem agora.</p>
+<p> </p>
+<p>Aqui, pegue isso. O baú de medalhas de honra.</p>
+<p> </p>
+<p>Até a próxima vez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 10 medalhas de Mithril e leve tudo ao cronograma.</p>[%collectitem]</step>
+</steps>
+<p>Reúna 10 medalhas de Mithril e troque -as por uma baú de medalhas de honra do horário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Timet está oferecendo a você um baú de medalhas de honra em troca de 10 medalhas de Mithril.</p>
+<p> </p>
+<p>Você deu cronograma as medalhas de Mithril e recebeu uma baú de medalhas de honra em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

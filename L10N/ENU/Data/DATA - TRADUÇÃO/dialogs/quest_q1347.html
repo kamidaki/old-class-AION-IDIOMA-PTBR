@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eltnen hospeda muitos mistérios.</p>
+<p> </p>
+<p>Há o vasto templo subterrâneo, seu propósito ainda desconhecido e seus artefatos.</p>
+<p> </p>
+<p>Isso não é tudo. Existem suas criaturas. Se você viu um Klaw, pode entender o que quero dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Uh ... o que você quer dizer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao contrário da maioria dos crustáceos, o Klaw é irritantemente inteligente.</p>
+<p> </p>
+<p>Costumo sentir um propósito por trás de seus movimentos, uma espécie de inteligência coletiva.</p>
+<p> </p>
+<p>Duvido que sejam bestas simples, e é isso que me preocupa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então, eles são ... o que, inteligente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles começaram a invadir nosso posto avançado, mas parecem atacar o momento em que abaixamos nossa guarda, durante as refeições ou mudanças de mudança.</p>
+<p> </p>
+<p>Eles são certamente inteligentes o suficiente para serem um incômodo.</p>
+<p> </p>
+<p>Eu seria obrigado se você os perseguir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo, existem[%dic:STR_DIC_M_NeutL1_30_An] Areia [%dic:STR_DIC_M_NeutL1_32_An] S. Se você começar a matá -los, acho que eles receberão a dica.</p>
+<p> </p>
+<p>Não se preocupe em encontrá -los. Os Klaws estão quase em toda parte no deserto do oeste de Eracus.</p>
+<p> </p>
+<p>Depois de terminar sua missão, relate -se a [%dic:STR_DIC_N_Trillian]. Deixei a matéria de Klaw em suas mãos. Ele lhe dará o que mais você precisar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos quebrar alguns caranguejos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles são inteligentes, mas ainda são apenas animais.</p>
+<p> </p>
+<p>A menos que você tenha uma missão mais premente do comandante da fortaleza, é melhor você nos ajudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mais tarde, mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, é você.</p>
+<p> </p>
+<p>O general Brigade Castor me disse que lhe enviou atrás do Klaw.</p>
+<p> </p>
+<p>Seu relatório, por favor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os persegui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Finalmente, teremos a paz de uma noite.</p>
+<p> </p>
+<p>Obrigado, meu amigo.</p>
+<p> </p>
+<p>Era para ser uma postagem temporária, por isso estamos sempre com falta de homens. É bom que você esteja aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o klaw que está atacando a guarnição.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_NeutL1_30_An]([%2]/7)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_NeutL1_32_An]([%5]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Trillian]</p></step>
+</steps>
+<p>Mate os trabalhadores de Klaw e os coletores de Klaw que estão atacando a guarnição de ouro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os trabalhadores e coletores de Klaw costumam invadir a guarnição dourada, interrompendo sua missão.</p>
+<p> </p>
+<p>Depois de derrotar o Klaws, você se reportou a Tellarius, que estava animado por ter sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

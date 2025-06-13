@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perguntei ao OPIRINERK para provisões urgentes do Exército, mas ainda não ouvi nada.</p>
+<p> </p>
+<p>Desculpe, [%username], mas você poderia encontrar [%dic:STR_DIC_N_LDF5b_Offiring_E] e transmitir alguma experiência?</p>
+<p> </p>
+<p>Estamos todos sem provisões e não há mensagem sobre nossa próxima entrega. Isso está me deixando louco.</p>
+<p> </p>
+<p>Seria bom saber quanto tempo isso vai durar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Opipiner está muito ocupado, AK!</p>
+<p> </p>
+<p>Ah, se você está falando sobre os bens militares pelos quais está orando, já conversei com o gerente de armazenamento Storinerk, Akakak.</p>
+<p> </p>
+<p>Também pode ser que o storiiner preguiçoso adiou a entrega, AK.</p>
+<p> </p>
+<p>Então, se você tiver uma reclamação, vá para [%dic:STR_DIC_N_LDF5b_Storing_E], Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh? O que você está dizendo!</p>
+<p> </p>
+<p>Eu nunca ouvi nada assim, AK!</p>
+<p> </p>
+<p>Opírios só quer empurrar suas responsabilidades para os ombros de Storinerk!</p>
+<p> </p>
+<p>Eu poderia simplesmente ignorá -lo, pois não é um pedido oficial. Mas Storinerk é generoso, Ak.</p>
+<p> </p>
+<p>Se você eliminar o [%dic:STR_DIC_M_LDF5B_E_NeutFly_64_n], que estão incomodando o Storinerk, então vou criar isso para você, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os suprimentos do Exército precisam chegar rapidamente, o que me deixa muito preocupado.</p>
+<p> </p>
+<p>Temos apenas medicamentos de emergência restantes.</p>
+<p> </p>
+<p>Como foi? O que disse o Opiriner?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Solicitamos suprimentos uma eternidade atrás, mas eles estão apenas sendo despachados agora ...</p>
+<p> </p>
+<p>Nossos ancestrais estavam certos quando disseram que você passará fome se confiar no shugo.</p>
+<p> </p>
+<p>Graças a Aion, podemos buscar suprimentos com sua ajuda, [%username]. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Offiring_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Storing_E]%.</p></step>
+<step><p visible="[%9]">Mate o [%dic:STR_DIC_M_LDF5B_E_NeutFly_64_n]([%11]/9).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5b_Entita_E]%.</p></step>
+</steps>
+<p>Encontre -se com o delegado da Goldrinyerk Limited e inspecione o material que você foi prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A INTITA pediu que você abrisse uma investigação com o OPIRINERK sobre o motivo pelo qual os suprimentos prometidos por Goldrinyerk não chegaram.</p>
+<p> </p>
+<p>Você perguntou aos administradores responsáveis ​​da Goldrinyerk Limited, Opiriner e Storinerk, mas eles apenas se culparam. Você só conseguiu obter os suprimentos depois de cumprir uma solicitação da Storiner.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

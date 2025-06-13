@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q10051</questid>
+<questname>레파르와 만남</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. Eu tenho uma mensagem para você. É ... muito estranho.</p>
+<p> </p>
+<p>Um membro do[%dic:STR_DIC_E_12] Acabei de entrar na sede ontem, ousado como qualquer coisa, alegando que ele levou uma mensagem para os Elyos. Ele diria apenas isso: "[%dic:STR_DIC_N_Lephar]deseja Fale com [%username]pessoalmente. "Sim, ele usou seu nome e tudo mais.</p>
+<p> </p>
+<p>Presumo que ele esteja enganado. Um guerreiro honrado como se você nunca teria nada a ver com os lefaristas ... você teria? Enfim, ele deixou seu nome, [%dic:STR_DIC_N_Philmoi], e disse que estaria esperando por você em Garldar Village. Faça com essa informação o que quiser. Talvez você deva perguntar a alguém confiável em busca de conselhos primeiro ...?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Como você diz, ele deve estar enganado."</act>
+</selects>
+<voice file="Q10051-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Lephar pediu para você pelo nome?</p>
+<p> </p>
+<p>Por que ele iria querer falar com você pessoalmente? Você não teve relações com os lefaristas antes, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Só matando -os."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não consigo imaginar por que ele pediria para falar com você, de todas as pessoas.</p>
+<p> </p>
+<p>Eu não tinha ideia de que ele estava em Sarpan. Eu me pergunto ... ele se move contra o Tiamat também? Se ele é, então o inimigo de nosso inimigo pode ser nosso amigo. Vale a pena ouvir o que ele tem a dizer.</p>
+<p> </p>
+<p>Ou ... também pode ser uma armadilha. Olhe para isso, [%username], mas não diminua a guarda por um momento.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Certo. Fé e braços."</act>
+</selects>
+<voice file="Q10051-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username]? Ah, Lephar o espera mais ansioso.</p>
+<p> </p>
+<p>Não, ele não está aqui, mas ele deixou isso [%dic:STR_DIC_ILDF4a_FOBJ_Q10051]para que você possa alcançá -lo. Infelizmente, o [%dic:STR_DIC_M_LDF4A_A2_IronGolem_57_An] S roubou a fonte de energia do Orb, o [%dic:STR_DIC_I_QUEST_10051A] S, enquanto dormia ontem à noite.</p>
+<p> </p>
+<p>Eles não podem ter ido longe, mas não posso operar o Orb sem energia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Bem, acho que vou buscá -los, então."</act>
+</selects>
+<voice file="Q10051-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o [%dic:STR_DIC_I_QUEST_10051A] S, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui. É melhor valer a pena."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é suficiente para ativar o Portão do Abismo.</p>
+<p> </p>
+<p>Você poderia esperar um momento, por favor?</p>
+<p> </p>
+<p>(Mantém os núcleos mágicos em um cristal que os absorve em um flash.)</p>
+<p> </p>
+<p>Está completo agora.</p>
+<p> </p>
+<p>Pegue a esfera misteriosa em suas mãos. Agora você pode chegar ao local onde Lephar está hospedado.</p>
+<p> </p>
+<p>Você não precisa se preocupar. Afinal, [%username], Eu não teria chamado você para este lugar se quisesse prendê -lo aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso não parece suspeito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito, mas não consigo reativar a esfera de passagem sem o [%dic:STR_DIC_I_QUEST_10051A] S.</p>
+<p> </p>
+<p>Certamente você deve estar curioso para saber o que Lephar tem em mente para você. Mas o Orb não funciona sem energia!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso ainda me parece meio escalvido para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. EU, [%dic:STR_DIC_N_Israphel], estou escondido sob o disfarce de Lephar. Assim como algo maior está escondido dentro de você, [%username].</p>
+<p> </p>
+<p>Não, não há tempo para perguntas, Daeva. O tempo funciona muito curto. Você deve levar uma mensagem para seus companheiros. É de extrema importância e deve ser tomado imediatamente.</p>
+<p> </p>
+<p>Você provou o poder de Tiamat, como cinzas na sua boca. Mas esse poder não é completamente o próprio Senhor Dragão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT5_1">"Então é de quem é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tiamat carrega as relíquias de Lady Siel. Eles são mais que uma arma ... eles transmitem a bênção da própria dama.</p>
+<p> </p>
+<p>Ela é o equilíbrio em que Atreia gira. Com sua bênção, Tiamat não pode ser derrotado. Você deve arrancar essas relíquias de Tiamat, o que for preciso. Sua tarefa é convencer seus líderes a agir. Não há tempo a desperdiçar.</p>
+<p> </p>
+<p>Apresse -se, Daeva. Seu destino depende disso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Vou levar a mensagem, Israphel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username].</p>
+<p> </p>
+<p>Você parece apreensivo. Afinal, foi uma armadilha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Lephar é o Senhor Empíreo Israphel? Não, não ... você deve ter sido enganado!</p>
+<p> </p>
+<p>Não posso acreditar ... se Lephar está mentindo, então ele é um mentiroso ambicioso, isso é certo. Mas ... se for verdade, explica muitas de suas ações. E explica o poder sem precedentes de Tiamat. Hmm ... eu acredito que ele falou a verdade sobre as relíquias de Siel. Isso faz sentido. Sim, devemos agir sobre isso imediatamente.</p>
+<p> </p>
+<p>Mas ... verdadeiramente, você falou com Lord Israphel? Incrível ... isso jogará santuário em tumulto completo ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kutos].</p></step>
+<step><p visible="[%3]">Perguntar [%dic:STR_DIC_N_Killios]por seu conselho.</p></step>
+<step><p visible="[%6]">Encontre Philmoni no[%dic:STR_DIC_W_LDF4a_SZ_A2_01].</p></step>
+<step><p visible="[%9]">Coletar [%dic:STR_DIC_I_QUEST_10051A] S de [%dic:STR_DIC_M_LDF4A_A2_IronGolem_57_An] e trazê -los para [%dic:STR_DIC_N_Philmoi].</p>[%collectitem]</step>
+<step><p visible="[%12]">Use o [%dic:STR_DIC_ILDF4a_FOBJ_Q10051]Para conhecer Lephar.</p></step>
+<step><p visible="[%15]">Relate o que você descobriu[%dic:STR_DIC_N_Killios].</p></step>
+</steps>
+<p>Ordem: Lephar pediu por você pelo nome. Converse com o Mensageiro Lefarista, Philmoni, para descobrir o porquê.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kutos deu uma mensagem estranha dada a ele por um revolucionário lefarista, Philmoni. Foi de Lephar, que quer falar com você pessoalmente.</p>
+<p> </p>
+<p>Philmoni o enviou para encontrar Lephar usando o Orb of Passage, mas uma vez lá, você descobriu algo verdadeiramente notável: Lephar é o lorde Empíreo Israphel, há muito pensamento morto.</p>
+<p> </p>
+<p>Israphel o convenceu de que Atreia cairia para Tiamat se o Senhor do Dragão pudesse manter o controle das relíquias de Siel. Você foi imediatamente para o Killios. Chocado como estava, ele concordou que as relíquias de Siel não deveriam permanecer na posse de Tiamat.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

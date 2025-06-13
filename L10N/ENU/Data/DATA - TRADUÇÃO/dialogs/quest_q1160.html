@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse homem está conversando! Sempre dizendo que vai ajudar, mas quando houver trabalho a ser feito, ele não está em lugar algum.</p>
+<p> </p>
+<p>Preguiçoso, bom por nada ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_angry;HACTION_SELECT1_1">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kobolds! Kobolds é sempre o problema! Esgueirando -se em nossas casas, roubando ... passou muito tempo.</p>
+<p> </p>
+<p>Toda vez que saio de casa, eles invadem e pegam alguma coisa. Tenho medo de dar as costas para um instante.</p>
+<p> </p>
+<p>Não consigo nem alimentar os qooqoos sem que as coisas desapareçam! Desta vez, no entanto ... desta vez eles levaram todas as minhas jóias!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pelo menos não era comida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entende. Eles eram presentes de casamento do meu marido. Minha pulseira, meu colar, meu lindo anel ... tudo levado!</p>
+<p> </p>
+<p>Quero dizer, eu sei que ele me frustra, mas no final do dia, eu ainda ... quero dizer ....</p>
+<p> </p>
+<p>Eu só quero minhas jóias de volta. Por favor, vá para [%dic:STR_DIC_FLA13], mate aqueles Kobolds de Dukaki e traga minhas coisas de volta para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Espero que você possa encontrar minhas coisas. Eles pegaram meu anel, colar e pulseira. Não gosto de pensar em suas pequenas mãos sujas por toda a minha jóia.</p>
+<p> </p>
+<p>Espero que as Kobolds estejam se enrolando, vestidas com minhas coisas!</p>
+<p> </p>
+<p>Você os reconhecerá, é claro. Kobolds fêmeas usam saias. Tenho certeza de que você encontrará as jóias nelas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... esses eram presentes do meu marido. Ele pode ser um tolo e um leito ... mas ele me deu para o nosso casamento.</p>
+<p> </p>
+<p>Se você não ajudará ... perdi tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Melhor sorte vem do seu jeito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu marido ainda não está de volta. Não espero que ele tenha idéia do que estou passando.</p>
+<p> </p>
+<p>Mas me diga ... você teve alguma sorte? Você encontrou minhas jóias?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles não são apenas bugigangas, você sabe. Eu te disse, eles têm valor sentimental.</p>
+<p> </p>
+<p>Você não pode esperar que eu vá para o [%dic:STR_DIC_FLA13] e aceite os Kobolds!</p>
+<p> </p>
+<p>Você deve ver o quanto isso significa para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os tem! Você fez isso! Eu mal posso acreditar nos meus olhos ...</p>
+<p> </p>
+<p>Eu sei que eles não são caros-nem particularmente bem feitos-, mas eles significam o mundo para mim. Nunca vou esquecer o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre as jóias de Naia no[%dic:STR_DIC_FLA13] e traga de volta.</p>[%collectitem]</step>
+</steps>
+<p>Kobolds roubou jóias da vila. Derrote -os e devolva os presentes de casamento de Naia.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Naia disse que Kobolds roubou as jóias que seu marido lhe deu.</p>
+<p> </p>
+<p>A pedido dela, você foi ao assentamento de Dukaki, derrotou Dukaki Kobolds e trouxe de volta as jóias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>... Não há tempo suficiente ... o que posso fazer? Restam apenas alguns dias ...</p>
+<p> </p>
+<p>Oh, olá[%userclass]. Eu não te vi lá. Eu estava ... estive ... distraído ultimamente.</p>
+<p> </p>
+<p>Você veio aqui para remédio? Caso contrário, volte mais tarde. Eu tenho algo ... estou ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que é? O que há de errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem ... eu ... eu prometi[%dic:STR_DIC_N_Dellalont]que eu faria ...</p>
+<p> </p>
+<p>O fruto da árvore de Okaru-pode curar feridas, aliviar dores de cabeça. Eu disse que iria ...</p>
+<p> </p>
+<p>Eu disse a ele que poderia pegar um pouco.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ah ... o [%dic:STR_DIC_E_23] S são venenosas.</p>
+<p> </p>
+<p>Eu tentei muitas vezes. Estar perto deles me faz inchar, e eu não consigo respirar. Mas eu preciso escolher o [%dic:STR_DIC_I_quest_2213a], ou Dellalont vai me repreender.</p>
+<p> </p>
+<p>Ei, espere! Um Daeva como você poderia fazer isso! Você me ajudaria?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito gentil. Este é um grande favor!</p>
+<p> </p>
+<p>Mas eu deveria avisá -lo: o [%dic:STR_DIC_I_quest_2213a]é tão venenoso que mesmo um Daeva será afetado se por muito tempo.</p>
+<p> </p>
+<p>Tenha cuidado e volte assim que você conseguir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas. Eu nunca deveria ter pedido a alguém que fizesse meu trabalho.</p>
+<p> </p>
+<p>Eu deveria apenas contar [%dic:STR_DIC_N_Dellalont] A verdade.</p>
+<p> </p>
+<p>O que ele pode fazer? Conceda-me uma boa repreensão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que tudo dê certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você teve problemas para encontrar árvores de Okaru?</p>
+<p> </p>
+<p>Se você escolheu o [%dic:STR_DIC_I_quest_2213a], por favor, coloque -o neste barril. Não consigo lidar diretamente com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que eu poderia conseguir ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Muito obrigado!</p>
+<p> </p>
+<p>Encontrei um antídoto enquanto você se foi. Vou apenas esperar até que o antídoto nebrota o veneno.</p>
+<p> </p>
+<p>Você está se sentindo bem? Ouvi dizer que os Daevas se recuperam rapidamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Escolha o [%dic:STR_DIC_E_23]fruta.</p></step>
+<step><p visible="[%3]">Pegue o [%dic:STR_DIC_E_23]frutas para [%dic:STR_DIC_N_Titt].</p></step>
+</steps>
+<p>Tigg prometeu obter frutas de Okaru para Dellalont, mas o veneno das árvores de Okaru o impediu de se aproximar. Escolha a fruta para Tigg.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tigg estava preocupado com a promessa que fez a Dellalont para obter frutas de Okaru, mas ele não conseguiu por causa do forte veneno da árvore. Você escolheu a fruta e deu a ele. Ele ficou muito feliz e agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Toda a fortaleza do céu está ligada a detectores automáticos. Os vigias estão equipados com ressonadores de vigilância.</p>
+<p> </p>
+<p>Monitores autodirecionados fazem check-in com vigilantes periodicamente.</p>
+<p> </p>
+<p>Precisamos saber como o sistema funciona para que possamos contornar isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então os do Daevas podem levar a fortaleza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Minhas investigações revelaram que os dados para o dispositivo de convocação e a arma artificial de Balaur, os Marabata, estão sendo passados ​​diretamente via [plur][%dic:STR_DIC_I_quest_18312a].</p>
+<p> </p>
+<p>Se um dispositivo ou um observador de Marabata descobrir um intruso, o ressonador enviará um sinal para o drakan no centro de comando.</p>
+<p> </p>
+<p>Eu gostaria de descobrir mais sobre estes [plur][%dic:STR_DIC_I_quest_18312a]. Você pode me ajudar com isso, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, não temos informações adicionais sobre os ressonadores.</p>
+<p> </p>
+<p>Se você matar o [plur][%dic:STR_DIC_M_IDStation_Alret_Recall_58_An]ou o [plur][%dic:STR_DIC_M_IDStation_IronGolem_58_An]na fortaleza do ATURAM SKY e me traga seus[plur][%dic:STR_DIC_I_quest_18312a], talvez em breve possamos implantar essa tecnologia também.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Porque um Daeva vai quando um Reian não pode!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ninguém vai forçá -lo, criança.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quem você está chamando de 'criança', meia-asa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que o Balaur está usando inúmeras tecnologias altamente avançadas. Isso inclui o [plur][%dic:STR_DIC_I_quest_18312a].</p>
+<p> </p>
+<p>Mesmo que seja a tecnologia Balaur, ainda seria útil se os entendessemos e pudéssemos implantá -los estrategicamente em combate.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Brinque com isso e descubra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pretendo.</p>
+<p> </p>
+<p>Bom trabalho, [%username]. Tanto na missão quanto em provar que nossas espécies podem servir juntas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDStation_SZ_Station] e coletar [plur][%dic:STR_DIC_I_quest_18312a], então traga -os para [%dic:STR_DIC_N_LF5_Nimrod_E].</p>[%collectitem]</step>
+</steps>
+<p>Siga o pedido de Nimrod e colete ressonadores de vigilância na fortaleza do ATURAM SKY.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nimrod quer analisar a rede de vigilância do Aturam Sky Fortaleza e precisa dos ressonadores de vigilância dos dispositivos de convocação ou da Marabata.</p>
+<p> </p>
+<p>Você se infiltrou na fortaleza do céu, coletou ressonadores de vigilância e os trouxe para Nimrod.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

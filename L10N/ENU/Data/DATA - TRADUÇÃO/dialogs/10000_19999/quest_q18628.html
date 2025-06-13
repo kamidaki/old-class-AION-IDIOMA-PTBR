@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdoe meu interesse, [%username], mas que tipo de planos você tinha para a sua chama de Kromede?</p>
+<p> </p>
+<p>Se você derreter, você sabe, pode agravá -lo com a espada do juiz para fazer uma arma muito forte.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como isso pode ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisará de três coisas, Daeva.</p>
+<p> </p>
+<p>O primeiro é a chama de Kromede, que você já tem. O segundo é um ferreiro qualificado e realizado ... e esse seria eu, o lendário Ukon.</p>
+<p> </p>
+<p>E terceiro, você precisará da espada do juiz para eu refinar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Considere -se abençoado por Ariel, [%username]. Normalmente, eu não me incomodaria com um projeto não remunerado como esse ... mas estou fazendo as pazes com algumas ações anteriores.</p>
+<p> </p>
+<p>A absolvição tem seu preço, você sabe. E como você é o primeiro Daeva-in-Need que me deparei, a honra da minha ajuda é toda sua.</p>
+<p> </p>
+<p>Comece no templo do fogo em Asmodae. Você encontrará a espada do juiz lá com[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]. Pegue isso, e eu farei o resto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece um bom plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ter ouvido falar de mim, Daeva! Eu sou UKON ... o lendário ferreiro Ukon, do Santum!</p>
+<p> </p>
+<p>Ninguém me rejeita. Eu desmontei outras pessoas!</p>
+<p> </p>
+<p>Multar! Vou encontrar outro Daeva! Qualquer pessoa aproveitaria a oportunidade para minha ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não deve ser uma longa pesquisa então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu disse a você que não seria tão difícil, [%username].</p>
+<p> </p>
+<p>Agora, entregue a espada do juiz e a chama de Kromede, e eu vou esquentar minha bigorna.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está tudo o que você precisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algumas reservas sobre minhas habilidades, Daeva?</p>
+<p> </p>
+<p>Eu praticamente inventei a arte da ferraria, mas você vai ficar lá e me questionar?</p>
+<p> </p>
+<p>Apenas me entregue a espada do juiz e a chama de Kromede, e eu mostrarei por que sou considerado uma lenda. Lembre -se: ambos precisam estar no seu cubo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma lenda é simplesmente um boato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! A chama de Kromede é um pouco mais difícil de trabalhar do que eu imaginava, mas acabou. Assim como prometido e mais forte do que nunca.</p>
+<p> </p>
+<p>Aqui, pegue sua arma refinada, a espada de Kromede. Não se machuque com isso, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir os materiais necessários para refinar a espada do juiz e trazê -los para [%dic:STR_DIC_N_Ukon].</p>[%collectitem]</step>
+</steps>
+<p>Se você o adquirir, Ukon disse que refinaria a espada do juiz com a chama de Kromede para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você pegou a espada do juiz, Ukon disse que o fortaleceria para você com a chama de Kromede.</p>
+<p> </p>
+<p>Felizmente para você, Ukon manteve sua palavra e fez de você a espada de Kromede reforçada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

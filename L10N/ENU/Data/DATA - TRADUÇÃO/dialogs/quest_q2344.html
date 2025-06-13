@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todos estamos sendo convidados a atacar contra a garra de gelo Mau.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Temos que fazer a nossa parte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que a abordagem correta é a guerra psicológica. Se pudermos desmoralizar o Mau, eles serão muito mais fáceis de derrotar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você tinha em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pesquisei o Mau e aprendi que seu símbolo mais importante é suas bandeiras. As bandeiras na frente de suas casas simbolizam seu poder e riqueza.</p>
+<p> </p>
+<p>Se destruirmos o [%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344] S, destruímos simbolicamente seu poder!</p>
+<p> </p>
+<p>Isso soa como um trabalho para você, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para o [%dic:STR_DIC_W_DF2_SUB_B4] e destruir seu[%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344] S.</p>
+<p> </p>
+<p>Eu estimo que cinco deveriam fazer o truque.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obviamente, você não entende a arte da guerra psicológica. Vou ter que encontrar alguém mais educado para realizar esta missão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você simbolicamente desesperou a garra de gelo? É da maior urgência que enfraquecemos suas defesas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_laugh;HACTION_SELECT_QUEST_REWARD">"Suas bandeiras não mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Agora a garra de gelo ficará fraca como gatinhos.</p>
+<p> </p>
+<p>Receba essa recompensa pelo seu serviço, assistente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_E_OBJ_DF2_FOBJ_Q2344] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Tofa].</p></step>
+</steps>
+<p>Destrua as bandeiras da garra de gelo que simbolizam o poder e a riqueza da garra de gelo Mau.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tofa queria desmoralizar a garra de gelo Mau.</p>
+<p> </p>
+<p>A seu pedido, você foi à Tribo da Village of the Ice Claw e destruiu as bandeiras simbolizando seu poder e riqueza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

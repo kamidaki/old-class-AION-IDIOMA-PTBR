@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os moradores passam menos tempo me incomodando agora, mas as coisas ainda estão longe de serem boas.</p>
+<p> </p>
+<p>É aqueles mortos-vivos presos ao sol. Eles estão por toda parte.</p>
+<p> </p>
+<p>Falei com um padre que é um especialista, e ele me disse por que há mais Mortos Vivos do que menos, apesar de nossos esforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que ele disse?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo ele, as energias de uma criatura morta -viva se infiltram em suas posses e ligam parte de seu espírito aos objetos, permitindo que ele ressuscite.</p>
+<p> </p>
+<p>Então, nós os matamos e os matamos, e eles estão usando seus próprios bens como obeliscos!</p>
+<p> </p>
+<p>Então desta vez [%username], quando destruímos os Mortos Vivos em Besfer Ghost Village, vamos terminar o trabalho. Posso contar com você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Banshees, Boggarts, zumbis-todos deles.</p>
+<p> </p>
+<p>Procure nos cadáveres[%dic:STR_DIC_I_QUEST_2574a] S, [%dic:STR_DIC_I_QUEST_2574b] Areia [%dic:STR_DIC_I_QUEST_2574c] S, e leve -os para o goleiro da tocha [%dic:STR_DIC_N_Eldir]no incinerador.</p>
+<p> </p>
+<p>Ele fará a queima por nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sério, [%username]?</p>
+<p> </p>
+<p>Eu acho que você entende a importância dessa tarefa.</p>
+<p> </p>
+<p>Eu ficaria ... decepcionado se você estiver me recusando porque você simplesmente não pode ser incomodado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, não é assim ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Você foi enviado por Centurion Sleipnir, presumo.</p>
+<p> </p>
+<p>Você trouxe os itens contaminados?</p>
+<p> </p>
+<p>Dê -os a mim e eu os queimarei antes que seus donos possam ressuscitar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Faça isso. Por favor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o centurião me disse que você estaria trazendo[%dic:STR_DIC_I_QUEST_2574a] S, [%dic:STR_DIC_I_QUEST_2574b] Areia [%dic:STR_DIC_I_QUEST_2574c] S.</p>
+<p> </p>
+<p>A destruição desses itens é de extrema importância. Estarei esperando você para trazê -los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez muito esforço, trazendo tantos itens.</p>
+<p> </p>
+<p>É possível que substâncias contaminadas estejam grudando na sua armadura. Por favor, espanar sua armadura lá atrás.</p>
+<p> </p>
+<p>Ah, sim, essa é a recompensa de Centurion Sleipnir.</p>
+<p> </p>
+<p>Agora você está conhecendo. Você pode ir. Não sou responsável por você sofrer prejudiciais porque você está ficando aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_BansheeD_37_An] S, [%dic:STR_DIC_M_BookieD_36_An] Areia [%dic:STR_DIC_M_ZombieFisherD_37_An] S. Colete os objetos contaminados e levá -los a [%dic:STR_DIC_N_Eldir]para incineração.</p>[%collectitem]</step>
+</steps>
+<p>Para impedir que os Mortos Vivos ressuscitem, seus bens contaminados devem ser incinerados. Destrua os Mortos Vivos na vila fantasma Besfer, colete os objetos contaminados e leve -os a Eldir no incinerador.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Sleipnir aprendeu que objetos contaminados devem ser incinerados para impedir que os Mortos Vivos ressuscitem.</p>
+<p> </p>
+<p>Você foi para a vila de Ghost Besfer e destruiu Banshees, Boggarts e zumbis. Você trouxe os objetos contaminados para o Keeper Eldir para incineração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os documentos do Exército de Beritra descrevem seus planos de se infiltrar no bastião da parede de aço em detalhes.</p>
+<p> </p>
+<p>Nosso maior problema é o grande número de suas tropas ...</p>
+<p> </p>
+<p>[%username], você poderia ir ao bastião da parede de aço e ajudar a defendê -lo?</p>
+<p> </p>
+<p>Se você derrotar [plur][%dic:STR_DIC_E_Q18030all] e seu líder [%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al], devemos ser capazes de levá -los de volta.</p>
+<p> </p>
+<p>Precisamos da sua ajuda!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Como foi no bastião da parede de aço?</p>
+<p> </p>
+<p>Você foi capaz de defendê -lo contra o [plur][%dic:STR_DIC_E_Q18030all] e [%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Deus.</p>
+<p> </p>
+<p>Não é exagero chamar o bastião da parede de aço de nossa última linha de defesa.</p>
+<p> </p>
+<p>Se nosso inimigo o capturar, conquistar Balaurea seria quase impossível.</p>
+<p> </p>
+<p>Você protegeu um lugar muito importante, [%username].</p>
+<p> </p>
+<p>Gostaria de agradecer em nome dos meus camaradas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Defender o bastião da parede de aço contra o [%dic:STR_DIC_E_Q18030all].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_1]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_2]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_3]([%8]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_4]([%11]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al]([%14]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_LDF5b_Demades_E].</p></step>
+</steps>
+<p>Defenda o bastião da parede de aço contra a Guilda Pashid do 43º Exército de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demades pediu que você descobrisse mais sobre os planos do Exército de Beritra de capturar o bastião da parede de aço.</p>
+<p> </p>
+<p>Você deveria impedir que as tropas invadissem o bastião da parede de aço. Depois de derrotar o Balaur e o líder Pashid, você voltou a DeMades, que agradeceu por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

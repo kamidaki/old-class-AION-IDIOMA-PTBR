@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu visitei a cidade há pouco tempo[%username], e as pessoas lá falaram muito bem de suas habilidades.</p>
+<p> </p>
+<p>É por isso que eu gostaria de confiar a você uma missão.</p>
+<p> </p>
+<p>Não será fácil, mas se você é como eles dizem, você é a nossa melhor esperança.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Se eu puder ajudar, eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos de um daeva para caçar [%dic:STR_DIC_M_Vapor_43_An] Areia [%dic:STR_DIC_M_Skeleton_43_An] S nas relíquias Nolantis.</p>
+<p> </p>
+<p>Além de serem difíceis, eles se cercam de Mortos Vivos de todas as faixas. Matá -los não será tarefa fácil.</p>
+<p> </p>
+<p>O que você acha? Vou recompensá -lo com uma moeda de ouro se você voltar vivo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, tudo bem. Vá para as relíquias da Nolantis e destrua [%dic:STR_DIC_M_Vapor_43_An] Areia [%dic:STR_DIC_M_Skeleton_43_An] S.</p>
+<p> </p>
+<p>Volte para sua moeda de ouro. Boa sorte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Vejo você em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assumir windwisps e lutadores anubitas certamente não é tarefa fácil. Eu entendo sua hesitação.</p>
+<p> </p>
+<p>Por favor, visite -me novamente quando estiver ... até o desafio.</p>
+<p> </p>
+<p>Bom dia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado ... ei!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você voltou com segurança.</p>
+<p> </p>
+<p>Como você se saiu contra os Windwisps e lutadores anubitas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz muito bem, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Magnífico! Agora, as relíquias do Nolantis serão pacíficas por um tempo.</p>
+<p> </p>
+<p>Meu coração está cheio de paz ... e o seu deve ser cheio de orgulho.</p>
+<p> </p>
+<p>Aqui está a moeda de ouro que prometi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os Mortos Vivos nas ruínas de Nolantis.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Vapor_43_An]([%2]/5)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DeathKnight_45_Ae]([%5]/10)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Yujinius].</p></step>
+</steps>
+<p>Yujinius lhe dará algumas moedas de ouro se você eliminar os Mortos Vivos nas ruínas Nolantis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yujinius estava preocupado com os Mortos Vivos nas relíquias da Nolantis e ofereceu uma moeda de ouro para erradicar os windwisps e combatentes anubitas.</p>
+<p> </p>
+<p>Você fez o que ele perguntou e, ao seu retorno, ele lhe deu uma moeda de ouro como prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

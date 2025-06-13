@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lefaristas pregados pelo sol ....</p>
+<p> </p>
+<p>Desde que eles se estacionaram naquela caverna ao norte da vila, eles não nos deram nada além de problemas.</p>
+<p> </p>
+<p>Não temos arcontes suficientes para persegui -los, então o melhor que podemos fazer é afastá -los nas raras ocasiões em que se aproximam.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles não vêm com muita frequência?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Eu acharia estranho se uma pequena vila de caça tivesse algo que valha a pena levar. Ainda assim, isso levanta a questão de por que eles estão aqui.</p>
+<p> </p>
+<p>Percebemos que uma carruagem apareceu logo fora da estrada a caminho do esconderijo, e eles estão mexendo com isso desde então.</p>
+<p> </p>
+<p>Precisamos descobrir o que eles estão fazendo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como você planeja fazer isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, precisaremos enviar alguém para investigar a carruagem.</p>
+<p> </p>
+<p>Enquanto você estiver lá ... você está pronto para isso? Você vai investigar a carruagem?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Isso deve nos ajudar a descobrir o que está acontecendo.</p>
+<p> </p>
+<p>O carruagem está fora da estrada em frente ao[%dic:STR_DIC_W_DF1A_14] Ao norte, pela vila de Mumu.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Só porque não é uma emergência que o torna sem importância?</p>
+<p> </p>
+<p>Bem, eu não posso mudar de idéia.</p>
+<p> </p>
+<p>Vou apenas procurar um Daeva sincero.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você verificou a carruagem?</p>
+<p> </p>
+<p>Havia alguma coisa nele?</p>
+<p> </p>
+<p>Recuperar o fôlego e me dizer rapidamente o que você encontrou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou nada?</p>
+<p> </p>
+<p>Ou você simplesmente não foi?</p>
+<p> </p>
+<p>Não volte novamente até que você verifique a carruagem!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma caixa de armas.</p>
+<p> </p>
+<p>Parece que eles estavam planejando um ataque.</p>
+<p> </p>
+<p>Eu tenho que informar a fortaleza imediatamente. Obrigado pelo que você fez aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Verifique o [%dic:STR_DIC_E_15].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Hunmir].</p></step>
+</steps>
+<p>Você foi informado sobre uma estranha carruagem em frente ao túmulo dos ladrões. Vá lá e investiga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hunmir estava preocupado com uma estranha carruagem em frente ao covil dos revolucionários lefaristas.</p>
+<p> </p>
+<p>Como ele solicitou, você verificou a carruagem e encontrou uma caixa cheia de armas. Hunmir especulou que os revolucionários lefaristas estavam planejando um ataque e prometeu relatar suas descobertas à fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

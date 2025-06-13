@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia matar o [%dic:STR_DIC_M_LDF5A_B6_Kalnif_Hyena_63_An]que estão à espreita em nossa aldeia?</p>
+<p> </p>
+<p>A área está sempre inquieta quando está lá, e a guarda é assustadora.</p>
+<p> </p>
+<p>Eles não são gentis e continuam atacando.</p>
+<p> </p>
+<p>Eu sei que é uma tarefa cansativa. No entanto, espero que você, [%username], pode fazer isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>No começo, pensei que era apenas um par de karnifs famintos e não pensei mais sobre isso ...</p>
+<p> </p>
+<p>Mas então eles começaram a aumentar em números e as coisas começaram a ficar fora de controle.</p>
+<p> </p>
+<p>Se eu tivesse lidado anteriormente, teria sido mais fácil, mas agora se transformou em um problema sério.</p>
+<p> </p>
+<p>Mas não adianta reclamar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou aliviado que os Karnifs que estavam nos dando tais problemas se foram.</p>
+<p> </p>
+<p>Muito obrigado por seus esforços.</p>
+<p> </p>
+<p>A área ao redor do post permanecerá clara por enquanto.</p>
+<p> </p>
+<p>Os Guardiões devem ser informados das boas notícias também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_B6_Kalnif_Hyena_63_An]perto da pequena vila ([%2]/11)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard05_L].</p></step>
+</steps>
+<p>Mate os Karnifs famintos para limpar a área.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As lances pediram que você matasse os Karnifs famintos que percorrem a área.</p>
+<p> </p>
+<p>Conforme solicitado, você destruiu os Karnifs famintos pelos quais você foi agradecido profusamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

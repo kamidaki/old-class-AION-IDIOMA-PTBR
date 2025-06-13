@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A economia da Alsig Village vai em sementes TrieDED. A maioria dos moradores está no negócio, de uma maneira ou de outra.</p>
+<p> </p>
+<p>O TriPeed é inestimável para assassinos e guardas florestais, então a vila tem um mercado forte e constante. O Pandaemonium regula o comércio e envia a maior parte do suprimento para a guerra.</p>
+<p> </p>
+<p>É por isso que estou estacionado aqui, para limpar os impedimentos para as fazendas Tripeed.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh, um burocrata!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahem, aah ... estou preocupado com a vida selvagem. Em particular, esses fungos de chama e Kalgolems irritados perto do local do acidente. Eles estão andando incrustantes esperando para acontecer!</p>
+<p> </p>
+<p>Durante anos, eles ficaram afastados da vila. Mas tenho uma fonte que diz que está se espalhando.</p>
+<p> </p>
+<p>Passado a Red Lava Cliff, eles estarão muito próximos para o conforto. Eu quero esse problema resolvido antes de começar. Quer uma moeda rápida, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então vá para o local do acidente e mate [plur][%dic:STR_DIC_M_FireFungyRe2D_34_An] e [plur][%dic:STR_DIC_M_SouledStoneAD_33_An].</p>
+<p> </p>
+<p>Mate 7 fungos de chama e 3 Kalgolems irritados.</p>
+<p> </p>
+<p>Depois de concluir esta tarefa e voltar, vou recompensá -lo com moedas de prata.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você usa sementes TrieDED? Você não apoia os soldados na frente que fazem?</p>
+<p> </p>
+<p>Multar.</p>
+<p> </p>
+<p>Muitos danos patrióticos querem moedas de prata.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dê a eles os meus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Pense que a rega e a atenção são tudo o que você precisa para uma fazenda de sucesso? Não termina aí.</p>
+<p> </p>
+<p>Os agricultores mantêm uma vigília incessante para pragas, ervas daninhas e infestações.</p>
+<p> </p>
+<p>E eles precisam da nossa ajuda!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu ajudei! Eu ajudei!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou tão aliviado!</p>
+<p> </p>
+<p>Obrigado, e ... aqui está a moeda de prata que eu prometi a você. Use -o com sabedoria, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine o perigo para os tripudos.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_FireFungyRe2D_34_An]([%2]/7).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_SouledStoneAD_33_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Atotas].</p></step>
+</steps>
+<p>Vá para o local do acidente e mate os fungos de chama e os Kalgolems raivosos que podem danificar os tripudos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atotas queria impedir os danos previstos à colheita TripeD.</p>
+<p> </p>
+<p>Você matou os fungos de chama e Kalgolems irritados e ganhou uma moeda de prata.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

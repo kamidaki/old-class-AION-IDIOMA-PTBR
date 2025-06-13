@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Onde você esteve!</p>
+<p> </p>
+<p>O governador Michalis enviou uma mensagem urgente, pedindo por você pelo nome!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual foi a mensagem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele não deu detalhes, apenas dizendo para você voltar à fortaleza de Teminon e se reportar a ele.</p>
+<p> </p>
+<p>Mas a ordem veio diretamente do governador, por isso deve ser urgente e muito, muito importante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve se apressar imediatamente. Você se ligou lá? Isso seria mais rápido!</p>
+<p> </p>
+<p>Eu não pretendo arrancar. O ponto de ligação de um Daeva é uma questão pessoal, eu sei, mas eu não gostaria que você se atrasasse.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou o mais rápido possível, não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ousaria desobedecer a uma ordem direta do governador?</p>
+<p> </p>
+<p>Mais rude e mais estúpido. Eu teria esperado mais de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O governador pode encontrar outra pessoa para fazer seu trabalho ocupado".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você chegou! É bom ver você de novo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Qual é o problema, governador?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu serei franco, não há tempo para sutilezas. O Balaur invadiu o Heiron.</p>
+<p> </p>
+<p>Os Guardiões da Fortaleza já estão no seu limite com outros problemas. Sem mais ajuda, o Balaur os derrotará.</p>
+<p> </p>
+<p>E lamento que não tenhamos ajuda para sobrar. Ninguém te salva, é claro. Mas se eu conheço sua habilidade, isso pode ser suficiente.</p>
+<p> </p>
+<p>Vá para lá e reporte -se à Brigada Geral[%dic:STR_DIC_N_Perento].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você? Você era tudo o que eles poderiam sobrar?</p>
+<p> </p>
+<p>O governador Michalis realmente acha que você só pode virar a maré?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu posso, e devo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>OHO, tal confiança excessiva.</p>
+<p> </p>
+<p>Eu esperava os Guardiões do Protetor de Teminon, ou para as legiões de Shield de Nezekan.</p>
+<p> </p>
+<p>Suponho que sua ajuda é melhor do que nenhuma ajuda, mas ainda assim, é um insulto.</p>
+<p> </p>
+<p> </p> </body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o governador [%dic:STR_DIC_N_Taranis].</p></step>
+<step><p visible="[%3]">Fale com a Brigada Geral[%dic:STR_DIC_N_Perento]de heiron.</p></step>
+</steps>
+<p>O governador Michalis está procurando por você com urgência. Apresse -se para a fortaleza de Teminon e veja o governador.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Livius disse que o governador Michalis estava procurando urgentemente por você e disse para você ir à fortaleza de Teminon imediatamente.</p>
+<p> </p>
+<p>Michalis ordenou que você fosse a Heiron e apoiasse o general Perento contra o Balaur.</p>
+<p> </p>
+<p>Quando você disse à General da Brigada Perento que você foi enviado pelo governador, ele parecia desapontado por você ser o único reforço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

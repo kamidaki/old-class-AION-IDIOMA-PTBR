@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Primeiras coisas primeiro-precisamos de mais informações sobre essa opala negra antes que possamos começar a procurá-la. Ishalgen é enorme-sem uma dica, nunca encontraremos uma pérola.</p>
+<p> </p>
+<p>[%username], Eu preciso que você me ajude.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa de mim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provavelmente precisará encontrar um[%dic:STR_DIC_I_2116a]ou algo semelhante. Deve ser uma tarefa simples subir a bordo do navio. Você sabe o que esperar da multidão lefarista agora.</p>
+<p> </p>
+<p>Claro, isso provavelmente deve ficar entre nós ...</p>
+<p> </p>
+<p>Que tal?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso que eu gosto de ouvir!</p>
+<p> </p>
+<p>Apresse -se para a costa e embarque naquele navio. Não me importo se você se esgueirar ou mastigar todos esses caçadores de tesouros para entrar. O importante é que conseguimos isso [%dic:STR_DIC_I_2116a].</p>
+<p> </p>
+<p>Ah, eu deveria mencionar-nem pense em levar o mapa por si mesmo. Eu sei como encontrar um homem quando preciso, e não vou aceitar que eu seja enganado.</p>
+<p> </p>
+<p>Agora-de você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem tempo, hein? Isso é inesperado.</p>
+<p> </p>
+<p>É melhor você não planejar colocar um em mim-encontrar o mapa para si e similares.</p>
+<p> </p>
+<p>Se esse é o seu plano, posso prometer que você se arrepende muito ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Encontre outra pessoa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está atrasado!</p>
+<p> </p>
+<p>Eu estava começando a pensar que você foi pego por esses lefa e mantido prisioneiro ou afogado ... Graças a Azphel você está bem!</p>
+<p> </p>
+<p>Valeu a pena? Você encontrou um[%dic:STR_DIC_I_2116a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não fez isso?</p>
+<p> </p>
+<p>Vamos agora, você demorou o suficiente e precisamos garantir que encontremos o tesouro antes de qualquer um dos outros, ou os próprios piratas, chegar a ele.</p>
+<p> </p>
+<p>Volte para aquele navio e pegue o [%dic:STR_DIC_I_2116a] Antes que seja tarde demais!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu amo quando um plano se reúne!</p>
+<p> </p>
+<p>Eu amo ainda mais quando as coortes permanecem leais-e quietas. Você se saiu bem, [%username]. Existem muitos lefaristas ao redor daquele navio. O fato de você voltar de tudo prova sua habilidade.</p>
+<p> </p>
+<p>Agora, vamos dar uma olhada neste mapa ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o navio pirata, encontre o mapa e traga -o de volta para [%dic:STR_DIC_N_Lidun].</p>[%collectitem]</step>
+</steps>
+<p>Você precisa de mais informações antes de pesquisar a Opala Negra. Vá olhar ao redor do navio pirata para qualquer informação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais informações eram necessárias antes de começar a procurar o Black Opal. Você pesquisou o navio pirata por pistas e encontrou um mapa mostrando o site do tesouro. Você o trouxe para Lidun, assim como ela solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

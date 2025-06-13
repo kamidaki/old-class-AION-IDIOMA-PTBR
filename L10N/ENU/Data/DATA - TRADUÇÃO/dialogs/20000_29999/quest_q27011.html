@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q27011</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem da Guilda, todas as missões que precisam ser realizadas foram distribuídas entre os membros da Guilda. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para Makarna e mate Beritra.</p>
+<p> </p>
+<p>Em seguida, relate -se ao Asmodae Battlemaster, [%dic:STR_DIC_N_Kellin].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio de Makarna? Beritra deve ter sido um oponente difícil.</p>
+<p> </p>
+<p>Mesmo que você não fosse capaz de destruí -lo, não deveria se sentir envergonhado, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é incrível. Beritra é um inimigo que todos têm medo.</p>
+<p> </p>
+<p>Continue concluindo suas tarefas até que a missão da Guilda esteja concluída.</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Beritra ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Kellin].</p></step>
+</steps>
+<p>Missão da Guilda: A ordem foi dada para matar Beritra. Completar a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você matasse Beritra.</p>
+<p> </p>
+<p>Você ajudou a destruir Beritra para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

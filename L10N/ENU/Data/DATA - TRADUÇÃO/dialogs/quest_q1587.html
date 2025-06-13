@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se o que Liske disse que acontece, Bollvig se moverá em breve. Mas não podemos deixar isso acontecer.</p>
+<p> </p>
+<p>Precisamos nos livrar do Bollvig, mas é impossível nas circunstâncias atuais. Devemos causar impacto em sua força militar.</p>
+<p> </p>
+<p>Sentado para trás, dizendo que não podemos erradicar o problema, dará a ele a chance de montar uma guerra total.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Nós não queremos isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem poucos guardiões no refúgio de Arbolu. Não podemos enfraquecer a força militar de Bollvig por nós mesmos.</p>
+<p> </p>
+<p>É por isso que espero que você cumpra esta missão, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria que você fosse às relíquias da Nolantis e se livrar do[%dic:STR_DIC_M_Graveknight_44_An] Areia [%dic:STR_DIC_M_Lich_45_An] S.</p>
+<p> </p>
+<p>Eles podem estar Mortos Vivos agora, mas foram Daevas uma vez. Você pode enfrentar uma resistência formidável, por isso não deixe de ir com alguns amigos.</p>
+<p> </p>
+<p>Não se permita sentir simpatia. Se você hesitar, os moradores de Hiário podem morrer. Lembre -se disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou esquecer"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha a missão muito difícil?</p>
+<p> </p>
+<p>Quando você encontrar sua coragem, volte para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento ver as coisas vêm para isso. Se tivéssemos agido apenas antes ...</p>
+<p> </p>
+<p>Mas agora, não temos outra opção.</p>
+<p> </p>
+<p>Você se livrou dos combatentes e sacerdotes do Graveknight?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez bem, [%username].</p>
+<p> </p>
+<p>Como essa crise parece ter passado, aguardaremos a ordem da fortaleza para a próxima missão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Mortos Vivos nas ruínas de Nolantis.</p>
+<p visible="[%0]">Matar [plur][%dic:STR_DIC_M_Graveknight_44_An]([%2]/9).</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Lich_45_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Rance].</p></step>
+</steps>
+<p>Rance acha que seria melhor enfraquecer a força militar de Bollvig antes que uma guerra rompe. Vá para o altar da Nolantis e mate os combatentes Graveknight e o sacerdote de Lich.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rance disse que seria melhor enfraquecer a força militar dos mortos-vivos antes de Bollvig abrir uma guerra total. Você foi ao altar da Nolantis e derrotou os combatentes e sacerdotes do Graveknight.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

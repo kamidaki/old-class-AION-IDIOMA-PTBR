@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem -estar da Guilda, todas as missões a serem realizadas foram distribuídas entre todos os participantes da Guilda. Todos são convidados a cumprir a missão, pois a tarefa das legiões só será totalmente concluída.</p>
+<p> </p>
+<p>Missão Legions:</p>
+<p>Vá para a fortaleza de Gelkmaros e mate o protetor.</p>
+<p> </p>
+<p>Todos que realizam a missão devem se reportar a [%dic:STR_DIC_N_Sarban], que é responsável pelas batalhas do Abismo.</p>
+<p> </p>
+<p>- Administração de Legiões -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o protetor da fortaleza de Gelkmaros?</p>
+<p> </p>
+<p>Existem muitos membros da Guilda que temem o protetor da fortaleza de Gelkmaros.</p>
+<p> </p>
+<p>Se você concluiu a missão, relate os resultados para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não acredito! Você já matou o protetor da fortaleza de Gelkmaros?</p>
+<p> </p>
+<p>Uma conquista impressionante, considerando que a ordem só foi enviada recentemente.</p>
+<p> </p>
+<p>Espero poder contar com sua ajuda para concluir a tarefa. Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o protetor da fortaleza de Gelkmaros ([%2]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sarban].</p></step>
+</steps>
+<p>Missão Legions: Uma Ordem da Guilda foi emitida para matar o protetor do campo de treinamento de fortalezas de Gelkmaros. Enquanto você está participando da missão, você deve realizar a tarefa das legiões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma ordem da Guilda foi emitida para matar o protetor do campo de treinamento de Gelkmaros Fortaleza.</p>
+<p> </p>
+<p>Você ajuda a eliminar o protetor da fortaleza de Gelkmaros para que a missão Legions possa ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu que os revolucionários lefaristas ocuparam a primavera mística?</p>
+<p> </p>
+<p>Todo o Eltnen está encolhendo, e agora eles controlam a única fonte de água!? Brutos covardes!</p>
+<p> </p>
+<p>Há também um boato de que eles estavam planejando atacar o observatório em Verteron, e estou preocupado que eles pudessem fazer truques semelhantes aqui em Eltnen.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu ouvi algo sobre isso também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso ser apenas um curandeiro de alma, mas vou colocar minha armadura e lutar até a morte, se for isso.</p>
+<p> </p>
+<p>Eu tenho praticado luta de espadas com Kibelle e Dionera, você vê.</p>
+<p> </p>
+<p>Eu até pedi alguma armadura de um especialista em Armoursinging em santuário. Sem adiantamento estar preparado para lutar se você não pode se defender, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso ver isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não. Ainda não está aqui. Escrevi e perguntei se ele já havia terminado, mas ele escreveu de volta dizendo que tinha problemas para obter os materiais. Ele até perguntou se eu conhecia boas fontes, apenas para acelerar as coisas.</p>
+<p> </p>
+<p>A coisa é que eu conheço uma boa fonte de platina, mas não posso ir e pegá -lo porque estou de plantão. O que aconteceria se alguém precisasse de mim aqui e eu estivesse correndo pela paisagem?</p>
+<p> </p>
+<p>[%username], você estaria interessado em ganhar uma recompensa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Estamos perdendo um[%dic:STR_DIC_E_noblemetal_n_c_30a].</p>
+<p> </p>
+<p>Se você me der 10 peças rapidamente, posso enviar tudo para o santuário e pedir para ser nomeado para terminar a armadura.</p>
+<p> </p>
+<p>Por favor, apresse -se! Não sabemos quando os revolucionários lefaristas entrarão no Observatório de Campo Aetico.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É um acordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso tomar precauções; Eu não moro na fortaleza ou na vila, cercada por guardiões.</p>
+<p> </p>
+<p>Bem, aquele que sente sede deve cavar o poço. Suponho que devo encontrar tempo para recolhê -lo sozinho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe todas as 10 moedas de platina que eu pedi?</p>
+<p> </p>
+<p>Estou preocupado que o mestre da armadura não cumpra sua promessa, porque ele não aderiu ao prazo.</p>
+<p> </p>
+<p>Ele me prometeu que trabalharia minha armadura primeiro, assim que eu lhe enviei os materiais. Mas se alguém de uma classificação superior deve fazer uma ordem, acho que a minha será negligenciada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não se preocupe. Aqui está o platina."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe como minerar minério?</p>
+<p> </p>
+<p>Hmm, não estou convencido. Se você o fizesse, certamente teria o [%dic:STR_DIC_E_noblemetal_n_c_30a] Até agora.</p>
+<p> </p>
+<p>Se você não se apressar, o Armoursmith pode mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>São exatamente 10 peças de platina.</p>
+<p> </p>
+<p>Obrigado ... desde que você conseguiu os materiais para mim, eu posso fazer a armadura.</p>
+<p> </p>
+<p>Entregue isso rapidamente ao Vulcanus.</p>
+<p> </p>
+<p>Aqui, um sinal da minha gratidão. Por favor, aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Meu minério[%dic:STR_DIC_N_Tanis].</p>[%collectitem]</step>
+</steps>
+<p>Tanis ordenou alguma armadura de metal de um especialista em santuário, mas a entrega foi adiada porque o mestre ficou sem materiais. Colete alguns[%dic:STR_DIC_E_noblemetal_n_c_30a], para que Tanis possa fazer sua armadura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O curandeiro de Soul Tanis estava preocupado com o fato de os revolucionários lefaristas poderiam atacar o observatório, então ele ordenou alguma armadura de um armadura em santuário. Infelizmente, o Armoursmith não tinha materiais suficientes para terminar o pedido.</p>
+<p> </p>
+<p>Você desenterrou o minério de platina para Tanis enviar para o santuário para que ele pudesse finalmente ter sua armadura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q27008</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem da Guilda, todas as missões que precisam ser realizadas foram distribuídas entre os membros da Guilda. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para Katalamize e destrua [%dic:STR_DIC_M_IDRuneWP_AncientArm_N_65_Al].</p>
+<p> </p>
+<p>Em seguida, relate -se ao Asmodae Battlemaster, [%dic:STR_DIC_N_Kellin].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hyperion é uma arma de runa que possui grande poder. É por isso que o Balaur quer.</p>
+<p> </p>
+<p>[%username], devemos destruir Hyperion antes de cair nas mãos do Balaur.</p>
+<p> </p>
+<p>Os outros danos que confiaram essa tarefa não retornaram ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Incrível![%username], você realmente destruiu Hyperion?</p>
+<p> </p>
+<p>Você contribuiu muito para o avanço de [%userguildname].</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_IDRuneWP_AncientArm_N_65_Al]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Kellin].</p></step>
+</steps>
+<p>Missão da Guilda: Você recebeu ordens para destruir Hyperion. Completar a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você destruísse Hyperion.</p>
+<p> </p>
+<p>Você ajudou a destruir Hyperion para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

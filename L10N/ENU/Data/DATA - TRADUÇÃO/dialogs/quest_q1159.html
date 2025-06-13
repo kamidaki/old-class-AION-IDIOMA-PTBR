@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fizemos avanços promissores para encontrar a fonte da contaminação. O trabalho de um cientista nunca é feito, e ainda há muito trabalho a fazer.</p>
+<p> </p>
+<p>Até agora, coletamos amostras de tecidos das populações locais de Frillneck e Worg. Ainda precisamos estudar outras espécies, no entanto.</p>
+<p> </p>
+<p>Santum pediu uma criatura específica.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Oh?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos obter uma amostra de um Aranha.</p>
+<p> </p>
+<p>São criaturas robustas, com seus próprios sacos venenosos. Quero ver se eles se adaptaram aos venenos da área e, se o fizerem, se o incorporaram ao seu veneno.</p>
+<p> </p>
+<p>Como alternativa, pode se tornar aparente que Aranha envenenou de alguma forma os efeitos dos contaminantes. Se for esse o caso, precisaremos estudar o veneno e ver se podemos sintetizar os principais componentes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso progresso melhorou acentuadamente ultimamente, mas ainda há algumas etapas importantes a serem tomadas se quisermos resolver os problemas nessa região.</p>
+<p> </p>
+<p>Então, você acha que pode nos ajudar? Vou precisar de um saco de envenenamento de Aranha, que não deve demorar muito para se reunir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Estarei preparado para a análise quando você voltar.</p>
+<p> </p>
+<p>Lembre -se, para encontrar os principais grupos de [%dic:STR_DIC_MLA154] S, você precisa ir para o [%dic:STR_DIC_FLA16_1]. Eles estarão na beira da estrada enquanto você vai para o altar, então você precisará manter seu juízo sobre você.</p>
+<p> </p>
+<p>Fé e armas, [%username]! Eu rezo para que você volte com segurança.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, Ilos. Fé e armas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vergonha....</p>
+<p> </p>
+<p>É muito importante que entendamos completamente a composição biológica de outras criaturas, especialmente quando elas têm muito a nos ensinar sobre o meio ambiente. Somos do jeito que somos porque abrimos nossa mente para progredir, [%username].</p>
+<p> </p>
+<p>Abra sua mente para o progresso. O punho cerrado apenas leva à ignorância e à mente pequena, como os asmodianos tolos sabem muito bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendo. Deixe -me pensar nisso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]!</p>
+<p> </p>
+<p>Você encontrou um[%dic:STR_DIC_MLA154]? Você coletou seu saco venenoso para mim?</p>
+<p> </p>
+<p>Meus testes agora estão concluídos no santuário de outras espécies. Agora eu só preciso dissecar o saco de veneno e poderei escrever meu relatório.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está, Ilos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você esqueceu onde procurar?</p>
+<p> </p>
+<p>Lembre -se de que você precisa seguir o caminho da floresta de caça até o altar do dragão carmesim. Você verá o [%dic:STR_DIC_MLA154] está ao longo da estrada ... você não pode sentir falta deles.</p>
+<p> </p>
+<p>Pressa, [%username]! Os cientistas seniores em Santum estão esperando por você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma excelente amostra!</p>
+<p> </p>
+<p>Eu estava preocupado que você pudesse me trazer um saco venenoso rompido, mas este é um bom espécime. Tenho certeza de que isso produzirá os resultados de que precisamos!</p>
+<p> </p>
+<p>Obrigado pelo seu trabalho duro, [%username]. Aqui está a sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga a [%dic:STR_DIC_MLA154] Saco de veneno para Ilos.</p>[%collectitem]</step>
+</steps>
+<p>Illos está estudando a causa da contaminação da floresta, e ele disse que precisava de um saco venenoso de Aranha para sua pesquisa. Reúna um e leve -o para Ilos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Illos está estudando a causa da contaminação da floresta e precisa analisar o saco veneno de um pequeno Aranha.</p>
+<p> </p>
+<p>Você se reuniu e trouxe um saco venenoso para Illos, fazendo -o esperançoso de que ele pudesse encontrar a causa da contaminação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

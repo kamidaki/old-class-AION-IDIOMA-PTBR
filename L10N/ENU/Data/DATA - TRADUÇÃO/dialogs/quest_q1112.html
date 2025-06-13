@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para eles. Barbatanas prateadas dançando através dos reflexos rosa e azul do pôr do sol perfeito acima, através de nuvens de pássaros voadores ....</p>
+<p> </p>
+<p>Sinto muito, você disse algo, [%username]? Este é o meu verdadeiro prazer, pescar este pequeno pedaço de paraíso depois de muitos anos explorando[%dic:STR_DIC_ELA05].</p>
+<p> </p>
+<p>Meu marido simplesmente não entende, para sempre em seus vasos e receitas. Ele enviou você? Não? Bem, talvez você possa me ajudar então.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vê isso [%dic:STR_DIC_MLA133] Areia [%dic:STR_DIC_MLA134]?  Enquanto bonita à sua maneira, a chegada deles assustou o peixe do meu gancho.</p>
+<p> </p>
+<p>Se fossem menos perturbadores, a paz retornaria aqui e a UNO não precisaria usar outras fontes de comida para nossas refeições.</p>
+<p> </p>
+<p>Você vai me ajudar a restaurar o lago Cliona em seu estado anterior?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso, [%username]!</p>
+<p> </p>
+<p>Remova cinco[%dic:STR_DIC_MLA133]%s e cinco[%dic:STR_DIC_MLA134]%. Isso deve assustar o suficiente para restaurar a harmonia natural deste lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Simples o suficiente. Volto quando terminar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe então, amigo[%userclass]. Tenho certeza de que eles vão sair por conta própria eventualmente.</p>
+<p> </p>
+<p>Eu pensei que você poderia querer ajudar, mas devo ter julgado mal seu personagem.</p>
+<p> </p>
+<p>Talvez meu marido me ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza que ele vai ... eventualmente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente seria tão pacífico aqui, se não fosse por todos os ...</p>
+<p> </p>
+<p>Oh, olá[%username]. Você já cuidou dessa pequena tarefa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você pediu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom, muito bom. Tenho certeza de que não demorará muito até que o lago seja restaurado ao seu equilíbrio natural. Ben e eu agora podemos voltar a pescar pacificamente.</p>
+<p> </p>
+<p>Eu tive um sentimento sobre você, [%username]. Muito obrigado por sua ajuda.</p>
+<p> </p>
+<p>Terei o UNO convidando você para jantar em breve!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar os convidados não convidados em[%dic:STR_DIC_FLA03].</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA134]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA133]([%5]/5)</p></step>
+<step><p visible="[%15]">Volte para [%dic:STR_DIC_LA07].</p></step>
+</steps>
+<p>Feira pediu que você pegasse cinco Brax e cinco slinks.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Feira pediu que você pegasse cinco bráxos e cinco slinks para que eles não assustassem mais o peixe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

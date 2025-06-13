@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Uma carta é presa na parede.)</p>
+<p> </p>
+<p>(O papel é amarelado, a escrita desapareceu.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu me pergunto se posso ler ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A carta é endereçada a alguém nomeado[%dic:STR_DIC_N_Kaindal].)</p>
+<p> </p>
+<p>(Provavelmente foi escrito pelo proprietário da casa.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou perguntar sobre isso de volta ao acampamento."</act>
+<act href="HACTION_FINISH_DIALOG">"Vou colocar de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta de uma das antigas casas de Havenjark?</p>
+<p> </p>
+<p>Deixe -me ver isso. Meus pais viveram aqui durante o primeiro reassentamento, até que falhasse.</p>
+<p> </p>
+<p>Eu posso reconhecer o nome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Sério? Claro, aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oridin ... hmm, não o conheço, mas eu lembro[%dic:STR_DIC_N_Kaindal]das histórias dos meus pais.</p>
+<p> </p>
+<p>Ele foi o primeiro a sair quando as colheitas falharam.</p>
+<p> </p>
+<p>Ele vagou em algum lugar muito longe. Ishalgen, eu acho? Pa disse que se tornou um ladrão ou um invasor ou algo assim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Aquele kandal?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], olhe para você, Daeva!</p>
+<p> </p>
+<p>Por que você está de volta aqui? Slumming? Exibindo? Negócios secretos?</p>
+<p> </p>
+<p>Aah ... você não se importa que eu provocando, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Encontrei algo para você ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma casa deserta? Deixe -me ler isso ... Oridin? Oh, fragmentos, que lembranças! Por que ele não enviou isso?</p>
+<p> </p>
+<p>Ele queria vir se juntar a mim aqui. Ele teria ficado decepcionado. Robusto, firme, mas honesto. Teria feito um péssimo invasor.</p>
+<p> </p>
+<p>Prefiro pensar que ele encontrou um pedaço de verde em algum lugar para cultivar. Dois velhos amigos em um dia! Obrigado, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Fique seguro, Rascal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa carta me fez pensar. Este lugar os quebrou. Meus pais, Kaindal, todos eles.</p>
+<p> </p>
+<p>Mas quando você nos derrotou, ficamos mais difíceis. Faz décadas. Aposto que somos fortes o suficiente agora para resgatar este lugar.</p>
+<p> </p>
+<p>Então, onde está Kaindal?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"História engraçada, isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então Pa estava certo? Huh. Os tempos devem ter sido criticados para transformar um fazendeiro em um invasor!</p>
+<p> </p>
+<p>Bem, não desta vez. A terra nos quer de volta. Você não pode sentir isso?</p>
+<p> </p>
+<p>E desta vez somos difíceis o suficiente para ganhar nosso lugar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_Dettil] Sobre a carta.</p></step>
+<step><p visible="[%3]">Procurar [%dic:STR_DIC_N_Kaindal] em Ishalgen.</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Dettil].</p></step>
+</steps>
+<p>Você encontrou uma carta antiga na fazenda Havenjark. Saiba mais sobre sua história.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma carta antiga e sem desdém presa a uma parede em Havenjark. Você o trouxe de volta ao acampamento, onde Dettil reconheceu um dos nomes. Kaindal veio com os pais de Dettil para cultivar Brusthonin, mas saíram quando as colheitas falharam.</p>
+<p> </p>
+<p>Você descobriu que Kaindal estava em seu antigo grupo, o Ulgorn Raiders. Sua visita e a carta o deixaram feliz nostálgico.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

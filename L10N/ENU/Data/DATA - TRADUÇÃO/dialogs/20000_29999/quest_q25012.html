@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido urgente para você, [%username].</p>
+<p> </p>
+<p>Eu preciso ter algum[plur][%dic:STR_DIC_I_quest_25012a] e [plur][%dic:STR_DIC_I_quest_25012b]O mais breve possível.</p>
+<p> </p>
+<p>Os estudiosos da Reian pediram para pesquisar o ecossistema local em conjunto e que devemos obter amostras dessas escalas para esse mesmo objetivo.</p>
+<p> </p>
+<p>Obviamente, os estudiosos da Asmodianos possuem um vasto conhecimento, mas não sabemos muito sobre o quão conhecedores os cientistas da Reian são.</p>
+<p> </p>
+<p>Uma cooperação como essa pode levar a insights magníficos. E como um bônus secundário, fortalíamos os laços de amizade entre os asmodianos e os Reian.</p>
+<p> </p>
+<p>Por favor, junte estas amostras e traga -as para [%dic:STR_DIC_N_DF5_Lastavan_E], The Reian Scholar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um asmodiano.</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a escala e relata o que Matti lhe disse.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que Matti te enviou? Vamos ver aqui.</p>
+<p> </p>
+<p>Sim, é exatamente isso que estávamos procurando. Por favor, espere um momento.</p>
+<p> </p>
+<p>(Compara as escalas com outras amostras.)</p>
+<p> </p>
+<p>Verdadeiramente notável ... essas criaturas têm uma capacidade fenomenal de se adaptar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que isso significa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que os asmodianos não perderão tempo.</p>
+<p> </p>
+<p>Se você vir Matti, pergunte a ele o que aconteceu com o nosso pedido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que Matti te enviou? Vamos ver aqui.</p>
+<p> </p>
+<p>Sim, é exatamente isso que estávamos procurando. Por favor, espere um momento.</p>
+<p> </p>
+<p>(Compara as escalas com outras amostras.)</p>
+<p> </p>
+<p>Verdadeiramente notável ... essas criaturas têm uma capacidade fenomenal de se adaptar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que isso significa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_W_DF5]parece ter sofrido grandes revoltas no passado.</p>
+<p> </p>
+<p>Geralmente, as formas de vida são incapazes de adaptar isso rapidamente. Eles se extinguem, abrindo caminho para novas formas de vida ...</p>
+<p> </p>
+<p>Mas essas criaturas ... elas parecem ser capazes de se adaptar com facilidade.</p>
+<p> </p>
+<p>É ... difícil de explicar. A esse respeito, eles parecem semelhantes ao nosso próprio povo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [plur][%dic:STR_DIC_I_quest_25012a] e [plur][%dic:STR_DIC_I_quest_25012b]para [%dic:STR_DIC_N_DF5_Lastavan_E].</p>[%collectitem]</step>
+</steps>
+<p>Matti pediu que você obtenha escalas de Vespines e escalas de Korarico e as levassem a Rastavan. Cumprir o pedido de Matti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Matti pediu que você obtenha escalas de Vespines e escalas de Korarico para ajudar o projeto de pesquisa conjunta com o Reian.</p>
+<p> </p>
+<p>Você obteve amostras de ambos os tipos de escalas e os levou a Rastavan, o estudioso da Reian, que ficou muito surpreso com a capacidade de se adaptar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

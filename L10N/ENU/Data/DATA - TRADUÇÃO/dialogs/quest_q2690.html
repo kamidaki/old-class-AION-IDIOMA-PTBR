@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio na hora certa, [%username]. Eu preciso de um Daeva para me infiltrar em Elysea.</p>
+<p> </p>
+<p>Um tempo atrás eu ouvi um Daeva que havia ido para o [%dic:STR_DIC_W_LF3_SZ_003]No relato de Heiron, ele viu algo estranho lá.</p>
+<p> </p>
+<p>Ele alegou que em um lugar chamado templo amaldiçoado, ele viu um monstro chamado Deshirung, o dirigível que gritou "Lumiel! Lumiel!"</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Um monstro? Ligando por Lumiel?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Outro Daeva que estava lá antes que relatou que viu um alívio do Senhor Lumiel na parede de um prédio em ruínas, perto do templo antigo amaldiçoado. Naquela época, não tive tempo de pensar muito sobre isso. Mas desta vez ... bem, o relatório foi bastante específico.</p>
+<p> </p>
+<p>Recebi um pedido de Pandaemonium através da fortaleza para verificar a história.</p>
+<p> </p>
+<p>Se essa ruína acaba sendo um templo pré-catacllysm para o Senhor Empíreo Lumiel, é de grande importância.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então eu quero você, [%username], para ir para [%dic:STR_DIC_E_LF3_name]. Eu adoraria ir lá sozinho, mas não posso arriscar a ira do arconte do anoitecer, da Corte Sombra ou da Guilda do Punisador de Drakan.</p>
+<p> </p>
+<p>O que você acha?  Você irá para Heiron?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O templo antigo amaldiçoado está no Centro de Pesquisa Lefarista. O relatório dizia que havia pedras esculpidas por toda parte. Você precisa fazer cópias ... talvez fazendo uma fricção? Sim, é isso.</p>
+<p> </p>
+<p>Se você receber as lascivas com segurança, leve-as a Gunter-ele é um especialista em restauração de documentos antigos. Entendido?</p>
+<p> </p>
+<p>Fale com [%dic:STR_DIC_N_Dewi]primeiro. Ele te dá direções explícitas para o [%dic:STR_DIC_W_LF3_SZ_003] em heiron.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Rusiciosos de pedra em Heiron, entenderam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é um Daeva sem senso de dever?</p>
+<p> </p>
+<p>Não posso dar essa missão a ninguém, você sabe!</p>
+<p> </p>
+<p>Você tem medo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não. Estou apenas ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Freyja enviou você? É uma missão difícil, você é ambicioso ou perto de Freyja.</p>
+<p> </p>
+<p>Na verdade, Freyja insistiu que ela mesma assumiu essa missão.</p>
+<p> </p>
+<p>Alguns Daevas parecem sempre ter algo a provar, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Como faço para chegar ao Centro de Pesquisa Lefarista?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Viajar para o [%dic:STR_DIC_W_LF3_SZ_003]requer uma brecha. A abordagem de Alquimia o levará até lá. Os lefaristas usam essa fenda para viajar para Elysea também.</p>
+<p> </p>
+<p>Quando você se aproximar, vá em frente e verá a passagem pela qual os lefaristas enviarão suprimentos para o abismo. A brecha aparece perto lá. Porém, nem sempre é aberto, então não perca.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Freyja pediu que você fosse a Heiron em Elysea e colecionasse evidências do templo de Lumiel. Vá para Dewi para obter instruções para o Centro de Pesquisa Lefarista em Heiron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Freyja disse que alguém viu um monstro pedindo Lord Lumiel no laboratório lefarista de Heiron em Elysea, e que o Pandaememonium solicitou a confirmação de que era o antigo templo do lorde de Empíreo Lumiel.</p>
+<p> </p>
+<p>Dewi disse a você como se infiltrar no Centro de Pesquisa Lefarista em Elysea.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você![%username]! Você não me conhece, mas eu te conheço.</p>
+<p> </p>
+<p>Eu sei que você tem forças para trabalhar para todos os asmodas ... e o sentido de não contar a ninguém sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não tenho certeza do que você quer dizer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sou membro de uma ... organização secreta que responde apenas à própria Lady Lumiel. Executamos operações em toda a Atreia.</p>
+<p> </p>
+<p>Minha parceira Heloise e eu estivemos em um particularmente importante recentemente, mas eu encontrei ... obstáculos imprevistos.</p>
+<p> </p>
+<p>O tempo é precioso e curto. Então, preciso de alguém que possa cuidar desses obstáculos enquanto eu trabalho. Você pode ser esse?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que tinha você atingido certo. A primeira coisa que você precisa fazer é lutar [%dic:STR_DIC_M_Branch_Event_ElementalFire2_DARK_99_n].</p>
+<p> </p>
+<p>Eles roubaram alguns[%dic:STR_DIC_I_QUEST_80130A] S que eu preciso de volta. Eles podem parecer comuns, mas garanto que eles não são.</p>
+<p> </p>
+<p>Como e por que é necessário saber. E você não precisa saber. Só que isso é muito importante para o futuro de Asmodae.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou confiar nisso ... por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então tudo o que me resta para você é um aviso: não, repito, não diga a ninguém que você até falou comigo, muito menos por que.</p>
+<p> </p>
+<p>Se você acha que os juízes das sombras têm olhos e ouvidos, são amadores em comparação com nós. Você não quer nos deixar infelizes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu poderia dizer o mesmo para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Nesse negócio, a confiança é uma mercadoria preciosa que geralmente é acumulada. Estou afastando meu pescoço dando um pouco para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Confie em mim, eu tenho algo para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, bom trabalho! Agora eu posso conseguir isso ...</p>
+<p> </p>
+<p>Não, não vá embora, [%username]. Isso ainda não acabou. Ainda há coisas que precisam ser feitas.</p>
+<p> </p>
+<p>Eu não acho que você consideraria se tornar um de nossos agentes permanentemente ...?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou atribuir isso ao esquecimento, em vez de malícia ou estupidez. Não me prove errado.</p>
+<p> </p>
+<p>Eu preciso do[%dic:STR_DIC_I_QUEST_80130A] S roubado pelo[%dic:STR_DIC_M_Branch_Event_ElementalFire2_DARK_99_n]. Isso é tudo o que há para isso.</p>
+<p> </p>
+<p>Eu odeio pressa em você, mas é o destino de todo o nosso povo em jogo. Nada grande.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então me diga o que eu preciso saber!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_80130A] e dê -los a [%dic:STR_DIC_N_event_Abelard].</p>[%collectitem]</step>
+</steps>
+<p>Encontre as ervas estranhas que os detritos estrelados roubaram e devolvam -os a Craig.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva bastante misterioso chamado Craig solicitou que você recuperasse ervas especiais roubadas por detritos da estrela.</p>
+<p> </p>
+<p>Você fez isso, e ele lhe disse que tinha outros planos para você ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

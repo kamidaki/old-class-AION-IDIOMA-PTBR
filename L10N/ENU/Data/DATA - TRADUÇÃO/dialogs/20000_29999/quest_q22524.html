@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Solicitação de ajuda urgente -</p>
+<p> </p>
+<p>1. Remetente: Katalam Cleanup Squad:[%dic:STR_DIC_N_LDF5A_Balbrin_E]</p>
+<p> </p>
+<p>2. RECENDIENTE:[%username]</p>
+<p> </p>
+<p>3. Ordens: eliminar o [%dic:STR_DIC_M_LDF5A_B2_Vritra_As_Br_62_An] escondendo perto do poste.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você completa o pedido dele.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos de informações exatas para nos dar clareza.</p>
+<p> </p>
+<p>Informações imprecisas levam a uma decisão imprecisa com resultados desastrosos.</p>
+<p> </p>
+<p>[%username], você parece querer relatar algo; O que você está esperando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que os pesquisadores que estudam a explosão foram mortos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, a inteligência está investigando a área ... pedi ajuda, mas não sabemos o que eles descobriram.</p>
+<p> </p>
+<p>Na verdade, os militares normais do Beritra e sua inteligência podem ser vistos como duas entidades separadas.</p>
+<p> </p>
+<p>Se isso não fosse o caso, eles não se moveriam em segredo o tempo todo.</p>
+<p> </p>
+<p>De qualquer forma, obrigado não apenas por cumprir a missão, mas também por trazer informações úteis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_B2_Vritra_As_Br_62_An]do corpo de inteligência de Beritra ([%2]/5).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5A_Balbrin_E].</p></step>
+</steps>
+<p>Ordem urgente: mate o investigador de explosão que está investigando a explosão de Idgel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Em resposta ao pedido urgente de assistência, você matou o investigador de explosão da inteligência de Beritra, que estava se escondendo na vegetação vizinha.</p>
+<p> </p>
+<p>Quando você se reportou a Balvrin, ele agradeceu pelo seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

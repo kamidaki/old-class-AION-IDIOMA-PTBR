@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece o templo do fogo ali, [%username]?</p>
+<p> </p>
+<p>Nós, os executores sombreados também têm um certo interesse no templo.</p>
+<p> </p>
+<p>Alguns espíritos de Cinder estão morando fora do templo há algum tempo. É sobre a amante deles ....</p>
+<p> </p>
+<p>Eu sei que você já fez muitas missões, mas seria incrível se você pudesse ajudá -las.</p>
+<p> </p>
+<p>E você tem certeza de ter algumas experiências no processo que vão muito além de qualquer coisa que você já viu ou fez.</p>
+<p> </p>
+<p>Talvez você até perceba que o objetivo desta missão também vale a pena.</p>
+<p> </p>
+<p>Então, que tal você se encontrar [%dic:STR_DIC_N_Bulagan]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como posso ajudá-lo?</p>
+<p> </p>
+<p>Você sabia que há um Daeva malévolo dentro do templo do fogo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que gostaria de ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva que está disposto a ajudar, eh ...</p>
+<p> </p>
+<p>Temos que libertar nossa amante Agnita.</p>
+<p> </p>
+<p>Ela está presa em um item que está na posse de um Daeva mal dentro do templo do fogo ...</p>
+<p> </p>
+<p>Eu posso sentir o item, mas apenas fracamente, e não sei o que poderia ser. O que posso dizer é que está profundamente dentro do templo do fogo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_DF2_Flamyar_E]venera muito agnita. Ele vai esperar por você na entrada do templo do fogo.</p>
+<p> </p>
+<p>Ele será capaz de lhe contar mais ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bulagan enviou você?</p>
+<p> </p>
+<p>Você está pronto para libertar [%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]De sua prisão no templo do fogo?</p>
+<p> </p>
+<p>O poder de Kromede deve ter proibido Agnita em um item. Se você eliminar o lacaio de Kromede [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae], você encontrará algo conectado à Agnita.</p>
+<p> </p>
+<p>Traga -me o item que segura a agnita em cativeiro. Boa sorte...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, Daeva.</p>
+<p> </p>
+<p>Como você se saiu em resgatar a agnita?</p>
+<p> </p>
+<p>Eu confio que você voltou para nós, dando notícias sobre mercadorias?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cálice sagrado selado e relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Normalmente, somos nós que assumem um contrato com você e tentam cumprir seus termos de acordo com seus desejos. Era o caminho oposto desta vez.</p>
+<p> </p>
+<p>O cálice no qual Agnita está preso foi devolvido com segurança, graças à sua ajuda.</p>
+<p> </p>
+<p>Em breve tentaremos libertar o agnita do cálice.</p>
+<p> </p>
+<p>Muito obrigado, Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Bulagan]no[%dic:STR_DIC_W_DF2_SUB_C5].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF2_Flamyar_E]pelo[%dic:STR_DIC_OBJ_DF2_DragonDoor_In].</p></step>
+<step><p visible="[%6]">Derrota [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae], adquirir o [%dic:STR_DIC_I_quest_24121a] e leve para [%dic:STR_DIC_N_DF2_Flamyar_E]pelo[%dic:STR_DIC_OBJ_DF2_DragonDoor_In].</p>[%collectitem]</step>
+</steps>
+<p>Gangleri pediu que você falasse com Bulagan sobre uma situação no templo do fogo. Vá conhecer bulagan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gangleri falou sobre o templo do fogo e pediu que você ajudasse os espíritos de Cinder com um assunto sobre sua amante.</p>
+<p> </p>
+<p>Bulagan e Piyama lhe disseram que você encontraria o guarda de cálice Denlavis dentro do templo do fogo.</p>
+<p> </p>
+<p>Você conseguiu vencer o guarda de cálice Denlavis e obter o cálice que mantinha o prisioneiro de Agnita. Você trouxe o cálice para Piyama para que Agnita pudesse ser lançado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

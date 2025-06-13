@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Navrei falou de uma situação difícil. Você poderia, [%username], ajuda [%dic:STR_DIC_N_LDF5b_Navrei_E]?</p>
+<p> </p>
+<p>Diz -se que a tropa de escoteiros pertencente a Navrei está trancada e incapaz de se libertar.</p>
+<p> </p>
+<p>Na verdade, recebi um comando de Stelman, mas como há um excesso de trabalho na minha área de responsabilidade, não posso ir mesmo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu chegar aqui!</p>
+<p> </p>
+<p>Obrigado por vir até mim, apesar das difíceis circunstâncias. O caminho aqui está bloqueado nas duas extremidades.</p>
+<p> </p>
+<p>O problema é o 43º Regimento de Cavalaria, que tem uma excelente mobilidade que eles poderiam virar a maré. Não podemos prever o que acontecerá se não fizermos nada sobre eles.</p>
+<p> </p>
+<p>Por favor, mate -os enquanto o [%dic:STR_DIC_E_LDF5b_F2_Vri]hesita.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é a situação com a destruição do 43º esquadrão de cavalaria?</p>
+<p> </p>
+<p>Eles foram treinados pela experiência de batalha e, portanto, não são fáceis de derrotar.</p>
+<p> </p>
+<p>Agora é a melhor época para atacar o 43º post, no entanto, porque agora as pessoas não estão mais vigilantes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Isso vai tornar isso muito melhor.</p>
+<p> </p>
+<p>Eu estava preocupado que você pudesse perder essa rara oportunidade. Mas você chegou aqui bem a tempo para que possamos aproveitar essa oportunidade.</p>
+<p> </p>
+<p>A situação da linha de frente é incerta. É por isso que estou pedindo mais ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Navrei_E]%.</p></step>
+<step><p visible="[%9]">Mate o [%dic:STR_DIC_E_LDF5b_F2_Vri]([%11]/9).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5b_Navrei_E]%.</p></step>
+</steps>
+<p>Fale com Navrei e mate o 43º Regimento de Cavalaria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Elta, você foi ao local onde um soldado da tropa de escoteiros Navrei foi isolado e ajudou a eliminar a 43ª tropa do Calvário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

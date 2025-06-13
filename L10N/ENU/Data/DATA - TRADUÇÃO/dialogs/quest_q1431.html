@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fui um aventureiro uma vez, [%username], assim como você.</p>
+<p> </p>
+<p>Eu não cheguei muito longe, porém, antes de desistir ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu? Oh, eu era terrível.</p>
+<p> </p>
+<p>Eu tentei vários empregos quando voltei. Depois de um tempo, finalmente percebi que a pesca é o que sou realmente bom-e o que realmente gosto.</p>
+<p> </p>
+<p>Consegui ganhar a vida por um tempo, mas ultimamente se tornou impossível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O número de [%dic:STR_DIC_E_fish_n_c_10c] S no rio aumentou muito rapidamente. Eles comem os outros peixes e têm poucos predadores naturais para manter seus números razoáveis.</p>
+<p> </p>
+<p>Eu os pego sempre que tenho a chance, mas não consigo resolver o problema sozinho. Você está disponível para ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Você pode encontrar [%dic:STR_DIC_E_fish_n_c_10c] está em todos os lugares entre aqui e a lama pútrida.</p>
+<p> </p>
+<p>Ah, e por favor, traga -os de volta para mim. É a única maneira que tenho de fazer Kinah, você sabe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendi. Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há confiança em suas habilidades de pesca, não é?</p>
+<p> </p>
+<p>Eu entendo. Volte se você mudar de idéia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]!</p>
+<p> </p>
+<p>Estou tão feliz que você voltou! Rapidamente, me entregue os Afaris. Se eu os vender enquanto eles ainda estiverem frescos, obterei o melhor preço para eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau. Você não é terrivelmente bom em pescar, não é?</p>
+<p> </p>
+<p>Eu peguei 10[%dic:STR_DIC_E_fish_n_c_10c] S no tempo que você se foi.</p>
+<p> </p>
+<p>Bem, tudo bem-foi a sua primeira vez, afinal. Vá em frente e volte quando tiver todos eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo trabalho!</p>
+<p> </p>
+<p>Aqui-faça parte do lucro. É justo depois de toda a sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_E_fish_n_c_10c] e trazê -los para [%dic:STR_DIC_N_Lano].</p>[%collectitem]</step>
+</steps>
+<p>O número de Afaris explodiu, perturbando o equilíbrio ecológico do rio. Pegue alguns deles e leve -os para Lano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lano sobrevive pescando, mas estava preocupado com o fato de os afaris terem aumentado rapidamente em número, sobrevivendo aos outros peixes.</p>
+<p> </p>
+<p>Você pegou alguns deles no rio entre a fortaleza de Eltnen e a lama pútrida e os trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

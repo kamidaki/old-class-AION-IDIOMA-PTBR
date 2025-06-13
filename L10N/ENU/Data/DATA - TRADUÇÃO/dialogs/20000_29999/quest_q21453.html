@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... erm ... é você. Você viu seu amigo[%username] em volta? Tenho más notícias para transmitir.</p>
+<p> </p>
+<p>Acontece que o fluido de mosquas que [%username]Obtido do Taloc é muito venenoso para usar com o antídoto que tenho. Suponho que deveria ter testado minha cura primeiro. Pobre Grivas ....</p>
+<p> </p>
+<p>De qualquer forma, "a cura para um veneno está na fonte do veneno"-esta é a lei fundamental da toxicologia. Você está prestando atenção? Eu sei que você tem dificuldade em acompanhar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por favor. Continue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se a toxina produzir a cura, onde mais posso encontrar um antídoto para um veneno feito de energia excessiva de aether? Com uma fonte de energia éter, é claro.</p>
+<p> </p>
+<p>Eu acho que a resposta está dentro de eliminar frutas. Dentro da fruta, há uma energia particularmente poderosa que só pode ser utilizada por elimes ... a menos que seja destilado adequadamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E você precisa que eu pegue um pouco."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso do seu amigo[%username]Para conseguir um pouco, sim. Mas onde?</p>
+<p> </p>
+<p>Taloc já foi eliminado, mas obviamente ele saiu. Existem elimes em Asmodae, mas a fruta deles teria o Aether na quantidade e tipo que eu preciso?</p>
+<p> </p>
+<p>Oh, eu desejo[%username] estava aqui. Em comparação, seu conhecimento é ... [%dic:STR_DIC_N_Tree_NoMove_Miener].</p>
+<p> </p>
+<p>Sim, Miener! Aparentemente, ele é um dos últimos elimes em Gelkmaros. Se apenas[%username]poderia pegar seu fruto ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, meu amigo. Se você continuar lutando pela grandeza, talvez um dia [%username]Deixará você servi -los ou algo assim.</p>
+<p> </p>
+<p>Por favor, se você encontrar [%username], diga a eles que o fruto de [%dic:STR_DIC_N_Tree_NoMove_Miener]é o que eu preciso para criar a cura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou seu humilde servo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah bem. Eu suponho isso [%username] está muito ocupado para me ajudar, de qualquer maneira. Fazendo coisas heróicas.</p>
+<p> </p>
+<p>Eu perguntaria a você, mas nunca esperaria um simples[%userclass]Como você poder sobreviver à jornada. Infelizmente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um dia vamos conversar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso sentir ... o perfume de Taloc ....</p>
+<p> </p>
+<p>Você tem ... viu Taloc? Ele está ... com dor?</p>
+<p> </p>
+<p>Por que motivo ... você ... me procure ...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu vim para a sua fruta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu devo ... desculpar -se ....</p>
+<p> </p>
+<p>Acabou ... tudo se foi ... o fruto ....</p>
+<p> </p>
+<p>Você teria que esperar ... Frutar frutas ....</p>
+<p> </p>
+<p>Não há outra maneira ... apesar dos meus desejos ....</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha a fruta de [%dic:STR_DIC_N_Tree_NoMove_Miener].</p></step>
+</steps>
+<p>O antídoto de Wistron não pôde neutralizar o fluido da mosqua. Ele precisa de uma fruta desintoxicante especial de Miener, um elimine em Gelkmaros, para tentar novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O antídoto de Wistron não foi capaz de neutralizar completamente o fluido da mosqua que você o trouxe.</p>
+<p> </p>
+<p>Ele lhe disse que a única coisa que poderia combater o veneno infundido é o fruto desintoxicante de um elim.</p>
+<p> </p>
+<p>Você encontrou Miener, um dos últimos elimes em Gelkmaros, apenas para descobrir que não possui frutos com frequência e atualmente não tem nada a oferecer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

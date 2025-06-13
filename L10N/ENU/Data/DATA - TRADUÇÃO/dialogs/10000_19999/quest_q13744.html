@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: adjutor do protetorado[%dic:STR_DIC_N_LDF4_Advance_Sopeia_E]do[%dic:STR_DIC_W_LDF4_Advance_SZ_V01]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Comando: Mate os 12 asmodianos que estão assediando o agente ascendente de Kaisinel, Veille.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos métodos de comunicação rápida nos permitem reagir às ações dos asmodianos a qualquer momento.</p>
+<p> </p>
+<p>Tudo graças a você, [%username].</p>
+<p> </p>
+<p>Você matou os asmodianos e deu a Veille um pouco de paz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava preocupado que algo acontecesse com Veille, porque os asmodianos são uma ameaça constante.</p>
+<p> </p>
+<p>Obrigado por lidar com todos eles.</p>
+<p> </p>
+<p>Não posso agradecer o suficiente, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que estão ameaçando o agente de Kaisinel ([%2]/12).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF4_Advance_Sopeia_E]. Ela aparece se você vencer na batalha do agente.</p></step>
+</steps>
+<p>Ordens urgentes: Mate os asmodianos que estão ameaçando Veille, o agente despertado de Kaisinel e se reporte a Sopheia. Adjutor Sopheia aparece se você vencer a batalha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos queriam eliminar o agente de Kaisinel.</p>
+<p> </p>
+<p>Você derrotou os asmodianos e relatou a Sopheia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

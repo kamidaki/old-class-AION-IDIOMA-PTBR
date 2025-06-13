@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de terminar com uma breve pesquisa desta área. Enquanto eu estava no habitat de ninharia, vi um ovo enorme.</p>
+<p> </p>
+<p>Estou lhe dizendo[%username], este ovo era tão grande que meu queixo caiu. E quando tentei dar uma olhada melhor ... ele se moveu!</p>
+<p> </p>
+<p>Imaginei que qualquer coisa que saísse de um ovo que o tamanho seria bastante perigosa, então eu corri. Mas agora estou um pouco preocupado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sobre um ovo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, o ovo estava no habitat de nó, então acho que deve ser um[%dic:STR_DIC_E_LF3_FrillfaimamEgg_Q1556].</p>
+<p> </p>
+<p>Se for, pode ser um problema para todo o ponto de vista se não fizermos nada.</p>
+<p> </p>
+<p>E por "nós" quero dizer "você".</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Gojira é uma enorme rede de frescuras-tão grande quanto uma torre. Qualquer coisa que sai desse ovo provavelmente seja enorme, malvada e com fome.</p>
+<p> </p>
+<p>Certamente não podemos nos dar ao luxo de ter dois Gojiras correndo por aí. Você precisa destruir esse ovo e, enquanto estiver nisso, traga de volta um[%dic:STR_DIC_I_QUEST_1556a]para estudo.</p>
+<p> </p>
+<p>E mantenha os olhos abertos para esse gojira!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma omelete de uma farinha que está chegando!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Frillnecks cresce muito rápido.</p>
+<p> </p>
+<p>Se deixarmos essa coisa eclodir, poderia ser enorme quando reunirmos uma resposta.</p>
+<p> </p>
+<p>Se perdermos essa chance de matá -lo no ovo, as consequências podem ser desastrosas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É apenas um ovo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está bem? Você viu o Gojira?</p>
+<p> </p>
+<p>Eu estava preocupado com você, [%username].</p>
+<p> </p>
+<p>Você esmagou o [%dic:STR_DIC_E_LF3_FrillfaimamEgg_Q1556]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe isso para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou o [%dic:STR_DIC_E_LF3_FrillfaimamEgg_Q1556] Ainda?</p>
+<p> </p>
+<p>A segurança do Heiron depende de você, [%username]!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a amostra da pequena gojira no ovo?</p>
+<p> </p>
+<p>Muito obrigado. Vou estudar isso e ver se consigo determinar por que Gojiras fica tão grande. Não queremos que todos os pedreados fiquem tão grandes, não é!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Quebrar o [%dic:STR_DIC_E_LF3_FrillfaimamEgg_Q1556], obtenha uma amostra para pesquisa e leve -o para [%dic:STR_DIC_N_Okonus].</p>[%collectitem]</step>
+</steps>
+<p>Um ovo de Gojira foi encontrado no habitat de neblina. Destrua o ovo, pegue uma amostra e leve -o para Okonus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Okonus disse que encontrou um ovo enorme no habitat de nó.</p>
+<p> </p>
+<p>Se os ovos eclodem e a irmandade de Gojira crescer, isso pode ameaçar o salão. Ele pediu que você destruísse o ovo antes que ele possa eclodir.</p>
+<p> </p>
+<p>Você quebrou o ovo, se livrou do filhote, pegou a amostra e o levou para Okonus, enquanto ele perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

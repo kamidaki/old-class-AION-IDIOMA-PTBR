@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. Eu esperava que você pudesse me ajudar com alguma coisa.</p>
+<p> </p>
+<p>Você vê o [%dic:STR_DIC_ELA29]Parado por mim? O nome dele é Noah, e acho que ele quer ajuda com alguma coisa, embora para a minha vida eu não sei o que é.</p>
+<p> </p>
+<p>O que piora as coisas é que o Elim quase nunca fala com os seres humanos, então para Noé entrar em contato comigo assim-deve haver algo seriamente errado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer para ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você planeja ir para o lago Cliona em breve, fale com[%dic:STR_DIC_LA07]. Ela já conversou com o Elim antes e pode entender o que Noah está perguntando.</p>
+<p> </p>
+<p>Você vai encontrá -la por [%dic:STR_DIC_FLA03]. Tenho certeza de que ela estará disposta a ajudar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Por favor, se apresse.</p>
+<p> </p>
+<p>Temo que algo esteja errado e ainda não percebemos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não acho que você entende. Algo está muito errado se Noah estiver entrando em contato conosco, mas não tenho idéia do que ele está dizendo!</p>
+<p> </p>
+<p>Por favor, ajude-o futuro de toda a floresta pode estar em jogo! Você deve reconsiderar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece preocupado, [%userclass]. O que está errado?</p>
+<p> </p>
+<p>Namus te enviou? Ele está bem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Namus está preocupado com o Elim ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Namus estava certo em mandar você. Os elim são uma espécie tão privada. Eu me pergunto o que isso significa.</p>
+<p> </p>
+<p>Receio não saber o que há de errado com Noah, no entanto. Só posso sugerir que você vá para Akarios Village e fale com o padre lá-um homem chamado Asteros.</p>
+<p> </p>
+<p>Por favor, prenda, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Você pode confiar em mim!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ser [%username].</p>
+<p> </p>
+<p>Eu ouvi histórias sobre você. Na verdade, ouço que você é bastante [%userclass].</p>
+<p> </p>
+<p>Meu nome é Asteros, sou o padre desta pequena vila-como posso ajudá-lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Feira me enviou, em nome de Namus ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estava certo em vir até mim com isso. Os problemas na floresta de Daminu geralmente têm implicações para o resto da poeta, então isso certamente é algo que eu deveria examinar.</p>
+<p> </p>
+<p>Vou consultar seu capitão mercenário e pedir seus pensamentos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LA07].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_LA02].</p></step>
+</steps>
+<p>Noah of the Elim veio a Namus em busca de ajuda, mas era difícil entender o que Noé queria. Vá para Cliona Lake e pergunte a Feira se ela pode interpretar a mensagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Noah of the Elim pediu ajuda a Namus, mas era difícil entender o que ele queria. Você foi ao lago Cliona e perguntou a Feira se ela poderia interpretar a mensagem.</p>
+<p> </p>
+<p>Feira disse que esse assunto estava além dela e o enviou para o padre asteros no Nobelium. Ele disse que consultaria o capitão mercenário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

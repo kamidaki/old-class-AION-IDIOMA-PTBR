@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Crianças hoje em dia ... nenhum respeito por nada ou ninguém. Quando eu era jovem, ajudei todo mundo que podia. Especialmente os anciãos da vila, que trabalhavam até os ossos para que pudéssemos sobreviver e, eventualmente, prosperar.</p>
+<p> </p>
+<p>Mas então sou enviado aqui, e todo mundo está tão ocupado com seus invasores "gloriosos" que eles não dão um momento para seus anciãos.</p>
+<p> </p>
+<p>Eu sei que você é novo aqui. Você está perseguindo as glórias fugazes da vida de um invasor como todo mundo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você está dizendo que eu não respeito meus anciãos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA! Atingido um pouco perto de casa, não é?</p>
+<p> </p>
+<p>Eu sou mais perceptivo do que você pensa, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então você sabe meu nome."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não apenas o seu nome, criança. Eu conheço todo tipo de coisa.</p>
+<p> </p>
+<p>De qualquer forma, como eu disse há um minuto, ajudei meus anciãos quando era jovem, e agora preciso de ajuda. O líder da sua pequena gangue quer que as roupas acolchoadas usem sob sua armadura. Por si só, isso não é um problema: eu sou um alfaiate, afinal.</p>
+<p> </p>
+<p>Mas eu preciso dos materiais: penas de vários[%dic:STR_DIC_M_HiivD_3_n] S. Eles podem ser encontrados em todo o [%dic:STR_DIC_W_DF1_3].</p>
+<p> </p>
+<p>O que você diz, [%username]? Quão profundo é o seu respeito pelos anciãos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Vejo que meu julgamento inicial de você foi preciso.</p>
+<p> </p>
+<p>Caça o [%dic:STR_DIC_M_HiivD_3_n] e me traga o seu[%dic:STR_DIC_I_2112a] S. Tome cuidado, [%username]. Quando irritado, o Airon é uma criatura forte e poderosa-mais perigosa do que parece.</p>
+<p> </p>
+<p>Agora vá. Vou aguardar seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez esses meus sentidos ... finalmente estão começando a me falhar ...</p>
+<p> </p>
+<p>Ou talvez ... você ainda não percebe as implicações do que faz aqui em Ishalgen.</p>
+<p> </p>
+<p>Use sua máscara de indiferença, se for necessário, [%username]. Mas eu sei que é uma máscara e você não pode usá -la para sempre.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que você reuniu todas as penas de que preciso para fazer a roupa. Ou você acabou de prestar seus respeitos com palavras vazias?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Essas penas farão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não caçou o suficiente [%dic:STR_DIC_M_HiivD_3_n] S, [%userclass].</p>
+<p> </p>
+<p>Lembre -se de quem está esperando as penas. Não é apenas essa velha frágil antes de você.</p>
+<p> </p>
+<p>Apresse -se e traga -me o [%dic:STR_DIC_I_2112a] S, ou não vou assumir a culpa sozinha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, estes serão mais do que adequados, jovens[%userclass].</p>
+<p> </p>
+<p>Mencionarei seu nome quando Ulgorn receber seu produto acabado.</p>
+<p> </p>
+<p>Aqui, pegue isso. Embora minha recompensa seja pequena, tome-a como um sinal de minha gratidão-e talvez um vislumbre de esperança para sua geração.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_2112a] e trazê -los para [%dic:STR_DIC_N_Urd].</p>[%collectitem]</step>
+</steps>
+<p>Um alfaiate em Aldelle Village chamado Urd está fazendo roupas acolchoadas para Ulgorn usar sob sua armadura. Ela precisa de penas de aeronn e pediu que você as busque.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Urd foi convidado a fazer roupas acolchoadas para Ulgorn.</p>
+<p> </p>
+<p>Ela precisava de penas de aeron para fazer as roupas, então você concordou em caçar aeronsões do Blackbeak e trouxer suas penas para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

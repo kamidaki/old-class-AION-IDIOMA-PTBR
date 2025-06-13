@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem então, [%username]. Você ainda pode ser um especialista em sererpíneo.</p>
+<p> </p>
+<p>A pergunta é: você pode fazer armadura rara?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Armadura rara? Diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Armadura de ponta. Exige mais habilidade-e mais paciência balançada do que a maioria dos daevasas-para fazer o nobre peitoral de Vidar.</p>
+<p> </p>
+<p>É um trabalho em nível de especialista. Você quer tentar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, você é ambicioso, eu concederei a você.</p>
+<p> </p>
+<p>Prática, Pinfeathers. Vamos ver se você pode produzir nobre peitoral do Vidar. Será mais desafiador do que [%dic:STR_DIC_E_Q2975].</p>
+<p> </p>
+<p>O que? Sim, eu chamei você Pinfeathers! Mostre-me que você tem as asas espalhadas pelo sol para terminar isso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou correr certo para o trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão longe e não mais, não é?</p>
+<p> </p>
+<p>Tudo esse trabalho fragmentado e espalhado pelo sol por nada.</p>
+<p> </p>
+<p>Olhar, [%username], você decide treinar novamente, você vem me ver, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Aquele Grupaks Kinah-Bogggled! Pensa que tudo se resume ao seu estoque baldado, suas vendas espalhadas pelo sol!</p>
+<p> </p>
+<p>Não vou me deixar em paz por um minuto explodido! Eu recebi ordens particulares, eu! Consegui um sucessor bêbado do sol para pensar.</p>
+<p> </p>
+<p>E aqui está agora-vamos ver. Vamos ver o nobre peitoral do Vidar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Acho que tenho. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... não é um peitoral nobre de Vidar, com zikel, não é?</p>
+<p> </p>
+<p>Foco! Experimente novamente, e não-para as juntas peludas de Azphel-fique distraído.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou tentar de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, a calcinha rebitada de Azphel, olhe para isso! Excelente! Belo trabalho.</p>
+<p> </p>
+<p>Você fez isso, [%username]. Você está pronto para ser um especialista em sererpíneo.</p>
+<p> </p>
+<p>Isso significa que é hora de obter seu título, como oficial.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça nobre peitoral de Vidar e leve para [%dic:STR_DIC_N_Kinterun].</p>[%collectitem]</step>
+</steps>
+<p>Kinterun diz que você deve ser capaz de fazer uma armadura rara para receber o título de especialista em armadura. Faça nobre peitoral de Vidar e leve -o para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kinterun disse que você deve ser capaz de fazer uma armadura rara para receber o título de especialista em armadura.</p>
+<p> </p>
+<p>Quando você fez o nobre peitoral de Vidar, como ele solicitou, ele disse que seus esforços difíceis finalmente haviam suportado frutos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

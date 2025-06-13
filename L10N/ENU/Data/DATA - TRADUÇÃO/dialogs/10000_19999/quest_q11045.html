@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Receio não poder parar e conversar com você hoje, [%username]. O Exército de Elyos sofreu fortes baixas desde que chegaram a Inggison.</p>
+<p> </p>
+<p>Muitos ficaram feridos lutando contra o Balaur e os Asmodianos, mas também sofremos pesadas baixas na floresta de Taloc.</p>
+<p> </p>
+<p>Entre você e eu, não foi o Daevas da vida que descobriu o Aether aqui ... éramos nós, a Guilda da Sigração. Nós estávamos aqui primeiro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"É interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É de fato, Daeva. Mas no processo, perdi muitos bons legionários. Não das batalhas, mas dos insetos! Não estávamos acostumados com seus venenos.</p>
+<p> </p>
+<p>Leva algum tempo para a constituição de uma Daeva se adaptar ao novo ambiente ... e o nosso ainda não.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu já ouvi falar disso antes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Está se tornando um problema generalizado para o Daevas aqui ... uma cura deve estar a caminho em breve.</p>
+<p> </p>
+<p>Mas como todos os guardiões ainda estão incapacitados, deixa -me matar o Seafoams. Os globos explosivos são quase tão ruins quanto os insetos!</p>
+<p> </p>
+<p>Como você está aqui, você se importaria de cuidar do[%dic:STR_DIC_M_LF4_A3_Foam_Wisp_52_n] para mim? Eles não são tão fortes, mas existem muitos deles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles[%dic:STR_DIC_M_LF4_A3_Foam_Wisp_52_n] S Fique no ar por algum tempo ....</p>
+<p> </p>
+<p>Felizmente, porém, podemos usar nossas asas por aqui, já que a área é abundante em Aether.</p>
+<p> </p>
+<p>Só não saia muito longe ... o Aether se forma nos bolsos. Às vezes você bate um bolso ruim e simplesmente cai do céu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu terei cuidado lá fora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai se arrepender quando os insetos ou os marítimos se espalharem para onde você dorme. Não será agradável.</p>
+<p> </p>
+<p>Vou anotar sua relutância em ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu disse que estava doente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu implorei aos daqueles Daevas da vida que girava de chá várias vezes para encontrar uma cura para meus guardiões feridos, mas eles apenas balançam a cabeça e encolhem os ombros.</p>
+<p> </p>
+<p>Eles ainda não encontraram uma cura ainda! O que eles têm feito aqui todo esse tempo? Bebendo aquele maldito chá que eles amam tanto?</p>
+<p> </p>
+<p>De qualquer forma, como o seu extermínio dos marítimos acabou? Os céus parecem mais azuis desde que você começou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O problema foi resolvido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, você me fez um favor incrível, Daeva. Obrigado.</p>
+<p> </p>
+<p>Sim, agora que olho em volta, os céus parecem mais claros. Obrigado e, por favor, receba essa recompensa por nos ajudar. Eu me sentiria melhor se te pagasse.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [plur][%dic:STR_DIC_M_LF4_A3_Foam_Wisp_52_n]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Crosia].</p></step>
+</steps>
+<p>Elimine o mar gelado para a crosia. Eles estão dificultando a obtenção de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Crosia assumiu o dever de lidar com os marítimos desde que os Guardiões foram incapacitados por uma estranha doença de insetos.</p>
+<p> </p>
+<p>Você foi convidado a ajudar e erradicou os marítimos. Quando você voltou, você recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor Leal de Campo:</p>
+<p> </p>
+<p>Todos os dias fazemos o possível para proteger o campo afastador, mas não podemos crescer complacentes. A força do campo é sempre muda.</p>
+<p> </p>
+<p>Nos últimos dias, encomendamos o Centro de Pesquisa do Pandaemonium para criar mais um monitor de campo isetérico para assistir à situação em Brusthonin.</p>
+<p> </p>
+<p>Traga o registro do monitor de um[%dic:STR_DIC_OBJ_FOBJ_Q45014] em Brusthonin para o [%dic:STR_DIC_E_45014].</p>
+<p> </p>
+<p>Somente através da vigilância asmodae prosperará.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Guarde a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sangue para sangue, diretor.</p>
+<p> </p>
+<p>Você traz notícias de outro lugar em Brusthonin, por acaso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe algo para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava com a impressão de que você não estava aqui para perder meu tempo. Se você não tiver o mais recente recorde de monitor para mim, saia.</p>
+<p> </p>
+<p>Fragmentos! Os guardas de campo estão aceitando alguém ultimamente, não estão?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, mas todo mundo comete erros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver .... o que sua carta diz? Hmmm ... sim, parece que isso é ... parece que houve um ... pequeno fluxo no campo etérico relacionado ao ... olho de Reshanta, mas não acho que seja nada sério.</p>
+<p> </p>
+<p>Vou relatar isso aos outros guardas de campo, [%username]. Seu trabalho é feito aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar dados de um[%dic:STR_DIC_OBJ_FOBJ_Q45014] e trazê -lo para o [%dic:STR_DIC_E_45014].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com uma carta dos guardas de campo, um monitor de campo éetico em Brusthonin está sendo usado para monitorar e registrar o status do campo etérico.</p>
+<p> </p>
+<p>Você localizou a torre e trouxe o recorde de monitor ao agente de campo de Brusthonin, que disse que o pequeno fluxo não era nada para se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

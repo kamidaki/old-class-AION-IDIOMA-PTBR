@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Você seguiu incansavelmente o caminho de um[%userclass]. Como você se saiu ao fazer isso?</p>
+<p> </p>
+<p>Parece que você ainda não entendeu a razão de sua existência. Eu desejo ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Continue ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Com suas habilidades excelentes, agora você é digno de usar uma nova armadura de engrenagem final.</p>
+<p> </p>
+<p>Mas para se encaixar nessa armadura, 10[plur][%dic:STR_DIC_LC_relic_armor_30] Será necessário.</p>
+<p> </p>
+<p>Você pode obter tantos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que vai tomar tudo.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você diz que não está interessado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vou esperar por você.</p>
+<p> </p>
+<p>Essas peças de armadura serão muito úteis para você em suas aventuras e durante sua busca pelo significado da vida como um daeva, [%username].</p>
+<p> </p>
+<p>Para se encontrar novamente em breve. Você pode comprar [plur][%dic:STR_DIC_LC_relic_armor_30]de [%dic:STR_DIC_N_Perena]. Lembre -se, você precisa de 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que pena.</p>
+<p> </p>
+<p>Se você coletar todas as peças de armadura, você alcançará uma grande força ...</p>
+<p> </p>
+<p>Volte se você mudar de idéia.</p>
+<p> </p>
+<p>Vou esperar por você aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você voltou!</p>
+<p> </p>
+<p>Conceda-me 10 lâmpadas divinas.</p>
+<p> </p>
+<p>Vou ajustá -los para que eles sejam combinados com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as lâmpadas divinas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você encontrou os objetos que mencionei?</p>
+<p> </p>
+<p>Foi difícil encontrá -los?</p>
+<p> </p>
+<p>Você pode obter o que precisa de [%dic:STR_DIC_N_Perena], então vá rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os preparativos agora estão completos.</p>
+<p> </p>
+<p>Selecione o que você precisar e experimente na armadura.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir 10[plur][%dic:STR_DIC_LC_relic_armor_30] e leve todos eles para [%dic:STR_DIC_N_EVENT_Zephyrin].</p>[%collectitem]</step>
+</steps>
+<p>10[plur][%dic:STR_DIC_LC_relic_armor_30] São necessários para obter a nova armadura de engrenagem final.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deu a Zephyrin 10 lâmpadas divinas e recebeu uma armadura de engrenagem Ultimate reforçada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

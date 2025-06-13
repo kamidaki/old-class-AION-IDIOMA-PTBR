@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cristais misteriosos foram encontrados em muitos lugares por aqui. Eles não quebram, se separam ou até arranham.</p>
+<p> </p>
+<p>Não temos idéia do que são-e porque não sabemos com certeza, os rumores estão se espalhando. Eu preciso desses rumores para parar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de rumores?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Primeiro, preciso de um número suficiente de amostras. Só então posso pedir a Pandaemonium uma missão de pesquisa.</p>
+<p> </p>
+<p>As amostras podem ser encontradas em todo o campo de neve de Morheim. Você poderia por favor obter [plur][%dic:STR_DIC_OBJ_SmallCrystal_Q2499]para mim?</p>
+<p> </p>
+<p>Se os enviarmos para o Pandaemonium, devemos receber uma resposta em breve. Então as pessoas não as descrevem mais como fragmentos da torre sem pensar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente será bastante difícil correr pelo campo de neve e coletar o pequeno[plur][%dic:STR_DIC_OBJ_SmallCrystal_Q2499].</p>
+<p> </p>
+<p>Mas não sabemos se esses cristais são realmente fragmentos quebrados da torre, não é isso?</p>
+<p> </p>
+<p>São apenas rumores, mas se eles se tornarem verdadeiros, temos que agir sobre eles.</p>
+<p> </p>
+<p>Aceite esta tarefa e execute -a com consciência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Superstições e medos irracionais desenfreados podem ser muito mais perigosos do que qualquer inimigo que as pessoas possam enfrentar.</p>
+<p> </p>
+<p>Como protetor da divindade, é meu trabalho obter o conjunto de registros diretamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Azz Peterbra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obteve [plur][%dic:STR_DIC_OBJ_SmallCrystal_Q2499]para mim?</p>
+<p> </p>
+<p>Teria demorado muito para reunir ainda mais cristais. Conceda-me o que você tem primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Os rumores podem ser complicados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu?</p>
+<p> </p>
+<p>Hmm, é assim que é.</p>
+<p> </p>
+<p>Você só encontrará o [plur][%dic:STR_DIC_OBJ_SmallCrystal_Q2499] em um local. Eles estão espalhados por toda parte.</p>
+<p> </p>
+<p>Portanto, você não deve ficar por aqui por muito mais tempo se quiser reunir alguns deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, então esses são os cristais suspeitos?</p>
+<p> </p>
+<p>Eles estão definitivamente fora do comum. Eles contêm muito aether, mas são muito difíceis de serem ÓDium.</p>
+<p> </p>
+<p>Vou enviá -los para o Pandaemonium para estudar. Os especialistas saberão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga pedaços do[%dic:STR_DIC_OBJ_SmallCrystal_Q2499] para [%dic:STR_DIC_N_Bolverk].</p>[%collectitem]</step>
+</steps>
+<p>Cristais misteriosos foram encontrados em todo o campo de neve de Morheim. Há um boato de que eles são fragmentos da torre de Old Class Aion. Colete algumas amostras para análise.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bolverk, um protetor da divindade, disse que cristais misteriosos foram encontrados em todo o campo de neve de Morheim.</p>
+<p> </p>
+<p>Rumores disseram que eram fragmentos da torre de Old Class Aion do cataclismo, e ele queria anular esse boato.</p>
+<p> </p>
+<p>Então você localizou os cristais misteriosos, os coletou e os trouxe para ele como ele solicitou. Ele disse que os enviaria para Pandaemonium para descobrir o que são.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

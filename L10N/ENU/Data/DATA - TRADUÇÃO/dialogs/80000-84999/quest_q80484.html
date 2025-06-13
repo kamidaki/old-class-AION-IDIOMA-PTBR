@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa foi uma decisão sábia, [%username].</p>
+<p> </p>
+<p>Você finalmente decidiu me ajudar.</p>
+<p> </p>
+<p>Agora, vamos dividir o trabalho entre nós para que possamos avançar rapidamente com a pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que deve fazer primeiro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur se reuniu ao pé da espada.</p>
+<p> </p>
+<p>Elimine o Balaur e me traga seus corações.</p>
+<p> </p>
+<p>Eu posso aprender muito com o sangue nos corações de Balaur.</p>
+<p> </p>
+<p>Por que tão irritado? Oh, isso não importa. Você vai aceitar esta missão para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que vai tentar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você diz que não pode fazer isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Siga minhas instruções, então e traga -me 15 Balaur Hearts.</p>
+<p> </p>
+<p>Não será difícil para você encontrá -los, pois eles estão logo abaixo da espada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem ... você é muito sensível para um Daeva.</p>
+<p> </p>
+<p>Eu adoraria saber como você chegou até agora com esse tipo de atitude. TSK ... é realmente inacreditável.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você coletou 15 Balaur Hearts?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os corações de Balaur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu disse que precisava de 15 deles.</p>
+<p> </p>
+<p>Há uma razão para que eu pedi exatamente 15 corações. Eu preciso de tantos corações para pesquisas precisas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já coletou todos os 15 corações? Ótimo!</p>
+<p> </p>
+<p>Isso foi mais rápido do que eu esperava. Aqui, tome isso como um pequeno sinal da minha gratidão. Vou agora participar da investigação. Por favor, espere um momento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 15 corações de Balaur e leve -os para Bedin.</p>[%collectitem]</step>
+</steps>
+<p>Bedin pediu que você lhe trazia corações de Balaur. Reúna 15 corações de Balaur e leve -os a ele.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Como parte dele para os esforços para pesquisar a beira da espada, Bedin começou a examinar os corações do Balaur.</p>
+<p> </p>
+<p>Ele pediu que você esperasse até que ele terminasse o exame.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

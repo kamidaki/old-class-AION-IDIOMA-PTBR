@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Só estou aqui para reunir informações e devolvê -las ao templo da liberdade. Eu sou um escoteiro, não um lutador.</p>
+<p> </p>
+<p>Isso não impede que os guardiões aqui se de costas sobre nunca matar Krall.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu sei como é isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O combate corpo a corpo não é o meu estilo. Prefiro lutar na guerra maior do que na batalha única, se você aceitar meu significado.</p>
+<p> </p>
+<p>No entanto, me pergunto se não há algo que eu possa fazer para manter os guardiões felizes ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você está olhando para mim assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está bastante acostumado ao massacre irracional, então talvez eu pudesse implorá -lo para matar o Krall em meu lugar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matando o [%dic:STR_DIC_M_KrallFighterK_38_Ae_Tune] S, [%dic:STR_DIC_M_KrallFighterK_41_Ae_Tune] Areia [%dic:STR_DIC_M_krallpriestK_39_Ae_Tune] S Deveria manter os Guardiões felizes e seguros. Fé e armas, Daeva.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, vejo que você também não tem a mentalidade do lutador. Tenha um bom dia, então.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cortou as fileiras do Krall?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles rosnaram o último."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho. Você é um bom lutador.</p>
+<p> </p>
+<p>Não é uma questão de habilidade, eu garanto a você-eu simplesmente prefiro não diretamente as minhas mãos.</p>
+<p> </p>
+<p>Eu era um covarde, eu não estaria aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Kishar Krall.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_KrallFighterK_38_Ae_Tune]([%2]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_KrallFighterK_41_Ae_Tune]([%5]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_krallpriestK_39_Ae_Tune]([%8]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Atalante].</p></step>
+</steps>
+<p>Mate o Krall por Atalante, que não tem tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atalante, como muitos Daevas de Zephyr, ficou ressentido por nunca lutar diretamente. Ela pediu que você matasse a Krall em seu nome para manter os guardiões em torno dela felizes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo ficou escamoso-perdemos a fortaleza oriental de Siel para o inimigo do Sol Molded!</p>
+<p> </p>
+<p>Temos que levar de volta. Mas precisamos ter cuidado.</p>
+<p> </p>
+<p>Esta será uma operação de alta prioridade. Quando atacamos, precisamos ter certeza de que podemos vencer. Ouvi dizer que você é apenas a ajuda de que precisamos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guarnição Elyos está com força total agora. Eles levaram a fortaleza, seu moral é alto e acaba de receber tropas frescas.</p>
+<p> </p>
+<p>Se estivéssemos lutando contra o Balaur, não seria um problema, mas os Elyos têm a vantagem, então precisamos de ajuda de fora.</p>
+<p> </p>
+<p>Precisamos tirar a guarnição da Guarnição. Você pode nos ajudar com isso, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você. Aqui está a sua tarefa: observe a situação na fortaleza oriental de Siel. Uma vez que a fortaleza está em estado vulnerável, ataque.</p>
+<p> </p>
+<p>Limpe o [%dic:STR_DIC_M_2801_all], incluindo lutadores de Elyos, arqueiros, magos e padres, sejam veteranos, experientes ou novatos. Traga -me deles[%dic:STR_DIC_I_QUEST_2801a] S como a prova de sua derrota.</p>
+<p> </p>
+<p>Não se preocupe com o Balaur-concentre-se em manter os Elyos sob controle. Sangue para sangue!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me diga que preciso arrastá -lo para a batalha de bruços e os pés primeiro! Disseram -me que você poderia fazer esse trabalho com um braço amarrado pelas suas costas!</p>
+<p> </p>
+<p>Mas eu entendo se você não está lutando contra Ellie. Vou continuar procurando alguém com as coisas certas.</p>
+<p> </p>
+<p>Se você mudar de idéia, encontre -me aqui e conversaremos novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar um pouco."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ver que você voltou com segurança, [%username].</p>
+<p> </p>
+<p>Estamos mantendo o Balaur sob controle. Posso assumir que você derrotou o Elyos na fortaleza oriental de Siel?</p>
+<p> </p>
+<p>Mostre -me o [%dic:STR_DIC_I_QUEST_2801a].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está fazendo aqui? Você deveria estar assistindo a fortaleza oriental de Siel.</p>
+<p> </p>
+<p>Sua missão é crucial para a nossa vitória, [%username]. Volte para sua postagem!</p>
+<p> </p>
+<p>Depois de derrotar os Elyos, relate -me de volta para mim. E não se esqueça-vou esperar que você traga o [%dic:STR_DIC_I_QUEST_2801a] está com você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É verdade o que eles dizem sobre você, [%username]. Sua vitória sobre o Elyos abre o caminho para o nosso sucesso.</p>
+<p> </p>
+<p>Isso os fará pensar duas vezes em deixar a fortaleza. Certamente afina seus números.</p>
+<p> </p>
+<p>Somos gratos, [%username]. Vamos cantar seus louvores no templo do ouro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_2801_all] e leve a prova para [%dic:STR_DIC_N_Ogmund].</p>[%collectitem]</step>
+</steps>
+<p>A guarnição da fortaleza deve ser derrotada para recuperar a fortaleza oriental de Siel. Derrote a guarnição de Elyos quando estiver em estado vulnerável e retorne com as insígnias de Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ogmund disse que, para recuperar a fortaleza oriental de Siel de Elyos, era crucial derrotar a guarnição defendendo o local.</p>
+<p> </p>
+<p>Expertado e superado, Ogmund o contratou para ajudá-lo a manter os Elyos sob controle.</p>
+<p> </p>
+<p>Depois de derrotar os ocupantes de Elyos, você voltou a Ogmund com as insígnias da guarda como sua prova de sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

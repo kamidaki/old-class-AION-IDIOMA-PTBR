@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouve esse som? É o batimento cardíaco de Sataloca.</p>
+<p> </p>
+<p>Seu corpo desapareceu há muitos anos, mas seu coração permaneceu para trás.</p>
+<p> </p>
+<p>Por algum poder incrível, ele criou os Drakes de Acheron, e ainda, embora mortos por muito tempo, sua influência permanece ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu o Kurin e os Basiliscos no caminho aqui, presumo?</p>
+<p> </p>
+<p>Quando cheguei, eles eram como todas as outras criaturas do deserto. Eles eram ... bem, normal.</p>
+<p> </p>
+<p>Então eles começaram a mudar. Eles cresceram e mais ferozes ... e crescem mais a cada dia que passa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é desconcertante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Descontrando, embora ainda não tenham invadido o túmulo de Sataloca. Devemos agir enquanto ainda podemos.</p>
+<p> </p>
+<p>Se eles invadissem ao mesmo tempo que os Drakes de Acheron, teríamos problemas para selar o coração de Sataloca no tempo-controla os Drakes, você sabe. Devemos agir agora.</p>
+<p> </p>
+<p>Se você pudesse limpar alguns deles, poderíamos começar a preparar as coisas aqui para que possamos estar prontos para um selo de emergência. Dessa forma, estamos cobrindo o problema de ambas as extremidades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é tão generoso quanto eles dizem.</p>
+<p> </p>
+<p>Você encontrará o [%dic:STR_DIC_M_Cures3st_26_An] e o [%dic:STR_DIC_M_Basilisk_26_An] S na entrada da tumba de Sataloca.</p>
+<p> </p>
+<p>Pedi uma autorização para dar moedas de bronze para esta tarefa. Ainda não ouvi a resposta ... mas ... tenho certeza que vou ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_Cures3st_26_An] e [%dic:STR_DIC_M_Basilisk_26_An] S são inimigos difíceis, eu concordo, mas é por isso que preciso de você.</p>
+<p> </p>
+<p>Por favor, reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]!</p>
+<p> </p>
+<p>Fizemos um grande progresso aqui. Acho que estamos prontos para selar o coração de Sataloca a qualquer momento!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"As criaturas estão mortas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que escolhi a pessoa certa. Isso nos ajudará muito.</p>
+<p> </p>
+<p>Eu, Erm ... ainda não recebi notícias da moeda de bronze ... mas ... como eles poderiam dizer não? Eu tenho as moedas, você fez um emprego ... aqui, pegue.</p>
+<p> </p>
+<p>Mas ... erm ... talvez você possa manter isso apenas entre nós, afinal?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os animais selvagens na entrada da tumba de Sataloca.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Cures3st_26_An]([%2]/5)</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Basilisk_26_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ando].</p></step>
+</steps>
+<p>Matar [%dic:STR_DIC_M_Cures3st_26_An] e [%dic:STR_DIC_M_Basilisk_26_An], que estão colocando em risco a segurança da tumba de Sataloca, para [%dic:STR_DIC_N_Ando].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ando estava preocupado com o fato de o coração de Sataloca ter feito o Kurin e homenageado Basiliscos ferozes, então ele pediu que você os eliminasse como uma medida proativa.</p>
+<p> </p>
+<p>Quando você voltou, ele lhe deu uma moeda de bronze, embora ainda não tivesse recebido autorização adequada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

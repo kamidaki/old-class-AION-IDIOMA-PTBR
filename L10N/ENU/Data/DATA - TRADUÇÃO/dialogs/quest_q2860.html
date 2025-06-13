@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa situação aqui é arriscada, então não posso lhe dar uma explicação completa. Para encurtar uma longa história:</p>
+<p> </p>
+<p>A fortaleza de Kysis, o Refúgio Krotan e a Fortaleza Miren são os pontos -chave mais importantes. Portanto, não podemos permitir que eles sejam levados pelo oponente.</p>
+<p> </p>
+<p>Devemos iniciar um ataque em larga escala de uma só vez, mas a última batalha nos enfraqueceu a ponto de termos que esperar agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso plano é ganhar tempo para um grande ataque na fortaleza. Então, estamos enviando Daevas para lançar ataques e enfraquecer o inimigo.</p>
+<p> </p>
+<p>Queremos tirar primeiro os oficiais da equipe do inimigo. Essa é uma estratégia eficaz, porque não estamos correndo riscos ao fazê -lo ainda sendo capazes de prejudicar nossos oponentes.</p>
+<p> </p>
+<p>Felizmente, muitos Daevasas corajosos estão nos dando seu apoio.</p>
+<p> </p>
+<p>Já temos um grupo que tomará medidas contra o Balaur. Agora estamos procurando lutadores para tirar o [%dic:STR_DIC_E_1231_guard_Li_ra] e o [%dic:STR_DIC_E_1231_guard_Li_wi].</p>
+<p> </p>
+<p>O que você acha? Você quer entrar em batalha por nós, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Você tomou uma decisão sábia.</p>
+<p> </p>
+<p>Observe a situação na fortaleza de Kys. Você receberá um sinal assim que os Elyos capturam a fortaleza. Então você pode lançar o ataque.</p>
+<p> </p>
+<p>Vá para Kysy Fortaleza e derrote o [%dic:STR_DIC_E_1231_guard_Li_ra] e o [%dic:STR_DIC_E_1231_guard_Li_wi]. Juntar [plur][%dic:STR_DIC_I_QUEST_2860a]como prova do seu triunfo.</p>
+<p> </p>
+<p>Enquanto isso, vou me preparar para recuperar a fortaleza com meus aliados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não achei que você simplesmente se recusaria assim. Pena, mas não posso forçá -lo a fazer nada.</p>
+<p> </p>
+<p>No entanto, você deve pensar sobre por que tantos Daevas estão lutando incansavelmente por nós ...</p>
+<p> </p>
+<p>Se você mudar de idéia, poderá voltar para me ver a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou de boa saúde, [%username].</p>
+<p> </p>
+<p>Qual é a situação na fortaleza de Kysy?</p>
+<p> </p>
+<p>Ouvi dizer que um Daeva extraordinariamente corajoso aparentemente derrotou muitos Elyos. Foi você, [%username]?</p>
+<p> </p>
+<p>Estou curioso para saber como você completou a missão. Mostre -me o coletado[plur][%dic:STR_DIC_I_QUEST_2860a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Aqui está a evidência.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você esqueceu de pegar as insígnias?</p>
+<p> </p>
+<p>Você deve realizar todas as partes da sua tarefa com o mesmo cuidado e concentração.</p>
+<p> </p>
+<p>Então me traga o [plur][%dic:STR_DIC_I_QUEST_2860a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aprendi que muito Balaur esteve na área. Você tem sorte de ter conseguido ter sucesso em sua missão, apesar deles.</p>
+<p> </p>
+<p>[%username], esta vitória é apenas o seu que está fazendo.</p>
+<p> </p>
+<p>Muito obrigado por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_1231_guard_Li_ra] e o [%dic:STR_DIC_E_1231_guard_Li_wi], colete evidências e traga -as para [%dic:STR_DIC_N_Geri].</p>[%collectitem]</step>
+</steps>
+<p>Quando a fortaleza de Kysis foi ocupada, o Elyos Kysy Triaris e os oficiais da equipe da Kysis apareceram. Mate -os e traga de volta evidências como prova de sua vitória.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Geri criou um plano para recuperar a fortaleza de Kys.</p>
+<p> </p>
+<p>Você matou o Kysy Triaris e os oficiais da Elyos Kysis. Geri agradeceu sua ajuda na execução do plano e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

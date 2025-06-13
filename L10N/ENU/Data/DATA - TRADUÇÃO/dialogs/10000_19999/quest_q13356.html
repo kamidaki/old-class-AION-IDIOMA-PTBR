@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard16_L]do[%dic:STR_DIC_W_LDF5b_D1_v16]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: mate o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5b_SZ_D1_1]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>As notícias chegaram do destacamento na hora certa.</p>
+<p> </p>
+<p>Eu pedi apoio, pois há poucos de nós para prevalecer neste local ferozmente contestado.</p>
+<p> </p>
+<p>Com você do nosso lado, [%username], não precisamos temer uma invasão asmodiana.</p>
+<p> </p>
+<p>Você lidou com os intrusos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu sempre ouço boas notícias sobre você.</p>
+<p> </p>
+<p>Será uma grande ajuda na defesa do vale de Bassen.</p>
+<p> </p>
+<p>Por favor, continue a ajudar no futuro.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5b_SZ_D1_1]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard16_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou no reservatório de Bassen no sul de Katalam e se reporte a Kilon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O infiltrador da Asmodian estava direcionando o reservatório de Bassen no sul de Katalam.</p>
+<p> </p>
+<p>Você matou o invasor Asmodiano e relatou a Kilon sobre isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

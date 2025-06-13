@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há pouco tempo, notamos um bando de lowlifes se estabeleceu em um naufrágio abandonado na costa.</p>
+<p> </p>
+<p>Nós nos perguntamos se eles eram marinheiros a princípio, mas Notos e Zephyros descobriram que são revolucionários lefaristas ... o mesmo grupo causando problemas na cidade.</p>
+<p> </p>
+<p>Mas por que eles viriam aqui? Não há nada para saquear, nem colonos para recrutar ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles devem ter algo mais em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Eu sei pouco sobre eles, exceto que eles se espalham mentiras sobre o santuário e cuspiram nos nomes dos cinco senhores.</p>
+<p> </p>
+<p>Eles precisam aprender uma lição para insultar nossa herança! Infelizmente, nenhum de nós estacionado aqui é livre para fazê -lo. Guardar o campo átile é a nossa prioridade, por mais que doemos punir essa escória lefarista!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou livre e já lidei com eles antes ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>E sua ajuda seria muito bem -vinda!</p>
+<p> </p>
+<p>Deixe o campo isetérico para nós. Vá e mostre a sujeira com quem eles estão lidando. Se você puder, procure pistas sobre o que eles estão fazendo aqui!</p>
+<p> </p>
+<p>Basta caminhar ao longo da costa até ver o naufrágio. As pessoas de aparência desalinhada que andam em torno disso, tentando muito não parecer suspeitas? São eles!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ficaria aliviado se você os assustasse, mas isso é improvável.</p>
+<p> </p>
+<p>Observamos o campo Aetico que mantém a Elysea unida! Ter essa gangue tão perto, e não faço ideia do que eles pretendem ... isso me arrepia.</p>
+<p> </p>
+<p>Vá e coloque o medo dos serafins neles, [%username] e traga -me qualquer evidência que você encontre sobre o que eles estão planejando. Mas não enfrente muitos de uma só vez. Eles são lutadores sujos, então eu ouço.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça, isso é importante!</p>
+<p> </p>
+<p>Você não entende o quão crítico é este observatório? Estes não são ilumes da aldeia para quebrar janelas e derrubar carrinhos, [%userclass]. Os lefaristas são uma ameaça insidiosa!</p>
+<p> </p>
+<p>Como você ascendeu se você é tão alheio?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei no meu caminho agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, [%username]!</p>
+<p> </p>
+<p>Eu aceito que você ensanguentou o nariz dos lefaristas?</p>
+<p> </p>
+<p>Havia alguma pista para o seu propósito aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguém, em algum lugar deve conhecer suas ordens!</p>
+<p> </p>
+<p>Recuso -me a acreditar que os lefaristas vieram à costa das Cantas sem uma agenda oculta.</p>
+<p> </p>
+<p>Up up mais alguns deles. Seja o mais ... completo possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia entender isso? Parece um código!</p>
+<p> </p>
+<p>Que frustrante ... frustrado por algo tão infantil.</p>
+<p> </p>
+<p>Bem, mesmo que não aprendamos muito, você fez brilhantemente. Enviarei o documento para o Santum. Nossos estudiosos devem ser capazes de decifrá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre evidências de atividades revolucionárias lefaristas perto do[%dic:STR_DIC_FLA21_2] e trazê -lo para [%dic:STR_DIC_LA38].</p>[%collectitem]</step>
+</steps>
+<p>Derrote os revolucionários lefaristas perto do naufrágio para obter evidências de seus planos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Khidia, um protetor do campo afastador, disse que os revolucionários lefaristas estão acampados na costa de Cantas e pediu que você lide com eles.</p>
+<p> </p>
+<p>Você voltou com um pedido codificado. Khidia disse que o enviaria aos especialistas em santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

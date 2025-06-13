@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem -estar da Guilda, todas as missões a serem realizadas foram distribuídas entre os participantes da Guilda. Todos são solicitados a realizar suas missões, porque só então a tarefa da Guilda será totalmente concluída.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para o acampamento de treinamento de Nochsana e mate o [%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah].</p>
+<p> </p>
+<p>Relatório para [%dic:STR_DIC_N_Kellin], como ele é responsável pelas batalhas de Asmodae.</p>
+<p> </p>
+<p>- Administração de Legiões -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já esteve no campo de treinamento de Nochsana para concluir a missão da Guilda?</p>
+<p> </p>
+<p>Eu esperava que você matasse o general guardião, [%username].</p>
+<p> </p>
+<p>Por favor, informe -me sobre como foi.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fantástico! Suas ações são o orgulho da Guilda, [%username].</p>
+<p> </p>
+<p>Continue realizando missões até que a tarefa da Guilda esteja concluída.</p>
+<p> </p>
+<p>Por favor, aceite esta pequena recompensa da Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_Mini_Castle_DrakanFi_27_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Kellin].</p></step>
+</steps>
+<p>Mate o Camp Guardian Geral para concluir a ordem da Guilda. Você deve realizar a tarefa da Guilda, pois está participando da missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você mate o Guardian General do campo de treinamento.</p>
+<p> </p>
+<p>Você participou de matar o Guardian General do campo de treinamento para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

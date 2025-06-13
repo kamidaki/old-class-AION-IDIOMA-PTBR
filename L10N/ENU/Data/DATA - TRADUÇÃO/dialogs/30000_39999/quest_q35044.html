@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para [%username] Apenas os olhos-</p>
+<p> </p>
+<p>Bestas irracionais estão perturbando a missão sagrada de nossos membros em Theobomos.</p>
+<p> </p>
+<p>Precisamos que você destrua o dim[%dic:STR_DIC_M_LF2A_Cellatu_47_An] está em Theobomos e relate seu sucesso a [%dic:STR_DIC_E_35014]. Nossa reputação está em suas mãos!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Theobomos, aqui vou eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Do outro lado das planícies voa um Daeva. Saudação!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Este Daeva destruiu seu cellatus barulhento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado a você, [%username]. Espero que isso facilite o trabalho.</p>
+<p> </p>
+<p>Tenha um token de progresso para seus problemas e fique à vontade para voltar a qualquer momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_LF2A_Cellatu_47_An] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_E_35014].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma chamada para ação da Ordem da Alabastro pediu que você destruísse criaturas em Theobomos que perturbam o trabalho da ordem.</p>
+<p> </p>
+<p>Você matou Salt Fin Cellatus e relatou seus esforços a Priamos, um membro da filial de Theobomos. Ele agradeceu e disse que lhe daria um token de progresso em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

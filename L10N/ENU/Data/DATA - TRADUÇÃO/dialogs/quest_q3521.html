@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Ariel você está aqui, [%username]! Aifemis adoeceu. Ela tosse com sangue e não come há dias.</p>
+<p> </p>
+<p>Eu não sei o que fazer! Eu sei o que está causando, mas não sei como tratá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que causa sua doença?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É esses[%dic:STR_DIC_M_BATRe2_40_An] S que entra na vila à noite. Eles se alimentam dos cadáveres de nossos caídos e depois trazem imundícios e doenças de volta aqui com eles.</p>
+<p> </p>
+<p>Está deixando todos doentes, especialmente os fracos e os idosos. Eles voltarão em breve ... você pode sentir o cheiro do cheiro a uma milha de distância.</p>
+<p> </p>
+<p>Você vai nos ajudar, [%username]? Por uma questão de AIFEMIS ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você era o Daeva certo para pedir ajuda.</p>
+<p> </p>
+<p>Os Blackfog Bloodfangs geralmente se reúnem em Medeus Manor East até o anoitecer.</p>
+<p> </p>
+<p>Você saberá que está por perto quando começar a sentir o cheiro da carne apodrecida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Melhor que um mapa, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo, [%username]. A maioria dos Daevas também não se aproximava dessas criaturas.</p>
+<p> </p>
+<p>Vou dar seus melhores votos a Aifemis ... ela precisa de toda a ajuda que puder obter agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que ela se recupere."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eeeewww! Você entrou ....</p>
+<p> </p>
+<p>Ah, me perdoe, [%username], aquele fedor me escalou. Suponho que, com aquele cheiro miserável que você matou os Blackfog Bloodwings para nós?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão mortos. Muito morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado.</p>
+<p> </p>
+<p>Para ser sincero, preocupava -me que os Bloodwings estavam se aproximando quando peguei um cheiro de você pela primeira vez. Eu acho que você ganhou banho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_BATRe2_40_An] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hideros].</p></step>
+</steps>
+<p>Mate dez Blackfog Bloodwings, que trazem doenças para a vila à noite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Blackfog Bloodwings que comem carniça estão entrando na vila à noite, espalhando doenças.</p>
+<p> </p>
+<p>Quando você voltou de destruir os Bloodwings, Hideros agradeceu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

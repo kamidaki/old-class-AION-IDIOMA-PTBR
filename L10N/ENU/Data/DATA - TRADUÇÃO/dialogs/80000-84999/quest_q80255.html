@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Não sei se o ar em Atreia é diferente da minha terra natal, mas os fogos de artifício aqui não acendem muito bem.</p>
+<p> </p>
+<p>Não posso acender tantos fogos de artifício sozinho. Por favor me ajude!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom!</p>
+<p> </p>
+<p>Isso é suficiente. O dia daeva vai ser radiante graças a você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, pegue isso.</p>
+<p> </p>
+<p>Eu mantive meus fogos de artifício restantes e os cristais do Senhor para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o Fireworky de Parktulation 1 no cubo.</p></step>
+<step><p visible="[%3]">Fale com Parootu.</p></step>
+</steps>
+<p>Acenda o fogos de artifício de texto para o mestre de fogos de artifício parootu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Parootu disse que não podia iluminar todos os fogos de artifício para o próprio festival e pediu ajuda.</p>
+<p> </p>
+<p>Quando você disse a ele que havia aceso os fogos de artifício, ele agradeceu ao lhe dar um presente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

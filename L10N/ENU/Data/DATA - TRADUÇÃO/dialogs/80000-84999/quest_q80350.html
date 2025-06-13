@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaah! Isso é terrível!</p>
+<p> </p>
+<p>Obtê -los foi muito difícil!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vim recentemente através do[%dic:STR_DIC_W_LF2_SZ_A1], Assim,</p>
+<p> </p>
+<p>Onde fui atacado por Manduri, que tentou roubar meu valioso colar de pérolas.</p>
+<p> </p>
+<p>No processo, a corda foi rasgada e as pérolas voaram por toda parte.</p>
+<p> </p>
+<p>[%username], você poderia recuperar minhas pérolas do manduri para mim?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito grato.</p>
+<p> </p>
+<p>Se você devolver minhas pérolas, receberá uma recompensa adequada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que estava errado sobre você.</p>
+<p> </p>
+<p>Aaah! As pérolas preciosas ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou todas as pérolas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a ele as pérolas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eram todas as pérolas?</p>
+<p> </p>
+<p>I lost more pearls than that. Por favor, olhe novamente um pouco mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que sorte que você conseguiu encontrar tudo!</p>
+<p> </p>
+<p>[%username], Também posso fazer uma corrente para você usar os materiais restantes.</p>
+<p> </p>
+<p>Aqui, por favor, leve!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 27 pérolas e leve -as para Kent.</p>[%collectitem]</step>
+</steps>
+<p>Kent pediu que você recuperasse as pérolas que perdeu para o Manduri. Reúna 27 pérolas e leve -as a ele.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kent ficou muito feliz e começou a preparar uma série de pérolas para Inisya.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

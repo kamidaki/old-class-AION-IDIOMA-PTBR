@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente nos impressionou com suas habilidades e sua compaixão, [%username].</p>
+<p> </p>
+<p>Os Senhores Empíreanos o abençoaram com muitos presentes.</p>
+<p> </p>
+<p>Está ocupado? Há algo mais que você pode fazer por nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Karnifs estão deitados por enquanto, mas não permanecerá assim por muito tempo.</p>
+<p> </p>
+<p>Precisamos encontrar uma solução duradoura, que nos permita lidar com eles sem ajuda.</p>
+<p> </p>
+<p>Então, eu criei uma armadilha ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma armadilha?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, vamos precisar apenas de uma isca.</p>
+<p> </p>
+<p>Para atraí -los para a armadilha, precisaremos de um[%dic:STR_DIC_M_TogD_11_An]Ric. Os karnifs são loucos pela carne de tag selvagem.</p>
+<p> </p>
+<p>Você poderia pegar alguns[%dic:STR_DIC_I_quest_2212a] para nós, Daeva? Não podemos sair para fazer isso sozinhos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Precisamos de pelo menos 6[%dic:STR_DIC_I_quest_2212a] para iscar as armadilhas.</p>
+<p> </p>
+<p>Você pode encontrar [%dic:STR_DIC_M_TogD_11_An] está na passagem para [%dic:STR_DIC_W_DF1A_19].</p>
+<p> </p>
+<p>Vou recompensá -lo por seus esforços, é claro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não precisa se arrepender, é nosso trabalho fazer.</p>
+<p> </p>
+<p>Estamos espalhados tão magros aqui que é frustrante.</p>
+<p> </p>
+<p>Talvez o comandante Suthran possa enviar ajuda, mas tenho medo de perguntar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta no tempo. Loriniah e eu fizemos as armadilhas.</p>
+<p> </p>
+<p>Tudo o que precisamos agora é a isca. Você conseguiu conseguir algum?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Isso será suficiente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não obteve o suficiente [%dic:STR_DIC_I_quest_2212a] Ainda.</p>
+<p> </p>
+<p>Talvez você tenha esquecido onde encontrá -los. Há[%dic:STR_DIC_M_TogD_11_An] ao longo da passagem para o [%dic:STR_DIC_W_DF1A_19].</p>
+<p> </p>
+<p>Por favor, se apresse, estamos tão perto de terminado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes serão perfeitos. Como os Karnifs gostam!</p>
+<p> </p>
+<p>Agora a estrada deve estar segura. Obrigado pela ajuda.</p>
+<p> </p>
+<p>Aqui está a recompensa que prometi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_TogD_11_An]%s para obter alguma isca e levá -la para [%dic:STR_DIC_N_Okkolenja].</p>[%collectitem]</step>
+</steps>
+<p>Olenja disse que precisa de iscas para extrair alguns Karnifs. Enquanto ela faz as armadilhas, caça togs e leve as costelas para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Olenja planejava fazer armadilhas para capturar Karnifs. Enquanto ela e seu camarada fizeram as armadilhas, você caçou tags e deu a ela as costelas para que ela pudesse usá -las para iscas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

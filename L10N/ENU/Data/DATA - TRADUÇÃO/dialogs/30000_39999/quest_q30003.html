@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora não tenho escolha. Não tenho escolha a não ser pedir que você entre no templo onde o dragão enxame.</p>
+<p> </p>
+<p>Entre no templo de Udas e descubra o que eles buscam.</p>
+<p> </p>
+<p>Não há garantia de que você aprenderá algo de importância, mas devemos tentar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso matar coisas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Francamente falando, aprender os motivos do inimigo deve significar mais para o seu tipo do que isso para nós.</p>
+<p> </p>
+<p>Você vai ao templo Udas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na vila dos sem asas, o Daeva deslizante é Cheiftain.</p>
+<p> </p>
+<p>Você pode chegar à entrada através de Undirborg, e em algum lugar dentro fica o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou subir na luz, não apenas deslizar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Duas estradas vão para o mesmo destino. Um está repleto de criaturas e arbustos perigosos. O outro está bem cheio e liberado por centuriões.</p>
+<p> </p>
+<p>Qual é o melhor caminho?</p>
+<p> </p>
+<p>Somente com a sabedoria pode dizer coragem da tolice.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou um sábio Starturtle, eu sou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que seu entusiasmo juvenil aprendeu sobre o dragão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Pelo menos eu encontrei outro nível?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais uma vez, somos os seres sem voos, cercados por planadores. Mas sinto que estamos muito perto de descobrir a trama do inimigo.</p>
+<p> </p>
+<p>Esse nível subterrâneo pode ser onde eles mantêm seu segredo, a julgar pelo quão difícil esse personagem nexo era. A chave deve levar a algum lugar importante pelo menos.</p>
+<p> </p>
+<p>Agora que você conseguiu, você pode ir e vir como quiser. Espero que você possa exibir algumas informações úteis.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha uma pista derrubando[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah], então encontre o [%dic:STR_DIC_E_IDTemple_SensoryArea_Q30003].</p>[%collectitem]</step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Honeus].</p></step>
+</steps>
+<p>Infiltrar o Templo Udas para encontrar o verdadeiro motivo do dragão. Derrote o Nexus por uma pista.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">Found the entrance to Lower Udas Temple! Report to Honeus.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Honeus disse que se infiltrar no templo de Udas era a única esperança de descobrir o motivo do dragão.</p>
+<p> </p>
+<p>Você foi, mas não conseguiu revelar o motivo do inimigo. No entanto, você encontrou uma passagem para um nível subterrâneo. Deve levar a alguns dos verdadeiros segredos do inimigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

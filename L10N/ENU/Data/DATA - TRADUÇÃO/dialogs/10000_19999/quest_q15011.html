@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15011</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Este continente estava no fundo do mar até recentemente e, no entanto, é habitado por criaturas exibindo as características dos animais terrestres.</p>
+<p> </p>
+<p>Isso inclui os corais nas colinas do sul de coral ... são criaturas verdadeiramente incomuns.</p>
+<p> </p>
+<p>Muitos acreditam que os corais são plantas, mas na realidade são animais petrificados. Mas os corais neste lugar florescem autonomamente.</p>
+<p> </p>
+<p>Assim, eles exibem características de criaturas que vivem debaixo d'água e de plantas terrestres. Quero examinar as flores de coral, porque as acho fascinantes.</p>
+<p> </p>
+<p>Você pode obter [plur][%dic:STR_DIC_I_quest_15011a]do[%dic:STR_DIC_W_LF5_SZ_B_01]para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os corais das colinas do sul de coral têm mais em comum com plantas terrestres do que criaturas petrificadas.</p>
+<p> </p>
+<p>Eu realmente adoraria ter algumas amostras de flores de coral ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as flores de coral.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! As flores de coral florescem nos corpos dos animais ...</p>
+<p> </p>
+<p>Quanto mais eu penso nisso, mais claro fica para mim que este é um lugar muito misterioso.</p>
+<p> </p>
+<p>Devemos começar nossa pesquisa rapidamente ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa apropriada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de flores de coral.</p>
+<p> </p>
+<p>Nem essas gotículas pegajosas de suor estão cobertas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! As flores de coral florescem nos corpos dos animais ...</p>
+<p> </p>
+<p>Quanto mais eu penso nisso, mais claro fica para mim que este é um lugar muito misterioso.</p>
+<p> </p>
+<p>Devemos começar nossa pesquisa rapidamente ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa apropriada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Você ainda está aqui!</p>
+<p> </p>
+<p>Graças a você, pude avançar em minha pesquisa.</p>
+<p> </p>
+<p>Isso não é muito, mas aceite. Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_B_01], obtenha [plur][%dic:STR_DIC_I_quest_15011a] e trazê -los para [%dic:STR_DIC_N_LF5_Biologia_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Biologia_E].</p></step>
+</steps>
+<p>Ajude o violão reunindo flores de coral.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os violios contaram sobre as várias criaturas das colinas do sul de Coral e pediram que você reunisse flores de coral.</p>
+<p> </p>
+<p>Você trouxe flores de coral para o violão, que ficou muito satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

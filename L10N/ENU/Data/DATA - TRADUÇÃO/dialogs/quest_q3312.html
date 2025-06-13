@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], Estou tão feliz em vê -lo novamente.</p>
+<p> </p>
+<p>Acho que cometi um erro quando o enviei para caçar esses espíritos irritados antes. Sim, eles eram problemáticos e estou feliz que eles se foram, mas não percebi que eles não foram os únicos causando problemas.</p>
+<p> </p>
+<p>Temos outro problema no chão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Wild Sandstorm Spirits está criando turbilhões lá embaixo. Eles estão jogando os alunos fora do curso de voo.</p>
+<p> </p>
+<p>Eu deveria avaliar todos de maneira justa, mas quando fatores externos interferem no teste, isso é impossível.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, sempre que alguém falha, eles apenas dizem "Oh, era uma rajada de baixo". Não há como eu saber se isso é verdade ou não, então tenho que deixá -los retomar o teste.</p>
+<p> </p>
+<p>Então, por favor, vá ao chão e se livre de dez deles[%dic:STR_DIC_M_7C_elementalair3_32_Ae] para mim. Isso tornará o teste mais justo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Basta voar direto daqui.</p>
+<p> </p>
+<p>Esses espíritos não são pushvers, então você pode querer levar alguns amigos com você.</p>
+<p> </p>
+<p>Boa sorte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ainda aprecio sua ajuda de antes. Eu só esperava que você pudesse dar mais assistência. Não temos muitos Daevas por aqui com seu nível de experiência de batalha.</p>
+<p> </p>
+<p>Se você mudar de idéia, me avise.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Arieluma."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Outro Daeva falhou no teste de vôo e reivindicou interferência enquanto você se foi! É uma epidemia!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem, esse será o último."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado! Foi um dia abençoado quando você apareceu, disposto a ajudar.</p>
+<p> </p>
+<p>Agora posso administrar o teste de habilidade de vôo de maneira justa a todos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_7C_elementalair3_32_Ae] S na caverna do templo de Eracus ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Marana].</p></step>
+</steps>
+<p>Mate os espíritos de tempestade de areia selvagens que interferem no teste de habilidade de voo de alto nível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Marana disse que os espíritos de tempestade de areia selvagens criam turbilhões que interferem nos testes de voo. Ela pediu que você se livrasse dos espíritos e retornasse justiça aos testes.</p>
+<p> </p>
+<p>Quando você matou os espíritos de tempestade de areia selvagem e voltou para ela, ela agradeceu e disse que os testes agora serão justos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

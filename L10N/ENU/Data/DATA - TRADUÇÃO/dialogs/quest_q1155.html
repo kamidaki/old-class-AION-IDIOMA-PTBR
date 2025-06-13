@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um favor a perguntar a você, [%username]. Mas tem que ficar entre nós. Centurion Leto não deve saber nada sobre isso.</p>
+<p> </p>
+<p>Você se lembra quando trouxe alguns suprimentos para nós? Os que William lhe contaram?</p>
+<p> </p>
+<p>Bem, eles foram roubados.</p>
+<p> </p>
+<p>Está acontecendo cada vez mais ultimamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você sabe quem está por trás disso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim. Os Dukaki Kobolds. Eles nem tentaram cobrir seus trilhos.</p>
+<p> </p>
+<p>Eles levaram probabilidades e fins no começo, coisas que poderiam comer ou usar. Objetos brilhantes. Agora eles invadiram o armazém de relógio.</p>
+<p> </p>
+<p>Se William soubesse que as armas que ele enviou acabaram em mãos Kobold ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa guardar melhor seu armazém."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei. Estou tendo as portas reforçadas e coloquei um guarda no lugar 24 horas, mas ainda estamos no valor de uma entrega inteira de suprimentos! Alguém precisa ir para o [%dic:STR_DIC_FLA12] e buscá -los de volta.</p>
+<p> </p>
+<p>Você poderia fazer isso por nós?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Se o relógio funcionar, os membros precisam sentir que podem fazer as coisas.</p>
+<p> </p>
+<p>Se eles soubessem que os Kobolds estavam roubando seus suprimentos e rindo deles, eles poderiam ser tentados a desistir.</p>
+<p> </p>
+<p>Os Kobolds geralmente escondem seus produtos em caixas. Tente pesquisá -los, se você vir algum.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, tanto para o relógio Tolbas. Foi ótimo enquanto durou.</p>
+<p> </p>
+<p>Talvez se eu reunir todo mundo por um grande ataque à mina. Podemos ter sucesso. Mas acho que não poderia viver comigo mesmo se houvesse baixas.</p>
+<p> </p>
+<p>Daeva, em nome da misericórdia, estou implorando para que você reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou os suprimentos roubados no[%dic:STR_DIC_FLA12]?</p>
+<p> </p>
+<p>Leto está fazendo muitas perguntas. Ela está tentando reproduzir, mas tenho certeza de que ela suspeita de alguma coisa.</p>
+<p> </p>
+<p>Se ela descobrir sobre isso, eu terminei.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui, pegue isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu? Fez as sentinelas no[%dic:STR_DIC_FLA12] Assustar você?</p>
+<p> </p>
+<p>Eu sei que este é um trabalho difícil, mas continue tentando!</p>
+<p> </p>
+<p>Talvez você possa levar alguns amigos com você? Força em números e tudo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim ... está tudo aqui! Tudo contabilizado! Eu sabia que você não nos decepcionaria!</p>
+<p> </p>
+<p>Serei capaz de parecer o Centurion Leto nos olhos agora.</p>
+<p> </p>
+<p>Graças aos cinco que você conseguiu recuperá -los antes que os Kobolds pudessem usá -los. Você pode imaginar se tivéssemos encontrado um de nossos homens com nossas próprias armas presas nele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre os suprimentos no[%dic:STR_DIC_FLA12] e trazê -los para [%dic:STR_DIC_LA24].</p>[%collectitem]</step>
+</steps>
+<p>Os Kobolds de Dukaki roubaram suprimentos da vila. Vá para a mina de Dukaki, encontre os suprimentos roubados e os leve para Abolos.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Kobolds de Dukaki estavam roubando mercadorias da vila, incluindo armaduras vitais e armas.</p>
+<p> </p>
+<p>Você foi à mina de Dukaki, recuperou os bens roubados e os trouxe de volta a Abolos, o líder do relógio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

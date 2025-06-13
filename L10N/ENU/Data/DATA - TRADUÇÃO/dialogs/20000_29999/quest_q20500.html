@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não conheço você.</p>
+<p> </p>
+<p>Você faz parte da tropa da expedição?</p>
+<p> </p>
+<p>Diga -me seu nome.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você se apresenta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, sinto muito. Eu quase não reconheci você.</p>
+<p> </p>
+<p>Sua reputação precede você, [%username].</p>
+<p> </p>
+<p>Ouvi dizer que um grande Daeva se juntou à tropa da expedição. Suponho que é você, [%username].</p>
+<p> </p>
+<p>A situação deve ser muito séria se Daevas como você estiver sendo enviado para Vengar, [%username].</p>
+<p> </p>
+<p>O dia da grande ofensiva foi um enorme choque para todos nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">O dia da grande ofensiva?</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se esqueceu de que as regiões de Sarpan, Tiamarantara e Katalam foram perdidas?</p>
+<p> </p>
+<p>Isso foi apenas alguns meses atrás.</p>
+<p> </p>
+<p>Muito mudou desde então.</p>
+<p> </p>
+<p>Não sabemos o que Beritra está fazendo, mas suspeitamos que isso tenha algo a ver com Vengar.</p>
+<p> </p>
+<p>Milhares perderam a vida naquele dia em Balaurea. Mas não temos tempo para lamentar.</p>
+<p> </p>
+<p>Ninguém sabe quando teremos que enfrentar a próxima catástrofe.</p>
+<p> </p>
+<p>É por isso que o Fatebound montou uma tropa de expedição e a enviou para Vengar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não devemos perder tempo conversando. Por favor, vá para o comandante [%dic:STR_DIC_N_DF5_Haldor_E].</p>
+<p> </p>
+<p>Ele está interessado em recrutar um novo guerreiro para sua tropa. Eu tive que prometer enviar recém -chegados diretamente para ele.</p>
+<p> </p>
+<p>Se você ainda tiver perguntas, eu as responderei mais tarde. Agora vá e veja Haldor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+<voice file="Q20500-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>Deve ser algo importante se você vier diretamente para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que veio com uma carta de recomendação do Oficial de Informações.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você é o famoso[%username].</p>
+<p> </p>
+<p>Fiquei realmente empolgado quando soube que você queria se juntar à tropa da expedição.</p>
+<p> </p>
+<p>Eu não lutei com arcontes como você, [%username], por muito tempo.</p>
+<p> </p>
+<p>Há muito a ser feito em Vengar. Mas como você não está aqui há muito tempo, deve se familiarizar com a tropa da expedição primeiro.</p>
+<p> </p>
+<p>Avisarei você imediatamente quando houver uma nova missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_DF5] e fale com[%dic:STR_DIC_N_DF5_CogelHogan_E].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Haldor_E].</p></step>
+</steps>
+<p>Comando: vá para Vengar e conheça Logan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi a Vengar, onde o oficial de informações Logan falou sobre o dia da grande ofensiva.</p>
+<p> </p>
+<p>Logan revelou que havia suspeita de que Beritra apenas destruiu as três regiões para chegar a Vengar. Depois, você deveria ver Haldor.</p>
+<p> </p>
+<p>O comandante Haldor o cumprimentou e ficou feliz por tê -lo em sua tropa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

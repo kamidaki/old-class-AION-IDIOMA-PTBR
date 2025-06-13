@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Venha me incomodar de novo?</p>
+<p> </p>
+<p>Na verdade....</p>
+<p> </p>
+<p>Eu tenho um bom uso para suas habilidades, [%userclass].  Diga -me, você conheceu[%dic:STR_DIC_LA53] em suas viagens?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Tutty?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, tutty. Ele é ... meu porgus de estimação.</p>
+<p> </p>
+<p>Lavish o pequeno sujeito com tanto cuidado quanto eu faria com o meu próprio filho. Ele correu ontem quando eu virei as costas. Ele não me respondeu quando eu o chamei, nem voltou para o jantar.</p>
+<p> </p>
+<p>Diga-me, [%userclass], você o encontraria para mim? A idade girou meus joelhos, minha visão está falhando ... Eu teria pouca chance sozinha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Suponho que posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza que você pode localizar [%dic:STR_DIC_LA53]para mim.</p>
+<p> </p>
+<p>Ele adora correr, para que ele possa estar a uma distância. No entanto, ele deve ser fácil de reconhecer entre outros porgus. Ele é manso e sabe que pessoas e fogueiras significam comida!</p>
+<p> </p>
+<p>Se ele ainda estiver vivo, é claro ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Bom.</p>
+<p> </p>
+<p>Oh, eu apenas me lembrei de [%dic:STR_DIC_LA53]foi bastante levado com o [%dic:STR_DIC_FLA07]. Eu procuraria lá primeiro.</p>
+<p> </p>
+<p>Aqueles Kobolds de Dukaki podem ter ele escrito em algum lugar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrá -lo. Apenas espere aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem um coração frio de um mercenário, [%userclass]. Sem moeda, sem conforto!</p>
+<p> </p>
+<p>Diga -me, é assim que seus pais criaram você?</p>
+<p> </p>
+<p>Saia daqui antes de te ensinar algumas maneiras!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você estava procurando[%dic:STR_DIC_LA53].</p>
+<p> </p>
+<p>Onde ele está? Ou você ainda está olhando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os Dukaki ... eles estavam churrascendo ele ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles eram o quê?!</p>
+<p> </p>
+<p>Aqueles ... aqueles vermes imundos! Para massacrar meu amigo, apenas para encher seus ... suas entranhas gananciosas e cheias de vermes?!</p>
+<p> </p>
+<p>Isso é uma indignação-unida!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_FLA07] e procure sinais de [%dic:STR_DIC_LA53].</p></step>
+<step><p visible="[%3]">Missão concluída! Fale com [%dic:STR_DIC_LA12]%.</p></step>
+</steps>
+<p>[%dic:STR_DIC_LA12] Amado animal de estimação, [%dic:STR_DIC_LA53], desapareceu. Vá procurá -lo.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="0" showframe="true" state="succeed" time="5">You found Tutty, but dead and turning on a spit!</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_LA12]criado[%dic:STR_DIC_LA53]Com o máximo cuidado por anos, mas agora está faltando o porgus.</p>
+<p> </p>
+<p>Você se ofereceu para ir para [%dic:STR_DIC_FLA07] e procure por ele.</p>
+<p> </p>
+<p>Infelizmente, os Dukaki Kobolds o mataram.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

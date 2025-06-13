@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Amaldiçoe essa escuridão! Não consigo ler ou escrever ordens quando a escuridão se instala e não temos muita madeira para os incêndios.</p>
+<p> </p>
+<p>Eu sei, eu sei ... a escuridão nos fortalece. Eu ouvi tudo quando jovem. Aqueles Elyos arrogantes com certeza têm fácil, tomando banho na luz do sol e nunca lutando como eu, apenas para entender a caligrafia de Ulgorn.</p>
+<p> </p>
+<p>Eu tenho uma solução temporária, no entanto. Não é o sol, mas pelo menos Guheitun não reclamará de mim usando toda a lenha.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é a sua ideia?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe em volta: qual criatura neste ambiente chama sua atenção? Ou o [%dic:STR_DIC_M_spakyD_1_n]ou o [%dic:STR_DIC_M_SpakleD_1_n], certo?</p>
+<p> </p>
+<p>É a cauda brilhante deles. Os insetos os usam para atrair presas e companheiros. Mas também posso usar essa luminescência natural.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"As caudas não ficam escuras quando morrem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia caçar [plur][%dic:STR_DIC_M_spakyD_1_n] e [plur][%dic:STR_DIC_M_SpakleD_1_n] e me traga o seu[plur][%dic:STR_DIC_I_2105a]?</p>
+<p> </p>
+<p>Eu cuidaria disso, mas não tenho tempo, receio.</p>
+<p> </p>
+<p>Você estaria me fazendo um grande favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode obter os orbes do[plur][%dic:STR_DIC_M_spakyD_1_n] e o [plur][%dic:STR_DIC_M_SpakleD_1_n].</p>
+<p> </p>
+<p>Eu preciso disso[plur][%dic:STR_DIC_I_2105a]o mais rápido possível.</p>
+<p> </p>
+<p>Três devem ser brilhantes o suficiente.</p>
+<p> </p>
+<p>Eu ficaria muito grato.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu só pedi três orbes, isso estava pedindo demais?</p>
+<p> </p>
+<p>Se ninguém me ajudar, não posso fazer meu trabalho aqui!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não preciso da sua ajuda, Vanar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, você está de volta.</p>
+<p> </p>
+<p>Esses relatórios realmente devem estar na vila. Tobu ficará furioso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>E você quer ser um bandido?</p>
+<p> </p>
+<p>Pedi que você caçar alguns insetos e me trazer seus orbes ...</p>
+<p> </p>
+<p>Isso é demais para perguntar? Eu só queria três orbes.</p>
+<p> </p>
+<p>Vá em frente e me traga o [plur][%dic:STR_DIC_I_2105a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes são perfeitos! Obrigado, [%username].</p>
+<p> </p>
+<p>Finalmente, posso concluir esses relatórios. Então, talvez Tobu e Ulgorn me permitam fazer uma invasão real!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [plur][%dic:STR_DIC_I_2105a]do[plur][%dic:STR_DIC_M_spakyD_1_n] e o [plur][%dic:STR_DIC_M_SpakleD_1_n] e trazê -los para [%dic:STR_DIC_N_Vanar].</p>[%collectitem]</step>
+</steps>
+<p>Caça o [plur][%dic:STR_DIC_M_spakyD_1_n] e [plur][%dic:STR_DIC_M_SpakleD_1_n]para Vanar e leve o seu[plur][%dic:STR_DIC_I_2105a].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vanar reclamou que não pode escrever nenhum relatório sem luz.</p>
+<p> </p>
+<p>Ele pediu que você pegasse as esferas brilhantes dos Sparkies e Sparkles na colina.</p>
+<p> </p>
+<p>Você seguiu o pedido dele e trouxe as esferas brilhantes. Ele ficou muito satisfeito e imediatamente começou a escrever relatórios antes de ter mais problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

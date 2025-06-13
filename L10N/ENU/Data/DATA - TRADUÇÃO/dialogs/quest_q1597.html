@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Observar a selva o dia todo me deixa tão cansado e confuso ... não sei dizer se eu sou a selva ou a selva sou eu.</p>
+<p> </p>
+<p>Espere, isso não saiu certo. Eu ... nem tenho certeza do que eu queria dizer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você não pode fazer uma pausa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu realmente não posso. Temos falta de ajuda aqui e esses lefaristas ... não importa quantos eu mato, eles apenas trazem mais de algum lugar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu poderia ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você quiser matar mais desses tolos, é bem -vindo à tarefa. Eu começaria com o Centro de Pesquisa Lefarista se eu fosse você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você deseja matar algum grunhido aleatório velho, tente o [%dic:STR_DIC_M_Lab_LehparKn_42_An] S, [%dic:STR_DIC_M_Lab_LehparFi_42_An] Areia [%dic:STR_DIC_M_LehparPriest_41_An] S.</p>
+<p> </p>
+<p>Ah, e enquanto você está nisso, cuide -se do[%dic:STR_DIC_M_PretorPet_40_An] S também. Eles podem não ser inteligentes, mas são tão perigosos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eu não culpo você, estou cansado de matar essas pessoas também.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles continuam chegando ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que...!?</p>
+<p> </p>
+<p>Oh! Ei. Não me esgueirei de novo-eu quase te atacei!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu me livrei de alguns lefaristas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ainda há mais, certo? Nunca termina ... nunca vou deixar essa selva, estou?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o herege no centro de pesquisa.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Lab_LehparKn_42_An]([%2]/2)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Lab_LehparFi_42_An]([%5]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_LehparPriest_41_An]([%8]/2)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_PretorPet_40_An]([%11]/3)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Aiokina].</p></step>
+</steps>
+<p>Limpe os revolucionários lefaristas em laboratório para que a Aiokina possa descansar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aiokina disse que ela estava exausta vigiando contra os lefaristas, então você se ofereceu para dar uma pausa ao matar alguns. Você cuidou de alguns, mas mal parecia prejudicar seus números. De onde vêm todas essas pessoas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

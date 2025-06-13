@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma vila de Mumu não muito longe de [%dic:STR_DIC_W_DF1A_19]. Os Mumu estão refinando Odella lá, protegidos pelo Mau.</p>
+<p> </p>
+<p>Para a segurança de Asmodae, devemos impedir que o Mumu refine Odella. Mesmo que não possamos detê -los completamente.</p>
+<p> </p>
+<p>Pode ser possível se pudéssemos eliminar o Mumu e o Mau ... mas é impossível mantê -los longe de Odella.</p>
+<p> </p>
+<p>Portanto, é importante atacá -los e pelo menos enfraquecê -los.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A última vez não foi boa; Agora devemos começar a usar meios mais poderosos.</p>
+<p> </p>
+<p>Meu plano é eliminar a garra negra Mau, que protege o Mumu, e envenenar sua fonte de água potável. Se esse plano funcionar, o Mumu finalmente não causará mais problemas.</p>
+<p> </p>
+<p>Precisamos de um veneno eficaz. Você pede conselhos ao Hunter Shania. Ela usa flechas envenenadas, para que saiba os venenos.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Sjania] estará na vila. Como ela gosta de passear pela vila, você poderá encontrá -la se esperar no meio da vila.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<voice file="Q2016-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Nokirjar] enviou você?</p>
+<p> </p>
+<p>Você gostaria de um veneno para exterminar o Mumu?</p>
+<p> </p>
+<p>O MUMU ... É melhor você usar o veneno veneno Aranha Venom que eu extraí.</p>
+<p> </p>
+<p>Eu acabei de preparar um pouco para a caça, então pegue um pouco[%dic:STR_DIC_I_QUEST_24013a].</p>
+<p> </p>
+<p>Dissolva -o na cachoeira da vila de Mumu.</p>
+<p> </p>
+<p>Você encontrará a cachoeira dentro da vila de Mumu. Ele em cascata em dois níveis. Dissolva o veneno na lagoa da primeira cachoeira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+<voice file="Q2016-4.ogg"></voice>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acrescentou[%dic:STR_DIC_I_QUEST_24013a]Para o suprimento de água da vila de Mumu e matar a garra negra Mau?</p>
+<p> </p>
+<p>Eles não são soldados de elite, então não pode ter sido muito difícil.</p>
+<p> </p>
+<p>Se você não fez isso, não é digno do título de Daeva.</p>
+<p> </p>
+<p>Mas tenho certeza que você conseguiu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você concluiu a tarefa brilhantemente.</p>
+<p> </p>
+<p>Os comandantes ficarão encantados ao saber disso.</p>
+<p> </p>
+<p>O comandante nos elogiará porque você realizou meu plano tão bem, [%username].</p>
+<p> </p>
+<p>Aqui está uma recompensa pelo seu bom trabalho. Por favor, aceite isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Nokirjar]no[%dic:STR_DIC_W_DF1A_19] Aldeia.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Sjania].</p></step>
+<step><p visible="[%6]">Vá para o [%dic:STR_DIC_W_DF1A_13] e colocar [%dic:STR_DIC_I_QUEST_24013a]no[%dic:STR_DIC_W_DF1A_spot].</p></step>
+<step><p visible="[%9]">Mate o [%dic:STR_DIC_M_Lycan_all]da vila de Mumu ([%11]/5).</p></step>
+<step><p visible="[%12]">Relatório para [%dic:STR_DIC_N_Nokirjar].</p></step>
+</steps>
+<p>Ordens: Os Mumu estão refinando Odella em sua aldeia. Nokir tem uma missão para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nokir estava planejando punir o Mumu que estava refinando Odella. Você deveria consultar o Hunter Shania para isso.</p>
+<p> </p>
+<p>Shania aconselhou você a envenenar a fonte de água doce da vila de Mumu. Você deveria envenenar a lagoa da vila de Mumu e eliminar o Mau.</p>
+<p> </p>
+<p>Nokir ficou satisfeito quando o trabalho foi feito e prometeu contar ao comandante de suas realizações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

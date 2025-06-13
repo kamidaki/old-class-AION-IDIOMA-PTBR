@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdemos muitos bons soldados para a garra de gelo Mau ... caçadores de cordas.</p>
+<p> </p>
+<p>Eu uso um chapéu de pele Mau cada vez que me aventurava perto de sua aldeia, apenas para que aqueles rostos fuzz saibam que Asmodae opondo -se significa a morte.</p>
+<p> </p>
+<p>Mesmo ainda ... os Mau não são pushvers, mas tenho certeza que você sabe disso, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu morei meu compartilhamento justo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hahaha, é isso que eu gosto de ouvir!</p>
+<p> </p>
+<p>Você sabe, matar Mau na vila do gelo pode ser difícil, mas a vila de Mumu é uma história diferente.</p>
+<p> </p>
+<p>Os Mau estacionados lá são muito mais fracos do que os da Ice Claw Village. Embora o Mau em Ice Claw Village seja a principal ameaça, podemos cortar o suprimento de ginseng da plantação matando Mau na vila de Mumu.</p>
+<p> </p>
+<p>Se atingirmos a produção de Ginseng na plantação, lidamos com um golpe incapacitante até a Ice Claw Village. O que você diz, [%username]? Interessado em quebrar alguns crânios?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sangue para sangue, [%username]!</p>
+<p> </p>
+<p>Vamos começar matando[%dic:STR_DIC_M_LycanHunterM_29_An], Assim, [%dic:STR_DIC_M_KeA_LycanKnightM_29_An], e [%dic:STR_DIC_M_LycanFighterM_29_An]na vila de Mumu. A produção de ginseng cairá e a garra de gelo Mau perderá seu poder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso vai causar um golpe para o mal[%username]!</p>
+<p> </p>
+<p>Não sabemos quando a garra de gelo Mau pode realizar sua fraqueza e enviar reforços para a vila de Mumu. Agora é a hora de atacar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não posso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu invejo os soldados que são enviados para a frente .... Embora os Mau sejam inimigos formidáveis, é lutar contra os Elyos que traz Asmodae verdadeira glória. O serviço de guarda não traz essa glória, mas suponho que isso deve ser feito.</p>
+<p> </p>
+<p>Bem, [%username]? Como você se saiu na Munmun Ginseng Plantation?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os Mau estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é excelente notícia! Seus esforços nos aproximaram um passo de esmagar o Mau.</p>
+<p> </p>
+<p>Esses caçadores de cordas não tinham ideia do que estava por vir, hein, [%username]? Vou mencionar seu nome quando relatar nosso progresso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Mau perto da Plantação Munmun Ginseng.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LycanHunterM_29_An]([%2]/5).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_KeA_LycanKnightM_29_An]([%5]/7).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LycanFighterM_29_An]([%8]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hakon].</p></step>
+</steps>
+<p>Mate o Mau perto da Plantação Munmun Ginseng para enfraquecê -los conforme instruído.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hakon lhe disse que a plantação de Munmun Ginseng é vulnerável e que matar Mau de lá enfraquecerá a garra de gelo mais poderosa Mau.</p>
+<p> </p>
+<p>Você matou um grande número de caçadores de garras de gelo, guardas de garra de gelo e pata -soldados de gelo na plantação, e Hakon ficou mais impressionado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

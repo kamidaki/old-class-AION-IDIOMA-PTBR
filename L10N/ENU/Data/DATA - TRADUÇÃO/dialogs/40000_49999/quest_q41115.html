@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41100</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. Eu tenho algo me dando uma dor de cabeça. Você poderia me fazer um favor?</p>
+<p> </p>
+<p>Mais uma vez, é sobre o [%dic:STR_DIC_E_Q41115a]Isso está nos causando dificuldades.</p>
+<p> </p>
+<p>As criaturas associadas sempre aparecem em grupos, não nos dando nenhuma oportunidade de se manter contra eles. Mas não podemos negligenciar todo o resto apenas para esperar por uma oportunidade perfeita.</p>
+<p> </p>
+<p>Por esse motivo, eu te pergunto, [%username], para cuidar disso para nós.</p>
+<p> </p>
+<p>Um dos[%dic:STR_DIC_E_Q41115a]vai fazer. Assumir todos eles seria demais para perguntar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? De volta?</p>
+<p> </p>
+<p>Como foi a missão especial?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Agora estou me tornando paz ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Oh ... você cuidou disso. Ótimo!</p>
+<p> </p>
+<p>Devemos a você os nossos mais profundos agradecimentos, [%username], por estar sempre lá pela paz e segurança de Sarpan.</p>
+<p> </p>
+<p>Aqui está uma recompensa criada pela Guilda da Sandstorm, especialmente para você.</p>
+<p> </p>
+<p>Esperamos contar com sua ajuda novamente no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate um dos[%dic:STR_DIC_E_Q41115a]([%2]/1).</p></step>
+<step><p visible="[%15]">Retornar a [%dic:STR_DIC_N_Olibaia].</p></step>
+</steps>
+<p>Baia pediu que você matasse alvos de sombras inteligentes, que parecem invulneráveis ​​contra o ataque.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Baia pediu que você "pacificar" alvos de sombra inteligentes. Eles se mostraram problemáticos e deixam poucas aberturas para aproveitar.</p>
+<p> </p>
+<p>Você matou um deles e voltou a ela agradecimento e uma recompensa por seus esforços para a paz de Sarpan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

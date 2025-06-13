@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que existem valiantes Daevas, como você que faz a parte deles para proteger Elysea.</p>
+<p> </p>
+<p>Por favor, ajude o protetorado da Elysea da Atreia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Por favor destrua o [plur][%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092] em[%dic:STR_DIC_W_LF2B_SZ_C3] e [%dic:STR_DIC_W_LF2B_SZ_C4]. Depois de fazer isso, [plur][%dic:STR_DIC_M_LF2A_ZombieQ_46_An]vai aparecer. Elimine -os e me traga 6[plur][%dic:STR_DIC_I_quest_80405a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos mostrar a eles do que nós e você, Daeva, somos feitos!</p>
+<p> </p>
+<p>Para a glória dos Elyos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós asmodianos precisamos de um ajudante como Daeva.</p>
+<p> </p>
+<p>Estaremos com problemas se Daeva nos abandonar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu 6 almas zumbis queimadas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 6 almas zumbis queimadas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos mais recuar. Daeva!</p>
+<p> </p>
+<p>Salve -os o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF2A_ZombieQ_46_An], que aparece quando você destrói o [plur][%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092]. Derrotar os zumbis e reunir 6[plur][%dic:STR_DIC_I_quest_80405a]. Em seguida, traga -os para [%dic:STR_DIC_N_EVENT_GUARD_BREE].</p>[%collectitem]</step>
+</steps>
+<p>Há[plur][%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092] em[%dic:STR_DIC_W_LF2B_SZ_C3] e [%dic:STR_DIC_W_LF2B_SZ_C4]. Derrotar o [plur][%dic:STR_DIC_M_LF2A_ZombieQ_46_An] e reunir 6[plur][%dic:STR_DIC_I_quest_80405a]. Em seguida, traga -os para [%dic:STR_DIC_N_EVENT_GUARD_BREE].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você procurou e destruiu o [plur][%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092] em[%dic:STR_DIC_W_LF2B_SZ_C3] e [%dic:STR_DIC_W_LF2B_SZ_C4]. Então[plur][%dic:STR_DIC_M_LF2A_ZombieQ_46_An] Apareceu. Você os eliminou e reuniu 6[plur][%dic:STR_DIC_I_quest_80405a].</p>
+<p> </p>
+<p>Dessa forma, você salvou o [plur][%dic:STR_DIC_I_quest_80405a].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

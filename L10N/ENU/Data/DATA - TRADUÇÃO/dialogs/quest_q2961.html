@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é bom que você esteja aqui. Eu estava prestes a enviar alguém para você.</p>
+<p> </p>
+<p>Eu tenho um emprego especial que precisa fazer, exigindo um Daeva capaz e discreto.</p>
+<p> </p>
+<p>Claro, eu não conheço nenhum, mas você é a próxima melhor coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Engraçado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É importante apreciar as pequenas vantagens da imortalidade.</p>
+<p> </p>
+<p>Eu preciso que você vá para a corte das sombras e Fale com [%dic:STR_DIC_N_Srudgelmir]. Este é um assunto pessoal, então mantenha -o privado. Por agora.</p>
+<p> </p>
+<p>Ele é um juiz, então provavelmente é algo importante. Se você estiver atrás de Kinah, ele poderá recompensá -lo de maneira justa. Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Srudgelmir]é um amigo meu, então eu não perguntei o que precisava fazer, e ele não contou.</p>
+<p> </p>
+<p>Você estará entrando nesse cego, [%username], então esteja preparado para qualquer coisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo. Você disse que não, e não vou questionar o porquê.</p>
+<p> </p>
+<p>Mas se você contar a uma alma que [%dic:STR_DIC_N_Srudgelmir]Precisa de alguém para sujar as mãos, saberemos sobre isso.</p>
+<p> </p>
+<p>Você não quer essa preocupação em seus ombros-me prenda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é?</p>
+<p> </p>
+<p>Você traz notícias que eu deveria conhecer? Informações sobre nossas legiões, talvez?</p>
+<p> </p>
+<p>Falar, cidadão. Fale, ou vá embora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Njord me cheira ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. você deve ser [%username]...</p>
+<p> </p>
+<p>Eu tenho uma missão urgente, uma matéria sensível e pessoal, que deve ser concluída o mais rápido possível. Não posso te contar mais até que você me dê seu juramento.</p>
+<p> </p>
+<p>Quando você estiver pronto, começaremos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Srudgelmir].</p></step>
+</steps>
+<p>Njord lhe disse que Khrudgelmir, juiz das sombras, está procurando um Daeva capaz e prudente. Vá ver Khrudgelmir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Njord disse que Khrudgelmir, juiz das sombras, está procurando um Daeva capaz e prudente e recomendou que você converse com ele.</p>
+<p> </p>
+<p>Nem mesmo o Njord sabia por que Khrudgelmir precisava de ajuda. Você foi conhecer Khrudgelmir, que o aconselhou a se preparar para uma missão tributária e altamente secreta ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

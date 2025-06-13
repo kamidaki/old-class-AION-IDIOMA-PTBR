@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma tarefa de Guilda de Teste foi emitida. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Mate vanktrist.</p>
+<p> </p>
+<p>Em seguida, relate à Battlemistress de Elysea [%dic:STR_DIC_N_Ceana].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou Vanktrist para completar a missão da Guilda?</p>
+<p> </p>
+<p>Por favor, me diga como foi.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Suas ações estão se tornando o orgulho da Guilda, [%username].</p>
+<p> </p>
+<p>Continue concluindo suas missões até que a missão da Guilda esteja concluída.</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate vanktrist ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ceana].</p></step>
+</steps>
+<p>Mate o vanktrist para a missão da Guilda do Teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma ordem da Guilda foi emitida.</p>
+<p> </p>
+<p>Você ajudou a matar Vanktrist para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

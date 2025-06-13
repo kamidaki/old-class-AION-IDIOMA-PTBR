@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Toda vez que tento fazer apenas uma investigação, o Fast Crynac aparece e interfere.</p>
+<p> </p>
+<p>[%username], você mataria o [%dic:STR_DIC_M_LDF5A_B1_Criton_62_An]para mim?</p>
+<p> </p>
+<p>Por alguma razão, o rápido Crynac está se reproduzindo a um ritmo inacreditável.</p>
+<p> </p>
+<p>Tão rapidamente que você não pode fazer nada a respeito.</p>
+<p> </p>
+<p>Gostaria de saber se há uma conexão com esse tipo de caixa que encontramos em um bosque próximo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Fast Cryton?</p>
+<p> </p>
+<p>O prazo para o relatório é iminente. Foi riscado por causa do Fast Cryton, no entanto.</p>
+<p> </p>
+<p>Se isso continuar, teremos que enviar páginas em branco.</p>
+<p> </p>
+<p>Por favor me ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não pode ser removido completamente, mas pelo menos está encolhendo.</p>
+<p> </p>
+<p>Agora podemos realmente começar nossa pesquisa.</p>
+<p> </p>
+<p>Eu ficaria grato se você pudesse nos ajudar novamente, da próxima vez.</p>
+<p> </p>
+<p>Este é um pequeno sinal de gratidão. Por favor, aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_B1_Criton_62_An]que estão interferindo nas investigações. ([%2]/9)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Kadine_E].</p></step>
+</steps>
+<p>Mate os rápidos Crynacs que estão interferindo nas investigações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kadine disse que os rápidos Crynacs, que estão se multiplicando rapidamente, estão interrompendo todas as investigações.</p>
+<p> </p>
+<p>Você recebeu uma recompensa depois de matar os Crynacs e foi convidado a ajudar novamente em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

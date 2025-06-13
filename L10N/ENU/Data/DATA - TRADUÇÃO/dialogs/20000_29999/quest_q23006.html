@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou preocupado que o exército de Beritra pareça estar ganhando força.</p>
+<p> </p>
+<p>Gostaria de atacar primeiro para manter o inimigo sob controle, mas não posso fazê -lo até receber o pedido de cima.</p>
+<p> </p>
+<p>Você poderia matar [%dic:STR_DIC_E_LDF5b_A2_Vri]no portão do sul da Eremion, [%username]?</p>
+<p> </p>
+<p>Não posso ignorar a ordem de cima e me envolver porque a situação de combate não está a nosso favor no momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, um plano grande e elaborado para conquistar o campo de Beritra deve ser criado e os relatórios devem ser feitos às forças armadas.</p>
+<p> </p>
+<p>Se apenas sentarmos e esperarmos, a situação não melhorará por conta própria.</p>
+<p> </p>
+<p>Ah, o que aconteceu com o que eu lhe pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sério?</p>
+<p> </p>
+<p>Então não precisamos nos preocupar com os soldados de Beritra por um tempo.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>No caso de essa oportunidade se apresentar novamente, eu gostaria de usá -lo novamente para uma operação como esta, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_LDF5b_A2_Vri], que está expandindo seu território. ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Shutart_E]%.</p></step>
+</steps>
+<p>Elimine o 43º esquadrão de espionagem de Beritra, que está expandindo seu território para as muralhas do sul em Eremion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou o 43º esquadrão de espionagem, que estava se expandindo, por ordens de Schtat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

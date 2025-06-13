@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiz muita pesquisa. Se as coisas acontecerem como o esperado, isso não deve terminar no fracasso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está falando comigo ... ou consigo mesmo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho todos os materiais preparados. Eu tenho um design, que espera correto.</p>
+<p> </p>
+<p>Tudo o que preciso agora é um forte poder atrito, e então eu posso fazer o peitoral de Laize, a parte mais difícil de toda a panóplia.</p>
+<p> </p>
+<p>Você continuaria a me ajudar, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pegue o mesmo fragmento de cristal que dei da última vez.</p>
+<p> </p>
+<p>Quando você chega à lasca abissais, você poderá preenchê -lo com energia do[%dic:STR_DIC_M_IDAbRe_Core_Flyingworm_El_55_Ah] Areia [%dic:STR_DIC_M_IDAbRe_Core_Cyclops_Fi_55_Ah] S.</p>
+<p> </p>
+<p>Você percebe que essa pode ser a última vez que peço um favor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou acreditar nisso quando o vir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem uma sensação de admiração sobre o maior traje de armadura de todos os tempos, incluindo os dias anteriores ao cataclismo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Na verdade não, não. Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me contar uma história. Rosarea sempre seguiu o Senhor Empyrean Israphel. Mas quando ele sugeriu a paz com o Balaur, ela protestou.</p>
+<p> </p>
+<p>Mesmo quando Lady Siel concordou, Rosarea chorou: "Não!" Ela ficou em frente à torre da eternidade, com as asas espalhadas e prometeu que não se moveria até que a loucura passasse.</p>
+<p> </p>
+<p>Ela pediu a Lord Israphel para interromper sua busca pela paz, mas ele não ouviu. Ela ficou em frente à torre, dia e noite, até o cataclismo ... quando ela desapareceu. Muito Asmodiano, você não acha?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ela ainda poderia estar viva! Oh, seu cristal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>E então nós infundimos ... e ....</p>
+<p> </p>
+<p>Hum. Parece o peitoral de Laize. Parece o peitoral de Laize. Mas olhe e sinta -se sozinho não é valor sem o poder de apoiá -lo.</p>
+<p> </p>
+<p>Atravesse os dedos, [%username]. Se o poder não for suficiente, você precisará reunir mais. Mas se for ... bem, você possuirá uma obra -prima.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete a energia do Aether das criaturas.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Flyingworm_El_55_Ah]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Cyclops_Fi_55_Ah]([%5]/2)</p></step>
+<step><p visible="[%15]">Leve o fragmento de cristal para [%dic:STR_DIC_NPC_Laum].</p></step>
+</steps>
+<p>Laum precisa de energia de éter para completar o peitoral de Laize. Colete a energia de Aether em um fragmento de cristal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laum precisa de energia de Aether para o peitoral de Laize, a última peça do panóplico usado por Rosareia que-aparentemente-protestou o tratado de paz de Lord Israphel com o Balaur.</p>
+<p> </p>
+<p>Então você foi ao abismo e trouxe de volta a energia de Aether em um fragmento de cristal, conforme solicitado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

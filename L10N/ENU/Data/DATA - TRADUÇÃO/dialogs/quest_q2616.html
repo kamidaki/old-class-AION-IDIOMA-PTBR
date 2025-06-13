@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Disseram -me que os trolls sem -teto haviam entrado na vila e estavam causando um alvoroço!</p>
+<p> </p>
+<p>Agora eles estão aparentemente atacando o Mau e os humanos fracos também.</p>
+<p> </p>
+<p>Acho que eles não querem deixar seu antigo habitat.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oops ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se eles não fossem tão estúpidos, os trolls criticados teriam tomado a dica e nos deixou sua aldeia para usar como posto avançado estratégico.</p>
+<p> </p>
+<p>Mas chegou a isso no final-temos que limpar completamente o acampamento do Fang Troll.</p>
+<p> </p>
+<p>Então, o que você diz, [%username]? Você está pronto para terminar o que começou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem.</p>
+<p> </p>
+<p>As ordens devem descartar qualquer [%dic:STR_DIC_M_TrollRe2D_41_An] Areia [%dic:STR_DIC_M_TrollkinReD_41_An] Ainda está em evidência em torno do[%dic:STR_DIC_W_STR_DF3_SZ_G1].</p>
+<p> </p>
+<p>Desta vez, não lhes mostre misericórdia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você está desistindo antes que o trabalho seja feito? Eu não teria esperado isso de você.</p>
+<p> </p>
+<p>Mas não importa. Suponho que os trolls do Fang ficariam felizes em vê -lo em qualquer lugar perto do acampamento deles de qualquer maneira.</p>
+<p> </p>
+<p>Vou lidar com isso sozinho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz que pudéssemos agir antes que os trolls causassem muito dano por aqui. É realmente minha culpa por subestimá -los, suponho.</p>
+<p> </p>
+<p>Você eliminou os trolls de pregos, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O trabalho é feito desta vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Poderíamos ter economizado muito tempo e problemas apenas matando todos eles em primeiro lugar. Ainda...</p>
+<p> </p>
+<p>De qualquer forma, aqui está sua recompensa, junto com meus agradecimentos por um trabalho bem feito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os caçadores de trolls e os trabalhadores de Trollkin.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_TrollRe2D_41_An]([%2]/4)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_TrollkinReD_41_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mostin].</p></step>
+</steps>
+<p>Elimine os caçadores de trolls e os trabalhadores de Trollkin para ajudar na operação de limpeza de trolls.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A maioria disse que a operação para expulsar os trolls, demolindo as casas dos trolls, foi um fracasso, então uma ordem foi emitida para erradicar completamente os trolls.</p>
+<p> </p>
+<p>Você descartou os caçadores de trolls e os trabalhadores de Trollkin, enquanto ela pediu e se relatou de volta a ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

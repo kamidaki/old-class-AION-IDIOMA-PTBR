@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja aqui, [%username]. Eu tenho procurado alguém para fazer uma missão investigativa especial.</p>
+<p> </p>
+<p>Perguntei a vários legionários, mas suas falhas constantes me deixam louco. Eu terminei com aquela avenida de perseguição.</p>
+<p> </p>
+<p>Eu acho que apenas especialistas são adequados para missões especiais como essa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E aqui estou eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente. Eu não acho que vale a pena desperdiçar mais legionários nisso.</p>
+<p> </p>
+<p>Há uma área inexplorada em Silentera Canyon. Precisamos descobrir que tipo de lugar é, mas os joguns estão nos impedindo de chegar perto.</p>
+<p> </p>
+<p>Você está pronto para isso, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Você precisa ir para [%dic:STR_DIC_E_Underpass_SensoryArea_Q30057], ao norte de Jotun Square.</p>
+<p> </p>
+<p>Há uma passagem em algum lugar por lá, me disseram. Descubra o que está na passagem e onde ela leva.</p>
+<p> </p>
+<p>Nenhum dos legionários que enviei conseguiu superar os joguns. Eu acho que você pode fazer melhor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Conte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmph. Eu esperava mais de você.</p>
+<p> </p>
+<p>Eu odeio o Silentera Canyon. Eu tenho que lidar com asmodianos, Balaur, Jotuns ... e legionários incapazes de serem inicializados.</p>
+<p> </p>
+<p>E agora você está desistindo de mim? Pah. Deixe -me.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, apenas ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! O que você descobriu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Algo por trás de uma porta bem fechada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é decepcionante, mas você fez melhor do que o resto, de qualquer maneira.</p>
+<p> </p>
+<p>Pelo menos agora eu sei que há uma porta enorme e algo por trás dela. Vou ter que levar daqui.</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Patrulha [%dic:STR_DIC_E_Underpass_SensoryArea_Q30057] Ao norte de Jotun Square [%2].</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Asinelli].</p></step>
+</steps>
+<p>Há uma área inexplorada em Silentera Canyon. Patrulha a área desconhecida ao norte da Jotun Square.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lania disse que há uma área inexplorada em Silentera Canyon. Ela enviou legionários para lá, mas eles não conseguiram cumprir a missão por causa dos joguns.</p>
+<p> </p>
+<p>Conforme solicitado, você foi para a área desconhecida ao norte da Jotun Square. Você encontrou uma enorme porta fechada com algo gritando atrás dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

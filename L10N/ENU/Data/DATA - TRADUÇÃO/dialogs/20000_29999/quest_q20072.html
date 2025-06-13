@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q20072</questid>
+<questname>용계 진격</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Vá para [%dic:STR_DIC_W_LDF4a_SZ_B1]rapidamente e veja se algo como[%dic:STR_DIC_M_LDF4a_Monster_M_Aurora_58_An]formou -se.</p>
+<p> </p>
+<p>Se você pudesse extrair [%dic:STR_DIC_I_quest_10072a]Dos traços, você pode se transportar instantaneamente para o local onde [%dic:STR_DIC_N_Israphel]é.</p>
+<p> </p>
+<p>Vá rapidamente, não há tempo para eu explicar com mais detalhes.</p>
+<p> </p>
+<p>Se os reianos vieram e começarem a perguntar sobre os traços, você poderia dizer a eles que não tem mais informações?</p>
+<p> </p>
+<p>Vou explicar tudo quando você voltar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+<voice file="Q20072-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você de novo, [%username].</p>
+<p> </p>
+<p>Você trouxe [%dic:STR_DIC_I_quest_10072a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a essência do espaço e do tempo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente o que você precisava.</p>
+<p> </p>
+<p>Os traços do abismo que você trouxe para Garnon são na verdade um tipo de chave que Israphel criou para abrir a porta do Abismo novamente.</p>
+<p> </p>
+<p>O problema é que, graças aos Reians, descobrimos facilmente onde o catalisador que detém a mesma energia que a chave está localizado.</p>
+<p> </p>
+<p>Felizmente, os Reians não parecem ter entendido o objetivo dos traços do abismo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3">Retomar a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, a pesquisa ainda não teve sucesso?</p>
+<p> </p>
+<p>Só tem que haver [%dic:STR_DIC_M_LDF4a_Monster_M_Aurora_58_An] em[%dic:STR_DIC_W_LDF4a_SZ_B1]!</p>
+<p> </p>
+<p>Sinto muito, mas você poderia ir lá de novo e começar a pesquisar?</p>
+<p> </p>
+<p>Se não há realmente nada a ser encontrado, teremos que pensar em outra coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Se causarmos uma reação nos traços instáveis ​​do abismo usando esta essência, o abismo mudará e podemos chegar a [%dic:STR_DIC_N_Israphel].</p>
+<p> </p>
+<p>Não sei o que está acontecendo na cabeça de Israphel, mas como você está perto dele um certo sentido, tenho certeza de que você será capaz de convencê -lo.</p>
+<p> </p>
+<p>Nunca se esqueça que o que você tem aqui é uma missão do próprio Marcutan. Então, traga de volta a relíquia de Siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Retomar a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Avise -me quando estiver pronto.</p>
+<p> </p>
+<p>Então eu vou ativar os traços do abismo e enviar você para onde [%dic:STR_DIC_N_Israphel] está hospedado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você responde que está pronto.</act>
+</selects>
+<voice file="Q20072-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca teria pensado que alguém avançava para este lugar ... surpreendente.</p>
+<p> </p>
+<p>Em retrospecto, você ficou no caminho de todos os meus planos como[%dic:STR_DIC_N_Lephar]. Por outro lado, também foi você quem trouxe meus planos como Israphel à tona ...</p>
+<p> </p>
+<p>Parece que nosso destino está ligado por um vínculo forte.</p>
+<p> </p>
+<p>Daeva, sem dúvida você está aqui para recuperar a relíquia de Siel, mas, infelizmente, seu desejo não pode se tornar realidade.</p>
+<p> </p>
+<p>Em vez disso, confiarei a você algo extremamente valioso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Retomar a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certa vez, quando a torre da eternidade ainda era uma presença temperada, o Balaur se rebelou contra [%dic:STR_DIC_ELA02] e queria se tornar um Deus.</p>
+<p> </p>
+<p>Para detê -los, Aion nos enviou, os doze senhores, para a terra ...</p>
+<p> </p>
+<p>Mas, para nossa grande vergonha, não fomos capazes de detê -los. Tudo o que podíamos fazer era manter o confronto caótico com o campo etérico.</p>
+<p> </p>
+<p>Então, os humanos e os Daevas começaram sua zombaria de Old Class Aion e os senhores impotentes ...</p>
+<p> </p>
+<p>Eu não aguentava e planejei exterminar o Balaur.</p>
+<p> </p>
+<p>Eu acreditava que poderia fazer isso. Afinal, eu sabia como absorver e exercer o poder da torre da eternidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1_1">Retomar a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Teria sido fácil destruir o Balaur com o poder da Torre da Eternidade, mas eu precisaria que eles chegassem perto da torre para fazê -lo.</p>
+<p> </p>
+<p>Ofereci paz a doze senhores e abri o campo de proteção. Quando os senhores se reuniram na sala para negociações de paz, eu pedi[%dic:STR_DIC_MLA51]para matá -los ...</p>
+<p> </p>
+<p>No entanto, eu não poderia ter previsto isso [%dic:STR_DIC_MLA49]destruiria toda a torre da eternidade ... sim, meu plano deu errado e o grande desastre se seguiu ...</p>
+<p> </p>
+<p>Vi como Siel se sacrificou e criou o campo áicamente. Eu fingi que queria ajudá -la e, assim, desapareceu do mundo.</p>
+<p> </p>
+<p>Isso foi sem vergonha, covarde e irresponsável ... você pode zombar, se quiser.</p>
+<p> </p>
+<p>Mas agora tenho um plano de como acabar com essa tragédia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1_1_1">Você pergunta sobre o plano.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou lhe dizer, depois de tudo, não mudará nada se você souber.</p>
+<p> </p>
+<p>Eu usei o poder da relíquia de Siel e meu poder de controlar o espaço e guiarei[%dic:STR_DIC_ELA03]de volta ao começo.</p>
+<p> </p>
+<p>De volta a quando a Torre da Eternidade, [%dic:STR_DIC_ELA02] estava brilhando lindamente, para uma época em que tudo estava perfeito!</p>
+<p> </p>
+<p>Vou transformar este lugar em uma nova atreia com apenas um Senhor e liderar o mundo na direção certa!</p>
+<p> </p>
+<p>Isso significa divisão, destruição, sangue e sacrifício! Vou desfazer todos os meus erros e, assim, fazer minha penitência ...</p>
+<p> </p>
+<p>Em primeiro lugar, no entanto, é necessária alguma dor para esse plano.</p>
+<p> </p>
+<p>Daeva, você conhece a dor de que estou falando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO4">Você pensa sobre isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Recentemente, senti uma poderosa energia Aether que fez a terra tremer em todos os lugares de Tiamat Balaurea!</p>
+<p> </p>
+<p>Se essa não fosse a energia da Relic de Siel, então o que mais poderia ser? O que aconteceu na terra?</p>
+<p> </p>
+<p>Eu sei que você não disse nada ao Reian e foi encontrar Israphel sozinho, então diga a verdade!</p>
+<p> </p>
+<p>Você certamente não vai afirmar que não sabe nada!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT5_1">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então a relíquia de Siel foi destruída junto com Israphel ...</p>
+<p> </p>
+<p>Mais uma vez, você traiu a confiança que o Reian colocou em você e agiu sozinho!</p>
+<p> </p>
+<p>Se tivéssemos trabalhado juntos, poderíamos ter evitado isso!</p>
+<p> </p>
+<p>Você mesmo sabe melhor o que a relíquia de Siel significa para nós Reian ...</p>
+<p> </p>
+<p>(Os olhos se fecham com força, suprimindo a raiva)</p>
+<p> </p>
+<p>Saia da minha vista ... agora!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">A conversa terminou</act>
+</selects>
+<voice file="Q20072-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>O que no mundo acabou de acontecer? O que se tratava da grande onda de energia Aether?</p>
+<p> </p>
+<p>Diga -me o que aconteceu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A razão pela qual Israphel assumiu a relíquia de Siel para si mesmo ...</p>
+<p> </p>
+<p>(Expressão endurece)</p>
+<p> </p>
+<p>MMH, tenho que relatar em detalhes sobre isso para o Marchutan.</p>
+<p> </p>
+<p>[%username]. Aqui não é uma questão normal, então não saia contando as pessoas sobre isso assim.</p>
+<p> </p>
+<p>Em breve seremos chamados para o templo, certifique -se de que nada saia até então, tanto quanto isso é possível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Aimah].</p></step>
+<step><p visible="[%3]">Extrair [%dic:STR_DIC_I_quest_10072a]do[%dic:STR_DIC_M_LDF4a_Monster_M_Aurora_58_An]% e leve para [%dic:STR_DIC_N_Aimah].</p>[%collectitem]</step>
+<step><p visible="[%6]">Ter [%dic:STR_DIC_N_Aimah] Ajudá -lo a chegar à morada de Israphel.</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Israphel].</p></step>
+<step><p visible="[%12]">[%dic:STR_DIC_N_Kahrun]quer te ver com urgência. Fale com ele.</p></step>
+<step><p visible="[%15]">Relate tudo a [%dic:STR_DIC_N_Aimah].</p></step>
+</steps>
+<p>Instruções: persuadir Israphel e trazer de volta a relíquia de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Antah usou os vestígios do Marchutan para enviá -lo para o local onde Israphel estava hospedado.</p>
+<p> </p>
+<p>Israphel disse que ficou surpreso ao vê -lo neste lugar e que ele tinha algo para lhe contar.</p>
+<p> </p>
+<p>Ele lhe disse a verdade sobre a grande catástrofe, sobre como o mundo estava condenado e como ele queria voltar no tempo.</p>
+<p> </p>
+<p>Você tentou detê -lo para destruir a relíquia de Siel, mas não foi páreo para ele.</p>
+<p> </p>
+<p>No entanto, assim como ele estava prestes a usar a relíquia de Siel, a alma de Siel apareceu, abraçou Israphel e o destruiu junto com a relíquia.</p>
+<p> </p>
+<p>Quando Kahrun descobriu, ele ficou vermelho de raiva e Objetivo pediu que ele não repetisse esses eventos a ninguém por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

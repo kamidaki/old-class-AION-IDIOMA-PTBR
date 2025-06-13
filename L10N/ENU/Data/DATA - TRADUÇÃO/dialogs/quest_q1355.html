@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(É uma pequena chave gravada com chamas.)</p>
+<p> </p>
+<p>(Emana uma energia forte.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrar um especialista."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Faz muito tempo que estou no campo. Estudei o templo de Kyola por várias vidas, mas é diferente pessoalmente.</p>
+<p> </p>
+<p>Estou encontrando tantas relíquias preciosas aqui no templo. Experimentando história com meus próprios olhos e mãos.</p>
+<p> </p>
+<p>Você acabou de vir de dentro?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">"Sim, eu encontrei essa chave no templo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... você encontrou!</p>
+<p> </p>
+<p>Shh, Actaeon, Shh. Isso ... foi exatamente isso que Telêmaco me enviou aqui para encontrar. Esta é a chave para o templo do fogo em ... asmodae. Antes de Atreia ser privada, os dois templos estavam ligados. Eu deveria entregar isso ao comandante. Ele ficará satisfeito por ter acesso a Asmodae diretamente.</p>
+<p> </p>
+<p>Você pode sentir a energia extraordinária da chave? Impresssa quem o carrega-mesmo por um curto período de tempo-aceita a entrada do templo do fogo no porão do templo de Kyola. Você, [%username], não precisará mais dessa chave.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_Actaeon] Sobre a chave.</p></step>
+</steps>
+<p>Você encontrou uma pequena chave no templo de Kyola. Vá e pergunte ao arqueólogo Actaeon sobre isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma pequena chave no templo de Kyola. Você pegou a chave para Actaeon e perguntou a ele sobre isso.</p>
+<p> </p>
+<p>Actaeon examinou a chave e disse que ela vai para o templo de fogo em Asmodae. Ele explicou que qualquer pessoa que tocar a chave poderá entrar no templo do fogo sem a chave.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

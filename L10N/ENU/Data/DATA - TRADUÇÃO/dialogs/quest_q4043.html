@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu sangue está fervendo! Eu sei tudo graças à carta que você restaurou. Agora eu finalmente sei o que aconteceu com minha irmã!</p>
+<p> </p>
+<p>Ela foi seduzida e traída-bloqueada no castelo de Nahor para morrer! Oh Ntuamu!</p>
+<p> </p>
+<p>Eu nunca posso perdoar isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é muito cruel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cruel é a palavra mais suave que eu usaria! Daeva, certamente você deve entender a raiva que sinto? Enganado, assassinado-sua pobre irmã!</p>
+<p> </p>
+<p>Seirens nunca esquece. Seja amor ou raiva, voltamos tanto quanto recebemos.</p>
+<p> </p>
+<p>Por favor ... eu imploro ... me ajude na minha vingança sobre o povo do antigo castelo de Nahor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mas ... eles devem estar mortos agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O povo do antigo castelo de Nahor se tornou morto -vivo. Mesmo agora eles continuam como vampiros e outras abominações.</p>
+<p> </p>
+<p>No entanto, minha raiva deve ser apaziguada. Alguém deve sofrer pela morte solitária da minha irmã! Se desabafar minha raiva em seus cadáveres a pé é a única escolha que tenho, que assim seja!</p>
+<p> </p>
+<p>Daeva, por favor, seja minha espada. Mate os vampiros que antes eram os moradores do antigo castelo de Nahor. Por favor?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Doce vingança será! Vá para [%dic:STR_DIC_W_DF2B_SZ_B2_1]Localizado no centro do lago.</p>
+<p> </p>
+<p>Mate todos no castelo-eles estão mortos ou vivos!</p>
+<p> </p>
+<p>Mostre minha raiva para [%dic:STR_DIC_M_DF2A_VampireD_47_An] Areia [%dic:STR_DIC_M_DF2A_VampireNamedD_47_An] S, Daeva!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É tão bom quanto feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Terei minha vingança, não importa o que esteja no caminho!</p>
+<p> </p>
+<p>Certamente você não pode negar que minha causa é apenas?! Reconsiderar, eu imploro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ntuamu era tolice em não me ouvir, mas eu amei minha irmã. O amor entre Seirens e humanos sempre terminará em tragédia.</p>
+<p> </p>
+<p>A vingança por aqueles que você ama é um dos mandamentos de Seirens.</p>
+<p> </p>
+<p>Daeva, todos os vampiros do antigo castelo de Nahor foram destruídos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que aconteceu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um tipo Daeva. Embora você tenha sido humano, você entende a profundidade da minha raiva e minha necessidade de vingança.</p>
+<p> </p>
+<p>Eu não poderia ter vingado a morte da minha irmã se não fosse por você. Tenho certeza de que suas ações trarão consolo à alma dela.</p>
+<p> </p>
+<p>Obrigado, Daeva.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os vampiros no antigo castelo de Nahor.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_VampireD_47_An]([%2]/6)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_VampireNamedD_47_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_DF2a_Seiren_Sahnu].</p></step>
+</steps>
+<p>Avenge Sahnu e mate os vampiros no antigo castelo de Nahor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao ler a carta restaurada, Sahnu pediu que você a ajudasse a se vingar do povo do Old Nahor Castle por seu papel na morte de sua irmã.</p>
+<p> </p>
+<p>Você matou vampiros vingativos e guarda vampiros no Old Nahor Castle para satisfazer sua raiva. Então Sahnu expressou sua gratidão e disse que esperava que a alma de sua irmã fique mais fácil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

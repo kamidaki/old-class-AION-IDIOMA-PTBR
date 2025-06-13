@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41187</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem alguma medalha de platina sobressalente?</p>
+<p> </p>
+<p>Então você veio ao lugar certo!</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Kahrun]me deu a aprovação de fazer algo pelo bem-estar dos outros.</p>
+<p> </p>
+<p>Se você me trazer 4 medalhas de platina, trocarei por uma medalha de Mithril.</p>
+<p> </p>
+<p>Uma ótima pechincha, ei? Deixe -me saber se você estiver interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, a generosidade de Kahrun realmente não tem limites.</p>
+<p> </p>
+<p>Como ele pode sacrificar tanto o benefício de estranhos ...</p>
+<p> </p>
+<p>Você tem 4 medalhas de platina em você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as medalhas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo, você trouxe as medalhas certas com você!</p>
+<p> </p>
+<p>Aqui, Kahrun oferece essa medalha de Mithril em troca.</p>
+<p> </p>
+<p>Se você tiver mais medalhas de platina, basta trazê -las para mim.</p>
+<p> </p>
+<p>A generosidade de Kahrun não tem limites. Nem mesmo no tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna medalhas de platina.</p>[%collectitem]</step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ajenos].</p></step>
+</steps>
+<p>Ajenos trocará medalhas de platina por medalhas de Mithril. Colete algumas medalhas de platina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial de informações Ajenos disse que trocaria medalhas de platina por uma medalha de Mithril, conforme ordenado por Kahrun.</p>
+<p> </p>
+<p>Como você tinha medalhas de platina sobressalentes que você não podia usar, pegou a oferta e recebeu uma medalha de Mithril.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

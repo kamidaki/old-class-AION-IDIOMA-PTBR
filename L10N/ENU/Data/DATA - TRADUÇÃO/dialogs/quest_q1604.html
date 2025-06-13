@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que não vimos todo o escopo do plano dos lefaristas, [%username].</p>
+<p> </p>
+<p>Eu preciso de mais informações. Normalmente eu despacaria um espião, mas somos abreviados.</p>
+<p> </p>
+<p>Por outro lado, eu tenho uma ideia ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Minha missão, devo decidir aceitar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que não vimos todo o escopo do plano dos lefaristas, [%username].</p>
+<p> </p>
+<p>Eu preciso de mais informações. Normalmente eu despacaria um espião, mas somos abreviados.</p>
+<p> </p>
+<p>Por outro lado, eu tenho uma ideia ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Minha missão, devo decidir aceitar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso que você capture um lefarista [%dic:STR_DIC_M_LehparKnightQ_40_An]. Isso deve nos ajudar a obter uma imagem clara de sua trama rapidamente.</p>
+<p> </p>
+<p>Sei que corremos o risco de inclinar a mão para os lefaristas, mas realmente não há escolha.</p>
+<p> </p>
+<p>Você está pronto para levá -los mais uma vez?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Naturalmente, isso não será fácil. Seus alvos não são tolos, então isso levará um pouco de paciência.</p>
+<p> </p>
+<p>Encontre a [%dic:STR_DIC_M_LehparKnightQ_40_An] e machucar um pouco ele. Ele ficará com raiva o suficiente para segui -lo.</p>
+<p> </p>
+<p>Só não o mate. Lembre -se, homens mortos não contam histórias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trazê -lo de volta vivo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Francamente, você é a única pessoa qualificada para esta missão, [%username].</p>
+<p> </p>
+<p>Você já visitou o centro de pesquisa antes, já lutou contra os lefaristas e conhece o layout.</p>
+<p> </p>
+<p>Pense nisso. Nós realmente precisamos dessas informações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava preocupado que isso não funcionaria, [%username].</p>
+<p> </p>
+<p>Sua saúde é mais precária, mas ele é capaz de responder a perguntas.</p>
+<p> </p>
+<p>Bom trabalho! Obrigado por trazê -lo para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_no;HACTION_SELECT_QUEST_REWARD">"Não é nada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, é algo! Eu não poderia ter feito isso, [%username].</p>
+<p> </p>
+<p>Aceite este sinal de gratidão por sua assistência. Eu gostaria que fosse algo mais substancial, mas estamos no meio de uma selva.</p>
+<p> </p>
+<p>Agora, se você me desculpar, tenho um interrogatório para conduzir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Corte o HP de um[%dic:STR_DIC_M_LehparKnightQ_40_An]pela metade e trazê -lo para [%dic:STR_DIC_N_Hestonos].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Hestonos].</p></step>
+</steps>
+<p>São necessárias informações detalhadas sobre o Centro de Pesquisa Lefarista. Capture um bisbilhoteiro e leve -o para Riley.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Riley pediu que você capturasse um espião vivo e o trazia de volta.</p>
+<p> </p>
+<p>Riley ficou muito feliz com o seu sucesso e o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

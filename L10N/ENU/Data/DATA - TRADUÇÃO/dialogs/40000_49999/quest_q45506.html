@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, pegue isso.</p>
+<p> </p>
+<p>É uma ordem urgente para você, [%username], da cruzada no sangue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p> </p>
+<p>A cruzada sanguínea confirmou a presença de uma Guilda de Elyos em movimento em Morheim e Beluslan. Seus números não são enormes, mas, no entanto, representam uma ameaça para asmodas. Como tal, a cruzada sanguínea está emitindo uma ordem de morte para ser executada imediatamente.</p>
+<p></p>
+<p>1. Mova para interceptar os Elyos em[%dic:STR_DIC_E_DF2_name] e [%dic:STR_DIC_E_DF3_name] e matar pelo menos três de seu número.</p>
+<p></p>
+<p>2. Descarte o inimigo por qualquer meio possível-as táticas robutas são autorizadas para esta missão. Lutar com orgulho. Matar os novatos de Elyos não contará para essa tarefa.</p>
+<p></p>
+<p>3. Quando os inimigos forem mortos, relate -se a [%dic:STR_DIC_N_Tostig].</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma ótima notícia!</p>
+<p> </p>
+<p>UM[%userclass]Como você na vanguarda desta iniciativa, realmente ajudará a nossa direção. As pessoas seguem você, veja? Você é um líder.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles devem seguir seus próprios caminhos".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Eu ... eu vejo.</p>
+<p> </p>
+<p>Eu entendo. Claro, não posso forçá -lo a me ajudar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito. Não posso ajudar agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], você está de volta!</p>
+<p> </p>
+<p>Eu ouço a Guilda Elyos em Morheim e Beluslan encontrou um pouco ... problemas.</p>
+<p> </p>
+<p>Eu não acho que você teve uma mão nisso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles tiveram um visitante inesperado".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hahaha! Eu sabia que poderia contar com você, [%username].</p>
+<p> </p>
+<p>Por favor, receba essa recompensa de seus colegas cruzados e continue esmagando os Twiggies onde quer que eles apareçam.</p>
+<p> </p>
+<p>Sangue para sangue!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Açougueiro[%dic:STR_DIC_E_Daily_2]covardes em[%dic:STR_DIC_E_DF2_name] e [%dic:STR_DIC_E_DF3_name]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Tostig].</p></step>
+</steps>
+<p>Ordem urgente: mate os Elyos em Morheim e Beluslan e relate -se a um agente da Ramo de Reshanta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada Sangue emitiu uma Ordem de Matas Unidas contra a Guilda Elyos percorrendo Morheim e Beluslan.</p>
+<p> </p>
+<p>Você matou os Elyos e relatou a um agente da Ramo de Reshanta para sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

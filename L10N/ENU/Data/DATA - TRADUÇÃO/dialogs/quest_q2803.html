@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! Não acredito que perdemos a fortaleza ocidental de Siel! Bem, vou ver sobre isso.</p>
+<p> </p>
+<p>Nosso problema era a guarnição da fortaleza, mas não faz sentido atacar enquanto o inimigo está no alerta.</p>
+<p> </p>
+<p>Viraremos a maré quando a fortaleza entrar em estado vulnerável.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está pronto?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos manter o Balaur sob controle, mas preciso de ajuda externa para derrotar os Elyos.</p>
+<p> </p>
+<p>Mas uma vez o [%dic:STR_DIC_M_2803_all] está fora do caminho, a recuperação da fortaleza não será difícil.</p>
+<p> </p>
+<p>Você pode nos ajudar, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então vá para a fortaleza ocidental de Siel, observe e pegue seu tempo, [%username]. Ataque assim que a fortaleza estiver vulnerável.</p>
+<p> </p>
+<p>Esmague a Elite Elyos Guarnição, de iniciantes. Traga -me deles[%dic:STR_DIC_I_QUEST_2803a]é como prova que eles se foram.</p>
+<p> </p>
+<p>Os Elyos são astutos. Não diminua sua guarda por um momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Relutante, você está?</p>
+<p> </p>
+<p>Eu entendo. Escalas, este não é apenas um ou dois Elyos, mas entrando em uma fortaleza.</p>
+<p> </p>
+<p>Esta missão é importante. Se você não estiver disposto, encontraremos outra pessoa, mas eu o recebemos se você mudar de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username].</p>
+<p> </p>
+<p>Você já esteve na fortaleza?</p>
+<p> </p>
+<p>Você derrotou o [%dic:STR_DIC_M_2803_all] e me traga [%dic:STR_DIC_I_QUEST_2803a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui ... os grampos de cabelo saqueados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não esteve lá, eu vejo.</p>
+<p> </p>
+<p>Sua missão é crucial para esta vitória, [%username]. Saia e assista aquela fortaleza!</p>
+<p> </p>
+<p>Eu preciso do[%dic:STR_DIC_M_2803_all]roteado e deles[%dic:STR_DIC_I_QUEST_2803a] está na minha mão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez o que prometia e resolveu os Elyos uma perda devastadora.</p>
+<p> </p>
+<p>Você nos deu um passo mais perto de retomar a fortaleza ocidental de Siel, [%username]. Sou grato pelo seu serviço.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_2803_all] e trazer a prova para [%dic:STR_DIC_N_Gnad].</p>[%collectitem]</step>
+</steps>
+<p>As forças de Elyos devem ser enfraquecidas para recuperar a fortaleza ocidental de Siel. Quando a fortaleza entrar em estado vulnerável, derrote a guarnição de Elyos e retorne com os gancho de cabelo de seus guardiões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Para que Ogmund recupere a fortaleza ocidental do Siel perdida para o inimigo, ele deve remover a guarnição defendendo a fortaleza.</p>
+<p> </p>
+<p>A guarnição de Elyos foi especialmente feroz, então Ogmund precisava de ajuda. Você destruiu a guarnição de Elyos e voltou a Ogmund com os gancho de cabelo do Guardian.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

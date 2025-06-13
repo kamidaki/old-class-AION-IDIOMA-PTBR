@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu o cubo Idgel vazio?</p>
+<p> </p>
+<p>Um cubo Idgel ainda é um objeto perigoso, mesmo quando vazio.</p>
+<p> </p>
+<p>[%username], você poderia destruir o [%dic:STR_DIC_N_LDF5b_FOBJ_B2_EmptyIdgel]isso ainda está no[%dic:STR_DIC_W_LDF5b_SZ_B2]?</p>
+<p> </p>
+<p>Temos uma quantidade suficiente para fins de pesquisa e agora devemos impedir que a contaminação se espalhe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Tais objetos perigosos devem ser coletados e descartados adequadamente após o uso.</p>
+<p> </p>
+<p>O estado de contaminação aqui mostra que eles saíram rapidamente após o uso, sem descartar nada.</p>
+<p> </p>
+<p>Esse desperdício perigoso explica por que a contaminação continua acontecendo aqui.</p>
+<p> </p>
+<p>Qual é a situação com o processamento do cubo Idgel vazio?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Obrigado a você, [%username], a propagação da epidemia pode ser interrompida.</p>
+<p> </p>
+<p>Seria bom se nada desconfiado acontecesse agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_N_LDF5b_FOBJ_B2_EmptyIdgel]na região contaminada ([%2]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Sulis_E]%.</p></step>
+</steps>
+<p>Destrua o cubo Idgel que foi jogado fora perto da região contaminada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cumpriu o pedido de Sulis e destruiu o cubo Idgel que foi descartado na área contaminada, interrompendo assim a disseminação da doença.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

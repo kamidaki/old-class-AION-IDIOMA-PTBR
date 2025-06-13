@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que há problemas envolvendo os revolucionários lefaristas perto da vila basfelosa.</p>
+<p> </p>
+<p>O general Suthran descobriu seu esconderijo perto da vila há pouco tempo. É provável que ele apenas deixe o assunto descansar ...</p>
+<p> </p>
+<p>Eu tenho que fazer algo antes que ele me responsabilize.</p>
+<p> </p>
+<p>Encontrar -se [%dic:STR_DIC_N_DF1A_Brodir_E]Na entrada do esconderijo e pergunte a ele sobre o que você poderia fazer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Nokir te enviou?</p>
+<p> </p>
+<p>Bom. O comandante da fortaleza ficará em êxtase quando ouvir que o líder deles foi morto.</p>
+<p> </p>
+<p>Por favor, elimine [%dic:STR_DIC_M_LehparAsChD_15_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada Suthran é uma pessoa muito diligente.</p>
+<p> </p>
+<p>Se você for negligente em seu trabalho, ele ligará para você para prestar contas.</p>
+<p> </p>
+<p>Você eliminou[%dic:STR_DIC_M_LehparAsChD_15_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que você o matou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você o matou, assim!</p>
+<p> </p>
+<p>Não é de surpreender que o Centurion o tenha selecionado, então.</p>
+<p> </p>
+<p>Eu tenho que enviar um relatório sobre a eliminação dos revolucionários lefaristas e seu comandante para a fortaleza imediatamente.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_DF1A_Brodir_E]na entrada do[%dic:STR_DIC_W_DF1A_14].</p></step>
+<step><p visible="[%9]">Eliminar [%dic:STR_DIC_M_LehparAsChD_15_An]([%11]/1).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_DF1A_Brodir_E].</p></step>
+</steps>
+<p>Elimine Sumarhon, líder dos revolucionários lefaristas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nokir temia que ele fosse repreendido pelo comandante da fortaleza se não eliminasse os revolucionários lefaristas. Então você matou o camarada Sumarhon no túmulo dos ladrões e se reportou a Brodir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

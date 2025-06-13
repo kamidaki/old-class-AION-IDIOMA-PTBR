@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bah! Esta carta não é o que eu esperava!</p>
+<p> </p>
+<p>Oh, isso? É uma carta do juiz Anund. Eu esperava que fosse minha transferência iminente para o Pandaemonium, mas contém novas ordens de missão. Vou me livrar dos protetores no templo do céu de Arkanis.</p>
+<p> </p>
+<p>Não faz sentido. Estou coletando informações sobre a falta de Daevas. Por que meus superiores estão me distraindo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"É importante?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O templo do céu de Arkanis é habitado por muitas criaturas brutais-os protetores criados para protegê-lo. Eles atacam todos que se aproximam do templo.</p>
+<p> </p>
+<p>Meu intestino está me dizendo que algo está errado, no entanto. A corte das sombras nunca se importa com coisas como ... bem, de qualquer maneira. Eu gostaria de continuar me concentrando na minha tarefa original.</p>
+<p> </p>
+<p>Você poderia ir ao templo do céu de Arkanis e se livrar de [%dic:STR_DIC_M_SAMD_30_Ae] Areia [%dic:STR_DIC_M_MaidengolemD_30_Ae] está no meu lugar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Essa é uma preocupação a menos. Se você está cuidando do[%dic:STR_DIC_M_SAMD_30_Ae] Areia [%dic:STR_DIC_M_MaidengolemD_30_Ae] S, posso continuar tentando descobrir por que esses Daevas estão faltando.</p>
+<p> </p>
+<p>O templo do céu está na parte ocidental de [%dic:STR_DIC_W_DF2_SUB_C2].</p>
+<p> </p>
+<p>Estou confiando em você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Eu entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está realmente rejeitando meu pedido? Você esqueceu que sou um executor das sombras?</p>
+<p> </p>
+<p>Você pode se arrepender de rejeitar um pedido do Tribunal das Sombras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter isso em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu objetivo é ser juiz em Pandaemonium. Talvez algum dia eu esteja, e você ficará feliz em me ter como amigo.</p>
+<p> </p>
+<p>Você terminou o que eu pedi a você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por matar os Golemas do Templo e Cariatídeos no Templo do Céu de Arkanis.</p>
+<p> </p>
+<p>Não sei por que o juiz Shadow Anund lhe deu essa tarefa, mas você a completou bem.</p>
+<p> </p>
+<p>Um sinal da minha gratidão. Espero que gostem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos protetores do templo do céu de Arkanis.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_SAMD_30_Ae]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_MaidengolemD_30_Ae]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Gangleri].</p></step>
+</steps>
+<p>Ajude Gangleri, o executor das sombras, a se livrar de Arkanis Mugolems e Ruins Caryatids, os protetores que guardam o templo do céu de Arkanis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gangleri disse que recebeu um pedido de Anund para garantir o templo do céu de Arkanis e pediu sua ajuda.</p>
+<p> </p>
+<p>Quando você se livrou de Arkanis Mugolems e arruina cariatídeos e voltou para ele, ele expressou sua gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Bom tempo. Eu tenho uma tarefa muito sensível para você. Chegou a mim dos níveis mais altos de Pandaemonium.</p>
+<p> </p>
+<p>Eu te aviso agora: o risco será ótimo. Mas a glória e as recompensas serão igualmente ótimas ... desde que você tenha sucesso, é claro.</p>
+<p> </p>
+<p>Eu hesitei em dar essa missão a qualquer pessoa, francamente. Mas se alguém pode lidar com isso, acredito que você pode.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que precisa ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisaria entrar em Elysea, para a região de Hiário. No sudeste é um lugar chamado ilha da eternidade.</p>
+<p> </p>
+<p>Parece inacessível, mas na verdade há uma ponte invisível conectando -a ao continente. Você precisa encontrá -lo e aceitá -lo.</p>
+<p> </p>
+<p>Lá, em três das principais massas terrestres, você encontrará seus alvos: três kerubar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Espere, esta missão importante é sobre querrubes?!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes não são berbadores comuns. O poder que eles mantêm é incrível, além de alguns Daevas. Não sabemos como eles conseguiram, o que torna ainda mais vital que eles sejam destruídos.</p>
+<p> </p>
+<p>Eles podem permanecer na ilha da eternidade agora, mas quem sabe o que fará se ganhar poder? Eles já têm seguidores entre os berros.</p>
+<p> </p>
+<p>Este é um julgamento perigoso. Você precisará considerar cuidadosamente antes de aceitar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não vou fingir que não estou um pouco apreensivo, mas estou feliz. [%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah], Assim, [%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah], e [%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]Deve ser tratado, não importa o custo.</p>
+<p> </p>
+<p>Você estará no meio do território inimigo, por isso é preciso dizer que você provavelmente não deveria ir sozinho.</p>
+<p> </p>
+<p>Eu estarei esperando o seu retorno seguro. Que Azphel cuide de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter sucesso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não culpo você. Se você tem a menor hesitação, não deve aceitar esta missão.</p>
+<p> </p>
+<p>Ir a Elysea e envolver esses berros sem confiança inabalável será mortal. Que eu posso garantir.</p>
+<p> </p>
+<p>Se você achar que muda de idéia, volte. Caso contrário, garanto que acho que não menos de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma coisa que todos os asmodianos que estiveram em Elysea me dizem é que a situação é tão ruim lá quanto aqui.</p>
+<p> </p>
+<p>É reconfortante, até certo ponto, mas também perigoso. Imagine o que os Balaur ou os lefaristas poderiam fazer com todos os recursos da Elysea à sua disposição.</p>
+<p> </p>
+<p>Mas não importa isso agora. Estou satisfeito por ver você voltar. Isso deve significar que a missão foi cumprida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu nunca vou subestimar os berros novamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito sábio. Com energia como Drana à espreita, mesmo o incômodo mais pequeno pode se tornar uma ameaça mortal.</p>
+<p> </p>
+<p>Ainda sabemos pouco sobre os três berros que você acabou de derrotar. Espero que eles não tenham poderes que lhes permitam retornar.</p>
+<p> </p>
+<p>Você foi acima e além do chamado de dever desta vez, [%username]. Aceite isso com minha solene gratidão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lutar contra os guardiões de [%dic:STR_DIC_E_LF3_name]Ilha da eternidade.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]([%8]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Nerthus].</p></step>
+</steps>
+<p>Infiltrar -se na região de Heiron em Elysea e derrotar os três guardiões da ilha da eternidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada Nerita solicitou que você se infilumasse e matasse os Guardiões do Baininho na ilha da eternidade.</p>
+<p> </p>
+<p>Quando você retornou em segurança da sua infiltração para a Elysea e luta com os querubinhos, você foi muito elogiado e luxuosamente recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

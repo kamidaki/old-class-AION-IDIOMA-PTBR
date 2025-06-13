@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já ouviu falar que o templo carmesim foi capturado pelo inimigo?</p>
+<p> </p>
+<p>Uma batalha feroz ocorreu entre nós, os Elyos e o Balaur nesta área. Não podemos permitir que o Templo Carmesim e a Cidadela de Vorgaltem caam nas mãos inimigas.</p>
+<p> </p>
+<p>Nossa situação piorou consideravelmente desde que perdemos o templo carmesim. Isso reduz nossas chances de vitória, mas não podemos deixar isso afetar nossa determinação.</p>
+<p> </p>
+<p>Chegamos tão longe sob a liderança de Lord Marchutan, para que não possamos desistir agora!</p>
+<p> </p>
+<p>Temos que reconquistar o Templo Carmesim e, assim, mudar a maré da batalha a nosso favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vorgaltem Battlefield é um pesadelo militar.</p>
+<p> </p>
+<p>Isso ocorre principalmente porque o exército de Beritra e os Elyos estão lutando lá.</p>
+<p> </p>
+<p>[%username], se você provar sua bravura neste campo de assassinato caótico, sua fama se espalhará por toda parte. Tenho certeza que você emergirá vitorioso da batalha, [%username]!</p>
+<p> </p>
+<p>Reúna aliados em que você pode confiar e formar uma aliança. Marcha no templo carmesim e derrote o general do guardião inimigo.</p>
+<p> </p>
+<p>Lord Marchutan olha para você. Então faça um esforço, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não será fácil eliminar o [%dic:STR_DIC_M_QUEST_21309].</p>
+<p> </p>
+<p>[%username], você não precisa ter medo, porque não está sozinho. Muitos outros Daevas e Legiões inteiras participarão desta missão.</p>
+<p> </p>
+<p>Uma vez que o general do guardião inimigo é derrotado e o templo carmesim é reconquistado, a tropa da Expedição de Pandaemonium enviará Cozett ao Templo Carmesim.</p>
+<p> </p>
+<p>[%username], por favor, fale com ela, porque tenho certeza de que ela lhe dará uma recompensa.</p>
+<p> </p>
+<p>Desejo -lhe sorte e sucesso. Que o destino esteja do seu lado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entende que não há nada mais importante agora do que retomar o templo carmesim?</p>
+<p> </p>
+<p>[%username], se não recuperarmos a fortaleza, isso significa uma derrota esmagadora para nós.</p>
+<p> </p>
+<p>Se perdermos a batalha, isso significará nossa queda. [%username], por favor, reconsidere!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Só conseguimos recuperar o templo carmesim, porque muitos Daevas participaram dessa missão.</p>
+<p> </p>
+<p>A fortaleza era extremamente difícil de tomar, então temos que defendê -la com todas as nossas forças.</p>
+<p> </p>
+<p>Há muito a ser feito, como fazer reparos, reabastecer bens consumidos, guardar a vizinhança da fortaleza e muitas outras tarefas.</p>
+<p> </p>
+<p>Também é meu trabalho recompensar aqueles que realizaram grandes ações durante a batalha da fortaleza. [%username], você também realizou grandes ações durante a batalha pelo Templo Carmesim, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], suas realizações são louváveis.</p>
+<p> </p>
+<p>Aqui está sua merecida recompensa.</p>
+<p> </p>
+<p>Estou pedindo que você continue trabalhando para proteger o templo carmesim e garantir uma vitória asmodiana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Venceu o guardião inimigo para recuperar o [%dic:STR_DIC_W_DF4_SZ_3021_A].</p>
+<p visible="[%0]">Eliminar o [%dic:STR_DIC_M_QUEST_21309]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Cozett].</p></step>
+</steps>
+<p>O templo carmesim caiu para o inimigo. Derrote o general guardião e retomar o templo carmesim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Raeyena pediu que você participasse da operação para reconquistar o Templo Carmesim.</p>
+<p> </p>
+<p>Então você marchou lá junto com seus companheiros de confiança e eliminou o general do guardião inimigo. Você então foi e se relatou a Cozett.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitas preocupações, Daeva ... muitas preocupações.</p>
+<p> </p>
+<p>Huarinriner veio a Beluslan para procurar tesouros, para fazer minha fortuna. Mas olhe em volta. Onde está o tesouro? Onde estão as riquezas?</p>
+<p> </p>
+<p>Então Huarinrinerk olha mais longe daqui, faz longas caminhadas ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Então você encontrou algo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak! Daeva inteligente!</p>
+<p> </p>
+<p>Sim, Huarinrinerk encontrou algo, sim. Templo velho, muito velho ... antigo! Templo antigo no topo do vale da névoa.</p>
+<p> </p>
+<p>Decorações, pilares, gravuras, estátuas ... muito antigas, muito valiosas. Só pode imaginar todas as coisas dentro do templo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você não olhou para dentro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não poderia. Muito animais demais. Veja, olhe aqui, e aqui! Arranhões ... sangue shugo! Nyerk ....</p>
+<p> </p>
+<p>Mas se alguém pudesse limpar os animais para longe do templo, então Huarinriner pode encontrar os tesouros lá dentro! Você pode ajudar, Daeva, sim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom bem! Agora vá e mate [%dic:STR_DIC_M_PretorVioletD_36_An] Areia [%dic:STR_DIC_M_KuillusD_36_An] S. Especialmente os Pretors, sim? Odeio suas garras!</p>
+<p> </p>
+<p>Oh sim! Há um[%dic:STR_DIC_OBJ_BigRock_Q2551]Bloqueando a entrada do templo!  Mate isso se puder! SIM SIM!</p>
+<p> </p>
+<p>Agora vá e seja rápido sobre isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenha minha recompensa pronta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Gah! Multar!</p>
+<p> </p>
+<p>Espere! Daeva é melhor não estar planejando ir atrás das costas de Huarinrinerk. Olhos shugo veem tudo, [%userclass]-S-Shugo Minds sabe tudo.</p>
+<p> </p>
+<p>Lembre -se disso, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou tremendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh! De volta tão cedo? Trabalho tão rápido!</p>
+<p> </p>
+<p>Daeva fez tudo o que Huarinrinerk perguntou, sim? Criaturas matadas, mataram Big Rock Thing, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak! Ficaria as patas juntas, mas ainda assim elas estão doloridas por fugir de Kirris ....</p>
+<p> </p>
+<p>Aqui está a sua recompensa Daeva! Pode não parecer muito, mas o trabalho duro está por vir-você apenas tornou possível o trabalho duro, sim sim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os obstáculos no caminho para o templo do vale de Mist.</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_M_PretorVioletD_36_An]([%2]/4).</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_M_KuillusD_36_An]([%5]/4).</p>
+<p visible="[%0]">Eliminar o [%dic:STR_DIC_OBJ_BigRock_Q2551]([%8]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_DF3_12].</p></step>
+</steps>
+<p>Elimine os obstáculos ao redor do templo para que o Huarinriner possa pesquisá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Huarinriner tropeçou em um antigo templo no vale da névoa, que poderia muito bem conter tesouro.</p>
+<p> </p>
+<p>No entanto, ela não foi capaz de procurar nenhum tesouro por causa dos escoteiros e da armadura preta Kirrins ao redor do templo, além de uma enorme rocha bloqueando a entrada do templo. Você concordou em remover os obstáculos.</p>
+<p> </p>
+<p>Você removeu a rocha, os precedentes e os Kirris e voltou para receber uma recompensa muito menor do que o esperado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

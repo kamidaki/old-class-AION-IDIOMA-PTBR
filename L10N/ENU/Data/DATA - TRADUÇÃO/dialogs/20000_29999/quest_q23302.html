@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], precisamos da sua ajuda.</p>
+<p> </p>
+<p>Por favor, mate o [%dic:STR_DIC_E_LDF5b_B2_VriZomb]que foram criados como resultado dos experimentos de Beritra.</p>
+<p> </p>
+<p>Sendo infectados, eles precisam ser eliminados de qualquer maneira, mas estão se comportando de maneira muito agressiva.</p>
+<p> </p>
+<p>Talvez porque eles costumavam ser Balaur.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece -me que o exército de Beritra produziu intencionalmente os zumbis.</p>
+<p> </p>
+<p>Afinal, eles não podem sentir dor porque não estão mais vivendo e estão constantemente no ataque.</p>
+<p> </p>
+<p>Se continuar, eles podem até penetrar no território ocupado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Graças à sua ajuda, o número de zumbis foi visivelmente reduzido.</p>
+<p> </p>
+<p>Não é muito, mas tenho uma recompensa por você, [%username]</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_LDF5b_B2_VriZomb]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard10_D]%.</p></step>
+</steps>
+<p>Mate o zumbi envenenado de Drakan, que está atacando violentamente você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herbo pediu que você matasse os zumbis de Drakan contaminados, que atacam como berserkers e se tornaram um problema.</p>
+<p> </p>
+<p>Você eliminou os zumbis de Drakan infectados, conforme instruído e foi recompensado ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

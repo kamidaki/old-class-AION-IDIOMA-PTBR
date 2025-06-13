@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu odeio perguntar a você, mas você pode obter as armas querubianas que Coeus precisa?</p>
+<p> </p>
+<p>Devo um favor a ele e, como você viu, ele é um pouco difícil de lidar.</p>
+<p> </p>
+<p>Além disso, não há mais ninguém que eu possa pedir para ir até o santuário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso ajudar, com certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Antes de se comprometer, você deve saber que nem todos os querbianos carregam as armas que ele deseja.</p>
+<p> </p>
+<p>Você pode ter que combater muitos lutadores de querrubianos bem armados para concluir esta tarefa.</p>
+<p> </p>
+<p>É muito para perguntar? Você pode me ajudar a ajudar Coeus?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava certo. Eu sabia que você veria o trabalho até o fim.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_Cherubim2Wp_24_n] S na lama pútrida terá mais probabilidade de levar [%dic:STR_DIC_I_QUEST_1480a].</p>
+<p> </p>
+<p>Quando você conseguir um, não perca tempo correndo de volta para mim. Entregue diretamente para [%dic:STR_DIC_N_Coeus].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não pense em outro pensamento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... algo mais urgente surgiu?</p>
+<p> </p>
+<p>Eu entendo, mas Coeus ....</p>
+<p> </p>
+<p>Isso não será fácil. Mas vou encontrar uma maneira de fazer todos felizes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você é o que enviei para conseguir [%dic:STR_DIC_I_QUEST_1480a].</p>
+<p> </p>
+<p>Você conseguiu um?</p>
+<p> </p>
+<p>Entregue, sou um Daeva ocupado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu também sou!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você está aqui em santuário sobre outros negócios, deve ser sobre isso e parar de perder meu tempo.</p>
+<p> </p>
+<p>Eu pensei que você trouxe a arma do querrubiano. Meu estudo está parado sem ele.</p>
+<p> </p>
+<p>Você está planejando trazê -lo, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu fiz uma promessa, eu vou trazê -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, essa é uma das armas que esses querbianos usam? Esta espada é elaborada: o padrão detalhado, a lâmina de lâmina nítida.</p>
+<p> </p>
+<p>Eles podem ser mais avançados do que eu pensava. Merece mais estudos.</p>
+<p> </p>
+<p>Afinal, você não é completamente inútil. Obrigado por trazer isso para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar uma arma de um[%dic:STR_DIC_M_Cherubim2Wp_24_n] e leve para [%dic:STR_DIC_N_Coeus].</p>[%collectitem]</step>
+</steps>
+<p>Você prometeu derrotar um lutador querrubiano na lama pútrida e levar sua arma para Coeus em santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Coeus queria uma arma querrubiana, mas quando Memnes explicou que nem todos os querubianos carregavam armas, você caçou um lutador de querrubianos na lama pútrida.</p>
+<p> </p>
+<p>Você levou a arma para Coeus em santuário, para que ele pudesse continuar seus estudos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

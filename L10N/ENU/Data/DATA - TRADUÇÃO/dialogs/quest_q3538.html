@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3538</questid> <questname>???</questname> <questtype>미입력</questtype> </questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mal posso esperar pela ordem para acabar com essas Krall.</p>
+<p> </p>
+<p>Se tivemos tropas suficientes, podemos destruir o Balaur e Krall de uma só vez, caíram!</p>
+<p> </p>
+<p>E venceria apenas parado aqui guardando o observatório. Tedioso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu posso ver que você é um homem de ação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você apostou que eu estou! Fica tão frustrante basicamente não fazendo nada o dia todo.</p>
+<p> </p>
+<p>Talvez eles mudassem nossas ordens se o caminho para a vila de Kishar fosse um pouco mais estável.</p>
+<p> </p>
+<p>Hmm, se limparmos as fontes de perigo nos pântanos ao redor da vila, isso pode fazer o truque.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu gosto do seu pensamento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_W_LF3_SZ_D2] está cheio de perigos, mas o [%dic:STR_DIC_M_LF3Mudthorn_33_An] S são particularmente cruéis.</p>
+<p> </p>
+<p>Eles o confundem cuspindo gosma verde na sua cara e depois tentam arrastá -lo para o pântano para acabar com você. Nojento.</p>
+<p> </p>
+<p>Você estaria disposto a tentar limpá -los do pântano?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver tanto entusiasmo.</p>
+<p> </p>
+<p>Uma vez o [%dic:STR_DIC_M_LF3Mudthorn_33_An] S se foram, será um estalo para marcar para a vila de Kishar por algum Krall batendo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estar de volta a um jiffy."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você acha que nunca teremos ordens para acabar com a Krall? Mesmo que a rota para a vila de Kishar esteja garantida?</p>
+<p> </p>
+<p>Possivelmente, mas não podemos simplesmente continuar sentados aqui sem fazer nada. Vamos atrofiar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você já considerou meditação?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou o cuspir Mudthorns?</p>
+<p> </p>
+<p>Parece que você lama lutou pelo pântano.</p>
+<p> </p>
+<p>Tenho certeza que você venceu o dia, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muddy, mas satisfatório."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os pântanos devem ser fáceis de atravessar agora.</p>
+<p> </p>
+<p>Vou deixar o Centurion saber que a rota para a vila de Kishar foi limpa, e aposto que ele considerará ordenar que enfrentemos a Krall.</p>
+<p> </p>
+<p>Incrível! Obrigado pela ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LF3Mudthorn_33_An]que vivem no pântano. ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gairos].</p></step>
+</steps>
+<p>Mate o espinheiro de lama para tornar o pântano preto mais seguro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gairos acredita que a ordem de acabar com a Krall não estava sendo dada porque o caminho para a vila de Kishar era muito perigoso.</p>
+<p> </p>
+<p>Você caçou cuspindo mordhorns no pântano de lágrimas pretas para garantir a rota para a vila de Kishar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

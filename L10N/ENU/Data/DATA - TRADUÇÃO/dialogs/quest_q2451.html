@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus superiores parecem pensar que os deveres aqui não são suficientes para me manter ocupado. Eles ordenaram que eu colecionasse minério de titânio entre as patrulhas e o enviasse para eles. Eles dizem que é necessário para as ofertas do templo em Pandaemonium.</p>
+<p> </p>
+<p>Mas essa é a única vez que descanso. Não sou preguiçoso, lembre -se, mas todo mundo precisa de um tempo de vez em quando!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro, mas alguém tem que pegar esse minério."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É claro que alguém tem que fazer isso-mas está fora de contato com a realidade da situação aqui.</p>
+<p> </p>
+<p>Não é de se esperar que saíssem e reunissem minério com todas as outras tarefas. Eu nem sei como é o bem de minério. Eu não sou mineiro!</p>
+<p> </p>
+<p>Você pode me dar uma mão, [%username]? Vou pagar se você pode reunir o minério de titânio para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. 10[%dic:STR_DIC_G_metal_n_c_20a], se você quiser.</p>
+<p> </p>
+<p>Há minério de titânio em todo o Morheim, mas há uma quantidade particularmente grande entre o deserto de Salintus e o campo de neve.</p>
+<p> </p>
+<p>Muitas vezes, é encontrado entre pedras, e é por isso que você deve olhar com muito cuidado para as rochas na beira das montanhas.</p>
+<p> </p>
+<p>Bem, estou contando com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto com o minério em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixa para lá. Você deve ter outras coisas para atender, [%username].</p>
+<p> </p>
+<p>Acho que devo pedir a outra pessoa para me ajudar com este minério.</p>
+<p> </p>
+<p>Alguns dias não vale a pena sair da cama ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sei o que você quer dizer!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou isso em breve?</p>
+<p> </p>
+<p>Não faz muito tempo que você saiu ...</p>
+<p> </p>
+<p>Você tem o minério?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que encontrei até agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que não me deixei claro o suficiente.</p>
+<p> </p>
+<p>Eu pedi 10[%dic:STR_DIC_G_metal_n_c_20a].</p>
+<p> </p>
+<p>Há muito minério de titânio no campo de neve de Morheim e no deserto de Salintus. Então, vá lá e me pegue um pouco.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve ser suficiente para enviar ao Pandaemonium para ofertas do templo. E você me salvou muito tempo!</p>
+<p> </p>
+<p>Eu sabia que escolhi a pessoa certa, [%username]! Aqui está o pagamento que prometi.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_G_metal_n_c_20a] e leve para [%dic:STR_DIC_N_Thurnberg].</p>[%collectitem]</step>
+</steps>
+<p>Reúna o minério de titânio para Thurnberg, que está ocupado com outros deveres.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Thurnberg estava preocupado porque não teve tempo de obter minério de titânio porque tinha muitos outros deveres para cuidar.</p>
+<p> </p>
+<p>Você adquiriu minério de titânio para ele, e ele ficou agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

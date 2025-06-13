@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>Recebedor: Trabalhador temporário[%username]</p>
+<p></p>
+<p>Tarefa: Mais *** são necessários para produzir armas, então vá para a mina, obtenha 5 pedaços de aço puro e levá -los à filial.</p>
+<p></p>
+<p>Post Administrativo: Silverine Limited Branch Office na parte sul de Katalam</p>
+<p></p>
+<p>Essa tarefa conta para a avaliação para um cargo permanente e o Daeva pode receber pontos extras, dependendo dos resultados. Fazer um bom trabalho vale a pena o de Daeva, Ak.</p>
+<p> </p>
+<p>Danurinerk, gerente de recursos da equipe da Silverine Limited</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa tarefa foi fácil, não foi, AK?</p>
+<p> </p>
+<p>Afinal, tudo o que Daeva precisava fazer era reunir o aço que o skurv havia empilhado em seus vagões.</p>
+<p> </p>
+<p>Por favor, dê isso o que Daeva trouxe para Shugo, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o aço.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que Daeva estava fazendo o tempo todo, AK?</p>
+<p> </p>
+<p>Daeva não quer ter uma posição permanente? Essa é uma razão para o demérito.</p>
+<p> </p>
+<p>Shugo será brando desta vez. Basta pegar os 5 pedaços de aço puro como você foi informado, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos dar uma olhada. Sim, isso se parece com aço de alta qualidade.</p>
+<p> </p>
+<p>As flechas feitas com esse material certamente cairão bem com os clientes, AK.</p>
+<p> </p>
+<p>O skurv? Daeva não precisa se preocupar com eles.</p>
+<p> </p>
+<p>A mineração não será muito afetada se houver alguns menos deles.</p>
+<p> </p>
+<p>E há todo um envio de Skurv entrando no navio de Morheim novamente hoje, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha aço dos vagões de minério na mina *** e leve -o para a filial de Silverine Limited, na parte sul de Katalam.</p>[%collectitem]</step>
+</steps>
+<p>Você recebeu instruções da Silverine Limited. Leia -os e age.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois de reunir o aço puro e o trouxe para a filial de Silverine Limited, na parte sul de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

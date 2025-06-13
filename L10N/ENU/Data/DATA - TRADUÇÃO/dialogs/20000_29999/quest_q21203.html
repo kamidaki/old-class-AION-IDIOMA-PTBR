@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]. Meus amigos em Pandaemonium têm elogios por você. Fico feliz em finalmente encontrar um Daeva tão eminente.</p>
+<p> </p>
+<p>Presumo que você esteja aqui sobre a fazenda Drana Twilight? Lugar explodido é uma ameaça.</p>
+<p> </p>
+<p>Você sabe .... Talvez essa seja uma oportunidade de cooperação mútua.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou ouvindo ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós dois estamos depois da mesma coisa-viciante contra o Balaur. A fazenda Twilight Drana está no caminho dessa vitória.</p>
+<p> </p>
+<p>Viemos aqui para observar, mas recebemos ordens para atacar também quando capazes. Mas, como você pode ver, estou com pouca mão de obra no momento.</p>
+<p> </p>
+<p>Se você nos ajudasse a atacar a fazenda Twilight Drana, eu me comprometeria e a meus homens a ajudá -lo em troca quando surgir a necessidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sugiro que comecemos com[%dic:STR_DIC_M_DF4_Spaller_55_An] S. Você pode tê -los visto em Dark Poeta.</p>
+<p> </p>
+<p>O Balaur os usa para "minerar" Drana. As ferramentas comuns não estão à altura da tarefa. Se esses vermes fossem eliminados, isso retiraria severamente a produção de Drana.</p>
+<p> </p>
+<p>O Balaur também criou um "capataz" inteligente para esses vermes chamados[%dic:STR_DIC_M_Spaller_NmdQ_55_An]. É vital que seja destruído também.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Suponho que pode não ser do seu interesse ficar muito enredado com outras operações.</p>
+<p> </p>
+<p>Se você está confiante em suas habilidades, essa pode até ser a melhor aposta.</p>
+<p> </p>
+<p>Por favor, volte se você mudar de idéia. Na ausência de qualquer acordo, somos companheiros de asmodianos e poderíamos usar uma mão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu certamente vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você gostou da fazenda Drana Twilight? Lugar vil, não é?</p>
+<p> </p>
+<p>Aqui, por favor, descanse. Enviei comida e bebida-você parece que precisa!</p>
+<p> </p>
+<p>Por favor, relate sua missão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um sucesso não qualificado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua reputação é totalmente obtida, no que me diz respeito. Sem Xalvius e esses vermes, o Balaur estará lutando para encontrar suas cotas.</p>
+<p> </p>
+<p>Temos mais que precisa ser feito-deixe-me saber quando você está pronto. Enquanto isso, saboreie sua vitória.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Exterminar os vermes que reuniam Drana na fazenda Twilight Drana.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_Spaller_55_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Spaller_NmdQ_55_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Geeze].</p></step>
+</steps>
+<p>Pare a produção de Drana do Balaur, exterminando Drana reunindo vermes, incluindo o "líder" Xalvius, na fazenda Twilight Drana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vegrim ofereceu cooperação mútua em troca de concluir missões para ele.</p>
+<p> </p>
+<p>O primeiro foi exterminar os vermes de coleta de Drana na fazenda Twilight Drana. O "líder" de Worms, Xalvius, também era uma ameaça de ser alvo.</p>
+<p> </p>
+<p>Você conseguiu destruir os vermes e voltou aos louvores de Vegrim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

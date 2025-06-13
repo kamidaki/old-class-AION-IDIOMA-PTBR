@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi um relatório dizendo que os Daevas haviam visto o artefato no bastião lefarista durante sua investigação.</p>
+<p> </p>
+<p>Pretendemos destruir o artefato para impedir que os revolucionários lefaristas usem seu poder para construir sua base. Infelizmente, os revolucionários lefaristas roubaram a ordem que contém os planos de destruir o artefato!</p>
+<p> </p>
+<p>Por favor, vá para o posto avançado de Kuriullu imediatamente e recupere a ordem de destruição roubada com[%dic:STR_DIC_N_Laigas]' ajuda.</p>
+<p> </p>
+<p>A ordem foi escrita em cifra, por isso levará os revolucionários lefaristas um pouco para decodificá -la. Ainda assim, não devemos perder tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p>Você precisa da minha ajuda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você passa as palavras de Telemachus.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava prestes a enviar uma mensagem.</p>
+<p> </p>
+<p>Naturalmente, o conteúdo da ordem é codificado, mas seria extremamente perigoso se um item tão importante caísse nas mãos de nossos inimigos.</p>
+<p> </p>
+<p>Suspeito que alguém que estivesse nas proximidades do artefato roubado.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LehparKn_40_An] e descubra se ele tem o [%dic:STR_DIC_I_quest_3340a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta. Você matou o comandante de defesa lefarista?</p>
+<p> </p>
+<p>Vendo que ele está sempre cercado por seus capangas, tenho certeza de que não foi uma tarefa fácil.</p>
+<p> </p>
+<p>O comandante de defesa lefarista tinha a ordem de destruição?</p>
+<p> </p>
+<p>Ele deve ter tido isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a ordem de destruição.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como esperado, você concluiu a tarefa perfeitamente.</p>
+<p> </p>
+<p>[%username], Acho que você pode até ser forte o suficiente para entrar em batalha sozinho!</p>
+<p> </p>
+<p>Vamos passar para o próximo estágio de nossa estratégia imediatamente.</p>
+<p> </p>
+<p>Vou enviar uma mensagem para a fortaleza.</p>
+<p> </p>
+<p>A General da Brigada Telemachus pode relaxar agora.</p>
+<p> </p>
+<p>Aqui, isso é uma recompensa para você, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Laigas].</p></step>
+<step><p visible="[%3]">Mate o [%dic:STR_DIC_M_LehparKn_40_An], encontre o [%dic:STR_DIC_I_quest_3340a] e trazê -lo para [%dic:STR_DIC_N_Laigas].</p>[%collectitem]</step>
+</steps>
+<p>Mate o comandante da defesa lefarista e traga a ordem de destruição de Laigas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Telêmaco disse que os revolucionários lefaristas haviam roubado ordens que continham parte dos planos de destruir o artefato roubado. Ele pediu que você falasse com Laigas sobre recuperar o documento.</p>
+<p> </p>
+<p>Quando você passou as palavras de Telemachus para Laigas, ele disse que tinha uma suspeita. Ele ordenou que você eliminasse o comandante de defesa lefarista e verificasse se ele tinha os pedidos.</p>
+<p> </p>
+<p>Você eliminou o comandante da defesa lefarista e recuperou as ordens. Quando você os trouxe para Laigas, ele disse que a operação precisaria ser realizada rapidamente e que ele enviaria uma mensagem apropriada para a fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

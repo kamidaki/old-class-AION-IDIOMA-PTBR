@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se quisermos usar a lasca abissal em nossa vantagem, precisamos remover quaisquer obstáculos em nosso caminho.</p>
+<p> </p>
+<p>A primeira coisa que precisamos fazer é nos livrar desses fragmentos de orkanimum.</p>
+<p> </p>
+<p>As criaturas que nascem dos fragmentos de orkanimum também são uma preocupação, mas ... remove os fragmentos, remova as criaturas, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você tem alguma experiência anterior na lasca abissal, [%username], então eu gostaria que você liderasse esta operação para mim.</p>
+<p> </p>
+<p>Enviar uma costa rosa seria uma perda de tempo. Eu preciso de um lutador veterano lidar com isso.</p>
+<p> </p>
+<p>Você pode ter alguns problemas para montar uma equipe para entrar lá, mas eu preciso de você. Posso contar com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você, [%username].</p>
+<p> </p>
+<p>Levar a passagem para a lasca abissais e livrar -se de todo e qualquer [%dic:STR_DIC_OBJ_IDAbRe_Core_Seed] S você encontra. Isso deve esclarecer os trabalhos para nós.</p>
+<p> </p>
+<p>Lembre -se, a maioria parece estar nascendo da destruição de um[%dic:STR_DIC_M_IDAbRe_Core_SilikaCannon_Ra_55_Ah], então esteja em sua guarda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar das coisas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiz algo para desconteí -lo, [%username]?</p>
+<p> </p>
+<p>Eu dei a você uma das missões mais importantes que temos em Inggison e você o recusa tão casualmente quanto afastar moscas da mesa.</p>
+<p> </p>
+<p>Eu terminei com você ... Feito! Eu nem quero olhar para você agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é um testador do que um shulack cansado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, como foi seu tempo na lasca abissal?</p>
+<p> </p>
+<p>Você acentuou nosso pequeno problema de fragmento de orkanimum?</p>
+<p> </p>
+<p>Disponique todos os detalhes saborosos, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu destruí o máximo que pude encontrar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bravo, [%username], Bravo!</p>
+<p> </p>
+<p>Mas receio que os fragmentos de orkanimum sejam mais difíceis de encontrar do que um belo asmodiano. As fendas escuras são o melhor amigo de um fragmento.</p>
+<p> </p>
+<p>Se você se encontrar com algum tempo livre, eu poderia usar sua ajuda lá novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_IDAbRe_Core_Seed] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li].</p></step>
+</steps>
+<p>As criaturas estão nascendo de fragmentos de orkanimum na lasca abissal. Destruir os fragmentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aratus disse que as criaturas estavam atrapalhando as operações dentro da lasca abissal.</p>
+<p> </p>
+<p>Então você destruiu os fragmentos de orkanimum que criaram essas criaturas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

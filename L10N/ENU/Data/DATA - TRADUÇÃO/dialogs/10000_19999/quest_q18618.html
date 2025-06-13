@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta é uma vitrine para a coleção de armas da Kaliga.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Algumas armas bonitas lá dentro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você vê uma espada maravilhosa na coleção.)</p>
+<p></p>
+<p>(Abra o estojo para dar uma olhada mais de perto?)</p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A vitrine está bem travada.)</p>
+<p></p>
+<p>(Abra com a chave da Kaliga.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Essa chave deve se encaixar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Após uma inspeção mais detalhada, as armas parecem antigas e defeituosas.)</p>
+<p> </p>
+<p>(É melhor você deixá -los lá.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É como uma mercadoria Shugo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(A vitrine está bem travada.)</p>
+<p></p>
+<p>(Abra com a chave da Kaliga.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Essa chave deve funcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(A vitrine está bem travada.)</p>
+<p></p>
+<p>(Descubra se a Kaliga tem a chave.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Onde está Kaliga?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A vitrine aberta!)</p>
+<p></p>
+<p>(Retire a espada e coloque -a no seu cubo.)</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use a chave de Kaliga para abrir seu estojo de arma.</p>[%collectitem]</step>
+</steps>
+<p>Use a chave de Kaliga para abrir sua caixa de armas e pegar uma arma que você gosta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe a chave de Kaliga para a vitrine de suas armas.</p>
+<p></p>
+<p>Você abriu o estojo e pegou uma arma que você gostou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

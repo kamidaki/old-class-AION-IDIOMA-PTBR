@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], sendo tão ansioso quanto você, tenho certeza de que gostaria de contribuir para a nossa vitória em Vengar, correto?</p>
+<p> </p>
+<p>Você nos ajudaria a proteger a área ao redor das ruínas de Jotun?</p>
+<p> </p>
+<p>Você só tem que eliminar o [plur][%dic:STR_DIC_M_DF5_I_Starcrab_63_n], o [plur][%dic:STR_DIC_M_DF5_I_Centipede_63_n], o [plur][%dic:STR_DIC_M_DF5_I_Condor_63_An] e o [plur][%dic:STR_DIC_M_DF5_I_Cyclops_Worker_63_An]. Lembre -se de coletar prova do seu sucesso.</p>
+<p> </p>
+<p>Se você realizar de maneira confiável uma tarefa após a outra, em breve conquistaremos todo o Vengar.</p>
+<p> </p>
+<p>Por favor, faça um esforço!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur e os Elyos estão causando problemas em Vengar. O que piora é que também não podemos despachar nenhuma tropa, porque não conhecemos esse terreno.</p>
+<p> </p>
+<p>Para ser eficaz de alguma forma, precisamos conhecer a área.</p>
+<p> </p>
+<p>Como foram as ruínas de Jotun?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a prova de vitória das ruínas de Jotun.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu olhei para todas as evidências que você trouxe de volta das ruínas de Jotun.</p>
+<p> </p>
+<p>Aprendi mais sobre Vengar, graças a você.</p>
+<p> </p>
+<p>Agora, podemos nos concentrar no confronto com o Balaur e os Elyos nas ruínas de Jotun.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos tempo a perder. Temos que tentar a maior variedade de métodos.</p>
+<p> </p>
+<p>Então, por favor, traga -me as evidências do Jotun arruina o mais rápido possível.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças à sua ajuda, teremos mais fácil em Vengar a partir de agora.</p>
+<p> </p>
+<p>Daevas como você é necessário em outras regiões também. Avisarei você se houver novas tarefas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Infelizmente, não poderei lhe dar uma recompensa por esta missão.</p>
+<p> </p>
+<p>Por favor, obtenha sua recompensa nas ruínas de Jotun.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_DF5_Advance_Q25215_all] e trazê -lo para [%dic:STR_DIC_N_DF5_Bastan_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Bastan_E].</p></step>
+</steps>
+<p>Vá para as ruínas de Jotun e mate as ruínas, os korallops, arruina Miriapods e Grifus de penas vermelhas para Bastan. Traga a prova de sua vitória para Bastan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bastan, o comandante interino do protetorado, estava preocupado porque havia muitas criaturas perigosas nas ruínas de Jotun. Ele lhe deu a missão de limpar a área.</p>
+<p> </p>
+<p>Então você eliminou ruínas potcrabs, Korallops, arruina Miriapods e Grifus de Feather Red e levou a prova de seu trabalho a Bastan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

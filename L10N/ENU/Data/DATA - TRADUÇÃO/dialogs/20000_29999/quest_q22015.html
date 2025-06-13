@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22015</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta tarefa é mais do que eu sou capaz.</p>
+<p> </p>
+<p>Ao sul de The Steam Springs fica uma vila de Dragonbound.</p>
+<p> </p>
+<p>Recebi a ordem para eliminar as unidades de dragão lá. Mas eu sou mais um estudioso do que um lutador. Como devo resolver esta tarefa?</p>
+<p> </p>
+<p>Não há mais nada que eu possa fazer, exceto por perguntar a um daeva como você, [%username], para me ajudar nesta tarefa.</p>
+<p> </p>
+<p>Você poderia lutar contra o [%dic:STR_DIC_M_LDF4b_T3_FanaticKn_58_An] S, o [%dic:STR_DIC_M_LDF4b_T3_FanaticEl_58_An] S, o [%dic:STR_DIC_M_LDF4b_T3_FanaticSc_58_An] S e o [%dic:STR_DIC_M_LDF4b_T3_FanaticPr_58_An] está no meu lugar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], finalmente!</p>
+<p> </p>
+<p>Eu tenho tentado manter um perfil discreto, para que meus comandantes pensem que saí para lutar contra o dragão, mas não é fácil esconder -se em uma barraca por dias a fio.</p>
+<p> </p>
+<p>Não sou cortado para o engano. Se apenas minha pesquisa de magia transformacional estivesse completa ... como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles aprenderam uma lição, como espero que você tenha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que boa sorte você conseguiu eliminar as unidades de dragão.</p>
+<p> </p>
+<p>Agora posso relatar a tarefa conforme concluído.</p>
+<p> </p>
+<p>Finalmente posso voltar a me concentrar na minha pesquisa.</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%username]!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_Q22015_All]([%2]/15).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Favilian].</p></step>
+</steps>
+<p>Phavilian foi ordenado a matar Dragonbound em Avad Village, uma tarefa para a qual ele não está equipado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Phavilian exagerou suas habilidades de combate e recebeu uma missão que ele não pôde concluir.</p>
+<p> </p>
+<p>Você eliminou o Dragonbound em Avad Village como um favor a ele, embora quando você voltou, parecia que ele realmente não havia aprendido sua lição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

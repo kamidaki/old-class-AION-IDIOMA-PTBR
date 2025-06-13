@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho um pedido para você. Vá ver [%dic:STR_DIC_N_DF1_Noelen_DHM], dê a ele minha mensagem e diga a ele como me sinto.</p>
+<p> </p>
+<p>Podemos nunca mais nos ver. Se as coisas continuarem assim ...</p>
+<p> </p>
+<p>Os irmãos geralmente lutam, mas éramos um caso extremo. Todo mundo costumava se preocupar conosco.</p>
+<p> </p>
+<p>Você pode alcançar o [%dic:STR_DIC_E_Combine_Rookie] Através do símbolo "Novice Server" na barra de menus no canto inferior direito. Quando estiver lá, procure por [%dic:STR_DIC_N_DF1_Noelen_DHM] e que ele saiba que sinto muito por tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele é meu irmão, mas eu não o entendo.</p>
+<p> </p>
+<p>Quando criança, ele não tinha nada além de bobagem em sua cabeça e, à medida que ficou mais velho, ele se rebelou contra tudo.</p>
+<p> </p>
+<p>Administramos o servidor iniciante juntos e adquirimos uma boa reputação ao fazer isso, mas depois tivemos um argumento enorme e cada um seguimos caminhos separados.</p>
+<p> </p>
+<p>Mas ... soluça ... me perdoe. Você realmente vive como você, por favor, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Entregue a mensagem de Liam.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria me desculpar por destruir os objetos de Liam? Que bem isso faria?</p>
+<p> </p>
+<p>Nós simplesmente não nos damos bem.</p>
+<p> </p>
+<p>Trabalhar junto com a família é difícil. Mas ter Liam como parceiro é uma catástrofe!</p>
+<p> </p>
+<p>Muito obrigado por vir aqui para transmitir sua mensagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Você pode ir para o [%dic:STR_DIC_E_Combine_Rookie] Através do símbolo "Novice Server" na barra de menu inferior direito. Depois de estiver lá, encontre [%dic:STR_DIC_N_DF1_Noelen_DHM].</p></step>
+</steps>
+<p>Liam tem algo que ele quer contar ao irmão, que está no servidor iniciante. Vá e dê a ele a mensagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Liam teve uma mensagem para seu irmão no servidor iniciante.</p>
+<p> </p>
+<p>Você entregou a mensagem, mas Noelen não parecia muito encantado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você pode matar [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]no meu lugar.</p>
+<p> </p>
+<p>Talvez você já tenha ouvido falar de [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]?</p>
+<p> </p>
+<p>Ele realmente precisa ser removido para mais tarde.</p>
+<p> </p>
+<p>Mas como ele é um forte oponente com uma reputação realmente desagradável, você deve reunir aliados e partir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o capitão Bashid?</p>
+<p> </p>
+<p>Pelo que ouvi, ele era muito cruel e perigoso.</p>
+<p> </p>
+<p>Ele também era um capitão da 2ª unidade, travar chifres com ele não pode ter sido fácil.</p>
+<p> </p>
+<p>Você terá que me dar um relatório detalhado sobre o resultado da tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o infame capitão Bashid!</p>
+<p> </p>
+<p>[%username], sua habilidade é ótima.</p>
+<p> </p>
+<p>Você nunca deixa de me surpreender.</p>
+<p> </p>
+<p>Quero agradecer do fundo do meu coração por matar esse inimigo por nós.</p>
+<p> </p>
+<p>Nunca esquecerei seus serviços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5a_E1_Vri_Post_2nd_Q_As_Nmd_65_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard08_L].</p></step>
+</steps>
+<p>Mate o capitão Bashid, que tem uma má reputação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sallin pediu que você matasse o capitão Bashid, que tem uma má reputação, em seu nome.</p>
+<p> </p>
+<p>Conforme solicitado, você matou Bashid, líder da 2ª tropa, e foi agradecido por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

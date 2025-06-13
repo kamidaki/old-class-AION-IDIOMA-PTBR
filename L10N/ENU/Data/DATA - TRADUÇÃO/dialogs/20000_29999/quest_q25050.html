@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria de contar uma história, Outlander.</p>
+<p> </p>
+<p>É a lenda de nossos reis que viviam muito, há muito tempo.</p>
+<p> </p>
+<p>Segundo as lendas, eles reuniram todos os seus tesouros e fizeram uma única pilha gigante de tesouro.</p>
+<p> </p>
+<p>Mas isso é tudo o que as lendas dizem.</p>
+<p> </p>
+<p>Ouvi dizer que há alguém que sabe mais sobre esse tesouro, mas ele vive como eremita há muito tempo.</p>
+<p> </p>
+<p>Não sabemos nada sobre ele, mas descobrimos um monumento construído em sua homenagem. É por isso que concluímos que ele deve ter morrido desde então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">Você pergunta se há alguma outra possibilidade.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não fique desapontado, Outlander. É aqui que a história realmente começa.</p>
+<p> </p>
+<p>Nós aquans temos um ritual secreto com o qual podemos convocar a alma de alguém falecido.</p>
+<p> </p>
+<p>Se o eremita realmente já morreu e realizamos o ritual em seu monumento, podemos convocar sua alma.</p>
+<p> </p>
+<p>Eu preciso de [%dic:STR_DIC_I_quest_25050a], Assim, [%dic:STR_DIC_I_quest_25050b] e [%dic:STR_DIC_I_quest_25050c]para o ritual.</p>
+<p> </p>
+<p>Você poderia conseguir essas coisas para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, Outlander.</p>
+<p> </p>
+<p>Você recebeu os materiais que eu pedi?</p>
+<p> </p>
+<p>O ritual requer com precisão os materiais certos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os recursos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Você tem exatamente as coisas certas.</p>
+<p> </p>
+<p>Espere um momento, Outlander.</p>
+<p> </p>
+<p>Estou preparando o sacrifício e depois darei a você para o ritual.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não cuidou do[plur][%dic:STR_DIC_E_Q25050_all] Ainda?</p>
+<p> </p>
+<p>Vocês Outlanders obviamente têm um conceito diferente de tempo ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, esses são os certos. Por favor, leve -os para o [%dic:STR_DIC_OBJ_DF5_E_FOBJ_headstone_01] e use -os lá.</p>
+<p> </p>
+<p>Você só tem que colocar o sacrifício no monumento.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Tem que ser o monumento eremita que Soglo mencionou.)</p>
+<p> </p>
+<p>(Alguém o construiu para homenagear o eremita morto.)</p>
+<p> </p>
+<p>(Há algo escrito nele, mas você não entende a língua aquane.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você coloca os sacrifícios pelo ritual no monumento.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Quem me acordou?</p>
+<p> </p>
+<p>Foi você?</p>
+<p> </p>
+<p>Eu não conheço você. Quem é você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Você dá seu nome e pergunta quem ele é.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Um Outlander?</p>
+<p> </p>
+<p>Eu ... sou Zagus, governante dos aquans ...</p>
+<p> </p>
+<p>DeMaruk e seus seguidores me mataram.</p>
+<p> </p>
+<p>Minha filha ... ela está bem? Mesmo que eu esteja morto ... sinto falta dela ...</p>
+<p> </p>
+<p>Parece que você quer dizer algo para mim ... mas agora não é a hora certa.</p>
+<p> </p>
+<p>Diga -me outra hora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, Outlander.</p>
+<p> </p>
+<p>Você conheceu o eremita?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rei Zagus ... então ele era o eremita ...</p>
+<p> </p>
+<p>Zagus era o rei do nosso povo.</p>
+<p> </p>
+<p>Ele foi morto por DeMaruk, o usurpador.</p>
+<p> </p>
+<p>Eu acho ... eu tenho que pedir outro favor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir o [plur][%dic:STR_DIC_E_Q25050_all] e trazê -los para [%dic:STR_DIC_N_DF5_Soglo_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Soglo_E].</p></step>
+<step><p visible="[%6]">Realizar um sacrifício pelo ritual no[%dic:STR_DIC_OBJ_DF5_E_FOBJ_headstone_01].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_DF5_Zagmus_E].</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_DF5_Soglo_E].</p></step>
+</steps>
+<p>Ajude Soglo, recebendo os materiais para o ritual aquano honrar o eremita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Soglo pediu que você levasse os materiais para convocar o espírito do eremita no monumento. Soglo esperava descobrir mais sobre o tesouro dos Aquans dessa maneira.</p>
+<p> </p>
+<p>Você obteve os materiais e os levou a Soglo, que os transformou em sacrifício pelo ritual.</p>
+<p> </p>
+<p>Você ofereceu um sacrifício no monumento eremita. Depois que você fez, o espírito do Aquan Zagus apareceu.</p>
+<p> </p>
+<p>Quando você voltou a Soglo e contou a ele, ele disse que Zagus já foi o rei de seu povo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

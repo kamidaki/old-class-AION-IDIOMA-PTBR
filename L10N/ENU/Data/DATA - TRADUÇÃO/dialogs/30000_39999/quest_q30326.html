@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu coração está cheio de tristeza ultimamente. Dreams estranhos me atormentam, piorando a cada noite ... sonhos de almas Daevic atormentadas, gritando ... chorando por libertar.</p>
+<p> </p>
+<p>Eu pensei que eles eram apenas pesadelos no começo, mas agora estou convencido de outra forma. Certamente são visões de algo que ocorre agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como você pode ter certeza?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que a única maneira seria visitar o lugar e ver por mim mesmo, mas a cena nunca é clara o suficiente para saber onde pode estar ocorrendo.</p>
+<p> </p>
+<p>No entanto, uma substância conhecida como[%dic:STR_DIC_I_QUEST_30326a]torna possível lembrar visões de um sonho, mesmo depois de acordar. Com a clareza da consciência, eu certamente poderia localizar esse ponto dos sonhos.</p>
+<p> </p>
+<p>É meu dever como sacerdote resgatar essas almas. Você vai me ajudar, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Com o [%dic:STR_DIC_I_QUEST_30326a], Poderei descobrir onde as almas do Daeva estão presas e-mais importante-como libertá-las.</p>
+<p> </p>
+<p>Não há muitas fontes naturais de pó dos sonhos, mas uma dessas fontes está no DragonRest. Vá lá e caça o [%dic:STR_DIC_M_DF4_ShadowStalker_Sand_54_An] Areia [%dic:STR_DIC_M_DF4_ShadowStalker_Sand_55_An] S que derramou.</p>
+<p> </p>
+<p>Por favor, [%username], seja rápido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... eu entendo. Você deve ser cético sobre esse sonho ser uma visão verdadeira.</p>
+<p> </p>
+<p>Mas se você acredita em mim ou não, sei que meus sonhos são visões de algo real. Que tipo de padre eu seria se não pudesse fazer essa distinção?</p>
+<p> </p>
+<p>Eu tenho fé, [%username]. Procure sua alma por sua própria fonte de fé e, se você encontrar, retorne a mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou tentar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperei muito, [%username]. O sonho da noite passada foi mais vívido do que nunca. Ainda me lembro dos Daevas, suas expressões e chora atormentados ... mas a prisão deles ainda está escondida.</p>
+<p> </p>
+<p>Por favor, diga-me-você me traz o pó dos sonhos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não sabe o quão sério isso é, Daeva? Imagine sua própria alma, presa por toda a eternidade, em tormento. No entanto, você não faz nada?</p>
+<p> </p>
+<p>Por favor, vá e slay Souleater obscura e animus obscura, e traga -me o [%dic:STR_DIC_I_QUEST_30326a] eles derramaram de sua pele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Daeva. Vou usar isso imediatamente-o efeito é rápido. Apenas uma única respiração e ....</p>
+<p> </p>
+<p>Oh ... oh meu. Eu acho que sei onde eles estão. Eles podem finalmente ser libertados, mas ... não será fácil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30326a] e leve para [%dic:STR_DIC_N_Unset].</p>[%collectitem]</step>
+</steps>
+<p>Derrote o Soulation obscura e o animus obscura e obtenha o pó dos sonhos para que o greeta possa ver claramente as visões de seus sonhos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Greeta disse que estava sonhando de almas atormentadas de Daeva e se sentiu obrigado a resgatá -las.</p>
+<p> </p>
+<p>Você trouxe o pó dos sonhos dela, o que a ajudou a discernir onde as almas estavam presas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

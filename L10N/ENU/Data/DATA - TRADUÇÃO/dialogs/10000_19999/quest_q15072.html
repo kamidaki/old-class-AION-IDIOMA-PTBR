@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15072</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos membros da Guilda estão reclamando de dores de cabeça graves ultimamente. Alguns estão até alucinando. Infelizmente, não sei o que está causando esses sintomas.</p>
+<p> </p>
+<p>Eu quero ajudar os membros da Guilda. Se eles continuarem sofrendo de dores de cabeça e alucinações, podem até perder a cabeça.</p>
+<p> </p>
+<p>Eles dizem que uma boa caixa em volta das orelhas é boa louco, mas não posso bater meus camaradas na Guilda, posso ...? De qualquer forma, seria muito cansativo.</p>
+<p> </p>
+<p>Eu acho que a melhor coisa seria fazer algum remédio. Receio, no entanto, que existam dois problemas: os ingredientes não são fáceis de encontrar e também não temos pessoas suficientes para gerenciar essa tarefa.</p>
+<p> </p>
+<p>Tudo que eu preciso para fazer o remédio são[plur][%dic:STR_DIC_I_quest_15072a] e [plur][%dic:STR_DIC_I_quest_15072b]do[%dic:STR_DIC_W_LF5_SZ_H_01]. Você poderia me ajudar a obter esses ingredientes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este medicamento deve limpar as dores de cabeça ... mas obter os ingredientes do remédio é difícil.</p>
+<p> </p>
+<p>Tudo o que preciso é de essência de luz e lodo de musgo. Fazer o remédio não é difícil em si.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os ingredientes medicinais.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Isso deve ser suficiente para o remédio.</p>
+<p> </p>
+<p>Você é melhor do que eu pensava. Eu não estava contando com você me trazendo todos os ingredientes e sem danos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Você está alucinando também? O que você quer me dar? Suas mãos estão vazias.</p>
+<p> </p>
+<p>Reúna -se e me pegue os ingredientes para o remédio. Tudo o que preciso é de essência de luz e lodo de musgo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Isso deve ser suficiente para o remédio.</p>
+<p> </p>
+<p>Você é melhor do que eu pensava. Eu não estava contando com você me trazendo todos os ingredientes e sem danos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é realmente impaciente. Você não precisa me lembrar, eu não esqueci.</p>
+<p> </p>
+<p>Aqui está a recompensa por me conseguir os ingredientes. Eu até adicionei um pequeno bônus para você.</p>
+<p> </p>
+<p>O que está errado? A recompensa é menos do que você esperava? Sinto muito, mas não tenho mais o que dar.</p>
+<p> </p>
+<p>Da próxima vez que pedir sua ajuda, darei um pouco mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procurar [plur][%dic:STR_DIC_I_quest_15072a] e [plur][%dic:STR_DIC_I_quest_15072b] e reportar a [%dic:STR_DIC_N_LF5_Vipera_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Vipera_E].</p></step>
+</steps>
+<p>Reúna os ingredientes para o remédio na floresta musgo e leve -os para as Viperas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vários membros da Guilda se queixaram de dores de cabeça. Como resultado, Viperas encarregou você de adquirir ingredientes para uma cura.</p>
+<p> </p>
+<p>Você entrou na floresta musgoso e encontrou os ingredientes. Quando você os trouxe para Viperas, ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

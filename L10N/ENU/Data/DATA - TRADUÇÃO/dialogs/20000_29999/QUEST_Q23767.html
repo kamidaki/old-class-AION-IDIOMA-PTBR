@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe qual é o nosso plano? Pretendemos eliminar o [%dic:STR_DIC_M_LDF4_Advance_Popoku_North_all].</p>
+<p> </p>
+<p>O objetivo é derrotar todos os lutadores de Popoku e assassinos de Popoku que estão perto da base.</p>
+<p> </p>
+<p>Por favor, participe desta operação, [%username].</p>
+<p> </p>
+<p>Não podemos nos dar ao luxo de deixar passar esta oportunidade de descartar nosso velho inimigo, a União Elyos.</p>
+<p> </p>
+<p>Vá agora e prove sua coragem!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos à beira de realizar nosso plano de acabar com a União Elyos.</p>
+<p> </p>
+<p>Alcançaremos nosso objetivo em breve.</p>
+<p> </p>
+<p>Graças à sua ajuda, [%username], conseguimos concluir a operação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, nos livramos das tropas da União Elyos que estavam mirando em nossa base.</p>
+<p> </p>
+<p>Ouvi dizer que você lutou bravamente. Obrigado.</p>
+<p> </p>
+<p>Você nos ajudou a terminar a operação mais rápida do que o planejado.</p>
+<p> </p>
+<p>A retaguarda de Elyos chegará aqui em breve, mas não temos medo deles.</p>
+<p> </p>
+<p>[%username], você mostrou a eles que eles não podem inchar fora de nossa base com impunidade. Será uma lição para eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LDF4_Advance_C_LiPopoku_Fi_65_An] e o [plur][%dic:STR_DIC_M_LDF4_Advance_C_LiPopoku_As_65_An]que aparecem quando uma das guarnições do norte está ocupada ([%2]/5).</p></step>
+<step><p visible="[%3]">Fale com um dos[plur][%dic:STR_DIC_E_LDF4_Advance_Village_Guard_D_North].</p></step>
+</steps>
+<p>Atenda ao pedido dos comandantes do norte e derrote os lutadores de Popoku e assassinos de Popoku, que pertencem à União Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um dos comandantes do protetorado o enviou para separar a União Elyos.</p>
+<p> </p>
+<p>Você matou os lutadores de Popoku e os assassinos de Popoku. Você recebeu uma recompensa por isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

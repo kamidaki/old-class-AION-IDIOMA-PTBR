@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30506</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Receio não ter conhecido o Merops muito bem. Talvez se eu tivesse, tudo isso poderia ter sido evitado.</p>
+<p> </p>
+<p>Então, embora essas entradas exibam uma certa quantidade de estresse, eu não sabia dizer de onde veio. Provavelmente tem a ver com esse Kerran que ele menciona, mas não sei quem é.</p>
+<p> </p>
+<p>O balaur em[%dic:STR_DIC_W_ZONE_NAME_IDYun]provavelmente tem o [%dic:STR_DIC_I_QUEST_30506A] Até agora, e é vital que você recupere, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Merops era muito particular, muito introvertido.</p>
+<p> </p>
+<p>Ter esse tipo de visão de sua mente é raro. Mas, neste caso, é vital.</p>
+<p> </p>
+<p>Você encontrou a outra metade do pergaminho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu penso que sim..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, é isso! Agora para ... oh. Eu ... eu nunca soube que ele tinha filhos, muito menos que os três morreram.</p>
+<p> </p>
+<p>Não consigo imaginar o desgosto dele. Não é de admirar que seus pensamentos se virassem ao desespero.</p>
+<p> </p>
+<p>Leve isso para Maios de uma só vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu saio imediatamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. Como vai a campanha na base Rentus?</p>
+<p> </p>
+<p>Você parece perturbado. Há algo que você deseja dizer?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Por favor, leia isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Eu sabia sobre os filhos de Merops, mas não sobre as profundezas de seu desespero. Ele manteve suas emoções escondidas bem.</p>
+<p> </p>
+<p>E ele não especifica o quanto ele disse ao Balaur. Teremos que descobrir isso a nós mesmos ... de alguma forma.</p>
+<p> </p>
+<p>É notícia sombria, mas pelo menos sabemos disso. Meus agradecimentos a você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30506A], e leve para [%dic:STR_DIC_N_Oreitia].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Maios].</p></step>
+</steps>
+<p>Quanto Merops contou ao Balaur? Encontre a peça de rolagem rasgada em um mago Vasharti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Oreitia precisava da peça de rolagem rasgada do diário de Merops para descobrir quais informações ele deu ao Balaur ... e por quê.</p>
+<p> </p>
+<p>Você encontrou a outra metade do pergaminho, que revelou motivos muito pessoais. Ainda assim, apenas sugeriu quais segredos ele deu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

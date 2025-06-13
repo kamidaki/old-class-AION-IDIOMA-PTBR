@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Boas notícias, meu amigo!</p>
+<p> </p>
+<p>Ouvi de Centurion Maximus e tenho permissão para remover as normas da floresta de Manduri! Isso não é maravilhoso? Em breve, o saldo será restaurado e os pássaros encherão novamente a floresta!</p>
+<p> </p>
+<p>O retorno da natureza é iminente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A natureza não é apenas pássaros e arco -íris ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]....</p>
+<p> </p>
+<p>Ouça, você trabalhou comigo antes, então eu sei que você pode apreciar o que estou tentando fazer aqui. Tudo o que estamos fazendo agora é continuar seu trabalho. Se você deseja participar de nossa operação e ganhar mais Kinah, seria mais do que bem -vindo.</p>
+<p> </p>
+<p>O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu sabia que você responderia meu apelo.</p>
+<p> </p>
+<p>Mas desta vez deve ser um pouco mais do que a última vez.</p>
+<p> </p>
+<p>Por favor, caça 10[plur][%dic:STR_DIC_M_FrillfaimamFemale_21_An].</p>
+<p> </p>
+<p>Por favor, eu imploro!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você começaria a bola rolando e depois recuaria assim que a vitória da natureza é iminente? Por que? Perdendo seu nervo agora? Você é um ser muito complexo, meu amigo!</p>
+<p> </p>
+<p>Muito bem, deixe -nos. Vou ver o Frillneck Scourge através de outras avenidas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, Androkles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>AHA! Escudo da natureza, o [%userclass] [%username], retorna.</p>
+<p> </p>
+<p>Tenho um relatório pronto para ser enviado para o alto comando. Basta dizer que a palavra e seu nome serão mais uma vez empurrados antes da forma orgulhosa e radiante de telêmaco em geral!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom!</p>
+<p> </p>
+<p>Mas há pouco tempo para comemorar: mesmo agora essas criaturas estão se reproduzindo e se recuperando do seu ataque, recuperando durante a pausa. Sempre haverá mais trabalho a fazer, mais nó de balear para silenciar e, se você estiver procurando trabalho, sempre garantirei que você esteja ocupado.</p>
+<p> </p>
+<p>Muito bem ... bem feito!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_FrillfaimamFemale_21_An]na floresta Manduri ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Androkles].</p></step>
+</steps>
+<p>Mate os Frillnecks incomodando o povo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Androkles recebeu permissão para caçar mais do que Frillcks na floresta de Manduri e estava procurando contratados para fazer seu trabalho. Você pegou a tarefa e matou 15 dos Frillkcks para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

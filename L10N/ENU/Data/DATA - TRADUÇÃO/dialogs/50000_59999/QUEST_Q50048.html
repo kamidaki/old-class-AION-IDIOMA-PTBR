@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algo ruim aconteceu, [%username]!</p>
+<p> </p>
+<p>Shugo estava prestes a criar um[%dic:STR_DIC_I_event_item_firework_giant_02], mas[%dic:STR_DIC_N_event_devasday_shugoseller]Peguei as ferramentas que Shugo precisa para que possam ser vendidas.</p>
+<p> </p>
+<p>Daeva poderia tomar o [%dic:STR_DIC_I_event_2014devasday_quest_50047]para [%dic:STR_DIC_N_event_devasday_shugoseller]para que ele possa fazer um[%dic:STR_DIC_I_event_item_firework_giant_02] A partir disso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva veio por causa do[%dic:STR_DIC_I_event_item_firework_giant_02]?</p>
+<p> </p>
+<p>Que sorte! Shugo estava prestes a embalar as ferramentas em um pacote de tesouros para vendê -las.</p>
+<p> </p>
+<p>Rapidamente, dê a Shugo o [%dic:STR_DIC_I_event_2014devasday_quest_50047] e Shugo fará o [%dic:STR_DIC_I_event_item_firework_giant_02].</p>
+<p> </p>
+<p>Poderia [%username] Acenda o [%dic:STR_DIC_I_event_item_firework_giant_02]Para Shugo?</p>
+<p> </p>
+<p>Aparentemente, quanto mais força você tiver, maior e mais brilhante o [%dic:STR_DIC_I_event_item_firework_giant_02]vai queimar. O último sinal que eu acendi era dificilmente maior que uma partida.</p>
+<p> </p>
+<p>Mas não atire contra os Daevas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você entrega a pólvora e recebe o sinal de sinal.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo acabou de ver um sinal de sinal!</p>
+<p> </p>
+<p>Definitivamente, pertencia ao teatro de viagem Shugo!</p>
+<p> </p>
+<p>Daeva gostou do flare do sinal?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]é realmente brilhante.</p>
+<p> </p>
+<p>Daeva é o salvador do teatro de viagem Shugo, AK.</p>
+<p> </p>
+<p>Como prometido, Daeva pode escolher um tesouro de nossa coleção como recompensa.</p>
+<p> </p>
+<p>Shugo espera que haja algo de bom para Daeva lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue o [%dic:STR_DIC_I_event_2014devasday_quest_50047] e vá para [%dic:STR_DIC_N_event_devasday_shugoseller].</p></step>
+<step><p visible="[%3]">Use o [%dic:STR_DIC_I_event_item_firework_giant_02].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_event_devasday_shugo_l_01].</p></step>
+</steps>
+<p>Acenda o sinal do sinal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe pólvora otzinerk e esperou enquanto ele fazia o sinal.</p>
+<p> </p>
+<p>A pedido de Otzinerk, você jogou o sinal no alto do céu.</p>
+<p> </p>
+<p>Messnerk viu o sinal e deu um tesouro da coleção como uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

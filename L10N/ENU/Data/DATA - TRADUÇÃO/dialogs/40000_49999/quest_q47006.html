@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Titorea], Priorado</p>
+<p>Tarefa: Verifique os amplificadores de campo</p>
+<p> </p>
+<p>Os amplificadores de campo eetérico perto do Observatório de Morheim estão com mau funcionamento. Seu trabalho é descobrir o porquê.</p>
+<p>Verifique o [%dic:STR_DIC_OBJ_Q47006] S com um[%dic:STR_DIC_E_Mentor]. Será impossível fazer sozinho.</p>
+<p>Depois de terminar, relate suas descobertas para mim. Mantenha os olhos abertos e esteja disposto a aprender.</p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gostaria de saber o que está acontecendo ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, você parece um pouco mais degradada do que eu esperaria.</p>
+<p> </p>
+<p>Quando recebi a notificação do observatório, pensei que seria um trabalho de reparo simples.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Foi sabotagem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os lefaristas, não é? Parece bastante tolo ... o campo etérico os protege também.</p>
+<p> </p>
+<p>Ainda assim, pelo menos você acabou com isso.</p>
+<p> </p>
+<p>Você e seu mentor trabalharam bem juntos neste. Você seria aconselhável ter isso em mente para tarefas futuras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], encontre o problema com o [%dic:STR_DIC_OBJ_Q47006] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Titorea].</p></step>
+</steps>
+<p>O Priorado do Marchutan tem uma tarefa. Encontre um mentor e verifique os amplificadores de campo de Morheim. Remova a causa de seu mau funcionamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Priorado do Marchutan instruiu você a encontrar e consertar o que estava fazendo com que os amplificadores de campo de Morheim funcionem.</p>
+<p> </p>
+<p>Você e seu mentor encontraram a causa para serem lefaristas. Com a derrota, os amplificadores agora devem funcionar normalmente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

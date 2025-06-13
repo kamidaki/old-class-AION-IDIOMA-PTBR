@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>OK, [%username], ouça.</p>
+<p> </p>
+<p>Você está trabalhando bem, então acho que podemos confiar em você com tarefas mais importantes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E quanto aos querrubes?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe, há um novo grupo de recrutas começando mais tarde e eu os farei trabalhar na infestação. Seus pedidos são ir até a vila e dar um relatório para [%dic:STR_DIC_LA03].</p>
+<p> </p>
+<p>Ela precisa liquidar nossas contas para que possamos ser pagos. Diga a ela tudo o que fizemos aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Polinia está geralmente perto do[%dic:STR_DIC_ELA15]. Verifique se ela recebe todos os detalhes em seu relatório.</p>
+<p> </p>
+<p>Depois, fale com o capitão[%dic:STR_DIC_LA139]. Ele saberá o que fazer com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bons conselhos, eu estarei a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um mercenário que não quer ser pago, não é?</p>
+<p> </p>
+<p>Você é estranho, [%username]!</p>
+<p> </p>
+<p>Tudo bem, você apenas senta por aqui. Vou até a vila mais tarde.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem por mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Antes de falar, lembre -se de que você está diante do grande [%dic:STR_DIC_ELA15]. Este é um local de culto e não vou tolerar desrespeito, mesmo de um mercenário.</p>
+<p> </p>
+<p>Agora, o que é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho um relatório das planícies de Akarios".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah!</p>
+<p> </p>
+<p>Você traz boas notícias para o [%dic:STR_DIC_ELA15]! Vou combinar isso com os outros relatórios e apresentá -los aos moradores mais tarde.</p>
+<p> </p>
+<p>As planícies de Akarios são uma fonte de preocupação para os moradores aqui e, embora alguns hesitassem em trazer mercenários, agora posso ver que nosso dinheiro foi bem gasto. Diga-me, no entanto-você veja um fazendeiro nas planícies, um homem chamado Kales? Ele é meu primo, e eu não tenho notícias dele há algum tempo. Eu espero que ele esteja bem ....</p>
+<p> </p>
+<p>Ah, e não se preocupe, fiz anotações detalhadas. Eu sei como Mires é particular sobre seus relatórios.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Relatório para [%dic:STR_DIC_LA03].</p></step>
+</steps>
+<p>Seu trabalho nas planícies de Akarios está completo. Vá para [%dic:STR_DIC_FLA02] e relate seus resultados ao padre Polinia.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mires o enviou à vila para se reportar à Polinia sobre a situação nas planícies de Akarios.</p>
+<p> </p>
+<p>Polinia garantiu que ela havia notado tudo com precisão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

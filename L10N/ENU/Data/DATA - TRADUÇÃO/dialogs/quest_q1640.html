@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A estátua não responde e parece estar faltando uma peça.)</p>
+<p> </p>
+<p>(Você pode consertá -lo quando encontrar [%dic:STR_DIC_I_QUEST_1640a].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Agora, para encontrar a peça que faltava."</act>
+<act href="HACTION_FINISH_DIALOG">Termine de examinar</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(A parte parece ser uma correspondência com a parte que faltava a estátua.)</p>
+<p> </p>
+<p>(Deve funcionar se remonta.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Parece que isso se encaixa certo ... aí!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A estátua permanece sem resposta.)</p>
+<p> </p>
+<p>(Provavelmente não funcionará sem a seção que falta.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Termine de examinar</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_Graveknight_45_Ae] e encontrar [%dic:STR_DIC_I_QUEST_1640a]Para consertar a estátua de pedra.</p>[%collectitem]</step>
+</steps>
+<p>Para obter acesso ao resto do templo, você deve reparar a estátua de teleporte no primeiro andar das ruínas do templo de Drake. O cruzado Graveknight tem a peça que faltava.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>No primeiro andar das ruínas do templo de Drake, há uma estátua de teleporte quebrada.</p>
+<p> </p>
+<p>A peça que faltava estava escondida e protegida por um cruzado graveknight.</p>
+<p> </p>
+<p>Reunir a peça que faltava com a estátua permitiu que você acesse o segundo andar do templo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

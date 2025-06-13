@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Solicitação para destruir a artilharia -</p>
+<p></p>
+<p>1. De: Katalam Patrol, Daeva de Zephyr [%dic:STR_DIC_N_LDF5_Under_Timarchus_E]</p>
+<p></p>
+<p>2. Para:[%username]</p>
+<p></p>
+<p>3. Ordens: Avance para a ponte de Jormungand e destrua a arma de cerco especial, o [%dic:STR_DIC_M_IDF5_U1_UltimateSW_N_65_Ae].</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Comece a missão para destruir a artilharia</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A arma de cerco especial do Exército de Beritra, a artilharia, supostamente possui um poder terrível que pode ser usado para destruir uma região inteira.</p>
+<p> </p>
+<p>É uma arma realmente terrível que pode ser usada no platô perto de Katalam do Sul para disparar em qualquer lugar.</p>
+<p> </p>
+<p>Como está indo com a destruição da artilharia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que a artilharia foi destruída.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se o Exército de Beritra tivesse ativado a artilharia, as coisas poderiam ter terminado mal.</p>
+<p> </p>
+<p>[%username], com sua ajuda, conseguimos evitar grandes danos.</p>
+<p> </p>
+<p>Agradecemos sinceros por seus esforços. Espero que você continue a agir pelo bem do santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_IDF5_U1_UltimateSW_N_65_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5_Under_Timarchus_E].</p></step>
+</steps>
+<p>Destrua a artilharia, a arma de cerco especialmente preparada na ponte de Jormungand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você destruiu a arma de cerco especialmente preparada do Exército de Beritra, a artilharia, e relatou a Timarkus.</p>
+<p> </p>
+<p>Timarkus ficou muito feliz com a notícia de que a artilharia foi destruída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

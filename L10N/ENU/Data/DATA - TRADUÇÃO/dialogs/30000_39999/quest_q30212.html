@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho relendo minhas anotações, [%username], e acho que a razão pela qual a vara de quartzo não funcionou foi porque não tinha energia suficiente.</p>
+<p> </p>
+<p>Veja bem, a haste do quartzo alimenta a Orb da Rift, então, obviamente, não funcionará se não tiver energia suficiente.</p>
+<p> </p>
+<p>Precisamos reabastecer a energia da haste e ela deve acionar a esfera. Agora precisamos descobrir que tipo de energia ele usa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Algum tipo de energia de Balaur, talvez?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente o que eu estava pensando. O Balaur fez isso, então deve ser algo que eles usariam.</p>
+<p> </p>
+<p>Fragmentos de Surkana, talvez. Eles o teriam usado no dia em que o documento foi escrito pela primeira vez ... ainda o usou até hoje.</p>
+<p> </p>
+<p>Você vai conseguir alguns, [%username]? Esta pode ser a última peça do quebra -cabeça.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Da minha pesquisa, sei que o Balaur usa os vermes que colhem dranas. E esses vermes têm Surkana em sua carne.</p>
+<p> </p>
+<p>Eles estão em toda a fazenda de Mephistis, resíduos de vigor e planícies de Hanarkand.</p>
+<p> </p>
+<p>Então, mate [%dic:STR_DIC_M_LF4_B4_Spaller_mini_54_An] S, [%dic:STR_DIC_M_LF4_C4_Spaller_mini_55_An] Areia [%dic:STR_DIC_M_LF4_C2_Spaller_mini_55_An] S, e você deve inventar [%dic:STR_DIC_I_QUEST_30212a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que isso funcione."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que tenho te empurrando muito, [%username]. Você deve precisar de uma pausa.</p>
+<p> </p>
+<p>Que tal isso ... faça uma pausa, faça uma cerveja, apenas relaxe por um tempo. Mas volte quando você estiver descansado e começaremos novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esse é um ótimo plano."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%userclass]--questres-scholar retornou!</p>
+<p> </p>
+<p>Como foi? Você matou os vermes de reunião?</p>
+<p> </p>
+<p>Conceda-me os fragmentos de Surkana e verei se ele recarrega a haste de quartzo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu para conseguir o Surkana? O selo de Stormwing enfraquece a cada minuto desperdiçado, [%username]!</p>
+<p> </p>
+<p>Você se lembra do que o entrevistado fiel Utra disse que aconteceria se Stormwing saiu, não é?</p>
+<p> </p>
+<p>Não temos tempo para jogos. Você deve encontrar o [%dic:STR_DIC_I_QUEST_30212a] assim que puder!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar o Surkana agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os Pilomenos seguram a vara de quartzo em uma mão e os fragmentos de Surkana no outro enquanto ele canta um feitiço.)</p>
+<p> </p>
+<p>Não, não, não ... isso não está funcionando! Esse maldito Surkana não tem energia suficiente!</p>
+<p> </p>
+<p>Precisamos pensar em outra coisa, [%username]. E rápido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30212a] e trazê -los para [%dic:STR_DIC_N_Pilomenes].</p>[%collectitem]</step>
+</steps>
+<p>A vara de quartzo não tinha energia suficiente, então você precisa derrotar espaleiros do colecionador, vermes de coleta e cratera para obter fragmentos de Surkana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os pilomenos deduziram que a razão pela qual o Orb da Rift não funcionou foi porque a vara de quartzo não tinha energia suficiente.</p>
+<p> </p>
+<p>Você derrotou a coleta de vermes e trouxe de volta fragmentos de Surkana. Os pilomenos tentaram reabastecer a energia da haste, mas falharam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

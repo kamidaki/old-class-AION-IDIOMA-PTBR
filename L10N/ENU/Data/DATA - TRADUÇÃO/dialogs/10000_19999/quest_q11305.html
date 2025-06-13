@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_W_LF4_SZ_2021_A]foi atacado pelo Exército de Beritra! Não precisamos mais temer nenhum soldado sobrevivente da Tiamat, mas nos deparamos com o Exército de Beritra.</p>
+<p> </p>
+<p>Estou furioso por o inimigo roubar o altar de avareza de nós com suas táticas injustas.</p>
+<p> </p>
+<p>Perdemos muitos Daevas no altar da avareza por causa disso. Não podemos simplesmente levar isso deitado.</p>
+<p> </p>
+<p>Disseram -me para procurar ajuda do cargo de observação de angriace se a fortaleza fosse conquistada. Bem, foi conquistado pelo exército de Beritra, [%username].</p>
+<p> </p>
+<p>Devemos atacar! Já despachamos várias legiões para recuperar o altar, incluindo a Guilda das Sombras de Kaisinel, mas o inimigo se tornou tão poderoso que estamos enfrentando dificuldades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se atrasarmos mais, também podemos perder o templo das escalas.</p>
+<p> </p>
+<p>Mesmo que Lord Kaisinel esteja conosco, a resistência pode ser difícil se o Balaur e os Asmodianos atacarem ao mesmo tempo.</p>
+<p> </p>
+<p>Por favor, [%username], Ajude -nos a recuperar o altar da avareza!</p>
+<p> </p>
+<p>Não estou pedindo que você recupere o altar imediatamente. Primeiro, temos que romper a linha de defesa de nosso inimigo. Isso significa que os soldados inimigos da tropa de ocupação no altar da avareza devem ser eliminados.</p>
+<p> </p>
+<p>Por favor, mate o [%dic:STR_DIC_M_QUEST_11305all].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda temos uma longa jornada pela frente!</p>
+<p> </p>
+<p>Ocupar o altar da avareza agora é mais importante do que qualquer outra coisa.</p>
+<p> </p>
+<p>Estou feliz que você está de pé conosco, [%username]. Já perdemos muitos bons Daevas em batalha.</p>
+<p> </p>
+<p>Apresse -se e se prepare!</p>
+<p> </p>
+<p>Ainda não é tarde demais para recuperar o [%dic:STR_DIC_W_LF4_SZ_2021_A]. Se você vir uma oportunidade, deve obliterar o [%dic:STR_DIC_M_QUEST_11305all]!</p>
+<p> </p>
+<p>Quando o altar da avareza está em nossas mãos novamente, [%dic:STR_DIC_N_Ingnie]irá recompensá -lo generosamente por sua ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não está pronto?</p>
+<p> </p>
+<p>Ou você tem medo dos inimigos no altar da avareza?</p>
+<p> </p>
+<p>Eu já ouvi muito sobre você, [%username], então eu sei que nenhum inimigo o assusta. Por favor, reconsidere sua decisão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Colocamos tudo em risco para recuperar o altar da avareza.</p>
+<p> </p>
+<p>Eu acho que meus gritos de ajuda no posto de observação de animais não foram em vão.</p>
+<p> </p>
+<p>Não é aí que você foi recrutado, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você é um dos recrutas de Katia?</p>
+<p> </p>
+<p>Graças aos seus esforços, [%username], conseguimos recuperar o altar da avareza.</p>
+<p> </p>
+<p>Katia deixará o posto avançado agora e se dedicará a outras tarefas. Obrigado por destruí -los.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Continue seus esforços para alcançar nossa supremacia no altar da avareza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_QUEST_11305all]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ingnie].</p></step>
+</steps>
+<p>O altar da avareza foi capturado pelo inimigo. Derrote a tropa de ocupação para destruir as defesas do inimigo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Katia relatou que o altar da avareza caiu para o inimigo.</p>
+<p> </p>
+<p>Você foi ao altar da avareza e eliminou a tropa de ocupação inimiga enquanto ela perguntou. Então Ingnie o recompensou por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

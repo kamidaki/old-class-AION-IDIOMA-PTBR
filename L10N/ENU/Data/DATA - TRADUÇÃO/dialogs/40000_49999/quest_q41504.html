@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41504</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Há mais uma coisa que podemos fazer para tentar derrubar essas crateras ... para cima? Eu não tenho certeza. De qualquer forma.</p>
+<p> </p>
+<p>A bomba de Aether pode ter falhado, mas há outra maneira, outra arma, que ainda temos que tentar. Exigirá algum esforço para criar essa arma, mas o que vale a pena fazer isso não requer esforço, não é?</p>
+<p> </p>
+<p>Se você estiver disposto a ajudar, matar [%dic:STR_DIC_M_LDF4b_T1_Skeletonre_58_An] Assustadores no Fissure Barrens, obtenha [%dic:STR_DIC_I_quest_41504a]é deles, e levá -los a [%dic:STR_DIC_N_Gneise]. Ela saberá o que fazer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username]. Você tem as sementes?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu faço. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Um momento, enquanto eu capacito essa lâmina com ela.</p>
+<p> </p>
+<p>"Espíritos dos velhos! Espíritos dentro! Envie esta lâmina para fazer o mundo inteiro girar!" Ha! Funcionou!</p>
+<p> </p>
+<p>Esta é agora uma espada de quebra -solo, [%username]. Pegue e empurre -o para o [%dic:STR_DIC_OBJ_LDF4B_FOBJ_CrackPortal]. Com sorte, toda a fissura entrará em colapso. Apenas certifique -se de sair do caminho primeiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aqui vamos nós ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso não está certo. Você precisa trazer [%dic:STR_DIC_I_quest_41504a] S, não apenas qualquer semente velha. Grande Siel, preste atenção.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh. Opa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Todos nós estamos esperando por você! Como você fez? O que aconteceu?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Bem, danos são danos. A cratera não pode ser destruída permanentemente, mas ainda causamos danos suficientes para prejudicar ela, por assim dizer.</p>
+<p> </p>
+<p>O teste acabou, [%username]. Também podemos considerá -lo um sucesso, graças ao seu trabalho duro. Obrigado!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar [%dic:STR_DIC_I_quest_41504a] e leve-os para [%dic:STR_DIC_N_Gneise].</p>[%collectitem]</step>
+<step><p visible="[%3]">Destruir o [%dic:STR_DIC_OBJ_LDF4B_FOBJ_CrackPortal]com a espada do solo.</p></step>
+<step><p visible="[%6]">Relatório de volta para [%dic:STR_DIC_N_Grandia].</p></step>
+</steps>
+<p>Pode haver uma maneira final de destruir a cratera. Reúna sementes esmagadoras de sentinelas anubitas e leve -as a Grais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Grido, ciente de que a bomba de Aether era inútil ao tentar destruir a cratera gigante, disse que era necessária uma arma especial. Ele o enviou para obter sementes esmagadoras, que, por sua vez, eram usadas para criar uma espada do solo.</p>
+<p> </p>
+<p>Você empurrou a arma na lacuna gigante do abismo da cratera, destruindo o centro da cratera gigante, embora temporariamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

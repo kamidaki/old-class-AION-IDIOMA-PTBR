@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A maioria dos deveres por aqui pode ser tratada por um único Daeva, mas quando estamos em patrulha, viajamos grupos.</p>
+<p> </p>
+<p>Você não pensaria que os molhos, os anfóios e o Grifos seriam um grande desafio, mas várias patrulhas ficaram feridas em Anpha Stampede, na semana passada. Que desastre foi!</p>
+<p> </p>
+<p>Quando algo assim acontece, você não quer estar sozinho!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é terrível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Provavelmente você está acostumado ao deserto agora, [%username]. Que tal nos dar mão com algumas das bestas perigosas da região? Eles estão tornando esse caminho inseguro para viajar.</p>
+<p> </p>
+<p>Nós vamos nos concentrar no[%dic:STR_DIC_M_Clodworm_29_An] S, [%dic:STR_DIC_M_Worm_30_An] Areia [%dic:STR_DIC_M_Condor_30_An] S.</p>
+<p> </p>
+<p>Não podemos matar todos eles ... mas podemos prejudicar seus números.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. O vigia do Guardian do Santuário ficará feliz em recompensá -lo por sua ajuda. Estamos orgulhosos, mas sabemos quando pedir ajuda.</p>
+<p> </p>
+<p>Quando terminar, volte e me veja.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vejo você em alguns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo. Eu pensei que você poderia ter outros negócios prementes. Desculpe, eu te incomodei.</p>
+<p> </p>
+<p>Tenha uma jornada segura, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Vou tentar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de ver você em ação lá em cima. Impressionante!</p>
+<p> </p>
+<p>Habilidade e tenacidade fabulosas!</p>
+<p> </p>
+<p>Parecia que você limpou um monte de molhos de malhas, ânfas de dunas e grito de asa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. É um pouco bagunçado lá agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Sem você, essa tarefa teria demorado muito mais.</p>
+<p> </p>
+<p>Por favor, leve isso para seus problemas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se das criaturas do deserto.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Clodworm_29_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Worm_30_An]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Condor_30_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Acaste].</p></step>
+</steps>
+<p>Siga o pedido de Acasia e livre -se das criaturas do deserto. Isso ajudará a proteger os viajantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>ACASTE disse que as criaturas ferozes no deserto são uma ameaça para os viajantes.</p>
+<p> </p>
+<p>Ele ficou emocionado quando você ajudou a tornar a rota mais segura ao matar molhos de malhas, ânfas de dunas e grifus de barbear. Além disso, ele lhe deu uma boa recompensa por seus problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

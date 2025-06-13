@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15102</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! É incrivelmente quente ... como uma região que foi submersa até recentemente é tão quente? Já estou suando como uma cachoeira ...</p>
+<p> </p>
+<p>O problema é que a fonte desse calor não é natural. Existem fragmentos de espinhos espalhados por todo o deserto, e eles emanam o calor e transformam todo o resto no deserto.</p>
+<p> </p>
+<p>Em minha pesquisa, descobri que o deserto espinhoso está se expandindo principalmente dos lugares onde estão situados fragmentos de espinhos.</p>
+<p> </p>
+<p>Se não fizermos nada a respeito, Soon Signia será apenas um trecho de areias do deserto e fragmentos de espinhos. Precisamos encontrar uma solução.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF5_SZ_J_01], destrua o [plur][%dic:STR_DIC_M_LF5_FOBJ_Blazed_Thorn_Q15102a] e me traga alguns[plur][%dic:STR_DIC_I_quest_15102a]. É a única maneira de impedir que o deserto se expanda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha pesquisa mostra que o deserto já cresceu para uma vez e meia do tamanho que era quando Signia acabou de subir do mar.</p>
+<p> </p>
+<p>Nesse ritmo, levará apenas alguns anos para transformar toda a Signia em uma região do deserto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os fragmentos de espinhos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Os fragmentos de espinhos aceleram a expansão do deserto em Signia.</p>
+<p> </p>
+<p>Embora tenham sido destruídos, eles ainda emanam uma energia e calor sinistros.</p>
+<p> </p>
+<p>Essa energia ardente parece quase não natural ... o que pode ser?</p>
+<p> </p>
+<p>Vamos examiná -lo com cuidado. Felizmente, ele dará respostas sobre como impedir o deserto de se expandir aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Entre no deserto espinhoso e obtenha alguns fragmentos de espinhos.</p>
+<p> </p>
+<p>Obviamente, não esperamos que você impeça o deserto de se expandir sozinho, mas obter fragmentos de espinhos seria um primeiro passo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses fragmentos de espinhos ... embora tenham sido destruídos, eles ainda emanam uma energia e calor sinistros.</p>
+<p> </p>
+<p>Essa energia ardente parece quase não natural ... o que pode ser?</p>
+<p> </p>
+<p>Vamos examiná -lo com cuidado. Felizmente, ele dará respostas sobre como impedir o deserto de se expandir aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Obrigado a Daevas como você, [%username], Signia será poupada do terrível destino de se tornar uma região do deserto.</p>
+<p> </p>
+<p>Mas não tenha suas esperanças. Acabamos de começar com nossa pesquisa sobre a expansão do deserto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_J_01], juntar [plur][%dic:STR_DIC_I_quest_15102a] e relatar de volta a [%dic:STR_DIC_N_LF5_Eremia_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Eremia_E].</p></step>
+</steps>
+<p>Obtenha fragmentos de espinhos do deserto espinhoso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A geóloga Eremia explicou que os fragmentos de espinhos haviam causado o deserto espinhoso se expandir tão extensivamente.</p>
+<p> </p>
+<p>Você reuniu fragmentos de espinhos do deserto espinhoso por Eremia. Ela lhe entregou uma recompensa em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

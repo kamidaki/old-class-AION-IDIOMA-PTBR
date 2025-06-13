@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username]! Eu tenho outro favor a perguntar.</p>
+<p> </p>
+<p>Aqueles rapidinhos e berros quase acabaram com toda a minha colheita. As coisas estão sob controle agora, mas estou preocupado que, se eu deixar minha trama, elas causam ainda mais danos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer para ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de alguém para pegar o grão que eu poderia me recuperar para a vila. Eu já fiz um acordo com a Uno, o cozinheiro da vila, então você não precisa se preocupar em vender as mercadorias.</p>
+<p> </p>
+<p>Está apenas no caminho, e tenho certeza de que você tem outro trabalho que o levará até lá de qualquer maneira. Eu preciso trocar o grão por comida suficiente para sobreviver.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh obrigado, [%username]! Eu sabia que poderia contar com você.</p>
+<p> </p>
+<p>Basta levar o grão para [%dic:STR_DIC_LA05]. Ele estará esperando você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pode confiar em mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não vai ajudar? Acho que vou ter que arriscar a viagem e espero que os querubinhos e os rapé não levem tudo o mais que tenho.</p>
+<p> </p>
+<p>Eu pensei que você poderia estar tentando causar uma boa primeira impressão, mas claramente estava errado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, estou muito ocupado agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá, corajoso[%userclass]! Diga -me, você gostaria de comprar uma das minhas tortas de ervio? Você não encontrará outro como isso em qualquer lugar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma entrega urgente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, este deve ser o grão de [%dic:STR_DIC_LA36], estou certo?</p>
+<p> </p>
+<p>Estou preocupado com ele. Ele não está aqui há um tempo agora. Ele deve estar quase sem comida!</p>
+<p> </p>
+<p>Não se preocupe, [%username]-Nós garantiremos que ele obtenha o que precisa para sobreviver. E eu vou dizer a ele que você disse olá. Agora, sobre essas tortas ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_LA36]é saco de grão para [%dic:STR_DIC_LA05], o cozinheiro.</p></step>
+</steps>
+<p>[%dic:STR_DIC_LA36] não poderia deixar sua fazenda sem vigilância, então ele pediu para você levar seu saco de grão para [%dic:STR_DIC_LA05], o cozinheiro em[%dic:STR_DIC_FLA02].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kales estava à beira da fome, e ele pediu que você levasse um saco de grãos para o cozinheiro da aldeia Uno para troca.</p>
+<p> </p>
+<p>Você trouxe o grão para Uno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

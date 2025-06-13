@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Finalmente! As sombras protegem o sol! Grace cruzou meu caminho, [%username]!</p>
+<p> </p>
+<p>Batalrion envia boas notícias, você vê? O estigma foi descoberto e minha sorte como mestre de estigma mudou com um vento favorável.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Desculpe, [%username], mas isso não é uma informação que eu posso dar livremente. Mais potencial neste trabalho do que dinheiro no templo do ouro.</p>
+<p> </p>
+<p>Diga a você o que. Você concorda em me ajudar, e eu vou entrar nos detalhes. Eu sempre me mantive fiel à minha palavra, espero que você faça o mesmo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que o Balaur está pesquisando um novo estigma no Naduka Biolab. Seus súditos eram alguns SAPs de Krall, mas algo deu errado-todos estão mortos. Parece que os pesquisadores de Drakan também foram transformados em Mortos Vivos, enquanto o punhado de sobreviventes fugiu para o Dragonrest para criar algum tipo de plano.</p>
+<p> </p>
+<p>Nós queremos o [%dic:STR_DIC_I_quest_21277a] Aqueles[%dic:STR_DIC_M_21277]provavelmente tem neles. Os sobreviventes não teriam a chance de levá -los, então eles são nossos para a arrancada. Pegue -os e traga -os de volta com algum reagente de documentos de que você pode obter [%dic:STR_DIC_N_Thuth].</p>
+<p> </p>
+<p>Vá em frente, [%username]. Se arrastarmos nossos calcanhares nisso, poderíamos perder completamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Saindo agora. Sangue por sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não?! Tudo bem então. Deixar.</p>
+<p> </p>
+<p>Vou compartilhar minha fortuna com outro Daeva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ajuste -se."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Você está de volta!</p>
+<p> </p>
+<p>Você tem o [%dic:STR_DIC_I_quest_21277a]? E o reagente do documento de [%dic:STR_DIC_N_Thuth]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu penso que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, você não.</p>
+<p> </p>
+<p>Lembre -se, eu preciso do[%dic:STR_DIC_I_quest_21277a]o [%dic:STR_DIC_M_21277] Ainda tenho neles. Pegue -os e o [%dic:STR_DIC_I_quest_21277b], e nosso mundo pode muito bem mudar para sempre!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendo. Eu estarei de volta!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, bem, eles parecem documentos de Balaur, mas terei que trabalhar o reagente do documento nas fibras da página antes mesmo de começarmos a ler o que está escrito.</p>
+<p> </p>
+<p>Ainda assim, devo a você meus agradecimentos! Avisarei você se chegar a algum lugar com isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete o [%dic:STR_DIC_I_quest_21277a] e alguns[%dic:STR_DIC_I_quest_21277b], então traga -os para [%dic:STR_DIC_N_Garath].</p>[%collectitem]</step>
+</steps>
+<p>Encontre os diários de pesquisa do estigma que os pesquisadores de Mortos Vivos do Naduka Biolab têm sobre eles. Você também pode pesquisar os pesquisadores de Naduka Drakan na Dragonrests. Encontre -os e ajude o estudo de Garath sobre o estigma de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garath recebeu informações importantes sobre o estigma de Balaur da Batalrion e precisou de sua ajuda.</p>
+<p> </p>
+<p>Você concordou em ajudar e trouxe tudo o que lhe foi solicitado uma recompensa adequada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

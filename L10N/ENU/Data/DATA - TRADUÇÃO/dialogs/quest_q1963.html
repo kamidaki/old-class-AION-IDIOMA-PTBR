@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu trabalho me conecta a todos os lugares em Atreia, e as pessoas me pedem todo tipo de ajuda.</p>
+<p> </p>
+<p>Na maioria das vezes, eles me pedem para manter mercadorias para pick-up. Não é tão difícil, apenas chato às vezes.</p>
+<p> </p>
+<p>Às vezes, porém, recebo pedidos de remessas para a porta externa. Sei que não é fácil para eles chegarem até aqui, mas não posso correr até o porto externo do santuário sempre que quiser.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece um problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Phokas], o gerente do porto, geralmente aparece, reúne os bens e os carrega em transportes de saída.</p>
+<p> </p>
+<p>Mas ele não está há algum tempo e agora tenho pilhas de mercadorias para me mover. Eu mesmo faria isso, mas não posso deixar meu post.</p>
+<p> </p>
+<p>[%username], que tal levá -los para exercícios? Não posso pagar muito, mas ajudará se você precisar de dinheiro para ir a Verteron ou Eltnen.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu poderia enviar trabalhadores shugo ou corredores, mas, como você está aqui, pensei em perguntar.</p>
+<p> </p>
+<p>Se você vai fazer uma rodada de santuário, que tal entrar lá?</p>
+<p> </p>
+<p>Basta entregar as mercadorias para [%dic:STR_DIC_N_Phokas]Na porta do navio de passageiros e volte aqui quando terminar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Você provavelmente tem mais do que suficiente para despesas de viagem.</p>
+<p> </p>
+<p>Mas se você mudar de idéia, volte e me veja.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter em mente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está indo para o porto externo do santuário?</p>
+<p> </p>
+<p>Por favor, espere um momento. O dirigível virá em breve.</p>
+<p> </p>
+<p>Ah, não sai longe demais. É muito perigoso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Polyido me pediu para trazer isso por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>De novo? Esta é a terceira vez hoje!</p>
+<p> </p>
+<p>Sou gerente de porto, mas ajudar meu amigo me faz sentir como um entregador.</p>
+<p> </p>
+<p>Não importa. Diga a ele que vou enviar para a porta externa com segurança. Cuide-se.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Você também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username], você está de volta! As pessoas me deixaram mais mercadorias enquanto você estava ausente.</p>
+<p> </p>
+<p>Comecei a fazer isso para ajudar as pessoas de longe a ficarem em contato, mas agora elas tomam isso como certo.</p>
+<p> </p>
+<p>Não eu, no entanto. Eu cuido dos meus amigos. Você entregou as mercadorias ao Phogus?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Você me salvou problemas e ajudou as pessoas que você nem conhece ao mesmo tempo.</p>
+<p> </p>
+<p>Aqui está o que eu prometi. Eu sei que não é muito, mas espero que você possa fazer o melhor uso dele.</p>
+<p> </p>
+<p>Por favor, volte e ajude novamente se tiver tempo. Sempre há mercadorias para entregar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Phokas].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Polyidus].</p></step>
+</steps>
+<p>Polyidus deseja enviar algumas mercadorias para a porta externa. Entregue -os ao Phogus na porta de navio de passageiros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Polyidus, o Teleport Master, ajuda os visitantes ao santuário com seus pertences e entregas ocasionais.</p>
+<p> </p>
+<p>Ele geralmente mantém as coisas e as devolve aos seus donos mais tarde. Mas o porto externo está tão longe de seu post que ele envia mercadorias para Phogus no porto de navios de passageiros.</p>
+<p> </p>
+<p>Quando você o visitou, ele pediu que você levasse um pouco para ele. Você entregou as mercadorias e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

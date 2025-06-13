@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos tendo problemas com o trabalho porque o ambiente ainda não foi limpo!</p>
+<p> </p>
+<p>Agora não temos tempo suficiente para a investigação do Beritra Troop Post ...</p>
+<p> </p>
+<p>[%username], Estou implorando para você matar [%dic:STR_DIC_M_LDF5A_B2_Condor_63_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Toda vez que olho para essa bagunça aqui, sou superada por um grande cansaço.</p>
+<p> </p>
+<p>Você lidou com o Grifo de colarinho de ferro?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que o matou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que meu cansaço vai diminuir agora.</p>
+<p> </p>
+<p>Eu tenho você a agradecer por isso, [%username].</p>
+<p> </p>
+<p>Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_B2_Condor_63_An], para inspecionar o posto do Beritra ([%2]/6).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5A_Ranis_E].</p></step>
+</steps>
+<p>Mate o Grifo de colarinho de ferro que está interrompendo a pesquisa para limpar o meio ambiente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O plano de inspeção para o posto de guarda de Beritra falhou porque a área de Lanis não foi liberada.</p>
+<p> </p>
+<p>Depois de eliminar os problemas de ferro problemáticos, conforme solicitado e devolvido, você foi agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

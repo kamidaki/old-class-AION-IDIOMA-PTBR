@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Comando de operação urgente -</p>
+<p></p>
+<p>Remetente: Pandaemonium High Command</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens:</p>
+<p></p>
+<p>Mate o [plur][%dic:STR_DIC_NPC_LF2A_DirectPortal_Guard_Li_Eh]que estão interferindo na operação em Theobomos.</p>
+<p></p>
+<p>Relatório para [%dic:STR_DIC_N_Sala]no Priorado Marchutan.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolsa os pedidos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você, [%username].</p>
+<p> </p>
+<p>Você teve muito o que fazer em Theobomos?</p>
+<p> </p>
+<p>Diga -me exatamente o que aconteceu, afinal, ainda preciso ter sua recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu confirmo que você cumpriu sua missão, [%username].</p>
+<p> </p>
+<p>Aqui está a sua recompensa, espero que ela atenda à sua aprovação.</p>
+<p> </p>
+<p>Vejo você de novo em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_NPC_LF2A_DirectPortal_Guard_Li_Eh]([%2]/2).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Ordem de operação urgente: Relatório a Sala depois de matar os guardiões de canhões que estão interferindo na operação em Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a urgente missão de alto comando do Pandaemonium e eliminou os guardiões de canhões de Jamanok.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

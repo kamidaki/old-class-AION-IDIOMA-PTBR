@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu sucesso na última missão é louvável, [%username]. Aquela Lisya de asas escuras conhece um excelente recruta quando vê um.</p>
+<p> </p>
+<p>Estou seguro de sua presença. Desejo um momento de descanso, mas não podemos descansar para o inimigo não o fará.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou sob seu comando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O inimigo que enfrentamos esse tempo é muito forte. Os soldados do Exército Elyos da Rank 3 são veteranos que passaram pelo inferno e água alta no abismo. É melhor você ter cuidado.</p>
+<p> </p>
+<p>Eu acredito que você tem o que é preciso para aniquilá -los, [%username]. No entanto, eu o aviso, seus oponentes o matarão sem um problema se tiverem a oportunidade. Estar seguro.</p>
+<p> </p>
+<p>Você vai derrotar o [%dic:STR_DIC_E_Lgrade3] para o hasia vermelho e para asmodae?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você, abençoado nas sombras. Os soldados da Elyos tremerão com medo e tomarão asa quando o virem se pôr em suas fileiras.</p>
+<p> </p>
+<p>Lembre -se, há pouco sentido desperdiçando seu tempo matando aqueles que representam o resto de nós não há problemas. Você é um talento melhor gasto lutando contra o seu melhor, [%username]. E se você não estiver lutando contra eles, eles causarão todo tipo de problema.</p>
+<p> </p>
+<p>Estou confiante de que você os derrotará e retornará em segurança.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou terminar esses ellies para asmodae!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... eu não esperava que você rejeitasse a missão. A quem mais posso recorrer?</p>
+<p> </p>
+<p>Por favor, [%username], precisamos da sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username], você retorna triunfante?</p>
+<p> </p>
+<p>Qual é o seu relatório?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Rank 3 Elyos derrotado conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Missão cumprida eh? Assim como eu esperava, [%username].</p>
+<p> </p>
+<p>Nossos legionários vermelhos não apenas estão realizando com sucesso suas missões, mas, graças a você, o moral de Elyos começou a falhar! Vamos esmagar esses amantes da luz!</p>
+<p> </p>
+<p>Mas, nosso trabalho está longe de terminar ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lutar e derrotar [%dic:STR_DIC_E_Lgrade3] S ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Semotor].</p></step>
+</steps>
+<p>Derrote os soldados do Exército de Elyos, classificados para uma vitória da Asmodian no Abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Encontrando seu sucesso anterior, Semotor disse que estava confiante de que você poderia lidar com uma missão mais difícil.</p>
+<p> </p>
+<p>Ele pediu que você derrotasse o experiente Soldados do Exército Elyos experiente.</p>
+<p> </p>
+<p>Quando você voltou vitorioso, ele disse que você desmoralizou os Elyos e agradeceu por seu serviço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

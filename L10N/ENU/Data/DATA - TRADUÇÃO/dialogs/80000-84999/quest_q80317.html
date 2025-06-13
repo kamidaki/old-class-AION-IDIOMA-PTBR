@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Pontos Abissais que eu dei a você definitivamente o tornarão mais forte.</p>
+<p> </p>
+<p>Mas tudo é sua escolha, é claro, [%username].</p>
+<p> </p>
+<p>Uma coisa é certa - você quer se tornar um herói, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Na sala dos fundos, há o equipamento do Guardian que pode torná -lo mais forte.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p>Comprar [%dic:STR_DIC_I_QUEST_80317a] e venha até mim com isso.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A aventura no abismo está apenas começando.</p>
+<p> </p>
+<p>[%username], você será um herói.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que você tem um motivo para cancelar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem isso com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o anel de aquamarina do líder da tropa do Guardian.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você não poderia obter o que eu falei.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que este é o começo.</p>
+<p> </p>
+<p>[%username], você sem dúvida ficará cada vez mais forte.</p>
+<p></p>
+<p>[%username], se você lutar lado a lado conosco contra os asmodianos em uma batalha ainda maior, não haverá necessidade de temer.</p>
+<p></p>
+<p>A glória pertence aos Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_event_Alef].</p></step>
+<step><p visible="[%3]">Pegar [%dic:STR_DIC_I_QUEST_80317a]para [%dic:STR_DIC_N_event_Alef]</p>[%collectitem]</step>
+</steps>
+<p>[%dic:STR_DIC_N_event_Alef]quer explicar uma maneira de se tornar ainda mais forte no abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu equipamentos que são absolutamente necessários para se tornar ainda mais forte na luta contra os asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

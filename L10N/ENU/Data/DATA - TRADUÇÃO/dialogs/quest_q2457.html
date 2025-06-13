@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos acham que sou estranho, mas vi pessoas muito mais excêntricas ...</p>
+<p> </p>
+<p>Você conhece um daeva de pesca nomeada [%dic:STR_DIC_N_Lif]?</p>
+<p> </p>
+<p>Ela é conhecida por ser a melhor das melhores, sempre se gabando de que pegou até os peixes mais raros do mundo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso não parece excêntrico."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, a LIF afirma ter pego peixe Lasayo, conhecido por colocar ovos apenas uma vez a cada cem anos! E até peixes Daevic, cujo progenitor era um daeva que havia sido transformado em peixe por punição divina.</p>
+<p> </p>
+<p>Mas, ela diz que o único peixe que não conseguiu pegar é ... Gadill! Isso faz algum sentido para você?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, Gadill pode ser complicado, eu acho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Você já pescou?! Gadill é um dos peixes mais comuns ao redor!</p>
+<p> </p>
+<p>Parece tão estranho que um Daeva da pesca, que afirma ter capturado todos os peixes mais raros do mundo, não conseguiu pegar um único gadill!</p>
+<p> </p>
+<p>Mas sinto muito por ela também. Seria bom se pudéssemos dar -lhe alguma esperança. Oh, eu sei! Por que você não pega alguns[%dic:STR_DIC_E_fish_d_n_c_20a] e leve-os para [%dic:STR_DIC_N_Lif]? Mostre a ela que não é impossível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que se você pegar cinco[%dic:STR_DIC_E_fish_d_n_c_20a] e leve-os para [%dic:STR_DIC_N_Lif], isso deve ser suficiente.</p>
+<p> </p>
+<p>Gadill é abundante neste rio, então você não precisa ir longe.</p>
+<p> </p>
+<p>Leve -a a Gadill, e talvez você possa ajudar a quebrar essa "maldição de Gadill", ela está pescando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso parece uma ótima ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aww, sério?</p>
+<p> </p>
+<p>Eu poderia fazer isso sozinho, mas eu apenas peguei esse fogo indo muito bem e não quero deixar sair.</p>
+<p> </p>
+<p>Você apenas parecia o tipo de pessoa que gostaria de fazer uma coisa legal para alguém.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os looks podem estar enganando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arg! Hoje peguei muitos peixes raros, como sempre.</p>
+<p> </p>
+<p>E, como sempre, peguei todos os tipos de peixe, mas[%dic:STR_DIC_E_fish_d_n_c_20a]!</p>
+<p> </p>
+<p>Isso não é estranho? Eu até peguei um peixe hoje extinto em Asmodae há centenas de anos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Uau, isso é uma conquista incrível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho, mas parece tão sem sentido para mim.</p>
+<p> </p>
+<p>Eu não tenho idéia de quais planos os senhores shedim têm para mim, mas isso [%dic:STR_DIC_E_fish_d_n_c_20a] A obsessão vai me levar ao abismo!</p>
+<p> </p>
+<p>Todo mundo diz que é bastante abundante!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É verdade. Veja o que eu trouxe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ooh, o que você tem aí? Isso é ...? É Gadill!</p>
+<p> </p>
+<p>Ah, Favyr o enviou para me encorajar, não foi? Ele faz isso às vezes. É uma espécie de piada, eu acho, mas ele é bem-intencionado.</p>
+<p> </p>
+<p>Ajuda a saber que o Gadill pode realmente ser capturado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_E_fish_d_n_c_20a] e leve-os para [%dic:STR_DIC_N_Lif].</p>[%collectitem]</step>
+</steps>
+<p>Favyr disse que a vida-quem se chama um daeva de pesca-pegou todos os peixes estranhos, mas não Gadill, o peixe mais comum. Pegue Gadill e leve -os à LIF como Favyr solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Favyr enviou Gadill para Lif, um daeva de pesca, de tempos em tempos para animá -la. A LIF capturou todos os tipos de peixes, mas Gadill, o peixe mais comum.</p>
+<p> </p>
+<p>Você pegou Gadill e os deu a Lif para encorajá -la.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

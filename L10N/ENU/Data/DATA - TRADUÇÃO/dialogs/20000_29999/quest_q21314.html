@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Prazer em conhecê-lo, [%username].</p>
+<p> </p>
+<p>Embora tenhamos ocupado o templo das escalas, ainda me sinto desconfortável.</p>
+<p> </p>
+<p>Talvez seja porque os reforços ainda não estão aqui.</p>
+<p> </p>
+<p>Enquanto estou aqui esperando por reforços, o ataque de Elyos continua. Não podemos permitir isso!</p>
+<p> </p>
+<p>Talvez você possa pelo menos eliminar o [plur][%dic:STR_DIC_E_LDF4Adv_Popoku_all]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é importante que o [plur][%dic:STR_DIC_E_LDF4Adv_Popoku_all] São expulsos da área.</p>
+<p></p>
+<p>Se limparmos a área de tais elementos disruptivos, os reforços chegarão a nós mais rapidamente.</p>
+<p></p>
+<p>Você conseguiu proteger a área?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora a área é segura.</p>
+<p> </p>
+<p>Eu também acabei de aprender - para meu grande alívio - que os reforços estão a caminho.</p>
+<p> </p>
+<p>Muito obrigado. Esse foi um trabalho magnífico.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_LDF4Adv_Popoku_all]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Kirhua].</p></step>
+</steps>
+<p>Faça o pedido de Kirhua derrotando os Raiders Popoku!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que o templo das escalas foi conquistado, Kirhua encarregou você de viajar para Akaron.</p>
+<p> </p>
+<p>Em Akaron, você partiu para o Vale da Invasão. Você derrotou os lutadores de Popoku por lá para proteger a área.</p>
+<p> </p>
+<p>Você recebeu uma recompensa por concluir com sucesso esta missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

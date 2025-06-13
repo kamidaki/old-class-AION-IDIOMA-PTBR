@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa bugiganga repleta de ódio que você trouxe de volta é significativa sem dúvida, mas nos fala pouco sobre os planos da Krall.</p>
+<p> </p>
+<p>Precisamos investigar mais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu vejo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não deveria perguntar mais de você do que eu já tenho-e ainda, devo.</p>
+<p> </p>
+<p>Conspiração ou não, os Krall ainda estão atacando a Cidadela. Devemos enfraquecer a ofensiva deles, atingindo com força.</p>
+<p> </p>
+<p>Devemos nos concentrar em derrubar os rastreadores de túrgias de crack.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como iríamos fazer isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, o reconhecimento vem em primeiro lugar, como sempre. Vá para o [%dic:STR_DIC_FLA23] e procure mais pistas sobre o que o Krall está planejando.</p>
+<p> </p>
+<p>Se você conseguir encontrar algo significativo, elimine os rastreadores de tursina de crack. Eles são a espinha dorsal da força Krall ... um que eu pretendo que você quebre.</p>
+<p> </p>
+<p>Depois de lidar com eles, relate -me de volta para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você e eu, [%username]... Somos pessoas de ação.</p>
+<p> </p>
+<p>Mesmo assim, não tente isso sozinho. Você tem muito terreno para cobrir em sua pesquisa, e o [%dic:STR_DIC_MLA27_5] S matou muitos de nossos mais corajosos Elyos.</p>
+<p> </p>
+<p>Peço que você traga aliados. Fé e armas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas. Eu já pedi mais de você do que tinha o direito de.</p>
+<p> </p>
+<p>Haverá outros Daevas que podem ajudar. Se eu mandar você em perigo repetidamente, você não será mais um herói, mas um dia um mártir.</p>
+<p> </p>
+<p>Vá, Daeva. Vá e descanse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. Fico feliz em vê -lo seguro e bem.</p>
+<p> </p>
+<p>Temos mais alguma pista? Algo melhor do que jóias repletas de ódio?</p>
+<p> </p>
+<p>E o que dizer dos rastreadores de tursina de crack? Eles ainda respiram fundo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Segure um momento. Eu quero ouvir cada palavra disso.</p>
+<p> </p>
+<p>Kraka tem um covil por perto? E eles pareciam estar escondendo algo nele?</p>
+<p> </p>
+<p>Isso é notícia grave. Receio que eles pretendem abrir uma passagem para o abismo, assim como fizeram na vila de Akarios. Então o colar de Odium é uma ferramenta ... uma para os portais de abertura ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pesquise a guarnição da Tursin para localizar a fonte da conspiração.</p></step>
+<step><p visible="[%3]">Elimine os rastreadores de tursina de crack.</p></step>
+<step><p visible="[%15]">[%dic:STR_DIC_MLA27_5]([%5]/9)</p></step>
+</steps>
+<p>Fale com [%dic:STR_DIC_LA19].</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">Spatalos insisted that he needed more clues and asked you to return to the Tursin Guarnição to search for more information. He also ordered you to eliminate Crack Tursin Trackers in order to weaken the Krall force.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto eliminava os rastreadores de tursina da rachadura na guarnição de Tursin, você descobriu o Den de Kraka e encontrou uma pista de sua conspiração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

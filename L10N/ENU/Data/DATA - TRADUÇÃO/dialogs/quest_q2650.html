@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, não tenho certeza se você está ciente da estrutura altamente regimentada das legiões de Balaur.</p>
+<p> </p>
+<p>Embora pareçam semelhantes, cada soldado da Guilda tem sua própria especialidade.</p>
+<p> </p>
+<p>Se você os estudar com cuidado, poderá ver que eles usam diferentes armas, estilos e armaduras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não é diferente de nossos próprios guerreiros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles também têm assassinos, igualmente qualificados e tão perigosos quanto os nossos.</p>
+<p> </p>
+<p>Se pudéssemos matar esses amantes do sol com antecedência, causaremos menos perdas quando nossas forças entrarem em campo.</p>
+<p> </p>
+<p>O que você acha? Você se sente bem para eliminar alguns draks sorrateiros?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para o posto avançado de Hoarfrost e mate os assassinos da Bakarma Legion. Você não deveria ter que parecer duro para encontrá -los.</p>
+<p> </p>
+<p>Tudo que você precisa fazer é matar [%dic:STR_DIC_M_Atk_LizardasD_43_An_Tune] S, [%dic:STR_DIC_M_AeA_LizardAsD_43_An_tune] Areia [%dic:STR_DIC_M_AnA_LizardAsD_43_An_tune] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não parece encerrar com entusiasmo por esta tarefa.</p>
+<p> </p>
+<p>Deixa para lá. Seria melhor não assumir uma missão que vai além da sua capacidade do que aceitá -la sem pensar.</p>
+<p> </p>
+<p>Esta missão terá que ser confrontada eventualmente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minha mãe disse a mesma coisa sobre beterraba."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, [%username]! Você parece surpreendentemente limpo.</p>
+<p> </p>
+<p>Como foi o posto avançado do Hoarfrost? Havia muitos draconutos e drakes lá?</p>
+<p> </p>
+<p>Você matou assassinos de bakarma? Diga -me todos os detalhes do seu ataque!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Para sua surpresa, eles estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Trabalho superlativo! Para um[%userclass], você se saiu muito bem.</p>
+<p> </p>
+<p>Sua habilidade será fundamental para lidar com as forças de Balaur em Beluslan.</p>
+<p> </p>
+<p>Tenho certeza de que estaremos trabalhando juntos novamente. Até lá, vá buscar um pouco de vinho Hasia!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os assassinos draconute.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_AeA_LizardAsD_43_An_tune]([%2]/2).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_AnA_LizardAsD_43_An_tune]([%5]/4).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_Atk_LizardasD_43_An_Tune]([%8]/4).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Betoni].</p></step>
+</steps>
+<p>Se você matar os assassinos de Draconute, poderá aprender mais sobre o estilo de luta do Balaur e poderá usar esse conhecimento contra a Guilda Bakarma mais tarde. Vá para o posto avançado de Hoarfrost e destrua os soldados da Guilda Bakarma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Betoni disse que o Balaur está rigidamente organizado, com hierarquias estritas. Ele sugeriu matá -los como uma maneira de estudar suas táticas.</p>
+<p> </p>
+<p>Então, você foi ao posto avançado de Hoarfrost e matou Vanguards Bakarma, Bakarma Deathblades e agentes Bakarma.</p>
+<p> </p>
+<p>Quando você relatou os resultados a Betoni, ele disse que confiaria em você com qualquer missão e previu que você estaria trabalhando juntos novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

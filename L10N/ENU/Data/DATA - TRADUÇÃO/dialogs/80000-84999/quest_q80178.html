@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há nenhum passeio no parque, sendo um casal velho.</p>
+<p> </p>
+<p>Pensamos em nosso filho frequentemente quando os tempos são difíceis.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha esposa, que ajuda com o trabalho da fazenda, está doente na cama e, todas as noites, um pacote de animais ataca nossa fazenda, comendo tudo o que temos. Não sabemos como devemos ganhar a vida.</p>
+<p> </p>
+<p>Posso me contentar com muito pouco, mas estou preocupado com minha esposa doentia.</p>
+<p> </p>
+<p>Você pode ir do lado de fora da vila e matar o tok listrado selvagem e o worg violento?</p>
+<p> </p>
+<p>Sem eles, será mais fácil para mim colher a colheita.</p>
+<p> </p>
+<p>Talvez você possa nos ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Vou esperar por você de boa fé.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaah! Eu entendo.</p>
+<p> </p>
+<p>A juventude de hoje ...</p>
+<p> </p>
+<p>Não quero dizer você pessoalmente ... ahem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o tok listrado selvagem e o worg violento?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que sim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os matou mais cedo do que eu esperava.</p>
+<p> </p>
+<p>Vejo que você pode esperar grandes coisas do Daevas.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o tok listrado selvagem ([%2]/11).</p></step>
+<step><p visible="[%0]">Mate o violento worg ([%5]/12).</p></step>
+<step><p visible="[%15]">Fale com o buffer de Princessa PVP.</p></step>
+</steps>
+<p>Mate o Tok Listrado Selvagem e o Violento Worg.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Tok Listrado Selvagem e Violento Worg a pedido do Buffer de Princessa PVP.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

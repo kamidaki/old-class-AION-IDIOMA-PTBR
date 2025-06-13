@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Analisei as penas da cauda da Pluma que você buscou para mim mais cedo.</p>
+<p> </p>
+<p>Os Plumas não recebem o suficiente para comer, então não têm nutrientes vitais. Parece ser por isso que eles se tornaram tão violentos.</p>
+<p> </p>
+<p>Não é diferente com os humanos. Se eles comem muito pouco, ficam de mau humor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que isso significa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles não conseguem encontrar comida suficiente.</p>
+<p> </p>
+<p>Eu tenho observado a pluma em seu ambiente e acho que a causa do problema é o [%dic:STR_DIC_M_Spakle_19_n] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sparkles? Mas Pluma não come brilhos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os brilhos vivem nas mesmas áreas que Plumas e comem a mesma comida. Ambos os animais atacam insetos menores.</p>
+<p> </p>
+<p>Recentemente, os brilhos aumentaram em número e devem estar esgotando o suprimento de alimentos.</p>
+<p> </p>
+<p>Se reduzirmos o número de [%dic:STR_DIC_M_Spakle_19_n] S, deve restaurar o equilíbrio.</p>
+<p> </p>
+<p>Você cuidaria disso também, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na floresta abaixo da fortaleza, elimine [%dic:STR_DIC_M_Spakle_19_n] S.</p>
+<p> </p>
+<p>Parece severo, mas precisamos fazer isso para os Plumas, bem como para os moradores que estão incomodando.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se não agirmos, os Plumas serão completamente exterminados. Eles morrerão um por um de fome.</p>
+<p> </p>
+<p>E, o que é pior, se eles continuarem atacando as pessoas, que sabem que consequências podem ocorrer para os humanos ou os Plumas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caçou o [%dic:STR_DIC_M_Spakle_19_n] S?</p>
+<p> </p>
+<p>É interessante o quão delicado é o equilíbrio da natureza. Qualquer aumento ou diminuição de um lado tem um efeito profundo do outro lado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Menos brilhos significa plumas gordos e felizes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado[%username].</p>
+<p> </p>
+<p>Embora os Plumas possam não se acalmar imediatamente, eles retornarão ao normal à medida que ficarem com menos fome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Spakle_19_n] está ao redor [%dic:STR_DIC_W_LF2_SZ_OP]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gaia].</p></step>
+</steps>
+<p>Caça os brilhos que têm comendo o suprimento de alimentos dos Plumas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A investigação de Gaia mostrou que os Plumas haviam se tornado violentos da fome. Os brilhos haviam comido todo o suprimento de alimentos de Plumas.</p>
+<p> </p>
+<p>Você caçou brilhos na floresta ao redor da fortaleza, como Gaia perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

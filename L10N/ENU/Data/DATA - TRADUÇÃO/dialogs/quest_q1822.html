@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava prestes a entrar em contato com você. Tenho um favor a perguntar.</p>
+<p> </p>
+<p>Como você pode dizer, Krotan Rock é muito quente. De fato, essa área é conhecida como o mar de lava.</p>
+<p> </p>
+<p>O calor está causando um problema.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, ele drena a energia de nossos soldados, mas, mais importante, dobra armas.</p>
+<p> </p>
+<p>Como você sabe, [%username], armas podem ser muito sensíveis ao calor. Qualquer pequena deformação pode causar grandes problemas.</p>
+<p> </p>
+<p>Há uma solução, mas nem meus soldados nem eu posso deixar nossas postagens agora para fazer isso acontecer. Você pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem! Pegamos esse escoteiro asmodiano esgueirando -se pela fortaleza, e sua espada estava intacta.</p>
+<p> </p>
+<p>Nós o interrogamos e descobrimos que a espada era feita misturando[%dic:STR_DIC_I_QUEST_1822a]no metal. Aparentemente, é altamente resistente ao fogo e não derrete-mesmo na lava.</p>
+<p> </p>
+<p>Então, se você pudesse derrotar [%dic:STR_DIC_M_Ab1_1221_Pretor_38_An] S por aqui e me traga seus corações, eu ficaria agradecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suspirar... [%username], você me decepciona.</p>
+<p> </p>
+<p>Desculpe ter incomodado você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_1822a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão seus corações."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que este trabalho seria um pedaço de bolo para alguém como você, [%username]. Eu esperava muito?</p>
+<p> </p>
+<p>Vamos, seja rápido: vá e busque [%dic:STR_DIC_I_QUEST_1822a].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto logo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Incrível. Eu pensei que eles seriam quentes, mas eles estão tão frios quanto o gelo.</p>
+<p> </p>
+<p>Eu sei que é melhor derreter -las para as armas como você as faz, mas eu simplesmente não tenho tempo. Vou tentar derreter e revestir as armas-procurado ser melhor do que nada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_Ab1_1221_Pretor_38_An] S e leve seus corações para [%dic:STR_DIC_N_Ab1_1221_Quest_Li].</p>[%collectitem]</step>
+</steps>
+<p>Colete corações vorazes e entregados a Moirai para que ele possa fazer armas resistentes ao calor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moirai estava preocupado que as armas estivessem sendo deformadas pelo calor da rocha Krotan.</p>
+<p> </p>
+<p>A seu pedido, você derrotou os vorazes precedentes e levou seus corações para ele. Moirai disse que derreteria os corações e cobria as armas como uma solução temporária.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

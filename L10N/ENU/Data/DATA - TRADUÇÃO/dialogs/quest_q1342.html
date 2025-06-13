@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Assim, [%username]! Eu preciso da sua ajuda imediatamente!</p>
+<p> </p>
+<p>Ninguém mais aqui pode fazer o que você faz.</p>
+<p> </p>
+<p>Você já ouviu falar de Stoneshell Ksellids e Stoneshell Kselliki?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Parece familiar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ksellids e Kselliki não são animais perigosos. Eles normalmente nunca atacam os seres humanos, a menos que provocados.</p>
+<p> </p>
+<p>Mas acabamos de receber que um pacote deles destruiu uma caravana atravessando o deserto!</p>
+<p> </p>
+<p>A fortaleza está investigando, mas mal podemos esperar pelos resultados; Enquanto isso, qualquer coisa pode acontecer. Então, precisamos da sua ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Caça alguns[%dic:STR_DIC_M_Shellizard_29_An] Areia [%dic:STR_DIC_M_ShellizardBaby_30_An] S, e traga de volta algumas amostras deles.</p>
+<p> </p>
+<p>Não sei o que os tornou tão violentos, mas a segurança dos inocentes deve sempre ser minha primeira preocupação.</p>
+<p> </p>
+<p>Estou perguntando por você porque é urgente, [%username]. Eu ouvi falar de seus feitos em Verteron.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por cumprir meu pedido.</p>
+<p> </p>
+<p>Capture o [%dic:STR_DIC_M_Shellizard_29_An] e [%dic:STR_DIC_M_ShellizardBaby_30_An]imediatamente e trazer 10 pedaços de [%dic:STR_DIC_I_QUEST_1342a]como evidência.</p>
+<p> </p>
+<p>A prova também é usada para o relatório sobre [%username]méritos e serão enviados para a fortaleza.</p>
+<p> </p>
+<p>Seria bom se a fonte pudesse ser determinada rapidamente, mas você não pode apenas esperar por isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não há problema. Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que você não se esconde de missões difíceis. Isso não era verdade?</p>
+<p> </p>
+<p>Como você pode ignorar aqueles que estão em perigo?</p>
+<p> </p>
+<p>Talvez eu estivesse errado em acreditar no que Spiros disse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Olha, eu sou apenas esse Daeva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], bom. Você voltou. Espero que [%dic:STR_DIC_M_Shellizard_29_An] Areia [%dic:STR_DIC_M_ShellizardBaby_30_An] S não lhe deu muitos problemas.</p>
+<p> </p>
+<p>E que você foi capaz de reunir suas conchas.</p>
+<p> </p>
+<p>Diga -me como foi sua patrulha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Foi fácil ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que sim, já que você voltou sem o suficiente [%dic:STR_DIC_I_QUEST_1342a] S.</p>
+<p> </p>
+<p>Se vamos parar esses ataques, precisamos dessas amostras.</p>
+<p> </p>
+<p>Agora, por favor, junte as conchas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou te decepcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Boas notícias! Acabei de informar que a fortaleza encontrou a causa dos ataques.</p>
+<p> </p>
+<p>Bem, não tão bom, na verdade, mas isso é uma questão para outra hora ..</p>
+<p> </p>
+<p>Toda patrulha que enviamos traz de volta outra informação e precisamos de informações acima de tudo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a prova de que você caçou[%dic:STR_DIC_M_Shellizard_29_An] Areia [%dic:STR_DIC_M_ShellizardBaby_30_An] para [%dic:STR_DIC_N_Alexis].</p>[%collectitem]</step>
+</steps>
+<p>Os Ksellids e Kselliki de repente se tornaram violentos, então colecionem suas conchas e os levem a Alexis como para o exame.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alexis disse que os Ksellids e Kselliki se tornaram violentos de repente, então ele pediu que você os caçasse para proteger os habitantes locais e trazer algumas amostras.</p>
+<p> </p>
+<p>Quando você entregou as conchas, ele disse que a fortaleza havia descoberto o que os tornava violentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

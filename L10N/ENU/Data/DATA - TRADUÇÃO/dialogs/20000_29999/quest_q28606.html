@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com licença. Você é[%username]?</p>
+<p> </p>
+<p>Nós nunca nos conhecemos. Meu nome é Sieger. Estou com a Guilda de Siel, a Guilda, diretamente gerenciada por Lady Siel antes do cataclismo.</p>
+<p> </p>
+<p>A maioria de seus soldados se foi agora-apenas alguns são deixados em Atreia, divididos entre Elysea e Asmodae. Mas estou divagando .... vim aqui para lhe pedir um favor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Servi Divine Hisen uma vez, antes do cataclismo, e recentemente ouvi pessoas mencionando o nome dele. Parece que ele aparece em seus pesadelos ... talvez você também o tenha visto?</p>
+<p> </p>
+<p>O Divino Hisen que eu conheço era uma pessoa particular. Ele odiava fofocas e rumores, e ficaria arrasado ao saber que fazia parte de um pesadelo, seu nome sendo jogado assim.</p>
+<p> </p>
+<p>Eu fui a todos que sonhavam com ele e pedi que o matassem se o viram dentro de seus pesadelos, para que ele pudesse descansar em paz. Mas repetidamente, meu pedido foi recusado. Você também vai me recusar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Por favor, você pode fazer isso rapidamente?</p>
+<p> </p>
+<p>Conhecendo o divino Hisen, ele estará no cofre do templo, mesmo em um pesadelo. Ele sempre se preocupou em proteger as relíquias seladas-era seu verdadeiro chamado na vida.</p>
+<p> </p>
+<p>Por favor, entre no seu pesadelo e procure o [%dic:STR_DIC_W_IDCromede_Seal_Room]. Uma vez lá, mate [%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An]... o mais indolor e decentemente possível. O julgamento de Kromede é um julgamento para mais de uma pessoa ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai ser rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava o mesmo. Você é como todo o resto. Sem respeito pelos mortos atormentados.</p>
+<p> </p>
+<p>Apenas vá embora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu dormi um pouco esperando por você. Divine Hisen estava lá novamente, mas desta vez ele era diferente. Ele era todo sorrisos, cheio de gratidão.</p>
+<p> </p>
+<p>Estou certo em dizer que você fez o que eu perguntei?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz exatamente isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que ele descanse em paz, nos braços de Lady Siel ....</p>
+<p> </p>
+<p>Obrigado por me ajudar. É bom saber que você é diferente dos outros. Você realmente se importa com coisas assim.</p>
+<p> </p>
+<p>Por favor, tome isso como um sinal de apreciação. É o mínimo que posso fazer por ser um velho irascível sobre tudo isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entrar no pesadelo de [%dic:STR_DIC_W_IDCromede] e ajuda [%dic:STR_DIC_M_IDCromede_01_Named_Hierarch_38_An], quem guarda o [%dic:STR_DIC_W_IDCromede_Seal_Room], para descansar em paz. ([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Sieger].</p></step>
+</steps>
+<p>Ajude Divine Hisen, que guarda o cofre do templo no julgamento de Pesadelo Kromede, descanse em paz pela eternidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sieger disse que Divine Hisen, ex -colega, é um participante relutante do julgamento de Kromede e pediu que você o colocasse para homenagear sua memória.</p>
+<p> </p>
+<p>Você matou Divine Hisen dentro do pesadelo do julgamento de Kromede, e Sieger ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

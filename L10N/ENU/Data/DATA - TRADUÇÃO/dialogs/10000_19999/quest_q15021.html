@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15021</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu experimentei todas as bebidas alcoólicas existentes. Agora que este novo continente foi descoberto, há todo um novo mundo de boas bebidas para eu explorar.</p>
+<p> </p>
+<p>Ouvi dizer que os sapiens locais destilam um álcool muito bom.</p>
+<p> </p>
+<p>Eu adoraria tentar ... você acha que poderia me pegar um pouco?</p>
+<p> </p>
+<p>Supostamente, há um especial[%dic:STR_DIC_I_quest_15021a]que é armazenado em um[plur][%dic:STR_DIC_OBJ_LF5_FOBJ_Wine_Barrel_Q15021a]na vila do Black Fins no[%dic:STR_DIC_W_LF5_SZ_C_01]. Você me traria um desses barris?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Supostamente, são necessários ingredientes bons e puros para fazer bebidas alcoólicas finas. Mas na verdade você pode fazer sem isso.</p>
+<p> </p>
+<p>O processo tradicional para fazer álcool geralmente é sujo e surrado. E, no entanto, o sabor é insuperável.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o barril.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Dê para mim!</p>
+<p> </p>
+<p>A maravilhosa fragrância de álcool flutuando daquele grande barril está me deixando louco.</p>
+<p> </p>
+<p>Espere um momento. Apenas um gole, então você pode me dizer o que aconteceu.</p>
+<p> </p>
+<p>Um lanche? Eu não preciso desse tipo de coisa. Apenas as pessoas de mente pequena comem quando querem beber álcool. Se você quiser desfrutar do sabor autêntico de bebidas alcoólicas, não as misture com mais nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se há algo que ele esqueceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou bêbado ou alucinando?</p>
+<p> </p>
+<p>Você não está segurando nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A maravilhosa fragrância de álcool flutuando daquele grande barril está me deixando louco.</p>
+<p> </p>
+<p>Espere um momento. Apenas um gole, então você pode me dizer o que aconteceu.</p>
+<p> </p>
+<p>Um lanche? Eu não preciso desse tipo de coisa. Apenas as pessoas de mente pequena comem quando querem beber álcool. Se você quiser desfrutar do sabor autêntico de bebidas alcoólicas, não as misture com mais nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se há algo que ele esqueceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esquecer algo? Oh sim!</p>
+<p> </p>
+<p>Você provavelmente quer uma recompensa por me trazer o álcool!</p>
+<p> </p>
+<p>Aqui, pegue isso.</p>
+<p> </p>
+<p>Por que você não toma uma bebida antes de sair?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_15021a]da Black Fin Village e trazê -la para [%dic:STR_DIC_N_LF5_Ebrius_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Ebrius_E].</p></step>
+</steps>
+<p>Obtenha um barril da tribo Black Fins para Ebrius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ebrius queria provar algumas novas bebidas alcoólicas e pediu que você obtenha um barril da Black Fin Village para ele.</p>
+<p> </p>
+<p>Depois de provar o licor, Ebrius ficou extremamente satisfeito e deu uma recompensa por gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

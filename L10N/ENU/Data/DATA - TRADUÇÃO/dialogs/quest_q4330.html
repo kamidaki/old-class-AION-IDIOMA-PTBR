@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4330</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dê uma olhada nesta nota, [%username].</p>
+<p> </p>
+<p>Um dos moradores me trouxe. Disse que o encontraram na cauda de um worg morto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Apenas diz: "Human Die!"?</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eloquente, hein? Ainda assim, temos que levar todas as ameaças a sério hoje em dia.</p>
+<p> </p>
+<p>Eu quero que você leve a nota para o Centurion[%dic:STR_DIC_N_Mirka]. Ela é responsável pelas defesas e saberia mais sobre ameaças prováveis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por ajudar, [%username].</p>
+<p> </p>
+<p>Você encontrará Mirka em frente ao Nobelium da vila. Não faço ideia se ela levará a ameaça a sério ou não, mas é melhor estar seguro nessas circunstâncias, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Definitivamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, provavelmente são algumas crianças analfabetas brincando.</p>
+<p> </p>
+<p>Ou isso ou estamos prestes a esmagar no chão como Elyos Flowers sob a chuva asmodiana. Vamos descobrir em breve!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ajudar quando tiver tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim? Posso ajudar?</p>
+<p> </p>
+<p>Vamos. Eu tenho coisas que precisam fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_otl;HACTION_SELECT_QUEST_REWARD">"Você precisa ver isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não!</p>
+<p> </p>
+<p>Todo mundo sabe que os Spriggs estão ficando mais agressivos. Eles foram vistos em todo o Alsig recentemente e, na verdade, nos destacaram na última vez em que enviei uma festa de observação!</p>
+<p> </p>
+<p>Mas isso? Eles poderiam realmente ter olhos para a própria vila?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a ameaça de morte a [%dic:STR_DIC_N_Mirka].</p></step>
+</steps>
+<p>Uma nota ameaçando os moradores de Alsig foi encontrada presa a um worg morto. Entregue -o ao Centurion Mirka.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Adhis encontrou uma carta ameaçando os moradores de Alsig Village. Você foi convidado a levá -lo a Centurion Mirka.</p>
+<p> </p>
+<p>Mirka ficou horrorizada com o conteúdo da carta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

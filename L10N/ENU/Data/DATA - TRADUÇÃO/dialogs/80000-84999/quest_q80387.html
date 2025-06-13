@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você veio em nosso auxílio!</p>
+<p> </p>
+<p>Quão afortunada de que há valiantes Daevas como você que estão fazendo a sua parte para proteger Elysea.</p>
+<p> </p>
+<p>Apoie o protetorado da Elysea.</p>
+<p> </p>
+<p>Daeva! O número de balaur penetrando no[%dic:STR_DIC_W_LF3_SZ_009] está aumentando constantemente.</p>
+<p></p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LF3_SZ_009] e abate o número crescente de [%dic:STR_DIC_M_LF3E3_FeA_Lizard_All]Para evitar mais intrusos.</p>
+<p> </p>
+<p>Por favor, mate dez [plur][%dic:STR_DIC_M_LF3E3_FeA_Lizard_All].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você matou dez [plur][%dic:STR_DIC_M_LF3E3_FeA_Lizard_All]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF3E3_FeA_Lizard_All] em[%dic:STR_DIC_W_LF3_SZ_009]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_SIZ].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_SIZ]pediu que você ajudasse com a eliminação de [%dic:STR_DIC_M_LF3E3_FeA_Lizard_All]no[%dic:STR_DIC_W_LF3_SZ_009].</p>
+<p>Matar [%dic:STR_DIC_M_LF3E3_FeA_Lizard_All].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_SIZ]pediu que você elimine o [%dic:STR_DIC_M_LF3E3_FeA_Lizard_All].</p>
+<p> </p>
+<p>Você fez o que [%dic:STR_DIC_N_EVENT_GUARD_SIZ]perguntou e os matou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

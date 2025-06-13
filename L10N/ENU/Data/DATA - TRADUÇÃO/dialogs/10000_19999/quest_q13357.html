@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard17_L]do[%dic:STR_DIC_W_LDF5b_F1_v17]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: derrotar o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5b_SZ_F1]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A luta com o Balaur é difícil o suficiente por si só, mas os asmodianos também estão lá, sempre à procura de uma oportunidade.</p>
+<p> </p>
+<p>[%username], você terá que nos ajudar muito para que o sangue de seus camaradas não tenha sido derramado em vão.</p>
+<p> </p>
+<p>A postagem é bastante grande, facilitando a defesa contra pequenos ataques. Mas você nunca sabe.</p>
+<p> </p>
+<p>Todos os asmodianos foram mortos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é uma boa notícia.</p>
+<p> </p>
+<p>Essa foi uma grande ajuda para as forças Elyos em Katalam.</p>
+<p> </p>
+<p>Como ninguém sabe o que pode acontecer, você constantemente precisa estar em guarda.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5b_SZ_F1]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard17_L].</p></step>
+</steps>
+<p>Ordens: Mate o Asmodiano que avançou para a linha de defesa de Beritra no sul de Katalam e se reporte a Timoleon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos atacaram para capturar a linha de defesa de Beritra no sul de Katalam.</p>
+<p> </p>
+<p>Você matou os asmodianos invasores e se reportou de volta a Timoleon.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q1470</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero ser honesto com você ...</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Denlavis]Na verdade, não é meu filho.</p>
+<p> </p>
+<p>Ele é meu amante e foi meu por décadas ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você quer dizer com 'nós?'"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele se tornou um guardião, mas mesmo assim nada mudou entre nós.</p>
+<p> </p>
+<p>Ele veio me visitar quando ele saiu. Ele sempre me enviou cartas também.</p>
+<p> </p>
+<p>Mas então um dia perdemos o contato de repente.</p>
+<p> </p>
+<p>Eu carrego a memória de Denlavis em meu coração.</p>
+<p> </p>
+<p>Eu gostaria de saber o que aconteceu com ele antes de morrer ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Novamente com a parte 'nós'."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Só vou descansar assim que me vingar.</p>
+<p> </p>
+<p>Ouvi dizer que uma mulher de Asmodae chamada Kromede supostamente levou meu Denlavis com ela. Ela deve ter matado ele!</p>
+<p> </p>
+<p>Desejo vingar Denlavis.</p>
+<p> </p>
+<p>Por favor, volte para o [%dic:STR_DIC_E_Q1469_Zone] e matar [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Obrigado!</p>
+<p> </p>
+<p>Sair o mais rápido possível para [%dic:STR_DIC_E_Q1469_Zone], encontre a mulher chamada [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae], e mate -a.</p>
+<p> </p>
+<p>Essa é a última coisa que vou pedir a você, eu juro!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços, Hannet!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A rota para o templo do fogo pode não ser fácil. Talvez você pense que meu pedido é descarado.</p>
+<p> </p>
+<p>Mas, infelizmente, não posso executar meus planos para a vingança sozinha.</p>
+<p> </p>
+<p>Devo me vingar, mas encontrarei outra pessoa para me ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Encontre conforto à luz, Hannet."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], venha, sente -se! Você teve sucesso?</p>
+<p> </p>
+<p>Você matou[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você é vingado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Você faz orgulho dos Serafim.</p>
+<p> </p>
+<p>O meu tem sido uma vida difícil, mas você me trouxe conforto no final.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_E_Q1469_Zone] e vencer [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae], Ex -amante de Denlavis ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hagne].</p></step>
+</steps>
+<p>Hannet quer vingança. Vá para o templo do fogo e mate Kromede, o corrupto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hannet aprendeu que Denlavis ficou em Asmodae por estar com seu amante, Kromede, o corrupto, e disse que queria vingança.</p>
+<p> </p>
+<p>Você foi ao templo do fogo para ela e venceu Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza tem adiado lidar com a Cidadela Lefarista. Entre os Mau e Elyos viajando aqui através das fendas com quem tínhamos o suficiente para lidar, e a ameaça parecia pequena.</p>
+<p> </p>
+<p>Eles decidiram que não poderíamos pagar uma guerra total com os lefaristas, mas acho que essa foi a decisão errada. Eles estão expandindo seu território diariamente, e nós sentamos e não fazemos nada.</p>
+<p> </p>
+<p>Os representantes da vila e o general da brigada concordaram com um compromisso, mas ainda estou preocupado. O que você acha?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quanta ameaça eles estão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil dizer. Até agora, não montamos nenhum esforço conjunto para detê -los. Isso termina agora. Não podemos mobilizar os arcontes de Morheim, mas podemos pedir ajuda a outros daevas.</p>
+<p> </p>
+<p>Precisamos de ajuda com o [%dic:STR_DIC_E_HardR]na Cidadela e seus juramentos escritos como evidência-para a vila e para Morheim.</p>
+<p> </p>
+<p>Tivemos anéis especiais criados em Pandaemonium como pagamento pela assistência. Você estaria interessado? Precisamos muito da sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Sangue para sangue, [%username]. Você sabe, é fácil ignorar os revolucionários lefaristas. Afinal, eles são asmodianos. Eles são nossa família e amigos-eles olham, agem e falam como nós enquanto trabalham o tempo todo para a nossa queda.</p>
+<p> </p>
+<p>Isso me incomoda mais do que posso dizer para tê -los tão próximos, mas não sabe que danos estão causando. Sua vontade de ajudar a facilitar minha mente.</p>
+<p> </p>
+<p>Não se esqueça de me trazer o [%dic:STR_DIC_I_JUNK_D_LEHPAR_QUEST_01A] S. Vou precisar disso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não concorda com o nível de ameaça? Eu não posso ... não entendo como você pode dizer isso. Precisamos desesperadamente da sua ajuda, [%username]. Para asmodae.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta! Você conseguiu desacelerar um pouco? Deveríamos ter prestado atenção mais cedo ....</p>
+<p> </p>
+<p>É tarde demais para arrependimentos agora, suponho. Mostre -me os juramentos que você coletou, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço seus esforços, mas Morheim estabeleceu as regras-sem juramentos, sem anéis. Sangue para sangue, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, esses são os juramentos escritos. Em nome de Alsig Village e da Fortaleza de Morheim, eu gostaria de expressar gratidão. Por favor, aceite este anel como um sinal de nossa gratidão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_E_HardR] S na cidadela lefarista, colete os juramentos escritos e levá -los a [%dic:STR_DIC_N_Mirka].</p>[%collectitem]</step>
+</steps>
+<p>Colete os juramentos escritos por lefarista e entregue -os a Mirka para receber um anel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirka queria sua ajuda para eliminar os lefaristas na Cidadela Lefarista.</p>
+<p> </p>
+<p>Você derrotou os membros da elite na Cidadela Lefarista e coletou seus juramentos. Mirka lhe deu um anel em recompensa por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

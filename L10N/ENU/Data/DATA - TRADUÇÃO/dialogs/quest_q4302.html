@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O dever de um curandeiro de alma nunca termina, [%username].</p>
+<p> </p>
+<p>Como Daeva, somos abençoados com imortalidade. Não precisamos nos preocupar com os mesmos perigos que os humanos. Mas mesmo a imortalidade tem um preço.</p>
+<p> </p>
+<p>A alma está cansada pela morte, e cada vez que morremos, perdemos uma parte de nós mesmos. O trabalho de um curandeiro de alma é restaurar o que estava perdido. Para a glória de Asmodae, seguimos nosso povo, nossos soldados e nossos arcontes para os lugares mais proibidos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sangue para sangue, curandeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto eu estava curando os moradores feridos ontem, notei que muitos haviam sido envenenados. Eu posso curar feridas mortais e restaurar almas, mas o veneno de purga é outra questão. O veneno é muito mais difícil de tratar do que as feridas de batalha e muito mais perigoso.</p>
+<p> </p>
+<p>Existem várias criaturas por aqui que causam feridas venenosas e, se pudéssemos nos livrar de alguns deles, isso diminuiria a carga de trabalho nos arcontes.</p>
+<p> </p>
+<p>O que você acha, [%username]? Você pode ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Por favor, livre -se do[%dic:STR_DIC_M_merdionD_27_n] Areia [%dic:STR_DIC_M_ScorpionD_27_An] está por aqui.</p>
+<p> </p>
+<p>Seu potente veneno é perigoso para humanos e sapiens, mas para um Daeva matá -los não deve ser nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar quando terminar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é decepcionante. Sua ajuda seria mais apreciada pelos moradores, [%username].</p>
+<p> </p>
+<p>Acho que vou ter que encontrar outra pessoa ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esteja bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso restaurar sua alma em um instante, mas cicatrizes curam muito mais lentamente. Certifique -se de evitar se machucar, [%username].</p>
+<p> </p>
+<p>Por favor, avise -me quando terminar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>[%username], graças à sua ajuda, somos capazes de garantir a segurança dos habitantes da cidade e reduzir os trabalhos dos arcontes.</p>
+<p> </p>
+<p>O rápido aumento de rapé e scolopens me preocupa, mas poderemos resolver o problema agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as criaturas venenosas.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_merdionD_27_n]([%2]/5).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_ScorpionD_27_An]([%5]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Maxeldor].</p></step>
+</steps>
+<p>Maxeldor pediu que você matasse os rapidinhos de Saltongue e o Blacktail Scolopen para garantir a segurança do povo. Isso também reduziria o ônus do arconte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Maxeldor disse que criaturas venenosas na área estão prejudicando os moradores e, assim, aumentando a carga de trabalho nos arcons.</p>
+<p> </p>
+<p>Você matou vários rapidinhos de Saltongue e Scolopens Blacktail. Quando você voltou, Maxeldor agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

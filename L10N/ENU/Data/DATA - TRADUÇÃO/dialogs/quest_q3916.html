@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3916</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa pesquisa até agora nos ajudou a descobrir que Dragel e Drazma são feitos de um material chamado Drana.</p>
+<p> </p>
+<p>Temos que investigar essa drana mais de perto!</p>
+<p> </p>
+<p>Mas ainda não sabemos como é fabricado ...</p>
+<p> </p>
+<p>Até agora, tudo ainda é um mistério.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como podemos descobrir a verdade?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia me pegar [plur][%dic:STR_DIC_I_quest_3916a], Assim, [%username]?</p>
+<p> </p>
+<p>Precisamos deles para a pesquisa de Drana e Dragel.</p>
+<p> </p>
+<p>Você vai fazer isso por mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É a sorte que você esteja nos ajudando com a pesquisa, [%username].</p>
+<p> </p>
+<p>Estamos pedindo ajuda a outros de Daevas.</p>
+<p> </p>
+<p>Isso me ajudaria muito se você conseguir [plur][%dic:STR_DIC_I_quest_3916a]para mim.</p>
+<p> </p>
+<p>Muito obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sempre faço!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um problema.</p>
+<p> </p>
+<p>Só podemos resolver o quebra -cabeça da arma Balaur com amostras de Drana.</p>
+<p> </p>
+<p>Eu sei como é difícil obter amostras ...</p>
+<p> </p>
+<p>Estamos em um beco sem saída com a pesquisa no momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só posso estar em tantos lugares ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É a primeira vez que fico tão empolgado desde que comecei a pesquisar o Balaur.</p>
+<p> </p>
+<p>De repente, há tantas coisas que precisam ser pesquisadas ...</p>
+<p> </p>
+<p>Você obteve as amostras de Drana?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não foi fácil, mas sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obteve o [plur][%dic:STR_DIC_I_quest_3916a]?</p>
+<p> </p>
+<p>Como tenho certeza, você sabe, não há livros sobre Drana. Estamos começando na estaca zero e precisamos estudar amostras.</p>
+<p> </p>
+<p>Os resultados da pesquisa serão de grande utilidade para toda a Elysea.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é Drana!</p>
+<p> </p>
+<p>Dragel e Drazma são criados usando isso. Eu só tenho que descobrir como.</p>
+<p> </p>
+<p>Se fizermos avanços, tudo depende de seus serviços, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [plur][%dic:STR_DIC_I_quest_3916a] em[%dic:STR_DIC_W_IDLF1] e leve-os para [%dic:STR_DIC_N_Maloren].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha amostras de Drana em Dark Poeta para que a pesquisa possa ser conduzida no Dragel e Drazma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Maloren queria pesquisar Dragel e Drana, as matérias -primas para Drazma.</p>
+<p> </p>
+<p>Você obteve amostras de Drana de Dark Poeta e as deu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

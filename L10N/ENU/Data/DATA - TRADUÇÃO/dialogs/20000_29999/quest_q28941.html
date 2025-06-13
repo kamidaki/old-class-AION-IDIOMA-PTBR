@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lutar contra os Elyos não é a única coisa que você precisa fazer aqui.</p>
+<p> </p>
+<p>Também precisamos da sua ajuda na caça [%dic:STR_DIC_M_IDLDF5_Fortress_Re_Boss_65_Ah].</p>
+<p> </p>
+<p>Kunax é uma criatura poderosa que foi contaminada pelo ID.</p>
+<p> </p>
+<p>Parece que Kunax the Slayer é a última criatura sobrevivente desde o momento em que a tribo Rune estava usando o Runatorium como uma arena.</p>
+<p> </p>
+<p>Suspeitamos que havia outras criaturas contaminadas aqui. Kunax provavelmente absorveu sua energia, e é por isso que é tão assustadoramente forte.</p>
+<p> </p>
+<p>Por favor, relate -se [%dic:STR_DIC_N_LDF5_Fortress_Pintz_E]Depois de matar o Kunax.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. É bom te ver.</p>
+<p> </p>
+<p>Sayde da tropa de reconhecimento me disse que você estava no Runatorium, [%username].</p>
+<p> </p>
+<p>É verdade que você derrotou o Kunax, mesmo que estivesse contaminado com ID?</p>
+<p> </p>
+<p>Como foi sua missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que a tarefa foi concluída.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Isso confirma tudo o que ouvi de suas habilidades, [%username].</p>
+<p> </p>
+<p>Graças a você, nosso esforço de pesquisa de identidade deu um grande passo à frente. O material do Runatorium é muito útil.</p>
+<p> </p>
+<p>Isso significa que temos que garantir ainda mais material.</p>
+<p> </p>
+<p>Muito obrigado. Você tem sido uma grande ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDLDF5_Fortress_Re_Boss_65_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5_Fortress_Pintz_E] em[%dic:STR_DIC_W_LDF5_Fortress].</p></step>
+</steps>
+<p>Elimine o Kunax o matador e se reporte a Pintor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Sayde, você lutou contra os Elyos e caça Kunax, o Slayer.</p>
+<p> </p>
+<p>Quando você disse isso a Pintor, ele disse que ajudou o esforço de pesquisa de identificação a dar um grande passo adiante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

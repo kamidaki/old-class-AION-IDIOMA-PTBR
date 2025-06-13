@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que há valiantes Daevas, como você, que fazem a sua parte para proteger asmodae.</p>
+<p> </p>
+<p>Por favor, ajude o protetorado de atreia asmodae.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! No caminho para o Oracle de Beritra, elimine [%dic:STR_DIC_M_IDDF3_FeA_Naga_All] e reunir 10[plur][%dic:STR_DIC_I_quest_80424a]no[%dic:STR_DIC_W_STR_DF3_SZ_H]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos mostrar a eles do que nós, asmodianos e você, Daeva, somos feitos!</p>
+<p> </p>
+<p>Para a glória dos asmodianos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós asmodianos precisamos de um ajudante como Daeva.</p>
+<p> </p>
+<p>Estaremos com problemas se Daeva nos abandonar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu [%dic:STR_DIC_I_quest_80424a]de [%dic:STR_DIC_M_IDDF3_FeA_Naga_All]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 10 unidades de sangue de Chandala Balaur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos mais recuar. Daeva!</p>
+<p> </p>
+<p>Você deve ir e ajudar o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDDF3_FeA_Naga_All] e pegue 10[plur][%dic:STR_DIC_I_quest_80424a]para [%dic:STR_DIC_N_EVENT_GUARD_LEIBNIZ].</p>[%collectitem]</step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_LEIBNIZ]quer que você elimine [%dic:STR_DIC_M_IDDF3_FeA_Naga_All] e reunir 10[plur][%dic:STR_DIC_I_quest_80424a]. Reunir 10 deles.</p>
+<p>o [plur][%dic:STR_DIC_M_IDDF3_FeA_Naga_All]Inclui o 47º lutador de Chandala, o 47º guerreiro de Chandala, o 47º suplicante de Bakarma, o 47º curandeiro de Bakarma, o 47º mago do Bakarma e o 47º mestre de Spirit Bakarma.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_LEIBNIZ]quer que você elimine [%dic:STR_DIC_M_IDDF3_FeA_Naga_All] e reunir 10[plur][%dic:STR_DIC_I_quest_80424a].</p>
+<p> </p>
+<p>Portanto, você obteve [plur][%dic:STR_DIC_I_quest_80424a].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

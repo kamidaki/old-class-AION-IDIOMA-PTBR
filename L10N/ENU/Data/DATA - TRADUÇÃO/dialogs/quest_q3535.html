@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3535</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ritmo? Bem, sim, acho que estou andando. Este lugar me deixa nervoso. É tão silencioso em comparação com o abismo.</p>
+<p> </p>
+<p>Passar de lutar em Reshanta para o ensino de Guardiões em Hearon é um contraste acentuado. Vai demorar um pouco para ajustar. O trabalho é bom embora. Eu gosto de ensinar, é muito ... mais lento.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Nada de errado com Slow."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que não. E as coisas que eu considero triviais, como Maurauding Kerubiels ... bem, eles são absolutamente perigosos para o aldeão comum. Algo que precisa ser abordado.</p>
+<p> </p>
+<p>E, honestamente, uma boa caça ao Kerubiel parece muito divertida, mas tenho uma programação de aula completa hoje.</p>
+<p> </p>
+<p>Você não estaria interessado em limpar os Kerubiels pelo Observatório de Campo Aetico, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ouvir. Eu adoraria esperar e fazer isso no meu dia de folga, mas os moradores poderiam realmente usar a ajuda mais cedo do que isso.</p>
+<p> </p>
+<p>Se você pudesse matar o [%dic:STR_DIC_M_Cherubim3_32_An] está perto do Observatório de Campo Aetico e traga de volta seus[%dic:STR_DIC_I_QUEST_3535A] S, posso mostrar os cintos aos moradores para tranquilizá -los de que a ameaça foi abordada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro. Cintos é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Drat. Não posso simplesmente pular aula e não tenho autoridade para ordenar que mais ninguém o faça.</p>
+<p> </p>
+<p>Ah bem. Vou ter que esperar até ter algum tempo livre.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza de que os Kerubiels vão esperar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido.</p>
+<p> </p>
+<p>Como foi a luta? Diversão?</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_3535A] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Cintos em uma variedade de tamanhos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não esteve no Observatório de Campo Aetico?</p>
+<p> </p>
+<p>Vamos agora, não está tão longe!</p>
+<p> </p>
+<p>Ah, e não se esqueça de trazer de volta o [%dic:STR_DIC_I_QUEST_3535A] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Yeah, yeah."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me ver ... Ah, olhe para essa ferramenta. Estes são definitivamente cintos de Kerubiel.</p>
+<p> </p>
+<p>Obrigado. Estes devem tranquilizar os moradores. Uma coisa a menos para se preocupar.</p>
+<p> </p>
+<p>Eu sei que não parece muito, mas cada pouquinho ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_3535A] e trazê -los para [%dic:STR_DIC_N_Daruka].</p>[%collectitem]</step>
+</steps>
+<p>Elimine os Kerubiel Sentinels perto do Observatório Aégico de Campo e traga [%dic:STR_DIC_I_QUEST_3535A] para [%dic:STR_DIC_N_Daruka]Para que ele possa tranquilizar os moradores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Daruka estava preocupado com os ataques de Kerubiel a moradores perto do Observatório de Campo Aetico.</p>
+<p> </p>
+<p>Ele estava ocupado com aulas, então você eliminou os Kerubiel Sentinels para ele e trouxe de volta os cintos de Kerubiel para provar a conquista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que, por que você continua vindo aqui para me encontrar?</p>
+<p> </p>
+<p>Eu não te disse que estava escondendo? Escondendo-como tentando não ser encontrado.</p>
+<p> </p>
+<p>Não é seguro para mim ou para minha família se outros shulacks sabem onde estou. Problemas muito ruins. Por que você continua vindo aqui?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Desculpe. Aqui, vou me esconder atrás disso enquanto conversamos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Falar? Sobre o que devemos falar, Daeva? Eu não sei nada que interessaria a um daeva ....</p>
+<p> </p>
+<p>Ah! Talvez eu faça! Há um livro ... Daeva como livros! Dorkin sabe onde um[%dic:STR_DIC_OBJ_IDElim_Book_Q11461]é ... mais ou menos.</p>
+<p> </p>
+<p>Você quer dar uma olhada? Pode conter muita informação. Se eu lhe disser onde encontrá -lo, você manterá minha localização em segredo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este outro Daeva, [%dic:STR_DIC_N_Marica], ela deixou o livro no meu buraco de dormir. Era muito irregular para dormir, então eu o joguei fora.</p>
+<p> </p>
+<p>Não sei exatamente onde pousou, em algum lugar pelos galhos de Taloc. Daeva [%dic:STR_DIC_N_Marica] está bravo, ela perdeu. Ela é rude, então eu não digo a ela onde acho que está.</p>
+<p> </p>
+<p>Você deve encontrar o [%dic:STR_DIC_OBJ_IDElim_Book_Q11461]. Dê uma olhada dentro. Talvez devolva para [%dic:STR_DIC_N_Marica]... ou talvez não?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Plano interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode prometer?</p>
+<p> </p>
+<p>Então eu direi mais nada.</p>
+<p> </p>
+<p>Eu não vou te dizer ou[%dic:STR_DIC_N_Marica]onde encontrar o livro interessante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Toous, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Um shulack escondido em Taloc lhe disse onde encontrar meu livro?</p>
+<p> </p>
+<p>Por que essa bola desprezível fuzz! Espero que seus bigodes caam!</p>
+<p> </p>
+<p>Esse diário contém anos de notas de pesquisa! Eu tenho tentado encontrá -lo há semanas, mas toda vez que parei e perguntei que Shulack sobre isso, ele sempre dizia que não tinha visto! Barata falsa falsa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Agora, agora. Acalme -se."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu diário de pesquisa?</p>
+<p> </p>
+<p>Você realmente sabe onde está? As luvas de Asmodae! Eu tenho que recuperá -lo! Tem anos de dados!</p>
+<p> </p>
+<p>Infelizmente, não posso sair agora. Você poderia procurar por isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem, tudo bem. Se for tão importante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o diário que mantive quando estava investigando o Taloc.</p>
+<p> </p>
+<p>Nesse dia, eu estava sendo perseguido por um enxame de insetos e enchi o diário em um buraco para mantê -lo seguro. Mas quando voltei para isso, ele se foi!</p>
+<p> </p>
+<p>Você leu? Espere, este não é o meu livro! Eu acho que é um diário de uma expedição exploratória ao Taloc. Eu me pergunto quem escreveu isso e quando? Hmm ... interessante ... vou ter que estudar isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_IDElim_Book_Q11461] e trazê -lo para [%dic:STR_DIC_N_Marica].</p>[%collectitem]</step>
+</steps>
+<p>Dorkin contou sobre um livro que ele encontrou e descartou. Marica está procurando o livro. Encontre e devolva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dorkin convenceu você a ir embora e procurar um livro que ele viu.</p>
+<p> </p>
+<p>Você encontrou o livro e o devolveu a Marica. Acabou por não ser dela, mas ela parecia achar interessante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos nos preparar para a defesa do[%dic:STR_DIC_W_DF5_SZ_Village_02]. Os Elyos escolheram este lugar para ser o alvo de seu próximo ataque.</p>
+<p> </p>
+<p>Não sabemos onde a brecha será aberta a seguir.</p>
+<p> </p>
+<p>Temos que estar prontos a qualquer momento.</p>
+<p> </p>
+<p>Se Elyos aparecer em[%dic:STR_DIC_E_DF5_Vil2_Area_All], não hesite, mas ataque -os imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos Elyos apareceram através da fenda.</p>
+<p> </p>
+<p>Mas ouvi dizer que você não mostrou medo, [%username].</p>
+<p> </p>
+<p>Diga -me como foi a batalha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz a ele o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se saiu muito bem, [%username].</p>
+<p> </p>
+<p>Você continua me surpreendendo.</p>
+<p> </p>
+<p>Obrigado a você, [%username], este lugar é seguro mais uma vez.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram o [%dic:STR_DIC_E_DF5_Vil2_Area_All]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Xeikun_E].</p></step>
+</steps>
+<p>Cumprir o pedido de Jekun. Elimine os Elyos na região sátiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jekun pediu que você eliminasse os Elyos na região sátiro.</p>
+<p> </p>
+<p>Você foi procurar a região do sátiro e expulsou os Elyos. Jekun agradeceu por seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

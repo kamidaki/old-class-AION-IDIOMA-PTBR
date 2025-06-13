@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu que as tropas de Beritra estão se reunindo agora?</p>
+<p> </p>
+<p>Suas forças são grandes. Em breve haverá uma grande batalha.</p>
+<p> </p>
+<p>O fortalecimento adicional de suas forças deve ser evitado antes de se prepararem totalmente.</p>
+<p> </p>
+<p>Por favor, elimine o [%dic:STR_DIC_E_LDF5b_A4_Vri] Atrás de nós, todos os últimos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O exército de Beritra parece incerto, porque não foi capaz de conquistar o bastião da parede de aço.</p>
+<p> </p>
+<p>Caso contrário, eles não teriam enviado uma força de combate tão grande.</p>
+<p> </p>
+<p>Eles devem ser eliminados antes da batalha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço seus esforços, [%username].</p>
+<p> </p>
+<p>Se o Balaur tivesse concluído o recrutamento, teria sido difícil de derrotar.</p>
+<p> </p>
+<p>Sorte que você poderia fazer algo a respeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_LDF5b_A4_Vri]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard11_L]%.</p></step>
+</steps>
+<p>Elimine a 40ª equipe de inteligência antes que o Exército de Beritra possa se reunir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Stifon disse que as forças de Beritra estão se reunindo e logo chegará a uma grande batalha.</p>
+<p> </p>
+<p>Quando você eliminou a 40ª equipe de inteligência antes de suas forças serem completamente montadas, você recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

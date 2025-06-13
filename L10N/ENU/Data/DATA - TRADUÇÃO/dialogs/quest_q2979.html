@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo mundo que provou sua louça elogia sua culinária. Uma coisa pesa em minha mente no entanto ...</p>
+<p> </p>
+<p>Gostaria de saber se você pode cozinhar uma refeição verdadeiramente inspirada.</p>
+<p> </p>
+<p>Um verdadeiro especialista em culinária sabe que inspiração e paixão criam refeições verdadeiramente memoráveis.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu sei disso também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para testar suas habilidades, quero que você compre as receitas para a salada de Vidar, o Smmothie de Vidar, o peixe de Vidar e a sopa de Vidar e cozinhe -os até que você os domine. Versões saborosas de cada uma são necessárias!</p>
+<p> </p>
+<p>Esses pratos exigem grande habilidade, foco e inspiração ... acho que você é bom o suficiente para enfrentá -los.</p>
+<p> </p>
+<p>Você gostaria de tentar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cozinhar [%dic:STR_DIC_E_Q2979a], Assim, [%dic:STR_DIC_E_Q2979b], Assim, [%dic:STR_DIC_E_Q2979c], e [%dic:STR_DIC_E_Q2979d], e eles juntam todos eles para criar um[%dic:STR_DIC_E_Q2979all].</p>
+<p> </p>
+<p>Estes são pratos minuciosos. Você precisará marcar todas as suas habilidades e paixão, se quiser ter sucesso.</p>
+<p> </p>
+<p>Estarei esperando aqui ... com fome ... para o seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma refeição especial da Daeva chegando!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai desistir agora, [%username]? Eu nunca soube que você se recusar a um desafio. Estou decepcionado.</p>
+<p> </p>
+<p>Que pena de desperdiçar seu talento.</p>
+<p> </p>
+<p>Volte para mim se você mudar de mente mais tarde.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisa de mais do que apenas talento e inspiração para cozinhar essas refeições complicadas. Um cozinheiro verdadeiramente hábil cria pratos que melhoram o humor, a força ou até o poder mental dos clientes.</p>
+<p> </p>
+<p>Esse tipo de prato fala com o coração de um Daeva. Você pode fazer isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Por favor, tente minha refeição humilde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não terminou? Não há necessidade de se apressar.</p>
+<p> </p>
+<p>Você ainda é jovem. Somos sempre jovens ....</p>
+<p> </p>
+<p>Se você não entende o que é a culinária inspirada, pergunte a cozinheiros mais experientes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Apenas me dê tempo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... esse molho foi uma escolha ousada, mas funciona muito bem com os vegetais. Mmm ... Eu nunca pensei em usar essas especiarias em um smoothie de todas as coisas, mas eu realmente gosto.</p>
+<p> </p>
+<p>Vamos ver. Ahh! O peixe é esquisito e delicioso ... harmonioso como um coro bem ajustado. Por fim, a sopa! Ah, um gole é como ficar no meio de um campo de flores.</p>
+<p> </p>
+<p>É absolutamente lindo, [%username]! Eu acho que você já é melhor do que um especialista!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fazer um[%dic:STR_DIC_E_Q2979all] e servir para [%dic:STR_DIC_N_Lainita].</p>[%collectitem]</step>
+</steps>
+<p>Lainita diz que, para receber o título de especialista em culinária, você deve criar alguns pratos que mostram verdadeira inspiração. Fazer [%dic:STR_DIC_E_Q2979a], Assim, [%dic:STR_DIC_E_Q2979b], Assim, [%dic:STR_DIC_E_Q2979c], e [%dic:STR_DIC_E_Q2979d].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lainita disse que, para receber o título de especialista em culinária, você deve criar alguns pratos que mostram verdadeira inspiração.</p>
+<p> </p>
+<p>Você cozinhou a saborosa salada de Vidar, o saboroso Smmothie de Vidar, o saboroso peixe de Vidar e a sonda saborosa de Vidar. Estava uma delícia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

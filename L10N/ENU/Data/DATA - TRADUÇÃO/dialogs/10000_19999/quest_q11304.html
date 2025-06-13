@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já esteve no templo de Beshmundir?</p>
+<p> </p>
+<p>Embora Tiamat esteja morto, alguns ainda permanecem e adoram Tiamat, realizando rituais no templo de Beshmundir.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Pilomenes] está procurando alguém disposto a ir ao templo de Beshmundir. Por favor, veja ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio porque a General da Brigada Versetti disse que eu estava procurando alguém?</p>
+<p> </p>
+<p>Outremus está preocupado porque ainda existem soldados de Balaur no templo de Beshmundir, embora Tiamat esteja morto há muito tempo.</p>
+<p> </p>
+<p>Por favor, vá para o templo de Beshmundir e elimine [%dic:STR_DIC_M_IDCatacombsH_DrakanMonkBossNmd_55_Ah]no interior do templo.</p>
+<p> </p>
+<p>Isbariya o resoluto tem o [%dic:STR_DIC_I_quest_11304a]. Por favor, leve -o diretamente a Outremus.</p>
+<p> </p>
+<p>Outremus, você vê, quer ser informado sobre a situação com os seguidores de Tiamat.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo.</p>
+<p> </p>
+<p>Ouvi os gritos do Balaur e o grito de um Elyos do templo de Beshmundir.</p>
+<p> </p>
+<p>Você veio aqui do templo de Beshmundir?</p>
+<p> </p>
+<p>Mostre -me a prova. Se você matou Isbariya, o resoluto, terá um de seus bens.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a ordem de Balaur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você fez coisas incríveis.</p>
+<p> </p>
+<p>Parece haver mais soldados de Tiamat no templo de Beshmundir do que o primeiro pensamento.</p>
+<p> </p>
+<p>Mas já faz um tempo desde que Tiamat desapareceu. Ainda há um grupo de seguidores ... qual é a motivação deles?</p>
+<p> </p>
+<p>Mas não se preocupe. Até esses retardatários de Balaur em breve estarão aos pés de Kaisinel.</p>
+<p> </p>
+<p>Que a bênção de Kaisinel esteja sempre com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Pilomenes].</p></step>
+<step><p visible="[%3]">Matar [%dic:STR_DIC_M_IDCatacombsH_DrakanMonkBossNmd_55_Ah], obtenha o [%dic:STR_DIC_I_quest_11304a] e leve para [%dic:STR_DIC_N_Cainus].</p>[%collectitem]</step>
+</steps>
+<p>Elimine Isbariya o resoluto no templo de Beshmundir e obtenha a ordem dos balaurs.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com a General da Brigada Versetti, o pesquisador de Balaur Pilomenes estava procurando um Daeva que esteja preparado para entrar no templo de Beshmundir. Versetti pediu que você o encontrasse.</p>
+<p> </p>
+<p>Os Pilomenes contaram sobre os seguidores de Tiamat no templo de Beshmundir. Ele pediu que você matasse Isbariya, o Resoluto, e depois encontrasse Ultimus, o agente de Kaisinel, e se reporte a ele.</p>
+<p> </p>
+<p>Você matou Isbariya, o Resoluto, obteve a ordem de Balaur e encontrou Outremus, agente de Kaisinel, para reportar a ele. Você foi informado de que ainda havia muitas tropas de Tiamat e que era necessário eliminar ainda mais Balaur.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

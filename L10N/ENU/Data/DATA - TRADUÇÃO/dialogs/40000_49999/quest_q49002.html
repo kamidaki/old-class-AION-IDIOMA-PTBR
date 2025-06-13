@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua primeira tarefa na batalha espacial é a punição dos traidores[%dic:STR_DIC_N_Jahmanok] e seus capangas[%dic:STR_DIC_N_LF2A_NPC_Abunka] e [%dic:STR_DIC_N_LF2A_NPC_Gastak] em Theobomos.</p>
+<p> </p>
+<p>Ela roubou documentos secretos de Pandaemonium e fugiu para Elysea.</p>
+<p> </p>
+<p>Não é tarefa fácil. O Jamonak Inn está localizado em uma colina, dificultando a infiltração, e há soldados Krall estacionados lá.</p>
+<p> </p>
+<p>Mas tenho certeza de que, com sua ajuda, o traidor receberá seu devido punição.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O comando de operações está cheio de elogios por suas ações, [%username].</p>
+<p> </p>
+<p>Com sua ajuda, uma crise foi evitada.</p>
+<p> </p>
+<p>Então, como foi com o traidor?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ela conseguiu o que merecia.</p>
+<p> </p>
+<p>Na verdade, ela merecia pior, considerando quantos arcontes foram sacrificados quando Jamanok entregou os documentos secretos aos Elyos ...</p>
+<p> </p>
+<p>De qualquer forma, isso mostrou aos traidores o que eles estão chegando.</p>
+<p> </p>
+<p>Isso foi um bom trabalho, [%username]. Você ganhou um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Jamanok e seus ajudantes.</p>
+<p visible="[%0]">[%dic:STR_DIC_N_LF2A_NPC_Abunka]([%2]/1)</p>
+<p visible="[%3]">[%dic:STR_DIC_N_LF2A_NPC_Gastak]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_N_Jahmanok]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Mate o traidor Jamanok e seus seguidores que fugiram para Elyos com documentos secretos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sala pediu que você punisse o traidor Jamanok e seus seguidores que fugiram para Elyos com documentos secretos.</p>
+<p> </p>
+<p>Você matou Jamanok e seus ajudantes Abunka e Gastak e foram recompensados ​​por fazê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

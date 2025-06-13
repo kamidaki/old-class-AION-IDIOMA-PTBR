@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard07_L]do[%dic:STR_DIC_W_LDF5a_B9_7]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: lute contra o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5a_B9] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os asmodianos?</p>
+<p> </p>
+<p>Uma ordem urgente foi enviada.</p>
+<p> </p>
+<p>É vital para a vitória de Elyos que os asmodianos sejam mortos.</p>
+<p> </p>
+<p>Definitivamente não é porque tenho medo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para a vitória dos Elyos!</p>
+<p> </p>
+<p>[%username], com você do nosso lado, os Elyos certamente serão vitoriosos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Ordens: lute contra o asmodiano que avançou para o [%dic:STR_DIC_W_LDF5a_B9] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard07_L].</p></step>
+</steps>
+<p>Ordens: lute contra o asmodiano que avançou para a rota de marcha da Guilda de Feather de Ouro, no norte de Katalam, e se reportar à Basarian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Seguindo ordens urgentes da Basarian, você matou os asmodianos que passaram pela rota da Guilda de Pena de Ouro, no norte de Katalam.</p>
+<p> </p>
+<p>Basarian ficou feliz em ouvir isso e disse que os Elyos seriam vitoriosos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

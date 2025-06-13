@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, amigo.</p>
+<p> </p>
+<p>Você tem tempo de sobra? Eu tenho um pedido urgente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um homem em Agairon Village está doente, de maneira não natural.</p>
+<p> </p>
+<p>Os relatórios são que ele engoliu algo venenoso por engano, mas ninguém lá sabe o quê.</p>
+<p> </p>
+<p>Tenho uma idéia de como curá -lo, mas poderia usar sua ajuda para reunir os materiais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por mais estranho que possa parecer, às vezes a única maneira de neutralizar um veneno é introduzir uma mais forte.</p>
+<p> </p>
+<p>A picada de veneno do[%dic:STR_DIC_M_VespaNamed_23_n] e as membranas roxas de algumas[%dic:STR_DIC_M_Debrie_16_n] S, misturado, fará um poderoso veneno.</p>
+<p> </p>
+<p>Sua habilidade é muito maior que a minha-seria mais rápido se você matasse as bestas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai encontrar [%dic:STR_DIC_M_VespaNamed_23_n] S é encontrado no[%dic:STR_DIC_W_LF2_SZ_A1].</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_Debrie_16_n] S pode ser encontrado no[%dic:STR_DIC_FLA17], em perfurado.</p>
+<p> </p>
+<p>Eu imploro, seja rápido! A vida deste homem está em suas mãos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou atrasar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>E se fosse seu amigo? E se fosse eu?</p>
+<p> </p>
+<p>Se você não consegue encontrar compaixão por um estranho, não tenho utilidade para você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, não posso evitar agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você voltou!</p>
+<p> </p>
+<p>Você tem o [%dic:STR_DIC_I_QUEST_1461a] e o [%dic:STR_DIC_I_QUEST_1461b] S?</p>
+<p> </p>
+<p>O tempo é essencial para que este homem seja salvo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso não é suficiente para misturar o contra-veneno!</p>
+<p> </p>
+<p>Por favor, me traga [%dic:STR_DIC_I_QUEST_1461a] e [%dic:STR_DIC_I_QUEST_1461b] S!</p>
+<p> </p>
+<p>A dose deve estar exatamente certa se esse homem morar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou me apressar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, excelentes espécimes.</p>
+<p> </p>
+<p>Você fez bem. Espero que faça tanto misturando uma contra-toxina a tempo para salvá-lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_M_VespaNamed_23_n] e alguns[%dic:STR_DIC_M_Debrie_16_n] S, colete os materiais para o antídoto e trazê -los para [%dic:STR_DIC_N_Seora].</p>[%collectitem]</step>
+</steps>
+<p>Um homem em Agairon Village ficou doente. Colete os materiais para um antídoto e leve -os à Celestine.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Celestine disse que um morador da vila de Agairon ficou doente depois de comer algo venenoso e que era necessário um antídoto.</p>
+<p> </p>
+<p>Você obteve a picada de veneno de uma vespa rainha e membranas roxas de fitas de lama no pântano contaminado e as trouxe para Celestine.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

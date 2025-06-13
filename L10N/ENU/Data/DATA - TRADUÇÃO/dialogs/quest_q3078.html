@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ... eu realmente, embora fosse uma dessas penas.</p>
+<p> </p>
+<p>Estarei aqui mais dez anos pesquisando? Vinte? Trinta?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Deve haver outro lugar para olhar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem alguns lugares que ainda não verifiquei. Tenho quase medo de ... e se não encontrar o assassino lá?</p>
+<p> </p>
+<p>Você vai investigar para mim, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diz haver [%dic:STR_DIC_M_LF2A_Griffon_45_An] está no passe Dirmoi. Poderia ter sido um deles.</p>
+<p> </p>
+<p>Se você me trazer de volta suas penas ... então terei certeza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar, penas na mão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que não é o seu problema, é?</p>
+<p> </p>
+<p>O assassino provavelmente já está morto há muito tempo, mas eu não posso desistir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ariel lhe concede paz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe-me ver. Eu tenho que saber.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tirei isso de seus cadáveres."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho que saber com certeza.</p>
+<p> </p>
+<p>Volte para lá e me traga as penas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou voltar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nenhum deles. Nada disso! Dez anos, e parado! Não! Pistas!</p>
+<p> </p>
+<p>Mas eu não posso desistir. Eu tenho que saber. Eu tenho que saber que o assassino do meu filho está morto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar as penas de [%dic:STR_DIC_M_LF2A_Griffo_45_n] Areia [%dic:STR_DIC_M_LF2A_Griffon_45_An] S, e trazê -los para [%dic:STR_DIC_N_Elektra].</p>[%collectitem]</step>
+</steps>
+<p>As primeiras penas que você trouxe não corresponderam às do assassino. Traga as penas de bico de aço e grifos de bico de aço para Carmen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Carmen pediu que você voltasse e colecionasse mais penas. Você trouxe as penas de Griffon, mas, novamente, nenhuma delas pertencia ao assassino de seu filho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<!-- Perento-->
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem vários problemas em Heiron, mesmo sem o portão do Abismo.</p>
+<p> </p>
+<p>Os Agrints e os Rotrons são um desses problemas.</p>
+<p> </p>
+<p>Aphesius já está lá para cuidar das agripas e rotrons, mas ele precisa de ajudantes.</p>
+<p> </p>
+<p>Por favor, vá e ajude [%dic:STR_DIC_N_Aphesius].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já esteve no Grove Decayed?</p>
+<p> </p>
+<p>As árvores quase desapareceram completamente lá. Você encontrará Elim, juntamente com Agrints e Rotrons estranhamente mutados lá.</p>
+<p> </p>
+<p>Mas nem sempre era assim. Isso costumava ser uma floresta magnífica, mas então tudo mudou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos encontrar a causa, mas há outras coisas que nos impedem de fazê -lo.</p>
+<p> </p>
+<p>O Balaur vem à mente. Portanto, ainda não fizemos nada sobre isso.</p>
+<p> </p>
+<p>Mas não podemos deixar isso continuar assim.</p>
+<p> </p>
+<p>Agora precisamos descobrir a causa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, vá para o bosque em decomposição e mate o [plur][%dic:STR_DIC_M_Agrint_34_An] e o [plur][%dic:STR_DIC_M_Rottentree_34_An] e traga -me amostras de suas raízes.</p>
+<p> </p>
+<p>Eu acho que as raízes nos mostrarão mais sobre a causa do problema do que os ramos ou galhos.</p>
+<p> </p>
+<p>Por favor, ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+<voice file="Q1052-1.ogg"></voice>
+</htmlpage>
+<!-- Aphesius -->
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>Você recebeu as amostras de raiz?</p>
+<p> </p>
+<p>Eu não conseguia parar de pensar nisso. Isso está me incomodando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as amostras.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>São essas raízes realmente agrícolas e rotron?</p>
+<p> </p>
+<p>Eles não se parecem com raízes de plantas ...</p>
+<p> </p>
+<p>Não sei muito sobre árvores, então não posso dizer o que parece estranho nelas.</p>
+<p> </p>
+<p>Não sou especialista. Você poderia levar essas amostras para o elimismo?</p>
+<p> </p>
+<p>Por favor, dê -os a [%dic:STR_DIC_N_Tree_Move_Mersephon]no refúgio de Arbolu. Ele pode ser capaz de nos ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>A Agrint e Rotron são um pequeno problema em comparação com o Balaur.</p>
+<p> </p>
+<p>Mas se não fizermos algo sobre eles agora, terá consequências terríveis mais tarde.</p>
+<p> </p>
+<p>Então vá imediatamente e obtenha amostras de raiz. Por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<!-- Tree_Move_Mersephon -->
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegue mais perto, Daeva.</p>
+<p> </p>
+<p>Você tem algo para o Elim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Você entrega as amostras de raiz.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são as raízes de agricultura e rotron?</p>
+<p> </p>
+<p>Eles parecem não naturais.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Tree_Nomove_Trajanus]Tem que ver isso.</p>
+<p> </p>
+<p>Por favor, mostre -os para ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO4">Você termina a conversa.</act>
+</selects>
+<voice file="Q1052-2.ogg"></voice>
+</htmlpage>
+<!-- Tree_Nomove_Trajanus -->
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem em sua mão lá?</p>
+<p> </p>
+<p>É por isso que você veio me ver?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega as amostras de raiz.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>São essas raízes de agricultura e rotron?</p>
+<p> </p>
+<p>As pessoas estão fazendo coisas terríveis para as árvores.</p>
+<p> </p>
+<p>Essas raízes parecem não naturais.</p>
+<p> </p>
+<p>Algo está errado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Perento]no[%dic:STR_DIC_W_LF3_SZ_A1].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Aphesius]no[%dic:STR_DIC_W_LF3_SZ_D1].</p></step>
+<step><p visible="[%6]">Reunir alguns[plur][%dic:STR_DIC_I_quest_14051a]do[plur][%dic:STR_DIC_M_Agrint_34_An], e alguns[plur][%dic:STR_DIC_I_quest_14051b]do[plur][%dic:STR_DIC_M_Rottentree_34_An]. Então leve -os para [%dic:STR_DIC_N_Aphesius].</p>[%collectitem]</step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Tree_Move_Mersephon].</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Tree_Nomove_Trajanus].</p></step>
+</steps>
+<p>Ordens: Aceite a missão de Perento e encontre Aphesius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Perento disse que Aphesius já havia sido despachado para encontrar uma solução para o problema junto com a agriação e os rotrons. Mas ele precisava de ajuda para fazê -lo, então você foi até ele. Aphesius pediu que você descobrisse por que a floresta está morrendo. Quando você o trouxe amostras de raiz do bosque decapado, ele lhe disse que seria melhor perguntar aos elimes sobre isso.</p>
+<p> </p>
+<p>Você mostrou o Elim Mersephon e o Trajanus as amostras de raiz, e elas estavam preocupadas porque as amostras pareciam antinaturais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

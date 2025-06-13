@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se não conseguirmos consertar o artefato e o espaço em breve, teremos que tomar algumas medidas drásticas para garantir que a fortaleza não nos mate todos quando entrar em colapso.</p>
+<p> </p>
+<p>Infelizmente, a melhor solução que temos é apenas colá -la novamente como uma panela quebrada.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Cola?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Cola aetica, para ser precisa, feita de saliva com o poder do poder de Aether por um daeva de construção.</p>
+<p> </p>
+<p>Precisamos de mais saliva, então você acha que poderia nos trazer alguns?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_I_QUEST_2502a]vem de [%dic:STR_DIC_M_VaranusRe2D_29_n] S. Você pode encontrá -los ao redor das colinas perto da fortaleza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode pensar que é bobo, mas se não fizermos algo para consertar a situação, talvez tenhamos que evacuar toda a fortaleza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Saliva? Não, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu o [%dic:STR_DIC_I_QUEST_2502a]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui. Cuidado, é pegajoso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de [%dic:STR_DIC_I_QUEST_2502a].</p>
+<p> </p>
+<p>Por favor, diga -me que você não cuspiu em uma bolsa e entregue para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Seu trabalho duro vai impedir que essa trapaça de uma fortaleza mate a todos nós.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_VaranusRe2D_29_n] S, colete sua saliva e traga -a para [%dic:STR_DIC_N_Hod].</p>[%collectitem]</step>
+</steps>
+<p>Pegue uma saliva pegajosa para colar para reparar a fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hod disse a você como eles estavam colando a fortaleza para impedir que ela desmoronasse. Ele o levou a mais monitorar a saliva para ser processada em cola.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41171</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegou a hora de fazer um teste para demonstrar suas habilidades de habilidade.</p>
+<p> </p>
+<p>Se você quer se tornar um templário sagrado milagente, deve ser bom em tudo o que faz. Daevas que são bons apenas em lutar ou somente em ciências são fáceis de encontrar.</p>
+<p> </p>
+<p>Os sagrados templários miragentes não podem aceitar membros que são bons apenas em um campo.</p>
+<p> </p>
+<p>Mas não se preocupe, não exigimos que você conheça todas as formas de habilidade.</p>
+<p> </p>
+<p>Se você deseja fazer o teste de artesanato de móveis, recomendo que você veja [%dic:STR_DIC_N_Undin]no[%dic:STR_DIC_FLA36].</p>
+<p> </p>
+<p>Ele lhe dará os detalhes do teste.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está fazendo um teste de habilidades artesanais; Isso é realmente maravilhoso.</p>
+<p> </p>
+<p>Foi uma boa decisão para você escolher artesanato de móveis. Até onde eu sei, as outras habilidades artesanais são testadas criando um coração de magia.</p>
+<p> </p>
+<p>Mas se você é bom em artesanato de móveis, poderá criar as insígnias do Templário Miraju necessário para a cerimônia.</p>
+<p> </p>
+<p>Vou te dar um padrão. Eu acho que você poderá criar as insígnias se você seguir, e com um pouco de paciência.</p>
+<p> </p>
+<p>Depois de criar as insígnias, você obtém um[%dic:STR_DIC_I_relic_02] e leve para [%dic:STR_DIC_N_Jucleas]. Ele então realizará uma cerimônia sagrada para você.</p>
+<p> </p>
+<p>Desejo -lhe muito sucesso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Eu estava esperando por você.</p>
+<p> </p>
+<p>Quanto mais você progride em seu teste, mais urgentemente eu o espero.</p>
+<p> </p>
+<p>Agora, Conceda-me a miragente insígnia dos templários sagrados e a pedra de juramento.</p>
+<p> </p>
+<p>Vou realizar a cerimônia sagrada imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você pede que ele realize a cerimônia sagrada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, a cerimônia sagrada acabou agora.</p>
+<p> </p>
+<p>Espero que você também passe nos testes restantes.</p>
+<p> </p>
+<p>Pois eles não servem apenas para avaliá -lo, mas, em vez disso, dão a você a oportunidade de melhorar e crescer com o desafio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Undin]no[%dic:STR_DIC_FLA36].</p></step>
+<step><p visible="[%3]">Pegue as insígnias miragentas de templários sagrados e um[%dic:STR_DIC_I_relic_02]com você e converse com[%dic:STR_DIC_N_Jucleas].</p>[%collectitem]</step>
+</steps>
+<p>Faça o teste de habilidades de habilidade de Lavirintos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lavirintos lhe disse que você deve fazer o teste de habilidades de habilidade desta vez.</p>
+<p> </p>
+<p>Você criou a Ordem Sagrada das insígnias templárias milagentes de acordo com o padrão que o Mestre lhe deu. Depois que você trouxe as insígnias e a nobre pedra de Jucleas, ele realizou uma cerimônia sagrada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

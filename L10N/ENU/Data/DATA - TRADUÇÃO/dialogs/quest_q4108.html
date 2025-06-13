@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que os subestimei ....</p>
+<p> </p>
+<p>Oh, desculpe [%username], Eu não te vi lá. Eu estava pensando nos animais em Sudorville.</p>
+<p> </p>
+<p>Não consigo diminuir seus números, e parece que o último ataque apenas os tornou mais irritados. Eu deveria ter melhorado nossas defesas antes de tentar caçá -las.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qualquer coisa que eu possa fazer para ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Absolutamente. Se você tiver tempo e gostaria de caçar alguns animais selvagens, não recusarei a ajuda de um poderoso Daeva.</p>
+<p> </p>
+<p>Claro, há Kinah nele para você também, talvez o suficiente para compensá -lo pelo seu tempo. O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já reuniu muita experiência, [%username].</p>
+<p> </p>
+<p>Portanto, essa tarefa deve ser fácil para você.</p>
+<p> </p>
+<p>Caça o [plur][%dic:STR_DIC_M_DF2A_CuresSpotD_45_An] e [plur][%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An].</p>
+<p> </p>
+<p>Dê tudo que você tem!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou .... desculpe ouvir isso, [%username]. Eu pensei que você havia se oferecido para ajudar. Acho que talvez outra pessoa esteja mais precisando de sua ajuda.</p>
+<p> </p>
+<p>Eu entendo. Quem não gostaria de ajuda de um indivíduo qualificado como você?</p>
+<p> </p>
+<p>Não vou mais incomodar você. Você parece bastante ocupado. Espero não ter perdido muito do seu tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Viagem de culpa, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido. Alguns dos caçadores que partiram antes que você ainda não voltasse. Espero que eles não tenham sido comidos.</p>
+<p> </p>
+<p>O que acontece com um Daeva que é comido vivo, Anyay? Você aparece de volta em um obelisco imediatamente? Ou você digere por um tempo primeiro?</p>
+<p> </p>
+<p>Não que eu esteja sugerindo que você tente isso, é claro ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sobre essa recompensa ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, [%username]. Merecido também. Eu disse que não seria difícil para você.</p>
+<p> </p>
+<p>Espero que os outros voltem com boas notícias. Seria uma pena perdê -los. Talvez eu precise enviar -lhe atrás deles se eles não voltarem em breve.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as criaturas que ameaçam a vila de Baltasar Hill.</p>
+<p visible="[%0]">Caçar [plur][%dic:STR_DIC_M_DF2A_CuresSpotD_45_An]([%2]/5).</p>
+<p visible="[%0]">Caçar [plur][%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An]([%5]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Bielia].</p></step>
+</steps>
+<p>Atenda ao pedido de Bielia e mate os Kurins manchados e os pálidos Karnifs ameaçando a vila de Baltasar Hill.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bielia disse que os Kurins e Karnifs estão ficando mais agressivos e precisam ser caçados.</p>
+<p> </p>
+<p>Você se juntou à operação de caça de Bielia e matou Kurins e Karnifs pálidos. Quando você voltou, ela o recompensou pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]:</p>
+<p> </p>
+<p>Um sacerdote do Empyrean Lord Marchutan solicitou a audiência com um diretor de campo.</p>
+<p> </p>
+<p>Nós o escolhemos para esta missão com base em sua discrição e confiabilidade passadas.</p>
+<p> </p>
+<p>Esse assunto atual diz respeito à fortaleza de Gelkmaros, mas por razões de segurança nenhum detalhe mais detalhes será fornecido no momento.</p>
+<p> </p>
+<p>Destrua esta carta e obtenha a mensagem de [%dic:STR_DIC_N_Unset] e entregá -lo a um[%dic:STR_DIC_E_45021].</p>
+<p> </p>
+<p>Quaisquer detalhes relevantes serão divulgados pessoalmente a você em um momento posterior, conforme necessário.</p>
+<p> </p>
+<p>Sangue para sangue, diretor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Destrua a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se desespere, Daeva. O Senhor Empyrean Marchutan vigia todos nós, mesmo em meio às ferozes batalhas em Gelkmaros.</p>
+<p> </p>
+<p>Seu olhar até cai sobre você ... diretor de campo.</p>
+<p> </p>
+<p>Chegue mais perto, para que possamos discutir mais ... detalhes sem interromper os outros.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"A discrição é fundamental, padre."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha mensagem para os guardas de campo hoje é apenas a seguinte: "Somente aqueles que entendem o destino podem ver o que está diante deles".</p>
+<p> </p>
+<p>Diga isso a um agente de campo e eles entenderão sua importação.</p>
+<p> </p>
+<p>E assim termina meu papel nesse caso. Por hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado pelo seu tempo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os guardas exigem que o apoio de todos os Asmodae complete nossa missão final. O Pandaemonium Research Center está agora firmemente do nosso lado. Agora, se apenas o clero faria tudo ....</p>
+<p> </p>
+<p>Er, desculpe. Então você tem algo para mim, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Somente aqueles que entendem o destino podem ver o que está diante deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu esperava. O apoio de Greeta ainda está totalmente com, na época. Isso ajudará muito nossos esforços a ... proteger o campo isetérico.</p>
+<p> </p>
+<p>Obrigado por entregar a mensagem tão rapidamente, [%username]. Aqui está sua devida recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Unset].</p></step>
+<step><p visible="[%3]">Fale com o [%dic:STR_DIC_E_45021].</p></step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta dos guardas de campo indicou que um padre chamado Greeta tinha uma mensagem para os guardas.</p>
+<p> </p>
+<p>Você conheceu Greeta e entregou sua mensagem a um agente de campo de Gelkmaros, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

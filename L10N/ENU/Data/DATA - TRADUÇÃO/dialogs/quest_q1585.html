@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olho para Medeus Manor e Orton Farm e desespero.</p>
+<p> </p>
+<p>Sou um daeva da vida, mas não pude proteger as pessoas.</p>
+<p> </p>
+<p>Agora eles vagam mesmo após a morte em busca de paz que nunca chega.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você faz o melhor que pode."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu melhor não é bom o suficiente. Eu quero que os Mortos Vivos descansem em paz.</p>
+<p> </p>
+<p>Não posso trazê -los de volta à vida. A única salvação para eles é ajudá -los a retornar ao fluxo de Aether.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Concordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você veja do meu jeito, [%username].</p>
+<p> </p>
+<p>Enviá -los para o Eternal Rest é a única misericórdia que podemos oferecê -los. Claro, como um daeva da vida, não posso derrubá -los.</p>
+<p> </p>
+<p>Você faria o trabalho em meu nome?[%dic:STR_DIC_M_Skeleton_42_An] está ao redor de Medeus Manor East e o cemitério da Manor me preocupam mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito grato, [%username]. Obrigado.</p>
+<p> </p>
+<p>Você encontrará mais[%dic:STR_DIC_M_Skeleton_42_An] S em Medeus Manor East.</p>
+<p> </p>
+<p>Eu deveria relatar isso aos meus superiores, então por favor traga de volta [%dic:STR_DIC_I_QUEST_1585a] S como evidência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minhas asas são suas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem pena dos Mortos Vivos, roaming inconsolidos?</p>
+<p> </p>
+<p>Você não é um daeva da vida-você não pode entender.</p>
+<p> </p>
+<p>Que Aion lhe conceda misericórdia quando a morte o encontrar finalmente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"As bênçãos de Old Class Aion, Lady Daeva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Que notícia, [%username]? Você conseguiu ajudar os anubitos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eles retornaram ao fluxo de Aether."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acredito em você, mas preciso de espadas anubitas para mostrar aos meus superiores.</p>
+<p> </p>
+<p>Não estou trabalhando sozinho, então preciso seguir as regras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou tentar de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... sim. Você fez bem, [%username]. As espadas anubitas ressoam de maneira diferente quando seus mestres retornaram ao fluxo de Aether. Eu posso sentir isso mesmo agora.</p>
+<p> </p>
+<p>Obrigado por dar a eles paz.</p>
+<p> </p>
+<p>Por favor, aceite isso como um sinal de minha gratidão. Você fez um ótimo serviço para todos nós.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_Skeleton_42_An] S e aceite as evidências para [%dic:STR_DIC_N_Rusiridite].</p>[%collectitem]</step>
+</steps>
+<p>Rusiridita tem pena dos Mortos Vivos que não podem voltar ao fluxo de Aether. Ela pede que você os envie para o descanso deles e que lhe traga as evidências.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A rusiridita queria dar paz aos anubitos que vagam por Atreia mesmo após a morte. Você eliminou vários anubitos e trouxe a espada de uma anubita como evidência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga ... você está procurando emprego?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Depende do trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu pergunto porque [%dic:STR_DIC_N_Shugo3]da Wind Breeze Shop está me pedindo para encontrar alguém que esteja a caminho do observatório.</p>
+<p> </p>
+<p>Ele só quer enviar uma carta. Se você tem tempo e está indo dessa maneira, você deve falar com ele antes de sair.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode achar uma experiência gratificante, Daeva. O nmeonek está disposto a pagar generosamente-ele está perguntando sobre isso há algum tempo.</p>
+<p> </p>
+<p>Suba as escadas ali e você não pode sentir falta dele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você não está indo assim, eu posso entender sua relutância. Você está perdendo, no entanto.</p>
+<p> </p>
+<p>Vou ter que encontrar outro Daeva-quem quer fazer um pouco de Kinah.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fala com Stone? Ele te enviou?</p>
+<p> </p>
+<p>Akakak! Boas notícias! Pela primeira vez Stone traz boas notícias! O NUMONERK precisa enviar uma carta. Não posso ir mesmo, muito ocupado.</p>
+<p> </p>
+<p>Isso deve ser fácil, Daeva, mesmo para você. Akakak! Basta pegar a carta e dar a carta. Simples?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Entregue -o para ... quem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim. Daeva é rápido.</p>
+<p> </p>
+<p>A carta deve ir ao Guardian Une. Queria um item do santão. Perguntou numenerk. Foi um item muito difícil de se apossar, muito difícil. Mas onde está meu Kinah? Em lugar nenhum.</p>
+<p> </p>
+<p>Por favor, entregue esta nota de demanda para [%dic:STR_DIC_N_Une]. É justo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou pegar sua nota."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Antes de chegar aqui, pensei em subir um degrau na escada.</p>
+<p> </p>
+<p>Quero dizer, eu sei que somos engrenagens na máquina gloriosa, mas pensei que estava se tornando uma roda dentada vital.</p>
+<p> </p>
+<p>Não é um limpador glorificado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isto é para você..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Melhor ainda ... Numenerk está chegando depois de seu dinheiro.</p>
+<p> </p>
+<p>Eu teria pago a ele há muito tempo, mas aquele pequeno avarento aumentou seus preços. Ele adquiriu uma arma fina, mas não vale metade do que está perguntando.</p>
+<p> </p>
+<p>Eu posso te dizer isso-não vou negociar com um shugo novamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Shugo3].</p></step>
+<step><p visible="[%3]">Entregar a nota de demanda para [%dic:STR_DIC_N_Une].</p></step>
+</steps>
+<p>O supervisor NUMONERK quer enviar uma nota de demanda a Une, que não pagou pela arma que ela ordenou. Vá para o Observatório Verteron e entregue a nota de demanda à UNE.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Stone lhe disse que o supervisor Numenerk da Wind Breeze Shop estava procurando alguém que estava indo para o Observatório Verteron. Ele aconselhou você a encontrá -lo se estivesse a caminho.</p>
+<p> </p>
+<p>Você visitou o NUMONERK e ele pediu que você entregasse uma nota de demanda a um tutor que havia sido transferido sem pagar por um item que ela ordenou dele.</p>
+<p> </p>
+<p>Você foi ao Observatório de Verteron e entregou a nota de demanda a Une, que explicou que ela não havia pago Numenerk porque ele a havia cobrado sobrecarregado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

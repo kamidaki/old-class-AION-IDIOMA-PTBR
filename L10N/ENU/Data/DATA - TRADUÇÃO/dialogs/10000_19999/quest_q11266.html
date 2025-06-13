@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Agradeça aos Senhores Empíreanos que você está aqui!</p>
+<p> </p>
+<p>O agente de Kaisinel, Veille, quer você para uma missão importante. Ela diz que você a ajudou em um momento de fraqueza ...?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está me fazendo corar. Não era nada realmente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há necessidade de ser tímido.</p>
+<p> </p>
+<p>Agora, o agente Veille quer mandar você para matar alguns generais do Guardian inimigo com a espada de seus laestrygos.</p>
+<p> </p>
+<p>Você pode lidar com isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Veille quer retomar os dois[%dic:STR_DIC_W_DF4_SZ_3011_A] e o [%dic:STR_DIC_W_DF4_SZ_3021_A].</p>
+<p> </p>
+<p>Falaremos sobre recompensá -lo com uma versão avançada da sua espada quando você voltar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas! Missão e uma arma!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer que os inimigos inimigos invadam Balaurea?</p>
+<p> </p>
+<p>Você quer usar uma arma inferior para sempre?</p>
+<p> </p>
+<p>Você quer quebrar o coração frágil do agente Veille? Oh, traidor vil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim. Tudo isso acima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por seus esforços, [%username]. Nesse ritmo, podemos alcançar a paz em nosso tempo.</p>
+<p> </p>
+<p>Sua grande contribuição para a recuperação de Vorgaltem e Crimson significa que terei atualizado a espada de seus Laestrygos.</p>
+<p> </p>
+<p>Você trouxe a espada de Laestrygos, certo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Para Elysea e paz! Hmmm ... a espada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Tolice [%userclass]!</p>
+<p> </p>
+<p>A recompensa especial por esta missão é apenas para aqueles que têm a espada de Laestrygos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então, como faço para conseguir um, então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que te dei a espada de Laestrygos antes.</p>
+<p> </p>
+<p>Mas se você não o tiver, não pode ser recompensado por esta missão. Lamento incomodá -lo por nada.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fui a todo esse esforço por nada?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lembra como eu disse que atualizaríamos sua espada? Eu tenho aqui um pedaço de égide.</p>
+<p> </p>
+<p>Eles são muito raros, muito poderosos. Um pedaço de égide pode transformar sua arma em algo ainda maior.</p>
+<p> </p>
+<p>E agora é seu. Obrigado por se livrar daqueles generais guardiões para mim e pelo agente Veille.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Infiltrar as fortalezas inimigas para matar seus generais guardiões.</p>
+<p visible="[%0]">Guardian General de [%dic:STR_DIC_W_DF4_SZ_3011_A]([%5]/1).</p>
+<p visible="[%0]">Guardian General de [%dic:STR_DIC_W_DF4_SZ_3021_A]([%8]/1).</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Laestrygos].</p></step>
+</steps>
+<p>Laestrygos o enviou para matar os generais guardiões inimigos nas fortalezas asmodianas. Ele prometeu melhorar a espada de seus Laestrygos quando você retornou triunfante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laestrygos o enviou para matar os generais guardiões inimigos na Cidadela de Vorgaltem e no Templo Carmesim.</p>
+<p> </p>
+<p>Quando você voltou triunfante, ele lhe deu um pedaço de Aegis para melhorar a espada de seus Laestrygos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

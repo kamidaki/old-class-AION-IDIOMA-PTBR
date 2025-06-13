@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41592</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]![%username], por favor ajude!</p>
+<p> </p>
+<p>Você sabe que o Balaur está causando todos os tipos de estragos por aqui, certo? Eles destruíram nossos carros de cerco e roubaram meu[%dic:STR_DIC_I_quest_41592a], impedindo -me de iniciar os reparos.</p>
+<p> </p>
+<p>Pior, o [%dic:STR_DIC_M_LDF4b_T1_S3_DrakanFi_PagatiDrop_Destroy_58_An] S está me provocando abertamente, agitando minhas ferramentas e as quebrando em pedaços!</p>
+<p> </p>
+<p>Eu preciso deles de volta! Por favor, antes que seja tarde demais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, a lista de coisas que precisam fazer apenas fica mais longa, e tudo o que posso fazer é sentar em minhas mãos e orar para que alguém me traga minhas coisas de volta.</p>
+<p> </p>
+<p>Você, amigo? Você tem minhas ferramentas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu acho que sim. Estes são eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Sim, eles estão! Oh obrigado, [%username]!</p>
+<p> </p>
+<p>Vou consertar o Trebuchet imediatamente. Então eu tenho que mexer com os mísseis e tender aos carros. Oh ... muito trabalho!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_quest_41592a] e trazê -los para [%dic:STR_DIC_N_Solpress].</p>[%collectitem]</step>
+</steps>
+<p>O Balaur roubou as ferramentas de manutenção da Solas. Mate os olheiros da cavalaria Vasharti e recupere -os.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Solas contou como os escoteiros de Vasharti roubaram suas ferramentas de manutenção, causando atrasos e atrasando os horários de reparo. Você concordou em ajudar e, depois de matar os escoteiros, conseguiu recuperar os itens necessários.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

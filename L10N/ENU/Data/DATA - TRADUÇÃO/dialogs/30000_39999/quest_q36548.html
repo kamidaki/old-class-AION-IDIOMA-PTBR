@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Proclamação -</p>
+<p> </p>
+<p>Desert King Durani está sendo procurado pelo seguinte ataque.</p>
+<p></p>
+<p>Leia as seguintes informações com cuidado e siga as instruções.</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_DF5_H_QNamde_Worm_Oasis_63_An]</p>
+<p></p>
+<p>2. Charge: Ele está fornecendo aos agentes infiltrantes com frutas contaminadas.</p>
+<p></p>
+<p>3. Detalhes: Ele tinha frutas nele quando os agentes asmodianos avançando em direção a Vengar estavam procurando fontes de alimentos. Mais tarde, mas a fruta estava contaminada. Isso pode ser muito perigoso.</p>
+<p> </p>
+<p>Quem nos entrega pistas sobre o seu paradeiro ou elimina diretamente o rei Durani deserto do deserto.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_LF5_Cynthor_E], Fortunes -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolta a nota.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi com a missão de pesquisa?</p>
+<p> </p>
+<p>Você fez bem o seu trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>As opiniões dos Daevas variam muito. Alguns dizem que os frutos de Durani foram contaminados, outros os acham deliciosos.</p>
+<p> </p>
+<p>Independentemente disso, contarei com sua ajuda novamente para a próxima pesquisa.</p>
+<p> </p>
+<p>Você realmente ganhou a recompensa, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DF5_H_QNamde_Worm_Oasis_63_An]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Cynthor_E].</p></step>
+</steps>
+<p>Você recebeu uma proclamação da Guilda Fortuneers. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma proclamação da Guilda Fortuneers.</p>
+<p> </p>
+<p>Você matou o deserto rei Durani. Você então relatou a um membro dos Fortunes e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

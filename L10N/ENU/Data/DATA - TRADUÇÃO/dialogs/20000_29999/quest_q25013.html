@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já se familiarizou com o ambiente local. Você poderia me fazer um favor.</p>
+<p> </p>
+<p>Eu preciso de um[%dic:STR_DIC_I_quest_25013a].</p>
+<p> </p>
+<p>Os cientistas aqui estão fazendo um rápido progresso. Dependemos das descobertas de outros campos para que possamos usá -los em nossa própria área de especialização.</p>
+<p> </p>
+<p>Em projetos de pesquisa como esse, as disciplinas individuais se influenciam.</p>
+<p> </p>
+<p>Isso me dá o incentivo para ajudar os pesquisadores em outros campos.</p>
+<p> </p>
+<p>Você se colocaria a serviço da ciência?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Você tem o [plur][%dic:STR_DIC_I_quest_25013a] eu pedi?</p>
+<p> </p>
+<p>Você está aqui porque os encontrou, não é?</p>
+<p> </p>
+<p>São ... são as amostras?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as amostras de algas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão confiável! Isso é incrível. Inacreditável!</p>
+<p> </p>
+<p>Nenhum dos cientistas deste campo jamais esquecerá seu nome, [%username]!</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se foi capaz de ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me diga que você ainda não tem o [plur][%dic:STR_DIC_I_quest_25013a]?</p>
+<p> </p>
+<p>Os cientistas também não podem esperar para sempre, você sabe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão confiável! Isso é incrível. Inacreditável!</p>
+<p> </p>
+<p>Nenhum dos cientistas deste campo jamais esquecerá seu nome, [%username]!</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se foi capaz de ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem sido uma grande ajuda. Por favor, espere um momento ...</p>
+<p> </p>
+<p>Inacreditável ... eles simplesmente evoluíram para plantas que crescem em terra ...</p>
+<p> </p>
+<p>Como essas algas marinhas foram capazes de se adaptar e crescer tão rápido?</p>
+<p> </p>
+<p>Toda a capacidade do ecossistema de se adaptar é uma coisa de admiração.</p>
+<p> </p>
+<p>Isso indica que o ecossistema pode ser influenciado por uma força externa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga vários[%dic:STR_DIC_I_quest_25013a]para [%dic:STR_DIC_N_DF5_Ofrid_E].</p>[%collectitem]</step>
+</steps>
+<p>Ofrid pediu que você adquirisse várias amostras de algas marinhas para ele pesquisar o ecossistema. Cumprir o pedido de Ofrid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ofrid pediu que você adquirisse várias amostras de algas marinhas para ele pesquisar o ecossistema.</p>
+<p> </p>
+<p>Depois que você trouxe as amostras para Ofrid, ele parecia surpreso que as algas tivessem sofrido mutação tão rápido. Ele especulou que uma força externa estava por trás das mutações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

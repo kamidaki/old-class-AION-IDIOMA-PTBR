@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá, [%username].</p>
+<p> </p>
+<p>Desculpe, fiquei um pouco distraído-mexido pelo final de minha prestigiada carreira de 20 anos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu odeio incomodá -lo com isso. Há este concurso de culinária em[%dic:STR_DIC_ELA07], você vê. Estou morrendo de vontade de entrar com minha receita mais recente e mais recente-bife de aeronn com molho verde de pimenta e aria picada.</p>
+<p> </p>
+<p>Há apenas um problema. Estou perdendo o ingrediente principal: o bife de aeron! Estou aterrorizado com aeronsões, então não há como chegar perto de um, muito menos matá -lo.</p>
+<p> </p>
+<p>Não sei, [%username]. Eu realmente não sei o que fazer. Você ... acha que poderia me ajudar com isso? Eu preciso de alguém para ir e coletar os bifes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eliminar o [%dic:STR_DIC_MLA05] e pegue o [%dic:STR_DIC_QILA05].</p>
+<p> </p>
+<p>No lago Cliona, existem muitos aeronsões do Pinkbeak.</p>
+<p> </p>
+<p>Traga a carne de aeron para [%dic:STR_DIC_LA07]no local de pesca no lago.</p>
+<p> </p>
+<p>Ela é minha esposa. Ela pega o peixe que entra em minhas receitas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor você me salvar um pouco!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos e penas! Eu só tenho três dias até o concurso. O que posso fazer agora?</p>
+<p> </p>
+<p>Hmm, talvez Feira possa me trazer alguns peixes, ou talvez eu possa criar algum tipo de sopa de vegetais ... não. Oh, eu não sei!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte. Você precisará disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, [%username]?</p>
+<p> </p>
+<p>Por favor, fale rapidamente. Eu tenho que cortar baldes de ária, mas tenho uma faca embotada do que a sagacidade asmodiana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Seu marido queria que eu traga isso para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Traga -me o quê? Se você deveria me trazer os bifes de aeron, eu disse ao UNO que precisaria de seis. Eu tenho Aria suficiente para três bifes, você vê, e precisamos preparar uma quantia razoável para esta competição de qualquer maneira.</p>
+<p> </p>
+<p>Os juízes não concedem prêmios com base em boatos-todos precisam provar nossa comida deliciosa!</p>
+<p> </p>
+<p>Por favor, apresse -se, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ah. Sinto muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, excelente!</p>
+<p> </p>
+<p>Oh meu, esses são cortes fantásticos também! Uno ficará encantado com eles, [%username]! Excelente trabalho!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga a carne de aeron para [%dic:STR_DIC_LA07].</p>[%collectitem]</step>
+</steps>
+<p>Uno está ficando preocupado em ter ingredientes suficientes para sua entrada em um concurso de culinária. Ele pediu que você caçasse os aeronsos próximos e levem a carne para sua esposa, Feira.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O UNO não tinha os ingredientes necessários para um próximo concurso de culinária, então você caçou Airon e trouxe a carne para sua esposa, Feira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

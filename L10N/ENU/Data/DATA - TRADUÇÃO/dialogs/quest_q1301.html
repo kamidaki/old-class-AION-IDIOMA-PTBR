@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você teve a chance de voar pela fortaleza, [%username]? Há[%dic:STR_DIC_I_AG_SOURCE_OD_10A] es flutuando lá em cima!</p>
+<p> </p>
+<p>Kyros acredita que eles são gerados quando dois fluxos de Aether Cross. Coisas fascinantes ....</p>
+<p> </p>
+<p>É claro que, com um portão do abismo sob nossos pés, os riachos de Aether cruzam regularmente, resultando em alguns pequenos vórtices.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles são uma ameaça?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não, na verdade eles são realmente muito úteis! Extraímos pó de Aether deles, o que é indispensável atualmente.</p>
+<p> </p>
+<p>Você gostaria de ajudar a reunir alguns, [%username]? Seria um bom treinamento de voo e, é claro, você estará ajudando o esforço de guerra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora tenha cuidado. Os Daevas costumam se empolgar quando coletam Aether e esquecem a resistência do vôo. No momento em que você se sente cansado, você deve pousar até que sua força se recupere.</p>
+<p> </p>
+<p>Como eu disse, [%dic:STR_DIC_I_AG_SOURCE_OD_10A]flutuar ao redor do[%dic:STR_DIC_W_LF2_SZ_OP]. Por favor, extraia dez pitados de [%dic:STR_DIC_I_od_n_c_10b], então volte para mim.</p>
+<p> </p>
+<p>Fé e armas, [%userclass].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, não pense que a luta é a única maneira de servir os cinco.</p>
+<p> </p>
+<p>Existem muitas outras tarefas que precisam cumprir se quisermos vencer esta guerra. A coleta de pó éter é apenas uma dessas tarefas e só pode ser realizada por nossos danos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo, mas não tenho tempo de sobra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já reuniu o pó de Aether, [%username]?</p>
+<p> </p>
+<p>AeTertapping é muito semelhante a extrair qualquer nutriente da Atreia, embora eu imagine que fazê-lo no ar acrescenta um desafio extra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Olha Você aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é isso que eu pedi, Daeva. Você deve reunir dez pitados de [%dic:STR_DIC_I_od_n_c_10b] Antes de você voltar para mim.</p>
+<p> </p>
+<p>Não posso aceitar isso, nem recompensá -lo, até que a cota seja atendida na íntegra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar o resto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dez pitados! Perfeito!</p>
+<p> </p>
+<p>Uma quantidade tão pequena. Uma única gota de veneno em Blackthorn pode derrubar um mamut adulto em segundos-isso não é nada comparado ao pó de Aether.</p>
+<p> </p>
+<p>Obviamente, o pó de Aether não é veneno e tem muitos usos positivos. Vou enviar isso para o Santum imediatamente-aqui é a sua recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o pó de Aether de onde você extraiu[%dic:STR_DIC_I_AG_SOURCE_OD_10A]para [%dic:STR_DIC_N_Machaon].</p>[%collectitem]</step>
+</steps>
+<p>Aeterapping em pó dos pequenos vórtices flutuando acima da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você extraiu o pó de Aether dos pequenos vórtices acima da fortaleza em[%dic:STR_DIC_N_Machaon] Solicitar, e os trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

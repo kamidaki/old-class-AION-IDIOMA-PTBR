@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Vespasianus], Instrutor da Academia</p>
+<p> </p>
+<p>Você já desejou ser invisível?</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An] S infiltrou o Observatório Eltnen usando exatamente essa mágica:[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006] S!</p>
+<p> </p>
+<p>Hoje, o Daeva que trabalha com um mentor e mata cinco assassinos covardes receberá uma recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Yay! Recompensa! Onde está meu mentor?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ver que você não desapareceu enquanto perseguia aqueles[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006] S!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Encontramos e silenciamos os agentes inimigos".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho na tarefa de hoje, [%username]. Você está realmente crescendo como um Daeva.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com um[%dic:STR_DIC_E_Mentor], derrota [%dic:STR_DIC_M_LF2_DQ_DAssassin_43_An] S in[%dic:STR_DIC_OBJ_LF2_FOBJ_Q37006] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Vespasianus].</p></step>
+</steps>
+<p>O instrutor da Academia Zenten instruiu você e seu mentor a derrotar agentes asmodianos escondidos no platô do Lankusis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O instrutor da Academia Zenten instruiu você e seu mentor a derrotar agentes asmodianos escondidos no platô do Lankusis.</p>
+<p> </p>
+<p>Você concluiu com êxito sua tarefa e ele recompensou seu bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

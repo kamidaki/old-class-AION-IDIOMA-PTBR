@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você poderia nos ajudar de novo?</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_M_LDF5A_B6_FrillFaimam_62_An], que estão erradicando sinais de Kahrun.</p>
+<p> </p>
+<p>Se as coisas continuarem assim, não poderemos usar as faixas que encontramos recentemente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Redeye Praedium?</p>
+<p> </p>
+<p>Eu estava apenas esperando você voltar, [%username].</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Relate que você o matou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos mais uma vez em sua dívida.</p>
+<p> </p>
+<p>Aqui, preparamos isso para expressar nossos agradecimentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_B6_FrillFaimam_62_An]que estão danificando as faixas de Kahrun ([%2]/15)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_LDF5a_Yarna_E].</p></step>
+</steps>
+<p>Mate os Redeye Praedums que estão prejudicando as faixas que fizemos com grandes esforços para encontrar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yarna, da festa de busca de Reian Wesley, pediu que você elimine os encrenadores que estão impedindo a busca pelas faixas de Kahrun.</p>
+<p> </p>
+<p>Depois de matar os Redeye Praedums que estavam destruindo os sinais recentemente encontrados de Kahrun, você recebeu muitos elogios ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

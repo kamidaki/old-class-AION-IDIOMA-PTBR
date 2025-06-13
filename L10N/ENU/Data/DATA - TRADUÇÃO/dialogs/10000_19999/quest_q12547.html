@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você poderia fazer uma pequena entrega se tiver tempo?</p>
+<p> </p>
+<p>[%dic:STR_DIC_W_LDF5a_G1] [%dic:STR_DIC_N_LDF5a_Sapparing_E]Diz -se que inventou um Kokonat Schnapps que o deixará em êxtase após um único gole.</p>
+<p> </p>
+<p>A destilação requer [%dic:STR_DIC_I_quest_12547a].</p>
+<p> </p>
+<p>Parece ser usado para o kokonat ainda.</p>
+<p> </p>
+<p>Não sou especialista quando se trata de um aparelho de destilaria, mas você entregaria isso no meu lugar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem em sua mão, AK?</p>
+<p> </p>
+<p>É por acaso a madeira com um grão claro que eu precisava, AK?</p>
+<p> </p>
+<p>Por favor, dê para mim imediatamente, AK.</p>
+<p> </p>
+<p>Estou apenas no processo de reparo do aparelho de destilaria Kokonat, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a madeira com um grão claro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Teríamos um problema se você tivesse chegado, mas um pouco mais tarde, AK.</p>
+<p> </p>
+<p>Quanto mais tarde ele fica, pior o bebida Kokonat tem um gosto, Ak.</p>
+<p> </p>
+<p>Sou grato por você entregar a tempo, AK.</p>
+<p> </p>
+<p>[%username], você aprecia o quanto é importante chegar a tempo, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5a_G1], ver [%dic:STR_DIC_N_LDF5a_Sapparing_E] e dar a ele [%dic:STR_DIC_I_quest_12547a].</p></step>
+</steps>
+<p>Entregue madeira para destilar kokonats.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Perinerk pediu que você recebesse provisões para o Saphirunerk da plantação de Saphiruners.</p>
+<p> </p>
+<p>Você trouxe a madeira de refrigeração fina para o kokonat, conforme solicitado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

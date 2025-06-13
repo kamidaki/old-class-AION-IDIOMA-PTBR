@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou em um dilema porque o [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]tem se reproduzindo excessivamente.</p>
+<p> </p>
+<p>[%username], você não vai dizimar o [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]?</p>
+<p> </p>
+<p>Você provavelmente está se perguntando que tipo de problemas o Daru pode causar, mas a situação é realmente grave.</p>
+<p> </p>
+<p>Eles realmente são um grande problema, porque jogam areia em nossos suprimentos e mastigam a madeira que foi entregue.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o repulsivo Darus Darus?</p>
+<p> </p>
+<p>Depois que o número deles diminuir um pouco, a situação também melhorará para nós.</p>
+<p> </p>
+<p>Não sei o que isso significa, o fato de termos permitido que o Darus duro nos colocasse sob tanta pressão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por completar a missão tão rápido.</p>
+<p> </p>
+<p>Existem tantos deles que não é possível matá -los de uma só vez. Mas se o suficiente deles for dizimado, o problema se resolverá.</p>
+<p> </p>
+<p>Só espero que o número de Darus duro não continue aumentando.</p>
+<p> </p>
+<p>Eles se reproduzem incrivelmente rapidamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]que estão causando problemas ([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Pepe_E]%.</p></step>
+</steps>
+<p>Mate o Darus duro que está causando problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chiliarch Pepe disse que o aumento do número de Darus duro se tornou um problema, e está dando uma dor de cabeça.</p>
+<p> </p>
+<p>Chiliarch Pepe ficou muito agradecido a você por reduzir o número de Darus duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

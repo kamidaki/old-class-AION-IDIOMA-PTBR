@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, você parece um[%userclass]. O que te traz para lá?</p>
+<p> </p>
+<p>Faz muito tempo que eu tinha alguém com quem conversar. Nada além de bestas selvagens e poeira ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você está bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fui mordido por um Aranha.</p>
+<p> </p>
+<p>Eu estava reunindo ervas quando aconteceu, escolhendo Theonias, cuidando do meu próprio negócio. Apenas me atacou do nada!</p>
+<p> </p>
+<p>A ferida não é sério, mas me sinto um pouco tonto. Deve ser o veneno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tóxico?!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se preocupe. Não é tão ruim assim. Peguei o antídoto para que eu fique bem.</p>
+<p> </p>
+<p>O que me preocupo é o número de Aranhas que vejo todos os dias. No passado, eles não eram um problema, mas agora eles parecem estar em toda parte ....</p>
+<p> </p>
+<p>[%username], você parece um experiente [%userclass]. Você poderia matar parte do[%dic:STR_DIC_M_OctasideD_21_An] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por nos ajudar.</p>
+<p> </p>
+<p>Volte e informe -nos depois que você matar 10[plur][%dic:STR_DIC_M_OctasideD_21_An].</p>
+<p> </p>
+<p>Eu gostaria de descansar um pouco. [%username], Vou começar a reunir ervas novamente depois de matar a Aranhae.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ser rápido!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não poderia reconsiderar?</p>
+<p> </p>
+<p>[%username], com suas habilidades, você poderá matar 10 Aranha muito rapidamente.</p>
+<p> </p>
+<p>Se você caçar o Aranha, será ricamente recompensado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho muito o que fazer agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Estou tão feliz em ver você! Eu sabia que você estava certo para o trabalho!</p>
+<p> </p>
+<p>Você matou os Aranhas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu definitivamente diminuí o rebanho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Eu posso voltar a me reunir agora sem me preocupar.</p>
+<p> </p>
+<p>Não é muito, mas aqui está um sinal de minha apreciação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_OctasideD_21_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Medea].</p></step>
+</steps>
+<p>Medéia foi perturbada por Aranha enquanto reunia ervas. Atenda ao seu pedido e elimine a sombra Aranha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Medéia disse que foi mordida por um Aranha.</p>
+<p> </p>
+<p>Você matou alguns Aranhas de sombra para que ela pudesse reunir ervas sem ter que se preocupar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

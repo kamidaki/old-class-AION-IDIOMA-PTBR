@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p></p>
+<p>A filial de Reshanta da Cruzada Sangue emitiu uma Ordem Geral de Kill sobre os Elyos arrogantes em todas as áreas. Você está encarregado de matar Elyos em qualquer lugar em que os encontra. Para esse fim, damos as seguintes ordens:</p>
+<p></p>
+<p>1. Independentemente do tempo e do local, mate qualquer Elyos que você encontre, com um gol de cinco vítimas de Elyos, no mínimo. Você deve ignorar aqueles com pouco poder de combate-visualize adversários dignos.</p>
+<p></p>
+<p>2. Uma vez que o inimigo tenha perdido a vontade de lutar, e você matou inimigos o suficiente, reportar -se a [%dic:STR_DIC_E_45502].</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você de novo, [%username].</p>
+<p> </p>
+<p>Pelo que ouvi, Elyos suficiente caiu hoje que parecia que havia seis de vocês. Como foram as coisas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os Ellies sentiram minha ira hoje."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade eles fizeram, [%username]. E assim você será justamente recompensado.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Sangue para sangue!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_Daily_2] em[%dic:STR_DIC_W_Daily]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_E_45502].</p></step>
+</steps>
+<p>Ordem diária: açougueiro, o Elyos digno de combate em qualquer lugar e em qualquer lugar, depois se reporte a um agente da Ramo de Reshanta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada Sangue emitiu uma Ordem Geral de Kill sobre todos os Elyos dignos, em qualquer lugar e em qualquer lugar.</p>
+<p> </p>
+<p>Depois de concluir a missão, você visitou um agente da Ramo de Reshanta e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Missão Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

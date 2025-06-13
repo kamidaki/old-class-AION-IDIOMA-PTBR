@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que não vamos obter mais informações do relatório que você encontrou. Para descobrir o que o Balaur está planejando, precisamos fazer uma visita a eles.</p>
+<p> </p>
+<p>Considerando onde seus suprimentos são transportados, eu diria que o destino final deles é provavelmente o Silentera Canyon. E como um ritual está envolvido, parece haver apenas uma possibilidade. O templo de Beshmundir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece provável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Seria ótimo se soubéssemos mais sobre o ritual de Balaur. Mas é mais importante que paremos.</p>
+<p> </p>
+<p>Isso significa que temos que matar os protetores.</p>
+<p> </p>
+<p>Não é fácil penetrar no templo de Beshmundir.</p>
+<p> </p>
+<p>Você poderia ver a destruição dos protetores, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com todo o sigilo envolvido aqui, meu palpite é que você precisará acessar a parte mais profunda do templo de Beshmundir. Não será fácil.</p>
+<p> </p>
+<p>Livre -se de qualquer protetores do templo no seu caminho e elimine quem é responsável pelo ritual. Eu li um relatório que alguém chamado[%dic:STR_DIC_E_IDCatacombsN_DrakanMonkBossNmd_55_Ah] estava na área, mas não posso ter certeza de que ele está envolvido. Veremos.</p>
+<p> </p>
+<p>[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs] Só é acessível quando a entrada do Silentera Canyon está aberta. Assista ao corredor com cuidado para não perder a chance.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito desafiador para você? Recusar uma missão como essa é desrespeitosa aos senhores Shedim, [%username]. Espero que você reconsidere.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando seu retorno, [%username]. Você terminou a tarefa que eu te dei?</p>
+<p> </p>
+<p>Isbariya, o resoluto, foi despachado, junto com os protetores do templo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, mas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um aviso de Isbariya? Isso é ameaçador. Eu me pergunto se tudo isso foi uma ideia terrível ....</p>
+<p> </p>
+<p>No entanto, não podemos sentar aqui e insistir em arrependimento. Temos que enfrentar as consequências e fazer o possível para evitá -las.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos protetores do templo de Beshmundir.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_DrakanMonk1Nmd_55_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_DrakanMonk2Nmd_55_Ah]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_DrakanMonk3Nmd_55_Ah]([%8]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_DrakanMonk4Nmd_55_Ah]([%11]/1)</p></step>
+<step><p visible="[%12]">Livrar-se de [%dic:STR_DIC_E_IDCatacombsN_DrakanMonkBossNmd_55_Ah]([%14]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hler].</p></step>
+</steps>
+<p>Livre -se de Isbariya, o resoluto e os protetores do templo, segurando uma cerimônia suspeita no templo de Beshmundir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Richelle disse que, como não havia como adivinhar o objetivo, a cerimônia válida deve ser interrompida a todo custo.</p>
+<p> </p>
+<p>Você se livrou de Isbariya, o resoluto e os protetores no templo de Beshmundir, mas quando ele estava morrendo, Isbariya falou um aviso, ecoado por um grito estranho de outros lugares.</p>
+<p> </p>
+<p>Quando você se reportou a Richelle, ela se perguntou se tudo isso não havia sido um erro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

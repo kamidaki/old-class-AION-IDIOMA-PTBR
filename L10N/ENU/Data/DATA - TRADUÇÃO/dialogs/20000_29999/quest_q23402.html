@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como as armas sempre desapareciam após o ataque, suspeitamos que elas retornem automaticamente à sua sede após um certo período de tempo.</p>
+<p> </p>
+<p>Pode ser por isso que nossos dispositivos como o [%dic:STR_DIC_I_quest_23400a] e [%dic:STR_DIC_I_quest_23401a] não tinha reações. Parece que não podemos usá -los para descobrir mais a hora e o local do próximo ataque.</p>
+<p> </p>
+<p>Mas há outra possibilidade. Existem outros dispositivos que podem nos ajudar.</p>
+<p> </p>
+<p>Eles estão no[%dic:STR_DIC_W_LDF5b_SZ_A4]. Eles são remanescentes dos dispositivos que surgiram junto com as armas.</p>
+<p> </p>
+<p>Viajar para o [%dic:STR_DIC_W_LDF5b_SZ_A4] e investigá -los. Talvez você encontre algo que nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um gerador feito pelo Exército de Beritra.)</p>
+<p> </p>
+<p>(Parece estar muito danificado porque está com defeito.)</p>
+<p> </p>
+<p>(Está emitindo uma energia de identificação fraca.)</p>
+<p> </p>
+<p>(Olhando mais de perto, você pode ver algo dentro. Parece ser um tipo de circuito para armazenar registros.)</p>
+<p> </p>
+<p>(Felizmente, o circuito não parece danificado.)</p>
+<p> </p>
+<p>(Pegue.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um gerador feito pelo Exército de Beritra.)</p>
+<p> </p>
+<p>(Parece estar com defeito porque não pode ser ativado.)</p>
+<p> </p>
+<p>(Está emitindo uma energia de identificação fraca.)</p>
+<p> </p>
+<p>(Olhando mais de perto, você pode ver algo dentro. Parece ser um tipo de circuito para armazenar registros.)</p>
+<p> </p>
+<p>(Felizmente, o circuito parece estar intacto.)</p>
+<p> </p>
+<p>(Pegue.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Recebi uma mensagem do Phon e tenho esperado você.</p>
+<p> </p>
+<p>Ouvi dizer que você foi encarregado de uma investigação sobre os ataques do Exército de Beritra, não é isso?</p>
+<p> </p>
+<p>De acordo com os relatórios mais recentes, a sonda e o sensor não mostram reação. Isso é verdade?</p>
+<p> </p>
+<p>Isso nos coloca em uma situação difícil.</p>
+<p> </p>
+<p>Se os dispositivos não nos fornecerem nenhum resultado, não poderemos descobrir a localização do próximo ataque. Que desastre!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você passa os itens e dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este parece ser o circuito atribuído para um[%dic:STR_DIC_E_Vritramachine]que foi descoberto recentemente em Kaldor e Akaron.</p>
+<p> </p>
+<p>Emite fracamente a energia da ID ... você realmente fez uma descoberta crucial!</p>
+<p> </p>
+<p>Olhe aqui. A hora e o local são registrados na superfície do circuito na língua Balaur. Você pode dizer que outros símbolos foram escritos no[%dic:STR_DIC_I_quest_23402a] e [%dic:STR_DIC_I_quest_23402b].</p>
+<p> </p>
+<p>Eles provavelmente foram usados ​​para ataques diferentes.</p>
+<p> </p>
+<p>Se analisarmos os circuitos mais de perto, podemos descobrir a hora e o local do próximo ataque.</p>
+<p> </p>
+<p>Mas temos que ter cuidado. É apenas uma teoria, mas poderia ameaçar uma invasão em larga escala que atingiria muitas regiões ao mesmo tempo.</p>
+<p> </p>
+<p>Há relatos de que esses eventos ocorreram recentemente em Akaron. Viaje para lá e descubra mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5b_SZ_A4]. Investigue o [%dic:STR_DIC_OBJ_LDF5b_FOBJ_A4_Vritramachine_D_1] e obter [%dic:STR_DIC_I_quest_23402a]lá.</p></step>
+<step><p visible="[%3]">Investigue o [%dic:STR_DIC_OBJ_LDF5b_FOBJ_A4_Vritramachine_D_2]no[%dic:STR_DIC_W_LDF5b_SZ_A4] e obter [%dic:STR_DIC_I_quest_23402b].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5b_Berkin_E].</p></step>
+</steps>
+<p>Complete a tarefa de Tenitz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenitz disse que você não pode usar o detector ou sensor para determinar a hora e o local do próximo ataque. Ele revelou um método diferente para você.</p>
+<p> </p>
+<p>Geradores de energia danificados pertencentes ao exército de Beritra foram encontrados no platô de Nevilim. Ele o enviou para investigá -los.</p>
+<p> </p>
+<p>Você foi ao platô, examinou os geradores de invasão abandonada e encontrou peças que parecem um circuito.</p>
+<p> </p>
+<p>Você encontrou Berkin, que detectou uma semelhança com os circuitos nos geradores de invasão encontrados em Kaldor e Akaron. No entanto, sua análise mostrou que os dados registrados eram diferentes.</p>
+<p> </p>
+<p>Ele tinha certeza de que você poderia usar os circuitos para determinar a hora e o local do próximo ataque.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

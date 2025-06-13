@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não é bom.</p>
+<p> </p>
+<p>Ainda tenho muitos coquetéis para se preparar, mas o gelo está derretendo.</p>
+<p> </p>
+<p>Não vou ser capaz de atender à demanda de todos por bebidas como essa. Estou ficando um pouco preocupado ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta se é necessária ajuda.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p> </p>
+<p>Há cada vez mais Daevas chegando à festa, mas não será possível preparar mais coquetéis.</p>
+<p> </p>
+<p>Talvez você possa me trazer 6[plur][%dic:STR_DIC_I_assembly_world_event_ice_piece]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, agora posso relaxar novamente.</p>
+<p> </p>
+<p>Muito obrigado, verdadeiramente.</p>
+<p> </p>
+<p>Então, por favor me pegue 6[plur][%dic:STR_DIC_I_assembly_world_event_ice_piece] Apenas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos um problema.</p>
+<p> </p>
+<p>Se as coisas continuarem assim, todo o gelo vai derreter e todos os nossos coquetéis ficarão mornos.</p>
+<p> </p>
+<p>E não há muitos Daevas que desejam coquetéis mornos. Suspirar.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_assembly_world_event_ice_piece]é uma obrigação. Por favor, pegue 6 peças.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já os pegou!</p>
+<p> </p>
+<p>Ah, agora posso relaxar novamente.</p>
+<p> </p>
+<p>Muito obrigado, verdadeiramente.</p>
+<p> </p>
+<p>Você pode me dar 6[plur][%dic:STR_DIC_I_assembly_world_event_ice_piece].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 6 pedaços de gelo sólidos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há gelo suficiente!</p>
+<p> </p>
+<p>Não vou fazer coquetéis mornos!</p>
+<p> </p>
+<p>Eu preciso de gelo! 6 pedaços de gelo sólido!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio em socorro.</p>
+<p> </p>
+<p>Agora que temos gelo, posso respirar com facilidade novamente.</p>
+<p> </p>
+<p>Você receberá um coquetel como agradecimento. Aproveite a festa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dê 6[plur][%dic:STR_DIC_I_assembly_world_event_ice_piece]para innkeep rezar.</p>[%collectitem]</step>
+</steps>
+<p>O innkeep Rezar está preocupado em não poder preparar mais coquetéis na festa de verão Daeva porque o gelo acabou. Ajude a Rezar para fora e trazê -lo[%dic:STR_DIC_I_assembly_world_event_ice_piece].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entregou o gelo sólido a Rezar.</p>
+<p> </p>
+<p>Você recebeu um coquetel como obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

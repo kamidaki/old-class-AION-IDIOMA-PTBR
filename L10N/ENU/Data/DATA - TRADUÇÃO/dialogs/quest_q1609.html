@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora que a crise já passou, os outros Daevas de Zephyr devem ser informados. Vou passar meu relatório para Graa.</p>
+<p> </p>
+<p>O paraíso de Arbolu também deve ouvir as notícias.</p>
+<p> </p>
+<p>Está perto do bosque decapado. Tenho certeza de que os moradores querem saber o que aconteceu com o Elim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu deveria me tornar um guia de viagem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito engraçado. Você iria para o refúgio de Arbolu e diria [%dic:STR_DIC_N_Kravis]O que aconteceu?</p>
+<p> </p>
+<p>Kravis pode passar as notícias para os outros Daevas de Zephyr.</p>
+<p> </p>
+<p>Mas, as pessoas precisam encontrar heróis como você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Vá para o refúgio de Arbolu imediatamente e diga [%dic:STR_DIC_N_Kravis]O que os lefaristas estão fazendo com o elimine.</p>
+<p> </p>
+<p>Apresse -se agora. O tempo não espera por Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para Elysea."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Venha agora, seja sério.</p>
+<p> </p>
+<p>Você fez muito disso. Você não acha que deveria terminar?</p>
+<p> </p>
+<p>Esta é uma tarefa fácil. Perfeito para recuperar o fôlego.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então é minha rede."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que quer?</p>
+<p> </p>
+<p>Você me trouxe uma bebida saborosa? Hic ...</p>
+<p> </p>
+<p>De Coursh, toda a bebida é saborosa. Se eu só tivesse um balde disso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Os lefaristas estão experimentando o Elim".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Sério?</p>
+<p> </p>
+<p>Eles estão fora deles ... eles ... eles são loucos!</p>
+<p> </p>
+<p>Poxa, [%dic:STR_DIC_N_Tree_Nomove_Trajanus]deve ser contado. Eu iria, mas o chão é todo saltitante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma ... Daeva. O que te traz ... para mim?</p>
+<p> </p>
+<p>O assunto ... é urgente?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_angry;HACTION_SELECT_QUEST_REWARD">"Os lefaristas estão corrompendo o Elim".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Experimentando ... no Elim? ... Por que?</p>
+<p> </p>
+<p>Nós não ... prejudicamos ninguém. Nós continuamos ... nós mesmos.</p>
+<p> </p>
+<p>Isso é ... imperdoável!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kravis].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Tree_Nomove_Trajanus].</p></step>
+</steps>
+<p>Informe Kravis sobre os experimentos lefaristas no elim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Finn pediu que você deixasse Kravis no Haven do Arbolu saber o que os pesquisadores estão fazendo.</p>
+<p> </p>
+<p>Kravis ficou chocado e bêbado. Ele pediu que você contasse a Trajanus sobre os experimentos. O elim ficou indignado com as notícias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, mate [%dic:STR_DIC_M_LDF5_under_GhostRune_Q_01] e [%dic:STR_DIC_M_LDF5_under_GhostRune_Q_02], Assim, [%dic:STR_DIC_M_LDF5_under_GhostRune_Q_03] Assim como[%dic:STR_DIC_M_LDF5_under_GhostRune_Q_04] e pare o perigo!</p>
+<p> </p>
+<p>Enquanto estava nas minhas rondas, pensei que a energia dos espíritos da runa que eu conheci parecia estranha.</p>
+<p> </p>
+<p>Os espíritos da Rune pareciam ter um rancor poderoso e aparentemente queria fortalecer a energia de identificação em índio.</p>
+<p> </p>
+<p>Se a energia do ID deve explodir neste site, que é preenchida com minério de idium, poderão resultar em consequências imprevisíveis.</p>
+<p> </p>
+<p>Não temos tempo para informar os superiores e esperar por ajuda. A velocidade com que a energia do ID ganha força está aumentando assustadoramente rapidamente.</p>
+<p> </p>
+<p>É muito provável que todos os seres vivos sejam transformados em zumbis por causa do ID. Por favor, se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os espíritos perigosos da runa?</p>
+<p> </p>
+<p>Eles não são um perigo simples.</p>
+<p> </p>
+<p>Eles têm o poder de transformar este lugar em um terreno baldio.</p>
+<p> </p>
+<p>Em outras palavras, eles são a pior ameaça possível.</p>
+<p> </p>
+<p>Por favor, diga [%dic:STR_DIC_N_LDF5_Under_Brief_E]como foi a missão.</p>
+<p> </p>
+<p>Devido à seriedade da situação, seu relatório é urgentemente aguardado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei aproximadamente o que está acontecendo com a carta de Hultum.</p>
+<p> </p>
+<p>Você acabou de vir da sua tarefa?</p>
+<p> </p>
+<p>Eu não sabia que os espíritos de Runa mantinham um rancor.</p>
+<p> </p>
+<p>Essa será uma lição para nós e, no futuro, devemos observar todos os espíritos de runa descobertos no subterrâneo Katalam muito de perto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, não é mais necessário emitir um comando de evacuação para o Katalam Underground.</p>
+<p> </p>
+<p>Felizmente você, [%username], avançou como um bom exemplo.</p>
+<p> </p>
+<p>Logo seremos confrontados com um perigo ainda desconhecido.</p>
+<p> </p>
+<p>Obrigado por executar uma tarefa tão difícil tão bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os espíritos da runa.</p>
+<p visible="[%3]">[%dic:STR_DIC_M_LDF5_under_GhostRune_Q_01]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_LDF5_under_GhostRune_Q_02]([%8]/1)</p>
+<p visible="[%9]">[%dic:STR_DIC_M_LDF5_under_GhostRune_Q_03]([%11]/1)</p>
+<p visible="[%12]">[%dic:STR_DIC_M_LDF5_under_GhostRune_Q_04]([%14]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Under_Hultum_E].</p></step>
+<step><p visible="[%18]">Relatório para [%dic:STR_DIC_N_LDF5_Under_Brief_E].</p></step>
+</steps>
+<p>Elimine os espíritos da runa na mina de identificação dentro do prazo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Hultum, os espíritos de Rune abrigam um rancor profundo e estão fortalecendo a energia do ID, o que pode levar a uma situação perigosa.</p>
+<p> </p>
+<p>Depois que você matou os espíritos de Rune dentro do tempo especificado, como Hultum perguntou, você foi agradecido depois de denunciar os eventos a Brif.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

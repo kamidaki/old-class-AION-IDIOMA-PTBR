@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de realizar a tarefa.</p>
+<p> </p>
+<p>A Guilda Bakarma está estacionada em Beluslan.</p>
+<p> </p>
+<p>Nós os observamos e, ao fazê -lo, descobrimos uma verdade inacreditável.</p>
+<p> </p>
+<p>Você quer aceitar esta tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu descobri que a Guilda Bakarma desenvolveu uma arma terrível nas profundezas do[%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+<p> </p>
+<p>Muitas pessoas receberam uma tarefa especial e partiram para cumpri -la. Ainda não recebi nenhuma notícia deles.</p>
+<p> </p>
+<p>Eu acho que você poderia resolver o problema, [%username], como você tem a bênção do Senhor.</p>
+<p> </p>
+<p>Você poderia ir para [%dic:STR_DIC_W_STR_DF3_SZ_H] e matar a Guilda Bakarma?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Use a estátua de teletransporte na área residencial do sul de Beluslan para alcançar o [%dic:STR_DIC_W_STR_DF3_SZ_H]mais facilmente.</p>
+<p> </p>
+<p>Seria melhor se você também concluísse esta tarefa junto com seus companheiros.</p>
+<p> </p>
+<p>Quando penso no fato de que ninguém jamais voltou desta missão ...</p>
+<p> </p>
+<p>Essa tarefa dificilmente parece alcançável se você for sozinho.</p>
+<p> </p>
+<p>Tome cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É preciso coragem para empreender algo.</p>
+<p> </p>
+<p>Até o mais corajoso Daeva acha difícil tomar decisões de maneira excessiva.</p>
+<p> </p>
+<p>Venha para mim quando você for corajoso o suficiente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua fama não é infundada!</p>
+<p> </p>
+<p>Havia boas razões para que os padres da bênção sabiam quem você era.</p>
+<p> </p>
+<p>Você matou a Guilda Bakarma?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o Senhor deve ter enviado você para ajudar os asmodianos.</p>
+<p> </p>
+<p>Deixe o destino guiar você!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate as criaturas mais perigosas do[%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+<p visible="[%0]">Mate o instrutor Akbar ([%2]/3).</p>
+<p visible="[%0]">Mate Lakshmi ([%5]/3).</p>
+<p visible="[%0]">Mate Saraswati ([%8]/3).</p>
+<p visible="[%0]">Mate o comandante Nimbarka ([%11]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_IDDF3_DrakanFiBossD_50_Ah]([%14]/1).</p></step>
+<step><p visible="[%15]">Fale com Karjannke.</p></step>
+</steps>
+<p>Karjannke ordenou que você destruísse a Guilda no[%dic:STR_DIC_W_STR_DF3_SZ_H]. Vá para o [%dic:STR_DIC_W_STR_DF3_SZ_H] e matar os inimigos. Você encontrará uma estátua de teletransporte de pedra perto da entrada da área residencial do sul em Beluslan, ao norte do[%dic:STR_DIC_W_STR_DF3_SZ_G2_3], que você pode usar para viajar para [%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Karjannke pediu que você matasse os oponentes em[%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+<p> </p>
+<p>Você matou uma das criaturas mais perigosas em[%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

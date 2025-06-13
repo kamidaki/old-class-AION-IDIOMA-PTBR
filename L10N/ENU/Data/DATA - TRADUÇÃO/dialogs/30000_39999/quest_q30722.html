@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Este espelho leva à fortaleza.</p>
+<p> </p>
+<p>Tenho certeza que você sabe que o colega está localizado em[%dic:STR_DIC_W_DF5], onde os Elyos residem.</p>
+<p> </p>
+<p>Quando os Elyos usaram o espelho para chegar à fortaleza, eles coletaram energia instável e criaram uma entrada para o abrigo de Tiamat.</p>
+<p> </p>
+<p>O estranho é que há um feitiço nesta entrada.</p>
+<p> </p>
+<p>Tenho certeza que isso lhe interessa, não é? Você poderia ir para [%dic:STR_DIC_W_DF5_SZ_ID_03] e investigar a entrada, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu a entrada com seus próprios olhos? Como foi?</p>
+<p> </p>
+<p>Não parece ser muito diferente do criado pelo feiticeiro.</p>
+<p> </p>
+<p>Mas você precisa de mais poder e melhores habilidades para abrir a entrada na região asmodiana.</p>
+<p> </p>
+<p>Mas você ainda poderá fazer isso se você se juntar a aliados, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve montar alguns aliados antes de entrar [%dic:STR_DIC_W_IDTiamat_2_F5_FOBJ_Entrance].</p>
+<p> </p>
+<p>Os asmodianos também têm isso na visão, para que possa ficar difícil se você não estiver preparado.</p>
+<p> </p>
+<p>Eu gostaria de recompensá -lo com um presente pelo seu esforço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_DF5_SZ_ID_03] e investigar o [%dic:STR_DIC_OBJ_IDTiamat_2_F5_FOBJ_Entrance_Dark].</p></step>
+<step><p visible="[%3]">Fale com o [%dic:STR_DIC_N_magician_apprentice].</p></step>
+</steps>
+<p>Realize o pedido do Reian Mage Rosalie e investiga a entrada para o abrigo de Tiamat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O mago Reian Rosalie pediu que você investigasse a entrada do abrigo de Tiamat.</p>
+<p> </p>
+<p>Você seguiu o pedido de Rosalie, foi ao olho da destruição e investigou a entrada do abrigo de Tiamat. Você encontrou o Mago Aprendiz, que recomendou que você se preparasse antes de entrar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q39613</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: as lama de lama selvagem estão destruindo os tubos no canal, então estamos pedindo que você mate o [%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An]no pântano esquecido e reportar ao escritório administrativo responsável.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5b_Silverlin_BA]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A lama selvagem lama destruiu o oleoduto e bagunçou tudo, Ak.</p>
+<p> </p>
+<p>Eles mastigaram os canos na água, causando vazamentos em alguns lugares. Os danos decorrentes dos vazamentos não são pequenos, Akakak.</p>
+<p> </p>
+<p>Você eliminaria a lama selvagem da lama, quem faz mais mal, Ak?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom trabalho, AK.</p>
+<p> </p>
+<p>Agora eles sabem o que acontecerá com eles se tentarem enfrentar Silverine Limited, AK.</p>
+<p> </p>
+<p>Quem pensaria que o dano chegaria a esse nível. Shugo está passando tudo para seus superiores para que os reparos possam ser iniciados em breve.</p>
+<p> </p>
+<p>Vai demorar um pouco para reparar esse dano, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An]que estão destruindo os tubos de transporte ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5b_Silverlin_BA].</p></step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e conclua -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você matou as lascas de lama selvagens que estavam destruindo os canos no canal, você foi ao ramo de Silverine Limited, no sul de Katalam, onde recebeu agradecimentos pelo seu bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

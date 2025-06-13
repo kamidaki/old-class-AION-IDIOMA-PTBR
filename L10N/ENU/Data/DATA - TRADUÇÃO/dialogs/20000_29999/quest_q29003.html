@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sempre te segurei na maior consideração como estudante, [%username], mas eu aposto agora que você poderia me ensinar uma coisa ou duas sobre Aetherpping!</p>
+<p> </p>
+<p>É realmente incrível que você tenha atingido o nível de especialista tão cedo. Admito que estou com um pouco de inveja do seu talento.</p>
+<p> </p>
+<p>Mas pobre é o professor que não é superado pelo aluno, então não estou muito angustiado com isso. Bem, se eu conseguir parar de tocar aqui por um momento, vamos tornar isso oficial!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como fazemos isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ganhou meu apreço.</p>
+<p> </p>
+<p>Mas isso não será suficiente por si só. Para receber o título de especialista, você precisa da aprovação do governador.</p>
+<p> </p>
+<p>O que você acha, você quer este título?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou lhe dar uma carta de recomendação para Vidar.</p>
+<p> </p>
+<p>Ele concederá o título de especialista em uma cerimônia oficial, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, Ustarn."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer ser reconhecido como um especialista, [%username]?</p>
+<p> </p>
+<p>Você está sendo modesto? Ou você simplesmente não se importa com as formalidades?</p>
+<p> </p>
+<p>Por favor, [%username]. Isso refletirá mal em mim se você não aceitar o título de especialista. Você não vai reconsiderar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer?</p>
+<p> </p>
+<p>É importante que você tenha que perturbar o governador?</p>
+<p> </p>
+<p>Diga -me o que você quer de mim já.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de Ustarn."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê a letra de recomendação) Você é bom o suficiente para se tornar um especialista em Aethertapping?</p>
+<p> </p>
+<p>Ouvi dizer que você só recebe este título após um longo período de treinamento e dedicação.</p>
+<p> </p>
+<p>Por favor, use suas habilidades incrivelmente para asmodae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Ustarn, o mestre da Aetherpapping, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ustarn, o mestre da AetheTapping, não tinha mais nada para ensiná -lo e recomendou o título de especialista.</p>
+<p> </p>
+<p>Você recebeu uma carta de recomendação dele e levou -a ao governador Vidar, que concedeu o título em uma cerimônia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41512</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para este lugar. Você acha que é fácil coordenar linhas de suprimento, certificando -se de que cada uma esteja protegida e executada com eficiência?</p>
+<p> </p>
+<p>Claro que não! E o [%dic:STR_DIC_M_LDF4b_T1_Dionaea_58_An] Apenas piore as coisas!</p>
+<p> </p>
+<p>A parte mais irritante é que eles são apenas monstros idiotas! Eles apenas roubam nossos suprimentos porque são brilhantes!</p>
+<p> </p>
+<p>Cada entrega é preciosa. Posso depender de você para recuperar o roubado[%dic:STR_DIC_I_QUEST_41512a]do dionae?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Entre supervisão, direção e planejamento, todo o segundo do meu dia disponível é adotado. É um dever exaustivo.</p>
+<p> </p>
+<p>É por isso que eu precisava de alguém para fazer essa tarefa para mim. Você recebeu os suprimentos de volta?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Tenho todos eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, excelente, excelente. Estes serão enviados para seus destinos adequados de uma só vez.</p>
+<p> </p>
+<p>Não são apenas os refugiados que precisam desses-danos também recebem muito de seus bens daqui.</p>
+<p> </p>
+<p>Bom trabalho, [%username]. Se mais festas vegetais começarem a invadir meus suprimentos, eu avisarei você</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre roubado[%dic:STR_DIC_I_QUEST_41512a], e leve-os para [%dic:STR_DIC_N_Aius].</p>[%collectitem]</step>
+</steps>
+<p>Mate o ladrão de Sawjaw Dionae e retire os suprimentos que roubaram.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aius reclamou que Sawjaw Dionae estava tomando suprimentos valiosos apenas porque eram brilhantes.</p>
+<p> </p>
+<p>Você recuperou os bens roubados, para grande alívio de Aius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

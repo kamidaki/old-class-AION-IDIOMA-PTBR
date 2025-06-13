@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio sobre o trabalho?</p>
+<p> </p>
+<p>Telêmaco disse que não pode mais tolerar as atividades lefaristas e ordenou uma operação em larga escala contra elas.</p>
+<p> </p>
+<p>O problema, porém, são números simples. Muitas legiões foram publicadas no abismo, e tivemos que recorrer a DAEVAs individuais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Existe uma recompensa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro. As recompensas variam dependendo das dificuldades das missões. A missão que estou oferecendo agora é reunir 80[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S. A recompensa é um anel.</p>
+<p> </p>
+<p>As únicas qualificações são coragem e persistência, e você tem amplas medidas de ambos. O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você iria entrar, [%username]!</p>
+<p> </p>
+<p>Agora lembre -se disso. Apenas o [%dic:STR_DIC_M_LF2_3304all] estará usando o [%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S. Mate -os.</p>
+<p> </p>
+<p>Eu sei que você é capaz, mas ainda vou orar por sua segurança. Fé e armas, amigo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento ouvir isso. Você pode não estar ciente disso, mas existem alguns danos que o respeitam, [%username]. Se eles virem você participar desta operação, muitos deles seguirão seu exemplo.</p>
+<p> </p>
+<p>Tem certeza de que não pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um tumulto do bastião lefarista. Você causou todo esse barulho, [%username]?</p>
+<p> </p>
+<p>Você coletou muitos os[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito, mas ainda não posso recompensá -lo.</p>
+<p> </p>
+<p>Não é que eu não confie em você, [%username], mas não posso dar uma recompensa sem evidências adequadas. Justo o suficiente, certo?</p>
+<p> </p>
+<p>Lembre -se, eu preciso exatamente de 80[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso é exatamente 80! Agora que você cumpriu sua promessa, [%username], Eu deveria fazer também. Aqui está sua recompensa pela missão.</p>
+<p> </p>
+<p>Cada anel tem uma função diferente. Escolha um que você gosta, porque você não pode trocar.</p>
+<p> </p>
+<p>Existem outras missões que oferecem um colar e brincos. Diga -me se você está interessado. Eles combinarão esse anel e aumentarão seu poder mágico.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_LF2_3304all] S in[%dic:STR_DIC_W_LF2_SZ_J], colete [%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S, e leve-os para [%dic:STR_DIC_N_Laigas].</p>[%collectitem]</step>
+</steps>
+<p>Uma operação de limpeza lefarista por atacado está seguindo as ordens da General da Brigada Telemachus. Derrote as elites no bastião lefarista e leve suas insígnias lefaristas douradas a Laigas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laigas disse que uma operação de limpeza lefarista por atacado estava em andamento e sugeriu que você ingressasse na operação.</p>
+<p> </p>
+<p>Depois de aceitar o emprego, ele disse para você derrotar as elites no bastião lefarista e trazer suas insígnias de ouro para provar suas ações.</p>
+<p> </p>
+<p>Depois de derrotar os lefaristas, você coletou suas insígnias e as levou a Laigas. Ele lhe deu um anel como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

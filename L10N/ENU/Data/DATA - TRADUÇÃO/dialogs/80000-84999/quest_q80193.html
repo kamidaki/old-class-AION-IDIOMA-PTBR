@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um pergaminho com o selo de ouro da Guilda do Comércio.)</p>
+<p> </p>
+<p>(Douvay deu a você a carta de recomendação, mas a assinatura parece diferente.)</p>
+<p> </p>
+<p>(Quando você abriu a carta de recomendação, uma bola de luz cinzenta apareceu e revelou o nome Probur ...)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você dobra a letra de recomendação novamente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio aqui depois de ver Douvay?</p>
+<p> </p>
+<p>Huh? O que é esse pergaminho brilhante?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ele está muito surpreso.) Este pergaminho ...</p>
+<p> </p>
+<p>Mostrou meu nome? Que energia estranha. Não é mágico, nem vem dos espíritos.</p>
+<p> </p>
+<p>(Desdobra o pergaminho.) Agora meu nome desapareceu. Se houver uma nova missão, presumo que uma nova mensagem aparecerá.</p>
+<p> </p>
+<p>Vou lhe dar uma pequena recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Você entrega a carta de recomendação para [%dic:STR_DIC_N_event_Proburr].</p></step>
+</steps>
+<p>Você encontrou Probur e entregou a ele a carta de recomendação.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao abrir a carta de recomendação de Douvay, seu poder mágico revela o nome Probur.</p>
+<p> </p>
+<p>Então você procurou por [%dic:STR_DIC_N_event_Proburr], entregou -lhe a carta de recomendação e foi recompensada por fazê -lo.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

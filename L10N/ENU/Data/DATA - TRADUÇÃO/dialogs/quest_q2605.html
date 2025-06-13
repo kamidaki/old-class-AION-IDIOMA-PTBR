@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sobre aquela casa solitária que você investigou, [%username]....</p>
+<p> </p>
+<p>Um lefarista fugitivo é uma coisa boa na minha opinião-tudo para serem prejudicadas seus números.</p>
+<p> </p>
+<p>Mas você sabe o que as pessoas vão pensar se elas souberem que um lefarista está por perto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Um acampamento inteiro está lá?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente!</p>
+<p> </p>
+<p>Parece que este Freki confia em você. Vá falar com ele e convencê -lo a deixar a área.</p>
+<p> </p>
+<p>Eu não me importo para onde ele vai enquanto estiver longe da fortaleza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Eu sei que um lefarista fugitivo não soa muito, mas enquanto ele estiver lá, esses rumores não diminuem.</p>
+<p> </p>
+<p>Confira a cabana e veja se ele ainda está lá. Desde que você descobriu o esconderijo dele, talvez ele já tenha se saído.</p>
+<p> </p>
+<p>Caso contrário, estou contando com você para convencê -lo a ir embora. Então podemos colocar esses rumores para descansar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Considere isso feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você não é daqui e pode não pensar que a fortaleza os interessa, mas eles o fazem. Somos todos asmodianos e todos temos que contar um com o outro.</p>
+<p> </p>
+<p>Estou surpreso que você tenha chegado o mais longe possível sem perceber isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu ... me desculpe?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! Você é o Daeva que eu conheci antes.</p>
+<p> </p>
+<p>Eu tinha medo que os lefaristas enviassem alguém para me pegar.</p>
+<p> </p>
+<p>O que te traz de volta aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O arconte em Beluslan quer que você saia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não! Eles sabem sobre mim na fortaleza?</p>
+<p> </p>
+<p>Não demorará muito para que essas notícias cheguem aos lefaristas, então estarei em perigo real.</p>
+<p> </p>
+<p>Mas ... para onde posso ir?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Freki].</p></step>
+</steps>
+<p>Se Freki permanecer no chalé solitário, os rumores sobre os lefaristas crescerão. Vá para Freki e persuadi -lo a sair.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gnalin disse que os rumores que se espalham pela fortaleza crescerão fora de controle enquanto Freki permanecer no chalé solitário.</p>
+<p> </p>
+<p>Ele pediu para você convencer Freki a sair de casa.</p>
+<p> </p>
+<p>Freki disse que estaria com problemas se os lefaristas soubessem que estava escondido na casa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

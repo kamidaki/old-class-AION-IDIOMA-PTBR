@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]... você é o [%userclass]Quem já foi um invasor e subiu?</p>
+<p> </p>
+<p>Eu ouvi muito sobre seus talentos. Hmm ... Como você está aqui, talvez você possa mostrar que merece essas asas, sim?</p>
+<p> </p>
+<p>Fomos enviados aqui às pressas para explorar depois que a fortaleza ocidental de Siel caiu nas mãos do inimigo. No entanto, enfrentamos alguns problemas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece sério."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa principal prioridade é recuperar a fortaleza. Quando enviamos nossos olheiros, eles voltam ... bastante confusos.</p>
+<p> </p>
+<p>Explodiu[%dic:STR_DIC_M_Ab1_1131_Specter_27_An] S são o problema. Eles nos atacam quando estamos disfarçados para que não possamos nos proteger. Então, quando nosso escoteiro estiver impotente, eles confundem as memórias do escoteiro, tornando a operação inteira inútil!</p>
+<p> </p>
+<p>Asmodae precisa de você, [%username]. Você vai nos ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa missão requer sigilo absoluto, para que não possamos atacá -los abertamente, para que os elimes não descubram o que estamos fazendo. Você elimina o [%dic:STR_DIC_M_Ab1_1131_Specter_27_An] S, reuniremos a inteligência necessária para retomar a fortaleza.</p>
+<p> </p>
+<p>Não se esqueça, os coletores de memória procuram alvos das alturas. É melhor você voar para pegá -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos exterminar a memória nos colhe, mas isso explodirá nossa cobertura.</p>
+<p> </p>
+<p>Eu lhe perguntei porque tinha ouvido falar de sua reputação, [%username]. Você fala muito, mas acho que você ainda é apenas um invasor de coração.</p>
+<p> </p>
+<p>Vou pedir ajuda a um daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hum, talvez mais tarde?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, de volta tão cedo?</p>
+<p> </p>
+<p>Você derrotou todo o [%dic:STR_DIC_M_Ab1_1131_Specter_27_An] S como eu perguntei?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Missão cumprida e memória intacta, err votan ... quero dizer ... goeldag."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você agradeceu da Guilda Vermelha. Agora podemos fazer nosso trabalho em segredo.</p>
+<p> </p>
+<p>Claro, ainda existem alguns colegas de memória por aí. Volte para nos ajudar quando tiver tempo.</p>
+<p> </p>
+<p>Que a proteção de Azphel esteja com você!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_Ab1_1131_Specter_27_An]([%2]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Goeldag].</p></step>
+</steps>
+<p>Os Ceianos de Memória estão tentando impedir que a Guilda Vermelha Hasia de explorar a fortaleza ocidental de Siel. Elimine a memória, a solicitação de Goeldag.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Goeldag disse que a Guilda Vermelha de Hasia foi despachada às pressas para explorar a fortaleza ocidental de Siel, que caíra nas mãos inimigas.</p>
+<p> </p>
+<p>Cietas de memória estavam impedindo que os legionários expliquem efetivamente.</p>
+<p> </p>
+<p>Você derrotou os Reapers da memória, e Goeldag agradeceu por facilitar o trabalho deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

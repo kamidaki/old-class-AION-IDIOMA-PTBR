@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], seu trabalho é excelente em todos os sentidos. Você está qualificado para ser um especialista em alfaiataria.</p>
+<p> </p>
+<p>É hora de você decidir se concentrar seus esforços na adaptação.</p>
+<p> </p>
+<p>Obviamente, escrevi uma carta de recomendação para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não espero nenhuma honra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você atingiu um nível de habilidade tão excelente-é natural ter um nome que corresponda.</p>
+<p> </p>
+<p>O título de especialista em alfaiataria é concedido às pessoas que provaram sua habilidade na alfaiataria.</p>
+<p> </p>
+<p>O que você acha? Você gostaria de receber o título?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para obter o título de especialista, você deve obter a aprovação do governador [%dic:STR_DIC_N_Vidar].</p>
+<p> </p>
+<p>Pegue esta carta de recomendação a Vidar e obtenha o título. Em seguida, participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem, se você insiste. Meu agradecimento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito modesto.</p>
+<p> </p>
+<p>Você não acha que a formalidade é importante, não é?</p>
+<p> </p>
+<p>Se você quer ter sucesso como mestre mais tarde, precisa receber o título de especialista agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou levar o título mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não agora, tenho um número extraordinário de coisas para fazer.</p>
+<p> </p>
+<p>Se você não precisar de mim especificamente, fale com Skadi ou Kvasir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É uma carta de recomendação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh! Esta é uma recomendação brilhante, [%username]! Tenho certeza de que as peças que você criarão protegerão muitos Daevas em batalha. A partir de agora, dão ao Pandaemonium e aos Senhores Shedim apenas o seu melhor trabalho.</p>
+<p> </p>
+<p>Agora, vá para [%dic:STR_DIC_N_Zyakia], mostre seu respeito a ela e peça a ela uma última vez para o ensino.</p>
+<p> </p>
+<p>Então, você pode realmente ser chamado de especialista. Parabéns! Novo especialista em alfaiataria!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Zyakia, um mestre de alfaiataria, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A adaptação do mestre Zyakia, disse que você alcançou o nível de especialista.</p>
+<p> </p>
+<p>Com sua carta de recomendação, você foi ao governador Vidar, que concedeu o título de especialista a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

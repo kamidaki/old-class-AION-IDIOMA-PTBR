@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_LF2_Brando]me encontrou.</p>
+<p> </p>
+<p>Ele falou sobre você.</p>
+<p> </p>
+<p>Parece haver um problema. No abismo.</p>
+<p> </p>
+<p>Vá para ele. Ele está esperando por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, nos encontramos. Meu nome é Brando. Sou instrutor da Guilda Cinzenta do Vento.</p>
+<p> </p>
+<p>Eu tenho um emprego para você, [%username].</p>
+<p> </p>
+<p>Não posso simplesmente dar essa tarefa a ninguém, então ... seria ótimo se você assumir esta tarefa, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que se trata.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A missão é atacar o campo de treinamento de Balaur, chamado[%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_L].</p>
+<p> </p>
+<p>Nós Daevas não somos os únicos que têm campos de treinamento para nossos soldados. Os soldados de Balaur são treinados como o trem de Daevas para a batalha do Abismo.</p>
+<p> </p>
+<p>Os soldados Draconute no campo de treinamento ainda não são tão fortes, mas eles nos ameaçarão assim que concluírem o treinamento.</p>
+<p> </p>
+<p>Temos que eliminá -los antes que isso chegue a isso. Eu te imploro, [%username], ajude -nos com isso.</p>
+<p> </p>
+<p>Mas ainda há tempo para isso. Então volte e fale comigo quando quiser começar o ataque.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LF2_Brando].</p></step>
+</steps>
+<p>Lodas lhe deu uma missão. Vá para a fortaleza Eltnen e encontre -se com Brando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Elim Lodas disse que Brando quer falar com você.</p>
+<p> </p>
+<p>Você visitou Brando e ele disse que tinha uma missão importante para você sobre o campo de treinamento de Nochsana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

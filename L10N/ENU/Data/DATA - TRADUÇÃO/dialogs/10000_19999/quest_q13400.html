@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, você chegou, [%username]!</p>
+<p> </p>
+<p>Caos reina. O Exército de Beritra está atacando com armas inovadoras e os habitantes estão em pânico.</p>
+<p> </p>
+<p>Devemos descobrir os planos do Balaur e detê -los!</p>
+<p> </p>
+<p>Por favor, realize as investigações necessárias.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_LDF5b_Pepe_E]. Ele lhe dará os detalhes mais recentes sobre a situação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Portis provavelmente já informou sobre a situação atual.</p>
+<p> </p>
+<p>O fato de ele te enviar, [%username], me diz que ele reconhece a seriedade da situação.</p>
+<p> </p>
+<p>Esta é uma situação excepcional. Como não temos muito tempo, explicarei a situação brevemente. Ouça de perto.</p>
+<p> </p>
+<p>Os ataques do Exército de Beritra estão ficando mais ferozes e mais ferozes. Eles estão mais fortes do que nunca.</p>
+<p> </p>
+<p>Segundo relatos, o Balaur está invadindo muitas regiões diferentes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo os relatos, o Exército de Beritra está usando sua nova arma e atacando várias regiões.</p>
+<p> </p>
+<p>Isso afeta muitos territórios, mas Katalam parece estar sofrendo o peso dos ataques.</p>
+<p> </p>
+<p>Devemos fazer algo para entender melhor essa situação. O tempo é essencial!</p>
+<p> </p>
+<p>Ainda não sabemos de onde o Exército de Beritra invadiu. Se queremos descobrir seus planos de invasão, precisamos conduzir uma investigação.</p>
+<p> </p>
+<p>Até agora, apenas um[%dic:STR_DIC_N_E_LDF5b_E_invisible_Q13400]foi confirmado. Temos que descobrir quais outras regiões são afetadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você assentia.</act>
+</selects>
+<cutscene id="859"></cutscene>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor nos ajude com a investigação dos ataques.</p>
+<p> </p>
+<p>Primeiro, vá para o [%dic:STR_DIC_N_E_LDF5b_E_invisible_Q13400] e use o [%dic:STR_DIC_I_quest_13400a].</p>
+<p> </p>
+<p>Este dispositivo recebe e analisa evidências de um ataque. Com um pouco de sorte, isso nos ajudará a identificar o site e talvez até o tempo da invasão.</p>
+<p> </p>
+<p>Quando você concluir a investigação, vá para [%dic:STR_DIC_N_LDF5b_Watering_E]. Ele era uma testemunha ocular do último ataque do exército de Beritra.</p>
+<p> </p>
+<p>Por favor, conheça [%dic:STR_DIC_N_LDF5b_Watering_E]no[%dic:STR_DIC_N_E_LDF5b_E_invisible_Q13400] e descubra mais!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva não se parece com alguém que quer comprar água da primavera, AK. Por que você está aqui, Akakak?</p>
+<p> </p>
+<p>Você veio por causa do meu relatório, AK?</p>
+<p> </p>
+<p>Essa deve ser a razão, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede um relatório de testemunhas oculares.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é por isso que Daeva veio, Ak.</p>
+<p> </p>
+<p>O Wateriário tem que recuperar o fôlego, então ele dará seu relatório.</p>
+<p> </p>
+<p>O Terror embaçou completamente essa memória, Akakak.</p>
+<p> </p>
+<p>Daeva deve esperar por um momento, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Pepe_E] em[%dic:STR_DIC_W_LDF5b_SZ_E2].</p></step>
+<step><p visible="[%3]">Vá para [%dic:STR_DIC_N_E_LDF5b_E_invisible_Q13400]no[%dic:STR_DIC_W_LDF5b_SZ_D3] e iniciar a investigação com o [%dic:STR_DIC_I_quest_13400a] [%5].</p></step>
+<step><p visible="[%6]">Fale com a testemunha ocular [%dic:STR_DIC_N_LDF5b_Watering_E] em[%dic:STR_DIC_W_LDF5b_SZ_G1].</p></step>
+</steps>
+<p>Fale com Portis no Katalam do Sul.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Portis, em Bright Town, disse que o perigo paira e o enviou a Pepe para descobrir mais.</p>
+<p> </p>
+<p>Pepe informou que o exército de Beritra está invadindo muitas regiões com novas armas e que Katalam em particular está em grande perigo.</p>
+<p> </p>
+<p>Como ele ainda não tinha informações sobre os incidentes, Pepe pediu que você conduzisse uma investigação. Você usou o detector de infiltração no local de avistamento, mas não houve reação e, portanto, não há achados úteis.</p>
+<p> </p>
+<p>Então você encontrou o Waterinerk de testemunhas oculares que lhe deu o relatório dele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

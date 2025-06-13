@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, ajude -nos a garantir um possível retiro.</p>
+<p> </p>
+<p>Será necessário eliminar o [plur][%dic:STR_DIC_M_LDF5B_F4_Crestlich_65_n] Aqui na área para isso.</p>
+<p> </p>
+<p>Tenho certeza de que seremos vitoriosos.</p>
+<p> </p>
+<p>Mas não dói ter um bom seguro, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Felizmente, o inimigo ainda não fez nada.</p>
+<p> </p>
+<p>Isso significa que ainda temos tempo para planejar um possível retiro.</p>
+<p> </p>
+<p>Quando a batalha começar, não teremos mais uma chance.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto -me melhor sabendo que podemos recuar, se necessário.</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%username].</p>
+<p> </p>
+<p>Por favor, aceite isso como um sinal de minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_M_LDF5B_F4_Crestlich_65_n]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard18_D].</p></step>
+</steps>
+<p>Elimine os tímidos das planícies para garantir um possível retiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rorik deu a você a tarefa de eliminar os tímidos Crestlichs de planície para garantir um caminho para recuar.</p>
+<p> </p>
+<p>Você destruiu os tímidos Crestliches de Terra Flata e foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

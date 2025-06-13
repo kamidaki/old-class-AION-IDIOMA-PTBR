@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A operação anterior foi muito bem -sucedida.</p>
+<p> </p>
+<p>As operações foram muito bem realizadas até agora. Seria bom classificar os resultados e transmiti -los.</p>
+<p> </p>
+<p>Por favor, diga a Tetis para fazer um relatório e enviá -lo.</p>
+<p> </p>
+<p>Eu, Heres, cuidarei do último relatório. Você só precisa me trazer o [%dic:STR_DIC_I_QUEST_13054A].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O relatório?</p>
+<p> </p>
+<p>Eu preparei com antecedência, é claro.</p>
+<p> </p>
+<p>Incluí uma análise do plano de operação no relatório. Se você o passar ao QG, eles ficarão satisfeitos.</p>
+<p> </p>
+<p>Então, se você quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você recebe um relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é provavelmente o relatório da Tetis, certo?</p>
+<p> </p>
+<p>Se nós dois tivermos que apresentar nossos próprios relatórios de qualquer maneira, não precisamos fazê -lo separadamente, não é?</p>
+<p> </p>
+<p>Eu já havia preparado um relatório, então encaminhe isso [%dic:STR_DIC_I_DOC_QUEST_13054B]para o chiliar [%dic:STR_DIC_N_LDF5b_Demios_E].</p>
+<p> </p>
+<p>Seria apenas uma dor se os enviássemos separadamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você recebe um relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o relatório de Heres e Tetis sobre a situação de batalha?</p>
+<p> </p>
+<p>Que bom que eles foram fundidos em um relatório.</p>
+<p> </p>
+<p>Vamos dar uma olhada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você olha para o relatório.)</p>
+<p> </p>
+<p>Heres alcançou um excelente resultado. HM ...</p>
+<p> </p>
+<p>Ao contrário dele, Tetis nem se pode dizer ter produzido um resultado.</p>
+<p> </p>
+<p>Pah, como eu ainda devo confiar nele e deixá -lo encarregado dos terrenos de batalha ...?</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Tetis_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Heres_E]%.</p></step>
+<step><p visible="[%6]">Usar [%dic:STR_DIC_I_DOC_QUEST_13054B], Assim, [%8].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_LDF5b_Demios_E]%.</p></step>
+</steps>
+<p>Dê o relatório reescrito aos Chiliarch Demios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você passou pelo relatório do Heres ao Chiliarw.</p>
+<p> </p>
+<p>A julgar pela reação do chiliar, os esforços de Tetis não foram levados em consideração.</p>
+<p> </p>
+<p>Sem dúvida, os aqui manipularam o relatório.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

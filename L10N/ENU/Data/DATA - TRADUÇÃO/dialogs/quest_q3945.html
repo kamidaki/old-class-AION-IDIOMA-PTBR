@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato, quando eu pedi que você fizesse o nobre peitoral de Vulcanus, eu sabia que você poderia ser um especialista em ourivessa, [%username].</p>
+<p> </p>
+<p>Eu vi sua paixão. Agora prove seu talento.</p>
+<p> </p>
+<p>Para ganhar o título de especialista, você precisa fazer uma armadura rara.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que armadura rara?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Faça o peitoral nobre de Fasimedes e traga -o para mim.</p>
+<p> </p>
+<p>Criando isso deve provar seu talento, [%username]. Muitos podem fazer [%dic:STR_DIC_E_Q1975] S, mas poucos são talentosos o suficiente para fazer o nobre peitoral do Fasimedes. Agora, vá comprar o design e provar que você está qualificado para ser chamado de especialista.</p>
+<p> </p>
+<p>Você está disposto a tentar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não me decepciona, [%username].</p>
+<p> </p>
+<p>Vá então. Faça nobre peitoral de Fasimedes.</p>
+<p> </p>
+<p>Isso acontecerá eventualmente, apenas mantenha o foco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter sucesso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode fazer isso?</p>
+<p> </p>
+<p>Ou você não está interessado em receber o título de especialista?</p>
+<p> </p>
+<p>Não posso forçá -lo, é claro, mas espero que você mude de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou avisar você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns acham que as armas são o componente mais importante do combate. Eu acho que a armadura é mais importante.</p>
+<p> </p>
+<p>Os lutadores devem ser protegidos. Não digo isso apenas porque sou um mestre de ser oursívio.</p>
+<p> </p>
+<p>Você fez o peitoral nobre de Fasimedes?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Alguns dos meus melhores trabalhos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Este não é o peitoral nobre de Fasimedes.</p>
+<p> </p>
+<p>Você deve estar ocupado com outras coisas.</p>
+<p> </p>
+<p>Vá agora, trabalhe duro e faça o nobre peitoral de Fasimedes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu devo ter deixado no meu outro cubo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lindo trabalho, [%username]!</p>
+<p> </p>
+<p>Isso o qualifica para receber o título de especialista em armadura.</p>
+<p> </p>
+<p>Todo o seu trabalho duro finalmente valeu a pena.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o peitoral nobre de Fasimedes e leve para [%dic:STR_DIC_N_Vulcanus].</p>[%collectitem]</step>
+</steps>
+<p>Vulcanus disse que você deve ser capaz de tornar algo raro para receber o título de especialista em armadura. Faça nobre peitoral de Fasimedes e leve -o a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vulcanus disse que você deve ser capaz de tornar algo raro para receber o título de especialista em armadura.</p>
+<p> </p>
+<p>Você fez o nobre peitoral de Fasimedes, conforme solicitado, e ele ficou satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

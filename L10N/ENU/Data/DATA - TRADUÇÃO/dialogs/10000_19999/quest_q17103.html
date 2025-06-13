@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todos são instruídos a trabalhar em conjunto para desenvolver a vila.</p>
+<p>Esperamos que a maioria das pessoas participe de tornar a vila um lugar adorável e hospitaleiro.</p>
+<p> </p>
+<p>Missão da vila:</p>
+<p>As plantas nos canteiros adoráveis ​​estão morrendo. Juntar [%dic:STR_DIC_E_junk_town_upgrade_rich_soil] e levá -lo para o [%dic:STR_DIC_N_Town_shugo_Worker_05].</p>
+<p> </p>
+<p>- Administração da aldeia -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora temos um leito de flores, mas nossas plantas estão morrendo.</p>
+<p> </p>
+<p>Já testamos uma ampla gama de fertilizantes, mas nada ajudou, AK.</p>
+<p> </p>
+<p>A única esperança que resta é a Terra Fresca, Akakak.</p>
+<p> </p>
+<p>As tramas precisam do solo superior da Audria, e é por isso que emitimos uma tarefa da vila, mas até agora não houve muitas pessoas que trouxeram o solo de volta para nós, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a terra fresca.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um verdadeiro salvador, Akakak!</p>
+<p> </p>
+<p>Seu amor pela vila, [%username], é a chuva que há muito ansiava pelas plantas em nossos canteiros de flores, Akakak.</p>
+<p> </p>
+<p>A energia da Terra Fresca é conhecida por curando rapidamente as plantas, e é por isso que devo pressa para polvilhar sobre as camas.</p>
+<p> </p>
+<p>Em breve, lindas flores crescerão aqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_E_junk_town_upgrade_rich_soil]% e leve para o [%dic:STR_DIC_N_Town_shugo_Worker_05].</p>[%collectitem]</step>
+</steps>
+<p>O solo fresco da Audria é necessário para manter vivo as plantas moribundas na vila. O solo fresco deve ser reunido e levado ao capataz da vila para concluir a tarefa da vila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aviso de tarefa da vila. O solo da Audria precisa ser coletado e levado ao capataz da vila para manter vivo as plantas moribundas na vila.</p>
+<p> </p>
+<p>As pessoas agradecem por você estar participando da missão da vila de reunir solo para desenvolver a vila e levá -la ao capataz da vila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], bem a tempo da minha última inspiração.</p>
+<p> </p>
+<p>Veja bem, nem todo lefarista é um soldado. Há um quadro de trabalhadores que constroem e mantêm edifícios, fazem suprimentos, minérios de minas e outras tarefas.</p>
+<p> </p>
+<p>Eles são principalmente compostos de novos recrutas e aqueles ainda não treinados com espada ou feitiço. Na verdade, eles são os que construíram Alquimia em primeiro lugar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Prossiga...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiquei de olho nos trabalhadores durante minhas viagens por lá. Todo mundo está tão acostumado a vê -los que são praticamente ignorados, como se fossem parte do cenário.</p>
+<p> </p>
+<p>Mas grunhidos de trabalho assim é o que os mantém em andamento. Se interrompermos esse fluxo de trabalho, podemos atrapalhar todas as suas operações de uma só vez.</p>
+<p> </p>
+<p>Se um Daeva-saia-era para tirar um grande grupo de trabalhadores, os danos poderiam ser devastadores. O que você acha? Até isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os lefaristas se arrependerão de não pensar em seus humildes trabalhadores. São erros como esse que vencem guerras.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_FeC_LehparFiWorkerD_43_An]trabalha dentro da fortaleza de Alquimia. Livre -se de qualquer coisa que você vê!</p>
+<p> </p>
+<p>Ah, se você for sozinho, tente praticar um pouco de furtividade. Os lefaristas não tratarão sua presença gentilmente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obviamente não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca pensei em ver um leal Daeva de Asmodae recusar uma missão tão importante. Você é um Daeva leal, não é?</p>
+<p> </p>
+<p>Mas serei o primeiro a admitir que o lugar explodido não é exatamente saudável para ninguém que siga os senhores Shedim.</p>
+<p> </p>
+<p>Se você não consegue lidar com isso, suponho que tenho que admirar que você o reconheça e admitam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É preciso conhecer seus limites."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O único resultado que seria melhor do que interromper os lefaristas é se outros trabalhadores ouvirem sobre isso e começarem a abandonar. Isso realmente causaria algum dano!</p>
+<p> </p>
+<p>Isso pressupõe, é claro, você conseguiu sua tarefa. Você fez?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Mas é claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Mas não pense por um minuto, isso desencorajará a maioria deles. Eles são fanáticos no coração, e os fanáticos têm uma maneira de ignorar a realidade.</p>
+<p> </p>
+<p>Ainda assim, a vida em Alquimia ficou muito mais difícil, e isso é uma grande vitória para o Pandaemonium, no que me diz respeito.</p>
+<p> </p>
+<p>Enquanto isso, vou relatar isso. Enquanto isso, tome isso para o seu problema. Deve ser útil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_FeC_LehparFiWorkerD_43_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Dewi sugeriu atacar as abordagens dos revolucionários lefaristas. Mate o trabalhador de Alquimia como Dewi sugeriu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dewi sugeriu que você se infiltrasse à fortaleza de Alquimia e elimine os trabalhadores da Alquimia. Sua ausência lançaria a construção e a manutenção no caos.</p>
+<p> </p>
+<p>Você entrou no coração do território lefarista e matou um grande número de trabalhadores. A causa lefarista foi danificada e Dewi o recompensou de acordo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

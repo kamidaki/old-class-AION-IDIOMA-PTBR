@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fiquei realmente empolgado quando eles me designaram para as fontes termais de Halabana. Eu tinha visões de imersão em piscinas quentes quando estava de folga.</p>
+<p> </p>
+<p>Não é tal sorte. Este lugar está completamente infestado de revolucionários lefaristas. Eu não consigo me aproximar das fontes!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Dever-e segurança-primeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, dever primeiro. Lutamos com eles constantemente e nunca ganhamos nenhum terreno.</p>
+<p> </p>
+<p>Somos apenas nós dois tentando segurá-los-apenas Modgud e eu.</p>
+<p> </p>
+<p>Você nos ajudaria, [%username]? Você reuniria sua equipe e derrotaria os lefaristas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você levar sua equipe para as fontes termais de Halabana, você encontrará[%dic:STR_DIC_M_LehparWizardD_36_An] S, [%dic:STR_DIC_M_LehparPriestD_36_An] Areia [%dic:STR_DIC_M_LehparAsD_35_An] S.</p>
+<p> </p>
+<p>Os magos e curandeiros usarão magia contra você, e os emboscadores tentarão se esgueirar em você. Não subestime nenhum deles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estamos a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas não podemos lidar com isso!</p>
+<p> </p>
+<p>Os revolucionários lefaristas não podem correr sobre não verificados, e nós dois não somos uma força suficientemente forte para combatê -los.</p>
+<p> </p>
+<p>Mas não vou implorar por sua ajuda. No seu caminho!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue, Mothir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta! Não é pior para o desgaste, eu vejo.</p>
+<p> </p>
+<p>Você ensinou aos revolucionários lefaristas uma lição difícil?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós os tiramos com facilidade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Isso facilita nosso trabalho, pelo menos por um tempo.</p>
+<p> </p>
+<p>Com mais apoio, podemos eventualmente ser capazes de arrancar as fontes termais de Halabana dos lefaristas para sempre.</p>
+<p> </p>
+<p>Quando esse dia chegar, temos muito o que agradecer, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os revolucionários lefaristas, que capturaram as fontes termais de Halabana.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LehparWizardD_36_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LehparPriestD_36_An]([%5]/3).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LehparAsD_35_An]([%8]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mothir].</p></step>
+</steps>
+<p>Os revolucionários lefaristas capturaram as fontes termais de Halabana. Eles devem ser destruídos, como Mothir solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mothir disse que estava em menor número pelos revolucionários lefaristas nas fontes termais de Halabana.</p>
+<p> </p>
+<p>Você matou os magos, curandeiros e emboscadores de Halabana para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

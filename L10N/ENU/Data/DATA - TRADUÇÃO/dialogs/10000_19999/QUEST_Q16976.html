@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O Exército de Beritra abriu a entrada da ponte de Jormungand, o que leva a seus territórios.</p>
+<p> </p>
+<p>Temos que agir rápido. Já despachamos um agente, mas precisamos de mais Daevas para nos ajudar.</p>
+<p> </p>
+<p>[%username], por favor, vá lá com seus camaradas e estabeleça contato com[%dic:STR_DIC_N_IDLDF5_Under_01_Theano_E].</p>
+<p> </p>
+<p>A velocidade é essencial.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você aqui.</p>
+<p> </p>
+<p>Após a destruição de Katalam, o Exército de Beritra quer usar a ponte para chegar à propriedade de Beritra.</p>
+<p> </p>
+<p>Como não temos artilharia, temos que fazer algo sobre o Balaur na ponte de Jormungand o mais rápido possível.</p>
+<p> </p>
+<p>De acordo com minhas informações, Belkur tem um objeto importante em sua posse. Eu olhei de perto e consegui descobrir qual é o item.</p>
+<p> </p>
+<p>Mate Belkur e ganhe posse de [%dic:STR_DIC_I_quest_16976a]. Então leve para [%dic:STR_DIC_N_LDF5_Under_Timarchus_E]para que ele possa investigar mais.</p>
+<p> </p>
+<p>Estamos contando com sua ajuda. Não nos decepcione!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio da ponte de Jormungand?</p>
+<p> </p>
+<p>Você obteve [%dic:STR_DIC_I_quest_16976a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o fragmento de Belkur.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algo que parece muito incomum.</p>
+<p> </p>
+<p>O que você pretende fazer com isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que acontecerá com isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é tarefa fácil de obter [%dic:STR_DIC_I_quest_16976a].</p>
+<p> </p>
+<p>Mas se o Exército de Beritra acredita que esse item seja tão importante, devemos descobrir o que é.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algo que parece muito incomum.</p>
+<p> </p>
+<p>O que você pretende fazer com isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O fragmento deve ser enviado ao santuário.</p>
+<p> </p>
+<p>Se não me engano, este é um item muito importante.</p>
+<p> </p>
+<p>Vou enviar para a capital.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_IDLDF5_Under_01_Theano_E].</p></step>
+<step><p visible="[%3]">Obter [%dic:STR_DIC_I_quest_16976a] e trazê -lo para [%dic:STR_DIC_N_LDF5_Under_Timarchus_E].</p>[%collectitem]</step>
+</steps>
+<p>Vá para a ponte de Jormungand, pegue o fragmento de Belkur e leve -o para Timarkus, um Daeva de Zephyr.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Timarkus lhe disse que o Exército de Beritra abriu a entrada da ponte de Jormungand. Ele pediu que você visse Theano, um pesquisador.</p>
+<p> </p>
+<p>Theano estava preocupado, porque não havia mais artilharia. Ela pretendia parar o Balaur de qualquer maneira.</p>
+<p> </p>
+<p>Você derrotou Belkur e encontrou um fragmento estranho que você trouxe para Timarkus. Ele disse que o passaria e o examinaria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

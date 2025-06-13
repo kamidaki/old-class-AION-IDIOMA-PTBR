@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diria [%dic:STR_DIC_N_LDF5b_Elta_E] esse suporte é necessário para libertar a vanguarda presa?</p>
+<p> </p>
+<p>Nossa unidade foi realmente enviada para espionar a defesa de Beritra atrás da linha de frente.</p>
+<p> </p>
+<p>Fomos espionados com sucesso nas linhas inimigas, mas, como você pode ver, estávamos completamente cercados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é a situação com Navrei?</p>
+<p> </p>
+<p>Eu posso ter lhe pedido ajuda, [%username], mas eu estava preocupado com o fato de você ter sido isolado.</p>
+<p> </p>
+<p>Além disso, as atividades do exército de Beritra eram anormais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você passa as palavras.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que o escoteiro foi cortado.</p>
+<p> </p>
+<p>Considerando a situação difícil, terei que solicitar o suporte de suporte a próxima unidade.</p>
+<p> </p>
+<p>Eu escrevi tudo em uma carta. Você pode levar a carta para [%dic:STR_DIC_N_LDF5b_Ivolk_E]?</p>
+<p> </p>
+<p>Ivolk poderá mobilizar forças para salvar o escoteiro Navrei. Estou confiando em você.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você recebe uma carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os escoteiros de Navrei foram cortados?</p>
+<p> </p>
+<p>Se houver um relatório exato em algum lugar, vamos dar uma olhada nele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A patrulha de Navrei parece ter penetrado longe demais.</p>
+<p> </p>
+<p>Não sei se agora é possível um resgate, mas como estou familiarizado com as circunstâncias, tomarei as medidas apropriadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Elta_E]%.</p></step>
+<step><p visible="[%3]">Passe a carta para o [%dic:STR_DIC_N_LDF5b_Ivolk_E].</p></step>
+</steps>
+<p>Diga a Elta as notícias e dê a Ivolk a carta que contém informações sobre Navrei.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Elta, você relatou sobre a condição isolada de Navrei, mas o Ivolk não se mexeu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

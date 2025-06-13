@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você aí! Você já esteve em Anturoon Crossing recentemente? Um amigo meu, Mijou, deveria me visitar hoje. Estou desesperado pela ajuda dela, mas acontece que ela não consegue.</p>
+<p> </p>
+<p>Mijou me disse que eu deveria ficar de olho em alguém chamado ... O que foi? ... [%username]? Sim, algo assim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_yes;HACTION_SELECT1_1">"Esse sou eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente?[%username]o [%userclass]? Meu nome é Jephani.</p>
+<p> </p>
+<p>Normalmente não estou estacionado aqui, mas estou em uma tarefa crucial. Eu não posso cumprir meu dever sozinho e sem sinal de Mijou ... você pode me ajudar, certo? Foi o que o Mensageiro de Mijou disse.</p>
+<p> </p>
+<p>Posso prometer uma recompensa lucrativa se você me ajudar. Mas antes de dizer o que precisa fazer, preciso que você prometa manter tudo isso para si mesmo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro. Qual é a nossa tarefa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É Ulgorn. Ele está doente.</p>
+<p> </p>
+<p>Ele está escondido há meses, mas seus ataques de dor estão ficando mais pesados ​​e mais frequentes. Duas semanas atrás, ele apenas faz uma careta e ficou quieto. Mas ontem, eu tive que segurá -lo para que ele não desmoronasse no meio do acampamento. O ar saiu dele como se estivesse sendo socado no estômago.</p>
+<p> </p>
+<p>Há um remédio que posso fazer, mas para fazer eu preciso de três[%dic:STR_DIC_I_2124a] S e três[%dic:STR_DIC_I_2124b] S. Infelizmente, os ânfas e brilhos se defendem muito bem, então não consegui misturar o remédio.</p>
+<p> </p>
+<p>Você pode ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Mijou estava certo em recomendar você para isso.</p>
+<p> </p>
+<p>Corra para o [%dic:STR_DIC_FLA187] e trazer de volta três[%dic:STR_DIC_I_2124a] S e três[%dic:STR_DIC_I_2124b] S.</p>
+<p> </p>
+<p>Se você falhar, e a doença de Ulgorn se tornará conhecimento público, isso pode levar a um sangrento-não mencionar a longa luta de poder pelo controle dos invasores. As facções declarariam por si mesmas, e todo o Ishalgen cairia no caos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulgorn é seu chefe-e seu superior em todos os sentidos da palavra. Ele tem sido como um pai para todos nós, e você se recusa a ajudá -lo.</p>
+<p> </p>
+<p>Parece na ausência de vontade de fazer esse trabalho sozinho ou morrer tentando.</p>
+<p> </p>
+<p>[%username], por favor, reconsidere. Se você não fará isso por Ulgorn, faça -o para aqueles que o respeitam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Veremos, Jephani."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe as coisas que eu pedi?</p>
+<p> </p>
+<p>Por favor, diga sim, [%username]. Estou aterrorizado com o que os outros faria se soubessem que Ulgorn está doente.</p>
+<p> </p>
+<p>Rapidamente, entregue o que você tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, isso não está certo.</p>
+<p> </p>
+<p>Lembre -se, eu preciso de três[%dic:STR_DIC_I_2124a] S e três[%dic:STR_DIC_I_2124b] S---dos quais você encontrará no[%dic:STR_DIC_FLA187].</p>
+<p> </p>
+<p>Pressa, [%username]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Você tem tudo!</p>
+<p> </p>
+<p>Oh, obrigado Azphel! Agora eu posso começar a fazer o remédio de Ulgorn, e talvez-apenas talvez-ele melhore. Eu odiaria ver os Raiders se separarem, e eu odiaria perder Ulgorn ainda mais.</p>
+<p> </p>
+<p>Vou garantir que Ulgorn saiba quem tornou possível esse tratamento. Ele é um homem franco, e tenho certeza que ele o recompensará bem.</p>
+<p> </p>
+<p>Enquanto isso, considere isso como um sinal de minha própria apreciação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete três[%dic:STR_DIC_I_2124a] S e três[%dic:STR_DIC_I_2124b] S então leve -os para [%dic:STR_DIC_N_Djuefene].</p>[%collectitem]</step>
+</steps>
+<p>Jephani lhe disse que Ulgorn tinha uma doença estranha. Colete o [%dic:STR_DIC_I_2124c] S[%dic:STR_DIC_N_Djuefene]precisa fazer o remédio dele e leve-os para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jephani disse que Ulgorn estava sofrendo de uma doença misteriosa-uma doença mantinha segredo dos outros invasores. Você concordou em ajudar a curar sua condição e coletou pernas bruscas e espinhos de Ampha, ambos aparentemente necessários para restaurar a saúde de Ulgorn. Depois de ter os ingredientes, você os levou de volta para [%dic:STR_DIC_N_Djuefene].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem ... parece que você é um cozinheiro bastante promissor. Com um pouco de orientação, você pode se tornar um chef de topo, talvez abrir seu próprio restaurante aqui em pandaemonium ....</p>
+<p> </p>
+<p>Cozinhar não se trata apenas de ficar atrás de um fogão quente. Outras tarefas são necessárias para manter toda a operação funcionando. No momento, preciso que você faça uma tarefa para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vou pescar agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, você está viajando ... para o abismo. É bastante simples. Realmente.</p>
+<p> </p>
+<p>Eu preciso que você entregue este pó de frigideira chikra para [%dic:STR_DIC_N_Siana]. Eles acabaram em Primum Landing, então é melhor você ser rápido!</p>
+<p> </p>
+<p>O que você acha? Você pode lidar com uma viagem ao abismo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por Batali! Você não demorou muito para se decidir!</p>
+<p> </p>
+<p>Leve este pacote para [%dic:STR_DIC_N_Siana]. Rapidamente agora, salte como graxa brax em uma chapa quente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Comida para lutadores? Estou nisso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Estou extremamente decepcionado.</p>
+<p> </p>
+<p>A Siana precisa do Chikra Fring Powder para o grande banquete de amanhã. Eu estava contando com você.</p>
+<p> </p>
+<p>Saia da minha cozinha. Você está ocupando o pouco espaço que eu tenho!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão ... o que você precisa? Rapidamente agora, estou inundado e fora de suprimentos.</p>
+<p> </p>
+<p>Estou fazendo um banquete para os arcontes, mas nesse ritmo terei sorte se raspar o suficiente para alimentar um shugo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho um pacote de Lainita."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o pó de frigideira chikra. Bem a tempo! Obrigado, Daeva.</p>
+<p> </p>
+<p>Fragmentos! Esta é uma quantidade mísera, mas vou esticar da melhor maneira possível.</p>
+<p> </p>
+<p>Estou em sua dívida. Se você não tivesse vindo, eu estaria alimentando -lhes botas velhas e excrementos de Qooqoo. Agora, onde eu coloquei aquela panela ...?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o pacote de Lainita para [%dic:STR_DIC_N_Siana].</p></step>
+</steps>
+<p>Entregue em pó de frigideira chikra que Lainita lhe deu ao comerciante de bens gerais[%dic:STR_DIC_N_Siana]no abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lainita pediu que você entregasse um pacote para a Siana em Primum Landing.</p>
+<p> </p>
+<p>Quando você entregou o pacote de Lainita para a Siana, ela agradeceu e recompensou você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

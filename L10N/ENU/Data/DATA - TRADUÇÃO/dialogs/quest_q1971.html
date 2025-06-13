@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Bem-vindo.</p>
+<p> </p>
+<p>Você está aqui para comprar corante? Meu armazém está quase vazio, para ser sincero.</p>
+<p> </p>
+<p>Em breve estarei fora disso se não fizer um novo corante rápido.</p>
+<p> </p>
+<p>Você poderia levar este item para Layla para mim? Ela queria que eu tinge para ela. Não consegui levá -lo de volta até agora porque não tive tempo.</p>
+<p> </p>
+<p>Se você levar para Layla, eu lhe darei um corante como recompensa.</p>
+<p> </p>
+<p>O item é uma fita que ela precisa para o banquete. Por favor, leve a ela o mais rápido possível!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a fita que peguei Jooma para tingir para mim.</p>
+<p> </p>
+<p>Ficará ótimo na tabela de banquetes.</p>
+<p> </p>
+<p>O corante é par e elegante.</p>
+<p> </p>
+<p>Obviamente, há pessoas que pensam que é excessivo ter comida cara e depois decorações luxuosas ao lado dela também.</p>
+<p> </p>
+<p>Mas vejo este banquete como uma recompensa para os guardiões que provaram sua coragem no campo de batalha.</p>
+<p> </p>
+<p>Se você encontrar tempo, você deve ir ao banquete também, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi reclamações de que meu corante é muito caro.</p>
+<p> </p>
+<p>Eles dizem que eu mantenho um monopólio para colher lucros.</p>
+<p> </p>
+<p>Mas eles não sabem nada sobre essa indústria.</p>
+<p> </p>
+<p>Fazer corante requer trabalho intensivo e materiais caros.</p>
+<p> </p>
+<p>Oh, você esteve no salão de banquetes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz que Layla tenha sido satisfeita.</p>
+<p> </p>
+<p>Graças a você, pude me concentrar em fazer corantes.</p>
+<p> </p>
+<p>Obrigado por me ajudar. Tome essas quotas como um sinal de minha gratidão.</p>
+<p> </p>
+<p>Eu acho que Jade Green realmente se encaixaria em você, [%username]. Mas pegue o que quiser.</p>
+<p> </p>
+<p>Você já usou um corante antes? Você apenas pega e usa em sua armadura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Rayra].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Junes].</p></step>
+</steps>
+<p>Realize o pedido de Jooma, um Daeva da habilidade de tingimento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jooma, o Daeva da habilidade de tingimento, ficou sem corantes, então ela teve que fazer novos. Ela pediu que você fosse a Layla e lhe desse o item que foi ordenado.</p>
+<p> </p>
+<p>Você seguiu o pedido de Jooma e trouxe o item que foi ordenado a Layla. Você voltou ao Jooma e recebe corante como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

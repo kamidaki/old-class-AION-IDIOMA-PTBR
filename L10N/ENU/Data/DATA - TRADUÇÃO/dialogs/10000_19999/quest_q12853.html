@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], quando você colecionou o cerânio quebrado suficiente, você o levaria a mim?</p>
+<p> </p>
+<p>Consegui descobrir um método morph.</p>
+<p> </p>
+<p>Eu poderia fazer algo útil com os pedaços quebrados.</p>
+<p> </p>
+<p>Ainda não o aperfeiçoei, mas se eu tiver cerânio quebrado o suficiente, posso pelo menos tentar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o cerânio quebrado com você?</p>
+<p> </p>
+<p>Um por si só é inútil.</p>
+<p> </p>
+<p>Verifique suas coisas novamente com cuidado.</p>
+<p> </p>
+<p>Precisamos o suficiente deles para iniciar a transformação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cerânio quebrado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Se a conversão falhar, não fique muito decepcionado e tente novamente mais tarde.</p>
+<p> </p>
+<p>Não é tão simples obter medalhas de ceríno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga os pedaços de cerânio quebrado para [%dic:STR_DIC_N_LDF5a_Lv8_Exchange_Cera].</p>[%collectitem]</step>
+</steps>
+<p><font font_xml="quest_summary"> </font></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Cebes descobriu como substituir fragmentos de cerânio e pediu que você obtenha algum cerânio quebrado.</p>
+<p> </p>
+<p>Você coletou fragmentos de cerânio, o trouxe aqui e ajudou a experimentar uma transformação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

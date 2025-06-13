@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15052</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Diz -se que Tiamat submergiu esta região para esconder um tesouro, Ak.</p>
+<p> </p>
+<p>Um tesouro do Senhor do Dragão ...! Deve ser de valor inestimável, AK. Shugo está tremendo de emoção, AK!</p>
+<p> </p>
+<p>Os jardineiros nefilimes estão guardando uma caixa suspeita no jardim central de Balaur. Talvez seja a caixa do tesouro do dragão Lord Tiamat, AK?</p>
+<p> </p>
+<p>Daeva iria para o [%dic:STR_DIC_W_LF5_SZ_E_01] e examinar o [%dic:STR_DIC_OBJ_LF5_FOBJ_Nephilim_Box_Q15052a]Para Shugo? Seria tão maravilhoso se Daeva encontrasse o [%dic:STR_DIC_I_quest_15052a]dentro, AK. O presidente do que daria metade do tesouro a Daeva, é claro, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um tesouro pertencente ao dragão ganancioso Lord Tiamat ...</p>
+<p> </p>
+<p>O presidente do presidente acredita que esse tesouro é extremamente valioso, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o tesouro nefilim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, a caça ao tesouro de Daeva foi um sucesso, AK! Mostre Shugo O que estava na caixa, AK!</p>
+<p> </p>
+<p>(Vasculha os objetos.) Um grupo seco de terra, uma carapaça de inseto, meio mármore de vidro ...</p>
+<p> </p>
+<p>É realmente o tesouro, AK?</p>
+<p> </p>
+<p>É isso, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que é todo o tesouro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que Daeva não leva Shugo a sério, AK?</p>
+<p> </p>
+<p>Quando Shugos fica com raiva, Shugos são aterrorizantes, Ak!</p>
+<p> </p>
+<p>Então Daeva deve levar Shugo a sério, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Um grupo seco de terra, uma carapaça de inseto, meio mármore de vidro ...</p>
+<p> </p>
+<p>Isso é realmente todo o tesouro da caixa Nephilim, AK?</p>
+<p> </p>
+<p>Ou Daeva tomou o tesouro, deixando Junk para Shugo, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que é todo o tesouro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakakak ... Dói presidente, mas uma promessa é uma promessa ...</p>
+<p> </p>
+<p>O Presidente Dará Daeva metade do tesouro como recompensa, Ak.</p>
+<p> </p>
+<p>Afinal, os negócios de sucesso do Presidente é construído sobre justiça e honestidade, AK!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_quest_15052a] e reportar a [%dic:STR_DIC_N_LF5_Chairun_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Chairun_E].</p></step>
+</steps>
+<p>Recupere o tesouro nefilim do jardim central de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O presidente pediu que você procurasse o tesouro Nephilim no jardim central de Balaur.</p>
+<p> </p>
+<p>Você recuperou o tesouro nefilim, mas infelizmente não continha nada de valor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

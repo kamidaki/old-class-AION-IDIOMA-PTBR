@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41605</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça, [%username]. Tenho uma tarefa que precisa ser atribuída e acho que você é apenas o [%userclass] eu preciso de.</p>
+<p> </p>
+<p>Há algum tempo, estamos explorando a Guilda Naduka e identificamos dois alvos de alto nível que queremos mortos. Seus nomes são[%dic:STR_DIC_M_LDF4b_T2_DrakanFi_Tiamat_Named_59_An] e [%dic:STR_DIC_M_LDF4b_T2_DrakanWi_Tiamat_Named_59_An]. Sem eles, a Guilda Naduka ficará sem cabeça, confusa e muito mais fácil de acabar.</p>
+<p> </p>
+<p>O que você diz? Eu só preciso de um deles assassinado por enquanto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi a comoção daqui, [%username]! Pelo menos, presumo que você tenha causado ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz. O trabalho acabou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Vamos assistir suas fileiras por enquanto e ver como eles respondem à sua perda.</p>
+<p> </p>
+<p>Obrigado, [%username]. Você se saiu muito bem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate um dos[%dic:STR_DIC_M_Q41605all] S ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Ur].</p></step>
+</steps>
+<p>Você precisa de uma das cabeças da Guilda de Naduka mortas. Retire a vice -General da Brigada Lucarn ou Aid Kaimar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você contou sobre uma missão de caça de cabeça que ele teve para você. Ele queria que a Guilda de Naduka reduzisse e sugeriu que você tivesse um de seus dois líderes. Você concluiu a tarefa sem muitos problemas e recebeu uma recompensa justa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

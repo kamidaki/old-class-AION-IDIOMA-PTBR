@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A arma aparece e desaparece. É por isso que suspeitamos que a arma deve sempre retornar à sede do Exército de Beritra dentro de um determinado momento.</p>
+<p> </p>
+<p>É por isso que dispositivos como o [%dic:STR_DIC_I_quest_13400a] e o [%dic:STR_DIC_I_quest_13401a] não conseguiu localizá -lo. Portanto, os dispositivos não nos ajudarão a determinar onde e quando a arma do exército de Beritra apareceu.</p>
+<p> </p>
+<p>Mas há uma solução. Podemos descobrir mais pistas.</p>
+<p> </p>
+<p>Encontrei vestígios no local onde assisti a arma aparecer e desaparecer. Aparentemente, eles são os restos de dispositivos que apareceram ao lado da arma.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_LDF5b_SZ_A4] e olhe para os traços que você encontrará lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um gerador feito pelo Exército de Beritra.)</p>
+<p> </p>
+<p>(Parece estar muito danificado porque está com defeito.)</p>
+<p> </p>
+<p>(Está emitindo uma energia de identificação fraca.)</p>
+<p> </p>
+<p>(Olhando mais de perto, você pode ver algo dentro. Parece ser um tipo de circuito para armazenar registros.)</p>
+<p> </p>
+<p>(Felizmente, o circuito não parece danificado.)</p>
+<p> </p>
+<p>(Pegue.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um gerador feito pelo Exército de Beritra.)</p>
+<p> </p>
+<p>(Parece estar com defeito porque não pode ser ativado.)</p>
+<p> </p>
+<p>(Está emitindo uma energia de identificação fraca.)</p>
+<p> </p>
+<p>(Olhando mais de perto, você pode ver algo dentro. Parece ser um tipo de circuito para armazenar registros.)</p>
+<p> </p>
+<p>(Felizmente, o circuito parece estar intacto.)</p>
+<p> </p>
+<p>(Pegue.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você de novo, [%username].</p>
+<p> </p>
+<p>Eu ouvi sobre você através de Pepe. Você está estudando os planos de infiltração do Exército de Beritra?</p>
+<p> </p>
+<p>Ouvi dizer que essa tarefa não é fácil. Provavelmente porque você não pode usar o detector de infiltração ou o sensor para realizar a tarefa. É verdade que esses dispositivos não funcionam?</p>
+<p> </p>
+<p>Se esses dispositivos não funcionarem, não temos como prever o local onde se infiltrarão. É realmente um grande problema.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você passa os itens e dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obteve informações valiosas!</p>
+<p> </p>
+<p>Estes devem ser circuitos do[%dic:STR_DIC_E_Vritramachine]. Essas máquinas foram descobertas em Kaldor e Akaron. Eles confiam no poder do id.</p>
+<p> </p>
+<p>Termos no idioma do Balaur estão escritos nos circuitos. Até as coordenadas de [%dic:STR_DIC_I_quest_13402a] e [%dic:STR_DIC_I_quest_13402b] São completamente diferentes.</p>
+<p> </p>
+<p>Suspeito que os dois dispositivos controlem outra hora e lugar. E agora vejo por que o lugar e a hora da invasão planejada do Exército de Beritra não coincidiu.</p>
+<p> </p>
+<p>Hmm ... ainda é apenas uma teoria, mas é possível que eles atacem de outro local ... Ah, por favor, mantenha o que eu apenas deixo escapar para si mesmo.</p>
+<p> </p>
+<p>Graças às informações que você me trouxe, em breve poderei descobrir onde e quando o exército de Beritra aparecerá. Há também um relatório afirmando que essa invasão também está ameaçando Akaron. Por favor, vá lá e continue pesquisando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5b_SZ_A4], Investigue o [%dic:STR_DIC_OBJ_LDF5b_FOBJ_A4_Vritramachine_L_1] e obter [%dic:STR_DIC_I_quest_13402a].</p></step>
+<step><p visible="[%3]">Investigue o [%dic:STR_DIC_OBJ_LDF5b_FOBJ_A4_Vritramachine_L_2] em[%dic:STR_DIC_W_LDF5b_SZ_A4] e obter o [%dic:STR_DIC_I_quest_13402b].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5b_Faitos_E]no[%dic:STR_DIC_W_LDF5b_SZ_A4].</p></step>
+</steps>
+<p>Fale com a testemunha ocular Sinisto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinisto confirmou que nem o detector de invasão nem o sensor de invasão poderiam encontrar o local onde o exército de Beritra começaria sua invasão.</p>
+<p> </p>
+<p>Ele falou sobre restos das máquinas do Exército de Beritra que ele viu no platô de Nevilim. Você teve a tarefa de examinar esses restos.</p>
+<p> </p>
+<p>Você foi, portanto, ao Platô Nevilim e pesquisou os geradores de energia do Exército de Beritra. Ao fazer isso, você encontrou componentes de vários circuitos.</p>
+<p> </p>
+<p>Você relatou isso a Paitas, que lhe disse que geradores de energia como esse existiam em Kaldor e Akaron. Ele também reconheceu que foram várias diferenças nos dados registrados nos circuitos.</p>
+<p> </p>
+<p>Os Paitos disseram que os circuitos que você encontrou ajudariam a prever o local e o tempo da invasão do exército de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

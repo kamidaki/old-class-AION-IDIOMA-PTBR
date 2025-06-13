@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3915</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Toda a Elysea está preocupada com as ações do Balaur que estão ligadas a Drana e Dragel.</p>
+<p> </p>
+<p>É preocupante que as mutações estejam sendo realizadas usando Dragel.</p>
+<p> </p>
+<p>Urgentemente precisamos de amostras!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu diria isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você teria um[%dic:STR_DIC_I_quest_3915a]Para mim, por favor, [%username]? Seria tremendamente útil para mim.</p>
+<p> </p>
+<p>Se tivermos o dragel, ele ajudará muito a avançar nossa pesquisa sobre a guerra de Balaur.</p>
+<p> </p>
+<p>Por favor nos ajude, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado, [%username].</p>
+<p> </p>
+<p>Eu tinha medo de que você recusasse meu pedido.</p>
+<p> </p>
+<p>Os Kobolds e os fungos parecem ter sido mutados com o dragel. Talvez possamos obter amostras deles.</p>
+<p> </p>
+<p>Talvez haja outra maneira de se apossar das amostras ...</p>
+<p> </p>
+<p>Seja como for, por favor, obtenha [plur][%dic:STR_DIC_I_quest_3915a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você me ajudaria, [%username]...</p>
+<p> </p>
+<p>Você não sabe o quão importante é as amostras de dragel?</p>
+<p> </p>
+<p>Vergonha ... esse é o fim da pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então não falamos disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Eu nunca desejei ver alguém tanto em toda a minha vida.</p>
+<p> </p>
+<p>Você tem as amostras de dragel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Seu muco, madame ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você tinha o [plur][%dic:STR_DIC_I_quest_3915a]Com você, mas acho que estava errado.</p>
+<p> </p>
+<p>Eu não quero me apressar, mas você pode se apressar?</p>
+<p> </p>
+<p>Nossas investigações estão no gelo até obtermos essas amostras.</p>
+<p> </p>
+<p>Por favor, seja rápido!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo! Eu vou continuar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado!</p>
+<p> </p>
+<p>Podemos finalmente continuar com a pesquisa.</p>
+<p> </p>
+<p>Temos que descobrir o motivo das mutações!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [plur][%dic:STR_DIC_I_quest_3915a] em[%dic:STR_DIC_W_IDLF1] e leve-os para [%dic:STR_DIC_N_Maloren].</p>[%collectitem]</step>
+</steps>
+<p>Reúna amostras de dragel para a pesquisa de mutação e levá -las a Maloren.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que Maloren ouviu o relatório sobre as mutações de Balaur, ele expressou seu interesse em Dragel e pediu que você obtenha amostras.</p>
+<p> </p>
+<p>Depois de obter amostras de dragel em Dark Poeta, você teve a certeza de que elas seriam muito úteis na pesquisa das mutações de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é um quinto membro da Dark Star.</p>
+<p> </p>
+<p>Daeva deu uma grande contribuição para realizar o sonho da estrela sombria, Akakak.</p>
+<p> </p>
+<p>Nossa pesquisa secreta está agora completa.</p>
+<p> </p>
+<p>Para a próxima investigação, Shugo precisa de materiais de [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] e [%dic:STR_DIC_M_region_DragonNmd_55_Ah].</p>
+<p> </p>
+<p>A estrela sombria está sempre aqui para Daeva.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, membro.</p>
+<p> </p>
+<p>Daeva foi capaz de obter os materiais de pesquisa, AK?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os recursos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Isto é para a estrela sombria e, portanto, também para Daeva, AK.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não são materiais suficientes, AK. Akakak!</p>
+<p> </p>
+<p>O membro deve ir e obter mais, por favor, AK.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é cercado por uma energia estranha, AK.</p>
+<p> </p>
+<p>Essa energia é diferente do que com outro membro da Dark Star. Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é incrível. Shugo sabia que Daeva faria isso!</p>
+<p> </p>
+<p>Shugo não esperava mais nada de um membro do Dark Star, quinto posto.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter materiais de [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] e [%dic:STR_DIC_M_region_DragonNmd_55_Ah] e traga -os para Robo Shugo.</p>[%collectitem]</step>
+</steps>
+<p>Robo Shugo pediu que você obtenha materiais de [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] e [%dic:STR_DIC_M_region_DragonNmd_55_Ah].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma missão como membro do Dark Star, quinto posto, e o realizou.</p>
+<p> </p>
+<p>Você obteve os materiais e os trouxe para Robo Shugo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

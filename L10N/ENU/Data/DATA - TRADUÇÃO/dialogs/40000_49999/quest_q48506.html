@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva precisa de tokens cruzados? Yaminerk pensou que ela ouviu murmurando desse tipo, Nyerk.</p>
+<p> </p>
+<p>Como o destino teria, Shugo está oferecendo uma oferta de tempo limitada para trocar tokens.</p>
+<p> </p>
+<p>Daeva quer ouvir mais? Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro, me dê o campo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem discurso de vendas, apenas comércio honesto. Yaminerk não é vendedor comum! Akakakakak!</p>
+<p> </p>
+<p>Yaminerk está procurando tokens de daemon e dará tokens de cruzados para eles.</p>
+<p> </p>
+<p>Lá, simples, Nyerk. Você quer trocar tokens com Yaminerk agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Yaminerk está atualmente oferecendo 6 tokens cruzados para 7[%dic:STR_DIC_I_COIN_D_HUNTERS_01] S.</p>
+<p> </p>
+<p>Melhor preço do que você chega em outro lugar, o Yaminerk pode garantir a Daeva disso, Nyerk.</p>
+<p> </p>
+<p>Ainda interessado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Definitivamente interessado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Yaminerk lamentou profundamente que Daeva não esteja interessado.</p>
+<p> </p>
+<p>Sente tudo triste por dentro. Vazio. Esmagado pela rejeição. Nyerk.</p>
+<p> </p>
+<p>Se Daeva quiser fazer Shugo se sentir melhor, volte mais tarde para os fichas cruzadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva trouxe tokens para troca? Deixe o Yaminerk ver o que você trouxe.</p>
+<p> </p>
+<p>Às vezes, um Daeva traz os tokens errados, tenta trocar 7 tokens de daemon por 6 fichas cruzadas.</p>
+<p> </p>
+<p>Yaminerk é sempre tentado ... mas é honesto Shugo, sempre corrige o erro. Geralmente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Que gentileza de você ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Yaminerk pensou que explicou isso. Terá que passar por tudo de novo, Nyerk Nyerk.</p>
+<p> </p>
+<p>Daeva deve ter 7[%dic:STR_DIC_I_COIN_D_HUNTERS_01] para trocá -los por 6 fichas cruzadas.</p>
+<p> </p>
+<p>Não mais, nada menos. Daeva entende?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mais ou menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tokens daemon! Yaminerk já pode dizer. Os falsos não parecem certos. Tinny, Nyerk.</p>
+<p> </p>
+<p>Aqui estão o token cruzado que você está chegando. Yaminerk espera que Daeva os use bem.</p>
+<p> </p>
+<p>Shugo sempre terá mais fichas cruzadas para negociar por tokens Daemon, para que Daeva volte, Nyerk.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_HUNTERS_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_08].</p>[%collectitem]</step>
+</steps>
+<p>Yaminerk coleta Tokens Daemon. Traga seus tokens de Daemon em troca de fichas cruzadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O colecionador de moedas Yaminerk disse que ela queria trocar tokens cruzados por tokens de daemon.</p>
+<p> </p>
+<p>Você deu a Yaminer seus tokens de daemon e recebeu tokens cruzados em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

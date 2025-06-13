@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Turbo], Marchutan anterior</p>
+<p>Tarefa: Inspeção de Segurança Altgard</p>
+<p> </p>
+<p>Bem -vindo ao Priorado Marchutan. Nossa organização se dedica a ajudar os recém -ascendidos a "aprender as cordas" de ser um Daeva, por assim dizer.</p>
+<p>Você foi designado para inspecionar o [%dic:STR_DIC_OBJ_Q47000] está perto da Altgard Fortaleza para garantir seu funcionamento adequado.</p>
+<p>Localize a [%dic:STR_DIC_E_Mentor] e pegue as bolas de cristal das orbes da ala. Observe que isso não pode ser feito sozinho.</p>
+<p>Traga as bolas de cristal para mim para exame. Mantenha os olhos abertos e esteja disposto a aprender.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Acho que vou aprender muito ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]?[%username].... você é um dos de Daevas atribuídos à inspeção de segurança, não é?</p>
+<p> </p>
+<p>O Priory lida com todos os danos recém -ascendidos nos dias de hoje. Espero que você tenha encontrado um mentor que combina com seu estilo e necessidade.</p>
+<p> </p>
+<p>Se você se lembra, precisa me dar as bolas de cristal que você coletou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui eles não estão. Você pode não pensar que aprenderá muito com uma tarefa tão simples, mas pense nisso como um gosto do que o trabalho em equipe pode trazer. Além disso, essa inspeção realmente precisa ser feita.</p>
+<p> </p>
+<p>Lembre -se, para abrir um[%dic:STR_DIC_OBJ_Q47000] e pegue o [%dic:STR_DIC_I_quest_47000a]Lá dentro, você precisará trabalhar com um mentor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, sim, eu me lembro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me dar uma olhada nesses .... condicione verde. Tudo parece estar funcionando normalmente.</p>
+<p> </p>
+<p>Tais rotinas mantêm o Balaur, os sapiens e os lefaristas afastados para que possamos nos concentrar em coisas maiores.</p>
+<p> </p>
+<p>Espero que você tenha aprendido algo com a experiência. Agradeça ao seu mentor na próxima vez que vocês dois se encontrarem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], inspecione o [%dic:STR_DIC_OBJ_Q47000] S e pegue o [%dic:STR_DIC_I_quest_47000a] para [%dic:STR_DIC_N_Turbo].</p>[%collectitem]</step>
+</steps>
+<p>Você foi recebido no Priorado do Marchutan. Encontre um mentor, inspecione a enfermaria em torno de Altgard e colete as bolas de cristal interior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Priorado do Marchutan pediu que você inspecionasse os orbes da ala localizados em torno de Altgard.</p>
+<p> </p>
+<p>Com a ajuda de um mentor, você inspecionou os orbes e coletou as bolas de cristal para inspeção oficial.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

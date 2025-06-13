@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak, as peças de Ramparts que estavam tão meticulosamente reunidas estão desaparecendo pouco a pouco, Ak.</p>
+<p> </p>
+<p>Não é fácil se apossar apenas de apenas uma peça. Mas ninguém sabe ainda por que está desaparecendo, Ak.</p>
+<p> </p>
+<p>Provavelmente há um ladrão, Ak.</p>
+<p> </p>
+<p>Eu contratei[%dic:STR_DIC_N_LDF5b_ShulackGuard_02]Como guarda, e por um preço alto também. Mas ele apenas se descansando o dia todo, Ak.</p>
+<p> </p>
+<p>Eu ficaria muito grato se você pudesse pegar o ladrão roubando todas as peças de muralhas, AK. [%dic:STR_DIC_N_LDF5b_ShulackGuard_02]Provavelmente sabe de alguma coisa, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>As muralhas desapareceram?</p>
+<p> </p>
+<p>Por que você me pergunta isso?</p>
+<p> </p>
+<p>Você não consegue encontrar o ladrão que o roubou?</p>
+<p> </p>
+<p>Não sei o que é um fragmento de muralhas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta persistentemente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mesmo se você está tentando me assustar, eu não era o ladrão, AK!</p>
+<p> </p>
+<p>Mas Shugo ainda está com medo, AK!</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_LDF5B_A3_Cherubim_63_n] São os culpados, AK!</p>
+<p> </p>
+<p>Eles se esgueiram durante a noite e roubam.</p>
+<p> </p>
+<p>Shulack fica de guarda sozinho e não pode parar todo o Kerubiel sem ajuda.</p>
+<p> </p>
+<p>[%username], você é grande e forte. [%username], por favor, punir o kerubiel errante para que eles parem de roubar!</p>
+<p> </p>
+<p>Não é culpa de Shulack!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Wanderer de Kerbiel deveria ter tomado?</p>
+<p> </p>
+<p>Não foi uma boa ideia contratar um shulack, Ak. Akakak!</p>
+<p> </p>
+<p>Isso não ajudou nada, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, AK.</p>
+<p> </p>
+<p>Vou te dar o compartilhamento de Shulack porque você concluiu a tarefa de Shulack, AK.</p>
+<p> </p>
+<p>Muito obrigado, AK!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_ShulackGuard_02]%.</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_LDF5B_A3_Cherubim_63_n]([%11]/10).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5b_Kaberinrin_E]%.</p></step>
+</steps>
+<p>Encontre os fragmentos de Ramparts roubados do culpado e elimine -os.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Kaberinerk, você procurou o ladrão que roubou as peças de muralhas e identificou o Wanderer de Kerbiel como sendo o culpado.</p>
+<p> </p>
+<p>Kaberinerk disse que você aliviou o shulack do trabalho deles. Ele agradeceu e lhe deu uma parte do pagamento dos Shulacks.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

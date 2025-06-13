@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q1752</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, [%username], Estou curioso sobre a profundidade de sua habilidade.</p>
+<p> </p>
+<p>Gostaria de testar -se de novo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que é agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus estudos ainda são dificultados por [%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An] Areia [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An] S.</p>
+<p> </p>
+<p>Um ou dois deles, eu posso lidar. Mas não importa quantos eu lido, mais vêm, como se estivessem do nada.</p>
+<p> </p>
+<p>O que você acha?  Gostaria de me ajudar a afinar um pouco suas fileiras?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está se fazendo! É quase como se você tivesse potencial oculto.</p>
+<p> </p>
+<p>Agora, por favor, mate [plur][%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An] e [plur][%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An].</p>
+<p> </p>
+<p>Seria uma grande ajuda se você pudesse matar 3 do primeiro e 7 deste último.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Encontrei seus limites, então?</p>
+<p> </p>
+<p>Talvez minha primeira impressão estivesse correta.</p>
+<p> </p>
+<p>Se você encontrar sua resolução, sabe onde estarei.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desejo -lhe sorte em seus estudos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso foi emocionante, não foi?</p>
+<p> </p>
+<p>Você se livrou da sua parte dos batedores de raiz seca e da TreeGards gritando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Na verdade..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Isso facilita muito minha pesquisa.</p>
+<p> </p>
+<p>Escoteiros e TreeGards pensarão duas vezes agora sobre obstruir a busca pelo conhecimento.</p>
+<p> </p>
+<p>Volte novamente algum dia, [%username]. Podemos ter mais a discutir. E leve isso para o seu problema.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os batedores da raiz seca e os guarda -árvores gritando.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1141_XipetoB_28_An]([%2]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An]([%5]/7)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Nemea].</p></step>
+</steps>
+<p>Nemea disse que os batedores de raízes secos e os guardas de árvores gritando a impediam de redigir um trabalho de pesquisa. Se alguém os eliminasse, ela seria capaz de continuar seu trabalho.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nemea disse que os escoteiros e Treegards estão obstruindo seu estudo. Ela pediu que você a ajudasse a se livrar deles.</p>
+<p> </p>
+<p>Quando você se livrou dos escoteiros e TreeGards, conforme solicitado, ela ficou agradecida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não consigo suportar esses grifos imundos! Girando, gritando sua conversa horrível-é mais do que eu posso suportar.</p>
+<p> </p>
+<p>Eles desceram, gritaram para nós e abriram nossos pacotes. Então eles voaram com nossas disposições. Faz dias desde que comemos.</p>
+<p> </p>
+<p></p> <p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa de ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Sim, eu não preciso mais nada!</p>
+<p> </p>
+<p>Temos tentado chegar ao terreno sagrado do Miraju. Antes de você aparecer, eu temia que morássemos de fome aqui em cima.</p>
+<p> </p>
+<p>Por favor ... tudo o que precisamos é de sustento, nada sofisticado. Não espero iguarias temperadas, apenas alguma comida que dá vida.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você nos salvou, Daeva. O Abex e o Grifus que vivem nas proximidades não devem ser muito difíceis de capturar, e sua carne é difícil, mas altamente nutritiva.</p>
+<p> </p>
+<p>Se você pudesse nos trazer 3 pedaços de [%dic:STR_DIC_QILA79] e 5 pedaços de [%dic:STR_DIC_QILA80], Tenho certeza de que teríamos forças para continuar.</p>
+<p> </p>
+<p>Vou começar a fazer fogo enquanto você caça os animais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É a sua vida, Daeva, sua decisão. Não é para mim dizer o que é melhor.</p>
+<p> </p>
+<p>Deve haver tarefas muito mais importantes chamando você, se você não pode poupar tempo para trazer peregrinos famintos e devotos alguns pedaços.</p>
+<p> </p>
+<p>Talvez, se você voltar dessa maneira, poderá enterrar minha esposa e eu um ao lado do outro. Caso contrário, suponho que você possa simplesmente chutar nossos corpos para o desfiladeiro. Tudo o que você puder gerenciar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aion observe você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah ... aí está finalmente. Eu quase tinha perdido a esperança.</p>
+<p> </p>
+<p>Perdoe -me ... Estou muito fraco para cumprimentá -lo corretamente. Você fez...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui, coma isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Você voltou apenas para se gabar?</p>
+<p> </p>
+<p>Ou ... talvez seja a fome, pegando peças em mim. Talvez nunca houve um Daeva ... você é apenas mais um Grifo, não é?</p>
+<p> </p>
+<p>Por favor, oh, ótimo Grifo, me pegue a carne de seus irmãos e irmãs. E enquanto você está nisso, você também pode trazer um pouco de abex.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, uh ... volte de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe ... isso não é miragem! Eu posso sentir, cheirar!</p>
+<p> </p>
+<p>Daeva, não sei como agradecer. Sem a sua ajuda ... sem a sua generosidade ...</p>
+<p> </p>
+<p>Pegue isso. É tudo o que temos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre comida e traga isso para [%dic:STR_DIC_LA31].</p>[%collectitem]</step>
+</steps>
+<p>Peregrino[%dic:STR_DIC_LA31]Perdi seus suprimentos para o Grifo e estava morrendo de fome. Caça um grifus feroz e a Mountain Abex e traga sua carne para Dronoa.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Grifo roubou comida de Pilgrim Dronoa, deixando -o faminto e desprovido de esperança. Você caçou o Abex e o Grifo próximo e trouxe sua carne para ele e sua esposa.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo:</p>
+<p> </p>
+<p>Eventos recentes esgotaram nosso suprimento de ervas medicinais. Embora tenhamos o suficiente para lidar com as necessidades atuais, o reabastecimento de nosso estoque é essencial se quisermos estar preparados para eventos futuros. Isso é especialmente crucial, considerando a recente interrupção de nossas linhas de suprimentos normais.</p>
+<p> </p>
+<p>Todos os guardas de campo são solicitados a entregar em qualquer [%dic:STR_DIC_G_QUEST_45034_a] eles podem encontrar. Esta é uma substância bastante mundana, mas crucial para produzir suprimentos médicos. Entregar qualquer quantidade de reposição para agente de campo[%dic:STR_DIC_N_Columba], que farão com que eles cheguem aos nossos estoques.</p>
+<p> </p>
+<p>Sangue para sangue, diretor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ter que ficar de olho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não percebi que nosso envolvimento com os lefaristas estava tão sangrento a ponto de usar tantas poções. Na verdade, eu tinha a impressão de que as coisas haviam sido resolvidas de maneira mais pacificável ....</p>
+<p> </p>
+<p>Mas é inútil especular-não estou a par de tudo o que os guardas de campo fazem. Tudo o que importa agora é que podemos usar o Neunan para reabastecer nossos estoques de poções. Você trouxe algum?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Remédios à base de plantas, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente você mesmo agora você utilizou ervas para curar feridas? Então você deve saber que mesmo uma pequena dose de ervas pode fazer muito para aliviar a dor e consertar a carne. Cada parte ajuda.</p>
+<p> </p>
+<p>Então, podemos ficar aqui sentando sobre cadeias de suprimentos, ou você pode ir e me trazer alguns[%dic:STR_DIC_G_QUEST_45034_a]. Qual realmente nos ajuda, [%username]?</p>
+<p> </p>
+<p>Eu vou te dizer qual. O segundo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mas eu queria falar sobre cadeias de suprimentos ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, obrigado por isso, [%username]. Eu aprecio seu tempo.</p>
+<p> </p>
+<p>Até o menor esforço ajuda imensamente a longo prazo. Você não pode ganhar uma guerra sem vencer muitas pequenas batalhas ao longo do caminho. Alguns tão pequenos, ninguém sabe que eles estão acontecendo ....</p>
+<p> </p>
+<p>De qualquer forma, pegue esse token para compensá -lo pelos esforços de hoje.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_G_QUEST_45034_a] e trazê -lo para [%dic:STR_DIC_N_Columba].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta dos guardas de campo pede que os guardas reunam Neunan, que será usado para reabastecer o estoque de suprimentos médicos dos guardas.</p>
+<p> </p>
+<p>Você coletou Neunan e o trouxe para o agente de campo de Beluslan, que o recompensou pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

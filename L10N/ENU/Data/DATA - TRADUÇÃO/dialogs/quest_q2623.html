@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece um skurv chamado Baba Kun que vende comida na vila? Ele adora comida humana.</p>
+<p> </p>
+<p>Sempre que ele me vê, ele me incomoda para fazer comida para ele. Me implora por isso!</p>
+<p> </p>
+<p>Ele é tão persistente que prometi fazer um prato para ele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é legal da sua parte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Decidi cozinhar algo para mostrar a cozinha asmodiana.</p>
+<p> </p>
+<p>Vai ser um ensopado misto especial! Ele terá costeletas de gorgon e carne de jarrete macio, e muitas especiarias e vegetais ....</p>
+<p> </p>
+<p>Vou prepará -lo para os legionários e deixar de lado uma grande parte para Baba Kun.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu me encaixo aqui em algum lugar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você faz. Veja bem, eu não tenho as costeletas de Gorgon ou a carne de jarrete macio.</p>
+<p> </p>
+<p>Um ensopado misto sem isso não é nada especial, e eu quero que isso seja especial. Você vai conseguir alguns[%dic:STR_DIC_I_QUEST_2623a] Areia [%dic:STR_DIC_I_QUEST_2623b]para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou avisá-lo-sou um pouco particular que Gorgons e Darus estou disposto a usar para este prato.</p>
+<p> </p>
+<p>Sobre [%dic:STR_DIC_W_STR_DF3_SZ_D5] São[%dic:STR_DIC_M_GorgonWhiteD_40_n] Areia [%dic:STR_DIC_M_DaruD_40_n] S. Essas são as costeletas e a carne de Hock que eu quero.</p>
+<p> </p>
+<p>Vou apenas fazer tudo o mais enquanto você se foi.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gorgons ... Darus ... de volta em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que você tem outros assuntos urgentes para atender.</p>
+<p> </p>
+<p>Que pena.</p>
+<p> </p>
+<p>Você perderá meu ensopado misto especial.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiz este tempero sozinho. É realmente maravilhoso.</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_2623a] Areia [%dic:STR_DIC_I_QUEST_2623b] então eu posso começar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Muito disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh céus! Isso não é suficiente.</p>
+<p> </p>
+<p>Não tenho tempo para começar outra coisa, então se apresse com a carne.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que lindos pedaços de carne! Eles têm a quantidade certa de gordura.</p>
+<p> </p>
+<p>Vai ser um ótimo ensopado misto! Eu posso simplesmente provar agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha ingredientes de [%dic:STR_DIC_M_GorgonWhiteD_40_n] Areia [%dic:STR_DIC_M_DaruD_40_n] e trazê -los para [%dic:STR_DIC_N_Bowen].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha costela de Gorgon e carne de jarrete macio e leve -as a Bowen para colocar no ensopado misto especial.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bowen prometeu cozinhar comida humana para Baba Kun.</p>
+<p> </p>
+<p>Ele decidiu o ensopado misto especial, que requer costela de gorgon e carne de jarrete macio.</p>
+<p> </p>
+<p>Enquanto Bowen estava preparando o tempero, você caçou os Gorgons e Darus para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

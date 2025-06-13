@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é a sua impressão da base de defesa de Gelkmaros?</p>
+<p> </p>
+<p>Não, não o açúcar. Eu sei que não está na melhor forma. Temos tantas preocupações que é difícil fazer manutenção básica.</p>
+<p> </p>
+<p>Essa negligência pode voltar para nos morder, então estamos tentando acompanhar. Mas aqueles que explodiram Balaur .... com seus ataques, nunca temos tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Existe algo que eu possa fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, definitivamente há algo que você pode fazer! Quero que você nos compre tempo para que possamos fazer reparos necessários.</p>
+<p> </p>
+<p>O mais Balaur que ataque aqui vem dos Wilds de Marayas. Ocupe -os lá, e podemos começar a trabalhar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sugiro que você comece com o [%dic:STR_DIC_M_DF4_DrakanWi_Re_53_An] S. Eles guardam os dispositivos de cultivo da Drana, para que sua perda torne o Balaur o mais vulnerável a ataques futuros.</p>
+<p> </p>
+<p>Boa sorte, [%username]. Para asmodae!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para os senhores Shedim!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh? Eu pensei que você estava se oferecendo para nos ajudar, [%username].</p>
+<p> </p>
+<p>Eu entendi mal você? Ou é algo o problema? Você pegou algo do deserto? Nesse caso, fale com um de nossos clérigos ou curandeiros da alma. Tenho certeza que eles podem ajudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, estou bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta no tempo. Acabamos de terminar nossos reparos mais necessários, e não uma espiada do Balaur durante todo esse tempo! Você deve ter realmente puxado os chifres.</p>
+<p> </p>
+<p>Diga-me tudo-o que você viu, o que ouviu, o que você fez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem, tudo começou quando eu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessante .... muito interessante. Vou ter que contar aos meus superiores sobre isso.</p>
+<p> </p>
+<p>Mas parece que você fez lesões reais. Deveríamos mais do que recuperar os reparos antes que possam atacar novamente.</p>
+<p> </p>
+<p>Estaremos pressionando a vantagem que você nos deu em breve. Asmodae agradece por seus trabalhos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua [%dic:STR_DIC_M_DF4_DrakanWi_Re_53_An] S. ([%2]/10)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Aquila].</p></step>
+</steps>
+<p>Os ataques de Balaur estão atrasando a reconstrução da base de defesa de Gelkmaros. Derrote o Balaur guardando os dispositivos de cultivo de Marayas Drana e relate o resultado a Aquila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aquila reclamou que, devido ao ataque constante de Balaur, era difícil manter a base de defesa de Gelkmaros em forma. Ela esperava que um ataque a eles desse um espaço para respirar.</p>
+<p> </p>
+<p>Você foi ao Marayas Wilds e derrotou Balaur Guardando os dispositivos de cultivo da Drana. Ao voltar, Aquila elogiou seu trabalho, dizendo que você voltou a vantagem de volta a Asmodae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

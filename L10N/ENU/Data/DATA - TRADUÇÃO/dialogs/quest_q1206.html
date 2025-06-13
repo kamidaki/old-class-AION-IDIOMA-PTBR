@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de ouvir relatórios do[%dic:STR_DIC_ELA14]-A notícia é grave. Os asmodianos garantiram várias fortalezas lá.</p>
+<p> </p>
+<p>Você parece desinteressado, mas devo lembrá-lo de que todo o nosso modo de vida-nossa própria existência-está em risco aqui</p>
+<p> </p>
+<p>Nosso[%dic:STR_DIC_ELA09] S está lutando contra os asmodianos enquanto falamos e, como sacerdote da vila de Akarios, é meu dever enviar homenagem a eles para ajudar a apoiar nossa causa.</p>
+<p> </p>
+<p>Você vê, enquanto o [%dic:STR_DIC_ELA14]é um terreno desolado e severo, Aion e nossos senhores serafim nos concederam este mundo de Elysea, cheio de pastos férteis e vida natural. Seria tolice da nossa parte não tirar proveito desse ambiente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Concordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Eu pensei em enviar rações para o [%dic:STR_DIC_ELA14], como normalmente fazemos. No entanto, nesse período de crise, algo mais pode ser necessário.</p>
+<p> </p>
+<p>Eu recebi notícias de [%dic:STR_DIC_ELA07]que eles precisam de mais poções de cura para o nosso sofrimento[%dic:STR_DIC_ELA09] S. Infelizmente, eles estão com pouca parte do ingrediente -chave.</p>
+<p> </p>
+<p>[%username], Eu preciso que você me traga [%dic:STR_DIC_I_herb_n_c_10a], para que possamos enviá -lo para nossos alquimistas em santuário. A erva cresce em abundância o tempo todo[%dic:STR_DIC_E_LF1_name].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado!</p>
+<p> </p>
+<p>Precisamos enviar mais de três amostras por enquanto. Você pode encontrar o [%dic:STR_DIC_I_herb_n_c_10a]Crescendo entre as árvores.</p>
+<p> </p>
+<p>Por favor, se apresse-devo enviar nosso tributo antes que as linhas de suprimento sejam fechadas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua ignorância me surpreende, [%username].</p>
+<p> </p>
+<p>Entendo que os mercenários apenas fazem ações quando há benefício pessoal, mas você precisa pensar em uma escala maior aqui.</p>
+<p> </p>
+<p>Gah! Por que raciocinar com o tolo? OFF com você!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, [%username].</p>
+<p> </p>
+<p>Você colheu o [%dic:STR_DIC_I_herb_n_c_10a] eu pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah ... não ...</p>
+<p> </p>
+<p>Precisamos de três raízes, lembra?</p>
+<p> </p>
+<p>Por favor, apresse -se, [%username]! Você deve ser capaz de encontrar muita ária em[%dic:STR_DIC_FLA04].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou trabalhando nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso, é exatamente isso que precisamos!</p>
+<p> </p>
+<p>Enviarei os suprimentos para o santuário imediatamente.</p>
+<p> </p>
+<p>Você fez uma grande coisa hoje, [%username]. Por favor, tome isso como compensação pelo seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_herb_n_c_10a], e leve para [%dic:STR_DIC_N_Polinia].</p>[%collectitem]</step>
+</steps>
+<p>A Polinia precisa de uma quantidade de ária para contribuir para a homenagem ao santão. Reúna 3 raízes Aria para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Com a ofensiva asmodiana no abismo crescendo, a demanda por poções de cura aumentou dramaticamente.</p>
+<p> </p>
+<p>Isso resultou na escassez de ária, um ingrediente -chave para as poções de cura.</p>
+<p> </p>
+<p>Você reuniu ária suficiente para a Polinia enviar como homenagem ao santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q18605</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi o que você estava conversando com Raninia ... você também teve esse sonho por acaso, [%username]?</p>
+<p> </p>
+<p>Este sonho com Kromede e Robstin ...</p>
+<p> </p>
+<p>(Olha em volta e diz em silêncio) Eu tenho o mesmo sonho. Estou tendo o mesmo sonho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Há quanto tempo começou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo começou quando ... logo depois que comprei um estigma falso da Herthia.</p>
+<p> </p>
+<p>Eu sei que isso foi estúpido, mas não podia pagar um real.</p>
+<p> </p>
+<p>Seja qual for o sonho, está me matando ... eu não dormi há tanto tempo, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso ver o estigma falso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu o joguei longe há séculos. Mas os pesadelos não pararam. Sempre.</p>
+<p> </p>
+<p>Raninia disse que é porque minha alma era fácil demais de influenciar ... Acho que esses espíritos precisam ser eliminados para acabar com os pesadelos ...</p>
+<p> </p>
+<p>Mas não sei o que devo fazer. Você teria que entrar no pesadelo para derrotar os espíritos ... mas estou muito assustado para fazer isso ...</p>
+<p> </p>
+<p>Eu sei que estou sem vergonha em perguntar isso, mas você entraria nos meus sonhos e derrotaria os espíritos malignos por mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>São as vozes dos prisioneiros nesta masmorra que mais me atormentam.</p>
+<p> </p>
+<p>Eu posso sentir suas emoções e seu desespero, assim como posso me sentir o meu.</p>
+<p> </p>
+<p>Então, por favor, mergulhe de volta ao pesadelo e liberte o [%dic:STR_DIC_M_18605] S.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Raninia]Parece saber o caminho a seguir para o pesadelo. Peça ajuda a ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar ao pesadelo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... eu entendo, [%username].</p>
+<p> </p>
+<p>Não pretendo sobrecarregá -lo com meus problemas. Só estou exausto ... não dormi há semanas.</p>
+<p> </p>
+<p>Desculpe incomodá-lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu gostaria de poder ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm? Oh, oh, [%username], desculpe ... eu me afastei. Estou exausta. Eu não dormi há tanto tempo.</p>
+<p> </p>
+<p>Você voltou ao julgamento de Kromede? Ter os gritos do[%dic:STR_DIC_M_18605]foi reprimido? Posso ... dormir em paz agora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A paz é sua mais uma vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Oh ... muito obrigado, muito, [%username]! Obrigado!</p>
+<p> </p>
+<p>Eu esqueci como é adormecer ... adormecer ... dormindo ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para dentro[%dic:STR_DIC_W_IDCromede] e termine o [%dic:STR_DIC_M_18605]que assombra os sonhos de Ardenia. ([%2]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ardenia].</p></step>
+</steps>
+<p>Ardenia está tendo pesadelos e pediu que você voltasse ao julgamento de Kromede para libertar os prisioneiros de masmorra de seu sofrimento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ardenia disse que tinha pesadelos recorrentes sobre Kromede e Robstin. Ela pediu que você a ajudasse a acabar com esses pesadelos.</p>
+<p> </p>
+<p>Graças à ajuda do intérprete dos sonhos Daeva Raninia, você conseguiu se aprofundar no sonho de Ardenia e eliminar os prisioneiros da masmorra. Quando você voltou, Ardenia agradeceu e ficou muito agradecida por estar perto de lágrimas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

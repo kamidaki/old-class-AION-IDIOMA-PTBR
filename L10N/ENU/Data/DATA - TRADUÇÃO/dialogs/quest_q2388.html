@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Alsig Village parece quieto, mas é um ímã de problemas. Tudo começou com Deltras e os Elyos, e não está desacelerando. Nossos arcontes e o relógio protegem os moradores dos lefa e Mau.</p>
+<p> </p>
+<p>Mas há uma nova ameaça: Klaws descentando, ao sul de Alsig Crossroad. Há um tempo, um escoteiro matou um espião Klaw perto de lá.</p>
+<p> </p>
+<p>Está longe de ser as assombrações habituais, e o pântano frio não é o habitat preferido.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Mas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recentemente, vimos mais deles. Sim, o suficiente para nos ameaçar. Eu verifiquei pessoalmente. Parece que eles estão montando um segundo habitat lá.</p>
+<p> </p>
+<p>Se eu tivesse vasculado a área quando a primeira foi relatada ... mas não é tarde demais.</p>
+<p> </p>
+<p>Existem apenas[%dic:STR_DIC_M_NeutL2D_34_An] Areia [%dic:STR_DIC_M_NeutL1D_34_An] S, não rainha Klaw ou trabalhadores. Ainda não é uma colméia completa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ainda tempo, então ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que expulsá -los antes que as rainhas cheguem. Não é tarde, mas também não há tempo de sobra!</p>
+<p> </p>
+<p>Até uma rainha lá dentro, e o ninho ficará fora de controle. Teríamos que abandonar Alsig.</p>
+<p> </p>
+<p>Mas elimine o [%dic:STR_DIC_M_NeutL2D_34_An] Areia [%dic:STR_DIC_M_NeutL1D_34_An] ao sul da vila, e os Klaws abandonarão o novo ninho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá ao sul da vila, até o final da encruzilhada Alsig. Eles vão te encontrar.</p>
+<p> </p>
+<p>Ensine os Klaws que Alsig Village é um ponto de ninho ruim.</p>
+<p> </p>
+<p>Claro, vou te dar uma grande recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para Alsig!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é inesperado. Você não gosta de esmagar bugs?</p>
+<p> </p>
+<p>Eu não sei o que dizer!</p>
+<p> </p>
+<p>Vou ... encontrar outra pessoa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você faz isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu só quero manter o pessoal de Alsig em segurança. É o fardo das asas.</p>
+<p> </p>
+<p>Você corrigiu meu erro?</p>
+<p> </p>
+<p>O Klaw é inteligente. Eles sabem o que significa um nariz sangrento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O ninho está vazio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito. Como eu disse, eles não são estúpidos. Eles vão pegar a dica e nos deixar em paz.</p>
+<p> </p>
+<p>Uma coisa a menos assustando os cidade ...</p>
+<p> </p>
+<p>Pegue isso. Eu sei que você encontrará um bom uso para isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Remova o klaw que está ameaçando a vila de Alsig.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_NeutL2D_34_An]([%2]/3).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_NeutL1D_34_An]([%5]/7).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Mirka].</p></step>
+</steps>
+<p>Dirija o Klaw, que está tentando construir um ninho na parte sul da Alsig Village.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirka perdeu sinais de que o Klaw estava construindo um novo ninho ao sul de Alsig. Para salvar a cidade, ela pediu que você os persegue.</p>
+<p> </p>
+<p>Você limpou Klaw Spies e Klaw Patrols da Alsig Crossroad, para o grande alívio de Mirka.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

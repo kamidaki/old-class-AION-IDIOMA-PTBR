@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você nos ajudou a avançar do ninho de Kaluva para o mezanino de cristal, então acho que você está bem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você já passou pelo disco?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não. Nossos investigadores continuam sendo interrompidos[%dic:STR_DIC_M_IDAbRe_Core_FiNmd_Combine].</p>
+<p> </p>
+<p>Toda vez que eles se aproximam, ele se divide [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al] e [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al], então os empurra para trás ou os mata.</p>
+<p> </p>
+<p>Você está pronto para outra chance de penetrar na lasca abissal?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me dar a você a queda. Depois de se dividir [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al] e [%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al], eles constroem um escudo.</p>
+<p> </p>
+<p>Mas eles também se cancelam! Se você levar o fragmento de esplendor de Rukril para eBonsoul-e, inversamente, o fragmento de escuridão de Ebonsoul para Rukril-seu escudo desaparecerá.</p>
+<p> </p>
+<p>Mas você deve coordenar seus ataques. Se um desmoronar diante do outro, o inimigo restante se tornará agressivo demais para lidar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um jogo antigo de Switch-Kill? Eu gosto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de tudo o que passamos, você desenha a linha disso? Esse?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O que posso dizer? Não é a minha cena."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos segurar a fortaleza divina agora, mas poderíamos ser atacados por baixo a qualquer momento.</p>
+<p> </p>
+<p>Ah, [%username], nosso potencial salvador. Que notícias de Rukril e Ebonsoul? O que está além do mezanino cristalino? Segurança, talvez?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O disco é nosso, mas espere ... há mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Seus esforços e lealdade constante tornam a fortaleza uma estação de maneira mais segura para todos os Daevas.</p>
+<p> </p>
+<p>Um artefato de proteção, você diz. Deve haver uma maneira de usá -lo para nossa vantagem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do protetor do mezanino de cristal.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Light_Fi_55_Al]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Boss_Guardian_Dark_Fi_55_Al]([%5]/1)</p></step>
+<step><p visible="[%15]">Deixar [%dic:STR_DIC_NPC_Ab1_1011_TreasureGate_Li] Saiba que há mais na lasca.</p></step>
+</steps>
+<p>A lasca abissal permanece desvestigada porque Rukril e Ebonsoul protegem o mezanino cristalino. Derrote -os pelo direito de explorar mais fundo dentro da lasca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aratus disse que seus investigadores haviam avançado para o mezanino cristalino, mas não conseguiu vencer.</p>
+<p> </p>
+<p>Seguindo suas informações, você se livrou de Rukril e Ebonsoul e descobriu o artefato de proteção dentro da lasca abissal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

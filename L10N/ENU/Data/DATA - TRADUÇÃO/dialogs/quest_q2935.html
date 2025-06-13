@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Não consigo encontrar nada de errado com seu trabalho. Nada.</p>
+<p> </p>
+<p>Estou confuso e surpreso. Você está se aproximando do nível de especialista muito mais rápido do que eu jamais imaginou que faria.</p>
+<p> </p>
+<p>Parece que não há mais nada para eu te ensinar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Nada?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada. E como suas realizações são claras de se ver, seria errado não digná -las com o título apropriado.</p>
+<p> </p>
+<p>As realizações desse nível são tradicionalmente reconhecidas com o título de "especialista em alquimia".</p>
+<p> </p>
+<p>Esse, [%username], é o título que você deve suportar agora. Você está disposto a aceitá -lo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Governador [%dic:STR_DIC_N_Vidar]Terá que aprovar seu título, mas isso é uma formalidade, principalmente.</p>
+<p> </p>
+<p>Vou escrever uma carta de recomendação. Você o leva para Vidar e recebe o título. Então você será obrigado a participar da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aplaudo sua humildade. No entanto, exorto você contra o declínio de um título que você ganhou. Devemos reconhecer o nosso melhor, [%username]. É o trabalho deles que inspira os outros.</p>
+<p> </p>
+<p>Se você quiser se tornar um mestre como eu na plenitude do tempo, aceite o título de especialista enquanto puder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode esperar? Eu tenho muitas coisas para pensar sobre ...</p>
+<p> </p>
+<p>A menos que você precise da minha atenção pessoal, leve o assunto a Skadi ou Kvasir. Tenho certeza que eles podem ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de Honir ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Honir? Passe aqui .... Ah, parece que você alcançou algo realmente que vale a pena!</p>
+<p> </p>
+<p>Os asmodianos devem tanto aos seus alquimistas. Você nos mantém vivos e revigorados. Você nos energiza e nos inspira. Você capacita o próprio sangue em nossas veias-o sangue que um dia regra sobre toda Atreia.</p>
+<p> </p>
+<p>Mestre alquimista [%dic:STR_DIC_N_Honir], fez muito com suas habilidades, e então eu reconheço você, [%username], como especialista em alquimia!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Honir, um mestre de alquimia, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Honir, um mestre de alquimia, disse que não tinha mais nada para lhe ensinar e que você alcançou o nível de um especialista.</p>
+<p> </p>
+<p>Você recebeu a carta de recomendação dele, foi ao governador Vidar e recebeu o título de especialista em alquimia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

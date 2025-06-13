@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41203</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, desta vez tenho certeza que sei o que deu errado. Mas preciso da sua ajuda novamente. Você pode coletar amostras dos petrahulks quebrados ao redor do[%dic:STR_DIC_W_LDF4a_SZ_B1]?</p>
+<p> </p>
+<p>Por que eu não pensei nisso antes? Eu sei, eu sei, tenho agido muito sem pensar ultimamente.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_I_QUEST_41203A] S deve estar espalhado no chão ao redor da floresta de Anaz. Cinco devem ser suficientes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito por ter feito um Daeva ocupado como você correr assim, limpando minha bagunça. Acredite, eu aprendi minha lição.</p>
+<p> </p>
+<p>Você salvou a mim e à minha reputação. E pense em todas as pessoas que poderiam ter se machucado se você decidisse não me ajudar!</p>
+<p> </p>
+<p>Você encontrou o [%dic:STR_DIC_I_QUEST_41203A] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Aqui. Você está absolutamente certo desta vez?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que isso funcionará, [%username].</p>
+<p> </p>
+<p>Se eu executar uma extração reversa da magia nessas amostras, posso descobrir exatamente onde a energia ressoou errada. Eu só preciso desacelerar e pensar no que estou fazendo.</p>
+<p> </p>
+<p>Então, vamos ver aqui ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_I_QUEST_41203A] S no[%dic:STR_DIC_W_LDF4a_SZ_B1] e leve-os para [%dic:STR_DIC_N_Feityios].</p>[%collectitem]</step>
+</steps>
+<p>Feyos precisa de espécimes de Petahulk para consertar seu feitiço.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Feyos disse que descobriu de onde veio o problema em seu feitiço e precisava de alguns itens finais para completar o feitiço de reversão.</p>
+<p> </p>
+<p>Você coletou espécimes de Petahulk na floresta de Anaz e os levou para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

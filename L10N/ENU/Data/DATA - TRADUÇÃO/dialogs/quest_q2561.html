@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Faz quase meio ano desde que cheguei aqui, mas quase não fizemos progresso.</p>
+<p> </p>
+<p>Se estivéssemos dentro do cronograma, a pesquisa preliminar já estaria concluída. Estaríamos iniciando o trabalho de restauração.</p>
+<p> </p>
+<p>Receio que, nesse ritmo, nunca possamos reviver Kurngalfberg.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, a população de Worg foi negligenciada por muito tempo. Mas esse é o menor disso.</p>
+<p> </p>
+<p>O verdadeiro desafio são os fantasmas. As pessoas que foram enterradas junto com Kurngalfberg agora vagam pela cidade. Eles não parecem saber que estão mortos.</p>
+<p> </p>
+<p>Os nativos eram naturalmente cautelosos de pessoas de fora, e agora seus fantasmas nos atacam.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é um problema, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Solicitamos apoio da fortaleza de Beluslan e eles nos enviaram dois arcontes. Dois!</p>
+<p> </p>
+<p>Eu entendo. Dado toda a luta, até dois foram generosos. Mas não basta lidar com os fantasmas, muito menos proteger nosso posto avançado aqui.</p>
+<p> </p>
+<p>Você estaria disposto a emprestar seu[%mainslotitem]Para nossa defesa? Sua reputação o precede, e é boa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimas notícias, [%username]. Podemos usar todos os daeva que podemos obter.</p>
+<p> </p>
+<p>Temos três preocupações principais-o [%dic:STR_DIC_M_UndeadDarkFiD_37_An] S, [%dic:STR_DIC_M_UndeadDarkWiD_37_An] Areia [%dic:STR_DIC_M_UndeadDarkPrD_37_An] S nos causou mais problemas. Eles são nossa prioridade.</p>
+<p> </p>
+<p>Cada um deles luta de uma maneira diferente, então você pode querer criar estratégias antes de entrar na cidade.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está interessado em fantasmas, hein, [%userclass]?</p>
+<p> </p>
+<p>Em vez de deixar esses espíritos para vagar, acho que eles seriam mais bem servidos, ajudando -os a voltar ao fluxo de Aether.</p>
+<p> </p>
+<p>Era nosso trabalho servi -los na vida. Nós os falhamos se não os servirmos agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Enviei muito para o Aether para outro lugar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não consigo me acostumar com isso. Lembro -me desta cidade em seu auge: ouro brilhante e repleto de pessoas. Parece um sonho agora.</p>
+<p> </p>
+<p>Chega da minha divagação-como foi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu cuidei dos fantasmas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que estava certo em confiar em você. Agora podemos começar nosso trabalho sem ser assediado.</p>
+<p> </p>
+<p>Por favor, aceite isso. Você nos ajudou como se essa fosse sua missão sozinha. Não posso deixar você ir sem lhe dar algo em troca.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os fantasmas em Kurngalfberg.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkFiD_37_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkWiD_37_An]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkPrD_37_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kistenian], um daeva da chama.</p></step>
+</steps>
+<p>Os fantasmas estão impedindo a reconstrução de Kurngalfberg. Ajude o kisteniano e elimine os guerreiros Iceghost, os magos Iceghost e os padres de Iceghost.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os fantasmas de Kurngalfberg estão interferindo com Daeva do trabalho de observação de Flame Kistenian. Ele pediu sua ajuda.</p>
+<p> </p>
+<p>Você enviou todos os fantasmas de volta ao fluxo de Aether e relatou o resultado para o kisteniano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

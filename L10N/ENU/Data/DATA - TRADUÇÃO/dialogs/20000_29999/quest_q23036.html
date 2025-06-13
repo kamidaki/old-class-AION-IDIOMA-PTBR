@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já viu o colar usado pelos seguidores de Jormungand, o dragão no esconderijo?</p>
+<p> </p>
+<p>A corrente estava na forma de uma cobra. Eu acho que pretende retratar Jormungand.</p>
+<p> </p>
+<p>Eu gostaria de procurar por Jormungand. Posso pedir para você obter [%dic:STR_DIC_I_quest_23036a]Do dragão no esconderijo?</p>
+<p> </p>
+<p>Antes de ver o objeto, tenho apenas a noção mais vaga.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Pesquisando em um livro antigo) Jormungand ...</p>
+<p> </p>
+<p>Vamos ver, um deus na forma de uma cobra ...</p>
+<p> </p>
+<p>Não há nada parecido nos documentos de Atreia.</p>
+<p> </p>
+<p>É vital descobrirmos o que é.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a corrente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa é a cadeia do dragão</p>
+<p> </p>
+<p>A imagem de uma cobra está claramente marcada.</p>
+<p> </p>
+<p>É apenas uma corrente, mas de alguma forma me enche de sentimento de desconforto.</p>
+<p> </p>
+<p>Devo examiná -lo rapidamente, então abandoná -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_23036a] e trazê -lo para [%dic:STR_DIC_N_LDF5b_Macur_E].</p>[%collectitem]</step>
+</steps>
+<p>Leve o colar de Jormungand dos seguidores de Jormungand e entregue -o a Makkur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Makkurs, você eliminou o dragão em seu esconderijo e, quando lhe entregou o colar, ele rapidamente se desculpou para investigar, dizendo que seu humor havia escurecido.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

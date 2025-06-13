@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeça Aion pela patrulha! Se eles não estavam aqui para manter os Crestlichs e Bakus afastados, não tenho certeza do que faríamos.</p>
+<p> </p>
+<p>Eu sei que você Daevas acha que são bastante mansos, mas, [%username], eles são aterrorizantes para nós humanos! Particularmente à noite.</p>
+<p> </p>
+<p>Assim que Teos e eu começamos a dormir, somos acordados por gritos de guerra daqueles animais incrustados de sombra!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece horrível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É horrível! As patrulhas parecem gostar de lutar contra as bestas, e sua carne nos ajuda a nos manter alimentados, mas eles me assustam!</p>
+<p> </p>
+<p>Então, novamente, quando você é um refugiado, tudo parece muito assustador.</p>
+<p> </p>
+<p>Sei agora que todos os dias na minha cidade natal eram uma bênção.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você não deve ter problemas para localizar o [%dic:STR_DIC_M_Crestlich_28_An] Areia [%dic:STR_DIC_M_Baku_27_An] S. Basta seguir o barulho.</p>
+<p> </p>
+<p>Se você os limpar, eu lhe darei minha posse mais preciosa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou calar a boca."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tinha medo que você não entendesse, [%username].</p>
+<p> </p>
+<p>Os Daevas simplesmente não conseguem compreender o quão assustadores são os cristas e Bakus para pessoas como nós.</p>
+<p> </p>
+<p>Faz muito tempo desde que você se sentiu vulnerável.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem ... terr ... boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os obliterou?</p>
+<p> </p>
+<p>Se alguma vez eu vir outro Crestlich ou Baku, será muito cedo. Eu nem quero vê -los em meus sonhos!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles se foram agora.".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh Aion! Obrigado! Esta noite, talvez possamos finalmente dormir um pouco! Mas acho que vai demorar algum tempo antes de parar de pular toda vez que ouço um barulho alto.</p>
+<p> </p>
+<p>Eu gostaria que você fosse postado para esta patrulha, [%username]. Eu me sentiria muito mais seguro sabendo que você estava aqui!</p>
+<p> </p>
+<p>Aqui, pegue isso. Não é muito, mas isso significaria muito para mim se você aceitasse.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe as bestas que estão assustando os refugiados.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_Crestlich_28_An]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_Baku_27_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ernia].</p></step>
+</steps>
+<p>Seria bom se você pudesse acabar com os presos e os Bakus que são aterrorizantes aos refugiados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A refugiada Ernia disse que não pode dormir à noite por causa de Caterwauling dos Crestlichs e Bakus.</p>
+<p> </p>
+<p>Você erradicou os animais, para seu prazer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

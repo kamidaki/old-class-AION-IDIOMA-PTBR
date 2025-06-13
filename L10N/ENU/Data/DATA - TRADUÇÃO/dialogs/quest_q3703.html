@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, devemos fazer mais. Não pode simplesmente cobrir e cair no campo de treinamento ... precisamos estripar o lugar.</p>
+<p> </p>
+<p>Estou falando sobre os instrutores, [%username]. Eles são inteligentes o suficiente para continuar sem o general. Eles sabem o que estão fazendo e não vão parar apenas porque seus recrutas estão mortos a seus pés.</p>
+<p> </p>
+<p>Eles vão recrutar mais. Sempre há mais Balaur.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, então, o que estamos esperando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você nos ajudaria novamente, [%username]? Não foi minha intenção perguntar, não depois do trabalho de libra esterlina que você já fez.</p>
+<p> </p>
+<p>Mas ... eu também seria um tolo para recusar sua oferta de ajuda. Tem certeza de que está disposto?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, então, vamos lá!</p>
+<p> </p>
+<p>Os instrutores estão estacionados perto do artefato, do portão da fortaleza e perto de seus pontos de ligação. Identificamos quatro alvos específicos e todos precisarão ser mortos antes de considerarmos a missão um sucesso. Você está procurando o [%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae], o [%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae], o [%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae], e o [%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae].</p>
+<p> </p>
+<p>Vá em frente, [%username]. Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu vejo.</p>
+<p> </p>
+<p>Eu não achei que você estaria pronto para ajudar novamente, não depois de todo o esforço que você já fez para nós.</p>
+<p> </p>
+<p>Descanse, tire algum tempo e volte quando estiver atualizado. Você está desculpado, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, Nereus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>E então o grande herói[%username]retorna novamente. Sua tarefa foi um sucesso? Os instrutores estão todos mortos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Vamos ver a rapidez com que esses demônios podem substituir seus instrutores, não é?</p>
+<p> </p>
+<p>Seu trabalho tem sido tão constantemente sólido, Daeva. Eu só queria que os outros fossem tão fortes quanto você.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. É mais do que merecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os instrutores de Balaur.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_NagaWizardA_26_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_BoneDrake_26_Ae]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_CastleNagaPriest_26_Ae]([%8]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Mini_Castle_NagaWizardB_26_Ae]([%11]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Nereus].</p></step>
+</steps>
+<p>Derrote os instrutores responsáveis ​​pelo treinamento dos estagiários de Balaur.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nereus pediu que você derrotasse os instrutores responsáveis ​​pelo treinamento dos estagiários de Balaur.</p>
+<p> </p>
+<p>Você fez o que ele perguntou, e em seu retorno foram agradecidos sinceramente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

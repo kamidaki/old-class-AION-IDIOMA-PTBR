@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Parece um diário muito antigo. É melhor ter cuidado para não desmoronar.)</p>
+<p> </p>
+<p>([%dic:STR_DIC_N_Ervin] Saberia a quem pertencia. Talvez ela gostasse de ver.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos ver o que Ervin tem a dizer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Você pode querer ler isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que pertencia à Aureia. Ele enviou seu filho embora, mas ... acho que ele não conseguiu.</p>
+<p> </p>
+<p>Seus descendentes podem querer saber o que aconteceu com ele. Essa família está usando o personagem "Aur" na frente de seus nomes há gerações.</p>
+<p> </p>
+<p>Se você já encontrou alguém com um nome assim, por que não vê se ele é o ancestral deles?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu acho que conheço alguém ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphelumbra. Desfrutando de suas viagens?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Sua família é de Brusthonin?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, receio não conhecer essa família. Suponho que é apenas uma coincidência que meu nome é AUR.</p>
+<p> </p>
+<p>Deve haver outra pessoa com um nome "AUR" que você poderia perguntar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Talvez em Beluslan ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está procurando algo em particular?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">"Você é da família AUR?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sou ... mas uma vez conheci alguém que era. Ele comentou sobre a coincidência.</p>
+<p> </p>
+<p>O nome dele era [%dic:STR_DIC_N_Asustri]. Aparentemente, seu ramo da família começou a mudar seus nomes para "ASU" depois de algum tipo de tragédia.</p>
+<p> </p>
+<p>Ele disse que estava voltando para Brusthonin.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Vou pesquisar lá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi um Daeva perguntando depois de mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Este é o diário do seu ancestral?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... certamente parece ser. Meu ramo da família mudou seus nomes para "ASU" em homenagem àqueles que ficaram em Brusthonin e morreram.</p>
+<p> </p>
+<p>Este diário é bastante deprimente. Tudo aconteceu há muito tempo, mas você ainda pode ver a contaminação na terra.</p>
+<p> </p>
+<p>Espero que ele não seja um dos Mortos Vivos que eu tive que matar na semana passada.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Ervin].</p></step>
+<step><p visible="[%3]">Vá para o pandaemonium e converse com[%dic:STR_DIC_N_Aur].</p></step>
+<step><p visible="[%6]">Vá para Beluslan e converse com[%dic:STR_DIC_N_Aurvandil].</p></step>
+<step><p visible="[%9]">Vá para Brusthonin e converse com[%dic:STR_DIC_N_Asustri].</p></step>
+</steps>
+<p>Você encontrou um diário depois de matar um zumbi. Leve para Ervin e descubra a quem pertencia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um velho diário enquanto matava um zumbi. Segundo Ervin, pertencia a alguém da vila. Você decidiu levá -lo ao descendente deles.</p>
+<p> </p>
+<p>A família tinha a tradição de afixar "Aur" na frente de seu nome, então você perguntou a todos os áreas que conhecia.</p>
+<p> </p>
+<p>Eventualmente, um deles lhe disse que ele conheceu alguém daquela família, mas que eles haviam mudado o nome para "ASU". Você mostrou o diário a Asustri e ele disse que pertencia ao seu ancestral.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

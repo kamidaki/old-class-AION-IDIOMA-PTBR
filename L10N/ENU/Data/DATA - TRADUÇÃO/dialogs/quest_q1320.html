@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga -me, Daeva ... você notou os Kurins? Eles são novos aqui.</p>
+<p> </p>
+<p>E assim que começaram a aparecer ... elim e árvores começaram a morrer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... e eles desenterram as raízes de Fess ... e Umblia.</p>
+<p> </p>
+<p>Essas plantas podem desaparecer ... para sempre.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mas Eltnen precisa de seus recursos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você veja ... minha preocupação. Não podemos deixar isso continuar ... pequenas plantas ajudam a Eltnen a reter água e impedir a erosão.</p>
+<p> </p>
+<p>Protegê -los ... faz parte de reviver a terra.</p>
+<p> </p>
+<p>Você poderia caçar [%dic:STR_DIC_M_Cures_23_An] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Daeva, por ajudar a ... proteger a terra. Você será recompensado pelo seu serviço.</p>
+<p> </p>
+<p>Agora vá. Caçar [%dic:STR_DIC_M_Cures_23_An] S e mantenha nossas pequenas plantas seguras.</p>
+<p> </p>
+<p>Então volte ... e conte -me sobre o seu sucesso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode ignorar a ameaça ... os Kurins posam para Eltnen?</p>
+<p> </p>
+<p>Eu imploro ... por favor ... pense.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou considerá -lo. Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caçou o [%dic:STR_DIC_M_Cures_23_An] S?</p>
+<p> </p>
+<p>Você é nossa única esperança ... pela destruição deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu consegui!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não foi fácil ... mas a derrota deles significa sobrevivência ... para fess e Umblia.</p>
+<p> </p>
+<p>Mas a questão permanece ... De onde vieram os Kurins?</p>
+<p> </p>
+<p>Eu devo ... estudar ... esta situação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Cures_23_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tree_NoMove_Lodas].</p></step>
+</steps>
+<p>Eu deveria eliminar o Kurin que está comendo as últimas plantas restantes no deserto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kurins apareceram de repente no deserto, comendo pequenas plantas.</p>
+<p> </p>
+<p>Lodas pediu que você caçasse Kurins para que as poucas plantas restantes no deserto não fossem eliminadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

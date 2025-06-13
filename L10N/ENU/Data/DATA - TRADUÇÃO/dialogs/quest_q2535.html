@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode não saber disso, mas eu cresci em Besfer Village. Quando meu pai subiu como Daeva, minha família se mudou para o Pandaemonium, mas lembrei -me de todos os meus amigos em Besfer.</p>
+<p> </p>
+<p>Recentemente, tive que visitar a vila para uma missão, e tive um choque terrível. Dois dos meus amigos de infância se tornaram zumbis.</p>
+<p> </p>
+<p>Meus melhores amigos, Imud e Moloch.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_sad;HACTION_ASK_QUEST_ACCEPT">"Que terrível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi dizer que Imud se tornou um padre e Moloch se tornou um líder de relógio, então fui ao campo de refugiados Besfer e perguntei sobre eles.</p>
+<p> </p>
+<p>Todo mundo diz que lutou bravamente tentando salvar os outros e foram levados pelos Mortos Vivos.</p>
+<p> </p>
+<p>Gigrite me disse que uma verdadeira amizade significa enviá -los de volta ao fluxo de Aether, mas ... acho que não posso matar meus amigos. [%username], você vai me ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que deveria ser o único a fazê -lo, mas é muito doloroso para mim.</p>
+<p> </p>
+<p>Por favor, envie [%dic:STR_DIC_M_ZombieNamedDQ_36_An] e [%dic:STR_DIC_M_SkeletonNamedDQ_36_An]para o seu descanso final.</p>
+<p> </p>
+<p>Vou orar ao Senhor Marchutan pelo conforto de suas almas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que eu deveria enviá -los de volta ao fluxo de Aether?</p>
+<p> </p>
+<p>Eu sei que é a coisa certa a fazer, mas simplesmente não posso fazer isso.</p>
+<p> </p>
+<p>OK. Vou tentar trabalhar a coragem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta, [%username]!</p>
+<p> </p>
+<p>Eu tenho orado a Lord Marchutan por Imud e Moloch.</p>
+<p> </p>
+<p>Eles retornaram ao fluxo de Aether?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão em repouso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que as almas dos meus amigos possam descansar agora. Eles eram boas pessoas e mereciam mais do que passear pelo mundo como Mortos Vivos.</p>
+<p> </p>
+<p>Vou visitar lá algum dia para montar uma lápide para cada um deles. Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Envie os amigos de Alfgeir que ficaram Mortos Vivos de volta ao fluxo de Aether.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ZombieNamedDQ_36_An]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_SkeletonNamedDQ_36_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Alfgeir].</p></step>
+</steps>
+<p>Os amigos de infância de Alfgeir ficaram Mortos Vivos. Ele pediu que você fosse enviá -los de volta ao fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alfgeir descobriu que seus amigos de infância haviam se tornado Mortos Vivos.</p>
+<p> </p>
+<p>Ele sabia que deveria enviá -los de volta ao fluxo de Aether, mas era muito doloroso para ele. Então ele pediu que você enviasse o Deathbelcher Imud e o capitão Moloch de volta ao fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

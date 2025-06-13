@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações Daeva! Eu sou magorunerk, Nyerk. Maior coletor de moedas em todas as atreia.</p>
+<p> </p>
+<p>Eu vim aqui procurando moedas especiais. Talvez Daeva tenha alguns?</p>
+<p> </p>
+<p>Diga, Daeva parece familiar. Você é[%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Magorunerk pensou assim. Ouvi muito sobre Daeva ... pensei que você seria maior. Akakakak!</p>
+<p> </p>
+<p>Você faz muitos empregos para as pessoas, sim? Ultimamente, algum trabalho para os guardas de campo?</p>
+<p> </p>
+<p>Magorunerk está coletando fichas da ala, mas não é fácil, Nyerk. Quer ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Magorunerk tem um comprador procurando 10 fichas de ala, mas só tem 2 até agora. Precisa de mais 8.</p>
+<p> </p>
+<p>Se Daeva me der 8[%dic:STR_DIC_I_COIN_D_PROTECTION_01], Magorunerk dá a este símbolo cruzado, Nyerk. Feira comercial.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Deixe -me dar uma olhada ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Magorunerk receberia tokens de Ward, mas Shugo não pode se juntar aos guardas. Talvez os daemons de Charlirunerk ....</p>
+<p> </p>
+<p>De qualquer forma, Shugo está propondo um acordo justo. 8 Tokens da ala para 1 Token Crusader, Nyerk.</p>
+<p> </p>
+<p>Não posso recusar isso! Akakakakak!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Me observe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva já encontrou todo o [%dic:STR_DIC_I_COIN_D_PROTECTION_01] S?</p>
+<p> </p>
+<p>Daeva é mais rápido do que o Magorunerk pensou!</p>
+<p> </p>
+<p>Magorunerk confia completamente em Daeva, é claro, mas ele ainda deve verificar se eles são os tokens certos. Procedimento padrão, Akakakakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é rápido, mas não inteligente, pensa Shugo. Não pode contar para 8. O mesmo que os dedos, Nyerk.</p>
+<p> </p>
+<p>Shugo precisa de 8[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S.</p>
+<p> </p>
+<p>Magorunerk ficando frustrado aqui!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem, com licença!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm ... você tem certeza de que esses são tokens da ala? Olhe certo, mas o gosto engraçado. Talvez isso das mãos de Daeva. Melhor ir lavar. Nyerk!</p>
+<p> </p>
+<p>De qualquer forma, eles parecem reais, então aqui está o Token Crusader, conforme prometido.</p>
+<p> </p>
+<p>Ninguém nunca diz o Magorunerk, não comerciante honesto, Nyerk!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_PROTECTION_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_06].</p>[%collectitem]</step>
+</steps>
+<p>Magorunerk coleta tokens da ala. Encontre os tokens da ala e traga -os para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Magorunerk se apresentou como colecionador de moedas e disse que estava procurando tokens de ala.</p>
+<p> </p>
+<p>O Magorunerk deu a você um token de cruzado como recompensa quando você entregou a ele 8 tokens da ala.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

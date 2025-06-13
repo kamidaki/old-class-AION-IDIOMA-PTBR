@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], sim? Eu ouvi muito sobre você. Você é o Daeva que pode passar e sair do Taloc sem ficar doente.</p>
+<p> </p>
+<p>Devo pedir um favor a você. Meu camarada Donbran ficou muito tempo dentro do Taloc. Ele não ouviu meu conselho. Algo aconteceu com ele lá.</p>
+<p> </p>
+<p>Ele está doente agora e não está melhorando. Por favor, você deve me ajudar ... você deve ajudá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu não sei o que posso fazer, Crosia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos de uma cura. Não é apenas Donbran ... Vários Daevas saíram do Taloc da mesma maneira. Não tenho tratamento para a doença deles.</p>
+<p> </p>
+<p>Mas eu ouvi alquimista [%dic:STR_DIC_N_Phailos] está desenvolvendo algum tipo de antídoto. Não tenho certeza de quão longe ele chegou a terminar.</p>
+<p> </p>
+<p>Estou com problemas reais aqui, [%username]. Minha Guilda está caindo como moscas, e meu general da brigada está me apertando para obter informações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como eu ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja Phailos! Todos por aqui estão em alfinetes e agulhas esperando que ele termine o antídoto, mas ele está se divertindo.</p>
+<p> </p>
+<p>Você veria [%dic:STR_DIC_N_Phailos]para mim?</p>
+<p> </p>
+<p>Tenho certeza de que quando ele vê um grande forte [%userclass]De pé sobre ele, ele vai apressar um pouco.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso explodiu[%dic:STR_DIC_N_Phailos] está apenas relaxando, demorando o tempo.</p>
+<p> </p>
+<p>Ele diz que, como Daevas realmente não pode morrer, não há necessidade de ele parar seus outros estudos para fazer a cura.</p>
+<p> </p>
+<p>Mas sentimos dor. Donbran sente dor. Minha Guilda sente dor. Você pode fazer com que ele se mova um pouco mais rápido então?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ele virá a conhecer minha urgência."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é tão egoísta quanto Phailos, [%username]!</p>
+<p> </p>
+<p>É sempre o negócio de outra pessoa, certo? Basta passar a adaga para o próximo Daeva ... deixe -o cortar a garganta.</p>
+<p> </p>
+<p>Eu já tive o suficiente disso ... de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu luto, não entrego mensagens."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm? Sim? O que é?</p>
+<p> </p>
+<p>Não me lembro de pedir comida para ser entregue ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Como está a cura?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A cura? A cura para a doença do Taloc? A cura que ofuscou todos os meus outros estudos porque alguns danos tolos não ouviram conselhos?</p>
+<p> </p>
+<p>Se você está se referindo a essa cura, não tenho notícias a oferecer. Estou tentando o meu melhor.</p>
+<p> </p>
+<p>E por favor, diga a Crosia para não me apressar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Phailos].</p></step>
+</steps>
+<p>Fale com Phailos, que está desenvolvendo um tratamento para Daevas, deixou misteriosamente doente dentro do Taloc.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Crosia disse que seu camarada Donbran adoeceu dentro de Taloc. Ela estava preocupada que a condição dele estivesse piorando.</p>
+<p> </p>
+<p>Você foi a Phailos, que está desenvolvendo um tratamento. Tudo o que ele disse era que estava se esforçando ao máximo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

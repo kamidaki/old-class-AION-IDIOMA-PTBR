@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nola lembra. Culturas verdes. NOLA assistir plantas.</p>
+<p> </p>
+<p>Mestre é levado. Withering começa. Verde para marrom.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que aconteceu aqui?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estranhos. Com bocas de ódio, punhados de fogo.</p>
+<p> </p>
+<p>Nomes sussurros-nomes de strank. Lephaaaar.</p>
+<p> </p>
+<p>Roubar grãos. Queimar madeira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_yes;HACTION_ASK_QUEST_ACCEPT">"Esses selvagens!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ajuda. Ajude -nos.</p>
+<p> </p>
+<p>Matar. Matar o [%dic:STR_DIC_MLA17] S. Você faz isso. Nola lhe contará sobre tesouro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matar ladrões. Faça -os temer. Eles saem. Mestre retorna.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cruel, cruel.</p>
+<p> </p>
+<p>Cruel como o murcha. Cruel como as chamas malignas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou muito ocupado ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas paus e palha. Nola não pode fazer nada.</p>
+<p> </p>
+<p>Estranho! Você matou[%dic:STR_DIC_MLA17] S? Eles levaram o mestre. Traga -os para a terra!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. É bom. Morto como pragas.</p>
+<p> </p>
+<p>Nola parece quente. Como de manhã.</p>
+<p> </p>
+<p>Nola deve agradecer. Tesouro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_MLA17]na fazenda de Belbua ([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA43].</p></step>
+</steps>
+<p>Nola, o Espantalho, pediu que você derrotasse os revolucionários lefaristas que fizeram sua base na fazenda de seu proprietário.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nola, o Espantalho, disse que os lefaristas haviam retirado seu mestre, e ele pediu que você os expulsasse da fazenda.</p>
+<p> </p>
+<p>Ele ficou muito grato a você por derrotar os lefaristas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

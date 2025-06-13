@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4328</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é[%username]! Por favor, aguarde!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Sim! Só você pode me ajudar!</p>
+<p> </p>
+<p>Veja bem, as coisas não estão indo bem recentemente. Perdi uma promoção de emprego. Eu estava fora do trabalho na fazenda com um pé infectado e tenho tantas bocas para alimentar como é, e agora minha esposa está grávida de novo! Não podemos lidar!</p>
+<p> </p>
+<p>Mas há um caminho! Eu ouvi falar de um lugar no[%dic:STR_DIC_W_DF2_SUB_C3]onde [%dic:STR_DIC_M_VespaReD_32_n] S voar. Eles são criaturas mágicas, cheias de cristais que ... que eu poderia vender! Por favor, pegue -os para mim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, oh, obrigado! Agradeça aos cinco!</p>
+<p> </p>
+<p>Rapidamente, meu amigo, vá para o [%dic:STR_DIC_W_DF2_SUB_C3]. Você encontrará o [%dic:STR_DIC_M_VespaReD_32_n] está lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E eles estavam confiando em você. Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não ... não .... Eu tinha certeza de que você diria que sim. Eu ouvi tantas coisas boas sobre você ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... você voltou?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu disse que faria. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não ... não ... isso não é suficiente. Por favor, vá e colete mais?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso! Eu não posso acreditar!</p>
+<p> </p>
+<p>Oh, muito obrigado! Você salvou nossa família! Por favor, pegue isso. Eu sei que não é muito, mas é mais sincero do que a maior das riquezas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_M_VespaReD_32_n]cristais e trazê -los para [%dic:STR_DIC_N_Virashak].</p>[%collectitem]</step>
+</steps>
+<p>Virashak pediu que você reunisse alguns cristais de vespa para ajudar a apoiar sua família.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Virashak pediu que você trazia cristais de vespa de vespa para que ele pudesse alimentar sua família.</p>
+<p> </p>
+<p>Você fez o que ele perguntou, e foi agradecido repetidamente por um Virashak emocional.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

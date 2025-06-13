@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto ... uma energia especial de você, Daeva.</p>
+<p> </p>
+<p>Ouvi dizer que você é ... um amigo ... do elim, então eu tenho observado você. De fato ... você não parece ser um Elyos comum.</p>
+<p> </p>
+<p>Você já ouviu isso ... de outros elimes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Daminu mencionou isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você conheceu o grande daminu? Sim ... ele pode ter sentido ... o que estou sentindo agora.</p>
+<p> </p>
+<p>Eu suspeito que seu destino ... pode estar emaranhado ... com o destino de Atreia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O destino de Atreia? Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou perguntar a Daminu ... para confirmar meu sentimento sobre o assunto.</p>
+<p> </p>
+<p>Você vai para a poeta ... e se encontrará com[%dic:STR_DIC_N_Tree_NoMove_Daminu]para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem .... vá para a floresta de Daminu ... em poeta.</p>
+<p> </p>
+<p>Entregar esta folha para [%dic:STR_DIC_N_Tree_NoMove_Daminu]. Ele contém minha mensagem. Quando ele vê, ele entenderá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva egoísta! Você não está preocupado ... com o destino de Atreia?</p>
+<p> </p>
+<p>Isso diz respeito não apenas aos seres humanos e Daevas ... mas à terra ... e a todas as suas criaturas!</p>
+<p> </p>
+<p>Por favor ... repense sua decisão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez, Lodas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Já faz ... há muito tempo, [%username].</p>
+<p> </p>
+<p>O que te traz de volta ... para a floresta de Daminu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Lodas me pediu para entregar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu concluo que Lodas também sentiu ... sua ... Energia Aetica incomum. Ele se fortaleceu ... desde que eu te vi por último.</p>
+<p> </p>
+<p>Talvez seu destino realmente esteja ... conectado ... com o destino de Atreia.</p>
+<p> </p>
+<p>Por favor, entregue esta fruta a Lodas .... isso o ajudará a ver ... o passado e o futuro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Hmm, frutas mágicas? Hmm, eu vou entregar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, Daeva.</p>
+<p> </p>
+<p>E o que Daminu disse?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT5_1">"Ele me pediu para lhe dar essa fruta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso ... é o que eu precisava. Ele concorda com meu sentimento sobre você.</p>
+<p> </p>
+<p>Agora vou ser capaz ... ver seu passado e seu futuro ... onde o destino de Atreia ... fica na balança.</p>
+<p> </p>
+<p>Você está pronto? Então feche seus olhos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os fechei. O que você vê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo ... o abismo.</p>
+<p> </p>
+<p>A pista do seu passado perdido ... e a chave para salvar atreia ... estão lá.</p>
+<p> </p>
+<p>Descubra seu passado ... e vá em direção ao futuro por causa de Atreia ... e sua.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a folha dada por lodas a [%dic:STR_DIC_N_Tree_NoMove_Daminu].</p></step>
+<step><p visible="[%3]">Entregar a fruta dada por Daminu a [%dic:STR_DIC_N_Tree_NoMove_Lodas].</p></step>
+</steps>
+<p>Lodas disse para você entregar a folha dele a Daminu. Vá para Poeta e conheça Daminu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lodas lhe disse que sentiu um destino incomum na loja para você e disse para você entregar a folha dele a Daminu.</p>
+<p> </p>
+<p>Daminu viu a folha e pediu que você entregasse suas frutas a Lodas. Depois de receber a fruta, Lodas viu seu passado e futuro e disse que a chave para tudo poderia ser encontrada no abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

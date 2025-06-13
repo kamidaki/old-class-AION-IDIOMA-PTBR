@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem tantos estudiosos e pesquisadores por aí que estão interessados ​​no traço de crescimento do Taloc. Você não pode jogar uma pedra sem bater em um deles.</p>
+<p> </p>
+<p>Preciso documentar meu relatório antes de outro Daeva me bater!</p>
+<p> </p>
+<p>Tenho certeza de que minhas conquistas de pesquisa se espalharam de um lado desta terra para a outra até agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que conquista?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Descobri que o tecido de crescimento do Taloc é completamente diferente de outros elimes. Também fiz algumas suposições sobre o solo de Inggison também.</p>
+<p> </p>
+<p>Mas, bem ... a maior parte está aqui na minha cabeça. Preciso colocá -lo no papel antes de poder enviar o relatório inteiro. Mas preciso conseguir o que escrevi até agora para o santuário.</p>
+<p> </p>
+<p>Você disse que estava indo para lá logo, certo? Para o santuário? Você poderia levar o primeiro capítulo do meu relatório para [%dic:STR_DIC_N_Fasimedes]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Eu tenho muito tempo e tão pouco trabalho a fazer .... espere, reverta isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar disso, Adias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas...? Mas eu pensei que você estava indo para o santuário?</p>
+<p> </p>
+<p>Você não fará esse pequeno favor por mim, [%username]?</p>
+<p> </p>
+<p>Hmmm ... acho que vou encontrar outro Daeva. Alguns outros ... mais agradáveis ​​Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, Adias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, Daeva. Então, você trouxe o relatório de pesquisa da Adias?</p>
+<p> </p>
+<p>Excelente. Eu estava curioso sobre suas descobertas.</p>
+<p> </p>
+<p>Deixe -me dar uma olhada nele ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Aqui está o relatório, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, eu deveria ter pensado tanto. O Taloc passou por uma mutação maciça em um curto período de tempo.</p>
+<p> </p>
+<p>Muito interessante. Mas devo saber agora o que causou essa mutação ... o éter lá, ou talvez alguma outra razão? O Balaur?</p>
+<p> </p>
+<p>Dizer [%dic:STR_DIC_N_Adias]Para continuar trabalhando em seu relatório. Diga a ele que estou muito satisfeito com o que ele fez até agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Ele ficará feliz em ouvir isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deu a Fasimedes meu relatório de pesquisa? O que ele disse? Ele aprovou?</p>
+<p> </p>
+<p>Isso não teria sido possível se você não tivesse encontrado o traço de crescimento para mim, [%username].</p>
+<p> </p>
+<p>Então, obrigado. Mas ... o que ele disse?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Fasimedes disse que está muito satisfeito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Satisfeito? É isso? Eu tinha certeza de que ele ficaria em êxtase com minhas descobertas!</p>
+<p> </p>
+<p>Eh, acho que o governador tem coisas mais importantes em sua mente. Obrigado novamente, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue o relatório de pesquisa de Adias para [%dic:STR_DIC_N_Fasimedes].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Adias].</p></step>
+</steps>
+<p>Entregue o relatório de pesquisa de Adias sobre o traço do crescimento do Taloc ao governador do santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Adias disse que quase terminou o relatório e pediu que você o levasse para fasimedes no seu caminho para o santuário.</p>
+<p> </p>
+<p>Quando você entregou e informou o relatório, Fasimedes ficou bastante satisfeito.</p>
+<p> </p>
+<p>Quando você contou a Adias o que Fasimedes disse, ele estava um pouco desanimado, mas agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

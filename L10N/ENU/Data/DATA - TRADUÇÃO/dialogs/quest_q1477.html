@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Através da bênção de Lady Yustiel, as fontes místicas trazem água para Eltnen.</p>
+<p> </p>
+<p>Sem água limpa, não podemos trazer vida a esta terra dura.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A primavera aqui na floresta de Manduri está em perigo.</p>
+<p> </p>
+<p>A água que já foi pura é confusa, cheia de folhas, lixo e ... outras coisas.</p>
+<p> </p>
+<p>Eu tenho investigado e posso identificar os culpados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quem são eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Manduri, que moram nas lojas de alimentos acima da mira mística.</p>
+<p> </p>
+<p>Eles jogam lixo nele, os animais sujos.</p>
+<p> </p>
+<p>Este problema deve ser interrompido. O manduri deve ser tratado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em saber que você se sente da mesma maneira.</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_LF2_SZ_A1_SUB_1] e caçar [%dic:STR_DIC_M_ManduriT_23_An] Areia [%dic:STR_DIC_M_ManduriB_23_An] S.</p>
+<p> </p>
+<p>Eles precisam de uma lição de limpeza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Escola está dentro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Limpamos os detritos, mas sua sujeira permanece.</p>
+<p> </p>
+<p>Devemos impedi -los de despejar o lixo na primavera, de uma vez por todos os tempos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vejo...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não importa quantas vezes eu limpo a primavera, ela fica mais suja a cada vez.</p>
+<p> </p>
+<p>Esses manduri se foram? Eles não vão mais a primavera?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, muito obrigado. Sem seus caminhos prejudiciais, a primavera ficará clara como cristal novamente.</p>
+<p> </p>
+<p>Todos os louvores a Lady Yustiel e sua infinita misericórdia!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o manduri que contaminam a fonte mágica.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriT_23_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ManduriB_23_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Iandeus]</p></step>
+</steps>
+<p>A fonte mágica na floresta de Manduri tornou -se cada vez mais contaminada para que as pessoas não possam mais beber. Mate os saqueadores de Manduri e os combatentes de Manduri que jogam lixo na fonte mágica e contaminam a água.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Iandeus estava preocupado com o fato de a primavera mística na floresta de Manduri estar tão poluída com folhas, lixo e excrementos que as pessoas não podiam beber sua água.</p>
+<p> </p>
+<p>Ele descobriu que os Manduri, que moram nas lojas de alimentos Manduri acima da primavera mística, estavam jogando lixo na primavera.</p>
+<p> </p>
+<p>Como Iandeus perguntou, você se livrou de alguns saqueadores e combatentes de Manduri para assustar o resto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

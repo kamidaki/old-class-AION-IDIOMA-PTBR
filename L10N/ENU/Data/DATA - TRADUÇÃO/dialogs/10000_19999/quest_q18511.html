@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O Daeva viu todo o ginseng em Haramel? Montanhas disso. Esses pobres escravos estão morrendo de fome ... mas Hamerun faz três refeições por dia daquele saboroso ginseng! Nyerk!</p>
+<p> </p>
+<p>Moorilerk adora ginseng. Sempre lembra o Moorilerk de seu amigo Manos na Cidadela da Verteron.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O quê? Somos velhos amigos agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, não, Daeva! Moorilerk está apenas refletindo sobre o passado ... refletindo em voz alta, Nyerk.</p>
+<p> </p>
+<p>Mas Manos é muito velho. Teve uma vida difícil. Gostaria de trazer uma sopa de ginseng para ele ... mas ainda sob suspeita, Nyerk. Moorilerk não pode sair da área.</p>
+<p> </p>
+<p>Talvez o gentil e gentil Daeva traria uma sopa de ginseng do meu velho amigo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito gentil Daeva, Nyerk. Muito gentil. O Moorilerk viu Ginseng seco na planta de processamento de Odella em Haramel.</p>
+<p> </p>
+<p>Pegue cinco pedaços de ginseng de aparência saborosa, coloque-os no enorme caldeirão e ferva-os em sopa. Quando tudo cozido e bom, leve para [%dic:STR_DIC_N_Shugo2].</p>
+<p> </p>
+<p>E .... Amigo não sabe nada sobre nossos problemas aqui. Não precisa mencionar Haramel, sim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não vou dizer uma palavra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva não quer mais ajudar o velho amigo Moorilerk? Daeva recebe o que Daeva quer e é isso? Nyerk?</p>
+<p> </p>
+<p>Não é legal, Daeva. Não é bom.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Shugo pode fazer sua própria sopa!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Há um enorme caldeirão com algum líquido aromático fervendo por dentro.)</p>
+<p> </p>
+<p>(Provavelmente faria uma sopa deliciosa se você colocasse o ginseng seco.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu vou entrar assim ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(O ginseng começa a tender no líquido fervente.)</p>
+<p> </p>
+<p>(Um cheiro saboroso vem do caldeirão agora.)</p>
+<p> </p>
+<p>(Você experimenta, e parece feito.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Vou apenas pegar isso em uma tigela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>(Há um enorme caldeirão com algum líquido aromático fervendo por dentro.)</p>
+<p> </p>
+<p>(Você pensou que faria uma sopa deliciosa se você colocasse o ginseng seco dentro ... mas o cheiro é nojento.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ewww, cheira a um shugo molhado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o andarilho. Espero que você esteja se aquecendo em suas aventuras?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui. Isso vai aquecer seus ossos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sopa de ginseng! Meu favorito-mas como você sabia?</p>
+<p> </p>
+<p>Oh, deve ter sido o velho Moorilerk. Como está o velho? Ele já fez sua fortuna?</p>
+<p> </p>
+<p>Eu acho que ele deve ter, se puder enviar um Daeva para me trazer sopa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coloque o [%dic:STR_DIC_OBJ_IDNovice_DriedSam]no[%dic:STR_DIC_OBJ_IDNovice_Jar]Para fazer uma sopa.</p>[%collectitem]</step>
+<step><p visible="[%6]">Entregar a sopa para [%dic:STR_DIC_N_Manos].</p></step>
+</steps>
+<p>Como o Moorilerk solicitou, faça a sopa de ginseng e entregue -a a Manos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk disse que queria fazer uma sopa seca de ginseng e mandá -la para seu velho amigo Manos para aquecer seus ossos.</p>
+<p> </p>
+<p>Você encontrou alguns ginseng bem secos e transformou-o em uma sopa deliciosa em um grande caldeirão que encontrou em Haramel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

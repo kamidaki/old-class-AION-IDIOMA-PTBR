@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], certo? Eu sei que você é bom no que faz. E espero que você possa ser discreto.</p>
+<p> </p>
+<p>Olhe para nós: tudo parece estar sob controle aqui em Roah, certo? Claro! Então, por que estamos tomando baixas? Eu sou o rindo do corpo de oficiais!</p>
+<p> </p>
+<p>Meus homens são afiados. Nenhum inimigo chegou a alcançar essas paredes, não uma. No entanto, todos os dias, encontramos uma ou duas sentinelas deitadas inconscientes-se as encontrarmos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sentries estão desaparecendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente. Eu questionei um sobrevivente e ela disse que foi atacada por uma estátua. Nada mais lá, então ela deixou a guarda-e o boom! Ela está acordando horas depois.</p>
+<p> </p>
+<p>Não percebemos que essas 'estátuas' eram Garcikhans antigas, e minha pluma de um antecessor não se incomodou em me avisar sobre eles. Eu gostaria que você expulsasse os antigos garcikhans e proteger nossas sentinelas.</p>
+<p> </p>
+<p>Não se engane, eu teria minhas tropas sobre as de qualquer outra fortaleza. Nós esmagamos os Elyos e o Balaur muitas vezes. Mas eu os equipo para batalhas em larga escala, e não a guerrilha contra os monstros da estátua.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sangue para sangue! Eu gosto de um voluntário pronto.</p>
+<p> </p>
+<p>Existem muitos[%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An] está na área externa da fortaleza de Roah. Tenha cuidado, eles são mais ágeis do que você imagina.</p>
+<p> </p>
+<p>E trazer alguns[%dic:STR_DIC_I_QUEST_2821a]é como prova que você os descartou. Nada como troféus de guerra para deixar as tropas à vontade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrá -los e matá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você está ocupado com outras tarefas, que assim seja. Deixe os outros oficiais falarem pelas minhas costas; Temos problemas especiais aqui em Roah.</p>
+<p> </p>
+<p>Eu poderia reorganizar meus homens por escaramuças. Eles seriam eficazes contra o Garcikhan ... mas vulnerável se os Elyos ou Balaur vieram ligar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Pegou o [%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An] S, eu pego isso? Todas as minhas sentinelas voltaram com segurança ...</p>
+<p> </p>
+<p>Mostre -me a prova: o [%dic:STR_DIC_I_QUEST_2821a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão os chifres de Garcikhan."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Bah! Sem prova, dificilmente importa quantos garcikhans antigos você matou. Meus guardas ficarão muito pesados ​​para vigiar!</p>
+<p> </p>
+<p>Estou com falta de homens, mas não estou sem recursos. Vou recompensá -lo bem para aqueles[%dic:STR_DIC_I_QUEST_2821a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Vou passar isso no próximo briefing, e minhas tropas vão parar de pular em todas as sombras.</p>
+<p> </p>
+<p>Mais ao ponto, os outros comandantes da fortaleza não brincam mais sobre minhas "vítimas não-battadas".</p>
+<p> </p>
+<p>Aqui está um pouco de algo ... uma alocação extra de suprimentos, se você quiser.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_Ab1_1211_Gargoyle_30_An] e volte com prova para [%dic:STR_DIC_N_Ab1_1211_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>Caça os antigos garcikhans que interferem nas sentinelas da fortaleza. Pegue seus chifres como prova e retorne a Herat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herat estava preocupado com ataques de emboscada a sentinelas que guardavam a parede externa de Roah Fortaleza. Garcikhans antigos são os culpados.</p>
+<p> </p>
+<p>Os soldados da fortaleza estão equipados para combater soldados, não predadores furtivos, então Herat pediu que você caçar os Garcikhans.</p>
+<p> </p>
+<p>Quando você derrotou os antigos Garcikhans e voltou com os chifres, ela agradeceu e disse que as notícias melhorariam o moral na fortaleza de Roah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

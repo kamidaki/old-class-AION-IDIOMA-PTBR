@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você encontrou uma pequena nota, cuidadosamente dobrada em papel de cera e amarrada com barbante.)</p>
+<p> </p>
+<p>(Após um exame rápido, você encontra "Dear Ulgorn" escrito em caligrafia arrumada na parte inferior.)</p>
+<p> </p>
+<p>(Esta nota foi claramente destinada a Ulgorn, chefe dos Raiders. Você deveria levá -lo a ele.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bem, isso deve ser interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui, [%username]?</p>
+<p> </p>
+<p>Não me lembro de enviá -lo em uma tarefa que você teria terminado tão cedo ...</p>
+<p> </p>
+<p>Talvez você quis falar com Tobu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_blush;HACTION_SELECT2_1">"Eu acho que isso é seu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me ler isso ...</p>
+<p> </p>
+<p>[%username], onde você conseguiu isso?</p>
+<p> </p>
+<p>Esta carta ... me leva de volta a alguns tempos sombrios. De volta aos lugares, prefiro não voltar. Você não tinha como saber, é claro. Mas eu gostaria que você nunca tivesse encontrado essa carta.</p>
+<p> </p>
+<p>Conte com mais ninguém, mas leve a nota de volta para [%dic:STR_DIC_N_Linevir]. Diga a ela que isso é muito cedo. As memórias da minha ex -esposa ainda estão frescas em minha mente ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está aqui, [%userclass]? Você parece não precisar de cura da alma.</p>
+<p> </p>
+<p>Explique -se ou partir. Você se intrometeram em minhas orações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ulgorn leu esta nota ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... mas ... eu não entendo! Eu pensei que joguei a nota! Ulgorn realmente leu a nota?</p>
+<p> </p>
+<p>Não ... oh não ...</p>
+<p> </p>
+<p>Sim, escrevi a nota, e sim, pretendi dar a ele. Mas então eu mudei de coração. Eu sabia que Ulgorn não havia se recuperado de sua perda. Eu sabia que ele não estaria pronto para outro ... o que quer que fosse.</p>
+<p> </p>
+<p>Como posso olhar para ele de novo? Eu tenho sido tão idiota!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Levar a carta para [%dic:STR_DIC_N_Ulgorn].</p></step>
+<step><p visible="[%3]">Levar a carta para [%dic:STR_DIC_N_Linevir].</p></step>
+</steps>
+<p>Você encontrou uma carta com o nome de Ulgorn enquanto caçava perto do lago. Você deve levá -lo ao chefe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma carta com o nome de Ulgorn enquanto caçava perto do lago.</p>
+<p> </p>
+<p>Você o trouxe para o chefe. No entanto, depois de lê -lo, Ulgorn ficou visivelmente chateado e pediu que você devolva a Linevir.</p>
+<p> </p>
+<p>Linevir, por sua vez, ficou envergonhado depois de descobrir que o chefe leu sua carta e não tinha certeza de que ela seria capaz de enfrentar Ulgorn novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

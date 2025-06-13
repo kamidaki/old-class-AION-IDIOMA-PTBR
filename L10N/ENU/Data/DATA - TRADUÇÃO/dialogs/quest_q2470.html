@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você é[%username]?</p>
+<p> </p>
+<p>Eu ouvi histórias sobre você-talentos, ferozes batalhas ....</p>
+<p> </p>
+<p>Também ouvi dizer que você ajuda as pessoas necessitadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Bem, parte disso é verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que poderia me ajudar?</p>
+<p> </p>
+<p>É uma tarefa tão fácil-espero que você não ache que seja muito menor para sua atenção.</p>
+<p> </p>
+<p>Eu preciso de sete [%dic:STR_DIC_E_gb_source_tree_d_30a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Para que servem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho uma certa quantidade de orgulho na minha culinária e quero tratar Balom em uma refeição de Abex assado sobre a madeira de Salix. É uma das suas comidas favoritas.</p>
+<p> </p>
+<p>Eu pretendia conseguir isso sozinho, mas é a estação da colheita, então estou ocupado entrando. Você vai reunir a madeira para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você seguir a estrada, verá uma grande árvore. Procure o [%dic:STR_DIC_E_gb_source_tree_d_30a] está lá.</p>
+<p> </p>
+<p>Sete deve ser suficiente por enquanto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], você não está?</p>
+<p> </p>
+<p>Isso é estranho. Eu ouvi o Daeva nomeado[%username]Nunca recusa um pedido.</p>
+<p> </p>
+<p>Eu acho que você não pode acreditar em tudo o que ouve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está atrasado! Eu estive esperando você voltar.</p>
+<p> </p>
+<p>Valumcus tinha carne de abex fresca para mim. Agora eu só preciso da madeira Salix.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Onde você quer esses troncos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>As histórias sobre você não parecem ser totalmente verdadeiras.</p>
+<p> </p>
+<p>Isso realmente não é suficiente [%dic:STR_DIC_E_gb_source_tree_d_30a] para acender um incêndio.</p>
+<p> </p>
+<p>A carne vai estragar se eu não os receber em breve!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou me apressar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh ... Salix Wood sempre cheira tão bom.</p>
+<p> </p>
+<p>Quando eu assar a carne de abex, a carne absorve essa fragrância maravilhosa. Balom vai realmente gostar, você não acha? Talvez ele finalmente me colocasse no comando dos TRIPEDs.</p>
+<p> </p>
+<p>Isso me deixa feliz só de pensar nisso! Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_gb_source_tree_d_30a] e leve-os para [%dic:STR_DIC_N_Virashak].</p>[%collectitem]</step>
+</steps>
+<p>Colete a Salix Wood e leve -o para Virashak, para que ele possa cozinhar o prato favorito de Balom.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Virashak disse que queria cozinhar o prato de Abex que Balom gosta e pediu que você traga Salix Wood.</p>
+<p> </p>
+<p>Quando você trouxe as árvores Salix, ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

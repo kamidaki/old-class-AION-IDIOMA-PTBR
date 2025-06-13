@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A guerra é apenas um horror. A paisagem sofre, as cidades são queimadas e as pessoas sempre morrem. Às vezes, os inocentes nem sequer retornam ao fluxo de Aether.</p>
+<p> </p>
+<p>Não sei muito sobre como isso acontece, mas algumas almas se tornam ... Mortos Vivos, condenados a passear por esses campos para sempre.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que aqui em particular?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ninguém sabe ao certo, mas essa terra está rastejando com Mortos Vivos. Apenas saia da vila. Não é como se eles tentassem se esconder.</p>
+<p> </p>
+<p>Em Sudorville, os Mortos Vivos já foram agricultores, comerciantes e comerciantes. Eles foram expostos à contaminação ou mortos pelo Balaur.</p>
+<p> </p>
+<p>Eles estão vagando pela terra há centenas de anos sem propósito. É pesadelo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles podem ser lançados?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade eles podem. Esse é o ponto brilhante em tudo isso, realmente. Felizmente, não é um assunto complicado. Se os destruímos, suas almas serão liberadas de volta ao fluxo de Aether.</p>
+<p> </p>
+<p>Sob a liderança do comandante Surt, estamos progredindo, mas é lento. Eu esperava que você pudesse nos emprestar sua força.</p>
+<p> </p>
+<p>Certamente você pode enviá -los muito mais rápido. Qualquer progresso que você fizer nos colocaria muito mais perto de recuperar Brusthonin.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua contribuição não passará despercebida, eu prometo a você. Se você sair pela estrada norte, virá para Sudorville. Não há escassez de Mortos Vivos lá.</p>
+<p> </p>
+<p>Alvo o [%dic:STR_DIC_M_DF2A_ZombieMiddleageD_45_An] Areia [%dic:STR_DIC_M_DF2A_ZombieMiddleageFD_45_An] S.</p>
+<p> </p>
+<p>As sombras protegem todos vocês todos os seus dias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso trabalho? Este trabalho pertence a todos que recuperariam Brusthonin.</p>
+<p> </p>
+<p>Bem, os Mortos Vivos não serão derrotados tão cedo, então talvez você possa nos ajudar mais tarde.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu me ofereci para esta tarefa. Eu estava relutante em atacar os Mortos Vivos no começo. Era assustador, é claro, mas também me senti culpado por atacá-los-não é realmente culpa deles que eles mortos mortos.</p>
+<p> </p>
+<p>Uma vez que percebi que matá -los libera suas almas ao fluxo de Aether, eu me senti melhor.</p>
+<p> </p>
+<p>Como está sua operação?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está indo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Este é um ótimo serviço para Brusthonin.</p>
+<p> </p>
+<p>Algum dia, todos os Mortos Vivos serão enviados para descansar. Quando esse dia chegar, espero que você volte aqui para ver a beleza escondida sob a praga nesta terra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Mortos Vivos em Sudorville.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_ZombieMiddleageD_45_An]([%2]/6)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_ZombieMiddleageFD_45_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Sridi].</p></step>
+</steps>
+<p>Realize o pedido de Sridi e mate os Mortos Vivos em Sudorville.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sridi pediu que você destrua Mortos Vivos que vagam em Brusthonin para que suas almas possam retornar ao fluxo de Aether.</p>
+<p> </p>
+<p>Você foi a Sudorville, matou cultivadores Mortos Vivos e lacaios Mortos Vivos e relatou -se a Sridi. Ele convidou você a voltar algum dia depois que todos os Mortos Vivos foram eliminados para apreciar a verdadeira beleza de Brusthonin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A terra aqui em Eltnen está em tão terrível condição e é abundante com esses perigos.</p>
+<p> </p>
+<p>Eu gostaria que houvesse uma maneira fácil de determinar se as criaturas corruptas e perigosas são a causa dos problemas da terra ou apenas um efeito ... ou talvez o templo seja a chave.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O templo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Templo de Kyola. Parece que estive aqui há séculos. Mas não estou mais perto de poder gastar tempo suficiente dentro do templo.</p>
+<p> </p>
+<p>O templo de Kyola era um local sagrado atreiano antes do cataclismo. Me entristece ver isso nesse estado ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa dentro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem para um, apenas limpando parte do[%dic:STR_DIC_M_BAT_33_An] Areia [%dic:STR_DIC_M_Succubus_33_An] esfilar o local me ajudaria a entrar para ver se alguma coisa mágica está acontecendo por dentro.</p>
+<p> </p>
+<p>As próprias criaturas também podem ter pistas. O que você diz, [%username], você está fazendo uma pequena limpeza do templo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Maravilhoso. Consegui escolher alguns Bloodwings e uma sedutora, e eles revelaram uma pequena pista.</p>
+<p> </p>
+<p>A sedutora carregou um[%dic:STR_DIC_I_QUEST_1448a] e um dos Bloodwings continha um[%dic:STR_DIC_I_QUEST_1448b]. Eu nunca ouvi falar de outras criaturas com coisas tão incomuns, então espero que elas sejam altamente significativas.</p>
+<p> </p>
+<p>Eu gostaria de enviar vários para o Santum para estudos adicionais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então você os terá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não! Eu esperava examinar o templo sem ser abordado por essas coisas horríveis. Eles parecem se multiplicar e enxamear sempre que eu vou no templo.</p>
+<p> </p>
+<p>Eu esperava um renomado[%userclass]Como você acharia mais fácil lidar com eles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não hoje."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você limpou os animais do templo? Eles tinham mais[%dic:STR_DIC_I_QUEST_1448a] S ou ... qual foi a outra coisa?</p>
+<p> </p>
+<p>Oh sim! Foi um[%dic:STR_DIC_I_QUEST_1448b]! Você encontrou algum desses?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz. Há alguns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não foi você quem concordou em fazer a missão para mim?</p>
+<p> </p>
+<p>Minha memória ....</p>
+<p> </p>
+<p>Não, tenho certeza de que era você. Eu lhe pedi cristais e pedras, não disse?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau. Isso é muitos deles. Gostaria de saber se muitos podem ser perigosos. Acho que vou encontrar algo para contê -los.</p>
+<p> </p>
+<p>Obrigado, Daeva. Serei capaz de enviá -los para o santuário e talvez aprender mais sobre a contaminação.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpar as criaturas de [%dic:STR_DIC_W_LF2_SZ_D] e se algum tem um[%dic:STR_DIC_I_QUEST_1448a]ou a [%dic:STR_DIC_I_QUEST_1448b]Traga -os de volta para Sirink.</p>[%collectitem]</step>
+</steps>
+<p>Sirink quer cristais mágicos vermelhos e pedras de clarividência para exame. Recolher vários e trazê -los para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sirink queria encontrar a causa da contaminação, mas não conseguiu explorar completamente o templo de Kyola. Ela pediu que você limpe as criaturas para dentro e trazesse -lhe qualquer cristal mágico vermelho e pedras de clarividência que você encontrou.</p>
+<p> </p>
+<p>Ela planejava enviá -los todos para o Santum para estudar. Você coletou as pedras e cristais e os trouxe para ela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

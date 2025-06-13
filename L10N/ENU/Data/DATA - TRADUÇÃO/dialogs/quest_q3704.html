@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, espere!</p>
+<p> </p>
+<p>Você é o que Nereus queria, não é?[%username]? Não pretendo incomodá -lo, mas se você estiver indo para o [%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All], então preciso de seus serviços também.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por quê? O que você precisa fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os pesquisadores entraram em contato comigo e querem que eu recupere alguns[%dic:STR_DIC_I_QUEST_3704a] para seus estudos. Estamos em uma corrida armamentista, disseram eles, e se vamos manter nossos narizes na frente, precisamos saber exatamente o que eles são testes de campo.</p>
+<p> </p>
+<p>Por sorte teria, ou kaisinel escolheria, o [%dic:STR_DIC_W_IDAb1_MiniCastle_SZ_All]é o local em que o Balaur testa suas armas de protótipo.</p>
+<p> </p>
+<p>Tudo o que preciso agora é para alguém ... alguém como você Mayhap, ir ao local de treinamento e tirar essas armas deles. O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom.</p>
+<p> </p>
+<p>Agora, eu entendo o [%dic:STR_DIC_I_QUEST_3704a] S todos são mantidos dentro de um grande [%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704]. Encontre isso e você está no meio do caminho.</p>
+<p> </p>
+<p>Obviamente, o Balaur não ficará emocionado com você saqueando seus suprimentos, mas Nezekan observa e espera que a escala da justiça comece a se inclinar para a luz. Não o decepcione, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei tudo o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Por que você recusaria?</p>
+<p> </p>
+<p>Você está indo para lá, de qualquer maneira, não está? Isso é pouco mais que uma leve diversão. Você levaria minutos, se isso, para fazer o que estou perguntando.</p>
+<p> </p>
+<p>Pense novamente. Não me faça encontrar outra pessoa para fazer isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não posso fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Força, velocidade, espírito, convicção ... estas são as características que fazem campeões, mas as armas ainda aumentam essas características e as transformam em algo mais.</p>
+<p> </p>
+<p>Você encontrou as armas, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"São eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... não, eu não acredito que sejam. Você tem certeza de que eles foram tirados do[%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704]?</p>
+<p> </p>
+<p>Olhe de novo, [%username]. o [%dic:STR_DIC_I_QUEST_3704a] S deve parecer bastante diferente, eu acho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou sair agora. Fé e armas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, deixe -me ver ....</p>
+<p> </p>
+<p>Hmm, o equilíbrio não está certo, mas isso é típico das armas de protótipo. Porém, essa vantagem ... eu nunca vi nada parecido.</p>
+<p> </p>
+<p>Eu acredito que você atingiu o ouro, por assim dizer. Vou enviar isso de volta ao santuário imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar as armas do protótipo do[%dic:STR_DIC_OBJ_IDAB1_MiniCastle_DragonArms_Q3704] e leve-os para [%dic:STR_DIC_N_Euros].</p>[%collectitem]</step>
+</steps>
+<p>Precisamos ver quais armas o Balaur está testando. Colete as armas do protótipo do campo de treinamento de Nochsana e leve -as a Eulos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eulos disse que o Balaur estava testando novas armas no campo de treinamento de Nochsana e pediu que você se apropriasse alguns para testes.</p>
+<p> </p>
+<p>Você encontrou as armas dentro do campo de treinamento e as entregou diretamente a Eulos. Ele disse que eles seriam enviados ao santuário para testes abrangentes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

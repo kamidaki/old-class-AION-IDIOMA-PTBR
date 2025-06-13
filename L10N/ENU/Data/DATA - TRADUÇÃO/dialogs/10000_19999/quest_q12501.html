@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho assegurado a área desde que cheguei, mas a situação ainda não melhorou.</p>
+<p> </p>
+<p>Ontem eu ouvi isso [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]tinha atravessado a fronteira, e o pensamento não me dá descanso.</p>
+<p> </p>
+<p>Mesmo que eu faça tudo o que puder para obter estabilidade, não temos a força de trabalho.</p>
+<p> </p>
+<p>[%username], você poderia nos ajudar? Vá em patrulha e elimine cada [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]você vê.</p>
+<p> </p>
+<p>Por favor, encontre AEDIS quando a patrulha terminar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terminou a patrulha?</p>
+<p> </p>
+<p>É preciso ter muito cuidado ao garantir uma base, como tenho certeza que você sabe. É a base para a pesquisa de Katalam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso lhes ensinará uma lição, e teremos um pouco de paz e sossego por um tempo.</p>
+<p> </p>
+<p>Agora temos tempo para lidar com outros reparos.</p>
+<p> </p>
+<p>Muito obrigado por cuidar dessa tarefa para mim. Aqui está uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_A4_Daru_60_n]([%2]/12).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5A_Edis_E].</p></step>
+</steps>
+<p>Matamos Daru por segurança interna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chiliarch Pepe A autoridade militar expressou preocupação com a situação de segurança, que não melhorou mesmo após a reorganização.</p>
+<p> </p>
+<p>A pedido do Chiliarca Pepe, você matou o Daru que estava prejudicando a segurança e relatou a Edis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saendukal vende Krall para Balaur. Saendukal faz escravos de Krall. Saendukal não tem orgulho. Mas não como seving.</p>
+<p> </p>
+<p>Nem todos os Krall vêem o que Mabangtah vê. Saendukal mantém muitos Krall. Mabangtah leva apenas alguns Krall que querem ser livres. Precisa de ajuda da asa branca. Somente com a ajuda de White Wing pode ser livre.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você precisa da nossa ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Mas asas brancas também lutam para Krall. Mabangtah vê muitos Krall caindo em suas mãos.</p>
+<p> </p>
+<p>O povo de Mabangtah o acha estúpido por conversar com a asa branca.</p>
+<p> </p>
+<p>Asa branca deve provar amizade com o povo de Mabangtah. Mabangtah tem teste. Passar no teste é ser amigo de Mabangtah.</p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que teste?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mabangtah dá a asa branca que o mesmo teste que Mabangtah fez como chefe. Mas Mabangtah não é tão difícil. Sem mosca. Sem mágica. O teste foi muito mais difícil para Mabangtah.</p>
+<p> </p>
+<p>White Wing Kill[%dic:STR_DIC_M_ElementalEarth2_31_An]habilidade [%dic:STR_DIC_M_ElementalEarth3_31_An] S. Mate, então volte para Mabangtah.</p>
+<p> </p>
+<p>Aceitar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Krrrrrrrr. Bom.</p>
+<p> </p>
+<p>White Wing Go. Mate cinco[%dic:STR_DIC_M_ElementalEarth2_31_An] S. Mate cinco[%dic:STR_DIC_M_ElementalEarth3_31_An] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Asa branca se recusa? Talvez Mabangtah esteja errado em recorrer a Elyos. Talvez Saendukal direito. Talvez Krall onde Krall deveria estar.</p>
+<p> </p>
+<p>White Wing Go. Mabangtah Pense.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Retorno de asa branca!</p>
+<p> </p>
+<p>O teste foi aprovado foi? Mabangtah deve saber.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. O teste foi passado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Krrr .. quebra feliz. Ficando muito feliz. Krrr ..</p>
+<p> </p>
+<p>White Wing mostra o povo de Mabangtah o que ele sabe. Mabangtah satisfeito. O povo de Mabangtah acreditará.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os espíritos perto da entrada do esconderijo de Mabangtah.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth2_31_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth3_31_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_NPC_Mabangta]%.</p></step>
+</steps>
+<p>Prove sua proezas de combate aos seguidores de Mabangtah, derrotando os espíritos do deserto e os espíritos da areia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mabangtah precisava de bons Daevas para ajudá -lo a derrotar Saendukal e pediu que você prove sua capacidade para os seguidores dele, para que você possa confiar.</p>
+<p> </p>
+<p>A seu pedido, você derrotou cinco espíritos do deserto e cinco espíritos de areia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

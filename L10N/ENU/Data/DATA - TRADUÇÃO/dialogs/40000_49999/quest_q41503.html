@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41503</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora para as coisas divertidas, [%username]! Você pode plantar uma bomba! Uma bomba de éter, para ser precisa.</p>
+<p> </p>
+<p>Estabelecemos que vários locais estão conectados, mas agora devemos ver se podemos cortar essa conexão e se o Tiamat for enfraquecido pela perda de conexão.</p>
+<p> </p>
+<p>Então, quer fazer a parte divertida? Tudo que você precisa fazer é plantar esta bomba dentro do[%dic:STR_DIC_OBJ_LDF4B_FOBJ_CrackPortal], detone -o e relate os resultados de volta para mim. O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu?</p>
+<p> </p>
+<p>A Bomba Aether funcionou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não! Nada aconteceu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eca. Eu não achei que isso destruiria a cratera, mas não houve resposta?</p>
+<p> </p>
+<p>Hum. Vou ter que criar um plano diferente. As realizações nunca são obtidas facilmente, meu amigo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Detonar a bomba aether dentro do[%dic:STR_DIC_OBJ_LDF4B_FOBJ_CrackPortal] [%2].</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Grido].</p></step>
+</steps>
+<p>Grido quer tentar destruir a cratera gigante usando uma poderosa bomba de Aether. Plante para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de descobrir que as crateras estavam ligadas uma à outra, junto com o coração da fissura, Grido queria tentar cortar a conexão, esperando que enfraquecesse o poder de Tiamat e virasse a maré da guerra.</p>
+<p> </p>
+<p>Você viajou para a cratera gigante com uma bomba de Aether. No entanto, depois de detoná -lo, você não observou mudanças e voltou ao Grido com as más notícias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

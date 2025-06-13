@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está indo para as florestas circundantes, [%username]?</p>
+<p> </p>
+<p>....</p>
+<p> </p>
+<p>Não me olhe assim. Não vou pedir que você faça nada de estranho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Desculpe. Você me pegou de surpresa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza de Ilusão Inggison está sozinha no meio da floresta, cercada por animais.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LF4_A_Kuillus_Feeler_51_An], Assim, [%dic:STR_DIC_M_LF4_A_Slime_Snail_51_An], e [%dic:STR_DIC_M_LF4_A_Lupyllini_Peacock_51_n]Isso não é perigoso para pessoas como você e eu, é claro, mas para os estudiosos? Essa é uma história diferente.</p>
+<p> </p>
+<p>Você não gostaria de se livrar dos animais para os estudiosos? Será o nosso pequeno segredo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Essa conversa está indo bem.</p>
+<p> </p>
+<p>Se você trazer o deles[%dic:STR_DIC_I_QUEST_11022a], Vou te dar uma recompensa. Você não gostaria de algumas moedas brilhantes?</p>
+<p> </p>
+<p>Ah, lamento pedir que você faça isso, mas ... no seu caminho de volta, você pode comprar um[%dic:STR_DIC_I_Junk_redeem_jewelry_02a]para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Eu vou te deixar agora ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando cheguei a Balaurea, também pensei em lidar com Balaur. Mas então eu encontrei todas essas outras batalhas para lutar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso ver isso, cara assustador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez o que eu pedi ou precisa ser punido?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"O quê? Sim, eu tenho tudo solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você precisa ser punido! Infelizmente, não tenho tempo agora. Os estudiosos de acompanhamento são muito trabalho.</p>
+<p> </p>
+<p>Diga o que, se você me trazer isso [%dic:STR_DIC_I_QUEST_11022a] e a [%dic:STR_DIC_I_Junk_redeem_jewelry_02a]Na próxima vez que te vejo, vou esquecer tudo sobre isso e apenas dar a você a recompensa da moeda. Que tal?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece bom, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho se livrando daqueles animais com o sangue pegajoso, fedorento e suculento. Aqui está a recompensa que prometi.</p>
+<p> </p>
+<p>Se estiver certo com você, gostaria que você fizesse mais trabalho para mim. Oh, não agora, sempre que você pode. Apenas entre você e eu, tudo bem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_I_QUEST_11022a] e a [%dic:STR_DIC_I_Junk_redeem_jewelry_02a]para [%dic:STR_DIC_N_Eduardo].</p>[%collectitem]</step>
+</steps>
+<p>Eduardo diz que lhe dará moedas se você se livrar de animais ao redor da fortaleza. Livre -se de Steelback Neokins, Greenwood Sludger e Arbor Plumas, e traga -lhe seu fluido como evidência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial do governo Eduardo disse que os animais ao redor da fortaleza incomodam os estudiosos. Ele pediu que você se livrasse de Steelback Neokins, Greenwood Sludger e Arbor Plumas.</p>
+<p> </p>
+<p>Você se livrou dos animais e trouxe seu fluido como evidência. Eduardo lhe deu moedas e mencionou que ele poderia ter mais trabalho no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

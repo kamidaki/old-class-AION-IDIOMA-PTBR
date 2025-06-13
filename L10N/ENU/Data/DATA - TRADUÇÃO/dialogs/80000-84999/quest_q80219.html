@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a sua tarefa final.</p>
+<p> </p>
+<p>Se você também concluir esta missão, você realmente se tornará uma ótima pessoa.</p>
+<p> </p>
+<p>Você está pronto para realizar sua tarefa final?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">(Você diz sim.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou pedindo a última vez para matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua última tarefa é matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah].</p>
+<p> </p>
+<p>Meus companheiros e eu estamos muito orgulhosos de que você tenha se desenvolvido tão bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O fim está próximo.</p>
+<p> </p>
+<p>Por favor, reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou[%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você também concluiu com êxito a tarefa final.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] em Dark Poeta ([%2]/6).</p></step>
+<step><p visible="[%15]">Fale com Ryoenniya.</p></step>
+</steps>
+<p>Ryoenniya pediu que você matasse [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah]. Matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] em Dark Poeta. Dark Poeta está localizado perto do[%dic:STR_DIC_W_LF3_SZ_004].</p>
+<p><font font_xml="quest_summary"> </font></p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ryoenniya pediu que você matasse [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah].</p>
+<p> </p>
+<p>Você matou[%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah] e, assim, cumpriram todas as tarefas dadas a você pelos padres da bênção.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

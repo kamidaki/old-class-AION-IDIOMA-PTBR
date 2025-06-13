@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Há uma tarefa em[%dic:STR_DIC_W_IDVritra_Base_all]isso precisa ser concluído.</p>
+<p> </p>
+<p>Foi ocupado pelo exército de Beritra. Eles armazenam seus materiais de guerra lá e conduzem a pesquisa de armas, para que o depósito seja estritamente monitorado.</p>
+<p> </p>
+<p>É por isso que estabelecemos uma nova rota de infiltração para [%dic:STR_DIC_W_LDF4_Advance].</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF4_Advance] e Fale com [%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu estive esperando por você.</p>
+<p> </p>
+<p>Você está aqui porque recebeu os pedidos da operação de infiltração de depósito de Guerra Sauro?</p>
+<p> </p>
+<p>Aparentemente, o depósito de Guerra de Sauro foi construído há muito tempo pela tribo Rune como um santuário. Mas agora é um lugar perigoso onde o Balaur realiza pesquisas de armas.</p>
+<p> </p>
+<p>Não temos tempo a perder. Você descobrirá mais de [%dic:STR_DIC_N_LDF5_Kanix_E].</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5_Kanix_E] está em[%dic:STR_DIC_W_LDF4_Advance_SZ_A_01] em frente ao[%dic:STR_DIC_N_OBJ_IDVritra_Base_Enter]. Você não pode sentir falta dele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>Se não houver nada urgente, volte.</p>
+<p> </p>
+<p>Não estou me sentindo tão bem agora, então gostaria de ficar sozinho.</p>
+<p> </p>
+<p>Perdoe minha grosseria.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que veio porque recebe ordens para se infiltrar no depósito de guerra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu a ordem para se infiltrar no depósito de guerra.</p>
+<p> </p>
+<p>Atualmente, o depósito de Guerra de Sauro está ocupado pela 40ª unidade, cuja tropa de reconhecimento é notória, mesmo dentro do exército de Beritra.</p>
+<p> </p>
+<p>Recebemos informações secretas de que houve mais pesquisas de armas em andamento no depósito de Guerra de Sauro recentemente.</p>
+<p> </p>
+<p>Temos que descobrir o segredo deles e parar o plano deles.</p>
+<p> </p>
+<p>Por favor, não desista, [%username]. Ajude -nos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF4_Advance] e fale com[%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p></step>
+<step><p visible="[%3]">Vá para o [%dic:STR_DIC_W_LDF4_Advance_SZ_A_01] e fale com[%dic:STR_DIC_N_LDF5_Kanix_E].</p></step>
+</steps>
+<p>Vá para Akaron e descubra algo sobre o depósito de guerra de Sauro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Tribune Pepe disse que você deve se infiltrar no depósito de Guerra de Sauro, que está sob o controle do Exército de Beritra. Ele falou sobre a nova rota de infiltração e instruiu você a ir para lá.</p>
+<p> </p>
+<p>Você partiu e conheceu o Tribune Elger e Kanix, o informante. Eles relataram que o Exército de Beritra está atualmente se concentrando na pesquisa de armas. Você recebeu a tarefa de revelar seus segredos militares e arruinar seus planos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que existem valiantes Daevas, como você que faz a parte deles para proteger Elysea.</p>
+<p> </p>
+<p>Daeva! Por favor, vá e veja [%dic:STR_DIC_W_IDLF1]!</p>
+<p> </p>
+<p>O futuro da Atreia não parece muito brilhante. Precisamos de apoio e precisamos dele com urgência.</p>
+<p> </p>
+<p>Por favor destrua o [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah] e o distribuidor de suprimentos em[%dic:STR_DIC_W_IDLF1_SZ_IDLF1_08].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você destruiu o [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah] e o distribuidor de suprimentos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que você o destruiu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah] e o distribuidor de suprimentos</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDLF1_Generator1_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_Generator2_50_Ah] e [%dic:STR_DIC_M_IDLF1_Generator3_50_Ah]([%5]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_FERMAT].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_FERMAT]pediu para destruir o [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah] e o distribuidor de suprimentos no[%dic:STR_DIC_W_IDLF1] em[%dic:STR_DIC_W_IDLF1_SZ_IDLF1_08]. Vá para [%dic:STR_DIC_W_IDLF1] e destruir o controlador e o distribuidor de suprimentos.</p>
+<p>Destruir o [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_Generator1_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_Generator2_50_Ah] e [%dic:STR_DIC_M_IDLF1_Generator3_50_Ah].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_FERMAT]Pediu para você destruir [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah] e o distribuidor de suprimentos em[%dic:STR_DIC_W_IDLF1].</p>
+<p> </p>
+<p>Você destruiu o controlador e o distribuidor de suprimentos em[%dic:STR_DIC_N_EVENT_GUARD_FERMAT] Solicitação.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p></p>
+<p>1. Remetente: Ginikki da sala de operações do santuário</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Ordem: Os asmodianos abriram a brecha do portal em Theobomos. Limpe o [%dic:STR_DIC_E_Q39007]que cuidam do vórtice da dimensão ao sul da chama de Fregion.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos podem ter sido capazes de usar a brecha.</p>
+<p> </p>
+<p>Como o portal Rift em Theobomos pode ser aberto!</p>
+<p> </p>
+<p>Primeiro, devemos impedir que o trem seja apoiado para evitar danos adicionais.</p>
+<p> </p>
+<p>Qual é o resultado?</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Mas os asmodianos lançarão um ataque após o outro, agora que o brecha do portal está aberto.</p>
+<p> </p>
+<p>[%username]. Estou pedindo que você continue ajudando.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_Q39007]([%2]/15).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_NPC_Arena_Geniki_E_LHM].</p></step>
+</steps>
+<p>Pedido de operação urgente: elimine a tropa de suprimentos da Asmodian e relate o resultado a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos marcharam para Theobomos através da fenda do portal. Você matou o trem da sala de operações do Pandaemonium, que estava guardando a entrada do portal Rift e relatou a Ginikki sobre isso.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

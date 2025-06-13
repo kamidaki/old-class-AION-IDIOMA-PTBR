@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], quando convocei os espíritos do fogo, eles ... falaram comigo. Eu sei, as chamas não podem falar, mas ouvi suas vozes na minha cabeça. A história que eles contaram foi triste.</p>
+<p> </p>
+<p>Há muito tempo, muitos espíritos de fogo foram fundidos em uma única forma chamada Flarestorm, a fim de combater o Balaur. Uma verdadeira conglomeração de conflagração! Enquanto Flarestorm lutou bravamente, o espírito fundido foi capturado e ... hesito em falar as palavras ....</p>
+<p> </p>
+<p>Flarestorm estava confinado a um incinerador no templo de Beshmundir e está sendo usado para queimar lixo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que terrível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Flarestorm, uma vez queimou vermelho de raiva, mas seu longo período de confinamento o corrompeu e ficou azul de desespero.</p>
+<p> </p>
+<p>Eu simplesmente não posso deixar esse espírito antigo ser atormentado assim! É hora de deixar de lado pensamentos de imortalidade histórica-devemos simplesmente fazer o que é certo.</p>
+<p> </p>
+<p>Eu não posso fazer muito, mas com sua ajuda, talvez possamos libertar o Flarestorm desse destino horrível. Você vai ajudar, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espíritos me dizem que você encontrará flarestorm dentro do[%dic:STR_DIC_W_IDCatacombs_SZ_D2], em um canto do jardim dos mortos dentro do templo de Beshmundir.</p>
+<p> </p>
+<p>Não tenho idéia se o Flarestorm de vencer o devolverá completamente ao fluxo de Aether-pois é composto por muitos espíritos individuais, pode exigir a repetição para liberar completamente cada espírito.</p>
+<p> </p>
+<p>Os espíritos que eu convocaram me deram a chave para desbloquear o incinerador e, supondo que você ajudará, eu o passarei para você. Por favor, use -o para abrir a porta e purificar [%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou extremamente desapontado, [%username]. Você não sente raiva pelo Balaur, ou simpatia por Flarestorm?</p>
+<p> </p>
+<p>Mantenha a chave que dei a você, caso você mude de idéia. Não tenho dúvidas de que você reconsiderará.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu vá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espíritos estão inquietos, [%username]. Eles desejam saber se o Flarestorm foi devolvido ao fluxo de Aether.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, pelo menos em parte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu suspeitava ... Seria o ideal se o Flarestorm pudesse ser liberado do incinerador de uma só vez, mas parece que teremos que fazê -lo um espírito de cada vez.</p>
+<p> </p>
+<p>Pelo menos um nobre espírito de fogo voltou ao fluxo de Aether. Dado o tempo, eles certamente chegarão quando toda a Flarestorm for libertada. Por favor, persevere, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vencer [%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah]para ajudar a libertá -lo de seu terrível destino ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Yumir].</p></step>
+</steps>
+<p>Você concordou em devolver o Flarestorm, uma antiga conglomeração de espíritos de fogo ligados por Balaur, ao fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espíritos do fogo que Yumir convocou contou a ele um espírito antigo chamado Flarestorm, que estava ligado a um incinerador e corrompido pelo Balaur.</p>
+<p> </p>
+<p>Flarestorm-quem é na verdade um conglomerado de chamas menores--a MUST pode ser vencido repetidamente para devolver cada espírito de fogo individual ao fluxo de Aether.</p>
+<p> </p>
+<p>Você foi ao incinerador de chamas azuis no templo de Beshmundir e venceu o Flarestorm, liberando um dos espíritos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

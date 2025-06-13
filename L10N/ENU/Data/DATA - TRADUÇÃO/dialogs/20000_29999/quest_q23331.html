@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A 40ª equipe de espionagem realmente começou com suas operações.</p>
+<p> </p>
+<p>Você eliminaria o 40º esquadrão de espionagem, [%username]?</p>
+<p> </p>
+<p>Se as 40º Legion Tropas descobrirem nossos segredos militares, isso nos causará grandes danos na batalha.</p>
+<p> </p>
+<p>Então, por favor, abate o [%dic:STR_DIC_E_LDF5b_D1_Vri40] estacionado nas proximidades da fortaleza de Bassen.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_E_LDF5b_D1_Vri40] São especializados na coleta de informações.</p>
+<p> </p>
+<p>Eles devem ser removidos agora, para que não causem problemas mais tarde.</p>
+<p> </p>
+<p>É muito perigoso quando segredos militares saem ao ar livre.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O 40º esquadrão de espionagem é complicado.</p>
+<p> </p>
+<p>Mas não precisamos mais nos preocupar porque você fez bem, [%username].</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Você terá um futuro brilhante um dia como resultado de seus esforços hoje.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_LDF5b_D1_Vri40]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard16_D]%.</p></step>
+</steps>
+<p>Mataremos o 40º esquadrão de espionagem antes que os segredos de nossos soldados sejam revelados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Igrit disse que ninguém sabia se os segredos de tropas amigáveis ​​serão expostas, e é por isso que o 40º esquadrão de espionagem precisava ser retirado.</p>
+<p> </p>
+<p>Você eliminou o 40º esquadrão de espionagem e recebeu agradecimentos por fazê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

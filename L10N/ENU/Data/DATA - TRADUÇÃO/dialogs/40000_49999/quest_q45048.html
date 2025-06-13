@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo:</p>
+<p> </p>
+<p>Esforços recentes esgotaram rapidamente nosso estoque de [%dic:STR_DIC_G_QUEST_45048a], que é um componente crucial na fabricação de várias substâncias essenciais, incluindo poções de cura e soros.</p>
+<p> </p>
+<p>Todos os guardas têm a tarefa de coletar esta substância. Todos[%dic:STR_DIC_G_QUEST_45048a]reunido deve ser trazido para qualquer [%dic:STR_DIC_N_Amphibia]ou[%dic:STR_DIC_N_Mollusca].</p>
+<p> </p>
+<p>Este assunto é altamente confidencial; portanto, destrua esta carta depois de lê -la.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Despeje ácido na letra.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_G_QUEST_45048a]é um ingrediente importante em várias poções. Se reunido fresco e destilado prontamente, ele pode criar alguns dos soros de cura mais potentes do mundo.</p>
+<p> </p>
+<p>Felizmente, há muito a ser encontrado em Gelkmaros. Você reuniu algum para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu tenho para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Bastante divertido, [%username]. Agora você vai pegar o [%dic:STR_DIC_G_QUEST_45048a]Você foi convidado a se reunir?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por trazer isso tão rapidamente, [%username]. Como eu disse, esta erva só pode ser usada para criar poções e soros de cura quando é destilado logo após a reunião. Se for deixado secar por muito tempo, torna -se uma toxina mortal.</p>
+<p> </p>
+<p>Por favor, pegue esse token como um sinal dos guardas de campo, obrigado.</p>
+<p> </p>
+<p>Agora, se você me desculpar, eu tenho que ... armazenar algo em nosso armazém.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_G_QUEST_45048a] e traga isso para qualquer [%dic:STR_DIC_N_Amphibia]ou[%dic:STR_DIC_N_Mollusca].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta dos guardas de campo pediu que você reunisse ingredientes para poções e levasse -os a Rebbina ou Wakir.</p>
+<p> </p>
+<p>Você trouxe as ervas conforme solicitado e foi recompensado pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você me assustou. Eu estava perdido em pensamento.</p>
+<p> </p>
+<p>Eu estava pensando na natureza da consciência.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você pensa muito sobre isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim eu faço.</p>
+<p> </p>
+<p>Na verdade, tive algumas idéias muito interessantes, mas meu estômago está rosnando tanto que não consigo resolver corretamente.</p>
+<p> </p>
+<p>Também não tenho mais nada nos bolsos. Vou ter que ir buscar comida e vou perder completamente minha linha de pensamento!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você come, afinal?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sou vegetariano. Eu raramente como carne enquanto acho que confunde meus pensamentos. Exceto pelos deliciosos peixes que a vida se prepara para mim-oh tão delicioso!</p>
+<p> </p>
+<p>Geralmente, eu posso comer coisas encontradas no matagal de Patamor ... você quer me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. É muito gentil de sua parte fazer isso por mim.</p>
+<p> </p>
+<p>Eu penso[%dic:STR_DIC_E_vegetable_d_n_c_20a] S deve ser bom. É fácil digerir, rico em fibras e bastante saboroso.</p>
+<p> </p>
+<p>Se você pudesse me trazer alguns, isso seria exatamente o que eu preciso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Derrotando vegetais? Fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você recusaria.</p>
+<p> </p>
+<p>A maioria das pessoas gosta de parecer útil, mas raramente desfruta do trabalho real envolvido.</p>
+<p> </p>
+<p>Se você não tem mais nada a dizer, deveria me deixar ... eu tenho que pensar em uma maneira de lidar com isso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ninguém entrega até aqui, Sprigg."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já se foi?</p>
+<p> </p>
+<p>Deixe -me ver ter o que você trouxe!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Que tal isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... Receio que não esteja certo.</p>
+<p> </p>
+<p>O que eu preciso é de apenas 10[%dic:STR_DIC_E_vegetable_d_n_c_20a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dez? Bem, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ooooh ... saboroso rabano! Mmmm!</p>
+<p> </p>
+<p>Algumas pessoas dizem que Rabano não tem gosto nem cheiro. Mas acho que é só porque o sabor é sutil e eles de alguma forma sentem falta disso.</p>
+<p> </p>
+<p>Meu senso de gosto é bastante delicado. Existem tantas nuances na comida!</p>
+<p> </p>
+<p>De qualquer forma, obrigado, eu posso apaziguar minha fome!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_vegetable_d_n_c_20a] e trazê -lo para [%dic:STR_DIC_N_DF2_NPC_Sprigg].</p>[%collectitem]</step>
+</steps>
+<p>Colete Rabano e leve -o para Vivi, que está morrendo de fome.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Sprigg iluminado, Vivi, pediu que você pegasse algo para comer, pois ele não queria parar de pensar o tempo suficiente para reunir comida.</p>
+<p> </p>
+<p>Então, você trouxe um pouco de Rabano para que ele não morrasse de fome.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

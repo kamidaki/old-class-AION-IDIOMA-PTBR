@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mostra a tarefa conjunta para o desenvolvimento da aldeia.</p>
+<p>Espero que todos vocês se apliquem nesta tarefa e ajudem a criar uma vila bonita e hospitaleira.</p>
+<p> </p>
+<p>Missão da vila:</p>
+<p>As plantas no canteiro de flores estão morrendo. Juntar [%dic:STR_DIC_E_junk_town_upgrade_rich_soil_d]% e leve para [%dic:STR_DIC_N_Town_D_shugo_Worker_05].</p>
+<p> </p>
+<p>- Administração da aldeia -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora temos canteiros de flores, mas as plantas estão morrendo.</p>
+<p> </p>
+<p>Tentamos vários fertilizantes, mas nenhum deles funcionou, Akakak.</p>
+<p> </p>
+<p>O solo sagrado fértil é a nossa última esperança, Akakak.</p>
+<p> </p>
+<p>Precisamos de um solo valioso para a cama, encontrado em uma área onde cresce umbronite. Embora a tarefa da vila tenha sido emitida para fazê -lo, quase ninguém está trazendo o solo, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o solo sagrado fértil.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Deus, Akakak!</p>
+<p> </p>
+<p>[%username], Seu amor pela vila estará na forma de chuva fértil para as plantas na trama, Akakak.</p>
+<p> </p>
+<p>A energia desse solo fértil deve salvar plantas moribundas. Devo espalhar sementes na trama imediatamente.</p>
+<p> </p>
+<p>Lindas flores florescem em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_E_junk_town_upgrade_rich_soil_d]% e levá -los a [%dic:STR_DIC_N_Town_D_shugo_Worker_05].</p>[%collectitem]</step>
+</steps>
+<p>Precisamos do solo sagrado do local onde cresce umbronite para salvar as plantas moribundas no canteiro de flores. Provavelmente seria melhor reunir o solo sagrado fértil e levá -lo à autoridade de construção da vila para concluir a tarefa da vila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A tarefa da vila foi anunciada. Era para reunir solo sagrado do local onde a umbronita cresce e levá -lo à autoridade de construção na vila, a fim de salvar as plantas na trama de morrer.</p>
+<p> </p>
+<p>Quando você trouxe o solo fértil para a autoridade de construção, a autoridade agradeceu por seu compromisso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

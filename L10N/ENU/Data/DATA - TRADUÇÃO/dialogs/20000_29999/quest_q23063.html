@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O relatório de Wallinerk, responsável por restaurar a parede em Eremion, está atrasado, Ak.</p>
+<p> </p>
+<p>Daeva, você iria para [%dic:STR_DIC_N_LDF5b_wallring_E] e pergunte por que o relatório está atrasado?</p>
+<p> </p>
+<p>A Goldrinyerk Limited está realizando várias obras de construção. Entre eles, a restauração da parede em Eremion é um projeto muito importante.</p>
+<p> </p>
+<p>O fato de que um relatório sobre um projeto tão importante é atrasado é um grande problema.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Wallinerk está ocupado preparando a construção, AK!</p>
+<p> </p>
+<p>O material desapareceu e o guarda empregado aqui é preguiçoso. É tudo tão complicado, AK.</p>
+<p> </p>
+<p>Já estou sob pressão por causa do trabalho para minha empresa. O que você quer de mim, Akakak?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você fala sobre o relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Relatório? Acabei de escrever o relatório, AK.</p>
+<p> </p>
+<p>Não foi fácil escrever o relatório com o barulho dos animais.</p>
+<p> </p>
+<p>Houve muitas dificuldades, mas o trabalho está progredindo, AK.</p>
+<p> </p>
+<p>Espero que você tenha sido capaz de transmitir [%dic:STR_DIC_N_LDF5b_Devring_E] Sem problemas, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, você trouxe o relatório, AK?</p>
+<p> </p>
+<p>O Worliner está preguiçoso, Ak?</p>
+<p> </p>
+<p>O Worliner não pode me afastar, mesmo que ele esteja longe da sede, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem o relatório.</p>
+<p> </p>
+<p>Não precisaríamos de nada disso se tudo se os relatórios fossem enviados a tempo, AK.</p>
+<p> </p>
+<p>Obrigado por seus esforços, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_wallring_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Devring_E]%.</p></step>
+</steps>
+<p>Encontre o Wallinerk no platô congelante e obtenha o relatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de DeBrinerk, você procurou Wallinerk, que está ocupado reparando as muralhas no platô congelante e ouviu a razão pela qual o trabalho estava demorando mais tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

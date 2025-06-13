@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q2820</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças às sombras que você está aqui, [%username]. Ouça, estamos com problemas profundos.</p>
+<p> </p>
+<p>Nossos estoques de medicamentos são criticamente baixos. Solicitei reabastecer a Primum Landing, mas quem sabe quando chegará? Alguns de nossos feridos não podem esperar.</p>
+<p> </p>
+<p>Azphel nos ensina a defender por nós mesmos sempre que possível. Então, estou olhando para o lago Asteria, é claro ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há remédio no lago?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não no lago, exatamente. Os chifres de jovens tricos perto do lago. Uma buzina intacta está cheia de energia divina que acelera o processo de cicatrização. Moa -os e você também terá um poderoso sedativo.</p>
+<p> </p>
+<p>Há um problema de mão -de -obra, no entanto. Todos os meus soldados estão feridos ou guardando nossas paredes.</p>
+<p> </p>
+<p>Assim, eu me volto para você, [%username]. Somente você pode obter remédios a tempo de socortar nossos camaradas feridos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai encontrar muito[%dic:STR_DIC_M_Ab1_1251_Trico_31_An] em frente à fortaleza na planície da torre do tempo.</p>
+<p> </p>
+<p>Uma grande quantidade é uma vantagem, mas apenas me pegue 4 desta vez.</p>
+<p> </p>
+<p>Ah, e por favor, traga tudo para [%dic:STR_DIC_I_QUEST_2820a]. As mercadorias não devem ser quebradas ou arranhadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Intacto, entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Amaldiçoe sua fraqueza! Seus camaradas sofrem e você os ignora?</p>
+<p> </p>
+<p>Você pode ser um desses feridos, pense nisso!</p>
+<p> </p>
+<p>Reúna -se! Não tenho mais ninguém para enviar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, elogie Azphel! Você está de volta!</p>
+<p> </p>
+<p>Fomos atacados enquanto você estava fora. Isso significa mais ferido, mas tirou nossas mentes da escassez de remédios por um tempo.</p>
+<p> </p>
+<p>Você tem os chifres, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está cheio de sol ou apenas estúpido? Eu te disse para matar [%dic:STR_DIC_M_Ab1_1251_Trico_31_An] S!</p>
+<p> </p>
+<p>Quando estiverem mortos, traga de volta [%dic:STR_DIC_I_QUEST_2820a] S-pelo menos cinco.</p>
+<p> </p>
+<p>A vida de Daevasas depende de você, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]. Precisamos mais deste remédio a cada hora que passa.</p>
+<p> </p>
+<p>Ainda nenhuma palavra de Primum Landing ... portanto, sem suprimentos novos. E os ataques continuam chegando.</p>
+<p> </p>
+<p>Se você nos trazer mais desses pequenos chifres não danificados, garanto que os colocaremos em uso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar os chifres de [%dic:STR_DIC_M_Ab1_1251_Trico_31_An] e trazê -los para [%dic:STR_DIC_N_Ab1_1251_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>A Asteria Fortaleza ficou sem remédio. Hunt Young Asteria Tricos para os pequenos chifres não danificados necessários para fazer mais remédios e trazê -los para Snori.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Snori disse que a fortaleza ficou sem remédio para os feridos e pediu que você reunisse materiais para mais porque seus suprimentos estão muito atrasados.</p>
+<p> </p>
+<p>Quando você voltou com os chifres de Young Asteria Tricos, Snori agradeceu e disse que precisariam de mais chifres em breve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

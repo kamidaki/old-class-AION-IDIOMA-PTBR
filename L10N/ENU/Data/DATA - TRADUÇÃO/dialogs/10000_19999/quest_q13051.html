@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossa unidade foi enviada para descobrir algo sobre a situação na frente.</p>
+<p> </p>
+<p>Fomos espionados com sucesso nas linhas inimigas, mas, como você pode ver, estávamos completamente cercados.</p>
+<p> </p>
+<p>É certo que você nunca sabe quando os soldados de Beritra o descobrirão e atacam.</p>
+<p> </p>
+<p>Vai ser difícil ficar longe daqui sem ajuda, eu ficaria muito grato se você pudesse lidar com isso, [%dic:STR_DIC_N_LDF5b_Farteno_E].</p>
+<p> </p>
+<p>Por favor, relate que precisamos de tropas de suporte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é a situação com Kaires?</p>
+<p> </p>
+<p>Na época da crise, enviei uma unidade de suporte através de você, [%username], mas agora estou preocupado se isso agora foi isolado.</p>
+<p> </p>
+<p>O movimento do exército de Beritra na área circundante também é preocupante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você envia o pedido de suporte.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso que é o tipo de situação. Entendi.</p>
+<p> </p>
+<p>Como a situação é assim, precisaremos pedir ajuda a tropas mais altas.</p>
+<p> </p>
+<p>Eu escrevi um resumo nesta carta. Por favor, dê a carta a [%dic:STR_DIC_N_LDF5b_Heres_E].</p>
+<p> </p>
+<p>Heres certamente poderá enviar soldados para resgatar a tropa de escoteiros de Kaires.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso significa que o esquadrão de escoteiros é isolado de Kaires em uma área inimiga?</p>
+<p> </p>
+<p>Se você tiver um relatório mais detalhado, vou dar uma olhada nele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A patrulha de Kaires parece ter penetrado profundamente muito.</p>
+<p> </p>
+<p>Não tenho certeza se uma missão de resgate realmente os salvará.</p>
+<p> </p>
+<p>Agora que sabemos a situação, tentaremos tomar as medidas apropriadas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Farteno_E]%.</p></step>
+<step><p visible="[%3]">Passar a carta para [%dic:STR_DIC_N_LDF5b_Heres_E].</p></step>
+</steps>
+<p>Peça apoio para ajudar a tropa de escoteiros isolados de Kaires.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kaires disse que estava isolado e chamou Parteno para pedir apoio.</p>
+<p> </p>
+<p>Parterno relatou a situação atual, mas Heres não mostrou reação específica.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

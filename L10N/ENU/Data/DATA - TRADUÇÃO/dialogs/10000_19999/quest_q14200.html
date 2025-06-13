@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você sabe sobre Fregion?</p>
+<p> </p>
+<p>Você conhece o [%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092]?</p>
+<p> </p>
+<p>Em Theobomos, o dragão Lord Fegion respirou uma chama há muito tempo que ainda queima até hoje.</p>
+<p> </p>
+<p>É por isso que a região do norte também é chamada de "Fregion's Flame".</p>
+<p> </p>
+<p>A chama eterna não consiste apenas de fogo: os espíritos das pessoas estão presos nela. Essas pessoas podem ter morrido há muito tempo, mas suas almas sofrem tormento inimaginável na chama.</p>
+<p> </p>
+<p>Tenha compaixão por esses pobres desgraçados. Salve -os e devolva -os ao fluxo de Aether.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Pygmalion]mostrará o caminho para a chama eterna. Não deixe que as almas sofram mais. Esteja a caminho!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então Atropos enviou para você? E isso é sobre a chama eterna do dragão Lord Fregion?</p>
+<p> </p>
+<p>Pegue a estrada para o norte, então você chegará à eterna chama de Fregion. Tem certeza de que quer ir lá? Este é um lugar perigoso, então tenha cuidado.</p>
+<p> </p>
+<p>Vá para ATROPOS imediatamente depois de concluir a tarefa. Diga a ele que precisamos reconstruir a estátua aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Eu tinha medo que a tarefa fosse muito difícil para você.</p>
+<p> </p>
+<p>Você enviou essas almas torturadas de volta ao fluxo de Aether?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Daeva.</p>
+<p> </p>
+<p>Com sua ajuda, muitas almas foram libertadas de seu tormento.</p>
+<p> </p>
+<p>Você ganhou meu respeito, [%username].</p>
+<p> </p>
+<p>Não posso agradecer o suficiente!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá e se encontre [%dic:STR_DIC_N_Pygmalion]na vigília de Josnack.</p></step>
+<step><p visible="[%9]">Destruir o [%dic:STR_DIC_OBJ_LF2a_FOBJ_Q1092]([%11]/3)</p></step>
+<step><p visible="[%24]">Vá para o [%dic:STR_DIC_W_LF2B_SZ_A_Town] e reportar a [%dic:STR_DIC_N_Atropos].</p></step>
+</steps>
+<p>Realize a tarefa da Atropos e apaga a chama eterna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atropos falou sobre a chama eterna.</p>
+<p> </p>
+<p>Você conversou com Josnack e, eventualmente, conseguiu saciar a chama eterna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

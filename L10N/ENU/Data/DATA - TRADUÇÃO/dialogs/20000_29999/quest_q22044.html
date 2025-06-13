@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22044</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Controlamos a área por enquanto, [%username], mas o Balaur não se afasta como uma patrulha de escoteiros. Não. Eles provavelmente estão organizando o retorno enquanto estamos aqui.</p>
+<p> </p>
+<p>Precisamos estar prontos para o ataque deles. Nossos soldados precisam que suas feridas tendessem, suas espadas afiaram e a armadura de volta em forma. Mas não podemos tirar nenhum deles das linhas de frente até que outras ameaças tenham sido tratadas. É aí que você pode ajudar.</p>
+<p> </p>
+<p>Eu preciso do[%dic:STR_DIC_M_LDF4b_T1_Shadowstalker_58_An] S, [%dic:STR_DIC_M_LDF4b_T2_Gargoyle_58_An] S, [%dic:STR_DIC_M_LDF4b_T3_Cherubim_58_An] Areia [%dic:STR_DIC_M_LDF4b_T4_Basilisk_60_An] está morto. Você pode fazer isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não há ataque de Balaur, mas eles se tornam mais fortes a cada dia que passa.</p>
+<p> </p>
+<p>Como você fez? Podemos finalmente ter nossos soldados vistos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, meu trabalho está pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Obrigado.</p>
+<p> </p>
+<p>Com nossas tropas atualizadas, temos uma chance melhor de rejeitar o ataque de Balaur e solidificar nosso aperto aqui. Bom trabalho, [%userclass]!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_Q12044]([%2]/11).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Rurus].</p></step>
+</steps>
+<p>Limpe as criaturas que impedem seus soldados de descansar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rurus lhe disse que os guardas asmodianos precisavam descansar após a captura da área, mas não podiam por causa das criaturas locais que estavam atacando incansavelmente.</p>
+<p> </p>
+<p>Você saiu e lidou com as criaturas, permitindo que os guardas se preparassem para o inevitável Balaur Assault.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

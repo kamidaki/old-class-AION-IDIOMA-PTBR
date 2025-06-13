@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah-o momento! Eu estava pronto para entrar em contato com você, [%username]. Eu ia pedir que você se juntasse a nós em uma operação de limpeza lefarista.</p>
+<p> </p>
+<p>A General da Brigada Telêmaco diz que não pode mais tolerar as atividades lefaristas e ordenou uma operação em larga escala contra elas.</p>
+<p> </p>
+<p>O problema é que, como não é possível mobilizar guardiões suficientes, ele ordenou que recrutarmos mercenários.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Existe uma recompensa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro. As recompensas variam dependendo das dificuldades da missão. A missão que estou oferecendo é reunir 120[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S. A recompensa é um par de brincos.</p>
+<p> </p>
+<p>Sentir -se bem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Um grande nome como você certamente atrairá outros. Eu só espero que eles venham em breve ....</p>
+<p> </p>
+<p>o [%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A]é o símbolo do[%dic:STR_DIC_M_LF2_3304all]. Isso significa que apenas o melhor dos melhores lefaristas pode usá -lo.</p>
+<p> </p>
+<p>E isso significa que você precisa se preparar para uma grande luta antiga. Eles não vão se segurar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento ouvir isso. Você pode não estar ciente disso, mas existem alguns danos que o respeitam, [%username]. Se eles virem você participar desta operação, muitos deles seguirão seu exemplo.</p>
+<p> </p>
+<p>É por isso que eu esperava que você ingressasse.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]! É bom ver você de volta!</p>
+<p> </p>
+<p>Estou muito ocupado assinando novos recrutas desde que o spread de notícias que você envolveu.</p>
+<p> </p>
+<p>Você está aqui pela recompensa, certo? Apenas entregue [%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S você coletou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Receio não poder recompensá -lo.</p>
+<p> </p>
+<p>Eu acredito em você, [%username], mas você também deve trazer provas para ser recompensado.</p>
+<p> </p>
+<p>Então, por favor me traga 60[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A].</p>
+<p> </p>
+<p>Até mais!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, essas são 60 peças.</p>
+<p> </p>
+<p>Você cumpriu sua tarefa diligentemente e agora será recompensado. Essa é a lista de recompensa para este serviço.</p>
+<p> </p>
+<p>Cada par de brincos é um pouco diferente. Então dê uma olhada neles, [%username], e leve os que melhor se encaixam em você.</p>
+<p> </p>
+<p>Como você provavelmente sabe, uma troca não é possível.</p>
+<p> </p>
+<p>Também existem tarefas recompensadas com um anel e um colar. Você já fez esse tipo de tarefa? Porque eu tenho que cuidar de tantas pessoas, às vezes fico confuso. Eu tentei essa tarefa, mas apenas uma vez. As recompensas são muito boas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_M_LF2_3304all] S no[%dic:STR_DIC_W_LF2_SZ_J], colete o deles[%dic:STR_DIC_I_JUNK_LEHPAR_QUEST_01A] S, e leve-os para [%dic:STR_DIC_N_Laigas].</p>[%collectitem]</step>
+</steps>
+<p>Uma operação de limpeza lefarista por atacado foi ordenada pela General da Brigada Telemachus. Derrote as elites no bastião lefarista e leve suas insígnias douradas a Laigas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laigas disse que uma operação de limpeza por atacado foi iniciada e sugeriu que você ingressou na operação.</p>
+<p> </p>
+<p>Ele disse para você derrotar as elites no bastião lefarista e trazer suas insígnias douradas para provar seu trabalho.</p>
+<p> </p>
+<p>Depois de derrotar os lefaristas, você coletou suas insígnias e as levou a Laigas. Ele lhe deu brincos como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

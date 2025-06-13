@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A magia possui um poder enorme.</p>
+<p> </p>
+<p>Mas também é lindo ao mesmo tempo.</p>
+<p> </p>
+<p>Eu adoraria deixar você compartilhar o poder da magia, Daeva, mas você precisa fazer algo em troca primeiro.</p>
+<p> </p>
+<p>Por favor, infiltrar -se [%dic:STR_DIC_W_DF5] e eliminar 15 asmodianos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você derrotou os asmodianos, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você realmente é algo especial!</p>
+<p> </p>
+<p>Ótimo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que invadiram[%dic:STR_DIC_W_DF5]([%2]/15).</p></step>
+<step><p visible="[%3]">Relatório ao Spiritmaster Rolly.</p></step>
+</steps>
+<p>Mate os asmodianos que invadiram Vengar e depois se reportam ao Spiritmaster Rolly.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as instruções do Spiritmaster Rolly, você matou os asmodianos que invadiram Vengar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

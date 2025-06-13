@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%userclass]! Posso recrutar sua ajuda?</p>
+<p> </p>
+<p>Estou estudando Manatone Remone and Fear que posso cometer um erro com meus clientes.</p>
+<p> </p>
+<p>Eu entendo o conteúdo dos meus livros, mas não consigo colocar em prática.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudá-lo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitos tipos de Manastones. Cada um tem características diferentes e métodos exclusivos de remoção.</p>
+<p> </p>
+<p>Estou estudando muito, mas a teoria só vai tão longe. Eu preciso colocar isso em prática.</p>
+<p> </p>
+<p>Se você pudesse me trazer alguns Manastones para trabalhar, eu sei que poderia dominar isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Preciso praticar no HP +60, precisão +20 e bloquear +20 manotones.</p>
+<p> </p>
+<p>Por favor, me traga um de cada.</p>
+<p> </p>
+<p>Por favor, fique quieto, [%username]. Eu não gostaria de assustar meus clientes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta com as pedras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, por favor me ajude!</p>
+<p> </p>
+<p>Eu sou o único removedor de Manastone aqui. Eu não posso ir sozinho.</p>
+<p> </p>
+<p>Não posso convencê -lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está de volta! Maravilhoso.</p>
+<p> </p>
+<p>Sejamos discretos. Por que você não me dá os Manastones?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está você, conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Preciso de um HP +60, precisão +20 e bloquear +20 Manastones para praticar.</p>
+<p> </p>
+<p>Você deve ter ficado confuso-muitas vezes sou!</p>
+<p> </p>
+<p>Peço desculpas, mas por favor me traga as pedras corretas desta vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou encontrar os certos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os encontrou! Excelente.</p>
+<p> </p>
+<p>Por favor, aceite isso. Afinal, Manastones é tudo o que tenho.</p>
+<p> </p>
+<p>E se você receber HP +60, precisão +20 e bloquear +20 Manastones depois, traga -os para mim. A prática leva à perfeição.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não teria mais nada desses Manastones, não é? Podemos realmente usar tudo o que você pode sobrar.</p>
+<p> </p>
+<p>Eu faria o mesmo comércio novamente por um conjunto de HP +60, precisão +20 e bloqueio +20 Manastones.</p>
+<p> </p>
+<p>Mais de uma vez, de fato. Apenas me avise.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Aceitar.</act>
+<act href="HACTION_FINISH_DIALOG">"Volto mais tarde com mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitos tipos diferentes de Manastones, posso ver onde você ficou confuso.</p>
+<p> </p>
+<p>O que eu preciso para fazer uma negociação é um conjunto de HP +60, precisão +20 e bloqueio +20 Manastones.</p>
+<p> </p>
+<p>Não é uma coisa urgente, volte sempre que você montar os itens certos. Eu tenho muito tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vejo você então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete Manastones e leve -os para Dania.</p>[%collectitem]</step>
+</steps>
+<p>Traga Dania HP +60, Precisão +20 e Bloco +20 Manastones para que ela possa praticar a remoção do Manastone.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dania disse que precisava praticar a remoção de HP +60, precisão +20 e bloqueio de +20 Manastones, e pediu que você trazia alguns.</p>
+<p> </p>
+<p>Você trouxe os Manastones para Dania, ela agradeceu e lhe deu um Manatone útil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

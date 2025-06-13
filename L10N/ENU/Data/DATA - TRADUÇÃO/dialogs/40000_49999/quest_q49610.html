@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Mate o [%dic:STR_DIC_E_LDF5b_B2_VriZomb]que estão interferindo na limpeza do pântano, reunir-se [%dic:STR_DIC_I_quest_49610a]como evidência e relatório ao escritório administrativo relevante, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5b_Silverlin_BA]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, gerente de recursos da equipe da Silverine Limited</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que essa tarefa envolve matar os zumbis de Drakan contaminados.</p>
+<p> </p>
+<p>Você fez bem o seu trabalho?</p>
+<p> </p>
+<p>E você trouxe as evidências solicitadas na ordem de serviço?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as armas de Beritra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os cabelos de sua barba estão no final) Daeva veio de mãos vazias?</p>
+<p> </p>
+<p>Daeva não leu as instruções de trabalho, AK?</p>
+<p> </p>
+<p>Sem prova, como Shugo saberá se [%username] eliminou os zumbis de Drakan contaminados ou não, AK?</p>
+<p> </p>
+<p>Daeva simplesmente não deixou aquelas armas requintadas deitadas no campo de batalha, certo?! Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Wags Tail.) Ak, isso pode buscar um preço alto ...</p>
+<p> </p>
+<p>Ah, Daeva fez um bom trabalho, Ak.</p>
+<p> </p>
+<p>Os zumbis envenenados de Drakan estavam interferindo nas atividades de limpeza do pântano, mas agora o trabalho pode continuar em paz, Ak.</p>
+<p> </p>
+<p>O que Daeva ainda está fazendo aqui? O relatório é feito e Daeva foi recompensado para que tudo seja feito aqui, AK!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_LDF5b_B2_VriZomb] e reunir -se [%dic:STR_DIC_I_quest_49610a]Para evidências e levá -los a [%dic:STR_DIC_E_LDF5b_Silverlin_BA].</p>[%collectitem]</step>
+</steps>
+<p>As instruções chegaram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções da Silverine Limited chegaram.</p>
+<p> </p>
+<p>Você matou os zumbis de Drakan infectados que estavam no caminho das atividades de limpeza do pântano e coletaram a arma, que você então levou para o ramo de Silverine, no sul de Katalam. Você recebeu agradecimentos e foi recompensado por fazê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

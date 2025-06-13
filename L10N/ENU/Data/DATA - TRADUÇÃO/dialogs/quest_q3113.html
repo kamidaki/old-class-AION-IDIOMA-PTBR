@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3113</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], há algo que preciso lhe dizer.</p>
+<p> </p>
+<p>Há um problema sério no laboratório Theobomos.</p>
+<p> </p>
+<p>Você sabia que o espaço no laboratório está distorcido?</p>
+<p> </p>
+<p>Nossas investigações revelaram que a distorção está aumentando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A vida é uma palavra?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, é isso que eu penso: os Daevas precisavam de uma força forte para usar petralith, a arma de Old Class Aion.</p>
+<p> </p>
+<p>Os poderes dos espíritos foram acumulados e armazenados em Theobomos por um longo período. Eles reagiram um com o outro e causaram uma explosão.</p>
+<p> </p>
+<p>Era tão poderoso que até distorceu o espaço.</p>
+<p> </p>
+<p>Talvez ... o silikor da memória funcionou da maneira que deveria.</p>
+<p> </p>
+<p>Talvez tenha tentado absorver as forças concentradas para diminuir a distorção espacial.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não pense nisso. Silikor teve que ser destruído de qualquer maneira, independentemente de qualquer falha.</p>
+<p> </p>
+<p>O problema que temos agora é totalmente novo inimigos.</p>
+<p> </p>
+<p>A colisão de forças reuniu quatro elementos. Isso criou[%dic:STR_DIC_M_IDLF2A_ElementalKingNmd_50_Ah].</p>
+<p> </p>
+<p>Ele pretende reunir os espíritos restantes para se tornar ainda mais poderoso.</p>
+<p> </p>
+<p>Temos que parar isso!</p>
+<p> </p>
+<p>Não temos tempo a perder. [%dic:STR_DIC_M_IDLF2A_ElementalKingNmd_50_Ah]deve ser eliminado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer ir para o laboratório Theobomos, [%username]? Ou talvez você esteja com medo?</p>
+<p> </p>
+<p>A maioria dos Daevass entra voluntariamente em um lugar tão perigoso para testar suas habilidades.</p>
+<p> </p>
+<p>Se você não quiser, está tudo bem. Encontraremos uma substituição.</p>
+<p> </p>
+<p>Agora vá, estou ocupado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nenhum como eu, no entanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Ouvi dizer que o trrioan instável foi colocado sob controle. Foi você?</p>
+<p> </p>
+<p>Espero que você não tenha acabado aqui da maneira mais difícil. Você está voltando de uma reunião com o curandeiro da alma, por acaso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"As coisas foram ... ok."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, quem se importa, realmente? O problema é que você terminou o triroan instável, [%username].</p>
+<p> </p>
+<p>Aqui está a sua moeda, conforme autorizado pelo santuário. Você ganhou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDLF2A_ElementalKingNmd_50_Ah]no[%dic:STR_DIC_W_NAME_IDLF2A_Lab]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Pyrrha]no[%dic:STR_DIC_W_LF2B_SZ_B4_2].</p></step>
+</steps>
+<p>O arqueólogo Pyrrha quer recompensá -lo por eliminar o Trioan instável, que estava causando um aumento anormal na energia de éter. Vá para o laboratório Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O arqueólogo Pyrrha queria recompensá -lo por eliminar o Trioan instável, que estava causando um aumento anormal na energia de Aether.</p>
+<p> </p>
+<p>Você foi ao laboratório Theobomos e realizou a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

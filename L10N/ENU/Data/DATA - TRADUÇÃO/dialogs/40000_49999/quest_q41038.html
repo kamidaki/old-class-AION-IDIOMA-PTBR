@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Inimigos de outras áreas estão direcionando a guarnição.</p>
+<p> </p>
+<p>A 23ª guarnição poderia servir a 42ª Guilda como base quando ataca a fortaleza.</p>
+<p> </p>
+<p>Não devemos permitir que um local tão estratégico caia nas mãos inimigas.</p>
+<p> </p>
+<p>[%username], proteja a 23ª guarnição e mate o [%dic:STR_DIC_E_pangaea_enemy_all]vagando ao redor do[%dic:STR_DIC_W_GAb1_02_Filed03].</p>
+<p> </p>
+<p>Suas intenções são óbvias!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Recentemente, fomos atacados por um[%userrace], que murmurou algo ininteligível.</p>
+<p> </p>
+<p>Suspeitamos que o exército traiçoeiro de Beritra se disfarçou como o [%userrace].</p>
+<p> </p>
+<p>Você matou o inimigo que invadiu o [%dic:STR_DIC_W_GAb1_02_Filed03]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um ótimo trabalho nesta missão.</p>
+<p> </p>
+<p>Tenho certeza de que eles se retiraram com medo.</p>
+<p> </p>
+<p>Mas defender Pangea contra o Balaur e outros inimigos é apenas o começo.</p>
+<p> </p>
+<p>Eles continuarão atacando a guarnição, esperando uma oportunidade de capturar a fortaleza.</p>
+<p> </p>
+<p>Por favor, continue nos apoiando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_pangaea_enemy_all]que invadiu o [%dic:STR_DIC_W_GAb1_02_Filed03]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_N_GAb1_02_Village03_Guard02]. Ele aparecerá se a guarnição for mantida por aliados.</p></step>
+</steps>
+<p>Cumprir o pedido do capitão do guardião da 23ª tropa de ocupação e eliminar o inimigo que invadiu o 3º distrito de Aspida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O capitão do guardião da 23ª tropa de ocupação pediu que você matasse o inimigo que invadiu o 3º distrito de Aspida.</p>
+<p> </p>
+<p>Depois que você matou o inimigo invasor e voltou ao capitão do Guardian, ele agradeceu, dizendo que a defesa de Pangea era apenas o começo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que toda semana eu ouço algum novo enredo de Krall. Eles crescem ousados, [%username]. Ousado e desafiador.</p>
+<p> </p>
+<p>O último general aqui pensou que deveríamos nos esconder atrás das paredes e esperar que elas desapareçam. Eu prefiro uma abordagem mais ... direta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que eles lhe disseram que estou obcecado por vingança.</p>
+<p> </p>
+<p>Eu odeio o Krall, tudo bem. E eu tenho boas razões para. Eles mataram minha esposa e meu filho.</p>
+<p> </p>
+<p>Mas não posso permitir que sentimentos pessoais obscurecem meu julgamento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"Prossiga."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Tursin Krall conspirou com o Balaur, a sujeira que quebrou Atreia, e eles são uma ameaça constante para os seres humanos.</p>
+<p> </p>
+<p>Devemos atacá -los agora. Devemos render, queimar e matar até que nenhum seja deixado para infestar Elysea. Quando a última gota do sangue de Krall cai da minha lâmina, então eu posso descansar.</p>
+<p> </p>
+<p>Diga-me, [%userclass]. Você matou o Tursin Krall quando estava pegou e trouxe cinquenta de suas marcas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho trabalhado duro!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está fazendo que é mais importante do que matar Krall? Eles escolhem os dentes com os ossos do nosso povo!</p>
+<p> </p>
+<p>Traga -me cinquenta marcas de Krall para provar que você as matou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, general."</act>
+</selects>
+<voice file="Q1018-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cada um deles representa um Krall que nunca mais matará, graças a você.</p>
+<p> </p>
+<p>Isso foi corajosamente feito, [%username]. Você deve ser recompensado por isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete 50[%dic:STR_DIC_QILA66] e leve-os para [%dic:STR_DIC_LA19].</p>[%collectitem]</step>
+</steps>
+<p>Ordem: Mate Tursin Krall para coletar 50[%dic:STR_DIC_QILA66]%s.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O general Spatalos ordenou que você trazia 50 marcas Krall, o que você fez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem: Mate Tursin Krall e colete 50 Marks Krall.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

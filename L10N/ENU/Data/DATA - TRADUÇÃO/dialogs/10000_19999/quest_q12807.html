@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Procure rapidamente [%dic:STR_DIC_E_LDF5a_FOBJ_A4_SupplyBox] e reunir -se [%dic:STR_DIC_I_quest_12807a]!</p>
+<p> </p>
+<p>O que você acha que é a coisa mais importante na batalha?</p>
+<p> </p>
+<p>Um guerreiro corajoso? Claro que você precisa de algo assim. Moral? Importante também.</p>
+<p> </p>
+<p>Mas e os suprimentos? Não há guerreiros corajosos ou bom moral de luta sem suprimentos.</p>
+<p> </p>
+<p>Estou perguntando, para o nosso bem -estar, obtenha os suprimentos que os asmodianos deixaram lá!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que havia diferente nos suprimentos dos asmodianos?</p>
+<p> </p>
+<p>Havia penas de asa preta ou algo parecido entre seus suprimentos?</p>
+<p> </p>
+<p>Se eles conterem esses itens, vamos queimá -los e apenas pegar a comida e o equipamento de batalha.</p>
+<p> </p>
+<p>Mostre -me os suprimentos de esquadrão de limpeza recuperados, rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os suprimentos de esquadrão de limpeza.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os suprimentos asmodianos não são diferentes dos dos Elyos, no entanto.</p>
+<p> </p>
+<p>O fornecimento de suprimentos é muito mais difícil na base de ocupação do que em outros lugares.</p>
+<p> </p>
+<p>Você teve sorte de garantir todos os suprimentos.</p>
+<p> </p>
+<p>Então, você deve receber essa quantidade então, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procurar [%dic:STR_DIC_E_LDF5a_FOBJ_A4_SupplyBox], juntar [%dic:STR_DIC_I_quest_12807a] e trazer tudo para [%dic:STR_DIC_N_LDF5_Village_Guard02_L].</p>[%collectitem]</step>
+</steps>
+<p>Pegue o esquadrão de limpeza que os suprimentos deixados para trás pelos asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Verden pediu que você obtenha as caixas de suprimentos do esquadrão de limpeza que foram deixadas para trás pelos asmodianos devido ao fornecimento problemático de itens especiais.</p>
+<p> </p>
+<p>Depois que você trouxe o material de limpeza para Verden, ele ficou muito feliz e deu a você alguns dos suprimentos como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

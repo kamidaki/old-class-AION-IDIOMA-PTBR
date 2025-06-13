@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este veneno está chegando à minha cabeça ....</p>
+<p> </p>
+<p>Veja essas árvores? Aquele no meio fala comigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você deveria pegar um pouco de ar fresco ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Argh! Falta, Roseino!</p>
+<p> </p>
+<p>Desculpe, [%username]! Deve haver um forte alucinógeno nos venenos aéreos aqui. Eu preciso encontrar uma maneira de neutralizá -los.</p>
+<p> </p>
+<p>Eu preciso de [%dic:STR_DIC_MLA56] S!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ribbits?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim![%dic:STR_DIC_MLA56] S!</p>
+<p> </p>
+<p>Eles são imunes ao veneno-você pode dizer olhando para eles. Eles bebem da água sem efeitos negativos!</p>
+<p> </p>
+<p>Algo em seus corpos deve ser naturalmente neutralizando o veneno, e eu preciso saber o que é isso! Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, eu sabia que você tinha o espírito! Eu vi a vitalidade de Yustiel em seus olhos!</p>
+<p> </p>
+<p>Vou precisar de algumas amostras de [%dic:STR_DIC_QILA83]... provavelmente cinco. Com cinco, posso realizar uma análise completa dos componentes.</p>
+<p> </p>
+<p>Volte quando você os tiver, mas seja rápido! Essa árvore está me olhando engraçada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Multar!</p>
+<p> </p>
+<p>Deixe -me para as árvores então! Vamos ver como me saio sozinho.</p>
+<p> </p>
+<p>Gah. Eu não deveria desperdiçar energia em você. Acelerarei minha respiração, o que piorará minhas alucinações.</p>
+<p> </p>
+<p>Prossiga!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu fui embora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo?</p>
+<p> </p>
+<p>Deixe -me ver o que você trouxe, então!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, eu preciso de cinco amostras. Essa é a única maneira de os testes podem ser confiáveis.</p>
+<p> </p>
+<p>Vá buscar as outras amostras de [%dic:STR_DIC_QILA83]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, exatamente!</p>
+<p> </p>
+<p>Obrigado, [%username]! Vou começar em alguns testes imediatamente. Vou descobrir isso ainda!</p>
+<p> </p>
+<p>Pegue isso. Pegue e vá embora, antes que as árvores comecem a falar com você também!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter amostras de sangue de ribbit e trazê -las para [%dic:STR_DIC_LA30].</p>[%collectitem]</step>
+</steps>
+<p>As fitas que prosperam no pântano contaminado podem manter a chave para neutralizar o veneno do pântano. Colete amostras do sangue de Ribbit e leve -as para Roseino.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Roseino disse que as fitas que prosperam no pântano contaminado podem manter a chave para neutralizar o veneno do pântano. Você coletou amostras do sangue de Ribbit e as deu a Roseino para que ela pudesse solicitar um estudo do Santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

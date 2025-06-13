@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você não pode dizer o que pode ser esse objeto avermelhado curioso. É melhor pedir a alguém que possa saber.)</p>
+<p> </p>
+<p>(Talvez [%dic:STR_DIC_N_Grunn]...)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"No meu cubo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você planeja se lançar em algum conto épico sobre suas batalhas com o Balaur, esqueça. Não estou interessado nessas coisas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Então, o que você faz disso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é mais peculiar. Parece ser algum tipo de dispositivo sofisticado.</p>
+<p> </p>
+<p>Tente perguntar a um artesão Shugo, talvez [%dic:STR_DIC_N_Shugo_AB1_D3]. Esses olhos pequenos e redondos são nítidos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que Daeva quer?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Dê uma olhada nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kaorenerker viu coisas semelhantes do Balaur, mas não faço ideia do que faz, Nyerk.</p>
+<p> </p>
+<p>Talvez fale com[%dic:STR_DIC_N_Usener]? Ouvi dizer que ela estava estudando essas coisas ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], sim? Ouvi dizer que você tem algo interessante para me mostrar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A palavra viaja rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que poderia ser um desses ... nós realmente não descobrimos o que eles fazem, mas assumimos que o Balaur os usa para criar.</p>
+<p> </p>
+<p>Deixe -me dar uma recompensa e tirá -la de suas mãos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Grunn].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_AB1_D3].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Usener].</p></step>
+</steps>
+<p>Você descobriu um item avermelhado não identificado. Pergunte a Grunn sobre isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um item não identificado em uma caixa de tesouro na camada inferior de Reshanta. Depois de perguntar, você descobriu que era um material de criação de Balaur, e você o entregou para estudar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

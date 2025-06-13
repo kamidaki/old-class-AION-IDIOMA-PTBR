@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Shugo adoraria dar a Daeva trabalho.</p>
+<p> </p>
+<p>A tarefa é muito simples. Daeva deve eliminar o [plur][%dic:STR_DIC_M_LDF5B_A1_Direbeast_63_An], AK. Shugo não pode escrever seu relatório em paz por causa deles, Ak.</p>
+<p> </p>
+<p>Isso é apenas um emprego de curto prazo. Goldrinyerk Limited paga um salário justo, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, está congelando frio, AK.</p>
+<p> </p>
+<p>E a Snow Mountain Taiga?</p>
+<p> </p>
+<p>Se o Daeva não executar a tarefa corretamente, não haverá pagamento, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva fez um bom trabalho, Ak.</p>
+<p> </p>
+<p>Aqui está a recompensa, AK.</p>
+<p> </p>
+<p>Aconteceu de acordo com as regras, então não há queixas, AK. Você não teve que completar a missão, AK.</p>
+<p> </p>
+<p>Isso completa o emprego temporário, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute com o [plur][%dic:STR_DIC_M_LDF5B_A1_Direbeast_63_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_wallring_E].</p></step>
+</steps>
+<p>O Wallinerk ofereceu emprego temporário. Mate a Taiga da Snow Mountain para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trabalhou no emprego temporário após uma oferta do Wallinerk e eliminou o Snow Mountain Taigas conforme sua missão. A recompensa, no entanto, não aconteceu como foi prometido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

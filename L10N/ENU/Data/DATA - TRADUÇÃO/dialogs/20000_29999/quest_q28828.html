@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], esta é a sua primeira casa, não é?</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_Housing_CrystalOfRelationship]é importante. Sou exigido pelas diretrizes do gerente de habitação para oferecer este livro sobre o assunto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Mantenha -o seguro, caso você tenha dúvidas.</p>
+<p> </p>
+<p>As diretrizes do gerente de habitação dizem que leia o livro para obter respostas, para que obtenham menos cartas raivosas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu não sou muito irritado com carta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Meu último empregador teve um temperamento. É difícil Butler quando seu Daeva sempre jogando coisas.</p>
+<p> </p>
+<p>Você pode usar o [%dic:STR_DIC_E_Housing_CrystalOfRelationship]para visitar as casas dos amigos. É muito útil!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Leia o seu novo[%dic:STR_DIC_E_Housing_CrystalOfRelationship]Manual.</p></step>
+<step><p visible="[%3]">Fale com o seu[%dic:STR_DIC_E_Housing_Butler].</p></step>
+</steps>
+<p>Leia o Relacionamento Crystal Guide e converse com seu mordomo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu Butler lhe deu o Guia de Cristal de Relacionamento e pediu que você o leia com cuidado.</p>
+<p> </p>
+<p>Quando você falou com ele depois de ler o guia, seu mordomo confirmou que aprendeu um dos aspectos mais importantes de possuir uma casa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

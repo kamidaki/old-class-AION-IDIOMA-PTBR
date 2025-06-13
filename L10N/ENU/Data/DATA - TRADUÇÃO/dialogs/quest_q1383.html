@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username], não é? Eu ouvi muito sobre você. Eles dizem que você é um excepcional[%userclass].</p>
+<p> </p>
+<p>Um visitante talentoso em tal momento? Deve ser meu dia de sorte!</p>
+<p> </p>
+<p>Laigas no posto avançado de Kuriullu precisa de reforços, e eu estava procurando alguém adequado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que há de errado em Kuriullu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não está claro. Eles dizem que Griffons está bloqueando a estrada avançada.</p>
+<p> </p>
+<p>Pode ser sério. Laigas é um cara orgulhoso, mas ele está pedindo ajuda.</p>
+<p> </p>
+<p>E a montanha Kuriullu é um post importante. Eles fazem vigilância no bastião lefarista. Chegue lá, [%username]. Verifique a situação e livre -se daqueles[%dic:STR_DIC_M_Griffon_32_An] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu me dou[%dic:STR_DIC_M_Griffon_32_An] S são caçadores de luz do dia, então planeje de acordo.</p>
+<p> </p>
+<p>Depois de se forem, volte e me preencha.</p>
+<p> </p>
+<p>Se eles estiverem realmente com problemas, solicitarei reforços da Eltnen Fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, senhora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não vai fazer isso, não é?</p>
+<p> </p>
+<p>Vamos lá, será fácil!</p>
+<p> </p>
+<p>Bem, você sabe onde me encontrar, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Com certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo?</p>
+<p> </p>
+<p>Então, o que está acontecendo lá em cima?</p>
+<p> </p>
+<p>Os griffões lefaristas estão loucos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, uh, na verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é um alívio.</p>
+<p> </p>
+<p>Laigas fez um fedor tanto que pensei que poderia ser sério. Nunca o atrevi por um chorão. Hee!</p>
+<p> </p>
+<p>Obrigado por ajudar, de qualquer maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_M_Griffon_32_An] está bloqueando o caminho para o posto avançado de Kuriullu ([%2]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Lemia].</p></step>
+</steps>
+<p>Clear Hunter Griffons bloqueando a estrada para o posto avançado de Kuriullu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lemia queria que alguém limpe Griffons da estrada para o posto avançado de Kuriullu.</p>
+<p> </p>
+<p>Você foi embora Hunter Griffon na montanha Kuriullu e relatou de volta à Lemia que não havia necessidade de pedir reforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

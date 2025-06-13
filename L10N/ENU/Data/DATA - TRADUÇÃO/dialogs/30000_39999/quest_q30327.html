@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>As almas Daevic que eu sonhei estão presas no templo de Beshmundir, em um lugar conhecido como Averon Mire. Está tudo claro agora-com panela.</p>
+<p> </p>
+<p>Um xamã maligno tem mantido as almas presas. Ele usa seus gritos e dor para reunir energia ... Não sei dizer o quê, mas nenhum fim poderia justificar esses meios.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso deve terminar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Concordo. Devemos libertar as almas desses Daevas o mais rápido possível.</p>
+<p> </p>
+<p>Por favor, [%username], Eu preciso de sua ajuda. Esta tarefa está além de um daeva como eu ... e estou enfraquecido pelo uso do pó dos sonhos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve primeiro ir para o [%dic:STR_DIC_W_IDCatacombs_SZ_B3] Sob o templo de Beshmundir e encontrar [%dic:STR_DIC_N_Calike]. Ele está me enviando essas visões e poderá lhe dizer como você pode libertar os Daevas.</p>
+<p> </p>
+<p>Estou certo de que isso não será fácil, mas se alguém for capaz de fazê -lo, é você, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado por sua fé em mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento que você não consiga ajudar, [%username]. Pessoalmente, sinto que salvar as almas atormentadas de Daevas é uma tarefa que não podemos ignorar, mas talvez não seja seu dever me ajudar.</p>
+<p> </p>
+<p>Por favor, deixe -me. Devo procurar outros Daevas que estão mais dispostos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quando eu tiver mais tempo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>... Hero veio nos libertar ...</p>
+<p> </p>
+<p>... certo para não perder a esperança ...</p>
+<p> </p>
+<p>... deve acabar com nossa dor ... augh ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>... Macunbello usa a dor como combustível ....</p>
+<p> </p>
+<p>... Use a jangada ... cruze para ... UNF ... cruze para a ilha ... almas livres ... isso o enfraquecerá ....</p>
+<p> </p>
+<p>... [%dic:STR_DIC_E_IDCatacombsN_Lichkey4_55_Ae]Devo cair também ... rapidamente ... curto tempo ....</p>
+<p> </p>
+<p>... Só então ... você pode ... Ungh ... matar [%dic:STR_DIC_E_IDCatacombsN_LichNmd_55_Ah]....</p>
+<p> </p>
+<p>... quando estiver pronto ... fale com o homem do barco ... ele vai te levar ... erg ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sua dor terminará em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Não diga nada, [%username]. Eu sabia que você conseguiu o momento em que ocorreu. Ontem à noite nenhum sonho veio até mim. As almas dormem em paz, e eu também.</p>
+<p> </p>
+<p>Claramente, você destruiu este Macunbello.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">(Acenar.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, lembremos deles em silêncio, pois suas almas finalmente voltaram para o fluxo de Aether.</p>
+<p> </p>
+<p>Que os senhores Shedim os ajudem a encontrar paz ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Calike].</p></step>
+<step><p visible="[%3]">Livre as almas de Daevas e derrotar [%dic:STR_DIC_E_IDCatacombsN_Lichkey4_55_Ae]dentro do prazo determinado ([%5]/1).</p></step>
+<step><p visible="[%6]">Destruir [%dic:STR_DIC_E_IDCatacombsN_LichNmd_55_Ah]([%8]/1).</p></step>
+<step><p visible="[%9]">Relatar o resultado[%dic:STR_DIC_N_Unset].</p></step>
+</steps>
+<p>Libere as almas de Daevas, ligado ao Mire ACHERON e destrua seu atormentador, Macunbello.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Greeta disse que as almas Daevic estão sendo atormentadas em Acheron Mire sob o templo de Beshmundir.</p>
+<p> </p>
+<p>Você destruiu Macunbello, liberando as almas do tormento, e recebe seus pesadelos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

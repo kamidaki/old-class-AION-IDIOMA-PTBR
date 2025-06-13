@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora do ritual. Sinto a tempestade ática que está subindo.</p>
+<p> </p>
+<p>Selado em Indratu Fortaleza é a alma da espada do dragão. Eu vou te dar isso [%dic:STR_DIC_I_quest_3908a], que pode convocar o avatar da espada do dragão.</p>
+<p> </p>
+<p>Normalmente, é sem vida, mas quando o Aether chega ao xenito, essa habilidade única desperta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que devo fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para [%dic:STR_DIC_W_IDLF3_Castle_Indratoo] e procurar o [%dic:STR_DIC_OBJ_IDLF3Indratoo_FOBJ_Q3908]. Use a pedra de chamada para despertar o artefato e o Drake se mostrará.</p>
+<p> </p>
+<p>A espada do dragão escolhe seu mestre, então o Drake deve se submeter a você.</p>
+<p> </p>
+<p>Derrota [%dic:STR_DIC_M_LC1_DrakeVioletNamedQ_47_Ae] e me traga o [%dic:STR_DIC_I_quest_3908b]vai deixar para trás. Eu vou fazer o resto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O artefato Balaur é encontrado fora [%dic:STR_DIC_W_IDLF3_Castle_Indratoo]. Naturalmente, é fortemente guardado.</p>
+<p> </p>
+<p>Este é o teste final, então se apresse e volte com o [%dic:STR_DIC_I_quest_3908b]. Seu destino está à mão!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deseje -me sorte, Anusis!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cozinhou a sopa apenas para alimentar outra pessoa?!</p>
+<p> </p>
+<p>Temos todas as peças! Tudo o que resta é dominar o espírito da espada!</p>
+<p> </p>
+<p>É melhor você mudar de idéia!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É apenas uma espada. Relaxe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O avatar da espada do dragão seria difícil de lidar sozinha. É quase tão voluntário quanto alguém que eu poderia citar ....</p>
+<p> </p>
+<p>Ainda assim, vejo você em pé diante de mim. Só posso assumir que você sobreviveu.</p>
+<p> </p>
+<p>Você adquiriu o [%dic:STR_DIC_I_quest_3908b]? Você teve sucesso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não. Eu triunfei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu?</p>
+<p> </p>
+<p>A espada do dragão está aguardando ansiosamente seu mestre!</p>
+<p> </p>
+<p>Derrote o Avatar Malak e volte com a peça da alma! Estamos quase sem tempo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou saindo de uma vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é definitivamente a peça da alma. Veja como a lâmina e a alma ressoam?</p>
+<p> </p>
+<p>A espada aceitou você como seu mestre, [%username]. Você fez isso!</p>
+<p> </p>
+<p>Pegue sua lâmina, campeão. Você terá um novo aliado nas batalhas à frente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Invocar [%dic:STR_DIC_M_LC1_DrakeVioletNamedQ_47_Ae]no[%dic:STR_DIC_OBJ_IDLF3Indratoo_FOBJ_Q3908] e subjugá -lo, obter a prova e retornar a [%dic:STR_DIC_N_Anusis]</p>[%collectitem]</step>
+</steps>
+<p>Siga as instruções de Anusis e vá à fortaleza de Indratu para derrotar o Avatar Malak e obter a peça da alma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Anusis lhe disse que, para se tornar mestre da espada do dragão, você deve derrotar o avatar da espada do dragão e obter a peça da alma.</p>
+<p> </p>
+<p>Você levou a chave dada a você por Anusis ao artefato Balaur na fortaleza de Indratu e ali, Avatar Malak apareceu.</p>
+<p> </p>
+<p>Você derrotou o avatar e voltou com a peça da alma. Anusis deu a você o artefato completo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

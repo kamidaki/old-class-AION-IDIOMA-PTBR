@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei o que aconteceu.</p>
+<p> </p>
+<p>Presumi que a conquista da cidadela de Vorgaltem nos aproximaria um passo mais perto da vitória ...</p>
+<p> </p>
+<p>Mas se os asmodianos atacarem novamente, poderíamos perder a cidadela de Vorgaltem mais uma vez.</p>
+<p> </p>
+<p>Portanto, devemos distrair os asmodianos e fazê -los ir para Akaron.</p>
+<p> </p>
+<p>[%username], por favor, vá para o platô de Valpurah em Akaron e elimine alguns[plur][%dic:STR_DIC_M_LDF4_Advance_J_Rottentree_65_An]. Dessa forma, podemos chamar a atenção dos Asmodianos para Akaron.</p>
+<p> </p>
+<p>Esta é uma tarefa perigosa, mas acho que você a aceitará com facilidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos são persistentes e simplesmente não desistem.</p>
+<p> </p>
+<p>Nossas tropas não são fortes o suficiente para liderar um ataque direto.</p>
+<p> </p>
+<p>Os asmodianos foram distraídos com o nosso plano?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom!</p>
+<p> </p>
+<p>Isso nos permitirá manter nossa supremacia.</p>
+<p> </p>
+<p>Até que as tropas de reforço cheguem, daremos tudo de si e pararemos o inimigo.</p>
+<p> </p>
+<p>Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_J_Rottentree_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Stanis].</p></step>
+</steps>
+<p>Faça o pedido do Centurion Stanis e elimine os rotrons errantes!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Após a Batalha da Cidadela de Vorgaltem, Centurion Stanis encarregou você de viajar para Akaron.</p>
+<p> </p>
+<p>Em Akaron, você partiu para o platô de Valpurah. Você derrotou rotrons errantes enquanto estava lá.</p>
+<p> </p>
+<p>Você foi agradecido por realizar esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

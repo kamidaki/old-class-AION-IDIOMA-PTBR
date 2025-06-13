@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você está ... aproveitando a sua estadia no Haven?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">"É muito pacífico."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, pacífico ... na superfície ... mas em grave perigo.</p>
+<p> </p>
+<p>Humanos e Elim ... tanto sofrem. A corrupção na terra ... torna a comida escassa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, estou aqui para ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode ... aventurar -se na floresta Deathsong. Mesmo na morte ... nova vida cresce.</p>
+<p> </p>
+<p>Encontrar... [%dic:STR_DIC_I_QUEST_1573a] está crescendo de árvores antigas. Eles vão alimentar ... os humanos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cinco... [%dic:STR_DIC_I_QUEST_1573a] S irá alimentá -los ... um tempo mais.</p>
+<p> </p>
+<p>Por favor ... traga eles ... para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tome cuidado, elimine nobre."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você disse ... você ajudaria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu quis dizer mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se eu tivesse ... fruta para dar ... eu daria aos ... humanos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Espero que você não precise."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve lavar a corrupção ... da pele deles. Limpe -os nas águas ... que fluem do coração puro de Arbolu.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Considere isso feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem os cogumelos ... posso realmente precisar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você lava ... o cogumelo ... limpo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Limpe como um apito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os humanos ... devem comer bem esta noite. Mas amanhã ... quem sabe?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete 5[%dic:STR_DIC_I_QUEST_1573a] e leve-os para [%dic:STR_DIC_N_Tree_Move_Terba].</p>[%collectitem]</step>
+<step><p visible="[%3]">Purifique o [%dic:STR_DIC_I_QUEST_1573a]no[%dic:STR_DIC_I_start_spring].</p></step>
+<step><p visible="[%6]">Leve o cogumelo purificado para [%dic:STR_DIC_N_Tree_Move_Terba].</p></step>
+</steps>
+<p>Colete cogumelos da Floresta Deathsong para alimentar o povo do refúgio de Arbolu.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="2" showframe="true" time="5">The mushroom is cleansed of all corruption.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Terba, um Elim, queria garantir que os humanos no Haven de Arbolu permanecessem alimentados. Você trouxe cogumelos da Floresta Deathsong para ele.</p>
+<p> </p>
+<p>Ele os limpou de contaminação na primavera de Gênesis antes de alimentar -os a qualquer um.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

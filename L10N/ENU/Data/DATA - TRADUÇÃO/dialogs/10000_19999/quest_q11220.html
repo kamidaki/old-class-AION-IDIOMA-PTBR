@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. É ótimo ver você no templo das escalas! Na verdade, é ótimo ver que você ainda está vivo.</p>
+<p> </p>
+<p>Agora que o derramamento de sangue cessou por enquanto, provavelmente é uma boa idéia se estocarmos suprimentos e realizarmos alguns testes de manutenção em nossas defesas.</p>
+<p> </p>
+<p>Nunca podemos ter muita certeza ... especialmente neste lugar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sempre mais silencioso antes da tempestade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus pensamentos exatamente. A batalha para tomar este lugar queimou a maioria dos nossos suprimentos. É difícil permanecer abastecido ... já que estamos aqui na linha de frente, inimigos à esquerda e à direita.</p>
+<p> </p>
+<p>O santuário está muito longe, e Inggison está quase tão nu como nós. Se fossemos atacados agora, temo o que aconteceria.</p>
+<p> </p>
+<p>[%username], você me ajudaria a obter alguns suprimentos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que mais precisamos são armas e materiais para fortalecer as paredes da fortaleza ... mas não podemos chegar no momento. Mas eu pesquisei alguns substitutos decentes.</p>
+<p> </p>
+<p>Há[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An] está perto do Observatório de Campo Aetico. Sua pele é forte e durável ... deve fazer o truque.</p>
+<p> </p>
+<p>É uma correção temporária, mas deve nos manter fora de perigo se os ataques chegarem. Você pode encontrar [%dic:STR_DIC_I_QUEST_11220a] e trazer alguns de volta aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Por mais que eu possa encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É por isso que nós, Elyos, vimos tantos momentos difíceis, [%username]! Por causa de Daevas como você!</p>
+<p> </p>
+<p>Você é egoísta! Você não tem fé nos Senhores Empíreanos! Você não ajudará seu irmão quando ele estiver em necessidade!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os bugs não vão nos ajudar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você voltou, [%username]! Eu sinto que um ataque é quase iminente. Temos buracos do tamanho dos Kerubars nessas paredes!</p>
+<p> </p>
+<p>Você foi capaz de obter o que precisamos de [%dic:STR_DIC_M_LF4_C_DragonSnake_55_An] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as carapaças Leowasp."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que você está fazendo parado lá?</p>
+<p> </p>
+<p>Já temos os asmodianos medindo nossos pescoços para a forca, e o Balaur tem limpado suas taças para se encher com nosso sangue derramado!</p>
+<p> </p>
+<p>Chegue lá e cuba aqueles[%dic:STR_DIC_M_LF4_C_DragonSnake_55_An] S e me traga de volta suas peles! Cascas! Qualquer que seja! Precisamos da sua ajuda!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pegá -los agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os serradores são muito raros em Elysea ... pelo menos com pele como estes. Eu acho que eles se adaptaram a Balaurea.</p>
+<p> </p>
+<p>Isso deve ser suficiente para consertar as paredes da fortaleza por enquanto ... para impedir as bestas por um tempo.</p>
+<p> </p>
+<p>Em nome dos moradores do templo das escalas, eu gostaria de agradecer, [%username]. Não podemos dar muito tempo a você, mas por favor, leve isso ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer as peles de [%dic:STR_DIC_M_LF4_C_DragonSnake_55_An] para [%dic:STR_DIC_N_Chekius].</p>[%collectitem]</step>
+</steps>
+<p>Como Chekius solicitou, livre -se dos Serradores e traga de volta suas peles para consertar as paredes da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chekius disse que precisava urgentemente de suprimentos porque a batalha para capturar o templo das escalas usava o que eles haviam deixado.</p>
+<p> </p>
+<p>Você se livrou de serradores e trouxe de volta suas peles para uso para vários propósitos no templo. Ele agradeceu e recompensou sua coragem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

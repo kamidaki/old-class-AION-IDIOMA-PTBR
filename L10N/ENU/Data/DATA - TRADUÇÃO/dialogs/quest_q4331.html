@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], ajuda!</p>
+<p> </p>
+<p>É sobre os Spriggs! Depois que você entregou essa ameaça de morte a Mirka, nos sentamos e traçamos um plano para devastar completamente -os. Foi brilhante. Foi perfeito. Foi impecável.</p>
+<p> </p>
+<p>Então um dos spriggs de alguma forma entrou e o roubou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você não poderia inventar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei! Eu sou um idiota!</p>
+<p> </p>
+<p>Temos que recuperá -los, [%username]. Se eles tiverem a chance de ler nossos planos e, de alguma forma, descobrir o que estamos fazendo, reforçarão seus pontos fracos e teremos que começar do zero.</p>
+<p> </p>
+<p>Por favor! Por favor, traga os planos roubados de volta?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>OK. Bom!</p>
+<p> </p>
+<p>Agora, existem dois conjuntos de planos por aí. Um foi escrito por mim, o outro por Mirka. Precisamos recuperar os dois, caso contrário, os Spriggs nos descobrirão.</p>
+<p> </p>
+<p>Os planos provavelmente estarão no[%dic:STR_DIC_M_Sprigg2_32_An] Areia [%dic:STR_DIC_M_Sprigg3_33_An] S. Eles são os mais rápidos dos Spriggs e os que podem descobrir de que maneira fica ao norte dos planos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma maneira de descobrir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não! Estamos condenados!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você descobrirá algo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recuperou os planos?</p>
+<p> </p>
+<p>Por favor, diga sim! Estou tão nervoso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você estava procurando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, não é!</p>
+<p> </p>
+<p>Eu preciso de ambos[%dic:STR_DIC_I_QUEST_4331A] e [%dic:STR_DIC_I_QUEST_4331B]. Sem ambos, nossos planos são inúteis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou voltar para lá então!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Você fez isso!</p>
+<p> </p>
+<p>Você salvou minha vida, [%username], e talvez até a vila! Agora podemos começar e mostrar a esses spriggs o que acontece quando eles mexem com Alsig Village.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar o [%dic:STR_DIC_I_QUEST_4331A] e [%dic:STR_DIC_I_QUEST_4331B]que foram roubados pelos spriggs e devolvê -los a [%dic:STR_DIC_N_Adhis].</p>[%collectitem]</step>
+</steps>
+<p>Alguns Spriggs atrevidos conseguiram roubar planos elaborados por Adhis e Mirka. Recupere -os e entregue -os de volta a Adhis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Adhis disse que os Spriggs haviam roubado planos de batalha que haviam sido elaborados contra eles e implorou para você recuperar os rascunhos para a segurança da vila.</p>
+<p> </p>
+<p>Você encontrou os dois, os devolveu e salvou a vila de uma ameaça um tanto peculiar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

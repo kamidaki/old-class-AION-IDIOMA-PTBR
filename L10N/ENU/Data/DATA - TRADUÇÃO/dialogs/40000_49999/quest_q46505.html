@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Azphelumbra, daemons -</p>
+<p> </p>
+<p>Um curandeiro de alma nos contratou para exorcizar um fantasma chamado Romludon Vinging.</p>
+<p></p>
+<p>Como sempre, o orgulho dos daemons de Charlirunerk está em jogo. Não devemos falhar!</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_DF4_DaQ_AncientClan_ghost_Fi_52]</p>
+<p></p>
+<p>2. Local: Uma das cachoeiras no aumento de Dragões de Dragons</p>
+<p></p>
+<p>3. Detalhes: Espírito errante de um Daeva que se afogou durante uma missão. Ele voltou como um fantasma que tenta matar outros Daevas para se juntar a ele em sua miséria.</p>
+<p> </p>
+<p>O cliente forneceu um[%dic:STR_DIC_OBJ_DF4_FOBJ_Q46505]Para ajudar os daemons neste trabalho. Coloque essa pobre alma para descansar de uma vez por todas.</p>
+<p> </p>
+<p>- Charlirunerk, fundador, daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Um fantasma que assombra as cachoeiras ... tão sozinho ele mata pela companhia ... isso é assustador e triste, Nyerk.</p>
+<p> </p>
+<p>Como você mata o fantasma? Usar a máquina que dispara raios mágicos? Mas você é inteligente Daeva-você descobriu algo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele está morto .... er, se foi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que bom que você o derrotou! Gostaria de saber se existe algo como Shugo Ghost? Quão assustador-espero não!</p>
+<p> </p>
+<p>Eu vi esse cliente-ela parecia muito triste. Gostaria de saber se há alguma conexão? Espero que ela esteja mais feliz agora!</p>
+<p> </p>
+<p>Esta é a sua recompensa! Eu digo à irmã gêmea sobre essa história-ela vai adorar!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_OBJ_DF4_FOBJ_Q46505]para convocar [%dic:STR_DIC_M_DF4_DaQ_AncientClan_ghost_Fi_52] e destruí -lo ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_E_46500].</p></step>
+</steps>
+<p>Você tem uma tarefa dos daemons de Charlirunerk. Realizar o pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma missão dos daemons de Charliruners pedindo o exorcismo de Romludon vingativo.</p>
+<p> </p>
+<p>Usando um item especial fornecido pelo cliente, você destruiu o fantasma irritado e relatou os daemons para sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Busca [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

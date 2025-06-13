@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30754</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O ancião Reian Gartenion me pediu para enviar um Daeva para realizar uma missão urgente.</p>
+<p> </p>
+<p>Eu sei que você também está ocupado, mas você poderia ir para [%dic:STR_DIC_N_Garthenion]?</p>
+<p> </p>
+<p>Você é o único que eu ainda posso recorrer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, Udvi enviou você?</p>
+<p> </p>
+<p>Você veio bem a tempo. Quando fui ao mercado para comprar ingredientes mágicos, notei que ilegal[%dic:STR_DIC_E_Q30704e] estavam sendo vendidos lá.</p>
+<p> </p>
+<p>Shugo Garinrinerk está supostamente fornecendo -lhes ...</p>
+<p> </p>
+<p>Você poderia perguntar [%dic:STR_DIC_N_Shugo_LDF4b_10]onde ele conseguiu os fragmentos de Drazma.</p>
+<p> </p>
+<p>Se ele os obteve negociando com os balaurs, as ações devem ser tomadas imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está acontecendo, AK?</p>
+<p> </p>
+<p>Você está aqui para encontrar ... por acaso?</p>
+<p> </p>
+<p>Fragmentos de Drazma?</p>
+<p> </p>
+<p>Então venha novamente amanhã de manhã, AK. Não há nenhum no momento, AK. Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você pergunta a ele mais especificamente onde as lascas podem ser encontradas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akak!</p>
+<p> </p>
+<p>Garinrink é inocente, Akakak!</p>
+<p> </p>
+<p>Eu os vendi para Shulack[%dic:STR_DIC_N_NPC_Shulack_LF4a_8] em vez disso, e! Akakak!</p>
+<p> </p>
+<p>Vou deixar lá. Por favor, me dê um tempo, apenas uma vez, Ak. Se eu for expulso do grupo de apoio dos comerciantes, será o meu fim! AK. Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Argh, Shugo e sua boca grande!</p>
+<p> </p>
+<p>Ewww ...</p>
+<p> </p>
+<p>Por favor, não tenha a ideia errada! Não recebi os fragmentos de Drazma do Balaur!</p>
+<p> </p>
+<p>Há um pesquisador de Shulack especializado em[plur][%dic:STR_DIC_E_Q30704e], que trabalha em[%dic:STR_DIC_W_IDTiamat_SZ_R1].</p>
+<p> </p>
+<p>Por acaso, vi onde o Shulack Banakin descarta seu lixo e encontrei algumas coisas úteis entre as coisas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Você continua a ouvir.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se for ilegal, então eu simplesmente não farei mais, ok?!</p>
+<p> </p>
+<p>A única coisa que fiz foi vender bons materiais a um preço baixo. Se isso é um crime, então me prenda!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você de novo!</p>
+<p> </p>
+<p>Você terminou sua investigação sobre a fonte dos fragmentos de Drazma?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Banakin ... ouvi esse nome durante o evento em Dark Poeta.</p>
+<p> </p>
+<p>HM, não acredito que ambos são, mas nomes ... Oh, bem, obrigado por seus esforços e por me trazer os fragmentos de Drazma.</p>
+<p> </p>
+<p>Todo o Drazma no mercado será coletado em breve. E estou aliviado por saber que Larukin não tem relação com o Balaur.</p>
+<p> </p>
+<p>Eu o avisarei.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Garthenion].</p></step>
+<step><p visible="[%3]">Perguntar [%dic:STR_DIC_N_Shugo_LDF4b_10]onde ele conseguiu os fragmentos de Drazma.</p></step>
+<step><p visible="[%6]">Perguntar [%dic:STR_DIC_N_NPC_Shulack_LF4a_8]onde ele conseguiu os fragmentos de Drazma.</p></step>
+<step><p visible="[%9]">Relatório para [%dic:STR_DIC_N_Garthenion]</p></step>
+</steps>
+<p>Fragmentos ilegais de Drazma estão sendo vendidos no mercado. Identifique a origem dos fragmentos de Drazma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garthenion disse que os fragmentos ilegais de Drazma estavam sendo divulgados como materiais de pesquisa.</p>
+<p> </p>
+<p>Você conseguiu identificar Larukin como sendo a fonte. Ele encontrou os fragmentos entre as coisas que Banakin, um pesquisador de abundância, jogou fora.</p>
+<p> </p>
+<p>Quando você relatou isso a Garthenion, ele se perguntou se esse Banakin era a mesma pessoa responsável pelo incidente em Dark Poeta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

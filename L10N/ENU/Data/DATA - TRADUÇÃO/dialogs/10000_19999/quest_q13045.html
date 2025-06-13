@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deveria haver um monstro nomeado[%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An]Isso vive no distrito autônomo de Goldrinyerk desde os tempos antigos.</p>
+<p> </p>
+<p>Os Shugos sofreram muito por causa desse monstro.</p>
+<p> </p>
+<p>Eles devem realmente cuidar da segurança básica.</p>
+<p> </p>
+<p>Mas eles pediram ajuda. Suponho que não temos alternativa. Por favor, mate o [plur][%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An]?</p>
+<p> </p>
+<p>Os Shugos estão reclamando que as minhocas estão causando problemas.</p>
+<p> </p>
+<p>Devemos tentar matar as lombadas aquáticas para aplacar o shugo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que sorte. Isso significa que a paz retornará novamente.</p>
+<p> </p>
+<p>Vou dizer aos Shugos que eles não precisam mais se preocupar.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5B_E_WaterWorm_64_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Tragos_E]%.</p></step>
+</steps>
+<p>Mate a lama selvagem lama aquática.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>TRAGOS disse que tinha que matar a lama selvagem de lama aquática por causa das queixas de Shugo e pediu que você realizasse essa tarefa.</p>
+<p> </p>
+<p>Quando você matou a lama e voltou para ele, Tragos disse que agora seria capaz de viver em paz por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

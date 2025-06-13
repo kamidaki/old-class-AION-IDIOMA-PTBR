@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Figuras suspeitas estão se esgueirando pela fortaleza, não me deixando em paz!</p>
+<p> </p>
+<p>Eu suspeito que eles sejam revolucionários lefaristas.</p>
+<p> </p>
+<p>Se sim, eles carregam[plur][%dic:STR_DIC_I_quest_14110a]com eles. Você pode eliminá -los e ver se minhas suspeitas estão corretas?</p>
+<p> </p>
+<p>Se eles realmente são revolucionários lefaristas, eles terão os símbolos. Você precisará deles como evidência para se reportar ao Centurion!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+<voice file="Q1012-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Você tem o [plur][%dic:STR_DIC_QILA65]?</p>
+<p> </p>
+<p>Eu preciso disso como prova para o centurião.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os símbolos revolucionários.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado pelos símbolos!</p>
+<p> </p>
+<p>Vou levá -los ao Centurion e deixar ele saber qual é a situação atual.</p>
+<p> </p>
+<p>Aqui está uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [plur][%dic:STR_DIC_I_quest_14110a] e leve-os para [%dic:STR_DIC_LA153]no[%dic:STR_DIC_FLA09].</p>[%collectitem]</step>
+</steps>
+<p>Descubra as identidades das pessoas suspeitas se esgueirando pela fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Spiros contou sobre os rumores de que as pessoas suspeitas perto da fortaleza eram revolucionários lefaristas. Ele pediu que você descobrisse a identidade deles.</p>
+<p> </p>
+<p>Você os eliminou e reuniu seus símbolos revolucionários como prova. Spiros agradeceu, dizendo que agora poderia dar seu relatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Brave Daeva fará algo por mim?</p>
+<p> </p>
+<p>Sarinerk não tem mais ninguém para perguntar, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro. O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Às vezes, o sariento solta as coisas ... as mãos são tão, tão pequenas ....</p>
+<p> </p>
+<p>Não posso ir ao fundo para pegá -los, não. Muitos animais ferozes lá embaixo, Nyerk. E feio, sim.</p>
+<p> </p>
+<p>Sarinerk não é forte e corajoso como Daeva ... mas você é Daeva, sim? Você vai matá -los por Sarinerk, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva pode fazer Sarinerk tão feliz matando[%dic:STR_DIC_M_MillipedeReD_30_An] Areia [%dic:STR_DIC_M_BasiliskReD_30_An] S, sim.</p>
+<p> </p>
+<p>Sarinerk vai esperar aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Nyerk!</p>
+<p> </p>
+<p>Grande, importante e bonito Daeva não pode ajudar Sarinerk?</p>
+<p> </p>
+<p>Sarinerk está perdido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou muito ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva voltou!</p>
+<p> </p>
+<p>Eles se foram? Daeva os lutou e os matou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Deve estar seguro agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak, Sarinerk tão feliz! Pode cair para cair coisas sem medo!</p>
+<p> </p>
+<p>Eu quero lhe dar isso-um sinal de agradecimento de Sarinerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as criaturas no chão do templo.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_MillipedeReD_30_An]([%2]/7).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_BasiliskReD_30_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_DF2_4].</p></step>
+</steps>
+<p>Sarinerk disse que tinha medo dos Wrigging Wriggots e dos Basiliscos BlackScale e não conseguia caminhar até o chão do templo. Você decidiu eliminar as bestas para Sarinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarinerk não podia descer para o fundo do templo porque tinha medo das criaturas lá embaixo.</p>
+<p> </p>
+<p>Você eliminou Wriggling Wriggots e BlackScale Basilisks para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

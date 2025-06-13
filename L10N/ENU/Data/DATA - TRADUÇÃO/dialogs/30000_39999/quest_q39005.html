@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p></p>
+<p>1. Remetente: Ginikki da sala de operações do santuário</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Ordens: Mate [%dic:STR_DIC_NPC_DF2A_DirectPortal_Guard_Da_Eh], que está impedindo as operações em Brusthonin.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A defesa em Brusthonin é mais forte do que eu pensava.</p>
+<p> </p>
+<p>Os Elyos conquistarão este lugar no final.</p>
+<p> </p>
+<p>A operação de Brusthonin começa agora.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou o supervisor de canhão em Baltasar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você executou a ordem de emergência.</p>
+<p> </p>
+<p>[%username], obrigado por reagir tão rapidamente.</p>
+<p> </p>
+<p>Eu espero serviço contínuo de você, [%username].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_NSC_DF2A_DirectPortal_Guard_Da_Eh]([%2]/2)!</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_NSC_Arena_Geniki_E_LHM].</p></step>
+</steps>
+<p>Operação de operação urgente: elimine os detentores de canhões de Baltasar e se reporte a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos queriam impedir o operador de invasão de Elyos Brusthonin com o canhão. Você matou o supervisor de canhão em Baltasar e relatará o resultado a Ginikki.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

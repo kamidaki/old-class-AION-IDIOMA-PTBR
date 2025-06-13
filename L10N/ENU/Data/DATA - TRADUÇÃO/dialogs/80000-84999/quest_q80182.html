@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(A carta parece ser da mãe de Ryoenniya)</p>
+<p> </p>
+<p>(Diz "para minha querida filha Ryoenniya")</p>
+<p> </p>
+<p>(É melhor pegar a carta para Ryoenniya)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de verificar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que aconteceu?</p>
+<p> </p>
+<p>Você encontrou minha mãe?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você entrega a carta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso ... é a letra da minha mãe?!</p>
+<p> </p>
+<p>(A expressão de Ryoenniya fica mais escura enquanto ela lê a carta)</p>
+<p> </p>
+<p>(As mãos dela começam a tremer e a letra cai no chão)</p>
+<p> </p>
+<p>Mãe ... Mãe ... Iuiel ... não, isso é impossível !!!</p>
+<p> </p>
+<p>Iuiel e eu somos irmão e irmã ... iuiel é meu irmão !!!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você pergunta se está tudo bem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que caos ...</p>
+<p> </p>
+<p>(Ryoenniya olha para o espaço.)</p>
+<p> </p>
+<p>[%username], por favor, diga isso para Iuiel.</p>
+<p> </p>
+<p>Diga a ele ... que não posso aceitar sua proposta.</p>
+<p> </p>
+<p>(Ryoenniya parece triste e murmura para si mesma.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Como foi? Ela disse que sim?</p>
+<p> </p>
+<p>Estou morrendo de vontade de saber. Por favor, me diga rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você devolve o anel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ryoenniya ... como ... o quê? !!</p>
+<p> </p>
+<p>Por que ela não aceitaria meu anel? Ryoenniyaaaaaaaaa ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Você dá a Ryoenniya a carta.</p></step>
+<step><p visible="[%3]">Devolva o anel para Iuiel.</p></step>
+</steps>
+<p>Dê a carta a Ryoenniya e mande a mensagem dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A carta de sua mãe revela que Ryoenniya e Iuiel são irmãos. Ryoenniya está chocado.</p>
+<p> </p>
+<p>Você deu o anel de Iuiel de volta a ele a pedido de Ryoenniya.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

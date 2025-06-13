@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Stelman emitiu ordens.</p>
+<p> </p>
+<p>o [plur][%dic:STR_DIC_M_LDF5A_C2_Direbeast_Lio_63_An] estão ameaçando nossos aliados e precisam ser mortos.</p>
+<p> </p>
+<p>Stelman ordenou que esses animais fossem totalmente erradicados.</p>
+<p> </p>
+<p>[%username], por favor aceite a tarefa de combater o [plur][%dic:STR_DIC_M_LDF5A_C2_Direbeast_Lio_63_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você destruiu todos os Taigas furiosos?</p>
+<p> </p>
+<p>Stelman estava certo.</p>
+<p> </p>
+<p>Não podemos tolerar esses monstros atacando nosso povo.</p>
+<p> </p>
+<p>Sua natureza selvagem nunca mudará.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou relatar que você concluiu bem a tarefa.</p>
+<p> </p>
+<p>Como eles não foram todos eliminados, eu pediria que você ajudasse na próxima vez também.</p>
+<p> </p>
+<p>Afinal, o Taiga furioso representa uma ameaça que não deve ser subestimada.</p>
+<p> </p>
+<p>Por favor, tome isso como uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Siga as ordens de Stelman e punir o [plur][%dic:STR_DIC_M_LDF5A_C2_Direbeast_Lio_63_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5a_Nargel_E].</p></step>
+</steps>
+<p>Siga as ordens de Stelman e lute contra a taiga furiosa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nargel disse que a instrução veio de Stelman para destruir todos os taiga violentos porque haviam atacado nossos aliados.</p>
+<p> </p>
+<p>Você derrotou o Taiga furioso e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

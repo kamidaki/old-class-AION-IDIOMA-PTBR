@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15000</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Balaurea tem muito menos éter que Atreia. É por isso que é muito importante instalar os geradores do Aether aqui.</p>
+<p> </p>
+<p>Este lugar não é exceção. Precisamos de geradores de éter para operar sem problemas, mas agora encontramos problemas.</p>
+<p> </p>
+<p>Quando trouxe um gerador de Aether aqui, os espíritos me atacaram e roubaram minha mochila com as ferramentas de reparo.</p>
+<p> </p>
+<p>Eu já posso sentir o poder do gerador de Aether que diminui. Nem sequer suporta pensar nisso que pode ser minha culpa se esse gerador de éter não funcionar mais.</p>
+<p> </p>
+<p>[%username], você não poderia caçar o [plur][%dic:STR_DIC_M_LF5_A_Bookie_55_An]no[%dic:STR_DIC_W_LF5_SZ_A_01] e trazer mack meu[%dic:STR_DIC_I_quest_15000a]para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não consigo reparar o gerador de aether sem minhas ferramentas de reparo.</p>
+<p> </p>
+<p>Infelizmente, os espíritos alados roubaram minha mochila com as ferramentas de reparo. O que acontecerá se nunca for capaz de reparar o gerador de Aether?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a mochila.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Você realmente encontrou minha mochila! Muito obrigado.</p>
+<p> </p>
+<p>Por favor, espere um momento. Só vou verificar se minhas ferramentas de reparo não estão danificadas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2">Você espera.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>HMPF, realmente não estou com disposição para uma piada.</p>
+<p> </p>
+<p>Se eu não voltar minha mochila, não poderei reparar o gerador de Aether. São aqueles espíritos irritantes que são os culpados!</p>
+<p> </p>
+<p>Se eu não conseguir consertar o gerador de Aether, vou receber alta. Isso não deve ter permissão para acontecer, por favor me ajude!</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Olha, tudo ainda está lá! Até as ferramentas de reparo para o gerador de aether! Felizmente, eles parecem estar em ordem.</p>
+<p> </p>
+<p>Essas ferramentas de reparo foram submetidas à melhoria contínua e se tornaram extremamente leves! Eles são pequenos e gerenciáveis! E fácil como torta de usar! Essas ferramentas são a mais recente tecnologia que tem a oferecer.</p>
+<p> </p>
+<p>Devo mostrar como usá -los?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você não sente vontade, mas concorda de qualquer maneira.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Milar tenta usar as ferramentas de reparo.)</p>
+<p> </p>
+<p>O que ...? Hum? Por que não está funcionando? Primeiro assim ... e então ... talvez não?</p>
+<p> </p>
+<p>Por que continuo recebendo a mensagem "Você não pode usar esse item aqui"?</p>
+<p> </p>
+<p>Uh... [%username]...</p>
+<p> </p>
+<p>(Milar olha para você suportavelmente.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você aceita as ferramentas de reparo Milar entrega você.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi, [%username]?</p>
+<p> </p>
+<p>As ferramentas de reparo não funcionam mais, não é?</p>
+<p> </p>
+<p>Não importa com que frequência eu tente, a única resposta é "você não pode usar esse item aqui".</p>
+<p> </p>
+<p>Que tipo de ferramentas de reparo você precisa para reparar ferramentas de reparo quebradas? E onde eu os encontraria?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que terminou os reparos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau! Isso é brilhante! Você é um verdadeiro herói[f:"heroine"]!</p>
+<p> </p>
+<p>As ferramentas são muito delicadas, e nem todo mundo tem a habilidade de usá -las. Mas você os aplicou como um mestre!</p>
+<p> </p>
+<p>Muito obrigado! As chances são boas de que agora, não vou receber alta, afinal!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_quest_15000a] e trazê -lo para [%dic:STR_DIC_N_LF5_Milliard_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Milliard_E].</p></step>
+<step><p visible="[%6]">Use as ferramentas de reparo no gerador de Aether perto do[%dic:STR_DIC_W_LF5_SZ_OP_01].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_LF5_Milliard_E].</p></step>
+</steps>
+<p>Ajude Milar, o engenheiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Milar, o engenheiro do gerador Aether, perdeu a mochila contendo as ferramentas de reparo.</p>
+<p> </p>
+<p>Você eliminou os espíritos alados e trouxe a mochila para Milar, que estava preocupado com o fato de as ferramentas não funcionarem mais.</p>
+<p> </p>
+<p>Você testou as ferramentas de reparo perto do gerador Aether sem ter problemas. Milar ficou muito feliz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

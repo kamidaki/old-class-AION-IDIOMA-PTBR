@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard03_L]do[%dic:STR_DIC_W_LDF5a_A1_3]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: derrotar o asmodiano que se esgueirou no[%dic:STR_DIC_W_LDF5a_A1_A6] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você não puder formar uma linha de batalha adequada, poderá facilmente cair em uma armadilha.</p>
+<p> </p>
+<p>Você sempre precisa estar em guarda para evitar cair na armadilha.</p>
+<p> </p>
+<p>O que você acha? Você matou os asmodianos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>O plano asmodiano de matar os Elyos parece ter subido de fumaça.</p>
+<p> </p>
+<p>Obrigado a você, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5a_A1_A6] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard03_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou na região de Stelman, no norte de Katalam, e se reporte a seras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu ordens urgentes de seras para matar os asmodianos que invadiram a região de Stelman, no norte de Katalam, e assim os eliminou.</p>
+<p> </p>
+<p>Seas agradeceu e disse que o plano Asmodiano de matar os Elyos parece ter subido de fumaça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

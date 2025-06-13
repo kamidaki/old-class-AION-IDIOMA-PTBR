@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já ouviu falar de um grupo de shulacks chamado The NightShade Clan?</p>
+<p> </p>
+<p>Eu não os chamaria de notório, mas eles certamente fizeram minha lista de coisas para matar.</p>
+<p> </p>
+<p>Eu costumava considerá -los irritantes, mas agora quero considerá -los extintos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Nunca pode confiar em um shulack."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Especialmente shulacks que gostam de ladrões graves. Mas eles foram longe demais desta vez ... Eles estão expandindo sua empresa.</p>
+<p> </p>
+<p>Eles roubaram suprimentos do posto avançado de Inggison. Nosso posto avançado! Salvadores peludos!</p>
+<p> </p>
+<p>As probabilidades são que esses suprimentos já se foram há muito tempo, mas ainda precisam ser punidos. E eu sei o quanto você gosta de machucar coisas, [%username]. Algum interesse?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, bom. Mostre isso [%dic:STR_DIC_M_IDCatacombs_Shulack]O que eles recebem quando atravessam os Elyos, vai? E faça doer!</p>
+<p> </p>
+<p>Meus olheiros relataram que eles acabaram de se infiltrar [%dic:STR_DIC_W_ZONE_NAME_IDCatacombs], então eu aposto que eles estão indo atrás de relíquias de Balaur agora.</p>
+<p> </p>
+<p>Vá lá e mostre o clã da noite quão divertido suas gargantas terão em sua festa de faca!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bom, Outremus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não parece incomodá -lo tanto quanto deveria, [%username].</p>
+<p> </p>
+<p>Eu não acho que você entende a importância de matar esses shulacks!</p>
+<p> </p>
+<p>Se você parecer fraco para o seu inimigo, seus inimigos tentarão testá -lo. Repetidamente! Eles devem aprender sua lição ... agora!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Envie uma Guilda, não um soldado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ainda não consigo acreditar que aqueles shulacks do Outback tiveram a vantagem de nós, [%username]!</p>
+<p> </p>
+<p>Nós, os Elyos, possuímos o exército mais forte em toda Atreia. E alguns mangas de areia entram e roubam de nós? De nós?</p>
+<p> </p>
+<p>Você ensinou a esses shulacks uma coisa ou duas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os ensinei a morrer!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é excelente notícia, [%username]!</p>
+<p> </p>
+<p>Felizmente, toda essa raça sentirá a reação de mexer com os Elyos. Atravesse -me uma vez, vergonha para você ... me cruze duas vezes, vergonha para mim, não é?</p>
+<p> </p>
+<p>Eu te digo o que: da próxima vez que você vir qualquer shulack em qualquer lugar, você o bate em um fragmento sangrento!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_IDCatacombs_Shulack]([%2]/12).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Cainus].</p></step>
+</steps>
+<p>O clã noturno roubou suprimentos de um posto avançado da Elyos. Vá para o templo de Beshmundir e mostre a eles o que eles recebem em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Outremus ficou furioso por o clã noturno, um grupo de shulacks, roubar suprimentos do posto avançado de Inggison.</p>
+<p> </p>
+<p>Ele pediu que você os matasse para que Shulacks nunca roubasse os Elyos novamente, então você se livrou do clã noturno no templo de Beshmundir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

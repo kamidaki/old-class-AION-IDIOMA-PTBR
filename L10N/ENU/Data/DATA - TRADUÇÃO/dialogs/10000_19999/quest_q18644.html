@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um gabinete de exibição contendo armas de Kaliga.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você examina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Os canhões mágicos estão alinhados no gabinete de exibição.)</p>
+<p> </p>
+<p>(Eles parecem ser armas raras e boas.)</p>
+<p> </p>
+<p>(Você deve abrir o gabinete de exibição e dar uma olhada mais de perto.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete está firmemente bloqueado.)</p>
+<p> </p>
+<p>(Você provavelmente precisa da chave de Kaliga para abri -la.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Abra o gabinete.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você pensa sobre isso novamente, e os itens na vitrine não parecem ser úteis.)</p>
+<p> </p>
+<p>(Melhor apenas para deixá -los lá.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete está firmemente bloqueado.)</p>
+<p> </p>
+<p>(Você provavelmente precisa da chave de Kaliga para abri -la.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Abra o gabinete.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete não será aberto.)</p>
+<p> </p>
+<p>(Vamos ver se a Kaliga tem a chave.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A porta do gabinete de exibição foi aberta.)</p>
+<p> </p>
+<p>(Vou remover o canhão mágico e colocá -lo no cubo.)</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Abra o gabinete de armas usando a chave de Kaliga. Suas armas preferidas estão no rack dentro.</p>[%collectitem]</step>
+</steps>
+<p>Abra o gabinete de armas usando a chave de Kaliga e pegue uma arma que combina com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma chave da Kaliga, uma chave para o armário de exibição de armas.</p>
+<p> </p>
+<p>Você usou essa chave para abrir o gabinete de exibição que continha armas coletadas por Kaliga e escolheu uma arma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

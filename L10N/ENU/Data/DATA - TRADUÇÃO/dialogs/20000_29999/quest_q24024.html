@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe por que o observatório está envolto por nevoeiro denso? É por causa das árvores nepra que criam o nevoeiro.</p>
+<p> </p>
+<p>Essas árvores são guardadas por [%dic:STR_DIC_N_Hreidmar]. Um mistério que não está vinculado às leis da natureza.</p>
+<p> </p>
+<p>Ele tem poder sobre a natureza e todos os espíritos. Nem humanos nem Daevas podem fazer qualquer coisa com ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele acredita que tudo o que está envolto em névoa é seu reino, e ele não está muito feliz com o observatório.</p>
+<p> </p>
+<p>Preciso fazer amizade com Hreidmar para manter o observatório.</p>
+<p> </p>
+<p>A névoa diminuiu ultimamente, mas isso significa que Hreidmar ou as árvores nepra estão com problemas.</p>
+<p> </p>
+<p>No entanto, Hreidmar está muito orgulhoso de nos pedir ajuda. Talvez pudéssemos oferecer a ele nossa ajuda e apaziguá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há névoa Mane Mau aqui que poderia representar uma ameaça.</p>
+<p> </p>
+<p>Então vá ver [%dic:STR_DIC_N_Hreidmar] e procure uma solução para esse problema com ele.</p>
+<p> </p>
+<p>Se ele receber ajuda, talvez ele não mais se arrepie no Observatório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<voice file="Q2037-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Asmodian, o que você está fazendo aqui?</p>
+<p> </p>
+<p>Você ousa perturbar o descanso de Hreidmar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Tyr acredita que existem algumas dificuldades.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Mau se tornaram mais fortes por causa do Balaur. Eu admito que é um problema.</p>
+<p> </p>
+<p>Mas não tanto que eu precise da ajuda de como asmodianas tão indignas.</p>
+<p> </p>
+<p>Mas se você realmente quer me ajudar, pode tentar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Como podemos ganhar sua confiança?</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para [%dic:STR_DIC_W_DF2_SUB_E2]. A névoa Mane Mau o ocupou. Observe o que está acontecendo e encontre [%dic:STR_DIC_M_LycanWizardMDQ_38_Ae].</p>
+<p> </p>
+<p>Derrota [%dic:STR_DIC_M_LycanWizardMDQ_38_Ae]. Ela representa um risco para o nepra.</p>
+<p> </p>
+<p>A névoa Mane Mau está colocando em risco o nepra.</p>
+<p> </p>
+<p>Não posso permitir que isso continue.</p>
+<p> </p>
+<p>Se você fizer isso, você ganhará a confiança de Hreidmar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+<voice file="Q2037-5.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está de volta!</p>
+<p> </p>
+<p>Bom, Hreidmar mudou sua opinião sobre nós? Nesse caso, é graças aos seus encantos.</p>
+<p> </p>
+<p>Haha, não puxe um rosto assim. Foi uma piada, apenas uma piada.</p>
+<p> </p>
+<p>Mas, sério, você fez o que Hreidmar perguntou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hahaha, muito bom, muito bom! Isso foi bem feito.</p>
+<p> </p>
+<p>Agora ele não terá mais nada para reclamar quando empreendermos algo.</p>
+<p> </p>
+<p>Aqui, uma recompensa por seus esforços. Por favor, aceite -os!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Tyr]no[%dic:STR_DIC_W_DF2_SUB_E1_1].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Hreidmar].</p></step>
+<step><p visible="[%6]">Vá para o [%dic:STR_DIC_W_DF2_SUB_E2] e observe o que a névoa Mane Mau está fazendo.</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_M_LycanWizardMDQ_38_Ae]([%11]/1).</p></step>
+<step><p visible="[%12]">Retornar ao[%dic:STR_DIC_W_DF2_SUB_E1_1] e reportar a [%dic:STR_DIC_N_Tyr].</p></step>
+</steps>
+<p>Ordens: Tyr, Protetor do Campo Aetico, como uma missão envolvendo Hreidmar. Vá ver Tyr.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tyr pediu que você o ajudasse a estabelecer um melhor relacionamento com Hreidmar.</p>
+<p> </p>
+<p>Quando você encontrou Hreidmar, ele disse que confiaria nos asmodianos se você espiasse no altar do dragão negro e derrotasse o Spiritchaser Parunru.</p>
+<p> </p>
+<p>Então você examinou o altar do Dragão Negro, matou o Spiritchaser Parunru e ganhou a confiança de Hreidmar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

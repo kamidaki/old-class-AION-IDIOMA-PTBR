@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que temos que ficar aqui nesta área até que o problema do Kerub seja resolvido. Trabalhamos longas, horas difíceis, o salário é pobre e alguns moradores sentem que pagar mercenários significa que eles podem nos tratar como seus servos!</p>
+<p> </p>
+<p>Sou uma lâmina contratada, não um correio feliz! Eu mereço mais dinheiro do que isso. Então comecei a procurar alguns empreendimentos próprios. Perguntei pela cidade e acho que atingi o ouro, por assim dizer.</p>
+<p> </p>
+<p>São os moradores-todos adoram cogumelos! Eles crescem no subsolo e, se você souber onde cavar, pode fazer com que eles os vendam um pouco.</p>
+<p> </p>
+<p>A melhor parte é que os moradores têm muito medo dos animais aqui para reuni -los por conta própria! O único problema que me enfrenta agora é a competição.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Outros os estão vendendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha. Não exatamente. Estou falando sobre o [%dic:STR_DIC_MLA135] S. Eles comem cogumelos como asmodianos comem sujeira e estão felizmente mastigando meus lucros agora.</p>
+<p> </p>
+<p>Eu estava pensando, se dois de nós trabalhamos juntos, poderíamos eliminar a competição! Nós dois abordamos alguns dos Bellepigs, e vou garantir que você obtenha um corte saudável do lucro que obtenho.</p>
+<p> </p>
+<p>O que você acha?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Escolha inteligente, [%username]. Eu sabia que poderia contar com você.</p>
+<p> </p>
+<p>Apenas vá um pouco mais longe na floresta, e você encontrará bastante [%dic:STR_DIC_MLA135] para começar. Nos encontraremos aqui quando terminar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ok. Vejo você em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe, houve um voto para aceitá -lo na unidade, [%username]. Vou te dizer agora, falei para você, quando outros eram contra a ideia.</p>
+<p> </p>
+<p>Eu acho que estava errado. Afinal, você não é um mercenário real.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho trabalho adequado a fazer, Ampeis."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Feito com o [%dic:STR_DIC_MLA135]já é?</p>
+<p> </p>
+<p>Ainda não saí para fazer a minha parte! Você deve ser muito rápido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu cuidei das coisas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo trabalho! Agora posso chegar ao meu lugar favorito e coletar um bom lote de cogumelos!</p>
+<p> </p>
+<p>Tive um bom pressentimento sobre você, quando votamos pela primeira vez para deixar você entrar na unidade. Vejo agora que estava certo em falar em seu nome.</p>
+<p> </p>
+<p>Aqui está o seu corte. Um bom dia de trabalho nem sempre é sua própria recompensa, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [%dic:STR_DIC_MLA135] S que estão roubando cogumelos ([%2]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA69].</p></step>
+</steps>
+<p>Ampeis tem um trabalho paralelo coletando cogumelos. No entanto, os bellepigs shortbristle os cheiram e comem todos eles. Ajude Ampeis reduzindo seus números.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ajudou Ampeis a recuperar o emprego dele caçando os Bellepigs que estavam comendo os cogumelos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

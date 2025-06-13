@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere ... fazendo aritmética na minha cabeça ... apenas um momento.</p>
+<p> </p>
+<p>Lá ... 54.211. Desculpe mantê -lo esperando.</p>
+<p> </p>
+<p>Se eu perder o controle dos números, tenho que obter um novo pergaminho e começar de novo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que está no pergaminho?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse? É uma lista mestre de todo o material de guerra que estamos requisitando.</p>
+<p> </p>
+<p>E uma grande fortaleza requer uma longa lista. Sinto falta de uma coisa, e-você nunca sabe-que uma coisa pode virar a maré da batalha.</p>
+<p> </p>
+<p>Você sabe o que iria encurtar minha lista ...? UM[%userclass]Como você, poderia ignorar todo o processo de requisição e obter certos itens diretamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os guardas florestais da fortaleza pediram o enxofre que se espalhasse em suas pontas de flecha. Isso os faz explodir em chamas. AAH, as flechas, não os Rangers.</p>
+<p> </p>
+<p>E encontrando ... bem, este é o arquipélago de enxofre, afinal. Você pode encontrar [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An] Areia [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An] Aqui. Eles serão perfeitos para isso.</p>
+<p> </p>
+<p>Extrair o seu[%dic:STR_DIC_I_QUEST_2819a]. Ele pega fogo facilmente-apenas o que mancha em uma ponta de flecha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então eu vou sair."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que recusar? Você não tem medo daqueles monstros de árvores, não é?</p>
+<p> </p>
+<p>Acho que não imaginei o interesse próprio nos meus cálculos. Bem, vou voltar às minhas equações ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles são o que você é melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver ... primeiro, externo, interior, por último ... certo? Deixe -me terminar este cálculo, e eu estarei certo com você.</p>
+<p> </p>
+<p>OK. Se você trouxe a seiva de enxofre para nós, posso atravessá -la da minha lista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Olha Você aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem feito todo esse tempo?</p>
+<p> </p>
+<p>Devo explicar seus modos ociosos, [%userclass]? Não me faça começar de novo!</p>
+<p> </p>
+<p>Obtenha a seiva de [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An] e [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]. Você está fazendo sua parte pelo esforço de guerra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver ... carregue um ... Recurso ... ah sim, excelente!</p>
+<p> </p>
+<p>Isso é suficiente, mas você sabe como os Rangers estão com setas de fogo.</p>
+<p> </p>
+<p>Volte para mim sempre que encontrar seiva de enxofre. Vou compensá -lo no local.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar a seiva de [%dic:STR_DIC_M_Ab1_1141_AgrintB_29_An] Areia [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An], e leve para [%dic:STR_DIC_N_Ab1_1141_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>A fortaleza de enxofre ficou sem enxofre. Colete a seiva de enxofre necessária para fazer flechas de fogo de brasas secas e gritos de árvores e levá -lo a Gudharten.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gudharten prefere adquirir suprimentos de guerra localmente do que requisitá -los. A seiva de enxofre, por exemplo, pode ser reunida no local, e é útil para os Rangers que guardam a fortaleza.</p>
+<p> </p>
+<p>Quando você voltou com seiva de enxofre coletada de brasas secas e gritando TreeGards, Gudharten ficou satisfeito por não ter que se preocupar com o enxofre por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

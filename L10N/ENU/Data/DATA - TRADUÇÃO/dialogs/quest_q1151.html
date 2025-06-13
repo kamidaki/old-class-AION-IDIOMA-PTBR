@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver o que era tão urgente que um Daeva precisa ser empregado ...</p>
+<p> </p>
+<p>Oh .... isso é realmente sério.</p>
+<p> </p>
+<p>Oh querida, espero que ele esteja bem ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Seu pai?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, tio Belbua.</p>
+<p> </p>
+<p>Ele enviou uma carta ao meu pai há quase um mês dizendo que ele estaria visitando a Cidadela em alguns dias. É apenas uma curta caminhada e ele não ouviu nada desde a carta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez ele tenha atrasado sua viagem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, ele teria dito algo-severa outra carta.</p>
+<p> </p>
+<p>Algo deve ter acontecido na estrada ....</p>
+<p> </p>
+<p>[%username], Eu odeio perguntar logo depois que você dedicou um tempo para entregar esta carta-nossa família já perguntou o suficiente de você-mas você acha que poderia verificar meu tio? Se algo acontecesse com ele, eu provavelmente não sobreviveria a procurá -lo. Eu não sou muito lutador, mas um Daeva ...</p>
+<p> </p>
+<p>O que você acha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_FLA24] está no caminho para a Cidadela da Verteron, na floresta do norte de Tolbas.</p>
+<p> </p>
+<p>[plur][%dic:STR_DIC_MLA122]ocupou a fazenda. Por favor, verifique -os quanto a pistas do paradeiro do meu tio.</p>
+<p> </p>
+<p>Pode ser difícil encontrá -lo vivo e bem ... mas pelo menos tenho que descobrir o que aconteceu com ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde estão suas prioridades?</p>
+<p> </p>
+<p>Você pode entregar uma carta, mas não pode procurar meu tio, quem pode ser mantido refém ou pior enquanto perdemos tempo conversando sobre isso?</p>
+<p> </p>
+<p>Por favor, mude de idéia! Meu pai ficaria com o coração partido se algo acontecesse com Belbua.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou meu tio?</p>
+<p> </p>
+<p>Por favor, você deve me dizer!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Olhar...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou aqui sem uma resposta, [%username]? Meu estômago está em nós! Eu não consegui comer, e você apenas de volta para mim, meu tio esquecido?</p>
+<p> </p>
+<p>Eu preciso saber que ele está bem!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou correr de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O diário do meu tio! Oh, olhe para a última página: "Eu poderia jurar agora que um homem mascarado estava do lado de fora da minha janela. Saí da cama e ele desapareceu na noite".</p>
+<p> </p>
+<p>Oh não ... sua entrada final: "O mascarado voltou com os amigos. Estou gravemente ferido e eu me barricatei ... explosão, eles estão vindo ... adeus manos". Oh ... tio Belbua ....</p>
+<p> </p>
+<p>Não sei como vou contar ao meu pai. Eles estavam tão próximos ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [plur][%dic:STR_DIC_MLA122]para pistas do paradeiro de Belbua e trazê -los para [%dic:STR_DIC_LA23].</p>[%collectitem]</step>
+</steps>
+<p>Belbua, tio de Qydro, está faltando. Encontre uma pista para o seu paradeiro.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Belbua, tio de Qydro, estava faltando.</p>
+<p> </p>
+<p>Você foi à fazenda de Belbua e encontrou um diário que sugeria que ele foi morto pelos lefaristas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

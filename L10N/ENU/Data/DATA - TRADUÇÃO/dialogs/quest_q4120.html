@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4120</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está certo na hora, [%username].</p>
+<p> </p>
+<p>Muitas almas pobres que foram feridas e mortas pelos nobres simplesmente não conseguem descansar.</p>
+<p> </p>
+<p>Os barulhos dos nobres celebradores vindos da fortaleza da ADMA acrescentam ainda mais sua tristeza.</p>
+<p> </p>
+<p>Eu descobri que o [%dic:STR_DIC_M_Adma_LichHighNamedK_50_Ae] Segura uma bola na fortaleza da ADMA todas as noites.</p>
+<p> </p>
+<p>Mate -o para trazer paz eterna às almas torturadas.</p>
+<p> </p>
+<p>Em seguida, vá para Lukmann no limite do tormento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não está aqui para aprender habilidades, isso é claro.</p>
+<p> </p>
+<p>Deve ser importante.</p>
+<p> </p>
+<p>Por que você veio me ver? Falar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre os eventos na fortaleza da ADMA.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo expressar minha gratidão.</p>
+<p> </p>
+<p>Como Brusthonin foi contaminado, muitas almas não conseguem encontrar paz.</p>
+<p> </p>
+<p>Estamos fazendo um esforço para limpar essa área e trazer paz às almas que vagam aqui. Mas esses eventos continuam se repetindo.</p>
+<p> </p>
+<p>[%username], todos começaram com Beritra.</p>
+<p> </p>
+<p>A guerra com Beritra deve ser encerrada para que Brusthonin encontre paz.</p>
+<p> </p>
+<p>Mas tenha cuidado se você esbarrar nele no futuro!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_Adma_LichHighNamedK_50_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Lukmann]na beira do tormento.</p></step>
+</steps>
+<p>Mate o Bard Guionbark na fortaleza da ADMA.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Surt, líder da equipe Reaper, disse que a música proveniente da fortaleza da ADMA estava deixando os espíritos ainda mais tristes.</p>
+<p> </p>
+<p>O Bard Guionbark segurava uma bola todas as noites.</p>
+<p> </p>
+<p>A pedido de Surt, você matou Bard Guionbark na fortaleza da ADMA e se reportou de volta a Lukmann.</p>
+<p> </p>
+<p>Lukmann disse que Beritra era culpado por todos os problemas e que ele deve ser eliminado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

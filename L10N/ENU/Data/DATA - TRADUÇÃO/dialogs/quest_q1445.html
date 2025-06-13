@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, tudo o que preciso fazer é entregar esse minério de platina ao santuário.</p>
+<p> </p>
+<p>Somente, tenho algumas preocupações ... Originalmente, planejei enviá -lo através do Shugo Express Mail, mas estou ... bem, estou sem dinheiro.</p>
+<p> </p>
+<p>Descobri que precisava de Adamantium e Platinum.</p>
+<p> </p>
+<p>É muito difícil conseguir Adamantium aqui. Isso me custou um pouco mais do que eu esperava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece caro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você já me ajudou, então mais uma vez não vai doer, vai, vai, [%username]?</p>
+<p> </p>
+<p>Se você está indo assim, você poderia entregar este pacote para [%dic:STR_DIC_N_Vulcanus].</p>
+<p> </p>
+<p>Eu o bombardeei com mensagens sobre a armadura, então ele provavelmente está esperando por isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por aceitar meu pedido.</p>
+<p> </p>
+<p>Você só precisa levá -lo para [%dic:STR_DIC_N_Vulcanus], o mestre armoursmith em santuário.</p>
+<p> </p>
+<p>Tenho certeza de que ele está ansioso para continuar meu pedido. É um alívio saber que em breve terei minha armadura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor eu continuar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você me trouxe o minério de platina, mas ainda não tenho como entregá -lo ao santuário. Eu realmente não sei o que fazer.</p>
+<p> </p>
+<p>Mesmo se eu quisesse usar o Shugo Express Mail, não podia pagar ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O que é? Sou um especialista em armadura movimentada, você sabe.</p>
+<p> </p>
+<p>É um desafio todos os dias apenas para preencher os pedidos que recebo. Eu tenho que fazer ofertas aos Senhores Empíreanos, enviar itens para o abismo e ainda encontrar tempo para preencher as ordens pessoais.</p>
+<p> </p>
+<p>Por que estou te dizendo isso quando estou tão ocupado?!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu trouxe alguns materiais de Tanis."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o curandeiro da alma em Eltnen finalmente conseguiu isso, não é? Ele está me implorando por sua armadura, mas ele quer algumas decorações muito excêntricas, então eu tive que pedir que ele forneça os materiais.</p>
+<p> </p>
+<p>Se ele quer sua armadura tão mal, não posso adiar. Qualquer coisa para calá -lo. Vou começar a elaborar agora.</p>
+<p> </p>
+<p>Obrigado por entregar isso, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar os materiais para a armadura [%dic:STR_DIC_N_Vulcanus].</p></step>
+</steps>
+<p>Tanis pediu que você entregasse os materiais para sua armadura para Vulcanus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tanis não tinha dinheiro para enviar seu minério de platina para o santuário através do Shugo Express Mail.</p>
+<p> </p>
+<p>Você foi em nome dele e entregou os materiais de armadura a Vulcanus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

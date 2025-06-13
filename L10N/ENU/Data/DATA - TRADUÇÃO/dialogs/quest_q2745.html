@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Você veio na hora certa! Eu tenho uma missão secreta importante, [%username], isso requer alguns voluntários finos, ah, que possam trabalhar independentemente da Guilda.</p>
+<p> </p>
+<p>Vários Daevas de renome foram recomendados, mas acho que você tem as melhores asas para realizar a missão, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma missão secreta? Continue falando ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Ellies conseguiram montar o ponto de ligação na ilha abandonada-eles pagaram caro por esse território-agora eles procuram uma chance de atacar a fortaleza. Capturamos essa fortaleza com sangue de asmodianos, não podemos perdê -lo novamente. Devemos expulsar os ellies espalhados pelo sol das asas do arquipélago de Siel imediatamente!</p>
+<p> </p>
+<p>Decidimos tomar a iniciativa e destruir o [%dic:STR_DIC_OBJ_1131_AttackTower_Li]na ilha abandonada. Sem a torre de guarda, esses ellies explodidos estarão poeira embaixo das asas!</p>
+<p> </p>
+<p>Bem, você é o Daeva certo para o trabalho? Você vai realizar esta missão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Vá agora para a ilha abandonada. O ponto de ligação do inimigo está em algum lugar no centro da ilha e é guardado pelo[%dic:STR_DIC_OBJ_1131_AttackTower_Li].</p>
+<p> </p>
+<p>Esteja avisado, quando você chegar perto, os guardas Elyos atacarão imediatamente.</p>
+<p> </p>
+<p>Você deve lutar pelas linhas inimigas e destruir esse ponto de ligação, essa missão será mais difícil do que ordenhar um touro Brax, mas eu sei que [%username]que você pode lidar com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora a Siel Western Fortaleza esteja agora em nossas mãos, não podemos decepcionar nossa guarda!</p>
+<p> </p>
+<p>Se mostrarmos algum sinal de fraqueza, esses ellies atacarão com uma vingança vil.</p>
+<p> </p>
+<p>O ataque é a melhor defesa, você não acha? Este plano falhará sem você liderá -lo, por favor, reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi um barulho terrível! Gritos, gritos e lamentos ecoaram pela fortaleza. O que aconteceu? Você destruiu o [%dic:STR_DIC_OBJ_1131_AttackTower_Li]</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A torre não existe mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh, sua reputação é bem merecida.</p>
+<p> </p>
+<p>Obrigado. Aqueles ellies simperadores não ousarão retornar às asas do arquipélago de Siel em breve.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_1131_AttackTower_Li]na ilha abandonada ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Ab1_1131_Quest_Da].</p></step>
+</steps>
+<p>Lirhel pediu que você atacasse os Elyos que estabeleceram um ponto de ligação na ilha abandonada. Vá para a ilha e destrua a torre de guarda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lirhel estava preocupado com o fato de Elyos ainda cobiçar a fortaleza ocidental de Siel, que agora está sob controle de asmodianos. Ele queria expulsar os Elyos.</p>
+<p> </p>
+<p>Como ele solicitou, você destruiu a torre de guarda para enfraquecer as forças de Elyos na ilha abandonada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

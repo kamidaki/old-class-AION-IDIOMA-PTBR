@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É mais difícil do que pensei pela primeira vez, esse negócio neutralizado de venenos do pântano.</p>
+<p> </p>
+<p>O santuário precisa de mais do que apenas as amostras de Ribbit que enviamos seu caminho antes.</p>
+<p> </p>
+<p>Meliodas está preocupado com esse fogo há dias. Ele diz que as árvores não estão falando com ele, mas ele certamente as reduz com um gosto! Eu não gostaria de enviar -lhe mais profundamente ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que o santuário precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que o santuário não precisa? A lista é tão longa ....</p>
+<p> </p>
+<p>No topo, porém, estão amostras da planta do pântano que cresce por aqui. Eles o encontraram em outro lugar também, para que possam compará -los com a variedade não infectada.</p>
+<p> </p>
+<p>Estou muito ocupado para recolhê -los, mas preciso enviá -los para o santuário rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa de um voluntário?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Um voluntário é exatamente o que eu preciso!</p>
+<p> </p>
+<p>Isso e alguns[%dic:STR_DIC_QILA85] S. Você está pronto para isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais uma vez, você entra quando eu precisar de você!</p>
+<p> </p>
+<p>É melhor você continuar. Lembre -se de obter sete raízes do[%dic:STR_DIC_ELA82] está ao redor do pântano. Santum pediu vinte e, com muito esforço, consegui ter treze.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Bem, é isso, então. É melhor você estar a caminho. Apenas me faça o favor de avisar alguém que você vê para não entrar no pântano, não é?</p>
+<p> </p>
+<p>Eu tenho trabalho a fazer ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu todo o [%dic:STR_DIC_QILA85] S Pedi? Eles têm uma forma muito única e não devem ser muito difíceis de encontrar.</p>
+<p> </p>
+<p>Eu realmente preciso limpar esta área ... por minha própria causa ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as raízes da sua planta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso não está certo.</p>
+<p> </p>
+<p>Você sabe de qual planta eu estou falando, certo? Eles são as plantas redondas e vermelhas que você vê pontilhadas sobre o local. Não posso sentir falta deles quando você souber como eles são.</p>
+<p> </p>
+<p>Pressa, [%username]. Preciso neutralizar esse veneno assim que puder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto logo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, perfeito!</p>
+<p> </p>
+<p>Muito obrigado, [%username]! Você ajudou nosso povo, os peregrinos e eu.</p>
+<p> </p>
+<p>Por favor, pegue isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_QILA85] S do[%dic:STR_DIC_FLA17] e trazê -los para [%dic:STR_DIC_N_Roseino].</p>[%collectitem]</step>
+</steps>
+<p>O santuário precisa de amostras de plantas do pântano. Colete as raízes das plantas do pântano e leve -as para Roseino.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Roseino pediu ajuda para coletar amostras de plantas para enviar para o santuário. Você coletou raízes da planta do pântano contaminado e as trouxe para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

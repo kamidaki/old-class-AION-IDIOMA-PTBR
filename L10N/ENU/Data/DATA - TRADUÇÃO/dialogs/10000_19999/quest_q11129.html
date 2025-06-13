@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Estou precisando urgentemente de sua ajuda!</p>
+<p> </p>
+<p>De acordo com nossos relatórios de inteligência, os asmodianos descobriram sobre o Silentera Canyon ... então há uma boa chance de que eles invadissem o posto avançado de Inggison neste exato momento.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu já ouvi isso também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei como esse relatório é válido, mas seria um desastre se o templo das escalas e o altar da avareza caíssem para os asmodianos.</p>
+<p> </p>
+<p>Eu preciso que você chegue lá e faça o que puder para salvar nossas bases e ajudar [%dic:STR_DIC_M_LF4_2111_Boss_Li_1]o agente. Ela só emprestará sua força assim que falharmos ... assim que nossas bases forem perdidas.</p>
+<p> </p>
+<p>Eu sei que ela precisará da ajuda de um grande [%userclass]como você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Eu sabia que poderia contar com você. Mas antes de sair para o posto avançado de Inggison, consulte o intendente da Ordnance Jondas para comprar o [%dic:STR_DIC_I_QUEST_11129a].</p>
+<p> </p>
+<p>E se o posto avançado realmente caiu para os asmodianos, use a bênção da concentração no concentrador de Aether de Veille.</p>
+<p> </p>
+<p>Se o concentrador de Aether de Veille receber mais de 100 bênçãos, ela poderá usar o avatar Empíreo ... então faça a bênção pelo menos 10 vezes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Veille O agente é muito apreciado por Lord Kaisinel. Ele não ficaria satisfeito se o dano acontecesse com ela.</p>
+<p> </p>
+<p>Eu só digo isso porque é o seu nome que vou mencionar se devemos perder o posto avançado de Inggison, ou se o dano ocorrer seu discípulo favorito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso é desnecessário, Daeva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você usou a bênção da concentração no concentrador de Aether de Veille?</p>
+<p> </p>
+<p>Eu conhecia o seu[%userclass] As habilidades seriam úteis, [%username].</p>
+<p> </p>
+<p>Sua bravura será mencionada em meus relatórios.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, [%username], Eu só concedo este item a alguém que ajudou a Veille o agente.</p>
+<p> </p>
+<p>E posso dizer sem dúvida que o lorde Empíreo Kaisinel também está bastante satisfeito com você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_I_QUEST_11129a] Sobre [%dic:STR_DIC_M_LF4_2111_Boss_Li_1]é o Aether Concentrator para dar poder ao agente ([%2]/10).</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Laestrygos].</p></step>
+</steps>
+<p>Use a bênção da concentração no concentrador de Veille para aumentar o poder do agente de Kaisinel Veille durante um ataque de asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laestrygos pediu que você emprestasse suas forças para investigar o agente no posto avançado de Inggison.</p>
+<p> </p>
+<p>Quando você seguiu as instruções dele usando a bênção da concentração, ele elogiou seu esforço e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

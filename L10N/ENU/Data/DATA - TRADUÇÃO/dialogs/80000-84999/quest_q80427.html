@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que há valiantes Daevas, como você, que fazem a sua parte para proteger asmodae.</p>
+<p> </p>
+<p>Por favor, ajude o protetorado de atreia asmodae.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Como posso ajudá-lo?</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Por favor, pare os shulacks de saquear.</p>
+<p> </p>
+<p>Os piratas de aço estão roubando de nós neste exato momento.</p>
+<p> </p>
+<p>Por favor, elimine [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]no ancinho de aço.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos mostrar a eles do que nós, asmodianos e você, Daeva, somos feitos!</p>
+<p> </p>
+<p>Para a glória dos asmodianos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos mais recuar. Daeva!</p>
+<p> </p>
+<p>Vá enfrentar o inimigo o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você matou[%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]no ancinho de aço ([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_GEMINI].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_GEMINI]pediu para você eliminar [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]no ancinho de aço.</p>
+<p>Matar [%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_GEMINI]Do protetorado de Asmodae, pediu que você eliminasse o chefe Koakoa no aço.</p>
+<p> </p>
+<p>Você eliminou o artilheiro -chefe Koakoa em[%dic:STR_DIC_N_EVENT_GUARD_GEMINI] Solicitação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

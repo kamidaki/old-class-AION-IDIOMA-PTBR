@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vi você entrar em colapso. O que aconteceu com você?</p>
+<p> </p>
+<p>Um sprigg pegou você napin '? Você escorregou? Você está doente?</p>
+<p> </p>
+<p>Não nos diminua, [%username]. Temos a invadida para fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou bem. Não foi nada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Estou feliz que você esteja bem, então.</p>
+<p> </p>
+<p>Rapidamente![%dic:STR_DIC_N_Vandarnt]quer ver você.</p>
+<p> </p>
+<p>Ele viu você no chão há um minuto, então você terá que pular. Você não quer que ele pense que estava dormindo no trabalho.</p>
+<p> </p>
+<p>Apresse -se, ele está esperando por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É mais parecido.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Vandarnt] está de pé ali, bem por um marco. Apenas mantenha o caminho e se apresse lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?</p>
+<p> </p>
+<p>O que você tem, [%username]?</p>
+<p> </p>
+<p>Se você vai chegar neste mundo, não pode se dar ao luxo de ser preguiçoso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho que ir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]... Sentindo -se melhor?</p>
+<p> </p>
+<p>Surpreso em vê -lo no chão. Você parecia mais difícil do que a maioria dos aspirantes a atacantes que chegamos por aqui.</p>
+<p> </p>
+<p>Você teve sorte de não termos pressa. Enviei os outros para rasgar as habitações de Sprigg por aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isso não vai acontecer de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso que eu quero ouvir.</p>
+<p> </p>
+<p>Precisamos de todo o [%userclass] S podemos colocar nossas mãos, especialmente com essas nossas cotas.</p>
+<p> </p>
+<p>Então, chega de conversa. Há trabalho a ser feito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_Vandarnt].</p></step>
+</steps>
+<p>Você ouviu que Vandar estava esperando por você. Siga o caminho e encontre -o.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Por algum motivo, você desmaiou. Quando você acordou, Asak disse para você conversar com Vandar.</p>
+<p> </p>
+<p>Vandar disse que tinha que ter certeza de que você estava apto para invadir, e ele lhe disse que havia cotas pesadas para se encontrar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

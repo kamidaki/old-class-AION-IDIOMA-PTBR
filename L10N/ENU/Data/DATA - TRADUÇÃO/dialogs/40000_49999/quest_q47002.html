@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Turbo], Marchutan anterior</p>
+<p>Tarefa: coletar [%dic:STR_DIC_I_quest_48602a] S</p>
+<p> </p>
+<p>O general Suthran deseja um exame das armas mau da garra negra e de suas fraquezas.</p>
+<p>Encontre a [%dic:STR_DIC_E_Mentor] e lutar [%dic:STR_DIC_M_LycanFighterS_16_Ae] S, [%dic:STR_DIC_M_LycanSeekerS_17_Ae] Areia [%dic:STR_DIC_M_LycanWarriorS_16_Ae] S no posto avançado da garra preta.</p>
+<p>Traga -me deles[%dic:STR_DIC_I_quest_48602a] para estudo. Mantenha os olhos abertos e esteja disposto a aprender.</p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece uma tarde divertida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Mau pode parecer selvagem irracional, mas garanto que eles são tudo menos.</p>
+<p> </p>
+<p>Felizmente, as lanças de garra devem nos dizer a quais materiais e habilidades eles têm acesso, especialmente do Balaur.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Acho que recebemos o suficiente para estudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu peço desculpa mas não concordo. Lembre -se, se você e seu mentor se separam, poderá não encontrar o [%dic:STR_DIC_I_quest_48602a] S você precisa.</p>
+<p> </p>
+<p>Ou você não conseguiu encontrar um mentor? Nesse caso, encorajo você a redobrar seus esforços.</p>
+<p> </p>
+<p>Não se trata apenas do seu próprio desenvolvimento, você sabe. Isso seria arrogante. A própria Altgard se beneficiará da sua tarefa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Então por que Altgard não está fazendo isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes devem fazer bem. Vou levá -los ao general Suthran assim que terminarmos aqui.</p>
+<p> </p>
+<p>Você e seu mentor fizeram bom trabalho. Já posso ver sua força crescendo.</p>
+<p> </p>
+<p>Aqui estão algumas recompensas adicionais do Priorado. Parabéns pelo seu sucesso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], colete e leve [%dic:STR_DIC_I_quest_48602a] para [%dic:STR_DIC_N_Turbo].</p>[%collectitem]</step>
+</steps>
+<p>O Priorado do Marchutan tem uma tarefa. Encontre um mentor, derrote os combatentes da garra negra e leve suas armas para estudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Priorado do Marchutan pediu que você colecionasse as armas de lutadores de garra preta Mau para estudar.</p>
+<p> </p>
+<p>Com seu mentor, você derrotou brutais guerreiros da garra preta, brutais pesquisadores de garras pretas e brutais perseguidores de garra pretos e coletavam suas lanças de garra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

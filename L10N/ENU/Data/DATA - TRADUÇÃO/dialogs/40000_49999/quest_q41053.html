@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Avançamos para o território de Aspida e ocupamos a 22ª guarnição após uma luta amarga.</p>
+<p> </p>
+<p>A guarnição é uma base chave para interromper outros avanços dos inimigos da fortaleza de ferro e impedir que a 42ª Guilda recuperasse a fortaleza de Pangea.</p>
+<p> </p>
+<p>Não devemos permitir que um local tão estratégico caia nas mãos inimigas.</p>
+<p> </p>
+<p>[%username], proteja a 22ª guarnição e mate o [%dic:STR_DIC_E_pangaea_enemy_all]vagando ao redor do[%dic:STR_DIC_W_GAb1_02_Filed02].</p>
+<p> </p>
+<p>Quem sabe o que aconteceria se o inimigo ocupasse a guarnição.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Recentemente, fomos atacados por um[%userrace], que murmurou algo ininteligível.</p>
+<p> </p>
+<p>Não deixe as aparências externas o enganarem em Pangea.</p>
+<p> </p>
+<p>Você matou o inimigo que estava ameaçando a guarnição?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um ótimo trabalho nesta missão.</p>
+<p> </p>
+<p>Eles podem não entregar a guarnição, mas com sua ajuda, podemos pelo menos relaxar por um tempo, [%username].</p>
+<p> </p>
+<p>Mas defender Pangea contra a 42ª Guilda e outros inimigos é apenas o começo.</p>
+<p> </p>
+<p>Por favor, continue nos apoiando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_pangaea_enemy_all] em[%dic:STR_DIC_W_GAb1_02_Filed02], que está de olho na 22ª guarnição ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_E_GAb1_02_Village02_Guard]. Ele aparecerá se a guarnição for mantida por aliados.</p></step>
+</steps>
+<p>Elimine o inimigo no 2º distrito de Aspida, que está de olho na 22ª guarnição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O capitão da 42ª tropa de ocupação pediu que você eliminasse o inimigo no 2º distrito de Aspida, a fim de defender a guarnição, que sofreu muito esforço para capturar.</p>
+<p> </p>
+<p>Depois de matar o inimigo invasor e voltar ao capitão, ele agradeceu, dizendo que a batalha só havia começado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

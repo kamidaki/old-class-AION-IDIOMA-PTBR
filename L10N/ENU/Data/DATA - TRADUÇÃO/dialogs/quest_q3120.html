@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3120</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Descobri alguém chamado Guionbark durante minhas observações da fortaleza da ADMA ...</p>
+<p> </p>
+<p>Ele parecia muito desconfiado, então eu verifiquei os mais recentes pôsteres procurados. E ele é de fato desejado!</p>
+<p> </p>
+<p>Você poderia se infiltrar na fortaleza e eliminar [%dic:STR_DIC_E_L_DF2a_Q3120]?</p>
+<p> </p>
+<p>Vou compartilhar a recompensa com você, é claro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou apenas classificando os mais recentes pôsteres procurados.</p>
+<p> </p>
+<p>Você poderia voltar mais tarde?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é você, Daeva! Você eliminou Bard Guionbark?</p>
+<p> </p>
+<p>Espere um momento ... bardo ...</p>
+<p> </p>
+<p>(Rumma na carta de investigação.)</p>
+<p> </p>
+<p>Aqui está! A pessoa que elimina Bard Guionbark receberá ... um milhão de Kinah!</p>
+<p> </p>
+<p>Insano!</p>
+<p> </p>
+<p>(Limpa a garganta e lança um olhar furtivo.)</p>
+<p> </p>
+<p>Quero dizer, a tarefa não foi tão difícil. Aqui, esse valor parece uma recompensa adequada.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_L_DF2a_Q3120]na fortaleza da ADMA ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Rovilance].</p></step>
+</steps>
+<p>Você derrotou o bardo a pedido da Rovilance.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rovilance encontrou o pôster "Wanted" de Bard Guionbark e pediu que você o eliminasse.</p>
+<p> </p>
+<p>Você realizou a tarefa, mas a Rovilance manteve a maior parte da recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

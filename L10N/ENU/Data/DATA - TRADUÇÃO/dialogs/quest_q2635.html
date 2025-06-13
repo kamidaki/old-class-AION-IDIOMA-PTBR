@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não sabemos quantos Balaur invadiram aqui. Tudo o que sabemos é que existem muitos.</p>
+<p> </p>
+<p>Sabemos que o quartel de Bakarma é a sede do Balaur que invadiu Beluslan.</p>
+<p> </p>
+<p>O mais perigoso entre eles inclui o [plur][%dic:STR_DIC_M_G6_FeA_NagaFiD_44_Ae_tune], o [plur][%dic:STR_DIC_M_G6_FeB_NagaFiD_45_Ae_tune] e o [plur][%dic:STR_DIC_M_G6_KeB_NagaKnD_45_Ae_tune].</p>
+<p> </p>
+<p>Não temos tempo a perder. Esses nagarantes precisam ser eliminados imediatamente.</p>
+<p> </p>
+<p>Você poderia aceitar esta missão, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi? Você mata todos eles?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ainda mais para ir, mas eu deixei minha marca."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um ótimo trabalho.</p>
+<p> </p>
+<p>Isso deveria ter dado um golpe no moral da batalha do Balaur.</p>
+<p> </p>
+<p>Que a paz das trevas esteja com você!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os nagarrantes no quartel de Bakarma.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_G6_FeA_NagaFiD_44_Ae_tune]([%2]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_G6_FeB_NagaFiD_45_Ae_tune]([%5]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_G6_KeB_NagaKnD_45_Ae_tune]([%8]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_DF3_Fafner_E].</p></step>
+</steps>
+<p>Elimine os nagarrantes no quartel de Bakarma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Fafner, os Nagarantes no quartel de Bakarma representavam uma grande ameaça.</p>
+<p> </p>
+<p>Você derrotou os nagarantes da Guilda Bakarma e voltou para Fafner.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15044</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Daevasas usam aether. No entanto, como Balaurea sempre possuía pouco éter, Reian recorremos ao uso do poder de Drana.</p>
+<p> </p>
+<p>Como muitos dos antigos territórios de Tiamat ficaram submersos no dia da grande ofensiva, estamos experimentando uma escassez de Drana.</p>
+<p> </p>
+<p>Diz -se que a nova região é uma terra esquecida que pertencia a Tiamat, por isso esperamos encontrar Drana aqui.</p>
+<p> </p>
+<p>Se você descobrir [plur][%dic:STR_DIC_I_quest_15044a]no[%dic:STR_DIC_W_LF5_SZ_D_01], você os levaria para nós? Definitivamente vou compensá -lo por seus esforços.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É claro que existe um mero fato de que sobrevivemos no dia da grande ofensiva é uma bênção em si, mas o Reian desaparecerá em breve sem Drana.</p>
+<p> </p>
+<p>Devemos encontrar Drana com urgência, antes que isso aconteça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as sementes de Drana.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são ... essas sementes de drana realmente selvagens?</p>
+<p> </p>
+<p>Hmm ... existem apenas algumas sementes de Drana, mas elas realmente parecem possuir as mesmas propriedades que a nossa própria Drana.</p>
+<p> </p>
+<p>Se conseguirmos melhorá -los e aprimorá -los, ele deve dar força ao Reian sobrevivente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Fico feliz em ouvir isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é algum tipo de piada nova entre Daevas?</p>
+<p> </p>
+<p>Suas mãos estão vazias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são ... essas sementes de drana realmente selvagens?</p>
+<p> </p>
+<p>Hmm ... existem apenas algumas sementes de Drana, mas elas realmente parecem possuir as mesmas propriedades que a nossa própria Drana.</p>
+<p> </p>
+<p>Se conseguirmos melhorá -los e aprimorá -los, ele deve dar força ao Reian sobrevivente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Fico feliz em ouvir isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, há um vislumbre de esperança para os sobreviventes da Reian. Tudo graças a você, [%username], porque você encontrou sementes de drana.</p>
+<p> </p>
+<p>Eu nunca vou esquecer o que devemos a você.</p>
+<p> </p>
+<p>Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procurar [plur][%dic:STR_DIC_I_quest_15044a] e reportar a [%dic:STR_DIC_N_LF5_Rokola_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Rokola_E].</p></step>
+</steps>
+<p>Procure sementes de Drana para os sobreviventes da tribo Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rocela lhe disse que, após a destruição do continente, os Reians haviam perdido o acesso a Drana, sua fonte de poder.</p>
+<p> </p>
+<p>Ele pediu que você procure sementes de Drana Wild para apoiar os sobreviventes da Reian. Quando você cumpriu esse pedido, ele ficou feliz e prometeu que nunca te esqueceria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

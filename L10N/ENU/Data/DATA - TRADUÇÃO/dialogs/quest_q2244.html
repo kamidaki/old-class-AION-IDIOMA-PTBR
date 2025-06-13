@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, ajude -nos, Daeva!</p>
+<p> </p>
+<p>Temos um lago aqui, mas não podemos beber.</p>
+<p> </p>
+<p>Todos nós vamos morrer de sede!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós nos acomodamos aqui por causa de [%dic:STR_DIC_W_DF1A_22].</p>
+<p> </p>
+<p>Nós pensamos que a água próxima a tornava o lugar perfeito, mas as fitas também, e há muitos deles! Não sabemos o que fazer!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sempre que vamos para a água, as fitas nos atacam! Temos muito medo até tentar agora!</p>
+<p> </p>
+<p>Por favor, ajude -nos, Daeva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Nunca esqueceremos sua gentileza!</p>
+<p> </p>
+<p>Por favor, caça 5[%dic:STR_DIC_M_DebrieD_16_An] para nós.</p>
+<p> </p>
+<p>Mate os mais próximos da vila primeiro, por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar deles para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai ficar lá se recusar para ajudar os "animais falantes?" Você é como todos os outros?</p>
+<p> </p>
+<p>Bem, se você satisfez sua curiosidade sobre "falar Spriggs", por favor, deixe nossa aldeia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou te ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Fez o [%dic:STR_DIC_M_DebrieD_16_An] está te dá muitos problemas?</p>
+<p> </p>
+<p>Eu sei que não foi fácil, mesmo para alguém como você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não foi tão ruim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora podemos pegar nossa água-muito obrigado!</p>
+<p> </p>
+<p>Nunca esqueceremos sua bondade, Daeva!</p>
+<p> </p>
+<p>Aqui, pegue isso. Não é muito, mas quero mostrar minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DebrieD_16_An]%s no lago Gribade Crater. ([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_NPC_Gerger_2].</p></step>
+</steps>
+<p>Os aldeões Gerger lhe disseram que é realmente difícil para eles obter água potável por causa das fitas violentas. Mate as fitas verdes que vivem no lago Crater.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gercus reclamou que os Gergers não podem chegar à água potável por causa das fitas. Quando você matou as fitas para eles, eles ficaram satisfeitos por agora poder ir ao lago sem serem atacados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

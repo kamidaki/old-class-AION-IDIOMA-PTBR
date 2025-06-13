@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A Academia Kaisinel, não, todo o santuário está ciente de suas ações, [%username].</p>
+<p> </p>
+<p>Se você dominar o desafio desta vez também, [%username], você realmente será digno de entrar no Hall of Fame do coliseu Crisol.</p>
+<p> </p>
+<p>O que você acha? Você quer colocar suas habilidades à prova mais uma vez?</p>
+<p> </p>
+<p>Você teve sucesso quatro vezes até agora, tenho certeza de que também terá sucesso desta vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>Estou muito curioso, mas primeiro, a prova.</p>
+<p> </p>
+<p>Estou falando sobre o símbolo da glória que só é concedido aos vencedores na arena da glória.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as insígnias da glória.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ser sincero, nem mesmo eu poderia ter conseguido isso. Você é excepcionalmente bom.</p>
+<p> </p>
+<p>Ajoelhar -se, [%username], para que eu possa lhe dar sua recompensa.</p>
+<p> </p>
+<p>E desta vez não será concedido por Walzen, o chefe da Academia Kaisinel, mas pelo próprio Kaisinel.</p>
+<p> </p>
+<p>Você honra a Academia Kaisinel com suas habilidades extraordinárias que você demonstrou no coliseu Crisol, [%username]. Eu concordo com você o título de glória.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir o [%dic:STR_DIC_I_quest_vip_01a] e leve para [%dic:STR_DIC_N_Junos].</p>[%collectitem]</step>
+</steps>
+<p>Colete o símbolo da glória que é dado aos vencedores na arena da glória e mostre a Kaisinel como você é capaz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Junos, o instrutor, garantiu que ela diria a Kaisinel suas habilidades se você tivesse sucesso na arena da glória.</p>
+<p> </p>
+<p>Você trouxe o símbolo da glória que recebeu depois de ganhar para Junos, o instrutor, que concedeu um título de glória em nome de Kaisinel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

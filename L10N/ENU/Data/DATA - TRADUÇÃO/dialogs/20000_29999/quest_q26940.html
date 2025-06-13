@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q26940</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Encontramos a localização do Laboratório de Pesquisa de Baruna. E também descobrimos que o Exército de Beritra está conduzindo pesquisas sobre a tecnologia Abismo lá.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E], um agente dos arcontes do anoitecer, tem a tarefa de monitorar o laboratório. Ele pediu ajuda há pouco tempo.</p>
+<p> </p>
+<p>[%username], por favor, vá conhecê -lo. Ele provavelmente descobriu algo importante.</p>
+<p> </p>
+<p>Se queremos derrotar o Balaur, temos que nos familiarizar com a tecnologia deles. Você é melhor do que todos os nossos agentes. É por isso que quero enviá -lo ao Laboratório de Pesquisa de Baruna para fazer essa missão.</p>
+<p> </p>
+<p>Por favor, ajude [%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E]. A propósito, você encontrará o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]perto da primavera de Akaron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio, finalmente. Você é nossa última esperança!</p>
+<p> </p>
+<p>A situação é terrível e não temos tempo a perder. Vou te contar tudo imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre a situação em laboratório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode imaginar, o laboratório é um lugar muito perigoso. Não será fácil se infiltrar.</p>
+<p> </p>
+<p>O Laboratório de Pesquisa de Baruna é um edifício com três andares e oito quartos em cada andar.</p>
+<p> </p>
+<p>Se você eliminar o [%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An], você poderá ver o dele [%dic:STR_DIC_I_quest_26940a].</p>
+<p> </p>
+<p>Precisamos disso[%dic:STR_DIC_I_quest_26940a]Para aprender sobre a tecnologia do Exército de Beritra.</p>
+<p> </p>
+<p>Não há tempo a perder! Reunir os dados de pesquisa e levá -los a [%dic:STR_DIC_N_LDF4_Advance_Helgund_E] em Akarin.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+<cutscene id="900"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estava no laboratório de pesquisa de Baruna?</p>
+<p> </p>
+<p>Você obteve o [%dic:STR_DIC_I_quest_26940a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de pesquisa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então esses são os dados de pesquisa do Exército de Beritra.</p>
+<p> </p>
+<p>Podemos usar isso para descobrir que tipo de pesquisa o Exército de Beritra está fazendo.</p>
+<p> </p>
+<p>A tecnologia do Balaur é muito mais avançada que a nossa neste domínio.</p>
+<p> </p>
+<p>Eu tenho que passar isso imediatamente. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]para chegar ao laboratório de pesquisa de Baruna. Fale com [%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E].</p></step>
+<step><p visible="[%3]">Eliminar o [%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An], obtenha o diário de pesquisa contendo o [%dic:STR_DIC_I_quest_26940a] e leve para [%dic:STR_DIC_N_LDF4_Advance_Helgund_E].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o Laboratório de Pesquisa de Baruna, colete dados de pesquisa do Abismo e leve -os para Helgund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pintor sugeriu que você visse como a pesquisa no Laboratório de Pesquisa de Baruna estava chegando.</p>
+<p> </p>
+<p>Você reuniu dados de pesquisa do Abismo no laboratório e o levou para Helgund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

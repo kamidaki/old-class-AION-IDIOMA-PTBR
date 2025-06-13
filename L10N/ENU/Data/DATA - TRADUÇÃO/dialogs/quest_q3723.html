@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é vital que privamos o balauro de suas armas e suprimentos ... mas eu estive brincando com outro plano.</p>
+<p> </p>
+<p>Em vez de simplesmente destruir os braços, eu gostaria de roubá -los ... envie -os para o Santum para pesquisas, talvez dê um pouco às nossas tropas.</p>
+<p> </p>
+<p>Isso mataria dois corvos com uma flecha, certo? Tire deles, dê para nós ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Um bom plano, mas difícil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eu concordo com você lá. Mas você conseguiu todas as tarefas atribuídas a você até agora.</p>
+<p> </p>
+<p>Como você está indo para o Chantra Dredgion, veja se é uma possibilidade. Veja se você pode arrebatar alguns de seus suprimentos no processo.</p>
+<p> </p>
+<p>Você pode lidar com isso, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estou pedindo que você traga de volta o arsenal inteiro, Daeva. Tente e coloque suas mãos nesses[%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723]dos deles.</p>
+<p> </p>
+<p>Você pode destruir todo o resto, mas traga de volta esses suprimentos! Eles devem estar no armazém de suprimentos ... ou verificar os trabalhadores de Shulack. Está lá em algum lugar.</p>
+<p> </p>
+<p>Sei que você terá as mãos cheias de lutar contra esses selvagens, mas apenas veja o que você pode fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não deve ser um problema, Yannis."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei, eu sei, é uma tarefa difícil.</p>
+<p> </p>
+<p>A maioria dos Daevas não seria capaz de fazer isso. Eu só esperava que você pudesse ter conseguido.</p>
+<p> </p>
+<p>Você fez o suficiente para a nossa causa, [%username]. Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, Yannis. Fé e armas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca pensei que viveria para ver os dias em que nossos inimigos tinham algo como uma draga.</p>
+<p> </p>
+<p>Beasts difíceis, não são? Mas pelo menos agora sabemos que eles não são imbatíveis! Graças a você, é isso.</p>
+<p> </p>
+<p>Como foi a operação? Você trouxe de volta os suprimentos de Balaur?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Correu bem. Aqui estão os suprimentos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma operação difícil, [%username], e eu entendo sua hesitação. Mas você deve fazer isso, e você deve fazer isso agora.</p>
+<p> </p>
+<p>Eu já emiti meu relatório ao santuário informando -os sobre o que você está fazendo na draga, então não perderia mais tempo.</p>
+<p> </p>
+<p>Envolue suas asas e pegue essas[%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou indo para lá agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Armas de aparência estranha, não são? Como eles brigam com essas coisas?</p>
+<p> </p>
+<p>Bem, eu os enviarei para o Santum pela manhã ... veja o que eles fazem deles.</p>
+<p> </p>
+<p>Você é sem dúvida um dos melhores daevas que já tive o prazer de trabalhar, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete o [%dic:STR_DIC_OBJ_IDDreadgion_02_Drakanbox_Q3723] e trazê -los para [%dic:STR_DIC_N_Yannis].</p>[%collectitem]</step>
+</steps>
+<p>Uma operação foi criada para destruir a draga de Chantra e tomar o suprimento de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yannis disse que pode ser uma boa idéia roubar alguns suprimentos de Balaur antes de destruir a maioria deles.</p>
+<p> </p>
+<p>Então você trouxe os suprimentos de Balaur de volta a Yannis, e ele agradeceu, dizendo que os enviará ao santuário para pesquisas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

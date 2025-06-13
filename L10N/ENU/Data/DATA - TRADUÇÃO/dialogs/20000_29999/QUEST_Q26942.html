@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q26942</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O Exército de Beritra está pesquisando a tecnologia Abismo no Laboratório de Pesquisa de Baruna.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E], um agente dos arcontes do anoitecer está atualmente investigando o laboratório, mas ele solicitou ajuda.</p>
+<p> </p>
+<p>[%username], nós asmodianos devemos ficar juntos. Você ajudaria nosso agente?</p>
+<p> </p>
+<p>Temos que descobrir o que o Exército de Beritra está pesquisando. Além disso, só temos uma chance contra eles se a tecnologia Balaur for superior à nossa. Você é a pessoa certa para esta missão.</p>
+<p> </p>
+<p>Por favor, vá ao Laboratório de Pesquisa de Baruna imediatamente e fale com[%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E]. Você encontrará o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]perto da primavera em Akaron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está certo na hora. Que sorte!</p>
+<p> </p>
+<p>A situação é grave e não temos tempo a perder. Vou explicar a situação para você agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você pergunta sobre a situação em laboratório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>No momento, não há nada além de caos aqui. Devemos usar esta situação.</p>
+<p> </p>
+<p>O Laboratório de Pesquisa de Baruna compreende três níveis, cada um com oito quartos.</p>
+<p> </p>
+<p>Eliminar o [plur][%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An]no interior do laboratório de pesquisa e recuperar seus[plur][%dic:STR_DIC_I_quest_26942a].</p>
+<p> </p>
+<p>Vamos examinar o deles[plur][%dic:STR_DIC_I_quest_26942a] em detalhes. Dessa forma, não vamos apenas ultrapassar -os na pesquisa, mas também descobriremos como eles foram capazes de estabelecer um corredor de invasão.</p>
+<p> </p>
+<p>Há outra coisa que quero pedir a você. Preciso de uma amostra de sangue do monstro que causou todo o caos no laboratório de pesquisa. Uma oportunidade como essa não se apresenta com frequência, então, por favor me ajude.</p>
+<p> </p>
+<p>Por favor, leve essas coisas com segurança para [%dic:STR_DIC_N_LDF4_Advance_Helgund_E] Akaron imediatamente. Estou confiando em seus recursos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+<cutscene id="900"></cutscene>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estava no laboratório de pesquisa de Baruna?</p>
+<p> </p>
+<p>Você conseguiu o [%dic:STR_DIC_I_quest_26942b] e o [plur][%dic:STR_DIC_I_quest_26942a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os dados de pesquisa e o sangue do monstro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, esses são os dados de pesquisa secreta do Laboratório de Pesquisa de Baruna? Ah, sim, você também conseguiu obter uma amostra com sangue monstro. Bom trabalho!</p>
+<p> </p>
+<p>Você me trouxe materiais realmente valiosos. Agora eu posso usar esses materiais para descobrir até que ponto o Exército de Beritra passou com suas pesquisas sobre a tecnologia Abismo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo isso [%dic:STR_DIC_I_quest_26942b] e [%dic:STR_DIC_I_quest_26942a] não são fáceis de encontrar.</p>
+<p> </p>
+<p>Mas nós realmente precisamos deles. Então faça um esforço!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, esses são os dados de pesquisa secreta do Laboratório de Pesquisa de Baruna? Ah, sim, você também conseguiu obter uma amostra com sangue monstro. Bom trabalho!</p>
+<p> </p>
+<p>Você me trouxe materiais realmente valiosos. Agora eu posso usar esses materiais para descobrir até que ponto o Exército de Beritra passou com suas pesquisas sobre a tecnologia Abismo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur está um pouco à nossa frente em pesquisas sobre a tecnologia Abismo. Mas nosso nível de conhecimento em breve os ultrapassará, graças especialmente aos seus esforços.</p>
+<p> </p>
+<p>Vou passar os dados para a sede imediatamente. Obrigado por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]para chegar ao laboratório de pesquisa de Baruna. Então fale com[%dic:STR_DIC_N_IDLDF4_Re_01_Aitu_E].</p></step>
+<step><p visible="[%3]">Obtenha o [%dic:STR_DIC_I_quest_26942a] e uma amostra de [%dic:STR_DIC_I_quest_26942b]. Traga os dois para o Tribune [%dic:STR_DIC_N_LDF4_Advance_Helgund_E].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha dados de pesquisa e uma amostra de sangue monstro do laboratório de pesquisa de Baruna e leve os dois ao Tribune Helgund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aitu, um agente que examinou o laboratório de pesquisa de Baruna, pediu ajuda.</p>
+<p> </p>
+<p>Após a solicitação da AITU, você coletou dados de pesquisa e uma amostra de sangue. Quando você trouxe os dois para o Tribune Helgund, ele parecia surpreso, mas agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

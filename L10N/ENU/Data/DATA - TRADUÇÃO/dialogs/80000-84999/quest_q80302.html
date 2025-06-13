@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Por Aion! Eu tenho que montar uma caixa de doces antes que seja tarde demais!</p>
+<p> </p>
+<p>Mas o navio contrabandista carregando os doces foi atacado pelo[plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo] enquanto estava no mar, Akakak.</p>
+<p> </p>
+<p>Aqueles maus, maus shulacks! Devemos puni -los, Akakak.</p>
+<p> </p>
+<p>Caso contrário, não poderei montar uma caixa de doces.</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo], Akak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Criaturas malignas! Você os puniu, Akakak?</p>
+<p> </p>
+<p>Eles não querem admitir que nos invejam.</p>
+<p> </p>
+<p>Mas recuperar os doces é mais importante do que ensinar a eles uma lição.</p>
+<p> </p>
+<p>Estou em necessidade urgente de 3[%dic:STR_DIC_I_Quest_50017a]do[%dic:STR_DIC_E_FOBJ_Event_Cargobox], Akak.</p>
+<p> </p>
+<p>Por favor, vá procurar o [%dic:STR_DIC_E_FOBJ_Event_Cargobox] e traga -me os doces que você encontra lá imediatamente, Akakak.</p>
+<p> </p>
+<p>Eu quero trazê -los para minha querida, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você achou a carga da Merchant League no navio do contrabandista Akakak?</p>
+<p> </p>
+<p>Ele contém[%dic:STR_DIC_I_Quest_50017a]De Asmodae, que meu amado adora, Ak.</p>
+<p> </p>
+<p>Se eu não os pegar, poderá estar solteiro novamente em breve.</p>
+<p> </p>
+<p>Traga -me o [%dic:STR_DIC_I_Quest_50017a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os doces feitos à mão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou nada, AK? Akakak.</p>
+<p> </p>
+<p>O que Shugo vai fazer agora? O parceiro de Shugo está implorando a Shugo para dar seus doces há meses ...</p>
+<p> </p>
+<p>Agora ela vai querer terminar com Shugo, Akakak.</p>
+<p> </p>
+<p>Por favor, vá lá mais uma vez e procure o [%dic:STR_DIC_E_FOBJ_Event_Cargobox]Mais uma vez, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os parceiros sempre compartilham seu hapiness, e essa felicidade também é minha felicidade, Akakak.</p>
+<p> </p>
+<p>Durante meses, meu amado pediu doces artesanais como um presente. Eu absolutamente preciso encontrar alguns, Akakak!</p>
+<p> </p>
+<p>Muito obrigado. Vou usá -los para montar uma linda caixa de doces e entregá -lo ao meu amado, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com essa pequena quantidade, só posso montar uma pequena caixa de doces, mas nada tão magnífico quanto eu queria!</p>
+<p> </p>
+<p>Eu preciso de mais doces, Akakak!</p>
+<p> </p>
+<p>Talvez você possa me ajudar novamente amanhã, Akakak?</p>
+<p> </p>
+<p>Por que? Você sabe o porquê! Fazer a pessoa que você ama feliz também te deixa feliz, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_ValentineEvent_Brownie_Solo]([%2]/3).</p></step>
+<step><p visible="[%3]">Fale com o [%dic:STR_DIC_E_white_couple].</p></step>
+<step><p visible="[%6]">Procure doces no[%dic:STR_DIC_E_FOBJ_Event_Cargobox] e leve-os para o [%dic:STR_DIC_E_white_couple].</p>[%collectitem]</step>
+</steps>
+<p>O Lovestruck Shugo queria contrabandear doces para seu amado, mas o navio foi atacado enquanto estava no mar. Mate os ladrões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Lovestruck Shugo explicou que queria contrabandear doces para seu amado. Mas o navio carregando os doces foi atacado enquanto estava no mar.</p>
+<p> </p>
+<p>Ele implorou para você punir os single shulacks, que eram principalmente responsáveis ​​pelo ataque, e recuperar seus doces.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não é bom!</p>
+<p> </p>
+<p>Não consigo encontrá -los em nenhum lugar! Estou apenas indo em círculos ....</p>
+<p> </p>
+<p>[%username], você poderia me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Ajuda com o que exatamente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É minha pulseira de oração-perdi várias contas. Não acredito que fui tão estúpido!</p>
+<p> </p>
+<p>Eu estava patrulhando o [%dic:STR_DIC_FLA06]% Quando notei que o cordão estava quebrado e as contas caíram! Eu refiz minha rota e encontrei todos, exceto três.</p>
+<p> </p>
+<p>Encontrei o último nos arbustos ... com um brilho faminto roendo nele!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez pensasse que o cordão era uma semente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse foi o meu palpite também! Enfim, eu suspeito do[%dic:STR_DIC_MLA44]%areia [%dic:STR_DIC_MLA13_6]%S cometeu os últimos três.</p>
+<p> </p>
+<p>Um padre de [%dic:STR_DIC_ELA07]deu essa pulseira para mim pessoalmente. É extremamente importante para mim.</p>
+<p> </p>
+<p>Por favor, [%username]. Você caçaria brilhos e faíscas até encontrar essas três últimas contas?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, graça de Old Class Aion!</p>
+<p> </p>
+<p>Não deve demorar muito para encontrar o direito[%dic:STR_DIC_MLA44] Areia [%dic:STR_DIC_MLA13_6] S. Só estou perdendo três contas!</p>
+<p> </p>
+<p>Boa sorte, [%userclass]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh...</p>
+<p> </p>
+<p>Eu esperava que você entendesse, [%username]. Essa pulseira significa muito para mim ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, Oz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta!</p>
+<p> </p>
+<p>Por favor, diga -me que você encontrou todas as minhas contas! Eu realmente quero consertar esta pulseira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está você! Isso deve ser todos eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, eu disse que havia perdido três contas, não foi? Eu tenho que ter os três.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem todos eles!</p>
+<p> </p>
+<p>Não sei o que dizer .... Estou tão aliviado! Th-obrigado, [%username]! Essa pulseira significa tudo para mim e, sem você, eu a teria perdido.</p>
+<p> </p>
+<p>Por favor, pegue isso .... Eu gostaria de poder fazer mais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Retornar miçangas do[%dic:STR_DIC_MLA44] Areia [%dic:STR_DIC_MLA13_6] para oz.</p>[%collectitem]</step>
+</steps>
+<p>Oz, um escoteiro mercenário, perdeu algumas contas de oração preciosas quando sua pulseira quebrou. Pegue faíscas do Élder e Pincerhead brilho para recuperá -los.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Oz, um homem piedoso, estava fazendo suas rondas quando sua pulseira de oração quebrou. Ele recuperou a maior parte, mas três contas foram comidas por insetos.</p>
+<p> </p>
+<p>Você revistou a estrada de esporo agaric e pegou o Élder Sparkies e a Pincerhead bruscamente para encontrar as contas restantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

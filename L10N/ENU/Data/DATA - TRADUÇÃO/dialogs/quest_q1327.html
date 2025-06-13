@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é um lugar solitário, [%username]. Um homem acaba conversando consigo mesmo se não for cuidadoso. Acaba vendo coisas que você não pensaria possível.</p>
+<p> </p>
+<p>Então, quando você vê coisas que não são possíveis e percebem que estão realmente acontecendo, você senta lá e se pergunta-o que eu estava errado o tempo todo? E se a esquerda estiver à direita, e para cima estiver baixo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você está falando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou falando sobre o [%dic:STR_DIC_M_Maidengolem_27_An] S! Estátuas, [%username], estátuas que se movem, lutam e sentem!</p>
+<p> </p>
+<p>Eu pensei que estava ficando louco no começo. Realmente. Voltei aqui e dormiu bem, mas eles ainda estavam lá no dia seguinte, ainda andando por aí.</p>
+<p> </p>
+<p>Eu perguntei sobre eles. Parece que eles costumavam guardar o artefato, e eles ganharam vida se estivessem ameaçados, mas agora, sem artefato ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles atacam alguma coisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Agora eles apenas atacam qualquer coisa que chegue perto o suficiente. Precisamos destruí -los, antes que eles façam algum dano real.</p>
+<p> </p>
+<p>Você vai ajudar? Como eu disse, este é um lugar solitário-precisamos de toda a ajuda que podemos obter.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu tive a sensação de que você diria que sim.</p>
+<p> </p>
+<p>Quando puder, vá para o [%dic:STR_DIC_W_LF2_SZ_G1] e destruir o [%dic:STR_DIC_M_Maidengolem_27_An] está lá. Por mais bonitos que sejam, eles deveriam ser objetos inanimados, e eu os prefiro dessa maneira.</p>
+<p> </p>
+<p>Fé e armas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não importa. Vou encontrar outro. Esteja seguro, faça o que fizer e fique fora do calor.</p>
+<p> </p>
+<p>Fé e armas, [%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Já existem criaturas suficientes entre as dunas e florestas de Eltnen que estão mais do que dispostas a fazer um lanche sobre nós. Não há necessidade de adicionar cariatídeos à lista.</p>
+<p> </p>
+<p>Você concluiu seu trabalho?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles foram destruídos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Eles podem ter sido belas criações uma vez, mas ficaram distorcidos em algo ... mais. Você fez a coisa certa. Pegue isso.</p>
+<p> </p>
+<p>Fé e armas, soldado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_Maidengolem_27_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Justachys].</p></step>
+</steps>
+<p>Para a segurança dos habitantes em Eltnen, mate o antigo cariatídeo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Justachys, desde que o artefato desapareceu, o antigo cariatídeo tem atacado tudo o que vê.</p>
+<p> </p>
+<p>Eles estavam se tornando cada vez mais agressivos, então você concordou em ir às ruínas do posto avançado e destruir os cariatídeos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

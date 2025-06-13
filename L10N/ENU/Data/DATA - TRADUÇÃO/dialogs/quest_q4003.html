@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve, Daeva. Você veio se juntar ao relógio? É uma organização nobre e você estaria prestando um ótimo serviço à Asmodae.</p>
+<p> </p>
+<p>Não? Bem, valeu a pena perguntar. Para mim, encontrei meu dever aqui. Eu vim aqui esperando cultivar esta terra e restaurá -la a algo de sua antiga glória. Isso é difícil com todos esses monstros espalhados pelo sol percorrendo os campos e atacando os colonos.</p>
+<p> </p>
+<p>Sozinho, não temos chance. Organizamos o relógio para nos manter seguros o tempo suficiente para fazer o trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Segurança em números".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso trabalho duro está valendo a pena. A contaminação na área é muito menor que o passado.</p>
+<p> </p>
+<p>Ainda assim, não podemos cultivar com[%dic:STR_DIC_M_CentipedeD_21_An] Areia [%dic:STR_DIC_M_CuresSpotD_21_An] está nos atacando no campo.</p>
+<p> </p>
+<p>Sua própria presença aumenta a contaminação, desfazendo nosso trabalho duro. Tem que parar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez eu possa ser útil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estou dizendo que o relógio não pode lutar-nós temos, mas não somos tropas treinadas aqui. Ganhamos mais baixas do que vitórias, embora isso seja melhor que as mortes, sabe?</p>
+<p> </p>
+<p>Precisamos de alguém com sua força, [%username]. Você poderia nos ajudar a se livrar de [%dic:STR_DIC_M_CentipedeD_21_An] Areia [%dic:STR_DIC_M_CuresSpotD_21_An] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O desperdício poluído é a noroeste do acampamento dos colonos. Você encontrará[%dic:STR_DIC_M_CentipedeD_21_An] Areia [%dic:STR_DIC_M_CuresSpotD_21_An] está lá.</p>
+<p> </p>
+<p>Estes não são rapé sem garra, Daeva. Esteja em sua guarda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Light explodir você, Daeva! Eu pensei que você veio ajudar.</p>
+<p> </p>
+<p>Temos apenas alguns arcontes para cuidar de nós e legionários mais adequados para estudar do que o SwordPlay.</p>
+<p> </p>
+<p>Quem vai lutar conosco? Devo orar aos cinco pela minha ascensão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito. Aion observe todos vocês."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos de esperança, Daeva.</p>
+<p> </p>
+<p>Eu rezo para que você tenha trazido boas notícias.</p>
+<p> </p>
+<p>As estalas de seiva e Kurins infectados se foram?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles foram tratados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso? A sombra de Azphel nos abraça!</p>
+<p> </p>
+<p>Esse é apenas o sinal de que precisamos, Daeva! Muito obrigado.</p>
+<p> </p>
+<p>Agora podemos nos concentrar em fazer a terra florescer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se de animais que poluem o solo.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_CentipedeD_21_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_CuresSpotD_21_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Dehen].</p></step>
+</steps>
+<p>Os colonos não podem plantar os campos enquanto prejudicados por monstros. Livre -se das saques de seiva e infectados com curins que poluem o solo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dehen, o líder do relógio, disse que os resíduos poluídos são aráveis, mas os saques de seiva e os curins infectados estavam contaminando a terra.</p>
+<p> </p>
+<p>O relógio tentou resolver o problema sozinho, mas não era páreo para as criaturas.</p>
+<p> </p>
+<p>Você derrotou sozinho os monstros e trouxe esperança aos colonos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

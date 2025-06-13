@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], como Daeva, você está ciente da desorientação e da dor que vem do uso de um obelisco.</p>
+<p> </p>
+<p>A ressurreição causa efeitos físicos e mentais graves.</p>
+<p> </p>
+<p>Como curandeiros da alma, ajudamos a ressuscitar Daevas a se recuperar deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"E nós apreciamos isso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode ser um assunto delicado, mas até onde eu sei, os revolucionários lefaristas têm surpreendentemente poucos curandeiros da alma.</p>
+<p> </p>
+<p>Perguntei sobre isso e até enviei uma carta a um pesquisador que os estuda.</p>
+<p> </p>
+<p>Segundo ele, o laboratório de Wonshikutz na Cidadela Lefarista faz uma pomada especial que ajude Daevas a se recuperar da ressurreição após os efeitos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Fascinante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A história dele dispara minha curiosidade. Que tipo de pomada poderia igualar as atenções de um curandeiro de alma? Aparentemente, cheira terrível!</p>
+<p> </p>
+<p>A Cidadela Lefarista não está longe daqui, mas um humano como eu nunca poderia ir para lá.</p>
+<p> </p>
+<p>[%username], você irá ao laboratório de Wonshikutz e encontrará parte da pomada fedorenta que os lefaristas usam?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, obrigado! O que descobrimos disso ... poderia mudar tudo.</p>
+<p> </p>
+<p>Minha fonte diz que o laboratório de Wonshikutz está sob o prédio localizado na entrada da cidadela lefarista.</p>
+<p> </p>
+<p>Espero que você consiga encontrar o [%dic:STR_DIC_I_QUEST_2419a]lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], até você deve ter ressuscitado pelo menos uma vez.</p>
+<p> </p>
+<p>Não consigo imaginar como se sentiu, mas como um curandeiro de alma, ajudei muitos Daevas a se recuperarem depois. Eu sei que não é fácil.</p>
+<p> </p>
+<p>Essa pomada pode facilitar a ressurreição para você e para todo o seu tipo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Tantos Daevas vêm para a cura da alma hoje em dia.</p>
+<p> </p>
+<p>Disseram -me que o combate contra os lefaristas está ficando mais feroz.</p>
+<p> </p>
+<p>Você foi capaz de obter parte do[%dic:STR_DIC_I_QUEST_2419a] eles usam?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Vou ser honesto, isso não foi fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que estou perguntando pode não ser nada comparado à derrota dos lefaristas, mas será útil para todos os Daevas.</p>
+<p> </p>
+<p>Eu acredito que é a coisa mais importante em que já estive envolvido.</p>
+<p> </p>
+<p>Eu não posso fazer nem sem a sua ajuda. Por favor, traga de volta o [%dic:STR_DIC_I_QUEST_2419a]para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe pelo atraso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O pesquisador estava certo sobre uma coisa, pelo menos-cheira terrível!</p>
+<p> </p>
+<p>Analisarei os componentes-talvez possamos isolar o ingrediente ativo e fazer uma pomada que não fede daqui a Elysea.</p>
+<p> </p>
+<p>Muito obrigado!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar os soldados de laboratório, adquirir [%dic:STR_DIC_I_QUEST_2419a] e leve para [%dic:STR_DIC_N_Malak].</p>[%collectitem]</step>
+</steps>
+<p>Malak ouviu que a pomada fedorenta protege os lefaristas da doença da alma. Vá para o laboratório de Wonshikutz e adquira a pomada fedorenta que os lefaristas são conhecidos por usar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O curandeiro da alma Malak se perguntou como os lefaristas poderiam se recuperar da doença da alma tão facilmente sem a ajuda dos curandeiros da alma.</p>
+<p> </p>
+<p>Então, ele ouviu que os lefaristas estavam usando uma pomada especial e queriam obtê -la.</p>
+<p> </p>
+<p>Você foi ao laboratório de Wonshikutz, derrotou os lefaristas guardando o laboratório e adquiriu a pomada fedorenta para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

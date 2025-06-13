@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Vespasianus], Instrutor da Academia</p>
+<p> </p>
+<p>As auras escuras daquelas[%dic:STR_DIC_M_37004all] S no[%dic:STR_DIC_W_LF2_SZ_C3]vai arruinar sua tez.</p>
+<p> </p>
+<p>Você quer salvar sua pele? Encontre um mentor e vá para lá!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho sido um pouco irregular ultimamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu mentor o manteve satisfeito no[%dic:STR_DIC_W_LF2_SZ_C3]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós caçamos criaturas sombrias. Muito divertido!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me impressionou hoje com seu trabalho em equipe e sua melhoria.</p>
+<p> </p>
+<p>Algum dia, removeremos toda a energia escura, e o templo de Eracus brilhará!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com um[%dic:STR_DIC_E_Mentor], eliminar [%dic:STR_DIC_M_37004all] S no[%dic:STR_DIC_W_LF2_SZ_C3]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Vespasianus].</p></step>
+</steps>
+<p>O instrutor da Academia Zenten instruiu você a eliminar criaturas subterrâneas na Caverna do Templo de Eracus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O instrutor da Academia Zenten instruiu você a eliminar criaturas subterrâneas na Caverna do Templo de Eracus.</p>
+<p> </p>
+<p>Você e seu mentor concluíram sua tarefa com sucesso, e Zenten o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como resultado da guerra repentina entre Elyos e Asmodian, a parede das muralhas entrou em colapso.</p>
+<p> </p>
+<p>Os fragmentos da parede são perigosos. Eles precisam ser limpos.</p>
+<p> </p>
+<p>Esmagar o [%dic:STR_DIC_E_LDF5A_FOBJ_OP_D_BrokenWall]Portanto, pode ser limpo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você rompeu a parede da fortaleza?</p>
+<p> </p>
+<p>Segundo o cirurgião Rimo, muitas pessoas ficaram feridas por causa da parede espetacular da fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que o destruiu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Agora pode -se andar com segurança.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_E_LDF5A_FOBJ_OP_D_BrokenWall]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Stelman_E].</p></step>
+</steps>
+<p>Limpe as paredes da fortaleza que foram arruinadas na guerra de Elysean-Asmodian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Chiliarch Stelman disse que a parede da fortaleza destruiu durante a guerra entre asmodianos e Elyos era perigosa e solicitou que fosse demolida. Você quebrou a parede em pedaços pequenos e a removeu. Então você voltou. Stelman agradece e lhe deu uma recompensa.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

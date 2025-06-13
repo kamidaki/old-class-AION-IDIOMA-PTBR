@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que temos aqui?</p>
+<p> </p>
+<p>Eu sei que você acabou de voltar, [%username], mas eu gostaria de lhe perguntar outro favor. Não posso confiar em mais ninguém.</p>
+<p> </p>
+<p>São os revolucionários lefaristas ... eles estão por toda parte. Eles são bem treinados e muito mais fortes do que antes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu desprezo aqueles lefaristas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei, é por isso que estou trazendo esse dilema para você. Eu sei que você pode se lidar.</p>
+<p> </p>
+<p>Esses lefaristas, eles aprenderam algumas novas táticas de luta ... eles estão nos estudando. Mas você nunca foi sobrecarregado por regras de combate.</p>
+<p> </p>
+<p>Eu preciso de suas habilidades únicas para ... exterminar os lefaristas para mim, para todos nós. Pelo bem de todos os Elyos. Você poderia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso é glorioso! Eu esperava que você aceitasse, [%username].</p>
+<p> </p>
+<p>Eles estão por toda parte, se espalhando! Esses lefaristas são como uma praga.</p>
+<p> </p>
+<p>Se você pudesse apenas matar o [%dic:STR_DIC_M_LehparWa3_33_An] Areia [%dic:STR_DIC_M_LehparKnight_33_An] S, pode diminuir a Guilda e diminuir a praga.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, coloque -o da sua mente.</p>
+<p> </p>
+<p>Eu deveria ter sabido que mesmo o grande [%username]teria medo dos lefaristas!</p>
+<p> </p>
+<p>Realmente, continue e sai, talvez você encontre uma missão mais fácil se continuar andando por aí. Eu acho que alguém precisa de ajuda com um shugo alto por lá ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Shugos altos? Deixe -me para eles!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Com sabedoria, coragem e uma pitada de sorte de Ariel, nenhum inimigo é uma partida para um Daeva determinado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os lefaristas são cuidados".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é mais do que eu esperava. Você realmente matou todos eles?</p>
+<p> </p>
+<p>Ohhh, eu gostaria de ter estado lá ...</p>
+<p> </p>
+<p>Por favor, diga -me como você os lutou em detalhes mais tarde. Eu quero informar outros danos sobre isso.</p>
+<p> </p>
+<p>Por favor, tome isso como um pequeno sinal de minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os revolucionários lefaristas.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_LehparWa3_33_An]([%2]/6)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_LehparKnight_33_An]([%5]/4)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Iorene].</p></step>
+</steps>
+<p>Elimine os revolucionários lefaristas, como Iorene ordenou que você faça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Iorene disse que os revolucionários lefaristas eram uma ameaça constante e, assim, pediram sua ajuda.</p>
+<p> </p>
+<p>Depois de eliminar os revolucionários lefaristas, ela deu uma recompensa em agradecimento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

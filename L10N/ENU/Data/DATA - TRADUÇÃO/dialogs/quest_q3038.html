@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3038</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Mestre Ixion está chateado novamente hoje, Nyerk Nyerk. O Majirunerk é criado para dominar desde que era jovem.</p>
+<p> </p>
+<p>Ele se sente bem por um tempo, então fica com raiva de novo.</p>
+<p> </p>
+<p>O Majirunerk não sabe o que fazer, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que você aguenta isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mestre Ixion é sempre mestre. O Majirunerk deve cuidar do mestre.</p>
+<p> </p>
+<p>Se o MajiRunerk sair, o Mestre ficará ainda mais triste.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Deve haver uma maneira ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Majirunerk pode fazer um remédio fora de [%dic:STR_DIC_I_QUEST_3038a] S que fará o Mestre se sentir mais feliz.</p>
+<p> </p>
+<p>Mas não pode deixar o lado do mestre para obtê -los. Você poderia?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Por favor, traga 7 pedaços disso.</p>
+<p> </p>
+<p>Apenas um ou dois não serão suficientes para o meu mestre, Akakak.</p>
+<p> </p>
+<p>Claro que não é em vão, ak. Se você me trazer [plur][%dic:STR_DIC_I_QUEST_3038a], Vou te dar algo bom, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, bem, o MajiRunerk terá que sofrer.</p>
+<p> </p>
+<p>Talvez um dia mestre seja feliz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você traz [%dic:STR_DIC_I_QUEST_3038a] S?</p>
+<p> </p>
+<p>Mestre está em mau humor, Nyerk. Ameaçou acertar o Majirunerk!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Dê a ele isso, rapidamente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas você não tem ovisacs, Nyerk Nyerk.</p>
+<p> </p>
+<p>Suponho que o Mestre terá que atingir o Majirunerk, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito. Vou buscá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é um remédio especial para as mudanças de humor, Akakak.</p>
+<p> </p>
+<p>Obrigado, Daeva. Por favor, receba essa recompensa por seus esforços, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar os ovisacs de [%dic:STR_DIC_M_LF2A_Cellatu_47_An] e trazê -los para [%dic:STR_DIC_N_Shugo_LF2a_15].</p>[%collectitem]</step>
+</steps>
+<p>O Majirunerk diz que está tendo dificuldades por causa das mudanças de humor de Ixion. Colete os Cellatu ovisacs que ele precisa para fazer um remédio para ajudar a Ixion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Majirunerk, Butler de Ixion, disse que Ixion estava se tornando ainda mais histérico e agressivo por causa de suas mudanças de humor. Então ele pediu que você colete o Cellatu ovisacs, que ajudam a combater a depressão.</p>
+<p> </p>
+<p>Quando você trouxe a ele o Cellatu ovisacs, ele lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

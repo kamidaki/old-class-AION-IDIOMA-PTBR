@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora você está aqui, Daeva, podemos concluir a missão final. Cinco shulacks lideram aço de aço, sim sim.</p>
+<p> </p>
+<p>Dois já estão mortos, graças a você, mas agora devemos lidar com o companheiro -chefe, o artilheiro -chefe e o próprio capitão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Onde eu os encontro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entendeu tudo isso, Daeva, sim? O navio não é grande. Eles não podem se esconder de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, por que esperar? Nada a ser ganho de esperar! Os líderes devem ser mortos, o navio pirata deve ser deixado listando nas nuvens!</p>
+<p> </p>
+<p>Vá lá, derrubá -los! Para a nuvem negra! Para Haorunerk!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou ficar para sabotar o navio, certifique -se de que eles não possam sair, sim, sim. Você se reporta ao Kuruminerk quando matou todos eles.</p>
+<p> </p>
+<p>Boa sorte. Lucro sempre.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A luz de Ariel protege você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você não quer vingar haorunerk?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Temos que deixá -lo ir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você volta do aço aço! Conte -me de uma batalha gloriosa, poderoso Daeva!</p>
+<p> </p>
+<p>Rake de aço derrotado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, tudo está pronto!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente! Tudo graças a você e Rabinerk!</p>
+<p> </p>
+<p>Que vergonha sobre o pobre Haorunerk, sim, sim. Foi bom shugo. Shugo inteligente!</p>
+<p> </p>
+<p>Suponho que vou contar à filha dele, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os líderes do ancinho de aço.</p>
+<p visible="[%3]">[%dic:STR_DIC_M_IDShip_ShulackAsFirstmateKnmd_45_Ae]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]([%8]/1)</p>
+<p visible="[%9]">[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]([%11]/1)</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_Shugo_LC1_27].</p></step>
+</steps>
+<p>Derrote os líderes de aço de acordo com as instruções do Rabinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rabinerk disse a você como derrotar os líderes do ancinho roubado. Você matou o artilheiro-chefe Koakoa, o companheiro-chefe Menekiki e o capitão, Grogget Grogget. Então você se reportou a Kuruminerk, que agradeceu sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

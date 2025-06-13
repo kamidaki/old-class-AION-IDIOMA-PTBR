@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Fico feliz em vê -lo novamente. Eu estava tão ocupado da última vez que não tive tempo de agradecer. Eu realmente apreciei sua ajuda para testar a nova rota de vôo.</p>
+<p> </p>
+<p>Por meio de agradecer, tenho uma oportunidade de emprego. É um pouco perigoso, mas você deve ser capaz de lidar com isso, e o salário é excepcional.</p>
+<p> </p>
+<p>Você está interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de trabalho?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, recebi novos pedidos de meus superiores há alguns dias. Parece que eles estão cansados ​​de tirar os punks de classificação baixa e querem levar a sério.</p>
+<p> </p>
+<p>Estou autorizado a realizar operações diretamente contra números importantes que podemos identificar no bastião. São ataques de precisão, e precisamos do melhor de Ariel para garantir que os hits sejam bem -sucedidos.</p>
+<p> </p>
+<p>O que você acha? Você está interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu estava esperando o aproveitamento para acertar esses caras com força, e quero fazer com que ele contasse.</p>
+<p> </p>
+<p>Seu primeiro alvo é[%dic:STR_DIC_M_LF2_LehparFiNamedQ_38_Ae]. Seu segundo alvo é[%dic:STR_DIC_M_LF2_LehparPrNamedQ_38_Ae]. Eles não serão fáceis de chegar, mas perdê -los será um golpe real para a estrutura de comando lefarista.</p>
+<p> </p>
+<p>Que a proteção de Ariel esteja com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu entendo. Entrar no bastião não é tarefa fácil.</p>
+<p> </p>
+<p>Ainda temos tempo antes do início da operação. Por favor, pense e volte se você mudar de idéia.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você de volta. Não deve ter sido fácil lidar com Gennaion e Epicara.</p>
+<p> </p>
+<p>Mas você os derrotou, certo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Claro que fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se eu tivesse atribuído a missão a qualquer outra pessoa, estaria preocupada até a morte, mas tive total confiança em você, [%username].</p>
+<p> </p>
+<p>Gennaion e Epicara foram absolutamente centrais para o comando do bastião. Isso deve colocar suas operações em desordem por um tempo.</p>
+<p> </p>
+<p>Bom trabalho!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Quebrar a estrutura de comando do bastião lefarista.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparFiNamedQ_38_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparPrNamedQ_38_Ae]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Elram].</p></step>
+</steps>
+<p>Elram está realizando operações contra os comandantes lefaristas. Elimine a grande gennaion e o adjunto Epicara.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Elram ofereceu um emprego eliminando as cabeças do bastião lefarista.</p>
+<p> </p>
+<p>O objetivo da operação era quebrar sua cadeia de comando matando indivíduos específicos. Você tirou o grande gennaion e o ajudante Epicara.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

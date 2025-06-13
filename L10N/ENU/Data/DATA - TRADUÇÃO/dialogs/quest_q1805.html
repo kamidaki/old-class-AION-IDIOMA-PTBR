@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles podem ter tirado a fortaleza de enxofre por enquanto, mas vamos ganhar de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, vamos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom espírito! Precisamos atacar quando a fortaleza estiver sob controle de asmodianos. Uma vez que está no estado vulnerável, nós os limpamos.</p>
+<p> </p>
+<p>Você está pronto para esta tarefa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Vá para a fortaleza e limpe o [%dic:STR_DIC_M_1805_all]. Isso se livrará dos combatentes, arqueiros, magos e padres da Asmodianos. O nível de experiência deles não é importante.</p>
+<p> </p>
+<p>Traga de volta o deles[%dic:STR_DIC_I_QUEST_1805a]para nós.</p>
+<p> </p>
+<p>Lembre -se, você só encontrará asmodianos lá se eles tiverem controle da fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendi. A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com medo?</p>
+<p> </p>
+<p>Eu deveria saber que você seria. O abismo é apenas para soldados. A reputação não é suficiente para levá -lo aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username].</p>
+<p> </p>
+<p>Eu confio que as coisas correram bem?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Quanto mais você atrasar, [%username], mais difícil será para nós recuperar a fortaleza de enxofre.</p>
+<p> </p>
+<p>Pressa!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Mostramos a eles nossa força e poder. Isso os tornará mais fáceis de derrotar.</p>
+<p> </p>
+<p>Obrigado pelo seu trabalho aqui. Sinto -me confiante agora que retomaremos a fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_1805_all] e leve a prova para [%dic:STR_DIC_N_Dactyl].</p>[%collectitem]</step>
+</steps>
+<p>Ao recuperar a fortaleza de enxofre, dê um golpe nos asmodianos que ocupam a fortaleza. Quando a fortaleza estiver no estado vulnerável, elimine a guarnição asmodiana na fortaleza e retorne com suas insígnias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dactyl disse que, para recuperar a fortaleza de enxofre, você deve atacar quando os asmodianos estão ocupando a fortaleza.</p>
+<p> </p>
+<p>Depois de derrotar os combatentes, arqueiros, magos e padres da Asmodianos, você voltou a Dactyl com suas insígnias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

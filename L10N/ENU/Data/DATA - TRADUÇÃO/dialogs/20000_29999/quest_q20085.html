@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q20085</questid>
+<questname>카룬이 찾는 것</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Solte para trás.</p>
+<p> </p>
+<p>Alguns desgraçados bobos apareceram.</p>
+<p> </p>
+<p>Agora vou te mostrar meu poder porque você me ajudou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você olha em volta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos abandonaram o livro.</p>
+<p> </p>
+<p>Esta é a outra metade do livro que estamos procurando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">Você assentia.</act>
+</selects>
+<cutscene id="826"></cutscene>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kahrun, sem dúvida, usado[%dic:STR_DIC_I_doc_quest_20085a].</p>
+<p> </p>
+<p>Rápido, avalie a situação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que sim.</act>
+</selects>
+<voice file="Q20085-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O livro que esse garoto tinha nele.</p>
+<p> </p>
+<p>Esta é a segunda metade do livro que você estava procurando da última vez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você entrega o livro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não diz nada aqui sobre onde a criança foi.</p>
+<p> </p>
+<p>Vou dar isso a você. Por favor, aceite isso.</p>
+<p> </p>
+<p>Diga à equipe de limpeza que Kahrun desapareceu e procure a arma antiga que usa ID.</p>
+<p> </p>
+<p>Vá para o sul imediatamente. Você já perdeu muito tempo.</p>
+<p> </p>
+<p>Encontrar -se [%dic:STR_DIC_LDF5a_Belrun_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você diz que você entendeu.</act>
+</selects>
+<voice file="Q20085-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o último portão de North Katalam.</p>
+<p> </p>
+<p>Você quer atravessar a parede para o Katalam do Sul?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Você diz que tem um livro que gostaria de dar ao alto comando.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ir para o Katalam do Sul.</p>
+<p> </p>
+<p>O centurião[%dic:STR_DIC_N_LDF5b_Paut_E]pode ser encontrado do outro lado das muralhas. Ele está familiarizado com quase todos os livros.</p>
+<p> </p>
+<p>Eu provavelmente não entenderia o livro.</p>
+<p> </p>
+<p>Tome cuidado especial no caminho de volta. É muito perigoso aqui, porque Elyos e o exército de Beritra estão em um impasse apertado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você diz que você entendeu.</act>
+</selects>
+<voice file="Q20085-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está acontecendo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o livro e relata o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é assim que foi.</p>
+<p> </p>
+<p>Este livro e [%username] A história de que será muito útil para os asmodianos em sua pesquisa de identificação.</p>
+<p> </p>
+<p>Se o ID for usado para a arma antiga, e essa arma deve ser muito perigosa, precisamos acelerar rapidamente o ID.</p>
+<p> </p>
+<p>Escreverei um relatório sobre Kahrun e a tribo Reian. A decisão do que fazer com isso será tomada pelos superiores.</p>
+<p> </p>
+<p>Vou enviar rapidamente este livro e reportar ao Templo Rune em North Katalam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com Niel em[%dic:STR_DIC_W_LDF5a_E5].</p></step>
+<step><p visible="[%3]">Leia o [%dic:STR_DIC_I_doc_quest_20085a]Deixado pelos Elyos.</p></step>
+<step><p visible="[%6]">Fale com Niel.</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_LDF5a_Belrun_E] em[%dic:STR_DIC_W_LDF5A_E5].</p></step>
+<step><p visible="[%12]">Você encontrará[%dic:STR_DIC_N_LDF5b_Paut_E] em[%dic:STR_DIC_W_LDF5b_SZ_A2_1]no Katalam do Sul. Pegar [%dic:STR_DIC_I_quest_20085b]lá.</p></step>
+</steps>
+<p>Instruções: acumule os registros de Kahrun e os traga para a tropa de Katalam Commando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando um membro de Elyos se aproximou, Niel o matou rapidamente.</p>
+<p> </p>
+<p>Niel encontrou parte de um livro entre os vencidos.</p>
+<p> </p>
+<p>Isso, juntamente com a parte que foi adquirida da última vez, faz um livro inteiro.</p>
+<p> </p>
+<p>O conteúdo do livro foi um relatório sobre Kahrun.</p>
+<p> </p>
+<p>Jakahn disse que não contém onde Kahrun está hospedado e que você deve trazer o livro com você, pois isso pode ajudar os asmodianos. Ele o encoraja a informar os asmodianos do desaparecimento de Kahrun.</p>
+<p> </p>
+<p>Para entregar o livro, você conheceu Ballan do Post Sentinel. Ele disse para você perguntar a Paut o Centurion, que tem uma mente para os livros.</p>
+<p> </p>
+<p>Quando você disse ao Centurion Paut o que havia acontecido e entregou o livro a ele, ele disse que certamente será uma grande ajuda para descobrir mais sobre o ID e que ele enviaria o livro e o relatório sobre Kahrun para o templo de Rune, no norte de Katalam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

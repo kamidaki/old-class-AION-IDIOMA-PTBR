@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], é bom que você veio.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Rodul]do Priorado do Marchutan está procurando por você[%username].</p>
+<p> </p>
+<p>Aparentemente, é importante, então se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está finalmente aqui!</p>
+<p> </p>
+<p>[%username], Liguei para você porque a criação do brecha do portal finalmente funcionou.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_Sala] e você aprenderá mais sobre o brecha do portal.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>W - Espere! Desacelere, ouça a explicação da brecha do portal.</p>
+<p> </p>
+<p>Sem dúvida, você sabe tudo sobre o [%dic:STR_DIC_E_IDArena_Solo_Bonus_In]. Ele aconteceu quando Vankrist mudou o espaço do Solus Crucible.</p>
+<p> </p>
+<p>Como resultado, descobrimos que, quando um ambiente instável e uma fenda espacial colidem, os mundos Elyos e Asmodian se sobrepõem, criando um "espaço comum". E então começamos a pesquisar como controlar um fenômeno desse tipo.</p>
+<p> </p>
+<p>Utilizado com prudência, isso nos permitiria implantar um esquadrão grande na Elysea sempre que gostarmos.</p>
+<p> </p>
+<p>Com isso é a mente, construímos o coliseu cadinho sobre o espaço articular e o estudamos com cuidado. Agora, todo o nosso trabalho duro valeu a pena, pois conseguimos criar artificialmente um espaço conjunto, ou mais precisamente: uma brecha no portal.</p>
+<p> </p>
+<p>Além disso, a brecha está dentro de nosso laboratório dimensional em Pandaemonium, hahaha!</p>
+<p> </p>
+<p>HM HM, agora eu te contei tudo. Vá para Sala.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vou direto ao ponto, porque presumo que Rodul já tenha contado tudo sobre as fendas do portal.</p>
+<p> </p>
+<p>Uma brecha portal abrirá em breve e a batalha espacial de Theobomos começará. Mas temos poucas tropas no momento.</p>
+<p> </p>
+<p>[%username], por favor, participe também.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É conforta -me saber que tenho um dos[%userclass] Ao meu lado.</p>
+<p> </p>
+<p>Uma brecha portal será aberta assim que a operação começar. Ainda estamos no estágio de teste, para que apenas um pequeno número de pessoas possa ser enviado para Elyos ao mesmo tempo. Não se atrase se quiser participar da operação.</p>
+<p> </p>
+<p>Porque esta é a nossa primeira batalha espacial também, quase certamente precisaremos da sua ajuda com mais frequência, [%username]. Ah, o Comando de Operações Especiais do Pandaemonium estava encarregado das batalhas no abismo até agora.</p>
+<p> </p>
+<p>Então te vejo em breve.</p>
+<p> </p>
+<p>Para a paz das trevas!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Rodul].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Rodul, do Priorado do Marchutan, está procurando por você com urgência. Uma reunião seria aconselhável.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouviu que Rodul estava procurando por você e então você foi para o Priorado do Marchutan. Lá você descobriu que o desenvolvimento de uma brecha portal para o transporte para a Elysea havia sido concluído e que você recebia mais ordens da Sala do Comando de Operações Especiais do Pandaemonium.</p>
+<p> </p>
+<p>Sala disse que Theobomos havia sido escolhido para ser a primeira área de batalha espacial e que agora eles estavam procurando um Daeva para participar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

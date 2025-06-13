@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q21522</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora você precisa ser levado para o [%dic:STR_DIC_E_spearofCiel]Guilda.</p>
+<p> </p>
+<p>Depois que os anciãos ouvirem dos sucessos de seus testes, eles não terão nada a se manter contra você.</p>
+<p> </p>
+<p>Reporte -se a Rafael e diga a ele que você concluiu todos os testes.</p>
+<p> </p>
+<p>Afinal, ele era um dos anciãos que se manifestou contra você.</p>
+<p> </p>
+<p>Se [%dic:STR_DIC_N_Raffaele], que é responsável pela Guilda da Lança do Siel, muda de idéia, os outros anciãos se seguirão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah. Sim. [%username]. Ouvi dizer que você decidiu desafiar o Koligran.</p>
+<p> </p>
+<p>Devo admitir que admiro seu otimismo. Ainda assim, você não é um de nós e não tem certo disfarçado de um. Esperançosamente, o Koligran mostrou a força do Espírito Reian e o dissuadiu desse caminho tolo.</p>
+<p> </p>
+<p>Não se ofenda com minhas palavras, asmodianas. Seu povo é tão protetor quanto o nosso. Você teria agido da mesma maneira se uma Mammut procurasse se tornar um arconte. Algumas coisas simplesmente não podem ser.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"E ainda, algumas coisas podem ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... mas ... o quê?! Você completou o Koligran?!</p>
+<p> </p>
+<p>Isso é inesperado. Eu não sei o que dizer. Não posso me reunir com os outros anciãos, pois demos nossa palavra a Kahrun de que você seria aceito se passe. E você não deveria passar.</p>
+<p> </p>
+<p>Mas e a nossa tradição? Nosso legado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">"Você se adapta, Rafael. Você evolui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... você está certo. Nós nos reianos nos adaptamos a tantas ameaças, talvez agora devêssemos nos adaptar aos nossos aliados.</p>
+<p> </p>
+<p>[%username], Concederei acesso à Guilda de Siel de Siel. Este dia será lembrado por Asmodians e Reians o tempo todo, espero que por boas razões.</p>
+<p> </p>
+<p>Parabéns, [%userclass]. Você abriu nossos olhos e, por isso, agradeço.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Obrigado. É uma honra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username].</p>
+<p> </p>
+<p>Você falou com[%dic:STR_DIC_N_Raffaele]? O que ele disse?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Haha! Eu sabia que ele iria balançar no final. Rafael pode ser um ancião orgulhoso, mas ele não é tolo.</p>
+<p> </p>
+<p>Ah! Eu acredito que existe a pequena questão de um anúncio agora. [%username], você é reconhecido como um membro orgulhoso e honrado de [%dic:STR_DIC_E_spearofCiel]Guilda.</p>
+<p> </p>
+<p>Que você fique alto, possa guiar suas sombras e que suas palavras tenham o sombrear dos perigos neste mundo. Sangue para sangue!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Informar [%dic:STR_DIC_N_Raffaele]que você completou o Koligran.</p></step>
+<step><p visible="[%3]">Retornar a [%dic:STR_DIC_N_Kahrun].</p></step>
+</steps>
+<p>Kahrun sugeriu que você fosse a Rafael, um dos anciãos que se opôs à sua entrada, e informará que você passou pelo Koligran. Vá agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kahrun contou como os anciãos se opuseram a você se juntar à Guilda e o colocou no Koligran, esperando que você falhe nele. Agora que você passou, era hora de enfrentar os anciãos e exigir entrada.</p>
+<p> </p>
+<p>Você viajou para Rafael, o chefe dos anciãos, e contou a ele suas realizações. Eles, e pura vontade, finalmente o convenceram do seu direito de se juntar à lança de Siel e autorizaram a transferência.</p>
+<p> </p>
+<p>Você volta a Kahrun, que comemorou com você como foi oficialmente levado sob a asa da lendária Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

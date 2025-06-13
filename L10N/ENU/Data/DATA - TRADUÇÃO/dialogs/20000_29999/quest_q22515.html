@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existe uma missão para você.</p>
+<p> </p>
+<p>[%username], por favor, obtenha o [%dic:STR_DIC_I_quest_22515a]. É necessário para fins de pesquisa.</p>
+<p> </p>
+<p>Recentemente, caça um[%dic:STR_DIC_M_LDF5A_B6_Baku_62_An]. Encontrei um prato da tribo Rune no estômago.</p>
+<p> </p>
+<p>Esta é uma descoberta muito especial, já que muito pouco se sabe sobre a cultura da tribo Rune.</p>
+<p> </p>
+<p>Por favor, traga -me mais utensílios de mesa da tribo Rune, para que os exames mais próximos possam ser realizados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Dos itens da lista ... apenas uma placa da tribo Rune está faltando ...</p>
+<p> </p>
+<p>Ah, [%username]! Você trouxe o Rune Tribe Tableware Woware com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os utensílios de mesa da tribo Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um bom trabalho.</p>
+<p> </p>
+<p>O arnês da tribo Rune que você obteve, [%username], será de grande utilidade para mim em minha pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_22515a] e leve tudo para [%dic:STR_DIC_N_LDF5A_Shurelon_E].</p>[%collectitem]</step>
+</steps>
+<p>Mate o fanback baku e pegue o prato da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shuellon disse que precisa do prato da tribo Rune para realizar a análise. Ele pediu que você matasse Baku e trazia o prato da tribo Rune.</p>
+<p> </p>
+<p>A tarefa de matar Baku e trazer a placa da tribo Rune foi concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

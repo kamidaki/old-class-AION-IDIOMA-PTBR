@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode imaginar como estou encantado em te ver, [%username]. Estou em necessidade desesperada.</p>
+<p> </p>
+<p>Eu deveria ter ouvido!  Eu deveria ter reunido uma festa de busca!</p>
+<p> </p>
+<p>Mas eu não podia apenas andar de vila, imaginando se meu noivo estava vivo ou morto ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Diga -me o que aconteceu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Já se passaram duas semanas desde o meu noivo, [%dic:STR_DIC_N_Leinolz], partiu para o berço dos comerciantes em Seggerheim. Ele estava fazendo uma entrega aos Shugos lá.</p>
+<p> </p>
+<p>Ele geralmente está em casa em três ou quatro dias, mas ninguém o viu! E um comerciante que vem de outra maneira diz que nunca chegou!</p>
+<p> </p>
+<p>Eu tenho que encontrar Leinolz. Eu mal podia esperar pelos arcontes! Fiz o meu caminho até aqui, mas não ouso ir mais longe-há tantos spriggs e ânfas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você fez tudo o que pôde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas eu não posso desistir agora! Eu tenho que saber que ele está bem!</p>
+<p> </p>
+<p>Eu não perguntaria, mas a Valley Road é tão perigosa .... [%userclass], por favor me acompanhe?</p>
+<p> </p>
+<p>Se viajarmos pela estrada Seggerheim, podemos encontrar algum vestígio do meu Leinolz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Senhores te abençoam, Daeva.</p>
+<p> </p>
+<p>Vou descansar aqui até que você esteja pronto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou pronto quando você estiver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que o encontraremos em breve!</p>
+<p> </p>
+<p>Agora aqui está a estrada Seggurheim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Fique perto, Irehilt."</act>
+<act href="HACTION_FINISH_DIALOG">"Esta é uma tarefa de tolo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é verdade! Tornando -se um Daeva acessa seu coração!</p>
+<p> </p>
+<p>Ou você está com medo?  Bem, o que me guia é mais forte que o medo, posso lhe dizer isso!</p>
+<p> </p>
+<p>Você é um covarde, "Mighty" Daeva. Eu nunca vou desistir de olhar! Se devo, vou morrer e procurá -lo no Aether!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Irehilt! Aqui? Muito obrigado por orientá -la com segurança.</p>
+<p> </p>
+<p>Como ela poderia ter sido tão impulsiva? Amado, você poderia ter sido atacado!</p>
+<p> </p>
+<p>Se não fosse por este Daeva, seria você que estávamos procurando.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Na verdade, ela é bastante engenhosa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo ficar aqui para endireitar as coisas. Mas pelo menos o Irehilt não está mais chorando.</p>
+<p> </p>
+<p>Agradeço novamente por cuidar dela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_Irehilt]Quando você está pronto.</p></step>
+<step><p visible="[%3]">Escolta [%dic:STR_DIC_N_Irehilt].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Leinolz].</p></step>
+</steps>
+<p>Irehilt está procurando seu noivo perdido, Leinolz. Guarde -a na estrada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O noivo de Irehilt, Leinolz, desapareceu na estrada. Ela estava procurando sua trilha pelo perigoso Gribade Canyon sozinho.</p>
+<p> </p>
+<p>Você a escoltou e reuniu os amantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

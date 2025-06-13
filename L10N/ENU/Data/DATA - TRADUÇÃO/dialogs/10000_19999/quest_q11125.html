@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas criaturas ajudam a aumentar a energia do Drana.</p>
+<p> </p>
+<p>As criaturas em Inggison devem ter sido infectadas na fazenda Mephistis. Agora eles estão se espalhando até o posto avançado de Inggison.</p>
+<p> </p>
+<p>Se não os matarmos, eles continuarão apenas a espalhar a energia Drana - e não sabemos que outro estrago que pode causar. Não será bom.</p>
+<p> </p>
+<p>O que me preocupa acima de tudo é que isso pode interferir nos obeliscos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quão ruim ficou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você está em Inggison há algum tempo, você está sem dúvida que as criaturas mutadas com a energia Drana são imensamente fortes atacantes.</p>
+<p> </p>
+<p>As criaturas afetadas pelo Drana contaminadas estão se multiplicando a um ritmo horrendo, mas não temos um Daeva aqui para cuidar deles.</p>
+<p> </p>
+<p>O que você diz, [%username], você vai nos ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>As criaturas mais perigosas aqui são as[plur][%dic:STR_DIC_M_LF4_B_Xipeto_Drana_54_An], Assim, [plur][%dic:STR_DIC_M_LF4_B4_Crestlich_Drana_54_An] e [plur][%dic:STR_DIC_M_LF4_B4_Kuillus_Drana_54_An].</p>
+<p> </p>
+<p>Elimine -os e traga -me amostras de tecido deles.</p>
+<p> </p>
+<p>Eles são vitais para nossa pesquisa.</p>
+<p> </p>
+<p>Você pode encontrá -los por todo o lugar, desde o posto avançado de Inggison até a fazenda Drana contaminada e até o Inggison Gravepit.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços, Daeva!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A maioria dos jovens Daevas que vêm para Inggison quer combater o Balaur ou os Asmodianos.</p>
+<p> </p>
+<p>No entanto, há muito mais que precisa ser feito, como expandir o território dos Elyos ou aumentar nossa energia.</p>
+<p> </p>
+<p>Se você mudar de idéia, venha me ver novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não procuro glória."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>No entanto, os soldados de manutenção de Aether e estudiosos de civilizações antigas se interessaram pelo Drana ultimamente.</p>
+<p> </p>
+<p>Esse novo interesse pelas criaturas mutado com o Drana fez muitos daevasas prometeram sua assistência.</p>
+<p> </p>
+<p>Recentemente, um dos estudiosos veio aqui pedindo uma amostra de tecido das criaturas mutadas. Eu disse a ele que você seria capaz de ajudar quando você voltasse, [%username].</p>
+<p> </p>
+<p>Você me trouxe o [plur][%dic:STR_DIC_I_QUEST_11125a], Assim, [plur][%dic:STR_DIC_I_QUEST_11125b] e [plur][%dic:STR_DIC_I_QUEST_11125c]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as amostras mutadas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não matou as criaturas contaminadas?</p>
+<p> </p>
+<p>Quanto mais você espera, mais essa praga vai se espalhar. A velocidade é essencial.</p>
+<p> </p>
+<p>Apresse -se e mate o [plur][%dic:STR_DIC_M_LF4_B_Xipeto_Drana_54_An], Assim, [plur][%dic:STR_DIC_M_LF4_B4_Crestlich_Drana_54_An] e [plur][%dic:STR_DIC_M_LF4_B4_Kuillus_Drana_54_An]. Traga -me amostras de seu tecido mutado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei isso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei tanto, eles têm mutação ainda mais. Apenas veja como tudo isso é estranho.</p>
+<p> </p>
+<p>Eles costumavam ser criaturas perfeitamente normais, assim como as de Elysea. A influência de Drana é realmente forte.</p>
+<p> </p>
+<p>Obrigado por matar as criaturas mutadas e trazer -me amostras de tecido deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar o tecido corporal de [%dic:STR_DIC_M_LF4_B_Xipeto_Drana_54_An] S, [%dic:STR_DIC_M_LF4_B4_Crestlich_Drana_54_An] Areia [%dic:STR_DIC_M_LF4_B4_Kuillus_Drana_54_An] S. Traga -os para [%dic:STR_DIC_N_Iaetia].</p>[%collectitem]</step>
+</steps>
+<p>Criaturas mutadas na terra do Balaur estão espalhando a contaminação de Drana. Destrua -os e traga de volta seus remanescentes para estudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Iaetia estava preocupada com o fato de Drana mutação de Dragrants, Crestliches e Neokins estavam crescendo em número.</p>
+<p> </p>
+<p>Você destruiu as criaturas contaminadas e trouxe seu tecido corporal para o estudo, conforme solicitado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

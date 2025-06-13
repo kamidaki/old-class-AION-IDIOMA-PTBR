@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva procurando algum tokens especiais?</p>
+<p> </p>
+<p>O russoner opera a mais justa troca do redor. Nyerk!</p>
+<p> </p>
+<p>Você dá a Shugo o que Shugo quer, e Shugo dá a Daeva o que Daeva precisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que Daeva precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva obviamente precisa de fichas cruzadas e tokens de daemon.</p>
+<p> </p>
+<p>Russoner trocará tokens da ala por um token cruzado ou um token daemon.</p>
+<p> </p>
+<p>Você não pode recusar! Akakakakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O preço de mercado atual para 1 token cruzado ou 1 token daemon é 8 tokens da ala. Diz isso aqui, Nyerk.</p>
+<p> </p>
+<p>Isso significa que você tem que dar Shugo 8[%dic:STR_DIC_I_COIN_D_PROTECTION_01]neve. Então pague.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">(Entregue os tokens da ala.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recusou! Nyerk!</p>
+<p> </p>
+<p>Não é possível. Daeva está confuso, Shugo pensa.</p>
+<p> </p>
+<p>Daeva deve se deitar, volte quando não estiver sonolento. Akakakakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Daeva não está com sono!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva trouxe moedas para troca?</p>
+<p> </p>
+<p>Deixe Russoner ver o que Daeva trouxe. Tem que verificar a cor e o sabor, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">(Entregue os tokens da ala.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, Russoner estava falando sozinho antes.</p>
+<p> </p>
+<p>Russoner lembra -se de dizer 8[%dic:STR_DIC_I_COIN_D_PROTECTION_01] para 1 cruzado ou token Daemon.</p>
+<p> </p>
+<p>Talvez seja melhor você voltar para o Pandaemonium, se inscreva na aula de matemática. Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso contar bem!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm ... este pode ser falso ... mas Shugo confia em Daeva. Desta vez, Nyerk.</p>
+<p> </p>
+<p>Aqui está um token cruzado, e aqui um token daemon.</p>
+<p> </p>
+<p>Escolha um, Daeva. Apenas um! Akakakakak!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_PROTECTION_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_07].</p>[%collectitem]</step>
+</steps>
+<p>Russonercia recolhe os tokens da ala. Traga -lhe fichas da ala em troca de um token cruzado ou um token de daemon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Russonerador de Coleção de Moedas disse que ele queria trocar tokens cruzados ou tokens de daemon por tokens de ala.</p>
+<p> </p>
+<p>Você deu aos seus fichas russoneradores e recebeu outro em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

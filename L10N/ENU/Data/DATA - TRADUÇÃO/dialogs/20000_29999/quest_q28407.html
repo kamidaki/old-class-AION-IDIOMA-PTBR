@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo Balaur de classificação superior recebe uma arma de seu Senhor do Dragão.</p>
+<p> </p>
+<p>Essas armas não são apenas símbolos. Eles estalam bastante com energia e dão à brigada geral maior poder e autoridade.</p>
+<p> </p>
+<p>Este punho é de um dos Tiamat. Onde você o encontrou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Primeiro, eu corri por este drakan ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Eu preciso de mais Daevas como você, [%username]. Você estaria interessado em ingressar na minha equipe?</p>
+<p> </p>
+<p>Quanto à arma, nenhum drakan leal o perderia. Por que essa espada foi quebrada em pedaços? E como um Balaur comum conseguiu isso?</p>
+<p> </p>
+<p>Você vai caçar essas respostas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se viesse do esoterrace, o diretor Surama deve ter possuído essa espada.</p>
+<p> </p>
+<p>Comece com as criaturas mais próximas a ele. Ou tente encontrar sua esfera de memória de Balaur. Eles provavelmente chamariam de algo bobo como uma "esfera de armazenamento de Surama".</p>
+<p> </p>
+<p>Pena que não podemos perguntar a ele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Por que eles não podem simplesmente usar papel?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você desperdício de bom aether!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quem se importa com uma espada velha?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(O roteiro de Balaur atravessa os fios giratórios da memória de Surama.)</p>
+<p> </p>
+<p>(É melhor você levar isso a alguém que entende Balaur.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Relyt vai dar um chute com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Como está o seu balaur?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Há rumores de que as habilidades de liderança de Tiamat não significam muito. Deve ser verdadeiro.</p>
+<p> </p>
+<p>Surama chama a espada de "poder de Tiamat" e acredita que é um dispositivo de monitoramento. O direito de Tiamat não confiar em seus subordinados. Basta olhar com Surama fez com seu presente!</p>
+<p> </p>
+<p>Leve esta esfera para [%dic:STR_DIC_N_Luigir]. Ela pode reconhecer as palavras ou nomes difusos no final.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Você e Tiamat não têm fé ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito tempo, fizemos muito pouco progresso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Relyt lhe enviou a esfera de armazenamento de Surama."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Temos as memórias de Surama?</p>
+<p> </p>
+<p>Há inteligência de sabotagem nisso.</p>
+<p> </p>
+<p>Deixe -me ... mas fique por perto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a esfera de armazenamento de Surama no[%dic:STR_DIC_W_idf4re_drana_SZ_Stage_03_2].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Dmytro].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Luigir].</p></step>
+</steps>
+<p>Vá para a esoterrace para aprender o fundo por trás da espada de Tiamat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Relyt disse que o punho da espada que você encontrou pertencia à arma de um superintendente de Balaur, presenteado pelo dragão Lord Tiamat. Ele se perguntou por que e como a espada havia sido privada e o enviou para a esoterrace para descobrir uma pista.</p>
+<p> </p>
+<p>No esoterrace, você descobriu a esfera de armazenamento de Surama, que trouxe de volta.</p>
+<p> </p>
+<p>Relyt sugeriu ir a Luigir, o especialista em tudo Balaur e Bizarre. Ela ficou emocionada com o potencial de sabotagem da memória de Surama e disse para você esperar enquanto ela fazia ... alguma coisa ... com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

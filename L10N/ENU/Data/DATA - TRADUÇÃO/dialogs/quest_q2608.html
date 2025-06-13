@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um destacamento de arcontes da fortaleza de Beluslan foi para Besfer recentemente. O relatório deles ... francamente, não foi bom. De jeito nenhum.</p>
+<p> </p>
+<p>Todos os nossos esforços para salvar a vila podem ser em vão, sem mencionar o resto desta região. Aion ajude a todos nós se o relatório for verdadeiro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eles disseram?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Um deles viu um rebanho de ímpares bebendo água contaminada fluindo na vila de Besfer. A mesma água que transformará um fraco em um poderoso morto -vivo com uma única gota.</p>
+<p> </p>
+<p>Corri para Besfer assim que ouvi, mas o granker se espalhou até então. Pior ainda, eles são altamente migratórios. Eles poderiam espalhar a contaminação pela região dentro de semanas.</p>
+<p> </p>
+<p>Estamos trabalhando em uma solução melhor, mas, por enquanto, tudo o que podemos fazer é matar o Odd Granker antes que o pior aconteça. Você pode fazer isso por nós?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até agora, nenhum dos granker contaminados ficou morto -vivo, mas isso pode mudar a qualquer momento.</p>
+<p> </p>
+<p>Era [%dic:STR_DIC_M_BighorndeerMinerD_35_n] Areia [%dic:STR_DIC_M_BighorndeerD_35_An] S que foram vistos bebendo a água.</p>
+<p> </p>
+<p>São criaturas inocentes, mas isso é para Beluslan. Azphel o guia sobre este empreendimento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter sucesso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não parece entender o quão sério essa situação é.</p>
+<p> </p>
+<p>Pense no que você viu em Besfer. Agora pense nisso acontecendo na fortaleza de Beluslan, em todas as aldeias de Mau, em todos os lugares!</p>
+<p> </p>
+<p>Você não pode poupar alguns momentos para ajudar todas essas vítimas em potencial?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você encontrará outra pessoa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Que os senhores Shedim nos guentem em nossa hora de necessidade ....</p>
+<p> </p>
+<p>A Beluslan Fortaleza está exigindo atualizações regulares de nós. Eles devem ver o quão sério essa situação é.</p>
+<p> </p>
+<p>Como você fez? Você matou os grankers estranhos</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora posso descansar um pouco seguro como você, [%username], foram bem -sucedidos.</p>
+<p> </p>
+<p>Mas não posso relaxar completamente.</p>
+<p> </p>
+<p>Os Grankers estão preenchendo um vasto território, e é difícil prever a localização de sua futura morada. É por isso que não posso garantir que o perigo tenha sido totalmente evitado.</p>
+<p> </p>
+<p>Vamos observar esses granqueiros bizarros até que não apresentem mais perigo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os granqueiros que bebiam a água envenenada.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_BighorndeerMinerD_35_n]([%2]/4).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_BighorndeerD_35_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Alfgeir].</p></step>
+</steps>
+<p>Um granker bebeu água envenenada na vila fantasma de Besfer. Mate os ímpares que a praga se espalhar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alfgeir disse que os ímpares que bebiam água contaminados no Besfer e, portanto, precisavam ser mortos antes de espalhar o contágio.</p>
+<p> </p>
+<p>Então você matou Grankers Odd e jovens granqueiros estranhos. Ele agradeceu ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

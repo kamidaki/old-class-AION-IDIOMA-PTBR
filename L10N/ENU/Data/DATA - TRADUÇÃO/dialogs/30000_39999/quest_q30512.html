@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sabemos como o Balaur foi capaz de ocupar a base Rentus.</p>
+<p> </p>
+<p>Talvez haja um traidor por trás disso ...</p>
+<p> </p>
+<p>O mais importante agora é que retomamos a base. Isso significa que temos que acabar com a Guilda Vasharti para sempre.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_W_ZONE_NAME_IDYun] e eliminar o [plur][%dic:STR_DIC_M_Q30512_ALL].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio da base do Rentus?</p>
+<p> </p>
+<p>Você derrotou o alto comando do protetorado da Guilda Vasharti?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muitos Balaur agora estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por seus esforços.</p>
+<p> </p>
+<p>Se você continuar nos ajudando, a base Rentus em breve nos pertencerá mais uma vez.</p>
+<p> </p>
+<p>Nós nos encontraremos de novo, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_ZONE_NAME_IDYun] e matar o [plur][%dic:STR_DIC_M_Q30512_ALL]([%2]/15).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Garnon].</p></step>
+</steps>
+<p>Elimine o alto comando do protetorado da Guilda Vasharti, que invadiu a base do Rentus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os remanescentes da Guilda Vasharti precisam ser destruídos primeiro se quisermos reconstruir a base do Rentus.</p>
+<p> </p>
+<p>Você foi à base Rentus a pedido de Garnon e eliminou o alto comando do protetorado da Guilda Vasharti.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

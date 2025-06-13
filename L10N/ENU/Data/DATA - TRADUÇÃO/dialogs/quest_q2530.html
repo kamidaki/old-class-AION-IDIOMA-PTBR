@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Levou tanto tempo para chegarmos tão longe quanto nós, e ainda assim parece que não chegamos a lugar algum com o problema dos Mortos Vivos em Besfer Ghost Village.</p>
+<p> </p>
+<p>Temos o Daevas por aí para investigar, mas não podemos encontrar a grande solução-apenas os temporários.</p>
+<p> </p>
+<p>Não podemos deixar isso continuar. Temos nossos residentes e sua segurança em que pensar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso deve ser difícil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais do que você pode imaginar.</p>
+<p> </p>
+<p>Eu realmente apreciaria qualquer ajuda que você poderia fornecer. Sinto como se tivesse enviado tantos Daevas por aí ... mas as histórias que se seguem a me fazer pensar se você não é o que eu precisava o tempo todo.</p>
+<p> </p>
+<p>Você está disposto a descobrir?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Vou precisar de você para abater [%dic:STR_DIC_M_SkeletonD_35_An] S, [%dic:STR_DIC_M_ZombieD_35_An] Areia [%dic:STR_DIC_M_GraveknightD_36_An] S.</p>
+<p> </p>
+<p>Avise -me quando terminar. Eu estarei esperando por você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh? Hmph.</p>
+<p> </p>
+<p>Tudo bem, então. Volte se tiver tempo ... ou não.</p>
+<p> </p>
+<p>Eu não me importo de qualquer maneira. Realmente. Estou indiferente a saber se você está disposto a ajudar ou não. Estou ansioso para ser comido vivo pelos Mortos Vivos. Obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De nada?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, espero que possamos encontrar uma maneira de reverter esse problema morto -vivo. Muito em breve.</p>
+<p> </p>
+<p>Enfim, como foi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por seus serviços.</p>
+<p> </p>
+<p>[%username], agradece a você que o dano aos habitantes da cidade foi aliviado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe os Mortos Vivos na vila fantasma Besfer.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_SkeletonD_35_An]([%2]/5).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_ZombieD_35_An]([%5]/3).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_GraveknightD_36_An]([%8]/2).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gigrite].</p></step>
+</steps>
+<p>Temos que parar os Mortos Vivos na vila fantasma de Besfer de prejudicar as pessoas. Então você tem que matar as espacas da Graveknight Sells, os vigilantes anubitas e os zumbis pálidos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gigrite, que foi enviado ao Besfer Ghost Village para resolver o problema dos Mortos Vivos, disse que precisaria de tempo para encontrar uma solução final. Ela assim pediu que você matasse os Mortos Vivos, para que isso possa pelo menos aliviar os danos aos habitantes da cidade.</p>
+<p> </p>
+<p>Você matou Graveknight Sellswords, vigilantes anubitas e zumbis pálidos na vila fantasma. Gigrite agradeceu ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

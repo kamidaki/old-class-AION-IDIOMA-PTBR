@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de serviço -</p>
+<p> </p>
+<p>Você recebeu a missão de procurar um raro baú de tesouros sob a cachoeira em Vengar.</p>
+<p></p>
+<p>Leia as seguintes informações com cuidado e siga as instruções.</p>
+<p> </p>
+<p>1. Alvo:[%dic:STR_DIC_I_quest_46529a]</p>
+<p></p>
+<p>2. Detalhes: Este é um baú do tesouro musgo que pode ser encontrado sob a cachoeira em Vengar. Se você trazê -lo para nós sem abri -lo primeiro, você será recompensado particularmente bem.</p>
+<p> </p>
+<p>Todo mundo que nos traz um baú do tesouro musgo será generosamente recompensado.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_DF5_Fishring_E], Daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você aceita a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Algumas pessoas tentam vendê -lo, AK.</p>
+<p> </p>
+<p>Mas somente nós Shugos estão em posição de trazer bens como o [%dic:STR_DIC_I_quest_46529a] em circulação, AK.</p>
+<p> </p>
+<p>Portanto, não tenha idéias estúpidas, basta mostrar a Shugo, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o baú do tesouro musgo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Inspeciona com cuidado.) Realmente há algo por dentro.</p>
+<p> </p>
+<p>Muitos Daevass correm o risco de uma espiada, Ak.</p>
+<p> </p>
+<p>Shugo está intrigado ao ver quem comprará o baú.</p>
+<p> </p>
+<p>Bom trabalho. Aqui está a recompensa de Daeva, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_quest_46529a] e leve-os para [%dic:STR_DIC_N_DF5_Fishring_E].</p>[%collectitem]</step>
+</steps>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk. Realizar esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma missão dos daemons de Charlirunerk para procurar um baú do tesouro musgo sob a cachoeira em Vengar.</p>
+<p> </p>
+<p>Você encontrou o baú do tesouro musgo e depois relatou a um membro dos daemons de Charlirunerk, que lhe deu uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

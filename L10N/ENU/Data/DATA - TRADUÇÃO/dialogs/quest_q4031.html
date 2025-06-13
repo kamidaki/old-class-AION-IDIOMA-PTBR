@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acredita que este é o terceiro esforço para recuperar Brusthonin? Terceiro. Zero-três. Dois falharam, um para ir. Fascinante, não é?</p>
+<p> </p>
+<p>Depois que as duas primeiras tentativas falharam, as pessoas abandonaram o local. Eles imaginaram que a terra nunca mais seria capaz de apoiar os colonos. Agora, está simplesmente deserto-bem, exceto por todos os mortos-vivos.</p>
+<p> </p>
+<p>Quando cheguei, fiquei realmente surpreso. Somente a área em torno de Baltasar não estava contaminada ou invadida.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"A árvore os mantém afastados?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim. Baltasar não apenas impede a contaminação, mas também evita que os Mortos Vivos invadam.</p>
+<p> </p>
+<p>Não poderíamos ter nos estabelecido aqui se não fosse a intercessão de Ervin e a ajuda de Baltasar.</p>
+<p> </p>
+<p>Graças a eles, os seres humanos podem morar aqui com segurança e nós, soldados, podemos dormir com calma, sabendo que este lugar está protegido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso deve ser um conforto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É, mas o poder de Baltasar não nos protege de todos os perigos.</p>
+<p> </p>
+<p>Os Kurins e Karnifs em Sudorville, por exemplo-seus números costumavam ser bastante pequenos, mas ultimamente eles se tornaram um problema real.</p>
+<p> </p>
+<p>Na verdade, é um problema que um Daeva possa resolver facilmente, agora que penso nisso. Você está pronto para isso, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Se você sair pelo portão norte de Baltasar Hill Village, verá Sudorville.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_DF2A_CuresSpotD_45_An] Areia [%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An] S está em todo o lugar.</p>
+<p> </p>
+<p>Apenas se livre deles. Temos nossas mãos cheias de Mortos Vivos, mas esses animais são um perigo constante para os seres humanos, então eu aprecio que você cuide disso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ocupado? Oh, eu entendo. Tenho certeza de que você não veio até aqui, só para me fazer um pequeno favor.</p>
+<p> </p>
+<p>Na verdade, é meio engraçado, agora que eu acho isso. Você, um Daeva, apenas ficando por aqui esperando que eu lhe dê algo para fazer. Ha!</p>
+<p> </p>
+<p>É risível!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O fato de os Kurins e Karnifs estarem aumentando em números não é ruim. Houve um tempo em que nem mesmo insetos podiam morar aqui. É um sinal de que a área está se recuperando.</p>
+<p> </p>
+<p>Claro, ainda temos que lidar com eles. Você se livrou de alguns dos Kurins e Karnifs?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Até agora eu tenho ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não foi tão difícil eu imagino. Não importa o quão cruel seja um animal, não é páreo para um Daeva, certo?</p>
+<p> </p>
+<p>Obrigado pela ajuda. Cada mão extra é apreciada aqui em Brusthonin.</p>
+<p> </p>
+<p>Sombras protegem você, Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as criaturas que ameaçam a vila de Baltasar Hill.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_CuresSpotD_45_An]([%2]/5)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_DF2A_KalnifSpotD_45_An]([%5]/7)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Bielia].</p></step>
+</steps>
+<p>Atenda ao pedido de Bielia e mate os Kurins manchados e os pálidos Karnifs ameaçando a vila de Baltasar Hill.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bielia disse que o poder de Baltasar protege a vila da contaminação e dos Mortos Vivos, mas os riscos naturais ainda ameaçam as pessoas que moram lá.</p>
+<p> </p>
+<p>Como ela solicitou, você matou Kurins e Karnifs pálidos que estavam invadindo as fronteiras da vila. Ela ficou grata pela ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

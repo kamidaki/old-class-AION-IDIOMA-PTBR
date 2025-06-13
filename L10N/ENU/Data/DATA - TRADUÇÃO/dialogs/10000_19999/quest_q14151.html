@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora eu tenha sido repreendido por querer explorar uma região que poderia se tornar um campo de batalha na luta contra o Balaur, não desistirei de minha pesquisa sobre o Klaw.</p>
+<p> </p>
+<p>Quando o Klaw apareceu pela primeira vez, a maioria dos ecologistas pensava que eram apenas potcrabs que haviam se mudado por causa da grande catástrofe.</p>
+<p> </p>
+<p>Mas agora não há mais ecologistas que pensem disso.</p>
+<p> </p>
+<p>Comparado aos PotCrabs, o Klaw é extraordinariamente inteligente. Isso é óbvio apenas olhando para a comunidade bem organizada.</p>
+<p> </p>
+<p>No entanto, o Klaw está perturbando o equilíbrio da natureza na selva de Poya ...</p>
+<p> </p>
+<p>Para dizer brevemente, o Klaw representa uma ameaça à existência das outras espécies na selva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Klaw se multiplica muito mais rápido que as outras espécies que vivem na selva.</p>
+<p> </p>
+<p>Se o klaw continuar se espalhando tão rapidamente, o equilíbrio natural da selva de Poya em breve descerá para o caos completo.</p>
+<p> </p>
+<p>Temos que resolver o problema de Klaw para salvar a selva de Poya.</p>
+<p> </p>
+<p>No entanto, você não pode simplesmente acabar com todo o klaw que encontra aqui.</p>
+<p> </p>
+<p>É sempre melhor descobrir a causa do problema e resolvê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta sobre o método.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Só há uma maneira de impedir que os Klaws se espalhem.</p>
+<p> </p>
+<p>Devemos eliminar o [%dic:STR_DIC_M_NeutL2NamedQ_39_An]! É a única maneira de impedir que o Klaw aumente continuamente.</p>
+<p> </p>
+<p>Vá para o aflição de Klawtan e destrua o [%dic:STR_DIC_OBJ_Neutspawner_Q1053]. Você pode usá -lo para atrair a rainha.</p>
+<p> </p>
+<p>Assim que o [%dic:STR_DIC_M_NeutL2NamedQ_39_An] Aparece, mate -a imediatamente!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+<cutscene id="186"></cutscene>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você claramente também tem um forte senso de consciência do meio ambiente. Então você sabe o quão importante é essa missão.</p>
+<p> </p>
+<p>Enquanto você realiza a missão, irei à fortaleza. Vá para a fortaleza também depois de concluir a missão e se reportar para [%dic:STR_DIC_N_Barsita].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você não quer me ajudar? Você não percebe o quão importante é essa missão?</p>
+<p> </p>
+<p>Estou muito decepcionado com você, [%username].</p>
+<p> </p>
+<p>Eu esperava que a liderança me enviasse alguém com grande coragem e resolução ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo!</p>
+<p> </p>
+<p>Senea entrou em contato comigo sobre o problema de Klaw.</p>
+<p> </p>
+<p>Bem, então, como foi? Você conseguiu eliminar [%dic:STR_DIC_M_NeutL2NamedQ_39_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Eu eliminei a rainha Taklaw.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Deus.</p>
+<p> </p>
+<p>Senea disse que a situação era grave. Mas agora, com você eliminando a rainha, eu nem preciso me preocupar.</p>
+<p> </p>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Esta é a sua recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_Neutspawner_Q1053]para atrair [%dic:STR_DIC_M_NeutL2NamedQ_39_An] e eliminá -la ([%8]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Barsita]no[%dic:STR_DIC_W_LF3_SZ_A1].</p></step>
+</steps>
+<p>Os Klaws estão ameaçando o sistema ecológico da selva de Poya. Auxiliar o ecologista Senea a encontrar uma solução.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O ecologista Senea está preocupado com o fato de Klaws ameaçar a ecologia da selva de Poya.</p>
+<p> </p>
+<p>Então você eliminou a rainha Taklaw. Então você se reportou a Barzon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

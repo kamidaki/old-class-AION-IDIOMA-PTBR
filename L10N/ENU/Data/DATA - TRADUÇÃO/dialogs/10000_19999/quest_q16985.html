@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], ordens importantes chegaram!</p>
+<p> </p>
+<p>Precisamos de um Daeva confiável para nos aventurar no refúgio da tribo Rune e procurar tesouros.</p>
+<p> </p>
+<p>A maioria dos nossos materiais de guerra foi usada nas batalhas. É por isso que o governador me confiou pessoalmente essas ordens.</p>
+<p> </p>
+<p>Não se preocupe, a entrada do refúgio da tribo Rune está bem escondida dos inimigos. Por que você parece tão incrédulo? Você está surpreso por eu dirigir este lugar?</p>
+<p> </p>
+<p>O governador me deu total autoridade sobre tudo a ver com o refúgio da tribo Rune. É também por isso que cheguei até você, [%username].</p>
+<p> </p>
+<p>Passe através do[%dic:STR_DIC_N_OBJ_IDLDF5_Under_02_Entrance_In_L]Para chegar ao refúgio da tribo Rune, onde nosso explorador [%dic:STR_DIC_N_IDLDF5_Under_02_E_Alkatron_E] está esperando. Fale com ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], sua primeira tarefa é expulsar os inimigos do refúgio da tribo Rune.</p>
+<p> </p>
+<p>O Exército de Beritra também está interessado nos tesouros da tribo Rune.</p>
+<p> </p>
+<p>Até os Shugos e Shulacks estão lá procurando itens preciosos. Proteja -se dos ladrões do túmulo que se escondem lá.</p>
+<p> </p>
+<p>Eles parecem estar fornecendo ao Exército de Beritra suprimentos e em troca têm permissão para realizar escavações no refúgio.</p>
+<p> </p>
+<p>Eu não acho que eles estão interessados ​​na herança da tribo Rune, mas como eles estão trabalhando com o Exército de Beritra, você deve ter cuidado.</p>
+<p> </p>
+<p>Você provavelmente terá que lutar contra os ladrões graves antes de chegar aos comandantes do exército de Beritra.</p>
+<p> </p>
+<p>Como todos os Shugos e Shulacks aqui fazem parte da gangue de ladrões de Chira Grave, eles são nossos inimigos e precisam ser eliminados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda existem muitos tesouros valiosos no refúgio da tribo Rune.</p>
+<p> </p>
+<p>Itens grandes e particularmente valiosos são frequentemente encontrados lá.</p>
+<p> </p>
+<p>Se não tivéssemos subornado um shugo, talvez nunca pudéssemos voltar para lá.</p>
+<p> </p>
+<p>Se conseguirmos capturar o refúgio, a vitória estará quase ao nosso alcance.</p>
+<p> </p>
+<p>De acordo com nossas informações, os soldados de Beritra descobriram jóias raras de runas. Por favor, vá buscar o [plur][%dic:STR_DIC_I_quest_16985a]para reabastecer nossos materiais de guerra.</p>
+<p> </p>
+<p>Depois de ter o [plur][%dic:STR_DIC_I_quest_16985a], traga -os para [%dic:STR_DIC_N_LF5_Supri_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio do refúgio da tribo Rune?</p>
+<p> </p>
+<p>Você conseguiu o [plur][%dic:STR_DIC_I_quest_16985a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as jóias de Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algo que parece muito incomum.</p>
+<p> </p>
+<p>Vou precisar enviar mais Daevas para o refúgio da tribo Rune se houver esse tipo de tesouro lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que ele planeja fazer com as jóias de Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é tão fácil de obter [plur][%dic:STR_DIC_I_quest_16985a].</p>
+<p> </p>
+<p>Mas eles são muito valiosos porque fazem parte do tesouro da tribo Rune.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem algo que parece muito incomum.</p>
+<p> </p>
+<p>Vou precisar enviar mais Daevas para o refúgio da tribo Rune se houver esse tipo de tesouro lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que ele planeja fazer com as jóias de Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou levar as jóias de Rune que você me trouxe aos meus superiores e solicitarei tropas adicionais para o refúgio da tribo Rune.</p>
+<p> </p>
+<p>Tenho certeza de que eles não hesitarão em enviar reforços assim que virem as jóias com seus próprios olhos.</p>
+<p> </p>
+<p>Espero uma boa notícia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_IDLDF5_Under_02_E_Alkatron_E]no[%dic:STR_DIC_W_IDLDF5_Under_02_L].</p></step>
+<step><p visible="[%3]">Encontrar [plur][%dic:STR_DIC_I_quest_16985a] e trazê -los para [%dic:STR_DIC_N_LF5_Supri_E].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o refúgio da tribo Rune, encontre as jóias de Rune e leve -as para supres.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Supres disse que os materiais de guerra foram usados. É por isso que você foi enviado para procurar itens valiosos no refúgio da tribo Rune.</p>
+<p> </p>
+<p>Você foi a Alkatron, que lhe deu a tarefa de expulsar o inimigo do refúgio da tribo Rune.</p>
+<p> </p>
+<p>Alkatron pediu que você obtenha as jóias de Rune do refúgio da tribo Rune e as levassem a Supres.</p>
+<p> </p>
+<p>Você trouxe as jóias de Rune para Supres. Supres agradeceu e disse que queria enviar mais Daevas para o refúgio da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

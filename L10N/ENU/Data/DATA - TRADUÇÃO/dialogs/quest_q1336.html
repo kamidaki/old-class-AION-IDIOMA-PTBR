@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Brass na Fortaleza de Eltnen está fora de contato com as realidades com as quais vivemos todos os dias. Eles nos designaram uma área de patrulha que é muito grande para cobrir.</p>
+<p> </p>
+<p>Podemos conseguir patrulhar os principais pontos de perigo, mas existem áreas problemáticas em potencial, e não posso poupar ninguém para investigar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por um lado, o deserto ao norte daqui é geralmente cheio de morfinos, mas eu não vi um há semanas.</p>
+<p> </p>
+<p>e [%dic:STR_DIC_W_SensoryArea_Q1336_2], ao sul da tumba de Sataloca, está incomumente quieto. Não vi nenhuma fumaça de suas chaminés há vários dias.</p>
+<p> </p>
+<p>Ao sul daqui em[%dic:STR_DIC_W_SensoryArea_Q1336_3], geralmente você pode encontrar o Grifo de Razorwing. Eles são catadores, e tenho medo de que eles não deixem a área há vários dias, significa que há uma rica fonte de carcaças para atraí -los.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é um pouco perturbador."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais do que um pouco, [%username]. Então, que tal?</p>
+<p> </p>
+<p>Seria uma grande ajuda para nós se você aceitar isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Eu sei que é muito pedir.</p>
+<p> </p>
+<p>Ok, ao norte daqui você encontrará[%dic:STR_DIC_W_SensoryArea_Q1336_1]. [%dic:STR_DIC_W_SensoryArea_Q1336_2] está em direção ao extremo sul do coração de Sataloca e [%dic:STR_DIC_W_SensoryArea_Q1336_3], onde estão o grito de barbear, fica ao sul de onde estamos.</p>
+<p> </p>
+<p>Volte e me diga como foi.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vai fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenho ninguém de sobra. Sem você, o trabalho não será feito.</p>
+<p> </p>
+<p>Eu esperava que você visse o quão importante é.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi sua viagem de escotismo?</p>
+<p> </p>
+<p>Eu tenho tempo, então me diga todos os detalhes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_SELECT_QUEST_REWARD">"A notícia não é boa, receio ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu mal posso acreditar que é verdade, [%username]. Os morfinos massacraram? Dartas Village destruiu? Se eu soubesse, eu teria agido antes agora ....</p>
+<p> </p>
+<p>E agora essa área de decomposição tão perto do posto avançado ... vou notificar a fortaleza de Eltnen imediatamente.</p>
+<p> </p>
+<p>Obrigado de qualquer maneira por realizar uma missão tão difícil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Escoteiro o deserto.</p>
+<p visible="[%3]">Procurar [%dic:STR_DIC_W_SensoryArea_Q1336_1]na região norte do deserto de Eracus. [%5]</p>
+<p visible="[%6]">Investigar [%dic:STR_DIC_W_SensoryArea_Q1336_2]. [%8]</p>
+<p visible="[%9]">Encontre o Grifus de Razorwing no[%dic:STR_DIC_W_SensoryArea_Q1336_3]. [%11]</p></step>
+<step><p visible="[%12]">Relatório para [%dic:STR_DIC_N_Demokritos].</p></step>
+</steps>
+<p>Demokritos, o líder dos olheiros do deserto, quer que você explique algumas áreas locais e se reporte a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demokritos estava preocupado com a vila de Morphinos e Dartas e a grande concentração de Grifus de Razorwing ao sul da base de escoteiros.</p>
+<p> </p>
+<p>Você examinou o deserto e descobriu que os morfinos haviam sido massacrados e que a vila de Dartas foi destruída. Você também descobriu que a parte sul da base de escoteiros estava em decomposição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

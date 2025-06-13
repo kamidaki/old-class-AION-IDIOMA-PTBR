@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu a frase "sorriso de Lumiel"?</p>
+<p> </p>
+<p>A expressão se origina na lenda do sábio Lady Lumiel.</p>
+<p> </p>
+<p>Um dia, Lady Lumiel realizou um jantar para os maiores estudiosos e pesquisadores de Asmodae. Ela levantou um[%dic:STR_DIC_OBJ_Lotus_Q2496], e perguntou o que significava para eles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessante realmente! De qualquer forma, ao ouvir a resposta-esquecida por agora-Lady Lumiel sorriu. Desde então, as pessoas dizem que sua sabedoria está incorporada na flor de AmPreh.</p>
+<p> </p>
+<p>É o meu desejo mais sincero ver a flor e meditar na mensagem da senhora sábia Lumiel.</p>
+<p> </p>
+<p>Você poderia escolher alguns[%dic:STR_DIC_OBJ_Lotus_Q2496] S, para que eu possa usá -los na minha meditação? Com todos os monitores e brilhos por aqui, é perigoso demais para eu me reunir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há[%dic:STR_DIC_OBJ_Lotus_Q2496] está no lago perto do habitat sprigg. Por favor, escolha cinco flores de flores e traga -as para mim.</p>
+<p> </p>
+<p>Puxa, já estou animado para cheirar as flores doces e refletir sobre a mensagem silenciosa de Wise Lady Lumiel.</p>
+<p> </p>
+<p>Por favor, apresse -se!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"As flores não têm chance contra mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmph.</p>
+<p> </p>
+<p>Não importa então. Qualquer que seja o significado profundo que eu queira ensinar, não faz sentido se você não ouvir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou sobreviver sem a sua sabedoria."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe cinco[%dic:STR_DIC_OBJ_Lotus_Q2496]florescem para que eu possa meditar na mensagem do sorriso de Lumiel?</p>
+<p> </p>
+<p>Se eu puder apenas ter as flores de AmPreh e meditar em seu significado, tenho certeza de que posso alcançar um novo platô em minhas contemplações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as flores do AmPreh que encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não pretendo empurrá -lo, mas pensei que você trouxe cinco[%dic:STR_DIC_OBJ_Lotus_Q2496]flores.</p>
+<p> </p>
+<p>Se você coletar cinco flores de flores, traga -as para mim imediatamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mais flores, é claro ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, cheire essas flores! Rico, mas não muito doce, complexo, mas não esmagador ....</p>
+<p> </p>
+<p>Que sabedoria esse perfume implica?</p>
+<p> </p>
+<p>Passarei algum tempo internalizando e analisando. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_OBJ_Lotus_Q2496]floresce e leve-os para [%dic:STR_DIC_N_DF2_NPC_Sprigg].</p>[%collectitem]</step>
+</steps>
+<p>Vivi quer meditar para entender a implicação da flor de AmPreh. Escolha alguns e leve -os para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vivi, um gerger, queria meditar para entender o significado das flores de AmPreh.</p>
+<p> </p>
+<p>Você o trouxe cinco flores de um lago perto do habitat de Sprigg, e ele disse que percebeu a sabedoria no perfume das flores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

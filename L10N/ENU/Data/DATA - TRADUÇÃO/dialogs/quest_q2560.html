@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou fazer isso rápido para que ninguém nos veja conversando. Eu tenho ordens para tirar os guardas lefaristas do caminho, mas envenená -los sem quebrar minha capa está demorando muito.</p>
+<p> </p>
+<p>Eu preciso de alguém para ajudar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Seria eu, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem uma cobertura para soprar, para que você possa invadir lá e matá -los completamente. O que você diz? Há uma moeda nela para você ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ouvir isso. Tem neles!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou fazer um pouco de trabalho deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, vou fazer isso da maneira lenta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O destino está do seu lado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava escondido, então eles não suspeitariam quando você não me matou. Como foi?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles são muito mais fracos agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Aqui está a moeda que prometi.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os revolucionários lefaristas que guardam a mina de Malek.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_FnA_LehparFiD_37_An]([%2]/4).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_AnA_LehparAsD_37_An]([%5]/3).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_FnB_LehparFiD_37_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Stua].</p></step>
+</steps>
+<p>Stua recebeu ordens para enfraquecer os guardas de minas. Mate os combatentes, soldados e esgrimistas que guardam a mina de Malek.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Stua precisava de ajuda para descartar os guardas lefaristas-assassinando-os sem quebrar a cobertura dela estava demorando muito-então ela fez você simplesmente matar todos eles. Você recebeu uma moeda em troca.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

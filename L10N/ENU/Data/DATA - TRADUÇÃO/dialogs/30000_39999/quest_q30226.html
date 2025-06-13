@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho tido esses ... sonhos ultimamente. Sonhos horríveis! Eles parecem piorar todas as noites.</p>
+<p> </p>
+<p>Nesses sonhos, eu posso ver as almas torturadas de Daevas ... ouvem seus gritos. Eu posso ver tudo tão vividamente.</p>
+<p> </p>
+<p>Eles não são como sonhos regulares, no entanto. Eles são como visões ... como se eu estivesse vendo uma projeção de algo realmente ocorrendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quem está nesses sonhos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não tenho certeza. Tudo cresce nebuloso quando eu acordo, mas sei que algo está errado! De alguma forma, preciso ver meus sonhos quando acordado, saber o que aconteceu.</p>
+<p> </p>
+<p>Você vai me ajudar, [%username]?</p>
+<p> </p>
+<p>Eu ouvi isso [%dic:STR_DIC_I_QUEST_30226a] S, em números suficientes, permite que você veja seus sonhos da noite anterior enquanto acordou. Você os localizaria para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em Hanarkand, existem criaturas chamadas[%dic:STR_DIC_M_LF4_C5_FlyingFoam_55_An] S. o [%dic:STR_DIC_I_QUEST_30226a] S são feitos de seus corpos.</p>
+<p> </p>
+<p>Com o poder deles, poderei revisar meu sonho e descobrir onde esses Daevas torturados estão sendo mantidos.</p>
+<p> </p>
+<p>Eu sei que isso parece louco, [%username], e talvez eu esteja errado ... talvez seja apenas um sonho ruim. Mas eu preciso ter certeza. Obrigado por ajudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que eu sou louco, não é? Você acha que estou apenas sofrendo de pesadelos?</p>
+<p> </p>
+<p>Se você acredita em mim ou não, o que vejo todas as noites são visões! Sou testemunha de algum ... algum evento horrível e não sei o que é ou onde está!</p>
+<p> </p>
+<p>Mas devo descobrir, Daeva! Vou pegar as bolhas de fantasia!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vá na luz dela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja de volta, [%username]! Eu só tive outro sonho que foi horrível!</p>
+<p> </p>
+<p>Seja o que for, está se aproximando ... eu posso sentir. Esses rostos torturados estão começando a me assombrar agora ... assombrar minha vida acordada.</p>
+<p> </p>
+<p>Por favor, diga -me que você foi capaz de obter as bolhas de fantasia para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as bolhas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou lhe dizendo que os daevas estão sofrendo em algum lugar por aqui, e você está andando por aí sem fazer nada? Você tem que acreditar em mim!</p>
+<p> </p>
+<p>Eu preciso dessas bolhas de fantasia para que eu possa descobrir onde! Tenho medo de adormecer ... com medo do que vou ver!</p>
+<p> </p>
+<p>[%username], você deve matar o [%dic:STR_DIC_M_LF4_C5_FlyingFoam_55_An] e me traga o [%dic:STR_DIC_I_QUEST_30226a] S!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que isso funcione, [%username]. Parece meio estranho confiar em Scrying para obter respostas nesta idade em que vivemos. Mas se funcionar, funciona ....</p>
+<p> </p>
+<p>(Ela mescla as bolhas em uma grande bolha, segura -a nas duas mãos e fecha os olhos.)</p>
+<p> </p>
+<p>Acho que vejo onde os Daevas estão sendo mantidos. Eu posso ouvir seus gritos mais altos do que antes. Você pode ouvir isso? Parece tão perto. Tão perto, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30226a] e trazê -los para [%dic:STR_DIC_N_Kailaus].</p>[%collectitem]</step>
+</steps>
+<p>Derrote as marés de maré e obtenha bolhas de fantasia para que Kailaus possa ver claramente seus sonhos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kailaus sonha com Daevas torturado e se sente compelido a resgatá -los.</p>
+<p> </p>
+<p>Você trouxe bolhas de fantasia dela, o que a ajudou a ver as visões de seus sonhos com mais clareza.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41100</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. Eu tenho que pedir outro favor de você, mas não tenho certeza de como começar neste.</p>
+<p> </p>
+<p>Não faz muito tempo, um esquadrão de soldados de elite da Guilda da Sandstorm foi para limpar alguns[%dic:STR_DIC_E_Q41116a]... Mas no final eles não foram capazes de eliminar um único.</p>
+<p> </p>
+<p>Também se esqueceu de prender sua alma ao obelisco, levando à sua aniquilação.</p>
+<p> </p>
+<p>Esse foi quase certamente o custo que pagamos pela subestimação do nosso inimigo ...</p>
+<p> </p>
+<p>Então agora estou confiando completamente em você, [%username]. Alguém como você quase definitivamente conhece muitos aliados fortes.</p>
+<p> </p>
+<p>Peço que você trabalhe junto com seus amigos e elimine o [%dic:STR_DIC_E_Q41116a]. Mas não há necessidade de exagerar, apenas um será suficiente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O chifre de um Zanthay, dizem eles, é um poderoso afrodisíaco quando moído e ingerido. Mas você não pode remover a buzina sem matar a criatura.</p>
+<p> </p>
+<p>Ah, estou feliz por você estar de volta, [%username]. Os caídos podem descansar em paz? Você matou um dos[%dic:STR_DIC_E_Q41116a]?</p>
+<p> </p>
+<p>Cada um deles é realmente formidável. Qual você enfrentou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os caídos foram vingados ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Obrigado. Você é realmente incrível no que faz.</p>
+<p> </p>
+<p>Agradeço por você ter o problema. Aqui, a gratidão da tempestade de areia ...</p>
+<p> </p>
+<p>Até você deve estar exausto, no entanto. Descanse muito. Você certamente ganhou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate um dos[%dic:STR_DIC_E_Q41116a]([%2]/1).</p></step>
+<step><p visible="[%15]">Retornar a [%dic:STR_DIC_N_Betios].</p></step>
+</steps>
+<p>Encontre e mate um dos alvos brutais das sombras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Betios disse que os soldados que foram matar alvos brutais de sombras chegaram a um fim horrível. Ele pediu sua ajuda.</p>
+<p> </p>
+<p>Você reuniu alguns colegas e matou um dos terríveis demônios, e Betios apreciou você vingando os caídos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

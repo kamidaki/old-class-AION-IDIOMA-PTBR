@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A 5ª tropa do Exército de Beritra está atacando o Katalam Underground e deve ser parado!</p>
+<p> </p>
+<p>As coisas estão quietas no minuto, mas assim que o acampamento for levado, elas virão aqui.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5_Under_Oturu_E], você poderia ir lá imediatamente, informá -los sobre esse assunto e oferecer sua ajuda?</p>
+<p> </p>
+<p>Eles não conseguirão parar a 5ª tropa com seus números atuais. Por favor, se apresse, cada segunda contagem!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio por causa de uma emergência?</p>
+<p> </p>
+<p>[%username], Posso dizer pela sua postura que você está com pressa.</p>
+<p> </p>
+<p>É apenas um palpite, mas parece que é doente.</p>
+<p> </p>
+<p>Fomos atacados?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você transmite o pedido de Mardey.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O 5º esquadrão do Exército de Beritra!</p>
+<p> </p>
+<p>Eles criaram uma guarnição. Isso é praticamente uma declaração de guerra. Não demorará muito até que eles nos atacem.</p>
+<p> </p>
+<p>[%username], por favor, mate o [%dic:STR_DIC_M_LDF5_Under_VriTR_N_all]no[%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_R1].</p>
+<p> </p>
+<p>A 5ª tropa também é conhecida como o esquadrão de rastreamento. Essa força foi formada pelos restantes soldados do exército de Tiamat que voluntariamente se aliaram ao exército de Beritra.</p>
+<p> </p>
+<p>Agora eles agora rastreiam soldados de Tiamat que antes estavam do mesmo lado com eles. Eles não devem ser subestimados como um oponente.</p>
+<p> </p>
+<p>Vá e ajude a parar a 5ª tropa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os caçadores de sobreviventes?</p>
+<p> </p>
+<p>Eles costumavam fazer parte do renomado exército de Tiamat, mas agora estão perseguindo seus antigos camaradas sob o nome de 'Survivor Hunters'. Negócios horríveis!</p>
+<p> </p>
+<p>No entanto, eles fazem isso para que possam sobreviver.</p>
+<p> </p>
+<p>Para nós, ambos são oponentes que devem ser mortos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho! Você conseguiu parar a 5ª unidade bem a tempo.</p>
+<p> </p>
+<p>Agora estamos a salvo de seus ataques.</p>
+<p> </p>
+<p>Isso foi um bom trabalho.</p>
+<p> </p>
+<p>Espero que você continue nos apoiando tão corajosamente no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Por favor, passe [%dic:STR_DIC_N_LDF5_Under_Merde_E] Solicitação para [%dic:STR_DIC_N_LDF5_Under_Oturu_E].</p></step>
+<step><p visible="[%9]">Vá para o [%dic:STR_DIC_W_ZONE_NAME_LDF5_SZ_R1] e destruir o [%dic:STR_DIC_M_LDF5_Under_VriTR_N_all]([%11]/9).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_LDF5_Under_Oturu_E].</p></step>
+</steps>
+<p>Entregue a mensagem de Merne ao OTUR.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Merde diz que a 5ª tropa do exército de Beritra deve ser interrompida, mas como os números atuais são insuficientes para a tarefa, ele pediu que você solicitasse apoio da OTUR.</p>
+<p> </p>
+<p>Você fez o pedido de Mardey a Otur e foi convidado a ir à guarnição do 1º Exército da Rata e matar os soldados de elite dos caçadores de sobreviventes juntos. Você matou os soldados de elite dos caçadores de sobreviventes e relatou a Otur, que parecia estar muito satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

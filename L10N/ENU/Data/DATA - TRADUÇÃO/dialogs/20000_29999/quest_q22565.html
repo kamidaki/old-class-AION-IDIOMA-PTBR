@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se Nevilim tem algo a ver com a tribo Rune, a tribo Rune deve ser investigada.</p>
+<p> </p>
+<p>Você deve estar se perguntando como se pode investigar a tribo extinta Rune, mas existem meios e maneiras.</p>
+<p> </p>
+<p>Um assistente de pesquisa realmente descobriu a alma da tribo Rune.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF5a_E3] e conhecer [%dic:STR_DIC_N_LDF5a_Noreuntu_E].</p>
+<p> </p>
+<p>Se você falar com ele, tenho certeza de que algo sairá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ter ouvido as notícias, e é por isso que você está aqui.</p>
+<p> </p>
+<p>Eu descobri traços da tribo Rune.</p>
+<p> </p>
+<p>[%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary]Parece muito velho.</p>
+<p> </p>
+<p>Mas fiquei perturbado depois de descobrir, então tive que voltar de mãos vazias.</p>
+<p> </p>
+<p>Você poderia olhar através do[%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary]No meu lugar e trazer de volta um documento importante?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um livro antigo)</p>
+<p> </p>
+<p>(Quando você abre um pouco a capa, você percebe os símbolos da runa.)</p>
+<p> </p>
+<p>(Você deve levar isso com você como evidência.)</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou os registros da antiga tribo Rune?</p>
+<p> </p>
+<p>Estamos esperando por você, [%username].</p>
+<p> </p>
+<p>Não vi o conteúdo por causa do distúrbio e acho isso difícil de suportar.</p>
+<p> </p>
+<p>Esses são materiais importantes. Se você os tiver, entregue -os para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a memória de Eremion.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Memória de Eremion. Eu nunca pensei que esse documento realmente existisse. Que fonte maravilhosa de informação.</p>
+<p> </p>
+<p>Eu acho que isso poderia finalmente nos ajudar a descobrir as razões para a morte da tribo Rune.</p>
+<p> </p>
+<p>Parece que houve algum tipo de enorme acidente. Mas no momento não posso dizer nada mais certo.</p>
+<p> </p>
+<p>Você poderia deixar este documento comigo por um tempo até que possamos dizer algo mais específico?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5a_E3], encontrar [%dic:STR_DIC_N_LDF5a_Noreuntu_E] e ouça o que você ouve.</p></step>
+<step><p visible="[%3]">Procurar [%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary] e reunir -se [%dic:STR_DIC_I_doc_quest_22565a].</p></step>
+<step><p visible="[%6]">Retornar a [%dic:STR_DIC_N_LDF5a_Noreuntu_E].</p></step>
+</steps>
+<p>Converse com Noruntu, que supostamente encontrou traços da tribo Rune, e ouça o que ele tem a dizer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kinorr disse que a tribo Rune pode ser pesquisada se houver contato entre Nevilim e a Tribo Rune, e ele recomendou que o pesquisador assistente de reunião Nornu. Diz -se que ele descobriu os vestígios da tribo Rune.</p>
+<p> </p>
+<p>Quando você encontrou as memórias de Eremion enquanto Nornu conversava e as trouxe para ele, Nornu disse que este era um documento importante e que você deveria confiar a ele por um tempo.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

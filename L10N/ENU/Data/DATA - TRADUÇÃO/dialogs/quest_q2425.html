@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espíritos me expulsaram do meu laboratório.</p>
+<p> </p>
+<p>Eu montei meu laboratório lá porque era um local tranquilo. Eu queria me dedicar à minha pesquisa, mas agora ...</p>
+<p> </p>
+<p>Um elim nomeado[%dic:STR_DIC_N_Tree_Move_Kaindor]me ajudou a deixar este lugar.</p>
+<p> </p>
+<p>Eu quero mostrar a ele minha gratidão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa começar de novo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Keindor me pediu para fazer algo antes que o laboratório fosse destruído.</p>
+<p> </p>
+<p>O Elim tem um armazenamento tão abrangente de conhecimento, então eu nunca pensaria que seria consultado sobre uma questão da ciência. Eu acho que eles são realmente muito modestos.</p>
+<p> </p>
+<p>O elim me pediu para chegar à raiz da causa de suas protuberâncias. Descobri que o veneno de Aranha é responsável por isso.</p>
+<p> </p>
+<p>Já é difícil até eu me apossar desse veneno. Você poderia me ajudar com isso, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou extremamente grato por sua ajuda.</p>
+<p> </p>
+<p>O veneno de Aranha não é realmente prejudicial ao elimismo. Na verdade, isso tem um efeito positivo.</p>
+<p> </p>
+<p>Mas os espíritos próximos alteraram o veneno, então agora está sofrendo o eliminação.</p>
+<p> </p>
+<p>Por favor, diga aos elimes que as protuberâncias estão sendo causadas pela aplicação de [%dic:STR_DIC_I_QUEST_2425a].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto antes que você possa dizer 'Aranha.'"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não precisa me ajudar, é claro.</p>
+<p> </p>
+<p>Mas esse assunto não é apenas sobre mim. Você também estaria ajudando o Elim na floresta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte, Kistig."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve, Daeva.</p>
+<p> </p>
+<p>Não é seguro aqui. Nesta floresta.</p>
+<p> </p>
+<p>Você não deve ficar aqui por muito tempo. Nesta floresta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você transmitiu as palavras de Kistig e entregou o veneno de Aranha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kistig ... não esqueceu meu pedido ...</p>
+<p> </p>
+<p>Estou ... muito grato a Kistig ...</p>
+<p> </p>
+<p>O conhecimento de Kistig ... é realmente impressionante ...</p>
+<p> </p>
+<p>Para você também, eu também estou ... muito grato por sua ajuda ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça o [plur][%dic:STR_DIC_M_OctasideDAtkMuta_24_An]ou o [plur][%dic:STR_DIC_M_OctasideD_23_An] e leve o veneno de Aranha para [%dic:STR_DIC_N_Tree_Move_Kaindor].</p>[%collectitem]</step>
+</steps>
+<p>Kistig quer ajudar o Elim. Elimine os Aranhas e colete Aranha venenam para aliviar as protagonistas do elimismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O elim ajudou na fuga do laboratório, então Kistig queria demonstrar sua gratidão.</p>
+<p> </p>
+<p>Keindor pediu que ele chegasse à raiz da causa das protuberâncias do elimismo. Ele descobriu que o veneno de Aranha era responsável. Ele pediu para você se apossar de um pouco do veneno.</p>
+<p> </p>
+<p>Você realizou o pedido e se apossou de um veneno de Aranha. Keindor ficou muito agradecido quando você deu a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

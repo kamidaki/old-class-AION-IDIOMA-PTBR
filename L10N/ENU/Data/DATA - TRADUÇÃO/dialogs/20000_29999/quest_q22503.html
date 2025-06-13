@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava procurando por você porque tenho um pedido urgente.</p>
+<p> </p>
+<p>De acordo com o que eu descobri, um Elyos Spy está escondido em um local secreto.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LDF5A_OP_D_Li_Poison_AS_Nmd_61_An]. Eles são suspeitos.</p>
+<p> </p>
+<p>Não sabemos que segredo ele procura, mas ele deve ser morto antes de alguém descobrir sobre isso. Precisamos pegá -lo antes que os rumores comecem a se espalhar e causar caos aqui.</p>
+<p> </p>
+<p>Espero que você possa cuidar desse assunto, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema do espião é mais urgente do que qualquer outra coisa.</p>
+<p> </p>
+<p>Se você descobrir um espião, não precisa se preocupar em tentar descobrir nada dele; É melhor matá -lo imediatamente.</p>
+<p> </p>
+<p>Se eu pudesse descobrir onde estão os espiões, eu poderia usar meu oficial da Liason Asmodiano para descobrir toda a situação rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou o espião.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é realmente inacreditável. Nós realmente tivemos um espião no meio!</p>
+<p> </p>
+<p>Eu tenho que examinar as circunstâncias mais minuciosamente.</p>
+<p> </p>
+<p>Você continua a me impressionar. Como você achou o espião tão rapidamente, [%username]? Era certo que eu procurá -lo em busca de ajuda.</p>
+<p> </p>
+<p>Este é um sinal de agradecimento. Por favor, continue nos ajudando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Identificar [%dic:STR_DIC_M_LDF5A_OP_D_Li_Poison_AS_Nmd_61_An]([%2]/2).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5A_Phone_E].</p></step>
+</steps>
+<p>Determine se o assassino especial do Archon é um espião.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O líder de guerrilha Phon disse que recebeu uma mensagem de que um Spy Elyos havia entrado e pediu que você o encontrasse e matasse.</p>
+<p> </p>
+<p>Depois de matar o suspeito assassino especial do Archon, você relatou o resultado. O líder de guerrilha Phon agradeceu e pediu mais ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

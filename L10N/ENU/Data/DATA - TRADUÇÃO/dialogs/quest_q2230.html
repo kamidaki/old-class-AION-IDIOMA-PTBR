@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que perdi nossa última aposta, mas não posso deixar de pensar que pode ter sido apenas sorte da sua parte.</p>
+<p> </p>
+<p>Diga o que: se você deseja provar que realmente é melhor do que eu, por que não fazemos outra aposta?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, vamos começar agora.</p>
+<p> </p>
+<p>Meu recorde mais alto é de 10 moscas em 30 minutos, e é isso que você terá que vencer. Traga de volta 10 pares de [%dic:STR_DIC_I_quest_2230a]como prova.</p>
+<p> </p>
+<p>Eu não me importo com que tipo de MosBear é-qualquer deles fará. Se você tiver sucesso, admito a todos que você é o melhor caçador.</p>
+<p> </p>
+<p>Vou começar o cronômetro no momento em que você concorda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, você vai!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Então você admite que seu último sucesso foi sorte?</p>
+<p> </p>
+<p>Eu pensei tanto. Eu sei mais sobre caçar do que qualquer um por aqui.</p>
+<p> </p>
+<p>Se você quiser provar que estou errado, você sabe onde me encontrar. Aceitarei seu desafio a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, você voltou no tempo ....</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_quest_2230a], no entanto?</p>
+<p> </p>
+<p>Sem prova, suas palavras não significam nada, você sabe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu tenho isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não trouxe 10 pares de [%dic:STR_DIC_I_quest_2230a].</p>
+<p> </p>
+<p>Só posso assumir que isso significa que você está com muito medo de fazê -lo ou percebeu que ia perder!</p>
+<p> </p>
+<p>Você não resta muito tempo, [%username], se você ainda espera me vencer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select7">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de perder, acabou. Você está dizendo que quer tentar de novo?</p>
+<p> </p>
+<p>Você não pode me vencer, você sabe. Mas se você quiser outra chance tão tão ruim, então tudo bem. Eu posso ver você cair de cara o dia todo.</p>
+<p> </p>
+<p>Diga -me quando estiver pronto, e eu começarei o cronômetro novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Estou pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não posso acreditar que você fez isso! Você pegou 10 moscas em 30 minutos!</p>
+<p> </p>
+<p>Eu realmente não quero admitir isso, mas parece que preciso:[%username], você é um caçador melhor do que eu.</p>
+<p> </p>
+<p>Aqui, pegue isso. São seus ganhos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça mosaus em 30 minutos e pegue 10 pares de [%dic:STR_DIC_I_quest_2230a]para [%dic:STR_DIC_N_Sjania].</p>[%collectitem]</step>
+</steps>
+<p>Shania ofereceu uma aposta. Você prometeu obter 10 pares de presas de mosais em 30 minutos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shania disse que foi simplesmente sorte que você ganhou a última aposta e sugeriu outro.</p>
+<p> </p>
+<p>Você caçou 10 mosbas em 30 minutos e trouxe seus 10 pares de presas de mosais como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

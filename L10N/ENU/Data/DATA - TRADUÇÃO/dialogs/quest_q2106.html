@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda tenho alguns relatórios para passar, mas terminei os urgentes. Eles precisam ser entregues para [%dic:STR_DIC_N_Tobu], segundo no comando dos Raiders Ulgorn.</p>
+<p> </p>
+<p>Esses relatórios são altamente importantes, [%username]. Tobu e Ulgorn precisam saber que estamos progredindo em nossas cotas-que estamos fazendo nosso trabalho como Raiders.</p>
+<p> </p>
+<p>Mais ao ponto: sem esses relatórios, nenhum de nós é pago no tempo da caravana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quem geralmente entrega os relatórios?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Normalmente eu os entrego, eu mesmo, [%userclass]!</p>
+<p> </p>
+<p>Mas estou muito ocupado .... olha, basta levar isso para [%dic:STR_DIC_N_Tobu], você poderia?</p>
+<p> </p>
+<p>Estou incluindo algumas das frutas que você coletou como um presente para Tobu, portanto, certifique -se de não machucá -las. Esses relatórios estão um pouco atrasados, então espero que ele considere a fruta minha maneira de pedir desculpas.</p>
+<p> </p>
+<p>Você pode entregar os relatórios?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrará o capitão de atuação[%dic:STR_DIC_N_Tobu]no centro de [%dic:STR_DIC_W_DF1_2].</p>
+<p> </p>
+<p>Ele está normalmente ao lado do líder dos Raiders Ulgorn.</p>
+<p> </p>
+<p>Entregue a ele esse pacote e diga que Vanar coleta esta fruta especialmente para o capitão de atuação Tobu.</p>
+<p> </p>
+<p>Estou te perguntando isso porque ele não gosta particularmente de mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, uma tarefa simples está abaixo de você?</p>
+<p> </p>
+<p>Tenha cuidado com quem você cruza, [%username]. Sou o primeiro na fila a assumir o Tobu quando ele decide se aposentar de invadir.</p>
+<p> </p>
+<p>E uma vez que sou o segundo no comando dos Raiders, será Vanar distribuindo os vários trabalhos que todos temos que fazer.</p>
+<p> </p>
+<p>Pense no pior dever possível e imagine fazer isso todos os dias. Gostaria de reconsiderar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nunca me ameaçam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você ainda está aqui?</p>
+<p> </p>
+<p>Estou lhe dizendo pela última vez.</p>
+<p> </p>
+<p>Pegue este pacote para o capitão de atuação[%dic:STR_DIC_N_Tobu] em[%dic:STR_DIC_W_DF1_2].</p>
+<p> </p>
+<p>Apenas diga a ele que eu te enviei.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ser o Mensageiro Vanar enviado. Estou certo?</p>
+<p> </p>
+<p>Entregue -me os relatórios, então. Deixe -me ver se consigo decifrar a caligrafia do idiota ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui estão eles ... mais frutas de Vanar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Ele acha que pode me encantar com uma cesta de frutas? Eu sou um Raider Ulgorn! Não desejo a suavidade como cestas de frutas!</p>
+<p> </p>
+<p>Ouça de perto, [%userclass]. Você faria bem em se distanciar desse tolo. Vanar pode falar, mas ele é um covarde e não recebe respeito dos outros. Se você deseja fazer isso como um Raider, precisa exibir lealdade, coragem e habilidade. Há uma boa razão para prender a saída da Bacia de Aldelle.</p>
+<p> </p>
+<p>De qualquer forma, obrigado pelos relatórios. Vou passar o que Ulgorn precisar ver.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o pacote, incluindo a fruta para [%dic:STR_DIC_N_Tobu].</p></step>
+</steps>
+<p>Vanar pediu que você entregasse [%dic:STR_DIC_I_2106a]Tobu porque ele tinha muita papelada. Vá para Tobu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vanar terminou de escrever as ordens urgentes, mas pediu que você os entregasse a Tobu, porque ele ainda tinha muito o que fazer.</p>
+<p> </p>
+<p>Você entregou o pacote contendo os pedidos e frutas para Tobu. No entanto, Tobu não ficou impressionado com a fruta e aconselhou você a se afastar de Vanar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

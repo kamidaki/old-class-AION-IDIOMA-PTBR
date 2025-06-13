@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como está a situação em Heiron? Com Drafala fora de cena, aposto que o resto do Balaur espalhado, não é?</p>
+<p> </p>
+<p>Só porque estou olhando para este lado do portão do Abismo, não significa que não ouvi as coisas.</p>
+<p> </p>
+<p>Além disso, se Drafala ainda estivesse vivo, você não estaria aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Drafala está morto, mas o Balaur permanece."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm. A Guilda Indratu pode ser mais forte do que pensávamos. Eu preciso terminar minha missão mais rapidamente.</p>
+<p> </p>
+<p>Preciso coletar informações sobre o Brigadeiro Indratu e os outros líderes de Balaur, mas não consigo superar os Nagarantes.</p>
+<p> </p>
+<p>[%username], pode me ajudar? Você pode esculpir um caminho através do[%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] S. Isso deixará um caminho aberto que eu posso usar para se infiltrar na fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu observei os nagarantes. Aprendi que um mago sempre patrulha com um guerreiro. Eles são uma combinação difícil-muito difícil para um único Daeva.</p>
+<p> </p>
+<p>Reúna alguns aliados e depois derrote alguns[%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] está por aqui. Fé e armas, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece não perceber a importância dessa missão.</p>
+<p> </p>
+<p>Quanto mais descobrirmos sobre a liderança de Balaur, maior a probabilidade de encontrar seus pontos fracos e derrotá -los.</p>
+<p> </p>
+<p>Se eliminarmos um líder, a Guilda Indratu simplesmente promoverá um novo Balaur. Se eliminarmos toda a liderança, a Guilda Indratu cairá no caos - como uma pipa com seu corte de corda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa metáfora, mas estou ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! É você, [%username]. Quando ouvi você se aproximar, pensei que o balaur estava em mim.</p>
+<p> </p>
+<p>Como foram as coisas?</p>
+<p> </p>
+<p>Você se livrou de alguns[%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Na verdade eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O número de guardas ao nosso redor parece ter diminuído. Parece que podemos começar nosso trabalho.</p>
+<p> </p>
+<p>Ah, sim, aqui está a recompensa como prometido. Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Balaur em guarda fora da fortaleza de Indratu.</p>
+<p visible="[%0]">[%dic:STR_DIC_A_IDLF3CI_1517a]([%2]/4)</p>
+<p visible="[%0]">[%dic:STR_DIC_A_IDLF3CI_1517b]([%5]/6)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Erebos].</p></step>
+</steps>
+<p>Mate Naga Mages e Naga Warriors protegendo a área And a fortaleza, para que Erebos possa explorar o interior da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você relatou a Erebus que a situação em Hiário ainda é muito ruim, ele queria se apressar e pediu sua ajuda.</p>
+<p> </p>
+<p>Ele queria que você matasse os Naga Mages e Naga Warriors assistindo ao acampamento e obtenha informações sobre os cinco generais da Guilda Indratu na fortaleza.</p>
+<p> </p>
+<p>Quando você voltou, ele agradeceu e disse que agora seria capaz de entrar na fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você esteja pronto para mais trabalho, [%username]!</p>
+<p> </p>
+<p>Meu retorno para casa é iminente! Eu matei o zumbi kalbak, as cavernas de lava agora estão livres para serem levadas novamente pelos asmodianos e ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Espere, eu fiz tudo isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, sim ... mas no meu nome! Independentemente disso, Kimssi, o destruidor, está quase pronto para seu retorno para casa.</p>
+<p> </p>
+<p>Mas que lenda caminha nesses trapos simples? Eu preciso de armaduras para minha lenda, feita de ouro cintilante e criado pelas minhas próprias mãos!</p>
+<p> </p>
+<p>Os moradores vão me encarar de admirar, seus antigos insultos não significarão nada, e finalmente terão que reconhecer meu poder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Depois de ter o seu traje de armadura de ouro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma vez que eu tenho. O problema que estou tendo é que o [%dic:STR_DIC_DG_noblemetal_n_c_20a] está se mostrando muito difícil de reunir.</p>
+<p> </p>
+<p>Os skurvs são brilhantes em encontrar o minério, você vê, eles simplesmente não podem lutar com nada por perto.</p>
+<p> </p>
+<p>Você me ajudou antes, [%username], então talvez você me ajude novamente. Pegue o minério para mim, e eu vou te pagar bem. Temos um acordo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço por permitir que isso aconteça sem mais delongas.</p>
+<p> </p>
+<p>Eu peço que você me traga 10[%dic:STR_DIC_DG_noblemetal_n_c_20a]. Isso não é difícil, pois o ouro pode ser encontrado em todos os lugares.</p>
+<p> </p>
+<p>Apenas o pensamento de usar uma armadura dourada brilhante coloca um sorriso no meu rosto.</p>
+<p> </p>
+<p>Hahaha, estou contando com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você não é lenda, Kimssi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Então, como minha lenda será realizada?</p>
+<p> </p>
+<p>Você não parece entender, [%username]. As pessoas precisam de seus heróis, suas lendas. Eles endurecem os nervos e fortalecem o coração.</p>
+<p> </p>
+<p>Vou ajudar asmodae a me elevar. Vou ajudar, mas primeiro preciso de ajuda de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está apenas ajudando a si mesmo, Kimssi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o [%dic:STR_DIC_DG_noblemetal_n_c_20a]?</p>
+<p> </p>
+<p>Eu preparei meus planos e expliquei aos skurvs o que precisa fazer. Tudo o que preciso agora é o minério.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Isso é suficiente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu estava muito apressado?</p>
+<p> </p>
+<p>É verdade, mesmo se você for um[f:"a"]capaz [f:"capable"]Daeva, não é fácil reunir 10 pedaços de [%dic:STR_DIC_DG_noblemetal_n_c_20a] em um curto período de tempo.</p>
+<p> </p>
+<p>Eu gostaria de me desculpar pela minha pressa.</p>
+<p> </p>
+<p>Eu queria fazer armaduras douradas e ir para casa imediatamente ... mas por favor, aproveite -o.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar o resto agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para isso! One de minério puro e perfeito! Ele pega a luz perfeitamente!</p>
+<p> </p>
+<p>Isso é exatamente o que eu queria, [%username]! Vou fazer um terno glorioso de armadura com isso, e meu retorno será recebido com dança e comemorações.</p>
+<p> </p>
+<p>Obrigado por tudo o que você fez! Aqui está a sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar pilhas de [%dic:STR_DIC_DG_gb_source_noblemetal_d_20a] e trazê -los para [%dic:STR_DIC_N_Kimci].</p>[%collectitem]</step>
+</steps>
+<p>Colete minério de ouro para Kimssi para que ele possa criar um terno de armadura de ouro para usar quando voltar para casa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kimssi disse que queria criar um terno de armadura de ouro para usar quando retorna à sua cidade natal.</p>
+<p> </p>
+<p>Você coletou as amostras de minério de ouro e as trouxe para ele para que ele pudesse começar a trabalhar na armadura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

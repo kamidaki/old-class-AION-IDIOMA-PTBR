@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos aqui para monitorar o treinamento das tropas de Beritra.</p>
+<p> </p>
+<p>De acordo com nossas informações, eles enviam uma mensagem descrevendo a situação aqui todos os dias.</p>
+<p> </p>
+<p>Eles enviam os relatórios de resultados dos instrutores de Beritra.</p>
+<p> </p>
+<p>Precisamos descobrir o que o Balaur está sendo treinado.</p>
+<p> </p>
+<p>Por favor, obtenha o [plur][%dic:STR_DIC_I_doc_quest_18742a]dos instrutores de Beritra e trazê -los para [%dic:STR_DIC_N_LF5_Averse_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pensado sobre por que Beritra apareceu.</p>
+<p> </p>
+<p>Se não fizermos nada sobre Beritra, ele nos causará grandes problemas.</p>
+<p> </p>
+<p>Você me trouxe o [%dic:STR_DIC_I_doc_quest_18742a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os relatórios de resultados.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê o relatório de resultados.)</p>
+<p> </p>
+<p>Eu não teria pensado que eles estariam depois deste lugar.</p>
+<p> </p>
+<p>Temos que fortalecer nossa defesa para nos proteger contra um possível ataque.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você não trouxe o relatório de resultados?</p>
+<p> </p>
+<p>Aviso não lhe disse o quão importante é?</p>
+<p> </p>
+<p>Por favor, volte apenas depois de concluir a missão.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>À luz das informações que você nos trouxe, agora tomaremos medidas para resolver isso.</p>
+<p> </p>
+<p>Segundo os relatos, esse local foi seu primeiro alvo.</p>
+<p> </p>
+<p>Também passei as informações para outras regiões, mas não tenho certeza se chegou.</p>
+<p> </p>
+<p>Se você for para as outras regiões, dê a eles as notícias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A missão está agora completa.</p>
+<p> </p>
+<p>Obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue o [%dic:STR_DIC_I_doc_quest_18742a]para [%dic:STR_DIC_N_LF5_Averse_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Averse_E]de novo.</p></step>
+</steps>
+<p>Derrote os instrutores de Balaur, obtenha o relatório de resultados e leve -o para descobrir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aviso pediu que você obtenha o relatório de resultados dos instrutores de Balaur e o colocasse em busca.</p>
+<p> </p>
+<p>Depois que você aceitou o relatório de resultados, ele disse que as defesas precisavam ser fortalecidas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

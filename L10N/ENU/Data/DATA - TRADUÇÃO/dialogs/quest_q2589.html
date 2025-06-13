@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Estou tão feliz em ver você. Eu estava apenas procurando um Daeva que pudesse me ajudar.</p>
+<p> </p>
+<p>Recebi uma mensagem de que o Pandaemonium estará enviando inspetores para o porto de Anair. Eles querem saber se podem reparar a instalação para fins militares.</p>
+<p> </p>
+<p>Talvez os oficiais seniores tenham percebido que a situação aqui é mais séria do que eles pensavam?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles podem enviar uma Guilda adequada aqui se as instalações do porto pudessem ser usadas, e com certeza seria bom ter os recursos de uma Guilda plena aqui.</p>
+<p> </p>
+<p>De qualquer forma, eles querem que eu reuna Daevas na área e faça algum trabalho preparatório. Envolve destruir os espíritos vagando na área para que a inspeção possa prosseguir rapidamente.</p>
+<p> </p>
+<p>É um dever oficial, então fui autorizado a recompensá -lo com moedas de ouro. Você está interessado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>Então por favor destrua [%dic:STR_DIC_M_UndeadDarkFiD_41_An] S, [%dic:STR_DIC_M_UndeadDarkWiD_41_An] Areia [%dic:STR_DIC_M_UndeadDarkRaD_40_An] está ao redor de Anair Harbor.</p>
+<p> </p>
+<p>Parece simples o suficiente, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Simples o suficiente para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter visto você em pé não fazendo nada, mas talvez fosse um truque da luz.</p>
+<p> </p>
+<p>Sim, se você já tem algo a fazer, deve terminar essa tarefa primeiro.</p>
+<p> </p>
+<p>Mas talvez você retorne quando esse trabalho for feito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu vá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que a contaminação é a razão pela qual essa área está rastejando com tantos fantasmas. Mesmo que não fossem expostos diretamente, poderiam ter sido afetados pelo ar e pelo solo.</p>
+<p> </p>
+<p>Nada mais pode explicar por que o porto e até a floresta seriam cheios de tantos fantasmas.</p>
+<p> </p>
+<p>De qualquer forma, o que aconteceu com os espíritos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os destruí."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Fico feliz em recompensá -lo pelo seu trabalho duro.</p>
+<p> </p>
+<p>E ainda há algum tempo até que os inspetores cheguem, se você quiser descartar mais fantasmas.</p>
+<p> </p>
+<p>Vou recompensá -lo cada vez, é claro. Com moedas de ouro novamente, é claro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os espíritos do porto de Anair.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_UndeadDarkFiD_41_An]([%2]/4).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkWiD_41_An]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_UndeadDarkRaD_40_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Coventina].</p></step>
+</steps>
+<p>Os espíritos do porto de Anair devem ser removidos antes da chegada dos guardas. Relatório de volta à Coventina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial do governo Coventina disse que os inspetores estão sendo despachados para observar as instalações do porto de Anair.</p>
+<p> </p>
+<p>Para se preparar para a inspeção, os espíritos vagando no porto devem ser tratados, então ela pediu que você o fizesse.</p>
+<p> </p>
+<p>Quando você descartou os fantasmas em Anair Harbor enquanto ela instruiu, ela lhe deu uma moeda de ouro como recompensa e pediu que você continuasse destruindo mais fantasmas até que os inspetores cheguem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

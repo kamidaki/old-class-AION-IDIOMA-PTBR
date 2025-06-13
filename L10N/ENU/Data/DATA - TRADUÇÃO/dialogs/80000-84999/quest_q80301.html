@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Sou contra os relacionamentos, Akakak.</p>
+<p> </p>
+<p>Ter um parceiro significa apenas gastar dinheiro desnecessário, AK! Como eu poderia economizar dinheiro, então? Estou certo, Akakak?</p>
+<p> </p>
+<p>Por que temos que pagar impostos por uma cidadela de chocolate que eu nem gosto, AK? Estou certo?</p>
+<p> </p>
+<p>Não gosto do dinheiro dos impostos sendo desperdiçado em uma cidadela de chocolate ... AK!</p>
+<p> </p>
+<p>Eu não posso suportar isso, AK! Mate os Shulacks Lovestrucks e tire o chocolate.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você puniu os shulacks estúpidos que são completamente obcecados pelo amor?</p>
+<p> </p>
+<p>Aparentemente, eles estão afirmando que o sabor do chocolate muito amargo é doce por causa de seu alto teor de cacau.</p>
+<p> </p>
+<p>Uma indignação! Eles estão sempre tentando agradar seus queridores!</p>
+<p> </p>
+<p>Dê a Shugo o chocolate. Shugo vai ter um sabor para ver se é amargo, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o chocolate amargo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Eww! O que é aquilo!</p>
+<p> </p>
+<p>Como se atreve a aqueles amorosos de cérebro raso! Dando algo que tem um gosto tão amargo e afirma que é doce, Akakak?</p>
+<p> </p>
+<p>Não. Eles não são normais. E construir uma cidadela de chocolate também não é normal!</p>
+<p> </p>
+<p>Tudo bem, então! Os solteiros despreocupados têm uma tarefa para você. Pegue esta bomba de chocolate e exploda a cidadela de chocolate, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não encontrou Shulacks Lovestrucks, AK? Eles estão por toda parte e estão estragando meu humor.</p>
+<p> </p>
+<p>Volte e procure por eles. Você os verá desfilando seu amor por perto e irritando todos os outros, Ak.</p>
+<p> </p>
+<p>Tire 3 pedaços de chocolate para longe deles, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você explodiu a cidadela de chocolate com a bomba de chocolate?</p>
+<p> </p>
+<p>Temos que ter sucesso, para todos que perdem tempo e dinheiro por causa do amor, Akakak!</p>
+<p> </p>
+<p>A cidadela de chocolate deve cair, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso realmente foi um bom trabalho, Akakak.</p>
+<p> </p>
+<p>A visão da cidadela de chocolate me faz sentir doente. Isso arruina meu humor. Você se sente da mesma maneira?</p>
+<p> </p>
+<p>Como você sabe, não devemos ter inveja do Lovestruck!</p>
+<p> </p>
+<p>Vamos continuar tentando até que a cidadela de chocolate tenha sido completamente destruída. Volte amanhã.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Tire os chocolates do[%dic:STR_DIC_M_ValentineEvent_Shulack_Couple] e leve -os para o single despreocupado.</p>[%collectitem]</step>
+<step><p visible="[%3]">Use a bomba de chocolate na cidadela de chocolate.</p></step>
+<step><p visible="[%6]">Fale com o single despreocupado.</p></step>
+</steps>
+<p>A inútil Cidadela de Chocolate está incomodando membros dos solteiros despreocupados. Leve os chocolates do Lovestruck e leve -os aos membros dos solteiros despreocupados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os membros dos solteiros despreocupados se sentiram desafiados pelo Lovestruck porque estavam construindo uma cidadela desnecessária de chocolate.</p>
+<p> </p>
+<p>Então eles fizeram uma bomba de chocolate com o chocolate dos Shulacks.</p>
+<p> </p>
+<p>Quando você voltou do uso das bombas na cidadela de chocolate, eles disseram que não parariam até que a cidadela de chocolate fosse destruída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

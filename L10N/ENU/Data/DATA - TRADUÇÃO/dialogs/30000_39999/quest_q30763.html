@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30763</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá, completei o absorvedor de escudo de energia alterado. Foi mais fácil do que eu pensava.</p>
+<p> </p>
+<p>Use o [%dic:STR_DIC_I_quest_30713a]com[%dic:STR_DIC_N_IDTiamat_FOBJ_Dagger]próximo.</p>
+<p> </p>
+<p>Extrairá o aterrorizante rancor da APSU para aquela garrafa de vidro.</p>
+<p> </p>
+<p>Depois de extrair com sucesso o rancor, você poderia visitar [%dic:STR_DIC_N_Garnon] e obter uma licença de importação dela?</p>
+<p> </p>
+<p>Eu adoraria contrabandear o objeto para a cidade, mas como ele tem algo a ver com o Lorde do Dragão, tenho que seguir as regras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você sente o rancor novamente. Você não pode se acostumar.)</p>
+<p> </p>
+<p>(Se o absorvedor de escudo de energia alterado não estiver funcionando corretamente, algo terrível acontecerá. Mas você acha que Grais fez tudo certo.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você usa o absorvedor de escudo de energia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É você, [%username]. Agradeço seus esforços.</p>
+<p> </p>
+<p>Eu pensei que você estaria muito ocupado com o ataque à fortaleza de Tiamat. O que posso fazer para você?</p>
+<p> </p>
+<p>Posso ajudá -lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você fala sobre o rancor da APSU.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rancor da APSU!</p>
+<p> </p>
+<p>Você trouxe um item perigoso aqui sem notificar os Anciãos da Tribo Reian ... Receio que não possa permitir que você entre este lugar com um item tão perigoso.</p>
+<p> </p>
+<p>O rancor da APSU é confiscado pelos anciãos da tribo Reian.</p>
+<p> </p>
+<p>[%username], você e Grais não agiram com sabedoria.</p>
+<p> </p>
+<p>Desculpe. Mas espero que você entenda. Esta é uma questão muito importante.</p>
+<p> </p>
+<p>[%username], nenhuma medidas adicionais será tomada contra você. Mas Grais será punido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Extrair o rancor de Apsu do[%dic:STR_DIC_N_IDTiamat_FOBJ_Dagger]usando o [%dic:STR_DIC_I_quest_30713a].</p></step>
+<step><p visible="[%3]">Obter uma permissão de importação de [%dic:STR_DIC_N_Garnon].</p></step>
+</steps>
+<p>Extraia o rancor da APSU usando o dispositivo de Grais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi capaz de extrair o rancor da APSU com o absorvedor de escudo de energia alterado de Grais.</p>
+<p> </p>
+<p>Mas quando você se reportou a Garnon e trouxe o item para ela, ela ficou furiosa que você trouxe um objeto tão perigoso sem contar a ninguém.</p>
+<p> </p>
+<p>O rancor da APSU foi confiscado. Uma punição adequada será encontrada para Grais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

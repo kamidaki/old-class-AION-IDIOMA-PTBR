@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30062</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_W_IDUnderpassRe_SZ]Descobrimos no Silentera Canyon me preocupar. Lania não parece estar preocupada.</p>
+<p> </p>
+<p>Pense nisso de novo! Eles conseguiram se esconder com sucesso até agora.</p>
+<p> </p>
+<p>Mas uma vez que eles percebem que foram descobertos, eles certamente recorrerão a um ataque pré-emergente.</p>
+<p> </p>
+<p>Nosso centurião está pensando em outras coisas, e então não posso relatar isso ...</p>
+<p> </p>
+<p>[%username], você poderia ir para [%dic:STR_DIC_W_IDUnderpassRe_SZ] e eliminar o [%dic:STR_DIC_E_Q30062all]você encontra aí?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Você voltou em uma peça!</p>
+<p> </p>
+<p>Eu tinha medo de que o Drakan pudesse ser mais forte do que o previsto.</p>
+<p> </p>
+<p>O que aconteceu com o [plur][%dic:STR_DIC_E_Q30062all]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então os rumores sobre a glória de [%username] São realmente verdadeiros.</p>
+<p> </p>
+<p>Depois, notificarei Lania que o corredor da traição não é mais motivo de preocupação.</p>
+<p> </p>
+<p>Terei que aceitar a punição por negociar de forma independente, mas valeu a pena.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_E_Q30062all]que estão guardando o [%dic:STR_DIC_W_IDUnderpassRe_SZ].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q30062all_1]([%2]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q30062all_2]([%5]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDUnderpassRe_Drakan_Fi_N_57_Ae]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_IDUnderpass_elatos].</p></step>
+</steps>
+<p>Mate os seguidores de Rakshaka, que poderiam se tornar uma ameaça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Elatos pediu que você destruísse o Drakan no corredor da traição, pois é impensável o que poderia acontecer se eles descobrissem que haviam sido descobertos.</p>
+<p> </p>
+<p>Você e seus camaradas erradicaram os capangas de Rakshaka no corredor da traição, e você relatou que o corredor da traição não era mais motivo de preocupação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

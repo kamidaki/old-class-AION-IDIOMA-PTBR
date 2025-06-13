@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, Daeva!</p>
+<p> </p>
+<p>Você ainda está trabalhando para desenvolver suas habilidades, [%username]?</p>
+<p> </p>
+<p>Aethertechs que usam o mecânio e atacam principalmente usando magia devem prestar atenção especial à sua mana.</p>
+<p> </p>
+<p>É importante que você aprenda a técnica para que você possa aplicá -la a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Que tal assumir uma tarefa que testará suas habilidades ao mesmo tempo?</p>
+<p> </p>
+<p>Levar a cabo[%dic:STR_DIC_E_DP_RI]dez vezes.</p>
+<p> </p>
+<p>Boas habilidades da AetherTech permitirão que você conclua a tarefa com sucesso. Caso contrário, considere a tarefa uma boa oportunidade para melhorar sua técnica.</p>
+<p> </p>
+<p>O que você diz? Você vai tentar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou satisfeito com sua ambição.</p>
+<p> </p>
+<p>Mas essa tarefa exigirá muita paciência e perseverança.</p>
+<p> </p>
+<p>Felizmente, tenho essas marmeladas que lhe dão DP. Eles serão uma grande ajuda para você.</p>
+<p> </p>
+<p>Se você considerar desistir, lembre -se sempre de que é um caminho longo e árduo para se tornar um excelente AetherTech.</p>
+<p> </p>
+<p>Mas depois de ter mais experiência, será muito diferente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você ainda não está pronto, não há nada que possa ser feito.</p>
+<p> </p>
+<p>Tudo tem seu tempo. Volte quando você treinar suas habilidades.</p>
+<p> </p>
+<p>A pressa não fará de você um excelente AetherTech.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obviamente traz boas notícias.</p>
+<p> </p>
+<p>É sobre essa tarefa que defino para você testar suas habilidades, certo?</p>
+<p> </p>
+<p>Bem, você dominou[%dic:STR_DIC_E_DP_RI]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ótimo.</p>
+<p> </p>
+<p>Após esse treinamento, você não precisará mais passar por tudo de novo para mim.</p>
+<p> </p>
+<p>[%username], Ainda me lembro quando você escolheu o caminho da AetherTech. As coisas ainda eram muito difíceis para você naquela época.</p>
+<p> </p>
+<p>Continue construindo suas habilidades e torne -se um ótimo AetherTech.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_DP_RI]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LC1_Anyte_M].</p></step>
+</steps>
+<p>Cumprir a tarefa que foi confiada a você e se reporte a Anyte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Para testar suas habilidades como um AetherTech, qualquer pessoa encarregou o uso da regeneração completa I Skill dez vezes.</p>
+<p> </p>
+<p>Depois de concluir a tarefa e se reportar a Anyte, ela o incentivou a continuar treinando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você aí! Estou procurando um capaz [%userclass]. Estou pressionado pelo tempo, então preciso saber se você está livre para sair para o Observatório Heiron agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Hum, talvez? Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Aphesius] Solicitou reforços.</p>
+<p> </p>
+<p>Ele é um homem de grande orgulho e nunca pediu reforços antes. Eu tremo a pensar no que poderia ter inspirado o pedido.</p>
+<p> </p>
+<p>Então você pode ir?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Por favor, saia imediatamente.</p>
+<p> </p>
+<p>Você chegará lá muito mais rápido se falar com um teleporter.</p>
+<p> </p>
+<p>O observatório está situado entre a selva de Poya e a vila de Kishar, e o caminho é perigoso. Tenha cuidado. Agora vá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Você realmente não pode?</p>
+<p> </p>
+<p>Oh, eu preciso de alguém imediatamente. Você conhece qualquer outro[%userclass] S quem pode ajudar?</p>
+<p> </p>
+<p>Oh, por favor, mude de idéia. Isso é realmente muito sério.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, estou reservado sólido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer?</p>
+<p> </p>
+<p>Olha, a menos que isso seja importante, você pode voltar mais tarde? Não tenho tempo para conversar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Er ... eu fui enviado aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Barzon te enviou?</p>
+<p> </p>
+<p>Oh. Bem, bom. Estamos a falta de [%userclass] S.</p>
+<p> </p>
+<p>O trabalho será difícil, mas você apreciará a recompensa, tenho certeza.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Aphesius].</p></step>
+</steps>
+<p>O Observatório Heiron precisa de pessoas. Vá para o Observatório e veja Aphesius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Barzon disse que Asphesius solicitou reforços e disse para você ir ao Observatório Heiron.</p>
+<p> </p>
+<p>Quando você chegou ao Observatório Aphesius parecia distraído, mas agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

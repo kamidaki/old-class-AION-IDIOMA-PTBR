@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está familiarizado com a cidade de Balaur de Mitrakand, [%username]?</p>
+<p> </p>
+<p>Recentemente, detectamos algumas atividades bastante suspeitas lá. O dragão foi visto transportando algo pela área. Não temos certeza de onde, mas suspeitamos que seja o campo de batalha de Vorgaltem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você está me dizendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos descobrir por que o dragão está envolvido lá e o que eles estão transportando. Tenho uma sensação ruim de que haverá problemas se não acompanharmos isso.</p>
+<p> </p>
+<p>Você pode investigar esse assunto para mim, [%username]? Preciso de alguém com bom julgamento aqui e acho que você se encaixa nessa descrição.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve sair imediatamente se quiser pegar esses dragão. Eu recomendo pesquisar na área ao redor do campo de batalha de Vorgaltem.</p>
+<p> </p>
+<p>Depois de encontrá -los, descarte o [%dic:STR_DIC_M_DF4_FanaticFi_Q_54_An] encarregado da logística e obter o [%dic:STR_DIC_I_QUEST_30301a]. Precisamos descobrir seu propósito.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... eu nunca esperava que você recusasse esta missão. O próprio Vidar está de olho em você. Certamente um como você poderia entender a gravidade de ....</p>
+<p> </p>
+<p>Deixa para lá. Suponho que encontrarei outro Daeva para esta missão. Me deixe, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou muito ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descartou o [%dic:STR_DIC_M_DF4_FanaticFi_Q_54_An] e trazer o [%dic:STR_DIC_I_QUEST_30301a]? Devemos aprender sobre a trama deles. Mesmo agora o esquema de Balaur para recuperar Gelkmaros.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei este relatório."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está fora de sua mente? O Balaur está conspirando para recuperar Gelkmaros e você está ignorando os pedidos?</p>
+<p> </p>
+<p>Mesmo um ligeiro lapso de concentração é um convite para a nossa derrota! Sai lá, descarte o [%dic:STR_DIC_M_DF4_FanaticFi_Q_54_An], e retornar com o [%dic:STR_DIC_I_QUEST_30301a]!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O comboio não estava carregando nada? Suponho que isso significa que o transporte já deve ter sido concluído. Devemos esperar pistas no relatório de suprimentos ....</p>
+<p> </p>
+<p>Hmmmm ... isso parece estar escrito em Balaur. Espero poder ler!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Descarte o [%dic:STR_DIC_M_DF4_FanaticFi_Q_54_An] e trazer o [%dic:STR_DIC_I_QUEST_30301a]para [%dic:STR_DIC_N_Hler].</p>[%collectitem]</step>
+</steps>
+<p>Descubra o que o dragão está transportando perto do campo de batalha de Vorgaltem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Richelle disse que o dragão está transportando algo peculiar em algum lugar do campo de batalha de Vorgaltem.</p>
+<p> </p>
+<p>A pedido dela, você descartou o capitão do preternizador de Mitrakand e obteve um relatório de fornecimento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

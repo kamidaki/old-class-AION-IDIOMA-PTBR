@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com o relatório da tropa de perseguição, um grupo de [%dic:STR_DIC_M_DF5_D_MissionTiamat_Fi_60_An] S foi descoberto no[%dic:STR_DIC_W_DF5_SZ_OP_02].</p>
+<p> </p>
+<p>Não está claro se eles pertencem ao exército de Beritra, mas são definitivamente balauros.</p>
+<p> </p>
+<p>Precisamos descobrir o que eles estão fazendo aqui.</p>
+<p> </p>
+<p>Você pode fazer isso, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi rápido.</p>
+<p> </p>
+<p>Como sua investigação do[%dic:STR_DIC_M_DF5_D_MissionTiamat_Fi_60_An]ir?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os bens de Drakan e relata o que aconteceu até agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse cheiro ... é nojento.</p>
+<p> </p>
+<p>Acho que já vi algo assim antes. Mas não me lembro de onde.</p>
+<p> </p>
+<p>Eu só sei que ele pertence ao Balaur.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2">Prossiga.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo consultar outros especialistas.</p>
+<p> </p>
+<p>Para começar, mostre os bens para [%dic:STR_DIC_N_DF5_Redelf_E].</p>
+<p> </p>
+<p>Isso não é pouca coisa.</p>
+<p> </p>
+<p>Se estamos lidando com outro inimigo, além de Beritra, ele não é um bom presságio para nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não encontrou nenhuma pista para o [%dic:STR_DIC_M_DF5_D_MissionTiamat_Fi_60_An]?</p>
+<p> </p>
+<p>Se você não conseguir progredir com sua investigação, isso tornará a missão da tropa da expedição muito mais difícil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está ocupado com outra tarefa no momento?</p>
+<p> </p>
+<p>Você tem uma mensagem para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você transmite a mensagem de Egzen e entrega os bens de Drakan.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então Egzen o enviou para mim.</p>
+<p> </p>
+<p>Infelizmente, nunca vi nada assim.</p>
+<p> </p>
+<p>Mas não se preocupe. Tenho certeza [%dic:STR_DIC_N_DF5_Engrid_E]pode lhe dizer algo sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Você está sempre tão ocupado com as muitas tarefas necessárias para manter a tropa da expedição em operação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT4_1">Você mostra a ele os bens de Drakan.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde você achou isso?</p>
+<p> </p>
+<p>Drakans Mortos Vivos ... eles podem estar aqui há muito tempo.</p>
+<p> </p>
+<p>Balaur pode ficar debaixo d'água sem respirar por um longo tempo.</p>
+<p> </p>
+<p>Aquela coisa que você me trouxe parece estar em relevo com um símbolo de afiliação.</p>
+<p> </p>
+<p>Eu não sei a quem pertence, mas[%dic:STR_DIC_N_DF5_Sigmuel_E]deve ser capaz de lhe contar mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>Você descobriu alguma coisa sobre o Balaur?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você transmite a mensagem do Engrid.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ... esse é o símbolo de Lord Tiamat.</p>
+<p> </p>
+<p>Você o encontrou nos Mortos Vivos drakans na área?</p>
+<p> </p>
+<p>Isso significa que todos os Mortos Vivos drakans nesta região foram seguidores de Tiamat.</p>
+<p> </p>
+<p>Mas por que ela postaria drakans Mortos Vivos aqui?</p>
+<p> </p>
+<p>Drakans Mortos Vivos não são naturais, são criados pela força.</p>
+<p> </p>
+<p>Provavelmente será algum tipo de maldição. Temos que investigar isso.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o [%dic:STR_DIC_I_quest_25030a]para [%dic:STR_DIC_N_DF5_Egzen_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Egzen_E].</p></step>
+<step><p visible="[%6]">Traga o [%dic:STR_DIC_I_quest_25030b]para [%dic:STR_DIC_N_DF5_Redelf_E].</p></step>
+<step><p visible="[%9]">Traga o [%dic:STR_DIC_I_quest_25030b]para [%dic:STR_DIC_N_DF5_Engrid_E].</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_DF5_Sigmuel_E].</p></step>
+</steps>
+<p>Egzen pediu que você examinasse os Mortos Vivos que apareceram nas proximidades. Cumprir o pedido de Egzen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Egzen pediu que você examinasse os protetores de campo afastados dos Drakans que apareceram nas proximidades.</p>
+<p> </p>
+<p>Os protetores de campo isetéricos acabaram sendo Mortos Vivos drakans. Você descobriu insígnias especiais sobre elas.</p>
+<p> </p>
+<p>Você mostrou as insígnias a Zigumuel. Ele disse que eram insígnias de Tiamat e assumiu que Tiamat havia criado esses drakans Mortos Vivos em particular.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

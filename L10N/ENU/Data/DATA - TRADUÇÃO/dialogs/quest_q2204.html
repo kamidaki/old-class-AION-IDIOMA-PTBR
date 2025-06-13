@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, azphelumbra! Como vai você? O negócio? Os negócios estão indo bem, suponho, mas ainda assim meu marido e eu mal podemos sobreviver.</p>
+<p> </p>
+<p>Esperamos comprar uma casa, já que temos um bebê em breve, mas isso pode não dar certo.</p>
+<p> </p>
+<p>Para piorar as coisas, sua mãe está chegando à cidade ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você não se dá bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, nós nos damos muito bem, é apenas ...</p>
+<p> </p>
+<p>Ela gosta de ordem. Arrumação. Com meu marido e eu trabalhando o tempo todo, não há muito tempo para limpar.</p>
+<p> </p>
+<p>Para piorar a situação, fiquei sem Sparkie Sap, que uso para polir móveis e fazer sabão. Não há como eu coletar a seiva e limpar a casa quando ela chegar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vejo seu dilema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não acho que você tem algum tempo extra? Seria um ótimo favor se você me trouxesse alguns[%dic:STR_DIC_I_quest_2204a].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Ice Lake Sparkies mora perto dos fósseis da árvore no lago. Por favor, caça -os e me traga o [%dic:STR_DIC_I_quest_2204a].</p>
+<p> </p>
+<p>Seja rápido sobre isso, se puder. Preciso terminar de limpar antes que minha sogra chegue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você me ajudaria com certeza. Preocupante.</p>
+<p> </p>
+<p>Tenho certeza de que você está ocupado, correndo para Suthran como todo o resto.</p>
+<p> </p>
+<p>Não é como qualquer um de nós importa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, mas as ordens são ordens."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu tenho um pouco de tempo. Vou ter que fechar cedo para fazer tudo ....</p>
+<p> </p>
+<p>Oh, [%username]! Eu só estava pensando em você! Como você se saiu? Você conseguiu o [%dic:STR_DIC_I_quest_2204a]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está ... sua mão vazia? Er ... obrigado?</p>
+<p> </p>
+<p>Hum ... Sparkies não são difíceis de encontrar, você sabe. Você praticamente tropeça neles ao deixar a fortaleza.</p>
+<p> </p>
+<p>Por favor, ajude -me e traga 5[%dic:STR_DIC_I_quest_2204a] S o mais rápido possível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado!</p>
+<p> </p>
+<p>Eu já preparei os pós de erva para que eu possa fazer o sabão imediatamente. O resto pode ser feito quando eu chegar em casa.</p>
+<p> </p>
+<p>Você realmente me salvou aqui, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_quest_2204a] e leve para [%dic:STR_DIC_N_Nirmirn].</p>[%collectitem]</step>
+</steps>
+<p>Nirmirn precisa de Sparkie Sap para polir seus móveis e fazer sabão, então você prometeu buscar um pouco para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nirmirn teve que limpar a casa antes de sua sogra, mas ela ficou sem Sparkie Sap.</p>
+<p> </p>
+<p>Você derrotou o Ice Lake Sparkies e levou a seiva para ela para que ela pudesse impressionar sua sogra.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

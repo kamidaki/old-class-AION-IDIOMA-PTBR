@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que as flores chegaram e os trabalhadores estão ocupados desligando -os! Isso significa que estamos quase terminados!</p>
+<p> </p>
+<p>A Selesti nunca confiou em mim com todo o banquete antes. Para lhe dizer a verdade, eu tinha certeza de que esqueceria algo importante ou cometeria algum erro terrível, mas até agora, tão bom.</p>
+<p> </p>
+<p>Eu não poderia ter feito isso sem você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Fico feliz em ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Acho que não perdi nada, mas realmente quero que isso corra bem, pelo bem de Karollin. Eu provavelmente deveria pedir a Selesti para examinar tudo. Ela pode identificar algo que eu perdi.</p>
+<p> </p>
+<p>Ainda temos tempo para consertar as coisas!</p>
+<p> </p>
+<p>Você corria para [%dic:STR_DIC_N_Selesti] e deixe -a saber que terminamos aqui? E pergunte se ela se importaria de dar uma olhada rápida?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. [%dic:STR_DIC_N_Selesti]Tem uma enorme pilha de trabalho a fazer, eu sei disso.</p>
+<p> </p>
+<p>Mas ela se importa com Karollin. Ela quer que este banquete seja um sucesso tanto quanto eu.</p>
+<p> </p>
+<p>Vejo você em breve!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"As sombras o protegem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh? Não estou perguntando muito!</p>
+<p> </p>
+<p>Você está gostando de me assistir, no último minuto? É isso?</p>
+<p> </p>
+<p>Isso parece meio que significa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Todos nós temos encargos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username].</p>
+<p> </p>
+<p>Obrigado por entrar para ajudar Dorein. Tenho certeza que ela aprecia isso.</p>
+<p> </p>
+<p>O que posso fazer para você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Dorein quer sua bênção."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço por você ter vindo, [%username]. Dorein não precisa se preocupar. Eu já parei no salão de banquetes enquanto ela estava fora. Ela fez melhor do que eu esperava.</p>
+<p> </p>
+<p>Suponho que desde que Dorein pediu meu oficial uma vez, devo ir e dar. Só há uma última coisa para cuidar, e acho que a honra deve ir até você.</p>
+<p> </p>
+<p>Você seria tão gentil a ponto de contar [%dic:STR_DIC_N_Karollin]que o banquete está pronto?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu ficaria honrado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Muito obrigado pela sua ajuda!</p>
+<p> </p>
+<p>Estou tão feliz que Selesti concordou em organizar meu banquete, apesar de sua agenda agitada. Eu tenho que agradecer por isso também?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O banquete está pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Você ... você até ajudou a preparar o banquete, [%username]? Eu ... me desculpe, eu só ....</p>
+<p> </p>
+<p>Por favor, perdoe minhas lágrimas. Não sei o que dizer.</p>
+<p> </p>
+<p>Nunca vou esquecer o que você e a Selesti fizeram. Obrigado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Selesti].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Karollin].</p></step>
+</steps>
+<p>Dorein terminou os preparativos do banquete e quer que a Selesti os verifique. Vá e diga a Selesti que o banquete está pronto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dorein temia que ela pudesse ter perdido algo porque era o primeiro banquete que ela havia organizado sozinha, então ela queria que Selesti fizesse um cheque final.</p>
+<p> </p>
+<p>Quando você viu Selesti, ela confessou que havia visitado secretamente o salão de banquetes e tudo estava bem. Ela pediu que você dissesse a Karollin que o banquete estava pronto.</p>
+<p> </p>
+<p>Você conheceu Karollin e disse a ela que o banquete estava pronto. Superada pela gratidão, ela agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

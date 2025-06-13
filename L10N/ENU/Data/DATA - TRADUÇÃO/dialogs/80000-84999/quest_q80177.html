@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de receber a carta do pai, estou doente de preocupação com minha mãe e perdi o coração.</p>
+<p>Mas minha tarefa é proteger o Santum, não posso deixar meu post ...</p>
+<p> </p>
+<p>Seria ótimo se você pudesse me ajudar ...</p>
+<p> </p>
+<p>Você vai me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que se trata.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso visitá -la, mas gostaria de enviar remédios para ela.</p>
+<p> </p>
+<p>Você poderia dar esse remédio ao meu pai?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem um bom coração, Daeva.</p>
+<p></p>
+<p>É urgente, então, por favor, continue imediatamente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, eu entendo ... então não há nada a ser feito. Você tem muito no seu prato.</p>
+<p> </p>
+<p>Mas tenha cuidado se você estiver fora à noite.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Netalion enviou você?</p>
+<p> </p>
+<p>Ele provavelmente acabou de receber minha carta.</p>
+<p> </p>
+<p>Não pretendia me preocupar com meu filho com minha carta, mas minha esposa sente muita falta do nosso garoto.</p>
+<p></p>
+<p>O que o Netalion disse?</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o ginseng selvagem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Isso é Wild Ginseng, de 108 anos! Isso trará uma pessoa de volta à beira da morte e a dançará em uma hora!</p>
+<p> </p>
+<p>Ele parece ganhar muito dinheiro como Daeva agora. Estou triste por não poder ver o Netalion, mas isso ajudará minha esposa a se recuperar.</p>
+<p> </p>
+<p>Você fez um ótimo serviço para a nossa família. Muito obrigado!</p>
+<p> </p>
+<p>Poderíamos usar um Daeva de bom coração como você como o guardião de Verteron.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar -se [%dic:STR_DIC_N_event_Nebrith]% e entregue o ginseng selvagem.</p></step>
+</steps>
+<p>Entregue o ginseng selvagem de Netalion em Santum a Princessa PVP Buffer.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entregou o ginseng selvagem necessário para curar a mãe de sua doença de Netalion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

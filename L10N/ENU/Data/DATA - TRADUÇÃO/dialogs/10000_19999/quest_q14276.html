@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q14276</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi do arqueólogo aqui que aparentemente há um lugar chamado The Fire Temple, localizado abaixo do templo de Kyola.</p>
+<p> </p>
+<p>Este templo era aparentemente controlado por uma bruxa chamada Kromede. Mas ninguém pode se aproximar do templo por causa de seus lacaios.</p>
+<p> </p>
+<p>Você poderia eliminar os servos de Kromede no templo do fogo, o [plur][%dic:STR_DIC_M_GargoyleDF2_34_Ae], o [plur][%dic:STR_DIC_M_SAMD_34_Ae] e [plur][%dic:STR_DIC_M_SouledstoneAReD_35_Ae]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você eliminou os servos de Kromede?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado!</p>
+<p> </p>
+<p>Agora será ainda mais fácil derrotar Kromede.</p>
+<p> </p>
+<p>Por favor, continue me ajudando. Eu acredito em você!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os servos de Kromede no templo do fogo.</p>
+<p visible="[%0]">Derrotar o [plur][%dic:STR_DIC_M_GargoyleDF2_34_Ae]([%2]/5).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_SAMD_34_Ae]([%5]/3).</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_SouledstoneAReD_35_Ae]([%8]/2).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hagne]no[%dic:STR_DIC_W_LF2_SZ_D_SUB_1].</p></step>
+</steps>
+<p>Faça o que Hannet perguntou e mate os encrenqueiros no templo do fogo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hannet pediu que você matasse o servo de Kromede no templo do fogo para possibilitar a derrota de Kromede.</p>
+<p> </p>
+<p>Você fez o que Hannet perguntou e eliminou Gargoyles, Mugolems Aeticos e Kalgolems da Magia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

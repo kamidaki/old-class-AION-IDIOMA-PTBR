@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu descobri por que não consegui convocar o espírito da árvore da última vez-os galhos cinzentos que você me trouxe eram velhos, [%username].</p>
+<p> </p>
+<p>O Espírito não foi capaz de canalizar através dele. Caso contrário, teria funcionado. Eu lhe dei uma tarefa simples e você conseguiu estragar tudo.</p>
+<p> </p>
+<p>Agora preciso de um material diferente ... algo um pouco mais forte que os galhos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Suponho que vou conseguir?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não é realmente um favor adicional, [%username]. Ainda faz parte do favor original.</p>
+<p> </p>
+<p>Então, sim, acho que seria legal da sua parte conseguir isso para mim. É justo.</p>
+<p> </p>
+<p>Posso contar com você desta vez?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tentando uma rota diferente desta vez. Convocar um espírito requer uma força vital incrivelmente forte, então precisarei de um material que infundirá o espírito com um sopro de vida.</p>
+<p> </p>
+<p>Eu preciso do[%dic:STR_DIC_I_QUEST_30229a] S de [%dic:STR_DIC_M_LF4_B2_Centipede_53_An] S. Eles estão em Undirborg.</p>
+<p> </p>
+<p>Eles são criaturas muito difíceis, mas tenho certeza de [%userclass]do seu calibre já lidou com vermes antes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Worms não me assustam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, você não vai me ajudar, [%username], apesar de você ser o culpado pela minha convocação original, não está funcionando?</p>
+<p> </p>
+<p>Daeva, estou apenas pedindo que você faça bem sua promessa original de ajudar!</p>
+<p> </p>
+<p>Isso é demais para pedir um[%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu ajudei tudo o que posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um excelente tempo, [%userclass]. Eu preparei tudo pronto na sua ausência. Agora tudo o que preciso é a energia vital nessas conchas duras.</p>
+<p> </p>
+<p>Você os pegou? Espero que sejam frescos-eles não funcionam se eles são de vermes há muito mortos. Você os matou frescos, certo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, eu os matei frescos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Seriamente, [%username]? Você sozinha arruina minha primeira tentativa de convocar um espírito, trazendo -me galhos mortos.</p>
+<p> </p>
+<p>E agora você nem fará a coisa certa, trazendo -me os materiais certos para minha segunda tentativa?</p>
+<p> </p>
+<p>Continue, mate Vilethorn Laupedes e Burrowing Laupeedes e traga -me o [%dic:STR_DIC_I_QUEST_30229a] S. Você sabe o quão importante isso é para mim!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou matar seus malditos vermes agora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, tudo se encaixou. Afaste agora, Daeva, vou convocar o Espírito! Não olhe nos olhos quando aparecer ... me disseram que isso pode assustá -lo.</p>
+<p> </p>
+<p>(Ela pulveriza as conchas duras, borrifa o pó e canta um feitiço com os olhos fechados.)</p>
+<p> </p>
+<p>Por que nada está acontecendo? Eu não poderia ter falhado duas vezes ... porque não falhei! Eu nunca falhei! Onde está esse espírito explodido? Vou matar se vir!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30229a] e leve-os para [%dic:STR_DIC_N_Aiola].</p>[%collectitem]</step>
+</steps>
+<p>Tessa precisa de um material rico em vida para convocar um espírito. Derrote as lauguedes e as laupedas de Vilethorn e trazem de volta suas conchas duras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tessa disse que seu fracasso da última vez foi devido à baixa qualidade do material que você trouxe.</p>
+<p> </p>
+<p>Ela precisava de um novo material rico em vida, então você matou Laupeedes e Vilethorn Laupedes e trouxe suas conchas duras.</p>
+<p> </p>
+<p>No entanto, convocar o espírito falhou mais uma vez, mesmo com as conchas duras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

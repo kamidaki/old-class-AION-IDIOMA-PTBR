@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente:[%dic:STR_DIC_N_LDF5_Fortress_7011_Gantis_L_E]do[%dic:STR_DIC_W_LDF5_Fortress_7011]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: eliminar [%dic:STR_DIC_M_LDF5_Fortress_Boss_Anoha_65_Al]no[%dic:STR_DIC_W_LDF5_Fortress_SZ_D1_Raid]de Kaldor então[%dic:STR_DIC_N_LDF5_Fortress_Anoha_Dead_E]pode finalmente encontrar paz.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você realiza a missão.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu lembro.</p>
+<p> </p>
+<p>Finalmente me lembro de quem eu sou e como morri ...</p>
+<p> </p>
+<p>Nada que eu desejei foi deixar.</p>
+<p> </p>
+<p>É hora de ir agora.</p>
+<p> </p>
+<p>Para sempre...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username]?</p>
+<p> </p>
+<p>Eu estive esperando por você. Você recebeu meu comando?</p>
+<p> </p>
+<p>Você conseguiu concluir a tarefa com sucesso?</p>
+<p> </p>
+<p>Por favor, me dê um relatório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um herói da tribo Rune se transformou em um espírito furioso ... quão horrível ... você não consegue encontrá -lo?</p>
+<p> </p>
+<p>Emiti o comando, pois essa é uma tarefa muito urgente. Estou feliz que você os eliminou com sucesso.</p>
+<p> </p>
+<p>[%username], você é simplesmente o melhor. Você sempre completa todas as tarefas conscientes e para minha completa satisfação.</p>
+<p> </p>
+<p>Eu me sinto muito seguro.</p>
+<p> </p>
+<p>Sou grato a você de várias maneiras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5_Fortress_SZ_D1_Raid] e derrota [%dic:STR_DIC_M_LDF5_Fortress_Boss_Anoha_65_Al]para que [%dic:STR_DIC_N_LDF5_Fortress_Anoha_Dead_E]pode descansar em paz.</p></step>
+<step><p visible="[%3]">Se os Elyos ocuparem[%dic:STR_DIC_W_LDF5_Fortress_7011], Assim, [%dic:STR_DIC_N_LDF5_Fortress_7011_Gantis_L_E]vai aparecer. Relatar a ele.</p></step>
+</steps>
+<p>Ordens urgentes: acalme a alma de Anoha e relate a Gantis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu a tarefa de eliminar Anoha. Esse espírito do site da Anoha selado estava furioso e você teve que colocá -lo para descansar.</p>
+<p> </p>
+<p>Quando você voltou depois de concluir a tarefa, Gantis agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

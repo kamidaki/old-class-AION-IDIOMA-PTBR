@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p></p>
+<p>1. Remetente: Ginikki da sala de operações do santuário</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Ordem: Mate 5 Daevas, que estão impedindo operações em Brusthonin.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O esquadrão de limpeza de Brusthonin pode ter respondido muito rapidamente.</p>
+<p> </p>
+<p>Ele chamou as tropas de apoio porque não pode superar essa situação usando seu poder sozinho.</p>
+<p> </p>
+<p>Mas nós, os Elyos, não precisamos medo, porque temos um Daeva capaz como você, [%username].</p>
+<p> </p>
+<p>Como foi? Eu estava certo, não fui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que matou os asmodianos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é um resultado positivo.</p>
+<p> </p>
+<p>Isso certamente desanimará os asmodianos.</p>
+<p> </p>
+<p>Eu estava contando com você, [%username].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que estão interferindo na operação em Brusthonin ([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_NPC_Arena_Geniki_E_LHM].</p></step>
+</steps>
+<p>Ordem de operação urgente: Mate os da Asmodian Daevas e relate o resultado a Ginikki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos vieram para impedir a operação de invasão do brusthonino. Você os matou e relatou o resultado de Ginikki.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard19_D]do[%dic:STR_DIC_W_LDF5b_F4_v19]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: punir os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F4_3]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acabou de ver isso? Havia alguns Elyos parados por lá.</p>
+<p> </p>
+<p>Isso está acontecendo muito hoje em dia. Os Elyos provavelmente perceberam que as planícies do Prades são muito importantes.</p>
+<p> </p>
+<p>Só somos capazes de nos defender, porque felizmente temos um daeva como você conosco, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ser [%username]!</p>
+<p> </p>
+<p>Temos que lhes lidar com alguns golpes pesados ​​de vez em quando apenas para deixar claro para eles que eles não devem vir aqui.</p>
+<p> </p>
+<p>Volte se você gosta.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F4_3]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard19_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que se infiltraram nas planícies de discórdia no sul de Katalam e se reporte a Rolf.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O infiltrador de Elyos estava direcionando as planícies de discórdia no sul de Katalam.</p>
+<p> </p>
+<p>Você destruiu o infiltrando Elyos e relatou a Rolf.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

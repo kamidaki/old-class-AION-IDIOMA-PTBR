@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que o dragão deve ser servo do Balaur, mas nunca confio em Hearsay sem confirmar para mim.</p>
+<p> </p>
+<p>Eu pensei em uma maneira bastante inteligente de descobrir ....</p>
+<p> </p>
+<p>Os itens que eles carregam!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se o dragão for como o Balaur, eles terão símbolos gravados em seus itens. As forças subversivas não podem esconder sua natureza.</p>
+<p> </p>
+<p>Esses símbolos me dirão com certeza o que eles realmente acreditam.</p>
+<p> </p>
+<p>Agora que você teve alguma experiência com eles, você se aprofundaria no templo e recuperaria alguns de seus itens para mim? Qualquer coisa que tenha um símbolo nele serve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho olhado para esse grupo de revolucionários lefaristas. Percebi que eles costumam marcar suas coisas com o símbolo quando começam a acreditar mais no grupo.</p>
+<p> </p>
+<p>Então mate o [plur][%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae] e o [plur][%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae] e me traga as coisas deles.</p>
+<p> </p>
+<p>Espero que esta investigação me ajude a descobrir mais sobre eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso lidar com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É muito pedir a você, eu sei.</p>
+<p> </p>
+<p>Até o Daeva mais forte tem tantas missões suicidas nele.</p>
+<p> </p>
+<p>Se você mudar de idéia, volte. Eu sempre poderia usar sua ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como o assassinato de [%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae] Areia [%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae] S GO?</p>
+<p> </p>
+<p>Eles tinham itens neles? Armadura? Armas? Obra de arte? Alguma coisa com emblemas ou símbolos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está muito para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não deve ter viajado profundo o suficiente para Undirborg ... ou talvez nem sequer tenha sido.</p>
+<p> </p>
+<p>[%username], Eu realmente preciso da sua ajuda neste.</p>
+<p> </p>
+<p>Por favor, saqueie qualquer que seja o [%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae] Areia [%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae] está com eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou lidar com isso, Barus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é peculiar ... esse símbolo que eu reconheço ... é uma marca de Balaur para a morte ou assassinato.</p>
+<p> </p>
+<p>Mas esse símbolo aqui ... é diferente de tudo que eu já vi. Ele se assemelha ao símbolo deles para a vida após a morte, mas há mais.</p>
+<p> </p>
+<p>Bem, parece que tenho muito trabalho para me manter ocupado agora. Obrigado, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar os itens de [%dic:STR_DIC_M_LF4_B6_FanaticKn_53_Ae] Areia [%dic:STR_DIC_M_LF4_B6_FanaticWi_53_Ae] e trazê -los para [%dic:STR_DIC_N_Barus].</p>[%collectitem]</step>
+</steps>
+<p>Barus disse que queria pesquisar os itens do dragão e pediu que você colecionasse alguns para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Barus queria confirmar por si mesmo as crenças do Dragonbound. Assim, ele pediu que você saqueie itens transportados por alongos de apóstata e conjuradores apóstatas.</p>
+<p> </p>
+<p>Barus encontrou símbolos incomuns nos itens que você trouxe. Ele não tinha certeza do que era, mas sabia que era algo especial. Ele agradeceu e pediu que você continuasse ajudando -o com sua pesquisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

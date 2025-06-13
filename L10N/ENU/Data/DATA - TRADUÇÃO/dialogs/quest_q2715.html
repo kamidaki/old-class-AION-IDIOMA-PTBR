@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O trabalho transportador não é fácil hoje em dia. As tribos de chama do alcance de Bloodburn estão ficando mais ousadas todos os dias.</p>
+<p> </p>
+<p>A cordilheira de Latesran é fundamental para o teletransporte entre as camadas, e esses sapiens não estão apenas obstruindo meu trabalho, mas podem danificar permanentemente a cordilheira.</p>
+<p> </p>
+<p>Fiz um relatório para a fortaleza primum, mas eles não podiam enviar ninguém. Eles me enviaram uma moeda de prata e disseram para encontrar um Daeva que poderia lidar com isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E é aí que eu entro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Exatamente!</p>
+<p> </p>
+<p>Que tal, [%username]? Você iria para o Bloodburn alcance e esfregaria aqueles sujos[%dic:STR_DIC_A_Ab1_2715all]Uglies?</p>
+<p> </p>
+<p>Eu sei que seu tempo é valioso e tudo o que tenho para pagar é essa moeda de prata.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que sorte. Eu estava preocupado.</p>
+<p> </p>
+<p>Vá para Krotan Rock ou Kysy Isle e espaje os membros da tribo da chama.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_Ab1_1221_Tauric_38_An]ou[%dic:STR_DIC_M_Ab1_1231_Tauric_38_An]. Eu não me importo com qual você escolhe tirar.</p>
+<p> </p>
+<p>Estou contando com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você está muito ocupado. Mas você reconsideraria?</p>
+<p> </p>
+<p>Isso é importante e eu ouvi que você é o melhor, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Ouvi dizer que você era bom, mas isso foi mais rápido do que eu esperava.</p>
+<p> </p>
+<p>Você cuidou dos membros da tribo da chama?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Aqui está aquela moeda de prata que prometi.</p>
+<p> </p>
+<p>Felizmente, isso manterá os da tribo da chama tocados por um tempo. Mas se eles ficarem ousados ​​novamente, espero poder contar com você para voltar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_A_Ab1_2715all]no alcance de Bloodburn ([%2]/15).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Liudona].</p></step>
+</steps>
+<p>As ações da tribo da chama em Bloodburn Reach são suspeitas. Siga o pedido de Liudona e elimine a tribo Flame Krotan e a tribo da chama Kys.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Preocupado com as ações dos da tribo da chama perto do fragmento ocidental de Latesran, Riudona pediu que você fosse ao alcance de Bloodburn e derrotasse.</p>
+<p> </p>
+<p>Depois de derrotar a Tribo da Flama Krotan e a tribo Kysis Flame, você obteve uma moeda de prata e os agradecimentos de Riudona.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me lembra um velho amigo, um da-eeeva, como você.</p>
+<p> </p>
+<p>Ela era gentil e generosa.</p>
+<p> </p>
+<p>Sempre que Bubu Kong estava com problemas, ela ajudava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual era o nome dela?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É, é. O nome dela é GullVeig. Ela protege o Observatório de Morheim.</p>
+<p> </p>
+<p>Bubu Kong ouve que está doente, ferido por trolls. Sinto muito por ela ...</p>
+<p> </p>
+<p>Ananta diz isso [%dic:STR_DIC_G_herb_d_n_c_30b] e [%dic:STR_DIC_G_herb_d_n_r_30b]curaria suas feridas muito rapidamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ela geralmente está certa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É muito perigoso para mim tentar coletar essas ervas.</p>
+<p> </p>
+<p>O observatório está longe demais, mas Bubu Kong gostaria de ajudar a GullVeig ...</p>
+<p> </p>
+<p>Você! Você iria coletar [%dic:STR_DIC_G_herb_d_n_c_30b] e [%dic:STR_DIC_G_herb_d_n_r_30b] e depois levá -los para [%dic:STR_DIC_N_Gullveig]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito gentil em ajudar assim.</p>
+<p> </p>
+<p>Bubu Kong sabe disso[%dic:STR_DIC_G_herb_d_n_c_30b]cresce entre a grama alta sob as árvores. Ocasionalmente, ele leva [%dic:STR_DIC_G_herb_d_n_r_30b].</p>
+<p> </p>
+<p>Colete os dois e leve -os para [%dic:STR_DIC_N_Gullveig].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A tribo Bubu nunca se esquece de retribuir uma bondade!</p>
+<p> </p>
+<p>Por favor me ajude, Daeva. Bubu Kong quer fazer isso por ela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu, olhe para você! Você estava em uma batalha horrível?</p>
+<p> </p>
+<p>Você está coberto de sujeira e grama ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bubu Kong me enviou ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>É muito gentil da sua parte vir até esse caminho para me dar Neunan e o novo Neunan.</p>
+<p> </p>
+<p>Mas parece que você tem um buraco no seu cubo.</p>
+<p> </p>
+<p>Você caiu algumas costas ao longo da estrada? Se você seguir seus passos, poderá encontrá -los.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deve ser o que aconteceu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bubu Kong pediu que você entregue isso para mim?</p>
+<p> </p>
+<p>Isso é ... ele está em uma situação tão horrível, e ainda assim ele ainda se preocupa com mim ....</p>
+<p> </p>
+<p>Muito obrigado. O pensamento disso é um remédio quase tão poderoso quanto as ervas que você traz. Por favor, pegue isso. É o mínimo que posso fazer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_G_herb_d_n_c_30b] e [%dic:STR_DIC_G_herb_d_n_r_30b] e depois trazê -los para [%dic:STR_DIC_N_Gullveig].</p>[%collectitem]</step>
+</steps>
+<p>Colete Neunan e o novo Neunan e os leve a Gullveig, como Solicitou Bubu Kong.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bubu Kong disse que ele queria dar um presente a GullVeig, que o havia ajudado antes, e pediu que você colecionasse Neunan e Neunan fresco e os trazia para ela.</p>
+<p> </p>
+<p>Gullveig ficou muito tocado pelos presentes e agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

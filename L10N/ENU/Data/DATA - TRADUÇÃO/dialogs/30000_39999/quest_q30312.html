@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho examinado a vara de quartzo. Emana do poder mágico, mas apenas muito fraco.</p>
+<p> </p>
+<p>Essa pode ser a chave. Se a haste realmente alimenta a Orb da Rift, ela deve conter muito mais energia do que agora.</p>
+<p> </p>
+<p>Minha teoria é que a vara de quartzo também também tem pouca energia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então, como recarregamos isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Como a haste é uma fonte de energia, ela precisará de uma enorme infusão de energia, de preferência de algo nativo a Balaurea.</p>
+<p> </p>
+<p>Você já viu um Wraithling? Não se assemelha a nada como uma árvore humanóide voadora.</p>
+<p> </p>
+<p>Eles estão cheios de energia mágica. Não consigo pensar em uma fonte melhor para nossos propósitos. Você pode caçar um pouco para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_DF4_Vampire_DR_54_An] está perto do DragonRest são particularmente poderosos. Você deve começar com eles.</p>
+<p> </p>
+<p>Deles[%dic:STR_DIC_I_QUEST_30312a] S mantém a energia necessária para reabastecer a haste de quartzo e, portanto, a orbe da fenda.</p>
+<p> </p>
+<p>Apenas lembre -se de que a hora é essencial, [%username]. Estamos correndo um relógio desconhecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe, eu percebo isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas-eu tenho empurrado você extremamente difícil ultimamente.</p>
+<p> </p>
+<p>Sei que o tempo é curto, mas esqueci que há muito que um único daeva pode fazer.</p>
+<p> </p>
+<p>Um Daeva drenado é inútil para Asmodae. Por favor, descanse, recupere sua energia e volte assim que puder.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pesquisado enquanto você se foi e acho que achei os feitiços necessários para recarregar a vara de quartzo.</p>
+<p> </p>
+<p>Tudo o que preciso agora são raízes místicas. Eu suponho que você os tenha?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Você assume corretamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensaria que ver tudo com seus próprios olhos teria ficado você percebendo o quão sério é essa situação.</p>
+<p> </p>
+<p>Stormwing é um poder, mesmo que um Lorde do Dragão não pudesse matar-apenas sela se afastar. Em breve pode se soltar e destruir tudo em um tumulto de vingança.</p>
+<p> </p>
+<p>Se matar [%dic:STR_DIC_M_DF4_Vampire_DR_54_An] para eles [%dic:STR_DIC_I_QUEST_30312a] S impedirá isso, você deve fazê -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tão impaciente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Agora afaste -se. Devo invocar grande poder nesta cerimônia.</p>
+<p> </p>
+<p>(Ela envolve as raízes ao redor da haste de quartzo e murmura um encantamento. A luz emana da haste e depois desaparece rapidamente.)</p>
+<p> </p>
+<p>O que? Isso não deveria ter acontecido tão rapidamente ....</p>
+<p> </p>
+<p>Não! O poder das raízes não foi suficiente! Eu ... eu falhei, [%username]. Eu sinto muito....</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30312a] e leve-os para [%dic:STR_DIC_N_Herka].</p>[%collectitem]</step>
+</steps>
+<p>A haste de quartzo não tem energia suficiente para ativar a Orb da Rift. Derrote Weeping Wraithlings e obtenha suas raízes místicas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Herka teorizou que o Orb da Rift não funcionou porque a haste de quartzo estava com pouca energia. Ela achou que as raízes místicas poderiam ter a energia necessária para recarregá -la.</p>
+<p> </p>
+<p>Você matou Weeping Wraithlings por suas raízes místicas. Infelizmente, seu poder não era suficiente para afetar a haste de quartzo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

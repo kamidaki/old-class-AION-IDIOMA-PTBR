@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está aqui?</p>
+<p> </p>
+<p>A ocupação do templo carmesim parece corresponder à vontade do Senhor.</p>
+<p> </p>
+<p>Como estamos ocupando o templo carmesim, não há dúvida sobre nossa superioridade sobre os asmodianos.</p>
+<p> </p>
+<p>Temos que parar as tropas da Asmodianas para que as forças Elyos possam avançar ainda mais em direção a Akaron.</p>
+<p> </p>
+<p>[%username], é verdade que você já concluiu tarefas em Akaron?</p>
+<p> </p>
+<p>É perigoso, mas por favor, elimine [plur][%dic:STR_DIC_M_LDF4_Advance_J_ElementalEarth3_65_An]no platô de Valpurah para distrair os asmodianos.</p>
+<p> </p>
+<p>Enquanto os asmodianos não estiverem prestando atenção, seremos acompanhados por mais tropas de apoio e ocuparemos Gelkmaros.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], como é possível que você já esteja de volta?</p>
+<p> </p>
+<p>Mesmo se você atrasar apenas os asmodianos por um curto período de tempo, isso ajudará significativamente.</p>
+<p> </p>
+<p>Os asmodianos planejaram algo em Akaron também?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é a prova de que posso confiar em você.</p>
+<p> </p>
+<p>[%username], graças às suas ações, os Elyos agora ocuparão Gelkmaros.</p>
+<p> </p>
+<p>Por favor, lute por nós no futuro também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_J_ElementalEarth3_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Temenos].</p></step>
+</steps>
+<p>Cumprir o pedido de Temenos e eliminar as encantadoras fladias no platô de Valpurah, em Akaron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Temenos do Templo Crimson teve uma tarefa para você.</p>
+<p> </p>
+<p>Você eliminou as encantadoras fladias no platô de Valpurah, em Akaron, a pedido de Temenos.</p>
+<p> </p>
+<p>Temenos disse que confia em você. Ele pediu que você participasse de futuras batalhas também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

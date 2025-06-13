@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A operação anterior foi muito bem -sucedida.</p>
+<p> </p>
+<p>Ivolk compilará o relatório final. Você poderia obter o relatório da Quage e trazê -lo para mim?</p>
+<p> </p>
+<p>As operações terminaram. Agora terei que resumir os eventos até agora e reportar para o comando junto com a Quage.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O relatório?</p>
+<p> </p>
+<p>Eu preparei com antecedência, é claro.</p>
+<p> </p>
+<p>Incluí uma análise do plano de operação no relatório. Se você o passar para o QG, eles ficarão satisfeitos.</p>
+<p> </p>
+<p>Então, se você quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você recebe o relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, isso é um relatório da Quage?</p>
+<p> </p>
+<p>Como eu queria relatar de qualquer maneira, seria bom fazer tudo ao mesmo tempo, não acha?</p>
+<p> </p>
+<p>Espere um momento.</p>
+<p> </p>
+<p>Como Ivolk é muito experiente em compor relatórios, pegue esses[%dic:STR_DIC_I_DOC_QUEST_23054B]para Chiliarch[%dic:STR_DIC_N_LDF5b_Beltane_E].</p>
+<p> </p>
+<p>Você não precisa enviá -los todos separadamente, se conseguir fazer tudo de uma só vez!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você recebe um relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>São esses relatos das situações de batalha de Ivolk e Kuage?</p>
+<p> </p>
+<p>É um relatório resumido.</p>
+<p> </p>
+<p>Entendido. Vou testá -lo com cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você olha para o relatório.)</p>
+<p> </p>
+<p>Ivolk alcançou um excelente resultado.</p>
+<p> </p>
+<p>O plano de operação foi analisado com muito cuidado e é persuasivo.</p>
+<p> </p>
+<p>(Olha para o relatório um pouco mais.)</p>
+<p> </p>
+<p>Hum ...</p>
+<p> </p>
+<p>A Quragem, por outro lado, não entregou resultados bem -sucedidos.</p>
+<p> </p>
+<p>Como podemos confiar em você com responsabilidade por um terreno de batalha?</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Quage_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Ivolk_E]%.</p></step>
+<step><p visible="[%6]">Ler [%dic:STR_DIC_I_DOC_QUEST_23054B].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_LDF5b_Beltane_E]%.</p></step>
+</steps>
+<p>Leia o relatório de tarefas da Ivolk e passe -o para Chiliarch Beltane.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Ivolk, você deu ao Chiliarca um relatório com uma visão geral das missões anteriores.</p>
+<p> </p>
+<p>A julgar pela reação do chiliar, os esforços de Quage não foram levados em consideração. Ivolk parece estar tramando algo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

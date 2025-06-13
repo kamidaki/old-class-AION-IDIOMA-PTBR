@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. Parece que nossa estratégia contra os lefaristas está funcionando bem. Meus relatórios indicam que estão tendo problemas até coordenando suas rotações de guarda.</p>
+<p> </p>
+<p>Esta missão é punitiva. Existem alguns lefaristas que queremos ... punir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Punindo os perversos? Estou dentro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve estar ciente de que houve muitos seqüestros em Eltnen ultimamente. Nós rastreamos a maioria deles até a Cidadela. Eles são trabalhados até a morte e, se se machucarem, são usados ​​como sujeitos de teste.</p>
+<p> </p>
+<p>Vítimas que escaparam identificam o homem responsável como[%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae]. Ele cometeu atrocidades imperdoáveis ​​e é hora de ele enfrentar a justiça.</p>
+<p> </p>
+<p>Eu preciso que você entre lá e matasse o supervisor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um segundo alvo também--[%dic:STR_DIC_M_LF2_LehparKnNamedQ_40_Ae]. Ele já foi um tutor fiel e defendeu uma vila remota, mas se juntou aos revolucionários lefaristas por razões desconhecidas.</p>
+<p> </p>
+<p>Na verdade, eu não me importo por que ele se juntou. Ele agora é o homem do supervisor do braço direito, Panteros, e é um obstáculo claro em nossos planos.</p>
+<p> </p>
+<p>Mostre a todos o que fazemos aos traidores e mate Luitra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ambos são bons como mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está fazendo isso agora?</p>
+<p> </p>
+<p>Você foi um jogador importante em tudo isso, e não posso acreditar que você iria embora com o trabalho meio-estar.</p>
+<p> </p>
+<p>Não é como você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me considerar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho recebido relatórios conflitantes, [%username].</p>
+<p> </p>
+<p>Rápido, me dê as notícias. Você matou[%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae] e [%dic:STR_DIC_M_LF2_LehparKnNamedQ_40_Ae]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Você é como um belé bom cortando o coração de nosso inimigo.</p>
+<p> </p>
+<p>Aqui, pegue isso. Você ganhou!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine o seqüestrador e o traidor.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparRaNamedQ_40_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2_LehparKnNamedQ_40_Ae]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Elram].</p></step>
+</steps>
+<p>Elimine o superintendente Gravi e o capitão Luitra como parte da operação de Elram contra os lefaristas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Elram pediu que você assasse o superintendente de Gravi, que foi responsável por sequestrar e torturar pessoas, e o capitão Luitra, um ex -guardião que traiu Elysea para se juntar aos revolucionários lefaristas.</p>
+<p> </p>
+<p>Você fez o que lhe foi perguntado, depois relatado para Elram. Ele recompensou você e elogiou suas habilidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

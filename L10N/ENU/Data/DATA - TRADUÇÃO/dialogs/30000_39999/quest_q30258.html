@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A Panóplica de Laize é um conjunto lendário de armadura, verdadeiro, mas quero desiludir você da noção de que ele pode manter algum método mágico de tornar seu usuário perfeito.</p>
+<p> </p>
+<p>É verdade que Rosarea era um guerreiro admirável, mas as histórias diferem sobre sua personalidade.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Focado, direto, ousado. Essas são a apenas uma ponta de faca, longe de agressiva, temperada e obsessiva. Ela repreendeu seus legionários e seus companheiros de confiança toda vez que falhavam.</p>
+<p> </p>
+<p>Mas isso poderia ser que ela não entendeu o fracasso, sendo um grande guerreiro.</p>
+<p> </p>
+<p>Bem, história suficiente. Vamos pensar no aqui e agora. Você vai me ajudar a completar Protetores de Ombro de Laize, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você se lembra do meu adorável mármore Aéter, não é. Uma invenção tão engenhosa, não é? E tudo o meu! Eu o criei especialmente .... Oh, você não se importa.</p>
+<p> </p>
+<p>Tenho certeza que você reunirá energia suficiente do[%dic:STR_DIC_M_IDAbRe_Core_SilikaCannon_Ra_55_Ah] Areia [%dic:STR_DIC_M_IDAbRe_Core_Millipede_Sc_55_An] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É um lindo mármore."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Assustou você com a história da vida não militar de Rosarea, não é?</p>
+<p> </p>
+<p>Vou esperar por outro Daeva que gosta de Protetores de Ombro, suponho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ela parecia muito mal!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não te disse que Rosarea era ousada? Não apenas no campo também.</p>
+<p> </p>
+<p>Mesmo com seus superiores, sua confiança liderou o dia. Quando ela pensou que as ordens deles eram justas, ela as seguiu de todo o coração. Mas quando não o fez, ela não pensaria duas vezes em desobedecer.</p>
+<p> </p>
+<p>Independentemente disso, acho que a personalidade dela contribuiu para o foco dela na habilidade, e a habilidade fez dela uma guerreira lendária.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Marmore de Aether, alguém?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece adorável. Sim, vou levar um mármore Aether, obrigado.</p>
+<p> </p>
+<p>Deixe -me infundir essa energia Aether nos Protetores de Ombro e .... voila!</p>
+<p> </p>
+<p>Eles são muito fortes ... mas são fortes o suficiente? Se estiverem, ficarei feliz em entregá -los a você. Caso contrário, vou precisar de mais energia de éter ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete a energia do Aether das criaturas.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_SilikaCannon_Ra_55_Ah]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAbRe_Core_Millipede_Sc_55_An]([%5]/10)</p></step>
+<step><p visible="[%15]">Leve o mármore Aéter para [%dic:STR_DIC_NPC_Laum].</p></step>
+</steps>
+<p>Laum precisa de energia para criar Protetores de Ombro de Laize. Colete energia Aether em um mármore Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laum disse que precisava de energia do Aether para fazer Protetores de Ombro de Laize.</p>
+<p> </p>
+<p>Você coletou energia das criaturas de Aether na lasca abissal e a trouxe de volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

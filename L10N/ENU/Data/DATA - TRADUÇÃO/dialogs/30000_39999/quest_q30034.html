@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento, [%username]!</p>
+<p> </p>
+<p>Aquela arma mágica que você está carregando, não é a arma mágica de poder de Siel?</p>
+<p> </p>
+<p>Uau, [%userclass], você deve ter algumas habilidades incríveis!</p>
+<p> </p>
+<p>Você não só é bom, como também tem muita sorte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É um pouco triste.</p>
+<p> </p>
+<p>Afinal, parece que há um problema com o instrumento de poder de Siel.</p>
+<p> </p>
+<p>O poder original foi selado ou a arma está muito danificada.</p>
+<p> </p>
+<p>Se pudesse ser restaurado à sua condição original, a arma mágica seria capaz de um desempenho ainda melhor.</p>
+<p> </p>
+<p>Se você estiver interessado, vou lhe dizer como recriar a arma mágica.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tomou a decisão certa. Você precisa saber como lidar com uma arma corretamente, a arma por si só não pode protegê -lo da morte.</p>
+<p> </p>
+<p>Eu adoraria trabalhar na arma, mas não sou habilidoso o suficiente.</p>
+<p> </p>
+<p>Em vez disso, posso apresentá -lo a alguém que possa ajudá -lo ainda mais.</p>
+<p> </p>
+<p>Vá me encontrar [%dic:STR_DIC_N_Gefeios]na sagrada vila de Soteira.</p>
+<p> </p>
+<p>Ele pode ser Reian, mas quando se trata de boas armas, esses tipos de diferenças não importam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, para alguém de suas habilidades, [%username], armas e coisas assim são completamente sem importância?</p>
+<p> </p>
+<p>Eu já ouvi falar de suas habilidades extraordinárias ... mas você é realmente corajoso.</p>
+<p> </p>
+<p>Se você realmente não precisa de nada, não vou insistir.</p>
+<p> </p>
+<p>Para as pessoas que reconhecem uma boa arma mágica, algo como essa é de valor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, por que você veio?</p>
+<p> </p>
+<p>Eu acho que você veio até mim por causa de uma arma, sim?</p>
+<p> </p>
+<p>Diga -me o que você está interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que deseja reparar a arma de energia mágica de Siel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Siel Power Magic Arma!</p>
+<p> </p>
+<p>Você sabe qual é a origem desta arma? É a arma que a Guilda de Siel Spear, fundadora do Reian, usou.</p>
+<p> </p>
+<p>Mas por que foi salvo? Por que está em tão más condições?</p>
+<p> </p>
+<p>De qualquer forma, você estava certo em vir aqui. Farei o meu melhor para restaurar esta arma à sua condição original.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gefeios]%.</p></step>
+</steps>
+<p>Eles dizem que você pode restaurar seu poder original à arma de poder mágica do Siel. Veja Gepeios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Drenia viu que você tinha a arma de poder mágica de Siel, ele disse que era uma boa arma, mas que seu poder original foi perdido.</p>
+<p> </p>
+<p>Após sua sugestão, você partiu para ver Gefeios, o Reian que queria fazer o possível para reparar a arma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

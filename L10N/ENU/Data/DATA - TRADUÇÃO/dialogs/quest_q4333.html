@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4333</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma das primeiras realizações da humanidade, fogo. Não é tão complicado, mas há algo sobre isso que eu simplesmente não consigo acertar.</p>
+<p> </p>
+<p>Não consigo cozinhar o vapor das minhas folhas xilix sem fogo. Não posso vender minhas folhas Xilix cozidas no vapor se elas não forem cozidas no vapor. Não posso me alimentar sem dinheiro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que madeira você está usando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tecoma. Sei que é o mais barato, mas com as minhas margens de lucro são apertadas como elas são, não posso pagar Salix ou Asvata.</p>
+<p> </p>
+<p>Ouça, eu sei que este é um grande pedido, mas eu poderia realmente usar sua ajuda agora. Eu ouvi isso [%dic:STR_DIC_I_QUEST_4333A] S Fique queimando quente por horas, mesmo sem combustível ou acelerantes. Se eu pudesse colocar algumas mãos em algumas, não teria problemas para voltar aos meus caminhos vencedores.</p>
+<p> </p>
+<p>Você vai ajudar? Eu só preciso de alguns[%dic:STR_DIC_M_FireFungyRe2D_34_An] está morto ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você ajudaria! Você é um verdadeiro asmodiano, [%username]!</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_FireFungyRe2D_34_An] S está todos perto do[%dic:STR_DIC_W_DF2_SUB_C4]. Mate -os, remova seus corações e farei tudo o que puder para pagar de volta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece justo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Droga!</p>
+<p> </p>
+<p>Eu tive a sensação de que você ia dizer não. Vou ter que pensar em outra coisa e ficar com fome nesse meio tempo. Nada acelera a imaginação como um estômago estrondoso, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Todos nós já estivemos lá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se saiu, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe para você isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não está certo!</p>
+<p> </p>
+<p>Por favor, volte -se e pegue o resto do[%dic:STR_DIC_I_QUEST_4333A] S! Meu fogo já está quase saindo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei o mais rápido possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me salvou, [%username]!</p>
+<p> </p>
+<p>Muito obrigado. Não preciso mais do dinheiro que reservei para a madeira e ... bem, quero que você o tivesse. Se eu pudesse te dar mais, eu faria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_QUEST_4333A] e trazê -los para [%dic:STR_DIC_N_Dezaren].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha corações de fungos de chama para Dezaren para ajudar a impedir que o fogo saia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dezaren ganha a vida vendendo folhas de Xilix no vapor, mas tiveram problemas para manter o fogo empolgado.</p>
+<p> </p>
+<p>Ela pediu que você recuperasse alguns corações de fungos de chama, que ela poderia usá -los para alimentar seu forno. Você foi ao local do acidente, matou os fungos de chama e voltou com seus corações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

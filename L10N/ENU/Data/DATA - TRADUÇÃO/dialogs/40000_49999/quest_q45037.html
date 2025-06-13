@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo:</p>
+<p> </p>
+<p>Os guardas de campo da área de Beluslan foram atacados por Gorgons Alpine recentemente. Nosso laboratório de pesquisa pandaemonium parece indicar que essa agressão repentina provavelmente é causada pela exposição a [REDACTED] [REDACTED], uma substância tóxica estranha recentemente [REDACTED]por [REDACTED] [REDACTED] Agentes em Beluslan.</p>
+<p> </p>
+<p>Infelizmente, parece não haver como reverter os efeitos desta toxina e, portanto, exigimos que todos os guardas de campo enviem qualquer [%dic:STR_DIC_M_GorgonWhiteD_37_n] eles se deparam para minimizar os efeitos da exposição.</p>
+<p> </p>
+<p>Não acreditamos que essa loucura seja contagiosa, mas para ter certeza de que todos os guardas devem minimizar o contato com essas criaturas. No caso de [REDACTED] [REDACTED] [REDACTED] [REDACTED], você será ... contatado pessoalmente por outro diretor de campo.</p>
+<p> </p>
+<p>Relatar os resultados de seus esforços de rescisão para o [%dic:STR_DIC_E_45007].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Coma a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Gostaria de saber se quem espalhou essas toxinas em torno de Beluslan se arrepende agora. Qualquer que seja a intenção-para causar pânico-está claro agora que houve consequências não intencionais. Talvez esses gorgons loucos sejam apenas o começo ....</p>
+<p> </p>
+<p>Eu gostaria que não tivéssemos que rescindir essas bestas pobres, mas se essa condição for contagiosa ... se se espalhar para outras criaturas, ou mesmo asmodianos ... bem, vamos apenas esperar que isso não aconteça.</p>
+<p> </p>
+<p>Você viu algum górgono alpino, [%username]? Diga-me.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A tarefa é feita ... mas o que significa redigido?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não é importante, [%username]. O que importa é que você é um aliado leal, dedicado e inquestionável. Estou feliz que você esteja do nosso lado!</p>
+<p> </p>
+<p>Espero que ninguém no Pandaemonium Research Lab seja demitido por demorar tanto para relatar isso. Tudo isso poderia ter sido minimizado ou talvez evitado ....</p>
+<p> </p>
+<p>Desculpe, não se importe com a minha conversa-é apenas o frio. Meus dentes se movem e meus lábios seguem. Aqui está o seu merecido token.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_GorgonWhiteD_37_n] S. ([%2]/5)</p></step>
+<step><p visible="[%15]">Relatar os resultados para o [%dic:STR_DIC_E_45007].</p></step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma letra fortemente redigida dos guardas de campo instrui você a encerrar as gorgons alpinas recentemente levadas à loucura por uma estranha substância tóxica em Beluslan.</p>
+<p> </p>
+<p>Você matou Gorgons Alpine e relatou o resultado ao agente de campo de Beluslan, que o recompensou pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

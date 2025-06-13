@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(O pergaminho parece detalhar certas atividades de Balaur na poeta.)</p>
+<p> </p>
+<p>(Em particular, continua longamente sobre "remodelação da forma de vida".)</p>
+<p> </p>
+<p>([%dic:STR_DIC_N_Heimdall]Pode querer ver isso.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou levar comigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou algo em que eu estaria interessado? Vamos dar uma olhada.</p>
+<p> </p>
+<p>É claro que meu Balaur está um pouco enferrujado, mas estou ansioso para saber o que eles estão fazendo.</p>
+<p> </p>
+<p>Ou melhor, o que eles estarão fazendo ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"É isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você acha que eles querem dizer com "Remodeling de forma de vida?"</p>
+<p> </p>
+<p>Poderia ser o que parece? Eles estão transformando criaturas vivas em ... O quê?</p>
+<p> </p>
+<p>[%username], leve isso para [%dic:STR_DIC_W_DC1_12] Agora mesmo. Mostre isso [%dic:STR_DIC_N_Hnoss].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"A tarefa é minha, Heimdall."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles me chamam de especialista em Balaur, é verdade ....</p>
+<p> </p>
+<p>Mas, apesar de toda a minha tradição acumulada, ainda há muito que não sei.</p>
+<p> </p>
+<p>Embora eu suponha que, se não o fizer, ninguém o faz.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Heimdall pensou que você deveria ver isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ... chocante.</p>
+<p> </p>
+<p>Vou precisar analisar ainda mais o relatório, mas as implicações são horríveis ao extremo. Horrível, eu digo!</p>
+<p> </p>
+<p>Muito obrigado por me trazer isso. É possível precisar da sua ajuda para descobrir mais.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Heimdall] Sobre o rolo Balaur.</p></step>
+<step><p visible="[%3]">Leve o pergaminho para [%dic:STR_DIC_N_Hnoss].</p></step>
+</steps>
+<p>Você encontrou um relatório de Balaur. Mostre a Heimdall.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você trouxe um relatório que encontrou em Dark Poeta para Heimdall, ele sugeriu mostrá -lo ao pesquisador de Balaur Hnoss.</p>
+<p> </p>
+<p>Hnoss estava muito empolgado e disse que era uma informação importante que ela nunca tinha ouvido antes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

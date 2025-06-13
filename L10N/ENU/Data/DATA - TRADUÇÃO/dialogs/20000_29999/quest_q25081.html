@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você me faria um favor?</p>
+<p> </p>
+<p>Você poderia conseguir [plur][%dic:STR_DIC_I_quest_25081a]Do deserto espinhoso para mim?</p>
+<p> </p>
+<p>Os corais aqui são particularmente bonitos. Eles são ainda mais valiosos porque são petrificados.</p>
+<p> </p>
+<p>Depois de encontrá -los, leve -os para [%dic:STR_DIC_N_DF5_Agran_E]para que ele possa avaliar seu valor. Seria ótimo se você pudesse me trazer de volta alguns exemplos bonitos.</p>
+<p> </p>
+<p>Uma obra de arte natural tão bonita buscará um bom preço em Pandaemonium.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os encontrou?</p>
+<p> </p>
+<p>Espero que esteja em mais ou menos boas condições.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o coral vermelho.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Suas habilidades de coleta são verdadeiramente notáveis, [%username].</p>
+<p> </p>
+<p>A condição é melhor do que eu esperava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que ele quer fazer com isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde está o meu[%dic:STR_DIC_I_quest_25081a]?</p>
+<p> </p>
+<p>Claro, entendo que existem tarefas mais importantes, mas também não sei quando esse deserto mudará novamente ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Suas habilidades de coleta são verdadeiramente notáveis, [%username].</p>
+<p> </p>
+<p>A condição é melhor do que eu esperava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que ele quer fazer com isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tais obras de arte são raras em Pandaemonium.</p>
+<p> </p>
+<p>Eles seriam perfeitos como decorações em uma cidade grande como Pandaemonium ou mesmo em um templo ...</p>
+<p> </p>
+<p>Ou ... talvez também fosse interessante para os ricos colecionadores de arte?</p>
+<p> </p>
+<p>Obrigado a você, [%username], O pandaemonium só ficará mais bonito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a [%dic:STR_DIC_I_quest_25081a] e trazê -lo para [%dic:STR_DIC_N_DF5_Agran_E].</p>[%collectitem]</step>
+</steps>
+<p>Agrã pediu que você obtenha um coral vermelho petrificado. Cuide do pedido de Agran.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Agrã pediu que você obtenha essência especial da água -viva vermelha.</p>
+<p> </p>
+<p>Você trouxe a essência da água -viva vermelha. Ele agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

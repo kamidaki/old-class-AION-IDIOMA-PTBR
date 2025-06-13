@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você, por acaso, planeja visitar [%dic:STR_DIC_W_LF2_SZ_A1]?</p>
+<p> </p>
+<p>Eu preciso ter algo entregue lá por um correio que sabe ser discreto.</p>
+<p> </p>
+<p>Você pode manter um segredo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu sou um modelo de discrição."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Bom saber.</p>
+<p> </p>
+<p>Eu acho que você vai se sair bem então. Esta é uma mensagem confidencial para Sentinel[%dic:STR_DIC_N_Novan]no[%dic:STR_DIC_W_LF2_SZ_A1].</p>
+<p> </p>
+<p>Você pode dizer a ele que eu o enviei, mas não mencione a mais ninguém. OK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito.</p>
+<p> </p>
+<p>Sua reputação de confiabilidade me garante que você não abrirá a mensagem. Se você fizesse isso, tenho certeza de que sua reputação sofrerá muito.</p>
+<p> </p>
+<p>É bastante urgente, então por favor se apresse e entregue para [%dic:STR_DIC_N_Novan], quem fica de guarda no[%dic:STR_DIC_W_LF2_SZ_A1].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou chegar lá. Confie em mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, suponho que esteja abaixo de um Daeva se apresentar como um correio simples. Suponho que poderia usar o serviço de email shugo expresso, mas ... não parece tão seguro para mim.</p>
+<p> </p>
+<p>Eu sei que o Zephyr Guild quer manter esse segredo, e os Shugos são loucos por Kinah. Eles podem vender as informações por dinheiro.</p>
+<p> </p>
+<p>Hmmm....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Salve lá, Daeva. O que o leva aqui a um lugar tão remoto e árido?</p>
+<p> </p>
+<p>Um correio você diz? Bem, você deve ser muito cauteloso. Os Manduri ocasionalmente os transeuntes de Waylay por seus bens, mas isso não é nada comparado aos revolucionários lefaristas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Shhhh .... Esta mensagem confidencial é para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu Deus....</p>
+<p> </p>
+<p>Isso é quieto o suficiente? Obrigado por trazer isso para mim. Deixe -me ler ....</p>
+<p> </p>
+<p>Hmmm ... sim, isso é importante. Diz nesta nota que eu deveria compartilhá -lo com Heropres. Ele está parado ali.</p>
+<p> </p>
+<p>Você também levaria isso para Heropes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum! O que é?</p>
+<p> </p>
+<p>Qual é o seu negócio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma ordem confidencial para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me ver isso ....</p>
+<p> </p>
+<p>Uh-huh ... hmm .... vá em alerta intensificado? Isso é preocupante.</p>
+<p> </p>
+<p>Obrigado por conseguir isso para mim a tempo. Vou levar isso daqui.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar os pedidos para [%dic:STR_DIC_N_Novan].</p></step>
+<step><p visible="[%3]">Entregar os pedidos para [%dic:STR_DIC_N_Herodes].</p></step>
+</steps>
+<p>Malonimus tem ordens importantes a serem entregues. Ele pediu que você os entregasse discretamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Malonimus pediu que você entregasse algumas ordens confidenciais à Novan, um guarda nas ruínas do posto avançado.</p>
+<p> </p>
+<p>Você foi ao Novan e ele pediu que você entregasse o pedido a Heropes também. Você fez o que ele solicitou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

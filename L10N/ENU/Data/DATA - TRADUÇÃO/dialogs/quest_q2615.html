@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada Thor ordenou que eu encontrasse uma nova posição estratégica perto do acampamento Balaur. A Red Mane Cavern está longe demais para a espionagem eficaz, diz ele.</p>
+<p> </p>
+<p>Ele quer estabelecer um novo ponto de ligação perto da fortaleza de Hoarfrost.</p>
+<p> </p>
+<p>Eu tenho um lugar em mente, mas ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Mas o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas o lugar que tenho em mente é o acampamento de trolls. Está na posição perfeita.</p>
+<p> </p>
+<p>Claro, também está cheio de trolls Fang. Mas isso não é necessariamente um problema intransponível.</p>
+<p> </p>
+<p>O verdadeiro problema é não cometer nossas forças para limpar os trolls, deixando -nos abertos ao ataque de Balaur.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E sua solução?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Destruir suas casas. Faça -os recuar para um local mais remoto.</p>
+<p> </p>
+<p>Isso pode ser feito com uma força muito menor, possivelmente sem atrair a atenção do Balaur.</p>
+<p> </p>
+<p>Estou procurando alguém que possa lidar com o trabalho. Você está interessado, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu provavelmente não preciso lhe dizer como os trolls estúpidos são, mas não tão estúpidos que eles não vão fugir quando alguém oblitera suas casas.</p>
+<p> </p>
+<p>Então vá para o [%dic:STR_DIC_W_STR_DF3_SZ_G1] e derrubar alguns[%dic:STR_DIC_OBJ_DF3_TrollHouse_Q2615] S, então relate -me de volta para mim.</p>
+<p> </p>
+<p>Estou contando com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso não deve demorar muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, o dever de um Daeva não pode ser forçado, é verdade.</p>
+<p> </p>
+<p>Ainda assim, pensei que poderia contar com você em busca de ajuda.</p>
+<p> </p>
+<p>Vou perguntar a outra pessoa então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez você deva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Algumas pessoas pensam que devemos apenas eliminar completamente os trolls Fang.</p>
+<p> </p>
+<p>Não tenho certeza se deveríamos, e essas não foram minhas ordens do general Brigade Thor. Espero que meu plano cumpra nossos objetivos imediatos.</p>
+<p> </p>
+<p>Como estão as coisas no[%dic:STR_DIC_W_STR_DF3_SZ_G1]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um pouco subpovoado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que eles tenham sido embora agora.</p>
+<p> </p>
+<p>Mas de qualquer maneira, você ganhou seu pagamento.</p>
+<p> </p>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_OBJ_DF3_TrollHouse_Q2615]([%2]/2).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mostin].</p></step>
+</steps>
+<p>Destrua as casas de trolls e expulse os trolls para garantir uma nova e vital localização estratégica.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A maioria disse que estava procurando uma nova posição estratégica para a luta contra o Balaur. O acampamento de trolls de fang parecia apropriado, mas infelizmente ocupado por trolls de fang.</p>
+<p> </p>
+<p>Por sua sugestão, você destruiu as casas dos trolls, na esperança de afastá -las.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

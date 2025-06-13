@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sempre soube que você era excelente, [%username], mas você se superou desta vez.</p>
+<p> </p>
+<p>Esses dois tipos de éter que você trouxe ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim? E eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Jhaelas, Mestre de Artesãos de Aetherpping, recomendou você.</p>
+<p> </p>
+<p>Mas o reconhecimento por si só não será suficiente para você. Para receber o título de especialista, você precisa da aprovação do governador.</p>
+<p> </p>
+<p>O que você acha, você quer este título?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou lhe dar uma carta de recomendação para fasimedes.</p>
+<p> </p>
+<p>Ele concederá o título de especialista em uma cerimônia oficial, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mal posso esperar para ser um especialista!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não deixe os nervos nem as noções de informalidade igualitária permanecem no seu caminho, [%username].</p>
+<p> </p>
+<p>Você merece este título.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Se você realmente acha que eu deveria ir ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer?</p>
+<p> </p>
+<p>É importante que você tenha que perturbar o governador?</p>
+<p> </p>
+<p>Diga -me o que você quer de mim já.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu queria me candidatar ao posto de especialista".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já chegou tão longe ... muito surpreendente, [%username].</p>
+<p> </p>
+<p>Você é mais ambicioso do que eu pensava.</p>
+<p> </p>
+<p>Agora que você é um especialista em Aethertapping, use suas habilidades para o bem da Elysea.</p>
+<p> </p>
+<p>Que a proteção de Ariel esteja com você!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Ter [%dic:STR_DIC_N_Fasimedes]Conceda a você um novo título.</p></step>
+</steps>
+<p>O Mestre Jhaelas da Aetherpping aconselhou você a obter o título de especialista. Vá para o governador Fasimedes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jhaelas, o mestre da Aethertapping, não tinha mais nada para ensiná -lo e recomendou o título de especialista.</p>
+<p> </p>
+<p>Você recebeu uma carta de recomendação dele e levou -a ao governador Fasimedes, que concedeu o título em uma cerimônia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

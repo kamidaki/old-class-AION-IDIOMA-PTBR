@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os membros do dragão querem evocar uma criatura maligna chamada Jormungand.</p>
+<p> </p>
+<p>Os preparativos estão quase concluídos e os navios, que são necessários para os feitiços de convocação, estão sendo estritamente guardados.</p>
+<p> </p>
+<p>Você poderia, [%username], destrua o [plur][%dic:STR_DIC_N_LDF5b_FOBJ_D2_Pot]para que o dragão não possa realizar a invocação?</p>
+<p> </p>
+<p>Sem esse objeto importante, eles não podem realizar seus planos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Dragão Tolo!</p>
+<p> </p>
+<p>Como se tivéssemos tolerado se eles deixassem essa coisa malvada vagando livremente nas montanhas Sauro ...</p>
+<p> </p>
+<p>Como um navio de Jormungand é considerado um item extremamente importante, certamente causaria grandes danos se os navios fossem destruídos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso certamente mergulhou o dragão no caos.</p>
+<p> </p>
+<p>Eles realmente deveriam ter escondido o navio, se for tão valioso!</p>
+<p> </p>
+<p>Pelo menos eles não serão capazes de manter mais cerimônias de invocação como essa por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_N_LDF5b_FOBJ_D2_Pot]([%2]/6).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Macur_E].</p></step>
+</steps>
+<p>Destrua os vasos de Jormungand que são usados ​​para a cerimônia de invocação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entrou no esconderijo do dragão, onde estavam sendo feitos os preparativos para despertar Jormungand e destruiu os navios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

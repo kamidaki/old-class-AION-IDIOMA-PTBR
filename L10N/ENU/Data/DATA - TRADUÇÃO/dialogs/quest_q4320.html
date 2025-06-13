@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah[%username]! Asmodae está em sua dívida. Consegui realizar minha pesquisa com esses lava barghests fora do caminho, mas os bestas teimosos estão de volta.</p>
+<p> </p>
+<p>Estamos à beira de um avanço e só precisamos encontrar uma pista mais importante para resolver esse quebra -cabeça. Se eu pudesse descobrir a peça que faltava ... está me deixando louco.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é a peça que falta?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenho certeza ... tenho uma ideia, mas não posso mencioná -la. Eu tenho procurado por toda essa área para pistas e ....</p>
+<p> </p>
+<p>Chegue mais perto, [%username]. Mantenha isso para si mesmo, mas essa investigação está sendo monitorada de perto pelo próprio Lord Azphel.</p>
+<p> </p>
+<p>Todo o Asmodae estará com problemas se o [%dic:STR_DIC_M_HellhoundD_28_An] arruinar esta investigação. Você pode me dar uma mão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem vários[%dic:STR_DIC_M_HellhoundD_28_An] Aqui.</p>
+<p> </p>
+<p>Eles agitam a poeira e destruem os trilhos que estou tentando encontrar. Por causa disso, as trilhas desaparecem duas vezes mais rápido.</p>
+<p> </p>
+<p>Seria uma grande ajuda para mim se você pudesse matar 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou matá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegue mais perto, [%username]....</p>
+<p> </p>
+<p>Você certamente entende que o envolvimento de Lord Azphel faz disso uma questão de extrema importância. Isso não é apenas para mim, é para todos os Asmodae. Por favor, volte se você tiver tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se livrou do[%dic:STR_DIC_M_HellhoundD_28_An] S, [%username]?</p>
+<p> </p>
+<p>Não tenho permissão para discutir a investigação, mas não há nada de maior importância no momento.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os animais estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, agora posso me concentrar na investigação. A peça que faltava do quebra -cabeça deveria ter aparecido por N .... Ah, esqueça o que eu acabei de dizer, isso é um segredo.</p>
+<p> </p>
+<p>Tome isso como uma recompensa e mencione me ajudando a ninguém.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_HellhoundD_28_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Utgar].</p></step>
+</steps>
+<p>Ajuda eliminando o lava barghests para que Utgar possa concluir sua pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Utgar disse que a lava Barghests está impedindo sua investigação. Ele queria que você matasse as bestas para poder continuar seu trabalho.</p>
+<p> </p>
+<p>Você matou os Barghests para que Utgar pudesse trabalhar em paz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

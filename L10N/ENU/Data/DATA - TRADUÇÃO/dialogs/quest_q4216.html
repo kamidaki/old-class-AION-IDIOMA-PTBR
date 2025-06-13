@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O pai de Chantiner logo se aposentou dos comerciantes. Chantiner quer dar ao pai algo memorável, sim.</p>
+<p> </p>
+<p>O pai navegou em navios de nuvem negra quando cantam apenas um pequeno shugo, Nyerk.</p>
+<p> </p>
+<p>Chantiner agora também é comerciante!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Bom para você!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O pai trouxia um lindos presentes bonitos e cantinos sempre que chegava em casa.</p>
+<p> </p>
+<p>Muito difícil escolher um bom presente para sua aposentadoria, Nyerk!</p>
+<p> </p>
+<p>Casa do pai já cheia de itens raros, Akakakak!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O shugo que tem tudo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma coisa que o pai sempre quis é o chapéu de pirata e a capa! Por acaso, Daeva, muitos piratas em aço de aço.</p>
+<p> </p>
+<p>Daeva pode pegar o chapéu e a capa do pirata? Como presente para o pai de Chantiner? Sim? Não?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chantiner ouviu que existem[%dic:STR_DIC_M_IDShip_ShulackKn_44_Ae] Areia [%dic:STR_DIC_M_IDShip_ShulackPr_44_Ae] S no ancinho de aço. Deve ter chapéus e capas, sim?</p>
+<p> </p>
+<p>Se Daeva trazer chapéus de quatro piratas e três mantos piratas, Chantiner escolherá os melhores para o pai, Nyerk.</p>
+<p> </p>
+<p>Daeva traz melhores chapéus e capas. Faça menos viagens ao aço, Akakakak.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bons chapéus, menos viagens. Muito bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chapéus e mantos não são bons o suficiente para a aposentadoria presente?</p>
+<p> </p>
+<p>Chantiner vai pensar mais.</p>
+<p> </p>
+<p>Pense duro, Daeva. Se uma boa ideia surgir, venha compartilhar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Vou dormir nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ouvi falar do pai, Nyerk. Disse que seria no último navio.</p>
+<p> </p>
+<p>Pai provavelmente demorando um tempo doce, Nyerk.</p>
+<p> </p>
+<p>Daeva se aposentou presentes?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Seu pai será um pirata elegante, de fato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O pai estará aqui em breve, mas não há presentes! A cerimônia acontecerá assim que ele sair do navio!</p>
+<p> </p>
+<p>Traga -me os chapéus e capas do pirata rapidamente, Nyerk!</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_IDShip_ShulackKn_44_Ae] Areia [%dic:STR_DIC_M_IDShip_ShulackPr_44_Ae] S deveria tê -los, Nyerk. Daeva vai agora!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adoro visitar o aço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada mal ... mas chantiner pensa que poderia ser melhor, sim?</p>
+<p> </p>
+<p>Sim. Talvez Daeva possa obter chapéus e capas melhores!</p>
+<p> </p>
+<p>Aqui, pegue isso. Para itens até agora, Nyerk. Trazer mais!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar os itens de [%dic:STR_DIC_M_IDShip_ShulackKn_44_Ae] Areia [%dic:STR_DIC_M_IDShip_ShulackPr_44_Ae] S, e leve-os para [%dic:STR_DIC_N_Shugo_DC1_18].</p>[%collectitem]</step>
+</steps>
+<p>Chantiner quer preparar um presente memorável para o pai que está prestes a se aposentar. Pegue os chapéus e capas de piratas para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chantiner disse que quer dar um presente ao pai, que está prestes a se aposentar.</p>
+<p> </p>
+<p>Embora seu pai tivesse adquirido muitos itens raros enquanto viajava por Atreia no navio dos comerciantes, ela disse que ele não tem chapéu e capa de pirata.</p>
+<p> </p>
+<p>Quando você trouxe vários chapéus e capas do aço de aço, ela disse que os itens não são o que ela esperava e pediu que você continuasse trazendo itens melhores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

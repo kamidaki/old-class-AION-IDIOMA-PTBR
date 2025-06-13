@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os pedidos foram emitidos para acabar [%dic:STR_DIC_M_LDF5_Recon_v05_L_all].</p>
+<p> </p>
+<p>Se o escoteiro Elyos Vanguard for eliminado, um grande golpe pode ser causado por suas forças.</p>
+<p> </p>
+<p>Além disso, as notícias de uma vitória podem fortalecer o espírito de luta dos asmodianos.</p>
+<p> </p>
+<p>[%username], por favor, lute na linha de frente em nome dos asmodianos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Já estávamos planejando como nos livrar da tropa de Elyos Scout.</p>
+<p> </p>
+<p>Agora recebemos o aproveitamento de cima e só precisamos executar nosso plano.</p>
+<p> </p>
+<p>Se algo acontecer com a 75ª tropa de Elyos, os Elyos perderão seu espírito de luta e não ousarão mais nos enfrentar.</p>
+<p> </p>
+<p>Você deve aproveitar esta oportunidade para fazê -los sentir o quão mais poderosos somos comparados a eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você alcançou a vitória na linha de frente, como esperado.</p>
+<p> </p>
+<p>Obrigado por destruí -los.</p>
+<p> </p>
+<p>Agora sinto que tenho um exército inteiro nas minhas costas.</p>
+<p> </p>
+<p>Esses covardes Elyos nem serão capazes de chegar perto do acampamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5_Recon_v05_L_all]que aparece se os asmodianos conquistarem o [%dic:STR_DIC_W_LDF5a_B9_5]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard05_D].</p></step>
+</steps>
+<p>Destrua a 75ª tropa de escoteiros Elyos Vanguard para danificar a força de luta dos Elyos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Naat disse que seria útil para o moral e enfraqueceria as forças de Elyos, se a 75ª tropa de escoteiros Elyos fosse eliminada.</p>
+<p> </p>
+<p>Depois que você pegou a 75ª tropa de Elyos Scout e voltou, ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

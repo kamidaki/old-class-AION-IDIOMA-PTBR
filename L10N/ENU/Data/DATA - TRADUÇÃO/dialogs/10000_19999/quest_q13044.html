@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi a missão de recuperar [%dic:STR_DIC_I_QUEST_13044A]de [%dic:STR_DIC_E_LDF5B_E_Babar].</p>
+<p> </p>
+<p>Passei toda a minha vida treinando para a batalha ... e agora eu deveria apenas pegar algo!</p>
+<p> </p>
+<p>Sinto muito, mas você assumiria essa missão para mim?</p>
+<p> </p>
+<p>Eu mesmo não posso aceitar esta missão.</p>
+<p> </p>
+<p>Você pode se reportar para [%dic:STR_DIC_N_LDF5b_Portis_E]Quando você concluiu a missão. Ele atribuiu isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estava procurando por mim, Portis, o sumo sacerdote?</p>
+<p> </p>
+<p>O que você precisa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os bens roubados.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você coletou[%dic:STR_DIC_I_QUEST_13044A].</p>
+<p> </p>
+<p>Acredito que realmente atribuí esta tarefa a Tragos, mas não importa.</p>
+<p> </p>
+<p>Não foi exatamente uma ótima tarefa, mas obrigado de qualquer maneira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_13044A] e trazê -los para [%dic:STR_DIC_N_LDF5b_Portis_E].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha os bens roubados que foram roubados pela tribo Ruruba e os traga para Portis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Tragos, você obteve o item que havia sido roubado pela tribo Ruruba e o trouxe para Portis.</p>
+<p> </p>
+<p>Portis agiu como se não fosse nada realmente importante. Então, por que ele deu a esses pedidos diretamente a Tragos?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

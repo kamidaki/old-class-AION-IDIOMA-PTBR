@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A chave soberana de Siel ... posso restaurar seu poder original, mas não será fácil.</p>
+<p> </p>
+<p>É preciso muito esforço para reparar esse tipo de dano.</p>
+<p> </p>
+<p>Mas parece que você realmente quer esta arma e não desistirá facilmente, [%username].</p>
+<p> </p>
+<p>Sempre fico decepcionado quando ajuda alguém que desiste muito rapidamente. Vale a pena ajudar as pessoas que têm a tenacidade de lutar até o fim amargo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você diz que não vai desistir.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou satisfeito por você não querer desistir.</p>
+<p> </p>
+<p>Você mostra forte força de vontade. Afinal, você não quer desistir, mesmo sabendo que não será fácil.</p>
+<p> </p>
+<p>Eu tenho enfatizado o quão complicado a restauração será porque o material necessário para ele é muito raro.</p>
+<p> </p>
+<p>Você vai me ajudar a obter esse material raro? Se você me trazer o material, farei o meu melhor para restaurar o poder da chave do aether.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece [%dic:STR_DIC_I_Insidium_01]? Provavelmente não.</p>
+<p> </p>
+<p>Aparentemente, eles são feitos de um minério criado a partir de imenso calor e energia, que foi liberado quando Lady Siel lutou contra Tiamat antes da grande catástrofe.</p>
+<p> </p>
+<p>De qualquer forma, é um minério valioso e muito raro. Segundo relatos, Honeus, um de nossos anciãos tribais, tem parte disso.</p>
+<p> </p>
+<p>Se você fizer [%dic:STR_DIC_N_Honeus]Um favor, ele certamente lhe dará um lingote de NOXALLON. Mas ele não vai facilitar para você.</p>
+<p> </p>
+<p>Traga -me um lingote NOXALLON e eu vou restaurar a chave soberana de Siel para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você obviamente não está tão interessado em armas quanto eu pensava.</p>
+<p> </p>
+<p>Eu preferiria se você me dissesse desde o início.</p>
+<p> </p>
+<p>Volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Tudo está pronto.</p>
+<p> </p>
+<p>Conceda-me o NOXALLON NOTOT e a chave soberana de Siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a chave do aether e o lingote de Noxallon.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você seria mais persistente, [%username].</p>
+<p> </p>
+<p>Um Daeva deve ver uma tarefa até o fim.</p>
+<p> </p>
+<p>Fazer [%dic:STR_DIC_N_Honeus]um favor e me traga o [%dic:STR_DIC_I_Insidium_01].</p>
+<p> </p>
+<p>E não se esqueça da chave soberana de Siel. Não posso trabalhar nisso enquanto você o segura em suas mãos. Então coloque -o no cubo.</p>
+<p> </p>
+<p>Traga -me essas duas coisas. Vou cuidar do resto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe o certo. Agora eu só tenho que colocar meu artesanato à prova.</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+<p> </p>
+<p>(Ele coloca o NOXALLON NOTOT em uma forja e trabalha a chave Aether por um tempo.)</p>
+<p> </p>
+<p>Bom, está feito. Sinta -se à vontade para tentar. Você sentirá a diferença imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30041] e trazê -los para [%dic:STR_DIC_N_Gefeios].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha um lingote noxallon para restaurar o poder da chave soberana de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios disse que precisava de um material especial para restaurar o verdadeiro poder da chave soberana de Siel.</p>
+<p> </p>
+<p>Você foi a Honeus e recebeu um NOXALLON NOTOT em troca de fazer um favor a ele. Os Gefeios usaram o lingote para restaurar sua chave de éter e a transformaram na chave soberana de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

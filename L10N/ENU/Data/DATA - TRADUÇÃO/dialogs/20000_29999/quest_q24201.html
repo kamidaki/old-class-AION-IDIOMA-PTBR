@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você deve ir para o [%dic:STR_DIC_W_DF2B_SZ_A2] e encontrar -se [%dic:STR_DIC_N_DF2a_Ghost_Theia].</p>
+<p> </p>
+<p>Os túmulos da Guilda do Céu Vermelho estão neste cemitério. Os membros da Guilda lutaram por Brusthonin antes da Grande Catástrofe.</p>
+<p> </p>
+<p>Brusthonin já foi conhecido por fornecer grãos toda Atreia. É por isso que a região precisava de tanta proteção.</p>
+<p> </p>
+<p>Lady Triniel havia despachado a Guilda do Céu Vermelho para defender Brusthonin por esse motivo.</p>
+<p> </p>
+<p>O general da brigada da Guilda do Céu Vermelho era um homem chamado Virkel. Ele se certificou de que os humanos e Daevas de Brusthonin estivessem a salvo do Balaur.</p>
+<p> </p>
+<p>Os nove legionários do Red Sky Legion deram suas vidas em uma batalha horrível contra o Balaur.</p>
+<p> </p>
+<p>Infelizmente, seu sacrifício altruísta era nada, pois Brusthonin estava contaminado a ponto de ninguém mais viver lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um santuário foi construído no cemitério de Baltasar para comemorar os nove legionários.</p>
+<p> </p>
+<p>É aí que os túmulos dos legionários do céu vermelho podem ser encontrados.</p>
+<p> </p>
+<p>No entanto, de acordo com os relatórios mais recentes da equipe de limpeza, houve alguns problemas envolvendo os túmulos.</p>
+<p> </p>
+<p>O que aconteceu?</p>
+<p> </p>
+<p>A única maneira de esclarecer esse assunto é uma investigação completa no local.</p>
+<p> </p>
+<p>[%username], fale com[%dic:STR_DIC_N_DF2a_Ghost_Theia] e descubra a verdade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Faz muito tempo que falei com uma pessoa viva.</p>
+<p> </p>
+<p>Por que, oh, por que todos fogem assim que eu me aproxima deles?</p>
+<p> </p>
+<p>Mas você veio me ver por sua própria escolha.</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre o sarcófago destruído.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é o sarcófago de Villaire.</p>
+<p> </p>
+<p>O fluxo de Aether é irregular. Eu me pergunto se Villaire tem algo a ver com isso ...</p>
+<p> </p>
+<p>Ou talvez haja outra explicação?</p>
+<p> </p>
+<p>Você se importaria de me fazer um favor?</p>
+<p> </p>
+<p>Sinto a energia de Balaur contaminada nas proximidades. Você iria ver se o balaur também se tornou morto -vivo?</p>
+<p> </p>
+<p>Você poderia eliminar o [plur][%dic:STR_DIC_M_DF2A_UndeadLizardmanFi_47_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu estive esperando por você.</p>
+<p> </p>
+<p>Você foi ao santuário da lenda e inspecionou o sarcófago destruído?</p>
+<p> </p>
+<p>Como isso aconteceu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que experimentou no Santuário Legend.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, o sarcófago foi danificado há muito tempo.</p>
+<p> </p>
+<p>E o corpo de Villaire também desapareceu.</p>
+<p> </p>
+<p>Ninguém sabe por que ...</p>
+<p> </p>
+<p>Obrigado por seus esforços. Enviarei o esquadrão Reaper para reparar o sarcófago destruído mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_DF2B_SZ_A2] e converse com o fantasma errante [%dic:STR_DIC_N_DF2a_Ghost_Theia].</p></step>
+<step><p visible="[%9]">Eliminar o [plur][%dic:STR_DIC_M_DF2A_UndeadLizardmanFi_47_An]([%11]/12).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_Surt] em[%dic:STR_DIC_W_DF2B_SZ_A_Town].</p></step>
+</steps>
+<p>Surt pediu que você inspecione os túmulos da Guilda do Céu Vermelho. Vá conhecer Theia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Surt explicou que o sarcófago da Guilda do Céu Vermelho havia sido danificado.</p>
+<p> </p>
+<p>Você perguntou ao fantasma Theia sobre isso e se livrou dos Mortos Vivos para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

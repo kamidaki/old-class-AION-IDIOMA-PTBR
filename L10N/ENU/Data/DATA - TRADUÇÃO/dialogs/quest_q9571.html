@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma busca por fins de teste em relação aos números de missão concluídos.</p>
+<p> </p>
+<p>Por favor, mate três dos[Zaif_10_An], Assim, [Zaif_11_An], Assim, [Zaif_12_An], Assim, [Zaif_6_An] e [Zaif_7_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu eliminar os monstros?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você reporta o sucesso da missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parabéns!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os monstros.</p>
+<p visible="[%0]">[plur][Zaif_10_An]([%2]/3)</p>
+<p visible="[%0]">[plur][Zaif_11_An]([%5]/3)</p>
+<p visible="[%0]">[plur][Zaif_12_An]([%8]/3)</p>
+<p visible="[%0]">[plur][Zaif_6_An]([%11]/3)</p>
+<p visible="[%0]">[plur][Zaif_7_An]([%14]/3)</p></step>
+<step><p visible="[%15]">Fale com Rebecca.</p></step>
+</steps>
+<p>Mate os monstros e converse com Rebecca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Terminado, terminado.</p>
+<p> </p>
+<p>Wheeeeeee</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

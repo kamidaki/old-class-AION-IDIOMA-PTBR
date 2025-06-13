@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta adaga manchada de sangue parece incomum.)</p>
+<p> </p>
+<p>(Você sente instintivamente que não deve tocar neste item.)</p>
+<p> </p>
+<p>(Com um rancor tão forte, este item certamente tem um efeito tentador em alguns.)</p>
+<p> </p>
+<p>(Provavelmente é melhor perguntar [%dic:STR_DIC_N_LF5_Rosalee_E]primeiro.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma adaga que contém um potente rancor ...</p>
+<p> </p>
+<p>Eu ouvi falar disso, [%username].</p>
+<p> </p>
+<p>Mas temo que não possa mais contar sobre esse rancor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você continua a ouvir.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um verdadeiro mestre desta região não muito longe daqui.</p>
+<p> </p>
+<p>Tenho certeza [%dic:STR_DIC_N_LF5_Monroe_E] Sabe mais sobre isso.</p>
+<p> </p>
+<p>Ele trabalha como pesquisador de fortaleza agora. Ninguém sabe mais sobre o Balaur do que ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]?</p>
+<p> </p>
+<p>Não te vejo há muito tempo.</p>
+<p> </p>
+<p>Posso ajudá -lo com alguma coisa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você fala sobre a adaga.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por Aion!</p>
+<p> </p>
+<p>Você encontrou essa adaga na fortaleza de Tiamat?</p>
+<p> </p>
+<p>Pelo bem de Old Class Aion ...</p>
+<p> </p>
+<p>Você não pode imaginar com o que está lidando, [%username]!</p>
+<p> </p>
+<p>Quão forte é esse rancor!</p>
+<p> </p>
+<p>Deve ser a adaga que [%dic:STR_DIC_MLA52]costumava matar o ex -senhor do dragão[%dic:STR_DIC_E_Apsu]!</p>
+<p> </p>
+<p>Ninguém sabe o que poderia acontecer se você tocar em um objeto como esse, então não deve tocar em nada disso em nenhuma circunstância. Lembre -se de que, se você já vi esse objeto novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Perguntar [%dic:STR_DIC_N_LF5_Rosalee_E] Sobre a punhal Rancor.</p></step>
+<step><p visible="[%3]">Perguntar [%dic:STR_DIC_N_LF5_Monroe_E] Sobre a punhal Rancor.</p></step>
+</steps>
+<p>Procure alguém que conhece a adaga que você descobre na fortaleza de Tiamat.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma adaga na fortaleza de Tiamat, que continha um terrível rancor.</p>
+<p> </p>
+<p>Quando você contou a Rosalie sobre a adaga, ela disse que Monroe pode conhecer essa adaga. Então você relatou a Monroe sobre a adaga.</p>
+<p> </p>
+<p>Monroe ficou muito surpreso e disse que a adaga pode ter sido usada por Tiamat no assassinato do ex -dragão Lord Apsu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

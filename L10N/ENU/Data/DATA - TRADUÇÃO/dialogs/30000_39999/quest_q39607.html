@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Mate o [%dic:STR_DIC_M_LDF5A_F_Da_Zom_all]bloqueando o caminho para o sul de Katalam. Em seguida, relate -se ao escritório administrativo, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BL]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os zumbis selvagens bloqueando o caminho?</p>
+<p> </p>
+<p>É um incômodo quando eles estão no caminho, porque os kokonats e a madeira precisam ser entregues rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora as mercadorias podem ser transportadas com segurança novamente, AK.</p>
+<p> </p>
+<p>Com a ajuda de Daeva, conseguimos manter nossos custos de transporte baixos, AK.</p>
+<p> </p>
+<p>Vou verificar as informações importantes para a documentação da empresa, AK.</p>
+<p> </p>
+<p>[%username], certo, AK? É isso [%userclass]?</p>
+<p> </p>
+<p>Está feito agora. Você pode ir, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF5A_F_Da_Zom_all]que estão bloqueando o caminho ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5a_Silverlin_BL].</p></step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você matou os zumbis selvagens que bloquearam a rota de transporte e se reportaram ao ramo de Silverine no norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

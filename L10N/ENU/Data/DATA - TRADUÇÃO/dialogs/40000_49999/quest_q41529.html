@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41529</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%userrace]. Eu queria saber se você poderia embarcar em uma breve missão para nós.</p>
+<p> </p>
+<p>Uma patrulha viu um[%dic:STR_DIC_OBJ_LDF4B_FOBJ_T3_Wagon] Ao sul das fontes a vapor. Nenhum civil deve estar na área, e nenhum foi relatado desaparecido.</p>
+<p> </p>
+<p>Alguém está fazendo algo lá, e não temos idéia de quem ou o quê. Eu preciso que você investiga. Pode não ser nada, mas precisamos saber de qualquer maneira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido. Mas eu esperaria nada menos um daeva de suas capacidades.</p>
+<p> </p>
+<p>Relatório. O que você descobriu sobre o vagão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você estava certo em se preocupar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O dragão?! Estas são de fato graves.</p>
+<p> </p>
+<p>Onde você encontra alguns dragões, sempre há mais. Eles devem ter uma vila ou base na área de fontes a vapor.</p>
+<p> </p>
+<p>Devo relatar aos meus superiores imediatamente. Obrigado pela sua inteligência.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Investigue o [%dic:STR_DIC_OBJ_LDF4B_FOBJ_T3_Wagon] Ao sul das fontes de vapor [%2].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Sirio].</p></step>
+</steps>
+<p>Um vagão abandonado foi visto ao sul das fontes a vapor. Investigue imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sirio disse que um vagão abandonado foi encontrado ao sul das fontes Steam. Ele pediu que você investigasse.</p>
+<p> </p>
+<p>Quando você fez, você encontrou o dragão. Depois de derrotá -los, você relatou a Sirio, que achou sua presença chocante e preocupante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

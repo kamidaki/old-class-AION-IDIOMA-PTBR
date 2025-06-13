@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, mate [%dic:STR_DIC_M_LDF5A_F_Clodworm_64_An].</p>
+<p> </p>
+<p>O cheiro dos molhos tenazes é fisicamente doloroso.</p>
+<p> </p>
+<p>O fedor e o desconforto associado são insuportáveis.</p>
+<p> </p>
+<p>Eurgh, você mal pode respirar!</p>
+<p> </p>
+<p>Isso é pura tortura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já cheirou o cheiro da minhoca teimosa?</p>
+<p> </p>
+<p>Se você não tiver, não fale sobre isso.</p>
+<p> </p>
+<p>Eu não tenho idéia de onde vem aquele miadinho azedo e com cheiro de cadáver.</p>
+<p> </p>
+<p>Prefiro lutar contra cem guerreiros de Balaur do que ser submetido a esse cheiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Agora posso relaxar um pouco.</p>
+<p> </p>
+<p>Se a situação tivesse dado muito mais tempo, meu nariz teria sido paralisado.</p>
+<p> </p>
+<p>E talvez eu teria sofrido sob o estresse de tudo e fique doente.</p>
+<p> </p>
+<p>[%username], você não tem idéia de quão valioso era o seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [plur][%dic:STR_DIC_M_LDF5A_F_Clodworm_64_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard07_D].</p></step>
+</steps>
+<p>Destrua as molhos tenazes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jarnkel reclamou do fedor da minhoca tenaz.</p>
+<p> </p>
+<p>Você matou a minhoca tenaz a pedido dele, pela qual ele agradeceu profusamente quando você voltou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

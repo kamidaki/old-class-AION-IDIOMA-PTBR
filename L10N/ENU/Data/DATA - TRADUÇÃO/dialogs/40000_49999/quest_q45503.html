@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você!</p>
+<p> </p>
+<p>Esta é uma ordem urgente para você, [%username], da cruzada no sangue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Deixe -me ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p></p>
+<p>A cruzada sanguínea confirmou a presença de forças de Elyos invasoras no Canyon Silentera. Se os Elyos não forem despachados, nossa fortaleza em Inggison será ameaçada de ataque direto. A cruzada sanguínea emitiu uma ordem de morte prioritária. Esta ordem substitui todas as outras ordens comuns.</p>
+<p></p>
+<p>1. Elimine pelo menos cinco soldados de Elyos perto do[%dic:STR_DIC_E_UnderPass_Da].</p>
+<p></p>
+<p>2. Derrote os Elyos por qualquer meio possível-táticas robutas são autorizadas para esta missão. Apenas verifique se os covardes mortos são de habilidade relativa. Não há vantagem em massacrar aqueles que não podem nos prejudicar.</p>
+<p></p>
+<p>3. Relatório para o [%dic:STR_DIC_E_45503]Depois que as mortes são confirmadas e os inimigos perderam a vontade de lutar.</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>Agora esteja seguro. Não podemos ser vistos arrastando seu cadáver de volta para o enterro, [%username]. Não você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, justo o suficiente. Não posso forçá -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E eu não posso te ajudar. Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom ver você, [%username].</p>
+<p> </p>
+<p>Eu ouço o Silentera Canyon corre vermelho com sangue de Elyos, meu amigo. Eu não acho que você teve uma mão nisso, hmm?</p>
+<p> </p>
+<p>Relatório, Crusader. Conte -me sobre o seu papel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É verdade. Eu os enviei para seus túmulos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Sim, excelente. [%userclass]É como você é difícil de encontrar, meu amigo-fico feliz por termos você em nossas fileiras.</p>
+<p> </p>
+<p>Todo o empreendimento colhe recompensas. Aqui está o seu, cruzado. Sangue para sangue!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_Daily_2]no[%dic:STR_DIC_E_UnderPass_Da]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_E_45503].</p></step>
+</steps>
+<p>Ordem urgente: elimine os Elyos causando um tumulto no Silentera Canyon e se reporte ao agente da filial de Gelkmaros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada Blood emitiu uma ordem de morte para a eliminação das forças Elyos no Canyon Silentera.</p>
+<p> </p>
+<p>Você concluiu a missão e recebeu sua recompensa do agente da filial de Gelkmaros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

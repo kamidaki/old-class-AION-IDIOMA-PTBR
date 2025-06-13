@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Gah, esses Strigik são muito mais problemas do que pensávamos. Eles não parecem fortes, mas são.</p>
+<p> </p>
+<p>Eles nem se incomodam em tentar se comunicar conosco. Eles apenas atacam e continuam atacando.</p>
+<p> </p>
+<p>Mas então, estamos invadindo seu território. Acho que reagiríamos da mesma maneira se os fossemos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ainda assim, parece um problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é. Feles está tendo dificuldade em fazer pesquisas, e geralmente estamos sobrecarregados e forçados a recuar.</p>
+<p> </p>
+<p>Os que vêm diretamente da vila são especialmente fortes. Mas esse é o único lugar que precisamos investigar mais.</p>
+<p> </p>
+<p>Poderíamos usar algum apoio aqui, [%username]. Cortar seus números na vila Strigik nos ajudaria muito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Strigik em Strigik Village é[%dic:STR_DIC_M_DF4_Owllau_Fi_51_Ae], Assim, [%dic:STR_DIC_M_DF4_Owllau_Wi_51_Ae], Assim, [%dic:STR_DIC_M_DF4_Owllau_As_51_Ae] e [%dic:STR_DIC_M_DF4_Owllau_Pr_51_Ae].</p>
+<p> </p>
+<p>Se você os matar, você poderá receber [%dic:STR_DIC_I_QUEST_21028a].</p>
+<p> </p>
+<p>Por favor, me traga 10 deles.</p>
+<p> </p>
+<p>Não é que não confiemos em você, mas precisamos dessas evidências para determinar a força do estrigik restante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor você não ter feito isso de propósito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você veio aqui para ajudar Feles?</p>
+<p> </p>
+<p>Olha, talvez eu não entenda muito do que ela faz, mas sei que é importante, não importa o que você pense.</p>
+<p> </p>
+<p>Vai ter que ser feito de alguma forma, com ou sem você. Eu apenas acho que seria muito mais fácil se estivesse "com".</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Olha, eu não posso, tudo bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Cara, eu prefiro lutar contra os Elyos. Pelo menos eles são humanos ... mais ou menos. Mas eles ainda são um pouco como nós.</p>
+<p> </p>
+<p>O Strigik, no entanto ... é ainda mais cruel que o Mau. Eu quase poderia jurar que seus olhos brilham com ódio ....</p>
+<p> </p>
+<p>Mas sou só eu. Feles está ansioso para estudar aqueles[%dic:STR_DIC_I_QUEST_21028a] S, você sabe.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"E agora ela vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Desculpe, isso não é suficiente. Feles disse que precisa de pelo menos 20 para obter algo útil deles.</p>
+<p> </p>
+<p>Eu arrancaria tudo o que [%dic:STR_DIC_I_QUEST_21028a] está fora de um pássaro, se eu pudesse, mas ela diz que precisa de uma ampla gama de amostras para obter dados precisos.</p>
+<p> </p>
+<p>Não se preocupe, Varca e eu podemos protegê -la até você voltar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu confiei em você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas são penas estriques, tudo bem. Eles com certeza fedem como eles.</p>
+<p> </p>
+<p>Com tantos, tenho certeza de que a vila Strigik é muito mais silenciosa. Deve ser mais fácil de se infiltrar agora.</p>
+<p> </p>
+<p>Você fez muito por todos nós. Muito obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_QUEST_21028a] e leve-os para [%dic:STR_DIC_N_Asathor].</p>[%collectitem]</step>
+</steps>
+<p>Asathor está tendo problemas com o Strigik na vila Strigik. Reduza seus números e traga de volta suas penas de Strigik.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Asathor pediu que você limpe a vila Strigik para facilitar a pesquisa lá e trazer de volta as penas dos estrigiks que você matou para fins de pesquisa.</p>
+<p> </p>
+<p>Você matou muitas das bestas de pássaros e voltou com suas penas. Asathor ficou satisfeito e agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

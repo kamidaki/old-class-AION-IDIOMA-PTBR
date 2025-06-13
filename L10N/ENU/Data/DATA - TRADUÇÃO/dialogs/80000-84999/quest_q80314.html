@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo aqui está claro até agora.</p>
+<p> </p>
+<p>Mas os asmodianos ainda estão nos cercando. E a fortaleza ainda está em risco.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta se pode ajudar novamente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_event_Celta], o soldado de proteção nas proximidades, disse que encontrou dificuldades em sua área de responsabilidade.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_event_Celta], para aprender mais detalhes.</p>
+<p> </p>
+<p>Eu sempre lutarei nesse local.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Estou perguntando mais uma vez, pela vitória dos Elyos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos travando uma batalha feroz contra os asmodianos.</p>
+<p> </p>
+<p>Precisamos desesperadamente de ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É você, [%username].</p>
+<p> </p>
+<p>O perigo de [%dic:STR_DIC_Branch_Event_GuardDaRa_25_An]permanece inalterado.</p>
+<p> </p>
+<p>Infelizmente, ao lutar contra os guardas, meus camaradas ...</p>
+<p> </p>
+<p>Eu nunca vou perdoar esses asmodianos!</p>
+<p> </p>
+<p>Por favor, mate os guardas e recupere os itens que eles tiraram deles.</p>
+<p> </p>
+<p>Colete 12[%dic:STR_DIC_I_QUEST_80314a], por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu todo o [%dic:STR_DIC_I_QUEST_80314a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as insígnias dos Elyos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Faltam[%dic:STR_DIC_I_QUEST_80314a].</p>
+<p> </p>
+<p>Empurre -se ainda mais para os Elyos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você visitou[%dic:STR_DIC_I_QUEST_80314a]de novo!</p>
+<p></p>
+<p>Obrigado![%username], com sua ajuda, posso proteger a fortaleza!</p>
+<p> </p>
+<p>Esse [%dic:STR_DIC_I_QUEST_80314b]é meu presente.</p>
+<p></p>
+<p>[%username], você está qualificado.</p>
+<p></p>
+<p>Se você usar isso, [%username], você poderá se tornar ainda mais forte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_event_Celta].</p></step>
+<step><p visible="[%3]">Colete 12[%dic:STR_DIC_I_QUEST_80314a] e leve-os para [%dic:STR_DIC_N_event_Celta].</p>[%collectitem]</step>
+</steps>
+<p>Mate o [%dic:STR_DIC_Branch_Event_GuardDaRa_25_An]para os Elyos; Colete 12[%dic:STR_DIC_I_QUEST_80314a] e leve-os para [%dic:STR_DIC_N_event_Celta].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Celta estava feliz que o sacrifício dos soldados Elyos, que deu a vida para expulsar os asmodianos, não tenha sido em vão.</p>
+<p> </p>
+<p>Ele disse que você possuía a capacidade de se tornar mais forte e lhe entregar um cupom de troca do Abismo.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

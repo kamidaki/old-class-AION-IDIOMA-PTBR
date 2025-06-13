@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mate o [plur][%dic:STR_DIC_IDF5_R3_Vri] e reportar a [%dic:STR_NPC_LDF5b_resco_G_LHF].</p>
+<p> </p>
+<p>Há muito na sala vazia que eu ainda precisaria pesquisar, mas o Exército de Beritra está me impedindo de fazê -lo.</p>
+<p> </p>
+<p>Por favor, elimine o exército de Beritra!</p>
+<p> </p>
+<p>Posso voltar e continuar minha pesquisa assim que o Exército de Beritra for eliminado.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Descobri que a tropa de Beritra tinha a audácia de se infiltrar na sala vazia, apesar da grande explosão.</p>
+<p> </p>
+<p>Isso mostra a importância da sala vazia para as tropas de Beritra.</p>
+<p> </p>
+<p>Devemos matar as unidades de Beritra rapidamente para recuperar o controle da sala vazia.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou as tropas de Beritra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente concluiu a tarefa muito rapidamente.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Agora eu tenho que enviar Atica novamente para que ela possa investigar a sala vazia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_IDF5_R3_Vri]([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LDF5b_resco_G_LHF]no[%dic:STR_DIC_W_LDF5b_SV_6011].</p></step>
+</steps>
+<p>Cumpre o pedido de Atica e elimine o esquadrão de infiltração de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Attika pediu que você matasse as unidades de Beritra na sala vazia. Depois que você matou as tropas de Beritra e voltou a Resco, você recebeu uma recompensa dele e ele disse que enviaria Attika para investigar novamente.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Este é um colar de couro com um pingente de metal pendurado nele. Há cartas inscritas no pingente, mas elas são muito fracas de ler. Talvez [%dic:STR_DIC_N_Ibelia], um Daeva de Zephyr, seria capaz de lê -lo.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou levar para Ibelia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá. Só um momento, estou escrevendo um relatório para o templo de Vaizel. Se eu não terminar o que estou trabalhando na época, nunca volto a isso ....</p>
+<p> </p>
+<p>Lá-tudo feito. Obrigado por ser paciente.</p>
+<p> </p>
+<p>Como posso ajudá-lo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Você pode ler esta inscrição?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou isso em um ettin? Que estranho. Isso não é de fabricação de Ettin.</p>
+<p> </p>
+<p>É preciso ter retirado de algum lugar. Incomum. Ettins normalmente não usam esse tipo de coisa ....</p>
+<p> </p>
+<p>Receio não conseguir entender a inscrição. Você pode perguntar ao padre [%dic:STR_DIC_N_Sulates]na fortaleza, se você estiver realmente curioso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Bênçãos da luz, Daeva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas, [%username]. O que te traz a me ver?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"O que você pode me dizer sobre isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde você encontrou isso de novo? Um ettin? Que estranho. Deixe -me ver o que isso diz ... meu, isso é manchado.</p>
+<p> </p>
+<p>A escrita é usada, mas parece ... atreian. Sim ... definitivamente atreiano antigo. Infelizmente, não consigo ler.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Biesa]é nosso acadêmico atreiano local. Você deveria mostrar isso a ele. Ele será capaz de traduzir isso para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Biesa ... tudo bem. Meu obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Daeva! Bem -vindo à nossa biblioteca. Qual livro você está procurando?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu preciso de uma tradução."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... isso ... isso é fascinante. Um ettin? Realmente? Absolutamente fascinante! Olhe aqui, você vê isso? Eu sei que as cartas são fracas, mas se você olhar com cuidado, poderá ver as marcas da ferramenta.</p>
+<p> </p>
+<p>Diz: "Nome ... Moroch. Local de residência, Superus Temple". É um colar para um animal de estimação! Alguém que morava no Templo Superus deve ter mantido um Ettin como animal de estimação.</p>
+<p> </p>
+<p>Por favor, posso ter?  Será o assunto dos estudiosos-um achado inestimável para nossa pesquisa, mas sem valor prático. Vou trocar isso por isso por isso. Por favor?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Ibelia].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Sulates].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Biesa].</p></step>
+</steps>
+<p>Enquanto caçava ettinas, você encontrou um colar velho que leva uma inscrição estranha. Descubra o que é.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto caçava ettinas, você encontrou um colar velho que leva uma inscrição estranha. Você levou para Ibelia, um Daeva de Zephyr, mas ela não conseguiu ler e o enviou para Sulates.</p>
+<p> </p>
+<p>Sulates identificou a escrita como antiga atreiana, mas ele também não conseguiu lê -lo e o enviou para Biesa. Quando você mostrou o colar para Biesa, ele ficou satisfeito e chocado ao perceber que o que você tinha era o colarinho de um animal de estimação para um ettin. Ele pediu para mantê -lo e fez de você uma troca para o item.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

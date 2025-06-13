@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15066</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você falou com Telos, então já sabe ... (olha em volta furtivamente e fala mais silenciosamente.) ... que estamos procurando traços do Senhor, certo?</p>
+<p> </p>
+<p>No dia da grande ofensiva, o Senhor empregou grande poder para salvar os Daevas, mas desapareceu depois. Sem dúvida, Telos já lhe disse isso.</p>
+<p> </p>
+<p>No entanto, outra coisa ocorreu naquele dia fatídico que muitos ainda não estão cientes: naquele dia, a arma do Senhor foi destruída. Um fragmento foi encontrado aqui em Signia.</p>
+<p> </p>
+<p>É apenas um fragmento, mas ainda faz parte da arma do Senhor ... quem remonta a arma do Senhor entrará em posse de poder indescritível.</p>
+<p> </p>
+<p>De acordo com minhas informações, o [plur][%dic:STR_DIC_M_LF5_F_NagaMage_60_An] encontrado a [%dic:STR_DIC_I_quest_15066a]. Retire -o de volta antes que eles o usem para propósitos nefastos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou cheio de pavor cada vez que penso em que atos horrendos dos nagarantes seriam capazes de usar a arma do Senhor.</p>
+<p> </p>
+<p>Temos que encontrar o fragmento de arma o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o fragmento de arma do Senhor.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o fragmento de arma do Senhor?</p>
+<p> </p>
+<p>Hmm ... uma energia incomum emana dela.</p>
+<p> </p>
+<p>Pode ser apenas um fragmento, mas sinto claramente a poderosa energia do Senhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o sucesso da missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não parece entender a seriedade da situação!</p>
+<p> </p>
+<p>Não temos tempo para piadas. Temos que encontrar o fragmento de arma o mais rápido possível!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O objeto que você trouxe parece ser um fragmento de arma do Senhor.</p>
+<p> </p>
+<p>Pode ser apenas um fragmento, mas sinto claramente a poderosa energia do Senhor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o sucesso da missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, não fique chateado, mas tenho que admitir que duvidei de você quando Telos me contou pela primeira vez sobre você. No entanto, você é realmente rápido e confiável. Eu sei disso agora.</p>
+<p> </p>
+<p>Claro, estamos apenas no início de nossa busca pelo Senhor, mas você fez um começo glorioso! Obrigado.</p>
+<p> </p>
+<p>Isso não é muito, mas quero recompensá -lo por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [%dic:STR_DIC_I_quest_15066a] e reportar a [%dic:STR_DIC_N_LF5_Kafne_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Kafne_E].</p></step>
+</steps>
+<p>Mate os magos Nagarant e recupere o fragmento de arma do Senhor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kaen lhe disse que a arma do Senhor estava quebrada no dia da grande ofensiva. No entanto, um fragmento foi descoberto em Signia.</p>
+<p> </p>
+<p>Os magos Nagarantos também descobriram um fragmento de armas, e Kaen temia que o usassem para propósitos nefastos.</p>
+<p> </p>
+<p>Você derrotou os magos Nagarant e arrancou o fragmento de arma deles. Você se reportou a Kaen, que o recompensou por seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

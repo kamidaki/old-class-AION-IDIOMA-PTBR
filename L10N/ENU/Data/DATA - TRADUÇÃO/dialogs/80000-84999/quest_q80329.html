@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos aqui! Estamos aqui! O Pernon Traveling Theatre está aqui!</p>
+<p> </p>
+<p>Enrole os dados uma vez por dia!</p>
+<p> </p>
+<p>Aqui está o misterioso dado do teatro pernon que viaja.</p>
+<p> </p>
+<p>[%username]! Não fale, jogue o dado! Você só pode obter esse dado hoje!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso é muito bom!</p>
+<p> </p>
+<p>Espere um momento. Eu tenho que pegar o dado ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... por que você não quer tirar proveito dessa oportunidade? Eu não entendo!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Este dado não é de forma alguma inútil!</p>
+<p> </p>
+<p>Role os dados novamente. Não vi nada mais útil enquanto morava aqui com o teatro que viaja!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui vou te dar dez porque é você, [%username].</p>
+<p> </p>
+<p>Oh, que emocionante. Rapidamente, enrole os dados e deixe -me assistir.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha a maravilha do teatro que viaja morre de Soleil.</p></step>
+</steps>
+<p>Obtenha a maravilha do teatro viajante que Soleil tem mantido para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu um dado de Soleil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, estou feliz que você esteja aqui, [%username]! No final da nota que você me trouxe de Vivi, ele perguntou se eu poderia enviar mais peixes.</p>
+<p> </p>
+<p>Ele me agradeceu pelo gadill assado e disse que era delicioso e que adoraria ter um pouco de Dorado assado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece bastante simples."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh é. Pegar Dorado geralmente não é problema para mim, mas ....</p>
+<p> </p>
+<p>Eu tenho que ir à fortaleza de Altgard para uma consulta. Há um comerciante que vende isca rara e ele está me encontrando lá. Se eu não aparecer, ele continuará com suas viagens.</p>
+<p> </p>
+<p>Eu simplesmente não tenho tempo para pescar Dorado agora. Você poderia me fazer mais um favor, [%username]? Realmente, é meu último pedido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento ter que pedir para você fazer isso.</p>
+<p> </p>
+<p>Por favor, traga -me 10 dorados o mais rápido possível.</p>
+<p> </p>
+<p>Há[%dic:STR_DIC_E_gb_source_fish_d_20b]Peixe no deserto de Salintus também, se você não encontrar nenhum no habitat sprigg.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quase parece umas férias."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aww, sério?</p>
+<p> </p>
+<p>Não tenho mais ninguém para perguntar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você nem sempre pode conseguir o que deseja."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está excelente.</p>
+<p> </p>
+<p>Estou preparado para assar aquele Dorado, agora.</p>
+<p> </p>
+<p>O que você tem?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, parece que você estava muito apressado.</p>
+<p> </p>
+<p>Por favor, pegue o [%dic:STR_DIC_E_gb_source_fish_d_20b].</p>
+<p> </p>
+<p>Se você não pode pegá -lo aqui, vá para o deserto de Salintus. Eu sei que você é um Daeva que conclui uma tarefa depois de iniciar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é certamente um pescador capaz, devo dizer.</p>
+<p> </p>
+<p>Obrigado. Eu vou em frente e assar este peixe agora. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_E_gb_source_fish_d_20b] e leve para [%dic:STR_DIC_N_Lif].</p>[%collectitem]</step>
+</steps>
+<p>Vivi pediu Lif para assado Dorado. Pegue Dorado para Lif.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao ler a nota, a LIF disse que Vivi havia solicitado o assado Dorado.</p>
+<p> </p>
+<p>Você pegou Dorado e o trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

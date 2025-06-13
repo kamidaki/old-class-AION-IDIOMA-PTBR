@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós simplesmente não podemos fazer isso! É impossível!</p>
+<p> </p>
+<p>Alguns dos oficiais de alto escalão do Santum estão nos visitando. Moral aumentando, eles chamam. Pensei que eles iriam passear depois de inspecionar o pouso de Teminon.</p>
+<p> </p>
+<p>O problema é que não estamos prontos. Todo mundo está correndo como asmodianos sem asas tentando preparar tudo. Eu quase me gritei rouco, e o tempo está acabando rapidamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Precisa de uma mão com alguma coisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sempre meu amigo! Disseram -me para ter o Balaur nas proximidades para a visita, mas tive problemas para reunir bons soldados suficientes.</p>
+<p> </p>
+<p>Você estaria interessado em ajudar? Vamos recompensá -lo bem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, muito obrigado. [%username], por sua causa, agora tenho uma coisa menos com que me preocupar.</p>
+<p> </p>
+<p>Por favor, mate 4[%dic:STR_DIC_M_Ab1_1231_NagaFighter_40_An], 3[%dic:STR_DIC_M_Ab1_1231_NagaKnight_39_An] e 2[%dic:STR_DIC_M_Ab1_1231_NagaWizard_39_An].</p>
+<p> </p>
+<p>Vou cuidar do resto de alguma forma.</p>
+<p> </p>
+<p>Oh sim! Caso você não saiba: eles têm algumas armas bastante poderosas.</p>
+<p> </p>
+<p>Você não deve subestimar as armas. Tome cuidado. E me avise quando terminar o trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não. Então o que devemos fazer?</p>
+<p> </p>
+<p>Existem muitas tarefas que precisam ser concluídas! Ainda precisamos limpar o site, polir nossa armadura, afiar nossas armas, lidar com o balaur, garantir que nossa logística esteja em ordem, prepare o tributo ....</p>
+<p> </p>
+<p>É impossível! Precisamos desesperadamente da sua ajuda, [%username]! Por favor, reconsidere!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>... Agora o tributo foi preparado, reservamos um tempo para reparar e polir nossa armadura, e os balaur são ... são ....</p>
+<p> </p>
+<p>Oh, [%username]! Eu estava apenas contando tudo. Seu trabalho está feito?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É. Minhas cotas foram atendidas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você estaria pronto para a tarefa, [%username]! Eu pensei que um[%userclass]da sua estatura não teria nenhum problema com esses demônios.</p>
+<p> </p>
+<p>Agora, para as boas notícias: acontece que os funcionários do santuário não estão visitando, afinal. Engraçado como a visita deles foi pretendida como um impulsionador moral, mas foi a notícia que eles não estavam chegando que nos animou!</p>
+<p> </p>
+<p>Aqui está o seu pagamento. Você ainda fez o trabalho duro, então seria errado não recompensá -lo por isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine o Balaur na Ilha Kysis.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1231_NagaFighter_40_An]([%2]/4)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1231_NagaKnight_39_An]([%5]/3)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1231_NagaWizard_39_An]([%8]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Luptinai].</p></step>
+</steps>
+<p>Luptini recebeu ordens para eliminar o Balaur nas proximidades imediatas. Ajude -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Luptini contou como eles estavam se preparando para receber uma visita do Santuário. Eles queriam que todos os Nagas e Nagarantes próximos destruíssem.</p>
+<p> </p>
+<p>Você a ajudou a erradicar os Nagas e Nagarrantes e foi bem recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

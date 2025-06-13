@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: Katalam Patrol, [%dic:STR_DIC_N_LDF5_Village_Guard09_L]do[%dic:STR_DIC_W_LDF5a_E2_9]</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Ordens: derrotar o asmodiano que se infiltrou[%dic:STR_DIC_W_LDF5a_E2_QUEST] em North Katalam.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos em guerra agora.</p>
+<p> </p>
+<p>Portanto, você deve prestar atenção até aos menores movimentos.</p>
+<p> </p>
+<p>Você matou os asmodianos que invadiram as montanhas Sillus?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Continuarei a observar os asmodianos.</p>
+<p> </p>
+<p>E enviarei outro pedido de emergência se precisar da sua ajuda, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar o asmodiano que se infiltrou no[%dic:STR_DIC_W_LDF5a_E2_QUEST] em North Katalam ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard09_L].</p></step>
+</steps>
+<p>Ordens urgentes: Mate o asmodiano que se infiltrou no vale do frio no norte de Katalam e reporte -se à AEL.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma ordem urgente da AEL para derrotar o Asmodiano que se infiltrou no vale frio em North Katalam. Você puniu o intruso como a ordem comandada.</p>
+<p> </p>
+<p>Ael elogiou -o pelo bom trabalho e disse que os movimentos da Asmodian continuariam sendo monitorados e que ele entraria em contato com você se uma nova tarefa precisasse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

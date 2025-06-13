@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vê aqueles ventos rodopiantes no portão, [%username]?</p>
+<p> </p>
+<p>Os formas de vento podem ser consistentes, mas os gêiseres são coisas tímidas. Eles se escondem e depois falam irregularmente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como sabemos alguma coisa sobre eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, observamos muitos gêiseres no túmulo de Inggison, especialmente entre o portão de dente de serra e o portão de Angief.</p>
+<p> </p>
+<p>É tudo o que sabemos. Portanto, nossa primeira ordem de negócios é descobrir exatamente onde eles estão localizados.</p>
+<p> </p>
+<p>Você gostaria de ajuda?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O melhor que podemos dizer, o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149A] está bem sob o penhasco do portão da serra.</p>
+<p> </p>
+<p>Então, você pode caminhar para o norte ao longo do vale do gêiseador para encontrar o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149B] e o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149C].</p>
+<p> </p>
+<p>Quando você determinar seus locais exatos, informe -me de volta para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Será um bom passeio de passeio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus guardas protegem essa área sem pausas, e você não consegue nem fazer caminhantes para alguns gêiseres?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Explique seu ouvido, senhora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaae, mais uma vez o santuário rejeitou meu pedido de pessoal adicional, mesmo quando expliquei nossa necessidade de ficar de olho nos gêiseres imprevisíveis! Qualquer um poderia voar por aqui.</p>
+<p> </p>
+<p>Se ao menos soubéssemos exatamente onde estavam os Windstreams e os gêiseres ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Boas notícias! Você sabe disso agora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suas informações serão muito úteis para proteger o portão de dente de serra e o posto avançado de Inggison.</p>
+<p> </p>
+<p>Obrigado. Esta é a sua recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Investigue gêiseres no Gravepit Inggison.</p>
+<p visible="[%3]">Investigue o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149A][%5].</p>
+<p visible="[%6]">Investigue o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149B][%8].</p>
+<p visible="[%9]">Investigue o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q11149C][%11].</p></step>
+<step><p visible="[%12]">Fale com [%dic:STR_DIC_N_LF4_Gateway_Li_Guard_Boss_Q05].</p></step>
+</steps>
+<p>Investigue os gêiseres no Gravepit Inggison, como solicitou Lady Pasiphae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lady Pasiphae disse que precisava descobrir exatamente onde estão os gêiseres no túmulo de Inggison, e ela pediu que você investigasse.</p>
+<p> </p>
+<p>Você mapeou o gêiseador de enxofre, o gêiseador da piscina e o gêiser da rocha. Então você voltou e ela o recompensou por adquirir informações úteis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

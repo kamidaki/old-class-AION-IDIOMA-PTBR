@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem filhos, [%username]?</p>
+<p> </p>
+<p>Daevas geralmente não se casam.</p>
+<p> </p>
+<p>Mas os humanos que protegemos são diferentes.</p>
+<p> </p>
+<p>Geralmente não percebemos quando eles sofrem de sua família.</p>
+<p> </p>
+<p>Há uma velha senhora chamada [%dic:STR_DIC_N_Hagne]Quem está procurando seu filho.</p>
+<p> </p>
+<p>O nome dele é Denlavis. Infelizmente, ele não está mais vivo. Você poderia dar a Hannet esta notícia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você percorreu meu filho?</p>
+<p> </p>
+<p>Ele é alto e muito bonito.</p>
+<p> </p>
+<p>Ouvi rumores que afirmam que meu filho está aqui. Então eu viajei aqui da minha cidade natal. Mas ainda não encontrei meu filho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá a mensagem de sua mamona.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você diz que Denlavis está morto?</p>
+<p> </p>
+<p>Isso é impossível!</p>
+<p> </p>
+<p>Não! Não! Isso não pode ser ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_N_Hagne].</p></step>
+</steps>
+<p>Conheça Hannet como Castor perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Castor pediu que você dissesse a Hannet que seu filho Denlavis está morto.</p>
+<p> </p>
+<p>Quando você contou a Hannet sobre isso, ela chorou e se recusou a acreditar em você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

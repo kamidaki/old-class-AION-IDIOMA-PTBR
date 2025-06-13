@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15043</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo aprendeu algo que Shugo quer compartilhar apenas com Daeva. Um tesouro do Balaur deve estar escondido em Signia, Ak.</p>
+<p> </p>
+<p>Se Shugo soubesse apenas qual poderia ser esse tesouro do antigo Balaur ... certamente é algo valioso, AK!</p>
+<p> </p>
+<p>Os espinha no jardim do Lorde do Dragão continuam escavando no chão e colecionam tudo o que é brilhante. Algo de valor pode estar entre os lote, AK.</p>
+<p> </p>
+<p>Daeva precisa apenas viajar para o [%dic:STR_DIC_W_LF5_SZ_D_01], mate o [plur][%dic:STR_DIC_M_LF5_D_Lobster_58_n] e trazer o [plur][%dic:STR_DIC_I_quest_15043a]para Shugo. Se Shugo encontrar um tesouro nele, Daeva ficará metade, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um tesouro do antigo Balaur! Shugo espera descobrir quanto vale, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os objetos brilhantes.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Os objetos reluzentes dos espinha, Ak!</p>
+<p> </p>
+<p>Infelizmente, porém, parece que não há tesouros antigos de Balaur entre eles. Não parece que há algo valioso, AK.</p>
+<p> </p>
+<p>Daeva tem que dar uma olhada nisso. Uma árvore frutada lisa, uma velha escala branca de Brohum, um pedaço de ferro quebrado ... apenas lixo, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva não deve brincar sobre tais assuntos, AK!</p>
+<p> </p>
+<p>Os shugos são sempre amigáveis ​​e tolerantes a todos, mas Shugos não têm piedade para mentirosos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os objetos reluzentes dos espinha, Ak!</p>
+<p> </p>
+<p>Infelizmente, porém, parece que não há tesouros antigos de Balaur entre eles. Não parece que há algo valioso, AK.</p>
+<p> </p>
+<p>Daeva tem que dar uma olhada nisso. Uma árvore frutada lisa, uma velha escala branca de Brohum, um pedaço de ferro quebrado ... apenas lixo, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva não tem coração que Daeva exija pagamento, AK?!</p>
+<p> </p>
+<p>Oh! Aqui está a recompensa de Daeva, AK!</p>
+<p> </p>
+<p>Shugos pode contar mentiras às vezes, mas Shugos nunca o enganam nos negócios, AK!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [plur][%dic:STR_DIC_I_quest_15043a] e trazê -los para [%dic:STR_DIC_N_LF5_Yogurung_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Yogurung_E].</p></step>
+</steps>
+<p>Elimine os torneadores plantados no jardim do Senhor do Dragão e trazem seus objetos reluzentes para o Yorunerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yorunerk pensou que haveria um velho tesouro de Balaur entre os objetos reluzentes dos spanners de plantilhas.</p>
+<p> </p>
+<p>Por esse motivo, você caçou os spanners de plantações para ele e trouxe -lhe os objetos brilhantes. No entanto, o Yorunerk ficou decepcionado porque não havia um único tesouro entre todo o lixo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

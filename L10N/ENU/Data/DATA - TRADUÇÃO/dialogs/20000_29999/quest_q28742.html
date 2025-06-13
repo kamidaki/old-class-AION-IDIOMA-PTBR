@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos aqui para monitorar o treinamento das tropas de Beritra.</p>
+<p> </p>
+<p>De acordo com nossas informações, eles escrevem um relatório todos os dias sobre o estado atual de seu treinamento.</p>
+<p> </p>
+<p>Eles também escrevem relatórios de treinamento sobre o treinamento de seus guerreiros.</p>
+<p> </p>
+<p>Temos que descobrir por que eles treinam tanto.</p>
+<p> </p>
+<p>Por favor, obtenha o [plur][%dic:STR_DIC_I_doc_quest_28742a]transportado pelos instrutores de Beritra e trazê -los para [%dic:STR_DIC_N_DF5_Cnut_E].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que Beritra apareceu ...?</p>
+<p> </p>
+<p>Se não fizermos nada sobre Beritra, ele derrotará todos nós.</p>
+<p> </p>
+<p>Você me trouxe o [plur][%dic:STR_DIC_I_doc_quest_28742a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os relatórios de treinamento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>(Lê o relatório de treinamento.)</p>
+<p> </p>
+<p>Eu não teria pensado que este lugar era o alvo de Balaur.</p>
+<p> </p>
+<p>Temos que fortalecer nossa defesa para nos proteger contra um possível ataque.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde estão os relatórios de treinamento?</p>
+<p> </p>
+<p>Você não sabe o quão importante é essa missão?</p>
+<p> </p>
+<p>Por favor, volte apenas depois de realizar a missão.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças às informações que você obteve para nós, agora podemos tomar medidas para nos preparar para a batalha.</p>
+<p> </p>
+<p>Segundo os relatos, esse local foi seu primeiro alvo.</p>
+<p> </p>
+<p>Também passei a notícia para outras regiões, mas não tenho certeza se chegou.</p>
+<p> </p>
+<p>Por favor, transmitam essas informações se você visitar as outras regiões.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. Você não tem ideia de como estou feliz por estar nos ajudando.</p>
+<p> </p>
+<p>Você fez bem.</p>
+<p> </p>
+<p>Obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_doc_quest_28742a] e leve para [%dic:STR_DIC_N_DF5_Cnut_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_DF5_Cnut_E].</p></step>
+</steps>
+<p>Mate os instrutores de Balaur, pegue seu relatório de treinamento e depois vá para Knut.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Procura pediu que você derrotasse os instrutores de Balaur para obter seu relatório de treinamento.</p>
+<p> </p>
+<p>Você trouxe o relatório de treinamento para Knut. Ele disse que queria se preparar para um possível ataque.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

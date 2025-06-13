@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], sua tarefa é conquistar as bases em East Akaron.</p>
+<p> </p>
+<p>Tudo que você precisa fazer é derrotar o [%dic:STR_DIC_M_LDF4_Advance_M_v05Chief_Li_all]bem como o [%dic:STR_DIC_M_LDF4_Advance_S_v06Chief_Li_all] e o [%dic:STR_DIC_M_LDF4_Advance_S_v07Chief_Li_all]no leste de Akaron.</p>
+<p> </p>
+<p>Esses capitães inimigos estão ocupando as bases no leste de Akaron.</p>
+<p> </p>
+<p>Eu não posso te dar o [%dic:STR_DIC_I_Assembly_quest_dark_LDF4Adv_02] Até que você tenha conquistado todas as bases em East Akaron. Você pode completar o [%dic:STR_DIC_I_quest_23903a]com este relatório.</p>
+<p> </p>
+<p>Nem todo mundo pode fazer uma contribuição tão significativa para a conquista de Balaurea, mas estou confiando em você. Você pode fazer isso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é a situação com as bases em East Akaron?</p>
+<p> </p>
+<p>Eu só posso escrever para o [%dic:STR_DIC_I_Assembly_quest_dark_LDF4Adv_02]Depois de conquistar a base central em East Akaron.</p>
+<p> </p>
+<p>Não podemos entregar um relatório incompleto aos nossos superiores, podemos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, muito bom!</p>
+<p> </p>
+<p>Muito obrigado. Você demonstrou o poder dos asmodianos para o inimigo!</p>
+<p> </p>
+<p>Aqui está o [%dic:STR_DIC_I_Assembly_quest_dark_LDF4Adv_02]. Você saberá a melhor maneira de usar este relatório.</p>
+<p> </p>
+<p>A batalha em Akaron ainda está acontecendo, no entanto. Então, por favor, continue trabalhando para a vitória da Asmodiana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os legados inimigos que ocupam as bases.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF4_Advance_M_v05Chief_Li_all]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF4_Advance_S_v06Chief_Li_all]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF4_Advance_S_v07Chief_Li_all]([%8]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF4_Advance_Helgund_E].</p></step>
+</steps>
+<p>Elimine os legados inimigos que ocupam as bases no leste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tribune Helgund disse que ele só lhe daria o relatório sobre a ocupação de East Akaron se você realmente tivesse conquistado todas as bases no leste de Akaron.</p>
+<p> </p>
+<p>Você eliminou os legados que ocupavam as fortalezas no Oriente e finalmente recebeu outra parte para concluir o relatório sobre a ocupação de Akaron.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

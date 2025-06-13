@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], visite Ionia e Nevma quando chegar a Brusthonin.</p>
+<p> </p>
+<p>Ionia, emissário do Santum Operations Command Center, explicará a batalha e fará algumas observações importantes sobre isso.</p>
+<p> </p>
+<p>E Nevma é uma general da Brigada Griffon.</p>
+<p> </p>
+<p>A Griffon Claw Legion fez um pouso de emergência em Asmodae ao retornar da missão no abismo. Mas é uma boa Guilda, que sobreviveu matando os asmodianos em Brusthonin.</p>
+<p> </p>
+<p>Agora é hora de eles irem para casa.</p>
+<p> </p>
+<p>Por favor, ajude -a.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é[%username]?</p>
+<p> </p>
+<p>Bem-vindo. Você passou pelo espaço comum.</p>
+<p> </p>
+<p>Você tem muita sorte de nada ter acontecido com você. Radaman disse que as pessoas podem se perder nesse espaço.</p>
+<p> </p>
+<p>Vou explicar algumas coisas sobre a luta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas foram as observações sobre a fenda do portal.</p>
+<p> </p>
+<p>Agora, você pode conhecer a General da Brigada Nevma.</p>
+<p> </p>
+<p>O general da brigada está ao norte de [%dic:STR_DIC_W_DF2B_SZ_A3].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou</act>
+</selects>
+<cutscene id="404"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi enviado pelo santuário?</p>
+<p> </p>
+<p>Ouvi dizer que uma tropa de apoio virá nos ajudar quando a fenda do portal for aberta.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que pertence às tropas de apoio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os reforços finalmente chegaram!</p>
+<p> </p>
+<p>Agradeço por vir aqui para nos ajudar.</p>
+<p> </p>
+<p>Qual o seu nome?[%username].</p>
+<p> </p>
+<p>Vou me lembrar do seu nome.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_DF2a_Ionia_E_LHW].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_NPC_DF2a_Nevma_G_LHM].</p></step>
+</steps>
+<p>Encontre -se com Ionia na sala de operações do santuário, bem como com a brigada de garras de Griffon, general Nevma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ginikki disse para você procurar a Brigada de Claw de Ionia e Griffon, o general Nevma, se o portal Rift abrir. Ionia fez algumas observações sobre a batalha espacial e a Nevma agradeceu por seu apoio.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

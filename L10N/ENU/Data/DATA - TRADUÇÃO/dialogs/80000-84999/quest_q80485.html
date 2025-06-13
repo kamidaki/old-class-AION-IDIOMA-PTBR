@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]... Sinto muito, mas tenho mais um pedido.</p>
+<p> </p>
+<p>É difícil continuar redigindo o trabalho de pesquisa enquanto o líder de Balaur ainda está vivo.</p>
+<p> </p>
+<p>Com as habilidades que você demonstrou anteriormente, certamente você poderá derrotar um general da Brigada Balaur, não é?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta quem é isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitas pessoas suspeitam que Basrash seja o líder aqui.</p>
+<p> </p>
+<p>Mas, por qualquer motivo, Basrash não é o verdadeiro líder.</p>
+<p> </p>
+<p>Se você for ao fim da beira da espada, poderá conhecer a verdadeira General da Brigada Masra.</p>
+<p> </p>
+<p>Você pode levá -lo prisioneiro e trazê -lo para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que irá enfrentá -lo.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lamento muito ter que pedir a você para fazer algo duas vezes.</p>
+<p> </p>
+<p>Mas acredito firmemente que você também concluirá esta tarefa com sucesso.</p>
+<p> </p>
+<p>Por favor, derrote Masra e enfraquece o Balaur fazendo isso.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você chegou tão longe e agora você quer desistir?!</p>
+<p> </p>
+<p>Como você deseja. Vou administrar o resto por conta própria ...</p>
+<p> </p>
+<p>Embora eu tenha um mau pressentimento sobre isso ... mas vá seu próprio caminho agora ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode derrotá -lo?</p>
+<p> </p>
+<p>Você está ferido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, bom trabalho.</p>
+<p> </p>
+<p>A pesquisa pode continuar agora que você retirou o líder.</p>
+<p> </p>
+<p>Leve esta pesquisa para o chefe de pesquisa na vila e peça que ele explique.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote Masra ([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para Bedin.</p></step>
+</steps>
+<p>Eliminar o general Brigade Masra como Bedin ordenou que você o fizesse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bedin reclamou que seria difícil continuar investigando se o General da Brigada Balaur estivesse no caminho.</p>
+<p></p>
+<p>Você derrotou o general Brigade Masra para Bedin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

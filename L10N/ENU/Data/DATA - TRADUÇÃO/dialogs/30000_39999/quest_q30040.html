@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um momento, [%username]!</p>
+<p> </p>
+<p>É a chave que você está carregando a chave soberana de Siel?</p>
+<p> </p>
+<p>Então você deve ser um[%userclass]com habilidades excelentes.</p>
+<p> </p>
+<p>E você deve ter muita sorte de inicializar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É realmente uma pena.</p>
+<p> </p>
+<p>Há um problema com a chave soberana de Siel.</p>
+<p> </p>
+<p>Seu poder original foi selado e, além da arma, a arma é seriamente danificada.</p>
+<p> </p>
+<p>O poder da chave do aether seria muito maior se fosse restaurada à sua condição original.</p>
+<p> </p>
+<p>Se você estiver interessado, vou lhe contar como você pode restaurar a chave.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tomou a decisão certa. Uma arma é inútil se não puder liberar todo o seu poder.</p>
+<p> </p>
+<p>Eu adoraria restaurar a arma, mas não sou hábil o suficiente.</p>
+<p> </p>
+<p>No entanto, conheço alguém que pode ajudá -lo.</p>
+<p> </p>
+<p>Vá para Soteria e encontre -se com[%dic:STR_DIC_N_Gefeios].</p>
+<p> </p>
+<p>Ele pode ser Reian, mas é o melhor quando se trata de armas como essa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem tanta certeza de suas habilidades que as armas não lhe interessam, [%username]?</p>
+<p> </p>
+<p>Segundo relatos, você tem habilidades extraordinárias ... mas sua autoconfiança me surpreende.</p>
+<p> </p>
+<p>Se você não quiser minha ajuda, não vou empurrá -lo.</p>
+<p> </p>
+<p>Mesmo uma chave de éter extraordinária só é útil se seu valor for reconhecido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz para mim?</p>
+<p> </p>
+<p>Você veio sobre uma arma, não é?</p>
+<p> </p>
+<p>Diga -me o que posso fazer por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que deseja restaurar a chave soberana de Siel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Chave soberana de Siel!</p>
+<p> </p>
+<p>Você conhece a história desta arma? Os ancestrais do meu povo usaram ... a lança de Siel.</p>
+<p> </p>
+<p>O que você fez com isso? Por que está em tão más condições?</p>
+<p> </p>
+<p>Pelo menos você veio ao lugar certo. Farei o meu melhor para restaurar esta arma à sua condição original.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gefeios].</p></step>
+</steps>
+<p>Há alguém que pode restaurar o poder da chave soberana de Siel. Encontre -se com Gefeios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Drenia viu a chave soberana de Siel, ela disse que era uma arma fina, mas que precisava ser restaurada primeiro à sua condição original.</p>
+<p> </p>
+<p>Ela o enviou a um Reian chamado Gefeios, que prometeu fazer o possível para restaurar a arma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

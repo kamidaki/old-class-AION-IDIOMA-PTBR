@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diz -se que o líder fanático do dragão no santuário de Jormungand é um shugo.</p>
+<p> </p>
+<p>[%username], você poderia matar o líder do dragão[%dic:STR_DIC_M_LDF5B_E1_Vri2_FanaRBoss_El_65_Nmd_An]?</p>
+<p> </p>
+<p>Um shugo sendo adorado pelo dragão no santuário de Jormungand?</p>
+<p> </p>
+<p>Que combinação estranha!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O dragão e um líder espiritual de shugo ...</p>
+<p> </p>
+<p>Athurinerk queria usar o dragão para ganhar dinheiro?</p>
+<p> </p>
+<p>Haha, isso seria demais, mesmo para Shugos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você já os matou!</p>
+<p> </p>
+<p>Eu considerei se devemos ou não continuar com a investigação, mas não há como voltar agora.</p>
+<p> </p>
+<p>É realmente inacreditável que os Shugos, que apenas acreditam em dinheiro, estejam trabalhando como padres.</p>
+<p> </p>
+<p>Também é difícil acreditar que o dragão está seguindo os Shugos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_E1_Vri2_FanaRBoss_El_65_Nmd_An]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Ruok_E]%.</p></step>
+</steps>
+<p>Mate o Athurinerk, que lidera o dragão no lugar sagrado de Jormungand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou a Ruok depois de matar um ambicioso ator. Ele disse que era difícil entender como um shugo, que adora apenas dinheiro, poderia acabar correndo o dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]! Fico feliz em ver que você ainda está aqui. Eu pensei que talvez você já tenha saído para as saunas de areia do deserto de Eracus.</p>
+<p> </p>
+<p>Recebi outra carta de Miobera, você sabe. Parece que ela está tendo problemas com os Windwisps etéreos novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu pensei que isso foi resolvido?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eles estão de volta. Considerando quantos windwisps etéreos destruímos da última vez, eles devem se reproduzir a um ritmo alarmante.</p>
+<p> </p>
+<p>De qualquer forma, seus ataques são mais ferozes do que nunca! Miobera não ousa levar a passagem para os Puitonen Bogs agora.</p>
+<p> </p>
+<p>Eu quero dar algum apoio a ela ... mas estou preso aqui na vila, como você pode ver. Você pode ajudar? Ela sempre poderia usar um bom[%userclass]lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é a bênção do meu sol hoje, [%username]! Quero dizer.</p>
+<p> </p>
+<p>Vá até lá o mais rápido possível e comece a matar aquelas sombras[%dic:STR_DIC_M_Vapor_41_An] S. Você precisa limpar um caminho seguro entre a entrada do acampamento e [%dic:STR_DIC_W_LF3_SZ_F2].</p>
+<p> </p>
+<p>Enviarei uma mensagem para Miobera e avisarei que você está a caminho. A velocidade de Ariel para você, amigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não é a bênção do meu sol ... você é a maldição do meu sol, [%username]!</p>
+<p> </p>
+<p>O que aconteceu com você? Miobera estava contando com você! Eu estava contando com você!</p>
+<p> </p>
+<p>Você conseguiu matar um único windwisp etéreo? Você é tão não confiável quanto aqueles meadas-swiggers em Agairon! Saia da minha vista, Daeva!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Aposto um salário de um dia que você acabou de voltar dos Puitonen Bogs. Estou certo? Estou certo? A lama em suas botas denunciou.</p>
+<p> </p>
+<p>Ha! O presente da observação é uma ferramenta poderosa ... a ferramenta mais poderosa que um guerreiro tem, embora a maioria raramente a use.</p>
+<p> </p>
+<p>Então, você matou Windwisps etéreos suficientes para limpar um caminho seguro para Miobera?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu matei alguns, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, assim como eu esperava de você, [%username].</p>
+<p> </p>
+<p>Espero que este seja o último que ouviremos sobre aquelas leis de vento escaladas. Droga, as coisas são um incômodo!</p>
+<p> </p>
+<p>Parece que temos uma pequena questão de recompensa para discutir, hein?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_M_Vapor_41_An] está bloqueando a entrada do acampamento de Chugarnerk ([%2]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tegis].</p></step>
+</steps>
+<p>Aswisps etéreos estão bloqueando a entrada no acampamento de Chhargarnerk. Livre -se dos Windwisps para Tegis, que está muito ocupado com seus deveres na vila.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tegis disse que os Windwisps etéreos reapareceram no acampamento de Chharharnerk, e ele pediu que você se livrasse deles.</p>
+<p> </p>
+<p>Quando você voltou de erradicar os Windwisps, Tegis lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

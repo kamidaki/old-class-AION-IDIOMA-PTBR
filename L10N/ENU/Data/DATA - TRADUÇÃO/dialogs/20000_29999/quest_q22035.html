@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22035</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Eu só estava à minha vista ... um Elyos espião, contornando a Rampart North. Se foi agora, no entanto. Eles estão rastejando por lá, procurando roubar migalhas de inteligência asmodiana ou afundar uma adaga em nós quando estamos ocupados olhando o balaur em seus rostos feios. Vê -os três vezes agora, roubando.</p>
+<p> </p>
+<p>Não é provável que eles estejam andando por lá para sua saúde.</p>
+<p> </p>
+<p>Vou deixar você ir depois deles, [%username]. Ponto de generosidade da minha parte. Caça os três que vi:[%dic:STR_DIC_M_TDown_NPC_Q22035A], Assim, [%dic:STR_DIC_M_TDown_NPC_Q22035B], e [%dic:STR_DIC_M_TDown_NPC_Q22035C]. Eles ficarão bem escondidos, se houver um cérebro naquelas cabeças elevadas deles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, [%userclass]?</p>
+<p> </p>
+<p>Você volta aqui para óbvio para mim, ou você tem algo para dizer?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu encontrei aqueles elimes, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Pensei que você não teria muitos problemas com eles.</p>
+<p> </p>
+<p>Menos olhos Ellie no chão significa que nosso trabalho é mais fácil.</p>
+<p> </p>
+<p>Você ganhou essa recompensa, embora eu mesmo, acho que três ellies mortos são o suficiente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre e mate os Spies Elyos.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_TDown_NPC_Q22035A]([%2]/1)</p>
+<p visible="[%3]">[%dic:STR_DIC_M_TDown_NPC_Q22035B]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_TDown_NPC_Q22035C]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Grimron].</p></step>
+</steps>
+<p>Grimron viu três espiões de Elyos se movendo através dos olhos de Tiamaranta e quer que eles desaparecessem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Grimron o enviou para caçar os espiões de Elyos operando dentro dos olhos de Tiamaranta.</p>
+<p> </p>
+<p>Embora estivessem escondidos, você localizou e matou os três e voltou a Grimron para sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Proclamação dos Fortuários -</p>
+<p> </p>
+<p>Irmãos e irmãs da Guilda Fortuneers, decretamos uma nova recompensa em Inggison.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_OBJ_FOBJ_Q36015a]</p>
+<p> </p>
+<p>2. Resumo: uma rara raiz balaureiana encontrada apenas no[%dic:STR_DIC_W_LF4_SZ_A2]de inggison, ele cura tudo, desde mentes letárgicas a acasalamento letárgico.</p>
+<p></p>
+<p>Esta é uma busca difícil de fato. Quem puder trazer de volta parte do Phanoe Ginseng selvagem será recompensado de maneira bastante generosa.</p>
+<p></p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece uma boa aventura para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Vocês novos fortuários! Você tem a coragem de um templário, mas a astúcia de um shugo. Sempre arriscando a vida e o membro da aventura. Tentei procurar aquele phanoe ginseng selvagem há algum tempo e não conseguia nem encontrar sujeira selvagem! Quase dei uma longa caminhada no escuro para sempre.</p>
+<p> </p>
+<p>Bem, que tal, [%username]? O sangue de um verdadeiro fortuneer passa por suas veias? Como você se saiu em sua pesquisa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Não há problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você não seja o fortuneer que pensávamos que era, [%username].</p>
+<p> </p>
+<p>Saia de novo e tente pentear o [%dic:STR_DIC_W_LF4_SZ_A2]mais bem.</p>
+<p> </p>
+<p>Eu sei que cresce lá em algum lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto com sua raiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Escuridão me leve! Este é ... este é o lendário Phanoe Ginseng! Eu nunca vi isso de perto antes.</p>
+<p> </p>
+<p>Oh, espere! Eu quase esqueci de lhe dar a recompensa. Pegue isso, você ganhou.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o ilusório[%dic:STR_DIC_OBJ_FOBJ_Q36015a]que cresce no[%dic:STR_DIC_W_LF4_SZ_A2] e levá -lo para o [%dic:STR_DIC_E_36500].</p>[%collectitem]</step>
+</steps>
+<p>Chegou uma proclamação da Guilda Fortuneers. Siga as instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegou uma proclamação da Guilda Fortuneers.</p>
+<p> </p>
+<p>Sua busca para localizar o raro Phanoe Ginseng e levá -lo ao capitão dos fortunes foi muito bem. Ele elogiou suas habilidades e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

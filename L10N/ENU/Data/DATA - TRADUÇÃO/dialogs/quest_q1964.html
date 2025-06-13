@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], você tem um momento livre? Eu gostaria de pedir um favor a você.</p>
+<p> </p>
+<p>Eu tenho que enviar algumas coisas para Noris, mas não tenho tempo para ir ao artesão Hall.</p>
+<p> </p>
+<p>Nenhum de nós pode deixar nossas postagens por tempo suficiente para fazer uma troca.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Noris]viveu a vida toda aqui em santuário, mas sonha em viajar para todos os cantos de Atreia e o abismo.</p>
+<p> </p>
+<p>Ele tem um interesse particular no abismo, então eu gosto de comprar produtos de abismo de teletransportação, se houver algum.</p>
+<p> </p>
+<p>Eu reuni alguns aqui, mas não tenho tempo para entregá -los. Você faria isso, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Noris]é um guarda de santuário estacionado em frente ao artesão Hall.</p>
+<p> </p>
+<p>Passe pela Elyos Square e pelo Sky Canal e depois entre em frente.</p>
+<p> </p>
+<p>Não posso lhe dar muito agradecimento, mas se você precisar de fundos para suas viagens, esse trabalho pode ser útil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É uma honra ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Eu sei que não estou oferecendo muito, então não estou realmente ofendido.</p>
+<p> </p>
+<p>Tantos Daevas passam por aqui que certamente nos ajudarão.</p>
+<p> </p>
+<p>Que a proteção de Ariel esteja com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E com você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Orgulho -me do meu trabalho guardando o Hall do Artesãos e o salão dos protetores. Eles são os lugares mais importantes do santuário.</p>
+<p> </p>
+<p>Mas há vezes eu gostaria de espalhar minhas asas e viajar, sabe? Não há descanso para um Daeva, no entanto.</p>
+<p> </p>
+<p>Enfim, o que te traz aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Polyidus os enviou para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fantástico! Olhe para isso! Você nunca vê coisas assim no santuário.</p>
+<p> </p>
+<p>Todo o caminho de Reshanta! Isso me faz querer ir ainda mais.</p>
+<p> </p>
+<p>Obrigado! Muito obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria que Noris pudesse estar satisfeito com uma vida pacífica aqui em santuário.</p>
+<p> </p>
+<p>Mas eu certamente posso entender suas asas inquietas. Se eu nunca estivesse fora do santuário, também gostaria de ver mais do mundo.</p>
+<p> </p>
+<p>Você conseguiu levar esses bens para ele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele realmente os aprecia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Cada lembrança que eu o envio o faz sorrir por um tempo, e isso é toda a recompensa que eu preciso.</p>
+<p> </p>
+<p>Falando nisso, aqui está o que eu prometi a você. Não é muito, mas ainda deve ser útil.</p>
+<p> </p>
+<p>Que a luz guie seu caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Noris].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Polyidus].</p></step>
+</steps>
+<p>Polyidus coleta lembranças para Noris, um guarda de santuário que sonha em viajar. Entregue os itens para ele no Artisans Hall.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O amigo de Polyidus, Noris, coleta lembranças, sonhando com o dia em que ele pode viajar para o abismo.</p>
+<p> </p>
+<p>Os bens do abismo são bastante raros no santuário, então Polyidus pede aos viajantes teletransportados para obtê -los.</p>
+<p> </p>
+<p>Ele queria enviar os bens que havia coletado para seu amigo, então você os entregou a Noris do lado de fora do Hall dos Artesãos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

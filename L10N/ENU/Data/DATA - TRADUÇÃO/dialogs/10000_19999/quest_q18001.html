@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A tribo Rune usou a sala secreta da fortaleza para pesquisar Idgel e armazenar os dados de pesquisa da IDGEL.</p>
+<p> </p>
+<p>Isso é o melhor, porque preciso de muito idgel para ativar a arma.</p>
+<p> </p>
+<p>O problema é que a sala contém alguns sujeitos de teste e os retardadores do Exército de Beritra que foram experimentados.</p>
+<p> </p>
+<p>[%username], você poderia ir lá e tomar alguns[plur][%dic:STR_DIC_I_quest_18001a]do[%dic:STR_DIC_M_IDF5_R1_Vri_all] e o [%dic:STR_DIC_M_IDF5_R1_65_all]?</p>
+<p> </p>
+<p>Você deve ir lá sozinho. Um grupo atrairia muita atenção.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estava tudo em ordem?</p>
+<p> </p>
+<p>[%username], o sistema de aviso soou o alarme em voz alta assim que você entrou.</p>
+<p> </p>
+<p>Eu estava preocupado que você tenha sido descoberto, [%username]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os fragmentos de um núcleo Idgel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu poderia ter adivinhado que há um sistema de aviso. Os soldados do Exército de Beritra são mais cuidadosos do que eu pensava.</p>
+<p> </p>
+<p>Isso deve ter sido um trabalho árduo para alguém fazer sozinho.</p>
+<p> </p>
+<p>Se você extrair o IDGEL dos fragmentos de núcleo IDGEL, poderá obter uma grande quantidade de IDGEL.</p>
+<p> </p>
+<p>Espero que você continue a me ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_IDF5_R1_Vri_all] e o [%dic:STR_DIC_M_IDF5_R1_65_all]para obter [plur][%dic:STR_DIC_I_quest_18001a], e leve-os para [%dic:STR_DIC_N_LDF5a_Solon].</p>[%collectitem]</step>
+</steps>
+<p>Pegue os fragmentos de núcleo de Idgel dos soldados sobreviventes do exército de Beritra e dos sujeitos do teste e os leve a Solon para que ele possa usá -los para criar a arma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você seguiu o pedido de Solon e eliminou os restos do Exército de Beritra, bem como os sujeitos do teste, a fim de obter fragmentos de núcleo de Idgel.</p>
+<p> </p>
+<p>Solon disse que extrairia Idgel dos fragmentos de núcleo de Idgel e o usaria para ativar a arma. Ele também pediu que você continuasse ajudando -o no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

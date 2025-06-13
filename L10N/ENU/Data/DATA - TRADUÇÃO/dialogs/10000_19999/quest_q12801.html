@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na guerra com os asmodianos, é melhor matar todos os Pecku e Rakeclaw Zaion na área da rota do retiro primeiro.</p>
+<p> </p>
+<p>[%username], mate o [%dic:STR_DIC_M_LDF5A_A2_Cockatrice_D_61_An] e [%dic:STR_DIC_M_LDF5A_A2_Zaif_61_An]que estão na zona de retiro.</p>
+<p> </p>
+<p>Uma análise dos intervalos de ataque asmodianos mostra que eles estão prestes a lançar uma grande ofensiva.</p>
+<p> </p>
+<p>Não temos tempo a perder. Por favor, se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Em preparação para a grande batalha, você poderia eliminar os Peckus e Rakeclaw Zaions?</p>
+<p> </p>
+<p>Esses animais serão um enorme obstáculo se os Elyos Daevascam seu retiro.</p>
+<p> </p>
+<p>O poder de luta deles não deve ser subestimado, é por isso que eles devem ser mortos.</p>
+<p> </p>
+<p>Eu acho que você, [%username], são a pessoa certa para ajudar essa base.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os obstáculos a um retiro foram eliminados.</p>
+<p> </p>
+<p>Eu estava confiante de que você lidaria bem com isso, [%username].</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Estou ansioso pela grande e iminente batalha com os asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os animais que podem impedir um retiro.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_A2_Cockatrice_D_61_An]([%2]/8)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_A2_Zaif_61_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard01_L].</p></step>
+</steps>
+<p>Elimine os obstáculos que impedem um retiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Arandel disse que você nunca pode dizer quando uma enorme batalha pode surgir e pediu que você protegesse a rota do retiro matando qualquer animal que estivesse no caminho.</p>
+<p> </p>
+<p>Quando você voltou, ele ficou muito agradecido por ter matado o Pecku de Rockwing e o rakeclaw Zaion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

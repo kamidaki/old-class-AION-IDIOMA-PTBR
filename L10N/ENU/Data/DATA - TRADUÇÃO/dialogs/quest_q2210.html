@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu simplesmente não vejo o ponto. Eu acho que o comandante da fortaleza me odeia.</p>
+<p> </p>
+<p>Ele me dá tarefas triviais que levam muito do meu tempo, mas não fazem justiça às minhas habilidades. Não há desafio. Sem diversão.</p>
+<p> </p>
+<p>Agora vou fazer um relatório sobre o status de equipamento e suprimentos despachados fora da fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece chato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Já recebi a maioria dos relatórios e estou apenas esperando os da Cruzada de Moslan.</p>
+<p> </p>
+<p>Você não estaria no caminho para a floresta de Moslan ou para a aldeia basedel[%username]?</p>
+<p> </p>
+<p>Se você é, pergunte [%dic:STR_DIC_N_Lovinja]Para escrever um relatório de status para nossos equipamentos e suprimentos e enviá -lo para mim o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você pode encontrar [%dic:STR_DIC_N_Lovinja]na encruzilhada de Moslan.</p>
+<p> </p>
+<p>Ouvi dizer que os Karnifs são espessos na floresta de Moslan, então tenha cuidado.</p>
+<p> </p>
+<p>Se você sair agora, posso realmente ser capaz de relatar a tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar a mensagem para ele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, não está indo assim?</p>
+<p> </p>
+<p>Está tudo bem. Obrigado de qualquer maneira. Vou receber esse relatório mais cedo ou mais tarde.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá. O que te traz aqui?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma mensagem para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! O relatório!</p>
+<p> </p>
+<p>Eu estava prestes a enviá -lo, mas percebi no último momento que alguns dos números estavam errados.</p>
+<p> </p>
+<p>Vou levar isso a Rion assim que corrigir os erros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Comunicar [%dic:STR_DIC_N_Rion]Mensagem para [%dic:STR_DIC_N_Lovinja].</p></step>
+</steps>
+<p>A postagem no Moslan Crossing está atrasada enviando seu relatório. Transmitir a mensagem de Rion para Loriniah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto fazia um relatório abrangente sobre suprimentos, Rion descobriu que o cruzamento de Moslan ainda não havia enviado um relatório. Ele pediu que você fosse ao post e pedisse que eles o enviassem.</p>
+<p> </p>
+<p>Ao transmitir a mensagem de Rion, Loriniah disse que estava corrigindo alguns erros e enviaria o relatório o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

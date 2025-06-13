@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A DAEVA precisa de algum tokens especial?</p>
+<p> </p>
+<p>O Raffiner herdou um negócio de troca de moedas de um antecessor que teve que pular a cidade. Shugo não perguntou por que, Nyerk.</p>
+<p> </p>
+<p>Agora, o Raffiner tem muitos tokens de reposição ... se você estiver interessado. Não é muito sangue neles, Akakakakak!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Errr ... claro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Raffiner tem todos esses tokens cruzados e tokens Daemon. Principalmente limpo.</p>
+<p> </p>
+<p>Inútil para um shugo, pelo menos por enquanto. Mas Shugo precisa de tokens de ala, se Daeva quiser negociar.</p>
+<p> </p>
+<p>Não, a Raffiner não entrará em detalhes sobre por que ela precisa de tokens da ala. Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A taxa de mercado para 1 token cruzado ou 1 token de daemon é de 6 tokens da ala.</p>
+<p> </p>
+<p>Parece baixo, mas o Raffiner não pode ir contra a taxa de mercado. Shugo não deseja ser responsável pela inflação.</p>
+<p> </p>
+<p>Daeva traga Shugo 6[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S e Shugo darão a Daeva um token cruzado ou um token de daemon. Fair, Nyerk?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Caso justo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Raffiner está apenas levemente chateado com a recusa de Daeva, Nyerk.</p>
+<p> </p>
+<p>Shugo provavelmente pode encontrar uma maneira de descarregar o STO ... outros tokens em breve. Provavelmente antes de os proprietários procurarem por eles.</p>
+<p> </p>
+<p>Daeva deve voltar, se precisar de fichas cruzadas ou tokens de daemon. Só para ter certeza, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou considerar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Daeva trouxe tokens para o Exchange como Raffinerk perguntou?</p>
+<p> </p>
+<p>Deixe o Raffiner ver o que você trouxe.</p>
+<p> </p>
+<p>Raffiner não lida principalmente em falsificações, Akakakakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Estes são reais garantidos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Raffiner está desesperado, mas não tão desesperado, Daeva</p>
+<p> </p>
+<p>Raffiner precisa de 6[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S trocar por outros tokens.</p>
+<p> </p>
+<p>Se você deseja causar tanto a inflação, pode lutar no abismo, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, estes parecem fichas reais da ala. Raffiner está feliz, Akakakakak!</p>
+<p> </p>
+<p>Agora ela pode se livrar desses outros tokens antes ... alguma coisa. Daeva não precisa conhecer detalhes.</p>
+<p> </p>
+<p>Aqui está um token cruzado, e aqui está um token de daemon. Escolha.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_PROTECTION_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_09].</p>[%collectitem]</step>
+</steps>
+<p>Raffiner coleta tokens da ala. Traga seus tokens de ala em troca de um token cruzado ou um token de daemon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O coletor de moedas Raffiner disse que ela queria trocar tokens cruzados ou tokens de daemon por tokens de ala.</p>
+<p> </p>
+<p>Você deu ao Raffiner seus tokens de ala e recebeu outro em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

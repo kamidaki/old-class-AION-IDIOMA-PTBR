@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que a tropa de escoteiros sob o comando de Kaires está com problemas.</p>
+<p> </p>
+<p>Seria bom se eu pudesse ajudá -los sozinho, mas estou muito ocupado com meu trabalho agora. Por favor, faça isso por mim, [%username].</p>
+<p> </p>
+<p>Seria uma grande ajuda se você pudesse ir para [%dic:STR_DIC_N_LDF5b_Kailes_E] e ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Obrigado por vir até mim, apesar das difíceis circunstâncias.</p>
+<p> </p>
+<p>O 43º Regimento de Cavalaria está nos causando esses problemas no momento. Com sua grande mobilidade, eles podem mudar o curso desta guerra.</p>
+<p> </p>
+<p>Agora é a melhor oportunidade, enquanto o [%dic:STR_DIC_E_LDF5b_F2_Vri] estão hesitando. Elimine -os!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como é a punição do exército de Beritra?</p>
+<p> </p>
+<p>O exército Vasti é a 1ª tropa da 43ª Guilda. Eles são experientes em combate e, portanto, não há oponentes fáceis.</p>
+<p> </p>
+<p>Temos que atacar agora que o [%dic:STR_DIC_E_LDF5b_F2_Vri] não tem conhecimento, para evitar possíveis dificuldades.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você exige uma recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Isso vai tornar isso muito melhor.</p>
+<p> </p>
+<p>Eu estava preocupado que sentiríamos falta dessa rara oportunidade. Mas você chegou aqui bem a tempo, então obrigado.</p>
+<p> </p>
+<p>A situação na frente é tão sombria que você deve continuar a nos fornecer muita ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Kailes_E]%.</p></step>
+<step><p visible="[%9]">Matar [%dic:STR_DIC_E_LDF5b_F2_Vri]([%11]/9).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5b_Kailes_E]%.</p></step>
+</steps>
+<p>Atenda à solicitação de Partenos. Encontre -se com Kaires e elimine a unidade montada da 43ª Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conheceu Kaires a pedido de Parteno e destruiu o 43º Regimento de Cavalaria.</p>
+<p> </p>
+<p>Kaires pediu mais ajuda no futuro, já que a batalha está pronta para ficar ainda mais aquecida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi muitas das suas façanhas dos asmodianos aqui, bom[%userclass].</p>
+<p> </p>
+<p>É verdade que você é um campeão daqueles que precisam? Nesse caso, então ... Tenho vergonha de admitir isso, mas preciso da sua ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Senegal era um Reian como eu. Ele ... nós ... tivemos um ... relacionamento. Ele .... Ah, é tão doloroso pensar, mesmo agora.</p>
+<p> </p>
+<p>O dragão o levou durante um ataque. Quando o próximo eu o vi, ele era um deles. Eu o matei, com minhas próprias mãos, como concordamos. Para que ele pudesse morrer antes de derramar sangue de Reian ....</p>
+<p> </p>
+<p>Desejo seprar seus pertences com ele, mas um está faltando:[%dic:STR_DIC_I_QUEST_21123a]. [%username], por favor me ajude a encontrar a flecha do Senegal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_I_QUEST_21123a] era especial, mais um charme de boa sorte do que a arma. Tenho certeza de que um dos dragão em Subterranea tem.</p>
+<p> </p>
+<p>O Senegal Fletchou -o com Crestlich Feather, por isso será facilmente reconhecível.</p>
+<p> </p>
+<p>Vou aguardar seu retorno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Seja forte até então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você acha tolo da minha parte arriscar vidas por uma única flecha? Ortiz pensa o mesmo. Ele não quer ver mais que os Reians se colocam em risco.</p>
+<p> </p>
+<p>Mas isso será feito, mesmo que eu tenha que fazer isso sozinho. Não vou deixar a memória do Senegal ser mais manchada pelo dragão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Por favor, pense nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou. Tenho vergonha de admitir que tenho esperado com o hálito.</p>
+<p> </p>
+<p>Você encontrou[%dic:STR_DIC_I_QUEST_21123a]? Deixe -me ver, para confirmar se é realmente dele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ... não é.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_QUEST_21123a] Ainda está nas mãos do dragão.</p>
+<p> </p>
+<p>Meu ódio por eles cresce quanto mais eles mancharam sua memória. Por favor, volte e encontre -o.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem minha palavra que eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Twine Green, a pena de Crestlich ... Sim, essa é de fato a flecha do Senegal. Quase parece quente com seu toque. Ou isso é uma fantasia infantil minha?</p>
+<p> </p>
+<p>Talvez agora ele descanse pacificamente. Agradeço do fundo do meu coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Dragonbound no[%dic:STR_DIC_W_SZ_DF4_B6]. Encontrar [%dic:STR_DIC_I_QUEST_21123a] e trazê -lo para [%dic:STR_DIC_N_hildisvini].</p>[%collectitem]</step>
+</steps>
+<p>Recupere a flecha do Senegal de Dragonbound em Subterranea para Hildisvini.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O amante de Hildisvini, Senegal, sofreu uma lavagem cerebral pelo Dragonbound. Ela desejou que você encontrasse a flecha dele, para que pudesse ser enterrada com ele.</p>
+<p> </p>
+<p>Você matou o Dragonbound até encontrar aquele carregando a flecha e a devolveu para Hildisvini. Ela estava muito agradecida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

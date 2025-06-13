@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. Recebedor: Gerente:[%username]</p>
+<p> </p>
+<p>2. Tarefa: leve os livros fechados para o PandaruNerk na Goldrinyerk Company e envie os recibos na filial.</p>
+<p> </p>
+<p>3. Ramo responsável: Silverine Limited Branch Office em Katalam do Sul</p>
+<p> </p>
+<p>A tarefa atribuída afetará a avaliação de uma promoção, então você deve concluí -la bem, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que traz Daeva aqui?</p>
+<p></p>
+<p>Daeva está procurando algo em particular?</p>
+<p></p>
+<p>(Esfrega as mãos) Se o preço estiver certo, Shugo pode obter qualquer coisa para Daeva.</p>
+<p></p>
+<p>Verdadeiramente, qualquer coisa, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você entrega os ledgers selados.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Daeva foi enviado por Silverine, Ak.</p>
+<p></p>
+<p>E Daeva não está passando pelos livros?</p>
+<p></p>
+<p>O trabalho está feito, então Daeva pode ir agora, AK. Oh, os documentos de apoio?</p>
+<p> </p>
+<p>Aqui estão eles, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os superiores parecem ter tido uma boa impressão de [%username], e.</p>
+<p> </p>
+<p>Afinal, Daeva foi confiado em entregar os livros, AK. Até os que são enviados para Goldrinyerk ...</p>
+<p> </p>
+<p>Daeva entregou as mercadorias?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o deslize atestado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sim, essa é a assinatura do administrador do Goldrinyerk.</p>
+<p> </p>
+<p>Daeva não deve contar a ninguém, AK.</p>
+<p> </p>
+<p>Nem sobre a entrega dos registros secretos, nem sobre a reunião com o administrador do Goldrinyerk, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o PandaruNerk funcionário de Goldrinyerk.</p></step>
+<step><p visible="[%3]">Leve o certificado de entrega para a filial de Katalam do Sul da Silverine Limited.</p></step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você entregou o Ledgers ao Administrador Goldrinyerk Pandarunark e os documentos de apoio à filial de Silverine South Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

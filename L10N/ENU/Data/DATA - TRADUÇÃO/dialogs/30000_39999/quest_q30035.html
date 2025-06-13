@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A arma mágica de poder de Siel ... seu poder pode ser reproduzido, mas não será fácil.</p>
+<p> </p>
+<p>É preciso muito trabalho para reverter o dano, para que pareça antes.</p>
+<p> </p>
+<p>Mas não se parece com você, [%username], desistirá tão facilmente quando se trata de conseguir uma boa arma.</p>
+<p> </p>
+<p>Se você desistir depois de pouco tempo, também perderei minha energia. Isso me satisfaz ajudar alguém que persevera até o fim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você diz que não vai desistir.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou aliviado por você ter dito que não desiste.</p>
+<p> </p>
+<p>É um sinal de quão bem preparado você é que você não desista, apesar de saber que não será fácil.</p>
+<p> </p>
+<p>Só reclamo sobre o quão difícil tudo é por causa da falta de material.</p>
+<p> </p>
+<p>Mesmo se isso se mostrar difícil, você conseguiria um pouco para mim? Se você adquirir materiais para mim, farei o possível para melhorar o desempenho da arma mágica.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu o nome [%dic:STR_DIC_I_Insidium_01]? Eu não pensei assim.</p>
+<p> </p>
+<p>Esta é uma pedra. Quando o Siel Lord travou a batalha aqui com Tiamat diante da Grande Catasto, um calor e poder tremendamente fortes foram gerados, e a partir dela essa pedra foi criada.</p>
+<p> </p>
+<p>De qualquer forma, é uma pedra de alta qualidade. Mas agora, há pouco mais disso. Ouvi dizer que nosso ancião tribal Honeus tem alguns.</p>
+<p> </p>
+<p>Se você aceitar um pedido de [%dic:STR_DIC_N_Honeus], você definitivamente poderá obter um NOXALLON NOTOT. Mas não será tão simples.</p>
+<p> </p>
+<p>Obtenha um lingote de Noxallon e eu repararei a arma de poder mágica de seu siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você claramente tem menos necessidades em termos de armas do que parece.</p>
+<p> </p>
+<p>Na verdade, prefiro quando as pessoas dizem que não estão interessadas imediatamente, em vez de esperar até mais tarde.</p>
+<p> </p>
+<p>Se você mudar sua mente, venha me ver novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Eu preparei algumas coisas, já que chegou a sua chegada.</p>
+<p> </p>
+<p>Conceda-me o NOXALLON LINGOT e a arma de poder mágico de Siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a arma mágica e os lingotes de Noxallon.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você tinha mais perseverança, [%username].</p>
+<p> </p>
+<p>Uma vez iniciado, um daeva deve pelo menos tentar ver uma tarefa até o fim.</p>
+<p> </p>
+<p>Completar [%dic:STR_DIC_N_Honeus] Solicitar e obter o [%dic:STR_DIC_I_Insidium_01]rapidamente.</p>
+<p> </p>
+<p>Não se esqueça da arma de poder mágica do Siel. Ah, sim, eu não posso trabalhar nisso se você tiver em suas mãos. Coloque -o no cubo primeiro.</p>
+<p> </p>
+<p>Eu só preciso dessas duas coisas, vou conseguir o resto então.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe a coisa certa. Agora eu só tenho que colocar meu artesanato à prova.</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+<p> </p>
+<p>(Ele empurra o NOXALLON NOTOT no forno de fundição, depois adiciona uma arma mágica e trabalha nela por um tempo.)</p>
+<p> </p>
+<p>Bom, está feito. Aqui, experimente. Você verá que parece muito diferente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_QUEST_30035] e leve tudo para [%dic:STR_DIC_N_Gefeios].</p>[%collectitem]</step>
+</steps>
+<p>Colete os lingotes de Noxallon, um material que pode ser usado para melhorar o desempenho da arma de poder mágica de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios disse que os materiais especiais seriam necessários para aumentar a funcionalidade da arma de poder mágica de Siel.</p>
+<p> </p>
+<p>Você ouviu o pedido de Honeus como comandado e trouxe os lingotes de Noxallon reunidos com você. Depois, o canhão de poder mágico de Siel foi transformado na brilhante arma de Siel de poder mágico para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

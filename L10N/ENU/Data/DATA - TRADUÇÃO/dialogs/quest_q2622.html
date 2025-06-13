@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nunca há o suficiente para comer em Red Mane Cavern. O solo está congelado e não pode ser cultivado.</p>
+<p> </p>
+<p>Temos algumas provisões do Pandaemonium, mas a única outra comida que temos é o que podemos caçar-Darus e Gorgons. É carne deliciosa. Todo mundo adora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Alguns dos meus favoritos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema é que o número de Darus e Gorgons está diminuindo ... mais difícil de caçar.</p>
+<p> </p>
+<p>Acontece que os Viragos que vivem no telhado de Beluslan também estão caçando Darus e Gorgons.</p>
+<p> </p>
+<p>Eles vão nos morrer de fome se não estiverem parados. Você assumirá o trabalho de matar os Viragos para que possamos ter comida suficiente?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_STR_DF3_SZ_D5] e caçar parte do[%dic:STR_DIC_M_HarpyD_41_An] Areia [%dic:STR_DIC_M_HarpyReD_41_An] S.</p>
+<p> </p>
+<p>Quanto mais você mata, mais comida teremos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dead Viragos chegando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A arma mais importante no campo de batalha é a comida. Soldados famintos não ganham batalhas.</p>
+<p> </p>
+<p>Eu imploro a você. Por favor nos ajude.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não posso fazer isso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda do Punisher de Drakan tem um ótimo apetite, mas realizamos nossas missões com igual fome.</p>
+<p> </p>
+<p>Como foi? Você matou os Viragos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles são mais mortos que Darus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cuidou disso mais rapidamente do que eu pensava.</p>
+<p> </p>
+<p>Eles não vão desistir de Darus e Gorgons por causa disso, mas será mais fácil para nós obter comida por um tempo.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os caçadores de Virago Tundra e os rastreadores de Virago.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_HarpyD_41_An]([%2]/6).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_HarpyReD_41_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Bowen].</p></step>
+</steps>
+<p>Hunt the Virago Tundra Hunters e os rastreadores de Virago para proteger a fonte mais importante de alimentos para os habitantes da vila das cavernas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bowen disse que estava ficando mais difícil garantir Darus e Gorgons-as principais fontes alimentares da vila de cavernas. Viragos estava caçando Darus e Gorgons demais.</p>
+<p> </p>
+<p>Você matou os pesquisadores de Virago e os caçadores de Virago, ele agradeceu e deu a você um sinal de sua apreciação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

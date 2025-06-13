@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12055</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso que você vá e encontre um dos meus homens, [%username]. Um espião disfarçado trabalhando entre os reianos.</p>
+<p> </p>
+<p>Este espião, [%dic:STR_DIC_N_Grant], não relatou há algum tempo. Eu quero que você faça uma visita a ele e veja se ele precisa de algum backup. Seu codinome é "Fiddlesticks".</p>
+<p> </p>
+<p>Você vai ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer por você, Daeva? Eu sou um homem ocupado, você sabe. Não há tempo para brincadeiras ociosas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ah, Fiddlesticks."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Haha. Eu vejo.</p>
+<p> </p>
+<p>Hush sua voz, Daeva. Sinto os olhos em nós enquanto conversamos. Ainda assim, estou feliz que Canopus enviou ajuda. Eu perdi gravemente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre e converse com[%dic:STR_DIC_N_Grant].</p></step>
+</steps>
+<p>Encontre o espião chamado Grant e pergunte se ele precisa da sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Canopus lhe contou sobre um espião Elyos que estava trabalhando entre os Reians. Esse espião, Grant, não havia relatado, então você foi enviado para entrar em contato com ele e ver se ele precisava de ajuda. Grant ficou aliviado ao vê -lo e disse que ele realmente precisava de apoio ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

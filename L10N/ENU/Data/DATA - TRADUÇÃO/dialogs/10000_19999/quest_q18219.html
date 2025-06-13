@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho boas notícias para você, [%username].</p>
+<p> </p>
+<p>O Kaisinel agora também permite que o Daeva comum entre na arena da glória.</p>
+<p> </p>
+<p>Essa seria uma boa oportunidade para você mostrar a Kaisinel como você é hábil, não seria, [%username]? Você quer tentar?</p>
+<p> </p>
+<p>Provar sua habilidade é fácil. Tudo o que você precisa fazer é coletar o símbolo da glória, que é concedido ao vencedor da arena da glória e depois trazê -la para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já acabou com a luta?</p>
+<p> </p>
+<p>Nesse caso, quero ver a prova.</p>
+<p> </p>
+<p>Estou falando sobre o símbolo da glória que só é concedido aos vencedores na arena da glória.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as insígnias de honra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Fique em frente. No lugar do líder do campo de treinamento, Raomedon, agora lhe darei uma recompensa especial.</p>
+<p> </p>
+<p>[%username], Agora concedido a você um prêmio honorário. Suas habilidades são uma prova de todo o trabalho árduo que você dedicou. Espero que você seja um exemplo orientador para os outros Daevas no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir o [%dic:STR_DIC_I_quest_vip_01a] e leve para [%dic:STR_DIC_N_Junos].</p>[%collectitem]</step>
+</steps>
+<p>Colete o símbolo da glória que é dado aos vencedores na arena da glória e mostre a Kaisinel como você é capaz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Junos, o instrutor, lhe disse que ela se reportaria a Kaisinel sobre suas habilidades se você tivesse sucesso na arena da glória.</p>
+<p> </p>
+<p>Você trouxe as insígnias de honra que recebeu depois de ganhar para Junos, o instrutor, que concedeu um título de glória no lugar de Walzen, o chefe do campo de treinamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para sobreviver no deserto, todos devem depender um do outro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Memnes, o guardião, sempre nos ajudou.</p>
+<p> </p>
+<p>Agora ouço que ele precisa de ajuda em troca, mas não temos nada a oferecer.</p>
+<p> </p>
+<p>Você ajudaria [%dic:STR_DIC_N_Memnes] em nosso nome?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Daeva. Sua bondade não será esquecida.</p>
+<p> </p>
+<p>Vá para a fortaleza de Eltnen e conheça [%dic:STR_DIC_N_Memnes].</p>
+<p> </p>
+<p>Por favor, faça o que ele pergunta, por mais difícil. Ele nunca perguntou antes e nos ajudou muito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o que ele perguntar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você não veja a importância de ajudar os outros.</p>
+<p> </p>
+<p>A terra em que você cresceu deve ter sido rica e fértil. Eu posso ver como isso o tornaria suave.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Olá![%username], certo?.</p>
+<p> </p>
+<p>Que negócio você tem comigo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Demro me enviou para ajudá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando pedi ajuda, não tinha certeza de que Demro entendeu meu pedido. Mas aqui está. Você é realmente honrado, para ajudar assim.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Coeus], um pesquisador de armas da Santuário, me pediu para encontrar alguém familiarizado com Eltnen.</p>
+<p> </p>
+<p>Por que? Eu não posso dizer. Você fará bem, porém, por favor, vá até ele.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu faço isso por Demro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Um visitante? Não tenho tempo para dar conselhos gratuitamente.</p>
+<p> </p>
+<p>Minha pesquisa não vai esperar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Memnes me enviou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Memnes lhe enviou, não é? Isso muda as coisas.</p>
+<p> </p>
+<p>Sapiens são meu campo de estudo. Alguns têm armas surpreendentemente sofisticadas.</p>
+<p> </p>
+<p>Preciso de alguém familiarizado com as tribos Eltnen para me trazer armas de querrubianos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"... eu vou contar a Memnes."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, o que Coeus disse?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele quer armas de querrubianas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Por que ele não ....</p>
+<p> </p>
+<p>Não havia sentido em enviá-lo para o santuário distante; Ele poderia ter me dito o que desejava.</p>
+<p> </p>
+<p>Lamento ter perdido seu tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Memnes].</p></step>
+<step><p visible="[%3]">Vá para o Santum e converse com[%dic:STR_DIC_N_Coeus].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Memnes].</p></step>
+</steps>
+<p>Demro quer que você ajude Memnes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Demro era muito grato ao Sentinel Memnes na fortaleza de Eltnen e queria ajudá -lo com seu trabalho.</p>
+<p> </p>
+<p>Quando você foi encontrar Memnes, ele disse para você ir ver o pesquisador de armas Coeus em santuário porque era Coeus, não Memnes, que precisava de ajuda.</p>
+<p> </p>
+<p>Mas o que Coe queria eram armas de querrubianas. Coeus pediu que você adquirisse alguns deles.</p>
+<p> </p>
+<p>Você voltou a Memnes e transmitiu a mensagem de Coeus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Rosto familiar! Sim sim. Shugo sempre conhece rostos e já viu este antes. Mas onde? Quando? Hum.</p>
+<p> </p>
+<p>Nyerk! Sem tempo para pensar! Talvez Daeva esteja interessado em fazer Kinah?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez Shugo queira fazer Kinah?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakak! Shugo sempre quer fazer Kinah, é verdade, mas Shugo nunca arrancou Daeva! Olhe para mim, tão pequeno e magro! Faria um excelente casaco, se Daeva quisesse, sim? Mas Daeva não quer. Não não.</p>
+<p> </p>
+<p>Daeva Ouça. Eu compro pó transparente de Wriggot do Velho Vigbir e depois o vendo com fins lucrativos na cidade. Faça o bom Kinah como Middleshugo, mas agora fornece secagem porque a estrada ... a estrada é perigosa!</p>
+<p> </p>
+<p>Precisa de ajuda de Daeva, veja? Precisa de grande poderoso[%userclass]Para limpar a estrada e abrir a rota de suprimento novamente!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sabia! Smart Daeva!</p>
+<p> </p>
+<p>Os monstros do caminho são[%dic:STR_DIC_M_KuillusVioletD_35_An] Areia [%dic:STR_DIC_M_DrakeVioletD_36_An] S. Mate muitos de ambos, depois veja Vigbir como recompensa!</p>
+<p> </p>
+<p>Vá, Daeva! Shoo! O trabalho a fazer não será feito em pé!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certifique -se de que minha recompensa esteja pronta!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva estúpido!</p>
+<p> </p>
+<p>Não está interessado em ganhar dinheiro?! Não está interessado em melhor armadura? Não? Não?! Daeva estúpido!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Peles ... casaco ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é quem está causando todo esse tumulto?</p>
+<p> </p>
+<p>Que [%dic:STR_DIC_N_Shugo_DF3_12]Tem um nervo, eu digo a você. Disse a ela que essas criaturas estavam apenas sendo maussas com a temporada de acasalamento, mas ela não estava tendo nada disso. Queria o caminho claro e queria seus suprimentos.</p>
+<p> </p>
+<p>Suponho que você fez o que ela perguntou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não posso dizer que eu me oponho ao dinheiro, mas eu não teria me importado de esperar há mais ou menos uma semana.</p>
+<p> </p>
+<p>Ainda assim, um acordo é um acordo. Eu acredito que lhe devo isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar as criaturas que estão interrompendo o [%dic:STR_DIC_N_Shugo_DF3_12]troca.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_KuillusVioletD_35_An]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_DrakeVioletD_36_An]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Byggvir].</p></step>
+</steps>
+<p>Mate os Kirris e Drakes para que Huarinriner possa continuar com seu comércio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Huarinriner disse que fez bastante Kinah comprando pó transparente de Wriggot do velho Vigbir e vendendo -o com fins lucrativos na cidade.</p>
+<p> </p>
+<p>No entanto, Kirris e Drakes haviam se mudado para a área, bloqueando os caminhos comerciais e cortando os suprimentos do Shugo.</p>
+<p> </p>
+<p>Você eliminou os Kirris e Drakes, depois viu Vigbir, que pagou pelo trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

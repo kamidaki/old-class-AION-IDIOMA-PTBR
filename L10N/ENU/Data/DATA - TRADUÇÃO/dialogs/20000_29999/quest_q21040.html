@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você parou, [%username]. Taloc, com quem você tem uma forte gravata, precisa de você.</p>
+<p> </p>
+<p>Os elim são seres sutis-você sabe disso melhor do que eu-e os daevas há muito tempo são associados a eles. Para o bem ou para o mal, não temos escolha a não ser ajudar um ao outro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Especialmente agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, o Pandaemonium ficou bastante preocupado com o mau funcionamento do receptor de Aether. Quando descobriram que a causa do mau funcionamento foi o Guardian de Taloc, vários elimes e Daevas tentaram aplacar o Taloc ... sem sucesso.</p>
+<p> </p>
+<p>O Guardian de Taloc é um fantasma, por isso não podemos fazer muito a respeito, mas devemos parar o fluxo distorcido de Aether. Para fazer isso, todos os parasitas que atormentam a árvore sagrada devem ser erradicados.</p>
+<p> </p>
+<p>Esta seria sua tarefa. O que você diz? Vale a pena uma moeda de Mithril?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um dos poucos que podem entrar no Taloc, então eu imagino que não há como você recusar. Complete esta missão com sucesso e você receberá uma moeda de Mithril, conforme prometido.</p>
+<p> </p>
+<p>Vou orar pelo seu retorno seguro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou bastante chocado, [%username]. Não há muitas pessoas que podem assumir esse tipo de missão, pois não apenas qualquer um pode se aventurar dentro do Taloc.</p>
+<p> </p>
+<p>Se o gerador de campo éetico quebrar por causa do Guardian de Taloc, Gelkmaros estará condenado. Todos nós vamos perecer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eh, vai esperar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já está de volta? O Taloc está livre da infestação?</p>
+<p> </p>
+<p>Eu não posso te dar essa moeda de Mithril, se mesmo um inseto vive!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu matei os insetos mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é incrível, [%username]. Aqui está a moeda de Mithril que prometi-e tenho certeza de que o Guardian de Taloc também está muito agradecido.</p>
+<p> </p>
+<p>É claro que ... os parasitas sem dúvida aparecerão dentro do Taloc novamente. Se o fizerem, e você novamente oferece sua assistência, outra moeda de Mithril será sua.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Erradique todos os parasitas dentro do Taloc.</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_1F]([%2]/329)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_2F]([%5]/231)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q11048_3F]([%8]/77)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Flores].</p></step>
+</steps>
+<p>Você receberá uma moeda de Mithril se erradicar todos os parasitas dentro do Taloc.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial de administração de moedas Flores ofereceu uma recompensa para erradicar todos os parasitas dentro do Taloc.</p>
+<p> </p>
+<p>Quando você voltou a Flores depois de erradicar os insetos, ela lhe deu uma moeda de Mithril.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

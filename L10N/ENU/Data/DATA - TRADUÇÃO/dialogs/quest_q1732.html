@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles punhais de ossos? Eu os fiz como um presente para alguém.</p>
+<p> </p>
+<p>Veja bem, há um ecologista chamado Lamia que estuda o campo de batalha de Twilight.</p>
+<p> </p>
+<p>Ela está sempre rastreando uma criatura perigosa ou outra. Eu pensei que uma boa adaga seria útil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você é doce nela?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, uh ... sim. E a adaga ficou lindamente, mas não posso levá -la para ela. Se ela me viu como eu sou agora, ela desmaiaria!</p>
+<p> </p>
+<p>[%username], você vai entregar esta adaga a [%dic:STR_DIC_N_Lamia]para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que alívio! Dizer [%dic:STR_DIC_N_Lamia] eu fiz isso para ela ... hum, a menos que seja uma má ideia?</p>
+<p> </p>
+<p>Bem, algum dia eu serei eu mesmo novamente. Com isso em mente, é melhor dizer a ela, certo?</p>
+<p> </p>
+<p>Suficiente! Basta levar para Lamia e dizer a ela que esculpi para ela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem vergonha de ser meu mensageiro? Não estou perguntando muito, estou?</p>
+<p> </p>
+<p>Eu ficaria bem se eu fosse meu antigo eu. Eu tinha muita confiança naquela época.</p>
+<p> </p>
+<p>Eu simplesmente não posso enfrentá -la enquanto sou mais feio do que um asmodiano.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando vi o abismo pela primeira vez, senti pura emoção. Tantas coisas para estudar, essa pesquisa para fazer!</p>
+<p> </p>
+<p>Com o tempo, percebi que não importa como me exapere, sempre há mais para ver.</p>
+<p> </p>
+<p>Mas eu tenho uma vida de Daeva para mergulhar. Por que se apressar? Ser metódico.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Um amigo enviou isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que Ladacus criou isso para mim?</p>
+<p> </p>
+<p>Estou bastante surpreso. Eu nunca esperava a alma de um artista em alguém tão sedento de sangue. E eu certamente nunca pensei que ele tinha sentimentos por mim.</p>
+<p> </p>
+<p>Devo aceitar essa adaga? Bem, duvido que qualquer coisa virá disso. E acho que pode ser agradável ter um admirador ... ou dois.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar uma adaga osso para [%dic:STR_DIC_N_Lamia].</p></step>
+</steps>
+<p>Ladacus fez de Lamia uma linda adaga de osso, mas ele tem vergonha de aparecer diante dela como uma falta de preços. Entregue para ele. Lamia está no campo de batalha de Twilight.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ladacus fez uma adaga bonita de osso da alma esmagada por Lamia, mas não se atreveu a dar a ela em seu disfarce como uma falta de preferência.</p>
+<p> </p>
+<p>Então você foi ao campo de batalha de Twilight e entregou a adaga para ele. Lamia ficou surpresa com a ternura de Ladacus, mas não tem certeza de aceitar seu presente. No final, ela decidiu que ter um admirador poderia ser divertido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

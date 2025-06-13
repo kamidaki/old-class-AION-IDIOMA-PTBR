@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A vila está com problemas, Daeva. Em tempos de conflito, os símbolos assumem maior significado. Pessoas se apegam a eles.</p>
+<p> </p>
+<p>Infelizmente, sob a capa da noite, os Kobolds roubaram dentro do Nobelium e passaram o selo da vila!</p>
+<p> </p>
+<p>Eu deixei meus sentimentos claros para Abolos. Sua resposta foi, como sempre, "sem comentários".</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Há algo que possamos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O selo não é apenas um Ficha. Tem usos práticos. Todos os nossos documentos oficiais são marcados com seu sinete.</p>
+<p> </p>
+<p>E o santuário? Sem correspondência oficial, seremos cortados. Eles não podem simplesmente confiar em nenhum documento que apareça.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que deve ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não acho que você poderia devolver o selo para nós? Seria uma grande ajuda! Eu não perguntaria o contrário, acredite em mim.</p>
+<p> </p>
+<p>Tenho certeza de que está em algum lugar da mina de Dukaki. Os Kobolds tendem a empilhar todo o seu pilhagem em um só lugar, por isso não deve ser muito difícil de encontrar.</p>
+<p> </p>
+<p>Você vai ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, isso é maravilhoso! Obrigado. Não posso te dizer como sou grato.</p>
+<p> </p>
+<p>Por favor, vá para a mina de Dukaki e encontre a pilha de itens roubados. O selo da vila estará dentro dele em algum lugar. Você só precisa olhar, não ser pego e trazê -lo de volta.</p>
+<p> </p>
+<p>Boa sorte, amigo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Tenho certeza de que você tem muitas responsabilidades importantes.</p>
+<p> </p>
+<p>É só ... se não recuperarmos o selo, toda a vila corre o risco de ser esquecido.</p>
+<p> </p>
+<p>Você vai reconsiderar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta é uma pilha bastante grande de itens roubados.)</p>
+<p> </p>
+<p>(Fragmentos brilhantes de jóias, pedras preciosas e bugigangas estavam espalhadas entre a sujeira e os detritos. Algo chama sua atenção-algo que parece ter sido colocado aqui recentemente.)</p>
+<p> </p>
+<p>(Deve ser o selo da vila.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Aha! Vou levar isso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você puxa para ele, mas o selo não se mexe.)</p>
+<p> </p>
+<p>(Parece que todos os itens estão presos rapidamente.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Hmmm ... deve haver outra maneira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva estúpido! O que você está fazendo neste lugar?</p>
+<p> </p>
+<p>Kobolds não é como invasores!</p>
+<p> </p>
+<p>Se eu te vi, alguém pode!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estou aqui para o selo da vila."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, selo da vila. Parece importante, Akakak!</p>
+<p> </p>
+<p>Mas você não entende assim. Kobolds grudou todas as coisas brilhantes. Eu vejo. Pulverizaram algumas coisas desagradáveis ​​por toda parte, eles fizeram.</p>
+<p> </p>
+<p>Você me ouve. Você não vai puxar isso livre. Melhor voltar para casa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para a mina de Dukaki e encontre o selo da vila na pilha de itens.</p></step>
+<step><p visible="[%3]">Obtenha conselhos de [%dic:STR_DIC_LA45].</p></step>
+</steps>
+<p>Kobolds roubou o selo da vila. O padre lhe disse que nenhum documento oficial pode ser feito sem o selo, então você prometeu encontrá -lo na mina de Dukaki.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="1" showframe="true" time="5">The captive Shugo is pounding on the bars. It may be a good idea to talk to him.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kobolds roubou o selo da vila. Sem o selo, nenhum documento oficial pode ser feito.</p>
+<p> </p>
+<p>A pedido do padre Santenius, você foi à mina de Dukaki e encontrou o selo. Infelizmente, você não conseguiu soltar a pilha de itens.</p>
+<p> </p>
+<p>Um shugo trancado nas proximidades disse que os Kobolds haviam enfiado todos os itens juntos.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

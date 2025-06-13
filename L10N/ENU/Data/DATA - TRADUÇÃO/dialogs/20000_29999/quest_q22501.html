@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Comecei a garantir a área desde que cheguei, mas a situação ainda não melhorou.</p>
+<p> </p>
+<p>Ontem recebi o relatório de que o [%dic:STR_DIC_M_LDF5A_A2_Daru]quebraram as defesas.</p>
+<p> </p>
+<p>Você nos ajudaria, [%username]? Vá em patrulha, elimine cada [%dic:STR_DIC_M_LDF5A_A2_Daru]Você vê e se reporta a Bor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Tome cuidado.</p>
+<p> </p>
+<p>Há mais do que apenas um daru.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou Daru.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado do fundo do meu coração. Agora não terei que me preocupar por um tempo.</p>
+<p> </p>
+<p>Finalmente tenho tempo para cuidar de alguns outros problemas.</p>
+<p> </p>
+<p>Por favor, aceite isso.</p>
+<p> </p>
+<p>Aqui, uma recompensa por sua ajuda para me fazer parecer bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_A2_Daru]([%2]/12).</p></step>
+<step><p visible="[%15]">Vá para [%dic:STR_DIC_N_LDF5A_Borb_E].</p></step>
+</steps>
+<p>Matamos Daru por segurança interna.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O líder da guerrilha Phon estava preocupado em manter a ordem, que continuava sendo um problema, apesar do expurgo.</p>
+<p> </p>
+<p>A pedido de Phon, você matou o Daru que era uma ameaça à paz e relatou a Borb.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

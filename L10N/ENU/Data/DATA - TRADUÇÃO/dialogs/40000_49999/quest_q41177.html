@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41177</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um mapa muito antigo. É mais antigo do que qualquer coisa que você já viu.)</p>
+<p> </p>
+<p>(Esta parte parece [%dic:STR_DIC_W_LDF4a_sarpan_main], mas o resto é uma bagunça desbotada.)</p>
+<p> </p>
+<p>(Você provavelmente precisa de um[%dic:STR_DIC_E_Q41177_yohar]para fazer cabeças ou caudas.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pode muito bem tentar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá, [%username]. Gostaria de se juntar a mim para ... o que é isso? Mapa? Oh, claro, deixe -me dar uma olhada.</p>
+<p> </p>
+<p>Sheesh! Isso é velho! Mas eu thiiiiink eu reconheço este lugar. Então isso deve ser ... e isso deve ser ...</p>
+<p> </p>
+<p>Aqui você vai. Tudo legal e arrumado! Você pode confiar no meu julgamento, yessiree! Então, que tal uma bebida faz a estrada?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Não, obrigado. Tenho um mapa a seguir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>(É uma caixa antiga.)</p>
+<p> </p>
+<p>(Você não consegue entender nenhuma marca para mostrar a propriedade. Deve ter sido enterrado aqui por um longo tempo.)</p>
+<p> </p>
+<p>(É bastante pesado, o que alimenta seu senso de expectativa.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Vamos, seja algo bom ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O baú abre. O cheiro de mofo de idades diminui.)</p>
+<p> </p>
+<p>(Você olha de perto dentro e vê seu conteúdo.)</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF4a_SZ_OP_17] e mostrar o mapa para [%dic:STR_DIC_N_yohar].</p></step>
+<step><p visible="[%3]">Cavar na área que o mapa do tesouro aponta.</p></step>
+<step><p visible="[%6]">Abra a caixa do tesouro.</p></step>
+</steps>
+<p>Você obteve um mapa antigo. Leve para Yohar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um mapa antigo, mas estava tão desbotado que você mal conseguia lê -lo.</p>
+<p> </p>
+<p>Você mostrou a Yohar, que conseguiu decifrar de alguma forma o mapa para que você pudesse lê -lo.</p>
+<p> </p>
+<p>Você cavou a área que o mapa indicou e encontrou uma caixa de tesouro!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

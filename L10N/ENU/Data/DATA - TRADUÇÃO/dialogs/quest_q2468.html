@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ontem foi o dia de pagamento ... mas, em vez de me pagar em Kinah, Balom me deu essa coisa! Ele diz que é precioso ... algum tipo de cristal.</p>
+<p> </p>
+<p>Se é tão precioso, por que ele me deu?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você pode ter que aceitar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, Gorgon Poo! Você está certo, é claro. Ninguém discute com Balom.</p>
+<p> </p>
+<p>Eu preciso encontrar uma maneira de transformar isso em Kinah.</p>
+<p> </p>
+<p>Eu me pergunto ... você acha que se eu levar isso a um mestre de desvantagem, junto com alguns[%dic:STR_DIC_DG_noblemetal_n_c_30a], eles poderiam fazer algo especial?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"É possível."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas não há como eu conseguir [%dic:STR_DIC_DG_noblemetal_n_c_30a]. Oh, Balom me deixa com tanta raiva! Por que ele me deu isso ... essa coisa?!</p>
+<p> </p>
+<p>[%username], você coletaria alguns[%dic:STR_DIC_DG_noblemetal_n_c_30a]para mim? Se eu não posso vendê -lo, talvez eu tenha que ficar sem comida ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao contrário de Balom, você é amigável, [%username].</p>
+<p> </p>
+<p>Eu gostaria que você me pegue 10[%dic:STR_DIC_DG_noblemetal_n_c_30a].</p>
+<p> </p>
+<p>O minério de platina geralmente pode ser encontrado nas regiões de lava e basalto. Portanto, seria melhor se você partir em direção ao portão de Musphel.</p>
+<p> </p>
+<p>Eu vou esperar por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não?[%username], você e Balom são muito parecidos.</p>
+<p> </p>
+<p>Eu pensei que um Daeva seria diferente. Mas eu estava errado.</p>
+<p> </p>
+<p>Apenas vá embora. Não se preocupe se eu fome ou não ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza que você vai ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já obteve 10 peças de [%dic:STR_DIC_DG_noblemetal_n_c_30a]?</p>
+<p> </p>
+<p>Daevas são conhecidos por sua velocidade.</p>
+<p> </p>
+<p>Você pode me mostrar como é o minério de platina?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Parece assim ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu para procurar [%dic:STR_DIC_DG_noblemetal_n_c_30a]?</p>
+<p> </p>
+<p>Estou um pouco decepcionado com você. Estou ficando sem tempo.</p>
+<p> </p>
+<p>Eu não deveria estar dizendo isso como suplicante, mas se apresse.</p>
+<p> </p>
+<p>Por favor, traga -me 10 minério de platina.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>1, 2, 3 ... 10. Certo. Para fabricar um acessório, preciso de pelo menos 10 deles.</p>
+<p> </p>
+<p>Ufa. Agora estou realmente cansado de trabalhar para Balom.</p>
+<p> </p>
+<p>Mas há Daevas para me ajudar, o que alivia meu fardo enormemente. Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_DG_noblemetal_n_c_30a] e leve para [%dic:STR_DIC_N_Karina].</p>[%collectitem]</step>
+</steps>
+<p>Colete minério de platina e leve -o para Karina para que ela possa fazer um acessório usando o cristal Aether que recebeu como pagamento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Karina reclamou que Balom havia lhe dado um cristal de aether como pagamento em vez de Kinah.</p>
+<p> </p>
+<p>Você trouxe minério de platina para ela para que ela pudesse fazer um acessório com o cristal Aether e vendê -lo. No entanto, ela pagou tanto pelo seu trabalho que você começou a se perguntar se havia mais na história dela do que ela estava dizendo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

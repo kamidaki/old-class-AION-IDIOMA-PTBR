@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo a outro grande dia de Daeva!</p>
+<p> </p>
+<p>Você sabe, eu ouço os Elyos comemoram também. Aposto que eles acham que apenas grunhimos e jogam pedras juntos para nos divertir.</p>
+<p> </p>
+<p>Mas não vamos pensar em coisas tão desagradáveis ​​como Elyos. Estamos aqui para nos divertir! Você gostaria de participar de um evento?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de evento?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma caça ao tesouro ... embora, como somos asmodianos, também envolve caçar e matar!</p>
+<p> </p>
+<p>Parece divertido, não é? E você também recebe um prêmio: uma faixa de coração especial.</p>
+<p> </p>
+<p>Por que não se juntar? É gratuito e você terá um treino, para inicializar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para pegar a faixa do coração, você precisa coletar [%dic:STR_DIC_I_QUEST_80005a] S.</p>
+<p> </p>
+<p>Eles estão apegados a [%dic:STR_DIC_M_RatmanWarriorM_15_An] S, [%dic:STR_DIC_M_RatmanWarriorM_11_An] Areia [%dic:STR_DIC_M_AElemental2ndD_18_An] S, então você terá que matá -los primeiro.</p>
+<p> </p>
+<p>Não espero que isso seja um problema para você. Então, quando você tiver o suficiente, basta trocá -los para mim por uma faixa de coração. Parece bom?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Muito bom."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não é muito pelo espírito do dia do Daeva, é?</p>
+<p> </p>
+<p>Você sabe, essas faixas da cabeça são dadas apenas nos dias de Daeva. Participe agora ou espere mais um ano.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu mataria monstros de graça!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é...? Espere, não me diga .... você é um juiz das sombras, venha me dizer para pagar minha pensão alimentícia ....</p>
+<p> </p>
+<p>Não, estou apenas brincando! Lembro -me de você, Daeva. Você está participando da caça ao dia de Daeva.</p>
+<p> </p>
+<p>Presumo que você esteja falando comigo porque você tem os cupons agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu certamente faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eles estão todos aqui. Bom trabalho!</p>
+<p> </p>
+<p>Divirta -se com sua faixa de coração exclusiva do dia do Daeva!</p>
+<p> </p>
+<p>Eu sugiro usar um da próxima vez que você lutar contra um Elyos ou Balaur. Isso vai mostrar a eles exatamente o que asmodae pensa neles!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, você não. Vou precisar de mais[%dic:STR_DIC_I_QUEST_80005a] S do que isso antes de eu lhe dar qualquer coisa.</p>
+<p> </p>
+<p>Lembrar, [%dic:STR_DIC_M_RatmanWarriorM_15_An] S, [%dic:STR_DIC_M_RatmanWarriorM_11_An] Areia [%dic:STR_DIC_M_AElemental2ndD_18_An] está com eles.</p>
+<p> </p>
+<p>Você parece forte o suficiente para levar os cupons pela força. Certamente você não está tendo problemas ...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro que não!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_80005a] e leve-os para [%dic:STR_DIC_N_event_Bethell].</p>[%collectitem]</step>
+</steps>
+<p>Colete cupons para uma faixa de coração e entregue -os a Bethell.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bethell, um membro da equipe do evento, está dando bandanas do coração em comemoração ao dia de Daeva. Você coletou cupons de monstros e os entregou para a sua faixa da cabeça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Ammianus], Instrutor da Academia</p>
+<p> </p>
+<p>'Luma, brilhos!</p>
+<p> </p>
+<p>Para a lição de hoje, você estará caçando[%dic:STR_DIC_M_37002all]. Não posso deixar o Krall voltar a ser mestrado de Atreia!</p>
+<p> </p>
+<p>Para passar, você precisará matar cinco (5) desses caras. Então vá pegar um mentor e começar a trabalhar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Daevas, se curva para não Krall!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como está a tarefa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu peguei meus cinco Krall e estou pronto para voar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Spiny brilhante! Tenho que amar seu mentor, certo?</p>
+<p> </p>
+<p>Você continua assim e também ensina.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com a ajuda de um[%dic:STR_DIC_E_Mentor], derrota [%dic:STR_DIC_M_37002all]([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ammianus].</p></step>
+</steps>
+<p>O instrutor da Academia Markos o designou para trabalhar com um mentor e derrotar elites na guarnição de Tursin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O instrutor da Academia Markos o designou para trabalhar com um mentor e derrotar elites na guarnição de Tursin. Você completou o trabalho e Markos o recompensou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

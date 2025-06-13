@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12522</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou dividido sobre se devo pedir mais apoio.</p>
+<p> </p>
+<p>Sim, [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12522] está por perto.</p>
+<p> </p>
+<p>Por que você não guarda o post, [%username]?</p>
+<p> </p>
+<p>Eu ficaria grato se você pudesse descobrir o tamanho da Guilda.</p>
+<p> </p>
+<p>Se o [%dic:STR_DIC_M_LDF5A_B8_Vritra]De repente, você deve aparecer, você sabe o que deve ser feito. Apenas limpe -os do caminho!</p>
+<p> </p>
+<p>Se eles não forem mortos imediatamente, continuarão retornando. Estes são bolsistas teimosos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você acha?</p>
+<p> </p>
+<p>O exército de Beritra apareceu?</p>
+<p> </p>
+<p>Devo pedir ajuda?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Felizmente, a tropa não é tão grande.</p>
+<p> </p>
+<p>Mas na verdade não estávamos esperando uma tropa de Beritra ...</p>
+<p> </p>
+<p>Enviaremos um relatório para receber suporte.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Examine o [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12522].</p></step>
+<step><p visible="[%3]">Matar [%dic:STR_DIC_M_LDF5A_B8_Vritra]. ([%5]/5)</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5A_Kaias_E].</p></step>
+</steps>
+<p>Mate os soldados de Beritra que estão realizando um ataque surpresa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você viu um post de Beritra, você foi examiná -lo. Então o esquadrão de Beritra apareceu de repente. Você matou os soldados de Beritra e voltou para Kayah. Kayah disse que exigiria apoio.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós fugimos[%dic:STR_DIC_W_DF5_SZ_P1_01]diante dos inimigos de nossa tribo e cobriu a longa distância todo esse caminho para o [%dic:STR_DIC_W_DF5_SZ_F_01].</p>
+<p> </p>
+<p>Mas mesmo aqui não estamos seguros.</p>
+<p> </p>
+<p>Nas proximidades[%dic:STR_DIC_W_DF5_SZ_G_01]Viva a tribo Drak, que adora o coração de um dragão.</p>
+<p> </p>
+<p>Os aquans não os consideram amigáveis. Eles provavelmente nos vêem como presa ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_NONE_1">Você pergunta como pode ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="select_none_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor destrua o [%dic:STR_DIC_OBJ_DF5_FOBJ_dragonheart_Q25073], que eles oram.</p>
+<p> </p>
+<p>Supostamente, ele pertencia a uma criatura antiga que morreu há muito tempo.</p>
+<p> </p>
+<p>Mesmo que não esteja mais vivo, eles dizem que o coração ainda bate.</p>
+<p> </p>
+<p>Parece que é feito de pedra. Mas assim que você se aproxima do coração, você pode ouvir o batimento cardíaco.</p>
+<p> </p>
+<p>Se você pudesse destruir o coração, a tribo Drak certamente deixará o [%dic:STR_DIC_W_DF5_SZ_G_01].</p>
+<p> </p>
+<p>O coração só pode ser destruído com o forte veneno de um escorpião.</p>
+<p> </p>
+<p>O coração age como todas as coisas vivas aqui ... assim que você o cobre com o veneno, ele finalmente parará de bater.</p>
+<p> </p>
+<p>Por favor, obtenha alguns[%dic:STR_DIC_I_quest_25073a] e use -o para revestir o [%dic:STR_DIC_OBJ_DF5_FOBJ_dragonheart_Q25073].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(A forma do coração parece familiar.)</p>
+<p> </p>
+<p>(É definitivamente o coração de um dragão.)</p>
+<p> </p>
+<p>(Ainda parece bater, assim como os aquans disseram.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você cobre o coração da tribo Drak com o veneno.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username].</p>
+<p> </p>
+<p>Eu estive esperando por você. Os Aquans já me disseram.</p>
+<p> </p>
+<p>Você destruiu o coração da tribo Drak com o veneno enquanto eu o instruí?</p>
+<p> </p>
+<p>Como os draks estão entre os inimigos da tropa da expedição, também seria vantajoso para nós se você tivesse cuidado disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que aconteceu até agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Mais do que qualquer outra coisa, acho inquietante que a tribo Drak adore o coração de um dragão.</p>
+<p> </p>
+<p>Já ouvi muitas histórias, mas mesmo assim não consigo imaginar como essa terra deve ter olhado naquela época.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pintar o [%dic:STR_DIC_OBJ_DF5_FOBJ_dragonheart_Q25073]com[%dic:STR_DIC_I_quest_25073a].</p>[%collectitem]</step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Cnut_E].</p></step>
+</steps>
+<p>Soglo pediu para você obter veneno de Melchor e usá -lo para destruir o coração da tribo Drak. Realize o pedido de Soglo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Soglo pediu para você obter veneno de Melchor e usá -lo para destruir o coração da tribo Drak.</p>
+<p> </p>
+<p>Você obteve o veneno de Melchor e foi ao coração da tribo Drak, que é o coração de um dragão. Você o cobriu com o veneno e, assim, o destruiu.</p>
+<p> </p>
+<p>Você voltou a Knut e deu a ele seu relatório. Ele não gostou do pensamento da tribo adorando o coração de um dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

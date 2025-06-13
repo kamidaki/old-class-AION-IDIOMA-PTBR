@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria estar guardando o depósito de suprimentos, mas me vejo ajudando a Fyra a sair. É meu dever ficar de olho nos atacantes, não ajudar a Fyra com as entregas! Mas todo mundo está ocupado aqui, e somos de mão curta, então eu ajuda quando acho que é seguro. Como posso dizer não?</p>
+<p> </p>
+<p>Mas não preciso me preocupar com os invasores no pouso de primum, certo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você precisava de algo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão, esta nova requisição de suprimento é irritante. A maioria dos suprimentos solicitados a partir de um ponto de ligação ou uma fortaleza, então eu os empacote e os envio pelo Messenger.</p>
+<p> </p>
+<p>Mas este é para suprimentos endereçados a esse sedento de sangue Mokkurkalfi.</p>
+<p> </p>
+<p>Você sabe quem é Mokkurkalfi, não é? Ele era um dos nossos lutadores mais temíveis, mas deixou a Guilda Vermelha de Hasia-agora ele lidera sua própria campanha pessoal contra o inimigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Interessante ... como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que Mokkurkalfi trabalhava sozinho, mas eu poderia estar errado. Talvez ele esteja em uma missão secreta ou algo assim ...? Não sei por que mais estaríamos enviando suprimentos para ele ....</p>
+<p> </p>
+<p>Mas não posso enviar um mensageiro oficial para suprimentos "não oficiais", nem posso ir para lá-não posso deixar o depósito de suprimentos desprotegido.</p>
+<p> </p>
+<p>Você entregaria os suprimentos para [%dic:STR_DIC_N_Mokkurkalfi], Assim, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Mokkurkalfi] está na ilha solitária a sudoeste. Aqui está a ordem dele. Tenha cuidado-ele não é a única coisa assustadora à espreita naquela ilha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! Agora o que eu faço? Eu não posso deixar meu post!</p>
+<p> </p>
+<p>É melhor que você acredite que vou me lembrar disso se precisar de um favor!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que vocês continuam me incomodando? Eu vim aqui para ficar sozinho, explodi -lo! BEGONE!</p>
+<p> </p>
+<p>Se você é outro daqueles Daevas Sycofantic implorando por matar aulas ... Eu posso apenas mostrar como faço isso ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Paz! Estou apenas entregando suprimentos. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh. Você me trouxe suprimentos? Quão inesperado ... eles realmente enviaram o que eu pedi.</p>
+<p> </p>
+<p>Por que você ainda está aqui? Prossiga!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o pacote de suprimentos para [%dic:STR_DIC_N_Mokkurkalfi].</p></step>
+</steps>
+<p>Undran diz que está ajudando a fornecer suprimentos, mas precisa de ajuda com os suprimentos que vão para Mokkurkalfi. Você concordou em entregar os suprimentos a Mokkurkalfi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Undran disse que estava ajudando no depósito de suprimentos e que recebeu recentemente uma estranha requisição de suprimentos.</p>
+<p> </p>
+<p>Os suprimentos deveriam ser enviados para Mokkurkalfi, para que eles não pudessem seguir o caminho habitual.</p>
+<p> </p>
+<p>Para ajudá -la, você foi à ilha solitária e entregou os suprimentos a Mokkurkalfi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

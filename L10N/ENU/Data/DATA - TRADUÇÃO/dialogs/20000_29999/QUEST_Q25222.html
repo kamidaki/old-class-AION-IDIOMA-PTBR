@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos nos preparar para a defesa do[%dic:STR_DIC_W_DF5_SZ_Village_03]. Os Elyos querem atacar este local.</p>
+<p> </p>
+<p>Não sabemos onde a próxima brecha será aberta.</p>
+<p> </p>
+<p>Se os Elyos já estão indo para o esforço de invadir aqui, eles devem ser recebidos por nossos melhores arcontes.</p>
+<p> </p>
+<p>Temos que estar prontos a qualquer momento.</p>
+<p> </p>
+<p>Se Elyos aparecer em[%dic:STR_DIC_E_DF5_Vil3_Area_All], não hesite, mas ataque -os imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos Elyos apareceram através da fenda.</p>
+<p> </p>
+<p>Mas ouvi dizer que você acabou com todos eles, [%username].</p>
+<p> </p>
+<p>Os rumores são verdadeiros?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz a ele o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso muito bem.</p>
+<p> </p>
+<p>Nosso esquadrão fará um bom progresso com um arconte como você.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram o [%dic:STR_DIC_E_DF5_Vil3_Area_All]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Cnut_E].</p></step>
+</steps>
+<p>Missão completa de Knut. Punir os Elyos que invadiram a região de Velias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Knut pediu que você punisse os Elyos que haviam invadido a região de Velias.</p>
+<p> </p>
+<p>Você eliminou os Elyos na região de Velias. Knut elogiou você por isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

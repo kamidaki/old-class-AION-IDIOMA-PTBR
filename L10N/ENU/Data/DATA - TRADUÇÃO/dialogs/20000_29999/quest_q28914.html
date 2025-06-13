@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como as plantas como essa estavam no depósito de Guerra de Sauro, deve haver algum tipo de amostras.</p>
+<p> </p>
+<p>Afinal, o Exército de Beritra não deixará pedra sobre pedra quando se trata de pesquisa de armas.</p>
+<p> </p>
+<p>[%username], por favor, vá para o depósito de Guerra de Sauro mais uma vez e obtenha amostras.</p>
+<p> </p>
+<p>No depósito de guerra de Sauro, procure o [%dic:STR_DIC_OBJ_STR_IDVritra_FOBJ_Ancient_warmachine], e me traga o [%dic:STR_DIC_I_quest_28914a].</p>
+<p> </p>
+<p>Você não precisa trazer toda a coisa pesada; Um pedaço dele é suficiente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A preocupação de que as pessoas no depósito de Guerra de Sauro estejam pesquisando uma arma antiga em conexão com o ID provou ser verdadeira.</p>
+<p> </p>
+<p>Também pesquisamos armas alimentadas pelo ID como uma contração futura.</p>
+<p> </p>
+<p>Mas como estávamos faltando provas decisivas, nossa pesquisa permaneceu infrutífera.</p>
+<p> </p>
+<p>Se pudéssemos usar essa oportunidade para obter uma amostra para servir de base para a arma, isso poderia aumentar tremendamente nossa pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega uma parte da arma enferrujada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, você trouxe as peças com você.</p>
+<p> </p>
+<p>Quando os cientistas asmodianos ouvem sobre isso, ficarão muito felizes!</p>
+<p> </p>
+<p>Essa dica valiosa certamente ajudará a pesquisar.</p>
+<p> </p>
+<p>E quando esse feito for reconhecido, talvez meu retorno ao pandaemonium seja aprovado imediatamente.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_STR_IDVritra_FOBJ_Ancient_warmachine] e remova um[%dic:STR_DIC_I_quest_28914a] e leve para [%dic:STR_DIC_N_LDF5_Giriltia_E].</p>[%collectitem]</step>
+</steps>
+<p>Remova uma parte da arma enferrujada do antigo protótipo da arma de guerra e leve -o com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Giriltia pediu que você obtenha um design para futuras pesquisas de armas da Asmodian.</p>
+<p> </p>
+<p>Depois de encontrar o antigo protótipo da arma de guerra, enquanto Giriltia pediu e trouxe de volta uma parte da arma enferrujada como um padrão, você foi agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

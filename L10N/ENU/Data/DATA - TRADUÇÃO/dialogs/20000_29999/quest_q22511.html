@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, mate [%dic:STR_DIC_M_LDF5A_B5_Fana] e [%dic:STR_DIC_M_LDF5A_B5_Fana_Kn_SN_63_An].</p>
+<p> </p>
+<p>Eles devem ser mortos imediatamente para destruir o campo de dragão.</p>
+<p> </p>
+<p>O dragão está constantemente capturando cidadãos da Reian para torná -los cidadãos de dragão.</p>
+<p> </p>
+<p>Você deve matá -los para que o número de cidadãos de dragão não aumente ainda mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o dragão e o líder Ellohum?</p>
+<p> </p>
+<p>Não era difícil determinar o líder do dragão.</p>
+<p> </p>
+<p>Aquele diante de quem todos os membros do dragão se curvaram deve ser seu líder.</p>
+<p> </p>
+<p>O que engana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou o oponente.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Graças à sua ajuda, este assentamento de dragão será destruído em breve [%username].</p>
+<p> </p>
+<p>Mesmo se não imediatamente.</p>
+<p> </p>
+<p>Quero aproveitar esta oportunidade para se estabelecer na vila afundada, onde posso estudar as ações do dragão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o dragão!</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_B5_Fana]([%2]/12)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_B5_Fana_Kn_SN_63_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Raky_E].</p></step>
+</steps>
+<p>Elimine o dragão na vila abandonada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Laki disse que, para destruir o abrigo da dragão, é preciso eliminar os seguidores do dragão junto com Ellohum, seu líder.</p>
+<p> </p>
+<p>Você eliminou os seguidores de dragão e ellohum. Quando você voltou, Laki disse que o abrigo em dragão foi completamente destruído, e ele lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

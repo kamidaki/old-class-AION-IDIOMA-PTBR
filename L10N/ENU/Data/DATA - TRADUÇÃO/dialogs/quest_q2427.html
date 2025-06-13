@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso começar tudo de novo: em algum lugar seguro e silencioso, onde não há espíritos, sem lefaristas-nada para ameaçar minha pesquisa.</p>
+<p> </p>
+<p>Quando os espíritos atacaram meu laboratório, peguei minhas poções e materiais de pesquisa. Eu queria salvá -los a todo custo.</p>
+<p> </p>
+<p>Coloquei as garrafas em uma caixa, atirei os materiais de pesquisa em um barril e fui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pensamento rápido! O que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Era demais para carregar. o [%dic:STR_DIC_OBJ_DF2_WoodenBox_Q2427] era especialmente pesado porque continha todo esse vidro. Eu tive que abaixá -lo.</p>
+<p> </p>
+<p>Eu carreguei o [%dic:STR_DIC_OBJ_DF2_Barrel_Q2427]Um pouco mais longe ... mas eu tive que escapar ... pensei em recuperar tudo mais tarde.</p>
+<p> </p>
+<p>Eu realmente preciso do[%dic:STR_DIC_I_QUEST_2427a] e o [%dic:STR_DIC_I_QUEST_2427b]. [%username], assumindo que eles sobreviveram, você os encontraria para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deixei o [%dic:STR_DIC_OBJ_DF2_WoodenBox_Q2427]contendo as garrafas medicinais em frente à porta do laboratório.</p>
+<p> </p>
+<p>Então eu escondi o [%dic:STR_DIC_OBJ_DF2_Barrel_Q2427]contendo os materiais de pesquisa perto do vagão abaixo da colina.</p>
+<p> </p>
+<p>Por favor, encontre -os para mim!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, não me decepcione! Eu realmente preciso da sua ajuda.</p>
+<p> </p>
+<p>Os Daevas podem viver para sempre, mas repetir o que você já fez é tudo menos fácil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu já fiz o suficiente. Azphelumbra, Kistig."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username]!</p>
+<p> </p>
+<p>Você encontrou o [%dic:STR_DIC_OBJ_DF2_WoodenBox_Q2427] Segurando minhas garrafas de remédios e o [%dic:STR_DIC_OBJ_DF2_Barrel_Q2427]de materiais de pesquisa? Eles estavam intactos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Aqui estão suas garrafas e materiais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os encontrou! Muito obrigado!</p>
+<p> </p>
+<p>Agora posso continuar minha pesquisa, tudo graças a você.</p>
+<p> </p>
+<p>Não sei como posso agradecer ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre os itens no[%dic:STR_DIC_OBJ_DF2_WoodenBox_Q2427] e o [%dic:STR_DIC_OBJ_DF2_Barrel_Q2427] e leve-os para [%dic:STR_DIC_N_Kistig].</p>[%collectitem]</step>
+</steps>
+<p>Kistig quer continuar sua pesquisa, mas deixou seus garrafas de remédios e materiais de pesquisa para trás quando fugiu. Vá buscar as garrafas e a pesquisa para que ele possa continuar seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Kistig escapou de seu laboratório, ele pegou garrafas de remédios e materiais de pesquisa. Os espíritos o atacaram enquanto ele corria, então ele abandonou tudo para salvar sua própria vida.</p>
+<p> </p>
+<p>Para ajudá -lo a continuar sua pesquisa, você foi às ruínas do laboratório e o trouxe de volta suas garrafas e pesquisas. Ele agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

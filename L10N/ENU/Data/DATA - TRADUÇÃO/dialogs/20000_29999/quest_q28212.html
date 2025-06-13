@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está um ingresso de arena, [%username]. Cada vez que você competir, você precisará apresentar um desses ingressos e só pode receber um por dia.</p>
+<p> </p>
+<p>Normalmente, você falaria com[%dic:STR_DIC_N_Reigar]Para obter seu ingresso, mas posso lhe dar o seu primeiro a começar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Obrigado, senhor!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, deixe -me ver o quão bem você entendeu as regras do coliseu Crisol.</p>
+<p> </p>
+<p>As ações falam mais alto que as palavras, então vamos começar.</p>
+<p> </p>
+<p>Derrote um oponente na arena!</p>
+<p> </p>
+<p>Não importa se você seleciona a arena da disciplina, a arena de veemência ou a arena da cooperação, ou se seus oponentes são Elyos ou Asmodians.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você preferir um duelo individual, entre na arena da disciplina. Se você deseja combater vários oponentes, entre na arena da veemência. Se você quer lutar em equipe contra duas equipes adversárias, entre na arena da cooperação.</p>
+<p> </p>
+<p>Cada arena tem sua própria entrada separada. Portanto, leia o nome da arena corretamente antes de começar.</p>
+<p> </p>
+<p>Você pode ter sucesso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caro oh querido. Bem, é melhor ficar assustado agora do que perceber seu erro quando você entra lá.</p>
+<p> </p>
+<p>Se você não vai competir, saia do caminho e pare de desperdiçar meu tempo. Eu tenho muitos outros Daevas para supervisionar. Estamos construindo um exército aqui. Não precisamos de excrementos Daru como você nos segurando.</p>
+<p> </p>
+<p>E eles disseram que você era um promissor [%userclass]. Não sei...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, senhor, eu ... não me importo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ele vive.</p>
+<p> </p>
+<p>Bem, devo dizer que estou surpreso ao vê -lo de volta aqui, mas sou capaz de dizer quando estava errado. Mas ... o que é? Algo aconteceu lá? Não é outro incidente, por favor, lorde Marchutan, não deixe ser ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz ok, mas encontrei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessante. Deixe -me dar uma olhada nisso. Não pode ser ...</p>
+<p> </p>
+<p>Ah, ah, sim. Muito bem e tudo isso. Você não acabou manchando no chão da arena. Eu acho que tenho algo aqui para recompensá -lo ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar um oponente no[%dic:STR_DIC_W_IDArena_pvp_D]([%2]/1).</p></step>
+<step><p visible="[%3]">Leve as insígnias ensanguentadas para [%dic:STR_DIC_N_Shinin].</p></step>
+</steps>
+<p>Use o bilhete da arena para entrar no coliseu Crisol e derrotar um oponente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provou para o instrutor Shinin que entende as regras do coliseu Crisol derrotando um oponente lá.</p>
+<p> </p>
+<p>Enquanto você se preparava para deixar a arena, você encontrou uma insígnia ensanguentada no chão, que deve ter sido descartada pelo seu oponente.</p>
+<p> </p>
+<p>Você mostrou as insígnias para Shinin, e ele parecia distraído e perturbado enquanto lhe deu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

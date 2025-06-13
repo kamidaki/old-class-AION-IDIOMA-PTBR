@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, o que! Oh. Você veio!</p>
+<p> </p>
+<p>Desculpe. Fui absorvido lendo essas ordens de Eltnen e não notei você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Posso perguntar quais são as ordens?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O conteúdo é muito sensível ... mas eu sei que posso confiar em você, [%username]. É um relatório sobre as atividades dos revolucionários de Viragos e lefaristas na montanha Kuriullu.</p>
+<p> </p>
+<p>Foi -me pedido para mantê -los sob vigilância constante e relatar tudo o que fazem, pois parecem estar de acordo com algum tipo de enredo nefasta. Já estamos esticados, vigiando a vila de Agairon, e agora temos que espionar os Viragos e os lefaristas. As coisas estão ficando cada vez piores.</p>
+<p> </p>
+<p>Por favor, mantenha isso um segredo absoluto. Os moradores podem entrar em pânico se descobrirem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu juro nas minhas asas, vou contar a ninguém."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, não tenho certeza de como podemos espioná -los. Não podemos enviar os guardiões da vila; Já estamos abreviados.</p>
+<p> </p>
+<p>[%username], você transmitiria minha mensagem para [%dic:STR_DIC_N_Ophelos]na mística primavera de Laquepin?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Por favor, pergunte [%dic:STR_DIC_N_Ophelos]Para ficar de olho nos revolucionários de Viragos e Lefa e relatar imediatamente quaisquer atividades suspeitas.</p>
+<p> </p>
+<p>A mística da primavera de Laquepin não está longe da montanha Kuriullu, então ele terá uma boa vantagem para a observação.</p>
+<p> </p>
+<p>Estou confiando em você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Agora mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu não posso forçá -lo a fazer isso. Sinto muito incomodá -lo com isso.</p>
+<p> </p>
+<p>Lembre -se de manter isso em segredo. Se os moradores soubessem sobre isso, ficariam muito nervosos. As coisas já estão trêmulas o suficiente por aqui sem mais más notícias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meus lábios estão selados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Até as molas místicas estão secando. Contamos com o poder deles para restaurar a terra.</p>
+<p> </p>
+<p>Lady Yustiel choraria se visse a devastação. Eu lamento a perda do elim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está um pedido do Centurion".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! É verdade?</p>
+<p> </p>
+<p>Hum. É por isso que já vi tantas pessoas por lá ultimamente.</p>
+<p> </p>
+<p>Bem. Não é um trabalho particularmente oneroso, por isso vou acompanhar e informar o Centurion Asclepius sobre quaisquer sinais suspeitos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Ophelos].</p></step>
+</steps>
+<p>Em nome do Centurion Asclepius, vá para a mística da primavera de Laquepin e peça a Ophelos para observar os movimentos dos revolucionários lefaristas e Viragos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Havia uma ordem da fortaleza de Eltnen para espionar os revolucionários lefaristas e Viragos na montanha Kuriullu.</p>
+<p> </p>
+<p>Como o Centurion Asclepius solicitou, você pediu a Ophelos na mística primavera de Laquepin que assumisse o dever. Ophelos aceitou de bom grado a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

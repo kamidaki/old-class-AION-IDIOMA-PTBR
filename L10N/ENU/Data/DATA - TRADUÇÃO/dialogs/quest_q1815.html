@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo o Centurion Minerva, os Asmodianos ampliarão sua guerra no abismo de sua base em Miren Fortaleza.</p>
+<p> </p>
+<p>Isso poderia interromper nossos próprios avanços. O que aconteceria se Reshanta caísse para o Balaur ou asmodianos?</p>
+<p> </p>
+<p>Temos que enganar essa nova ofensiva antes de começar!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é a estratégia de Minerva?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Minerva diz que o melhor caminho é esgotar a guarnição asmodiana no forte.</p>
+<p> </p>
+<p>Não podemos fazer isso com um ataque. Com muita facilidade. Mas um único soldado especialista pode entrar, e uma lâmina dentro das paredes pode prejudicar o [%dic:STR_DIC_M_1815_all]Onde muitas lâminas do lado de fora não podiam!</p>
+<p> </p>
+<p>Dos Daevas aqui, [%username], o seu é o nome no topo da lista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaah, um herói como você toma decisões sem hesitar.</p>
+<p> </p>
+<p>Realize sua missão sempre que a fortaleza Miren muda para o estado vulnerável enquanto estiver sob o domínio asmodiano.</p>
+<p> </p>
+<p>Matar o [%dic:STR_DIC_M_1815_all] e capturar o deles[%dic:STR_DIC_I_QUEST_1815a].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles nunca vão me ver chegando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], os asmodianos em breve encherão o céu aqui em massa.</p>
+<p> </p>
+<p>Se eu fosse você, gostaria de acabar com isso.</p>
+<p> </p>
+<p>Por favor, não me rejeite.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho outras batalhas para lutar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, Senhor [%username]!</p>
+<p> </p>
+<p>Você pegou o [%dic:STR_DIC_M_1815_all] em suas camas?</p>
+<p> </p>
+<p>Aqueles[%dic:STR_DIC_I_QUEST_1815a] S fará tróferos finos ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Foi isso que eu encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aah, isso é estranho.</p>
+<p> </p>
+<p>Eu confio na sua palavra, [%username], mas meus superiores têm menos fé em nós.</p>
+<p> </p>
+<p>Se você não me mostrar o [%dic:STR_DIC_I_QUEST_1815a] S, não posso liberar sua recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É maravilhoso vê -lo em ação, [%username].</p>
+<p> </p>
+<p>Espero poder lutar ao seu lado em campo algum dia. Vou entregar a insígnia ao Centurion Minerva.</p>
+<p> </p>
+<p>... e, é claro, diga a ela quem os tirou da fortaleza, [%username]. Não se preocupe!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_M_1815_all], colete [%dic:STR_DIC_I_QUEST_1815a], e leve-os para [%dic:STR_DIC_N_Sarpedon].</p>[%collectitem]</step>
+</steps>
+<p>Os asmodianos estão levando os Elyos em um canto com a poderosa fortaleza Miren Guarnição. Ambargue a guarnição Asmodiana quando a fortaleza muda para o estado vulnerável e interrompe esse ataque de asmodiano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sarpedon revelou que o mais recente ataque de asmodianos vem de Miren Fortaleza. Ele pediu que você ajudasse a interromper.</p>
+<p> </p>
+<p>Você emboscou a guarnição asmodiana e roubou suas insígnias. Sarpedon os trouxe com gratidão para o centurião e disse que você havia terminado a ameaça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

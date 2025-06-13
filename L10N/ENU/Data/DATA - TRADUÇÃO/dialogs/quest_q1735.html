@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado a você, [%username], temos um bom estoque de armas.</p>
+<p> </p>
+<p>Agora, podemos nos concentrar na armadura. Como as armas, também deve ser tratado.</p>
+<p> </p>
+<p>E, como antes, lamento dizer que não temos o suficiente ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você me faria reunir mais?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ficaria grato por ter qualquer problema que você possa fornecer!</p>
+<p> </p>
+<p>Desta vez, precisamos[%dic:STR_DIC_G_od_n_r_40a] S extraído de [%dic:STR_DIC_G_od_40_1].</p>
+<p> </p>
+<p>Vou precisar de peças maiores do que da última vez, mas tenho certeza de que você pode fornecê -las?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">"Aceitar."</act>
+<act href="HACTION_QUEST_REFUSE_1">"Declínio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu disse antes, encontre [%dic:STR_DIC_G_od_n_r_40a] S in[%dic:STR_DIC_G_od_40_1].</p>
+<p> </p>
+<p>Pode ser ainda mais difícil do que da última vez e exigirá maior habilidade para extraí -los.</p>
+<p> </p>
+<p>Sorte e luz estar com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sorte e luz, estejam com você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo por que você se recusa e já fez muito por mim.</p>
+<p> </p>
+<p>Se você reconsiderar, tenho certeza de que posso usar seu auxílio no futuro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o [%dic:STR_DIC_G_od_40_1]?</p>
+<p> </p>
+<p>Você trouxe o suficiente [%dic:STR_DIC_G_od_n_r_40a]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu trouxe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, não é suficiente!</p>
+<p> </p>
+<p>Sei que corro o risco de ser indelicado, mas a situação se torna urgente e pediria que você se apresse.</p>
+<p> </p>
+<p>Os asmodianos poderiam atacar a qualquer momento, afinal, e estaríamos desarmados, indefesos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu poderia lutar contra eles. Não tema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez um dia você se torne o Daeva de Aethertapping!</p>
+<p> </p>
+<p>Com tanto aether intocado, eu posso equipar toda a Guilda!</p>
+<p> </p>
+<p>Pegue esse sinal escasso de gratidão por toda a sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Extrair [%dic:STR_DIC_G_od_n_r_40a]de [%dic:STR_DIC_G_od_40_1] e trazê -lo para [%dic:STR_DIC_N_Cymaon].</p>[%collectitem]</step>
+</steps>
+<p>É necessário um éter primitivo para fazer armadura para o abismo. Extraia o Aether Pristine e leve -o para Cymaon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Cymaon disse que é necessário o Aether intocado para fazer armadura para o abismo. Ele disse que a armadura exigiria peças maiores de éter e maior habilidade para extraí -las.</p>
+<p> </p>
+<p>Então você extraiu o Aether Pristine do vórtice ardente e o trouxe para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

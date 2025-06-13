@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bubu Pat Lucky por estar vivo.</p>
+<p> </p>
+<p>Ela estava tão fria, com tanta fome quando você a trouxe de volta.</p>
+<p> </p>
+<p>Aqueles MosBears!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ela está segura agora. É isso que importa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não. Não é suficiente.</p>
+<p> </p>
+<p>Com os moscas, Bubu Pat nunca estará seguro.</p>
+<p> </p>
+<p>Você deve ajudar. Deve ajudar a caçar mosburos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Somos fracos, não os guerreiros gostam.</p>
+<p> </p>
+<p>Nunca poderia matar um mosaio sozinho.</p>
+<p> </p>
+<p>Por favor, caça [%dic:STR_DIC_M_Mosbear_37_An] Areia [%dic:STR_DIC_M_MosbearBaby_36_An] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A força vem de várias formas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bubu Pat acorda chorando todas as noites.</p>
+<p> </p>
+<p>Eu vou matar todos os mosais que vejo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você deve pensar isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Mosbears, MosBears!</p>
+<p> </p>
+<p>Ananta diz que eu não deveria odiar, mas Bubu Pat ...</p>
+<p> </p>
+<p>Você caçou mosburos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu limparia todos eles, se possível.</p>
+<p> </p>
+<p>Mas Bubu Pat estará mais seguro agora, graças a você.</p>
+<p> </p>
+<p>Você a ajudou a dormir. Eu nunca esqueço. Nunca!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os mosbos que estão incomodando Bubu Pat.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_Mosbear_37_An]([%2]/5).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_MosbearBaby_36_An]([%5]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_DF2_NPC_BumbumKong].</p></step>
+</steps>
+<p>Bubu Kong quer que os mosbos que atacassem sua filha sejam punidos. Você concordou em ajudá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bubu Kong disse que queria matar os moscas que atormentavam sua filha.</p>
+<p> </p>
+<p>Você caçou meios de mosca e bebê significam moscas enquanto ele perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

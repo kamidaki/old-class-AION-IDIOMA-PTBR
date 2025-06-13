@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso espiar a alma de outra pessoa com o poder do obelisco.</p>
+<p> </p>
+<p>O seu é tão claro e transparente quanto um cristal, Daeva.</p>
+<p> </p>
+<p>Juro os nomes dos cinco senhores Shedim. Mas há mais você deve saber.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Mais?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>As capacidades místicas do[%dic:STR_DIC_ELA16] São surpreendentes. O mais interessante é como ele pode gravar a alma de uma pessoa.</p>
+<p> </p>
+<p>O tribunal das sombras o proíbe, mas estou pesquisando como isso acontece.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que isso tem a ver comigo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Em você, vejo um grande poder. Poder o suficiente para quebrar as correntes que me impedem.</p>
+<p> </p>
+<p>Não se preocupe, não é a sua alma de que preciso, mas sua bravura. [%dic:STR_DIC_I_quest_2254a] S são necessários para provar minha teoria, e eles são ... difíceis de adquirir.</p>
+<p> </p>
+<p>Mas você pode recuperar as essências da alma com segurança, eu sei disso. Você vai ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Abaixo de nós, no Impetusium estão as almas errando, ainda tocando na vida.</p>
+<p> </p>
+<p>Os caídos foram formidáveis ​​guerreiros uma vez e protegem seus[%dic:STR_DIC_I_quest_2254a] S ferozmente.</p>
+<p> </p>
+<p>Tenha cuidado, Daeva. Eu não veria você se juntar a eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A ira daqueles perdidos repousa pesada em meus pensamentos. Eles não podem descansar, lutando contra todos os que se aproximam.</p>
+<p> </p>
+<p>Eu temo que você caia também, se eu falhar.</p>
+<p> </p>
+<p>Se você reconsiderar, estarei aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou assistir meu passo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou algum[%dic:STR_DIC_I_quest_2254a] S?</p>
+<p> </p>
+<p>Senti uma mudança no obelisco quando você se aproximou, como se a energia das almas estivesse diminuindo.</p>
+<p> </p>
+<p>Conte -me sobre seus esforços.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Foi como você disse ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles estavam entre os melhores de nós. Não há culpa no fracasso.</p>
+<p> </p>
+<p>Os mortos se apegam muito à sua meia existência. Nosso trabalho facilita seus encargos. Por favor, continue.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Só preciso recuperar o fôlego ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez bem. A coragem que vi foi real.</p>
+<p> </p>
+<p>Lembre -se, nossos esforços devem permanecer em segredo. O Tribunal das Sombras nos veria preso por nossas nobres intenções. Onde está a justiça nisso?</p>
+<p> </p>
+<p>Por favor, leve isso para selar nossa barganha. Não falaremos disso novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_2254a] e trazê -los para [%dic:STR_DIC_N_Andgar].</p>[%collectitem]</step>
+</steps>
+<p>Livre -se das almas em Impetússio para adquirir essências da alma para a pesquisa de Andgar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao conduzir pesquisas sobre o obelisco, Andgar começou a se preocupar com a escassez de materiais de pesquisa. Você caçou almas em impetússio para trazer essências da alma para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

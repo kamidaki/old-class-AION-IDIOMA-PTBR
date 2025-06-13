@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q16940</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conhece o Laboratório de Pesquisa de Baruna?</p>
+<p> </p>
+<p>Há rumores de que é um laboratório em que o Exército de Beritra realiza pesquisas sobre a tecnologia Abismo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_IDLDF4_Re_01_Ctesibius_E] esgueirou -se como um agente dos Daevas de Zephyr, ele enviou um grito de ajuda.</p>
+<p> </p>
+<p>[%username], por favor, vá até ele e ofereça sua ajuda a ele. Você pode entrar no laboratório de pesquisa de Baruna através do[%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]perto do campo da barreira da fissura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você chegou aqui apenas no tempo.</p>
+<p> </p>
+<p>Nossa posição aqui é tudo menos estável. Não temos muito tempo, então serei breve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre a situação em laboratório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode imaginar, o laboratório é um lugar muito perigoso. Portanto, não será fácil obter algo a partir daí.</p>
+<p> </p>
+<p>Você deve descobrir no que os estudiosos da equipe de investigação do Exército de Beritra estão trabalhando.</p>
+<p> </p>
+<p>O Laboratório de Pesquisa de Baruna é um edifício com três andares e oito quartos em cada andar. Mas não posso te dizer onde o [plur][%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An] São. Você tem que encontrá -los, porque eles têm o [%dic:STR_DIC_I_quest_16940a].</p>
+<p> </p>
+<p>Você deveria tomar o [%dic:STR_DIC_I_quest_16940a]para [%dic:STR_DIC_N_LDF4_Advance_Elger_E]. Ele está esperando por você em Akaron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+<cutscene id="899"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio do Laboratório de Pesquisa de Baruna do Exército de Beritra?</p>
+<p> </p>
+<p>Você tem o [%dic:STR_DIC_I_quest_16940a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o diário de pesquisa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, este é o diário de pesquisa sobre a nova tecnologia Balaur Abismo.</p>
+<p> </p>
+<p>Você obteve algo de grande valor para nós. Com base nesses registros, podemos descobrir como funciona a nova tecnologia Balaur Abismo.</p>
+<p> </p>
+<p>A tecnologia Balaur Abismo é muito mais desenvolvida do que a dos Elyos. Devemos alcançá -los.</p>
+<p> </p>
+<p>Muito obrigado pela sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]para chegar ao laboratório e conversar com[%dic:STR_DIC_N_IDLDF4_Re_01_Ctesibius_E].</p></step>
+<step><p visible="[%3]">Eliminar o [%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An], proteja o [%dic:STR_DIC_I_quest_16940a] e trazê -lo para [%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p>[%collectitem]</step>
+</steps>
+<p>Pegue o diário de pesquisa no Laboratório de Pesquisa de Baruna e leve -o ao Tribune Elger.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alphion encarregou você de obter o Abismo Research Journal do Baruna Research Laboratory e levá -lo ao vice -Elger.</p>
+<p> </p>
+<p>Elger agradeceu quando você trouxe o diário de pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

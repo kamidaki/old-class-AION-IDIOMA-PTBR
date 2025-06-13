@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe por que essa região se chama Theobomos?</p>
+<p> </p>
+<p>AHA! Eu posso ver pelo seu rosto que você não. É o nome de um Daeva que governou esse lugar muito antes do cataclismo.</p>
+<p> </p>
+<p>Ele é tão conhecido por sua sabedoria que até os Senhores Empíreanos pediram seus conselhos.</p>
+<p> </p>
+<p>Mas, infelizmente, ele morreu durante o cataclismo. Dizem que ele foi morto em combate com o próprio Senhor Dragão Fegion.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Realmente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma razão para esta lição de história. Eu tenho algo a perguntar a você.</p>
+<p> </p>
+<p>Uma ordem especial foi emitida pelo Santum para começar a escavar a fortaleza onde Theobomos costumava viver, procurando qualquer coisa que possa ser pré-catacllysm.</p>
+<p> </p>
+<p>O problema é que a fortaleza foi abandonada há tanto tempo que a fortaleza entrou em colapso e não há nada para encontrar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece que você pode ir para casa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem ... talvez não. Eu estava lutando contra alguns dos seres mágicos que continuavam interrompendo nossa escavação, e eles lançaram peças de estátua enquanto fugiam.</p>
+<p> </p>
+<p>Parece datar o tempo de Theobomos. Talvez devêssemos recolher um pouco mais antes de desistir de esperança.</p>
+<p> </p>
+<p>[%username], você vai me ajudar, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Kirris, Cariatídeos, estátuas e Petahulks na fortaleza de Theobomos parecem levar as peças da estátua.</p>
+<p> </p>
+<p>Se você me trazer peças suficientes, eu lhe darei essa moeda de platina como recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem um acordo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, por que você me deixou acertar assim se você apenas diria não?</p>
+<p> </p>
+<p>Fora de você vai. Vou encontrar alguém que está realmente interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]!</p>
+<p> </p>
+<p>A julgar por toda essa sujeira, você deve ter ido à fortaleza de Theobomos.</p>
+<p> </p>
+<p>Conceda-me as peças da estátua e descanse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu poderia jurar que pedi mais do que isso.</p>
+<p> </p>
+<p>Já estou atrasado. Você vai se apressar e pegar essas peças de estátua?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Opa-meu erro!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Coletamos tantas peças de estátua e ainda não posso começar a compreender sua forma original. Deve ter sido enorme!</p>
+<p> </p>
+<p>Acho que vou precisar de ainda mais peças se quiser começar a reuni -las.</p>
+<p> </p>
+<p>Haverá mais moedas de platina para você se você decidir me ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os seres mágicos em Theobomos Stronghold, colete peças da estátua e as leve a Guneus.</p>[%collectitem]</step>
+</steps>
+<p>Guneus é responsável por escavar a fortaleza de Theobomos e pediu que você lhe trazia algumas das peças da estátua que as criaturas da fortaleza coletaram.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Guneus lhe contou a história por trás do nome Theobomos e pediu que você ajudasse a escavação de Theobomos Stronghold.</p>
+<p> </p>
+<p>Como ele solicitou, você matou Kirrins, Cariatids, estátuas e Petahulks e trouxe suas peças de estátua, em troca da qual ele lhe deu uma moeda de platina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

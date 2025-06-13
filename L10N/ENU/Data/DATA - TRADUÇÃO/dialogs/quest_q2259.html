@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_DireBeast_18_An] está me dando uma dor de cabeça!</p>
+<p> </p>
+<p>Eles geralmente ficam na vila de Claw Black, mas agora continuam atacando os vagões que fornecem o site de reconstrução!</p>
+<p> </p>
+<p>Eu gostaria de ir lá e acabar com eles. Não posso, porém, porque tenho que ficar e supervisionar este lugar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizem que eles não atacam um oponente mais forte do que são-espera! Eu tenho uma ideia que os fará tremer de medo!</p>
+<p> </p>
+<p>[%username], por favor, caça -os e traga -me algo que posso usar para mostrar que somos mais fortes do que eles.</p>
+<p> </p>
+<p>Eu acho que um[%dic:STR_DIC_I_quest_2259a]deve mostrar aqueles Taygas que são o chefe. Vou pendurar na carroça para atingir o medo em seus corações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode encontrar [%dic:STR_DIC_M_DireBeast_18_An] S no[%dic:STR_DIC_W_DF1A_30].</p>
+<p> </p>
+<p>Eles ficam perto da vila a maior parte do tempo, mas tenha cuidado! A vila é a cova da tribo mortal da garra negra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você estiver muito ocupado, não se preocupe com isso. Vamos apenas encontrar outro Daeva para nos ajudar.</p>
+<p> </p>
+<p>Talvez eu apenas vá lá e faça isso sozinho. Isso vai mostrar -os!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tente não se matar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, onde está aquele vagão? Isso continua acontecendo por causa daqueles infernos[%dic:STR_DIC_M_DireBeast_18_An] S!</p>
+<p> </p>
+<p>Então, você trouxe a presa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o Tayga Fang que você precisava."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda está aqui?</p>
+<p> </p>
+<p>Por favor, vá buscar as presas-não temos tempo para desperdiçar. Eu só preciso de um!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ai! Esta presa é muito nítida! Não é de admirar que esses Taygas causem tanto dano.</p>
+<p> </p>
+<p>Muito obrigado. Vou pendurar isso na carroça imediatamente. Isso deve mostrar a eles quem é o chefe por aqui.</p>
+<p> </p>
+<p>Aqui está um sinal de minha apreciação por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga uma presa para [%dic:STR_DIC_N_Gulkalla].</p>[%collectitem]</step>
+</steps>
+<p>Você foi informado de que Taygas Wild atacou os vagões que vão ao Impetusium. Adquira um Wild Tayga Fang para enviar uma mensagem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Taygas selvagens estavam atacando os vagões que carregavam materiais para impetusium.</p>
+<p> </p>
+<p>Gulkalla pediu que você pegasse uma presa Tayga selvagem para que ele pudesse assustar os Taygas. Você pegou uma presa e a trouxe para Gulkalla.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O inimigo lançará um grande ataque no Abismo quando a fortaleza de Miren for capturada.</p>
+<p> </p>
+<p>Poderíamos sustentar grandes danos quando esse ataque começar.</p>
+<p> </p>
+<p>Mas nós, a Guilda Cinzenta do Vento, não permitiremos que isso aconteça.</p>
+<p> </p>
+<p>Devemos capturar a fortaleza, impedir o principal ataque e alterar a situação de guerra a nosso favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos em particular estão recrutando forças armadas em larga escala para se preparar para um grande ataque.</p>
+<p> </p>
+<p>É por isso que está claro quem devemos atacar: os ASModian Miren Guardians!</p>
+<p> </p>
+<p>Mas eles são bastante fortes. Portanto, não será fácil infligir danos críticos em um único golpe. É por isso que devemos enfraquecer seu poder através de repetidos ataques.</p>
+<p> </p>
+<p>Não podemos romper as linhas inimigas sozinhas ...</p>
+<p> </p>
+<p>O que você acha, [%username]? Você está pronto para matar o [%dic:STR_DIC_E_1241_guard_Da_fi]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Vamos esperar até que os asmodianos capturem Miren Fortaleza. Vamos atacar assim que eles ocuparem a fortaleza.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_E_1241_guard_Da_fi] e tirar o seu[plur][%dic:STR_DIC_I_QUEST_1863a].</p>
+<p> </p>
+<p>A fortaleza está de perto. Portanto, tenha cuidado!</p>
+<p> </p>
+<p>Venha e devolva -me assim que você concluir a missão.</p>
+<p> </p>
+<p>[%username], se você é bem -sucedido, podemos iniciar a próxima operação imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso principal objetivo é capturar a fortaleza de Miren.</p>
+<p> </p>
+<p>[%username], Eu esperava que você nos ajudasse ...</p>
+<p> </p>
+<p>Você não poderia reconsiderar? Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>O ataque planejado à fortaleza Miren foi bem -sucedido?</p>
+<p> </p>
+<p>Você tem o [plur][%dic:STR_DIC_I_QUEST_1863a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os Kisks do Arconte de Miren.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Há uma razão pela qual eu pedi para você reunir os Kisks.</p>
+<p> </p>
+<p>Os oponentes podem ressuscitar novamente usando kisks. Todos os esforços do nosso lado serão inúteis se continuarem usando os Kisks.</p>
+<p> </p>
+<p>Então vá buscar o [plur][%dic:STR_DIC_I_QUEST_1863a]. Seria bom se você pudesse lidar com isso antes que os oponentes ressuscitem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos sofreram uma grande derrota. Isso os manterá ocupados por um tempo.</p>
+<p> </p>
+<p>A missão foi concluída com sucesso. Agora podemos continuar realizando a operação sem dificuldades.</p>
+<p> </p>
+<p>Agora você ganhou um descanso.</p>
+<p> </p>
+<p>Devo preparar meu povo para os próximos passos do plano.</p>
+<p> </p>
+<p>Lealdade e armas!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_E_1241_guard_Da_fi], junte a prova e leve -o para [%dic:STR_DIC_N_Monerva].</p>[%collectitem]</step>
+</steps>
+<p>Derrote os A Asmodian Miren Guardians depois que os asmodianos capturam a fortaleza Miren, colecionam Miren Archon Kisks e os trazem para Minerva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Minerva criou um plano para recuperar a fortaleza de Miren e alterar a situação de guerra. Seu plano era atacar os asmodianos que estavam guardando a fortaleza.</p>
+<p> </p>
+<p>Você eliminou os A Asmodian Miren Guardians para Minerva e levou seus Kisks. Minerva estava orgulhosa de sua conquista e encantou que o plano dela tivesse funcionado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

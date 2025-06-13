@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Nosso lado em Inggison se beneficiará de nossa ocupação do altar da avareza.</p>
+<p> </p>
+<p>Mas há problemas em Akaron. A chegada das tropas de reforço está sendo adiada lá.</p>
+<p> </p>
+<p>O plano se parece com isso. Atacamos Akaron para que as forças de luta de Elyos não possam ser destacadas para o altar da avareza.</p>
+<p> </p>
+<p>[%username], sua tarefa é ir para Akaron agora. Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_E_Rafflesia_65_An]na rota de marcha da tropa da expedição. O inimigo o descobrirá e se distrairá.</p>
+<p> </p>
+<p>É perigoso, mas não impossível. Você vai aceitar a missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta missão é difícil.</p>
+<p> </p>
+<p>Mas se você o concluir com sucesso, será adequadamente recompensado.</p>
+<p> </p>
+<p>O plano funcionou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Imagine como estamos perto da vitória em Inggison! Tudo isso se resume a você sozinho.</p>
+<p> </p>
+<p>Temos que estar preparados para atacar imediatamente se os Elyos receberem reforços.</p>
+<p> </p>
+<p>Você concluiu a tarefa de maneira confiável. Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF4_Advance_E_Rafflesia_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Clique em[%dic:STR_DIC_S_Quest_Get_Reward]no periódico da missão ou Fale com [%dic:STR_DIC_N_Fundin].</p></step>
+</steps>
+<p>Atenda ao pedido de Fundin derrotando os Malodors do Vale Path!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que o altar da avareza foi conquistado, Fundin encarregou você de viajar para Akaron.</p>
+<p> </p>
+<p>Em Akaron, você partiu para a rota da tropa da expedição. Você derrotou os Malodors do Valley Path enquanto estava lá.</p>
+<p> </p>
+<p>Você recebeu uma recompensa por concluir com sucesso esta tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

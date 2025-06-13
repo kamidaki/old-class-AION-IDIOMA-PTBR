@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O superintendente Shulack e Skurv são um espinho no meu lado. Você deve matá -los.</p>
+<p> </p>
+<p>Eles não são adiantados.</p>
+<p> </p>
+<p>[%username], por favor, mate o [%dic:STR_DIC_M_LDF5A_C1_Ratman_Gather_63_n] e o [%dic:STR_DIC_M_LDF5A_C1_Shulack_Keep_63_An].</p>
+<p> </p>
+<p>Eles e o Krall uniram forças com o Balaur uma vez.</p>
+<p> </p>
+<p>Você nunca sabe quando eles nos esfaquearão nas costas trabalhando para o Balaur Beritra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o coletor de Nyunyu e o superintendente do rubiriner?</p>
+<p> </p>
+<p>Eles devem unir forças com o Balaur e nos colocar em perigo.</p>
+<p> </p>
+<p>Você deve dar atenção às minhas palavras.</p>
+<p> </p>
+<p>Repito, eles são como morcegos. Você realmente deve matá -los agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso era absolutamente necessário.</p>
+<p> </p>
+<p>Eles parecem inofensivos agora, mas se se unirem, se tornarão uma força poderosa.</p>
+<p> </p>
+<p>Você também trabalhou para o Balaur uma vez.</p>
+<p> </p>
+<p>Graças aos seus esforços, [%username], podemos desfrutar de alguma paz de espírito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate qualquer pessoa que possa simpatizar com o Balaur.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_C1_Ratman_Gather_63_n]([%2]/6)</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5A_C1_Shulack_Keep_63_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5a_Nargel_E].</p></step>
+</steps>
+<p>Mate o coletor de Nyunyu e o supervisor da fazenda, que poderia cooperar com o Beritra Balaur mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nargel disse que os Shulack originalmente eram inimigos do Skurv, que apoiavam o Balaur junto com o Krall. Mas agora o trabalho Shulack para Beritra, que pode representar um problema.</p>
+<p> </p>
+<p>Conforme solicitado, você matou o Nyunyu Gatherer e o Shulack, bem como o supervisor da fazenda rubiária, completando assim a tarefa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

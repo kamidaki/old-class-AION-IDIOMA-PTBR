@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q27009</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem da Guilda, todas as missões que precisam ser realizadas foram distribuídas entre os membros da Guilda. A missão da Guilda está completa apenas quando todos terminarem suas tarefas.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para o Runadium e mate [%dic:STR_DIC_M_LDF5_Under_Rune_FrostNmd_2_N_Ma_65_Ah_nouse].</p>
+<p> </p>
+<p>Em seguida, relate -se ao Asmodae Battlemaster, [%dic:STR_DIC_N_Kellin].</p>
+<p> </p>
+<p>- Legions Board -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos membros da Guilda devem participar para garantir que sua missão das legiões seja um sucesso, [%username].</p>
+<p> </p>
+<p>O centurião está colocando todas as suas esperanças em você, [%username].</p>
+<p> </p>
+<p>Você destruiu Grendal?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tínhamos grandes esperanças para você, e você certamente não decepcionou.</p>
+<p> </p>
+<p>[%username], com apenas um último empurrão, você e os outros membros da Guilda podem concluir a tarefa da Guilda.</p>
+<p> </p>
+<p>Esta é uma pequena recompensa da Guilda. Por favor, aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5_Under_Rune_FrostNmd_2_N_Ma_65_Ah_nouse]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Kellin].</p></step>
+</steps>
+<p>Missão da Guilda: Você recebeu ordens para matar Grendal the Rune Witch. Completar a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você matasse Grendal the Rune Witch.</p>
+<p> </p>
+<p>Você participou de matar Grendal the Rune Witch para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

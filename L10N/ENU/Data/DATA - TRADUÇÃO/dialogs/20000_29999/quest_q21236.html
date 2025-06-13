@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Filth Borth, Muck à espreita, abominância de Sandstorm obscuras! As criaturas estão ao redor do templo das escalas, e seu incessante tagarelando e mexendo está me levando a uma raiva ... uma raiva muito mais aterrorizante do que é costume!</p>
+<p> </p>
+<p>Não consigo me concentrar em planejar a morte e o caos com eles girando perto da base fora!</p>
+<p> </p>
+<p>Mas sempre que vou lá para matar as criaturas e parar na raquete, seus números reabastecem antes mesmo de voltar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu notei isso acontecendo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou no final do meu juízo, [%username]. Preciso de paz e sossego para elaborar um plano para defender o templo das escalas.</p>
+<p> </p>
+<p>Eu preciso que você vá lá e erradique as tempestades de areia obscuras. Apenas fique o mais próximo possível para que eu possa ouvi -los lamentar enquanto eles morrem. Isso me dá todos os tipos de pensamentos calorosos e confusos ... até me lembra minha infância.</p>
+<p> </p>
+<p>Bem? Você está pronto, ou não?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... eu já posso ouvir as criaturas uivando em agonia quando a existência deles é apagada ... e agora sinto vontade de abraçar ...</p>
+<p> </p>
+<p>Isso não é um convite, [%username].</p>
+<p> </p>
+<p>Mas há algum número de [plur][%dic:STR_DIC_M_LF4_C_Shadowstalker_Sand_55_An]vagando do lado de fora que você poderia cuidar.</p>
+<p> </p>
+<p>Elimine o maior número possível e traga -me suas almas negras como prova. Claro, também tenho uma recompensa por você se você cumprir meu humilde pedido, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arghhh! Sinto meu controle sobre a sanidade escorregando.</p>
+<p> </p>
+<p>Em breve ... sim ... muito em breve essa raiva aterrorizante será demais para controlar.</p>
+<p> </p>
+<p>Eu recomendo que você vá embora ... agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou ... muito rapidamente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Meu irmão Krizarid matou uma Guilda inteira de Balaur hoje!</p>
+<p> </p>
+<p>Se não fosse por aquelas tempestades de areia obscuras, eu já teria elaborado esse plano e estaria me divertindo também!</p>
+<p> </p>
+<p>Embora as criaturas tenham se acalmado nos últimos minutos ... você foi a causa disso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu sou-ele são as almas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é que eu não confie em você, [%username]... Mas não posso simplesmente lhe dar uma recompensa sem nenhuma prova.</p>
+<p> </p>
+<p>Então, depois de matar o [%dic:STR_DIC_M_LF4_C_Shadowstalker_Sand_55_An], lembre -se de trazer de volta as almas negras.</p>
+<p> </p>
+<p>Um por obscura, faz 20 no total!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta ... de novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente 20.</p>
+<p> </p>
+<p>Você realmente trabalhou duro, [%username].</p>
+<p> </p>
+<p>Eliminar toda a tempestade de areia obscura será um desafio, mas fomos capazes de manter os danos às nossas tropas no mínimo, graças à sua ajuda.</p>
+<p> </p>
+<p>Espero que você continue prestando serviços para o templo das escalas no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue as almas negras de [%dic:STR_DIC_M_LF4_C_Shadowstalker_Sand_55_An] para [%dic:STR_DIC_N_Kirhua].</p>[%collectitem]</step>
+</steps>
+<p>Kirhua quer que você mate as tempestades de areia obscuras ao redor do templo de escamas. Salve sua sanidade e ajude -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kirhua disse que a raquete causada pela tempestade de areia obscuras ao redor do templo das escalas estava impedindo -a de criar um plano de defesa.</p>
+<p> </p>
+<p>Você erradicou as obscuras irritantes e voltou com suas almas negras como prova. Kirhua agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

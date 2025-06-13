@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Grynos olha silenciosamente por um tempo.)</p>
+<p> </p>
+<p>Eu realmente não gosto de falar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Nem eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, eu também não tenho muitos amigos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, eu tenho amigos, pelo menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Emprestei algo a alguém que eu pensava ser um amigo, e ele não o devolveu.</p>
+<p> </p>
+<p>Você recuperaria para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O nome do cara é[%dic:STR_DIC_N_Ixion]. Ele está na cratera de espirro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou falar com ele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Justo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio aqui de propósito? Realmente? Aqui? Uau.</p>
+<p> </p>
+<p>Eu sou ixion. Prazer em conhecê-lo. Você gosta aqui? Eu gosto aqui.</p>
+<p> </p>
+<p>Você quer saber como sair? É isso que todo mundo que vem aqui me pergunta porque eles não gostam aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Grynos queria que eu falasse com você ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, essa equipe antiga? Ou, espere, é este? Definitivamente esse.</p>
+<p> </p>
+<p>Peguei emprestado quando quebrei minha perna. Doía. A perna, não a equipe.</p>
+<p> </p>
+<p>Mas então eu esqueci de devolvê -lo! Eu sou um amigo tão ruim. E uma pessoa má.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Não, eu vou levar de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou Ixion?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu recuperei sua equipe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso. Obrigado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Ixion].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Grynos].</p></step>
+</steps>
+<p>Ixion pegou emprestado uma equipe de Grynos e não o devolveu. Encontre Ixion e peça a ele a equipe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Grynos disse que queria algo que emprestou a Ixion.</p>
+<p> </p>
+<p>Você encontrou Ixion e ele lhe deu a equipe para voltar, então você o levou de volta a Grynos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

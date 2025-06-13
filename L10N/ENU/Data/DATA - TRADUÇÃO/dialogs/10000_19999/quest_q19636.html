@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username].</p>
+<p> </p>
+<p>Eu quero lhe dar a tarefa de tornar os Theobomos mais seguros.</p>
+<p> </p>
+<p>Por favor, elimine o [plur][%dic:STR_DIC_M_LF2A_CyclopsServant_48_An]ou o [plur][%dic:STR_DIC_M_LF2A_MaidengolemY_48_An].</p>
+<p> </p>
+<p>Se você os destruir, a paz deve retornar a Theobomos por um tempo.</p>
+<p> </p>
+<p>Até agora, temos seus esforços para agradecer por isso.</p>
+<p> </p>
+<p>Relatório à protetora do campo Aetico[%dic:STR_DIC_N_Atropos] Assim que você concluir a tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Não te vejo há muito tempo, [%username].</p>
+<p> </p>
+<p>Banariner e Ionse me disseram que você tem sido uma força real na reconstrução e salvaguarda de Theobomos.</p>
+<p> </p>
+<p>Você conseguiu realizar a última tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que ajudou a tornar Theobomos mais seguro.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Vou te dar a última ajuda alimentar que o Santum nos forneceu.</p>
+<p> </p>
+<p>Os habitantes de todos os teobomos estão em sua dívida, [%username].</p>
+<p> </p>
+<p>Mas o perigo para Theobomos está longe de terminar. Inimigos perigosos ainda se escondem por toda a região.</p>
+<p> </p>
+<p>Você me promete que voltará um dia e nos ajudará mais uma vez? Todos vamos esperar pelo seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LF2A_CyclopsServant_48_An]ou o [plur][%dic:STR_DIC_M_LF2A_MaidengolemY_48_An]no[%dic:STR_DIC_W_LF2B_SZ_B4]([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Atropos]no[%dic:STR_DIC_W_LF2B_SZ_A_Town].</p></step>
+</steps>
+<p>Termine sua tarefa para tornar os Theobomos mais seguros e depois retorne ao ATROPOS.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ionse pediu que você eliminasse o punho de pedra Petrahulks ou Port Cariatids em Theobomos.</p>
+<p> </p>
+<p>Depois de eliminar os monstros, você encontrou atropos e recebeu uma recompensa.</p>
+<p> </p>
+<p>A Atropos disse que estava em sua dívida e pediu mais ajuda, porque ainda havia muitas coisas a serem feitas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

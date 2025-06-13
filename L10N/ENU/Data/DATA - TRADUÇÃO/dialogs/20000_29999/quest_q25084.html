@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas venha aqui! Hee Hee ... eu tenho um emprego para você, então ouça.</p>
+<p> </p>
+<p>Pegue alguns[%dic:STR_DIC_I_quest_25084a] e trazê -lo para [%dic:STR_DIC_N_DF5_Coli_E].</p>
+<p> </p>
+<p>Ele está ficando sem suprimentos!</p>
+<p> </p>
+<p>Infelizmente, ele não tem tempo.</p>
+<p> </p>
+<p>Por favor, cuide disso o mais rápido possível!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é?</p>
+<p> </p>
+<p>Eu perguntei um favor a você, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a carne do lobnite do deserto.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>É isso [%dic:STR_DIC_I_quest_25084a]?</p>
+<p> </p>
+<p>Por que você reuniu muito disso?</p>
+<p> </p>
+<p>Só será uma coisa ruim se eu tiver muito.</p>
+<p> </p>
+<p>Quem diabos instruiu a perder seu tempo assim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu havia te pedi alguma coisa?</p>
+<p> </p>
+<p>Na verdade, não preciso de nada em particular no momento ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Suprimentos para o acampamento?</p>
+<p> </p>
+<p>Uh, não. Isso estava certo. Só não ouça, Colir disse.</p>
+<p> </p>
+<p>Quando penso nisso ... acho que é a hora certa. Hee hee ...</p>
+<p> </p>
+<p>Há alguém que gostaria de pedir a você um favor especial.</p>
+<p> </p>
+<p>Vou lhe dizer para onde você precisa ir e você seguir o seu caminho o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é?</p>
+<p> </p>
+<p>Eu nunca vi você fazer essa expressão facial, [%username].</p>
+<p> </p>
+<p>Por favor, me diga o que aconteceu.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que aconteceu até agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso correu bem.</p>
+<p> </p>
+<p>Obviamente, existem pessoas entre nós, cujos pensamentos estão sendo controlados por Beritra.</p>
+<p> </p>
+<p>Temos que reforçar nossas medidas de segurança no interior para impedir que algo assim aconteça novamente.</p>
+<p> </p>
+<p>Beritra provavelmente quer nos destruir de dentro para fora.</p>
+<p> </p>
+<p>Mas chegamos tão longe, para que não vamos nos deixar derrubar agora!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_N_DF5_Coli_E] Alguns[%dic:STR_DIC_I_quest_25084a].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Zake_E].</p></step>
+<step><p visible="[%6]">Vá para o [%dic:STR_DIC_W_DF5_SensoryArea_Q25084].</p></step>
+<step><p visible="[%9]">Relatório para [%dic:STR_DIC_N_DF5_Bastan_E].</p></step>
+</steps>
+<p>Jake disse que eles tinham muito poucos suprimentos e, portanto, pediu que você obtenha alguma carne de lobnite no deserto. Realize o pedido de Jake.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Jake, o acampamento tem suprimentos. Ele pediu para você se apossar de alguma carne de lobnite no deserto.</p>
+<p> </p>
+<p>Você obteve a carne do lobnite do deserto e a trouxe para Colir. Colir disse que tinha suprimentos suficientes e que muita carne iria apodrecer desnecessariamente.</p>
+<p> </p>
+<p>Ele chamou isso de total perda de tempo. Você então foi encontrar Jake novamente. Jake o enviou para um local especial onde alguém queria se encontrar com você.</p>
+<p> </p>
+<p>Você estava no local que Jake falou quando de repente você foi atacado por combatentes do exército de Beritra, mas foi capaz de derrotá -los.</p>
+<p> </p>
+<p>Você foi procurar Bastan e disse a ele o que aconteceu. Ele chegou à conclusão de que precisava fortalecer as medidas de segurança no interior.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

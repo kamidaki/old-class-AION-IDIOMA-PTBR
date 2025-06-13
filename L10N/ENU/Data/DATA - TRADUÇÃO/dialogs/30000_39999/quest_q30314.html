@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja aqui, [%username]. Na verdade, eu estava procurando por você-há algo que eu queria perguntar.</p>
+<p> </p>
+<p>Estou ciente de sua reputação há algum tempo-você é o tópico de conversa em todo o Pandaemonium, e essa conversa inevitavelmente viaja aqui também.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Boa conversa, espero."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom. Na verdade, eu gostaria de fazer de você uma oferta que certamente será digna de alguém com suas habilidades.</p>
+<p> </p>
+<p>Há uma grande variedade de problemas com os quais devemos lidar aqui em Gelkmaros, e preciso de alguém com quem possa contar para enfrentar o mais importante deles. Eu gostaria que fosse você.</p>
+<p> </p>
+<p>Se você puder fazer isso, é claro que você será recompensado adequadamente. Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Para cada missão importante da fortaleza que você completar, você receberá um[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01].</p>
+<p> </p>
+<p>Colete o suficiente, e terei prazer em recompensá-lo com um item único-um cinto especial que aumentará ainda mais suas habilidades. Vou aguardar seu retorno.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O cinto é meu!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm .... não tão ambicioso quanto eu pensava.</p>
+<p> </p>
+<p>O cinto que ofereço é mais do que apenas um acessório, você sabe. É um símbolo de honra que permite que os outros saibam dos serviços meritórios de seu portador.</p>
+<p> </p>
+<p>Mas suponho que não posso evitar se você não buscar essa honra.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho outro trabalho a fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua expressão me diz que você concluiu todas as missões importantes que mencionei. Isso é verdade? Isso foi rápido-clim, foi a decisão certa de escolhê-lo.</p>
+<p> </p>
+<p>Vire os decretos e você terá sua recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles-todos deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito ocupado para a tolice, [%username]. Há muito trabalho a ser feito.</p>
+<p> </p>
+<p>Que tal você voltar quando você coletou todo o [%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe incomodá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para um Daeva comum, teria sido uma provação de coletar todos esses decretos, mas para você foi sem dúvida uma tarefa fácil.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Use bem.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01] e leve-os para [%dic:STR_DIC_N_Barretta].</p>[%collectitem]</step>
+</steps>
+<p>Complete uma série de missões importantes para Valetta e traga decretos de volta, como prova para receber um item valioso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valetta disse que ficou impressionada com sua reputação e se ofereceu para recompensá -lo por concluir uma série de missões importantes.</p>
+<p> </p>
+<p>Ao concluir as missões que você coletou decretos, que você trocou por um cinto valioso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

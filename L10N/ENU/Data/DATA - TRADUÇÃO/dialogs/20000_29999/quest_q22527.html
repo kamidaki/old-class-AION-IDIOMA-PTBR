@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um contêiner para armazenar algo. Parece bastante velho.)</p>
+<p> </p>
+<p>(Parece ser importante. Deve ser trazido para [%dic:STR_DIC_N_LDF5A_Serip_E] e identificado).</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso ajudar?</p>
+<p> </p>
+<p>Estou bem no meio de investigar o Beritra e estou ocupado o suficiente como ele é ...</p>
+<p> </p>
+<p>É melhor ser importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o contêiner.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, parece ser um recipiente, mas não é nada que o Exército de Beritra usa.</p>
+<p> </p>
+<p>Eu preciso descobrir o que é.</p>
+<p> </p>
+<p>Talvez seja algum tipo de recipiente de teste usado pelo Exército de Tiamat ...</p>
+<p> </p>
+<p>De qualquer maneira, muito obrigado por me trazer. Eu avisarei você assim que tiver um resultado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5A_Serip_E].</p></step>
+</steps>
+<p>Traga o contêiner vazio obtido por coincidência para serif.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Por acaso, você obteve um recipiente vazio. Você o trouxe para Serif porque parecia importante.</p>
+<p> </p>
+<p>Serif queria dizer que tipo de item esse contêiner é depois de inspecioná -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

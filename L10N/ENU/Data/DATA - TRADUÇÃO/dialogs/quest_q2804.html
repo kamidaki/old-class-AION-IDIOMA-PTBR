@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Elyos Banners sobre a fortaleza ocidental de Siel ... faz minha mão de espada treme.</p>
+<p> </p>
+<p>Bem, o tempo se aproxima para consertar as coisas. Uma fortaleza é mais vulnerável quando está em estado vulnerável.</p>
+<p> </p>
+<p>Nossos inimigos sabem disso, então eles convocam tropas ainda mais poderosas para defendê -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso não é ruim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos começaram um[%dic:STR_DIC_M_2804_all].</p>
+<p> </p>
+<p>Tais guarnições são particularmente difíceis de lidar, mas uma vez que racham ...</p>
+<p> </p>
+<p>Eu esperava que você pudesse quebrá -los, [%username]. O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espionar a fortaleza. Atacar o [%dic:STR_DIC_M_2804_all]Defendendo -o assim que entrar em estado vulnerável e não poupa ninguém, até os novatos.</p>
+<p> </p>
+<p>Traga o deles[%dic:STR_DIC_I_QUEST_2804a]é para mim como prova.</p>
+<p> </p>
+<p>A guarnição de elite é poderosa, mas um Daeva qualificado, pode arruiná -los, [%username] e, assim, os Elyos vão lutar. Sangue para sangue!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Caminhe na sombra de Azphel, Azlak."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você rejeita meu pedido?</p>
+<p> </p>
+<p>Não, não me diga. Vê -lo assustado com algo assim ... prefiro ser ignorante.</p>
+<p> </p>
+<p>Eu acreditava em você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Você está voltando da fortaleza?</p>
+<p> </p>
+<p>Como estão os[%dic:STR_DIC_M_2804_all] e deles[%dic:STR_DIC_I_QUEST_2804a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"O que resta deles está aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que, não havia inimigos na fortaleza ocidental de Siel?</p>
+<p> </p>
+<p>Pare de falar e concentre -se em sua missão.</p>
+<p> </p>
+<p>Esmagar o [%dic:STR_DIC_M_2804_all] e pegue o deles[%dic:STR_DIC_I_QUEST_2804a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para lutar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você era o certo para o trabalho! Um pouco sujo, talvez, mas não pior para o desgaste.</p>
+<p> </p>
+<p>Ótimo trabalho. Nossa recuperação da fortaleza ocidental de Siel está agora preparada!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_2804_all] e trazer a prova para [%dic:STR_DIC_N_Aslak].</p>[%collectitem]</step>
+</steps>
+<p>É necessária ajuda para recuperar a fortaleza ocidental de Siel. Quando a fortaleza entrar em estado vulnerável, derrote sua guarnição de Elyos e retorne com suas nobres insígnias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aslak disse que quer recuperar a fortaleza ocidental de Siel, quebrando o moral de Elyos.</p>
+<p> </p>
+<p>Você espiou a fortaleza e, quando a Elite Elyos Guarnição apareceu, você os atacou. Você voltou a Aslak com as nobres insígnias como troféus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

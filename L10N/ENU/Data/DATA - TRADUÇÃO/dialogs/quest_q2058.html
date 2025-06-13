@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradecemos seu entusiasmo em investigar os lefaristas, mas você não se concentrou o suficiente no quadro geral.</p>
+<p> </p>
+<p>Esmbulando o seu caminho para a base deles apenas para tentar resgatar algum humano heretic tolo? Isso foi estúpido.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu fiz o que precisava."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a mina de Malek e encontre -se com o espião[%dic:STR_DIC_N_Stua] em segredo. Seja especialmente cuidadoso com o fato de Stua não estar exposto. Caso contrário, tudo não foi por nada.</p>
+<p> </p>
+<p>Com sua ajuda, misture -se com os revolucionários lefaristas e se infiltra no Alquimia Research Center, onde os humanos estão sendo transformados em Daevas.</p>
+<p> </p>
+<p>Depois de se infiltrar no centro de pesquisa, destrua o [%dic:STR_DIC_OBJ_DF3_powerplant_Q2058]para que eles não possam mais experimentar os seres humanos.</p>
+<p> </p>
+<p>Caso contrário, basta seguir [%dic:STR_DIC_N_Stua]Instruções. Ah, e pegue isso. Você pode evocar um ajudante. Espero que você ache isso útil.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou fazer o que vejo em forma."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio me ajudar? Eu estive esperando por você.</p>
+<p> </p>
+<p>Eu estava esperando alguém para contar aos arcons a localização do Alquimia Research Center, que eles querem destruir.</p>
+<p> </p>
+<p>No começo, eu queria fazer isso sozinho, mas me ocorreu que meu disfarce atual era bom demais para se infiltrar nos revolucionários lefaristas.</p>
+<p> </p>
+<p>Você poderia fazer isso por mim, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu recebo resultados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, se "obtenha resultados", você quer dizer "deixe uma trilha de cadáveres". Você vai gostar desta missão, então. Você consegue explodir coisas.</p>
+<p> </p>
+<p>Temos que tirar o [%dic:STR_DIC_OBJ_DF3_powerplant_Q2058]Portanto, nossas forças podem destruir o laboratório. Você precisará se disfarçar com esse uniforme para entrar no dirigível.</p>
+<p> </p>
+<p>Por favor, tente não soprar sua capa matando pessoas, ok?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Esse disfarce teve um trabalho melhor."</act>
+</selects>
+<voice file="Q2058-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O ataque foi vitorioso. Afinal, você não é um agente secreto tão ruim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Hmph. Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explodir o Alquimia Research Center deveria ter acabado com esses hereges ... em Beluslan, pelo menos. Vou contar ao Pandaemonium sobre o bom trabalho que você fez aqui. Vou deixar de fora as peças onde você estragou tudo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar -se [%dic:STR_DIC_N_Trista].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Stua].</p></step>
+<step><p visible="[%6]">Infiltrar o [%dic:STR_DIC_SEN_DF3_SensoryArea_Q2058] Através do[%dic:STR_DIC_OBJ_DF3_Airportdoor_In]. Não estrague sua capa!</p></step>
+<step><p visible="[%9]">Encontre o [%dic:STR_DIC_OBJ_DF3_AlquimiaDoor_In]. [%dic:STR_DIC_OBJ_DF3_powerplant_Q2058]([%11]/1).</p></step>
+<step><p visible="[%12]">Escapar do centro de pesquisa e enviar um[%dic:STR_DIC_I_QUEST_2058a] Sinal para iniciar o ataque.</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Trista].</p></step>
+</steps>
+<p>Os juízes das sombras estão investigando o movimento lefarista em Beluslan. Relatório a Tristran para ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tristran pediu que você se encontrasse e trabalhasse um espião estacionado perto dos lefaristas. Você se disfarçou como lefarista e se infiltrou no centro de pesquisa. Conforme ordenado, você destruiu o gerador de energia, escapou e disparou o sinal de sinal.</p>
+<p> </p>
+<p>Depois que o sinal foi disparado, os arcontes de espera deixaram uma bomba de Aether no topo do centro de pesquisa, destruindo -o.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com um livro encontrado na costa de Alisary, em Theobomos, o petralith estava sendo pesquisado no laboratório.</p>
+<p> </p>
+<p>É por isso que enviei um pesquisador para explorar o laboratório Theobomos. Mas não pude entrar em contato com ela ultimamente.</p>
+<p> </p>
+<p>[%username], você poderia, por favor, ir para o arqueólogo[%dic:STR_DIC_N_Pyrrha]? Ela é eu quem explora o laboratório.</p>
+<p> </p>
+<p>Mas não é fácil chegar lá. No seu caminho, você terá que eliminar [%dic:STR_DIC_M_LF2A_TesinonNamedQ1_50_An], Assim, [%dic:STR_DIC_M_LF2A_TesinonNamedQ2_50_An], Assim, [%dic:STR_DIC_M_LF2A_TesinonNamedQ3_50_An] e [%dic:STR_DIC_M_LF2A_TesinonNamedQ4_50_An]Para chegar ao laboratório.</p>
+<p> </p>
+<p>Se você encontrar Pyrrha, diga a ela que estou preocupado com a segurança dela porque não posso entrar em contato com ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Pelo bem de Old Class Aion!</p>
+<p> </p>
+<p>Fiquei assustado porque não consigo ver mais ninguém aqui.</p>
+<p> </p>
+<p>Você veio explorar o laboratório Theobomos?</p>
+<p> </p>
+<p>Há um livro contendo conhecimento secreto no laboratório secreto. Eu sugiro que você procure este livro misterioso junto com alguns aliados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Ahem ... Atropos me enviou ...</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você deve ter vindo aqui a pedido da Atropos, sim?</p>
+<p> </p>
+<p>Aparentemente, houve dificuldades por causa das armas.</p>
+<p> </p>
+<p>Não se preocupe. Vou visitar atropos.</p>
+<p> </p>
+<p>Desde que você me encontrou, gostaria de recompensá -lo. Por favor, aceite isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua quatro armas a caminho do laboratório de Theobomos.</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_M_LF2A_TesinonNamedQ1_50_An]([%2]/1).</p>
+<p visible="[%0]">Destruir [%dic:STR_DIC_M_LF2A_TesinonNamedQ2_50_An]([%5]/1).</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_M_LF2A_TesinonNamedQ3_50_An]([%8]/1).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_LF2A_TesinonNamedQ4_50_An]([%11]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Pyrrha].</p></step>
+</steps>
+<p>Destrua as quatro armas a caminho do laboratório de Theobomos e encontre -se com o arqueólogo Pyrrha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Atropos estava preocupado porque ele não podia mais entrar em contato com o arqueólogo Pyrrha. Então ele o enviou ao laboratório Theobomos para procurar Pyrrha.</p>
+<p> </p>
+<p>No seu caminho, você teve que limpar a primeira arma Pahan, a segunda arma Nahan, a terceira arma Lezahan e a quarta arma Dorhan, fora do seu caminho. Você encontrou Pyrrha e contou a ela sobre as preocupações de Atropos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

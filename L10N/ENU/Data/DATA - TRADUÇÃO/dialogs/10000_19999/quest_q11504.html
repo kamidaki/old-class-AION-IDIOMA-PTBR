@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q11504</questid>
+<questname>브락스 잡기</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe o que eles dizem: nunca trabalha com animais e nunca trabalhe com crianças. Então, o que eu faço? Venho aqui, estudo a vida selvagem e trabalho ao lado de shuos, escolhendo assim os dois. Estou bêbado com minha própria estupidez, [%username].</p>
+<p> </p>
+<p>Eu tenho criado certas espécies vegetais, na esperança de incentivar certas características a surgirem como características. Está indo bem, ou melhor, estava indo bem. Então o [%dic:STR_DIC_M_LDF4A_A1_Brax_DR_56_n] es rolou e começou a mastigar minha pesquisa.</p>
+<p> </p>
+<p>Eu quero o suficiente deles mortos para que os outros se espalhem. Você pode ajudar, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Talvez eu devesse ter criado minhas plantas para que elas desenvolvessem folhas venenosas ou espinhos! Devo olhar para isso ....</p>
+<p> </p>
+<p>Como você fez?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem o suficiente. Os Braxes se foram."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Obrigado!</p>
+<p> </p>
+<p>Não sinta pena deles, [%username]. Braxes são criaturas notavelmente resilientes e se recuperam em breve. Esperançosamente em algum lugar que não esteja aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Abate o [%dic:STR_DIC_M_LDF4A_A1_Brax_DR_56_n] está pastando onde a de Ristiel[%2]/12).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Risotiel].</p></step>
+</steps>
+<p>Os Bainsgrazer Braxes estão se alimentando da pesquisa de Ristiel. Dissuadi -los de continuar antes que seu trabalho seja perdido completamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ristiel, pesquisador da Reian, voltou -se para você em busca de ajuda depois de vê -la trabalhar lentamente destruída pela migração de Braxes. Você matou o suficiente deles para forçar os outros a se dispersar, salvando assim seu trabalho e ganhando sua recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

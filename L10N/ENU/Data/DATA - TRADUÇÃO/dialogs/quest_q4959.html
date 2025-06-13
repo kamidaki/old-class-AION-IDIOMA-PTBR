@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O especialista em alquimia é um título honroso concedido a Daevas que mostra excelentes habilidades em alquimia.</p>
+<p> </p>
+<p>[%username], por causa de seu serviço estudioso e talento natural, você merece o título.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Este é outro teste?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há mais testes, mas se você se tornar um especialista, sempre deve usar sua capacidade de ajudar a Atreia.</p>
+<p> </p>
+<p>Como você sabe, a atitude mental é importante na alquimia. Ao contrário de outras áreas de artesanato, a alquimia aproxima a essência da vida. Se você ficar ganancioso, poderá se encontrar com um fim trágico.</p>
+<p> </p>
+<p>O que você acha? Você quer receber o título de especialista?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve obter aprovação do governador [%dic:STR_DIC_N_Vidar], embora isso seja apenas uma formalidade.</p>
+<p> </p>
+<p>Eu escrevi uma carta de recomendação para você. Leve -o para Vidar e receba o título. Em seguida, participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, meu obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito modesto. Ou talvez você não ache que as honras sejam importantes.</p>
+<p> </p>
+<p>Se você quer ser um mestre e talvez me sucedê um dia, precisará do título.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou terrivelmente ocupado no momento ...</p>
+<p> </p>
+<p>Se você não precisar absolutamente minha atenção, consulte Skadi ou Kvasir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Governador, tenho uma carta de Honir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você atingiu um nível considerável de excelência, [%username]. Suas habilidades apoiarão muitos asmodianos.</p>
+<p> </p>
+<p>Agora, volte para [%dic:STR_DIC_N_Honir], ofereça seus respeitos e peça a ele novamente para ensinar. Então, você pode realmente se chamar de "especialista".</p>
+<p> </p>
+<p>Parabéns!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>O mestre da Alchemy Honir recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O mestre da alquimia Honir acreditava que você tinha a atitude mental de se tornar um especialista em alquimia.</p>
+<p> </p>
+<p>Com a carta de recomendação de Honir, você foi ao governador Vidar para receber o título.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

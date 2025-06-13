@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que o ritual for realizado, você poderá convocar a alma novamente usando o poder puro de sua própria voz.</p>
+<p> </p>
+<p>Retornar ao[%dic:STR_DIC_OBJ_DF5_E_FOBJ_headstone_01]para convocar [%dic:STR_DIC_N_DF5_Zagmus_E].</p>
+<p> </p>
+<p>Pergunte a ele mais uma vez sobre o tesouro dos reis antigos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você cuida disso.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Este é o monumento eremita.)</p>
+<p> </p>
+<p>(Parece chamar seu nome.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você se volta para o monumento.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você, Outlander.</p>
+<p> </p>
+<p>Você pode ter acabado de me convocar, mas minha ligação tocou para você há muito tempo.</p>
+<p> </p>
+<p>Você me parece ter um coração confiável.</p>
+<p> </p>
+<p>É por isso que gostaria de pedir um favor a você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta que tipo de favor é.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vi você conversando com outro aquano.</p>
+<p> </p>
+<p>Se era sobre o tesouro dos reis antigos, eu posso ajudá -lo.</p>
+<p> </p>
+<p>Vá para o lugar onde eu o lidei e procure o [%dic:STR_DIC_OBJ_DF5_FOBJ_chest_Q25051a].</p>
+<p> </p>
+<p>Lá você encontrará uma pista para o local onde pode encontrar o tesouro dos reis antigos.</p>
+<p> </p>
+<p>Mas pode ser perigoso para você.</p>
+<p> </p>
+<p>Você não deve confiar nos outros aquans, mas chamar apenas seus próprios aliados para obter ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Parece ser a caixa de lembrança de Zagus.)</p>
+<p> </p>
+<p>(Você o abre e encontra um mapa dentro.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você retira o mapa.</act>
+<act href="HACTION_FINISH_DIALOG">Você fecha a caixa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta caixa está no local marcado no mapa.)</p>
+<p> </p>
+<p>(Pode ser a caixa do tesouro.)</p>
+<p> </p>
+<p>(Mas também pode ser uma armadilha.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você abre a caixa.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu?</p>
+<p> </p>
+<p>Você e Soglo descobriram alguma coisa enquanto isso?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que aconteceu até agora.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é assim que é.</p>
+<p> </p>
+<p>Vou contar a Soglo sobre isso.</p>
+<p> </p>
+<p>Que lenda interessante. Os reis antigos ...</p>
+<p> </p>
+<p>Mas ainda estou me perguntando se esse tesouro dos reis antigos realmente existe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Invocar [%dic:STR_DIC_N_DF5_Zagmus_E]no[%dic:STR_DIC_OBJ_DF5_E_FOBJ_headstone_01].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Zagmus_E].</p></step>
+<step><p visible="[%6]">Procure o [%dic:STR_DIC_I_quest_25051a]no[%dic:STR_DIC_OBJ_DF5_FOBJ_chest_Q25051a].</p></step>
+<step><p visible="[%9]">Encontre o [%dic:STR_DIC_OBJ_DF5_FOBJ_chest_Q25051b]marcado no mapa.</p></step>
+<step><p visible="[%12]">Encontrar -se [%dic:STR_DIC_N_DF5_Rolelf_E].</p></step>
+</steps>
+<p>Soglo pediu que você convocasse o eremita Zagus para obter sua ajuda para encontrar o tesouro dos reis antigos. Vá para o monumento eremita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Soglo pediu que você convocasse o eremita Zagus para obter sua ajuda para encontrar o tesouro dos reis antigos.</p>
+<p> </p>
+<p>O eremita Zagus concordou em ajudá -lo na busca pelo tesouro dos reis antigos.</p>
+<p> </p>
+<p>Você encontrou a caixa de lembrança de Zagus, que continha um mapa. A localização do tesouro foi marcada no mapa.</p>
+<p> </p>
+<p>Você foi ao local marcado no mapa e descobriu uma caixa. Quando você abriu a caixa, no entanto, um monstro apareceu e o atacou.</p>
+<p> </p>
+<p>Você voltou ao Rolef e contou a ele sobre o que aconteceu. Ele achou a história muito emocionante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

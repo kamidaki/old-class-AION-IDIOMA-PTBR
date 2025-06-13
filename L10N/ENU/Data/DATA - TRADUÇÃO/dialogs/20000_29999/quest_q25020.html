@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso pedir um favor a você?</p>
+<p> </p>
+<p>Deveria ser benéfico para você também, e é por isso que eu gostaria de tentar.</p>
+<p> </p>
+<p>Por favor, obtenha [plur][%dic:STR_DIC_I_quest_25020a]dos aquans.</p>
+<p> </p>
+<p>Não sei qual é a sua opinião sobre os aquans, [%username], mas eles são o assunto de nossa pesquisa, afinal.</p>
+<p> </p>
+<p>Estudar suas armas pode produzir informações valiosas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caramba! Você me deu um susto.</p>
+<p> </p>
+<p>Oh, é você, [%username].</p>
+<p> </p>
+<p>Eu estava me perguntando quando você voltaria, mas eu não estava contando vê -lo tão em breve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as armas aquáticas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>São essas armas aquáticas reais?</p>
+<p> </p>
+<p>Isso é incrível. Quem jamais pensaria que sua civilização era tão avançada ...</p>
+<p> </p>
+<p>Claro, não era tão excepcional quanto o dos asmodianos, mas eu certamente não esperava isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede esclarecimentos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou nenhum[plur][%dic:STR_DIC_I_quest_25013a] Ainda?</p>
+<p> </p>
+<p>Lembre -se de que a tropa da expedição não pode esperar para sempre.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>São essas armas aquáticas reais?</p>
+<p> </p>
+<p>Isso é incrível. Quem jamais pensaria que sua civilização era tão avançada ...</p>
+<p> </p>
+<p>Claro, não era tão excepcional quanto o dos asmodianos, mas eu certamente não esperava isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede esclarecimentos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, sou biólogo, mas minha pesquisa também abrange civilizações antigas.</p>
+<p> </p>
+<p>Às vezes, acho útil conhecer os dois campos.</p>
+<p> </p>
+<p>É por isso que estudo outras civilizações com bastante frequência.</p>
+<p> </p>
+<p>As armas aquáticas parecem estar imbuídas de algum tipo de mágica. Você não pode fazer nada como eles com ferramentas normais.</p>
+<p> </p>
+<p>Mas talvez eles possuam tecnologias sofisticadas.</p>
+<p> </p>
+<p>Quando cheguei aqui, fiquei preocupado por ficar entediado a maior parte do tempo. Mas parece que há muito mais trabalho para mim aqui do que pesquisar criaturas microscópicas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [plur][%dic:STR_DIC_I_quest_25020a]para [%dic:STR_DIC_N_DF5_Kanovi_E].</p>[%collectitem]</step>
+</steps>
+<p>Canob pediu que você obtenha armas aquáticas para ele. Cumprir seu pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Canob quer pesquisar a civilização do Aquan em maior profundidade e pediu que você obtenha algumas de suas armas.</p>
+<p> </p>
+<p>Ao estudar as armas, Canob descobriu que os aquans aparentemente possuíam uma tecnologia incrível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe comida?</p>
+<p> </p>
+<p>Eu acho que posso morrer de fome se não conseguir comida em breve.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vou te dar um pouco de comida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não consegui forragear por causa de todos os moscas por perto.</p>
+<p> </p>
+<p>Eu colecionei um pouco de comida ontem, mas está de volta ao meu antigo local. Se você pudesse conseguir isso por mim, eu seria capaz de comer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pode haver moscas nas proximidades, então tenha muito cuidado.</p>
+<p> </p>
+<p>É uma cabana com uma cerca ao redor. Se você der uma olhada em volta, deve encontrar alguns dos meus[%dic:STR_DIC_OBJ_FoodPouch_Q2527] es.</p>
+<p> </p>
+<p>Não sei quanto tempo terei que me esconder aqui, então, por favor, me pegue cinco deles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não veio aqui para me ajudar?</p>
+<p> </p>
+<p>Se eu não conseguir comida logo, terei que sair daqui, moscas ou sem moscas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso voltar dessa maneira."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Obrigado ... Aion.</p>
+<p> </p>
+<p>Minhas mãos estão tremendo de fome. Acho que nunca estive tão faminto antes.</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_OBJ_FoodPouch_Q2527] es?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh yum! Mmm ... mmm ... gmph.</p>
+<p> </p>
+<p>Obrigado! Quando recuperar minhas forças, vou me orientar e escapar desses moscas estúpidas.</p>
+<p> </p>
+<p>Se eu viver para ver minha tribo novamente, é por sua causa, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Suas mãos estão vazias.</p>
+<p> </p>
+<p>Oh, você não foi lá, não é?</p>
+<p> </p>
+<p>Se você pudesse sentir o quanto estou com fome, você entenderia. Por favor me traga o [%dic:STR_DIC_OBJ_FoodPouch_Q2527] es o mais rápido possível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou. Eu prometo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_OBJ_FoodPouch_Q2527] es e leve-os para [%dic:STR_DIC_N_Gark].</p>[%collectitem]</step>
+</steps>
+<p>Gark está morrendo de fome enquanto se esconde de Mosbears. Pegue sacos de comida da casa de Sprigg e leve -os para o Gark.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gark disse que estava morrendo de fome enquanto se escondia de Mosbears. Ele pediu que você recuperasse alguns sacos de comida que ele colecionara em sua casa e levá -los a ele.</p>
+<p> </p>
+<p>Quando você trouxe os sacos de comida para Gark, ele comeu alegremente e recuperou sua força. Ele disse que encontraria uma maneira de sobreviver.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

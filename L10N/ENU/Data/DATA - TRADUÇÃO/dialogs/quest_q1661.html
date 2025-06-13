@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos tão preocupados com o Balaur no quartel de Indratu que acho que consideramos o Krall como certo.</p>
+<p> </p>
+<p>Eles não são apenas tropas de linha de frente para o Balaur.</p>
+<p> </p>
+<p>Eles estão tramando algo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como o que?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Krall tem um talento especial para destilar odium, mas aqui, acho que eles estão forjando uma arma.</p>
+<p> </p>
+<p>Eles têm algo que parece uma forja. Eu tentei investigar, mas eles me enxamearam. Eu tive que recuar.</p>
+<p> </p>
+<p>Somos um post de observação, não uma fortaleza. Se o Krall desenvolver uma nova arma, seremos seu primeiro alvo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você tem certeza de que é uma arma?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não tenho certeza de nada. É por isso que quero que você faça uma missão de espionagem.</p>
+<p> </p>
+<p>Retornar depois de espionar o [%dic:STR_DIC_W_SensoryArea_Q1661A], Assim, [%dic:STR_DIC_W_SensoryArea_Q1661B], e [%dic:STR_DIC_W_SensoryArea_Q1661C].</p>
+<p> </p>
+<p>Precisamos saber como o Krall está processando Odium e o que eles estão fazendo com ele. Uma vez que sabemos disso, podemos nos defender.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrará o [%dic:STR_DIC_W_SensoryArea_Q1661A] Atrás de um totem de quatro chifres no fundo da vila de Kishar.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_W_SensoryArea_Q1661B] está em uma colina à direita da forja da arma. Ele emite fumaça verde e tem dois moinhos de vento. Por trás da refinaria de Odium está o [%dic:STR_DIC_W_SensoryArea_Q1661C].</p>
+<p> </p>
+<p>Esse é o seu caminho-a arma forjando, depois a refinaria e, finalmente, a armadura forja.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhar, [%username], temos Balaur aqui em Hion!</p>
+<p> </p>
+<p>Eles estão puxando as cordas. Você acha que o Krall descobriu como fazer armas de Odium sozinhas?</p>
+<p> </p>
+<p>Você deve ver como isso é importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez outra vez, Piros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo esse negócio de ódio é ameaçador, se você me perguntar.</p>
+<p> </p>
+<p>O que você aprendeu, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"As forgens pareciam comuns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>As forjas eram ... apenas forjas normais? O Odium era como o odium que você já viu antes?</p>
+<p> </p>
+<p>Algo está errado. Os Krall pegaram o ritmo de seus ataques. E o que está fazendo aquela fumaça verde?</p>
+<p> </p>
+<p>Vai demorar mais do que apenas uma missão de observação para chegar ao fundo disso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Espionar os movimentos do Kishar Krall.</p>
+<p visible="[%3]">Espião no[%dic:STR_DIC_W_SensoryArea_Q1661A].</p>
+<p visible="[%6]">Espião no[%dic:STR_DIC_W_SensoryArea_Q1661B].</p>
+<p visible="[%9]">Espião no[%dic:STR_DIC_W_SensoryArea_Q1661C].</p></step>
+<step><p visible="[%12]">Relatar o resultado[%dic:STR_DIC_N_Piros].</p></step>
+</steps>
+<p>Um novo conjunto de foragens foi avistado na vila de Kishar. Investigue o que está acontecendo.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="16" showframe="true" time="5">Spying on the Weapon Forge complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="32" showframe="true" time="5">Spying on the Odium Refinery complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="48" showframe="true" time="5">Spying on the Weapon Forge and Odium Refinery complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="64" showframe="true" time="5">Spying on the Armour Forge complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="80" showframe="true" time="5">Spying on the Weapon Forge and Armour Forge complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="96" showframe="true" time="5">Spying on the Odium Refinery and Armour Forge complete.</notify>
+<notify color="yellow" fontsize="16" pos="2" progress="112" showframe="true" time="5">Spying complete. Report to Piros.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Piros descobriu recentemente uma estranha fumaça verde, subindo da vila de Kishar, e ele pediu que você espiasse a refinaria de odium e as foragens, porque o Krall poderia estar fazendo uma nova arma por Ódio.</p>
+<p> </p>
+<p>Você espiou as estruturas e voltou a relatar que não havia atividade suspeita, mas Piros ainda estava preocupado com o fato de haver algo errado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

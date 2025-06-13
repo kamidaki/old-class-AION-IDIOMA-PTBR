@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]... Você voltou e ainda assim ... tão cheio de vida.</p>
+<p> </p>
+<p>Sua aura ... envelope ao seu redor. Você ... parece bem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu sou, elot."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro ... apesar do seu trabalho ... ainda somos atormentados ... por Wriggots. Eles não têm predadores ... aqui ... então o ressurgimento deles é sempre inevitável ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa da minha ajuda de novo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Somente se ... é oferecido ... jovem Daeva.</p>
+<p> </p>
+<p>Não posso exigir ajuda ... de você ... quando você já fez ... tanto.</p>
+<p> </p>
+<p>Dito isto ... é você quem melhor sabe ... como derrotar o [%dic:STR_DIC_MLA54] S ... Então, talvez seja melhor você aceitar isso ... de novo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente....</p>
+<p> </p>
+<p>Eu não posso ... obrigado o suficiente. Essas criaturas ... em breve desaparecerão de Verteron ... e só então seremos capazes de descansar ... pacificamente.</p>
+<p> </p>
+<p>Mate os ... Wriggots e traga -me o [%dic:STR_DIC_QILA87] eles costumam ... consumir nossa seiva.</p>
+<p> </p>
+<p>Boa sorte ... meu filho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem.</p>
+<p> </p>
+<p>Você jogou sua parte ... [%username]. Não posso ... exigir que você faça mais por nós ... quando outros não fizeram nada.</p>
+<p> </p>
+<p>Volte para nós se ... você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, elote."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais uma vez o [%userclass]... retorna.</p>
+<p> </p>
+<p>Você fez como eu perguntei ... [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não ... isso não está certo ....</p>
+<p> </p>
+<p>Meus irmãos ... ainda sofrem ... [%username]. Você deve matar esses ... Wriggots terríveis e voltar ... para mim com o [%dic:STR_DIC_QILA87] eles usam ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ouve o ... vento? As árvores ... elas estão agradecendo você ... [%username]. Devemos muito a você ... mas pode oferecer pouco mais do que nossa amizade.</p>
+<p> </p>
+<p>Vamos ... ajudá -lo quando pudermos. Isso eu prometo ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Wriggots e traga de volta o [%dic:STR_DIC_QILA87]como prova.</p>[%collectitem]</step>
+</steps>
+<p>Wriggots estão sugando a seiva das árvores ao redor do solo sagrado e as matando lentamente. Mate os Wriggots e leve suas vilosidades para evasão.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As árvores ao redor do solo sagrado de Miraju estavam morrendo por espalhar um número de wriggots.</p>
+<p> </p>
+<p>A pedido do Elim Elote, você matou vários Wriggots e trouxe de volta as vilosidades que eles costumavam sugar a seiva da árvore como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

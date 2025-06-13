@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva está procurando algo?</p>
+<p> </p>
+<p>Então Daeva deve ouvir de perto o Gyabrunerk, Akakak!</p>
+<p> </p>
+<p>Gyabrunerk tem certeza de que tem o que Daeva precisa.</p>
+<p> </p>
+<p>Novo item especialmente importante. Shugo tem certeza porque Shugo falou com a Guilda Golada, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Qual é o item?</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_2">
+<contents cdata="true">
+<html>
+<body>
+<p>Gyabrunerk não é um shugo de contar histórias, mas ...</p>
+<p> </p>
+<p>Gyabrunerk quer dizer a Daeva que há uma tábua de pedra gravada no templo que tem algo a ver com essa situação, Akakak.</p>
+<p> </p>
+<p>Daeva descobrirá em breve o que significa Shugo, Akakak.</p>
+<p> </p>
+<p>Todos os Shugos sabem que Shugo não deve doar tudo muito cedo nas negociações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva quer saber mais, AK?</p>
+<p> </p>
+<p>Talvez seja algo que Daeva esteja procurando, AK? Talvez algo que pareça um pedaço de parede, Akakak?</p>
+<p> </p>
+<p>Daeva já descobriu isso?</p>
+<p> </p>
+<p>Se Shugo dá fragmentos de parede para Daeva, Daeva cumprirá o pedido de Shugo, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Akakakak! Como Daeva sabe, os Shugos trabalham em minas e sites de escavação, AK.</p>
+<p> </p>
+<p>Os Shugos ficam em segundo plano para manter -se fora de perigo.</p>
+<p> </p>
+<p>Se Daeva pode matar o [plur][%dic:STR_DIC_M_QUEST_3326], Daeva receberá os fragmentos da parede, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estranho, Ak ... Shugo pensou que Daeva precisava de fragmentos de parede, Akakak.</p>
+<p> </p>
+<p>Se Daeva não os quer, não há nada a ser feito, AK!</p>
+<p> </p>
+<p>Shugo não lida com Daeva não querer, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva matou os Caltrops, ânfas e Gnarls que estavam à espreita no deserto à espera de Shugos, AK?</p>
+<p> </p>
+<p>Shugo não pode verificar isso, mas Daeva certamente não mentiria para o pobre Shugo, Akakak.</p>
+<p> </p>
+<p>Especialmente se Daeva quiser fazer os fragmentos da parede, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, Shugos pode passar pelo deserto com segurança novamente, AK.</p>
+<p> </p>
+<p>Espero que eles realmente se foram, Akakak.</p>
+<p> </p>
+<p>Obrigado pelos esforços de Daeva, AK.</p>
+<p> </p>
+<p>Aqui estão os fragmentos da parede, Ak. Daeva deve usá -los, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_QUEST_3326]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_LF2_9].</p></step>
+</steps>
+<p>Gyabrunerk sabe que você precisa dos fragmentos da parede de pedra. Ele prometeu lhe dar um se você matasse as criaturas do deserto que estão atacando os Shugos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gyabrunerk tinha fragmentos de parede em sua posse. Ele prometeu entregá -los a você se você cumprisse o pedido dele.</p>
+<p> </p>
+<p>Então você matou as criaturas à espreita e recebeu os fragmentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

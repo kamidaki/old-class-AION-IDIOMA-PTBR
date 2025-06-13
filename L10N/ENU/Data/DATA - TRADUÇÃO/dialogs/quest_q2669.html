@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Estudar revolucionários lefaristas foi o meu trabalho, mas eu nunca esperava ser sequestrado por eles. Não estamos seguros, mesmo em Pandaemonium?</p>
+<p> </p>
+<p>Havia algo ameaçador-muito perto do segredo deles-em meus livros ...?</p>
+<p> </p>
+<p>Bem ... a coisa mais importante agora é escapar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, vamos sair daqui!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Este lugar está rastejando com os lefaristas ...</p>
+<p> </p>
+<p>Espero que você fique comigo até ficarmos livres deste lugar horrível.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Avise -me quando estiver pronto.</p>
+<p> </p>
+<p>Você lidera-eu vou seguir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos lá. Fique perto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Como você pode me abandonar assim?  Por que você me libertou apenas para me deixar morrer?</p>
+<p> </p>
+<p>Você não se importa, não é?</p>
+<p> </p>
+<p>Você é tão ruim quanto os lefaristas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mas eu não sou!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vejo que não é suficiente estudar sua ideologia ... a partir de agora, focarei meus estudos em como derrotá -los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Pressa!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, é você, [%username]!</p>
+<p> </p>
+<p>Como está o Atla? Ela fez isso em segurança?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Alta voltou ao seu trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão aliviado. Você se saiu muito bem.</p>
+<p> </p>
+<p>Espero que Atla tenha tido a chance de observar enquanto ela estava lá ... podemos ganhar uma idéia sobre o que eles estão fazendo.</p>
+<p> </p>
+<p>Em seguida, estaremos a caminho de erradicar a praga lefarista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Atla]Quando você estiver pronto para sair.</p></step>
+<step><p visible="[%3]">Escolta [%dic:STR_DIC_N_Atla]para a entrada de [%dic:STR_DIC_W_STR_DF3_SZ_G4_3].</p></step>
+<step><p visible="[%6]">Escolta bem -sucedida! Relatar o resultado[%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Escolta Atla até a entrada do Alquimia Research Center para ajudá -la a escapar com segurança.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Atla foi mantida em cativeiro no centro de pesquisa depois de ser sequestrada em Pandaemonium e pediu que você acompanhasse sua segurança.</p>
+<p> </p>
+<p>Você a escoltou até a entrada do centro e depois relatou a Dewi. Ele o elogiou pelo seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

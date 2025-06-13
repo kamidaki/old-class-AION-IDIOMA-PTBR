@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(O panfleto afirma que qualquer um que queira se tornar um Daeva, pode fazê -lo.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Aposto que Aegir vai querer ver isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está errado, [%username]? Pelo olhar em seu rosto, deve ser sério.</p>
+<p> </p>
+<p>Tudo bem, deixe -me tê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_SELECT2_1">"Eu encontrei este panfleto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O que eles estão reivindicando? Qualquer um pode se tornar um Daeva ... absolutamente absurdo! Impossível...</p>
+<p> </p>
+<p>Mas se for verdade ... não há tempo para desperdiçar. Vá para o pandaemonium agora e entregue este panfleto para [%dic:STR_DIC_N_Kushar]. Ele é o especialista em revolucionários lefaristas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que o leva a este canto escuro da biblioteca?</p>
+<p> </p>
+<p>Você veio obter informações sobre os revolucionários lefaristas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu posso ter informações para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Eles afirmam transformar os seres humanos em Daevas?</p>
+<p> </p>
+<p>Devemos descobrir se isso é verdade! Conheço pessoas no Tribunal das Sombras e na sede do Archon que podem chegar ao fundo disso.</p>
+<p> </p>
+<p>Pode ser apenas uma mentira para inchar seus números. Obrigado por trazer isso para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o panfleto para [%dic:STR_DIC_N_Aegir].</p></step>
+<step><p visible="[%3]">Entregar o panfleto para [%dic:STR_DIC_N_Kushar] em pandaemonium.</p></step>
+</steps>
+<p>O panfleto que você encontrou é suspeito. Mostre -o ao general da brigada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O panfleto que você encontrou disse que quem quisesse se tornar um Daeva.</p>
+<p> </p>
+<p>Você mostrou o panfleto do general da brigada e um especialista nos revolucionários lefaristas. O especialista disse que o denunciaria à sede do Tribunal das Sombras e ao Arconte para investigação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

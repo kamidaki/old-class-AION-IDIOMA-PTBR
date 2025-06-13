@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim, você não é[%username]?</p>
+<p> </p>
+<p>Eu queria enviar alguém para vir buscá -lo. Mas você já encontrou o caminho sozinho.</p>
+<p> </p>
+<p>Como você subiu agora para nivelar [%userlevel], Apresentarei a você um novo preceptor.</p>
+<p> </p>
+<p>Vou redigir uma carta de recomendação para você. Leve para [%dic:STR_DIC_N_Aranolf]no templo de Marchutan.</p>
+<p> </p>
+<p>Ela irá ajudá -lo em sua jornada para se tornar um[%userclass].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que posso fazer para você?</p>
+<p> </p>
+<p>Muitas pessoas estão esperando por mim, então seja rápido e me diga o que se trata.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação de Freyr.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Dobrando a carta de recomendação) Oh, Freyr me enviou mais uma pessoa.</p>
+<p> </p>
+<p>Você é[%username], não é? Eu posso ajudá -lo em sua jornada para se tornar um[%userclass]. No entanto, Freyr e eu somos mais diferentes do que você imagina.</p>
+<p> </p>
+<p>Eu sou uma pessoa muito exigente. Se eu acho que alguém não está à altura dos meus padrões, direi.</p>
+<p> </p>
+<p>Aplique -se e melhore suas habilidades honestamente, e não ouse usar truques!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a carta de recomendação de Freyr para [%dic:STR_DIC_N_Aranolf]no templo do marchutan.</p></step>
+</steps>
+<p>Mostre Margel a carta de recomendação de Freyr.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Freyr disse que chegou a hora de enviar você para ir ver Margel com uma carta de recomendação.</p>
+<p> </p>
+<p>Depois que Margel leu a carta de recomendação, ela disse que você ainda tinha muito a aprender para se tornar um excelente Daeva e aconselhou você a trabalhar em suas habilidades.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Como solitário mais solitário, tenho um emprego muito sério. Exemplo para outros solitários por aí! Faça bem para Shugos escolher a vida única!</p>
+<p> </p>
+<p>Ainda assim, a maioria escolhe estar em relacionamento, não solitária. Menos solitários, nos deixa ... solitários.</p>
+<p> </p>
+<p>Talvez Daeva batendo alguns[%dic:STR_DIC_M_ValentineEvent_Shulack_Couple]nos fazer converter solitários, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é um bom solitário! Poderoso! Decisivo! Ver? Essas coisas são mais fáceis de fazer por si mesmo, sim? Pronto para outra tarefa?</p>
+<p> </p>
+<p>A Associação de Membros Solitários enviou o envio de itens para solitários! Não é bom? A Associação de Membros Solitários é considerada por membros!</p>
+<p> </p>
+<p>Mas os itens estavam no[%dic:STR_DIC_E_FOBJ_Event_Cargobox]Isso foi espalhado por shulacks presunçosos estúpidos. Daeva poderia buscar os itens de apreciação da Associação de Membros Soliteiros?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Sim, eu posso fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Loner Daeva está de volta!</p>
+<p> </p>
+<p>Daeva trouxe? Trazer o item de apreciação da Associação de Membros de Membro Loner?</p>
+<p> </p>
+<p>Oh, estou tão animado! O que é isso, Nyerk? O que é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É ... é uma pá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Daeva nem tentou!</p>
+<p> </p>
+<p>Você se distraiu? ... você conheceu outra pessoa? Daeva? Você fez?</p>
+<p> </p>
+<p>Não? Em seguida, colete o item de apreciação da associação de membros solitários do[%dic:STR_DIC_E_FOBJ_Event_Cargobox]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mas é muito haaard!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Uma pá! Por que...</p>
+<p> </p>
+<p>Por que, é adorável! E tão significativo!</p>
+<p> </p>
+<p>Diz a todos nós solitários: "Somos produtivos! Somos úteis! Somos fortes!"</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Acho que diz para cavar um buraco para morrer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Não, não, não, é um presente significativo!</p>
+<p> </p>
+<p>A Associação de Membros do Lonner Shovel diz que os solitários fazem as coisas!</p>
+<p> </p>
+<p>Vai valorizar para sempre, Nyerk!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_ValentineEvent_Shulack_Couple]([%2]/3).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_E_white_single_d].</p></step>
+<step><p visible="[%6]">Encontre o [%dic:STR_DIC_E_FOBJ_Event_Cargobox] e trazer os presentes de apreciação da Associação de Membros de Membro solitário para [%dic:STR_DIC_E_white_single_d].</p>[%collectitem]</step>
+</steps>
+<p>O solitário mais solitário tem algumas tarefas para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O pensamento solitário mais solitário batendo em torno de alguns pombinhos presunçosos Shulack pode absorver alguns novos membros solitários.</p>
+<p> </p>
+<p>Depois de ajudar nessa tarefa, ela o enviou para recuperar os presentes de apreciação da Associação de Membros Solitários que foram espalhados por Shulacks.</p>
+<p> </p>
+<p>Você reuniu os presentes, que acabaram sendo pás. O solitário mais solitário estava muito, muito empolgado com as pás.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

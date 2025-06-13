@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho um emprego para você. É físico, envolve lutar-o tipo de coisa em que você é bom.</p>
+<p> </p>
+<p>Trabalho fácil, é claro, mas tenho mais o que fazer do que tempo para fazê -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, o que você está fazendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você notará que eu não te disse. Isso não é acidente.</p>
+<p> </p>
+<p>Apenas saiba o que eu faço, serve a todos os asmodae, e se eu pudesse lhe dizer, eu o faria. Agora, não há mais perguntas.</p>
+<p> </p>
+<p>Eu preciso da sua ajuda para limpar o [%dic:STR_DIC_M_HellhoundD_28_An]é a partir daqui. Eles estão no caminho da minha pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitos[%dic:STR_DIC_M_HellhoundD_28_An]próximo.</p>
+<p> </p>
+<p>Porque eles cavam em todos os lugares, os traços que eu continuo procurando desaparecendo. Como eles têm duas cabeças, causam o dobro de danos.</p>
+<p> </p>
+<p>Seria muito útil para mim se você matasse 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso será feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então saia. Não vou perder tempo com você.</p>
+<p> </p>
+<p>Se você mudar de idéia, provavelmente ainda precisarei de ajuda. Kellan com certeza não está dando nenhum!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não confio em Kellan. Ele ficou muito quieto, muito observador. Eu o enviaria embalando, se apenas os executores das sombras recebessem ordens.</p>
+<p> </p>
+<p>Chega dele. Seu trabalho está feito?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"E muito disso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então pegue isso. Foi conquistado, não foi dado.</p>
+<p> </p>
+<p>Obrigado, [%username]. Poucos têm essa discrição hoje em dia. Tive a sorte de te encontrar.</p>
+<p> </p>
+<p>Sangue para sangue, [%userclass].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_HellhoundD_28_An]que estão interferindo nas investigações. ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Utgar].</p></step>
+</steps>
+<p>A pesquisa de Utgar está sendo interrompida por lava Barghests que estão destruindo as evidências. Mate alguns Barghests para Utgar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Utgar reclamou a você que a investigação dele estava sendo prejudicada por curiosidade de lava barghests. Você os limpou para que ele pudesse trabalhar em paz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

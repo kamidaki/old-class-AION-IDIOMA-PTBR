@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há necessidade de uma senha secreta-reconheço você.</p>
+<p> </p>
+<p>Graças a um certo funcionário falador do meio da classificação, aprendi algumas informações secretas.</p>
+<p> </p>
+<p>Vou relatar imediatamente. Mas pode ser tarde demais para agir se eu esperar por ordens ... mas não posso agir sozinho. Eu não sei o que fazer!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há algo que parece um portão na abordagem de Alquimia e outro em Alquimia Stronghold.</p>
+<p> </p>
+<p>Fiquei curioso para saber por que eles montaram dois objetos com aparência de portão-nem delas eram entradas para um prédio ou um monumento. Além disso, os soldados de elite sempre guardam o local. Minha intuição me disse que algo estava acontecendo.</p>
+<p> </p>
+<p>Então ouvi os portões se conectarem ao abismo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Para o abismo?! Tem certeza?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! O portão da abordagem de Alquimia é o [%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620A] e o da fortaleza de Alquimia é o [%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620B].</p>
+<p> </p>
+<p>Isso significa que os lefaristas estão expandindo sua influência para o abismo. Você pode imaginar o problema que eles poderiam causar? E se eles se unissem aos ellies ou pior ... o Balaur?</p>
+<p> </p>
+<p>Precisamos destruir esses portões imediatamente. Eu acredito em você, [%username], são perfeitos para o trabalho. Você vai assumir esta missão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a fortaleza agora e destrua o [%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620A] e o [%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620B].</p>
+<p> </p>
+<p>Você deve destruir os dois portões para impedir que os lefaristas viajassem livremente dentro e fora do abismo.</p>
+<p> </p>
+<p>Tenho certeza de que não preciso lhe dizer isso, mas não deixe de trazer alguns amigos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Destrua os portões. Estou nisso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não percebe o quão importante é essa missão? Os lefaristas estão viajando para dentro e fora do abismo!</p>
+<p> </p>
+<p>Devemos impedir que a conspiração deles se espalhe mais!</p>
+<p> </p>
+<p>E você se chama um Daeva ... eu simplesmente não posso acreditar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quer usar uma senha desta vez?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu momento em se infiltrar nos revolucionários lefaristas não poderia ter sido melhor.</p>
+<p> </p>
+<p>Se eu não tivesse conseguido, não sabíamos que os lefaristas tinham acesso ao abismo.</p>
+<p> </p>
+<p>Qual é a senha?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sem senha ... mas destruímos os portões."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aquece os dedos dos pés para ouvir que os portões do abismo são destruídos.</p>
+<p> </p>
+<p>Relatei as más notícias de que os lefaristas haviam feito o Portão do Abismos. Agora eu posso relatar melhores notícias-que você, você[%username], destruiu esses portões.</p>
+<p> </p>
+<p>Bom trabalho, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua os portões lefaristas do abismo.</p>
+<p visible="[%0]">[%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620A]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_OBJ_DF3_LehparGate_Q2620B]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Os lefaristas criaram portões que se conectam ao abismo. Vá para Alquimia se aproxime e alquimia fortaleça e destrua os portões do abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dewi disse que aprendeu que os lefaristas haviam feito portões que se conectam ao abismo.</p>
+<p> </p>
+<p>Ele temia que os asmodianos pudessem estar em perigo se os lefaristas conspirassem com o Balaur ou os Elyos no abismo.</p>
+<p> </p>
+<p>Você foi para a Alquimia Approp e Alquimia Stronghold com seus colegas e destruiu os portões do Abismo. Então você se reportou de volta ao Dewi.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

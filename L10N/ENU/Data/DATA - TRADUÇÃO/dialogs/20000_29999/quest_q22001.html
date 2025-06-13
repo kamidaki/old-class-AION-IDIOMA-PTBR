@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q22001</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Estamos sem poções de novo?! Alguém deve estar usando -os para dores de estômago e pequenos cortes!</p>
+<p> </p>
+<p>Nesse ritmo, seremos inúteis na batalha. Felizmente, posso me fazer mais até que seja reabastecido, mas vou precisar de ajuda.</p>
+<p> </p>
+<p>Eu posso usar [%dic:STR_DIC_I_quest_22001a]de [%dic:STR_DIC_M_LDF4b_T1_Scorpion_Giant_58_An] S fazer poções. Eu sei que não parece funcionar, mas funciona. Se você pudesse ajudar a conseguir o veneno, eu realmente apreciaria.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu juro por Aion, se eu colocar minhas mãos em quem estiver chutando nossas poções, eu vou ...!</p>
+<p> </p>
+<p>Ok, uma coisa de cada vez. Primeiro, faça poções. Em seguida, encontre e estrangule o desperdício de poções.</p>
+<p> </p>
+<p>Eu tenho tudo junto, exceto o veneno de Scolopen. Você trouxe alguns?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu faço. E isso fede!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm, sim, é um pouco classificado, não é? Mas isso significa apenas que é potente!</p>
+<p> </p>
+<p>O cheiro desaparecerá assim que eu o diluir e misturar os outros ingredientes. O que farei agora.</p>
+<p> </p>
+<p>Obrigado, [%username]. Ah, e se você pegar o desperdício de poção ... desloce -o por mim, vai?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_22001a] e leve para [%dic:STR_DIC_N_Tokoma].</p>[%collectitem]</step>
+</steps>
+<p>O Tokoma tem poucas poções para combate. Obtenha veneno de enormes scolopens do deserto para ajudá -lo a fazer mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Tokoma Legionário de Fatebound disse que alguém está desperdiçando suas poções e agora ele está quase fora.</p>
+<p> </p>
+<p>Você matou enormes scolopens do deserto por seu veneno e o trouxe ao Tokoma para se misturar a poções. Ele substituiu seu estoque ausente, mas ainda manteve um rancor contra quem havia desperdiçado poções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

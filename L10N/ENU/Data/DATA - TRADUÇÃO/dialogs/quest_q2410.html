@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algo suspeito está acontecendo naquela cidadela lefarista.</p>
+<p> </p>
+<p>Eles começaram com uma equipe de ossos nus, mas mais lefaristas chegam todos os dias.</p>
+<p> </p>
+<p>Quando me relatei à fortaleza, eles disseram ficar de olho no local.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece fácil o suficiente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ou talvez não. O que eles querem são relatórios regulares sobre o progresso da construção. Isso significa que entramos. E há guardas na entrada.</p>
+<p> </p>
+<p>[%username], Não sou exatamente imperceptível e sou péssimo por ser furtivo. Você vai me ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Heh. Excelente. Obrigado. Pelo que eu vi, existem[%dic:STR_DIC_M_FeA_LehparFiD_38_An] S, [%dic:STR_DIC_M_ReB_LehparRngD_38_An] Areia [%dic:STR_DIC_M_WeA_LehparWiD_38_An] está defendendo o [%dic:STR_DIC_W_DF2_SUB_D5] entrada. Desça.</p>
+<p> </p>
+<p>Há uma moeda de prata para você, se você tiver sucesso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente por lefaristas, não é? Pena que você não pode cumprir sua reputação, [%username].</p>
+<p> </p>
+<p>Se você mudar de idéia, venha me ver novamente. Você é o Daeva certo para este trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"PROSSIVA NA Sombra de Azphel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Pela bunda espinhosa de Azphel-você está de volta e de uma só vez também!</p>
+<p> </p>
+<p>Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Esses guardas não serão mais um problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sabia que você era o Daeva certo, [%username].</p>
+<p> </p>
+<p>Aqui está a moeda de prata que prometi, com meus agradecimentos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os revolucionários lefaristas que guardam a entrada da cidadela.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_FeA_LehparFiD_38_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_ReB_LehparRngD_38_An]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_WeA_LehparWiD_38_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Modgud].</p></step>
+</steps>
+<p>Dizem que a Cidadela Lefarista é tão fortemente guardada que nenhum reconhecimento é possível. Ajude Modgud removendo os combatentes, patrulha e mágicos que guardam a entrada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sentinel Modguud pediu ajuda com a Scout the Lefarist Citadel.</p>
+<p> </p>
+<p>Você se livrou dos lefaristas defendendo a entrada e relatou de volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

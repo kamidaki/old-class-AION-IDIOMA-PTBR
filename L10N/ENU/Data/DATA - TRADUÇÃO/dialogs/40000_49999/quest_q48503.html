@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva precisa de moedas, certo? Tokens especiais? Yaminerk pode dizer. Olhar de desespero nos olhos. Inconndutável, Nyerk.</p>
+<p> </p>
+<p>O Yaminerk dirige a troca de moedas, felizmente para você.</p>
+<p> </p>
+<p>Você dá a Shugo certos fichas, ela lhe dá outros fichas. Nyerk?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uh, Nyerk."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Yaminerk está procurando tokens da ala em particular.</p>
+<p> </p>
+<p>Daeva pode levar um token cruzado ou um token de daemon em troca, mas apenas se os tokens da ala forem legítimos. Sem falsificações, Nyerk!</p>
+<p> </p>
+<p>Você quer negociar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se Daeva traz 7[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S, os preços atuais de Yaminerk são 1 token cruzado ou 1 token Daemon de volta, Nyerk.</p>
+<p> </p>
+<p>Não ambos, no entanto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Deixe -me ver se tenho o suficiente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva obviamente não sabe muito. Akakakakak!</p>
+<p> </p>
+<p>O acordo provavelmente poderia bater no rosto de Daeva, e o Daeva não notaria.</p>
+<p> </p>
+<p>Shugo não bateu um Daeva, no entanto. Shugo quer viver, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Wise Shugo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Daeva tem moedas para negociar, Nyerk?</p>
+<p> </p>
+<p>Deixe o Yaminerk ver. Deve verificar o peso e o equilíbrio, veja se Fake.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">("Aqui você vai.")</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh pobre Daeva. Yaminerk não sabia que você era danificado pelo cérebro, Nyerk. Sinto muito!</p>
+<p> </p>
+<p>Yaminerk falará mais devagar. Yaminerk precisa de 7[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S trocar por outros. Veja, conte com os dedos. 1 ... 2 ... 3 ... 4 ... 5 ... 6 ... 7.</p>
+<p> </p>
+<p>Talvez Daeva deva escrever tudo isso, Nyerk, Nyerk.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Resistindo. PRECUTE. A MATAR."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tokens da ala! Yaminerk pode contar uma milha de distância. Shine em particular, sempre pode dizer aos genuínos, Nyerk!</p>
+<p> </p>
+<p>Você cumpriu sua promessa, Daeva, e eu vou segurar o meu.</p>
+<p> </p>
+<p>Aqui está um token cruzado e aqui está um token daemon. Escolha um e apenas um!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_PROTECTION_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_08].</p>[%collectitem]</step>
+</steps>
+<p>Yaminerk coleta tokens da ala. Traga seus tokens de ala em troca de um token cruzado ou um token de daemon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O colecionador de moedas Yaminerk disse que ela queria trocar um token cruzado ou um token de daemon por tokens de ala.</p>
+<p> </p>
+<p>Você deu a Yaminer seu fichas de ala e recebeu outro em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

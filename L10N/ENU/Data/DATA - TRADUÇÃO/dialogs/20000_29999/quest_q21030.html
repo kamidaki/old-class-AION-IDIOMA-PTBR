@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>(É feito de grama intricadamente tecida.)</p>
+<p> </p>
+<p>(É extraordinariamente grande para uma armadilha de animais.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vamos dar uma olhada mais de perto ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Através da grama tecida, você vê um pequeno animal se contorcendo na armadilha.)</p>
+<p> </p>
+<p>(Suas lutas apenas tornam a armadilha mais apertada ao redor. Isso sufocará ou fome em breve.)</p>
+<p> </p>
+<p>(Talvez você deva libertar o animal e devolver a armadilha ao seu criador.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>([%dic:STR_DIC_N_feles]é o único próximo que poderia precisar ou fazer algo assim.)</p>
+<p> </p>
+<p>(Se nada mais, talvez ela saiba algo sobre isso.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou levar isso para ela."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você deixa em paz.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é da minha preocupação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez eu não consiga combater o Strigik, mas posso usar meu cérebro.</p>
+<p> </p>
+<p>Criei armadilhas para prendê -las, para que seria mais fácil combatê -las ou correr, mas parece que eles conhecem a floresta muito bem para desencadeá -los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Então este é seu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Eu ... pensei em recuperar todos eles. Obrigado.</p>
+<p> </p>
+<p>Pontou -me ver a vida selvagem inocente presa pelas minhas criações. Quanto mais a vítima luta, mais eles se contraem, você sabe.</p>
+<p> </p>
+<p>Foi bom para o Strigik, mas bastante cruel por qualquer outra coisa. Estou feliz que tudo isso se foi agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue a armadilha de grama para [%dic:STR_DIC_N_feles].</p></step>
+</steps>
+<p>Você encontrou uma armadilha com um pequeno animal preso nela. Liberte o animal e leve a armadilha para Feles, que pode ter criado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma armadilha incomum na floresta Strigik. Havia um pequeno animal preso nele, sendo lentamente morto por ele.</p>
+<p> </p>
+<p>Você libertou o animal e levou a armadilha para Feles. Ela confirmou que era dela e agradeceu, dizendo que suas armadilhas foram originalmente feitas para capturar Strigik, mas estavam pegando vida selvagem inocente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

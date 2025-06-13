@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você gosta da fortaleza Miren?</p>
+<p> </p>
+<p>É certo que ainda não está perfeito, mas é melhor do que estar fora.</p>
+<p> </p>
+<p>Se você gosta de nossa hospitalidade, talvez se voluntaria para ajudar a mantê -la?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você tem em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de alguém para acabar com os remanescentes dos Elyos que fugiram. Eles provavelmente estão acampados em algum lugar fora da fortaleza.</p>
+<p> </p>
+<p>Vá lá e mate [%dic:STR_DIC_N_Monerva], Assim, [%dic:STR_DIC_N_Metis], Assim, [%dic:STR_DIC_N_Baucis], Assim, [%dic:STR_DIC_N_Belus], e [%dic:STR_DIC_N_Sarpedon]. Traga de volta o deles[%dic:STR_DIC_I_QUEST_2794a] S como prova.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não deixe sua guarda lá fora. Os Elyos estão criando uma torre de guarda, para que estejam alertas.</p>
+<p> </p>
+<p>Se você os subestimar, você terá uma derrota embaraçosa.</p>
+<p> </p>
+<p>Tudo bem. No seu caminho, então.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles não têm chance."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que fugir também é uma estratégia.</p>
+<p> </p>
+<p>Desistir agora é uma escolha sábia se você não acha que pode lidar com isso.</p>
+<p> </p>
+<p>Se você está admitindo que eles o derrotarão, concordo com sua escolha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você concluiu a missão com sucesso? Mostre -me o deles[%dic:STR_DIC_I_QUEST_2794a] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Essas cristas são de seus cadáveres".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>É claro que me trazer suas cristas do templo é apenas uma formalidade, mas não pode ser evitada ao dar uma recompensa.</p>
+<p> </p>
+<p>A confiança não é um luxo que eu possa pagar, então continue e traga de volta o [%dic:STR_DIC_I_QUEST_2794a] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se saiu bem, embora tenha certeza de que eles colocaram uma forte resistência.</p>
+<p> </p>
+<p>Aqui está a recompensa que prometi. Você ganhou.</p>
+<p> </p>
+<p>Que isso ajude você a ganhar mais batalhas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os guardiões do ponto de Elyos, reunir seu[%dic:STR_DIC_I_QUEST_2794a] e trazê -los para [%dic:STR_DIC_N_Ab1_1241_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>Elimine os Guardiões Minerva, Metis, Baucis, Belus e Sarpedon que estão acampados do lado de fora da Fortaleza Miren. Reúna o templo as crista como prova e leve -as à desfitina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Deitina pediu que você eliminasse os Guardiões Elyos acampados do lado de fora da fortaleza.</p>
+<p> </p>
+<p>Você eliminou os Guardiões Minerva, Metis, Baucis, Belus e Sarpedon, depois retornou a ela com suas cristas do templo enquanto ela instruiu. Ela elogiou seu esforço e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

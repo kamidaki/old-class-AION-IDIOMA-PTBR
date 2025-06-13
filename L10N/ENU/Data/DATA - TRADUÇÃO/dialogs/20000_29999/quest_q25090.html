@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>A tribo Tauraks aliada ao Balaur e está nos atacando.</p>
+<p> </p>
+<p>Precisamos matar seu líder tribal[%dic:STR_DIC_M_DF5_J_QuestTauric_64_An]para colocá -los fora de ação.</p>
+<p> </p>
+<p>Você poderia cuidar disso, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>A defesa do Exército de Beritra está ficando cada vez mais forte.</p>
+<p> </p>
+<p>Provavelmente devemos nos apressar.</p>
+<p> </p>
+<p>Você cuidou do líder tribal dos Tauraks?</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que o eliminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente fez um trabalho incrível.</p>
+<p> </p>
+<p>Eu me pergunto que o exército de Beritra acha que vai nos parar agora.</p>
+<p> </p>
+<p>Seja o que for, não nos encolheremos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_DF5_J_QuestTauric_64_An], o líder tribal dos Tauraks ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Stelman_E].</p></step>
+</steps>
+<p>Stelman lhe disse que a tribo de Tauraks havia aliado ao Balaur e começou a atacar os asmodianos. Ele pediu que você derrotasse o líder tribal. Realize o pedido de Stelman.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Stelman lhe disse que a tribo de Tauraks havia aliado ao Balaur e começou a atacar os asmodianos. Ele pediu que você derrotasse o líder tribal.</p>
+<p> </p>
+<p>Você derrotou Galtamar, o líder tribal dos Tauraks, e foi elogiado por Stelman por seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

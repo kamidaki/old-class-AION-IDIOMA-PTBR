@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu confio em você. É por isso que quero atribuir a você em uma missão que é de extrema importância na conquista da Signia.</p>
+<p> </p>
+<p>A área deve ser explicada e liberada de quaisquer elementos perturbadores, para que possamos proteger a caverna de cristal.</p>
+<p> </p>
+<p>Mate o [plur][%dic:STR_DIC_M_LF5_P2_MimicLily_63_An], o [plur][%dic:STR_DIC_M_LF5_P2_FlowerWorm_63_An], e o [%dic:STR_DIC_M_LF5_Q15216_all]. Reúna prova de que você conseguiu.</p>
+<p> </p>
+<p>Vamos explorar a Signia pouco a pouco e logo reivindicá -lo por conta própria.</p>
+<p> </p>
+<p>Ajude -nos, por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há problemas em todos os lugares. Não são apenas os Balaur e os asmodianos que estão causando problemas na Signia, também estamos desfavorecidos na batalha porque não conhecemos a área.</p>
+<p> </p>
+<p>Para ser eficaz de alguma forma, precisamos conhecer a área.</p>
+<p> </p>
+<p>Como foram as coisas na caverna do cristal?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a prova de vitória da caverna de cristal.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu olhei para toda a prova que você trouxe de volta da caverna de cristal.</p>
+<p> </p>
+<p>Aprendi mais sobre Signia, graças a você.</p>
+<p> </p>
+<p>Agora, podemos nos concentrar no confronto com o Balaur e os Asmodianos na caverna de cristal.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos tempo a perder.</p>
+<p> </p>
+<p>Vá rapidamente e me traga a prova.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso trabalho será mais fácil agora, graças à sua ajuda.</p>
+<p> </p>
+<p>Ainda precisaremos da sua ajuda para avançar para outras regiões. Deixe -me saber se você estiver interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Infelizmente, não poderei lhe dar uma recompensa por esta missão.</p>
+<p> </p>
+<p>Por favor, obtenha sua recompensa da caverna de cristal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir o [%dic:STR_DIC_I_LF5_Advance_Q15216_all] e trazê -los para [%dic:STR_DIC_N_LF5_Brontte_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Brontte_E].</p></step>
+</steps>
+<p>Entre na caverna de cristal e obtenha provas de vitória dos bosques do mar, a caverna de cristal oculis e os capangas da 48ª tropa de invasão. Traga todas as provas para Branth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Branth, comandante da 3ª unidade da nova Guilda Start, pediu que você livrasse a caverna de cristal dos problemas.</p>
+<p> </p>
+<p>Você eliminou os bosques do mar, os membros de Crystal Cave Oculis e os membros da 48ª Tropa de Invasão. Depois, você apresentou a prova de seu sucesso a Branth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

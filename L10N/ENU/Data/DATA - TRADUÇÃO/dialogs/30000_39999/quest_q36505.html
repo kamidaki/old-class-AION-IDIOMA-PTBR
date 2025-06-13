@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_52_An]</p>
+<p> </p>
+<p>2. Carga: Contaminação da floresta de Taloc</p>
+<p></p>
+<p>3. Detalhes do crime: Celodos Twistrings, um fantasma desonesto de Reian, foram contaminados por forças desconhecidas ao nosso lendário. Sua mera presença espalha essa contaminação mais profunda na floresta. A erradicação imediata é solicitada.</p>
+<p></p>
+<p>Último paradeiro conhecido: floresta de Taloc. Atrair os twistrings de Celodos usando o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q36505]já configurado lá.</p>
+<p> </p>
+<p>Qualquer pessoa que assassine ou apreenda a Celodos Twistrings será generosamente recompensada.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os espíritos não me assustam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse espírito deve estar realmente causando problemas na floresta. Os Daevas da vida raramente precisam de nossos serviços.</p>
+<p> </p>
+<p>Rudges, vingança, itens perdidos-tudo paga a mesma cor Kinah, sim, [%username]?</p>
+<p> </p>
+<p>Como foi? Você enviou esse espírito para o Aether?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É mais difícil matar algo pela segunda vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mesmo um fantasma não tem chance contra os fortunes dos EUA! Não quando há bom Kinah envolvido.</p>
+<p> </p>
+<p>A vida de um fortuneer é sempre iluminada, hein, [%username]? Sempre o brilho da aventura em nossas costas e a queimadura amarga da cerveja em nossas barrigas.</p>
+<p> </p>
+<p>Você ganhou sua recompensa hoje. Eu não tinha certeza se você estava pronto, mas você ganhou!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q36505]para atrair [%dic:STR_DIC_M_LF4_DayQ_AncientClanFi_52_An] e erradique -o ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatar o resultado para o [%dic:STR_DIC_E_36500].</p></step>
+</steps>
+<p>Chegou uma proclamação da Guilda Fortuneers.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma proclamação chegou da Guilda Fortuneers.</p>
+<p> </p>
+<p>Você destruiu Celodos Twistrings, que era procurado pela contaminação da floresta de Taloc. O capitão dos fortuários elogiou seus esforços e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

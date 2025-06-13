@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão preocupado com meu marido.</p>
+<p> </p>
+<p>Ele está sozinho, em santuário, e em sua última carta, ele disse que não estava se sentindo bem. Então ... nada. Não há mais correio.</p>
+<p> </p>
+<p>Eu sei que não deveria me preocupar, mas já se passaram dois dias inteiros!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Dois dias, hein?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Dois dias! Eu escrevo para ele todas as manhãs e todas as noites ... e ele sempre, bem geralmente ... principalmente, escreve de volta!</p>
+<p> </p>
+<p>Eu deveria estar lá, cuidando dele. Eu sabia que era uma má idéia para ele aceitar esse post em santuário.</p>
+<p> </p>
+<p>Você acha que ele está bem?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Tenho certeza de que ele está bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É legal da sua parte dizer, mas ainda estou tão preocupado! É melhor eu enviar a ele um remédio frio.</p>
+<p> </p>
+<p>Sim. Isso vai ajudar. Vou enviar remédios para ele. Conheço esta ótima receita que aprendi com um farmacêutico em Verteron.</p>
+<p> </p>
+<p>Você me ajudaria a coletar os ingredientes? Eu preciso fazê -lo rapidamente ... Só sei que ele precisa!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O ingrediente principal são as caudas do monitor. É uma ótima coisa, não apenas para resfriados.</p>
+<p> </p>
+<p>Também é bom para fraqueza, palpitações cardíacas, falta de ar, perda de cabelo e todos os tipos de outras coisas. Tenho certeza de que vai ajudar.</p>
+<p> </p>
+<p>Vou precisar [%dic:STR_DIC_I_QUEST_3537A] S de [%dic:STR_DIC_M_Varanus_33_An] Areia [%dic:STR_DIC_I_QUEST_3537B] S de [%dic:STR_DIC_M_Varanus_34_An] S.</p>
+<p> </p>
+<p>Deve ser fácil conseguir isso. Todos os monitores se reúnem na calçada sombria do Observatório de Campo Aetico.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar as caudas. Você, fique calmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que meu marido pode estar melhor agora. Mas, não, ele teria escrito.</p>
+<p> </p>
+<p>Aaaa! Eu não posso simplesmente ficar aqui não fazendo nada sabendo que ele está morrendo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você pode estar exagerando um pouco ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente! Eu estive esperando por você.</p>
+<p> </p>
+<p>Eu tenho tudo pronto para poder preparar o remédio assim que você voltou, [%username].</p>
+<p> </p>
+<p>Você tem as caudas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Tails, conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Isso não é suficiente!</p>
+<p> </p>
+<p>Meu marido pode estar à beira da morte, e você está apenas andando por aí fazendo o quê? Hum?</p>
+<p> </p>
+<p>Por favor! Traga -me [%dic:STR_DIC_I_QUEST_3537A] Areia [%dic:STR_DIC_I_QUEST_3537B] S, para que eu possa fazer o meu remédio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Toous, não estamos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado! Muito obrigado, [%username]!</p>
+<p> </p>
+<p>Vou fazer o remédio agora. Eu só sei que vai ajudar!</p>
+<p> </p>
+<p>Vou enviá -lo por correio expresso assim que estiver pronto. Eu só espero que esteja a tempo de salvar meu amor!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_3537A] Areia [%dic:STR_DIC_I_QUEST_3537B] S, e trazê -los para [%dic:STR_DIC_N_Panaita].</p>[%collectitem]</step>
+</steps>
+<p>Hunt Stonescale monitores e monitores manchados, e traz suas caudas para Panaita para que ela possa fazer algum remédio especial para o marido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Panaita era ... um toque preocupado com o marido doente em santuário e queria fazer algum remédio para ele.</p>
+<p> </p>
+<p>Para acalmá -la, você trouxe as caudas de ferro e as caudas manchadas de que ela precisava para a receita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

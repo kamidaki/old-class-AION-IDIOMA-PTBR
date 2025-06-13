@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este posto de observação é perigosamente isolado.</p>
+<p> </p>
+<p>Claro, fica perto da vila de Kishar e do quartel de Indratu, mas todos os nossos suprimentos e reforços vêm da vila de Jeiaparan.</p>
+<p> </p>
+<p>E quando nossos guardiões se despedem, a vila de Jeiaparan é o único lugar que eles podem ir ... se eles querem voltar no tempo para o próximo turno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Mas a vila de Jeiaparan não está tão longe ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, é uma viagem rápida se você atravessar o pântano preto e pegar a estrada sul do bosque de deterioração.</p>
+<p> </p>
+<p>Mas se você veio assim recentemente, conhece o problema: a estrada do sul fede-literalmente. Fede pior que o pântano.</p>
+<p> </p>
+<p>Na verdade, tivemos patrulhas em colapso na estrada, superadas pela fumaça. Até agora, tivemos sorte, mas é apenas uma questão de tempo para que os animais do bosque-ou o Krall-desviem nossos soldados inconscientes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O fedor é forte?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Nem sempre. Depende do vento-e de quantos espíritos contaminados estão vagando.</p>
+<p> </p>
+<p>A lama do pântano cheira mal, mas não é nada comparado ao cheiro tóxico dos espíritos. Eu acho que é porque os espíritos são uma versão condensada do solo contaminado que encontramos em todo o hiário.</p>
+<p> </p>
+<p>Se você eliminar esses espíritos problemáticos, [%username], Vou recompensá -lo generosamente. E você tornará a estrada segura para suprimentos e reforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças à luz! Eu estava com medo de que você pudesse me recusar porque a tarefa é tão ... desagradável.</p>
+<p> </p>
+<p>Então vá limpar o [%dic:STR_DIC_M_ElementalEarth2_34_An] Areia [%dic:STR_DIC_M_ElementalEarth2_35_An] está ao longo da estrada sul do bosque decadçado.</p>
+<p> </p>
+<p>Eu sei que não é fascinante, mas ainda estamos contando com você, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez Daevasas muito sensíveis para o fedor, não é? Ou está se melerando no pântano de alguma forma abaixo de você, [%username]?</p>
+<p> </p>
+<p>Se você não ajudar, tentarei resolver esse problema com os Guardiões à minha disposição.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os espíritos contaminados, [%username]? Essa seria a melhor notícia que ouvimos a semana toda!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles são eliminados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nada ajuda o moral dos guardiões a tornar seu tempo aqui um pouco mais suportável.</p>
+<p> </p>
+<p>Podemos obter suprimentos nessa estrada com segurança agora e sem os fumos nos que nos fazem entrar em colapso.</p>
+<p> </p>
+<p>Obrigado por seus esforços. Aqui está um sinal de apreciação de todos nós no posto de observação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se de espíritos fedorentos.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth2_34_An]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth2_35_An]([%5]/3)</p></step>
+<step><p visible="[%15]">Fale com Brosia.</p></step>
+</steps>
+<p>Elimine os espíritos contaminados como Brosia perguntou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brosia disse que os espíritos na estrada para a vila de Jeiaparan fedem tanto que os viajantes estão em colapso na estrada.</p>
+<p> </p>
+<p>Quando você eliminou os espíritos arruinados do solo e os espíritos de terra contaminados, isso agradou a Brosia e melhorou o moral no posto de observação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

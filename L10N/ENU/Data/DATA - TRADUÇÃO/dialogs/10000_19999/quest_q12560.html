@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos no meio de uma batalha amarga.</p>
+<p> </p>
+<p>Se não atacarmos primeiro, seremos atacados.</p>
+<p> </p>
+<p>Isso se aplica não apenas ao Balaur, mas também aos asmodianos.</p>
+<p> </p>
+<p>Por favor, lute na linha de frente, [%username] e mate os guardas do portão do esquadrão de limpeza.</p>
+<p> </p>
+<p>Você tem que matar [%dic:STR_DIC_M_LDF5a_E5_Guard_Fi_D_65_An]ou[%dic:STR_DIC_M_LDF5a_E5_Guard_Kn_D_65_An], Assim, [%dic:STR_DIC_M_LDF5a_E5_Guard_Pr_D_65_An] e [%dic:STR_DIC_M_LDF5a_E5_Guard_Wi_D_65_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei quando essa maldita guerra finalmente terminará, mas desistir não é uma opção.</p>
+<p> </p>
+<p>Agora não é a hora de recuar, mas agir.</p>
+<p> </p>
+<p>Significando que precisamos de lutar pelo espírito.</p>
+<p> </p>
+<p>E assim, para aumentar isso, estou pedindo que você tire os guardas do portão da equipe de limpeza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos atacar primeiro, porque não sabemos quando os asmodianos nos atacarão.</p>
+<p> </p>
+<p>Não estou preocupado, porque sei que você estará ao nosso lado, [%username].</p>
+<p> </p>
+<p>Você realmente tem um excelente espírito de luta.</p>
+<p> </p>
+<p>Obrigado por lutar tão corajosamente bem na linha de frente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5a_E5_Guard_all]([%2]/5).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5a_Rake_E].</p></step>
+</steps>
+<p>Antes de serem atacados, mate os guardas do portão do esquadrão de limpeza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rake pediu que você atacasse os guardas do portão do esquadrão de limpeza antes que eles atacassem.</p>
+<p> </p>
+<p>Você matou os guardas do portão do esquadrão de limpeza e foi elogiado ao seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

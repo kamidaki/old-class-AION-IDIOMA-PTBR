@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver, então, o que você já sabe ... Belik já falou sobre os seguidores do Dragonbound?</p>
+<p> </p>
+<p>Bom, isso facilita as coisas.</p>
+<p> </p>
+<p>Como você já sabe, o dragão seqüestrou os membros da tribo Reian e depois eles lavavam o cérebro. Outro desapareceu pouco antes de você chegar.</p>
+<p> </p>
+<p>Gostaríamos de nada mais do que invadir sua base no templo de Udas para salvar nosso povo, mas não poderemos fazer isso sozinhos.</p>
+<p> </p>
+<p>Oh, isso não quer dizer que não temos nenhuma confiança em você e em suas habilidades, [%username]. É que o templo é enorme e um verdadeiro labirinto.</p>
+<p> </p>
+<p>Portanto, devemos esperar que mais arcontes cheguem para apoiar antes de iniciarmos uma missão de resgate em larga escala.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então, onde eu entro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Proteja -nos de mais danos.</p>
+<p> </p>
+<p>Elimine os membros do dragão que estão guardando o caminho para Subterranea.</p>
+<p> </p>
+<p>Levará algum tempo até que outros membros do Dragonbound chegarão aqui, o que pelo menos nos dará paz por enquanto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve começar imediatamente.</p>
+<p> </p>
+<p>Mate o [plur][%dic:STR_DIC_M_FanaticFi_53_An], o [plur][%dic:STR_DIC_M_FanaticAs_53_An], e o [plur][%dic:STR_DIC_M_FanaticRa_53_An]que estão guardando a área.</p>
+<p> </p>
+<p>Tome cuidado. Se eles o capturarem, eles farão uma lavagem cerebral e o transformarão em um deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu gostaria de vê -los tentar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recusa?</p>
+<p> </p>
+<p>A tarefa é fácil demais para você? Ou você acha que não consegue lidar com isso?</p>
+<p> </p>
+<p>Belik recomendou, então duvido que seja a última ... essa tarefa pode parecer de pouca conseqüência para você, mas a sobrevivência da minha tribo depende do resultado.</p>
+<p> </p>
+<p>Oro para que você reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito-tenho minhas razões."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já está de volta?</p>
+<p> </p>
+<p>E quanto ao meu pedido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Lidou com severamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode realmente contar com Belik. Ele nos enviou alguém com habilidades excelentes. Tenho certeza de que os outros Reians veem da mesma maneira.</p>
+<p> </p>
+<p>Eu só tenho memórias fracas da época antes da grande catástrofe, mas tenho certeza de que um Daeva com habilidades como o seu era muito raro, mesmo naquela época.</p>
+<p> </p>
+<p>Aqui, por favor, pegue isso. Esta é a coisa mais valiosa que possuo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os seguidores do dragão que guardam a entrada para Subterranea.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_FanaticFi_53_An]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_FanaticAs_53_An]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_FanaticRa_53_An]([%8]/3)</p></step>
+<step><p visible="[%15]">Informar [%dic:STR_DIC_N_Ortiz]do resultado.</p></step>
+</steps>
+<p>Você diz que os seguidores de dragão sequestraram reianos. Mate os seguidores do dragão na entrada de Subterranea para que não sejam causados ​​mais danos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O culto de dragão é sequestrar os membros da tribo Reian. Ortiz pediu que você matasse cultistas que guardavam Subterranea para desviar seus recursos.</p>
+<p> </p>
+<p>Você matou muitos dragão e voltou aos louvores de Ortiz, que esperava que continuasse a ajudá -los.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

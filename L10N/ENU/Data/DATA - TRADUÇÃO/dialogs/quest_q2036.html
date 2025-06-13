@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora que você tem o poder da chave do abismo, o templo do fogo será aberto para você, [%username]. Bulagan sabe o caminho.</p>
+<p> </p>
+<p>Com seu poder e orientação de Bulagan, finalmente liberaremos o Agnita. Você vai ver isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Você tem que perguntar?"</act>
+</selects>
+<voice file="Q2036-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, Daeva. É bom. Você está preparado para procurar agnita no templo do fogo?</p>
+<p> </p>
+<p>Voe para a noroeste para a grande queda de lava. o [%dic:STR_DIC_OBJ_DF2_DragonDoor_In] está entre os fluxos. Passe os portões do templo e procure [%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Como vou conhecê -la?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agnita está sepultada em algum objeto mundano. A mágica do templo o protege e eu posso vê -lo apenas pouco. Está escondido nos recessos mais profundos do templo.</p>
+<p> </p>
+<p>Kromede colocou um guardião sobre o tesouro. Esse [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae]deve conhecer [%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]. Derrotá -lo e resgatá -la.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Minhas garras, seu sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você voltou, mas ...</p>
+<p> </p>
+<p>Onde está Agnita?</p>
+<p> </p>
+<p>O que é isso na sua mão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_salute;HACTION_CHECK_USER_HAS_QUEST_ITEM">"Na minha mão, eu seguro Agnita."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Agnita está finalmente livre! Não sou dado à emoção, mas ... um dia tão alegre!</p>
+<p> </p>
+<p>Kromede era excepcionalmente poderoso, para selar a essência de Agnita em uma coisa tão pequena ...</p>
+<p> </p>
+<p>Espere![%dic:STR_DIC_N_Anund]deve saber também. Vá para a fortaleza e compartilhe suas ações com ela!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De bom grado."</act>
+</selects>
+<voice file="Q2036-3.ogg"></voice>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não fez nada?</p>
+<p> </p>
+<p>[%username], Eu não sou um homem no hábito de esperar.</p>
+<p> </p>
+<p>Você tem seus pedidos. Salvar agnita!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Senhor, sim, senhor!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, viajante.</p>
+<p> </p>
+<p>Tem uma história para contar?</p>
+<p> </p>
+<p>Já fora com isso! Eu poderia usar boas notícias!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Agnita está livre pela minha mão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Magnífico! Sem tarefa fácil, pelo som!</p>
+<p> </p>
+<p>Com este resgate, você nos ajudou a resgatar nosso nome!</p>
+<p> </p>
+<p>Pegue isso, uma troca escassa da honra do tribunal das sombras.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gelkugin].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Bulagan].</p></step>
+<step><p visible="[%6]">Vá para o [%dic:STR_DIC_OBJ_DF2_DragonDoor_In], derrote o [%dic:STR_DIC_M_TreasureGuardianQ_36_Ae], para uma pista de [%dic:STR_DIC_N_NPC_HolyGrailKeeper_Q2036]prisão.</p></step>
+<step><p visible="[%9]">Encontre o cálice sagrado agnita está selado e leve -o para [%dic:STR_DIC_N_Gelkugin].</p>[%collectitem]</step>
+<step><p visible="[%12]">Trazer [%dic:STR_DIC_N_Anund] A feliz notícia.</p></step>
+</steps>
+<p>Ordem: Agnita deve ser resgatada. Fale com Gelkugin.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="2" progress="3" showframe="true" time="5">Old Parchment acquired!</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gelkugin disse que agora você pode chegar a Agnita. Você entrou no templo do fogo.</p>
+<p> </p>
+<p>Você lutou contra o sagrado cálice Guardian, Denlavis por um pergaminho, revelando a prisão de Agnita. Você encontrou o cálice sagrado em uma pilha montanhosa de tesouros e a libertou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

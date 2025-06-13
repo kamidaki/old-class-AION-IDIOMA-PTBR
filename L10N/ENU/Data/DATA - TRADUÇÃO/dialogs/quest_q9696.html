@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9696 missão orientada a dados</p>
+<p> </p>
+<p>Test_simpleTalk_01 Página de diálogo NPC Quest</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com test_simpleTalk_03</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com test_simpleTalk_03</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO4">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9696</p>
+<p> </p>
+<p>Bem-vindo, [%userclass].</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+<p> </p>
+<p>Apenas me diga do que se trata e eu cuidarei disso imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9696</p>
+<p> </p>
+<p>Você concluiu a tarefa brilhantemente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Teleporte e disponibilidade do item ao entrar em LF4_sensoryarea_q10035a</p></step>
+<step><p visible="[%3]">Conversa com test_simpleTalk_03</p></step>
+<step><p visible="[%6]">Cutscene ao entrar lf4_sensoryarea_q10035a</p></step>
+<step><p visible="[%9]">Conversa com test_simpleTalk_03</p></step>
+<step><p visible="[%12]">Invocar NPC, diálogo e notificação do sistema ao entrar em LF4_sensoryarea_q10035a</p></step>
+<step><p visible="[%15]">Relatório para test_simpleTalk_02.</p></step>
+</steps>
+<p>Quest de teste orientada a dados</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quest de teste orientada a dados</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

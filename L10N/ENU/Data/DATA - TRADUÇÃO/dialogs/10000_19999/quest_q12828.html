@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], aqui está uma nova missão.</p>
+<p> </p>
+<p>Mate o [%dic:STR_DIC_M_LDF5A_D_UndeadDark_all], que estão na área, e obtém novas informações.</p>
+<p> </p>
+<p>Se você destruir as almas dos soldados da guerrilha, certamente encontrará uma nova pista.</p>
+<p> </p>
+<p>Quero dizer informações sobre por que eles vieram aqui, ou segredos militares.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não importa qual a pista, você não deve perdê -la sob nenhuma circunstância.</p>
+<p> </p>
+<p>Por mais improvável que seja, deve ser perseguido.</p>
+<p> </p>
+<p>Você conseguiu encontrar alguma coisa?</p>
+<p> </p>
+<p>Diga -me tudo, mesmo que seja apenas um pouco.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as ordens de combate de tropas da guerrilha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, essa é uma ordem de combate asmodianas.</p>
+<p> </p>
+<p>Eu sabia que isso nos ajudaria a enfrentar os espíritos dos esquadrões de guerrilha.</p>
+<p> </p>
+<p>Graças à sua ajuda, [%username], tropeçamos em uma pista valiosa.</p>
+<p> </p>
+<p>Muito obrigado por cumprir a missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_D_UndeadDark_all] e recuperar o [%dic:STR_DIC_I_quest_12828a]. Leve para [%dic:STR_DIC_N_LDF5_Village_Guard06_L].</p>[%collectitem]</step>
+</steps>
+<p>Mate as almas do comando de assalto e encontre uma pista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Morin acredita que o espírito do esquadrão de guerrilha é um traço de evidência e pediu que você obtenha informações sobre sua remoção.</p>
+<p> </p>
+<p>Você mata o espírito do esquadrão de guerrilha e trouxe a ordem de combate do esquadrão Morin Guerilla.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], Eu não reconheci seus joelhos! Não é hora de humor, suponho. Perdemos o [%dic:STR_DIC_W_LF4_SZ_2011_A]... Muitos bons Daevas caíram em sua defesa.</p>
+<p> </p>
+<p>Uma vez que a vantagem é perdida, a batalha escolhe seu lado vencedor e, neste caso ... ficamos aquém. Hah, um pouco mais de humor de forca lá.</p>
+<p> </p>
+<p>Seguimos Kaisinel até aqui ... Não podemos recuar agora. Temos que recuperar a vantagem!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Este Daeva não recua!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gosto da sua atitude. Eu gostaria que mais Daevas o compartilhasse. Precisamos reconstruir nosso momento-é isso que precisamos, [%username]!</p>
+<p> </p>
+<p>Se você estiver pronto para se tornar o herói de que precisamos, organize uma força de soldados em que confia e atacar o [%dic:STR_DIC_M_QUEST_11215]!</p>
+<p> </p>
+<p>Se você pode ajudar a devolver o [%dic:STR_DIC_W_LF4_SZ_2011_A]Para as mãos de Elyos, o Senhor Empíreo Kaisinel certamente será grato a você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Matar os guardas na fortaleza será difícil, mas o verdadeiro problema será o Guardian General.</p>
+<p> </p>
+<p>Mas temos outras legiões por aí prontas para atacar quando você o fizer, para que isso deva acalmar alguns nervos.</p>
+<p> </p>
+<p>Se você pode derrotar o Guardian General e recuperar o [%dic:STR_DIC_W_LF4_SZ_2011_A], Assim, [%dic:STR_DIC_N_Queesia] e sua Guilda Sigida será despachada. Que a proteção do Kaisinel esteja com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quanto mais demorarmos, mais longe caímos da vitória.</p>
+<p> </p>
+<p>Você quer voltar ao santuário de um herói ou covarde? Porque esta operação repousa apenas em suas mãos, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu já lutei na minha guerra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós ultrapassamos o Grande Templo das Escalas por causa da abnegação e bravura de muitos Daevas ... incluindo você, [%username].</p>
+<p> </p>
+<p>Eu ouvi que você lutou Vallantly hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu matei muitos, Siaqua."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas!</p>
+<p> </p>
+<p>E também ouvi dizer que você desempenhou um papel importante na derrota do Guardian General. E por isso eu quero recompensá -lo.</p>
+<p> </p>
+<p>Espero que você fique e defenda o que lutou tão bravamente para capturar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o guardião geral do inimigo e capturar o [%dic:STR_DIC_W_LF4_SZ_2011_A].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_QUEST_11215]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Queesia].</p></step>
+</steps>
+<p>O templo das escalas foi perdido para o inimigo. Mate o Guardian General e capture o templo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moras pediu que você participasse da recuperação do templo das escalas.</p>
+<p> </p>
+<p>Você foi ao templo com seus camaradas e derrotou o Guardian General. Quando você se reportou a Siaqua, ela lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

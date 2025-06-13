@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q1326</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, [%username], você está ... ocupado?</p>
+<p> </p>
+<p>Eu tenho um tipo de problema. Veja bem, eu tenho uma audição muito nítida. É uma das razões pelas quais eu sou um sentinela.</p>
+<p> </p>
+<p>Mas às vezes é uma maldição! Ultimamente, não consigo dormir, porque os cestos de categorosos nos resíduos de Ruberein estão gritando a noite toda. Ninguém mais pode ouvir, mas está me deixando louco!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Crestliches? Eu não ouço nada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, confie em mim, eles estão gritando a cabeça. Meus ouvidos estão tão interessados ​​quanto um tigrado. Eles começaram a fazer isso recentemente. Deve estar acasalando a estação ou algo assim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Talvez eles parem em breve?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, estou desesperado! Vou te pagar para caçar aqueles estúpidos[%dic:STR_DIC_M_Crestlich_23_An] es e [%dic:STR_DIC_M_Crestlich_24_An] es</p>
+<p> </p>
+<p>O comandante não vai me autorizar a ir lá sozinho, pois não incomoda mais ninguém.</p>
+<p> </p>
+<p>Eu iria lá e cortaria todas as suas gargantas agora, se pudesse!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, graças aos Senhores Empíreanos! Vá para o [%dic:STR_DIC_W_LF2_SZ_F1]. Você encontrará[%dic:STR_DIC_M_Crestlich_23_An] es e [%dic:STR_DIC_M_Crestlich_24_An] es lá.</p>
+<p> </p>
+<p>Por favor, livre -se deles. Antes de ficar louco!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou calar a boca."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você acha que estou apenas ouvindo fantasmas?</p>
+<p> </p>
+<p>Vou te pagar! O que posso fazer para convencê -lo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, não estou interessado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Você deve ter matado muito do[%dic:STR_DIC_M_Crestlich_23_An] es e [%dic:STR_DIC_M_Crestlich_24_An] es.</p>
+<p> </p>
+<p>Eu ouvi seus gritos de dor daqui! Finalmente, poderei dormir!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que eu trouxe de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado!</p>
+<p> </p>
+<p>Você não pode imaginar como sou grato.</p>
+<p> </p>
+<p>Por favor, leve isso com minhas bênçãos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LF2_SZ_F1] e mate os presos.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_Crestlich_23_An]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Crestlich_24_An]([%5]/7).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Herodes].</p></step>
+</steps>
+<p>Hunt Crestliches para Heropres, que não consegue dormir por causa do barulho dos animais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Heropes estava sendo mantido acordado à noite pelo barulho dos Crestliches, e ficou chateado por ninguém entender o quão terrível isso era.</p>
+<p> </p>
+<p>Então, você foi para os resíduos de Ruberein e caçou crestliches para ele até ficar quieto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

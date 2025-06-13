@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve nos ajudar, [%username].</p>
+<p> </p>
+<p>Uma rota de suprimento será criada entre o Templo Rune e o posto de defesa na Floresta das Sombras. Por favor, elimine o [plur][%dic:STR_DIC_M_LDF5A_A1_Zaif_61_An]ou o [plur][%dic:STR_DIC_M_LDF5A_A1_Rafflesia_Dr_62_An]que estão criando estragos lá.</p>
+<p> </p>
+<p>Esses monstros notórios sempre atrapalham os asmodianos na região de Stelman.</p>
+<p> </p>
+<p>Eliminar os monstros problemáticos e procurar [%dic:STR_DIC_LDF5a_Bard_Commander], o governador da equipe de limpeza de Katalam, para receber um[%dic:STR_DIC_I_key_returnbox_b_01].</p>
+<p> </p>
+<p>Use esta chave para abrir o [%dic:STR_DIC_I_returnbox_b_01]. Você encontrará um item dentro que será útil em suas aventuras.</p>
+<p> </p>
+<p>Por favor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphelumbra. Um retorno.</p>
+<p> </p>
+<p>E aí? Você precisa de ajuda?</p>
+<p> </p>
+<p>Por favor, diga.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relatou que ajudou a estabelecer a rota de suprimento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso? Muito obrigado.</p>
+<p> </p>
+<p>Agora, esses encrenqueiros não vão me dar dores de cabeça por um tempo.</p>
+<p> </p>
+<p>Aqui está o [%dic:STR_DIC_I_key_returnbox_b_01]como prometido.</p>
+<p> </p>
+<p>Se você encontrar um[%dic:STR_DIC_I_returnbox_b_01] em suas aventuras, você pode usá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o katalam norte e elimine o [plur][%dic:STR_DIC_M_LDF5A_A1_Zaif_61_An]ou o [plur][%dic:STR_DIC_M_LDF5A_A1_Rafflesia_Dr_62_An]([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_LDF5a_Bard_Commander]no[%dic:STR_DIC_W_LDF5A_OP_D].</p></step>
+</steps>
+<p>Elimine os monstros na região de Stelman e depois vá a Bard para receber a chave do baú brilhante dos retornados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Janette pediu que você eliminasse o Rockmane Zaions ou a agulha dos malodores no norte de Katalam.</p>
+<p> </p>
+<p>Depois de eliminar os monstros e procurar Bard, você recebeu a chave do baú brilhante dos retornados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

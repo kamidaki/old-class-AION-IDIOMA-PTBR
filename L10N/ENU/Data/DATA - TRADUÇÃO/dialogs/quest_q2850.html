@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando Lisya me contou sobre você, fiquei dividido entre dúvidas e confiança.</p>
+<p> </p>
+<p>Pois eu já vi muitos daevas cujas habilidades eram piores do que sua reputação</p>
+<p> </p>
+<p>Mas suas habilidades excedem sua reputação</p>
+<p> </p>
+<p>Recentemente, freqüentemente acontece que o Elyos alveja e matou nossos Daevas com uma classificação maior que o oficial.</p>
+<p> </p>
+<p>Essa parece ser a estratégia deles, e é por isso que também temos que tomar medidas de emergência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A estrutura de classificação dos oficiais de Elyos tem cinco níveis, de um oficial com 1 estrela a um oficial com 5 estrelas. Dessa forma, é muito parecido com o que fazemos.</p>
+<p> </p>
+<p>Podemos eliminar os oficiais de Elyos. Obviamente, é bom destruir os oponentes mais fortes que os oficiais. Mas isso ainda é muito difícil para nós.</p>
+<p> </p>
+<p>Porque você também está acostumado a agrupar missões, assim como nós. É por isso que seria bom para você não ir sozinho.</p>
+<p> </p>
+<p>Você pode concluir esta tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você aceitaria essa tarefa.</p>
+<p> </p>
+<p>Eles começaram o ataque. Mas nossa sede está trabalhando em um plano que nos dará vantagem novamente, matando cruelmente os policiais.</p>
+<p> </p>
+<p>Estou pedindo para você desempenhar um papel de liderança na invasão.</p>
+<p> </p>
+<p>Você não precisa necessariamente matar oponentes fracos.</p>
+<p> </p>
+<p>Esperamos que os oponentes sejam desanimados perdendo seus lutadores mais fortes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem medo da horda de asas brancas?</p>
+<p> </p>
+<p>Se você tem medo, não precisa vir ao acampamento inimigo.</p>
+<p> </p>
+<p>A batalha pelo abismo é o destino dos Daevasas. Mas se você tem medo da batalha, deve pensar em sua dignidade como Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouvi de Scouts! Que você lutou contra a horda de asas brancas e finalmente os derrotou.</p>
+<p> </p>
+<p>Estou orgulhoso de você, [%username]!</p>
+<p> </p>
+<p>Diga -me o que aconteceu durante a implantação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente prestou ótimos serviços.</p>
+<p> </p>
+<p>Obviamente, gostaríamos de comemorar sua vitória, mas ainda temos muito o que fazer.</p>
+<p> </p>
+<p>Eles vão ressuscitar novamente. Então eles logo virão aqui.</p>
+<p> </p>
+<p>Vamos continuar lutando com eles. À vitória da Asmodiana!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [plur][%dic:STR_DIC_E_Lgrade00]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Votan].</p></step>
+</steps>
+<p>A decisão foi tomada para eliminar os oficiais de Elyos para enfraquecer o poder dos Elyos no abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Votan agradeceu e disse que agora se levantaria em sua estima.</p>
+<p> </p>
+<p>Após suas ordens, você matou os oficiais de Elyos que estavam ameaçando os asmodianos. Ele o recompensou no retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

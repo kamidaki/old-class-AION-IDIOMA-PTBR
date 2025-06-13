@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meus colegas da Ordem da Alabastro,</p>
+<p> </p>
+<p>Hoje, somos chamados pelo próprio santuário para impedir o caos e proteger toda a Elysea do desastre.</p>
+<p> </p>
+<p>Um minério enganoso foi distribuído por toda a HION por um grupo desconhecido. Pode parecer um minério comum, mas perturba o campo e os dispositivos de vôo isetéricos.</p>
+<p> </p>
+<p>Pedimos a todos os membros da ordem de alabastro para eliminar o [%dic:STR_DIC_OBJ_FOBJ_Q35009] e relate imediatamente seu sucesso a [%dic:STR_DIC_E_35007].</p>
+<p> </p>
+<p>Para Elysea e Santum!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido e guarde -o.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi? Você conseguiu fazer a coisa pelo motivo, conforme indicado pela carta?</p>
+<p> </p>
+<p>Eu gostaria de poder me juntar a você no campo, mas quem coordenaria relatórios se eu fizesse isso, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Continue com o bom trabalho, [%username]. Seus esforços tornam a Elysea um lugar mais seguro para todos.</p>
+<p> </p>
+<p>Espere mais chamadas de ação da ordem do Alabaster. Em meio a toda essa confusão, as forças sujas conspiram para fazer seus movimentos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_FOBJ_Q35009]([%2]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_35007].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com uma carta da Ordem da Alabastro, um grupo desconhecido distribuiu uma substância suspeita que perturba os dispositivos de campo eterérico.</p>
+<p> </p>
+<p>Você rapidamente destruiu as pedras enganadoras e relatou a Aiskyholos. Mas Aiskyholos disse que há mais por vir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

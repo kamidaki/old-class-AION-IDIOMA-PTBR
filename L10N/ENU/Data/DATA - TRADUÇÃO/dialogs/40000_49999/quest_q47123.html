@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Somos todos irmãos no círculo.</p>
+<p> </p>
+<p>Venha, ouça a vontade dos oráculos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Diga -me o que eles vêem para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os oráculos o viram no aço de aço, [%username].</p>
+<p> </p>
+<p>Eles sabem quando você vai lá, você encontrará um[%dic:STR_DIC_E_Da_45]cujo destino está entrelaçado com o seu.</p>
+<p> </p>
+<p>Após o ponto, você se torna um[%dic:STR_DIC_E_Mentor], a visão dos Oráculos fica nebulosa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você tiver sucesso, devolva -me para uma recompensa do círculo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se, mas quando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para evitar a visão dos oráculos ...</p>
+<p> </p>
+<p>Isso vai acontecer algum dia, [%username]. Tem certeza de que não quer escolher o tempo mais fortuito?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu prefiro acreditar na filosofia de Munin".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou com uma história de sua vitória?</p>
+<p> </p>
+<p>É importante para o círculo rastrear a profecia e o resultado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós limpamos nossas garras com o sangue de nossos inimigos".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu trabalho para os Daevass mais jovens continua admiravelmente.</p>
+<p> </p>
+<p>Parabéns por uma missão de sucesso.</p>
+<p> </p>
+<p>Que o destino o leve, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Tornar -se um[%dic:STR_DIC_E_Mentor]para um[%dic:STR_DIC_E_Da_45] e derrotar inimigos no ancinho de aço.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDShip_ShulackAsFirstmateKnmd_45_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDShip_ShulackRaAtilleryChKnmd_45_Ah]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDShip_ShulackCaptainNmd_46_Ah]([%8]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Geismar].</p></step>
+</steps>
+<p>Torne -se um mentor para um aço de aço, derrote os líderes de piratas Shulack e se reporte ao círculo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O irmão Gesmar compartilhou a visão dos oráculos de seu futuro próximo. Eles viram você no aço de aço como mentor.</p>
+<p> </p>
+<p>Então, você ajudou uma ou duas operações de aço a derrotar os líderes de piratas Shulack e depois recebeu uma recompensa do círculo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você vai ter que falar.</p>
+<p> </p>
+<p>Não posso ouvi -lo sobre os Griffons e os Pretors.</p>
+<p> </p>
+<p>Que tumulto!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles são um pouco barulhentos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um pouco? Saltos lascos abissais, eles poderiam ficar mais altos?</p>
+<p> </p>
+<p>Todos os dias, lá estão eles, lutando, mexendo aquela poeira. Vermin! Nada além de vermes!</p>
+<p> </p>
+<p>Você sabe o que seria melhor? Se eles estavam naquele pote lá ... fervendo em um bom ensopado, com um zigi ou dois, e apenas uma pitada de sal! Mmmm!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ewww!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você nunca teve Griffon Stew antes? Bem, isso é falhado, podemos abordar imediatamente.</p>
+<p> </p>
+<p>Leve -se lá e silencie aquelas bestas. Em troca, vou acelerar um ensopado que derrubará suas meias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mmm! Minha boca está rega apenas pensando nisso, [%username].</p>
+<p> </p>
+<p>Sem mencionar o quanto será mais silencioso por aqui.</p>
+<p> </p>
+<p>Agora, pule para, vá nos livrar daqueles[%dic:STR_DIC_M_Griffon_35_An] Areia [%dic:STR_DIC_M_Pretor_36_An] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pulando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você é vegetariano? Oh, bem, isso prejudica o ensopado de Griffon.</p>
+<p> </p>
+<p>Bem, obrigado de qualquer maneira.</p>
+<p> </p>
+<p>Um Daeva vegetariano, imagine isso ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nada de estranho nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Show impressionante! Eu estava assistindo como você os despachou, [%username].</p>
+<p> </p>
+<p>Você era magnífico. Como assistir a um dançarino altamente qualificado e altamente armado. Piruetas assassinas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você deveria ver meu Rond de Jambe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, sente -se e relaxe e eu começarei o ensopado.</p>
+<p> </p>
+<p>Um pouco Nepeta, alguns Dados ....</p>
+<p> </p>
+<p>Ahh, é tão bom poder me ouvir pensar novamente! Obrigado, meu amigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os problemas.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Griffon_35_An]([%2]/7)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Pretor_36_An]([%5]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Laigas].</p></step>
+</steps>
+<p>Você concordou em matar os Griffons e os precedentes do lado de fora do posto avançado de Kuriullu para acabar com o barulho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Griffons e os Prestores estavam lutando em frente ao posto avançado de Kuriullu, que era o irritante Laigas.</p>
+<p> </p>
+<p>Você os eliminou, e Laigas transformou os Griffons em um ensopado saboroso para que todos gostem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

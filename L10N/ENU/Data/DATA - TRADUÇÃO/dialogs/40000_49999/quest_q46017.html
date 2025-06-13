@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem sorte, Daeva.</p>
+<p> </p>
+<p>Acabei de preencher os papéis para um novo emprego, Nyerk.</p>
+<p> </p>
+<p>O dinheiro é bom .... você estaria interessado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Mostre -me o trabalho e eu vou te dizer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Azphelumbra, daemons -</p>
+<p> </p>
+<p>Um cliente eminente nos contratou para inflitar uma cidade de Balaur.</p>
+<p></p>
+<p>Como sempre, o orgulho dos daemons de Charlirunerk está em jogo. Não devemos falhar!</p>
+<p> </p>
+<p>1. Alvo:[%dic:STR_DIC_OBJ_FOBJ_Q46017a]</p>
+<p></p>
+<p>2. Localização:[%dic:STR_DIC_W_LF4_SZ_C5], Inggison</p>
+<p></p>
+<p>3. Detalhes: um cache de tesouro de Balaur em Hanarkand. As relíquias dentro podem revelar segredos sobre os próprios senhores do dragão.</p>
+<p> </p>
+<p>Esta é uma missão particularmente perigosa; portanto, qualquer daemon que rouba com sucesso mesmo um item do cache de Balaur será recompensado.</p>
+<p> </p>
+<p>- Charlirunerk, fundador, daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que os daevasas não passam as chances como essa!</p>
+<p> </p>
+<p>Vai levar algum tempo para chegar a [%dic:STR_DIC_W_LF4_SZ_C5], mas perigo e dinheiro sempre andam de mãos dadas, não é? SIM SIM!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nunca para os Shugos, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual é o problema?</p>
+<p> </p>
+<p>Isso pode ser considerado bastante generoso, Nyerk!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é generoso o suficiente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Balaur Treasure? Que tipo de coisas eles valorizam? Eles estão seguros para tocar? Ooh, é tão misterioso, Nyerk!</p>
+<p> </p>
+<p>E você tem que ir a uma cidade de Balaur! Deve estar cheio de todos os tipos de coisas legais!</p>
+<p> </p>
+<p>Você trouxe algo do peito? Deixe-me ver! Deixe-me ver!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Esta é uma pedra mágica de Balaur."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, não brigue comigo assim! Não é bom! Eu tenho minhas esperanças!</p>
+<p> </p>
+<p>Você deve estar tão curioso quanto eu sobre que tipo de valor do Balaur Keep, Nyerk?</p>
+<p> </p>
+<p>Por favor, volte para [%dic:STR_DIC_W_LF4_SZ_C5] e encontre o baú do tesouro de Balaur! Meu pêlo está todo crespo com suspense!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pegue emprestado um pente. Volto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ooooh, esse é o tesouro? Posso tocá -lo?</p>
+<p> </p>
+<p>É tão vermelho ... e quente! Não é de admirar que eles gostem tanto! Espere até eu contar à irmã gêmea que toquei no Balaur Treasure, Nyerk!</p>
+<p> </p>
+<p>Obrigado, obrigado, Daeva! Você fez este shugo muito feliz! Recompensa; Você ganhou!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_FOBJ_Q46017a] escondido em[%dic:STR_DIC_W_LF4_SZ_C5], Inggison e levá -lo para o [%dic:STR_DIC_E_46500].</p>[%collectitem]</step>
+</steps>
+<p>Você tem uma tarefa dos daemons de Charlirunerk. Realizar o pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk para encontrar um tesouro de Balaur escondido em Hanarkand.</p>
+<p> </p>
+<p>Você pegou uma pedra mágica do Red Drana do cache de Balaur e a entregou aos daemons. Você foi recompensado por recuperar o tesouro deslumbrante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

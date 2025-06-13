@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou com tanta fome que estou perdendo.</p>
+<p> </p>
+<p>Eu não posso comer nada. Só há coisa que curará essa fome.</p>
+<p> </p>
+<p>Ah, se eu pudesse provar isso apenas mais uma vez ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você está desejando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva visitante uma vez cozinhou alguns peixes que eu nunca tinha visto antes.</p>
+<p> </p>
+<p>Cheirava delicioso. Ele me ofereceu um pouco da refeição. Tinha um sabor maravilhoso! Eu nunca soube que um peixe poderia ter um sabor tão bom.</p>
+<p> </p>
+<p>Ele me disse que era [%dic:STR_DIC_gb_fish_n_c_30b]. Eu sonhei com isso desde então.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece bom."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é apenas bom-unforgettable! Não consigo esquecer o sabor do megrim assado. Eu realmente não quero comer mais nada.</p>
+<p> </p>
+<p>Encontrei um lago cheio de MEGRIM. Mas está ao lado da vila tigrada ... eles me matariam se eu tentasse pescar lá.</p>
+<p> </p>
+<p>Daeva, estou desesperado. Você me pegaria alguns[%dic:STR_DIC_gb_fish_n_c_30b], por favor?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para chegar à vila tigric e ao lago onde o [%dic:STR_DIC_gb_fish_n_c_30b]Você terá que passar pela selva de Poya.</p>
+<p> </p>
+<p>Os tigricos são selvagens e ouço que o lago também está cheio de flores da lua. Por favor, tenha cuidado.</p>
+<p> </p>
+<p>Eu normalmente não pediria a alguém para fazer algo tão perigoso, mas se você não me trazer aqueles megrímicos, eu desaparecerei da fome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não fará isso por mim?</p>
+<p> </p>
+<p>Você prefere me ver morto, não é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh, cresça!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>As pessoas riram de mim. Eu não os culpo. Eles não entendem.</p>
+<p> </p>
+<p>Eles nunca provaram. Eles entenderiam se deram apenas uma mordida.</p>
+<p> </p>
+<p>Você conseguiu o [%dic:STR_DIC_gb_fish_n_c_30b]Como você prometeu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Apenas me chame de 'Fishmonger.'"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você está fazendo isso comigo?</p>
+<p> </p>
+<p>Você sabe o que eu preciso! Pegue alguns[%dic:STR_DIC_gb_fish_n_c_30b]Para mim antes de morrer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você não vai morrer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por fim, o MeGrim que eu tenho sonhado!</p>
+<p> </p>
+<p>Devo assá -los enquanto eles ainda estão frescos!</p>
+<p> </p>
+<p>Muito obrigado, [%username]. Agora posso encontrar prazer na vida novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue alguns[%dic:STR_DIC_gb_fish_n_c_30b] e leve-os para [%dic:STR_DIC_N_Roina].</p>[%collectitem]</step>
+</steps>
+<p>Roina não consegue esquecer o assado Megrim, que provou uma vez antes. Pegue um pouco de Megrim para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Roina disse que ainda não pode esquecer o sabor de megrim assado compartilhado por um Daeva que estava passando pelo Observatório de Campo Aetico há algum tempo.</p>
+<p> </p>
+<p>Sonhando de assado, ela perdeu o apetite por qualquer outra coisa. Ela ficou em êxtase quando você trouxe a amada Megrim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

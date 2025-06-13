@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido urgente.</p>
+<p> </p>
+<p>Você enviaria meus camaradas, que se transformaram em[%dic:STR_DIC_M_LDF5A_F_Da_Zom_all], de volta ao fluxo de Aether em vez de mim?</p>
+<p> </p>
+<p>Não vou permitir que meus camaradas, que ficaram lado a lado no campo de batalha comigo, caminharem como zumbis.</p>
+<p> </p>
+<p>Tentei fazer isso com minhas próprias mãos algumas vezes, mas não foi como eu pensava.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Os camaradas retornaram ao fluxo de Aether bem?</p>
+<p> </p>
+<p>Você pode me levar para um fraco.</p>
+<p> </p>
+<p>Mas quando fiquei de frente para eles no final, não conseguia me mover.</p>
+<p> </p>
+<p>Ainda acho difícil entender que meus camaradas mudaram de uma maneira tão terrível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você cuidou do assunto em meu nome. Obrigado.</p>
+<p> </p>
+<p>[%username], por favor, peça paz para meus camaradas também.</p>
+<p> </p>
+<p>Eu acho que eles teriam sido gratos a você.</p>
+<p> </p>
+<p>Afinal, eu era um deles.</p>
+<p> </p>
+<p>Mais uma vez, muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Liberar [%dic:STR_DIC_M_LDF5A_F_Da_Zom_all]que já foi camarada. ([%2]/8)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard07_D].</p></step>
+</steps>
+<p>Envie os zumbis selvagens, que eram camaradas uma vez, de volta ao fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jarnkel explicou que seus camaradas haviam se tornado zumbis e pediu que você os guiasse de volta ao fluxo de Aether.</p>
+<p> </p>
+<p>Você eliminou os zumbis selvagens a seu pedido e foi muito agradecido por seu retorno.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

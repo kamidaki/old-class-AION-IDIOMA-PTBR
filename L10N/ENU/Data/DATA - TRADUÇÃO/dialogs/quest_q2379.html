@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora de você me ajudar, [%username].</p>
+<p> </p>
+<p>Minha missão aqui é descobrir um traço dos Daevas ausentes.</p>
+<p> </p>
+<p>Os problemas desta região consomem os arcontes locais, e eu preciso que a cooperação deles prossiga.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que isso tem a ver comigo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A Ascensão concede asas, não a sabedoria. Os problemas de um Daeva afetam todos nós. Você aprenderá isso, com o tempo.</p>
+<p> </p>
+<p>Morheim tem muitos problemas, mas o alto deles é o Mau. Especificamente, a tribo de névoa Mane.</p>
+<p> </p>
+<p>A solução local era assassinar seus líderes. Falhou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu ainda não ... por favor, continue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, você aprende bem e rapidamente. Bom, você precisará disso para esta tarefa.</p>
+<p> </p>
+<p>Apesar de seu fracasso total, o plano deles ainda tem mérito. O problema estava em entender muito, muito cedo. Os guardas devem ser eliminados antes que os líderes possam cair.</p>
+<p> </p>
+<p>Eu te assisti. Vi você em ação, de longe. Eu acredito que você pode fazer isso, [%username]. Você vai tentar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seus alvos estão na vila de Mist Mane e na caverna de madeira de Kasaka. [%dic:STR_DIC_M_ReA_LycanRangerM_40_Ae] S, [%dic:STR_DIC_M_ReB_LycanRangerM_40_Ae] S, [%dic:STR_DIC_M_AeA_LycanAssassinM_39_Ae] Areia [%dic:STR_DIC_M_HeB_LycanHunterM_39_Ae] S.</p>
+<p> </p>
+<p>Encontre -os e me traga [%dic:STR_DIC_I_QUEST_2379a] para provar que você os derrotou. Para tentar a próxima fase, precisaremos do apoio de ... outros.</p>
+<p> </p>
+<p>Assalar a fortaleza deles não será fácil, mesmo para você. Encontre aliados antes de ir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me surpreende [%username], rejeitando uma missão tão importante.</p>
+<p> </p>
+<p>O que pode ser mais importante do que ajudar os outros? Ou é que você tem um segredo?</p>
+<p> </p>
+<p>Vou procurar outro Daeva. Você segue seu caminho. Mas não vá longe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não tenho nada a temer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema da MAU deve ser resolvido rapidamente, os Daevass ausentes devem ser minha prioridade aqui.</p>
+<p> </p>
+<p>Sua parte é crítica.</p>
+<p> </p>
+<p>Diga -me que você teve sucesso e tem [%dic:STR_DIC_I_QUEST_2379a] S mostrar por isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Só posso dizer a verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>A honestidade é apreciada. Resultados mais ainda.</p>
+<p> </p>
+<p>O erro, eu acho, não estava impressionando em você a urgência da minha missão.</p>
+<p> </p>
+<p>Um que não farei duas vezes. Deixe agora matar os guardas da vila de Mist Mane. Retornar com[%dic:STR_DIC_I_QUEST_2379a] para provar suas ações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Pelo menos algumas das histórias ligadas a você devem ser verdadeiras.</p>
+<p> </p>
+<p>Seus esforços hoje não serão esquecidos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_2379a] e leve-os para [%dic:STR_DIC_N_Anund].</p>[%collectitem]</step>
+</steps>
+<p>Tentativas de assassinar os líderes de névoa Mane Mau falharam por causa dos guardas Mau. Vá para a vila de névoa e a caverna de madeira de Kasaka e elimine os protetores brutais da névoa, os escoteiros brutais de névoa, os brutais de névoa de névoa e os tamers brutais de névoa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ao investigar o caso de Daeva desaparecido, Anund tomou conhecimento de um plano para assassinar os líderes de névoa Mane Mau.</p>
+<p> </p>
+<p>No entanto, a operação falhou por causa dos guardas que os cercam.</p>
+<p> </p>
+<p>Portanto, como ela perguntou, você foi para a vila de névoa e derrotou guardas brutais de névoa, escoteiros brutais de névoa, brutais criminosos de névoa e tamers brutais de névoa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já olhou para a costa ultimamente?</p>
+<p> </p>
+<p>Lefa! Apenas passeando por, como se estivessem aqui primeiro, não nós.</p>
+<p> </p>
+<p>Não sei o que eles estão fazendo, mas isso está me deixando nervoso. Eu preciso de alguém para entrar no meio deles e cutucá -lo ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você está procurando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Qualquer coisa que me diga por que eles desembarcaram aqui.</p>
+<p> </p>
+<p>Diga, por que você não vai lá? Tire alguns[%dic:STR_DIC_M_LehparAsD_5_An] Areia [%dic:STR_DIC_M_LehparWaD_5_An] S e procure nos corpos uma pista.</p>
+<p> </p>
+<p>Acha que você está pronto para isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Coisas boas.</p>
+<p> </p>
+<p>Eu sugiro que os tomasse um de cada vez-fará nenhum favor para conseguir um grupo de uma só vez. Cuide -se, mas não volte sem saber por que eles estão aqui!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O sol?!</p>
+<p> </p>
+<p>Oh, um bom Raider você é! Fora com você, então. Vou fazer isso sozinho. A única maneira de fazer um trabalho corretamente, de qualquer maneira.</p>
+<p> </p>
+<p>O que você ainda está fazendo aqui? Limpar, sua desculpa fraca.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus, Derot."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Encontre qualquer outra coisa, [%userclass]?</p>
+<p> </p>
+<p>Espero que você tenha algo que possa reprimir os rumores em volta deste lugar. Estou bem cansado de ouvi -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o quê? Ar?</p>
+<p> </p>
+<p>Você está tentando me enganar, garoto?</p>
+<p> </p>
+<p>Chega de ir embora! Vá me encontrar uma pista antes de ficar doente com o rumor por aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você tem aí?</p>
+<p> </p>
+<p>Parece um diário de bordo. Vamos dar uma olhada na entrada mais recente, não é?</p>
+<p> </p>
+<p>"Dia 76: A busca pela Opala Negra se aproxima de seu fim. Estamos prontos para desembarcar nos penhascos de Ishalgen e enfrentar qualquer ameaça que reside lá ..."</p>
+<p> </p>
+<p>Hmph. Diz aqui que a Opala Negra pode mudar seu futuro, "os sonhos são feitos", diz ele. Gostaria de saber o que isso significa-Besides Treasure, é claro!</p>
+<p> </p>
+<p>Não importa. Você fez bem isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure os corpos do[%dic:STR_DIC_M_LehparAsD_5_An] Areia [%dic:STR_DIC_M_LehparWaD_5_An] para descobrir por que os estranhos chegaram a Ishalgen. Depois de encontrar uma pista, traga -o para [%dic:STR_DIC_N_Derot].</p>[%collectitem]</step>
+</steps>
+<p>Derot está curioso para saber por que um navio estranho está ancorado perto da costa. Encontre algumas pistas para descobrir as intenções dos recém -chegados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Derot pediu que você encontrasse uma pista que explique por que o navio e sua equipe estão em Ishalgen. Você encontrou o diário de bordo do navio e o trouxe para ele.</p>
+<p> </p>
+<p>O diário de bordo menciona a opala negra, com a qual uma pessoa pode mudar seu futuro. É o material dos sonhos de ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

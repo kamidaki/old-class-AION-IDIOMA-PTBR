@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você viu os porgues vagando pela vila?</p>
+<p> </p>
+<p>Eles costumavam ser gado da aldeia, mas agora são Mortos Vivos. Porgues Mortos Vivos. É quase risível.</p>
+<p> </p>
+<p>Mas o problema é ... algumas pessoas ainda os estão tratando como animais de estimação ou gado, em vez dos monstros que são.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece uma má ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é. Eu vi moradores realmente tentando alimentá -los. E se um deles fosse mordido? Teríamos ainda mais Mortos Vivos para nos atormentar.</p>
+<p> </p>
+<p>Eu acho que pode ser melhor para todos os envolvidos se os eliminarmos.</p>
+<p> </p>
+<p>Você estaria interessado no trabalho, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Já matamos a maioria dos que se seguiram aos moradores aqui. Eu gostaria que você erradique qualquer [%dic:STR_DIC_M_UndeadPorgussD_36_An] es Wandering sobre a vila de Ghost Besfer.</p>
+<p> </p>
+<p>E enquanto você estiver lá, cuide do[%dic:STR_DIC_M_ZaifUndeadD_37_An] S também. Os worgs que se alimentavam nos porgues ficaram Mortos Vivos. Negócios desagradáveis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você ache aceitável ignorar seus deveres como um daeva.</p>
+<p> </p>
+<p>Eu posso agradar mal os serviços de Daevas que esqueceram o que é dever.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu conheço meu dever."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você está de volta da vila de Besfer Ghost?</p>
+<p> </p>
+<p>Lutando contra worgs e porgues Mortos Vivos, certo?</p>
+<p> </p>
+<p>Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não foi fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Tenho certeza de que terei mais trabalho para você em breve.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os worgs e porgues Mortos Vivos que estão ameaçando pessoas.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_ZaifUndeadD_37_An]([%2]/3).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_UndeadPorgussD_36_An]([%5]/7).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sleipnirr].</p></step>
+</steps>
+<p>Elimine os Mortos Vivos e os porgues que estão vagando pela vila fantasma Besfer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Sleipnir pediu que você erradique os porgues Mortos Vivos.</p>
+<p> </p>
+<p>Ele também pediu que você matasse Worgs Mortos Vivos enquanto você estava na vila fantasma.</p>
+<p> </p>
+<p>Você destruiu os Mortos Vivos e os porgues como o Centurion ordenou, e quando você voltou, ele elogiou seu esforço e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

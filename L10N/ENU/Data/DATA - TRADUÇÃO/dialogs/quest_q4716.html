@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], se você estiver disposto, então tenho outra missão para você.</p>
+<p> </p>
+<p>Você provavelmente sabe disso, mas matar o capitão não é suficiente para incapacitar completamente a draga. Para fazer isso, devemos danificar a draga em si-não apenas sua tripulação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu plano é destruir certas instalações -chave bordo da draga. Obviamente, isso exigirá se infiltrar na própria dragião, o que é bastante perigoso, como você já sabe.</p>
+<p> </p>
+<p>Sabendo tudo isso, você está interessado em perpetrar alguma sabotagem?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Tanto quanto posso dizer, devemos destruir o [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1]no armazém de armas e o [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4]na sala de controle nuclear. Atingir essas duas áreas deve fazer com que toda a draga pareça parada.</p>
+<p> </p>
+<p>Isso deve criar uma confusão deliciosa!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que temos algum tempo para pensar sobre isso, e não posso forçá -lo a ir. Mas eu quero que você cumpra esta missão se tiver um plano para se infiltrar na draga de qualquer maneira.</p>
+<p> </p>
+<p>Eu não acho que será um grande fardo para você, [%username]. Eu ouvi histórias de suas proezas.</p>
+<p> </p>
+<p>Por favor, pense e volte para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por palavra, [%username]. Você realizou a missão como eu solicitei?</p>
+<p> </p>
+<p>Você foi bem -sucedido destruiu o armazém de armas e o controle nuclear Surkanas?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Só assim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso certamente colocou a draga em desordem! Vou aguardar relatórios do resto dos meus homens e ver o que podemos aprender com isso.</p>
+<p> </p>
+<p>Eu sei que isso não vai afastar completamente o balaur de Reshanta, mas cada passo que damos é um passo mais perto da vitória.</p>
+<p> </p>
+<p>Fique comigo, [%username]. A vitória será nossa ainda!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua as principais instalações da draga.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Henir].</p></step>
+</steps>
+<p>Você concordou em atacar duas instalações principais da draga para paralisar suas funções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Henir percebeu que se livrar de seu capitão não é suficiente para colocar a draga fora de comissão.</p>
+<p> </p>
+<p>Você destruiu um armazém de armas mantendo Surkana e um controle nuclear Surkana, como ele sugeriu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

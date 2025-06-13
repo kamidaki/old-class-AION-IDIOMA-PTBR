@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os espíritos do fogo acabaram de me dizer algo bastante interessante, [%username].</p>
+<p> </p>
+<p>Eles disseram que uma grande batalha ocorreu aqui nos tempos antigos. E nesta batalha, um nome de espírito de chama Flarestorm foi preso pelo Balaur.</p>
+<p> </p>
+<p>Você sabe o que eles fizeram com o pobre Flarestorm? Eles o prenderam em um incinerador de latrina e o forçaram a queimar seus resíduos por uma eternidade. O pobre espírito ainda está preso lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é nojento."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu desenvolvi um tipo de parentesco com esses espíritos de fogo. Recuso -me a deixar que alguém seja atormentado assim!</p>
+<p> </p>
+<p>Você é um dos mais habilidosos[%userclass] S eu conheço, [%username]. Você me ajudaria a libertar o Flarestorm deste destino horrível?</p>
+<p> </p>
+<p>O incinerador está no templo de Beshmundir, disseram eles.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O pobre Flarestorm foi contaminado por tanto desperdício que ele ficou azul. Quem sabe o que aqueles balaur comem para que isso aconteça! Você encontrará o [%dic:STR_DIC_W_IDCatacombs_SZ_D2] em um canto do jardim dos mortos dentro do templo de Beshmundir.</p>
+<p> </p>
+<p>Vá lá e volte [%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah]de volta ao fluxo de Aether. Está lá há muito tempo, então pode ser necessário lutar com ele repetidamente para que funcione.</p>
+<p> </p>
+<p>Ah, esse item que dei a você anteriormente é uma chave para o incinerador de chama azul. Use -o para abrir a porta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou libertar esse espírito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem empatia, [%username]? Flarestorm lutou pelo nosso povo e agora sofre por isso! Ele está encharcado em balaur lixo por um milênio!</p>
+<p> </p>
+<p>Isso me envergonha até pensar nisso. Estou muito decepcionado com você, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Suas asas vão voar para você também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso deixar de me sentir mal com a tempestade. Um espírito gentil e gentil que lutou bravamente, apenas para acabar sofrendo em uma prisão tão humilhante.</p>
+<p> </p>
+<p>Parece meu coração pensar nisso.</p>
+<p> </p>
+<p>Você ajudou a Flarestorm a encontrar sua paz? Ele é um com o Aether de novo, Daeva?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Flarestorm está em paz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que ele ainda sofre com a contaminação ... mil anos submersos em Balaur Waste não se lavam com tanta facilidade.</p>
+<p> </p>
+<p>Mas tenho fé que ele estará completamente livre um dia ... se ele puder contar com Daevas como nós.</p>
+<p> </p>
+<p>Obrigado pelo que você fez, [%username]. Eu sei que Ariel favorece aqueles que ajudam os desamparados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vencer [%dic:STR_DIC_E_IDCatacombsN_ElementalFireNmd_55_Ah]Para remover a contaminação do Balaur ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Aiola].</p></step>
+</steps>
+<p>Você concordou em devolver a Flarestorm, um espírito antigo vinculado pelo Balaur, ao fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tessa disse que os espíritos de fogo que ela convocou disseram a ela que um espírito antigo permaneceu escravizado pelo Balaur.</p>
+<p> </p>
+<p>Ela disse que você deve devolver repetidamente o fluxo do fluxo de Aether, a fim de libertá -lo de seus captores.</p>
+<p> </p>
+<p>Então você foi ao incinerador de chamas azuis no templo de Beshmundir e venceu o Flarestorm.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

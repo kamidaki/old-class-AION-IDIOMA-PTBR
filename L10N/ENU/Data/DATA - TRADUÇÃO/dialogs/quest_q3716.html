@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez um bom trabalho, [%username], mas estamos apenas começando.</p>
+<p> </p>
+<p>A neutralização de uma draga leva mais do que apenas eliminar seu capitão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para prejudicar a draga de maneira eficaz, precisamos destruir suas instalações essenciais.</p>
+<p> </p>
+<p>Sua missão é se infiltrar no navio e sabotar as instalações principais, enquanto ainda procura em todos os cantos até encontrar e eliminar o capitão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai destruir o [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1] e [%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4] e traga a draga para um stand-sill.</p>
+<p> </p>
+<p>Deixe-me repetir-você deve destruir as instalações principais se quisermos jogar a draga em confusão abrangente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo, senhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que o governador Michalis recomendaria um Daeva não qualificado como você, talvez nunca saibamos.</p>
+<p> </p>
+<p>Não há vergonha de medo, mas não deixe que isso o governe, [%username].</p>
+<p> </p>
+<p>Agora, com licença. Eu tenho que procurar outro especialista em infiltração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, senhor. Eu apenas ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username].</p>
+<p> </p>
+<p>Conceda-me seu relatório oficial. Como está as principais instalações da draga?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Destruído com a bênção de Old Class Aion!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Se você e outros Daevas podem continuar o trabalho que você começou hoje, a draga acabará desaparecendo completamente de Reshanta. Eu acredito de todo o coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua as principais instalações da draga.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_1]([%2]/1).</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDAb1_Dreadgion_Surkana_4]([%5]/1).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Mias].</p></step>
+</steps>
+<p>Você concordou em atacar as principais instalações da draga para paralisar suas funções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eliminar o capitão não seria suficiente para jogar a draga no caos.</p>
+<p> </p>
+<p>Então, Maiias ordenou que você destruísse o arsenal que mantinha Surkana e o controle nuclear Surkana.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

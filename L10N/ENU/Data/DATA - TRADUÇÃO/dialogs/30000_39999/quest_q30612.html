@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q30612</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você está indo para a draga de Terath de qualquer maneira, você pode se tornar útil e deslizar alguns suprimentos do Balaur.</p>
+<p> </p>
+<p>Não, não queremos usá -los. Só queremos ver o que eles têm.</p>
+<p> </p>
+<p>Pegar [%dic:STR_DIC_I_quest_30602a] A partir de armazenamento de suprimentos ou uma das redes shulack. Ou você está muito ocupado, precioso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem?</p>
+<p> </p>
+<p>Você trouxe os suprimentos? Ou apenas desculpas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Suprimentos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente!</p>
+<p> </p>
+<p>Talvez você seja mais inteligente do que parece. Heh.</p>
+<p> </p>
+<p>Vou enviá -los para o Pandaemonium para olhar. Sangue para sangue!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter alguns[%dic:STR_DIC_I_quest_30602a] e trazê -los para [%dic:STR_DIC_N_Aluna].</p>[%collectitem]</step>
+</steps>
+<p>Alluna insistiu que você deslize os suprimentos da draga de Terath para análise.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alluna pediu que você roubasse suprimentos da draga de Terath para que o pandaemonium pudesse ver o que o Balaur está fazendo.</p>
+<p> </p>
+<p>Você os trouxe sem reclamação, e Alluna ficou impressionada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

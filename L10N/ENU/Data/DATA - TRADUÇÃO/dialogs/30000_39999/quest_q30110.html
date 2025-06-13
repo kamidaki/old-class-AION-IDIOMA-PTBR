@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que você já ouviu falar do dragão? Ouvi esse nome explodido com muita frequência ultimamente.</p>
+<p> </p>
+<p>Eu tratei muitas feridas sépticas causadas por eles-muitos, de fato, por armas normais.</p>
+<p> </p>
+<p>Descobri que eles estão cobrindo suas lâminas e pontas de flechas com veneno.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E você procura um antídoto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro. No momento, só posso tratar os sintomas-um caminho longo e doloroso para a recuperação.</p>
+<p> </p>
+<p>Para fazer isso, preciso de uma amostra do veneno em sua forma mais pura, antes de trabalhar no corpo.</p>
+<p> </p>
+<p>Ouvi dizer que você aceita essas tarefas para o bem do companheiro Daevas e Asmodae ...?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Receio ter apenas contas de segunda mão dos Daevas que tratei.</p>
+<p> </p>
+<p>Mas alguns me disseram que viram o dragão com um[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010] Antes de serem atacados.</p>
+<p> </p>
+<p>Esses são o que eu preciso. Eles provavelmente estão espalhados pelo Templo de Udas para o Dragonboud usar. Traga -os de volta para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os dragão são os envenenados ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Confesso que fiquei tentado por um momento a infectá -lo com o veneno, apenas para mostrar o que seus colegas Daevas estão passando.</p>
+<p> </p>
+<p>Mas eu não poderia fazer algo assim. E você ainda seria inútil para mim de qualquer maneira. Apenas saia-estou ocupado.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nem pense em me infectar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu fiz o máximo que puder-os feridos estão descansando confortavelmente, por agora-mas a dor é agonizante e a fraqueza profunda.</p>
+<p> </p>
+<p>Asmodae precisa desses danos em forma de luta o mais rápido possível. Por favor, me dê o que você encontrou no Templo de Udas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu tenho ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que deve ser difícil obter o veneno sem se tornar sua vítima, mas eu realmente preciso disso em seu estado original. É a melhor aposta que tenho de encontrar um antídoto.</p>
+<p> </p>
+<p>Aqueles[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010] S é provavelmente bem guardado ou bem escondido, mas faça o possível para obtê-los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sempre faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, as garrafas são menores do que eu esperava que fossem. É mais potente ou mais concentrado do que eu pensava.</p>
+<p> </p>
+<p>Mas, finalmente, posso começar a criar um antídoto. Também vai me contar muito sobre como o dragão faz todos os seus venenos.</p>
+<p> </p>
+<p>Isso não foi mera missão-você realmente avançou significativamente a causa asmodiana. Bom trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010] S do templo de Udas e trazê -los para [%dic:STR_DIC_N_Sulbanyer].</p>[%collectitem]</step>
+</steps>
+<p>O dragão começou a aplicar veneno em suas armas. Vá para o templo de Udas e colete garrafas de veneno para Sulbanyer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sulbanyer estava preocupado com o veneno que o uso do dragão em suas armas. Ele queria examinar o veneno diretamente para criar um antídoto para os daevass feridos.</p>
+<p> </p>
+<p>Você foi ao Templo de Udas e encontrou as garrafas venenosas do dragão para Sulbanyer estudar. Ele apreciou seus esforços em nome dele (e de Asmodae).</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

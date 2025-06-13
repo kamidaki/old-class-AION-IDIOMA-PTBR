@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou colocando em movimento meu plano de retomar a fortaleza de enxofre.</p>
+<p> </p>
+<p>Começaremos eliminando a guarnição da fortaleza na próxima vez que a fortaleza entrar em estado vulnerável.</p>
+<p> </p>
+<p>Quer participar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Prossiga."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O inimigo enviou tropas frescas para guarnecer a fortaleza de enxofre.</p>
+<p> </p>
+<p>Estamos afastando o Balaur, mas adicionar esses novos Elyos é uma história diferente.</p>
+<p> </p>
+<p>Você pode abaixá -los, alguns, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto os Elyos seguram a fortaleza de enxofre, pegue seu tempo. Ataque apenas quando a fortaleza é vulnerável, [%username].</p>
+<p> </p>
+<p>Limpe o [%dic:STR_DIC_M_2805_all]: Os combatentes de Elyos, Arqueiros, Mages e Sacerdotes, independentemente da classificação.</p>
+<p> </p>
+<p>Traga -me deles[%dic:STR_DIC_I_QUEST_2805a]como prova de sua derrota. Eu não vou mentir, isso será difícil. Veja suas costas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nervoso? Eu entendo. Isso não está pulando uma patrulha, é uma fortaleza inteira!</p>
+<p> </p>
+<p>Vou trabalhar mais táticas, se puder.</p>
+<p> </p>
+<p>E volte se você mudar de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username]!</p>
+<p> </p>
+<p>Você já esteve na fortaleza?</p>
+<p> </p>
+<p>Você derrotou o [%dic:STR_DIC_M_2805_all]? Eu gostaria de testar a borda de um[%dic:STR_DIC_I_QUEST_2805a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as armas que peguei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é uma pena fora do lugar, [%username]? Você não foi à fortaleza de enxofre!</p>
+<p> </p>
+<p>O que você está esperando? Assista à fortaleza, derrote o [%dic:STR_DIC_M_2805_all] e volte com o seu[%dic:STR_DIC_I_QUEST_2805a].</p>
+<p> </p>
+<p>Por que dizer sim se você não seguirá?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é tão bom quanto sua palavra, [%username]. Eu vejo como você tem sua reputação!</p>
+<p> </p>
+<p>Você levou o Elyos para um pino com certeza.</p>
+<p> </p>
+<p>Agora cabe a nós levar a unha para casa. Não poderia fazer isso sem você, amigo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_2805_all] e leve a prova para [%dic:STR_DIC_N_Glati].</p>[%collectitem]</step>
+</steps>
+<p>A fortaleza de enxofre Guarnição deve ser derrotada para recuperar a fortaleza. Derrote a guarnição de Elyos, que aparece quando a fortaleza entra no estado vulnerável, e retorna com as armas dos guardiões.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O plano de Glati de recuperar a fortaleza de enxofre da Elyos depende da derrota da guarnição de Elyos defendendo -a.</p>
+<p> </p>
+<p>Você lutou contra a guarnição de Elyos e voltou a Glati com as armas de seus guardiões.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Em seguida, uma investigação deve ocorrer para determinar por que a draga caiu.</p>
+<p> </p>
+<p>Para ser sincero, essa é de longe a tarefa mais importante da investigação.</p>
+<p> </p>
+<p>Afinal, é preciso descobrir, sem dúvida, como um navio de guerra desse tamanho poderia travar, não é certo?</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12829] e penteie o local para sinais úteis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um cubo idgel severamente danificado.)</p>
+<p> </p>
+<p>(É tão severamente danificado que não pode ser restaurado.)</p>
+<p> </p>
+<p>(Pode ter sido cobrado na draga acidentada.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual foi a razão para a draga travar?</p>
+<p> </p>
+<p>Parece impossível que um navio tão grande possa travar assim do nada.</p>
+<p> </p>
+<p>Deve ter sido um acidente. Mas não consigo imaginar qual poderia ter sido o motivo.</p>
+<p> </p>
+<p>Bem, é meu trabalho descobrir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que viu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acha que a draga acidentada talvez estivesse transportando o cubo Idgel?</p>
+<p> </p>
+<p>Se isso for verdade, é possível que o acidente tenha algo a ver com o cubo Idgel.</p>
+<p> </p>
+<p>Isso significa que o Balaur também tem um link para o idgel ...</p>
+<p> </p>
+<p>Estamos indo para um grande perigo.</p>
+<p> </p>
+<p>Como nada é certo ainda, não estou inclinado a lhe contar nada prematuramente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12829] e inspecione a área.</p></step>
+<step><p visible="[%3]">Examinar [%dic:STR_DIC_E_LDF5a_FOBJ_BrokenIdgel].</p></step>
+<step><p visible="[%6]">Relatório para [%dic:STR_DIC_N_LDF5a_Tagoras_E].</p></step>
+</steps>
+<p>Dê uma olhada no local do acidente para encontrar um motivo para o travamento da draga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tagoras pediu que você descobrisse por que a draga caiu ..</p>
+<p> </p>
+<p>Após a investigação, foi descoberto um cubo de Idgel quebrado, que provavelmente estava a bordo da draga acidentada.</p>
+<p> </p>
+<p>Depois que você se relatou a Tagoras, ele era da opinião de que a draga aparentemente queria mover o cubo de Idgel e que o exército de Beritra provavelmente estava conectado à identificação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

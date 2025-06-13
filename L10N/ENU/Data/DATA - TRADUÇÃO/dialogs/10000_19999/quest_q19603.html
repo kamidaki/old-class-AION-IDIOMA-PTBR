@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Proteger o Observatório Theobomos é uma tarefa infinita.</p>
+<p> </p>
+<p>Afinal, ainda é um local perigoso.</p>
+<p> </p>
+<p>Então eu gostaria de pedir que você elimine o [plur][%dic:STR_DIC_M_LF2A_Rhinoce_48_An]ou[%dic:STR_DIC_LF2a_SalivadoSalt_48_An], Daeva.</p>
+<p> </p>
+<p>Elimine os monstros perigosos e procure a protetora de campo Aetica [%dic:STR_DIC_N_Atropos]para receber um[%dic:STR_DIC_I_key_returnbox_s_01]como uma recompensa.</p>
+<p> </p>
+<p>Use esta chave para abrir o [%dic:STR_DIC_I_returnbox_s_01]. Você encontrará um item dentro que será útil em suas aventuras.</p>
+<p> </p>
+<p>Por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma!</p>
+<p> </p>
+<p>Posso ajudar?</p>
+<p> </p>
+<p>Por favor, diga -me do que se trata.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que eliminou os monstros perigosos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, retorno.</p>
+<p> </p>
+<p>Graças a você agora podemos garantir a segurança do observatório, [%username].</p>
+<p> </p>
+<p>Aqui está a chave do peito dos retornados, conforme prometido.</p>
+<p> </p>
+<p>Se você encontrar um baú dos retornados em suas aventuras, poderá usá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para Theobomos e elimine o [plur][%dic:STR_DIC_M_LF2A_Rhinoce_48_An]ou o [plur][%dic:STR_DIC_LF2a_SalivadoSalt_48_An]([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Atropos]no[%dic:STR_DIC_W_LF2B_SZ_A_Town].</p></step>
+</steps>
+<p>Elimine os monstros perigosos em Theobomos e depois vá a Atropos para receber a chave do peito dos retornados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jenny pediu para você ir a Theobomos e eliminar rinocos do mar ou chifres florescentes lá.</p>
+<p> </p>
+<p>Depois de eliminar os monstros e procurar atropos, você recebeu a chave do peito dos retornados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

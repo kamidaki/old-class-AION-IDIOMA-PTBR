@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem de operação urgente -</p>
+<p></p>
+<p>Remetente: Pandaemonium High Command</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens:</p>
+<p></p>
+<p>Mate a brigada de garra de Griffon[%dic:STR_DIC_NPC_DF2a_Nevma_G_LHM].</p>
+<p></p>
+<p>Realizar a missão e depois reportar [%dic:STR_DIC_N_Sala]no Priorado Marchutan.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolsa o pedido de operação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Você participou da operação de defesa de Brusthonin?</p>
+<p> </p>
+<p>[%username], Ouvi dizer que você foi encarregado de uma tarefa especial. O que aconteceu com isso?</p>
+<p> </p>
+<p>Estou falando sobre o general da brigada Nevma.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você poderia fazer isso, [%username].</p>
+<p> </p>
+<p>Afinal, [plur][%userclass] São conhecidos por serem Daevas muito capazes.</p>
+<p> </p>
+<p>Graças à sua ajuda, fomos capazes de cuidar da multidão da Elysean que atacou Brusthonin.</p>
+<p> </p>
+<p>Agradeço o nome do alto comando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate a brigada de garra de Griffon[%dic:STR_DIC_NPC_DF2a_Nevma_G_LHM].</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Sala].</p></step>
+</steps>
+<p>Operação de operação urgente: Mate a brigada Elysean Nevma, que está atacando a vila de Baltasar Hill e se reporte a Sala.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu a ordem de operação urgente do comando do Pandaemonium para matar a brigada de garras de Griffon Nevma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

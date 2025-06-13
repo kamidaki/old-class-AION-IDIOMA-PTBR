@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4977</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Tenho um grande pedido para pedir a você. Embora eu esteja lhe dando essa missão, é de fato um assunto oficial.</p>
+<p> </p>
+<p>Tem que permanecer em segredo, então estou confiando em você.</p>
+<p> </p>
+<p>O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parabéns."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A liderança do Pandaemonium está extremamente interessada na fonte de energia de Balaur.</p>
+<p> </p>
+<p>Eles querem usá -lo para nossos estudos.</p>
+<p> </p>
+<p>O Balaur está usando essa fonte de energia para vários propósitos. O problema é que estamos tendo dificuldade em adquiri -lo por nós mesmos.</p>
+<p> </p>
+<p>É por isso que temos que nos livrar das criaturas de Balaur que estão usando a fonte de energia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou contar mais sobre as criações de Balaur que usam o Drana como fonte de energia.</p>
+<p> </p>
+<p>No lago Marabata, você encontrará o [%dic:STR_DIC_M_IDLF1_NM_WaterGolem1_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_NM_WaterGolem2_50_Ah] e [%dic:STR_DIC_M_IDLF1_NM_WaterGolem3_50_Ah].</p>
+<p> </p>
+<p>Até o [%dic:STR_DIC_M_IDLF1_F_Spaller_50_Ah], Assim, [%dic:STR_DIC_M_STR_IDLF1_F_Spaller2_50_Ah] e [%dic:STR_DIC_M_STR_IDLF1_F_Spaller3_50_Ah]Nos campos de Drana são criações de Balaur.</p>
+<p> </p>
+<p>O mesmo acontece com o [%dic:STR_DIC_M_IDLF1_BionicCPU_50_Ah], o [%dic:STR_DIC_M_IDLF1_Generator1_50_Ah], Assim, [%dic:STR_DIC_M_IDLF1_Generator2_50_Ah] e [%dic:STR_DIC_M_IDLF1_Generator3_50_Ah]na mina de Timolia.</p>
+<p> </p>
+<p>Eu sei que essa não é uma tarefa fácil. Mas estou implorando para que você realize esta tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendi. É tão bom quanto feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estou em posição de forçá -lo a aceitar esta missão, [%username].</p>
+<p> </p>
+<p>Mas considere que eu tenho uma enorme pressão pesando sobre mim.</p>
+<p> </p>
+<p>A missão deve ser realizada.</p>
+<p> </p>
+<p>Volte para mim se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para você, pelo menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu estive esperando por você.</p>
+<p> </p>
+<p>Como foi a missão?</p>
+<p> </p>
+<p>Você matou as criaturas de Balaur?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Tem, muito assim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu muito.</p>
+<p> </p>
+<p>Esses não eram oponentes fáceis de matar.</p>
+<p> </p>
+<p>Aqui está uma recompensa por seus esforços.</p>
+<p> </p>
+<p>Eu apreciaria se você continuasse ajudando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDLF1] e eliminar o [%dic:STR_DIC_M_IDLF1_Drakan_Creature]([%2]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hresvelgr] em[%dic:STR_DIC_W_STR_DF3_SZ_G2_3].</p></step>
+</steps>
+<p>As fontes de energia devem ser protegidas. Vá para Dark Poeta e mate as criações de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hresvelgr pediu que você proteja a fonte de energia usada pelas criações de Balaur em Dark Poeta.</p>
+<p> </p>
+<p>Você eliminou os marabata, espaleiros e geradores de energia, pelos quais Hresvelgr o recompensou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

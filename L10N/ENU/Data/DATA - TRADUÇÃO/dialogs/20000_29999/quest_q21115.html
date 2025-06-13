@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certa vez, conversei com um arqueólogo sobre Marayas. Ele era longo, mas muito interessante.</p>
+<p> </p>
+<p>Eu apenas gosto de imaginar como era a cidade quando era nova-quando os cidadãos andavam suas ruas, moravam em seus edifícios.</p>
+<p> </p>
+<p>Olhando para isso agora, é um pouco triste perceber o quão longe está caindo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"A devastação do tempo é feroz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Verdadeiro. Mas o que resta nas ruínas ainda está em boa forma, considerando quanto tempo faz desde que foram construídos.</p>
+<p> </p>
+<p>Gostaria de saber se é por causa de feitiços mágicos, a arquitetura ou talvez a força da pedra.</p>
+<p> </p>
+<p>Provavelmente a pedra, já que ainda está nos dando problemas hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Desculpe, você me perdeu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os escombros das ruínas estão se transformando em monstros de rocha que atacam nossas patrulhas. Não sei que tipo de magia persistente os levou a subir, mas meus superiores estão ficando cansados.</p>
+<p> </p>
+<p>Estou prestes a destruir alguns. Quero se juntar a mim, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Precisamos destruir [%dic:STR_DIC_M_DF4_MaidengolemRe2_54_An] S, [%dic:STR_DIC_M_DF4_StatueM_Re_54_An] Areia [%dic:STR_DIC_M_DF4_SAM_Reric2_54_An] S.</p>
+<p> </p>
+<p>Vamos coordenar, para continuarmos com os extremos opostos da cidade. Dessa forma, não vamos pisar nos dedos um do outro.</p>
+<p> </p>
+<p>Não podemos simplesmente ficar aqui admirando a arquitetura para sempre, então por que não começamos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Provavelmente é o melhor. Meus superiores podem pensar menos em minhas habilidades se ouvirem que eu pedia ajuda.</p>
+<p> </p>
+<p>Recebi esta tarefa, então cuidarei disso. Desejo -me sorte!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é forte-você não precisará de sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, isso foi um treino. Acho que derrubei minha parte de monstros de rock.</p>
+<p> </p>
+<p>E você? Aposto que você demoliu o ....</p>
+<p> </p>
+<p>Oh não! Isso me lembra-espero que você não tenha danificado os edifícios. Estou sob ordens para preservá -los para estudar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão bem. Os monstros não estão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um alívio! Eu não acho que eu poderia ter me perdoado se um lugar tão magnífico fosse danificado.</p>
+<p> </p>
+<p>Mas ter menos criaturas de rochas realmente ajudará nossas patrulhas a fazer seu trabalho.</p>
+<p> </p>
+<p>Você fez um bom trabalho hoje. Tire um tempo de folga e aproveite os frutos do seu trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate as criaturas perigosas Criaturas de pedra.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_MaidengolemRe2_54_An]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_StatueM_Re_54_An]([%5]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_SAM_Reric2_54_An]([%8]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ricaldo]%.</p></step>
+</steps>
+<p>Mate as criaturas de pedra para a segurança da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ricaldo disse que monstros de rock na cidade perdida de Marayas estavam colocando em risco as patrulhas asmodianas.</p>
+<p> </p>
+<p>Você o ajudou a reduzir a população de monstros na cidade e recebeu uma recompensa merecida por seu problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

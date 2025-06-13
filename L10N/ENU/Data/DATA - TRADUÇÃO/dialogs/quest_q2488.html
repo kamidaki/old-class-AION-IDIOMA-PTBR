@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, enquanto você estava conversando com Mirka, recebi algumas informações perturbadoras.</p>
+<p> </p>
+<p>Kushar relata que os precedentes foram avistados em Beluslan.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então a ameaça está se espalhando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Enviei as informações a um especialista, mas a investigação deve continuar-o traseiro para Beluslan é imperativo.</p>
+<p> </p>
+<p>Você estudou esse assunto, então eu quero que você lide com a investigação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para [%dic:STR_DIC_W_DC1_12] e conhecer [%dic:STR_DIC_N_Kushar].</p>
+<p> </p>
+<p>Pergunte a ele onde ele obteve as informações sobre os Pretors em Beluslan. Se necessário, vá para Beluslan para verificar o relatório.</p>
+<p> </p>
+<p>[%username], Acredito que você rastreia a verdade disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Minhas asas são suas para comandar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você veria isso até o fim. Isso é o que o honorável Daevas faria.</p>
+<p> </p>
+<p>Bem, não precisamos da sua apatia aqui-leve-me ao meu trabalho.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós nos encontramos novamente, [%username].</p>
+<p> </p>
+<p>Você ouviu a notícia de que os precedentes foram vistos em Beluslan?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"O que você aprendeu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A General da Brigada Nerita, comandante da fortaleza de Beluslan, enviou o relatório. Ela viu revolucionários lefaristas com animais estranhos e solicitou inteligência sobre as criaturas.</p>
+<p> </p>
+<p>De acordo com as informações que você coletou da Elysea, os revolucionários lefaristas criaram precestos ... mas a que fim?</p>
+<p> </p>
+<p>Eu acho que é melhor você ir a Beluslan para investigar. Vá conhecer a General da Brigada[%dic:STR_DIC_N_Nerthus]Para obter os detalhes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Que palavra você tem?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estou aqui para investigar precestos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, eu disse a Kushar que os revolucionários lefaristas têm animais estranhos com eles. Então você é o investigador do Pandaemonium?</p>
+<p> </p>
+<p>Eu tenho uma tarefa importante sobre os precedentes.</p>
+<p> </p>
+<p>Você percorreu um longo caminho. Por favor, descanse antes de começarmos. Você deve estar exausto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kushar].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Nerthus].</p></step>
+</steps>
+<p>Há novas informações sobre precedentes. Vá ao templo do conhecimento para conhecer Kushar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kvasir disse que tinha novas informações de que os Prestores apareceram em Beluslan e disse para você ir a Kushar para obter detalhes.</p>
+<p> </p>
+<p>Kushar disse que as informações eram do general Nerita da Brigada, o comandante da fortaleza de Beluslan. Você foi a Beluslan para se encontrar com ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

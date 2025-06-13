@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, pare os soldados de Beritra que planejam implantar armas de cerco.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_LDF5b_F1_Vri], que estão transportando materiais de armas de cerco, devem ser eliminados.</p>
+<p> </p>
+<p>Há uma escassez de munição, e é por isso que as armas de cerco ainda não estão prontas para serem implantadas.</p>
+<p> </p>
+<p>Mas uma vez que os suprimentos forem reabastecidos, as armas de cerco começarão seu ataque.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que parar o [%dic:STR_DIC_E_LDF5b_F1_Vri]de ativar a arma do cerco.</p>
+<p> </p>
+<p>A arma de cerco do Beritra é uma arma muito mais poderosa do que você jamais poderia imaginar.</p>
+<p> </p>
+<p>Se for ativado, será difícil proteger a área ocupada.</p>
+<p> </p>
+<p>Faça o seu melhor para a vitória.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], podemos respirar facilmente novamente graças à sua ajuda.</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Agora não terei que me preocupar com as armas de cerco por um tempo.</p>
+<p> </p>
+<p>O próximo passo deve ser preparado agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_LDF5b_F1_Vri]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard17_D]%.</p></step>
+</steps>
+<p>Mate a 43ª tropa de cerco que está entregando o material para as armas de cerco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Helga pediu que você destruísse a 43ª tropa de cerco que estava entregando suprimentos, a fim de interromper o ataque da arma de cerco.</p>
+<p> </p>
+<p>Você eliminou a 43ª tropa de cerco e foi agradecida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

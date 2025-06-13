@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: Executivo[%username]</p>
+<p> </p>
+<p>2. Tarefa: Uma ordem urgente chegou do Hospital Goldrinyerk. Vá para o pântano *** e encha o recipiente de água que foi enviado com o pedido com água e leve isso ao trabalhador do hospital, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo: Subsidiária Silverine no South Katalam</p>
+<p> </p>
+<p>A tarefa atribuída influenciará sua avaliação de promoção; Então você deve completá -lo bem, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva tem alguma reclamação, AK?</p>
+<p> </p>
+<p>Muitas pessoas estão aqui no momento por causa da dor no estômago, é o mesmo com Daeva?</p>
+<p> </p>
+<p>Nesse caso, o Daeva está certo em vir aqui. Este hospital é especializado no tratamento da dor no estômago, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a garrafa de água que contém amostras de pântano.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esquece os olhos.) Daeva é conhecido como um altamente competente [%userclass] e Shugo não sabia que Daeva também trabalha para a Silverine Limited.</p>
+<p> </p>
+<p>Por favor, não entenda o shugo, AK. Shugo está encantado por alguém tão capaz quanto[%username] está nos ajudando, AK.</p>
+<p> </p>
+<p>(Aponta para o recipiente de água) A coisa com a água permanece entre nós.</p>
+<p> </p>
+<p>Bem ... mesmo que o Word sai, não teria efeito sobre Goldrinyerk, Ak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o pântano e encha a garrafa de água vazia com amostras de pântano.</p></step>
+<step><p visible="[%15]">Pegue a garrafa que contém amostras de pântano para foder no Hospital Goldrinyerk.</p></step>
+</steps>
+<p>Você recebeu instruções da Silverine Limited. Leia -os e age.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois de encher a garrafa de água vazia com amostras de pântano do pântano e as trouxe para *** no Hospital Goldrinyerk, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

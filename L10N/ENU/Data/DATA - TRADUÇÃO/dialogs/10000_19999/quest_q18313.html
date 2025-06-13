@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitos itens na fortaleza do ATURAM SKY que foram roubados dos Reians.</p>
+<p> </p>
+<p>Eu disse aos reianos sobre sua ajuda, [%username]. Eles prometeram seu apoio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Temos um objetivo comum, Rei-Boy".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É por isso que meu pedido para você é muito simples.</p>
+<p> </p>
+<p>Por favor, infiltrar -se na fortaleza do Sky Aturam e matar nossos inimigos lá.</p>
+<p> </p>
+<p>Isso significa o [%dic:STR_DIC_M_IDStation_Hugen_NM_58An], Assim, [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An] e [%dic:STR_DIC_M_IDStation_DrakanNinja_NM_58_An].</p>
+<p> </p>
+<p>Derrote -os e volte com os itens que roubaram.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as informações de Hariken, a porta esquerda leva à zona residencial, a porta central leva à zona de controle e a porta direita leva ao centro de comando.</p>
+<p> </p>
+<p>Se você entrar em cada área e lidar com a arma, Popuchin e Nastika, a missão estará completa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você precisa de um Elyos para lidar com tudo isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Reians nos prometeram seu total apoio.</p>
+<p> </p>
+<p>Se você não quer fazer isso, não posso fazer nada. Tenho certeza de que existem outros que querem a recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não trabalho com meias asas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Obviamente, seria melhor se eles estivessem ainda mais envolvidos.</p>
+<p> </p>
+<p>Mas estou satisfeito com isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"E quanto ao eu famoso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a tarefa de maneira mais admirável, verdadeiramente.</p>
+<p> </p>
+<p>Tudo que você faz, [%username], ajudará os Reians a se reconstruir a longo prazo.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar os inimigos poderosos no[%dic:STR_DIC_W_IDStation_SZ_Station].</p>
+<p visible="[%3]">[%dic:STR_DIC_M_IDStation_Hugen_NM_58An]([%2]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An]([%5]/1)</p>
+<p visible="[%9]">[%dic:STR_DIC_M_IDStation_DrakanNinja_NM_58_An]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_LF5_Nimrod_E].</p></step>
+</steps>
+<p>Faça o que Nimrod perguntou e derrote os poderosos inimigos na fortaleza do céu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nimrod disse que ele havia recebido assistência do Reian. Ele lhe ofereceu a perspectiva de uma grande recompensa se você cumprir a missão na fortaleza do ATURAM SKY.</p>
+<p> </p>
+<p>Você foi lá e lidou com a arma, Popuchin e General da Brigada Nastika. Você então voltou para Nimrod e recebeu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

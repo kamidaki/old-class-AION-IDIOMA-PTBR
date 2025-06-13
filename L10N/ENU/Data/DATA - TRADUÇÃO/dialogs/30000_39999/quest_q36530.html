@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Proclamação dos Fortuários -</p>
+<p> </p>
+<p>Uma recompensa foi oferecida para a rosa escura.</p>
+<p></p>
+<p>Leia as seguintes informações com cuidado e siga as instruções.</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_I_quest_36530a]</p>
+<p></p>
+<p>2. Resumo: Esta rosa rara, que só pode ser encontrada na Signia, supostamente possui poderes inimaginados.</p>
+<p> </p>
+<p>As rosas escuras são difíceis para os colecionadores experientes encontrarem. Aquele que nos traz o primeiro será ricamente recompensado.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_LF5_Cynthor_E], Fortunes -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você embolta a nota.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu mesmo tentei encontrar um[%dic:STR_DIC_I_quest_36530a].</p>
+<p> </p>
+<p>Mas eu desisti no final. Todo mundo encontrou alguns, mas eu simplesmente não tive sorte!</p>
+<p> </p>
+<p>Provavelmente não sou adequado para ser um caçador de tesouros.</p>
+<p> </p>
+<p>E você, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a rosa escura.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente foi o primeiro a encontrar o [%dic:STR_DIC_I_quest_36530a].</p>
+<p> </p>
+<p>Muito obrigado por nos dar uma oportunidade única.</p>
+<p> </p>
+<p>Aqui está a sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_quest_36530a] e trazê -lo para [%dic:STR_DIC_N_LF5_Cynthor_E].</p>[%collectitem]</step>
+</steps>
+<p>Você recebeu uma proclamação da Guilda Fortuneers. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma proclamação da Guilda Fortuneers.</p>
+<p> </p>
+<p>Você encontrou a rosa escura. Você então se reportou a Cynsor, um membro dos Fortuneers, e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

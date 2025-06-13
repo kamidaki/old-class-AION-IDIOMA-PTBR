@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q11524</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], lembre -se se eu lhe pedir um favor? Não deve levar muito do seu tempo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Firenon] era para me enviar um éter mágico para reparar o navio, você vê. Eu digo que deveria, porque nada chegou ainda. Quero ter certeza de que está tudo bem, mas não posso vê -lo diretamente. Não quando há muito o que fazer.</p>
+<p> </p>
+<p>Você poderia ir e perguntar a ele por que está demorando tanto?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O aether mágico?</p>
+<p> </p>
+<p>Eu dei a PogRunerk para vender, conforme as ordens de Filatyon. Olhe aqui. Eu ainda tenho a carta. Diz ... diz ... Oh. Oh não! Eu pensei que disse que tinha que vendê -lo para [%dic:STR_DIC_N_Shugo_LDF4a_09], o que eu fiz! Oh não! Por favor, talvez o PogRunerk ainda tenha um pouco de estoque, mas você teria que se apressar!</p>
+<p> </p>
+<p>Por favor, verifique para mim! Não acredito que fiz isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu vou o mais rápido possível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Aether mágico? Akakak! Tudo se foi, Daeva! Vendido mais rápido que o mais raro Manastones!</p>
+<p> </p>
+<p>Fez 100.000 Kinah também! Não é um mau esforço por algumas horas de trabalho, sim sim? O dinheiro não é meu e só pode dar a Firon.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Eu preciso ver Filatyon."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava esperando por você, [%username].</p>
+<p> </p>
+<p>Eu vi inúmeros Daevas saindo da agência comercial com esses enormes sorrisos em seus rostos. Os Shugos estão bêbados ou algo assim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Tudo isso? Para 100.000 Kinah?!</p>
+<p> </p>
+<p>Isso é ridículo! Eu disse a Firon para vender todas as suas ações, exceto o Aether! Oh, para os cinco! Esta é uma notícia terrível e terrível.</p>
+<p> </p>
+<p>Teremos que comprar novos suprimentos, e teremos que relatar isso ao Santum. Firon estará com muitos problemas ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com o gerente do armazém[%dic:STR_DIC_N_Firenon].</p></step>
+<step><p visible="[%3]">Fale com o agente comercial[%dic:STR_DIC_N_Shugo_LDF4a_09].</p></step>
+<step><p visible="[%6]">Relatório de volta para [%dic:STR_DIC_N_Filatyon].</p></step>
+</steps>
+<p>Descubra por que Firon ainda não entregou o Aether mágico.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Filatyon queria saber por que Firon não havia entregue o éter mágico necessário para reparos essenciais de navios.</p>
+<p> </p>
+<p>Aconteceu que o Aether mágico foi vendido a um preço de oferta graças ao erro de Firon. Filatyon ficou com nojo quando ouviu a notícia, e implícita que Firon estava em um acordado rude quando chegou ao porto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

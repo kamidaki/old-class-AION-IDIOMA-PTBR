@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O mapa é real e os lefaristas são vulneráveis ​​....</p>
+<p> </p>
+<p>Essas experiências distorcidas não podem continuar. Eu sei que nossos recursos são magros, mas isso tem prioridade máxima.</p>
+<p> </p>
+<p>Com a luz de Ariel para nos guiar, faremos uma diferença real.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você tinha em mente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Precisamos parar a operação dos lefaristas, [%username]. Essas experiências não podem continuar.</p>
+<p> </p>
+<p>Se você destruísse os instrumentos deles e matasse alguns dos lefaristas enquanto estava nisso, tenho certeza que isso os diminuiria.</p>
+<p> </p>
+<p>Você pode destruir o deles[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Retornar ao centro de pesquisa lefarista, destruir seu[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A], e espalhe alguns estragos.</p>
+<p> </p>
+<p>Se for frágil, quebre -o. Se sangrar, mate -o.</p>
+<p> </p>
+<p>Estou contando com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para Elysea, Finn."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é a pessoa certa para esta missão, [%username]-Você já patrulhou a área.</p>
+<p> </p>
+<p>Pegue a tarefa e faça isso.</p>
+<p> </p>
+<p>Eu realmente preciso da sua ajuda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Fantástico!</p>
+<p> </p>
+<p>Você destruiu todos os[%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A] S?</p>
+<p> </p>
+<p>Não é uma solução permanente, eu concordo, mas aposto que isso os diminui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles vão demorar um pouco isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado pelo seu trabalho duro.</p>
+<p> </p>
+<p>Isso deve interromper os experimentos até que eles se reenchem com novos instrumentos.</p>
+<p> </p>
+<p>Leve isso para seus esforços. Você ganhou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_LF3_LehparFacility_Q1608A]dos pesquisadores lefaristas. ([%2]/6).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kalendros].</p></step>
+</steps>
+<p>Vá para o Centro de Pesquisa Lefarista e destrua os instrumentos no laboratório subterrâneo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Finn disse para você destruir o equipamento lefarista para impedi -los de fazer outras experiências de corpo vivo.</p>
+<p> </p>
+<p>Finn ficou muito agradecido e o recompensou por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

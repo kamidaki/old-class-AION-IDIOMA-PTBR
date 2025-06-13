@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles dizem "em cada vida, um pouco de sol brilho", mas deixe-me dizer-há muito sol na minha vida agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que está errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu pai precisava de um remédio muito raro, que eu só podia entrar no abismo. Consegui raspar o dinheiro e pedir alguns, mas o navio que o carregava foi seqüestrado!</p>
+<p> </p>
+<p>Estou preocupado por não ter mais tempo para ajudar meu pai.</p>
+<p> </p>
+<p>Eu só quero fazer algo pelos meus pais. Eu devo tudo para eles!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Família é importante. Posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que outros estão postando recompensas por suas cargas, mas não posso pagar.</p>
+<p> </p>
+<p>Não tenho nada a oferecer, exceto minha gratidão, [%userclass].</p>
+<p> </p>
+<p>Perdi dez pacotes de remédios. Por favor, traga -os de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei como agradecer. Eu só espero o [%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae]Os piratas não espalharam meus pacotes de remédios sobre o abismo.</p>
+<p> </p>
+<p>Alguém deve tomar meus medicamentos!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"No meu caminho. Não tema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não...? Você disse que não? Eu tinha tanta certeza ...</p>
+<p> </p>
+<p>Os piratas certamente devem estar tentando vender sua carga roubada. O remédio será perdido.</p>
+<p> </p>
+<p>Azphel me encontra um tipo Daeva!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou um pouco ocupado agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta! Eu tenho esperado desesperadamente por você.</p>
+<p> </p>
+<p>Eu pensei que você não poderia voltar. Eu estava até tentando emprestar Kinah suficiente para comprar mais remédios.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu recuperei todos eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não os encontrou? Oh não! Eles devem estar em algum lugar ...</p>
+<p> </p>
+<p>Eu imploro a você. Por favor, encontre -os para mim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphel seja elogiado! Muito obrigado! Estou sobrecarregado!</p>
+<p> </p>
+<p>Desta vez, não vou arriscar. Vou levar o remédio para o meu pai.</p>
+<p> </p>
+<p>Eu não vi meus pais há muito tempo. Obrigado por tornar isso possível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar os pacotes de medicamentos de [%dic:STR_DIC_M_IDShip_ShulackFiHard_45_Ae] e leve-os para [%dic:STR_DIC_N_Roskva].</p>[%collectitem]</step>
+</steps>
+<p>Os pacotes de remédios de Roskva foram roubados por Shulack Pirates.  Recuperá -los para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Roskva encomendou um remédio raro para seus pais doentes. O remédio foi roubado por um ataque de pirata de aço.</p>
+<p> </p>
+<p>Você se infiltrou no aço de aço para ela e voltou com os pacotes de remédios. Ela agradeceu profusamente e disse que levará o remédio para seus pais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

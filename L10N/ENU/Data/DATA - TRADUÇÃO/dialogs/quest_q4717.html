@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por ordem de comandante Votan, devemos atacar a draga o mais rápido possível. Devemos afastar -se de Reshanta.</p>
+<p> </p>
+<p>Você está comigo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa que eu faça?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], durante o ataque, quero que você se concentre em matar figuras -chave dentro da draga.</p>
+<p> </p>
+<p>Outros se concentrarão em danificar várias partes do próprio navio, mas você precisa se concentrar em membros específicos da tripulação.</p>
+<p> </p>
+<p>Isso soa como uma missão desafiadora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Primeiro de tudo, você deve atingir seus oficiais de comando e oficiais secundários. Traga de volta o [%dic:STR_DIC_I_quest_3714b] Areia [%dic:STR_DIC_I_quest_3714a] S eles carregam.</p>
+<p> </p>
+<p>Você também deve matar o auditor Nirshaka e o intendente Vujara. Trazer [%dic:STR_DIC_I_quest_3714c] e [%dic:STR_DIC_I_quest_3714d]de seus cadáveres.</p>
+<p> </p>
+<p>Se você conseguir coletar todos esses itens, leve -os ao governador [%dic:STR_DIC_N_Votan]. Ele deseja ver como nossos esforços estão se saindo e quais informações podem ser obtidas a partir das evidências. Boa sorte, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou chocado. Você está dizendo que esta missão está além de suas capacidades? Certamente não.</p>
+<p> </p>
+<p>Mas não vou discutir com você. Vou simplesmente procurar um Daeva que aprecie a importância dessa missão e não tem medo de um pequeno desafio ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Olha, é só que eu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username].</p>
+<p> </p>
+<p>Ouvi dizer que você fez parte de um ataque recente à draga. Henir disse que você pode ter alguns itens para eu olhar.</p>
+<p> </p>
+<p>Você terminou o trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que tenho que mostrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é melhor do que isso. Talvez você tenha tido um dia ruim? Compreensível, mas você deve tentar novamente.</p>
+<p> </p>
+<p>Vá, infiltrando a draga e mate aqueles que você foi enviado para matar. Seus comandantes, oficiais secundários, auditor Nirshaka e Quartermaster Vujara são os números que acredito que Henir mencionou.</p>
+<p> </p>
+<p>Não volte até que você possa me trazer o [%dic:STR_DIC_I_quest_3714all].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]. Se continuarmos atacando -os, o Balaur perderá seu poder em Reshanta.</p>
+<p> </p>
+<p>Confio que essa recompensa o compensará amplamente pelo seu tempo e esforço.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_3714all]na draga e levá -la para [%dic:STR_DIC_N_Votan].</p>[%collectitem]</step>
+</steps>
+<p>Infiltrar -se na draga e matar figuras -chave a bordo, coletando evidências ao longo do caminho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Henir indicou a necessidade de atingir figuras -chave a bordo da draga.</p>
+<p> </p>
+<p>Você removeu esses membros importantes da tripulação conforme solicitado e trouxe evidências de sua morte ao comandante Votan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

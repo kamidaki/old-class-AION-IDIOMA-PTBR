@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora vou falar sobre a operação para resgatar a IU.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Continue ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A gaiola de pássaro que segura a IU está amarrada com[%dic:STR_DIC_N_IDAsteria_IU_FOBJ01].</p>
+<p> </p>
+<p>Se o [%dic:STR_DIC_N_IDAsteria_IU_FOBJ01]é destruído, o pacote Rukibuki virá correndo.</p>
+<p> </p>
+<p>Mas não há outra maneira.</p>
+<p> </p>
+<p>A gaiola de pássaros que mantém a IU só pode ser aberta depois de ser morta.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>Por favor, desenhe sua força e salve IU.</p>
+<p> </p>
+<p>Oh! Eu esqueci algo.</p>
+<p> </p>
+<p>Se você destruir o [%dic:STR_DIC_N_IDAsteria_IU_FOBJ01] Acabei de mencionar que a trupe de circo chegará imediatamente. Alguns deles precisam ser eliminados.</p>
+<p> </p>
+<p>Ou seja, a mão esquerda do líder do circo[%dic:STR_DIC_M_IDASTERIA_NMD_02] e a mão direita dele [%dic:STR_DIC_M_IDASTERIA_NMD_01], além de claro o líder do circo[%dic:STR_DIC_M_IDASTERIA_NMD_03] ele mesmo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_IDASTERIA_NMD_03] em particular deve ser morto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece ter muito o que fazer.</p>
+<p> </p>
+<p>E você, Daeva, são nossa única esperança ...</p>
+<p> </p>
+<p>Acho que não há nada que eu possa fazer sobre isso ... Vou ter que encontrar outra pessoa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta rapidamente, Daeva.</p>
+<p> </p>
+<p>Você conseguiu salvar IU?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre as atividades.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos depender de você, Daeva. Você salvou IU!</p>
+<p> </p>
+<p>Por favor, aceite este presente dos elfos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Resgate o IU sequestrado.</p>
+<p visible="[%0]">Destruir [%dic:STR_DIC_N_IDAsteria_IU_FOBJ01]([%2]/1).</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDASTERIA_NMD_03]([%5]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_IDAsteria_IU_IN_NPC01].</p></step>
+</steps>
+<p>Procure a trupe de circo de Rukibuki e resgate a IU sequestrada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os elfos lhe disseram que o amigo deles foi sequestrado pelo Rukibuki e estava sendo forçado a cantar no circo.</p>
+<p> </p>
+<p>Você ouviu os pedidos insistentes e resgatou a IU pelos elfos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

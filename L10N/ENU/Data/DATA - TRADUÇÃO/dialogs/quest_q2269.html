@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu? Os vagões por aqui continuam sendo atacados.</p>
+<p> </p>
+<p>Urnir insiste em Peckus, mas suspeito que um culpado diferente.</p>
+<p> </p>
+<p>Os revolucionários lefaristas estão por trás disso. Tenho certeza disso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como você pode ter tanta certeza?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente você percebeu o quão remoto estamos aqui.</p>
+<p> </p>
+<p>As únicas pessoas que passam por essa área são os revolucionários lefaristas.</p>
+<p> </p>
+<p>Não pode ser mais ninguém.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então, o que deve ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Preciso provar a Urnir que os revolucionários lefaristas estão por trás dos ataques. Para isso, vou precisar de alguma prova física. Você vai me ajudar?</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_DF1A_29]. Traga de volta algo que prova sua culpa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você descer ao longo de Calderon Hill, você encontrará o [%dic:STR_DIC_W_DF1A_29].</p>
+<p> </p>
+<p>Se você encontrar algo, eu lhe darei uma recompensa bonita.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, não você também! Você acha que Peckus atacou os vagões?</p>
+<p> </p>
+<p>Suponho que poderia ter sido ....</p>
+<p> </p>
+<p>Mas, mesmo assim, esses revolucionários lefaristas são muito suspeitos. Vou levar alguém lá para investigar ... eventualmente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Adeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], como você se saiu? Alguma prova?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu encontrei isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não foi?</p>
+<p> </p>
+<p>Se não conseguirmos acertar a causa, os vagões podem ser atacados novamente.</p>
+<p> </p>
+<p>Mais depressa, por favor!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Não consigo entender uma palavra disso-eles usaram uma cifra!</p>
+<p> </p>
+<p>Deve ser importante, mas terei que enviá -lo para a fortaleza antes que qualquer outra coisa possa ser feita sobre isso.</p>
+<p> </p>
+<p>Obrigado, [%username], por encontrar isso!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [%dic:STR_DIC_W_DF1A_29]para prova e trazê -lo para [%dic:STR_DIC_N_Neifenmer].</p>[%collectitem]</step>
+</steps>
+<p>Neifenmer acredita que os revolucionários lefaristas atacaram os vagões. Você concordou em pesquisar o acampamento deles para encontrar provas e levá -lo a Neifenmer depois de ouvir seu pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Neifenmer acreditava que os revolucionários lefaristas atacaram os vagões.</p>
+<p> </p>
+<p>Você foi convidado a procurar evidências do acampamento lefarista. Você foi lá e descobriu uma ordem de operação criptografada com uma cifra, que você trouxe para Neifenmer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

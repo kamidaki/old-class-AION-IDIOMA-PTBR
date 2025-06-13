@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... eu realmente não pensei nisso. Eu tenho a caixa do tesouro. Mas não tenho como fazer isso [%dic:STR_DIC_N_Shugo3].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso ver para onde isso está indo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, bem ... talvez você possa me ajudar?</p>
+<p> </p>
+<p>Eu apreciaria e Numenerk pode até recompensá -lo quando ele vê o que você o trouxe.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve tirar esse Shugo do meu cabelo para sempre.</p>
+<p> </p>
+<p>Obrigado pela ajuda. Vou me lembrar disso, [%username]. Se você precisar de ajuda, basta perguntar. Contanto que eu não esteja de plantão, é claro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não mencione isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu te empurrei muito longe, não é? É a culpa estúpida de Shugo. Ele me pegou em tal estado, acabei ofendendo você!</p>
+<p> </p>
+<p>Desculpe. Você fez o suficiente. Você me trouxe a caixa do tesouro e não precisa ter feito isso.</p>
+<p> </p>
+<p>Vou empregar a ajuda de outro. Bom dia, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Bom dia, une."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você! Você é o Daeva que recebeu minha nota de demanda, não é? Daeva parece a mesma, mas lembro -me do seu cheiro. Akakak!</p>
+<p> </p>
+<p>O que Daeva está fazendo? Numenerk esperou tanto tempo, estava prestes a enviar outra nota. Daeva estava dormindo na praia?</p>
+<p> </p>
+<p>Você falou com Une?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Isto é para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tão bom! Isso muito bom! Só pediu entrega, mas trouxe de volta o que a Une gananciosa deve. Obrigado. Daeva é um amigo de Numenerk.</p>
+<p> </p>
+<p>Talvez obtenha desconto no futuro. Talvez não.</p>
+<p> </p>
+<p>Mas ... eu preciso de ajuda novamente. Você pode levar a caixa para [%dic:STR_DIC_N_Shugo_LF2_2]na fortaleza de Eltnen? Pode levar seu tempo com este.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Suponho que não haja mal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Daeva não aqui para armas? O que Daeva quer?</p>
+<p> </p>
+<p>Por que Daeva está atuando Cagey? A maneira mais segura de criar suspeita é a cagidão. Não, não, apenas fale como uma pessoa normal, sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Hum, ok. De qualquer forma, Numenerk enviou isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Numenerk? Akakakak! Finalmente, aquela velha Layabout apareceu!</p>
+<p> </p>
+<p>Bem, a parte de Daeva agora está feita.</p>
+<p> </p>
+<p>Não, o Mappinerk não lhe dirá o que está na caixa! Shoo! Scoot! Saia daqui! E ... não é uma palavra para ninguém, ok?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar a caixa de tesouro lefarista para [%dic:STR_DIC_N_Shugo3].</p></step>
+<step><p visible="[%3]">Entregar a caixa de tesouro para [%dic:STR_DIC_N_shugo_Lender_LF2_01]na fortaleza de Eltnen.</p></step>
+</steps>
+<p>Une quer usar a caixa de tesouros para pagar sua dívida. Vá para Eltnen Fortaleza para entregar a caixa de tesouro lefarista para Une, que não pode deixar seu post.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Une ficou muito feliz por ela logo estaria livre de Numenerk. No entanto, ela não teve tempo de ir à fortaleza. Para ajudá -la, você entregou a caixa de tesouros a Numenerk.</p>
+<p> </p>
+<p>NUMONERK insistiu que você o ajudasse mais uma vez e pediu que você entregasse a caixa de tesouros ao Mappinerk, um corretor de comércio em Eltnen Fortaleza.</p>
+<p> </p>
+<p>Você entregou a caixa para o Mappinerk, que a aceitou e pediu que você não mencionasse a transação a ninguém.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

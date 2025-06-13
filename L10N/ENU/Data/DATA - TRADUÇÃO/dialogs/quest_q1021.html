@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente tropeçamos na fonte do nosso problema de Frillneck.</p>
+<p> </p>
+<p>Nós enviamos[%dic:STR_DIC_LA09]Para dar uma olhada, e ele diz que é Trandila que é a culpa. Não é exatamente uma boa notícia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não tenho certeza se entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja bem, onde quer que você tenha um desequilíbrio, como na parte sul da floresta, você terá problemas. Nesse caso, o problema são os animais mutados.</p>
+<p> </p>
+<p>Um monstro que os locais chamam[%dic:STR_DIC_MLA17_5] está colocando ovos mutados aos milhares. A vila é cortada de qualquer outro lugar por todos os seus filhos.</p>
+<p> </p>
+<p>Então, eu estava pensando ... se você pode encontrar isso e matá -la, pode chegar à raiz, por assim dizer, do problema. E se apresse, seria? TRANDILA provavelmente colocou mil ovos enquanto conversamos sobre isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou matar esta besta por você."</act>
+</selects>
+<voice file="Q1021-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo?</p>
+<p> </p>
+<p>Você realmente matou Trandila? Ela está realmente morta?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Trandila está morta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado Ariel! Se aquele monstro tivesse vivido, haveria mais nó setores do que árvores naquela floresta.</p>
+<p> </p>
+<p>Obrigado, [%username]. Vou enviar algumas pessoas para destruir qualquer ovo restante. A vila está em sua dívida.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LA154].</p></step>
+<step><p visible="[%3]">Vá para [%dic:STR_DIC_FLA15] e matar [%dic:STR_DIC_MLA17_5]([%5]/1).</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_LA154].</p></step>
+</steps>
+<p>Ordem: Receba instruções precisas de [%dic:STR_DIC_LA154] Antes de matar Trandila.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Leto descobriu que os números crescentes de ninhões eram devidas a Trandila, colocando uma grande quantidade de ovos.</p>
+<p> </p>
+<p>A pedido dele, você matou Trandila e resolveu o problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem: Fale com Leto, o centurião da vila de Tolbas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

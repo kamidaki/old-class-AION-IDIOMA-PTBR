@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username].</p>
+<p> </p>
+<p>Descobrimos algo inesperado ao realizar testes nos cristais que você forneceu.</p>
+<p> </p>
+<p>Conseguimos contaminar uma das amostras de cristal.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que significa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que significa o [%dic:STR_DIC_M_Ab1_1211_SAMB_32_An]Vimos nas ilhas externas do jardim dos mortos, o templo quebrado e a fortaleza de Garcikhan podem estar mais intimamente ligados a essas pedras do que pensávamos anteriormente.</p>
+<p> </p>
+<p>Precisamos verificar o quão seriamente e com o que o cristal dentro do Wardstone está contaminado.</p>
+<p> </p>
+<p>Por favor, encontre e abra as pedras de guarda contaminadas e colete o [%dic:STR_DIC_I_QUEST_2775a] S. Eles devem nos dar uma informação muito interessante.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor me traga vários[%dic:STR_DIC_I_QUEST_2775a] S. Meia dúzia de amostras de teste e um controle devem fazer bem.</p>
+<p> </p>
+<p>Oh, me escute. Estou soando cada vez mais como um pesquisador quanto mais tempo fico aqui. Por minha causa, por favor, se apresse.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Smashing Rocks não é tão diferente de esmagar crânios.</p>
+<p> </p>
+<p>Se eu pudesse estar lá fora, obtendo essas amostras, eu faria. Mas minhas ordens são ficar com Midori e garantir que ela esteja segura.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você, [%username].</p>
+<p> </p>
+<p>Você trouxe o [%dic:STR_DIC_I_QUEST_2775a] S? Eu gostaria de terminar o teste hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Aprecio que você voltou de volta, mas você não trouxe o suficiente [%dic:STR_DIC_I_QUEST_2775a] S.</p>
+<p> </p>
+<p>Eu vou esperar por você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, você trouxe os cristais contaminados.</p>
+<p> </p>
+<p>Estes parecem diferentes dos cristais anteriores. Mas isso não é nada conclusivo. Vamos começar os testes imediatamente.</p>
+<p> </p>
+<p>Ande na sombra de Lord Azphel!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_Ab1_1211_SAMB_32_An] S, colete seus cristais e leve -os para [%dic:STR_DIC_N_Greip].</p>[%collectitem]</step>
+</steps>
+<p>Colete cristais de pedra de guarda contaminados para que o GREIP realize testes de comparação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Greip descobriu algo inesperado ao conduzir testes nos cristais que você lhe deu. Parece que o cristal de Wardstone é vulnerável à contaminação.</p>
+<p> </p>
+<p>Ela precisava de cristais de pedra de guarda contaminados para entender os efeitos da contaminação. Você destruiu várias pedras de guarda contaminadas para coletar seus cristais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

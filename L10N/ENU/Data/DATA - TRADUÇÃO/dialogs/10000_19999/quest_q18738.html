@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve estar ocupado, [%username]. Mas eu tenho que pedir um favor a você.</p>
+<p> </p>
+<p>O pesquisador de armas Demas me pediu para ajudá -lo.</p>
+<p> </p>
+<p>Mas eu nunca usei bombas antes agora.</p>
+<p> </p>
+<p>Eles devem ser funcionais e, portanto, úteis para você. Você só tem que usá -los e depois dizer [%dic:STR_DIC_N_LF5_Deamas_E]Que problemas você encontrou.</p>
+<p> </p>
+<p>Você pode simplesmente pegar um pouco da caixa de suprimentos aqui ao meu lado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Algumas armas exibem propriedades incríveis sob certas condições.</p>
+<p> </p>
+<p>No momento, estou ocupado aprimorando bombas.</p>
+<p> </p>
+<p>Pedi a alguns Daevas que os usassem. Mas até agora, ninguém realmente tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou alguma coisa para melhorarmos?</p>
+<p> </p>
+<p>Que resultado surpreendente. No futuro, quando encontrar uma boa arma, vou trazê -la diretamente para você.</p>
+<p> </p>
+<p>Aqui está uma recompensa por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [plur][%dic:STR_DIC_I_idraksha_solo_bomb_01a]([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Deamas_E].</p></step>
+</steps>
+<p>Use as bombas HP aprimoradas e depois relate os problemas aos Demas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aviso pediu que você usasse as bombas HP aprimoradas e depois relatasse os problemas aos Demas.</p>
+<p> </p>
+<p>Quando você se reportou a Demas, ele ficou muito agradecido e lhe deu um presente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

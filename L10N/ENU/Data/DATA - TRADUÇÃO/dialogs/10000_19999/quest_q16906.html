@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com o último relatório, a névoa Mane Mau, de Morheim, está ajudando os revolucionários lefaristas e lançaram um ataque.</p>
+<p> </p>
+<p>Agora a luta começou, não será tão fácil parar, não é?</p>
+<p> </p>
+<p>[%username], vá sobre a brecha para o [%dic:STR_DIC_W_DF2_SUB_E3] em Morheim e ocupar o posto da névoa Mane Mau.</p>
+<p> </p>
+<p>Depois de tomar o [%dic:STR_DIC_W_DF2_Village_02], matar [%dic:STR_DIC_M_DF2_2_Light_Raider].</p>
+<p> </p>
+<p>Você pode me dizer como foi a missão quando você se reporta. Espero que você volte com segurança.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está acontecendo com a situação de conquista do posto avançado?</p>
+<p> </p>
+<p>[%username], Acredito que você concluiu a tarefa com sucesso. O post na entrada da vila de Mist Mane é um local importante para sitiar os asmodianos em Morheim.</p>
+<p> </p>
+<p>O site deveria ser caótico por causa da batalha entre os asmodianos e os Mau. Mas se você matar [%dic:STR_DIC_M_DF2_2_Light_Raider], que estão ocupando o local, as tropas da guerrilha cuidarão do resto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">A missão foi concluída com sucesso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Bom trabalho para aceitar o post.</p>
+<p> </p>
+<p>Agora, só temos que esperar que o esquadrão de guerrilha despachado paira o maior tempo possível.</p>
+<p> </p>
+<p>Esta operação envolve muitos fatores diferentes e perigosos, por isso quase certamente não será uma vitória fácil.</p>
+<p> </p>
+<p>O dia em que você terá que ajudar mais uma vez virá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Cruze Morheim e matar [%dic:STR_DIC_M_DF2_2_Light_Raider]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_W_LF2_SZ_OP] [%dic:STR_DIC_N_Telemachus].</p></step>
+</steps>
+<p>Cruze Morheim usando a brecha e ocupe [%dic:STR_DIC_W_DF2_Village_02]na entrada da vila de névoa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Telemakos general da brigada da fortaleza de Eltnen ordenou que o posto de névoa da guarda de mane, localizado na entrada da vila de névoa, fosse capturada como vingança dos asmodianos.</p>
+<p> </p>
+<p>Os combatentes de guerrilha Elyos apareceram depois que você repeliu os defensores da Asmodian e os combatentes de guerrilha dos revolucionários lefaristas e ocupou o posto.</p>
+<p> </p>
+<p>Esta deve ser uma longa batalha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

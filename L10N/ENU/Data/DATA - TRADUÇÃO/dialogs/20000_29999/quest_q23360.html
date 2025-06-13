@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você poderia ficar quebrado de cerânio?</p>
+<p> </p>
+<p>Eu poderia fazer algo útil com cerânio quebrado suficiente.</p>
+<p> </p>
+<p>Nem tudo foi totalmente aperfeiçoado, mas se você me pegar um pouco, posso pelo menos tentar.</p>
+<p> </p>
+<p>Você pode obter uma medalha de cerânio se tiver sorte. Não poderia doer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu cerânio quebrado?</p>
+<p> </p>
+<p>Espero que você não apenas trouxe uma peça?</p>
+<p> </p>
+<p>Você não pode nem começar a transformação com uma peça.</p>
+<p> </p>
+<p>Por favor, dê uma olhada nas mercadorias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o cerânio quebrado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Não é fácil chegar por medalhas de cerânio.</p>
+<p> </p>
+<p>Mesmo que a transformação não tenha funcionado, tente novamente na próxima vez e não desista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga os pedaços de cerânio quebrado para [%dic:STR_DIC_N_LDF5b_Dv14_Exchange_Cera].</p>[%collectitem]</step>
+</steps>
+<p>Traga os pedaços de cerânio quebrado para ingressar e tente uma transformação com eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A INHART encontrou um método útil de transformar o cerânio quebrado e pediu que você colecionasse e trazia o cerânio.</p>
+<p> </p>
+<p>Conforme instruído, você coletou cerânio e ajudou na tentativa de transformá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9697 missão orientada a dados</p>
+<p> </p>
+<p>Cena é tocada novamente se a missão for aceita</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9697</p>
+<p> </p>
+<p>Bem-vindo, [%userclass].</p>
+<p> </p>
+<p>O que te traz para mim?</p>
+<p> </p>
+<p>Apenas me diga do que se trata e eu cuidarei disso imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9697</p>
+<p> </p>
+<p>Você concluiu a tarefa brilhantemente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">LF3 Disponibilidade do item no Teleport</p></step>
+<step><p visible="[%3]">Teleporte LF2</p></step>
+<step><p visible="[%6]">Cena LF4 na teletransporte</p></step>
+<step><p visible="[%9]">LF3 Invocar NPC e iniciar o diálogo sobre Teleport</p></step>
+<step><p visible="[%12]">Relatório para test_simpleTalk_02.</p></step>
+</steps>
+<p>Quest de teste orientada a dados</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quest de teste orientada a dados</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, asmodianas, qual é a situação em Hmoson agora que o Balaur levou o Observatório?</p>
+<p> </p>
+<p>Sim, eu sei sobre isso-davaas de Zephyr são agentes de inteligência. Fazemos questão de nos manter informados.</p>
+<p> </p>
+<p>Mas agora eu preciso de mais informações-qual é a história?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A situação ainda é crítica ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. A Guilda Bakarma deve ser mais forte do que pensávamos-e eles têm algo nas mangas.</p>
+<p> </p>
+<p>É melhor eu encerrar as coisas rapidamente aqui.</p>
+<p> </p>
+<p>[%username], você poderia me ajudar? Eu vim aqui para reunir informações sobre a Brigada Indratu geral e outros líderes, mas os nagarantes me mantiveram longe.</p>
+<p> </p>
+<p>Você assumiria o [%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] S? Então eu posso me infiltrar na fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. O inimigo do meu inimigo, hein?</p>
+<p> </p>
+<p>Parece que todo guerreiro recebeu um mago. Você provavelmente deve encontrar alguns aliados para ir com você para derrotar [%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De fato, o inimigo do meu inimigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entende a importância desta missão.</p>
+<p> </p>
+<p>Você quer saber o que isso tem a ver com asmodianos? Ouvi a Guilda Bakarma solicitou reforço da Guilda Indratu.</p>
+<p> </p>
+<p>É quase certo que uma força sairá de Indratu a Beluslan em pouco tempo. Não é óbvio o que vai acontecer então?!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certamente? Óbvio? Não é realmente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Quanto mais você se foi, mais convencido de que eu falhou.</p>
+<p> </p>
+<p>Então, como foram as coisas?</p>
+<p> </p>
+<p>Você se livrou de alguns[%dic:STR_DIC_A_IDLF3CI_1517a] Areia [%dic:STR_DIC_A_IDLF3CI_1517b] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seu caminho deve ficar claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Eu posso começar meu trabalho agora.</p>
+<p> </p>
+<p>Espero que você esteja disposto a ajudar novamente se for necessário. Agradeço o trabalho avançado.</p>
+<p> </p>
+<p>Isto é para o seu problema. E há mais de onde isso veio se você se juntar a mim novamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua o Naga guardando a fortaleza de Indratu.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_A_IDLF3CI_1517a]([%2]/4).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_A_IDLF3CI_1517b]([%5]/6).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Erebos].</p></step>
+</steps>
+<p>Elimine os Mages Naga e os Naga Warriors guardando a fortaleza, para que Erebus possa entrar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um Elyos chamado Erebus, que pediu sua ajuda.</p>
+<p> </p>
+<p>Ele queria que você eliminasse aprendizes e Chandala Fangblades guardando a fortaleza para que ele pudesse reunir informações sobre os cinco líderes da Guilda Indratu.</p>
+<p> </p>
+<p>Quando você voltou depois de concluir sua missão com sucesso, ele pediu que você o ajudasse novamente se pudesse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

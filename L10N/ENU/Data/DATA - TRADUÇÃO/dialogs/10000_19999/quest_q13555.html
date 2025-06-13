@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Traga -me [%dic:STR_DIC_I_quest_13555a].</p>
+<p> </p>
+<p>Você pode obter um pedaço de idgel se eliminar [%dic:STR_DIC_M_LDF5A_F_Test].</p>
+<p> </p>
+<p>Eu sabia que você não esqueceria nosso comércio. Se você deseja informações, obtenha amostras para mim.</p>
+<p> </p>
+<p>Ir. Eu não tenho muito tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso lhe contar tudo sobre a nossa investigação.</p>
+<p> </p>
+<p>Se há algo que você quer saber, você terá que descobrir você mesmo.</p>
+<p> </p>
+<p>Você conseguiu o pedaço de idgel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o pedaço de Idgel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe um pedaço de idgel.</p>
+<p> </p>
+<p>Isso é resultado da pesquisa que os cientistas de Tiamat estavam fazendo.</p>
+<p> </p>
+<p>Se você vai trabalhar com o IDGEL, haverá baixas. Por favor, tenha isso em mente.</p>
+<p> </p>
+<p>Nem todo mundo é capaz de trabalhar com isso. Lembre -se disso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5A_F_Test], obtenha o [%dic:STR_DIC_I_quest_13555a] e leve para [%dic:STR_DIC_N_LDF5A_Akad_E]</p>[%collectitem]</step>
+</steps>
+<p>Mate o caos obscura, a emboscada obscura e os esqueletos barulhentos, colete os pedaços de idgel endurecidos e os leve para Akad.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Akad disse que haveria informações importantes sobre Idgel se matássemos o caos obscura, a emboscada obscura e os esqueletos barulhentos e trouxessem de volta um pedaço seco de Idgel.</p>
+<p> </p>
+<p>Quando você trouxe de volta um pedaço de Idgel de acordo com suas ordens, ele disse que, de acordo com os resultados dos testes dos pesquisadores da Tiamat, nem todo o IDGEL pode ser processado e que sempre requer um sacrifício.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

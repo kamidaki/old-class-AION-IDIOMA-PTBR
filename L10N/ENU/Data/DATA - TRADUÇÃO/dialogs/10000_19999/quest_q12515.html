@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existe uma missão para você.</p>
+<p> </p>
+<p>[%username], pegue o [%dic:STR_DIC_I_quest_12515a]. Precisamos disso para pesquisa.</p>
+<p> </p>
+<p>Eu caçei um[%dic:STR_DIC_M_LDF5A_B6_Baku_62_An]Recentemente, e encontrou um navio da tribo runa no estômago.</p>
+<p> </p>
+<p>Isso é muito especial, já que muito pouco se sabe sobre a cultura da tribo Rune.</p>
+<p> </p>
+<p>Eu preciso de mais desses navios para mais pesquisas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver quais itens ainda estão na lista ...</p>
+<p> </p>
+<p>Oh, é você, [%username]. Você trouxe o navio da tribo Rune?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a louça da tribo Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um bom trabalho.</p>
+<p> </p>
+<p>Graças a você, posso continuar minha pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure o [%dic:STR_DIC_I_quest_12515a] e leve para [%dic:STR_DIC_N_LDF5A_Halluan_E].</p>[%collectitem]</step>
+</steps>
+<p>Elimine o fanback baku e obtenha o navio da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Halluan disse que precisa de embarcações de runa para pesquisa e pediu que você matasse o fanback Baku.</p>
+<p> </p>
+<p>Você matou o fanback Baku e conseguiu Halluan um navio Ruhn para sua pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

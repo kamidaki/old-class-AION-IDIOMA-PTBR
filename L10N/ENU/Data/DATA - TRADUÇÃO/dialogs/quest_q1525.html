@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Querido[%username]! Você já esteve no Grove Decayed?</p>
+<p> </p>
+<p>É verdade que os elim se transformaram em algo estranho e estão atacando alguém que se aproxima?</p>
+<p> </p>
+<p>Não pode ser verdade!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você está falando?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Camana, de Jeiaparan Village, sofreu uma longa e difícil jornada para entregar uma mensagem para mim.</p>
+<p> </p>
+<p>Enquanto passava pelo bosque decapado, ela foi atacada por Elim que se transformou em[%dic:STR_DIC_M_Agrint_34_An] S.</p>
+<p> </p>
+<p>Não posso acreditar nela, mas ela jura que há algum tempo há algum tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como eles se tornam agrifortos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sei a causa exata, mas é possível que um contaminante esteja envolvido. Eu odeio perguntar, mas você poderia ir para o bosque em decomposição, [%username]?</p>
+<p> </p>
+<p>Devemos saber se todo o elim foi transformado em[%dic:STR_DIC_M_Agrint_34_An] S.</p>
+<p> </p>
+<p>Se for verdade, podemos ter que erradicá -los.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, vá para o bosque decapado e descubra se todos os elimes se transformaram em[%dic:STR_DIC_M_Agrint_34_An] S, ou se algum elim ainda existe.</p>
+<p> </p>
+<p>Se todos se tornaram agrifortes, devo pedir a um favor sombrio de você. Erradique todos eles, pelo bem de todos.</p>
+<p> </p>
+<p>Espero que Camana esteja mentindo. A verdade seria horrível demais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu concordo, não há como todos os elimes poderiam ter se transformado em agrifortes.</p>
+<p> </p>
+<p>Camana deve ter exagerando, tenho certeza.</p>
+<p> </p>
+<p>Talvez apenas um ou dois elim se transformassem em agrinturas. Apenas esperamos o melhor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O jovem exagerado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O elim da vila de Jeiaparan era reticente, mas ainda nos ensinou muito sobre a floresta e a natureza.</p>
+<p> </p>
+<p>Quando penso que aqueles mesmos elimes que amam a paz se transformaram em[%dic:STR_DIC_M_Agrint_34_An] S ....</p>
+<p> </p>
+<p>Diga -me realmente o que aconteceu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"As agriforts foram destruídas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então era verdade.</p>
+<p> </p>
+<p>Eu não vou chorar! O elim não gostaria de viver como agriforts.</p>
+<p> </p>
+<p>Obrigado por erradicar as agriforts. O elim também apreciaria isso ... se eles ainda estivessem vivos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_Agrint_34_An]no bosque decapado ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Mirborante].</p></step>
+</steps>
+<p>Mirborante gostaria de descobrir se a tribo Elim foi transformada em agriforts no campo de árvores mortas. Vá para o bosque decapado e, se houver uma agregação pesada lá, mate -o.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mirborante foi informado de que o elimismo do Grove Decayed se transformou em agrinturas e queria confirmar se era verdade.</p>
+<p> </p>
+<p>Então você foi ao Grove Decayed e, depois de confirmar a presença de inúmeras agrades, você erradicou todos eles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

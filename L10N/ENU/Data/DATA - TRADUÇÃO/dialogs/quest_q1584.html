@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que há um trabalho a fazer aqui, mas toda a ação real está no Novo Portão Heiron. O Balaur veio pelo portão do Abismo até lá, eles atacam constantemente-e fui enviado aqui.</p>
+<p> </p>
+<p>Eu quero lutar!</p>
+<p> </p>
+<p>Ou meu superior não gosta de mim, ou ele confia muito em mim ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você está muito ocupado aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que mais posso fazer, exceto meu dever? Espíritos e Mortos Vivos apresentam seus próprios desafios.</p>
+<p> </p>
+<p>Embora os Mortos Vivos passem a qualquer hora do dia, os espíritos aparecem apenas à noite. Geralmente, eles ficam por aí, mas há algo estranho acontecendo no cemitério de Medeus Manor.</p>
+<p> </p>
+<p>Eu já vi[%dic:STR_DIC_M_UndeadLightWiCN_41_An] está realizando um ritual mágico estranho, enquanto[%dic:STR_DIC_M_UndeadLightFiCN_41_An] S Stand Guard.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é realmente estranho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois, as condições e ao redor de Medeus Manor pioram-mais mortos-vivos, plantas ficando venenosas, monstros que nunca vimos antes.</p>
+<p> </p>
+<p>De uma maneira ou de outra, a terra permanece inabitável. Precisamos detê -los.</p>
+<p> </p>
+<p>Eu poderia usar sua ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você pode eliminar o [%dic:STR_DIC_M_UndeadLightFiCN_41_An] Areia [%dic:STR_DIC_M_UndeadLightWiCN_41_An] S, podemos começar a recuperar a terra.</p>
+<p> </p>
+<p>Lembre -se, eles aparecem apenas à noite. Estar no alerta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços, Rance!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma noite de sono e o tipo de luta que você fez antes. Você sabe como somos curtos.</p>
+<p> </p>
+<p>Por que dizer não agora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Magia morta -viva me deixa nervoso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi lá fora, [%username]?</p>
+<p> </p>
+<p>Você se livrou dos espíritos do gladiador e do ânimo do Mago desaparecido?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seus comentários terminaram."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Espero que possamos reparar os danos.</p>
+<p> </p>
+<p>Eu quero ver as pessoas voltarem aqui para viver antes de sair.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se de espíritos que aparecem apenas à noite e realizam rituais estranhos.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadLightFiCN_41_An]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_UndeadLightWiCN_41_An]([%5]/2)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Rance].</p></step>
+</steps>
+<p>Medeus Manor fica mais devastado depois que os espíritos que aparecem apenas à noite realizam uma cerimônia estranha. Elimine o espírito do gladiador e faltando o espírito do mago.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rance observou os espíritos de gladiador e mago que realizam magia que devasta Medeus Manor. Você os eliminou para interromper o dano.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

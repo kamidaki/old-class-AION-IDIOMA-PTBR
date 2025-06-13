@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu colega diretor de campo:</p>
+<p> </p>
+<p>Até recentemente, as flutuações de campo isetéricas eram estáveis ​​em Beluslan.</p>
+<p> </p>
+<p>Agora, detectamos possíveis flutuações em um dispositivo de gravação-comissionado pelo centro de pesquisa do Pandaemonium-que colocamos em um local estratégico nessa região.</p>
+<p> </p>
+<p>Prossiga imediatamente para Beluslan e recupere o registro do monitor de um[%dic:STR_DIC_OBJ_FOBJ_Q45007], então traga -o para o [%dic:STR_DIC_E_45007].</p>
+<p> </p>
+<p>Nunca o campo cairá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Armazene a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, colega diretor?</p>
+<p> </p>
+<p>Por acaso tem um registro de monitor? Eu estava esperando isso hoje ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Disseram -me que um diretor de campo estaria trazendo para mim.</p>
+<p> </p>
+<p>Talvez você tenha recebido uma carta recentemente? Talvez a carta tenha dito algo sobre um monitor de campo? É bastante urgente que eu recebo essas informações hoje. Por favor, cumpra seu dever, diretor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpas. Vou sair agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Deixe -me ver sua carta também.</p>
+<p> </p>
+<p>Interessante ... pensei ... bem, não parece que há algum problema-tudo parece razoavelmente estável por enquanto.</p>
+<p> </p>
+<p>A tarefa é minha. Aqui está a sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Recuperar dados de um[%dic:STR_DIC_OBJ_FOBJ_Q45007] e trazê -lo para o [%dic:STR_DIC_E_45007].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com uma carta dos guardas de campo, um monitor de campo éetico em Beluslan está sendo usado para monitorar e registrar o status do campo isetico.</p>
+<p> </p>
+<p>Você localizou a torre e trouxe o recorde de monitor ao agente de campo de Beluslan, que disse que não havia nenhum grande problema no momento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

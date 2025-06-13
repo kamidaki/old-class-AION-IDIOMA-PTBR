@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4094</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A derrota de nossos inimigos não é a única oportunidade de garantir a justiça.</p>
+<p> </p>
+<p>É difícil de acreditar, mas no passado Brusthonin já foi uma das poucas regiões ricas de Asmodae.</p>
+<p> </p>
+<p>A fortaleza da ADMA em seu centro. Você pode imaginar a prosperidade daqueles dias?</p>
+<p> </p>
+<p>Brusthonin foi completamente destruído pelo ataque de Balaur. Mas a fortaleza da ADMA tinha comida suficiente armazenada.</p>
+<p> </p>
+<p>Mesmo nessa situação tensa, os suprimentos foram suficientes para comemorar por dias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso foi então. Por que você pergunta?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A Câmara do Tesouro contém os bens retirados dos cidadãos pelo Senhor da Fortaleza.</p>
+<p> </p>
+<p>Supostamente, existem tesouros lá como[plur][%dic:STR_DIC_I_QUEST_4094a], Assim, [plur][%dic:STR_DIC_I_QUEST_4094b], Assim, [plur][%dic:STR_DIC_OBJ_IDDF2a_Adma_FOBJ_Q4094C] e [plur][%dic:STR_DIC_I_QUEST_4094d].</p>
+<p> </p>
+<p>Não podemos deixá -los sentar lá e apodrecer.</p>
+<p> </p>
+<p>Os cidadãos devem recuperá -los!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A fortaleza já foi cheia de tesouros. Hoje é apenas uma ruína, então não sei se resta algum tesouro.</p>
+<p> </p>
+<p>Por favor, inspecione todos os quartos e procure tesouro.</p>
+<p> </p>
+<p>Talvez você encontre [%dic:STR_DIC_I_QUEST_4094a], Assim, [plur][%dic:STR_DIC_I_QUEST_4094b], Assim, [plur][%dic:STR_DIC_OBJ_IDDF2a_Adma_FOBJ_Q4094C]ou[plur][%dic:STR_DIC_I_QUEST_4094d]...</p>
+<p> </p>
+<p>Você deveria se apressar, no entanto. Muitos ladrões graves têm como alvo a fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espere aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está se recusando?</p>
+<p> </p>
+<p>Eu pensei que você tinha um grande coração ...</p>
+<p> </p>
+<p>Bem, então, vou pedir ajuda a outra pessoa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não me ameaça, covarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos restaurar a justiça.</p>
+<p> </p>
+<p>Hoje podemos dar mais um passo nessa direção.</p>
+<p> </p>
+<p>Ajudando os cidadãos de Brusthonin!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Você me diz. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não quero suspeitar de você ... mas você não pode manter o tesouro por si mesmo.</p>
+<p> </p>
+<p>Os cidadãos foram informados sobre isso.</p>
+<p> </p>
+<p>Claro, não acredito que você exibisse um comportamento tão vergonhoso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! O tesouro está em um estado melhor do que eu previa.</p>
+<p> </p>
+<p>Em breve será distribuído entre os cidadãos de Brusthonin.</p>
+<p> </p>
+<p>Graças a você, há esperança aqui de novo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_4094a], Assim, [%dic:STR_DIC_I_QUEST_4094b], Assim, [%dic:STR_DIC_I_QUEST_4094d] e o [%dic:STR_DIC_OBJ_IDDF2a_Adma_FOBJ_Q4094C]na fortaleza da ADMA e entregue o tesouro a [%dic:STR_DIC_N_Lukmann].</p>[%collectitem]</step>
+</steps>
+<p>Procure o tesouro da fortaleza da ADMA.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lukmann falou sobre o tesouro na fortaleza da ADMA. Ele pediu que você o encontrasse para que pudesse devolver ao proprietário original.</p>
+<p> </p>
+<p>Depois que você encontrou o tesouro e o entregou a Lukmann, ele o distribuiu entre os moradores de Brusthonin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

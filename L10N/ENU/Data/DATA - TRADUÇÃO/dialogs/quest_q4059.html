@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado a você, [%username], o problema de Petrahulk foi resolvido. Mas ainda tenho mais um problema.</p>
+<p> </p>
+<p>Todas as amostras do Peckus que eu já coletamos são inúteis! Eu tinha um pouco de armazenamento, mas algo contaminou todos eles.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou analisando isso, mas é gongo levar algum tempo para investigar-o tempo que não tenho, porque preciso coletar novas amostras. Augh! Não há tempo suficiente!</p>
+<p> </p>
+<p>Por favor [%username], posso pedir sua ajuda novamente?</p>
+<p> </p>
+<p>Você pode matar [%dic:STR_DIC_M_DF2A_CockatriceNBlueD_48_An] S e colete amostras novas enquanto lido com o armazenamento aqui?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Coletar [%dic:STR_DIC_I_QUEST_4059a] S. Seus eixos ocos são permeáveis ​​e mostram claramente quanta contaminação está na área. Mas, como são permeáveis, apenas os puxados recentemente têm dados precisos.</p>
+<p> </p>
+<p>Você pode encontrar [%dic:STR_DIC_M_DF2A_CockatriceNBlueD_48_An] está ao longo de falésias perto do passe costeiro.</p>
+<p> </p>
+<p>O tempo é crítico, então, por favor, traga -os rapidamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu só descobri que as amostras que já tinha não eram boas enquanto você estava lutando contra os trabalhadores de Petrahulk. Eu não esperava precisar da sua ajuda novamente.</p>
+<p> </p>
+<p>Mas eu faço e mais uma vez o tempo é essencial. Acho que vou ter que trabalhar dia e noite.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Brusthonin é tão inóspito que é difícil acreditar que já foi a mata -pão de Atreia. Será tão gratificante assim que a contaminação aqui for completamente purificada.</p>
+<p> </p>
+<p>Nosso trabalho é um passo importante em direção a um novo Brusthonin. Você trouxe [%dic:STR_DIC_I_QUEST_4059a] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Você queria dez, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu preciso de números suficientes para obter uma média normalizada. E eu não tenho muito tempo.</p>
+<p> </p>
+<p>As amostras anteriores se tornarão inúteis em um tempo muito curto.</p>
+<p> </p>
+<p>Você pode ter que matar o [%dic:STR_DIC_M_DF2A_CockatriceNBlueD_48_An] para arrancar as penas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ok. Eu voltarei em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é exatamente o material de que preciso. Muito obrigado, [%username].</p>
+<p> </p>
+<p>Agora posso enviá -los para o Pandaemonium e relatar a Phyper que concluímos nossa missão.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_M_DF2A_CockatriceNBlueD_48_An]penas e trazê -las para [%dic:STR_DIC_N_Asustri].</p>[%collectitem]</step>
+</steps>
+<p>Asustries precisa de penas de Pecku como amostras para investigar a contaminação. Reúna dez penas para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Devido a alguns problemas com suas amostras anteriores, Asustri preocupou que ele não tivesse tempo suficiente para coletar amostras suficientes.</p>
+<p> </p>
+<p>Você matou Peckus feroz e voltou com suas penas. Asustri estava agradecido por poder completar sua missão com sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

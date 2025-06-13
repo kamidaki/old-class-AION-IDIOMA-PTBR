@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Logo acima da cordilheira, trolls e trollkins estão fazendo caos. Eles bloquearam as estradas e atacaram viajantes, o que significa que não há suprimentos para nós.</p>
+<p> </p>
+<p>Não apenas isso, mas recentemente eles se tornaram tão prolíficos quanto os qooqoos.</p>
+<p> </p>
+<p>E se essas coisas explodirem invadir o observatório?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é o seu plano para lidar com eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que é hora de algumas medidas preventivas antes que qualquer dano real seja causado.</p>
+<p> </p>
+<p>Infelizmente, Gullveig e eu estamos ligados ao trabalho aqui no observatório.</p>
+<p> </p>
+<p>Você por favor me ajudaria, [%username] e impedir que eles causem mais problemas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado!</p>
+<p> </p>
+<p>Por favor, mate 7[plur][%dic:STR_DIC_M_TrollReD_36_An] e 3[plur][%dic:STR_DIC_M_TrollkinD_36_An].</p>
+<p> </p>
+<p>Não os subestime apenas porque eles parecem estúpidos. São criaturas incrivelmente fortes.</p>
+<p> </p>
+<p>Tome cuidado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os trolls com gorjeta do sol são feitos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Não tem o nervo eh?. Acho que vou pedir a outra pessoa para me ajudar.</p>
+<p> </p>
+<p>Eu preciso de alguém ... competente para lidar com o problema do troll de qualquer maneira.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só preciso olhar em volta primeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caçou os trolls e trollkins?</p>
+<p> </p>
+<p>Você está ferido? Aquelas coisas explodidas apresentam um sério desafio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles encontraram sua partida hoje."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora as pessoas podem visitar o observatório sem se preocupar, tudo graças a você, [%username].</p>
+<p> </p>
+<p>Que a glória de Azphel esteja com você!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote os trolls e os trollkins que ocuparam o caminho para o observatório.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_TrollReD_36_An]([%2]/7).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_TrollkinD_36_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Angrboda].</p></step>
+</steps>
+<p>Mate os trolls e os trollkins para que os humanos possam chegar ao observatório novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Angreboda pediu que você caçasse os trolls e trollkins que estavam atacando remessas para o observatório.</p>
+<p> </p>
+<p>Você caçou bandidos de trolls e ladrões de Trollkin. Angreboda ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

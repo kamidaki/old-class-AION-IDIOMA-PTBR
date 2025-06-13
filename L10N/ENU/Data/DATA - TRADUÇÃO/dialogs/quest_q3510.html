@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Conceda-me um segundo aqui ... Eu tenho procurado esta passagem no meu livro de pesquisa a tarde toda.</p>
+<p> </p>
+<p>Assim como eu pensei. Amaldiçoe a luz! Eu deveria ter prestado mais atenção.</p>
+<p> </p>
+<p>Lembre -se disso[%dic:STR_DIC_I_QUEST_1646a] S você encontrou para mim há algum tempo? Eu apenas assumi que eles eram tão duráveis ​​quanto outras flores elementares ... e acidentalmente destruí as amostras.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E você estava se perguntando ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eu queria saber se você poderia conseguir um pouco mais para mim? Eu aceitaria a passagem para Stenon Bay para encontrá -los, mas minha pesquisa me mantém aqui.</p>
+<p> </p>
+<p>Você se importaria, [%username]? Prometo que vou cuidar melhor das amostras desta vez. Eu só não tinha ideia de que sua massa positiva era tão quebradiça quanto uma flor de riacho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bendito Ariel, isso seria ótimo! Eu tenho tudo planejado para você. Vá para [%dic:STR_DIC_W_LF3_SZ_F5], Despacha o [%dic:STR_DIC_M_ElementalWater4_44_An] S, e pegue alguns[%dic:STR_DIC_I_QUEST_1646a]para mim.</p>
+<p> </p>
+<p>Cinco flores devem ser mais do que suficientes. E prometo que vou lidar com eles de maneira mais delicada desta vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A ciência nunca dorme!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu perguntei você simplesmente porque você sabe o que estou procurando. Eu percebo que você está ocupado ... estamos todos ocupados.</p>
+<p> </p>
+<p>Vou colocar toda a minha pesquisa em espera e conseguir as flores da água. Vá agora, faça o que você faria ... Vá matar um shugo ou algo assim. Vou gerenciar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Interessante ... interessante ... nenhuma passagem menciona o ....</p>
+<p> </p>
+<p>Oh, desculpe, [%username], Eu estava profundamente nos meus estudos aqui. Eu não ouvi você se aproximando. Essas teorias escaladas sobre os elementares da água são de muito tempo. Isso apenas prova que meu trabalho aqui é muito necessário.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu peguei suas flores de água."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei ter deixado claro o quão importante é minha pesquisa! A urgência é um dos aspectos mais importantes das ciências.</p>
+<p> </p>
+<p>Eu deveria ter conhecido melhor do que confiar em um[%userclass]com minhas preocupações. É sempre sangue e tripas com você, não é?</p>
+<p> </p>
+<p>Por favor, [%username], vá e descarte aqueles espíritos do mar divino e obtenha o [%dic:STR_DIC_I_QUEST_1646a] para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue, tripas e flores d'água."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Doce dama da luz, eles são maravilhosos! Sua composição se altera para combinar perfeitamente com a forma da flor. Isso pode revolucionar a ciência!</p>
+<p> </p>
+<p>Finalmente, todos os Elyos saberão o nome de Miobera! Minha pesquisa mudará o caminho ... mude o caminho ....</p>
+<p> </p>
+<p>Oh, [%username], Eu esqueci que você ainda estava lá. Eu estava tão envolvido nessas flores d'água. Obrigado, eu sei que você provavelmente teve coisas mais emocionantes para fazer hoje.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter cinco flores d'água do[%dic:STR_DIC_M_ElementalWater4_44_An] e leve-os para [%dic:STR_DIC_N_Miobera].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha cinco flores d'água dos espíritos do mar divino para que Miobera possa estudá -las.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Miobera disse que todas as suas amostras de flores de água foram destruídas enquanto ela as estudava, e ela pediu que você trazia mais cinco.</p>
+<p> </p>
+<p>Você foi para Stenon Bay e obteve as flores da água caçando os espíritos divinos do mar. Quando você voltou, ela agradeceu por seus problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

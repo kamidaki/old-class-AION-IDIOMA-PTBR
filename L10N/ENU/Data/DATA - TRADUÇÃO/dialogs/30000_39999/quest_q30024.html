@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu posso consertar o livro de feitiços supremo do seu Siel, restaurar seus poderes ... mas não será fácil. É danificado quase além do reparo, Daeva.</p>
+<p> </p>
+<p>Mas você se parece com alguém que apreciaria o poder bruto do que esse livro de feitiços pode fazer-eu posso ver em seus olhos que você não o usaria.</p>
+<p> </p>
+<p>Vou ajudá -lo porque compartilhamos um inimigo comum. E o inimigo do meu inimigo é meu amigo, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Vocês reianos são muito sábios."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Porque vimos muita guerra em nossa vida ... em nossa longa e longa vida. Não buscamos batalha, mas também não nos escondemos.</p>
+<p> </p>
+<p>Este livro de feitiços, em suas mãos, pode salvar muitos do meu povo. Esta é a única razão pela qual vou repará -lo para você.</p>
+<p> </p>
+<p>Mas você deve encontrar para mim um material muito raro para que eu o conserte. Apenas uma alma que conheço possui esse material. Você vai trazer para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O nome dele é[%dic:STR_DIC_N_Honeus], e ele é um velho Reian rico na sabedoria do passado.</p>
+<p> </p>
+<p>Você já ouviu falar de [%dic:STR_DIC_I_Insidium_01] S? É um minério antigo que foi criado quando Lady Siel e Tiamat lutaram um ao outro antes do cataclismo. A energia que eles produziram foi magnífica ... transformou carvão nesse minério.</p>
+<p> </p>
+<p>Somente Honeus agora tem esse material-você precisará concluir sua tarefa antes que ele lhe dê o NOXALLON LINGOT. Traga de volta para mim quando ele lhe der a você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ver Honeus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria saber melhor do que confiar em um Elyos!</p>
+<p> </p>
+<p>Obrigado por me lembrar por que meu povo nunca confiou em sua espécie ....</p>
+<p> </p>
+<p>Talvez você mude de idéia ... talvez eu também.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vocês Reians precisam endurecer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahhh, [%username], Eu estava esperando você sobre esse tempo.</p>
+<p> </p>
+<p>Estou alimentando o incêndio desde que você saiu pela primeira vez ... as ervas e pomadas estão prontas para serem administradas.</p>
+<p> </p>
+<p>Entregue -me o NOXALLON LINGOT e o seu livro de feitiços supremo de seu Siel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu languish pinta um retrato muito desagradável de todos os Elyos, [%username]. Não sei por que esperava algo diferente.</p>
+<p> </p>
+<p>Se você quiser o seu livro de feitiços restaurado, você deve fazer o que [%dic:STR_DIC_N_Honeus]pede a você para receber o [%dic:STR_DIC_I_Insidium_01]. E lembre-se-os dois componentes devem estar no seu cubo quando você se aproxima de mim.</p>
+<p> </p>
+<p>Não há outra maneira ... Aion não segura sua mão a cada passo entre o útero e a tumba.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe Aion fora disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente, excelente ... o lingote é perfeito, assim como eu esperava. Isso só levará apenas um minuto, [%username].</p>
+<p> </p>
+<p>(Ele derrete o NOXALLON NOTOT em uma fornalha e aplica cuidadosamente o líquido derretido na coluna e capas do livro de feitiços.)</p>
+<p> </p>
+<p>Lá vamos nós ... está tudo pronto. O minério e as ervas estão se misturando com a alquimia dos feitiços. Você deve notar a diferença imediatamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30024] e trazê -lo para [%dic:STR_DIC_N_Gefeios].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o NOXALLON LINGOT, um material que pode restaurar os poderes do livro de feitiços supremo do Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gefeios disse que precisava de um material especial para restaurar os verdadeiros poderes do Supremo Livro de feitiços de Siel.</p>
+<p> </p>
+<p>Você foi ver Honeus e recebeu o NOXALLON LINGOT depois de fazê -lo um favor. Com o lingote, o Gefeios transformou seu livro de feitiços no livro de feitiços supremo de Noble Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

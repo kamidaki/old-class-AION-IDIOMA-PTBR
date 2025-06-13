@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você sabe sobre moedas?</p>
+<p> </p>
+<p>Bem, se você realizar certas missões, receberá moedas. Salve -os e você pode comprar recompensas.</p>
+<p> </p>
+<p>Atualmente, estou procurando alguém para matar esses espíritos ali. Você me ajuda, e eu te darei moedas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o seu problema com espíritos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Normalmente, eu não tenho um problema, mas eles estão atacando as pessoas ultimamente. Algo sobre "interrupções no fluxo de Aether". Estou aqui para recompensar qualquer daeva disposto a resolver o problema.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso ser capaz de ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Se você descer e se livrar de 6[%dic:STR_DIC_M_AElemental1stD_18_An] S e 16[%dic:STR_DIC_M_AElemental2ndD_18_An] S, eu vou te dar algumas moedas de ferro.</p>
+<p> </p>
+<p>Um preço justo para o trabalho, garanto -lhe. Você está pronto para isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, bom.</p>
+<p> </p>
+<p>Lembre -se, caça 6[%dic:STR_DIC_M_AElemental1stD_18_An] S e 16[%dic:STR_DIC_M_AElemental2ndD_18_An] S.</p>
+<p> </p>
+<p>Espero que isso torne as coisas mais seguras por aqui. E isso vai te tornar mais rico!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei para essas moedas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer ganhar moedas?</p>
+<p> </p>
+<p>Você sabe, moedas compram coisas que você não pode obter em lojas comuns.</p>
+<p> </p>
+<p>Você realmente deve reconsiderar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não agora, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>No ritmo que vamos, mataremos todos esses espíritos antes de descobrirmos o que há de errado com eles ...</p>
+<p> </p>
+<p>Ele resolve o problema de qualquer maneira, eu acho.</p>
+<p> </p>
+<p>Você caçou 6[%dic:STR_DIC_M_AElemental1stD_18_An] S e 16[%dic:STR_DIC_M_AElemental2ndD_18_An] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Como prometido, sua moeda de ferro.</p>
+<p> </p>
+<p>Sinta-se à vontade para continuar trabalhando-precisamos controlar esses espíritos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça espíritos para ganhar moedas.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_AElemental1stD_18_An]([%2]/6)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_AElemental2ndD_18_An]([%5]/16)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Lateni].</p></step>
+</steps>
+<p>O oficial de administração de moedas Lateni prometeu lhe dar uma moeda de ferro se você matar espíritos de Bladestorm e espíritos de ciclone. Livre -se dos espíritos e obtenha moedas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lateni disse que os espíritos se tornaram violentos recentemente por qualquer motivo. Ele se ofereceu para lhe dar uma moeda de ferro se você a caçasse.</p>
+<p> </p>
+<p>Você derrotou os espíritos de Bladestorm e os espíritos do ciclone e recebeu a recompensa de Lateni.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

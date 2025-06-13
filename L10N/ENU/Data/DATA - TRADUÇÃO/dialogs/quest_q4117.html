@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q4117</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vi um monstro horrível durante minhas investigações no laboratório Theobomos.</p>
+<p> </p>
+<p>Trioan instável ... ele era tão selvagem e forte que quase me aniquilou completamente.</p>
+<p> </p>
+<p>Se ele descobrir a fenda e chegar aqui, então Baltasar Hill Village estará em breve em ruínas.</p>
+<p> </p>
+<p>[%username], talvez eu esteja me preocupando muito ... mas você poderia voltar para [%dic:STR_DIC_E_D_LF2a_entrance] e matar o [%dic:STR_DIC_E_D_LF2a_Q4117]?</p>
+<p> </p>
+<p>Não tenho nada de especial para lhe dar. Mas se você concluir esta missão, você será adequadamente recompensado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema no laboratório Theobomos está piorando a situação.</p>
+<p> </p>
+<p>Recebemos ordens do Pandaemonium afirmando que devemos investigar os motivos da formação da brecha e tomar medidas de advertência contra riscos potenciais ...</p>
+<p> </p>
+<p>Eu não sei ... por onde devemos começar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, você matou o monstro?</p>
+<p> </p>
+<p>Nesse caso, vou escrever meu relatório e afirmar que o maior perigo já foi evitado.</p>
+<p> </p>
+<p>Você realmente passou por muita coisa.</p>
+<p> </p>
+<p>Aqui, deixe -me dar uma moeda de Pandaemonium como uma recompensa. Seu nome será, é claro, mencionado no relatório, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Esgueirar -se no laboratório Theobomos e eliminar [%dic:STR_DIC_E_D_LF2a_Q4117]([%2]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_parqusha]na beira do tormento.</p></step>
+</steps>
+<p>Mate o monstro perigoso no laboratório Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Parqusha disse que viu um monstro perigoso enquanto pesquisava, e que algo terrível aconteceria se fosse a Asmodae.</p>
+<p> </p>
+<p>Você matou o trrioan instável no laboratório Theobomos e foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo coleta fragmentos dos cartões de letra desmontados, Akakak.</p>
+<p> </p>
+<p>O irmão de Shugo sofre de amnésia.</p>
+<p> </p>
+<p>Então Shugo está colocando os fragmentos dos cartões de letra desmontados, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta se pode ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo precisa de 100 fragmentos dos cartões de letra desmontados para completar as cartas que Shugo quer montar, Akakak.</p>
+<p> </p>
+<p>Por favor, colete os fragmentos dos cartões de letra desmontados para ajudar o irmão de Shugo.</p>
+<p> </p>
+<p>Daeva pode desmontar os fragmentos dos cartões de letra desmontados, desmontando as palavras, Akakak.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que vai tentar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você diz que não pode fazer isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo confia em Daeva e vai esperar.</p>
+<p> </p>
+<p>Daeva deve vir e encontrar Shugo novamente quando Daeva colecionou 100 fragmentos, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo está decepcionado. Daeva deve cumprir os desejos de Daevasas mortos.</p>
+<p> </p>
+<p>Shugo teria pensado que Daeva a ajudaria, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva realmente já coletou 100 fragmentos dos cartões de letra desmontados? Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 100 fragmentos de cartão de carta desmontados.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, Akakak.</p>
+<p> </p>
+<p>Shugo precisa de 100. Isso não é suficiente, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva é maravilhoso, Akakak.</p>
+<p> </p>
+<p>Esta bolsa contém cartas que Shugo não precisa. Shugo dará a Daeva como presente. Vá em frente, abra, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete 100 fragmentos de cartão de carta desmontados.</p>[%collectitem]</step>
+</steps>
+<p>Lenarinerk pediu que você coletasse 100 fragmentos de cartão de carta desmontados. Pegue -os rapidamente e traga -os para ela.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lenarinerk disse que estava coletando fragmentos de cartas e trabalhando em uma série de cartas para ajudar a memória de seu irmão.</p>
+<p> </p>
+<p>Ela disse que precisava de 100 fragmentos de cartas de cartas para completar sua série de letras.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

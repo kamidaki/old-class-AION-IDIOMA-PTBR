@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>- Nota da Lesco -</p>
+<p></p>
+<p>1. De: Katalam Patrol, Administrador de Fortaleza Bassen Lesco</p>
+<p></p>
+<p>2. Para:[%username]</p>
+<p></p>
+<p>[%username], você completou a missão com sucesso na sala vazia. Para isso, você será parabenizado separadamente.</p>
+<p></p>
+<p>Se o tempo permitir, vá e veja [%dic:STR_DIC_N_LDF5b_Resco_G], Administrador da fortaleza de Bassen.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Visite Lesco.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A sala vazia só pode ser tentada por alguém que ocupou a fortaleza de Bassen.</p>
+<p> </p>
+<p>São necessárias habilidades de vôo especiais e cooperação entre os companheiros aqui, então você precisará de várias tentativas.</p>
+<p> </p>
+<p>A Patrulha Katalam dá um prêmio especial aos Heroicos Daevas que concluíram com êxito a missão da sala vazia.</p>
+<p> </p>
+<p>[%username], você também atacou com sucesso a sala vazia?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">O ataque à sala vazia acabou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo!</p>
+<p> </p>
+<p>A sala vazia requer não apenas habilidades marciais, mas também cooperação entre companheiros e boa técnica de vôo. Não há muitos danos que caçaram todos os segredos daquele lugar.</p>
+<p> </p>
+<p>[%username], você realmente ganhou ser chamado de herói!</p>
+<p> </p>
+<p>Como agora você conquistou a sala vazia, agora precisa ousar o Hall of Knowledge e o Laboratório de Pesquisa Idgel. O almirante Tirins está esperando febrilmente por um Daeva que pode conquistar os três.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Resco_G].</p></step>
+</steps>
+<p>Procure o administrador do Bassen Fortaleza e receba uma recompensa especial.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma recompensa especial por conquistar a sala vazia, que pertence à fortaleza de Bassen.</p>
+<p> </p>
+<p>Lesco o elogiou por seu comportamento heróico.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

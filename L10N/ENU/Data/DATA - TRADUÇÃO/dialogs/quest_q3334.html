@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh... [%username]? É você?</p>
+<p> </p>
+<p>Conceda-me um momento, eu tenho um pouco daquela poeira explodida nos meus olhos. Eles estão regando algo feroz.</p>
+<p> </p>
+<p>Esfregá -los apenas piora!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não esfregue, pisque."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sim, isso funciona melhor.</p>
+<p> </p>
+<p>Isso sempre acontece quando estou na montanha Kuriullu.</p>
+<p> </p>
+<p>É aquele pó vermelho maldito! É insidioso! Sem mencionar os terrores que inflige à minha roupa. Todos os meus brancos saem de Peach! Eu pareço terrível em pêssego!</p>
+<p> </p>
+<p>Eu juro, as tempestades de poeira são mais irritantes do que aqueles espíritos escorregados pelo sol.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que há com os espíritos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eles são os que chutam as tempestades de poeira ... então eu acho que elas são realmente tão irritantes quanto as tempestades.</p>
+<p> </p>
+<p>Eu disse a todos que, se eles me deixassem deixar meu post por apenas uma titch, eu prejudicaria tanto a população espiritual que todos poderíamos usar brancos novamente, mas eles não ouvirão disso.</p>
+<p> </p>
+<p>Você não estaria interessado em apagar alguns deles para mim, não é? Ajudando minha conta de lavanderia patética?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que bom e abençoado Daeva você é!</p>
+<p> </p>
+<p>É o [%dic:STR_DIC_M_elementalair3_32_An] Areia [%dic:STR_DIC_M_elementalair3_33_An] S no[%dic:STR_DIC_W_LF2_SZ_I1]que estão causando todos os problemas.</p>
+<p> </p>
+<p>Se você pudesse derrubá -los, todos respiraríamos e piscaríamos mais com mais facilidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe a expulsão começar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Heh! Aposto que você responderia de maneira diferente se todas as suas meias fossem pêssegos!</p>
+<p> </p>
+<p>Pense nisso. Volte se você tiver uma mudança de coração.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Peach ... hahaha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh... [%username]? É você?</p>
+<p> </p>
+<p>Estou piscando, estou piscando ... apenas um segundo! Poeira de jeito!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"O pó deve se acalmar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tastic-tastic. Agradeço do fundo da minha lata de lavanderia!</p>
+<p> </p>
+<p>E enquanto você está fora de casa, se você se deparar com um mercado de meias de pêssego, me avise!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Dirija os espíritos da montanha Kuriullu.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_elementalair3_32_An]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_elementalair3_33_An]([%5]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Elram].</p></step>
+</steps>
+<p>Os espíritos do vento na montanha Kuriullu são um verdadeiro incômodo. Dirija -os para Elram, pois ele tem outras coisas para fazer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As tempestades de poeira conjuradas por espíritos de vento na montanha Kuriullu estão chutando tempestades terríveis de poeira, dificultando a viagem e a roupa quase impossível.</p>
+<p> </p>
+<p>Você vagou pela montanha e destruiu os espíritos da tempestade de areia e os espíritos dos tornados. Elram agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Senhores Empyreanos me abençoaram hoje.</p>
+<p> </p>
+<p>Eu esperava que alguém aparecesse para me ajudar, e aqui está você, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim, aqui estou eu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na última vez em que conversamos, você foi exterminar criaturas venenosas em Silentera Canyon. Você se lembra de como você disse que eles eram fáceis de matar?</p>
+<p> </p>
+<p>Eu achei isso estranho e perguntado por aí, apenas para saber que a maioria dos Daevas estava sendo envenenada no Templo de Beshmundir e não no Silentera Canyon. Por um lodo gigantesco!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Seu antídoto tem ajudado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Infelizmente, não. Mas agora que tenho experiência com venenos feitos pelo Dragonbound, estou pronto para analisar as secreções de nosso lodo gul.</p>
+<p> </p>
+<p>Você vai me emprestar seu poder mais uma vez, [%username]?</p>
+<p> </p>
+<p>E desta vez, sem matar meu espécime!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem. O lodo em questão é conhecido como[%dic:STR_DIC_E_IDCatacombsN_HugeSlimeNmd_55_Ah], e dizem que é grande o suficiente para encher uma câmara no cofre dos conquistadores sob o templo de Beshmundir.</p>
+<p> </p>
+<p>Além disso, suspeito que ele absorva ossos de Balaur. Isso não é emocionante?</p>
+<p> </p>
+<p>Por que você ainda está aqui? Vá me trazer o [%dic:STR_DIC_I_QUEST_30223a]Para que eu possa criar um veneno totalmente novo para o nosso lado e um antídoto melhor para os aflitos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você acabou de dizer que come Balaur?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu senso de dever cívico está muito faltando.</p>
+<p> </p>
+<p>Pense nos Daevas em seus leitos de morte! Você poderia ajudá -los se não fosse pelo seu ego.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu ego? E o seu ego?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>"E eu gostaria de agradecer aos meus professores, que me ensinaram tudo o que sabiam para que meu brilho pudesse brilhar ..."</p>
+<p> </p>
+<p>Não, isso não está certo. Muitas metáforas "brilhantes".</p>
+<p> </p>
+<p>Ah, você está de volta, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"E com o núcleo, conforme solicitado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você pode fazer isso comigo? Para seus camaradas em armas que estão morrendo de veneno?</p>
+<p> </p>
+<p>Já perdi dois hoje!</p>
+<p> </p>
+<p>Não temos tempo a perder. Traga -me o [%dic:STR_DIC_I_QUEST_30223a]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles não podem mastigar folhas por enquanto?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você deve insistir em matar meus espécimes de prêmios!</p>
+<p> </p>
+<p>Hmmm ... isso é maior do que eu pensava que seria. Eu me pergunto que tipo de energia ela possui.</p>
+<p> </p>
+<p>Hmmm? Sim, sim. Muito obrigado. Fora de você vai.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30223a] e trazê -lo para [%dic:STR_DIC_N_Steurios].</p>[%collectitem]</step>
+</steps>
+<p>Derrote o Portador da Praga e traga de volta seu núcleo para a nova pesquisa de Steurios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Steurios disse que Daevas estava sendo envenenado por um enorme lodo morando no templo de Beshmundir, não os insetos venenosos do Silentera Canyon.</p>
+<p> </p>
+<p>Você derrotou o porta -prague e trouxe de volta seu núcleo para que Steurios pudesse estudá -lo e desenvolver um novo antídoto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

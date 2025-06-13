@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que os Krall estão tramando algo mais do que o seu alojamento de peito, gritando e correndo como tolos.</p>
+<p> </p>
+<p>Nosso pequeno Daeva de Zephyr ali me informou que ela viu o xamã alto fazendo algo suspeito em torno da refinaria Odium.</p>
+<p> </p>
+<p>Eu me pergunto o que podemos aprender com o interrogatório dele ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Duvido que ele fale."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está certo. Seria uma dor demais para incapacitar aquele bruto fedorento, arrastá -lo de volta aqui e depois encontrar alguém que fala sua língua bárbaro.</p>
+<p> </p>
+<p>Deveríamos apenas matá -lo e procurar seu cadáver por algo de interesse.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae_Tune] não é oponente comum.</p>
+<p> </p>
+<p>Ele está protegido por muitos.</p>
+<p> </p>
+<p>Portanto, seja especialmente cuidadoso.</p>
+<p> </p>
+<p>Por favor, se apresse, precisamos de algumas informações o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você é um Daeva de Zephyr também? Alegando apoiar Elysea, mas não querendo sangrentos suas mãos ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A vila de Kishar está em turbulência, me disseram. Foi isso que você está fazendo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Culpado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>No entanto, você não conseguiu cumprir sua missão? Eu ouvi que você era um Daeva sem colegas.</p>
+<p> </p>
+<p>Os rumores eram falsos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver o que você encontrou, então.</p>
+<p> </p>
+<p>Pequena bugiganga interessante. Não sei dizer o que é usado-certamente não uma arma.</p>
+<p> </p>
+<p>Melhor eu enviaria isso para o Santum para mais estudos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_KrallShaKNMPurify_39_Ae_Tune] e levar as informações para [%dic:STR_DIC_N_Piros].</p>[%collectitem]</step>
+</steps>
+<p>Precisamos de mais informações concretas para descobrir o que o Kishar Krall está fazendo. Mate o xamã Kanshasha, que é responsável por refinar o Aether, e procure informações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Piros suspeitava que o Kishar Krall estava tramando alguma coisa, então ele matou o xamã alto e ver se alguma evidência estava em seu corpo. Você encontrou um pedaço estranhamente pontudo, mas Piros não sabia dizer para que era.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

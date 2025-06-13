@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se queremos entrar na fortaleza, então temos que destruir o [%dic:STR_DIC_M_IDF5_TD_War_Door_05], o [%dic:STR_DIC_M_IDF5_TD_War_Door_06]ou o [%dic:STR_DIC_M_IDF5_TD_War_Door_02].</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_IDF5_TD_War_Door_04]também é uma opção, mas a [%dic:STR_DIC_M_IDF5_TD_War_Door_03]Também deve ser destruído.</p>
+<p> </p>
+<p>Vá para o arsenal e se apossar de um[%dic:STR_DIC_M_IDF5_TD_War_PC_TankTBM]. Você deve ser capaz de usá -lo para destruir a entrada ou a parede.</p>
+<p> </p>
+<p>Enviarei suprimentos para você assim que conquistarmos o armazenamento de combustível e munições. Mas leve um pouco com você agora.</p>
+<p> </p>
+<p>Venha para [%dic:STR_DIC_W_LDF5_Fortress_SZ_A1_Start]Depois de concluir sua missão. Vou esperar por você lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username], Eu estive esperando por você.</p>
+<p> </p>
+<p>Você esmagou as portas e invadiu a fortaleza?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que sim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um bom trabalho.</p>
+<p> </p>
+<p>Agora eu sei por que os líderes recomendaram que eu o cobre por esta missão, [%username].</p>
+<p> </p>
+<p>Aqui está uma recompensa para você, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_E_IDF5_TD_War_Door]([%2]/1).</p></step>
+<step><p visible="[%15]">Retornar ao[%dic:STR_DIC_W_LDF5_Fortress_SZ_A1_Start] e reportar a [%dic:STR_DIC_N_LDF5b_Latkel_E].</p></step>
+</steps>
+<p>Vá para o campo de batalha do bastião da parede de aço, destrua as portas nos portões ou na parede da fortaleza e entre na fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O capitão Latkel deu a você a tarefa de destruir a entrada do portão ou da parede da fortaleza sendo ocupada pelo comandante supremo Pashid para que as tropas pudessem entrar.</p>
+<p> </p>
+<p>Você usou uma arma de cerco e invadiu a fortaleza. Você voltou a Latkel no assentamento Rubininerk e deu a ele seu relatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

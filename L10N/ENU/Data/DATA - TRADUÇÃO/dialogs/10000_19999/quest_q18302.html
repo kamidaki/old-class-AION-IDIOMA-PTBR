@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu falar da Liga de Engenharia de Kaichin?</p>
+<p> </p>
+<p>É composto por shulacks que utilizam apenas sua tecnologia altamente avançada para fins malignos.</p>
+<p> </p>
+<p>Embora Tiamat não pudesse suportar shulacks, sua tecnologia significava que eles eram necessários para a draga.</p>
+<p> </p>
+<p>E agora Beritra parece querer a tecnologia para si.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como encontraremos o lugar certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A Liga de Engenharia de Kaichin pensou que estaria trabalhando em uma draga normal, mas eles estavam errados.</p>
+<p> </p>
+<p>Porque esta é uma fortaleza de céu real.</p>
+<p> </p>
+<p>É controlado por [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An]. Ele é um shulack muito agressivo, então eu me preparei para um possível ataque.</p>
+<p> </p>
+<p>Mas você vai me ajudar, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, então vou resumir mais uma vez. Use o teleportador para viajar para [%dic:STR_DIC_W_IDStation_SZ_02_A].</p>
+<p> </p>
+<p>Haverá muitos shulacks lá, mas você não deve ter nenhuma dificuldade se tomar o [%dic:STR_DIC_N_IDStation_ShulackAirplane_01].</p>
+<p> </p>
+<p>Em toda a zona de controle, sempre existem[plur][%dic:STR_DIC_N_IDStation_FOBJ_TOWER1]que controlam o Surkana.</p>
+<p> </p>
+<p>Se você os destruir, a porta da sala de operações do mestre será aberta.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An] e então volte para mim.</p>
+<p> </p>
+<p>Oh, eu quase esqueci de algo: por favor me traga [%dic:STR_DIC_I_IDStation_FOBJ_S_BOX]. Tenho certeza de que contém informações importantes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O horário comercial está aberto!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que parar agora? Você já está no meio do caminho!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O que há para mim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Uma placa na caixa desgastada e polida diz: "Popuchin's. Fique de fora!")</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT6">"Como se isso vai me impedir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você cavou aleatoriamente através dos escombros preciosos de Popuchin.)</p>
+<p> </p>
+<p>(Debaixo das fotos e bugigangas está um documento que diz "Top Secret: Sky Fortaleza Blueprint".)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Obrigado por doar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Este traje de Balaur se irritando.</p>
+<p> </p>
+<p>Seu siloto de sorte não pede que você fique aqui comigo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Esses esquemas irão animá -lo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trabalha surpreendentemente rapidamente. Talvez o [%userrace] As pessoas não são tão diferentes de nós, reianos.</p>
+<p> </p>
+<p>Posso olhar para isso mais de perto?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_N_IDStation_FOBJ_TOWER1] S no[%dic:STR_DIC_W_IDStation_SZ_02_A]([%2]/5).</p></step>
+<step><p visible="[%3]">Derrota [%dic:STR_DIC_M_IDStation_ShulackFlight_NM_58_An] e aberto[%dic:STR_DIC_I_IDStation_FOBJ_S_BOX].</p></step>
+<step><p visible="[%6]">Retornar a [%dic:STR_DIC_N_Hariken].</p></step>
+</steps>
+<p>Destrua todos os geradores da draga para abrir o caminho para Popuchin, para que você possa levar as plantas dele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hariken disse que precisava de esquema da fortaleza do céu de Popuchin para saber a melhor forma de realizar sabotagem.</p>
+<p> </p>
+<p>Você abriu a oficina de Popuchin destruindo os geradores de energia, depois o matou e levou suas plantas antes de voltar para Hariken para obter mais instruções.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

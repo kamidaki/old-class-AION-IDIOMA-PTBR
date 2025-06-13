@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você aí. Você. [%userclass].</p>
+<p> </p>
+<p>Eu desenvolvi um instinto de integridade. Sinto fortemente que você é digno da confiança que estou prestes a lhe dar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E o que você quer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sou agente de uma ... organização secreta que responde a ninguém além de Lord Nezekan. Nós realizamos ... missões em toda a Atreia.</p>
+<p> </p>
+<p>Eu tenho executado uma operação importante com meu colega Emeele. Infelizmente, eu encontrei um ... obstáculo.</p>
+<p> </p>
+<p>Eu consertaria minha própria bagunça, mas não posso deixar minha agenda escapar mais. Eu poderia usar a assistência de um Daeva capaz como você, pelo bem de Elysea.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você. Para explicar: fui atacado e roubado por [%dic:STR_DIC_M_Branch_Event_ElementalFire2_LIGHT_99_n].</p>
+<p> </p>
+<p>Mate -os e pegue o [%dic:STR_DIC_I_QUEST_80058A] S roubado de mim. Eles podem parecer folhas comuns, mas são um veneno mortal vital para minha missão.</p>
+<p> </p>
+<p>Receio que seja tudo o que posso te dizer. Boa sorte, e tenha cuidado para lidar com as ervas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"O que eu me entrei ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então devo exigir sigilo absoluto de você. Não diga a ninguém o que eu já disse a você ... ou que você até falou comigo.</p>
+<p> </p>
+<p>Você deve escorregar, haverá ... consequências. Consequências desagradáveis. Você pode ter certeza disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso manter um segredo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Certo na hora. Eu tive você assistido.</p>
+<p> </p>
+<p>Felizmente para você, é até agora, tudo bem. Eu já sei a resposta para isso, mas você cumpriu sua missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Er ... aqui está ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os relatórios diziam que sim, e o fizeram, bom trabalho. Fico feliz em ver que eles não foram enganados.</p>
+<p> </p>
+<p>Ah, sim, temos um arquivo em você. Temos um arquivo em todos.</p>
+<p> </p>
+<p>Portanto, não, nossa reunião não foi coincidência ... Na verdade, tenho outra tarefa para você, se você está pronto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Como eu disse, eu já conhecia sua resposta. Lembre -se de obter todo o [%dic:STR_DIC_I_QUEST_80058A] S do[%dic:STR_DIC_M_Branch_Event_ElementalFire2_LIGHT_99_n].</p>
+<p> </p>
+<p>Mal posso esperar por você por muito mais tempo. O EMEELE deve estar ficando impaciente, e nosso Targ ... er, a pedreira estará em movimento em breve.</p>
+<p> </p>
+<p>Não nos decepcione. Você não quer decepcionar meus mestres.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito por ter me envolvido nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontrar [%dic:STR_DIC_I_QUEST_80058A] e dê -los a [%dic:STR_DIC_N_event_Tristan].</p>[%collectitem]</step>
+</steps>
+<p>Encontre as ervas estranhas que os detritos estrelados roubaram e devolvê -los a Conner.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Um Daeva bastante misterioso chamado Conner colou você e pediu que você recuperasse ervas venenosas roubadas por detritos estrela.</p>
+<p> </p>
+<p>Você fez isso, com a gratidão de Conner. Ele pediu que você fizesse outra coisa para a organização sombria que o emprega.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

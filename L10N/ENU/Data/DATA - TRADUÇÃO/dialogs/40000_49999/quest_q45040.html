@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo:</p>
+<p> </p>
+<p>Uma recente interrupção de nossa cadeia de suprimentos forçou os guardas de campo a mergulhar em nossos estoques de alimentos. Enquanto resolvemos esse problema menor, pedimos que todos os guardos contribuam reunindo alimentos e contribuindo com o excesso para a causa comum. Devemos estar preparados!</p>
+<p> </p>
+<p>Em particular, quantidades de [%dic:STR_DIC_G_QUEST_45040_a], Assim, [%dic:STR_DIC_G_QUEST_45040_b], e [%dic:STR_DIC_G_QUEST_45040_c] estão em alta demanda, pois esses alimentos podem ser armazenados por um longo período de tempo sem estragar.</p>
+<p> </p>
+<p>Todas e quaisquer contribuições podem ser trazidas para o [%dic:STR_DIC_E_45014]para catalogação e redistribuição.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Agora estou com fome ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os DAEVAs podem não estar particularmente preocupados com a falta de comida, mas um rápido se deteriora até mesmo sua eficiência de combate. É triste dizer que poderíamos muito bem estar enfrentando essa situação em breve.</p>
+<p> </p>
+<p>Eu realmente não sei como nossos suprimentos ficaram tão baixos sem que ninguém perceba. Suponho que o que importa é que façamos algo a respeito. Agora.</p>
+<p> </p>
+<p>Foi -me dito que a missão de obter provisões estava em andamento, mas ainda não vi uma alma trazer nada. Você está no trabalho?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sobre isso ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Você não tem nada para mostrar, diretor de campo? Não pedimos muito de você-apenas uma única tarefa todos os dias.</p>
+<p> </p>
+<p>Você esqueceu sua obrigação com os outros guardas de campo? Ou a tarefa acabou de colocar sua mente?</p>
+<p> </p>
+<p>Talvez você tenha coisas mais importantes para fazer ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estava chegando a isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, excelente, [%username]. Esses ingredientes raramente ficam ruins-eu os vi durar meses e meses. Eles são bastante populares no campo de batalha por esse motivo.</p>
+<p> </p>
+<p>É claro que, quando há uma batalha, eles raramente duram o tempo que deveriam, por isso são mais valiosos quando são menos necessários. Hmmm ... há uma lição nisso, em algum lugar.</p>
+<p> </p>
+<p>Mas chega disso. Aqui, por favor, pegue este token para o seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_G_QUEST_45040_a], Assim, [%dic:STR_DIC_G_QUEST_45040_b], e [%dic:STR_DIC_G_QUEST_45040_c], e leve-os para [%dic:STR_DIC_N_Alaum].</p>[%collectitem]</step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta dos guardas de campo afirma que o suprimento de alimentos é baixo e deve ser reabastecido. Sua assistência é necessária neste esforço.</p>
+<p> </p>
+<p>Você coletou suprimentos de alimentos e os trouxe para o agente de campo de Brusthonin, que o recompensou pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

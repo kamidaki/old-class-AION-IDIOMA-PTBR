@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], de acordo com o documento secreto que você trouxe com você, um agente da Asmodian supostamente se infiltrou em que possui informações sobre as figuras mais importantes do Exército de Beritra.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_LDF5a_Klaf_E]é um espião asmodiano que pegamos prisioneiros há pouco tempo.</p>
+<p> </p>
+<p>Entre em contato com este espião e descubra algo sobre as figuras mais importantes do exército de Beritra. Mate -os imediatamente quando descobrir o espião onde eles estão.</p>
+<p> </p>
+<p>Esta missão é tão importante que possa decidir as batalhas aqui em Katalam para nós.</p>
+<p> </p>
+<p>O que você acha? Você vai aceitar a missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei onde está localizada o general da Brigada Tavrosh. Ele é o líder das tropas principais do Exército de Beritra aqui em Katalam.</p>
+<p> </p>
+<p>Você quer saber onde está Tavrosh? Que tal fazer um acordo? Minha única condição é que você me libera.</p>
+<p> </p>
+<p>Como você não vai confiar em mim imediatamente, vou contar um pouco sobre o que sei. Então você saberá se pode confiar em mim.</p>
+<p> </p>
+<p>Vou te contar a posição de [%dic:STR_DIC_M_LDF5b_F1_Vri_Post_1st_Q_KN_Nmd_65_Ah]. Ele é o capitão da primeira unidade do 43º Exército de Beritra.</p>
+<p> </p>
+<p>Vasti aparecerá em um dos Garisons ao norte e um ao sul da linha de defesa de Beritra. Como ele é muito completo, ele constantemente observa a linha de frente em vários lugares antes de enviar suas tropas para lá.</p>
+<p> </p>
+<p>Verifique minhas informações. Então você pode me dizer se deseja entrar neste acordo comigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você acha? Você encontrou vasti? Você confia em mim agora?</p>
+<p> </p>
+<p>Eu acho que você confia nas minhas informações agora.</p>
+<p> </p>
+<p>E você certamente concordará com um acordo agora. Qual é a sua decisão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você concorda com o acordo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vasti pode ser um Balaur importante, mas Tavrosh é o general da brigada do 43º Exército de Beritra, enviado a Katalam.</p>
+<p> </p>
+<p>Só estou lhe dizendo isso para que você confie e me deixe ir livre.</p>
+<p> </p>
+<p>Ele não é apenas um perigo para os Elyos, mas também para nós asmodianos.</p>
+<p> </p>
+<p>Essas informações devem realmente ser transmitidas ao esquadrão de limpeza da Katalam, mas confio que você manterá sua palavra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5a_Klaf_E].</p></step>
+<step><p visible="[%9]">Mate o [%dic:STR_DIC_M_LDF5b_F1_Vri_Post_1st_Q_KN_Nmd_65_Ah]([%11]/1).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5a_Klaf_E]de novo.</p></step>
+</steps>
+<p>Siga as ordens de Tirins e interrogue o espião cativo, Klav. Em seguida, faça um acordo com base em suas informações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tirins achou que o espião poderia possuir informações importantes, então ele lhe deu a missão de interrogar o espião que foi preso há pouco tempo.</p>
+<p> </p>
+<p>O espião Klav sugeriu um acordo para sua libertação e contou a posição de Vasti, o capitão da primeira unidade do 43º Exército de Beritra.</p>
+<p> </p>
+<p>Você encontrou Vasti onde Klav disse que o estaria e o derrotou. Você então concordou com o KLAV: Ele disse a posição do general da brigada Tavrosh.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

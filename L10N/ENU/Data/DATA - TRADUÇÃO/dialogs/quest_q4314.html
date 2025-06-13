@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quem é você? Você parece familiar .... ah! Você é quem me ajudou a me livrar daqueles Aranhas, certo? Sou péssimo com os rostos de Shugo.</p>
+<p> </p>
+<p>Estranho que um shugo empunha um[%mainslotitem]... Eu pensei que eles preferiam um livro.</p>
+<p> </p>
+<p>Espere .... você não é um shugo?!</p>
+<p> </p>
+<p>Não, não preciso ver um curandeiro. Eu tenho uma visão perfeita! Eu apenas bati na minha cabeça enquanto fugia de um Aranha ... e, bem, entra e sai de foco. De qualquer maneira, os Aranhas estão de volta!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh não! O que vamos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se as coisas continuarem assim, vai ficar muito perigoso. Como eles podem se multiplicar tão rápido, mesmo que um grande número deles tenha sido morto ...</p>
+<p> </p>
+<p>No momento, eles estão apenas impedindo a reunião, mas eles se transformam em uma grande ameaça se multiplicarem mais. Não apenas os coletores, mas muitos outros também estão em perigo ...</p>
+<p> </p>
+<p>[%username], Gostaria de pedir a você para fazer algo, porque você está pronto para a tarefa.</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_M_OctasideD_21_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por nos ajudar.</p>
+<p> </p>
+<p>Volte e informe -nos depois que você matar 10[plur][%dic:STR_DIC_M_OctasideD_21_An].</p>
+<p> </p>
+<p>Se você é capaz de matar ainda mais, sinta -se à vontade para fazê -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não poderia reconsiderá -lo?</p>
+<p> </p>
+<p>[%username], com suas habilidades, você poderá matar 10 Aranha muito rapidamente.</p>
+<p> </p>
+<p>Se você caçar o Aranha, será ricamente recompensado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Eu sabia que poderia depender do seu[%mainslotitem].</p>
+<p> </p>
+<p>Eu sabia que você era o trabalho certo para o asmodiano-espera, isso não está certo ... eu sabia que você poderia fazê-lo!</p>
+<p> </p>
+<p>Você matou os Aranhas, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu os matei ... como animais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Aranha não deve ser subestimado. Eles vão voltar.</p>
+<p> </p>
+<p>Esta cooperação com você nos ajudou muito, [%username].</p>
+<p> </p>
+<p>Muito obrigado...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_OctasideD_21_An]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Medea].</p></step>
+</steps>
+<p>Faça o que Medéia solicita e elimine a sombra Aranhas que estão se reproduzindo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Medéia disse que o número de Aranha não havia diminuído e que seria perigoso se eles continuassem a se reproduzir.</p>
+<p> </p>
+<p>Ela ficou muito grata por você ter matado a sombra Aranha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

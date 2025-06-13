@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q39022</questid>
+<questname>레아흐의 지령</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: Centurion Tillen da tropa de expedição de santuário</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordem: elimine os asmodianos que estão atacando inggison enquanto a brecha está aberta!</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua reputação o precede.</p>
+<p> </p>
+<p>Ou devo falar do seu espírito de luta e de como você corajosamente derrotou seus oponentes.</p>
+<p> </p>
+<p>Você matou os asmodianos que atravessaram a fenda do espaço-tempo?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga -me como foi difícil derrotar os asmodianos?</p>
+<p> </p>
+<p>Com seu apoio, a fortaleza de ilusões é segura mais uma vez.</p>
+<p> </p>
+<p>Muito, muito obrigado.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos que invadiram Inggison ([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Leah].</p></step>
+</steps>
+<p>Ordens de emergência: Enquanto a brecha estiver aberta, mate os asmodianos que estão atacando Inggison e se reportam a Tillen.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos atacaram Inggison através da fenda. Você venceu os asmodianos atacantes e se reportou a Tillen.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

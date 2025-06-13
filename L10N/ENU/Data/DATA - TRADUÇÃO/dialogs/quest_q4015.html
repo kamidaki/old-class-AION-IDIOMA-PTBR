@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não sei como você está familiarizado[%dic:STR_DIC_W_ZONE_NAME_DF2A]-Você já ouviu falar do[%dic:STR_DIC_W_DF2A_SZ_D]?</p>
+<p> </p>
+<p>Eles dizem que não é tão fértil quanto a fazenda Havenjark, mas esperamos cultivá -la ou talvez usá -la para o gado.</p>
+<p> </p>
+<p>Construímos um acampamento de colonos lá e despachamos uma equipe de trabalhadores para realizar testes de solo e assim por diante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Parece um bom começo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem ... ainda não ouvimos falar deles. Eles deveriam voltar depois de concluir seus testes preliminares-apenas alguns dias. Mas já faz quase uma semana e não tivemos nenhuma palavra.</p>
+<p> </p>
+<p>A área não é conhecida por ser perigosa, mas agora estou começando a me perguntar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu concordo. Algo não está certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é o que eu pensei. E enquanto as pessoas insistem que nada de errado, ninguém é se voluntariado para lançar uma festa de pesquisa também.</p>
+<p> </p>
+<p>Os senhores Shedim devem ter enviado você para mim, [%username].</p>
+<p> </p>
+<p>Você iria para o [%dic:STR_DIC_W_DF2A_SZ_D] e verifique a equipe?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você os encontrar, diga -lhes para reportar de volta imediatamente.</p>
+<p> </p>
+<p>Se eles estiverem com problemas, espero que você faça o que puder para ajudar.</p>
+<p> </p>
+<p>E se você não os encontrar ... bem, procure pistas sobre o seu destino.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Então você simpatizará, mas não ajudará.</p>
+<p> </p>
+<p>Estou ... surpreso, para dizer o mínimo.</p>
+<p> </p>
+<p>Bem, pegue suas asas e vá, Daeva. Vou encontrar ajuda em outro lugar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Caminhe na sombra de Azphel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Hm. Parece que o Team Centurion Vinduer está procurando.)</p>
+<p> </p>
+<p>(Este não está respirando. Não é um bom sinal.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"É melhor eu verificar os corpos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Essas feridas foram feitas por armas afiadas. As armas Elyos, provavelmente. Este lugar está rastejando com o sol-luta.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"É melhor eu dizer ao Windows."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Não vejo minha equipe com você. Eles ainda estão lá fora? O que aconteceu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Morto nas mãos dos Elyos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Elyos? Elyos em Brusthonin?</p>
+<p> </p>
+<p>Eles mataram civis a sangue frio.</p>
+<p> </p>
+<p>Eu deveria ter enviado guardas com eles .... Não. Não há tempo para arrependimentos. Precisamos retaliar e obliterar os Elyos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a equipe trabalhista que nunca voltou do[%dic:STR_DIC_W_DF2A_SZ_D].</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Vinduer].</p></step>
+</steps>
+<p>Vinduer enviou uma equipe de trabalhadores às Planícies Vigrid para preparar a terra para a agricultura, e eles não retornaram. Vinduer pediu que você os procurasse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vinduer disse que os trabalhadores que foram procurar as planícies de Vigrid nunca retornaram. Ele temia por sua segurança.</p>
+<p> </p>
+<p>Você procurou os trabalhadores, mas os encontrou todos mortos-assumidos pelos Elyos.</p>
+<p> </p>
+<p>Quando relatado a Vinduer, ele jurou retaliar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

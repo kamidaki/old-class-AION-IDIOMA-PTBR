@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Descobrimos uma maneira de viajar para a Signia e estamos ajudando os Daevas a chegar lá.</p>
+<p> </p>
+<p>Por que não usar esta oportunidade para visitar [%dic:STR_DIC_W_LF5]também, [%username]?</p>
+<p> </p>
+<p>Obviamente, a fortaleza de Ilusão Inggison não é a única rota para lá, você também pode alcançá -la através dos teleportadores em Santuário, Akaron e Kaldor.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações!</p>
+<p> </p>
+<p>Bem -vindo ao Signia!</p>
+<p> </p>
+<p>Muitos dos Daevas que chegam aqui estão nervosos, mas você parece bastante confiante.</p>
+<p> </p>
+<p>Você teve uma jornada agradável?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você sorri.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você complete muitas missões em Signia.</p>
+<p> </p>
+<p>Dê uma olhada em volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LF5] e fale com[%dic:STR_DIC_N_LF5_OP1_ZoneTeleport_L].</p></step>
+</steps>
+<p>Preste atenção ao conselho, Naerty lhe deu e vá para Signia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Naerty, da fortaleza de Ilusão Inggison, contou sobre a Signia e aconselhou que você viaje para lá.</p>
+<p> </p>
+<p>Você prestou atenção ao conselho de Naerty e viajou para Signia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

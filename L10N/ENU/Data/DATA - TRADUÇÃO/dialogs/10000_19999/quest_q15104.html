@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15104</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O ambiente hostil do deserto resultou em muitas baixas, mas as criaturas perigosas à espreita em todos os lugares sob a areia são ainda piores.</p>
+<p> </p>
+<p>Eles aparecem tão de repente, você nunca pode prever de onde o próximo perigo atacará.</p>
+<p> </p>
+<p>Essas criaturas insidiosas se escondem na areia e emboscam suas vítimas. Infelizmente, os membros de nossas unidades estão entre suas vítimas. Temos que fazer algo a respeito.</p>
+<p> </p>
+<p>Por favor, entre no[%dic:STR_DIC_W_LF5_SZ_J_01] e eliminar o [plur][%dic:STR_DIC_M_LF5_J_SandShark_64_An] e o [plur][%dic:STR_DIC_M_LF5_J_Worm_Horn_64_An] Antes de sofrermos ainda mais baixas. Boa sorte!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os perigos no deserto?</p>
+<p> </p>
+<p>Vendo que você voltou em uma peça, acho que não preciso me preocupar ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente é tão excepcional quanto eles dizem, [%username].</p>
+<p> </p>
+<p>Não pode ter sido fácil lutar no calor escaldante e na areia em chamas.</p>
+<p> </p>
+<p>Bom trabalho!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_J_01] e matar o [plur][%dic:STR_DIC_M_LF5_J_SandShark_64_An] e [plur][%dic:STR_DIC_M_LF5_J_Worm_Horn_64_An].</p>
+<p visible="[%0]">Mate os zanthays do uivo ([%5]/5).</p>
+<p visible="[%0]">Derrotar o ênfase sanguíneo ([%8]/3).</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_LF5_Aithria_E].</p></step>
+</steps>
+<p>Vanja as criaturas no deserto espinhoso e reporte -se a Altria.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Altria enviou a você o deserto espinhoso para expulsar as criaturas que haviam atormentado a Guilda.</p>
+<p> </p>
+<p>Você derrotou os zanthays do uivo e o sangue. Altria o elogiou e ficou impressionado por você ter lutado no deserto quente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

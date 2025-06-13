@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O QG estabeleceu uma instalação de pesquisa no vale de Bassen para examinar eventos incomuns.</p>
+<p> </p>
+<p>Eles querem descobrir se o ID tem algo a ver com a nova fonte de energia e, se é por isso que os itens flutuam em Katalam e o Daeva podem voar.</p>
+<p> </p>
+<p>O problema é que as instalações continuam fechando.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se os dispositivos de pesquisa de identificação estiverem funcionando corretamente, não é um problema. Infelizmente, esse nem sempre é o caso, no entanto.</p>
+<p> </p>
+<p>Sempre se resume a contratempos. É difícil. É também o centro do local de batalha. É por isso que é sempre muito perigoso reparar dispositivos lá.</p>
+<p> </p>
+<p>Você pode colocar os 3 dispositivos de pesquisa com ID defeituosos perto das bases de volta em operação?</p>
+<p> </p>
+<p>Seria ótimo, [%username] Se você pudesse me ajudar aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por ouvir meu apelo.</p>
+<p> </p>
+<p>Um total de 3 dispositivos de pesquisa, [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_D01], Assim, [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_D02] e [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_D03] São armazenados em vários locais.</p>
+<p> </p>
+<p>Procure esses dispositivos de pesquisa e coloque -os em funcionamento novamente.</p>
+<p> </p>
+<p>Então, se você quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então não há nada que possa ser feito.</p>
+<p> </p>
+<p>[%username], alguém como você sempre estará ocupado com outras tarefas.</p>
+<p> </p>
+<p>Mas esta é uma tarefa, nem todos podem concluir. É por isso que eu pediria que você me procure novamente depois de terminar sua tarefa atual.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>E as máquinas?</p>
+<p> </p>
+<p>Tudo vai como deveria?</p>
+<p> </p>
+<p>Por favor, informe se você notou algo estranho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a tarefa! Impressionante!</p>
+<p> </p>
+<p>Agora que todos os dispositivos de pesquisa foram reparados, podemos aprender mais sobre o idgel encontrado na base de Bassen.</p>
+<p> </p>
+<p>Trabalho muito bom!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sortudo.</p>
+<p> </p>
+<p>Não sei quando vai parar novamente, mas descobri por que as instalações continuam fechando.</p>
+<p> </p>
+<p>Se a causa for pesquisada corretamente, precisamos chamar um bom engenheiro. Se isso não for possível, teremos que obter o Shugo.</p>
+<p> </p>
+<p>Muito obrigado pela sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Ativar [%dic:STR_DIC_N_LDF5b_FOBJ_D1_Idgear_D_all]([%2]/3).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Vagion_E]%.</p></step>
+</steps>
+<p>Encontre todos os dispositivos de teste de identificação ociosa na bacia de Basen e faça com que eles funcionem novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de atender à solicitação de Vagion e descobrir todos os dispositivos defeituosos de pesquisa de identificação de ID na bacia de Bassen e os restaurou para a operação, você retornou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

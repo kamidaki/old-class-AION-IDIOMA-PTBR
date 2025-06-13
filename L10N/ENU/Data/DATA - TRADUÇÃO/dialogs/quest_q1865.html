@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A situação é tão crítica que não há tempo para explicações longas.</p>
+<p> </p>
+<p>A fortaleza de Kysis é um dos pontos mais importantes, junto com o Refúgio Krotan e a Fortaleza Miren. Portanto, não podemos permitir que eles sejam levados pelo oponente.</p>
+<p> </p>
+<p>Quero iniciar um ataque em larga escala de uma só vez, mas a guerra é difícil para nós por causa dos danos da última batalha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ganhar tempo para o grande ataque, nossos guardiões e Daevas estão tentando realizar ataques menores como desvio.</p>
+<p> </p>
+<p>Primeiro, queremos lidar com os Guardiões perto da fortaleza. Eles são relativamente fáceis de matar, e isso enfraquecerá o inimigo. Essa estratégia é de baixo risco, mas pode danificar significativamente o inimigo.</p>
+<p> </p>
+<p>Felizmente, muitos Elyos Daevas estão vindo aqui para nos ajudar. E você, [%username]? Você quer lutar conosco?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Você tomou uma decisão sábia.</p>
+<p> </p>
+<p>Por favor, junte seus camaradas em armas e vá para a fortaleza de Kys. Mate o [%dic:STR_DIC_E_1231_Defender_Dr]ou o [%dic:STR_DIC_E_1231_Defender_Da].</p>
+<p> </p>
+<p>A Guilda dos Protetores de Teminon está sendo reestruturada para prepará -lo para a batalha e a captura da fortaleza.</p>
+<p> </p>
+<p>Eu sei o quão forte você é. Mas eu aconselho você a não entrar apenas na fortaleza. Isso não seria sábio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não achei que você recusaria essa missão. Pena, mas não posso forçá -lo a fazer nada.</p>
+<p> </p>
+<p>No entanto, imploro que você pense novamente sobre o que vale a pena lutar.</p>
+<p> </p>
+<p>Se você mudar sua mente, poderá voltar para me ver a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Ouvi dizer que você eliminou com sucesso as forças de luta de nossos oponentes.</p>
+<p> </p>
+<p>Um legionário em uma missão de reconhecimento na fortaleza me contou sobre sua bravura e sua habilidade na batalha, [%username].</p>
+<p> </p>
+<p>Você pode me dizer qual era a situação? Você está ferido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora houvesse muitos balaur na área, você concluiu a tarefa sem problemas. Isso foi bem feito.</p>
+<p> </p>
+<p>[%username], só foi possível porque você aceitou a tarefa.</p>
+<p> </p>
+<p>Vou contar ao governador Michalis sobre suas realizações, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_1231_Defender_Dr]ou o [%dic:STR_DIC_E_1231_Defender_Da]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Bellona].</p></step>
+</steps>
+<p>Relatório a Bellona assim que você derrotar o Esquadrão de Defesa da Asmodian Kysis ou o esquadrão Balaur Kysy Conquest.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bellona pediu que você ajudasse a recuperar a fortaleza de Kys.</p>
+<p> </p>
+<p>Você concordou e derrotou o Esquadrão de Defesa do Asmodian Kysis ou o esquadrão Balaur Kysy Conquest. Bellona elogiou sua ação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

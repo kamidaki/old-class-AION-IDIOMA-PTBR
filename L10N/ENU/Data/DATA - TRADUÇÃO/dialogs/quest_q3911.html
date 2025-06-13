@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está realizando fielmente os ensinamentos da vida?</p>
+<p> </p>
+<p>Atualmente, estou emitindo tarefas para clérigos e chanters em santuário por ordem de Lady Yustiel.</p>
+<p> </p>
+<p>Você deve fazer sua parte se realmente seguir o caminho do[%userclass].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que papel eu poderia desempenhar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você só precisa realizar os ensinamentos da vida. Use as habilidades de ressurreição que você aprendeu do templo para aumentar os camaradas caídos.</p>
+<p> </p>
+<p>Você pode usar as habilidades que deseja realizar esta tarefa.</p>
+<p> </p>
+<p>A essa altura, não deveria ser nada novo. Relate aos thrasymedes quando você terminar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu confio que este comando não é muito oneroso. Pretende -se reforçar os clérigos e os chanters que pertencem ao templo da vida, não sobrecarregar os outros.</p>
+<p> </p>
+<p>Em qualquer lugar que você vá, você verá os necessitados. Salve seus camaradas deitados no chão frio.</p>
+<p> </p>
+<p>Quando você se apresentou[%dic:STR_DIC_E_RESURRECT]Chega de vezes, relate -se para [%dic:STR_DIC_N_Thrasymedes].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenho autoridade para obrigar você a esta tarefa, [%username].</p>
+<p> </p>
+<p>Mesmo assim, eu não gostaria de irritar Lady Yustiel.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu já fiz o suficiente para a boa senhora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem -vindo, discípulo. Eu pensei que senti seu retorno. Você realizou a tarefa da Hygea?</p>
+<p> </p>
+<p>Espero que você não tenha pensado nisso como um fardo. Lady Yustiel nos ensina que, quando damos a nós mesmos, recebemos mais do que damos.</p>
+<p> </p>
+<p>Conte -me sobre suas viagens. Você ressuscitou seus camaradas caídos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu realizei a vontade de Lady Yustiel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você escolheu o caminho de [%userclass], geralmente assume que você tem um espírito de doação. Claro, estamos errados de vez em quando ....</p>
+<p> </p>
+<p>O sábio[%userclass]Os retornos aos nossos ensinamentos básicos de tempos em tempos para essas verdades simples nos guiam sempre.</p>
+<p> </p>
+<p>Receba essa recompensa do Templo da Vida em Comemoração por todas as suas obras fiéis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_RESURRECT]para ressuscitar camaradas caídos ([%2]/10).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Thrasymedes].</p></step>
+</steps>
+<p>Siga as instruções da Hygea e use suas habilidades de ressurreição em camaradas que caíram.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Hygea recomendou que você realizasse uma tarefa emitida pelo Templo da Vida.</p>
+<p> </p>
+<p>Você usou habilidades de ressurreição para elevar camaradas caídos e foi recompensado por thrasymedes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

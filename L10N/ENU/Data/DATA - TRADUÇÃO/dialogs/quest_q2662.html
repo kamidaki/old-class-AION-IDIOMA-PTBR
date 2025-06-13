@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aquele lefarista acabou de me trouxer um pouco de comida. Fico amigável com ele desde que me infilitei suas fileiras.</p>
+<p> </p>
+<p>Ele não sabe disso, mas ele tem sido uma grande ajuda para mim na coleta de informações. Ele fala muito. Mesmo que suas histórias às vezes não façam sentido, eu posso obter uma boa inteligência deles.</p>
+<p> </p>
+<p>Mas desta vez, ele me disse algo bastante preocupante. Segundo ele, alguns de seus soldados de elite estavam perguntando sobre mim ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pense que eles estão com você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, estou nervoso.</p>
+<p> </p>
+<p>Há pouco tempo, acho que fui visto conversando com um Daeva falador-você sabe, o cara de rosto de peixe? Eu tentei fazer o Daeva seguir em frente, mas ele continuou falando.</p>
+<p> </p>
+<p>Receio que os lefaristas possam suspeitar de algo ... preciso agir antes que as coisas piorem e minha capa seja realmente soprada. Você me ajudaria?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha primeira prioridade é silenciar esse lefarista. Eu só o vislumbrei à distância, seu uniforme era o de um[%dic:STR_DIC_M_KeB_LehparKnD_42_Ae], a [%dic:STR_DIC_M_AeB_LehparAsD_42_Ae], ou a [%dic:STR_DIC_M_WeA_LehparWiD_42_Ae].</p>
+<p> </p>
+<p>Como a notícia sobre mim já se espalhou, provavelmente é mais seguro eliminar todo o grupo do que encontrar e matar apenas o gritão sorrateiro.</p>
+<p> </p>
+<p>Ao fazer isso, podemos impedir que a palavra se espalhe mais e também desvie sua atenção para outra coisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo! Squealers, silenciados como um porgus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Como você pode ignorar o perigo em que estou?</p>
+<p> </p>
+<p>Espiões como eu arremessam nossas vidas por asmodianos como você.</p>
+<p> </p>
+<p>Você recusa meu pedido, mesmo sabendo disso? Para vergonha!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não quero arriscar meu próprio pescoço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Trabalhar com os lefaristas enquanto esconde meu ódio por eles está me deixando um pouco louco.</p>
+<p> </p>
+<p>Eu faço isso por causa de Pandaemonium.</p>
+<p> </p>
+<p>Bem, como você se saiu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seu segredo é seguro por enquanto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]!</p>
+<p> </p>
+<p>A partir de agora, devo ter mais cuidado. Agora, se pudéssemos concordar com uma senha ....</p>
+<p> </p>
+<p>Pegue isso. É uma recompensa por manter minha identidade em segredo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os soldados de elite do esquadrão de espionagem.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_KeB_LehparKnD_42_Ae]([%2]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_AeB_LehparAsD_42_Ae]([%5]/3).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_WeA_LehparWiD_42_Ae]([%8]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Dewi].</p></step>
+</steps>
+<p>Os soldados de elite no caos Brambles desconfiam Dewi. Eles devem ser mortos para que ele esteja seguro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dewi, que se infiltrou nos revolucionários lefaristas como espião, disse que alguns dos soldados de elite suspeitavam dele.</p>
+<p> </p>
+<p>Antes de descobrirem quem é Dewi, você matou os soldados do relógio, os lâminas de morte e os arquitros e, assim, desviou a atenção lefarista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

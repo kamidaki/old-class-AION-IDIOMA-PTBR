@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você! Você viu uma receita? Está por aqui em algum lugar ... Argh. Isso é tão frustrante.</p>
+<p> </p>
+<p>Aparentemente, estamos um pouco provinciais aqui para a frota azul. Eles estão acostumados a comida da cidade. Estou tentando acomodá -los, mas não cozinhei nada disso há muito tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Receio ter visto ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está!</p>
+<p> </p>
+<p>Marinar a carne de basilisco na seiva de espinheiro de lama ... Ah, eu deveria ter me lembrado. Não é de admirar que tenha sido tão difícil!</p>
+<p> </p>
+<p>Ei, já que você está aqui, você poderia me pegar [%dic:STR_DIC_I_QUEST_1622a] Areia [%dic:STR_DIC_I_QUEST_1622b]? Preciso tentar novamente, mas estou sem ingredientes e, se não estou aqui para assistir, o pão queimará. Se você fizer isso, eu lhe darei a receita como recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. 5[%dic:STR_DIC_I_QUEST_1622a] S e 5[%dic:STR_DIC_I_QUEST_1622b]deve ser suficiente para a frota. Vou preparar tudo o mais. Apresse -se de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas ... esta é uma receita incrível! Dificilmente ninguém sabe como fazer com que o Basilisco seja tão concurso! O que você quer dizer com você não quer?</p>
+<p> </p>
+<p>Tudo bem. Vou pegar alguns marinheiros de frota azul para lidar com isso. Enquanto isso, há algo que você queria comprar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, não estou com fome agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu os ingredientes que eu pedi? Tem certeza de que tem as peças certas? Deixe-me ver.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está a sua lista."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, não há nada aqui. O que você está fazendo de volta aqui sem eles? Estou em um cronograma aqui, e esses marinheiros estão com fome! Continue, pegue [%dic:STR_DIC_M_BasiliskRe_41_An] e [%dic:STR_DIC_M_Mudthorn_41_An]já!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, eu vou buscá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username]. É exatamente isso que eu precisava, e a seiva de Mudthorn é a alta qualidade. Bom trabalho.</p>
+<p> </p>
+<p>Tudo bem, aqui está a receita. Use bem-e não se esqueça de marinar as costelas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_BasiliskRe_41_An] e [%dic:STR_DIC_M_Mudthorn_41_An] e coletar ingredientes para [%dic:STR_DIC_N_Senir].</p>[%collectitem]</step>
+</steps>
+<p>Colete costelas de basilisco e seiva de espinheiro de lama para que Senir possa cozinhar para a frota azul.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Senir queria cozinhar algo diferente de frutos do mar para a frota azul. Ele pediu que você fosse buscar costelas de basilisco e seiva de espinheiro de lama. Em troca, ele lhe deu receita para o basilisco assado com carvão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se houver uma conexão com Nevilim, a tribo Rune deve ser investigada.</p>
+<p> </p>
+<p>Você perguntará como a tribo falecida Rune pode ser investigada, mas existem maneiras.</p>
+<p> </p>
+<p>Eu já encontrei um assistente que supostamente encontrou traços da tribo Rune.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF5a_E7] e conhecer [%dic:STR_DIC_N_LDF5a_Sopocles_E].</p>
+<p> </p>
+<p>Acho que podemos aprender algo se perguntarmos a ele sobre a história.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você provavelmente já ouviu as notícias e é por isso que veio até mim.</p>
+<p> </p>
+<p>Eu descobri traços da tribo Rune.</p>
+<p> </p>
+<p>Há um[%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary].</p>
+<p> </p>
+<p>Mas quando eu o encontrei, os monstros apareceram e eu tive que fugir.</p>
+<p> </p>
+<p>Você poderia obter [%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary]para mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>(Um livro antigo)</p>
+<p> </p>
+<p>(Quando você abre um pouco o envelope, você percebe os símbolos de runas.)</p>
+<p> </p>
+<p>(Você deve levar isso com você como evidência.)</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o Rune Tribe Records?</p>
+<p> </p>
+<p>[%username], Eu estive esperando por você todo esse tempo.</p>
+<p> </p>
+<p>Tenho vergonha de fugir como um covarde, sem arriscar um olhar para esses escritos valiosos.</p>
+<p> </p>
+<p>Esses materiais são de importância inestimável para a pesquisa. Se você os tiver, por favor me dê.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega o diário de Eremion.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um documento preservado da tribo Rune. Este é certamente um achado importante.</p>
+<p> </p>
+<p>Eu acho que isso poderia finalmente nos ajudar a descobrir as razões para a queda da tribo Rune.</p>
+<p> </p>
+<p>Em suma, parece ter havido um grande desastre. Não podemos dizer mais sobre isso agora.</p>
+<p> </p>
+<p>Você poderia deixar este documento comigo por um curto período de tempo até que estamos em posição de dizer algo mais específico?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LDF5a_E7] e fale com[%dic:STR_DIC_N_LDF5a_Sopocles_E].</p></step>
+<step><p visible="[%3]">Obtenha o [%dic:STR_DIC_E_LDF5a_FOBJ_E_RuneDiary] e procurar [%dic:STR_DIC_I_doc_quest_12565a].</p></step>
+<step><p visible="[%6]">Depois, volte para [%dic:STR_DIC_N_LDF5a_Sopocles_E].</p></step>
+</steps>
+<p>Converse com Sófocles, que encontrou traços da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Akaia disse que a tribo Rune pode ser pesquisada se houver contato entre Nevilim e a tribo Rune, e ele recomendou a reunião do pesquisador assistente Sófocles. Diz -se que ele descobriu os vestígios da tribo Rune.</p>
+<p> </p>
+<p>Quando você encontrou os documentos de Eremion como Sófocles os solicitou e os trouxe a ele, ele disse que este era um documento importante e que você deveria confiar a ele por um tempo.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

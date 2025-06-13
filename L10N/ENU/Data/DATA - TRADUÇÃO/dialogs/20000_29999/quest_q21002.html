@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dirigimos o Balaur daqui, como folhas ao vento.</p>
+<p> </p>
+<p>Você deveria ter visto a confusão deles.</p>
+<p> </p>
+<p>Nunca em seus sonhos mais sombrios eles imaginaram que os atacaríamos.</p>
+<p> </p>
+<p>Mas nossos preparativos para derrotar o Balaur há muito tempo estão em andamento.</p>
+<p> </p>
+<p>Selecionamos arcontes de elite e construímos navios de guerra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu gostaria de estar lá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obviamente, a guerra de Gelkmaros não foi a primeira. Já tínhamos se envolvido em várias batalhas aqui, o famoso chefe de batalha do Antagor entre elas. Muito sangue foi derramado ....</p>
+<p> </p>
+<p>É uma pena que você se encontra aqui agora. Enquanto descobrimos, defender este lugar é muito mais difícil do que ocupá -lo em primeiro lugar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A melhor defesa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>... é uma boa ofensa. Exatamente meu pensamento.</p>
+<p> </p>
+<p>Em vez de sentar aqui e esperar pelo próximo ataque, devemos pressionar o ataque e acabar com eles. Todos eles, começando com os Balaur que estavam presos atrás de nossa linha de frente.</p>
+<p> </p>
+<p>O que você acha? Você está pronto para caçar Balaur?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos[%dic:STR_DIC_M_DF4_LizardFi_51_An] Areia [%dic:STR_DIC_M_DF4_LizardAs_51_An] ainda está vagando no campo de batalha do Antagor, do lado de fora da fortaleza.</p>
+<p> </p>
+<p>Livrar -se deles é tecnicamente o trabalho de Vyuin e Danomdel, mas eles estão ocupados reparando o baluarte. Isso significa que você pode se divertir. Parece bom?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não precisa ter medo só porque isso é Balaurea.</p>
+<p> </p>
+<p>Claro, há Balaur fazendo escavações aqui, mas você não precisa se preocupar com elas.</p>
+<p> </p>
+<p>Muitos são feridos ou fracos, porque não têm Drana.</p>
+<p> </p>
+<p>O que você diz, você aceitará a missão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... enviando mais forças ... eu preciso recrutar pelo menos um ou dois arcontes, mas ... oh, eu não te vi lá. Eu tinha meu nariz enterrado em outro relatório.</p>
+<p> </p>
+<p>Enquanto você está lá fora, abatindo Balaur, estou aqui lendo relatórios. Parece que existem milhares deles. Minutiae chato também.</p>
+<p> </p>
+<p>Todas as questões importantes são decididas pela Brigada Geral. Eu recebo tudo o que sobra.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você deveria ter vindo comigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou todo o Balaur? Bem, nem todos eles, suponho. Pelo menos ainda não, hah!</p>
+<p> </p>
+<p>Tenho certeza de que você tem outras coisas para fazer agora, mas pare novamente quando tiver um momento livre. Tenho certeza de que alguém aqui terá mais trabalho para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Balaur perto da fortaleza.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_LizardFi_51_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_LizardAs_51_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hnikar]%.</p></step>
+</steps>
+<p>A pedido de Hunikar, mate os soldados de Balaur restantes perto da fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hnikar pediu que você eliminasse os remanescentes das forças de Balaur perto da fortaleza.</p>
+<p> </p>
+<p>Quando você voltou, Hnikar pediu que você visitasse a fortaleza novamente para mais trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

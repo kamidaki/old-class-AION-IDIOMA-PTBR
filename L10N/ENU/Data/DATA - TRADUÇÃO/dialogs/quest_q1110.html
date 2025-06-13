@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não saberia disso para me olhar, mas meu pai trabalha como bibliotecário em[%dic:STR_DIC_ELA07]. Ele é um homem bem instruído e continua me enviando livros da Biblioteca Santuário.</p>
+<p> </p>
+<p>O problema é que não sou o leitor mais rápido do mundo e não tenho muito tempo entre os turnos para ler. Acabei enviando a maioria dos livros de volta, mas empresto um pouco aos meus amigos quando puder.</p>
+<p> </p>
+<p>Alguns dias atrás, [%dic:STR_DIC_LA10]Perguntou -me se eu tinha algum livro sobre ninfas. Por que um lenhador gostaria que esse livro esteja além de mim, mas eu não tinha e não tive que decepcioná -lo. Mas isso foi então ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você faz agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Outra remessa de livro chegou do santuador hoje, e entre eles estava [%dic:STR_DIC_QILA73].</p>
+<p> </p>
+<p>Não tenho certeza se é exatamente o que a NAMUS está procurando, mas é melhor do que nada.</p>
+<p> </p>
+<p>Você levaria isso a ele para mim? Estou de plantão, e ainda estarei por um bom tempo. Quando meu turno termina, Namus geralmente está dormindo rapidamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Obrigado, [%username].</p>
+<p> </p>
+<p>[%dic:STR_DIC_LA10]geralmente está na floresta de Daminu. Apenas mantenha o caminho ao entrar, e você não pode sentir falta dele.</p>
+<p> </p>
+<p>Por favor, diga a ele que, se o livro não estiver certo, pedirei ao meu pai outra coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, não há problema, realmente. Vou tentar reservar um tempo amanhã.</p>
+<p> </p>
+<p>Namus é uma alma esquecida nos melhores momentos. Ele provavelmente se esqueceu de tudo sobre esse fascínio da ninfa dele!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tome cuidado, Melampus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim?</p>
+<p> </p>
+<p>O que é? Essas árvores não vão se cortar, mercenário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu trouxe um livro para você de Melampus."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_QILA73], hein?</p>
+<p> </p>
+<p>Por que isso ... isso é perfeito!</p>
+<p> </p>
+<p>Por favor, passe meus agradecimentos a Melampus! Estou procurando um livro como este há tanto tempo agora!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Leve o livro de Melampus para [%dic:STR_DIC_LA10].</p></step>
+</steps>
+<p>Melampus pediu que você levasse um livro para Namus, um lenhador geralmente encontrado na entrada da floresta de Daminu.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Namus queria emprestar um livro sobre ninfas de Melampus.</p>
+<p> </p>
+<p>Melampus encontrou um livro chamado "A ninfa no folclore" e pediu que você o levasse para Namus para ele. Namus ficou agradecido por recebê -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

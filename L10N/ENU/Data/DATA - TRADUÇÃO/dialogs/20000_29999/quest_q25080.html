@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi um pó mineral há pouco tempo que nunca vi antes.</p>
+<p> </p>
+<p>Aquele que me enviou pensa que a rocha da qual ela veio é muito quente para conseguir um grande pedaço dela.</p>
+<p> </p>
+<p>[%username], você talvez tenha um[%dic:STR_DIC_I_quest_25080a]para mim?</p>
+<p> </p>
+<p>Vale a pena investigar essas rochas. Por favor? Para o avanço da ciência!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você me trouxe o mineral que eu pedi?</p>
+<p> </p>
+<p>Estou certo sobre o calor que sinto vir de você? Você teve sucesso, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a rocha Ember.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ...?</p>
+<p> </p>
+<p>Esta pedra é realmente tão vermelha que você mal consegue tocá -la.</p>
+<p> </p>
+<p>Difícil de acreditar que uma quantidade tão pequena é tão quente!</p>
+<p> </p>
+<p>Isso deve significar então que esse deserto é composto de minerais.</p>
+<p> </p>
+<p>No entanto, esse calor me parece familiar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta que tipo de mineral é.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não encontrou o [%dic:STR_DIC_OBJ_DF5_FOBJ_firestone_Q25080]?</p>
+<p> </p>
+<p>Então acho que vou ter que suportar o tédio um pouco mais.</p>
+<p> </p>
+<p>Por favor, pegue -o para mim o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é ...?</p>
+<p> </p>
+<p>Esta pedra é realmente tão vermelha que você mal consegue tocá -la.</p>
+<p> </p>
+<p>Difícil de acreditar que uma quantidade tão pequena é tão quente!</p>
+<p> </p>
+<p>Isso deve significar então que esse deserto é composto de minerais.</p>
+<p> </p>
+<p>No entanto, esse calor me parece familiar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta que tipo de mineral é.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não pode ser! Este é um mineral com o poder de Fegion!</p>
+<p> </p>
+<p>Até a história do Balaur não diz que Fegion já esteve neste lugar.</p>
+<p> </p>
+<p>Devo informar os especialistas em Balaur imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a [%dic:STR_DIC_I_quest_25080a] e trazê -lo para [%dic:STR_DIC_N_DF5_Agran_E].</p>[%collectitem]</step>
+</steps>
+<p>Cumpre o pedido de Agran e traga a ele uma rocha de brasa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Agrã pediu que você obtenha uma rocha de Ember.</p>
+<p> </p>
+<p>Quando você trouxe o rock de emberador, Agran disse que o calor da rocha o lembrou de Fegion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

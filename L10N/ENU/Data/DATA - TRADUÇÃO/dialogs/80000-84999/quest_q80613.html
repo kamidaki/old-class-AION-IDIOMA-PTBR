@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que o doutor Mugura disse?</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Ele pensou que o velho ginseng poderia ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... eu sei onde encontrar ginseng antigo!</p>
+<p>Primeiro você deve ir lá, então lá, então ...</p>
+<p></p>
+<p>(Gungun diz a você como alcançar o velho ginseng.)</p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Eu sei onde está isso.</act>
+<act href="HACTION_QUEST_REFUSE_1">Eu não tenho ideia do que isso deveria ser.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha explicação foi tão boa que você entendeu logo de cara!</p>
+<p>Eu provavelmente seria um bom professor ...</p>
+<p></p>
+<p>Agora que você sabe para onde ir, parece que é melhor você se mexer.</p>
+<p>Por favor, cuide disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não foi capaz de seguir minha explicação?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum? Meu pai te mandou?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que caçou o velho ginseng, mas ainda não conseguiu encontrar nada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então o pai te enviou.</p>
+<p></p>
+<p>O que? Ginseng velho?</p>
+<p>Existem apenas cogumelos lá.</p>
+<p>Pai não fazia ideia ...</p>
+<p></p>
+<p>Mas você sabe o que, eu tenho algo incrível para você.</p>
+<p> </p>
+<p>Por favor, tome isso como uma recompensa por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Hunt Old Ginseng ([%2]/1).</p></step>
+</steps>
+<p>Siga as instruções de Gungun e caça o velho ginseng. Então fale com Gundun.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O doutor Mugura deu a você um mapa com a localização do antigo ginseng marcado. Como ele nem sabe exatamente onde encontrá -lo, você não pode fazer muito com o mapa.</p>
+<p>Então você foi e encontrou Gungun novamente.</p>
+<p>Você disse a Gungun que ele precisa de ginseng velho. Ele pensou que sabia onde eu poderia encontrar alguns e lhe disse como chegar lá.</p>
+<p>Era muito mais fácil encontrar o velho ginseng do que você pensava. No entanto, você não conseguiu reunir nada durante a caçada.</p>
+<p>Afinal, você contou a Gundun sobre isso. Ele acreditava que você não encontraria nenhum ginseng antigo no lugar marcado, apenas cogumelos.</p>
+<p>Mas ele ainda queria lhe dar algo incrível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

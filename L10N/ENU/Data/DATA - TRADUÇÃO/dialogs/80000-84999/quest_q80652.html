@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]. É uma honra conhecê -lo.</p>
+<p> </p>
+<p>Sua reputação precede você, [%username].</p>
+<p> </p>
+<p>Muitos Daevas se esforçam para aumentar sua glória.</p>
+<p> </p>
+<p>Se você deseja provar seu mérito, tenho uma proposta para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, traga -me 10 árvores sagradas poderosas.</p>
+<p> </p>
+<p>Isso aumentará sua glória e facilitará o aumento da prosperidade dos Elyos, [%username].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vou esperar por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não está pronto para a batalha?</p>
+<p> </p>
+<p>Isso é uma pena, mas não há nada que possa ser feito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a fortaleza!</p>
+<p> </p>
+<p>10 Poderosas árvores sagradas aumentarão seus méritos gloriosos, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 10 árvores poderosas poderosas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está esperando?</p>
+<p> </p>
+<p>Jogue -se na batalha. Neste exato momento, inúmeros Daevas estão arriscando suas vidas por honra no campo de batalha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então o boato é verdadeiro. Eu nunca pensaria que você os obteria tão rapidamente.</p>
+<p> </p>
+<p>Você deve ser recompensado de acordo.</p>
+<p> </p>
+<p>Vou lhe dar uma recompensa generosa, pois as árvores são de excelente qualidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha 10 árvores poderosas e trazê -las para Marnes.</p>[%collectitem]</step>
+</steps>
+<p>Atenda ao pedido de Marnes e obtenha 10 árvores sagradas poderosas.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Marnes disse que muitos Daevas dariam qualquer coisa para aumentar sua honra. Isso requer 10 árvores poderosas poderosas.</p>
+<p> </p>
+<p>Você obteve 10 árvores poderosas e foram recompensadas de acordo com a honra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

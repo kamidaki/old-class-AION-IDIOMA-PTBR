@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você talvez tenha o [%dic:STR_DIC_I_Key_tiamatdown_l_01]?</p>
+<p> </p>
+<p>Embora Tiamaranta tenha desaparecido, todos os daeva que lutaram na batalha contra os soldados de Tiamat devem receber uma recompensa em troca da chave.</p>
+<p> </p>
+<p>Se você tem um[%dic:STR_DIC_I_Key_tiamatdown_l_01], por favor me dê.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você tem um[%dic:STR_DIC_I_Key_tiamatdown_l_01]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega a chave.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o verdadeiro[%dic:STR_DIC_I_Key_tiamatdown_l_01].</p>
+<p> </p>
+<p>Obrigado. [%username], você nos levou à vitória na batalha por Tiamaranta.</p>
+<p> </p>
+<p>Tenho certeza de que você também terá sucesso em Vengar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o [%dic:STR_DIC_I_Key_tiamatdown_l_01]para [%dic:STR_DIC_N_DF5_op_h_Exchange_tiamatdown_key].</p>[%collectitem]</step>
+</steps>
+<p>Denald prometeu uma recompensa se você trazia a chave do protetorado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Denald prometeu uma recompensa se você trazia a chave do protetorado.</p>
+<p> </p>
+<p>Você trouxe a chave para ele e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

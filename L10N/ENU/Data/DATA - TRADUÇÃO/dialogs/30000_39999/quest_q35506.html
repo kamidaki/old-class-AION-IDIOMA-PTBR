@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio bem a tempo!</p>
+<p> </p>
+<p>Por favor, pegue isso. É uma ordem urgente para você, [%username], de Ops Radiant.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, deixe -me ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Confidencial -</p>
+<p></p>
+<p>De: sede da Radiant Ops</p>
+<p></p>
+<p>Para: agente [%username]</p>
+<p> </p>
+<p>Assunto: O Radiant Ops acaba de ser informado de um pequeno exército de asmodiano que ameaçava Elyos nas regiões de Eltnen e Heiron.</p>
+<p></p>
+<p>Ordens: prossiga imediatamente para [%dic:STR_DIC_E_LF2_name] e [%dic:STR_DIC_E_LF3_name]para neutralizar pelo menos dois asmodianos dignos de combate. Uma vez reduzido as forças asmodianas, relate -se a [%dic:STR_DIC_N_Valentius].</p>
+<p></p>
+<p>Voe reto e brilhante!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou relatar sua participação nesta operação aos meus superiores, [%username].</p>
+<p> </p>
+<p>Lembre-se-toda ajuda ajuda. Vou verificar se a operação foi bem -sucedida em seu retorno e recompensá -lo de acordo.</p>
+<p> </p>
+<p>Para a glória do santuário!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não quer executar o pedido?</p>
+<p> </p>
+<p>Não posso forçá -lo, mas considerando que meus superiores divulgaram essa ordem urgente ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como outros."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], relatório.</p>
+<p> </p>
+<p>Estou encarregado de proteger as regiões ELTNEN e HEIRON, por isso preciso de informações atualizadas de cada agente que retorna desses locais.</p>
+<p> </p>
+<p>Qual é o status atual no campo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os asmodianos estão fugindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sua missão foi bem -sucedida então. Bom. Bom.</p>
+<p> </p>
+<p>Se todos os nossos agentes também, teremos a área garantida em pouco tempo.</p>
+<p> </p>
+<p>Aqui está uma recompensa radiante de OPS em reconhecimento ao seu serviço hoje.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Neutralizar o [%dic:STR_DIC_E_Daily_1] em[%dic:STR_DIC_E_LF2_name] e [%dic:STR_DIC_E_LF3_name]([%2]/2).</p></step>
+<step><p visible="[%3]">Relate seu sucesso a [%dic:STR_DIC_N_Valentius].</p></step>
+</steps>
+<p>Ordem urgente: neutralize a pequena força asmodiana que faz incursões em Eltnen e Hiário. Relate seu sucesso a [%dic:STR_DIC_N_Valentius].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A sede da Radiant Ops emitiu uma ordem urgente para neutralizar as forças asmodianas em Eltnen e Heiron.</p>
+<p> </p>
+<p>Você completou sua missão e recebeu uma recompensa da Radiant Ops.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

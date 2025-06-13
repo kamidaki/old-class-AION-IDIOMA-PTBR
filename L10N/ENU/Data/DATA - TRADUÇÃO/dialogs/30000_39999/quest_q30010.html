@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O dragão está cobrindo suas armas com veneno! Você me ouviu?</p>
+<p> </p>
+<p>Tente prestar atenção.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como você sabe?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você os lutou, certo, [%username]?</p>
+<p> </p>
+<p>Você não achou suas armas tragicamente mortais?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, mas isso não significa ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>E encontrei veneno em algumas feridas que estava limpando, mas apenas traços. Não consegui identificá -lo da pequena amostra.</p>
+<p> </p>
+<p>Se espero fazer um antídoto, preciso saber o que é.</p>
+<p> </p>
+<p>Alguém precisa ir ao templo de Udas e colocar as mãos em parte do veneno. Você vai salvar vidas e ser alguém?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se pudermos obter esse veneno, será muito útil para minha pesquisa e segurança na batalha.</p>
+<p> </p>
+<p>Tenho certeza que eles têm um[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]ou dois no templo de Udas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem certeza ... ou espera?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você não ajudaria? Você não quer ganhar uma vantagem em nossos de Daevas sobre o dragão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E subsidiar sua pesquisa? Dificilmente!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está de volta!</p>
+<p> </p>
+<p>Mais e mais pessoas foram feridas pelo dragão e não têm tempo para o seu Dallying.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Rapidamente! Pegue estes garrafas de veneno!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse? O que é isso?</p>
+<p> </p>
+<p>Como posso salvar meus pacientes sem saber o que os afeta?</p>
+<p> </p>
+<p>Corra para o templo de Udas e encontre um[%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]que eles usam em suas armas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou ocupado com outras coisas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O veneno deve ser bastante potente para vir em garrafas tão pequenas.</p>
+<p> </p>
+<p>Eu deveria começar diluindo esta amostra.</p>
+<p> </p>
+<p>Obrigado, [%username]. Eu posso começar meus experimentos em breve e espero encontrar uma cura.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_E_IDTemple_PoisonBottle_Q30010]do templo de Udas e leve -o para [%dic:STR_DIC_N_Steurios].</p>[%collectitem]</step>
+</steps>
+<p>Steurios descobriu que o Dragonbound Poison-Coat suas armas. Vá para o templo de Udas e colete garrafas de vidro de seu veneno mortal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Steurios disse que as armas com revestimento de veneno do dragão são mortais para ferir Daevas.</p>
+<p> </p>
+<p>Ele agradeceu por trazer garrafas de vidro contendo veneno do templo de Udas para que ele pudesse caçar um antídoto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor, continuaria em frente para garantir a rota para o retiro?</p>
+<p> </p>
+<p>Você só tem que destruir o [plur][%dic:STR_DIC_M_LDF5B_F4_Crestlich_65_n]lá.</p>
+<p> </p>
+<p>Certamente, nossas batalhas exigiram grande bravura.</p>
+<p> </p>
+<p>No entanto, nunca é errado manter um caminho aberto para um possível retiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora temos um pouco de tempo para planejar uma estratégia para o retiro.</p>
+<p> </p>
+<p>Quando a batalha começar, será tarde demais para pensar nessas estratégias.</p>
+<p> </p>
+<p>Não que eu duvide em nossa vitória.</p>
+<p> </p>
+<p>Mas é mais seguro assim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando a batalha começa, não precisamos mais nos preocupar com as possibilidades de recuar.</p>
+<p> </p>
+<p>[%username], muito obrigado.</p>
+<p> </p>
+<p>Por favor, aceite isso como um sinal de minha apreciação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [plur][%dic:STR_DIC_M_LDF5B_F4_Crestlich_65_n]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard18_L].</p></step>
+</steps>
+<p>Elimine os presos na área para proteger o caminho de volta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Knemus pediu que você elimine o indescritível Crestliche de planície para garantir um caminho para retiro.</p>
+<p> </p>
+<p>Você eliminou o indescritível Crestliche das planícies e, como um sinal de apreciação por seus esforços, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

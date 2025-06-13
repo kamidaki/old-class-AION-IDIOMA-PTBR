@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entendeu minha palestra de voo?</p>
+<p> </p>
+<p>Então experimente, [%username]!</p>
+<p> </p>
+<p>Teoria não é nada. Você deve praticar! Prática é tudo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está a broca. Primeiro, passe pelo aro atrás de mim, desça e depois enfie os orifícios nas colunas da torre do círculo.</p>
+<p> </p>
+<p>Por último, voe para a torre de círculo mais alta, no centro do templo, passe pelo buraco até lá e voe de volta para mim.</p>
+<p> </p>
+<p>Você tem dois minutos. Cada círculo concede um aumento na velocidade de voo, então dois minutos são suficientes. Preparar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>OK. Lembre -se, dois minutos, não mais.</p>
+<p> </p>
+<p>Limpe cada círculo que indiquei e voltei aqui no tempo. Se sua força vacilar, não caia. Encontre um lugar para pousar rapidamente.</p>
+<p> </p>
+<p>Vou começar o cronômetro agora. Preparar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sabemos em breve ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se sente pronto?</p>
+<p> </p>
+<p>Bom julgamento! Melhor praticar do que cair do ar. Isso seria vergonhoso.</p>
+<p> </p>
+<p>Pratique, pratique um pouco mais e depois volte aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado, professor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você praticou? Você está pronto?</p>
+<p> </p>
+<p>Esta é a sua primeira chance de voar em alta velocidade.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Asas não me falham agora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não bem, aluno.</p>
+<p> </p>
+<p>Não se preocupe, a maioria das pessoas falha na primeira tentativa. Prática é tudo.</p>
+<p> </p>
+<p>Pratique, aluno e tente novamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Jura que minhas penas doem ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Escute, nuvem de chuva!</p>
+<p> </p>
+<p>Dois minutos é um curto período de tempo.</p>
+<p> </p>
+<p>Pare de ser arrogante e agarrar o céu!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"S-Sorry, senhora!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sempre digo que as asas de Daevas devem bater, nunca serão espancadas.</p>
+<p> </p>
+<p>Você passou. Mas sempre, sempre pratique!</p>
+<p> </p>
+<p>Se você fizer isso, todo céu, todo vento, o chamará de 'Mestre'.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Marana]Quando você estiver pronto para voar.</p></step>
+<step><p visible="[%3]">Depois de concluir o curso de voo de alto nível em dois minutos, converse com[%dic:STR_DIC_N_Marana].</p></step>
+<step><p visible="[%6]">Perguntar [%dic:STR_DIC_N_Marana] Sobre os resultados do teste.</p></step>
+</steps>
+<p>Faça o teste de habilidade de vôo de alto nível de Marana.</p>
+</body>
+</html>
+</contents>
+<notifies>
+<notify color="yellow" fontsize="16" pos="3" progress="2" showframe="true" time="5">Advanced Flight Test</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="3" showframe="true" time="5">Stage 1: Passed.</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="4" showframe="true" time="5">Stage 2: Passed.</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="5" showframe="true" time="5">Stage 3: Passed.</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="6" showframe="true" time="5">Stage 4: Passed.</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="7" showframe="true" time="5">Stage 5: Passed. Return to the Eracus Temple Cavern</notify>
+<notify color="yellow" fontsize="16" pos="3" progress="8" showframe="true" time="5">See Marana for your results.</notify>
+</notifies>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Após a palestra de Marana, ela sugeriu que você tentasse um teste de voo. Você enfiou os aros e as torres da caverna do templo de Eracus e depois disparou de volta para o ponto de partida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

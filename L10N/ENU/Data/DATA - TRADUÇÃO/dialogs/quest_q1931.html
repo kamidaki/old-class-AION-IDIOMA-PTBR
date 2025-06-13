@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], não é?</p>
+<p> </p>
+<p>Não é você quem encontrou o diário do padre Philipemos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu era."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, então você é quem estou procurando.</p>
+<p> </p>
+<p>Algo está me incomodando desde que eu li. Especificamente, a parte em que Hipólito obriga a Philipemos a entregar a Pedra da Vida por seu "experimento".</p>
+<p> </p>
+<p>Para que, em nome de Vaizel, um revolucionário lefarista precisa de uma pedra vital? Isso, combinado com o incidente na Biblioteca dos Sábios, realmente me deixa preocupado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Incidente?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah sim ... er, isso é um segredo, então ... você sabe ... mantenha -o entre nós.</p>
+<p> </p>
+<p>A biblioteca foi invadida. Quem quer que tenha sido conseguido tornar todos os guardas e Daevas se apresentarem inconsciente. Quando nossos guardas acordaram, eles revistaram a biblioteca, mas quase nada foi tocado.</p>
+<p> </p>
+<p>Faltava apenas um livro: um tomo muito antigo e precioso chamado "Regras de Alquimia e da Vida". Precisamos recuperar o livro antes que eles usem os segredos contra nós. Você está dentro?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom.</p>
+<p> </p>
+<p>Os lefaristas estão administrando um campo de pesquisa fora de heiron, e nossos olheiros dizem que recebem livros regularmente.</p>
+<p> </p>
+<p>[%username], Eu preciso que você vá para o [%dic:STR_DIC_W_LF3_SZ_003] em Hiaron e recuperar nosso[%dic:STR_DIC_OBJ_LC1_Book_Q1931].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou ver o que posso encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não...</p>
+<p> </p>
+<p>Você parece não entender o que eles poderiam fazer com as informações desse livro. Isso pode significar ... várias coisas nefastas ....</p>
+<p> </p>
+<p>Você deve reconsiderar! Se as coisas correrem do jeito que eu imagino que elas poderiam, isso afetará sua vida também.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá está você.</p>
+<p> </p>
+<p>Como foi? Você encontrou o livro? Você descobriu o que eles estão fazendo?</p>
+<p> </p>
+<p>Por favor ... meus nervos estão arruinados. Você deve me dizer!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Vocês fazem muitas perguntas de uma só vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda nem esteve?!</p>
+<p> </p>
+<p>Eu ... você ... nós ...</p>
+<p> </p>
+<p>Não consigo nem me expressar, estou com tanta raiva! Volte e pegue esse livro! Agora!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, tudo bem, estou indo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles tinham! Eu sabia!</p>
+<p> </p>
+<p>Mas ... isso significa ... oh querido ....</p>
+<p> </p>
+<p>Obrigado, [%username]. Você tem sido uma grande ajuda. Por favor, pegue isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_LC1_Book_Q1931]no[%dic:STR_DIC_W_IDLF3LP_SZ_1] em Heiron e devolvê -lo[%dic:STR_DIC_N_Gerania].</p>[%collectitem]</step>
+</steps>
+<p>Vá para o Centro de Pesquisa Lefarista em Heriron e recupere o livro Os revolucionários roubam.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gerânia estava preocupada com o fato de um livro chamado "Regras de Alquimia e Vida" foi roubado da Biblioteca dos Sábios e acabou nas mãos dos revolucionários lefaristas.</p>
+<p> </p>
+<p>Você foi ao Centro de Pesquisa Lefarista em Hiário, encontrou o livro e o trouxe de volta para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

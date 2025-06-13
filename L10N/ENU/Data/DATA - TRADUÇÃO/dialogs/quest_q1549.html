@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... eu não acredito nisso.</p>
+<p> </p>
+<p>A General da Brigada Perento recusou meu pedido de reforços. Ele diz que mal tem soldados suficientes para segurar a fortaleza contra o Balaur.</p>
+<p> </p>
+<p>Mas isso não importará se o Balaur aparecer para invadir e toda a fortaleza está cheia de Klaws. Eu sei como derrotá -los, mas precisamos de mais soldados. Ninguém poderia fazer isso sozinho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ninguém? Diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Algum tempo atrás, fiz um plano de contingência. Eu não achei que nunca precisaríamos disso, mas os Klaws são mais perigosos do que eu jamais previ. Pode ser a nossa única esperança agora.</p>
+<p> </p>
+<p>Alguém tem que se livrar de [%dic:STR_DIC_M_NeutL2Named_39_Ae]. Os klaws vivem em uma sociedade hierárquica. Se o rei morrer, os trabalhadores não reunirão comida, os soldados não saberão quem atacar. Colapso total.</p>
+<p> </p>
+<p>Mas o rei Klawtan é incrivelmente difícil de matar. É por isso que precisamos de ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenho certeza se é uma boa ideia você ir sozinho. Mesmo com todas as histórias que ouvi sobre você, ainda pode ser uma boa ideia para você ter alguns amigos ajudando você a enfrentar [%dic:STR_DIC_M_NeutL2Named_39_Ae].</p>
+<p> </p>
+<p>Se você é bem -sucedido, então me traga [%dic:STR_DIC_I_QUEST_1549a] para estudo. Quero dizer, se você vai matá -lo, não devemos perder a chance de avançar na ciência.</p>
+<p> </p>
+<p>O rei Klawtan estará em[%dic:STR_DIC_W_LF3_SZ_018]. O lugar está enxameando com Klaws e eles lutarão para defendê -lo. Boa sorte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ele não tem uma chance."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não se sinta mal. Não consigo pensar em ninguém corajoso o suficiente ou suicida o suficiente para enfrentar o rei Klawtan.</p>
+<p> </p>
+<p>Não tenho certeza do que fazer agora, no entanto.</p>
+<p> </p>
+<p>Se esperarmos por reforços, pode ser tarde demais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi alguns ruídos terríveis da direção do Sallow de Klawtan.</p>
+<p> </p>
+<p>Você conseguiu matar o rei Klawtan?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"São essas lelantes de Klawtan?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você nem foi lá ainda? Ou você foi levado de volta pelo horror ou pelo Klaws?</p>
+<p> </p>
+<p>Isso é tão sério. Você não pode desistir!</p>
+<p> </p>
+<p>Vá se livrar de [%dic:STR_DIC_M_NeutL2Named_39_Ae] e pegue o [%dic:STR_DIC_I_QUEST_1549a] Agora mesmo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu mal posso acreditar que você fez isso. Não que eu duvide de suas habilidades, mas isso parecia uma tarefa impossível.</p>
+<p> </p>
+<p>Suponho que preciso fazer minha parte agora.</p>
+<p> </p>
+<p>Enquanto os Klaws estão no caos, tenho algum tempo para tentar descobrir uma solução permanente para esse problema. É melhor eu me apressar, antes que eles escolham outro rei. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_M_NeutL2Named_39_Ae] e leve seu prêmio para [%dic:STR_DIC_N_Senemonea].</p>[%collectitem]</step>
+</steps>
+<p>Mate o rei Klawtan e leve suas pernas dianteiras para Senea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada Perento respondeu que não poderia enviar nenhum reforço para lidar com os Klaws.</p>
+<p> </p>
+<p>Você se ofereceu para ajudar a Senea se livrar do rei Klawtan, para interromper Klaws.</p>
+<p> </p>
+<p>Quando você se livrou do rei Klawtan e levou para ela suas pernas pernas, ela agradeceu e recompensou você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

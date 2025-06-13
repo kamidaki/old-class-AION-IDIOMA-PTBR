@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As coisas estão indo lindamente agora! A vida é quase perfeita.</p>
+<p> </p>
+<p>Quase reparamos a fortaleza, exceto algumas probabilidades e fins.</p>
+<p> </p>
+<p>Mas há uma unha que eu ainda gostaria de poder martelar ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Esse é o 'quase' que você mencionou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, alguns Elyos determinados ainda estão cavados muito perto do meu gosto.</p>
+<p> </p>
+<p>[%username], Acho que você deveria conversar com eles.</p>
+<p> </p>
+<p>Use sua "retórica" ​​para mudar de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hah! Eu sabia que você gostaria das honras, [%username].</p>
+<p> </p>
+<p>Eu não acho que você precisa "convencer" todos eles.</p>
+<p> </p>
+<p>Cinco deles--[%dic:STR_DIC_N_Menelaus], Assim, [%dic:STR_DIC_N_Lyaeus], Assim, [%dic:STR_DIC_N_Myrrha], Assim, [%dic:STR_DIC_N_Leager], e [%dic:STR_DIC_N_Mors]-são os líderes. Depois de abrir a mente deles, leve o seu[%dic:STR_DIC_I_QUEST_2784a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou aprimorar meus argumentos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo ter exagerado as piadas.</p>
+<p> </p>
+<p>Olha, isso é sério. Eu quero essa fortaleza segura, e eles estão no caminho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sei, Hildebrant. Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já acabou?</p>
+<p> </p>
+<p>Teria pensado que eles lutariam mais!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem, eu sou muito persuasivo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Onde estão meus troféus?</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_Menelaus], Assim, [%dic:STR_DIC_N_Lyaeus], Assim, [%dic:STR_DIC_N_Myrrha], Assim, [%dic:STR_DIC_N_Leager], e [%dic:STR_DIC_N_Mors]? Cada um deles carrega uma crista.</p>
+<p> </p>
+<p>Discuta o ... Uh, debate ... oh, pelo bem de Azphel, mate -os e pegue as cristas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, a hora das piadas é passado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo! Esses cinco, em tão pouco tempo?</p>
+<p> </p>
+<p>Bem, se foram suas palavras ou não, você as convenceu claramente!</p>
+<p> </p>
+<p>Vou me certificar de que sempre tomo o seu lado, amigo. Hahaha!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer as cristas de [%dic:STR_DIC_N_Menelaus], Assim, [%dic:STR_DIC_N_Lyaeus], Assim, [%dic:STR_DIC_N_Myrrha], Assim, [%dic:STR_DIC_N_Leager], e [%dic:STR_DIC_N_Mors]para [%dic:STR_DIC_N_Ab1_1221_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>Para garantir essa fortaleza, mate os Elyos Guardians nas proximidades e leve suas cristas do Guardian para Hildebrant.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hildebrant sentiu que a fortaleza não estaria segura com Elyos Guardians pairando em torno dela. Ela o enviou depois de cinco guardiões -chave para afastá -los.</p>
+<p> </p>
+<p>Em seu retorno, ela comentou sobre seus poderes de persuasão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

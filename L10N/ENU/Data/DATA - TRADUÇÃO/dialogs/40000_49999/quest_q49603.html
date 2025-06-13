@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Não há o suficiente dos Kokonats que a Silverine Limited usa para recompensar seus trabalhadores temporários. Por favor, vá para [%dic:STR_DIC_M_LDF5A_C1_Ratman_Gather_63_n] e obter [%dic:STR_DIC_I_quest_49603a], então entregue -os no escritório administrativo.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Dumurinerk, Silverine Company</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe kokonats maduros com você, AK?</p>
+<p> </p>
+<p>Deixamos de lado vários deles para serem usados ​​como recompensa, mas, à medida que as moscas danificadas danificaram algumas delas, não há mais o suficiente, Ak.</p>
+<p> </p>
+<p>Dê a Shugo os Kokonats, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os cocos.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh certo!</p>
+<p> </p>
+<p>Não havia kokonat maduro na árvore Kokonat?</p>
+<p> </p>
+<p>Claro, tudo já foi colhido, AK!</p>
+<p> </p>
+<p>Não é por isso que pedi para você obter um pouco de [%dic:STR_DIC_M_LDF5A_C1_Ratman_Gather_63_n]?</p>
+<p> </p>
+<p>Como já faz muito tempo que eu entreguei kokonats maduros, ele ainda tem kokonats maduros, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>AK, não há nada melhor do que o perfume de kokonats maduros.</p>
+<p> </p>
+<p>E torna o casaco muito macio, Nyerk.</p>
+<p> </p>
+<p>Os trabalhadores ficarão muito satisfeitos com esses salários, eles não? Akakak.</p>
+<p> </p>
+<p>Você também, [%username], pode receber esse desconto sendo um funcionário diligente da Silverine Limited.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_49603a]do coletor de Nyunyu e trazê -lo para [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p>[%collectitem]</step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções chegaram da Silverine Limited.</p>
+<p> </p>
+<p>Depois que você obteve kokonats maduros do coletor de Nyunyu e os trouxe para o ramo de Silverine, em North Katalam, você recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

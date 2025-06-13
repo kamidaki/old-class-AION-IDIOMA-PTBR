@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cuidado com uma missão difícil, Daeva?</p>
+<p> </p>
+<p>O olho de Reshanta é guardado por três fortalezas, a fortaleza de Kysis, Krotan Refuge e Miren Fortaleza. Estamos aqui para tirar o kysis dos asmodianos e mantê -lo.</p>
+<p> </p>
+<p>Vergilius e eu temos um plano para garantir que isso aconteça.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E como é isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos montando um anfitrião para invadir a fortaleza. Os asmodianos parecem ter notado nossos movimentos e mudaram as tropas de elite para cá. Isso é um problema e uma oportunidade.</p>
+<p> </p>
+<p>Voluntários como você, [%username], estão escorregando atrás de suas linhas e interrompendo suas tropas. Alguém do seu calibre poderia lidar com essas elites, e isso realmente prejudicaria o moral asmodiano. Interessado?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito corajoso. Ok, aqui estão seus pedidos. Entre na fortaleza Kysis assim que mudar para o estado vulnerável. Encontre o [%dic:STR_DIC_M_1814_all]Na fortaleza, mate aqueles que você pode e me traga seus[%dic:STR_DIC_I_QUEST_1814a] S.</p>
+<p> </p>
+<p>Enquanto os asmodianos estão ocupados, meu protetor da Guilda de Teminon estará se movendo para melhores posições.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mal posso esperar para ir!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Decepcionante, mas não surpreendente.</p>
+<p> </p>
+<p>Venha em outra hora se você estiver se sentindo mais corajoso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é um covarde, apenas ocupado ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu ouvi você visitar os asmodianos!</p>
+<p> </p>
+<p>Um escoteiro legionário relatou ter visto[%dic:STR_DIC_M_1814_all]cadáveres.</p>
+<p> </p>
+<p>Espero que você tenha trazido muitos[%dic:STR_DIC_I_QUEST_1814a] para me mostrar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Acho que eu trouxe alguns ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você esqueceu de reunir suas armas?</p>
+<p> </p>
+<p>Deve ter escorregado sua mente durante a luta.</p>
+<p> </p>
+<p>Me busque esses[%dic:STR_DIC_I_QUEST_1814a] S!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não há necessidade de incomodar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O batedor também viu Balaur na área. Estou feliz que você não tenha sido vítima a eles.</p>
+<p> </p>
+<p>Você é mais elite do que as elites deles, [%username].</p>
+<p> </p>
+<p>Eu direi o máximo para o governador Michalis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_1814_all], colete as evidências e traga -as para [%dic:STR_DIC_N_Bellona].</p>[%collectitem]</step>
+</steps>
+<p>Atinge a guarnição de elite asmodianas enquanto eles ocupam a fortaleza de Kys. Relate seu sucesso a Bellona.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bellona pediu que você ajudasse a assediar a força asmodiana que mantém a fortaleza de Kys.</p>
+<p> </p>
+<p>Você entrou na fortaleza por suas ordens e dizimou a guarnição de elite asmodianas. Quando você voltou vitorioso, Bellona disse que mencionaria seu sucesso ao governador.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

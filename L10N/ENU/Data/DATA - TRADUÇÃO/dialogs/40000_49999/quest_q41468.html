@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41468</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, todos os ingredientes estão prontos. Bom trabalho.</p>
+<p> </p>
+<p>Na verdade, já tínhamos a forma básica de [%dic:STR_DIC_E_60lvDeva_wepon]. Mas faltava qualquer refinamento.</p>
+<p> </p>
+<p>No entanto, com as essências que você reuniu e a luz pura e o Ódio divino, foi possível limpar a arma. Agora passou por um processo de limpeza espiritual.</p>
+<p> </p>
+<p>Tudo o que a arma precisa agora é a bênção de Siel.</p>
+<p> </p>
+<p>Então me leve o [%dic:STR_DIC_I_Q41468a].</p>
+<p> </p>
+<p>O sinal de fé fará com que a arma de Lummasiel complete.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou.</p>
+<p> </p>
+<p>Ok, você conseguiu obter o [%dic:STR_DIC_I_Q41468a]?</p>
+<p> </p>
+<p>Se você me der para mim, abençoarei a arma com ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o sinal de fé.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está terminado!</p>
+<p> </p>
+<p>Aqui está a sua arma completa de Lummasiel.</p>
+<p> </p>
+<p>Segure este símbolo divino alto e, com ele, anuncie que agora você é um verdadeiro membro da lança de Siel!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_N_Kahrun]para [%dic:STR_DIC_I_Q41468a].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o sinal de fé para abençoar a arma Lummasiel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você seguiu as instruções de Kahrun para obter o sinal de fé para abençoar a arma Luminasiel.</p>
+<p> </p>
+<p>Quando você trouxe o sinal de fé, ele abençoou a arma de Lummasiel e deu a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

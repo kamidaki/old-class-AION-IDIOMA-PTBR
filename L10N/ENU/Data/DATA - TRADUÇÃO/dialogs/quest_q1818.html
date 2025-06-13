@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho sofrido de pesadelos hoje em dia ....</p>
+<p> </p>
+<p>Os asmodianos cercam a fortaleza, mas quando os olho de perto, eles usam os rostos de Balaur. Então, eu acordo encharcado de suor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que está causando seus pesadelos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suspiro .... não tenho certeza. Recentemente, conversei com um historiador que tinha uma teoria interessante.</p>
+<p> </p>
+<p>Há um lugar chamado sepultura de aço na ala direita de Siel, assim chamada para a enorme arma incorporada nela.</p>
+<p> </p>
+<p>O historiador com quem falei acredita que a arma pertencia ao Balaur. Ele acha que a energia está vazando da arma e para os fantasmas asmodianos nas proximidades.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso não pode ser bom."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Quem sabe em que essa energia poderia transformar os fantasmas.</p>
+<p> </p>
+<p>Alguém realmente deveria ir e verificar os Mortos Vivos lá, mas todos os outros Daevas estão ocupados com missões agora.</p>
+<p> </p>
+<p>Você vai ir, [%username]? Vou recompensá -lo muito bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por sua vontade de ajudar.</p>
+<p> </p>
+<p>Quando estiver pronto, viaje para o túmulo de aço. Erradicar qualquer [%dic:STR_DIC_M_Ab1_1132_UndeadD_25_An] S, [%dic:STR_DIC_M_Ab1_1132_UndeadDWiz_25_An] S, ou[%dic:STR_DIC_M_Ab1_1132_UndeadDarkRa_25_An] S.</p>
+<p> </p>
+<p>Seja cauteloso-não se sabe do que esses mortos-vivos são capazes.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu também acho que é absurdo-me livrar de fantasmas apenas para parar de pesadelos-mas não se pode me culpar por tentar.</p>
+<p> </p>
+<p>Boa sorte com suas outras missões.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você.</p>
+<p> </p>
+<p>Diga -me como foi. Você encontrou algum dos Mortos Vivos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Você me fez, e nosso povo, um grande favor.</p>
+<p> </p>
+<p>Por favor, volte sempre que tiver mais tempo. Sempre haverá mais fantasmas para enviar para casa para Aion, e pode ser melhor se cuidarmos deles mais cedo, em vez de mais tarde ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar os espíritos asmodianos de [%dic:STR_DIC_W_AB1_18].</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1132_UndeadD_25_An]([%2]/6)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1132_UndeadDWiz_25_An]([%5]/2)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1132_UndeadDarkRa_25_An]([%8]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ab1_1132_Quest_Li].</p></step>
+</steps>
+<p>Derrote os combatentes da espada imortal, magos e guardiões do túmulo de aço, para que os Iapetros não tenham mais que sofrer de pesadelos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Iapetos reclamou que ele sofria de pesadelos nos quais um asmodiano com um rosto de Balaur apareceu.</p>
+<p> </p>
+<p>Enquanto procurava a causa de seus pesadelos, ele descobriu que a energia da arma de Balaur presa no túmulo de aço pode ter corrompido os fantasmas asmodianos. Ele pediu que você os destruísse, o que você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

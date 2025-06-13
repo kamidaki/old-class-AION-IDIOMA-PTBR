@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Está ocupado, [%username]? Eles nos mantêm tão ocupados aqui, não tenho tempo para cuidar de nada por mim mesmo.</p>
+<p> </p>
+<p>Se você não se importa, poderia me ajudar com alguma coisa?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria de preparar um pouco de abex assado em um espeto.</p>
+<p> </p>
+<p>Essa delicadeza não é para mim, mas ... é para ... hmm, um amigo que é bastante sombrio ultimamente.</p>
+<p> </p>
+<p>Eu quero animá -lo fazendo seu prato favorito. Mas quem tem tempo para obter ingredientes por aqui?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você quer que eu vá comprar para você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não comprando Daeva, caçando. Eu tenho as especiarias que preciso, mas não o [%dic:STR_DIC_I_QUEST_2416a] e [%dic:STR_DIC_I_QUEST_2416b].</p>
+<p> </p>
+<p>Com sua capacidade considerável, você não deve ter problemas para obtê -las, [%username].</p>
+<p> </p>
+<p>Eu não quero pressioná -lo, mas isso realmente me ajudaria. O que você diz?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Por favor, traga alguns[%dic:STR_DIC_I_QUEST_2416a] e cinco[%dic:STR_DIC_I_QUEST_2416b].</p>
+<p> </p>
+<p>Ah, e mantenha isso para si mesmo, tudo bem? Eu não preciso de todas as coisas famintas para quilômetros batendo na minha porta.</p>
+<p> </p>
+<p>Eu posso ouvir o estômago de Tyr rosnando daqui!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Um espeto de Abex chegando!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, tudo o que posso fazer é perguntar.</p>
+<p> </p>
+<p>Eu sei que não é uma busca vital, mas eu esperava que você ajudasse.</p>
+<p> </p>
+<p>Vou pegá -los sozinho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe os ingredientes que eu pedi?</p>
+<p> </p>
+<p>Bem? Entregue -os, preciso cozinhá -los enquanto eles ainda estão frescos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Abex se move mais rápido do que eu me lembro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você está muito ocupado, mas eu realmente preciso desses ingredientes o mais rápido possível.</p>
+<p> </p>
+<p>Por favor, traga um pedaço de [%dic:STR_DIC_I_QUEST_2416a] e cinco[%dic:STR_DIC_I_QUEST_2416b].</p>
+<p> </p>
+<p>Estou preparando o molho agora, então quanto mais cedo você os levar para mim, melhor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você trouxe tudo o que eu precisava!</p>
+<p> </p>
+<p>Este lombo é muito fresco!</p>
+<p> </p>
+<p>Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_2416a] e [%dic:STR_DIC_I_QUEST_2416b] e trazê -los para [%dic:STR_DIC_N_Gullveig].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha alguns ingredientes de cozinha e leve -os para GullVeig para que ela possa fazer um prato para sua amiga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gullveig pediu que você adquirisse alguns ingredientes para ela.</p>
+<p> </p>
+<p>Você trouxe as asas do lombo e brilho da Abex para ela, pela qual ela agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

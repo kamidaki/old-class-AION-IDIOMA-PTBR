@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso se parece [%dic:STR_DIC_N_IDF5_TD_Drum], que pode ser usado para atacar as máquinas de assalto do Exército de Beritra.)</p>
+<p> </p>
+<p>(Esta artilharia de defesa aérea definitivamente destruirá as máquinas de assalto.)</p>
+<p> </p>
+<p>(Uma vez que as máquinas de assalto forem destruídas, isso enfraquecerá o moral do inimigo. Você deve usar a artilharia de defesa aérea e eliminar o [%dic:STR_DIC_E_Q18033all].)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso me lembra algo que um cientista de guerra disse uma vez.</p>
+<p> </p>
+<p>Não é o tamanho do exército que decide o resultado de uma batalha, é o moral deles.</p>
+<p> </p>
+<p>Uma tropa de 10 soldados prontos para o combate pode até parar uma tropa de 1.000 soldados, é o quanto os incita.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Em todo o caos, você deu um golpe severo ao inimigo?</p>
+<p> </p>
+<p>Notável!</p>
+<p> </p>
+<p>Sua decisão definitivamente nos ajudou a defender o bastião da parede de aço, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDLDF5b_TD] e uso[%dic:STR_DIC_N_IDF5_TD_Drum]. Eliminar o [%dic:STR_DIC_E_Q18033all].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Fi_N_65_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Kn_N_65_Ae]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Nor_Ra_N_65_Ae]([%8]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_LDF5b_Demades_E].</p></step>
+</steps>
+<p>Use a artilharia de defesa aérea, destrua as máquinas de assalto e elimine o forte Drakan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu uma artilharia de defesa aérea enquanto defendia o bastião da parede de aço.</p>
+<p> </p>
+<p>Você usou a artilharia de defesa aérea para destruir as máquinas de assalto do Exército de Beritra. Mighty Drakan então apareceu, e você também os eliminou.</p>
+<p> </p>
+<p>Você se reportou a DeMades, que o recompensou por sua decisão sábia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

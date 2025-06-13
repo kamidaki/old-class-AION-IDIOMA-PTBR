@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pssst ... [%username].... eu preciso da sua ajuda com alguma coisa. Isso exigirá um pouco ... tato.</p>
+<p> </p>
+<p>Aqui está a coisa. Minha esposa está passando cada vez mais tempo com aquelas prissidades de boneca na boutique em pandaemonium ... e isso está me deixando louco!</p>
+<p> </p>
+<p>Ela continua me dizendo que eu não a entendo ... ou algo assim. Receio que eu possa perdê -la, mas ouvi falar de um pequeno truque de um soldado que estava tendo o mesmo problema.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Onde eu entro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Shhh! Mantenha -o baixo[%username]! Esta é a parte sensível ....</p>
+<p> </p>
+<p>O soldado me disse que se eu moer dentes ksellid em pó, ele atua como um afrodisíaco natural ... e leva as mulheres a um frenesi de paixão.</p>
+<p> </p>
+<p>Tenho vergonha de que minha esposa prefere passar um tempo com essas margens da boutique, mas se eu pudesse agradá -la assim, tenho certeza que ela nunca me deixaria.</p>
+<p> </p>
+<p>Você pode me ajudar, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mate Ksellids e Ksellids retardatários.</p>
+<p> </p>
+<p>Certamente existem muitos deles, porque eles pararam de caçá -los há muito tempo.</p>
+<p> </p>
+<p>Ah, sim, por favor, traga -me os dentes como prova de que você realmente os matou. Sou um oficial administrativo e, portanto, preciso de evidências.</p>
+<p> </p>
+<p>Por favor, traga -me 4 dentes do[plur][%dic:STR_DIC_M_ShellizardD_25_An] e 6 dentes do[plur][%dic:STR_DIC_M_ShellizardD_27_An].</p>
+<p> </p>
+<p>Boa sorte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem ... acho que vou ter que encontrar outra pessoa.</p>
+<p> </p>
+<p>Enquanto isso, provavelmente vou perder minha esposa para algum ordento que mantém um diário e gosta de falar sobre seus sentimentos ...</p>
+<p> </p>
+<p>Obrigado por nada, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Lide com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, como foi?</p>
+<p> </p>
+<p>Você conseguiu os dentes?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Entregue os dentes do ksellid.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Passei muito tempo trabalhando como administrador, por isso gosto que as pessoas me tragam exatamente o que peço.</p>
+<p> </p>
+<p>Estes não parecem ser 4 dentes de cabaça e 6 dentes retardados ksellid.</p>
+<p> </p>
+<p>Verifique o número de dentes novamente e depois volte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa é a quantidade correta de dentes.</p>
+<p> </p>
+<p>Vou te dar uma moeda como uma recompensa ... oh, me desculpe ... estou tão acostumado ...</p>
+<p> </p>
+<p>Vou te dar um presente como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_ShellizardD_25_An] Areia [%dic:STR_DIC_M_ShellizardD_27_An] S e traga os dentes para [%dic:STR_DIC_N_Skataon].</p>[%collectitem]</step>
+</steps>
+<p>Colete dentes Ksellid para fins discretos de Skatoan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Skataon pediu para que os dentes ksellid fossem usar para fins discretos.</p>
+<p> </p>
+<p>Você matou Ksellids e Ksellids retardatários e trouxe os dentes para ele. Ele agradeceu depois.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

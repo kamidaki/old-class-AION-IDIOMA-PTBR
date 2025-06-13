@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>É sempre divertido fazer uma fricção.</p>
+<p> </p>
+<p>Dessa forma, sinto que as ruínas pertencem a mim.</p>
+<p> </p>
+<p>[%username], você quer experimentar também?</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_E_LDF5a_FOBJ_RunePiece_1] e [%dic:STR_DIC_E_LDF5a_FOBJ_RunePiece_2], faça cópias e traga -as para mim. Isso me ajudaria muito.</p>
+<p> </p>
+<p>Essas poderosas muralhas que foram construídas pela tribo Rune contam muitas histórias.</p>
+<p> </p>
+<p>E o prazer de pesquisar a tribo Rune anda de mãos dadas com a criação de brigas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que esta cópia contenha algo sobre a tribo Rune que governou Katalam.</p>
+<p> </p>
+<p>Qual é o diabo foi o motivo da queda da runa?</p>
+<p> </p>
+<p>Pode ter algo a ver com o fato de que a runa usou Nevilim para construir as muralhas. Trazemos a verdade à luz, agora que temos essa cópia.</p>
+<p> </p>
+<p>Você trouxe a cópia de perto das muralhas?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o rastreamento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>A condição da cópia rastreada é excelente.</p>
+<p> </p>
+<p>Vou tentar ver se posso dizer se a tribo Rune construiu a tribo Rune com Nevilim.</p>
+<p> </p>
+<p>Vai conter muito.</p>
+<p> </p>
+<p>A pesquisa leva algum tempo, mas valerá a pena.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_quest_22558a] em[%dic:STR_DIC_E_LDF5a_FOBJ_RunePiece_1], Assim, [%dic:STR_DIC_I_quest_22558b] em[%dic:STR_DIC_E_LDF5a_FOBJ_RunePiece_2] e trazer tudo para [%dic:STR_DIC_N_LDF5a_Notis_E].</p>[%collectitem]</step>
+</steps>
+<p>Faça uma cópia esfregada nas muralhas e leve -a para Notis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Notis, muitas histórias da tribo Rune podem ser encontradas nas muralhas e fazer um rastreamento nas muralhas onde isso era possível. Você deu a Notis dois traçados, um distinto e um relativamente claro. Notis agradeceu e disse que os usaria para pesquisar a tribo Rune e Nevilim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

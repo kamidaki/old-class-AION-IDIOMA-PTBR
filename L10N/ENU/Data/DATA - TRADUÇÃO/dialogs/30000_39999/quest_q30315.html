@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há tantos problemas para lidar aqui em Gelkmaros-nunca conheci estresse como esse antes! Pensar, eu acreditava que tudo o que havia para fazer era lutar contra o Balaur.</p>
+<p> </p>
+<p>Já estou em dívida com você, [%username], mas tenho medo de perguntar ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa da minha ajuda?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Eu pensei em pedir um Daeva diferente, pois não queria incomodá-lo, mas rapidamente percebi que não havia ninguém mais adequado ao você.</p>
+<p> </p>
+<p>Mesmo que demore um tempo, entre suas outras tarefas, prefiro esperar mais tempo para um Daeva competente fazer o trabalho do que confiar em um incompetente e enfrentar decepção.</p>
+<p> </p>
+<p>Então-você tem tempo para me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há muitas tarefas a serem realizadas aqui na fortaleza, muitas para mencionar agora. Para cada um deles que você completar, você receberá um[%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01].</p>
+<p> </p>
+<p>Traga -me de volta todos esses certificados, e eu o recompensarei devidamente com um esplêndido acessório da cabeça, que será muito útil em batalhas por vir.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo completamente, Daeva. Você não é do tipo que morde mais do que pode mastigar. Cometer -se apenas com o que se é capaz é um sinal de responsabilidade.</p>
+<p> </p>
+<p>Venha me ver novamente quando seu negócio atual estiver resolvido. Para você, minha porta está sempre aberta.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu te vejo em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você volta, [%username]. É bom ver você.</p>
+<p> </p>
+<p>Você tem algum decreto para me mostrar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o que eu colecionei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu vejo. Você deve estar muito ocupado para fazer essas missões ... eu entendo. Eu sei o quão pesado é o fardo colocado em seus ombros.</p>
+<p> </p>
+<p>Se você encontrar tempo, ajude -nos com essas missões importantes. Eu prometo que quando você voltar com o [%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01] S Eu vou te dar a recompensa que você merece.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente fez grandes contribuições aqui em Gelkmaros, [%username]. Espero poder continuar confiando em você enquanto avançamos no caminho para conquistar Balaurea.</p>
+<p> </p>
+<p>Aqui, considere isso-eu confio que é uma recompensa adequada para seus serviços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_IDCatacombs_Certification_01] e leve-os para [%dic:STR_DIC_N_Barretta].</p>[%collectitem]</step>
+</steps>
+<p>Complete uma série de missões importantes para Valetta e traga decretos de volta, como prova para receber um item valioso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Valetta disse que poderia usar sua ajuda e se ofereceu para recompensá -lo por concluir uma série de missões importantes.</p>
+<p> </p>
+<p>Ao concluir as missões que você coletou decretos, que você trocou por um valioso acessório de cabeça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

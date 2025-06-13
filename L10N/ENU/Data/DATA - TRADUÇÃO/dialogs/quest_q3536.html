@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q3536</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei[%username]. Como está a vida selvagem de um Daeva viajando te tratando?</p>
+<p> </p>
+<p>Parece que você tem visto bastante ação.</p>
+<p> </p>
+<p>Está quieto aqui ultimamente, o que é bom, já que estamos com falta de pessoal agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Funcionários em trânsito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Esperamos obter algumas tropas de backup em breve, espero que alguém decida atacar. O tempo dirá.</p>
+<p> </p>
+<p>Enquanto isso, dê uma olhada nisso. Esses punhais não são brilhantes? Os Kerubiels locais os carregam. Não tenho certeza do que eles são feitos, mas são extremamente leves e praticamente inquebráveis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou pensando em recomendar esses punhais para os legionários de backup quando eles chegam.</p>
+<p> </p>
+<p>Eles devem ser fáceis de conseguir ... os Kerubiels enxamem como abelhas por aqui.</p>
+<p> </p>
+<p>Agora, não posso deixar o observatório para fazer uma caça ao punhal selvagem, mas você poderia? Hum? Sinto como reunir alguns[%dic:STR_DIC_I_QUEST_3536A] S, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você não seria capaz de resistir!</p>
+<p> </p>
+<p>Basta seguir a estrada descendo a colina. Você não pode deixar de tropeçar em um[%dic:STR_DIC_M_Cherubim4_33_An]ou doze.</p>
+<p> </p>
+<p>Traga -me de volta uma pilha desses[%dic:STR_DIC_I_QUEST_3536A] S, hein? Eles vão fazer punhais incríveis para os backups quando chegarem aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou enterrar você em punhais!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aww. Vamos. Mostre algum interesse. Esses punhais são incríveis.</p>
+<p> </p>
+<p>Você já viu os punhais que eles estão emitindo recrutas ultimamente? Essas coisas podem salvar muitas vidas ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza que você perseverá."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta, [%username]. Como foi? Você os pegou?</p>
+<p> </p>
+<p>Eu já tenho uma fila de lutadores simplesmente babando para colocar as mãos nelas[%dic:STR_DIC_I_QUEST_3536A] S.</p>
+<p> </p>
+<p>Talvez eu não tenha restado para os backups! Caramba, eu posso até esgueirar alguns para minha coleção pessoal ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Cuidado, a baba pode enferrujá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente você pode obter mais do que isso. Aqueles[%dic:STR_DIC_M_Cherubim4_33_An] S são impossíveis de evitar.</p>
+<p> </p>
+<p>Eu já tenho uma lista de espera para aqueles[%dic:STR_DIC_I_QUEST_3536A] S, então quanto mais cedo melhor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Está na minha lista de tarefas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Legal! Eles são tão leves e a obra. Impressionante. Eu simplesmente não posso acreditar que Kerubiels os criou. Esquisito.</p>
+<p> </p>
+<p>Os legionários ficarão emocionados com eles. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_3536A] e trazê -los para [%dic:STR_DIC_N_Klaus].</p>[%collectitem]</step>
+</steps>
+<p>Você concordou em reunir alguns punhais Kerubiel que são aparentemente muito bem feitos. Mate os saqueadores de Kerubiel por seus punhais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Klaus adorou o quão fabulosos Kerubiel Daggers são, o que o divertiu.</p>
+<p> </p>
+<p>Então você caçou saqueadores de Kerubiel e coletou punhais para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

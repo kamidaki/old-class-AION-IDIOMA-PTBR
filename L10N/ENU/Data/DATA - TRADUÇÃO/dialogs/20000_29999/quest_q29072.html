@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você lutou bravamente no caminho difícil de se tornar um[%userclass]!</p>
+<p> </p>
+<p>Agora não há mais ajuda que eu possa lhe dar.</p>
+<p> </p>
+<p>Isso não significa que você dominou todas as habilidades, no entanto. Você precisará continuar trabalhando duro para se chamar de verdade [%userclass].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É por isso que eu gostaria de apresentá -lo a um novo mestre.</p>
+<p> </p>
+<p>Encontre -se com Hadubrand do prédio da Assembléia Nacional em Pandaemonium.</p>
+<p> </p>
+<p>Com as instruções dele, você poderá desenvolver muito mais como um[%userclass].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui, esta é a carta de recomendação. Não se esqueça de colocar pegue.</p>
+<p> </p>
+<p>Vá para o prédio da Assembléia Nacional e mostre -o para [%dic:STR_DIC_N_DC1_Hadubrand_M].</p>
+<p> </p>
+<p>Então você será aceito sem mais delongas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sobre sua recusa ... você está sendo ensinado por Hadubrand por acaso?</p>
+<p> </p>
+<p>Mesmo se você fosse, seria uma boa ideia levar a carta de recomendação com você.</p>
+<p> </p>
+<p>Se eu o recomende, o Hadubrand deve prestar ainda mais notificação de você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Alerta significa dar um primeiro passo para se tornar um verdadeiro Daeva.</p>
+<p> </p>
+<p>Se você deseja se tornar um verdadeiro Daeva, faça sua pesquisa e expandir seus limites por meio de experiência de combate.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a carta de recomendação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Enquanto lia a carta de recomendação) Mesina escreveu isso?</p>
+<p> </p>
+<p>Faz muito tempo que alguém a recomendou.</p>
+<p> </p>
+<p>Mas você não precisa se orgulhar disso. Quando você está começando, um pouco de talento pode parecer mais do que realmente é.</p>
+<p> </p>
+<p>Oh, eu não quis dizer você.</p>
+<p> </p>
+<p>Se você tiver alguma dúvida, venha a mim a qualquer momento. Eu vou te ajudar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue esta carta de recomendação para [%dic:STR_DIC_N_DC1_Hadubrand_M].</p></step>
+</steps>
+<p>Mostre a Carta de Recomendação de Mesaina a Hadubrand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mesaina disse que não tinha mais nada que pudesse lhe ensinar, deu uma carta de recomendação e enviou você para ir ver Hadubrant.</p>
+<p> </p>
+<p>Depois que Hadubrant leu a carta de recomendação, ele disse que você ainda tinha muito a aprender para se tornar um excelente Daeva e que você pode voltar a ele a qualquer momento, se precisar de ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

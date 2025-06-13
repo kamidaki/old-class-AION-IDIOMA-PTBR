@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza de que você notou fantasmas na Orton Farm.</p>
+<p> </p>
+<p>Segundo a lenda, os moradores que morreram na guerra de Krall ganharam vida como zumbis. Eu acho que talvez haja alguma verdade nessa lenda.</p>
+<p> </p>
+<p>Eu acho que alguns também permaneceram ... como fantasmas. Enviei uma carta a um pesquisador em santuário para perguntar se isso era verdade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual foi a resposta deles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O habitual. "Nada é certo sem uma amostra ou uma inspeção no local. Envie-nos uma amostra." Esse tipo de coisa.</p>
+<p> </p>
+<p>Eu enviaria uma amostra, mas seria para sempre antes de ouvir algo. Tenho sorte de ser um Daeva. Se eu fosse humano, estaria morto antes que eles voltassem para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"A pesquisa leva tempo".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez eu deva enviar uma amostra para o Lyceum. Eu acho que os crânios anubitas deveriam fazer.</p>
+<p> </p>
+<p>Se eu tiver sorte, vou receber a resposta antes de estar morto.</p>
+<p> </p>
+<p>Você irá para a fazenda Orton mais uma vez e pegará alguns[%dic:STR_DIC_I_QUEST_1530a] para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_I_QUEST_1530a]Deve ser a parte mais fácil de coletar.</p>
+<p> </p>
+<p>Estou ansioso para ouvir de volta do Lyceum.</p>
+<p> </p>
+<p>Se Yustiel estiver lá, podemos descobrir mais rapidamente ... mas ela viaja muito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você não gostaria de desperdiçar seus esforços em algo que ninguém investigará corretamente.</p>
+<p> </p>
+<p>Vou apenas fingir que não sei nada sobre isso.</p>
+<p> </p>
+<p>Se o problema surgir novamente, outra pessoa poderá corrigi -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A procrastinação funciona."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Santum está realmente interessado em fantasmas agora.</p>
+<p> </p>
+<p>Alguém mais relatou sobre a questão dos Mortos Vivos, e agora está pressionando por uma resposta.</p>
+<p> </p>
+<p>Você tem o [%dic:STR_DIC_I_QUEST_1530a] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Cada ósseo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não me trouxe a amostra? O santuário está ansioso por isso.</p>
+<p> </p>
+<p>Não sei do que se trata, mas serei culpado se não enviar a amostra em breve.</p>
+<p> </p>
+<p>Por favor, vá para a fazenda Orton e pegue o [%dic:STR_DIC_I_QUEST_1530a] para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Amostras de crânio chegando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perguntei por que a corrida, e eles disseram que tem algo a ver com revolucionários lefaristas.</p>
+<p> </p>
+<p>Eles não me disseram qual era o link. Você não acha que os lefaristas criaram os Mortos Vivos, não é?</p>
+<p> </p>
+<p>Obrigado por coletar os crânios para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_Skeleton_35_An] S e traga os crânios para [%dic:STR_DIC_N_Klaus].</p>[%collectitem]</step>
+</steps>
+<p>O Lyceum pediu uma amostra dos Mortos Vivos. Colete crânios anubitas e leve -os para Klaus.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Klaus consultou o santuário sobre os Mortos Vivos, e eles disseram para ele enviar amostras.</p>
+<p> </p>
+<p>Você foi à fazenda de Orton e coletou os crânios anubitas. Então, Klaus disse que os revolucionários Mortos Vivos e lefaristas estão de alguma forma conectados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

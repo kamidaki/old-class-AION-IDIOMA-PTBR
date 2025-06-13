@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você acredita no destino, [%username]?</p>
+<p> </p>
+<p>Eu faço, ou melhor, comecei a acreditar nele recentemente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você quer dizer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ascendi como Daeva aos quinze anos, depois me mudei para Altgard. Estou aqui há dez anos.</p>
+<p> </p>
+<p>Minha cidade natal é muito remota. Nem sequer tem um teleporter.</p>
+<p> </p>
+<p>Há um tempo atrás, me deparei com alguém de lá na minha patrulha. Fiquei tão surpreso que esqueci de dizer olá!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Prossiga..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O nome dele é Manir. Ele é um pescador na doca. Ele não é apenas um conhecido, mas um amigo de infância.</p>
+<p> </p>
+<p>Não quero que ele pense que o ignorei deliberadamente. Eu quero ir vê -lo, mas não encontrei tempo.</p>
+<p> </p>
+<p>Se você está assim, pode me fazer um favor e dizer [%dic:STR_DIC_N_Manir] eu disse olá?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Quando você se encontra [%dic:STR_DIC_N_Manir], diga a ele que senti falta dele e peça que ele me visite algum tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou contar a ele."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo, você provavelmente está ocupado com coisas mais importantes.</p>
+<p> </p>
+<p>Talvez eu tenha que esperar até o meu dia seguinte.</p>
+<p> </p>
+<p>De qualquer forma, obrigado por ouvir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, certamente é um alívio vê -lo, Daeva!</p>
+<p> </p>
+<p>Eu estava apenas pescando quando esses bandidos me ameaçaram!</p>
+<p> </p>
+<p>O que posso fazer para você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma mensagem para você ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Afinal, foi Olenja! Eu não a via há tanto tempo, não tinha certeza.</p>
+<p> </p>
+<p>Olenja, pobre menina. Ascender não parece tê -la curada de sua timidez.</p>
+<p> </p>
+<p>É bom ouvir de um velho amigo. Tenho estado ocupado lidar com esses patifes há muito tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Diga olá para [%dic:STR_DIC_N_Manir] em nome de Olenja.</p></step>
+</steps>
+<p>Diga olá para Manir em nome de Olenja.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Olenja sentiu envergonhado por não ter dito olá para Manir quando esbarrou nele. Você passou por suas saudações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

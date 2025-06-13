@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra!</p>
+<p> </p>
+<p>Eu só esperava encontrar alguém que pudesse me ajudar.</p>
+<p> </p>
+<p>Há uma entrega importante que deve ser feita à fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu gosto de fortalezas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kurngalfberg está infestado de fantasmas, os tristes remanescentes de uma cidade movimentada. Infelizmente, eles estão interferindo no nosso trabalho aqui.</p>
+<p> </p>
+<p>Aprendemos, por experiência difícil, que os fantasmas são particularmente vulneráveis ​​ao fogo.</p>
+<p> </p>
+<p>Naturalmente, começamos a estocar rolos de magia de incêndio para ajudar a combater os assombrações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma ideia brilhante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estou muito familiarizado com Beluslan, então não sei onde mais esses pergaminhos podem ser úteis.</p>
+<p> </p>
+<p>Minha suspeita é que a equipe da fortaleza saberia onde é melhor usá -los.</p>
+<p> </p>
+<p>Eu gostaria que você entregasse este pacote de rolos para a fortaleza, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para Beluslan Fortaleza e entregue este pacote ao Centurion[%dic:STR_DIC_N_Hod].</p>
+<p> </p>
+<p>Diga a ele que esses pergaminhos contêm mágica de fogo e ele deve distribuí -los enquanto achar adequado.</p>
+<p> </p>
+<p>E não se esqueça de dizer a ele que eles são escoradamente bons contra os Mortos Vivos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? O que você quer dizer, não? Por que não?</p>
+<p> </p>
+<p>Não é como se estivesse tão longe do seu caminho. Você é um Daeva, atropelado!</p>
+<p> </p>
+<p>Bem, se você mudar de idéia, me avise.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, [%username].</p>
+<p> </p>
+<p>Você parece um Daeva em uma missão.</p>
+<p> </p>
+<p>O que é isso na sua mão? É bolo? Eu amo bolo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Tipo de bolo de morto -vivo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Magic Scrolls! Isso é quase tão bom quanto o bolo.</p>
+<p> </p>
+<p>Eu penso[%dic:STR_DIC_N_Sleipnirr]Na floresta sussurra, pode achá -los úteis. Os Mortos Vivos são Guilda lá.</p>
+<p> </p>
+<p>Provavelmente devemos dar alguns pergaminhos aos refugiados. Isso os ajudaria muito.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Eu suspeito que você está certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem tantos refugiados, mas apenas três arcontes. É muuuuito trabalho.</p>
+<p> </p>
+<p>Esses refugiados não facilitam. Não é como se fossem guerreiros adequados.</p>
+<p> </p>
+<p>Eu tive que me inclinar para pedir ajuda aos Shugos imundos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isso deve ajudá -lo a evitar essa vergonha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, alguém pode lançar magia de fogo usando esses rolos? Notícias fantásticas para esses tolos indefesos.</p>
+<p> </p>
+<p>Vou distribuir um para cada aldeão para emergências. Espero que eles não os apontem para seus filhos.</p>
+<p> </p>
+<p>Obrigado oh-much por trazê-los. Bom Pequeno Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Hod].</p></step>
+<step><p visible="[%3]">Entregar os rolos para [%dic:STR_DIC_N_Sleipnirr].</p></step>
+</steps>
+<p>Tafi, um daeva de chama, criou rolos que contêm magia de fogo. Entregue -os a Centurion Hod na fortaleza.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tafi, um Daeva de Flame, criou rolos de fogo para ajudar a combater o flagelo morto -vivo que atormenta Beluslan.</p>
+<p> </p>
+<p>Ele pediu que você os entregasse a Centurion Hod na fortaleza para distribuição adicional. Você levou alguns pergaminhos para o Centurion Sleipnir na floresta sussurra.</p>
+<p> </p>
+<p>Sleipnir ficou encantado por receber os pergaminhos e agradeceu por trazê -los.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

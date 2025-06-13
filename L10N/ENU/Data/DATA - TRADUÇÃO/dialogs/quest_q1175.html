@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ouviu?  Esta contaminação não é acidente. A terra foi deliberadamente envenenada.</p>
+<p> </p>
+<p>Como alguém poderia contaminar esta bela terra? O que os animais fizeram para merecer isso?</p>
+<p> </p>
+<p>Mas o que está feito é feito, e há muitas tarefas desagradáveis ​​para nós. Posso contar com sua ajuda?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tivemos relatos ultimamente de [%dic:STR_DIC_MLA20] está atacando qualquer um que escalasse a cordilheira de Altamia.</p>
+<p> </p>
+<p>É uma rota comum para o solo sagrado de Miraju e, com a semana de peregrinação, muitos peregrinos seguirão assim.</p>
+<p> </p>
+<p>Eu preciso que você tenha certeza de que a rota está segura. Infelizmente, isso significa matar o [%dic:STR_DIC_MLA20] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Por favor, vá para [%dic:STR_DIC_FLA19] e caçar nove [%dic:STR_DIC_MLA20] S.</p>
+<p> </p>
+<p>Plumas se esconde -se durante a noite, para que você possa pegá -los apenas durante o dia.</p>
+<p> </p>
+<p>Enquanto isso, continuarei tentando descobrir uma maneira de acabar com todo esse problema.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não te culpo, honestamente. Eu também não gostaria de fazer isso.</p>
+<p> </p>
+<p>Eu peço que você pense disso, no entanto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Eu tive você para ajudar com o [%dic:STR_DIC_MLA20]Problema, não é?</p>
+<p> </p>
+<p>Como você se saiu? O caminho está claro agora?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isso é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>Todo esse negócio me enlouquece. Costumávamos lutar contra nossos inimigos, cara a cara, com fé e braços do nosso lado. Isso é apenas covarde.</p>
+<p> </p>
+<p>Ah, bem. Que a luz de Old Class Aion o guie.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_MLA20] S que estão atacando viajantes ([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA82]%.</p></step>
+</steps>
+<p>Os Plumas, uma vez dócil, tornaram -se cruéis desde que o veneno do pântano contaminado começou a afetá -los. Mate as plumas contaminadas para impedir que eles atacem as pessoas. Plumas aparecem apenas durante o dia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Plumas poluídos pelo veneno do pântano contaminado tem atacado as pessoas escalando a cordilheira de Altamia.</p>
+<p> </p>
+<p>Você realizou o pedido de Meliodas e destruiu várias das plumas contaminadas, contendo a ameaça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

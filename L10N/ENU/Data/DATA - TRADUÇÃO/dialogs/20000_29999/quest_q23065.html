@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou preocupado que o exército de Beritra pareça estar ganhando força.</p>
+<p> </p>
+<p>O Exército de Beritra montou um posto perto do portão sul de Eremion e aumentou o número de tropas.</p>
+<p> </p>
+<p>Se as coisas continuarem assim, em breve elas terão todas as muralhas sob controle.</p>
+<p> </p>
+<p>Por favor, vá imediatamente ao poste perto do portão sul de Eremion e elimine o [%dic:STR_DIC_E_LDF5b_A2_Vri].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Até o Beritra conhece a importância do portão sul de Eremion.</p>
+<p> </p>
+<p>Se o número de Beritra exceder uma certa quantidade, as muralhas cairão em suas mãos.</p>
+<p> </p>
+<p>O esquadrão de espionagem da 43ª Guilda deve ser eliminado para acabar com a Beritra reforçando suas forças de combate.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Se não tivéssemos feito nada, ainda mais Beritra teria chegado e o Muro da Defesa estaria sob seu controle.</p>
+<p> </p>
+<p>Graças a você, tudo o que precisamos fazer é observar o Beritra por um tempo.</p>
+<p> </p>
+<p>Eles montarão soldados e tentarão capturar o muro de defesa em breve. Por favor, continue nos ajudando.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_LDF5b_A2_Vri], o plano de invadir a fortaleza. ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Shutart_E]%.</p></step>
+</steps>
+<p>Elimine a 43ª tropa de inteligência de Beritra que está tentando controlar o portão sul da Eremion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Chetat, você eliminou o 43º esquadrão de espionagem que tentou ocupar as muralhas. Chetat pediu mais ajuda se você tivesse tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Krall são bestas curiosas, você não acha, [%username]?</p>
+<p> </p>
+<p>Eles brigam entre si dia e noite. As lutas são comuns entre as fileiras baixas, presumivelmente como peões fazem nomes para si mesmos. Mesmo assim, eles são agressores capazes e altamente qualificados quando organizados adequadamente.</p>
+<p> </p>
+<p>Parece que outro ataque está se formando, na verdade ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como você pode dizer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Conheço um pouco de Krallic, o suficiente para descobrir seu humor e algumas das ordens. É uma linguagem curiosa, franca e grosseira. Eles têm muitos termos em que teríamos um ou um termo em que usaríamos vários.</p>
+<p> </p>
+<p>De qualquer forma, tenho uma proposta. Acho que devemos mudar de tática e atacar o posto avançado. Se minha teoria estiver correta, o Krall apenas ataque quando eles têm números suficientes.</p>
+<p> </p>
+<p>Ao atacar, poderíamos constantemente afinar seus próprios números, encerrando assim esses ataques à cidadela!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Escolhemos o campo de batalha ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para o posto avançado da Tursin e elimine o [plur][%dic:STR_DIC_MLA60] e [plur][%dic:STR_DIC_MLA27_1].</p>
+<p> </p>
+<p>Cinco de cada um devem ser suficientes para fazê -los mudar sua estratégia e fazê -los se abster de atacar a Cidadela da Verteron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, [%username]!</p>
+<p> </p>
+<p>Vá direto para o posto avançado da Tursin e elimine -os.</p>
+<p> </p>
+<p>Ah, sim, há mais uma coisa que eu preciso dizer: é perigoso ir lá sozinho. Somente um Krall é uma ameaça, mas há um ninho inteiro lá.</p>
+<p> </p>
+<p>Então você deve levar seus camaradas com você.</p>
+<p> </p>
+<p>Se você levar alguns deles com você, então 5[plur][%dic:STR_DIC_MLA60] e 5[plur][%dic:STR_DIC_MLA27_1] Será brincadeira de criança.</p>
+<p> </p>
+<p>Então volte para mim e me dê seu relatório. Vou então te dar sua recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo-é muito para perguntar.</p>
+<p> </p>
+<p>Se você mudar de idéia, volte para mim. O Krall não está saindo. Se você quer subir para comandar, esta é uma grande chance de aprender as táticas que transformam uma multidão de soldados em um exército!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou esquecer ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Voltar tão cedo e ainda respirar?</p>
+<p> </p>
+<p>Você e seus aliados atingiram o posto avançado de Krall, [%username]? Você completou a tarefa que eu defini você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz, embora o desafio tenha sido ótimo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É por isso que escolhi você para me ajudar com minha pesquisa!</p>
+<p> </p>
+<p>Eu tinha ouvido falar de suas façanhas de associados aqui e em santuário. Quando você chegou aqui, eu sabia que tinha que ligar para você. Você cumpriu os rumores: você é um talentoso[%userclass]de fato. A própria Ariel sorri com tanta devoção e bravura, e você também tem minha gratidão.</p>
+<p> </p>
+<p>Eu acho que a Citadel da Verteron pode respirar mais fácil por um tempo; O Krall precisa de tempo para substituir aqueles que você matou. Se isso os acalma, como eu espero, colocarei meu caso no santuário para mudar nossas ordens permanentes. Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá atrás do Krall do[%dic:STR_DIC_FLA22].</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA60]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA27_1]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA39]%.</p></step>
+</steps>
+<p>O Tursin Krall está esperando a chance de penetrar na fortaleza de Verteron. Mate o Krall do posto avançado de Tursin e receba uma recompensa especial de Meteina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Meteina acredita que o ataque de Krall sempre que seus acampamentos estão superlotados. Para evitar ataques na cidadela, ela quer montar seu próprio ataque ao posto avançado de Tursin.</p>
+<p> </p>
+<p>Você reuniu aliados, invadiu o Krall como Meteina sugeriu e recebeu uma recompensa especial.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

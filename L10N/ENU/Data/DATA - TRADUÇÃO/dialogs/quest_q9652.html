@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9652</p>
+<p> </p>
+<p>Você poderia eliminar os inimigos para fortalecer o moral de nossas tropas?</p>
+<p> </p>
+<p>Eu sei que essa não é uma tarefa fácil.</p>
+<p> </p>
+<p>Então você receberá uma recompensa especial em troca.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9652</p>
+<p> </p>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Você conseguiu progredir na eliminação de nossos inimigos?</p>
+<p> </p>
+<p>Você obedeceu ao meu comando e eliminou os asmodianos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Q9652</p>
+<p> </p>
+<p>Você realmente concluiu a tarefa. Isso é incrível.</p>
+<p> </p>
+<p>Aqui. Esta é a recompensa que prometi. Por favor, aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os inimigos. ([%2]/4)</p></step>
+<step><p visible="[%3]">Relate para o Teste de Expansão da Função Simples do Talk 17 Após concluir a missão.</p></step>
+</steps>
+<p>Mate os asmodianos!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou os inimigos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

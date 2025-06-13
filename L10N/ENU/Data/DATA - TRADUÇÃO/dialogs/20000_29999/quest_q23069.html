@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As planícies famintas Karnifs aparecendo em torno de Goldrinyerk Hill estão machucando muitas pessoas.</p>
+<p> </p>
+<p>[%username], você poderia matar o [%dic:STR_DIC_M_LDF5B_F4_MonkyHyena_65_An]para mim e depois relato para [%dic:STR_DIC_N_LDF5b_Detworing_E]?</p>
+<p> </p>
+<p>Para aliviar o problema, as planícies famintas que os karnifs precisam ser caçadas regularmente, mas não posso porque tenho um milho no pé que está me impedindo de ir.</p>
+<p> </p>
+<p>Você pode dizer a Dituriner que não há necessidade de se preocupar com as planícies famintas Karnifs.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Daeva voltou, Ak!</p>
+<p> </p>
+<p>A penion está fazendo um bom trabalho, AK?</p>
+<p> </p>
+<p>Eu confio que ele não delegou seu trabalho a outra pessoa, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é realmente inacreditável, AK.</p>
+<p> </p>
+<p>As planícies famintas Karnifs foram mortas. O Sluggard obviamente fez seu trabalho desta vez, Ak.</p>
+<p> </p>
+<p>Finalmente nos livramos das planícies famintas Karnifs por enquanto, Ak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caçar [%dic:STR_DIC_M_LDF5B_F4_MonkyHyena_65_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Detworing_E].</p></step>
+</steps>
+<p>Mate as planícies famintas Karnif e denuncie -o a Diturinerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você matou as planícies famintas Karnifs por penion e foi para Diturinerk, a penion ficou feliz por o trabalho ter sido concluído de maneira tão ordenada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

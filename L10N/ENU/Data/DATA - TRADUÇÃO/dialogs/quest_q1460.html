@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]. Eu estava apenas passando por alguns materiais que recebi do Sirink para um procedimento especial.</p>
+<p> </p>
+<p>Eu tenho um cristal mágico vermelho e uma pedra de clarividência, mas estou faltando alguma coisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que é isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil de explicar, mas eu poderia realmente usar sua ajuda. Não há tempo a perder, e é difícil encontrar alguém adequado para uma missão como essa.</p>
+<p> </p>
+<p>Você poderia me pegar alguns[%dic:STR_DIC_I_QUEST_1460a] S? Eles são as escalas de [%dic:STR_DIC_M_Driton_33_An] está no templo de Kyola.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você precisa deles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles são um componente necessário para fazer uma pedra de ativação para um certo artefato.</p>
+<p> </p>
+<p>Não posso te dizer mais do que isso, receio.</p>
+<p> </p>
+<p>Por favor, saia para Eltnen imediatamente. Estamos presos pelo tempo e estou particularmente pressionado por [%dic:STR_DIC_I_QUEST_1460a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você obteve o [%dic:STR_DIC_I_QUEST_1460a] S de [%dic:STR_DIC_M_Driton_33_An] S, leve -os para [%dic:STR_DIC_N_Sirinks].</p>
+<p> </p>
+<p>Ela vai cuidar do resto. E se você tiver mais alguma dúvida, pergunte a ela.</p>
+<p> </p>
+<p>Boa sorte, Daeva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere ... o que?</p>
+<p> </p>
+<p>Eu pensei que você queria ajudar?</p>
+<p> </p>
+<p>Bem, se você não vai dar uma mão, saia do caminho!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta?</p>
+<p> </p>
+<p>Eu já disse a você, se houver algo que você queira saber, pergunte a Nestor.</p>
+<p> </p>
+<p>Se ele não dissesse nada, então não tenho mais nada para lhe dizer.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe as balanças."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu, você está falando sério?</p>
+<p> </p>
+<p>Eu estava doente nos últimos dias e devo ter esquecido de incluí -los.</p>
+<p> </p>
+<p>Obrigado pelo[%dic:STR_DIC_I_QUEST_1460a] S, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De nada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, você conheceu Boreas?</p>
+<p> </p>
+<p>Oh ... sim, suponho que cometi um grande erro, não, deixando de fora as escalas brilhantes assim. Vou mandar isso para Boreas imediatamente.</p>
+<p> </p>
+<p>E ouça com cuidado ... "Bianu Ajitaran!" Você o usará com frequência a partir de agora, portanto, certifique -se de memorizá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir a escala de [%dic:STR_DIC_M_Driton_33_An] e leve-os para [%dic:STR_DIC_N_Sirinks].</p>[%collectitem]</step>
+</steps>
+<p>Falta um dos materiais necessários para fazer uma pedra de ativação do artefato. Retorne ao templo de Kyola para reunir as escalas brilhantes de Skyrays de Thorntail e levá -los ao Sirink.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Boreas ficou preocupado após a abertura da caixa enviada por Sirink, porque um dos materiais estava faltando.</p>
+<p> </p>
+<p>Quando você se ofereceu para obter o material, ele lhe disse que os materiais coletados até agora eram para fazer a pedra de ativação de um certo artefato e pediu que você obtenha as escalas brilhantes de skyrays de espinhos encontrados no templo de Kyola.</p>
+<p> </p>
+<p>Quando você voltou a Eltnen para obter os materiais que Boreas falou e os deu a Sirink, ela perguntou se você conheceu Boreas e ensinou uma frase enigmática, "Bianu Ajitaran".</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

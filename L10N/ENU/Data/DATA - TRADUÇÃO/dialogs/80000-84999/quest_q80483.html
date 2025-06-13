@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já esteve na beira da espada?</p>
+<p> </p>
+<p>A borda de Sword é uma ilha onde os Elyos e os asmodianos formaram uma aliança temporária e derrotaram o Balaur.</p>
+<p> </p>
+<p>No entanto, houve muitos conflitos</p>
+<p> </p>
+<p>Devido à espada da ilha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer descobrir mais sobre a beira da espada?</p>
+<p> </p>
+<p>[%username], se você estiver interessado na beira da espada, posso lhe contar mais sobre isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que está interessado.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você diz que não está interessado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente encontrei alguém que compartilha meus interesses.</p>
+<p> </p>
+<p>Obrigado por concordar em pesquisar comigo.</p>
+<p> </p>
+<p>Comece perguntando ao meu assistente que bebeu sobre quais tarefas você pode executar como iniciante.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você não está interessado, não há muito que eu possa fazer.</p>
+<p> </p>
+<p>Como um Daeva que viajou para os cantos mais distantes de Atreia, você provavelmente já ouviu falar da grande espada.</p>
+<p> </p>
+<p>Se você decidir estar interessado, poderá voltar para me ver a qualquer momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação. Então você é o novo garoto da cidade.</p>
+<p> </p>
+<p>Não temos muito tempo, então você deve ir à beira da espada e começar a investigar imediatamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você hesita?</p>
+<p> </p>
+<p>Não temos muito tempo. Você deve se apressar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? Prazer em conhecê-lo! Eu estou Bedin.</p>
+<p> </p>
+<p>Você provavelmente está aqui para explorar este lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vim aqui para pesquisa. Você não acha que seria útil se nos ajudássemos na pesquisa?</p>
+<p> </p>
+<p>Deixe -me saber se você estiver interessado.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pergunte a Dranka o que você deve fazer como recém -chegado.</p>[%collectitem]</step>
+<step><p visible="[%3]">Dranka diz que você deve começar viajando rapidamente para a beira da espada. Se movendo.</p></step>
+</steps>
+<p>Dranka diz que você deve viajar para a beira da espada e começar a pesquisar lá. Vá para a beira da espada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shumir diz que você deve perguntar a Dranka o que precisa fazer como recém -chegado.</p>
+<p></p>
+<p>Dranka diz que não há tempo e você deve voar até a beira da espada e fazer sua pesquisa lá.</p>
+<p></p>
+<p>Um jovem chamado Bedin está na beira da espada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

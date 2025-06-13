@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se importaria de me fazer um favor, [%userclass]?</p>
+<p> </p>
+<p>Eu preparei um monte de armadura e agora preciso de alguém para fazer as entregas.</p>
+<p> </p>
+<p>Já é ruim o suficiente eu sou o armeiro de fato, mas serei o sol se eles também fizeram o entregador deles!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Jack de todos os negócios ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, mestre de nenhum ....</p>
+<p> </p>
+<p>Olha, esses lotes de [%dic:STR_DIC_I_2115b]precisa ser entregue para [%dic:STR_DIC_N_Denma]. Ela dirige a loja geral no Anturoon Crossing e está me incomodando pelos suprimentos.</p>
+<p> </p>
+<p>Você se importaria de fazer a entrega para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, obrigado.</p>
+<p> </p>
+<p>Lembre -se, você encontrará[%dic:STR_DIC_N_Denma]no[%dic:STR_DIC_W_DF1_5]. É um lugar perigoso, cheio de predadores hostis, então estoque suprimentos antes de você sair, ok?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado pela dica."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum.</p>
+<p> </p>
+<p>Então, você fica ao redor da vila perguntando a todos e suas sombras para o trabalho, mas quando eu lhe dou uma tarefa simples, você me recusa? Você é estranho, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe desapontar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Raider. Eu presumo que você é[%username], o que Dalor disse que estaria entregando meus suprimentos de couro?</p>
+<p> </p>
+<p>Por favor, tenho pouco tempo para uma conversa fiada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ajuste -se. Aqui estão as suas coisas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é tudo isso?</p>
+<p> </p>
+<p>Pedi o máximo possível de couro e, quando ele acaba me fornecendo, é isso que eu recebo? Quem decidiu que Dalor seria nosso único fornecedor de couro, afinal?</p>
+<p> </p>
+<p>Bem, suponho que não há razão para atirar na pessoa que entrega. Aqui está o dinheiro que prometi; Pelo menos vou sustentar meu fim do nosso acordo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o couro grosso[%dic:STR_DIC_N_Dalot]bronzeado para [%dic:STR_DIC_N_Denma].</p></step>
+</steps>
+<p>Denma precisa de couro grosso. Entregue o couro para ela em nome de Dalor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dalor estava ocupado demais para entregar os suprimentos de couro que Denma pediu, então você fez a entrega em seu nome.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

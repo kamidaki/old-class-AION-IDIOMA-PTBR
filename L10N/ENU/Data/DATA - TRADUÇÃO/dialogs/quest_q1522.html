@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você estava lidando com Kerubiels, [%username], alguém da vila de Jeiaparan veio ver o curandeiro da alma Mirborante.</p>
+<p> </p>
+<p>Eu ouvi "Kerubiels", então conversei com o aldeão.</p>
+<p> </p>
+<p>Ela disse que acha que os Kerubiels deixaram seu habitat habitual por causa de algumas árvores estranhamente deterioradas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Árvores deterioradas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Deteriorado, envenenado, contaminado ... eu não sei. Mas as árvores apareceram na lama sombria, e os Kerubiels estão sendo liderados por [%dic:STR_DIC_M_Cherubim4_33_An] S.</p>
+<p> </p>
+<p>Eu odeio impor a você novamente, mas preciso da sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você! Obrigado, [%username].</p>
+<p> </p>
+<p>Por favor, vá para a lama sombria e elimine parte do[%dic:STR_DIC_M_Cherubim4_33_An] S.</p>
+<p> </p>
+<p>Eles são mais difíceis que os kerrubiels normais, mas isso não deve representar nenhum problema para você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Luz de Ariel guia você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, pelo menos você prejudica a ameaça imediata de querrubiel.</p>
+<p> </p>
+<p>Eu acho que os saqueadores do Kerubiel terão que ser tratados mais tarde.</p>
+<p> </p>
+<p>Peço desculpas por impor nossa amizade, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou tão ocupado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo? Os Serafim Lords devem vigiar você!</p>
+<p> </p>
+<p>Ou talvez você seja tão bom quanto todos parecem pensar.</p>
+<p> </p>
+<p>Você já lidou com os Arch Kerubiels?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles não são mais um problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Sem seus líderes de bullying, os outros Kerubiels devem manter distância.</p>
+<p> </p>
+<p>Ainda assim, tenho pena deles, pois eles foram forçados a partir de suas casas.</p>
+<p> </p>
+<p>Ariel nos salve de um destino semelhante.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Erradicar [%dic:STR_DIC_M_Cherubim4_33_An] S ([%2]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Rahelio].</p></step>
+</steps>
+<p>Erradique os saqueadores de Kerubiel que estão levando os Kerubiels em direção ao observatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rahelio descobriu que os Kerubiels chegaram ao observatório porque foram expulsos da lama sombria. Ele pediu que você elimine os saqueadores de Kerubiel que estão liderando o pacote.</p>
+<p> </p>
+<p>Quando você voltou depois de descartá -los, ele ficou agradecido, mas ainda sentiu pena de ter que erradicar os sem -teto.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

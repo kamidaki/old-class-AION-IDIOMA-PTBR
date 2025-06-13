@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio ajudar![%username].</p>
+<p> </p>
+<p>Quão afortunada de que existem valiantes Daevas, como você que faz a parte deles para proteger Elysea.</p>
+<p> </p>
+<p>Por favor, ajude o protetorado da Elysea da Atreia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Como posso ajudá-lo?</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! A Guilda Bakarma no[%dic:STR_DIC_W_STR_DF3_SZ_H]precisa ser eliminado!</p>
+<p> </p>
+<p>Por favor, elimine o instrutor Akbar no[%dic:STR_DIC_W_STR_DF3_SZ_H].</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos mostrar a eles do que nós e você, Daeva, somos feitos!</p>
+<p> </p>
+<p>Para a glória dos Elyos!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos mais recuar. Daeva!</p>
+<p> </p>
+<p>Vá enfrentar o inimigo o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você eliminou o instrutor Akbar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que realizou a tarefa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você cuidaria de tudo!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o instrutor Akbar no[%dic:STR_DIC_W_STR_DF3_SZ_H]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_EVENT_GUARD_KENTRO].</p></step>
+</steps>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_KENTRO]Pediu que você elimine o instrutor Akbar na caverna de Draupnir.</p>
+<p>Por favor, elimine o instrutor Akbar.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_EVENT_GUARD_KENTRO]Pediu que você elimine o instrutor Akbar na caverna de Draupnir.</p>
+<p> </p>
+<p>Você eliminou o instrutor Akbar em[%dic:STR_DIC_N_EVENT_GUARD_KENTRO] Solicitação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

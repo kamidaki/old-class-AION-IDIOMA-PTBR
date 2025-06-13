@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Ajuda Lashiv!</p>
+<p> </p>
+<p>Lashiv foi insultado por [%dic:STR_DIC_M_LDF5_Under_VriTR_Stun_Q_Fi_N_65_Ae].</p>
+<p> </p>
+<p>Lashiv não pode deixá -lo descansar. Isso exige vingança! Minha honra deve ser restaurada!</p>
+<p> </p>
+<p>Se você matar [%dic:STR_DIC_M_LDF5_Under_VriTR_Stun_Q_Fi_N_65_Ae], Lashiv irá recompensá -lo.</p>
+<p> </p>
+<p>O que está acontecendo, Daeva?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que um Balaur preso emitiu um pedido especial.</p>
+<p> </p>
+<p>Pelo que ouvi, [%username], parece que você foi convidado a realizar um ato pessoal de vingança. Existem algumas pessoas estranhas por aí.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_LDF5_Under_VriTR_Stun_Q_Fi_N_65_Ae]também dificultaria a vida para o esquadrão de limpeza de Katalam.</p>
+<p> </p>
+<p>Um oponente complicado, e provavelmente deveríamos ter pedido que você cuide dele, [%username]. Como está a situação?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata que matou o teimoso Azak.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A eliminação de Azak foi bem -sucedida.</p>
+<p> </p>
+<p>Recebemos as informações devido ao rancor de um equilíbrio individual, mas ele também teve que ser exterminado. Não se preocupe com isso.</p>
+<p> </p>
+<p>Precisamos de toda a ajuda que possamos obter na situação atual, seja de nossos oponentes ou de um comerciante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5_Under_VriTR_Stun_Q_Fi_N_65_Ae]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Under_Oturu_E]%.</p></step>
+</steps>
+<p>Use as informações de Lashiv, prisioneiro dos desertores de Tiamat, e destrua Azak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lashiv, um oficial do Exército de Beritra que foi capturado pelos desertores de Tiamat, conseguiu entender o material de Azak.</p>
+<p> </p>
+<p>Você o matou e relatou a Otur. E Otur disse que qualquer meio é justificado para atingir a meta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

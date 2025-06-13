@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu gostaria de te pedir um favor, [%username].</p>
+<p> </p>
+<p>Você poderia eliminar o [plur][%dic:STR_DIC_M_DF5_A_Cherubim_55_n]?</p>
+<p> </p>
+<p>As ninfas do mar continuam atacando os membros da tropa de expedição responsáveis ​​por suprimentos para o [%dic:STR_DIC_W_DF5_SZ_OP_01].</p>
+<p> </p>
+<p>Eles são totalmente estranhos para nós, mas continuam atacando e não nos deixam escolha. Não podemos permitir que a tropa da expedição esteja em perigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você.</p>
+<p> </p>
+<p>Como você se saiu com o [plur][%dic:STR_DIC_M_DF5_A_Cherubim_55_n]?</p>
+<p> </p>
+<p>Eu estava com a impressão de que havia menos deles ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá a ele seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou muito grato, [%username].</p>
+<p> </p>
+<p>Alguns de nós não são particularmente endurecidos pela batalha.</p>
+<p> </p>
+<p>É por isso que é tão difícil encontrar ajuda em tais situações. Mas graças a Daevas como você, [%username], demos outro passo à frente. Você tem sido uma grande ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_DF5_A_Cherubim_55_n]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Ronkim_E].</p></step>
+</steps>
+<p>O oficial de suprimentos Ronkim pediu que você eliminasse as ninfas do mar. Cuide deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O oficial de suprimentos Ronkim pediu que você eliminasse as ninfas do mar que estavam posando um perigo para a tropa da expedição.</p>
+<p> </p>
+<p>Depois que você matou as ninfas do mar e voltou a Ronkim, ele agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

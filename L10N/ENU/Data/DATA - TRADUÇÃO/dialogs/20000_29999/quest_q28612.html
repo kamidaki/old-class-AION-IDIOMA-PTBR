@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Dizer, [%username], há algo que eu não contei sobre a lágrima de Kromede.</p>
+<p> </p>
+<p>É um bom colar, com certeza, mas os materiais que fiz para usá -lo são especiais.</p>
+<p> </p>
+<p>Eles têm uma conexão especial com uma arma usada pela própria Kromede.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de conexão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil de explicar, realmente. Mas a arma de que estou falando é o tomo do juiz.</p>
+<p> </p>
+<p>Se eu cheirar a lágrima de Kromede e usá -la para reforçar a capa e as ligações do livro de feitiços, o poder do livro aumentará significativamente.</p>
+<p> </p>
+<p>Como você já tem o colar, tudo o que você precisa fazer é obter o tomo do juiz. Parece um bom negócio?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não pode imaginar como estou aliviado por ouvir isso. Este será o projeto que cimenta minha reputação como o maior ferreiro de Asmodae!</p>
+<p> </p>
+<p>O último problema é o tomo do juiz. [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae], o verdadeiro Kromede, ainda tem.</p>
+<p> </p>
+<p>Ela fez o templo de fogo em Morheim seu esconderijo. Tenha cuidado-apenas porque você viu a verdade não significa que ela vai gostar de você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Provavelmente não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O colar pode ser útil, mas acho que você não entende como será o tomo do juiz depois que eu terminar.</p>
+<p> </p>
+<p>E eu também posso fazer isso. Basta perguntar a qualquer um dos Daevas de fogo, e eles lhe darão a verdade.</p>
+<p> </p>
+<p>Bem, se você decidir fazer isso, volte. Eu não vou a lugar nenhum.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu, por outro lado, estou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você não se sinta muito mal. Se o que você me disse é verdadeiro, Kromede foi consumido pela tristeza e pelo ódio.</p>
+<p> </p>
+<p>Se ela era inocente antes, não é mais. Ela é uma ameaça que precisa ser tratada.</p>
+<p> </p>
+<p>Ela tinha o tomo do juiz como eu disse, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, ela fez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você não tem que fibra para mim! Eu posso pegar a verdade!</p>
+<p> </p>
+<p>Sei que um tomo do juiz não parece o tipo de coisa que um Smith lidaria, mas, neste caso, confie em mim, é.</p>
+<p> </p>
+<p>Eu posso lidar com objetos delicados, como livros, sem problemas. Tudo o que você precisa fazer é encontrar em seu coração confiar em mim. Ah, e pegue o tomo do juiz, junto com a lágrima de Kromede, depois certifique -se de que ambos estejam no seu cubo quando conversamos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, a última parte é importante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, agora observe enquanto eu levo meu martelo para o tomo do juiz ... apenas brincando!</p>
+<p> </p>
+<p>Tudo o que eu realmente tenho a fazer é cheirar a lágrima de Kromede ... então eu deixei esfriar um pouco .... Então eu gosto assim ... lá!</p>
+<p> </p>
+<p>Aqui você vai! Não achei que eu poderia fazer isso, não é? Por que não levar para sua próxima batalha e ver por si mesmo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reivindicar o tomo do juiz e trazê -lo para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter acha que pode melhorar uma arma poderosa com a lágrima de Kromede. Encontre o tomo do juiz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Walter disse que a lágrima de Kromede pode ser usada para reforçar uma arma poderosa de propriedade de Kromede: o tomo do juiz.</p>
+<p> </p>
+<p>Você obteve o livro de feitiços e deu a ele, junto com a lágrima de Kromede. Walter fundiu os dois e lhe deu uma arma fortalecida, o tomo de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

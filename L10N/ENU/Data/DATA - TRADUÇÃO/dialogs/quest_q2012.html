@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>À vontade, [%username].</p>
+<p> </p>
+<p>Prepare -se: estamos enviando você além das paredes da fortaleza em uma missão.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_12] estão acampados ao redor da fortaleza-já foram há vários dias.</p>
+<p> </p>
+<p>Não sabemos muito sobre eles. Eles parecem ser insurgentes violentos que estão tentando incitar uma revolta geral contra os senhores Shedim e apreendem o Pandaemonium. Sim, eu sei o quão ridículo isso soa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eles são realmente uma ameaça?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sabemos o que eles são capazes-eles são apenas uma multidão de mente fraca ou há algo mais na sua "revolução".</p>
+<p> </p>
+<p>Mas sabemos disso: eles estão no Altgard Ice Lake, logo depois das paredes da fortaleza.</p>
+<p> </p>
+<p>Eles provavelmente estão assistindo quem está indo e vindo. E você vai ensinar a eles os perigos da curiosidade.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1_1">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Vamos mostrar a esses patifes que a força unificada de Asmodae não tem espaço para sua "revolução". Siga para o norte daqui e ataque seus acampamentos nas margens de Altgard Ice Lake.</p>
+<p> </p>
+<p>Se você matar quatro ou mais[%dic:STR_DIC_E_12], isso provavelmente ensinará aos outros uma lição. E tudo bem se alguns sobrevivem para dizer aos "líderes rebeldes" que a Fortaleza Altgard é leal aos senhores Shedim!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Com os rebeldes!"</act>
+</selects>
+<voice file="Q2012-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphel e os Senhores Shedim nos guiaram com segurança pelo caos do cataclismo, e esses idiotas lefaristas querem que outra pessoa lidere asmodae? Eles estão ao sol há muito tempo.</p>
+<p> </p>
+<p>Mas eu não quero que eles tenham nos espionando e não quero que a propaganda envenenando as tropas aqui.</p>
+<p> </p>
+<p>Você colocou a revolução deles de volta alguns passos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Na verdade eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sangue para sangue, [%username].</p>
+<p> </p>
+<p>Tenho certeza que você chamou a atenção deles. Em breve eles vão se afastar e toda a sua "revolução" desaparecerá da memória.</p>
+<p> </p>
+<p>Vou chamá -lo novamente se tivermos mais problemas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Meibjar].</p></step>
+<step><p visible="[%3]">Derrotar os revolucionários lefaristas escondidos perto do[%dic:STR_DIC_W_DF1A_2]([%5]/4).</p></step>
+<step><p visible="[%6]">Volte para [%dic:STR_DIC_N_Meibjar].</p></step>
+</steps>
+<p>Ordem: Os revolucionários lefaristas estão acampados em torno de Altgard Ice Lake. Livre -se deles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Meiyer pediu que você ensinasse uma lição aos revolucionários lefaristas que invadiram o lago de gelo fora da fortaleza de Altgard.</p>
+<p> </p>
+<p>Você derrotou os revolucionários lefaristas, conforme solicitado e relatou seu sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

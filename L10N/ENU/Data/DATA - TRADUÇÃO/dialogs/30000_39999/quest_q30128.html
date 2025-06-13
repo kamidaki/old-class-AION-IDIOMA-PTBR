@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tataka olhou para o arco e precisa de ajuda para consertar.</p>
+<p> </p>
+<p>O arco tem danos ruins e cheira a algo que deita ovos e morra em cima dele, depois os ovos eclodem e morrem em cima de uma coisa já morta ... cheiro ruim.</p>
+<p> </p>
+<p>Daeva está disposto a ajudar a consertar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Se eu não tiver que lavá -lo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, sem lavar, Daeva. Tataka Stick Bow em panela de ensopado, enquanto o cheiro sai direto.</p>
+<p> </p>
+<p>Mas Tataka precisa de Noxallon Ingot para reparar o arco. NOXALLON NOTOTS se forma na antiga batalha entre Siel e Senhor Dragão Tiamat. Grande batalha! Calor quente! Muita energia! Então Kaboom! Mudança de paisagem inteira!</p>
+<p> </p>
+<p>Após a batalha, os lingotes de Noxallon se formam, mas agora muito difíceis de encontrar. Daeva está disposto a tentar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas poucos[%dic:STR_DIC_I_Insidium_01_dark] Ainda estou por perto, mas Tataka sabe onde procurar.</p>
+<p> </p>
+<p>Daeva pergunta a Reian Ancian[%dic:STR_DIC_N_Aglauros]. Tataka acha que a tribo Reian ainda tem poucos lingotes. Se Daeva ajudar Agulauros, poderá obter lingote.</p>
+<p> </p>
+<p>Se o Daeva puder obter NOXALLON NOTOT, Tataka reparará o arco supremo de Siel.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei com o lingote."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva não quer reparar o arco?</p>
+<p> </p>
+<p>Então Daeva está livre para o momento? Tataka apenas prepara Kobold Sushi! Ingredientes pouco estragados e caíram na sujeira e queimaram pouco ... mas ainda têm um ótimo sabor!</p>
+<p> </p>
+<p>Daeva espera momento, Tataka recebe prato.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uh ... talvez outra hora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva está de volta na hora!</p>
+<p> </p>
+<p>Tataka acabou de terminar Kobold Sushi Platter. É delicioso Daeva, todos os Kobolds adoram! Não causa o esôfago humano ao esôfago, essa foi uma receita diferente.</p>
+<p> </p>
+<p>Daeva quer ser o primeiro a tentar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sobre este lingote ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Daeva não tem [%dic:STR_DIC_I_Insidium_01_dark]?</p>
+<p> </p>
+<p>Daeva precisa Fale com [%dic:STR_DIC_N_Aglauros]Para obter NOXALLON NOTOT. E Daeva precisa ter as duas coisas no cubo!</p>
+<p> </p>
+<p>Ou Daeva voltou para experimentar Kobold Sushi? Espere um momento Daeva, Tataka preparará o prato!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor eu continuar ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Daeva descobriu o que Tataka precisa!</p>
+<p> </p>
+<p>Segure Daeva, Tataka Fix Bow ....</p>
+<p> </p>
+<p>Hiiiiyaaaa! Agora ... apenas ... pouco ... mais ... e feito! Daeva desenha cordas, Bow é melhor que novo. O artesanato de Kobold é o melhor!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30128] e trazê -lo para [%dic:STR_DIC_N_DF4_NPC_Nehmatan].</p>[%collectitem]</step>
+</steps>
+<p>Obtenha o NOXALLON LINGOT, um material que pode ser usado para reparar o arco supremo do SIEL.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tataka disse que precisava de um material especial para reparar o arco supremo de Siel.</p>
+<p> </p>
+<p>Você foi ver Aglauros e recebeu o NOXALLON LINGOT por fazer um favor a ele. Com o lingote, Tataka restaurou o arco no arco supremo de um canto nobre.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Exploda esses arcontes desajeitados! Como um estudioso deve fazer qualquer trabalho com eles pisoteando todos os meus espécimes!</p>
+<p> </p>
+<p>Eu tenho muito o que fazer, e tão pouco tempo-agora mais do que nunca com o Balaur e Elyos respirando pelo meu pescoço.</p>
+<p> </p>
+<p>Eu não acho que você está disposto a ajudar, é você, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou ouvindo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você reconheceria a importância da minha pesquisa.</p>
+<p> </p>
+<p>Agora então ... quando os arcontes passaram pelo Vorgaltem Battlefield, eles esmagaram o baluarte de Balaur.</p>
+<p> </p>
+<p>Admito que era uma visão espetacular de se ver. Mas depois que a batalha acabou com os arcontes moídos sobre o baluarte dizimado e pisoteou todos os tipos de materiais raros que eu poderia ter usado para minha pesquisa.</p>
+<p> </p>
+<p>Eu preciso desses materiais ... antes que estejam arruinados. Você pode me ajudar, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Agora, então, isso deve ser simples.</p>
+<p> </p>
+<p>Eu preciso que você vá para a beira do campo de batalha de Vorgaltem e inspecionar o [%dic:STR_DIC_OBJ_DF4_Trash_Q21212] S espalhado ao redor da parede desabada.</p>
+<p> </p>
+<p>Eles podem parecer rochas inúteis, mas para um estudioso, são valiosos material de pesquisa. Estou contando com você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou te decepcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Venha agora, [%username]!</p>
+<p> </p>
+<p>Isto é para minha pesquisa! Você consegue pensar em uma causa mais digna?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso pensar em alguns ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu irmão mais novo Itar e eu podemos conduzir nossa pesquisa em diferentes áreas, mas compartilhamos a mesma paixão pelo conhecimento.</p>
+<p> </p>
+<p>Eu sei, eu sei, eu pareço o inteligente da família, mas o ITAR é realmente bastante inteligente. Embora eu me preocupe com ele ... ele é sempre tão ousado quando se trata de realizar pesquisas. Essa ousadia pode ser o fim dele um dia.</p>
+<p> </p>
+<p>Bem, então você trouxe o que eu perguntei?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão suas ... pedras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que você não encontrou o que eu estava procurando ....</p>
+<p> </p>
+<p>Isso é mais decepcionante, [%username].</p>
+<p> </p>
+<p>Devo ter esses espécimes para minha pesquisa! Por favor, se apresse, por uma questão de conhecimento!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah sim, é isso, [%username].</p>
+<p> </p>
+<p>Não, não é apenas lixo! Este é um espécime raro e valioso!</p>
+<p> </p>
+<p>Ao estudar este espécime, poderei aprender mais sobre o Balaur, e o conhecimento é metade da batalha, meu amigo. Obrigado pela sua ajuda-por favor, leve isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir material de [%dic:STR_DIC_OBJ_DF4_Trash_Q21212] e trazê -lo para [%dic:STR_DIC_N_Tanar].</p>[%collectitem]</step>
+</steps>
+<p>Procure material útil próximo aos destroços do baluarte nos arredores do campo de batalha de Vorgaltem. Traga o que você encontra para Tanar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tanar pediu que você trazia para ele os restos do baluarte à beira do campo de batalha de Vorgaltem para que ele possa realizar pesquisas sobre o Balaur.</p>
+<p> </p>
+<p>Você trouxe o material de Balaur aparentemente inútil para Balaur para Tanar, e ele ficou muito feliz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

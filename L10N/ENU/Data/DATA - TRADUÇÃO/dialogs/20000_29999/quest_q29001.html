@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já foi apenas mais um aluno adequado, [%username]. Mas agora eu imagino que você possa me ensinar uma coisa ou duas!</p>
+<p> </p>
+<p>A maioria dos que atinge o nível de especialista estuda essencetapping há anos. Eu nunca pensei que ninguém, muito menos um aluno meu, se tornaria um especialista tão rapidamente.</p>
+<p> </p>
+<p>Bem, então, vamos tornar isso oficial!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como fazemos isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já ganhou meu apreço.</p>
+<p> </p>
+<p>Mas isso não será suficiente por si só. Para suportar o título de especialista, você precisa da aprovação do governador.</p>
+<p> </p>
+<p>O que você acha, você quer este título?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Escreverei uma carta de recomendação para você que você pode mostrar a Vidar.</p>
+<p> </p>
+<p>Haverá uma cerimônia na qual você será oficialmente nomeado especialista em Essencetapping, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ansioso por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... você não quer receber o título de especialista?</p>
+<p> </p>
+<p>Admito que é apenas uma formalidade-você tem a habilidade, mas alguma burocracia é necessária ... você deve entender, [%username].</p>
+<p> </p>
+<p>Se você recusar este título, ele refletirá mal sobre o mestre ... significando -me. Por favor, reconsidere.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu odeio burocratas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me lembro de convocar você ... o que você quer?</p>
+<p> </p>
+<p>É realmente tão importante que você precise perturbar o governador?</p>
+<p> </p>
+<p>Diga -me o que você quer de mim já.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta de Latatusk."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já chegou tão longe ... muito surpreendente, [%username].</p>
+<p> </p>
+<p>Você é mais ambicioso do que eu pensava.</p>
+<p> </p>
+<p>Agora que você é um mestre em Essencetapping, use suas habilidades incríveis para asmodae.</p>
+<p> </p>
+<p>Sinta -se à vontade para me visitar de novo!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Latatusk, o mestre do Essencetapping, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O mestre de Essencetapping Latatusk disse que ele não tem mais nada para ensinar a você. Então ele recomendou o título de especialista.</p>
+<p> </p>
+<p>Você recebeu uma carta de recomendação e levou -a ao governador Vidar, que concedeu o título em uma cerimônia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

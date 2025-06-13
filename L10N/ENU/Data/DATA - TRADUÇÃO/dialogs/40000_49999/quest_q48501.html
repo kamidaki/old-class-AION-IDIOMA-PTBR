@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva procurando moedas especiais?</p>
+<p> </p>
+<p>O Lolarinerk oferece uma ótima taxa de câmbio em moedas, se estiver interessado.</p>
+<p> </p>
+<p>Você me dá moedas de que preciso, eu dou a pena ... err ... moedas especiais. Extra especial. Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Oh sério."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente! Akakakakak! Não, ouça. Lolariner está procurando fichas de ala. Alguns Daevas precisam, outros não.</p>
+<p> </p>
+<p>O mesmo que Lolarinerk. Lolariner tem um token cruzado, não precisa, Nyerk.</p>
+<p> </p>
+<p>Você quer negociar com Lolarinerk?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva inteligente. O preço de mercado para 1 token cruzado é de 7 tokens da ala. SOM FAIR?</p>
+<p> </p>
+<p>Você dá Shugo 7[%dic:STR_DIC_I_COIN_D_PROTECTION_01] S, Shugo dá a você este símbolo de cruzado brilhante, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Claro, se eu tiver o suficiente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lolariner tem o melhor negócio em Atreia, mas Daeva não está tão interessado, ao que parece. Nyerk!</p>
+<p> </p>
+<p>Volte quando precisar de fichas cruzadas, Nyerk Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Quando, ou se?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva trouxe tokens para trocar?</p>
+<p> </p>
+<p>Deixe Lolariner ver.</p>
+<p> </p>
+<p>Tenho que ver se Daeva trouxe os certos, Nyerk. Alguns Daevas são facilmente confusos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Dê uma olhada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza de que Lolarinerk já falou com você antes?</p>
+<p> </p>
+<p>Shugo tem certeza que ela disse 7[%dic:STR_DIC_I_COIN_D_PROTECTION_01] para um token cruzado.</p>
+<p> </p>
+<p>Daeva deve limpar as orelhas. Talvez encontre 7 tokens lá.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meus ouvidos estão bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses tokens reais da ala? Cheiro real, gosto real. Provavelmente real. Ou boa falsificação. A mesma diferença, Lolarinerk pode vendê -los de qualquer maneira.</p>
+<p> </p>
+<p>Aqui está o token cruzado de Daeva. Garantido real. Não falsificado. Lolariner nunca trocaria moedas falsas.</p>
+<p> </p>
+<p>O mesmo negócio sempre aberto, a propósito. Volte se quiser negociar mais! Akakakakak!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_COIN_D_PROTECTION_01] e trazê -los para [%dic:STR_DIC_N_Shugo_Exchange_02].</p>[%collectitem]</step>
+</steps>
+<p>Lolariner coleciona fichas da ala. Traga seus tokens de ala em troca de um token cruzado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O colecionador de moedas Lolarinerk disse que ela quer trocar um token cruzado por tokens da ala.</p>
+<p> </p>
+<p>Você deu a Lolariner seus fichas de ala e recebeu um token cruzado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Azphelumbra, daemons -</p>
+<p> </p>
+<p>Um pesquisador de estudantes nos contratou para trazê -la [%dic:STR_DIC_I_quest_46526a].</p>
+<p></p>
+<p>Como sempre, o orgulho dos daemons de Charlirunerk está em jogo. Não devemos falhar!</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]</p>
+<p></p>
+<p>2. Localização:[%dic:STR_DIC_W_SZ_DF4_C4]</p>
+<p></p>
+<p>3. Detalhes: Diz -se que este Wraithling se comunica com outros do gênero através de suas raízes. O cliente deseja estudar esse mecanismo.</p>
+<p> </p>
+<p>As raízes devem ser cortadas da criatura imediatamente após a derrota para ser digna de pesquisa.</p>
+<p> </p>
+<p>- Charlirunerk, fundador, daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hora de jogar jardineiro ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sobre o que as plantas "falam" um com o outro? "Olá"? "Como vai você"? Muito confuso, Nyerk!</p>
+<p> </p>
+<p>Mas é isso que o cliente está tentando descobrir! Ouvi dizer que ela é filha de família rica, para que ela possa nos contratar!</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An]Deve falar muito para ser tão interessante! Você tem progresso para relatar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim eu faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, não, você não! O relatório me diz como dizer à raiz de Bitterwing da raiz regular da planta!</p>
+<p> </p>
+<p>O cliente sabia que o Daevas teria difícil contar ou tentar puxar um rápido! Espero que você não estivesse fazendo isso ....</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_quest_46526a]É o que o cliente precisa, então é melhor você fazer o que ela quer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ela vai ter em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm. Sim, ele corresponde à descrição que o cliente nos deu. Ainda parece bastante normal, no entanto.</p>
+<p> </p>
+<p>Se eu colocar isso no meu ouvido, vou ouvir isso falar? Eu entenderia o que está dizendo?</p>
+<p> </p>
+<p>Bem, o cliente ficará muito feliz de qualquer maneira. Bom trabalho, Daeva!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter a raiz de [%dic:STR_DIC_M_DF4_DayQ_Vampire_DR_55_An] e trazê -lo para [%dic:STR_DIC_E_46500].</p>[%collectitem]</step>
+</steps>
+<p>Você tem uma tarefa dos daemons de Charlirunerk. Realizar o pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk para adquirir uma amostra de planta da Bitterwing, um poderoso Waithling, para pesquisas.</p>
+<p> </p>
+<p>Você lutou contra a criatura cruel e cortou sua raiz para o cliente. Você recebeu um token de daemon por seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

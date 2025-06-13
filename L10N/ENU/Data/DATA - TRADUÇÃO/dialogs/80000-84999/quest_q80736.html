@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Chegue mais perto, AK.</p>
+<p> </p>
+<p>Daeva é apenas um Daeva normal e não um membro da Dark Star.</p>
+<p> </p>
+<p>De The Dark Star, consideramos que todos os Daevas são um pouco especiais.</p>
+<p> </p>
+<p>Daeva certamente pode ver que Shugo nem sequer tem tempo para comer com toda essa publicidade.</p>
+<p> </p>
+<p>Shugo não pode sair aqui. Daeva poderia comprar uma ração de comida para Shugo da Máquina de Vendas de Estrela Negra?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Robo Shugo está com muita fome, Akakak.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a ração alimentar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>É assim que deve provar! Oleoso e pegajoso.</p>
+<p> </p>
+<p>Akak!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tenha medo do Robo Shugo incompleto.</p>
+<p> </p>
+<p>Robo Shugo em breve se tornará um grande shugo robo.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós somos a estrela sombria. Estamos aqui para Daevasas especiais. Akakak.</p>
+<p> </p>
+<p>Como membro, Daeva pode aceitar missões ainda mais emocionantes, AK!</p>
+<p> </p>
+<p>A fome de Shugo foi aliviada novamente graças à boa natureza de Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo é muito grato ao Daeva convencional.</p>
+<p> </p>
+<p>Mas Daeva não gostaria de se juntar à Dark Star para tornar nosso sonho possível juntos, AK? Nyerk!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Compre uma ração de alimentos para Robo Shugo da Máquina de Vendas de Estrela Negra.</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com o incompleto Robo Shugo.</p></step>
+</steps>
+<p>Compre uma ração de alimentos da máquina de venda automática nas proximidades do Robo Shugo incompleto, que cuida da publicidade.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O ocupado e incompleto Robo Shugo pediu uma ração de alimentos.</p>
+<p> </p>
+<p>Você comprou uma ração de alimentos para Robo Shugo da Máquina de Vendas de Estrela Negra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

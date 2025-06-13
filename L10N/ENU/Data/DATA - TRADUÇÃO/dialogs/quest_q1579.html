@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Medeus Manor é invadida com os Mortos Vivos. Eu sei que eles eram apenas colonos tentando sobreviver, mas na morte eles são um risco.</p>
+<p> </p>
+<p>Não posso deixar isso continuar.</p>
+<p> </p>
+<p>Precisamos descobrir o que causou, por que temos tantos Mortos Vivos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qualquer resposta seria boa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, a resposta certa seria a melhor.</p>
+<p> </p>
+<p>Agora, encontrei alguns ossos de cores estranhas em Medeus Manor West. Os ossos antigos desaparecem, mas estes ... a cor parecia artificial-apenas estranha.</p>
+<p> </p>
+<p>Eles podem ser uma pista de por que os moradores surgiram dos mortos, se eu puder dar uma olhada mais de perto. Ou talvez o Santum possa nos ajudar. Você por favor, colete alguns para mim, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrará[%dic:STR_DIC_I_QUEST_1579a]perto dos edifícios em torno de Medeus Manor.</p>
+<p> </p>
+<p>Cinco devem ser suficientes para minha pesquisa.</p>
+<p> </p>
+<p>Obrigado pela ajuda!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"No caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ajudar os Mortos Vivos ajuda a vida. Está tudo conectado.</p>
+<p> </p>
+<p>Não vou perguntar novamente, no entanto. Não faz sentido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso fazer isso. Mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma! Você trouxe os ossos descoloridos para minha pesquisa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Cinco deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum ... não são cinco ossos. Eu não sei o que é, mas ...</p>
+<p> </p>
+<p>Uma piada é uma piada, e o dever é dever.</p>
+<p> </p>
+<p>Vá e pegue os ossos descoloridos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu ... uh, estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É exatamente isso que eu preciso.</p>
+<p> </p>
+<p>É claro que vou precisar de ajuda do Santum, então os arrumarei e os enviarei para descobrir se a descoloração tem algo a ver com as mudanças.</p>
+<p> </p>
+<p>Obrigado novamente, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1579a] e leve-os para [%dic:STR_DIC_N_Edoras].</p>[%collectitem]</step>
+</steps>
+<p>Os ossos descoloridos podem revelar por que as pessoas estão ficando Mortos Vivos. Edoras pediu que você fosse a Medeus Manor para obter alguns para sua pesquisa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Edoras lhe disse que ele precisava dos ossos descoloridos para descobrir por que os moradores ficaram Mortos Vivos. Você foi para Medeus Manor e os pegou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

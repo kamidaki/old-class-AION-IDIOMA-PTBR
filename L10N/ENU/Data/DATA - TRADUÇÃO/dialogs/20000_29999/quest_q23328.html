@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia destruir o [plur][%dic:STR_DIC_M_LDF5B_D1_Element1_Air_65_An], o [plur][%dic:STR_DIC_M_LDF5B_D1_Lupyllini_65_n] e o [plur][%dic:STR_DIC_M_LDF5B_D1_CondorDr_65_An]na área?</p>
+<p> </p>
+<p>Não tenho forças para cuidar do ambiente também.</p>
+<p> </p>
+<p>Temos que eliminá -los agora antes de virem nos atrapalhar mais tarde, quando estamos em batalha.</p>
+<p> </p>
+<p>Afinal, é problemático se você se distrair no momento exato em que Elyos ou Balaur atacam.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom estarmos preparando tudo para a batalha.</p>
+<p> </p>
+<p>Caso contrário, você se arrependeria de não ter feito isso no meio da batalha.</p>
+<p> </p>
+<p>Você limpou o meio ambiente?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por cuidar dessa tarefa para mim.</p>
+<p> </p>
+<p>Agora que a região está limpa, não preciso mais me preocupar em ter problemas de concentração.</p>
+<p> </p>
+<p>[%username], Não vou esquecer sua ajuda e notificarei meus superiores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_LDF5B_D1_Element1_Air_65_An]([%2]/3).</p>
+<p visible="[%3]">Matar [%dic:STR_DIC_M_LDF5B_D1_Lupyllini_65_n]([%5]/3).</p>
+<p visible="[%6]">Matar [%dic:STR_DIC_M_LDF5B_D1_CondorDr_65_An]([%8]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard15_D]%.</p></step>
+</steps>
+<p>Elimine fatores que estão trazendo desordem para a área.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ube pediu que você elimine os fatores perturbadores na área para que ele pudesse se concentrar totalmente na batalha.</p>
+<p> </p>
+<p>Depois de eliminar os espíritos antigos, os Plumas Longtail e o Grifos Vermelho selvagem, você voltou e recebeu agradecimentos por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

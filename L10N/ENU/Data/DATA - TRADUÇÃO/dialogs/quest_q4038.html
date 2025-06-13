@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Um dos meus homens acabou de voltar do cemitério de Baltasar com um relatório de um crânio estranho que está conversando com quem vive que passa.</p>
+<p> </p>
+<p>Ele afirma que seu nome é Groznak e pede ajuda.</p>
+<p> </p>
+<p>Eu conhecia um humano chamado Groznak uma vez, antes de subir. Quais são as chances de que essa pode ser a mesma pessoa? E ainda ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está se perguntando, não é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que me pergunto. Um crânio falante com o mesmo nome? Quem poderia inventar uma coisa dessas?</p>
+<p> </p>
+<p>Eu iria sozinho, mas somos tão abreviados, nem eu nem nenhuma das minhas tropas podemos ser poupadas para investigar.</p>
+<p> </p>
+<p>[%username], você por favor encontra [%dic:STR_DIC_OBJ_NPC_DF2a_NPC_SleeplessSkull] e veja o que quer? Vamos colocar este cadáver para descansar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Sangue para sangue!</p>
+<p> </p>
+<p>[%dic:STR_DIC_OBJ_NPC_DF2a_NPC_SleeplessSkull] está no cemitério de Baltasar. Se for tão falado quanto relatado, você não deve ter problemas para encontrá -lo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para o sangue, de fato."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Essa não é uma palavra que eu ouço. Ainda assim, você tem seu próprio destino para conhecer.</p>
+<p> </p>
+<p>Na verdade, não é como se o crânio estivesse indo a qualquer lugar. Vou olhar para isso a tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra vez, Surt."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Azphelumbra, Daeva! Eu imploro, me ajude!</p>
+<p> </p>
+<p>Você está surpreso, mas eu estou a sério. Estou preso e desesperado.</p>
+<p> </p>
+<p>Eu morri ... há muito tempo. No entanto, não posso passar para o fluxo de Aether e desejo liberar. Você vai me ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que você quer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu nome é-was-groznak. Eu conheci meu destino bravamente, se eu puder me lisonjear. Minha morte veio de repente, no entanto, e não havia ninguém para cuidar de mim.</p>
+<p> </p>
+<p>Eu não tinha enterro. Meu corpo está faltando algumas partes essenciais e, sem ele, estou preso aqui, desonrado e esquecido. Receio que o mal deste lugar eventualmente corrompe minha mente.</p>
+<p> </p>
+<p>Não posso esperar que você encontre meus próprios membros, Daeva. Mas mesmo um corpo incompatível seria um lançamento que eu só posso imaginar. Olhe para o sudeste durante todo o cemitério e veja o que você pode encontrar. Alguns ossos do[%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038A], o [%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038B], e o [%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038C]pode me adequar a mim. Minha gratidão será eterna.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou tentar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, você encontrou os ossos? Estou tão cansado de esperar. O vento assobia através desse crânio velho e me deixa louco.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Os ossos estão aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva! Você voltou ... de mãos vazias? O que você tem feito? Não é como se não houvesse um cemitério na mão.</p>
+<p> </p>
+<p>Deixe -me dizer de novo, e desta vez falarei devagar, para que você possa entender. Traga ... eu ... ossos do[%dic:STR_DIC_I_QUEST_4038a], o [%dic:STR_DIC_I_QUEST_4038b] e o [%dic:STR_DIC_I_QUEST_4038c]. Perdoe meu temperamento, mas certamente você pode entender.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro ... vou encontrar isso para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim ... isso será suficiente. Peito, pernas e braços ... tudo o que eu poderia exigir.</p>
+<p> </p>
+<p>Devo pedir outro favor ... você montaria o corpo para mim? Eu não posso me mudar para fazer isso sozinho ...</p>
+<p> </p>
+<p>Oh, tons, estou tão perto ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Tons e estrelas, sim. Obrigado, [%userclass]! Com este corpo, eu poderia viver para sempre!</p>
+<p> </p>
+<p>Tudo está finalmente no lugar. Bem, quase tudo.</p>
+<p> </p>
+<p>Fique quieto, Daeva. Há apenas mais um item que eu preciso-sua alma!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Sombra de Azphel!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você voltou. Você investigou o crânio falante? Se não, então ...</p>
+<p> </p>
+<p>Ah, não importa. Eu vejo grave sujeira sobre seus sapatos. Você esteve no cemitério de Baltasar.</p>
+<p> </p>
+<p>Estou aliviado por ver você seguro. Eu temia que sua tarefa pudesse ter sido mais perigosa do que percebemos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Groznak tentou me matar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sombra de Azphel, é verdade! O Groznak que eu conhecia era um velho xamã assustador que morava na área. Ele desapareceu décadas atrás.</p>
+<p> </p>
+<p>Parecia que ele estava tentando ficar morto -vivo para viver para sempre, possivelmente até tentando se tornar um lich. Sua morte teria dado a ele o último ingrediente para completar sua transformação.</p>
+<p> </p>
+<p>Sua força você credita. Vou ver que você é reembolsado pelo risco.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_OBJ_NPC_DF2a_NPC_SleeplessSkull].</p></step>
+<step><p visible="[%3]">Obter ossos do[%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038A], o [%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038B] e o [%dic:STR_DIC_OBJ_DF2A_Corpse_Q4038C], e leve-os para [%dic:STR_DIC_OBJ_NPC_DF2a_NPC_SleeplessSkull].</p>[%collectitem]</step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_OBJ_NPC_DF2a_NPC_SleeplessSkull].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Surt].</p></step>
+</steps>
+<p>Investigue os relatos de um crânio falado chamado Groznak no cemitério de Baltasar.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Surt pediu que você investigasse um relatório de um crânio falante no cemitério de Baltasar.</p>
+<p> </p>
+<p>Quando você o encontrou, ele se apresentou como Groznak e implorou que você montasse um corpo para que ele pudesse retornar ao fluxo de Aether.</p>
+<p> </p>
+<p>Você encontrou ossos de peito, perna e braço e os levou ao crânio, montando um corpo para ele. Em seguida, ficou louco e convocou um morto -vivo para atacá -lo.</p>
+<p> </p>
+<p>Quando você voltou a Surt, ele explicou que Groznak era um xamã que estava tentando se tornar um lich. Ele expressou alívio por você derrotar os Mortos Vivos do mal e se ofereceu para pagar pelo inconveniente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

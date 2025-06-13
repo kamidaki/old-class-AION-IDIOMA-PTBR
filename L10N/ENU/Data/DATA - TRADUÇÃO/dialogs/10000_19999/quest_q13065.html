@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Exército de Beritra montou um posto perto do portão sul de Eremion e aumentou o número de tropas.</p>
+<p> </p>
+<p>Se as coisas continuarem assim, em breve elas terão todas as muralhas sob controle.</p>
+<p> </p>
+<p>Por favor, vá imediatamente ao poste perto do portão sul de Eremion e elimine o [%dic:STR_DIC_E_LDF5b_A2_Vri].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Até o Beritra conhece a importância do portão sul de Eremion.</p>
+<p> </p>
+<p>Se o número de Beritra exceder uma certa quantidade, as muralhas cairão em suas mãos.</p>
+<p> </p>
+<p>Matar [%dic:STR_DIC_E_LDF5b_A2_Vri] Agora e impedem o exército de Beritra de aumentar a quantidade de suas tropas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Se tivéssemos esperado mais, o exército de Beritra teria se tornado ainda maior e eles já teriam conquistado as muralhas.</p>
+<p> </p>
+<p>Eu acho que, graças a você, poderemos nos concentrar apenas nos movimentos do Exército de Beritra.</p>
+<p> </p>
+<p>O Exército de Beritra tentará conquistar as muralhas novamente no futuro próximo, depois de aumentarem seus números. Então, estou pedindo mais ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_LDF5b_A2_Vri]([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Phobos_E]%.</p></step>
+</steps>
+<p>Elimine a 43ª tropa de inteligência de Beritra que está tentando controlar o portão sul da Eremion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Povos pediu que você eliminasse a 43ª tropa de inteligência de Beritra que está tentando controlar o portão sul da Eremion.</p>
+<p> </p>
+<p>Quando você voltou a Povos depois de eliminar a 43ª tropa de inteligência de Beritra, ele agradeceu e pediu que você o ajudasse um pouco mais, se possível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

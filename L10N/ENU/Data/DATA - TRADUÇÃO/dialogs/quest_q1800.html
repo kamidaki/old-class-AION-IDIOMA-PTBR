@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você disse que encontrou o diário de Jaiorunerk em Heiron? Na mansão Medeus?</p>
+<p> </p>
+<p>Você encontrou mais alguma coisa lá? Um pedaço de roupa ou um ... um ... cadáver ...?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sinto muito ... não."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Sim, suponho que qualquer coisa que possa ter sido deixada teria apodrecido há muito tempo.</p>
+<p> </p>
+<p>E ainda ... você estaria disposto a ajudar? Para ... fechamento?</p>
+<p> </p>
+<p>Se você encontrar o dele [%dic:STR_DIC_OBJ_LF3_Tombstone_Q1800], ou mesmo pedaços de seus ossos, você derramaria isso sobre isso? É leite misturado com mel. Jaiorunerk costumava adorar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Avise -me quando terminar. Eu gostaria de saber o resultado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem. Volto quando terminar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei ... isso é tão difícil quanto encontrar um único grão em um deserto arenoso, mas ... vou ficar louco se não fizer nada.</p>
+<p> </p>
+<p>Jaiorunerk era como meu próprio filho, Nyerk.</p>
+<p> </p>
+<p>Por favor me ajude. Por favor ... reconsidere.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(É menor que outras lápides. Embora a pedra seja usada pelo vento e pela chuva, o epitáfio permanece.)</p>
+<p> </p>
+<p>"Aqui está Jaiorunerk, o modelo de Heiron."</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Despeje o leite e o mel na lápide.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ao olhar para a lápide, o rosto de um shugo entra em foco.)</p>
+<p> </p>
+<p>(Sorria fracamente e logo desaparece. Todo o leite absorveu a lápide.)</p>
+<p> </p>
+<p>(Você deve voltar para [%dic:STR_DIC_N_Shugo_AB1_7] e diga a ele o que aconteceu.)</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Termine de examinar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, você voltou.</p>
+<p> </p>
+<p>Você encontrou Jaiorunerk? Ou ... ou qualquer vestígio dele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu encontrei a lápide."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É um alívio ... tão alívio que ele pelo menos tem um túmulo. Obrigado por ajudar.</p>
+<p> </p>
+<p>Não tenho nada para lhe dar, mas deixe -me retribuir, expandindo seu cubo.</p>
+<p> </p>
+<p>Muito obrigado, Nyerk.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_LF3_Tombstone_Q1800] e faça uma oferta da comida favorita de Jaioruner.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_AB1_7].</p></step>
+</steps>
+<p>Despeje o leite misturado com mel na lápide de Jaiorunerk para Vindachinerk e console seu espírito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vindachinerk queria consolar o espírito de Jaiorunerk e pediu que você encontrasse seus restos mortais.</p>
+<p> </p>
+<p>Você descobriu a lápide de Jaiorunerk no cemitério público da mansão Medeus, e quando você derramou uma bebida dada a você por Vindachinerk, o rosto de Jaiorunerk apareceu brevemente antes de desaparecer.</p>
+<p> </p>
+<p>Você voltou a Vindachinerk para contar o que aconteceu no cemitério. Ele agradeceu e expandiu seu cubo em gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

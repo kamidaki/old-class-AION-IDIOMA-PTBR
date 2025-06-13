@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se pergunta no meu rosto, pequena criatura?</p>
+<p> </p>
+<p>Corra você não com medo do grande Bharakha. Eu sou apenas uma coisa de estrela de beleza e lamentável.</p>
+<p> </p>
+<p>Preso para a morte, eu e o Krall que seguem meu padrão? O que acontece com eles? E o orgulhoso Ulaguru, comandante de muitas legiões?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu ouvi o nome."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É uma coisa justa. Se você ouvirmos um, Ulaguru permanece mais corajoso. Ele luta inigualável e pensa com uma inteligência mais forte do que algum Balaur.</p>
+<p> </p>
+<p>Se ele vive, traga uma mensagem para ele. Diga a ele que seu antigo governante Bharakha se afunda em uma miséria pior que a morte.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Segure ... não isso. Nunca esse conto de aflição.</p>
+<p> </p>
+<p>Diga a ele que as histórias são fiadas ainda de Ulaguru, leal Herói Krall, que alguns acreditam mortos por muito tempo. Diga a ele: "Podemos sobreviver à nossa época, mas não desaparecemos. Nós nos levantamos novamente em épocas sem número". Parece positivo, não é?</p>
+<p> </p>
+<p>O escuro, [%dic:STR_DIC_N_Shulack_DC1], fala por mim fora deste lugar. Hie para ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não tenho certeza se aprovo, mas tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu covarde raso!</p>
+<p> </p>
+<p>Você teme o poderoso Ulaguru?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tão improvável."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você quer?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Umm. Esse cara de Bharakha disse que você sabia ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bharakha, foi?</p>
+<p> </p>
+<p>Sim, eu posso receber uma mensagem para Ulaguru. Mas não daqui.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_N_Shugo_DC1_23]. Diga a ele que Chaokiki lhe enviou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Bem, você fez, então é verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Chopirunerk muito ocupado.</p>
+<p> </p>
+<p>Sem tempo para Daevas.</p>
+<p> </p>
+<p>Não negocia. Somente trabalho, trabalho, trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Chaokiki me enviou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que não disse isso imediatamente?</p>
+<p> </p>
+<p>Daeva precisa receber mensagem para o lugar desconhecido, talvez por mágica? Chopirunerk está aqui!</p>
+<p> </p>
+<p>Mover bens e informações, muito mais lucrativo que o trabalho, o trabalho, o trabalho. Akakakak!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Transmitir a mensagem de Bharakha para [%dic:STR_DIC_N_Shulack_DC1].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_DC1_23].</p></step>
+</steps>
+<p>Bharakha, um fantasma em Raksang, tem uma mensagem para Ulaguru. Pegue -o para ele de alguma forma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bharakha, um fantasma em Raksang, falou de Ulaguru-uma Krall que o serviu bem e bravamente. Ele pediu que você entregasse uma mensagem de esperança a Ulaguru.</p>
+<p> </p>
+<p>Como você não sabia como encontrar Ulaguru, ele o enviou para levar a mensagem a Chaokiki, um correio discreto.</p>
+<p> </p>
+<p>Mas ele acabou sendo um shulack do meio que o enviou a um shugo chamado Chopirunerk. Choppy disse que levaria sua mensagem, sem problemas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

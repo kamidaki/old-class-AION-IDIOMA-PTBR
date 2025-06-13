@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo! Eu tenho uma missão difícil que somente você pode realizar.</p>
+<p> </p>
+<p>É sobre forçar [%dic:STR_DIC_M_DF5_J_QuestVritra_Kn_64_Ae]para nos dar informações.</p>
+<p> </p>
+<p>O Exército de Beritra bloqueou todas as rotas para o [%dic:STR_DIC_W_DF5_SZ_K_01].</p>
+<p> </p>
+<p>Enquanto estamos presos aqui, não conseguindo mais, o Exército de Beritra já poderia ter encontrado Ereshkigal.</p>
+<p> </p>
+<p>Temos que nos apressar e chegar à torre também para que possamos parar Beritra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi?</p>
+<p> </p>
+<p>Você conseguiu obter informações sobre o exército de Beritra?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os controles do portão da dimensão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Se Distro, o comandante do Exército de Beritra, o tivesse com ele, então certamente não será um tipo simples de controles de portão de dimensão.</p>
+<p> </p>
+<p>Beritra certamente deve tê -lo usado para alcançar o paradeiro de Ereshkigal.</p>
+<p> </p>
+<p>Então talvez Beritra já esteja nesta torre.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que deve fazer.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não derrotou distro?</p>
+<p> </p>
+<p>Ou você se esconde da batalha?</p>
+<p> </p>
+<p>Você não chegou tão longe para recusá -lo agora, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Se Distro, o comandante do Exército de Beritra, o tivesse com ele, então certamente não será um tipo simples de controles de portão de dimensão.</p>
+<p> </p>
+<p>Beritra certamente deve tê -lo usado para alcançar o paradeiro de Ereshkigal.</p>
+<p> </p>
+<p>Então talvez Beritra já esteja nesta torre.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que deve fazer.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas espere um pouco.</p>
+<p> </p>
+<p>Não sabemos se o Exército de Beritra já pode ter chegado a Ereshkigal. No entanto, devemos planejar nosso próximo movimento com muito cuidado.</p>
+<p> </p>
+<p>Avisarei você quando estivermos prontos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_DF5_J_QuestVritra_Kn_64_Ae] e traga tudo o que poderia ser importante para [%dic:STR_DIC_N_DF5_Vard_E].</p>[%collectitem]</step>
+</steps>
+<p>Distro, o comandante do exército de Beritra no cemitério do dragão, provavelmente sabe mais sobre o paradeiro de Ereshkigal. Ataque comandante distro para obter informações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Suspeita -se que Distro, o comandante do exército de Beritra no cemitério do Dragão, poderia saber mais sobre o paradeiro de Ereshkigal.</p>
+<p> </p>
+<p>Você encontrou um controle de portão de dimensão na distro e a trouxe para Bard. Ele temia que Beritra já tivesse usado para alcançar o paradeiro de Ereshkigal e, portanto, você precisava agir imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

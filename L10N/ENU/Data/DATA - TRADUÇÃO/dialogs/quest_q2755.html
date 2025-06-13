@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou preparando um esquadrão de busca, para resgatar nossos arcontes capturados dos Elyos. O acampamento de prisioneiros é ao lado da fortaleza de enxofre.</p>
+<p> </p>
+<p>Isso pode facilmente ficar escamosa ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está enviando o seu melhor, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, mas eu esperava eliminar esses elimes corrompidos-o [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An] S e o [%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An] S-Avançando o pântano de enxofre primeiro.</p>
+<p> </p>
+<p>Eu quero esse resgate rápido e os homens frescos, mas ... estou colocando todos os daeva que temos ....</p>
+<p> </p>
+<p>Dizer, [%username], você é bom com bestas!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O pântano de enxofre é uma ilha flutuante que você atravessa no caminho para a fortaleza de enxofre.</p>
+<p> </p>
+<p>Limpe o [%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An] S e o [%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An] está longe do caminho para a fortaleza.</p>
+<p> </p>
+<p>Ah, e cuidado com o enxofre. O material vai te matar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ... deixaria nossos próprios irmãos e irmãs para apodrecer?</p>
+<p> </p>
+<p>Escalas e caudas! Quando você sair, vá para a Fortaleza de Teminon. É aí que seus amigos Ellie, com poucos sol do sol, passam o tempo deles!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como você me chamou?!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Você terminou, suponho. Você limpa o caminho?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Oh sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aaah, bem feito, [%username]!</p>
+<p> </p>
+<p>Você fez tudo o que pode. Cabe à sombra-e braços fortes-agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrote as brasas para o esquadrão de busca.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1141_RottenTreeB_29_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Ab1_1141_RottenTree_29_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Gagnrad].</p></step>
+</steps>
+<p>Limpe a brasa seca e a brasa do pântano de enxofre para a missão de resgate de alcançar prisioneiros de asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gagrad formou um esquadrão de comando para resgatar prisioneiros de Asmodianos dos Elyos.</p>
+<p> </p>
+<p>Você enfrentou o pântano de enxofre e acendeu um caminho através da brasa seca e da brasa para os socorristas, até a fortaleza de enxofre.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

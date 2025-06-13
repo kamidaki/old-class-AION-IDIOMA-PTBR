@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que há um problema e devemos encontrar a solução imediatamente.</p>
+<p> </p>
+<p>Você provavelmente sabe que devemos ocupar as fortalezas para conquistar Kaldor.</p>
+<p> </p>
+<p>Infelizmente, o [%dic:STR_DIC_E_LDF5_Fortress_ShadowStalker_65_An] e o [plur][%dic:STR_DIC_M_LDF5_Fortress_D1_Rottentree_BurnRe_65_An] São fatores perturbadores que não devemos subestimar.</p>
+<p> </p>
+<p>Essas criaturas estão bloqueando o caminho para a fortaleza. Isso criará problemas sérios para nossas tropas.</p>
+<p> </p>
+<p>Pesquise bem a área em torno da fortaleza e você em breve verá esses distúrbios. Você poderia eliminá -los, [%username]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve saber o quanto é importante eliminar os fatores perturbadores a caminho da fortaleza o mais cedo possível.</p>
+<p> </p>
+<p>Se a entrada da fortaleza não estiver mais bloqueada, a batalha da fortaleza poderá ser vencida com muito mais facilidade. Isso também nos pouparia muitos recursos.</p>
+<p> </p>
+<p>Por favor, limpe o caminho para a fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu sinceramente obrigado. Você concluiu a tarefa de maneira confiável.</p>
+<p> </p>
+<p>Agora podemos nos dedicar completamente à batalha.</p>
+<p> </p>
+<p>Não duvido mais que veremos a vitória da Elysea.</p>
+<p> </p>
+<p>Você conseguiu tudo isso, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate a obscura da planície queimada e dos rotrons de fogo.</p>
+<p visible="[%0]">Eliminar o [%dic:STR_DIC_E_LDF5_Fortress_ShadowStalker_65_An]([%2]/5)</p>
+<p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_LDF5_Fortress_D1_Rottentree_BurnRe_65_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5_Fortress_Alphion_E].</p></step>
+</steps>
+<p>Elimine os elementos perturbadores.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alphion encarregou você de limpar o caminho para a fortaleza.</p>
+<p> </p>
+<p>Você derrotou Rotrons e obscura. Alphion agradeceu sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

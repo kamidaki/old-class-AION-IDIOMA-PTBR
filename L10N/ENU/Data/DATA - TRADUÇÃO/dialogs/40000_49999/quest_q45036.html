@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo:</p>
+<p> </p>
+<p>Os guardas reunindo plantas e ervas nos campos de neve ao norte da fortaleza de Beluslan caíram recentemente sob ataque por Griggle Gatherers. Escusado será dizer que isso está impedindo muito nossos esforços para reabastecer nossos suprimentos médicos.</p>
+<p> </p>
+<p>Sua ajuda para caçar [%dic:STR_DIC_M_Sprigg3DF3_33_An] S é solicitado. Matar as bestas e relatar seu sucesso ao[%dic:STR_DIC_E_45007]imediatamente.</p>
+<p> </p>
+<p>A tarefa é sua, diretora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esses coletores não sobreviverão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está me trazendo ervas, ou você é um dos guardas encarregados de matar coletores de raminho? Pelo cheiro, presumo que seja o último, mas não tenho certeza ...</p>
+<p> </p>
+<p>Oh, talvez o cheiro seja só você?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Estou rindo por dentro ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os cpriscles não são conhecidos por sua ferocidade ... Eu me pergunto o que os levou a irritados. Talvez tenhamos invadido o território deles? Ou talvez ....</p>
+<p> </p>
+<p>Você acha que as ervas nessa área estão causando uma espécie de raiva? Estamos distribuindo suprimentos feitos daquelas ervas locais para nossos aliados. Eu me pergunto se ....</p>
+<p> </p>
+<p>Independentemente disso, confio que seu ataque avará a velocidade por pelo menos um pouco. Muito obrigado, [%username]. Aqui está o seu token.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_Sprigg3DF3_33_An] S. ([%2]/5)</p></step>
+<step><p visible="[%15]">Relatar os resultados para o [%dic:STR_DIC_E_45007].</p></step>
+</steps>
+<p>Uma carta chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta dos guardas de campo pede que você mate as gorjetas que interferem na coleção de ervas e plantas medicinais em Beluslan.</p>
+<p> </p>
+<p>Você executou a tarefa sangrenta e relatou os resultados ao agente de campo de Beluslan, que o recompensou pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

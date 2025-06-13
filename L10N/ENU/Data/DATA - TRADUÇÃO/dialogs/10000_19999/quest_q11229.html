@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem apenas duas estradas em nosso posto avançado. Um deles leva através deste portão.</p>
+<p> </p>
+<p>O outro atravessa o canyon, direto para o centro do túmulo de Inggison.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Como você lida com isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós patrulhamos, é claro! Não que tenhamos soldados suficientes.</p>
+<p> </p>
+<p>Recentemente, alguns dos patrulhistas voltaram doentes. Eles têm erupções cutâneas de corpo inteiro ou soluços sem fim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Ugh. Alguma ideia do que está causando isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversamos com os Reians e eles suspeitam dos cogumelos do vento que crescem nas penhascos no desfiladeiro.</p>
+<p> </p>
+<p>Meus soldados são alérgicos aos seus esporos.</p>
+<p> </p>
+<p>Você pode me ajudar a conseguir alguns cogumelos para que possamos fazer um antídoto, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para os penhascos ao longo da estrada de vento. Você deve encontrar três tipos de cogumelos.</p>
+<p> </p>
+<p>As plantas podem parecer semelhantes, mas têm efeitos diferentes. Então, precisamos de todos os tipos--[%dic:STR_DIC_OBJ_Toadstool] S, [%dic:STR_DIC_OBJ_Toadstool_002] Areia [%dic:STR_DIC_OBJ_Toadstool_003] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"E use os gêiseres se eu cair, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve ser do santuário.</p>
+<p> </p>
+<p>Da próxima vez que você vier à fortaleza, não estará aqui! Você não pode ignorar nossos problemas e ainda esperar paz e segurança.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou procurar por você se perdermos a fortaleza, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que o santuário deveria se importar com o fato de sermos fracos e distraídos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe os cogumelos para estudar".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Os asmodianos não se importam com nossas alergias quando atacam.</p>
+<p> </p>
+<p>Precisamos disso[%dic:STR_DIC_OBJ_Toadstool] S, [%dic:STR_DIC_OBJ_Toadstool_002] Areia [%dic:STR_DIC_OBJ_Toadstool_003] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos levá -los diretamente aos médicos. O "é certamente único ....</p>
+<p> </p>
+<p>Obrigado pelo seu trabalho duro, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_E_Q11229] e trazê -los para [%dic:STR_DIC_N_LF4_Gateway_Li_Guard_Boss_Q05].</p>[%collectitem]</step>
+</steps>
+<p>Colete cogumelos de vento para as necessidades de pesquisa médica de Lady Pasiphae.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os soldados de Lady Pasiphae patrulham os formas de vento, onde descobriram alergias aos cogumelos do vento.</p>
+<p> </p>
+<p>Você coletou todos os três tipos de fungos e ela agradeceu antes de enviar os espécimes aos pesquisadores médicos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

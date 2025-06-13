@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sabe, acho que as pessoas não entendem o que está envolvido no meu trabalho. As almas curativas são mais difíceis do que parece. Requer manipulação qualificada.</p>
+<p> </p>
+<p>O obelisco é o que canaliza o Aether, mas eu tenho que direcioná -lo. Sendo humano, não posso lidar com isso perfeitamente, mas posso curar almas bem o suficiente.</p>
+<p> </p>
+<p>É muito mais fácil, no entanto, quando tenho itens sobre minha pessoa que contém o Aether. Eu gostaria de ter alguns comigo agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de itens?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, eu tentei algumas coisas diferentes, mas então eu descobri o [%dic:STR_DIC_E_17] S. Eles são encontrados apenas em Altgard Ice Lake, mas contêm muitos[%dic:STR_DIC_I_quest_2203a] S.</p>
+<p> </p>
+<p>[%dic:STR_DIC_I_quest_2203a] S são conhecidos por seu alto conteúdo de Aether.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Parece fácil de encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, sim, seria se não fosse por todas as criaturas além do portão. Não sendo um Daeva, não tenho chance de reuni -los sozinho.</p>
+<p> </p>
+<p>Talvez você possa me ajudar ...?</p>
+<p> </p>
+<p>Você se importaria de coletar [%dic:STR_DIC_I_quest_2203a] S do[%dic:STR_DIC_E_17] S no[%dic:STR_DIC_W_DF1A_2]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Quando você me traz [%dic:STR_DIC_I_quest_2203a] S, vou te pagar pelo seu tempo e ficar em dívida com você ainda mais.</p>
+<p> </p>
+<p>Estou contando com você, Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou buscá -los rapidamente o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Devo admitir que não esperava que você se recusasse.</p>
+<p> </p>
+<p>Não importa. Vou encontrar outra maneira de conseguir eles. Outro Daeva acontecerá em breve.</p>
+<p> </p>
+<p>Bom dia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você coletou os cristais?</p>
+<p> </p>
+<p>Por favor, mostre -me o que você trouxe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não foi para o Altgard Ice Lake?</p>
+<p> </p>
+<p>Eu preciso dos cristais para fazer meu trabalho de maneira eficaz.</p>
+<p> </p>
+<p>Por favor, vá coletar [%dic:STR_DIC_I_quest_2203a]neve, [%username], como você prometeu.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Isso é exatamente o que eu precisava.</p>
+<p> </p>
+<p>Estou tão aliviado! Não precisarei me preocupar com cristais por um tempo agora. Obrigado, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_2203a] e leve-os para [%dic:STR_DIC_N_Nemnef].</p>[%collectitem]</step>
+</steps>
+<p>Nemnef precisa de cristais de Altgard para ajudá -la a curar almas. Colete os cristais e leve -os a Nemnef.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Nemnef precisa de itens com poder atrito para ajudá -la com a cura da alma.</p>
+<p> </p>
+<p>Ela pediu que você colecionasse cristais Altgard, que contêm o poder de Aether. Você coletou os cristais e os deu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

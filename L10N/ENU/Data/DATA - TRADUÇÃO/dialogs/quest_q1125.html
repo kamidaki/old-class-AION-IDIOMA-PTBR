@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A Krall local com certeza está agindo estranhamente!</p>
+<p> </p>
+<p>Quando eles invadiram, eram Krall típicos, montando ataques e causando problemas onde quer que fossem.</p>
+<p> </p>
+<p>Agora, porém, eles estão se espalhando no fundo do[%dic:STR_DIC_FLA08], e quando nossos batedores se aproximam, eles apenas ficam furiosos! E quero dizer mais furioso do que o normal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Devo espionar seus invasores?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, se você acha que pode enfrentar o Krall. Eu deveria avisá -lo, porém, [%username], esses membros da tribo de tursina são astutos e fortes, e há muitos deles nessa caverna. Você precisará de seu juízo para entrar nas minas, não importa delas!</p>
+<p> </p>
+<p>Os dukaki estão minerando minério no[%dic:STR_DIC_FLA07] e levando vagas para as cavernas. Este minério deve ser algo especial: oito Krall assiste a cada vagão-mais do que para minério regular.</p>
+<p> </p>
+<p>Eu preciso de amostras de tudo o que elas estão minerando. Acha que você pode me pegar um pouco?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Um de nossos batedores deslizou nas cavernas no dia anterior e disse que viu fileiras de caixas ao longo das paredes. Ela abriu um e encontrou minério para dentro, mas uma patrulha de Krall perseguiu -a antes que ela pudesse levar qualquer.</p>
+<p> </p>
+<p>Precisamos que você vá para as minas e busque três amostras do minério. Depois de tê -los, leve -os diretamente para o capitão[%dic:STR_DIC_LA139].</p>
+<p> </p>
+<p>Espero que ele possa descobrir exatamente o que esses Krall estão fazendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma maneira de descobrir."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está errado? Não consegue invadir os grandes empregos que o resto de nós assume?</p>
+<p> </p>
+<p>Bem, [%username], Eu pensei que você era um talentoso[%userclass]. Torne -se útil ou volte para a vila de Akarios, tudo bem? Não tenho tempo ou inclinação para arrastar o peso morto em nosso esquadrão, especialmente com meu pulso ferido.</p>
+<p> </p>
+<p>Vá em frente-saia daqui!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, o grande [%username]retorna.</p>
+<p> </p>
+<p>Você sabe, você está recebendo um nome e tanto para você. Eu tive moradores pedindo por você pelo nome, e até os comerciantes que viajam de Verteron ouviram falar de suas façanhas. Continue assim e terei que começar a pagar mais a você!</p>
+<p> </p>
+<p>Agora, o que te traz para mim? Eu pensei que você estava operando pela mina da tira?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu trouxe um pouco de minério para análise."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Receio não poder trabalhar em uma amostra tão limitada, mercenário.</p>
+<p> </p>
+<p>Vou precisar de pelo menos três pedaços de minério para estudar, se eu determinar qualquer senso de consistência neles. Não posso fazer observações sólidas em uma amostra tão pequena.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro, chefe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, excelente. Passe aqui.</p>
+<p> </p>
+<p>Hum. Parece Odium, mas normalmente não é translúcido. O Krall deve ter processado, mas por quê? O que o minério processado faria esse ódio normalmente não pode? Devo pensar nisso.</p>
+<p> </p>
+<p>Quanto a você, meu amigo, vou ver que seus serviços são reconhecidos. Pegue esse bônus e mantenha o bom trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Procure as caixas suspeitas no[%dic:STR_DIC_FLA08] e trazer o minério incomum para [%dic:STR_DIC_LA139].</p>[%collectitem]</step>
+</steps>
+<p>Poa notou um comportamento estranho entre os Krall. Ele pediu para você pesquisar o [%dic:STR_DIC_FLA08] e traga qualquer minério que você encontrar para o capitão Kalio.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>POA explicou como as patrulhas próximas ao[%dic:STR_DIC_FLA08]notou o Krall agindo de forma estranha. Na esperança de descobrir o porquê, ele pediu que você pesquisasse as caixas no[%dic:STR_DIC_FLA08]para minério.</p>
+<p> </p>
+<p>Você reuniu o minério e o levou para o capitão Kalio. Ele observou que o minério havia sido refinado e, agora, precisava descobrir o porquê.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

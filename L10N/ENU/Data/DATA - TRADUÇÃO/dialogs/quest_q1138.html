@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem filhos, Daeva?</p>
+<p> </p>
+<p>Eu cuido de dois. Um é o meu, um é o da minha irmã. Polor e Serin-eles são um par de terrores sagrados, mas eu os adoro.</p>
+<p> </p>
+<p>Eu só queria que minha irmã pudesse vê -los brincando juntos ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Crianças? Verteron não é muito perigoso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eles não estão aqui na Cidadela! Eles estão na vila de Tolbas, no próximo vale.</p>
+<p> </p>
+<p>Não, eu não traria filhos aqui. É muito perigoso e eles não teriam lugar para jogar.</p>
+<p> </p>
+<p>Quando eu vou em serviço sentinela, deixo -os com Gano na vila de Tolbas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"É aí que eles estão agora?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eles vão ... Oh não! Esqueci de contar a Gano sobre meu serviço sentinela esta noite!</p>
+<p> </p>
+<p>Ele não saberá cuidar das crianças!</p>
+<p> </p>
+<p>[%username], posso perguntar um grande favor? Você vai correr para [%dic:STR_DIC_LA145] e dar a ele minha mensagem?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! Isso é tão gentil de sua parte, [%username]. Se você recusasse, não sei para quem mais eu poderia ter me virado.</p>
+<p> </p>
+<p>Por favor, diga [%dic:STR_DIC_LA145] esse Perinens tem que cumprir o serviço de sentinela hoje à noite e perguntar se ele se importaria de cuidar das crianças até amanhã?</p>
+<p> </p>
+<p>Você o encontrará na floresta de Tolbas. Ele geralmente está lá nesta hora do dia, cavando ervas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou avisá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh não! Não diga que você está muito ocupado!</p>
+<p> </p>
+<p>Polor e Serin vão esperar que eu volte para casa! Não haverá ninguém para cozinhar para eles!</p>
+<p> </p>
+<p>E se algo acontecer? Como um fogo, ou algo pior?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Olhe para o campo ao nosso redor, Daeva. Você já viu algo tão lindo?</p>
+<p> </p>
+<p>Eu morava em santuário, sabe, mas isso simplesmente não fazia isso por mim.</p>
+<p> </p>
+<p>Vou pegar árvores e abrir campos sobre torres altas a qualquer dia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma mensagem de Perinens."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Heh. Esqueci que ela tinha dever noturno novamente, não é?</p>
+<p> </p>
+<p>Não se preocupe. Vou cuidar de Serin e Polor.</p>
+<p> </p>
+<p>Ela é uma garota legal, que perine, mas pode ser dispersa. Desculpe, você foi arrastado para isso, Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_LA145].</p></step>
+</steps>
+<p>Vá para Gano e peça a ele para cuidar de Polor e Serin para Perinens, que sentou o serviço.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Perinens levanta Polor e Serin sozinha e disse que ela geralmente recebe a ajuda de Gano cuidando deles enquanto ela trabalha.</p>
+<p> </p>
+<p>Ela estava preocupada porque se esqueceu de seu dever noturno e não podia se importar com as crianças da noite para o dia. Ela precisava de Gano para assisti -los, mas não conseguiu deixar seu post para perguntar a ele.</p>
+<p> </p>
+<p>Você foi a Gano e fez o pedido dela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles queixosos irritantes podem ser úteis às vezes.</p>
+<p> </p>
+<p>Uma ordem acabou de chegar do santuário; Eles querem 10[%dic:STR_DIC_I_QUEST_1552a] Adquirido e enviado para lá.</p>
+<p> </p>
+<p>Eles tentarão transformar os dentes em pontas de flecha. Porque eles são muito difíceis e afiados.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que eles querem eles?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um artesão de volta no santuário que pensa que os dentes frilkneck farão boas pontas de flechas. Eu posso entender por que ele pode pensar isso. Ascadeiras nunca perdem presas quando a mordem.</p>
+<p> </p>
+<p>Eles têm uma estrutura distinta da mandíbula, mas também dentes excepcionalmente afiados que permanecem interessados ​​e nítidos por anos.</p>
+<p> </p>
+<p>Mas por que eu?! Há muitos Daevas imortais aqui, mas eu tenho apenas uma vida!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E se eu fizesse isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente faria isso?[%username], você é muito gentil.</p>
+<p> </p>
+<p>Então, por favor me pegue 10[%dic:STR_DIC_I_QUEST_1552a].</p>
+<p> </p>
+<p>Vou mostrar minha apreciação. De qualquer forma, haverá algum tipo de recompensa do santuário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode estar salvando minha vida. Na verdade, tenho certeza que você é. Eu não duraria dez segundos por aí com um monte de canhões.</p>
+<p> </p>
+<p>Claro que se eu dissesse não, estaria com problemas terríveis, então estava realmente preso!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho coberto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente isso é muito difícil? Eu não deveria ter mencionado isso.</p>
+<p> </p>
+<p>Enviarei uma resposta ao santuário, dizendo que não é possível.</p>
+<p> </p>
+<p>Para me perguntar, um humano, para 10[plur][%dic:STR_DIC_I_QUEST_1552a]foi um pedido bobo desde o início.</p>
+<p> </p>
+<p>Claro...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não tenho certeza."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu prendi meu pescoço para você.</p>
+<p> </p>
+<p>Você foi capaz de conseguir 10[plur][%dic:STR_DIC_I_QUEST_1552a]?</p>
+<p> </p>
+<p>Isso não pode ter sido fácil com esses inimigos selvagens. Você poderia me mostrar o que você trouxe com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que não há o suficiente aqui.</p>
+<p> </p>
+<p>O Santum ficará muito chateado se eu não enviar o que eles pediram.</p>
+<p> </p>
+<p>Você deve conseguir 15[%dic:STR_DIC_I_QUEST_1552a]de [%dic:STR_DIC_M_Frillfaimam2st_39_An] S, [%dic:STR_DIC_M_FrillfaimamNM2st_39_An] S, ou[%dic:STR_DIC_M_FrillfaimamRE2st_39_An] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Eu vou pegá -los."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente os conseguiu!</p>
+<p> </p>
+<p>O Santum provavelmente ficará surpreso ao recebê -los, em vez de uma carta informando -os sobre minha morte por mordidas.</p>
+<p> </p>
+<p>Não sei como agradecer. Por favor, receba essa recompensa como um sinal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1552a] e leve-os para [%dic:STR_DIC_N_Okonus].</p>[%collectitem]</step>
+</steps>
+<p>Ele disse que você poderia obtê -los de [%dic:STR_DIC_M_Frillfaimam2st_39_An] S, [%dic:STR_DIC_M_FrillfaimamNM2st_39_An] S, ou[%dic:STR_DIC_M_FrillfaimamRE2st_39_An] S. Okonus precisa deles para preencher um pedido do Santuário.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Okonus implorou por ajuda, dizendo que o santuário pediu que ele enviasse os dentes de Frillneck para entrar em pontas de flecha.</p>
+<p> </p>
+<p>Você se ofereceu para caçar as nó de Frillcks, e ele agradeceu profusamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

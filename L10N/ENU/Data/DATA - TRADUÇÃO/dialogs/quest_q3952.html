@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você passou todos os testes que eu lhe dei.</p>
+<p> </p>
+<p>Já faz muito tempo que conheci um Daeva com seu talento para cozinhar.</p>
+<p> </p>
+<p>Você pode ser melhor do que eu!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você é muito gentil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De jeito nenhum! Com esse nível de habilidade, você merece ser chamado de especialista em culinária.</p>
+<p> </p>
+<p>É concedido apenas àqueles que atingem o nível mais alto na culinária.</p>
+<p> </p>
+<p>Você gostaria de receber este título?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Governador [%dic:STR_DIC_N_Fasimedes]tem que aprovar o título, mas é apenas uma formalidade.</p>
+<p> </p>
+<p>Eu escrevi uma carta de recomendação para você. Vá para Fasimedes, receba seu título e participe da cerimônia de nomeação especializada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado. Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não seja modesto. Você merece o título.</p>
+<p> </p>
+<p>É uma formalidade importante.</p>
+<p> </p>
+<p>Se você quer ser um mestre algum dia, é melhor você receber formalmente o título de especialista.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>Se é algo que não requer minha atenção pessoal ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É uma carta de recomendação."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me impressiona, [%username]. Os cozinheiros nos servem de maneiras que a maioria não aprecia, e você está entre os melhores.</p>
+<p> </p>
+<p>Retornar a [%dic:STR_DIC_N_Hestia]uma última vez e peça a ela mais ensino.</p>
+<p> </p>
+<p>Parabéns, novo especialista em culinária!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Fasimedes].</p></step>
+</steps>
+<p>Hestia, um mestre de culinária, recomendou que você recebesse o título de especialista. Vá para o governador Fasimedes e participe da cerimônia de nomeação especializada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hestia, uma mestre de culinária, disse que não tinha mais nada para ensinar a você e que você alcançou o nível de especialista.</p>
+<p> </p>
+<p>Depois de receber sua carta de recomendação, você foi ao governador Fasimedes e recebeu o título de especialista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

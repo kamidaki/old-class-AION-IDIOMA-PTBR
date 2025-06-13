@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere, [%username]. O que você vai fazer com isso? Não, não isso. QUE. Chama de Kromede.</p>
+<p> </p>
+<p>Você ia usá -lo como um colar, não era? Admita.</p>
+<p> </p>
+<p>Há uma opção melhor. Você pode usá -lo como um revestimento para melhorar a lança do juiz.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Exatamente como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É um processo longo e envolvido, mas acho que posso conseguir.</p>
+<p> </p>
+<p>A essência disso é a seguinte: você me traz a chama de Kromede e a lança do juiz, e eu posso fundir os dois juntos.</p>
+<p> </p>
+<p>Mas não consigo obter a lança do juiz para você. Você terá que conseguir isso você mesmo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A lança do juiz é um item altamente preciso e é provável que não tenha melhorado se não for melhorado como eu sugiro.</p>
+<p> </p>
+<p>Mas antes que possamos fazer alguma coisa, precisamos da lança do juiz, não é?</p>
+<p> </p>
+<p>Acredito que [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]tem no templo do fogo. Pelo menos, é isso que as pessoas estão dizendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou dar uma olhada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não acha que eu posso fazer isso? Ou você tem medo de [%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]? Compreensível, eu acho.</p>
+<p> </p>
+<p>Vou esperar aqui até que um asmodiano real passe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso foi baixo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe a lança do juiz e a chama de Kromede? Espero que você não tenha perdido tempo chorando por Kromede; Sua tristeza e ódio a distorceram além da redenção, eu acho.</p>
+<p> </p>
+<p>Felizmente, você está bem a tempo! A forja atingiu a temperatura certa. Se somos um grau de desligamento, isso destruirá os dois itens para sempre.</p>
+<p> </p>
+<p>Pressa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui! Faça, rápido!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, então você acha que eu posso estragar a lança do juiz?</p>
+<p> </p>
+<p>Escute, uma vez que eu fiz uma lança para um daeva de chama que era tão equilibrado que jogou até Elysea.</p>
+<p> </p>
+<p>Ok, isso não é verdade, mas é uma boa história. Você quer que suas próprias histórias contem, volte para mim com a lança do juiz e a chama de Kromede em seu cubo. Entender?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é outra coisa!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, é melhor começarmos. Este é um processo longo e difícil.</p>
+<p> </p>
+<p>UF. Erf. Isso é muito difícil. Mas acho que estamos quase ...</p>
+<p> </p>
+<p>Feito! Aqui está você, a lança de Kromede. Aproveitar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete materiais para refinar a lança do juiz e trazê -los para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter disse que poderia refinar a lança do juiz para você se você a trouxe para ele junto com a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Walter disse que a chama de Kromede pode ser usada para reforçar a lança do juiz, e ele pediu que você lhe trazia os dois itens.</p>
+<p> </p>
+<p>Você trouxe a chama de Kromede e a lança do juiz, e ele rapidamente fundiu os dois na lança de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

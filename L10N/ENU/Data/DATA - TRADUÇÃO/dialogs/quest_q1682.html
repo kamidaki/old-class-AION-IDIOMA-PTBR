@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sou tão Angy! Por que Kalione vem e vai tão frequentemente?</p>
+<p> </p>
+<p>Eu tenho que protegê -la toda vez que ela sai para pesquisar. É frustrante.</p>
+<p> </p>
+<p>Por que não posso ser designado para outro estudioso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer ajudar? Sim, por favor!</p>
+<p> </p>
+<p>Eu sofro de insônia por causa dela. Mas ouvi beber chá feito de seco[%dic:STR_DIC_LF3_herb_n_c_40a]Pode ajudar.</p>
+<p> </p>
+<p>Eu nunca tenho tempo para me parecer com Griffonia porque tenho que perseguir Kalione o tempo todo. Você recolheria alguns para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei[%dic:STR_DIC_LF3_herb_n_c_40a] Só cresceu em torno das ruínas do Patema ou da Baía de Stenon, mas eu acabei de descobrir que ela cresce aqui também.</p>
+<p> </p>
+<p>Sua melhor aposta é pesquisar em torno do post de observação.</p>
+<p> </p>
+<p>Eu posso usá -lo a longo prazo se funcionar, então, por favor, me dê uma boa quantidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Griffonia chegando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh, você está brincando comigo?</p>
+<p> </p>
+<p>Primeiro Kalione constantemente muda sua história-agora você ...</p>
+<p> </p>
+<p>Não quero mais falar com você. Apenas vá embora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu fui embora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Kalione está quieto ultimamente.</p>
+<p> </p>
+<p>Mas ela quer estudar espíritos da Terra amanhã.</p>
+<p> </p>
+<p>Só de pensar nisso me dá dor de cabeça. Você conseguiu o [%dic:STR_DIC_LF3_herb_n_c_40a] eu pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu já tenho dor de cabeça. Você está piorando, [%username].</p>
+<p> </p>
+<p>Você não encontrou o suficiente [%dic:STR_DIC_LF3_herb_n_c_40a]por aqui?</p>
+<p> </p>
+<p>Talvez você deva pesquisar as ruínas do Patema ou a Baía de Stenon também.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. No meu caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm, essa griffonia cheira a refrescante. Eu já me sinto melhor.</p>
+<p> </p>
+<p>Secar -o para o chá pode levar algum tempo. Vou fazer suco com isso por enquanto.</p>
+<p> </p>
+<p>Pode ser um pouco amargo, mas se eu conseguir uma boa noite de sono, não me importo. Obrigado pela ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_LF3_herb_n_c_40a] e leve para [%dic:STR_DIC_N_Kuobe].</p>[%collectitem]</step>
+</steps>
+<p>Kuobe está sofrendo de insônia. Pegue Griffonia, uma erva que pode acalmá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kuobe disse que estava sofrendo de insônia com o estresse de trabalhar para Kalione.</p>
+<p> </p>
+<p>Ele pediu que você pegasse o chá de Herb para Griffonia que ele ouviu ser eficaz para um bom sono.</p>
+<p> </p>
+<p>Você conseguiu Griffonia e ele ficou muito satisfeito, dizendo que mesmo cheirando isso o deixou revigorado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

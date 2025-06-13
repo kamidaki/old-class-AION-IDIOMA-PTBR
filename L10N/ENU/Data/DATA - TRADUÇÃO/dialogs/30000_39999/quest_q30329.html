@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu acho que o espírito da água que convocei dentro da bexiga opaca não foi impressionante o suficiente para abaixar meu nome nos anais da história. Talvez devêssemos tentar algo mais pesado e óbvio.</p>
+<p> </p>
+<p>Um espírito da terra pode ser uma boa ideia, você não acha?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Certamente mais substancial."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está oferecendo para ajudar novamente, [%username]?</p>
+<p> </p>
+<p>Como eu disse antes, fico feliz em compartilhar o crédito. Você e eu seremos conhecidos como os Daevas que descobriram espíritos nunca antes vistos em Balaurea!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para convocar um espírito de terra, preciso de algo que possua uma vitalidade terrena. Sangue da terra, tipo de coisa.</p>
+<p> </p>
+<p>Eu acredito que uma excelente fonte será[%dic:STR_DIC_I_QUEST_30329a] S de [%dic:STR_DIC_M_DF4_Neut_Worker_55_An] S, [%dic:STR_DIC_M_DF4_Neut_WorkerHigh_55_An] S, [%dic:STR_DIC_M_DF4_Neut_Fly_55_An] Areia [%dic:STR_DIC_M_DF4_Neut_FlyHigh_55_An] S.</p>
+<p> </p>
+<p>Você pode encontrá -los na fazenda Twilight Drana, com a qual você está sem dúvida já familiarizado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está me recusando agora, depois de tudo o que passamos? O que vou fazer sem você, [%username]?</p>
+<p> </p>
+<p>Suponho que vou morrer, triste e esquecido. Vá, deixe -me. Deixe -me desaparecer apenas na obscuridade.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ninguém gosta de um chorão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem a tempo, [%username]. Eu tenho todos os outros materiais preparados. Se você tem as glândulas que eu lhe enviei, posso começar a convocar um espírito de terra imediatamente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"O que há com todos os órgãos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>É tão difícil encontrar 30[%dic:STR_DIC_I_QUEST_30329a] S? É tudo o que preciso para convocar o espírito da terra.</p>
+<p> </p>
+<p>Por favor, volte para a fazenda Twilight Drana e mate alguns Klaws.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou chegando a isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso vai acontecer muito rápido, então pague atendimento ... aí, você vê? Bem aí?</p>
+<p> </p>
+<p>Está parado ao seu lado! Bem, mais abaixo de você, suponho. Subterrâneo. Eu acho que é um espírito de terra tímido. Mas, novamente, é totalmente único. Ninguém nunca viu um antes!</p>
+<p> </p>
+<p>Isso é incrível! Se reconhecidamente inpressivo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar 30[%dic:STR_DIC_I_QUEST_30329a] e trazê -los para [%dic:STR_DIC_N_Yumir].</p>[%collectitem]</step>
+</steps>
+<p>Yumir precisa que você recupere as glândulas Klaw escorrendo, que podem ser encontradas por trabalhadores de caça supraklaw, espectadores supraklaw, acumuladores supraklaw e soldados supraklaw.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yumir quer convocar espíritos exclusivos de Balaurea e precisa de materiais especiais para fazê -lo.</p>
+<p> </p>
+<p>Você derrotou Klaws, conforme perguntado e trouxe -lhe algumas glândulas Klaw.</p>
+<p> </p>
+<p>Yumir convocou um espírito de terra, mas era muito tímido e se escondeu no subsolo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], seu trabalho hoje em dia é realmente excelente. Parece que ontem você aprendeu suas habilidades básicas e aqui está produzindo trabalho para rivalizar com um mestrado.</p>
+<p> </p>
+<p>Infelizmente, meu trabalho está pronto. Não posso mais te ensinar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eu faço agora então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É costume em pandaemonium que os especialistas sejam reconhecidos como tal. É uma marca de honra e uma certificação de competência.</p>
+<p> </p>
+<p>Aqueles que alcançaram a maior experiência em alfaiataria recebem o título formal de 'especialista em alfaiataria'. Esse é o título que proponho que você deve receber, [%username].</p>
+<p> </p>
+<p>Você vai aceitar isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para receber o título, você precisa de aprovação do governador [%dic:STR_DIC_N_Vidar].</p>
+<p> </p>
+<p>Vou escrever uma carta de recomendação para você. Vá para Vidar e receba seu título e depois participe da cerimônia de compromisso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você recusar essa honra por si mesmo, você a recusa para todos aqueles que seguem nosso comércio. Você não acha que nós artesãos de armadura de vestir são menosprezados?</p>
+<p> </p>
+<p>Há um tempo para modéstia e um tempo para comemorar. Você fez um progresso espetacular, então tenha a boa graça de receber crédito por isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], não é? Isso é uma questão urgente? Eu tenho muito o que fazer.</p>
+<p> </p>
+<p>A menos que você precise da minha atenção pessoal, pegue seu pedido a Skadi ou Kvasir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho uma carta da Zyakia ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum! Bom trabalho, [%username]. Bem feito de fato. Muitos Daeva terão motivos para abençoá -lo, mesmo que nunca o encontrem ou aprendam seu nome, para a armadura que os mantém a salvo de danos.</p>
+<p> </p>
+<p>Pense neles enquanto você trabalha-seus camaradas no campo. Deixe a bravura deles inspirá -lo. Que os cinco abençoem todos os pontos que você tomar.</p>
+<p> </p>
+<p>Agora volte para [%dic:STR_DIC_N_Zyakia]como um especialista. Eu aprovo a recomendação dela.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>Zyakia, um mestre de alfaiataria, recomendou que você recebesse o título de especialista. Vá para o governador Vidar e participe da cerimônia de nomeação.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Zyakia, uma mestre de alfaiataria, disse que não tinha mais nada para lhe ensinar-você alcançou o nível de especialista.</p>
+<p> </p>
+<p>Então você recebeu a carta de recomendação dela. Então você foi ao governador Vidar e recebeu o título de especialista dele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

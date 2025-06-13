@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Querido[%username], Assim,</p>
+<p> </p>
+<p>Eu tenho uma mensagem privada para passar para os guardas de campo. Isso diz respeito ao povo de Brusthonin.</p>
+<p> </p>
+<p>Não posso explicar mais nesta carta e despertarei suspeitas se eu mesmo entregar.</p>
+<p> </p>
+<p>Por favor, destrua esta carta e depois me encontre quando puder, para que você possa levar minha mensagem ao[%dic:STR_DIC_E_45014].</p>
+<p> </p>
+<p>Que a escuridão lhe conceda paz,</p>
+<p> </p>
+<p>--Padre [%dic:STR_DIC_N_Hort]</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Mastigue a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, [%userclass]. Você está aqui para aprender os ensinamentos dos Senhores Empyreanos? Ou....</p>
+<p> </p>
+<p>Espere, você é[%username], não é? Dos guardas de campo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu sou. Recebi sua carta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, como eu disse, há uma situação em Brusthonin. Eu ... não consigo explicar em voz alta. Espere, há um código ... a mensagem é ... hum ... os códigos eram ....</p>
+<p> </p>
+<p>Ah! Eu lembro. A mensagem é "uma flor cresce em sombra".</p>
+<p> </p>
+<p>Por favor, diga isso a um agente de campo de Brusthonin, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, eu sei de onde você veio, [%username]. Você tem uma mensagem para mim? Por favor, diga -me o que é.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Uma flor cresce em sombra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Tem certeza? Isso não faz ....</p>
+<p> </p>
+<p>Oh, espere. Ela quis dizer "uma flor floresce em Crepúsculo". Isso faz mais sentido. Hort ainda tem tudo sob controle, ao que parece. Não, não se preocupe com o que tudo isso significa, [%username]. É bastante complicado.</p>
+<p> </p>
+<p>De qualquer forma, seu trabalho é feito aqui. Por favor, aceite este sinal de nossa apreciação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Hort].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_E_45014].</p></step>
+</steps>
+<p>Uma carta encaminhada chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta particular explica que o padre Hort tem uma mensagem privada para os guardas de campo.</p>
+<p> </p>
+<p>Você conheceu Hort e entregou sua mensagem ao agente de campo de Brusthonin, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

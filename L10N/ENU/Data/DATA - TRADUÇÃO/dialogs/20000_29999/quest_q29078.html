@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está trabalhando duro em suas habilidades, [%username]?</p>
+<p> </p>
+<p>Um verdadeiro[%userclass]Deve ter um alto grau de concentração e resistência.</p>
+<p> </p>
+<p>Um AetherTech deve poder tomar decisões rápidas e definir uma meta com precisão.</p>
+<p> </p>
+<p>No momento, você não é particularmente versado, mas o treinamento duro e a experiência de batalha apropriada mudará isso em breve.</p>
+<p> </p>
+<p>Deseja participar do teste de poder divino para continuar treinando suas habilidades?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">O teste do poder divino.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, você não sabia nada sobre isso.</p>
+<p> </p>
+<p>Apenas Daevas como você pode usar habilidades divinas de poder.</p>
+<p> </p>
+<p>Mas existem algumas limitações relacionadas ao seu uso. Essa é provavelmente a razão pela qual até alguns veteranos o usam raramente, se é que alguma vez.</p>
+<p> </p>
+<p>O teste do poder divino é uma iniciativa do governador, que deve resolver esse problema.</p>
+<p> </p>
+<p>Chamamos isso de teste, mas na verdade é mais uma unidade de treinamento. Termina quando você usou uma habilidade especificada dez vezes.</p>
+<p> </p>
+<p>O que você acha? Você quer participar do teste do poder divino?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você é um AetherTech, você deve ter aprendido o [%dic:STR_DIC_E_DP_Ri].</p>
+<p> </p>
+<p>Seu teste de poder divino será usar isso [%dic:STR_DIC_E_DP_Ri]dez vezes.</p>
+<p> </p>
+<p>Durante uma batalha, você coletará automaticamente o poder divino. Mas você também pode recorrer a marmeladas especiais que o ajudarão.</p>
+<p> </p>
+<p>Vamos lá, você vai!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me surpreende.</p>
+<p> </p>
+<p>O teste é tudo menos difícil. Mas talvez você esteja ocupado.</p>
+<p> </p>
+<p>Você também pode concluir o teste de poder divino posteriormente. Então volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta?</p>
+<p> </p>
+<p>Você deve ter levado sua última tarefa de melhoria de habilidades muito a sério.</p>
+<p> </p>
+<p>Vamos ver se você usou o seu[%dic:STR_DIC_E_DP_Ri]Dez vezes, conforme instruído.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você se aproxima.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ele coloca a mão na sua cabeça.) Você concluiu sua tarefa satisfatoriamente.</p>
+<p> </p>
+<p>(Ele remove a mão da sua cabeça.) Você passou no teste do poder divino!</p>
+<p> </p>
+<p>Agora você nunca esquecerá o seu[%dic:STR_DIC_E_DP_Ri]de novo. Este teste será uma grande ajuda para determinar seu destino.</p>
+<p> </p>
+<p>Desde que você passou no teste, você recebe uma recompensa. Espero que isso o ajude no caminho da AetherTech.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_DP_Ri]([%2]/10).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DC1_Hadubrand_M].</p></step>
+</steps>
+<p>O governador apóia o teste do poder divino. Use regeneração completa i dez vezes para passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hadubrant contou sobre o teste de poder divino e convidou você a participar.</p>
+<p> </p>
+<p>Depois de usar a habilidade completa, a regeneração completa que Hadubrant instruí, ele parabenizou você por passar no teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

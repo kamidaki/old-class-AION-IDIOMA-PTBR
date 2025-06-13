@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Você segura pergaminho quebradiço com uma estrela em cada borda.)</p>
+<p> </p>
+<p>(Talvez seja um mapa? Balaur Expert[%dic:STR_DIC_N_Sulinia]pode saber.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esta é apenas a caneca de suco de Odella."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está aqui para conselhos também?</p>
+<p> </p>
+<p>Você quer aprender sobre a cultura ou as relíquias do Balaur?</p>
+<p> </p>
+<p>Sempre fico feliz em receber novas informações, mas se se trata da destruição das relíquias, receio que eu tenha que recusar.</p>
+<p> </p>
+<p>Tudo o que posso dizer é que as relíquias de Balaur contêm o poder da Drana, então você deve ter cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Sim. Sim, eu fiz. Como você ...? Alguma idéia?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur baseia suas instruções na queda de Draken. É uma maneira de pensar muito relativista.</p>
+<p> </p>
+<p>Para ler este mapa, você precisará coletar os símbolos de direção. Se você for para o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A], o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B], o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C] e o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D], você encontrará um símbolo de direção em cada local.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Estou curioso o suficiente para fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho esperado você e você está certo na hora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Os símbolos foram onde você disse que estariam."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Que emocionante ver isso pessoalmente! Os padrões sofisticados ainda são evidentes.</p>
+<p> </p>
+<p>Eu já os vi antes no templo de Beshmundir! É aí que o Stormwing é selado.</p>
+<p> </p>
+<p>Talvez os quatro símbolos de direção estejam relacionados ao Stormwing? Vou precisar pensar nisso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hipótese interessante".</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você não tem muito senso de direção, [%username], mas eu não sabia que você era tão ruim!</p>
+<p> </p>
+<p>Use um mapa para encontrar o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A], o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B], o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C] e o [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D] e adquirir os símbolos de direção.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Como você sabe tanto sobre as pessoas?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim? Você precisa de algo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu esperava que houvesse, umm ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh! Claro!</p>
+<p> </p>
+<p>Às vezes, fico tão enredado nas relíquias que esqueço de recompensar as pessoas. Deixe -me corrigir isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sulinia].</p></step>
+<step><p visible="[%3]">Encontrar [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216A], Assim, [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216B], Assim, [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216C] e [%dic:STR_DIC_OBJ_LF4_FOBJ_Q11216D] e trazer seus símbolos de direção para [%dic:STR_DIC_N_Sulinia].</p>[%collectitem]</step>
+<step><p visible="[%21]">Fale com [%dic:STR_DIC_N_Sulinia].</p></step>
+</steps>
+<p>Você encontrou um mapa de uma vila de Balaur por acidente. Traga -o para a Sulinia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um mapa antigo e o trouxe para o especialista em Balaur Sulinia. Ela disse que mostrava quatro símbolos de direção de uma vila de Balaur, embora você não tivesse certeza do que isso significava.</p>
+<p> </p>
+<p>Quando você trouxe todos os símbolos de direção, ela ficou empolgada e disse que eles podem estar relacionados à adoração de Stormwing.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

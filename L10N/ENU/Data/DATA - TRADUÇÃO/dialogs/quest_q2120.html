@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, como estão as coisas em Aldelle? Ulgorn e Tobu ainda ordenando a todos? Eu imaginei isso.</p>
+<p> </p>
+<p>Eu estava ansioso para fugir-sabe, misture, saia da rotina. Quando Ulgorn queria que os voluntários viessem aqui, eu estava no meio da estrada antes de terminar seu discurso.</p>
+<p> </p>
+<p>Sem cotas, sem chefes respirando pelo pescoço e muitas oportunidades para ganhar dinheiro ao lado. A única desvantagem é o clima ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Muito frio aqui?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito frio-especialmente quando mergulhamos em nossa fogueira! E já era hora de fazer algo sobre isso. Acha que você pode me ajudar?</p>
+<p> </p>
+<p>Eu preciso de alguns[%dic:STR_DIC_I_2120a] para isolar adequadamente minha barraca. O Brax tem o pêlo mais grosso, então esse deve ser o melhor.</p>
+<p> </p>
+<p>Vou te pagar bem. O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, será fácil.</p>
+<p> </p>
+<p>Caçar [%dic:STR_DIC_M_BraxD_5_n] e [%dic:STR_DIC_M_BraxBabyD_4_n] Até você ter três peles de pele.</p>
+<p> </p>
+<p>Eu estarei esperando por você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, estarei de volta em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vergonha...</p>
+<p> </p>
+<p>Eu teria te pago bem, [%userclass]. E você teria me feito um grande favor, mas acho que você tem empregos maiores.</p>
+<p> </p>
+<p>Deixe -me saber se você mudar de idéia ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você ...</p>
+<p> </p>
+<p>Como foi? Você me trouxe o suficiente [%dic:STR_DIC_I_2120a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você procurava?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Er, não exatamente.</p>
+<p> </p>
+<p>Eu pedi três, lembra? Por favor, se apresse, já faz tanto tempo que eu conseguia dormir corretamente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pegar o resto agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, estes são excelentes. Macio de um lado e suave do outro-esses são genuínos[%dic:STR_DIC_I_2120a] S, com certeza.</p>
+<p> </p>
+<p>Vou começar a trabalhar neles imediatamente.</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%userclass]. Aqui está o seu dinheiro, como prometido. Ah, e se você estiver interessado em outras 'oportunidades de negócios', apenas fala com Derot, deslize alguns Kinah e ele sussurrará em seu ouvido. Só não deixe Mijou ouvir você!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar as peles de [%dic:STR_DIC_M_BraxD_5_n] e [%dic:STR_DIC_M_BraxBabyD_5_n] S, e leve-os para [%dic:STR_DIC_N_Denma].</p>[%collectitem]</step>
+</steps>
+<p>Hunt Greybristle Brax and Braxies, e traga suas peles para Denma para que ela possa isolar sua barraca contra o frio amargo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Denma reclamou das condições de congelamento e pediu que você trazia suas peles de Brax para que ela pudesse isolar sua barraca. Você matou o Brax e trouxe suas peles para ela. Ela agradeceu por te ajudar e lhe pagou bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

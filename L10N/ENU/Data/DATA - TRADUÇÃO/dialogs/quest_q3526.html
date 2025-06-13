@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que devo fazer? O que devo fazer? O comandante Gorgos me ordenou de volta a Stenon Bay para recuperar a caixa de suprimentos.</p>
+<p> </p>
+<p>Eu pensei que estava bem ... mas depois que o ouvi dizer Stenon Bay, todo o medo voltou. O que devo fazer?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você está com tanto medo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ... tenho medo de tudo ... tudo em Stenon Bay. É um lugar horrível!</p>
+<p> </p>
+<p>Minha Guilda foi enviada para lá para destruir Bollvig, mas meus camaradas foram todos mortos ... e eles nunca ressuscitaram. Eles ainda estão vagando por lá ... Mortos Vivos e vagarosos.</p>
+<p> </p>
+<p>Por favor me ajude, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia ir em frente e matar [%dic:STR_DIC_M_WaterWorm_44_An] para mim? Eu estaria em sua dívida.</p>
+<p> </p>
+<p>Eles se misturam com a água e depois atacam quando você menos espera.</p>
+<p> </p>
+<p>Pela honra de todos os Daevas, e como marinheiro com a frota azul, devo voltar a Stenon Bay e cumprir meu dever, mas perdi muitos amigos por causa dessas criaturas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eles não vão te incomodar quando eu terminar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, [%username]. Eu não sei o que fazer! Como vou chegar a Stenon Bay sem ... sem ...</p>
+<p> </p>
+<p>Por favor, não conte a ninguém da minha covardia. Eu seria o meu fim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem boas razões para temer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi? Eles se foram? É seguro?</p>
+<p> </p>
+<p>Você não sabe o quanto eu estava preocupada com o fato de eu ter que fazer isso sozinho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"É seguro o suficiente para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por me ajudar. Eu não aguentava o pensamento dessas criaturas ao meu lado.</p>
+<p> </p>
+<p>Aqui, não é muito, mas pegue isso. Esta é a minha recompensa para agradecer. Guarde -o ... as pessoas estão assistindo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o [%dic:STR_DIC_M_WaterWorm_44_An] S em Stenon Bay ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Alexius].</p></step>
+</steps>
+<p>Destrua as linhas d'água de Sandbank para que Rexius possa recuperar com segurança a caixa de suprimentos que desceu até Stenon Bay.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rexius recebeu ordem de recuperar uma caixa de suprimentos de Stenon Bay, mas ele ainda estava traumatizado por ver sua Guilda destruída lá.</p>
+<p> </p>
+<p>Para ajudá -lo, você matou as minhocas de areia escondidas no mar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

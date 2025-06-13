@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O plano de construir bases nas proximidades ao redor do bastião da parede de aço para realizar ataques a partir daí foi descrito no documento sobre as táticas de guerra do Exército de Beritra</p>
+<p> </p>
+<p>Como agora sabemos sobre esse plano, podemos nos defender contra ele.</p>
+<p> </p>
+<p>Se você quiser participar da defesa do bastião da parede de aço, elimine o [%dic:STR_DIC_E_Q18031all]que são responsáveis ​​pelos pontos de ligação.</p>
+<p> </p>
+<p>Dessa forma, o bastião da parede de aço será mais fácil de defender.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio do bastião da parede de aço?</p>
+<p> </p>
+<p>Não há notícias sobre o bastião ser capturado. Então você deve ter matado o [%dic:STR_DIC_E_Q18031all], como eu solicitei.</p>
+<p> </p>
+<p>Caso contrário, não teria sido possível defendê -los sem sofrer grandes danos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo!</p>
+<p> </p>
+<p>O comandante do Exército de Beritra, que liderou esta operação, será responsabilizado pelo vazamento de informações.</p>
+<p> </p>
+<p>Isso é um grande alívio! Haha!</p>
+<p> </p>
+<p>Aqui. Não é muito, mas por favor, leve.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_IDLDF5b_TD] e matar o invasão[plur][%dic:STR_DIC_E_Q18031all].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Headquater1_N_65_Ah]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_Headquater2_N_65_Ah]([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5b_Latkel_E].</p></step>
+</steps>
+<p>Obtenha vitória ao eliminar os comandantes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Latkel explicou que havia recebido informações sobre o ataque do Exército de Beritra ao bastião da parede de aço.</p>
+<p> </p>
+<p>Você eliminou seus comandantes, pelos quais Latkel ficou muito satisfeito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

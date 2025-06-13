@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda Baranath parece estar em um caos sério por causa dos danos que você lidou com a draga, [%username].</p>
+<p> </p>
+<p>A Guilda despachou um investigador para a draga. Só podemos assumir que ele está lá para avaliar os reforços de dano e requisição.</p>
+<p> </p>
+<p>Esta é uma oportunidade para nós!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma oportunidade?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Se o impedirmos, podemos adiar a chegada de peças e reforços. Levará mais tempo para a draga voltar à forma de luta.</p>
+<p> </p>
+<p>O que significa ... você poderia fazer outra viagem à draga, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperaria [%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah] estar no centro de comando, mas ele também pode estar verificando outros lugares a bordo.</p>
+<p> </p>
+<p>Quanto mais rápido você lida com Nirshaka, melhores são nossas chances de desacelerar seus reparos.</p>
+<p> </p>
+<p>Arieluma, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Arieluma."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei pedir que você apenas matasse um Balaur solitário pode parecer insignificante depois de tudo o que você realizou, [%username], mas este Balaur pode afetar tantas vidas de Elyos.</p>
+<p> </p>
+<p>Volte quando você reconsiderar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você será o primeiro a saber."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou ansioso pelo dia em que podemos dirigir a draga de Reshanta para sempre.</p>
+<p> </p>
+<p>Com a orientação de Ariel e Daevas como você, [%username], esse dia chegará em breve.</p>
+<p> </p>
+<p>Então, o que você tem a relatar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nirshaka está morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, [%username].</p>
+<p> </p>
+<p>A Guilda de Baranath deve ficar confusa e a draga fora de comissão por um tempo.</p>
+<p> </p>
+<p>Talvez ... se aproveitarmos esta oportunidade ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_IDAb1_Dreadgion_DrakanRAInspector_50_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Mias].</p></step>
+</steps>
+<p>Livre -se do auditor Nirshaka e impede que a Guilda Baranath repare a draga ou envie reforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Maiias disse que a Guilda de Baranath enviou o auditor Nirshaka para descobrir o status da draga.</p>
+<p> </p>
+<p>Como ele sugeriu, você eliminou o investigador para impedir que a Guilda Baranath inicie reparos ou envie reforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

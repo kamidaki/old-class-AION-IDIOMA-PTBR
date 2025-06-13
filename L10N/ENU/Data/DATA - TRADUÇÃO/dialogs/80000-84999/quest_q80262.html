@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, as demandas de atendimento são difíceis porque muitos Daevas estão chegando ao banquete de aniversário.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você pergunta quais especialidades existem no banquete de aniversário.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Levantando a voz) Não acredito que você não sabe disso!?</p>
+<p> </p>
+<p>Tsk tsk tsk ... você sempre deve estar atualizado nas coisas ...</p>
+<p> </p>
+<p>(Tosse) HM - HM.</p>
+<p> </p>
+<p>Eu sou o chef da Delegação do Dia da Daeva, especialmente enviado por Israphel!</p>
+<p> </p>
+<p>E o magnífico banquete atrás de mim é o banquete de aniversário que eu preparei para os pobres Daevas como você.</p>
+<p> </p>
+<p>(Aproximando -se) O banquete de aniversário está encantado e fornecerá bênçãos abundantes para os Daevas na mesa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta se pode ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é bom, eu gosto muito da sua atitude.</p>
+<p> </p>
+<p>Muitos Daevas chegam aqui por causa do banquete de aniversário especial, o que significa que há muita demanda por comida.</p>
+<p> </p>
+<p>[%username], posso pedir que você prepare alguns pratos usando meus ingredientes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, ouça.</p>
+<p> </p>
+<p>Vou te dar deliciosos ingredientes que você pode usar para o [%dic:STR_DIC_N_World_dinner_of_Devas_Day_L] Atrás de mim.</p>
+<p> </p>
+<p>Muito fácil, não é?</p>
+<p> </p>
+<p>Se você cumprir meu pedido, eu o recompensarei de acordo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Isso mesmo...</p>
+<p> </p>
+<p>Não tem nada a ver com suas habilidades culinárias. Pense nisso de novo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau! Você preparou esses pratos muito rápido!</p>
+<p> </p>
+<p>É raro ver Daevas como você em Atreia. Você é muito rápido!</p>
+<p> </p>
+<p>Oh céus!! Eu falei demais?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Isso mesmo...</p>
+<p> </p>
+<p>Você realmente escolheu o [%dic:STR_DIC_N_World_dinner_of_Devas_Day_L] e usar meus ingredientes?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se sente, agora que recebeu o feitiço de aprimoramento do banquete de aniversário especial?</p>
+<p> </p>
+<p>Estenda sua mão.</p>
+<p> </p>
+<p>Eu tenho outro presente para conceder danos com danos brilhantes como vocês. Aceite.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use os deliciosos ingredientes que [%dic:STR_DIC_N_event_Cleid]te deu para o [%dic:STR_DIC_N_World_dinner_of_Devas_Day_L].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_event_Cleid].</p></step>
+</steps>
+<p>Use os ingredientes que você recebeu do chef principal e relate -lhe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O chef principal da delegação pediu ajuda.</p>
+<p> </p>
+<p>Ele lhe deu um presente para agradecer sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

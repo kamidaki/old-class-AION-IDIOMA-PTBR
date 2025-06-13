@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As amostras de água coletadas na floresta foram investigadas em santuário. Agora temos o resultado da investigação. Aparentemente, o sangue de Meslamtaeda era a causa da contaminação.</p>
+<p> </p>
+<p>O renomado pesquisador ambiental Lepios viajou aqui do Santuário. Ele partiu para o pântano contaminado ontem de manhã para espalhar o antídoto que foi criado em santuário. Mas ele ainda não voltou.</p>
+<p> </p>
+<p>Você iria procurar [%dic:STR_DIC_LA29]? Não ouvimos falar dele desde ontem.</p>
+<p> </p>
+<p>Mas há outra coisa que você deve saber: o sangue de Meslamtaeda é um veneno criado há muito tempo por Kato e Garnis no templo da liberdade. Diz -se também que é um veneno poderoso que pode causar epidemias em pouco tempo.</p>
+<p> </p>
+<p>Mas não tenho idéia de como um veneno poderoso como esse poderia até ter encontrado seu caminho para Verteron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, você chegou!</p>
+<p> </p>
+<p>Saí para o pântano contaminado nas ordens de Geolus. Mas no caminho para lá, minha perna foi exposta ao veneno emitido por Aranhas.</p>
+<p> </p>
+<p>Não me preocupei com isso no começo, mas agora acontece que o Aranha que me atacou estava contaminado.</p>
+<p> </p>
+<p>Minha perna dói tanto que eu mal posso me mover. O que aconteceu com a tarefa de Geolus?</p>
+<p> </p>
+<p>Você poderia concluir a tarefa em meu lugar? Aqui está o antídoto do santão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre o antídoto.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o antídoto para neutralizar o sangue de Meslamtaeda.</p>
+<p> </p>
+<p>Por favor, vá para o [%dic:STR_DIC_FLA17] em meu lugar e use este antídoto para descobrir a causa da contaminação, [%username].</p>
+<p> </p>
+<p>Vá para o pântano contaminado e localize o local onde a contaminação é mais forte. A fonte da contaminação também deve estar lá.</p>
+<p> </p>
+<p>Aplique o antídoto à fonte da contaminação. Esperançosamente, isso nos permitirá limpar o pântano. Mas tenha cuidado. Afinal, você nunca sabe o que o espera no pântano.</p>
+<p> </p>
+<p>Vou tentar voltar para Geolus. Claro, direi a ele que você assumiu a tarefa que ele me designou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, que vergonhoso! Fui transformado em um monstro hediondo!</p>
+<p> </p>
+<p>Agora vou finalmente ser libertado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu nome é[%dic:STR_DIC_LA54]. Eu era um Daeva e já morei em santuário.</p>
+<p> </p>
+<p>Depois que criei esse poderoso veneno por pura chance, fui do santuário e me escondi aqui na floresta.</p>
+<p> </p>
+<p>Meu amigo[%dic:STR_DIC_LA55]me seguiu aqui. O artesanato do veneno o deixou furioso e, depois de muitos dias e noites cheios de rancor, ele de repente desapareceu um dia ...</p>
+<p> </p>
+<p>Eu queria criar um antídoto a qualquer custo, mas comecei a me tornar cada vez mais grotesco todos os dias.</p>
+<p> </p>
+<p>Mas outros seres tão bem como eu era contaminado pelo veneno. A contaminação se espalhou por toda a floresta.</p>
+<p> </p>
+<p>Não consegui parar a contaminação em minha condição horrível.</p>
+<p> </p>
+<p>Graças a Deus você está aqui. Você me salvou e também da floresta!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Digite o [%dic:STR_DIC_FLA16] e Fale com [%dic:STR_DIC_LA29]lá.</p></step>
+<step><p visible="[%9]">Elimine o monstro[%dic:STR_DIC_MLA42]([%11]/1).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_LA54].</p></step>
+</steps>
+<p>Elimine a fonte da contaminação no pântano contaminado para impedir que a contaminação se espalhe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Geolus encarregou você de procurar a Equipe da Equipe de Investigação Lepios. Ele saiu para o pântano contaminado e nunca voltou.</p>
+<p> </p>
+<p>Você encontrou lepios. Ele sofreu uma lesão viajando para o pântano e não conseguiu concluir seu trabalho. Então ele pediu que você realizasse a tarefa em seu lugar. Para fazer isso, ele lhe deu o antídoto criado em santuário.</p>
+<p> </p>
+<p>Você aplicou o antídoto no pântano contaminado e eliminou o bubblegut venenoso. A causa da contaminação foi um veneno que Kato descobriu em Santum, então Kato fugiu para a floresta e o veneno o transformou no salto venenoso. Ele agradeceu por resgatá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

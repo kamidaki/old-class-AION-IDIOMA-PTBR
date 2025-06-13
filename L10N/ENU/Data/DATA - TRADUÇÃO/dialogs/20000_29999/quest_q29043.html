@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer grogue eh? Moedas Shulack para coisas Shulack. Hahaha ....</p>
+<p> </p>
+<p>Bem, vamos fazer um acordo. Você faz algo por mim, e eu vou te dar os grogues de que você precisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você precisa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretamente para os negócios, não é?</p>
+<p> </p>
+<p>Não confie em mim, Daeva. Não confie em mim. Mas negocie comigo e eu vou mantê -lo seguro.</p>
+<p> </p>
+<p>Você sabe o que eu quero? Corantes para minhas roupas e armadura. E você sabe o que eu preciso para meus corantes? Pétalas de Dionae vermelhas. Vermelho é minha cor favorita. Me lembra de sangue.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom[%username]. Você é um útil[%userclass], não é?</p>
+<p> </p>
+<p>As pétalas que eu quero são do[%dic:STR_DIC_M_DF2A_DionaeaSwampD_45] S em Brusthonin. Me pegue dez. Os outros não farão. E vou saber se você está brincando, então não.</p>
+<p> </p>
+<p>Você não vai gostar de mim se tentar me brincar, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não gosto muito de você agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então vá.</p>
+<p> </p>
+<p>Apenas carne e ossos mortos, batendo ao vento para mim. Inútil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você tem sorte, estou de bom humor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim? O que é?</p>
+<p> </p>
+<p>Lembre -se: eu disse sem reembolsos. Se tudo o que você comprou de mim quebrou, duro. É assim que as coisas vão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Você queria pétalas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim eu fiz ....</p>
+<p> </p>
+<p>Você não me pegou os dez que eu pedi, então não sei por que você está lá.</p>
+<p> </p>
+<p>Lembre -se: dez pétalas do[%dic:STR_DIC_M_DF2A_DionaeaSwampD_45] S em Brusthonin. Eles não vão andar aqui tão cedo, então você deve ir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você sabe? O Daeva fez isso!</p>
+<p> </p>
+<p>Estou surpreso. Por outro lado, estou surpreso que a maioria dos asmodianos pode se vestir. Você não é o grupo mais inteligente, é?</p>
+<p> </p>
+<p>Aqui está o seu grogue. Não gaste tudo de uma vez. Hahaha ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_M_DF2A_DionaeaSwampD_45]pétalas e trazê -las para [%dic:STR_DIC_N_Shulack_DC1].</p>[%collectitem]</step>
+</steps>
+<p>Você receberá Groggies se levar Chaokiki as pétalas de Dionae Red que ela deseja. Vá para Brusthonin para colecioná -los.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shulack Merchant Chaokiki pediu que você fizesse um favor a ela em troca de grogue.</p>
+<p> </p>
+<p>Você fez o que ela pediu e recebeu os grogues pelo seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

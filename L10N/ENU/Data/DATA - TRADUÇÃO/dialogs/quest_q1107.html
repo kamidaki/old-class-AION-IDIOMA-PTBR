@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Esta alça de machado bem usada tem áreas usadas com lison com o tempo.)</p>
+<p> </p>
+<p>(Corte no fundo da alça é uma letra fraca "N.")</p>
+<p> </p>
+<p>(Poderia pertencer ao lenhador, [%dic:STR_DIC_LA10]?)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Pegue a alça do machado para o NAMUS.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, olá[%username]. O que você quer?</p>
+<p> </p>
+<p>Se não for importante, tenho trabalho a fazer-e estou um pouco atrasado agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isso é seu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu machado alça!</p>
+<p> </p>
+<p>Eu pensei que havia perdido isso! Eu tenho lutado junto com uma alça de substituição-está me dando bolhas dolorosas.</p>
+<p> </p>
+<p>Obrigado, [%username]! Por favor, tome isso como um sinal de minha apreciação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o alça do machado para [%dic:STR_DIC_LA10], o lenhador.</p></step>
+</steps>
+<p>Você encontrou uma alça de machado enquanto caçava. Parece que pertence ao namus do lenhador.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma alça de machado enquanto caçava Brax no lago Cliona. A letra "n" foi esculpida no fundo. Com base nessa inicial, adivinhou que a alça pertencia ao NAMUS. Você devolveu a alça para ele e recebeu seus agradecimentos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

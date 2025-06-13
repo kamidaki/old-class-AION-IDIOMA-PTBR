@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Azphelumbra. Não é assim que vocês, asmodianos, se cumprimentam?</p>
+<p> </p>
+<p>Você tem lefaristas em Asmodae também, eu ouço.</p>
+<p> </p>
+<p>Os por aqui, no entanto, estão em um nível totalmente diferente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles são de fato?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A elite da elite-é o que temos na fortaleza de Azoturan. Eles se chamam soldados especializados e soldados de operações especiais.</p>
+<p> </p>
+<p>Eles estão aqui agora, mas você pode apostar que estarão em Asmodae em pouco tempo.</p>
+<p> </p>
+<p>Como você gostou da chance de beliscar isso na raiz, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou te enviar depois dos soldados de operações especiais primeiro-[%dic:STR_DIC_M_IDLF3CL_LehparWa_44_Ae] S, [%dic:STR_DIC_M_IDLF3CL_LehparAs_44_Ae], e [%dic:STR_DIC_M_IDLF3CL_LehparAsHide_44_Ae].</p>
+<p> </p>
+<p>Procure seus corpos por [%dic:STR_DIC_I_quest_4500a], e traga isso para mim.</p>
+<p> </p>
+<p>E ... tenha cuidado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue ... quero dizer ... a tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você não aproveitaria a chance? Você é mais do que capaz e, se acha que eles não virão para o seu tipo em seguida, está errado.</p>
+<p> </p>
+<p>Um lefarista é um lefarista, certo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parecia melhor.</p>
+<p> </p>
+<p>Bem, eu disse que você poderia fazer isso. Eu não disse que seria fácil.</p>
+<p> </p>
+<p>Entregar o [%dic:STR_DIC_I_quest_4500a]Você tirou aquela escória e descanse um pouco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu os tirei de seus cadáveres".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Levar mais tempo não tornará a situação melhor.</p>
+<p> </p>
+<p>Enquanto esperamos, eles poderiam estar fazendo qualquer coisa.</p>
+<p> </p>
+<p>Retire os soldados de operações especiais e me traga seus[%dic:STR_DIC_I_quest_4500a] S.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Bom.</p>
+<p> </p>
+<p>Isso deve atingi -los onde dói. Eles demorarão muito tempo para se recuperar do que você fez hoje.</p>
+<p> </p>
+<p>As bênçãos da luz ... não, não acho que seja a coisa certa a dizer, é? As bênçãos das trevas, talvez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_quest_4500a] e leve-os para [%dic:STR_DIC_N_Acestes].</p>[%collectitem]</step>
+</steps>
+<p>Elimine os soldados lefaristas de operações especiais da fortaleza de Azoturan, colete suas insígnias e leve -as a acestes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Acestes disse que os lefaristas do Azoturão são a elite das elites e, embora estejam apenas em Elysea agora, em breve se infiltrarão asmodae.</p>
+<p> </p>
+<p>E, como ele sugeriu diminuir seus números antes disso, você eliminou os combatentes azoturais, os superadores de azoturais e os assassinos azoturanos e levou suas insígnias aos acestes como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

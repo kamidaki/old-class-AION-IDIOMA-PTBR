@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q12004</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles precisam ir. Tenho que ir!</p>
+<p> </p>
+<p>O ADORA Supply Depot precisa de suprimentos, suprimentos para todas as bases em Tiamaranta.</p>
+<p> </p>
+<p>O Brax e uma escolta transportam mercadorias para lá para [%dic:STR_DIC_N_Aius]. Aius!</p>
+<p> </p>
+<p>Você ajudaria? Ajuda a escolta mercadorias até o depósito?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Brax conhece o caminho.</p>
+<p> </p>
+<p>Apenas proteja ele e a carga. Proteger! De criaturas perigosas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou cuidar de seus pertences."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vi você chegando, e bem a tempo!</p>
+<p> </p>
+<p>A tropa de cerco Guarnição requisitou suprimentos, mas não tínhamos nada.</p>
+<p> </p>
+<p>Como você já está familiarizado com a carga, por que você não pega a glória e entrega essas rações de emergência para [%dic:STR_DIC_N_Debron]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">"Parece sensato para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você demorou tanto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Como você poderia saber que Aius me enviou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você olhou sobre você: inesperadamente Elyos, mas definitivamente um traficante de suprimentos.</p>
+<p> </p>
+<p>Não podemos lutar com os abordos de asa injustificados. Então, obrigado por essas rações.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Naisoi].</p></step>
+<step><p visible="[%3]">Escort o brax do pacote para [%dic:STR_DIC_N_Aius] [%5].</p></step>
+<step><p visible="[%6]">Fale com Aius.</p></step>
+<step><p visible="[%9]">Entregar rações de emergência para [%dic:STR_DIC_N_Debron].</p></step>
+</steps>
+<p>O ADORA Supply Depot precisa de suprimentos. Escort o mochila Brax até Aius.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nasoi pediu que você forneça suprimentos ao ADora Supply Depot.</p>
+<p> </p>
+<p>Você escoltou o brax do pacote para Aius, que fez você entregar rações de emergência a DeBron na guarnição da tropa de cerco.</p>
+<p> </p>
+<p>Um exército é tão bom quanto suas linhas de suprimento, afinal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

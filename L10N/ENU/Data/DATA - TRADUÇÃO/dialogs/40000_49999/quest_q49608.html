@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Não há blocos de construção suficientes para a fundação, AK. Juntar [%dic:STR_DIC_I_quest_49608a] Aproximar [%dic:STR_DIC_W_LDF5a_E4] e traga tudo para o ramo responsável, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5a_Silverlin_BD]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Dumurinerk, Silverine Limited</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Ele escreve algo no livro.)</p>
+<p> </p>
+<p>Faça -o rápido, por favor, estou muito ocupado, AK.</p>
+<p> </p>
+<p>Recebo muitos pedidos de todo o katalam todos os dias.</p>
+<p> </p>
+<p>Você deve ser um funcionário da Silverine Limited. Você terminou suas tarefas, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a pedra quadrada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pensou que Shugo não parecerá muito de perto porque há muito o que fazer, AK?</p>
+<p> </p>
+<p>Shugo não teria esperado esse comportamento de Daeva, Akakak.</p>
+<p> </p>
+<p>Espero que você tenha mais cuidado no futuro, Ak.</p>
+<p> </p>
+<p>Vou fechar os olhos apenas uma vez, porque preciso de muitos trabalhadores, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Fecha o livro) Ahem, ele ficou frio, Ak.</p>
+<p> </p>
+<p>Isso foi claramente trazido das proximidades do local de trabalho do gelo Canyon, AK.</p>
+<p> </p>
+<p>Às vezes, há quem traga algo semelhante apenas em forma, AK.</p>
+<p> </p>
+<p>(Coloca -o em um baú com muitas mechas.) Conseguimos proteger o material de construção com sua ajuda, AK.</p>
+<p> </p>
+<p>Aqui, a recompensa de Daeva por hoje, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_quest_49608a] e leve tudo para [%dic:STR_DIC_E_LDF5a_Silverlin_BD].</p>[%collectitem]</step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e conclua -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois de obter rochas quadradas do gelo Canyon piorar e entregá -las ao ramo de Silverine, no norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

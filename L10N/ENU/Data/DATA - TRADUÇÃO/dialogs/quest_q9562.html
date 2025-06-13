@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você já ouviu falar que Munin, que foi preso no campo de prisioneiros de Ishalgen em Asmodae, parece ter desaparecido?</p>
+<p> </p>
+<p>Aparentemente, ele apareceu em Katalam.</p>
+<p> </p>
+<p>Não tenho muita certeza do que os asmodianos estão fazendo agora. Mas os shulacks suspeitos também parecem estar depois de Munin.</p>
+<p> </p>
+<p>Por favor, mate o [plur][%dic:STR_DIC_M_Event_Shulack_As_03]para que os asmodianos não possam rastrear nossas atividades e me trazer o [plur][%dic:STR_DIC_I_quest_9562a].</p>
+<p> </p>
+<p>Os Shulacks têm medo de serem reconhecidos. É por isso que eles fugirão se forem atacados. Você não pode deixar um único deles escapar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>O paradeiro de Munin ainda é desconhecido.</p>
+<p> </p>
+<p>Como foi a tarefa em Katalam.</p>
+<p> </p>
+<p>Você encontrou novos leads?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você passa as mensagens do informante.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os shulacks suspeitos seguiram Munin o tempo todo.</p>
+<p> </p>
+<p>É tudo muito intrigante.</p>
+<p> </p>
+<p>Se reunirmos as evidências, poderemos ver as conexões.</p>
+<p> </p>
+<p>Aqui, leve sua recompensa com você!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar os shulacks suspeitos, encontre o [plur][%dic:STR_DIC_I_quest_9562a] e leve-os para [%dic:STR_DIC_N_NPC_Event_Corinna].</p>[%collectitem]</step>
+</steps>
+<p>Vá para Katalam, derrote os shulacks suspeitos e coloque pistas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Korina, membro do Partido de Pesquisa de Munin em Santuário, disse que Munin havia desaparecido.</p>
+<p> </p>
+<p>Você derrotou os Shifty Shulacks e coletou pistas para Korina. Korina disse que o mistério em relação a Munin poderia ser resolvido seguindo as pistas.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

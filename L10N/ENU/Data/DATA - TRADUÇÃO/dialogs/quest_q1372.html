@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu te invejo, [%username]. Você pode sair a qualquer momento que quiser. Não posso sair sem ordens de meus superiores.</p>
+<p> </p>
+<p>Se eu me tornasse um guardião, teria um trabalho confortável em santuário com uma cama macia ... oh e banhos, banhos quentes adoráveis. Olha onde estou! Olhando para estradas empoeiradas e secas e esperando o próximo ataque.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Pode ser pior. Confie em mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você não sabe o quão ruim é a situação aqui! O que você sabe, afinal? Você está apenas passando.</p>
+<p> </p>
+<p>Não estou reclamando de proteger os moradores dos revolucionários lefaristas; Esse é o dever de um guardião. Mas eles também esperam que eu encontre comida para eles.</p>
+<p> </p>
+<p>Lefaristas, desertificação e até problemas alimentares ... é demais!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu vou te ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está falando sério? Prometa -me que você não vai mudar de idéia?</p>
+<p> </p>
+<p>Bem, poderíamos usar uma tonelada de carne típica. Isso deve durar vários dias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="PLAYEMOTION_angry;HACTION_QUEST_REFUSE_1">"Não, eu prefiro escolher flores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Caçar [%dic:STR_DIC_I_QUEST_1372a]perto do riacho em frente à vila.</p>
+<p> </p>
+<p>Existem muitos[%dic:STR_DIC_M_hippolizardCh_31_An] está lá. Usamos apenas a carne do quadril. O resto desses bestas são inedíveis.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Hips Tipolid-você quer batatas com isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei, você me prometeu sua ajuda, mas agora você está dizendo que não vai fazer isso?</p>
+<p> </p>
+<p>Você está testando minha paciência? Esqueça! Eu não quero ajuda de você de qualquer maneira.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Levou você o suficiente. Estamos morrendo de fome! Você trouxe apenas a carne do quadril, certo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Até a carne do quadril parece mastigável para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso? Você prometeu trazer cinco pedaços de [%dic:STR_DIC_I_QUEST_1372a]!</p>
+<p> </p>
+<p>Se você faria isso sem entusiasmo, não deveria ter concordado em me ajudar.</p>
+<p> </p>
+<p>No momento, nem temos comida suficiente para amanhã de manhã! Vá buscar mais.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Agora mesmo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda está quente! A carne fresca é sempre melhor. Bom trabalho.</p>
+<p> </p>
+<p>Não precisaremos nos preocupar com comida por pelo menos dois dias. Aqui, tome este sinal de agradecimento. Talvez eu possa finalmente dormir um pouco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_1372a] e leve para [%dic:STR_DIC_N_Beramones].</p>[%collectitem]</step>
+</steps>
+<p>Você foi informado de que o Agairon Village não tem comida suficiente. Reúna carne do quadril típulo e leve -a para Beramones.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Beramones reclamou que ela não apenas precisa proteger os habitantes locais dos revolucionários lefaristas, mas também deve alimentá -los.</p>
+<p> </p>
+<p>Você pegou tipolidas manchados e trouxe a carne do quadril para Beramones para ajudá -la.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

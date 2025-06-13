@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Espere um segundo, [%username]. Você não vai usar a chama de Kromede em volta do seu pescoço, é?</p>
+<p> </p>
+<p>Que desperdício. Você pode usá -lo para revestir a adaga do juiz para melhorar seu desempenho. Se você quisesse.</p>
+<p> </p>
+<p>Mas talvez você não. Esqueça que eu disse qualquer coisa ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Não, diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você precisa são três coisas. A adaga do juiz, a chama de Kromede e um talentoso Smith.</p>
+<p> </p>
+<p>O primeiro que posso dizer a você como conseguir, com bastante facilidade. O segundo que você já tem. E a terceira coisa? Hmmm....</p>
+<p> </p>
+<p>Agora, onde vamos encontrar um ferreiro talentoso? Eu me pergunto....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem razão! Eu sou realmente um talentoso Smith. Então, parece que tudo o que falta é a adaga do juiz.</p>
+<p> </p>
+<p>Felizmente para você, ouvi dizer que você pode encontrá -lo com[%dic:STR_DIC_M_FireSanctuaryQueenBoss_37_Ae]no templo do fogo.</p>
+<p> </p>
+<p>Então, saia lá, pegue a adaga e volte. Deveria levar o quê, cinco minutos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Err ... sim. Fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso significava retoricamente. Caso você não tenha notado, eu sou um Smith bastante capaz.</p>
+<p> </p>
+<p>Certa vez, criei uma adaga tão bonita que o proprietário se recusou a aceitá -lo, porque ele não era digno de carregá -lo.</p>
+<p> </p>
+<p>Eu finalmente o vendi, ou eu te mostraria. Você só terá que me levar à minha palavra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece suspeito para mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi rápido. Não é tão rápido quanto eu esperava, mas nenhum dano causado.</p>
+<p> </p>
+<p>Não chore por Kromede ... ela foi assumida pela tristeza e ódio. Ela não merece mais sua compaixão.</p>
+<p> </p>
+<p>Basta entregar a adaga do juiz e da chama de Kromede, e vamos começar a trabalhar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Isso teve um trabalho melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, sentindo -se um pouco incerto? Tudo bem, eu entendo.</p>
+<p> </p>
+<p>Os Daevas de Flame também estavam um pouco inseguros do meu trabalho, mas eu me provei a eles.</p>
+<p> </p>
+<p>Venha para mim com a adaga do juiz e da chama de Kromede em seu cubo, e eu mostrarei exatamente como eu cheguei a ser um mestre ferreiro.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, esse é um trabalho árduo. Eu pensei que isso seria mais fácil, mas combinar esses dois itens é realmente difícil.</p>
+<p> </p>
+<p>Eu posso precisar de alguns ingredientes extras. Vou precisar que você vá para Elysea e reunir 100 fluxos de armas e o coração de um elime ...</p>
+<p> </p>
+<p>Nah, estou apenas brincando. Aqui está a adaga de Kromede. Apreciá-lo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete materiais para refinar a adaga do juiz e trazê -los para [%dic:STR_DIC_N_Walter].</p>[%collectitem]</step>
+</steps>
+<p>Walter disse que refinará a adaga do juiz para você se você o levar a ele junto com a chama de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Walter disse que a chama de Kromede pode ser usada para reforçar a adaga do juiz, e ele pediu que você trazia a arma a ele.</p>
+<p> </p>
+<p>Você confiou a ele a chama de Kromede e a adaga do juiz, e fiel à sua palavra, ele refinou a adaga de Kromede para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

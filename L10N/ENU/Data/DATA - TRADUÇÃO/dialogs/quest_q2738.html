@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me contar um pouco da minha estratégia, [%username]. Aqui em Reshanta, a camada superior é mais importante que a camada inferior.</p>
+<p> </p>
+<p>Tem mais fortalezas, e também é o lar do caminho que leva à camada mais profunda de Reshanta.</p>
+<p> </p>
+<p>Então agora concentramos nossos esforços na camada superior de Reshanta e em duas fortalezas em particular.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Quais dois?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora todas as fortalezas sejam importantes, a fortaleza de Roah e o refúgio de Krotan desempenham papéis vitais para manter os Elyos sob controle.</p>
+<p> </p>
+<p>A fortaleza de Roah, situada acima do pouso de Teminon de Elysea, é a primeira fortaleza a subir o fragmento ocidental de Latesran.</p>
+<p> </p>
+<p>O Refúgio Krotan também possui uma localização estratégica próxima à base de Elyos na Ilha Triple, um dos principais pontos da camada superior de Reshanta.</p>
+<p> </p>
+<p>Se mantivermos[%dic:STR_DIC_E_Q2738] S dessas duas fortalezas sob controle, podemos prejudicar os movimentos inimigos no abismo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>A chave para controlar os movimentos dos Ellies é levar a fortaleza de Roah e o refúgio de Krotan.</p>
+<p> </p>
+<p>E a chave para capturar a fortaleza de Roah e o refúgio de Krotan é derrotar o inimigo[%dic:STR_DIC_E_Q2738] está lá.</p>
+<p> </p>
+<p>Eu preciso que você organize uma força e atacasse os porteiros da fortaleza. O que você acha? Você pode fazer isso?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Organize os nobres Daevas em uma força. Assista ao mapa pela época para atacar--[%dic:STR_DIC_E_Q2738] S só aparecerá quando a batalha da fortaleza começar.</p>
+<p> </p>
+<p>Por Aion, na verdade, tenho pena dos pobres tolos que você está prestes a enfrentar. Por Aion, eu faço.</p>
+<p> </p>
+<p>Elyos ou Balaur, os porteiros não saberão o que os atingiu.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava contando com você, [%username].</p>
+<p> </p>
+<p>Eu preciso de todos os Daeva em Reshanta para fazer a parte deles. Todo Daeva, toda Guilda é importante na vastidão desta guerra.</p>
+<p> </p>
+<p>Cada indivíduo, cada Guilda serve uma equipe maior. Tudo para asmodae, ou tudo está perdido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não podemos nos sentir confortáveis ​​e mal podemos esperar que o inimigo venha até nós.</p>
+<p> </p>
+<p>Para vencer esta guerra, temos que continuar nos movendo. Continue tomando locais importantes.</p>
+<p> </p>
+<p>Você derrotou os porteiros da fortaleza de Roah e do refúgio de Krotan?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">"Eles são derrotados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Seu sucesso é um grande benefício para asmodae.</p>
+<p> </p>
+<p>Agora, Balaur e Elyos sabem que nós, asmodianos, somos superiores.</p>
+<p> </p>
+<p>Se aproveitarmos essa vitória, podemos reivindicar todo o Reshanta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_E_Q2738] S na camada superior de Reshanta.</p>
+<p visible="[%0]">Fortaleza de roah ([%2]/1)</p>
+<p visible="[%0]">Refúgio Krotan ([%5]/1)</p></step>
+<step><p visible="[%15]">Relatório de volta para [%dic:STR_DIC_N_Votan].</p></step>
+</steps>
+<p>Organize uma força e derrote os porteiros das fortalezas de camada superior de Reshanta quando a batalha da fortaleza começar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Votan disse que a fortaleza de Roah e o refúgio de Krotan na camada superior de Reshanta eram a chave para manter os Elyos sob controle.</p>
+<p> </p>
+<p>Você organizou uma força e, uma vez que a fortaleza de Roah e o refúgio de Krotan caíram nas mãos inimigas, derrotou os porteiros da fortaleza, conforme ordenado.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

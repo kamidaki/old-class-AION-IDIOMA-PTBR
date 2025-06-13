@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Calon me diz que você nos ajudou a ganhar um pé no abismo ao se livrar dos soldados asmodianos de nível inferior.</p>
+<p> </p>
+<p>Você acha que também pode lidar com a eliminação dos soldados de nível superior?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Claro que posso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Confiança-é o que eu gosto de ver.</p>
+<p> </p>
+<p>O primeiro que você enfrentará será o [%dic:STR_DIC_E_Dgrade4] S.</p>
+<p> </p>
+<p>Você está preparado para sair agora?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Se você remover com sucesso o [%dic:STR_DIC_E_Dgrade4] S, isso nos dará uma vantagem. Somente se eles forem de coisas mais fortes, lembre -se. O vento mais fraco pode soprar sobre paredes fracas, amigo.</p>
+<p> </p>
+<p>Volte antes que o sangue seque.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu serei rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo o que ouvi de Calon False? Ele falou de sua grande habilidade e do seu senso de dever, mas não vejo também.</p>
+<p> </p>
+<p>Volte quando seu senso de dever retornar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se saiu com o [%dic:STR_DIC_E_Dgrade4] S?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Sua reputação é bem merecida, então.</p>
+<p> </p>
+<p>Você pode esperar missões mais difíceis à medida que o tempo avança.</p>
+<p> </p>
+<p>Aqui está uma recompensa pelo seu trabalho duro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lutar contra [%dic:STR_DIC_E_Dgrade4] S e vencem ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Sakmis].</p></step>
+</steps>
+<p>Livre -se dos soldados asmodianos de nível 4 que impedem as missões de patrulha da Guilda Cinzenta do Vento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sakmis, o general da brigada da Guilda do Vento Cinzento, encarregado das missões de patrulha no abismo, disse que ele ouviu coisas boas sobre você do general Brigade Calon.</p>
+<p> </p>
+<p>Ele disse que os soldados asmodianos de nível 4 interferiram nas missões da Guilda Cinzenta do Vento. Ele pediu para você lidar com eles, o que você fez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

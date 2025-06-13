@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mate os generais Elyos em Katalam, não importa se está no norte, no sul ou no subterrâneo de Katalam.</p>
+<p> </p>
+<p>Eu sei que essa é uma tarefa difícil, mas, afinal, chegamos aqui para vencer, não é?</p>
+<p> </p>
+<p>Só podemos alcançar a vitória completa se os Elyos forem eliminados.</p>
+<p> </p>
+<p>Derrote os generais de Elyos e prove que a vitória pertence a nós sozinha.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu já ouvi falar de suas ações.</p>
+<p> </p>
+<p>Diz -se que você demonstrou coragem heróica extraordinária.</p>
+<p> </p>
+<p>Você faz muita honra para nós asmodianos.</p>
+<p> </p>
+<p>Espero que você continue realizando atos heróicos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é uma boa notícia.</p>
+<p> </p>
+<p>Os Elyos não serão capazes de atacar tão facilmente sem o seu general.</p>
+<p> </p>
+<p>Esta é a nossa oportunidade. Agora podemos vencê -los.</p>
+<p> </p>
+<p>[%username], não teríamos essa oportunidade sem seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os generais de Elyos em Katalam ([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_LDF5a_Bard_Commander].</p></step>
+</steps>
+<p>Encontre os generais Elyos em Katalam e destrua -os.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bard, o governador do esquadrão Katalam Cleanup, deu a você a missão de derrotar os generais de Elyos.</p>
+<p> </p>
+<p>Você concluiu a missão com sucesso e recebeu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

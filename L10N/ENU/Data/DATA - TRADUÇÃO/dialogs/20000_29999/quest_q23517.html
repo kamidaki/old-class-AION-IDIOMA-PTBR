@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho uma tarefa desafiadora para você.</p>
+<p> </p>
+<p>Trata -se de eliminar os oficiais de Elyos de todo o katalam.</p>
+<p> </p>
+<p>Muitos oficiais de Elyos devem ser mortos ao fazê -lo.</p>
+<p> </p>
+<p>Para concluir esta tarefa, você deve matar muito mais do que apenas um ou dois deles.</p>
+<p> </p>
+<p>[%username], Confio que você conseguirá concluir esse desafio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os oficiais de Katalam Elyos?</p>
+<p> </p>
+<p>Sou muito grato por você estar lutando pelos asmodianos.</p>
+<p> </p>
+<p>Quase alcançamos nosso objetivo e confio que você não desista.</p>
+<p> </p>
+<p>Não duvido que seremos vitoriosos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Você cumpriu minha confiança em você.</p>
+<p> </p>
+<p>Eu sabia que você poderia dominar esse desafio com sucesso.</p>
+<p> </p>
+<p>Agora, a Guilda Elyos não poderá permanecer em Katalam por muito mais tempo.</p>
+<p> </p>
+<p>Uma recompensa espera por você. Não se esqueça de levá -lo com você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os oficiais de Elyos ([%2]/44).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_LDF5a_Bard_Commander].</p></step>
+</steps>
+<p>Encontre os oficiais da Elyos em Katalam e os derrote.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bard, o governador do esquadrão de limpeza de Katalam, deu a você a tarefa de destruir os oficiais de Elyos.</p>
+<p> </p>
+<p>Você matou muitos oficiais de Elyos e recebeu uma recompensa por suas ações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

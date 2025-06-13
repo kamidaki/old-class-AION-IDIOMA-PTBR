@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me ajudou muito, [%username], e eu gostaria de devolver o favor.</p>
+<p> </p>
+<p>Dentro do templo do fogo estão[%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae] e [%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae].</p>
+<p> </p>
+<p>Essas gárgulas têm[%dic:STR_DIC_I_QUEST_2378a]Neles, rumores de ter um poder incrível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você pegou meu interesse."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho pouco com o qual para recompensá -lo pelo seu serviço.</p>
+<p> </p>
+<p>Mas se você for ao templo do fogo e adquirir [%dic:STR_DIC_I_QUEST_2378a] S, eu posso.</p>
+<p> </p>
+<p>Vou criar algo maravilhoso com as pedras de chama.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae] e [%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae] estão profundamente dentro do templo do fogo.</p>
+<p> </p>
+<p>Derrotá -los e você obterá[%dic:STR_DIC_I_QUEST_2378a] S.</p>
+<p> </p>
+<p>Mas você não pode ir sozinho ao templo do fogo. Reúna seus aliados-esta tarefa será igual à recompensa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tem certeza? Esta é a única maneira de recompensar suas ações.</p>
+<p> </p>
+<p>Se o seu tempo não vale nada ....</p>
+<p> </p>
+<p>Devemos nos separar por enquanto, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu tempo é meu."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você se foi tanto tempo, eu me preocupei com você.</p>
+<p> </p>
+<p>Você foi capaz de reunir [%dic:STR_DIC_I_QUEST_2378a] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Tem sido um dia interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito, mas não tenho outra maneira de recompensá -lo sem as pedras de chama.</p>
+<p> </p>
+<p>Derrotar as gárgulas e adquirir [%dic:STR_DIC_I_QUEST_2378a] S.</p>
+<p> </p>
+<p>Você não ficará desapontado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu lembro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, sim, tem. Hoje eu posso mostrar meu verdadeiro poder.</p>
+<p> </p>
+<p>Apenas um toque era tudo o que eu precisava para infundir com minha energia.</p>
+<p> </p>
+<p>Pegue isso. Isso empalidece ao lado do serviço que você deu Dear Agnita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter as pedras de [%dic:STR_DIC_M_DFlame_GargoyleDarkD_36_Ae] e [%dic:STR_DIC_M_DFlame_GargoyleDarkD_34_Ae] e leve-os para [%dic:STR_DIC_N_Bulagan].</p>[%collectitem]</step>
+</steps>
+<p>Bulagan queria recompensar sua ajuda. Ele disse que as pedras de chama que você poderia obter no templo do fogo tinha poderes incríveis. Derrote o bloodfist à espreita e a gárgula do Bloodfist e colete as pedras de chama.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bulagan queria recompensá -lo. Ele disse que as pedras de chama do bã de sangue e a gárgula de punhos de sangue tinham poderes incríveis.</p>
+<p> </p>
+<p>Você foi ao templo do fogo e derrotou as gárgulas. Bulagan infundiu energia nas pedras de chama e as transformou em itens úteis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], há uma tarefa que você deve concluir.</p>
+<p> </p>
+<p>Você já ouviu falar que o templo das escalas foi ocupado pelo inimigo?</p>
+<p> </p>
+<p>Esta é uma região em que as batalhas mais ferozes são travadas. O Exército de Beritra, que continua expandindo sua esfera de influência, está lutando contra os asmodianos pelo altar da avareza e do templo das escalas.</p>
+<p> </p>
+<p>É preocupante que o [%dic:STR_DIC_W_LF4_SZ_2011_A] Agora é controlado por nossos inimigos. Mas não devemos deixar essas más notícias nos desencorajarem. Caso contrário, não temos uma chance nesta guerra.</p>
+<p> </p>
+<p>Kaisinel nos guia. Não podemos voltar. Devemos balançar esta situação a nosso favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Capturar o templo das escalas é uma das partes mais importantes de nossa estratégia.</p>
+<p> </p>
+<p>Depois de alcançarmos uma vitória, alcançaremos muito mais.</p>
+<p> </p>
+<p>Participar dessas batalhas só aumentará sua glória, [%username].</p>
+<p> </p>
+<p>Reunir seus camaradas e atacar o [%dic:STR_DIC_M_QUEST_11308].</p>
+<p> </p>
+<p>Dê tudo que você tem que ganhar de volta o [%dic:STR_DIC_W_LF4_SZ_2011_A]. Que a bênção de Kaisinel esteja com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eliminar o general e seus servos não é uma questão simples.</p>
+<p> </p>
+<p>[%username], você não está sozinho nesta batalha. Muitos outros Daevas e Legiões inteiras estão envolvidas nesta batalha. Então você certamente retornará vitorioso.</p>
+<p> </p>
+<p>Quando o general inimigo foi eliminado e você conquistou o [%dic:STR_DIC_W_LF4_SZ_2011_A], Assim, [%dic:STR_DIC_N_Queesia], o Ghost Light Legionary, aparecerá.</p>
+<p> </p>
+<p>Fale com ela, [%username], e conte a ela sobre suas realizações.</p>
+<p> </p>
+<p>Que a proteção do Kaisinel esteja com você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Quanto mais você atrasar, mais a vitória escapa seu alcance.</p>
+<p> </p>
+<p>Você quer voltar para o Santum derrotado? Ou você quer voltar para casa com aplausos da vitória?</p>
+<p> </p>
+<p>Lembre -se de que sua ajuda pode significar a diferença entre vitória ou derrota.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças à ajuda de muitos Daevas, conseguimos recuperar o templo das escalas.</p>
+<p> </p>
+<p>Muitos Elyos estão preocupados com o futuro da Elysea. Mas eles acreditam no poder de Kaisinel. Então eles vieram para Balaurea e estão lutando pela Elysea.</p>
+<p> </p>
+<p>[%username], você é um dos bravos soldados que lutaram na batalha pelo templo das escalas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é verdade.</p>
+<p> </p>
+<p>Eu pensei que era um boato a princípio quando alguém me disse que um Daeva especial realizou feitos extraordinários na batalha pelo Templo de Scales.</p>
+<p> </p>
+<p>Eu quero reconhecer adequadamente suas realizações, [%username]. Então, eu vou te dar uma recompensa digna.</p>
+<p> </p>
+<p>Estou pedindo que você continue lutando pelo templo das escalas e por uma vitória de Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrubar o guardião inimigo geral e recuperar o [%dic:STR_DIC_W_LF4_SZ_2011_A].</p>
+<p visible="[%0]">Eliminar o [%dic:STR_DIC_M_QUEST_11308]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Queesia].</p></step>
+</steps>
+<p>Recaptine o templo das escalas derrotando o Guardian General.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moras pediu para você recuperar o templo das escalas.</p>
+<p> </p>
+<p>Você e seus camaradas eliminaram o Guardian General e recuperaram o templo das escalas. Então você se reportou a Siaqua.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

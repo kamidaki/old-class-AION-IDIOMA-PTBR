@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], ordens importantes chegaram!</p>
+<p> </p>
+<p>Diz que devemos encontrar o [%dic:STR_DIC_N_OBJ_IDLDF5_Under_02_Entrance_In_D].</p>
+<p> </p>
+<p>A maioria dos nossos materiais de guerra foi usada nas batalhas. É por isso que o governador me confiou pessoalmente essas ordens.</p>
+<p> </p>
+<p>Os asmodianos estão secretamente trazendo tesouros da tribo Rune para [%dic:STR_DIC_W_DF5]. Por favor, apresse -se!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi a investigação?</p>
+<p> </p>
+<p>Eu estava preocupado, pois não tinha ouvido falar de você.</p>
+<p> </p>
+<p>Você encontrou o corredor de refúgio asmodiano?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda existem muitos tesouros valiosos no refúgio da tribo Rune.</p>
+<p> </p>
+<p>Baús de tesouro e outros itens valiosos são frequentemente mantidos lá.</p>
+<p> </p>
+<p>Se não tivéssemos subornado um dos Shugos, talvez nunca tivéssemos descoberto.</p>
+<p> </p>
+<p>Agora que sabemos, podemos elaborar um plano detalhado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_N_OBJ_IDLDF5_Under_02_Entrance_In_D] em[%dic:STR_DIC_W_DF5].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Pequs_E].</p></step>
+</steps>
+<p>Vá para Vengar e encontre o corredor de refúgio que foi secretamente construído pelos asmodianos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pekus pediu que você localizasse o corredor de refúgio asmodiano.</p>
+<p> </p>
+<p>Você encontrou o corredor de refúgio asmodiano e informou a Pekus sobre sua localização. Pekus disse que criaria um novo plano com base nas informações.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

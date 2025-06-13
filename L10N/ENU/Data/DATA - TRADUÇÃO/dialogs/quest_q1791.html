@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom tempo! Eu estava pensando que poderia usar sua ajuda, [%username].</p>
+<p> </p>
+<p>Nosso comboio de suprimento chega em breve, e estou preocupado com esses Drakes que vagam pela área. Eles pegam suprimentos às vezes, veja.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, eles são gananciosos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não quero problemas no meu relógio, para que eu possa usar seus serviços, [%username]. Eu posso pagar generosamente!</p>
+<p> </p>
+<p>O que eu preciso para você limpar uma rota para o comboio de suprimento, eliminando os drakes degenerados e [%dic:STR_DIC_M_Ab1_1241_drakeB_38_An] está nas áreas próximas. Fácil, certo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já caçou tais criaturas antes, certo? Sombras, você pode acabar com todos os drakes degenerados e [%dic:STR_DIC_M_Ab1_1241_drakeB_38_An] S na ilha Miren, se você gostou!</p>
+<p> </p>
+<p>Eu preciso continuar com meu trabalho. Encontre -me imediatamente quando terminar. Agora, continue!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso deve ser fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, mas se estivermos sitiados sem suprimentos ...</p>
+<p> </p>
+<p>Ah, não importa. Tenho muitas pessoas que conhecem o valor de um favor.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não sou seu lacaio."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi gritos e ossos quebrando fora de nossas paredes. Foi que você exterminou os drakes degenerados e [%dic:STR_DIC_M_Ab1_1241_drakeB_38_An] S?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu ... desanimei -os, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. É claro que acontece que eles mudaram a rota de suprimento depois que você foi embora, mas ainda vou recompensá -lo conforme prometido. Sem ressentimentos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se dos Drakes em Miren Island.</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1241_drake_38_An]([%2]/5)</p>
+<p visible="[%0]">[plur][%dic:STR_DIC_M_Ab1_1241_drakeB_38_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Metis].</p></step>
+</steps>
+<p>Metis está preocupado com o fato de os Drakes na bacia da fortaleza atacarem o comboio de suprimentos. Elimine todos os drakes que estão colocando em risco a rota de suprimento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Metis pediu que você expulsasse Drakes, perto da fortaleza para limpar uma rota para seu comboio de suprimentos.</p>
+<p> </p>
+<p>Você matou os Drakes, mas aprendeu que o comboio havia sido redirecionado. Metis ficou agradecido o suficiente por pagar de qualquer maneira.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

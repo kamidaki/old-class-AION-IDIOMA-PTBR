@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi uma mensagem de que a tropa de Beritra apareceu perto do portão sul.</p>
+<p> </p>
+<p>Por favor, mate [%dic:STR_DIC_M_LDF5B_A4_Vri_Poison_As_SN_NmdQ_65_Ae] e traga -me documentos militares.</p>
+<p> </p>
+<p>Se ele é um espião, ele deve ter algo a ver com a tropa.</p>
+<p> </p>
+<p>Precisamos urgentemente de informações sobre a operação do inimigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É sabido que Beritra é particularmente perspicaz e inteligente, mesmo para um senhor de Balaur.</p>
+<p> </p>
+<p>Com um pouco mais de informação, poderemos adivinhar no próximo passo que o Exército de Beritra fará.</p>
+<p> </p>
+<p>Você descobriu um documento militar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as ordens de operação da 40ª Guilda.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi bom que eu só confiei em você, [%username]!</p>
+<p> </p>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Estamos na posse de uma informação valiosa agora que adquirimos o comando de operação.</p>
+<p> </p>
+<p>Agora, tudo o que precisamos fazer é impedir seus planos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Juntar [%dic:STR_DIC_I_QUEST_23307A] e leve tudo para [%dic:STR_DIC_N_LDF5_Village_Guard11_D].</p>[%collectitem]</step>
+</steps>
+<p>Mate o espião da 40ª unidade de Drakan e se apegue ao documento militar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tobald achou que ajudaria a conhecer a estratégia dos inimigos e pediu que você matasse o espião de Beritra e trazia os documentos militares.</p>
+<p> </p>
+<p>Você matou o 40º espião de Drakan, conforme ordenado e trouxe as ordens da 40ª Guilda para Tobald. Ele agradeceu, pois o ajudou muito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

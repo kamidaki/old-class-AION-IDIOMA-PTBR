@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], precisamos da sua ajuda!</p>
+<p> </p>
+<p>Existem interrupções constantes no trabalho de mineração e ele precisa ser concluído por uma certa data!</p>
+<p> </p>
+<p>É ruim para os negócios da Marinerks se a saída de mineração diminuir devido às interrupções, AK!</p>
+<p> </p>
+<p>Por favor, elimine o [%dic:STR_DIC_M_LDF5A_E4_Souledstone_D_64_An] e [%dic:STR_DIC_M_LDF5A_E4_Spakle_64_n]que estão constantemente interferindo no trabalho da mina, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta, AK?</p>
+<p> </p>
+<p>As escavações mais longas tomam, pior será, AK.</p>
+<p> </p>
+<p>Você veio me dizer que matou o Frost Angolem e o Sparkle, Ak? AK?</p>
+<p> </p>
+<p>Mairinerk significa negócios, AK.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os obstáculos foram removidos, agora podemos aderir ao plano de mineração, AK.</p>
+<p> </p>
+<p>Estava certo de mim ir até você em busca de ajuda, AK!</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%username], Sou eternamente grato, Ak.</p>
+<p> </p>
+<p>Muito obrigado, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os encrenqueiros na mina.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_E4_Souledstone_D_64_An]([%2]/8)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_E4_Spakle_64_n]([%5]/11)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5a_Mairing_E].</p></step>
+</steps>
+<p>Elimine os angolemas de geada e os cem dias brilham que estão interferindo na mineração.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Mairinerk pediu ajuda com um projeto de mineração que deve ser concluído dentro de um prazo reduzido.</p>
+<p> </p>
+<p>Após a eliminação dos angolemas de geada e os cem dias de brilho que impediram os esforços de mineração, você voltou e o MAIRINERK agradeceu.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu tenho um pedido para você. É uma coisa pequena, na verdade, mas você estará fazendo uma boa ação de uma boa ação.</p>
+<p> </p>
+<p>Por favor, diga sim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É meu filho. Ele tem sido tão gentil comigo ultimamente, me levando agora que não posso cuidar de mim mesmo. Ele está tão ocupado e acha que não presto atenção, mas sim.</p>
+<p> </p>
+<p>Eu o ouvi dizendo que ele precisa de algumas luvas novas, mas mal acho que sei o que os jovens estão vestindo hoje em dia. Eu tenho olhado em volta e você parece um dos mais bem vestidos aqui, então pensei que você saberia. Que tipo de luvas devo obter para ele?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tal algumas luvas de Brax?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa é uma ideia adorável! Eles vão manter as mãos quentes e ele sempre teve uma circulação tão baixa.</p>
+<p> </p>
+<p>Você sabe, acho que ouvi que eles os estão dando no[%shoplink]como uma oferta especial. Você nem precisa de um cupom! Já tentei usá -lo antes, e não consegui entender essa coisa nova. Você os pegaria para mim? Tenho certeza de que será fácil o suficiente para você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é um querido. Eu tenho mais negócios na cidade, então ainda estarei aqui quando você os tiver.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou demorar!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, não, você está certo. Tenho certeza de que posso descobrir se me esforçar o suficiente. Não preciso perder seu tempo com algo assim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu posso ter tempo depois."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso foi rápido! Você tem as luvas ou está de volta para me dizer que eles esgotaram?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Era isso que você queria, não foi?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, parece que você está tendo tanta dificuldade em resolver isso quanto eu! Eu sei que você visita o [%shoplink], e então eles enviam suas compras no correio expresso. Você se importaria de tentar de novo? Não consigo ler todo esse pequeno texto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe por isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh sim! Lindo! Bem, muito obrigado pelo seu tempo. Tenho certeza de que meu filho vai adorar isso.</p>
+<p> </p>
+<p>Agora, aqui, pegue isso. Não, não, por favor leve. Minha cunhada me deu, mas acho que ela está senil. Devo ter dito a ela vinte vezes que sou alérgico ao pêlo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha um[%dic:STR_DIC_I_junk_world_event_webshop_02a]para [%dic:STR_DIC_NPC_event_Hinjel].</p>[%collectitem]</step>
+</steps>
+<p>Hinjel gostaria de algumas luvas de Brax como um presente para o filho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O velho Hinjel queria dar um bom presente ao filho, mas precisava da sua orientação no que comprar e sua ajuda para obtê -lo do[%shoplink], que ela achou novo e confuso.</p>
+<p> </p>
+<p>Você a encontrou algumas luvas de Brax, que nem sequer custaram a você Kinah.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

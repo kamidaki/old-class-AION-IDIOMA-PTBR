@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Este não é um bom momento para estar aqui, [%username]. Aqueles que explodiram Balaur no Naduka Biolab estão mexendo conosco.</p>
+<p> </p>
+<p>Como? Abelhas! Eu mesmo os vi. Já fomos avisados ​​por um arconte chamado Vyuin de que o Balaur estava experimentando abelhas.</p>
+<p> </p>
+<p>Venha para pensar sobre isso, o nosso apareceu pouco tempo depois que ele saiu. Isso é alguma coincidência ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim, coincidência ... nada de azar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De qualquer forma, sabíamos que algo estava errado quando eles apareceram. As abelhas não são exatamente comuns nessa região, afinal.</p>
+<p> </p>
+<p>Olga está dizendo que eles são "mensageiros dos Jesters Tippled", o que quer que isso signifique. Eles estão pairando nas proximidades, mas ainda não atacaram ... ainda.</p>
+<p> </p>
+<p>Eu entendo que eles são mais rápidos, mais agressivos e têm veneno forte. Precisamos da sua ajuda para nos livrar deles agora.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouça com cuidado. o [%dic:STR_DIC_W_DF4_SZ_C5_Lab] está no fundo do Petralith Canyon.</p>
+<p> </p>
+<p>Não temos idéia do que o Balaur está fazendo lá ... ou a quê. Então eu não iria despreparado.</p>
+<p> </p>
+<p>Enquanto isso, vamos nos afastar, caso o [%dic:STR_DIC_M_DF4_W_C5_Bee_DR_lab_55_An] ataque novamente. Estamos contando com você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou te decepcionar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Suponho que é um pouco demais esperar de um Daeva solitário, não é?</p>
+<p> </p>
+<p>Multar. Enviarei para reforços da Pandaemonium. Eles sentirão o que está no biolab antes de fazermos mais alguma coisa.</p>
+<p> </p>
+<p>Vamos jogar do seu jeito por enquanto, [%username]. Só espero que não sejamos picados até a morte antes que algo seja feito.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sugiro que um bug-ingente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não vejo uma única abelha explodida há horas, muito menos os enxames que estou acostumado.</p>
+<p> </p>
+<p>Isso deve significar que você acabou de voltar do Naduka Biolab.</p>
+<p> </p>
+<p>Eu presumo o [%dic:STR_DIC_M_DF4_W_C5_Bee_DR_lab_55_An] S estão mortos?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Swatted, mas bom."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Eu acho que você apenas nos poupou muitas horas difíceis de ataque e defesa. Com inimigos tão pequenos quanto as abelhas, teria sido difícil.</p>
+<p> </p>
+<p>Não consigo imaginar como teria sido se seus números crescessem ainda mais. E o biolab teria feito isso-contando.</p>
+<p> </p>
+<p>Você nos fez uma boa ação hoje, [%username]. Não vou esquecer, e ninguém com quem eu falo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_DF4_SZ_C5_Lab] e limpe [%dic:STR_DIC_M_DF4_W_C5_Bee_DR_lab_55_An] S. ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Helen].</p></step>
+</steps>
+<p>Helline diz que enxames enormes estão se reunindo perto do acampamento. Vá para o Naduka Biolab e quebre seus enxames.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Helline está preocupado com enxames enxertos de abelhas que foram vistos nas proximidades. Ela teorizou que eles eram o produto do Naduka Biolab.</p>
+<p> </p>
+<p>Ela o enviou ao biolab para se livrar das abelhas em seu território, antes que elas se tornem uma grande ameaça.</p>
+<p> </p>
+<p>Você foi ao Naduka Biolab e eliminou as abelhas. Helline lhe disse que você provavelmente salvou ela e suas tropas muito sofridas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

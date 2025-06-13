@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(O documento está escrito na língua Balaur. Você poderia ter encontrado uma peça valiosa de inteligência?)</p>
+<p> </p>
+<p>(É melhor você perguntar ao estudioso[%dic:STR_DIC_N_Finne] Sobre isso.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou guardar isso com segurança."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava uma grande descoberta, mas acho que a escavação realmente não funciona assim. Você tem que ser paciente.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu posso ter algo bom ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... na verdade, não acho que isso tenha sido escrito pelo Balaur-tudo esses erros gramaticais. E está escrito em papel shugo.</p>
+<p> </p>
+<p>Não sei por que eles estão escrevendo em Balic. Talvez eles não querem que outras pessoas decodifiquem?</p>
+<p> </p>
+<p>Suspeito que os comerciantes de nuvem preta estejam envolvidos de alguma forma. Vá Fale com [%dic:STR_DIC_N_Shugo_AB1_1]-Ele provavelmente saberá de algo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você precisa, Daeva? Kohrunerk é legítimo-shugo, Nyerk, não fez nada de errado, não deixou evidências. Akakakak!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">"Conte -me sobre este artigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Código Balic simples. Fácil de decifrar. Vamos ver ... ícone de Mithril, duas caixas Malek, estátua dourada de Aukwi ....</p>
+<p> </p>
+<p>Estranho, Nyerk. Manifesto de carga do navio em nuvem negra que desapareceu meses atrás. Jogou todos os comerciantes em desordem-muitos bens valiosos perdidos.</p>
+<p> </p>
+<p>Poderia ser ... Shulacks ... hmm. Mostrar para [%dic:STR_DIC_N_Shugo_DC1_8]. Precisa saber isso rápido rápido, sim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Eu vou avisá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Kinah é apenas um amigo que o Micorunerk tem. Ou se Daeva tem Kinah, Daeva também é meu amigo, Akakak!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sem Kinah hoje, apenas papel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não desapareceu, hmm, nyerk ... atacou ...</p>
+<p> </p>
+<p>O que os shulacks estão fazendo?</p>
+<p> </p>
+<p>Obrigado por chamar a atenção da Black Cloud, Daeva. Não há razão para se preocupar ainda mais, não.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Finne].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Shugo_AB1_1].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Shugo_DC1_8].</p></step>
+</steps>
+<p>Você descobriu um documento escrito na língua Balaur. Pergunte a Midori sobre isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você descobriu um documento escrito na língua Balaur na área oculta em uma fortaleza de camada superior.</p>
+<p> </p>
+<p>Midori disse que este documento foi escrito por Shugos e enviou você aos comerciantes da nuvem negra. Eles disseram que continha os itens de uma remessa que haviam perdido meses atrás, agradeceu por trazê -lo à atenção deles e disseram que você não precisa se preocupar mais. O que é um shulack, afinal?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>A vila de Jeiaparan costumava ser um lugar agradável para morar.</p>
+<p> </p>
+<p>Mas agora é preenchido por Mortos Vivos. As coisas estão difíceis aqui e só piorando.</p>
+<p> </p>
+<p>É por isso que dois oficiais do governo foram despachados-para descobrir como os daevas podem fazer a diferença.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Do lado de fora da vila, muitas almas inquietas vagam pelas ruínas do patema.</p>
+<p> </p>
+<p>Sob as condições atuais, os moradores não podem deixar a vila por conta própria. Daevas que devolvem as almas inquietas ao fluxo de Aether são recompensadas com moedas.</p>
+<p> </p>
+<p>Você ajudará nesse empreendimento também, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para [%dic:STR_DIC_W_LF3_SZ_F1] e se livrar de [%dic:STR_DIC_M_UndeadLightFi_40_An] S.</p>
+<p> </p>
+<p>Existem muitos deles, por isso não será fácil ... mas o trabalho beneficia a todos nós.</p>
+<p> </p>
+<p>Lembre -se disso. Quando você voltar, eu vou recompensá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seus outros deveres são mais importantes então?</p>
+<p> </p>
+<p>Volte para mim quando tiver tempo para fazer um bom bem.</p>
+<p> </p>
+<p>Precisamos de ajuda ... muito disso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Mais tarde, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há como enfrentar todos os nossos oponentes de uma só vez. Livrar -se de mesmo um deles leva os esforços de muitas mãos.</p>
+<p> </p>
+<p>Mas isso é tudo o que podemos fazer agora-não há realmente outra escolha.</p>
+<p> </p>
+<p>Enfrentou seus inimigos com honra?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Enfrentado e derrotado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para derrotar tantos, você deve ter gasto grande parte do seu poder e tempo.</p>
+<p> </p>
+<p>Graças ao seu trabalho duro, os moradores aqui serão mais seguros, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_UndeadLightFi_40_An]([%2]/17).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Euripia].</p></step>
+</steps>
+<p>Os espíritos guerreiros estão assombrando as ruínas do patema. Ajude -os a atravessar o fluxo de Aether.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Euripia, um oficial de administração, disse que os Mortos Vivos em torno da vila de Jeiaparan ameaçam a segurança dos moradores.</p>
+<p> </p>
+<p>Você foi às ruínas do patema e derrotou um espírito guerreiro. Você recebeu uma moeda como recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

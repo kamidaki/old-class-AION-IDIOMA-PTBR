@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q49020</questid>
+<questname>네르투스의 지령</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: General da Brigada Nerita</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: Mate os Elyos que invadiram Beluslan quando a brecha foi aberta!</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que você tenha resolvido sua tarefa importante com sucesso.</p>
+<p> </p>
+<p>Qual é a situação?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você tem sido uma grande ajuda.</p>
+<p> </p>
+<p>Você está sempre lá para nos ajudar quando o perigo está aparecendo.</p>
+<p> </p>
+<p>Obrigado.</p>
+<p> </p>
+<p>Eu ficaria feliz em ajudá -lo se você precisar da minha ajuda.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que estão atacando Beluslan ([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Nerthus].</p></step>
+</steps>
+<p>Ordem de operação urgente: Mate os Elyos que estão atacando Beluslan enquanto a brecha está aberta e se reporte a Nerita.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos atacaram Beluslan através da fenda. Você venceu o Elyos atacante e relatou a Nerita.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

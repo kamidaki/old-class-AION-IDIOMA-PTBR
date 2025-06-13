@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41557</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu preciso de sua ajuda. Eu preciso que você siga alguém.</p>
+<p> </p>
+<p>Um dos traidores, [%dic:STR_DIC_M_LDF4b_Monster_Q41557], sabe muito sobre nossa rede de defesa. Se suas informações fossem transmitidas ao Balaur, estaríamos enrolados em questão de dias. Quanto mais ele for morto, mais cedo estaremos em segurança.</p>
+<p> </p>
+<p>Por enquanto, eu só quero que ele rastreie. Eu quero que você o siga, encontre onde ele mora, depois coloque um marcador fora dele [%dic:STR_DIC_E_LDF4B_ItemUseArea_Q41557A].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você fez? Está tudo no lugar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, eu fiz tudo o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente. Primeiro, recuperamos nossos documentos e depois o matamos. O traidor pagará.</p>
+<p> </p>
+<p>Obrigado pela ajuda, [%username]. Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Siga astus astúdicas e marque o seu[%dic:STR_DIC_E_LDF4B_ItemUseArea_Q41557A]com uma pedra marcadora [%2].</p></step>
+<step><p visible="[%3]">Relatório de volta para [%dic:STR_DIC_N_Aesty].</p></step>
+</steps>
+<p>Você foi encarregado de seguir Wily Astus em sua casa. Seja discreto e deixe um marcador do lado de fora para alertar seus camaradas de Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aethon lhe disse que um traidor chamado Wily Astus deve ser morto. No entanto, você precisaria primeiro recuperar algumas informações dele e o rastreou em sua casa, onde colocou um marcador.</p>
+<p> </p>
+<p>Você então voltou para Aethon e foi bem recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

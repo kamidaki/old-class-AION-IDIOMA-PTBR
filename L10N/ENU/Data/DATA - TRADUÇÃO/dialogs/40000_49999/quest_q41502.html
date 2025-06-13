@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41502</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Só há um lugar que eu sei que tem pedras como essas, [%username], e esse é o coração da fissura.</p>
+<p> </p>
+<p>Eu desenvolvi um teste para você realizar. Eu quero que você pegue uma das pedras preciosas que você coletou e devolva a um[%dic:STR_DIC_W_LDF4b_SZ_T1_S11].</p>
+<p> </p>
+<p>Quando você estiver lá, você precisa usar o poder mágico que coloquei na pedra, então apenas ... veja o que acontece!</p>
+<p> </p>
+<p>Se as pequenas crateras e o coração da fissura estiverem conectados, você deve ver algum tipo de reação da pedra. Caso contrário, você pode voltar aqui e descobriremos nosso próximo curso de ação. Negócio?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que você se foi há tanto tempo? Eu só te enviei para uma breve tarefa!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Teletransportado? Então eles estão conectados!</p>
+<p> </p>
+<p>As consequências são profundas, [%username]. Pense bem: uma rede de células, conectada por esse estranho poder. Talvez tenhamos descoberto a fonte do poder de Tiamat! Isso pode virar a maré de nossa guerra!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use a fina pedra preciosa em um[%dic:STR_DIC_W_LDF4b_SZ_T1_S11] [%2].</p></step>
+<step><p visible="[%3]">Verifique o [%dic:STR_DIC_OBJ_LDF4B_FOBJ_CrackPortal] [%5].</p></step>
+<step><p visible="[%6]">Relatório de volta para [%dic:STR_DIC_N_Grido].</p></step>
+</steps>
+<p>Vá para uma pequena cratera e veja o que acontece com a pedra preciosa que você encontrou, agora refinado, quando a magia é aplicada a ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Grido teve um experimento para você. Ele pediu que você pegasse uma pedra preciosa refinada de volta a uma pequena cratera e, em seguida, tente usar a magia para ver o que aconteceu.</p>
+<p> </p>
+<p>Você fez e foi transportado instantaneamente para a cratera gigante antes de ser enviado para o coração da fissura. Depois de finalmente voltar ao Grido, você se reportou, para sua empolgação.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

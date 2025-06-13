@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Canta, com os olhos fechados) quando os pedaços do mapa, dispostos no melhor artigo, são montados ...</p>
+<p> </p>
+<p>... um baú brilhante aparecerá ...</p>
+<p> </p>
+<p>Abra esse baú!</p>
+<p> </p>
+<p>Somente aqueles que têm um coração puro e corajoso podem obtê -lo!</p>
+<p> </p>
+<p>Aceite a bênção, se você foi escolhido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta que música é.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Seus olhos crescem cada vez maiores.) Esta é uma profecia que os Shugos passaram por Palavra falada, Akakak.</p>
+<p> </p>
+<p>Esta profecia afirma que aqueles que têm um coração puro e corajoso alcançarão grande riqueza, AK.</p>
+<p> </p>
+<p>É claro que muitos tentaram, mas apenas poucos tiveram sucesso, AK.</p>
+<p> </p>
+<p>O que Daeva acha?! Daeva tentará, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Você diz que deseja tentar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom!</p>
+<p> </p>
+<p>Não se esqueça da minha música, AK.</p>
+<p> </p>
+<p>Quando os pedaços do mapa, dispostos no melhor artigo, são montados ...</p>
+<p> </p>
+<p>... um baú brilhante aparecerá ...</p>
+<p> </p>
+<p>Abra esse baú!</p>
+<p> </p>
+<p>Somente aqueles que têm um coração puro e corajoso podem obtê -lo!</p>
+<p> </p>
+<p>Se Daeva for escolhido, aceite a bênção.</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_IDDF2flying_event01] e mate o traiçoeiro[plur][%dic:STR_DIC_M_IDEVENT01]. Então Daeva receberá as peças roubadas do[%dic:STR_DIC_I_ASSEMBLY_WORLD_EVENT_INST_ITEM_MAP], e.</p>
+<p> </p>
+<p>Se Daeva montar essas peças, um baú brilhante aparecerá como profetizado, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Clica em sua língua). Que pena, Ak.</p>
+<p> </p>
+<p>Daeva rapidamente desiste de riqueza e glória. Daeva carece de verdadeira ambição, Ak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Unnng ... krrrrng ...</p>
+<p> </p>
+<p>Quem é você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Localize o peito brilhante.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Unnng ... krrrrng ...</p>
+<p> </p>
+<p>Sua identidade ... não foi ... comprovada ...</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta ... de novo ... pegue isso ...</p>
+<p> </p>
+<p>Você ... tem sido ... escolhido ...</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue um peito brilhante para [%dic:STR_DIC_N_WORLD_IDEVENT_TREASUREROOM].</p>[%collectitem]</step>
+</steps>
+<p>Mate o [plur][%dic:STR_DIC_M_IDEVENT01] em[%dic:STR_DIC_W_IDDF2flying_event01] e combinar as peças roubadas do[%dic:STR_DIC_I_ASSEMBLY_WORLD_EVENT_INST_ITEM_MAP]. Então, leve para o [%dic:STR_DIC_N_WORLD_IDEVENT_TREASUREROOM].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Indiana Jonshunerk contou a você uma enorme câmara de tesouros e disse para você tentar encontrá -la.</p>
+<p> </p>
+<p>Você entrou na câmara do tesouro em[%dic:STR_DIC_W_IDDF2flying_event01], que estava cheio de tesouros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

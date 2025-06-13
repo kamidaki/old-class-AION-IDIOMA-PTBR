@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta é uma descoberta notável, [%username]! Este documento antigo que você encontrou está cheio de história de Balaur, lendas, ritos de enterro!</p>
+<p> </p>
+<p>Você sabe o que diz aqui? Ele fala de uma cerimônia de conjuração que o Balaur usa! Ele descreve em detalhes perfeitos onde essa cerimônia ocorre e a poção que eles usam.</p>
+<p> </p>
+<p>Com isso, podemos descobrir o que é nas sombras que esse tempestade é e por que foi selado dentro do templo de Beshmundir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que tipo de poção é?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É ... é difícil decifrar esta parte. Um tipo de glândula ... talvez um óleo. Vou trabalhar nisso ....</p>
+<p> </p>
+<p>Diz onde está localizado e o que você precisa fazer para obtê -lo ... mas o que é?</p>
+<p> </p>
+<p>Precisamos encontrá -lo, seja o que for, para descobrir o que é essa asa de tempestade e por que estava trancada no templo. Você vai emprestar uma asa, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fra ... perfumado ... oh, o que precisamos para fazer a poção é[%dic:STR_DIC_I_QUEST_30207a] S! Eu tinha esquecido o que esse símbolo significava ... já faz algum tempo desde a minha educação.</p>
+<p> </p>
+<p>O documento é muito claro sobre como obtê-lo-você deve matar [%dic:STR_DIC_M_LF4_C_Dragonfly_55_An] Areia [%dic:STR_DIC_M_LF4_C_DragonSnake_55_An] S em resíduos de angriagem.</p>
+<p> </p>
+<p>Isso pode realmente ser um achado enorme para nós, [%username]. Vou decodificar o restante do documento enquanto você obtém glândulas petrolíferas perfumadas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso não deve ser muito difícil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós chegamos até aqui, [%username]-Por que você está deixando agora? Metade desta pesquisa achado é creditada a você!</p>
+<p> </p>
+<p>Olha, já sabemos que Isbariya estava alertando contra a abertura do túmulo de Stormwing. Mas o que é Stormwing? Eu devo saber!</p>
+<p> </p>
+<p>Como você pode não querer descobrir?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Há um aviso por uma razão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem? Você encontrou as glândulas petrolíferas perfumadas, [%username]?</p>
+<p> </p>
+<p>Estou em punhais e barragens desde que você saiu! Devo saber o que é essa Walmwing! É tudo em que consigo pensar.</p>
+<p> </p>
+<p>Então entregue as glândulas a óleo para que possamos começar ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as glândulas petrolíferas perfumadas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Um estudioso que você nunca será, [%username]!</p>
+<p> </p>
+<p>Se você apenas percebesse o quanto isso é importante, você teria concluído esta tarefa e voltou aqui com o [%dic:STR_DIC_I_QUEST_30207a]já é.</p>
+<p> </p>
+<p>Você não tem ideia do que nós, Elyos, pode estar enfrentando ... por favor, [%username]!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou investigar agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é muito peculiar ... substância. É um tipo de cheiro doentio, não é?</p>
+<p> </p>
+<p>Tudo o que resta agora é a cerimônia real ... Devo ver o que é Stormwing! É estranho, mas me sinto quase atraído por isso ... obrigado a despertá -lo.</p>
+<p> </p>
+<p>Obrigado, [%username]. Talvez você devesse ter perseguido uma vida de pesquisa em vez de ser um[%userclass].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [%dic:STR_DIC_I_QUEST_30207a] e trazê -lo para [%dic:STR_DIC_N_Pilomenes].</p>[%collectitem]</step>
+</steps>
+<p>O antigo documento de dragão revelou informações sobre uma cerimônia de conjuração. Derrote os serradores ferozes e os lametail leowasps e traga de volta o material necessário para realizar a cerimônia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os pilomenos estavam em êxtase ao encontrar informações sobre uma cerimônia de conjuração no antigo documento de dragão.</p>
+<p> </p>
+<p>Tendo sido informado de que a realização da cerimônia o levará à identidade de Withwing, você trouxe de volta as glândulas perfumadas que eram necessárias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

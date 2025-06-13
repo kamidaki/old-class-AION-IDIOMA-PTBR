@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Não competindo no coliseu, [%username]? Ah, talvez você esteja treinando para melhorar seu desempenho. Queremos que as coisas sejam um pouco melhores do que da última vez, não?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não fiz isso tão mal!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, suponho que, se você tiver reduzido as expectativas, qualquer coisa parece um sucesso.</p>
+<p> </p>
+<p>Não se engane, espero melhor daqueles que estão sob o meu relógio! Você gostaria de alguns conselhos sobre como melhorar? E talvez você possa ter outra tentativa na arena.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Na minha experiência, o mais eficaz no coliseu são aqueles que se esforçam. Talvez eles tenham habilidades especiais e incomuns. Talvez eles despejam todos os seus esforços sobre a sobrevivência, truques e táticas. Talvez eles sejam inflexivelmente brutais, ou tocam seu oponente com manipulação psicológica.</p>
+<p> </p>
+<p>Realmente não importa. Os resultados são o que conta. Agora, vá e pense em sua abordagem e volte para mim quando derrotar cinco oponentes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou trabalhar na minha estratégia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os concursos do Coliseu são opcionais, é claro, mas pessoalmente acredito que qualquer Daeva que espera sobreviver em Balaurea deve se colocar em seus ritmos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem? Como foi? Estou assumindo que você conseguiu cinco mortes na arena? Eu acho que eles facilitam muito com a ressurreição infinita.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Muito fácil? Caramba. Mas eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho, suponho.</p>
+<p> </p>
+<p>Molfus me convenceu de que não deveria lhe dar meu próximo desafio. Eu exigia que você recebesse dez mortes sem morrer, mas ele diz que é um salto muito grande no teste anterior.</p>
+<p> </p>
+<p>Talvez você tente isso no seu próprio tempo? Veja isso como um desafio pessoal.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar cinco oponentes no[%dic:STR_DIC_W_IDArena_pvp_L]([%2]/5).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Junos].</p></step>
+</steps>
+<p>Derrote seus oponentes na arena da disciplina, na arena da veemência, na arena da cooperação ou na arena da glória.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Junos aconselhou você a continuar treinando e derrota os oponentes no coliseu Crisol.</p>
+<p> </p>
+<p>Você seguiu o conselho dela e terminou o treinamento na arena da disciplina, na arena de veemência e na arena da cooperação. Você derrotou seus oponentes e relatou a Junos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

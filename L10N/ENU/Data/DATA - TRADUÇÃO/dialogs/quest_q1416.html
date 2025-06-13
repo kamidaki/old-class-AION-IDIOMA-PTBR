@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Kaidan Krall são um espinho constante do nosso lado. Nós os derrotamos e eles se levantam novamente para nos atormentar.</p>
+<p> </p>
+<p>Mas a hora das escaramuças acabou, [%username]. Eu tenho um novo plano.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Posso perguntar o que é, general?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero que você reuna alguns aliados e vá para a sede da Kaidan.</p>
+<p> </p>
+<p>Sua missão é derrotar [%dic:STR_DIC_M_KrallWarriorHKBoss_40_An], o chefe do Kaidan Krall. Você acharia isso um desafio digno?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terá que penetrar no fundo da sede da Kaidan para encontrar Saendukal. E quando você o encontrar, ele será fortemente guardado.</p>
+<p> </p>
+<p>Mesmo se você derrotar todos os seus guarda -costas, terá Saendukal para lidar, então mantenha algo em reserva.</p>
+<p> </p>
+<p>A luz de Ariel vá com você. Fé e armas!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é uma missão suicida, mas não será fácil. Eu entendo por que você pode recusar.</p>
+<p> </p>
+<p>Sem você, porém, não há plano. Vou ter que inventar outra coisa ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, general."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está de volta. Bom.</p>
+<p> </p>
+<p>Você matou Saendukal? E você tem a máscara dele?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando um Daeva aceita uma missão, a honra exige que seja feita. Você entende isso, [%username]?</p>
+<p> </p>
+<p>Mate o Grand Chieftain Saendukal e traga -me sua máscara.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_surprise;HACTION_FINISH_DIALOG">"Estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se todos os Daevas fossem como você, o Krall não representaria nenhum problema. Você fez bem.</p>
+<p> </p>
+<p>Esta é uma pequena recompensa pelo seu serviço à luz.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrota [%dic:STR_DIC_M_KrallWarriorHKBoss_40_An] e levar as evidências para [%dic:STR_DIC_N_Telemachus].</p>[%collectitem]</step>
+</steps>
+<p>Derrote a Grandetana Saendukal, o líder do Krall Krall.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Telêmaco sentiu a melhor maneira de subjugar completamente o Kaidan Krall seria eliminar seu líder.</p>
+<p> </p>
+<p>Você e seus aliados derrotaram o Grand Chieftain Saendukal na sede da Kaidan e trouxeram sua máscara de volta ao Telêmaco.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

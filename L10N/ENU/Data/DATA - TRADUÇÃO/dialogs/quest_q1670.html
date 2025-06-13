@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(Essas "pontes invisíveis" parecem intrigantes ... o diário poderia estar falando sobre essas ilhas no extremo sudeste?)</p>
+<p> </p>
+<p>(Talvez você deva descobrir por si mesmo ...)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou descobrir a verdade!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Pontes invisíveis, você diz? Isso é absurdo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles existem. Confie em mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se é como você diz, não é como se mais alguém tivesse querer experimentá -los. Quantas vezes você disse que morreu de novo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Cruze o [%dic:STR_DIC_E_Hidden_Bridge] S chegar às três ilhas.</p>
+<p visible="[%3]">[%dic:STR_DIC_M_BLF3_NM_Cherubim2_46_Ah]Ilha [%5].</p>
+<p visible="[%6]">[%dic:STR_DIC_M_BLF3_NM_Cherubim3_47_Ah]Ilha [%8].</p>
+<p visible="[%9]">[%dic:STR_DIC_M_BLF3_NM_Cherubim4_48_Al]Ilha [%11].</p></step>
+<step><p visible="[%12]">Dar o diário para [%dic:STR_DIC_N_Gerania]O santo.</p></step>
+</steps>
+<p>Atravesse as pontes invisíveis para descobrir o segredo das três ilhas!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um diário que contava pontes invisíveis. Você investigou ansiosamente o mistério.</p>
+<p> </p>
+<p>Muitas, muitas tentativas depois, você visitou todas as ilhas. Você disse a Gerânia em santuário tudo sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que você faz agora sobre o [%dic:STR_DIC_M_LDF5A_A4_Fana]? Essas criaturas são terríveis.</p>
+<p> </p>
+<p>Eles estão tentando fazer uma lavagem cerebral nos reians para que vamos nos juntar ao seu lado ...</p>
+<p> </p>
+<p>Estou muito ocupado e agora também tenho que me preocupar com o dragão. Se as coisas continuarem assim, a estátua de ligação de Kahrun pode nunca ser reparada.</p>
+<p> </p>
+<p>Mas não é sobre mim, é sobre todos os reianos. [%username], você por favor, devolveria os Reians deram a paz de espírito?</p>
+<p> </p>
+<p>Por favor, vá e mate os membros do Dragonbound e se reporte ao nosso líder Gurd.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>Estou ocupado no momento, então faça -o rápido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você matou o dragão que tem nos causando muitos problemas.</p>
+<p> </p>
+<p>Muito obrigado por fazer campanha pela paz de Reian.</p>
+<p> </p>
+<p>Agora, o Iílio pode se concentrar totalmente no gerenciamento da estátua de ligação por um tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_M_LDF5A_A4_Fana]([%2]/6).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_LDF5a_Gurd_E].</p></step>
+</steps>
+<p>Mate o Balaur para que o Reian possa viver em paz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ilium, que reparou a estátua de encadernação, pediu que você destruísse o dragão, que jamais estava procurando lavar o cérebro dos Reians.</p>
+<p> </p>
+<p>Você eliminou o dragão e relatou Gurd, que agradeceu pelos esforços que fez pela segurança dos Reians.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

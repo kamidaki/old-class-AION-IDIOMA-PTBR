@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O Balaur só conseguiu invadir Beluslan porque a torre do observatório havia sido destruída.</p>
+<p> </p>
+<p>Sem a torre no lugar, não percebemos que o balaur havia quebrado através da barreira.</p>
+<p> </p>
+<p>Além disso, não temos Aether suficiente.</p>
+<p> </p>
+<p>Temos que reconstruir a torre e reforçar a barreira.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebemos um relatório há algum tempo.</p>
+<p> </p>
+<p>Aparentemente, a alma do Gwendolin, a protetora do campo etical que foi morta pelo Balaur, está vagando pelo observatório destruído.</p>
+<p> </p>
+<p>Vá e vê -la, [%username]. [%dic:STR_DIC_N_Gwendolin] Será capaz de lhe dizer o que acontece com o observatório.</p>
+<p> </p>
+<p>Ela provavelmente se culpa porque não conseguiu protegê -lo. Talvez seja por isso que ela não pode deixar o observatório.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+<voice file="Q2060.ogg"></voice>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É incomum que a alma de um Daeva permaneça em Atreia e não retorne ao fluxo de Aether.</p>
+<p> </p>
+<p>É possível que seja o senso de dever dela mantê -la aqui. Talvez houvesse uma tarefa que ela não foi capaz de concluir.</p>
+<p> </p>
+<p>Por favor, vá encontrar [%dic:STR_DIC_N_Gwendolin] e converse com ela.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A alma de um Daeva geralmente não permanece em Atreia.</p>
+<p> </p>
+<p>Isso significa algo, talvez você deva levar esse assunto a sério.</p>
+<p> </p>
+<p>Volte se você mudar de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, alguém veio me ajudar!</p>
+<p> </p>
+<p>Aion deve ter ouvido minhas orações.</p>
+<p> </p>
+<p>Eu me culpo por não conseguir proteger o observatório. É por isso que ainda estou aqui ... mesmo que eu esteja realmente morto.</p>
+<p> </p>
+<p>Encontrarei meu descanso apenas quando o observatório for restaurado à maneira como era uma vez e o Balaur foi expulso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">O que precisa fazer?</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Várias tentativas foram feitas para reconstruir o observatório. Mas nenhum deles chegou a nada, por causa dos dispositivos que o Balaur instalou.</p>
+<p> </p>
+<p>O Balaur colocou vários[%dic:STR_DIC_OBJ_DF3_DragonObelisk_Q2060] está perto do observatório. Por favor, destrua -os.</p>
+<p> </p>
+<p>Depois de terminar, informe -se à fortaleza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, [%username].</p>
+<p> </p>
+<p>Você conheceu Gwendolin? Ela sabia como o observatório poderia ser reconstruído?</p>
+<p> </p>
+<p>Vá em frente, diga -me!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Supressor de campo? Entendi ... enviarei alguns ajudantes para começar a reconstruir o observatório.</p>
+<p> </p>
+<p>Deve ter sido difícil para Gwendolin deixar este mundo. Ela provavelmente estava esperando por um Daeva que a aliviaria de seu fardo.</p>
+<p> </p>
+<p>Obrigado, Daeva. Você tem sido uma grande ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gwendolin]no[%dic:STR_DIC_W_STR_DF3_SZ_G6_2].</p></step>
+<step><p visible="[%9]">Destruir o [%dic:STR_DIC_OBJ_DF3_DragonObelisk_Q2060] está perto do observatório ([%11]/3).</p></step>
+<step><p visible="[%24]">Relatório para [%dic:STR_DIC_N_Hod]no[%dic:STR_DIC_W_STR_DF3_SZ_A].</p></step>
+</steps>
+<p>Cumprir o pedido de Gwendolin, que está vagando perto do observatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hod suspeitava que o Balaur pudesse invadir Beluslan porque o observatório havia sido destruído. Foi por isso que o observatório precisava ser reconstruído.</p>
+<p> </p>
+<p>Ele falou sobre Gwendolin, uma protetora de campo eetica que havia sido morta pelo Balaur. Você foi encontrar o espírito dela para descobrir mais sobre o observatório.</p>
+<p> </p>
+<p>Você destruiu os supressores de campo a pedido de Gwendolin e relatou de volta ao HOD.</p>
+<p> </p>
+<p>Hod agradeceu e disse que enviaria ajudantes para iniciar a reconstrução imediatamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

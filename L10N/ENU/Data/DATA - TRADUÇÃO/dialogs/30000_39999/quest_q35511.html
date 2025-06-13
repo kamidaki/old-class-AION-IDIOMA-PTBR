@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: sede da Radiant Ops</p>
+<p></p>
+<p>Para: agente [%username]</p>
+<p></p>
+<p>O ramo de Ops Radiant em Reshanta quer derrubar os presos arrogantes de uma vez por todas e, portanto, está chamando todas as regiões de Vengar para iniciar a guerra. Que nossas lâminas sejam embebidas no sangue dos asmodianos ... o tempo todo.</p>
+<p></p>
+<p>Por favor, faça o seguinte pedido sem demora.</p>
+<p></p>
+<p>1. Infiltrar Vengar e descobrir os esconderijos dos Asmodianos o mais discretamente possível.</p>
+<p></p>
+<p>2. Se você encontrar asmodianos, mate cinco deles. Qual método você usa não tem conseqüência.</p>
+<p></p>
+<p>3. No entanto, pode danificar a imagem das operações radiantes se você matar inimigos que são fracos.</p>
+<p></p>
+<p>4. Relatório para [%dic:STR_DIC_N_LF5_Niman_E]Depois de eliminar o inimigo.</p>
+<p></p>
+<p>Que a luz de Old Class Aion brilhe sobre você em batalha!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação, [%username].</p>
+<p> </p>
+<p>Quantos inimigos você derrotou hoje?</p>
+<p> </p>
+<p>Você matou os asmodianos e trouxe honra para as Ops Radiant?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu verifiquei se você completou a missão, [%username].</p>
+<p> </p>
+<p>Aqui está uma recompensa radiante de operações.</p>
+<p> </p>
+<p>Para a glória do santuário!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os inimigos em[%dic:STR_DIC_W_DF5]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LF5_Niman_E].</p></step>
+</steps>
+<p>Ordem diária: Mate os asmodianos que invadiram Vengar e depois se reportam ao agente Niman.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Radiant Ops emitiu a ordem para matar os asmodianos que invadiram Vengar.</p>
+<p> </p>
+<p>Você realizou a missão e depois relatou ao agente Niman, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

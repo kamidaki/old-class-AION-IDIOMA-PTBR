@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, nenhum lugar é fácil de conquistar ... mas o [%dic:STR_DIC_W_IDTiamat_SZ_S5] está realmente me causando grandes problemas.</p>
+<p> </p>
+<p>A entrada estreita facilita muito a defesa.</p>
+<p> </p>
+<p>Você e seus aliados poderiam eliminar o [%dic:STR_DIC_E_Q30716a], Assim, [%username]?</p>
+<p> </p>
+<p>Definitivamente não será fácil ... mas eu gostaria de pedir para você fazer isso de qualquer maneira, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Eu vi você e seus camaradas vindo de longe.</p>
+<p> </p>
+<p>Você pode reconhecer sua resolução mesmo pelas costas!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O caminho bárbaro sempre nos causou problemas. Mas, graças aos seus e aos seus camaradas, podemos finalmente respirar um suspiro de alívio, [%username].</p>
+<p> </p>
+<p>Não é muito, mas por favor, considere isso uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_Q30716a]([%2]/8).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_IDTiamat_Ariana] em[%dic:STR_DIC_W_IDTiamat_SZ_S1].</p></step>
+</steps>
+<p>O caminho bárbaro é difícil de conquistar. Mate as forças de defesa lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ariana disse que era difícil conquistar o caminho bárbaro e pediu que você eliminasse as forças de defesa.</p>
+<p> </p>
+<p>Você derrotou o Drakan que estava guardando o caminho e recebeu uma recompensa de Ariana por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

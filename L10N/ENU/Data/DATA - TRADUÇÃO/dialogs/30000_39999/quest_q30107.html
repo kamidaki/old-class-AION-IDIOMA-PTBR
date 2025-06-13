@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(O que parece ser um documento de Drakan está sobre a mesa. Você não consegue entender o que diz.)</p>
+<p> </p>
+<p>(Talvez centurião[%dic:STR_DIC_N_Taustir] estaria interessado nisso.)</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu só vou isso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui, [%username]? Eu pensei que você estava executando missões importantes para isso ... Reian. Qual o nome dele? AGLAUROS.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Eu encontrei algo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você diz que este é um documento de Drakan? Eu não consigo ler. Se isso é Balaur, é codificado de alguma forma. Ou algum dialeto que não estou familiarizado.</p>
+<p> </p>
+<p>Hmmmm .... eu odeio dizer isso, mas por que você não pergunta [%dic:STR_DIC_N_Aglauros]? Ele está em Gelkmaros há muito tempo. Se alguém pode ler isso, provavelmente é um Reian como ele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Provavelmente verdadeiro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você precisa de algo de mim, Daeva? Falar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você pode ler isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, vejo por que você não conseguiu decifrar isso. Como você suspeitava, é Balaur, mas também está em código.</p>
+<p> </p>
+<p>Felizmente, já vi esse código antes. Conceda-me um momento, e eu poderei descobrir isso ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Taustir].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Aglauros].</p></step>
+</steps>
+<p>Você encontrou um documento incomum dentro do Udas Temple. Mostre a Taustir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou um documento de Drakan no Templo de Udas. Incapaz de decifrá -lo, Taustir disse para você perguntar a Aglauros.</p>
+<p> </p>
+<p>Agulauros pegou o documento e disse para esperar enquanto ele o decodificava.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

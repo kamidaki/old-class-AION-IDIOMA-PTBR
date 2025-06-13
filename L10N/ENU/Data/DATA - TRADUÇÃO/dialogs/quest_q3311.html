@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, exploda!</p>
+<p> </p>
+<p>Acabei de ver outro Daeva derrubado pelo vento.</p>
+<p> </p>
+<p>Eu disse a ele para ter cuidado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O fluxo de Aether flutua frequentemente aqui, mas essas rajadas não são causadas por Aether.</p>
+<p> </p>
+<p>O problema parece ser espíritos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que eles estão fazendo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É claro que os espíritos podem criar vento, água e fogo, dependendo de suas naturezas. Nesse caso, eles estão causando turbilhões que podem rasgar um Daeva logo do céu.</p>
+<p> </p>
+<p>Tem sido um problema no passado, mas com pouca frequência. Agora está acontecendo o tempo todo. Eu acho que algo os deixou com raiva.</p>
+<p> </p>
+<p>[%username], você pode se livrar de alguns deles?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_0C_ElementalAir2_29_An] Areia [%dic:STR_DIC_M_6C_elementalair3_31_Ae] S são os mais problemáticos.</p>
+<p> </p>
+<p>Os Daevas passam muito tempo se preparando para este teste de voo, e é uma pena vê -los falhar por causa dessa interferência.</p>
+<p> </p>
+<p>Obrigado pela ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sem problemas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, se você não vai fazer nada a respeito, espero que esteja preparado para encontrar um tornado quando estiver voando por aqui.</p>
+<p> </p>
+<p>Ninguém sabe quando isso vai acontecer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, bom ver você de volta, [%username]. Eu me perguntei se você foi derrubado por aqueles espíritos miseráveis.</p>
+<p> </p>
+<p>O que aconteceu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu lidei com eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho!</p>
+<p> </p>
+<p>Tenho certeza de que você salvou o orgulho de muitos Daevas hoje. É muito embaraçoso ser derrubado do ar assim.</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa. Talvez você possa usá -lo para comprar um soro de vento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os espíritos do vento que causam rajadas de vento na caverna do templo de Eracus.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_0C_ElementalAir2_29_An]([%2]/6).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_6C_elementalair3_31_Ae]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Marana].</p></step>
+</steps>
+<p>Elimine os espíritos e os espíritos do rascunho, que perturbam o Flugpobe.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Marana disse que os turbilhões criados por espíritos interferem com os Daevas que estão praticando suas habilidades de vôo.</p>
+<p> </p>
+<p>Você matou[%dic:STR_DIC_M_0C_ElementalAir2_29_An] Areia [%dic:STR_DIC_M_6C_elementalair3_31_Ae] S e voltou para ela. Ela lhe deu uma recompensa e sugeriu que você a usasse para comprar um soro de vento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_IDF5_U2_P_Light_65_all] está tentando tirar o tesouro do refúgio perdido.</p>
+<p> </p>
+<p>Por favor, pare os Elyos e depois fale com[%dic:STR_DIC_N_DF5_Qusak_E]Para dar seu relatório.</p>
+<p> </p>
+<p>Há mais uma coisa que preciso explicar. De acordo com as informações do ladrão de túmulos Shugo, os Elyos estão tentando ficar de fora do caminho do exército de Beritra durante suas investigações.</p>
+<p> </p>
+<p>Se o refúgio ainda não pertence inteiramente aos Elyos, ainda temos uma chance.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Recebi um relatório da Dintanum, mas não sabia que você viria tão rapidamente.</p>
+<p> </p>
+<p>Ouvi dizer que você perseguiu seu alvo tenazmente. Deve ter sido uma corrida contra o tempo, certo?</p>
+<p> </p>
+<p>Você teve sucesso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso!</p>
+<p> </p>
+<p>Agora que os Elyos foram expulsos, enviarei uma tropa para o refúgio perdido.</p>
+<p> </p>
+<p>Obrigado por me trazer boas notícias.</p>
+<p> </p>
+<p>Você fez bem.</p>
+<p> </p>
+<p>Tenho uma recompensa por seus esforços, [%username]. Por favor, pegue.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_IDLDF5_Under_02_E_D] e matar o [%dic:STR_DIC_M_IDF5_U2_P_Light_65_all]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Qusak_E].</p></step>
+</steps>
+<p>Mate a tropa de pesquisa de Elyos no refúgio perdido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dintanum pediu que você impedisse a tropa de pesquisa de Elyos de transportar o tesouro do refúgio perdido.</p>
+<p> </p>
+<p>Você cumpriu o pedido de Dintanum e depois relatou a Kusak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

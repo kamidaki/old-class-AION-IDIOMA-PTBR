@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há coisas estranhas em Katalam.</p>
+<p> </p>
+<p>Quero dizer [%dic:STR_DIC_E_LDF5A_FOBJ_B1_EmptyEdgel].</p>
+<p> </p>
+<p>Para que foi usado? É uma bomba?</p>
+<p> </p>
+<p>Não posso fazer mais nada, porque fui enviado para estabelecer um posto avançado ...</p>
+<p> </p>
+<p>[%username]. Você destruiria o cubo Idgel vazio para mim?</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não entendo por que esses núcleos de Idgel vazios estão deitado em Katalam.</p>
+<p> </p>
+<p>Para que eles foram usados?</p>
+<p> </p>
+<p>Não há provas, mas é algo perigoso.</p>
+<p> </p>
+<p>Tenho certeza de que é muito perigoso ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que destruiu o cubo Idgel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>É bom que eu te pedi.</p>
+<p> </p>
+<p>Algum dia, alguém descobrirá para que é o ID e este cubo Idgel vazio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_E_LDF5A_FOBJ_B1_EmptyEdgel]([%2]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Kadine_E].</p></step>
+</steps>
+<p>Remova o cubo Idgel vazio.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kadine removeu o cubo de Idgel completamente vazio por medo de que possa explodir.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh! Agora podemos operar o artefato!</p>
+<p> </p>
+<p>Então talvez possamos descobrir o que é o artefato e faz.</p>
+<p> </p>
+<p>Oh, estou tão animado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso ver isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero que o artefato funcione bem e possamos usá -lo para ajudar a reconstruir Theobomos. Certo, eu deveria parar de falar e começar a trabalhar.</p>
+<p> </p>
+<p>[%username], Espero que você nos faça mais um favor. O artefato ainda precisa ser reativado.</p>
+<p> </p>
+<p>Você tem mais experiência com isso do que qualquer um, então eu gostaria de lhe dar a honra de, errar, experimentar. Pode ser perigoso ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Aqui-use a pedra de ativação no[%dic:STR_DIC_OBJ_LF2a_Artifact_Q3036], então relate -me de volta para mim.</p>
+<p> </p>
+<p>Eu estarei esperando.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que isso funcione ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você passou por tanto para encontrar e recarregar a pedra de ativação. Você não se arrependeria se desistisse agora?</p>
+<p> </p>
+<p>Bem, se você realmente não quer ... mas acho que você deveria terminar o que começou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou manter minhas asas presas, obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão ansioso, esperando por você!</p>
+<p> </p>
+<p>Funcionou? Você ativou o artefato?</p>
+<p> </p>
+<p>Diga-me! Diga -me tudo!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Funcionou! E havia luzes ...!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh meu Deus. É verdade? Quer dizer, o artefato tem tanto poder? Se usá -lo com sabedoria, será uma grande ajuda aqui. Vou relatar isso ao Santum imediatamente. Muitos Daevas estão curiosos sobre o artefato.</p>
+<p> </p>
+<p>[%username], o sucesso desta missão foi completamente sua.</p>
+<p> </p>
+<p>Senhor Nezekan te abençoe.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Operar [%dic:STR_DIC_OBJ_LF2a_Artifact_Q3036]usando a pedra de ativação recarregada.</p></step>
+<step><p visible="[%3]">Relatar o resultado[%dic:STR_DIC_N_Atropos].</p></step>
+</steps>
+<p>Ative o artefato com a pedra de ativação recarregada e relate o resultado ao ATROPOS.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>ATROPOS sugeriu que você ativasse o artefato.</p>
+<p> </p>
+<p>Quando você usou a pedra de ativação, o artefato operou e concedeu a você uma bênção especial.</p>
+<p> </p>
+<p>Quando você relatou o resultado de Atropos, ela ficou satisfeita dizendo que seria uma grande ajuda para reconstruir Theobomos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho uma missão importante no Silentera Canyon.</p>
+<p> </p>
+<p>Eu acredito que você esteve lá antes ...?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que o lorde Marchutan exige?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos[%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard] S está guardando[%dic:STR_DIC_W_ZONE_NAME_IDCatacombs]. Eles estão em posição perfeita para atacar quaisquer forças que passem.</p>
+<p> </p>
+<p>No entanto, muitas de nossas principais forças de greve precisam passar por Beshmundir. Permitir que o Balaur os enfraqueça é inaceitável.</p>
+<p> </p>
+<p>Esses Balaur povoam a caminhada de Beshmundir, o cofre do herói e o pátio da eternidade. Eu preciso que você os enfraqueça antes que eles façam o mesmo conosco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu não tinha dúvida de sua força.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_E_IDCatacombsN_Drakan_Guard] S são inimigos formidáveis, mas é exatamente por isso que eles precisam morrer.</p>
+<p> </p>
+<p>Não retorne até que nossas forças possam passar por Beshmundir sem assédio.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não entende que essa é a vontade do Senhor Marchutan? Desafio de um senhor shedim não é sábio ou saudável, [%username]. Isso mostra tolice, não força.</p>
+<p> </p>
+<p>Suponho que você retornará mais tarde para assumir esta tarefa ... por sua própria questão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Dê a Senhor Marchutan minhas desculpas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Sua missão é mais importante do que você imagina, [%username]. Planejamos um ataque a Lord Tiamat em breve, e sua contribuição é vital.</p>
+<p> </p>
+<p>Muitos se beneficiarão do seu sucesso. Presumo que você esteja de volta para relatar o sucesso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sucesso total, minha senhora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que estava certo de confiar isso a você.</p>
+<p> </p>
+<p>Quando Tiamat cair, todos os Asmodae conhecerão seu papel naquele grande dia de triunfo. Até então, esse decreto de valor será sua prova. Leve, com os agradecimentos de Lord Marchutan.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os protetores de Beshmundir Balaur.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_Entrance]([%2]/20)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_tomb]([%5]/10)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDCatacombsN_Drakan_Guard_priest]([%8]/40)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Hler].</p></step>
+</steps>
+<p>Richelle precisa que você mate os protetores de Beshmundir Balaur do Templo de Beshmundir. Obedeça ao seu pedido e limpe o caminho para as forças asmodianas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Richelle lhe disse que o Balaur Guarding Beshmundir templo está em posição perfeita para assediar forças de asmodianas. Ela pediu que você diminua o número deles.</p>
+<p> </p>
+<p>Você matou muitos Balaur e voltou aos profundos agradecimentos de Richelle. Um ataque a Lord Tiamat pode ter sucesso graças aos seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

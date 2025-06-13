@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard18_D]do[%dic:STR_DIC_W_LDF5b_F4_v18]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: punir os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F4_2]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos que estão incansavelmente invadindo as Prains Plains estão me dando dor de cabeça.</p>
+<p> </p>
+<p>Se ninguém faz nada apenas porque o problema parece menor, tudo terminará em lágrimas.</p>
+<p> </p>
+<p>É tão bom que há tavos úteis como você, por perto, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa, posso relaxar por um tempo.</p>
+<p> </p>
+<p>Eu sabia que isso poderia ser feito se lhe perguntassemos, [%username].</p>
+<p> </p>
+<p>Então eu pediria mais assistência.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F4_2]no Katalam do Sul ([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard18_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que avançaram para o caminho de fornecimento de planícies no sul de Katalam e se reporte a Rorik.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O infiltrador de Elyos estava direcionando o caminho de fornecimento de planícies no sul de Katalam.</p>
+<p> </p>
+<p>Você destruiu o infiltrando Elyos e relatou a Rorik.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

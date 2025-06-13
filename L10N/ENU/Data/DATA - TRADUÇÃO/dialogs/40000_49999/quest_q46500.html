@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Azphelumbra, daemons -</p>
+<p> </p>
+<p>Um proeminente comandante do Arconte nos contratou para destruir o Pinebeak.</p>
+<p></p>
+<p>Como sempre, o orgulho dos daemons de Charlirunerk está em jogo. Não devemos falhar!</p>
+<p> </p>
+<p>1. Nome:[%dic:STR_DIC_M_DF4_DaQ_Owllau_Fi_51]</p>
+<p></p>
+<p>2. Local: visto pela última vez em[%dic:STR_DIC_SEN_DF4_SensoryArea_Q46500]</p>
+<p></p>
+<p>3. Detalhes: Este animal voraz invadiu vários campos de arconte, roubando suprimentos e até comida diretamente das mãos dos arcontes. Logo ele pode desenvolver um apetite por arcontes!</p>
+<p> </p>
+<p>As recompensas serão dadas a qualquer Daeva que mata Pinebeak. Fique alerta e mantenha suas provisões próximas!</p>
+<p> </p>
+<p>- Charlirunerk, fundador, daemons de Charlirunerk -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Esta será uma boa caçada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Pinebeak .... parece tão assustador! Aposto que poderia engolir um shugo em um gole, Nyerk</p>
+<p> </p>
+<p>P-por favor me diga que você cuidou disso! Eu não quero ter medo de sair, Nyerk!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não se preocupe. Está morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ufa! Lugar mundial mais seguro para shugo pequeno sem Pinebeak! Akakak!</p>
+<p> </p>
+<p>Deve ter sido uma batalha feroz! Mas agora os arcontes podem comer sem se preocupar! Isso me faz sentir bem!</p>
+<p> </p>
+<p>Aqui está a sua recompensa! Agradeço também, por não me deixar ser um lanche Strigik, Nyerk!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_SEN_DF4_SensoryArea_Q46500]. Localize e elimine [%dic:STR_DIC_M_DF4_DaQ_Owllau_Fi_51]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_E_46500].</p></step>
+</steps>
+<p>Você tem uma tarefa dos daemons de Charlirunerk. Realizar o pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma tarefa dos daemons de Charlirunerk para caçar Pinebeak, procurado por roubo de provisões de arconte.</p>
+<p> </p>
+<p>Você matou Pinebeak e o relatou aos daemons, que elogiou seus esforços e lhe deram as recompensas prometidas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

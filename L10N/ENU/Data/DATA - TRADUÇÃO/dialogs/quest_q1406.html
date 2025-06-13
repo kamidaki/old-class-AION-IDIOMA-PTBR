@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem conhecido, Daeva. Fico feliz em ver você por aqui. Às vezes me preocupo que todo mundo tenha esquecido que existimos aqui.</p>
+<p> </p>
+<p>Parece que não tenho falta de coisas para me preocupar ultimamente. Eu tenho me concentrado no problema de Kaidan Krall, mas Dionera apontou que agora temos um problema sério com a Tigria.</p>
+<p> </p>
+<p>Os habitantes locais vêm chegando a ela com o relato de tigras a sudoeste do Observatório. Eu preciso que os habitantes locais sejam meus olhos e ouvidos por aí, e se eles estão escondidos em suas casas, isso significa que os movimentos dos Krall e dos senhores sabem o que mais está indo invisível.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por que os tigricos são um problema?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você não sabe sobre os tigricos amaldiçoados?</p>
+<p> </p>
+<p>Os habitantes locais acreditam que os tigricos são presságios do Ill Omen. Em todos os lugares em que aparecem, coisas ruins acontecem. Uma epidemia sai, rebanhos de gado morrem misteriosamente ...</p>
+<p> </p>
+<p>Eu sei que não há nada nisso. Tigricos são apenas animais. Mas os habitantes locais acreditam, e isso é suficiente para mantê -los em suas casas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você não mata os tigricos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É um verdadeiro vínculo para mim. Se deixarmos o post para caçar os tigricos, o Krall poderá atacar enquanto estivermos fora. Se não fizermos nada, isso permite que o Krall se mova à vontade, para que eles possam fazer um ataque sem um ataque sem sabermos.</p>
+<p> </p>
+<p>As únicas soluções reais são que obtenhamos mais reforços ou que contratemos alguém para fazer o trabalho. Ouvi dizer que você costumava ser um mercenário antes de subir, [%username]...</p>
+<p> </p>
+<p>Você estaria disposto a afinar o [%dic:STR_DIC_M_TauricRe_36_An] está em troca de uma recompensa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é notícia bem -vinda. Vai mais do que valer a pena para nós, se você puder resolver esse problema.</p>
+<p> </p>
+<p>Por favor, elimine o [%dic:STR_DIC_M_TauricRe_36_An] está ao redor da entrada do observatório.</p>
+<p> </p>
+<p>Cuidado com suas garras; Eles são muito cruéis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe. Eu vou lidar com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>As pessoas já estão em pânico com as condições aqui. Se deixarmos o Tigric para se multiplicar, e outro problema ocorrer, não poderíamos lidar com isso.</p>
+<p> </p>
+<p>Por favor, reconsidere.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que as coisas funcionem para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se livrou dos tigricos?</p>
+<p> </p>
+<p>O poder da mente não deve ser descartado de ânimo leve. O medo pode motivar as pessoas a fazer coisas tolas. Isso fará com que todos descansem mais fáceis.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Não há nada a temer agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>As pessoas podem relaxar agora.</p>
+<p> </p>
+<p>Eu tenho um pequeno fundo para pagar aqueles que nos ajudam e você ganhou essa recompensa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livre -se do[%dic:STR_DIC_M_TauricRe_36_An] está perto da entrada do observatório ([%2]/7).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kibelle].</p></step>
+</steps>
+<p>Dizem que os tigricos são um presságio de infortúnio e eles foram vistos recentemente ao redor do observatório. Faça as pessoas se sentirem mais seguras ao eliminar os sentinelas tigrais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kibelle estava preocupada com o fato de que os tigricos, considerados um mau presságio, eram vistos perto da entrada do observatório. Você caçou sentinelas tigradas e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

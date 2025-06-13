@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você pode me ajudar aqui?</p>
+<p> </p>
+<p>Ouvi dizer que você é bastante capaz [%userclass]. Posso lhe interessar em algum Kinah extra?</p>
+<p> </p>
+<p>Nesse caso, tenho um emprego para você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de trabalho?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Calydons estão correndo soltos pelo campo, mas honestamente isso não é uma motivação para nós.</p>
+<p> </p>
+<p>Diga o que você quer sobre os caçadores de recompensas, mas estamos anteriores a isso-a única coisa em que estamos realmente interessados ​​é Kinah.</p>
+<p> </p>
+<p>Temos uma aposta no acampamento em que pode caçar a maioria dos cálios toda semana.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quantos você pegou?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Apenas dez até agora nesta semana. Eu sei que não deveria ser grande coisa, mas o vencedor na semana passada foi Nagrunerk! Como posso segurar minha cabeça quando sou derrotado por um shugo?!</p>
+<p> </p>
+<p>Tudo o que você teria que fazer é ir para o [%dic:STR_DIC_W_LF2B_SZ_C5] e se livrar de alguns[%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An] Areia [%dic:STR_DIC_M_LF2A_CalydonMage_49_An] S. E fique quieto sobre isso-estou pagando a você para que eu possa receber o crédito.</p>
+<p> </p>
+<p>Vai valer a pena que custe a derrota que explodiu Shugo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>OK, bom. Mas isso é apenas entre nós, certo?</p>
+<p> </p>
+<p>Lembre -se, você está procurando[%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An] Areia [%dic:STR_DIC_M_LF2A_CalydonMage_49_An] S.</p>
+<p> </p>
+<p>Boa sorte, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho isso coberto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que? Não é o suficiente Kinah? Eu realmente não posso mais pagar.</p>
+<p> </p>
+<p>Ahh, não quer irritar o shugo um pouco?</p>
+<p> </p>
+<p>O que é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é o meu problema."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta!</p>
+<p> </p>
+<p>Como foi? O que aconteceu?</p>
+<p> </p>
+<p>Você se livrou dos Calydons?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que aconteceu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha! Maravilhoso! Mal posso esperar para ver o olhar naquele rosto presunçoso de Shugo!</p>
+<p> </p>
+<p>Aqui está o Kinah. Vai valer totalmente a pena.</p>
+<p> </p>
+<p>Se você precisar de um novo emprego, considere a caça de recompensas. Eu acho que você seria muito bom nisso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o Calydon em Calydon Village.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF2A_CalydonAssassin_49_An]([%2]/8).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_LF2A_CalydonMage_49_An]([%5]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Tityus].</p></step>
+</steps>
+<p>Você deve matar os caçadores de Calydon e os xamãs de Calydon, para que Tityus venha sua aposta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tityus explicou que os caçadores de recompensas apostam em quem pode caçar o maior número de paindons a cada semana-o vencedor da última vez foi um shugo chamado Nagrunerk. Ele prometeu a você uma recompensa para caçar alguns países e deixá -lo receber o crédito.</p>
+<p> </p>
+<p>Depois que você se livrou de alguns caçadores de Calydon e xamãs de Calydon, ele ficou satisfeito por ter mortes suficientes para vencer seu oponente Shugo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

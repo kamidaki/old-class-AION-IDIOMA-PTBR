@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nobre [%username], Eu tenho uma tarefa que pediria a você. Eu preciso que você entregue um livro para mim-um livro esotérico da justiça.</p>
+<p> </p>
+<p>Este tomo é pouco para você agora, pois era o coração do seu treinamento inicial. O próximo tomo, por outro lado ...</p>
+<p> </p>
+<p>É uma tarefa simples, mas não ouso confiar apenas qualquer pessoa com algo tão valioso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou honrado por sua confiança."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já sabe tudo o que está no livro, [%username]. Ele contém todo o conhecimento das habilidades que você aprendeu até agora.</p>
+<p> </p>
+<p>Você precisa do segundo volume do livro esotérico.</p>
+<p> </p>
+<p>Mas se você cumprir suas missões conscientemente e melhorar a si mesmo, poderá aprender o conteúdo sem esforço. Portanto, não se preocupe muito com isso.</p>
+<p> </p>
+<p>No entanto, não se esqueça que muitos mestres se esforçaram para transmitir adequadamente o conteúdo do livro esotérico desde os primeiros tempos.</p>
+<p> </p>
+<p>Retorne o primeiro volume para Boreas e agradeça a ele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu esperava que você cumprisse meu pedido, [%username].</p>
+<p> </p>
+<p>Afinal, encontrar o mensageiro certo para o livro esotérico não é tarefa fácil.</p>
+<p> </p>
+<p>Leve o livro para Boreas no salão dos protetores. Ele lhe dirá o que fazer a seguir.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não é o trabalho, garanto-lhe.</p>
+<p> </p>
+<p>Eu não escolhi você, [%username], apenas para entregar um livro, não importa quão valioso.</p>
+<p> </p>
+<p>Estou recomendando você para avançar. Não tema, se você não tem interesse nisso, não será imobilizado sobre você.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Conceda-me algum tempo para pensar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é, [%username]?</p>
+<p> </p>
+<p>Você quer saber a verdade sobre a justiça?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. Também estou aqui para devolver um livro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Macus não confiaria ninguém com este livro.</p>
+<p> </p>
+<p>O fato de ele ter cobrado você de trazer o livro para mim significa que ele aprecia seus serviços e confia em você.</p>
+<p> </p>
+<p>Você é um Daeva promissor, [%username], mas há muito que você precisa aprender a se tornar um discípulo leal de Nezekan.</p>
+<p> </p>
+<p>Vou ajudá -lo, se você tiver dificuldades para aprender o livro esotérico.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Boreas].</p></step>
+</steps>
+<p>Entregue o Livro da Justiça esotérico a Boreas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Macus pediu que você trazia Boreas um livro sobre as habilidades secretas de gladiadores e templários.</p>
+<p> </p>
+<p>Depois que Boreas recebeu o Livro da Justiça, ele disse que você ainda tinha muito a aprender para se tornar um verdadeiro discípulo de Nezekan e prometeu ajudá -lo se você tiver alguma dificuldade em aprender o conteúdo do livro esotérico.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

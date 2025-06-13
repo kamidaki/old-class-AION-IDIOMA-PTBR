@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Querido[%username], Assim,</p>
+<p> </p>
+<p>Preciso transmitir uma mensagem aos guardas, algo que diz respeito a Beluslan.</p>
+<p> </p>
+<p>Por razões de segurança, não posso entrar em detalhes aqui, nem posso entregar a mensagem pessoalmente--isso pode me ver discutindo o assunto com o [%dic:STR_DIC_E_45007] e suspeite.</p>
+<p> </p>
+<p>Como você não é bem conhecido como diretor de campo, sua chegada não despertará suspeitas.</p>
+<p> </p>
+<p>Destrua esta carta depois de ler e depois me encontre o mais rápido possível.</p>
+<p> </p>
+<p>-[%dic:STR_DIC_N_Grundt], Protetor da divindade</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Torne a carta ilegível.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Azzforumbra, [%username].</p>
+<p> </p>
+<p>Eu não estava esperando você, mas sua chegada é bem -vinda. Venha, sente -se por um tempo. Podemos discutir o clima.</p>
+<p> </p>
+<p>Então, o que o leva a Beluslan?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Oh, apenas uma nota que recebi ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah. Eu vejo. Inclinar -se.</p>
+<p> </p>
+<p>A mensagem é ... "A escuridão atravessa a água".</p>
+<p> </p>
+<p>Por favor, passe isso para um de seus colegas. Eles vão entender ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sangue para o sangue. Observe a chuva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, diretor.</p>
+<p> </p>
+<p>Você não tem carta com você, então sem dúvida você carrega uma mensagem privada? Por favor, diga -me, silenciosamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"A escuridão atravessa a água."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>"A escuridão atravessa a água", você diz? Então parece que a situação em Beluslan permanece inalterada.</p>
+<p> </p>
+<p>Oh, você não precisa se preocupar com isso, [%username]. Pelo menos ainda não ....</p>
+<p> </p>
+<p>Obrigado por trazer isso para mim. Como sempre, aqui está uma recompensa pelo seu tempo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Grundt].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_E_45007].</p></step>
+</steps>
+<p>Uma carta encaminhada chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma carta particular explica que Grundt, um protetor da divindade, tem uma mensagem para os guardas. Ele pede que você entregue a mensagem dele.</p>
+<p> </p>
+<p>Você conheceu Grundt e entregou sua mensagem secreta ao agente de campo de Beluslan, que lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

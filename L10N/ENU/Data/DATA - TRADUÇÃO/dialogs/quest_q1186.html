@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>As árvores, elas ... estão gritando!</p>
+<p> </p>
+<p>Todos os dias são sugados seco ... e consumidos. Todas as manhãs, enquanto o canto dos pássaros enche as clareiras, seus gritos ficam mais fracos.</p>
+<p> </p>
+<p>Em breve eles ficarão em silêncio. As árvores ... ficam quietas e murcham diante de nossos olhos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Por quê? O que está acontecendo aqui?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_MLA54] está veio.</p>
+<p> </p>
+<p>Um produto do cataclismo ... eles atacam as árvores ... até o elimine, para a nossa seiva. Suas mandíbulas são fortes e nossas defesas vacilam ... as árvores são presas fáceis para Wriggots.</p>
+<p> </p>
+<p>Precisamos da sua ajuda, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve matar o [%dic:STR_DIC_MLA54] S que devore nossa casa ... só então podemos florescer ... só então nossa sobrevivência será garantida.</p>
+<p> </p>
+<p>O tempo está acabando. Temos ... pouco tempo antes ... o inverno se aproxima, e nós ... entramos em nosso sono. Se os vermes permanecerem ... nunca despertaremos.</p>
+<p> </p>
+<p>Você vai nos ajudar, amigo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh...</p>
+<p> </p>
+<p>Você é um verdadeiro amigo do Elim!</p>
+<p> </p>
+<p>Esses Wriggots ... eles acham que são mestres desses motivos sagrados. Mostre a eles o que é ter medo, Daeva. Corte -os e quando ... sua colheita está pronta, traga -me o [%dic:STR_DIC_QILA87].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou, elote."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Somos desprezados ... traídos, até ... por aqueles que contamos como amigos!</p>
+<p> </p>
+<p>Se você tem certeza, então vá. Eu temo que não possamos ... nos ver novamente.</p>
+<p> </p>
+<p>Ainda há tempo, Daeva. Espero que você mude de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vamos ver."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, meu filho.</p>
+<p> </p>
+<p>Você tem ... o [%dic:STR_DIC_QILA87] eu pedi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"É isso que você queria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não....</p>
+<p> </p>
+<p>A floresta enfraquece cada momento que ... você atrasa, [%username]. Pare o sofrimento deles. Você deve ... matar o [%dic:STR_DIC_MLA54] S!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então ... está feito. Os Wriggots habitam na ... barriga gelada da morte.</p>
+<p> </p>
+<p>Você garantiu nosso futuro! Devemos ... mais do que podemos pagar. Saiba que nenhuma árvore jamais deve ... obstruir seu caminho. Onde quer que o vento soba, toda árvore cantará ... seus louvores.</p>
+<p> </p>
+<p>Obrigado....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Wriggots e traga de volta o [%dic:STR_DIC_QILA87]como prova.</p>[%collectitem]</step>
+</steps>
+<p>Wriggots sugam a seiva das árvores e eliminam o solo sagrado, matando -as lenta e dolorosamente. Mate Wriggots e leve suas vilosidades para evasão.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As árvores do solo sagrado de Miraju estavam morrendo por causa dos Wriggots.</p>
+<p> </p>
+<p>Você matou muitos Wriggots, tomando suas vilosidades como prova. Elote agradeceu e você tem a eterna amizade do povo Elim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

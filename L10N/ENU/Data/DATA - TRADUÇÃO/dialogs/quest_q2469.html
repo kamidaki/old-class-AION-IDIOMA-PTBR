@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Só um minuto, Daeva! Por favor, não voe ainda. Tenho mais um favor para perguntar a você.</p>
+<p> </p>
+<p>Eu também descobri que preciso de minério de Adamantium.</p>
+<p> </p>
+<p>Sem ele, o artesão não pode concluir o acessório.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você precisa de mais minério?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor.</p>
+<p> </p>
+<p>Você poderia me pegar 9 pedaços de [%dic:STR_DIC_DG_metal_n_c_30a] e 1[%dic:STR_DIC_DG_metal_n_r_30a]?</p>
+<p> </p>
+<p>Você será recompensado por isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos contar com você!</p>
+<p> </p>
+<p>Por favor, obtenha 9[%dic:STR_DIC_DG_metal_n_c_30a] e 1[%dic:STR_DIC_DG_metal_n_r_30a].</p>
+<p> </p>
+<p>Enquanto isso, levarei os outros materiais ao mestre artesão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, estou nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Certamente, se eu soubesse, teria pedido que você recebesse o minério de Adamantium enquanto você estava reunindo a platina.</p>
+<p> </p>
+<p>Não sei nada sobre a desvantagem.</p>
+<p> </p>
+<p>Você reconsideraria? Você era tão generoso antes ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso levou você mais tempo do que eu pensava.</p>
+<p> </p>
+<p>Eu não tenho muito tempo, então por favor me entregue o que você tem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o minério."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não conseguiu reunir 9 pedaços de [%dic:STR_DIC_DG_metal_n_c_30a] e 1 pedaço de [%dic:STR_DIC_DG_metal_n_r_30a]?</p>
+<p> </p>
+<p>Estou um pouco decepcionado com você. Estou ficando sem tempo.</p>
+<p> </p>
+<p>Eu não deveria estar dizendo isso como suplicante, mas se apresse.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Agora eu deveria ter tudo o que preciso!</p>
+<p> </p>
+<p>Eu estive preocupado. O Adamantium tornou-se cada vez mais difícil encontrar, e é quase impossível descobrir minério de adamantium de alta pureza!</p>
+<p> </p>
+<p>Por favor, pegue isso. É o melhor que posso fazer em troca de seu favor.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_DG_gb_source_metal_d_30a] e leve para [%dic:STR_DIC_N_Karina].</p>[%collectitem]</step>
+</steps>
+<p>Colete o minério de Adamantium e o minério de Adamantium de alta pureza e leve-os a Karina para que ela possa ter um acessório feito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Karina disse que precisava de Adamantium minério para ter seu acessório.</p>
+<p> </p>
+<p>Você trouxe o minério de Adamantium e o minério de Adamantium de alta pureza. Karina agradeceu e o recompensou por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

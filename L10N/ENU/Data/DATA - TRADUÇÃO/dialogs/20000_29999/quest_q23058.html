@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que desastre! A produção de água da primavera diminuiu dramaticamente.</p>
+<p> </p>
+<p>[%username], você poderia dizer a Ulbari que ele deveria se apressar e resolver o problema?</p>
+<p> </p>
+<p>A forte diminuição da produção de água da primavera aparentemente tem a ver com o tubo de suprimento no pântano esquecido que está sendo bloqueado.</p>
+<p> </p>
+<p>Ulbari queria cuidar desse problema, mas, em vez de isso acontecer, eu não tive o mínimo de notícias!</p>
+<p> </p>
+<p>Dizer [%dic:STR_DIC_N_LDF5b_Ulvali_E]que ele deveria fazer o trabalho certo se quiser ter água na primavera, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Wateriários disse isso?</p>
+<p> </p>
+<p>O Cellatu Rough Rake que vive nesta região do pântano tende a rastejar pelos tubos da planta de produção de água potável, que geralmente leva a bloqueios.</p>
+<p> </p>
+<p>Eu elimino o anchonete grosso. Mas levará tempo para conseguir isso sozinho.</p>
+<p> </p>
+<p>Mas o Waterinerk já está me apressando ... eu não sei o que fazer.</p>
+<p> </p>
+<p>Seria ótimo se você, [%username], poderia eliminar o [%dic:STR_DIC_M_LDF5B_G_Frog_64_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Rough Rake Cellatus?</p>
+<p> </p>
+<p>Se o problema com o tubo for resolvido, a quantidade de água da mola poderá ser aumentada e a falta de água do esquadrão de limpeza Katalam.</p>
+<p> </p>
+<p>Eu também não precisaria mais ouvir as queixas do Wateriário impaciente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você se livrou do Rough Rake Cellatu?</p>
+<p> </p>
+<p>Graças a Deus.</p>
+<p> </p>
+<p>Isso significa que agora podemos produzir mais água da primavera.</p>
+<p> </p>
+<p>O suprimento de água estava me dando uma grande dor de cabeça, mas finalmente conseguimos resolver o problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Ulvali_E].</p></step>
+<step><p visible="[%9]">Eliminar o [plur][%dic:STR_DIC_M_LDF5B_G_Frog_64_An]([%11]/9).</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_LDF5b_Ulvali_E].</p></step>
+</steps>
+<p>Elimine o relógio de aquinho que está interferindo no tratamento da água.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Em nome de Ulvari, você eliminou o Rough Rake Cellatu, que estava causando problemas para obter água. Ulvari disse que o esquadrão Katalam Cleanup agora poderia ser fornecido regularmente com água.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

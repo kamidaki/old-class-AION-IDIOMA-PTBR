@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles me chamaram de "skurv" porque eu era curta e gorda. Eu era o rindo da minha aldeia. Até minha família-minha carne e sangue-me apunhou! Ninguém me encorajou ou me repreendeu. Ninguém me levou, me ensinou a ser um verdadeiro asmodiano.</p>
+<p> </p>
+<p>Eu era considerado um meio homem. Eu estava skurv. Então, o que eu fiz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Transfortou todos eles em skurvs?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não. Que tipo de pessoa você acha que eu sou? Eu saí, para provar todos eles errados. Peguei um pouco de comida e roupas e instalei aqui, entre os skurvs.</p>
+<p> </p>
+<p>Eles logo vieram confiar em mim e agora eu sou o homem alfa do pacote. Eu também confio neles. Eu tenho família.</p>
+<p> </p>
+<p>Não é suficiente, no entanto. Ainda devo provar aos moradores que sou forte e capaz.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Prove isso? Como?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Vou levar de volta as cavernas de Lava de Taran para Asmodae. Eles estão com Klaws. Os habitantes da cidade os abandonaram.</p>
+<p> </p>
+<p>Imagine o que eles diriam se eu os limpasse! Quão estúpidos eles se sentiriam! Eu teria respeito. "Skurv" morreria, e o nome "Kimssi" significaria alguma coisa!</p>
+<p> </p>
+<p>Há apenas um problema. Não consigo vencer todos os Klaws sozinho, ou mesmo com meus amigos aqui. Eu preciso de ajuda, [%username], de alguém como você com poderosos aliados.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]! Lady Lumiel e Lord Marchutan devem ter enviado você para mim, no meu exílio.</p>
+<p> </p>
+<p>Ah, não importa. Pense no passado e passe o presente. Temos klaws para matar!</p>
+<p> </p>
+<p>Apresse -se descendo a colina. Você não pode perder as cavernas. Você e seus aliados limpam o [%dic:STR_DIC_M_NeutL1_25_Ae] Areia [%dic:STR_DIC_M_NeutH1_26_Ae] S. Isso abrirá um caminho para o meu ataque!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Para as cavernas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não! Você não pode recusar! Eu-eu preciso disso!</p>
+<p> </p>
+<p>Minha honra, [%username]. Minha própria família ainda me duvida!</p>
+<p> </p>
+<p>Um homem é mais do que pele e osso, [%username]. Eu tenho espírito, determinação, unidade! Eu só preciso ... uma chance.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi, [%username]? Posso chamar minhas tropas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. O caminho está aberto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Voltarei para casa em breve, minha cabeça erguida, uma lenda!</p>
+<p> </p>
+<p>Obrigado, [%username]. Eu pensei que minha aldeia inútil, mas você ... você renovou minha fé em Asmodae.</p>
+<p> </p>
+<p>Você é diferente. Eu quero ser como você, [%username]. Para ajudar os outros necessitados e não pedir nada em troca, o verdadeiro significado de sangue por sangue!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine o Klaw.</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_NeutL1_25_Ae]([%2]/6).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_NeutH1_26_Ae]([%5]/4).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Kimci].</p></step>
+</steps>
+<p>Você decidiu ir à Caverna de Taran para Kimssi eliminar o veterano Klaw Sentinel e o veterano Klaw Patroller.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kimssi quer provar seu valor para sua família e vila.</p>
+<p> </p>
+<p>Seu objetivo é limpar a caverna de Taran, um lugar infestado por klaws perigosos e poderosos.</p>
+<p> </p>
+<p>Você concordou em ajudá -lo e matou muitos dos veteranos Klaw Patrollers e o veterano Klaw Sentinels.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

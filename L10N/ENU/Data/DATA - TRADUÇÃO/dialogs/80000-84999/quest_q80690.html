@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva deve ajudar Shugos, Ak.</p>
+<p> </p>
+<p>Shugo está implorando a Daeva, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Diga -me mais.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Os intrusos invadiram o [%dic:STR_DIC_IDSweep_Room01] e o [%dic:STR_DIC_IDSweep_Room02], e.</p>
+<p> </p>
+<p>Daeva deve eliminar [%dic:STR_DIC_IDSweep_S1_Shulack_Wi_Nmd] e [%dic:STR_DIC_IDSweep_S1_Shulack_As_65_Ae_Nmd], que estão guardando esses lugares.</p>
+<p> </p>
+<p>Essas áreas devem ser protegidas para que os Shugos possam retornar, Akakak!</p>
+<p> </p>
+<p>Uma vez feito isso, Daeva deve dizer [%dic:STR_DIC_NPC_IDSweep_IN_NPC03]que os reforços estão a caminho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Eu vou te ajudar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Não pode, ter que fazer mais portadores de maconha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até lá, Ak.</p>
+<p> </p>
+<p>Shugo está confiando em Daeva!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Não vou decepcioná -lo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva deve estar muito ocupado, AK ...</p>
+<p> </p>
+<p>Infelizmente, Daeva era nossa única esperança, Akakak ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você deve aprender a se ajudar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Shugo está ficando cada vez mais fraco, Ak ... Akakak ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">O backup está a caminho.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é verdade, AK?</p>
+<p> </p>
+<p>Os Shugos poderão retornar em breve e bater os intrusos em retirada, Akakak.</p>
+<p> </p>
+<p>Aqui, isso é para Daeva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_IDSweep_S1_Shulack_Wi_Nmd]([%2]/1).</p>
+<p visible="[%0]">Eliminar [%dic:STR_DIC_IDSweep_S1_Shulack_As_65_Ae_Nmd]([%5]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_NPC_IDSweep_IN_NPC03].</p></step>
+</steps>
+<p>Eliminar os shulacks que estão ocupando[%dic:STR_DIC_IDSweep_Room03].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você foi convidado a garantir a rota para os próximos reforços.</p>
+<p> </p>
+<p>É por isso [%dic:STR_DIC_IDSweep_S1_Shulack_Wi_Nmd] e [%dic:STR_DIC_IDSweep_S1_Shulack_As_65_Ae_Nmd]teve que ser eliminado.</p>
+<p> </p>
+<p>Você se transformou em um shugo e eliminou os intrusos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

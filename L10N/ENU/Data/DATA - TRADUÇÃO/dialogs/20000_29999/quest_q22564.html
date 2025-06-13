@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não conseguiu examinar no Jotun que foi encontrado no lago da solidão mais de perto?</p>
+<p> </p>
+<p>Está bem nas profundezas do lago, certamente, mas é algo que um pesquisador petralith não pode simplesmente ignorar.</p>
+<p> </p>
+<p>Esta é uma oportunidade única de descobrir sobre as origens do Jotun, que se acredita estar na raiz de Jotun.</p>
+<p> </p>
+<p>Vá para [%dic:STR_DIC_W_LDF5A_A3] e entre no[%dic:STR_DIC_W_LDF5a_SensoryArea_Q12564].</p>
+<p> </p>
+<p>Examine completamente o [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim], e relate -me de volta quando você chegar a uma conclusão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso é Nevilim que afundou no lago.)</p>
+<p> </p>
+<p>(Parece haver uma história antiga por trás disso.)</p>
+<p> </p>
+<p>(Parece semelhante a Jotun, mas muito maior que o Jotun.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, eu estava pesquisando em Brusthonin.</p>
+<p> </p>
+<p>Quando tive dificuldades em pesquisar, fui a Sarpan para investigar o Jotun, que criou o petralith.</p>
+<p> </p>
+<p>Eu vim aqui porque ouvi dizer que a origem do Jotun está em Katalam.</p>
+<p> </p>
+<p>Devo ter traços relacionados ao Nevilim para concluir minha pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a pedra mágica da Rune.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Então ... você coletou prova.</p>
+<p> </p>
+<p>Sinto um forte poder mágico emanado dele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou algum traço?</p>
+<p> </p>
+<p>Eu preciso urgentemente deles para minha pesquisa. Por favor, eu imploro.</p>
+<p> </p>
+<p>Deve haver algumas indicações do Nevilim.</p>
+<p> </p>
+<p>Por favor, volte para onde o [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim] está localizado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é realmente de um nevilim?</p>
+<p> </p>
+<p>Parece uma gravura. Isso acontece quando Nevilim emite um comando.</p>
+<p> </p>
+<p>Parece os símbolos da tribo Rune ...</p>
+<p> </p>
+<p>Isso significa que pode haver uma conexão entre Nevilim e a tribo Rune.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou profundamente grato por sua ajuda.</p>
+<p> </p>
+<p>Obrigado a você, [%username], fomos capazes de fazer essa descoberta fascinante.</p>
+<p> </p>
+<p>Não há nada melhor para um pesquisador como eu!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o Nevilim, que estão no[%dic:STR_DIC_W_LDF5a_SensoryArea_Q12564].</p></step>
+<step><p visible="[%3]">Examinar [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim].</p></step>
+<step><p visible="[%6]">Lute com o [%dic:STR_DIC_M_LDF5A_A2_Nebilim_A4_Nebilim_all]. Pegar [%dic:STR_DIC_I_quest_22564a]para [%dic:STR_DIC_N_LDF5a_Kinor_E].</p>[%collectitem]</step>
+</steps>
+<p>Examine o Nevilim no lago em nome de Kinor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kinor disse que era uma boa oportunidade para realizar uma extensa pesquisa sobre Nevilim, o fundador do Jotun que havia afundado no lago.</p>
+<p> </p>
+<p>Após a explicação, você matou a Jotun Guardians e Jotun Patrol e pegou uma pedra mágica de runa. Quando você trouxe isso a Kinor, ele disse que era um tipo de traço que havia sido criado quando uma ordem foi dada. Vem da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

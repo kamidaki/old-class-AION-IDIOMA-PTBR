@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que bom que você poderia se juntar a mim. Normalmente, vejo pessoas passando por baixo, e elas nem me vêem.</p>
+<p> </p>
+<p>Mesmo quando estão montando o Windstream, eles não precisam parar por aqui, então continuam continuando.</p>
+<p> </p>
+<p>É bom ter uma pequena companhia para variar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"É meio pacífico aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, mas não tenho tempo para aproveitar a paz. Eu tenho um trabalho a fazer.</p>
+<p> </p>
+<p>Minha tarefa é monitorar os fluxos de vento e gêiseres na área. Meus superiores os consideram vitais para operações militares aqui.</p>
+<p> </p>
+<p>Fico de olho para garantir que eles estejam bem e indo para onde deveriam ir, para que os daevasas possam usá -los sem se preocupar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Uma tarefa importante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Especialmente porque a fazenda Twilight Drana fica nas proximidades. Isso contribui para muita intromissão em potencial pelo Balaur.</p>
+<p> </p>
+<p>Um dos meus grandes problemas é o brilho e o mar. Suas energias podem afetar o curso e a força das formas de vento e atraem Balaur.</p>
+<p> </p>
+<p>Mas a casa deles está fora do caminho, e eu não posso deixar meu post por tanto tempo. Você pode ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Você está fazendo um grande favor de Daevas. Quanto melhores os Windstreams funcionam, melhor todos nós.</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_DF4_Foam_DR_55_An] S fazer sua casa no[%dic:STR_DIC_W_DF4_SZ_C1_Cave]. Você só precisa reduzir o número deles.</p>
+<p> </p>
+<p>Mas isso não será possível enquanto[%dic:STR_DIC_M_DF4_W_C1_Foam_DR_Nmd_55_An]vidas. Nasce as coisas explodidas constantemente. Eu acho que você sabe o que fazer sobre isso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu recebo a mensagem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Bem, se você não fizer isso, outra pessoa precisará. Deixados desmarcados, essas marinhas causarão enormes dores de cabeça.</p>
+<p> </p>
+<p>Eu deveria fazer um pedido à fortaleza de Gelkmaros. Eles conhecem melhor do que o pandaemonium a importância dos fluxos de vento.</p>
+<p> </p>
+<p>Fique o tempo que quiser. Como eu disse, não recebo muita companhia aqui em cima.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu possa respirar ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem vindo de volta! Uma das coisas legais sobre este post é que você pode ver visitantes vindo de um quilômetro de distância.</p>
+<p> </p>
+<p>Torna muito difícil para alguém se esgueirar, amigo ou inimigo.</p>
+<p> </p>
+<p>Você não parece o tipo que desiste facilmente. Isso deve significar que a ameaça do mar do mar foi tratada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Lidou com severamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Com o Cobaltan morto, os números brilhantes do Seafoam devem cair naturalmente para níveis gerenciáveis.</p>
+<p> </p>
+<p>Talvez agora não eu não consiga que aqueles Balaur vierem constantemente para investigar a luz que os Seafoams emitem.</p>
+<p> </p>
+<p>Você merece uma recompensa. Que tal ... hmm, pegue isso. Espero que seja útil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpar a luciferina do[%dic:STR_DIC_W_DF4_SZ_C1_Cave].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_Foam_DR_55_An]([%2]/9)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_W_C1_Foam_DR_Nmd_55_An]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Gustava].</p></step>
+</steps>
+<p>Mate a luciferina brilhante que está impedindo a investigação de Gustava.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A tarefa de Gustava é manter a corrente de vento e os gêiseres fazendo o que deveriam fazer. Infelizmente, os marítimos brilhantes estão interferindo em sua capacidade de fazê -lo.</p>
+<p> </p>
+<p>Você montou o gêiseador no pântano de viscum para a Caverna de Gênesis e matou o cobaltano e muitas marinhas brilhantes. Você voltou aos agradecimentos de Gustava.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

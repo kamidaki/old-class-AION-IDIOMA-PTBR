@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez seja hora de engolir meu orgulho. Afinal, é Dirvisia cuja vida está em jogo aqui.</p>
+<p> </p>
+<p>Minha amada esposa. Não há nada que eu não faria para libertá -la, mesmo que isso signifique grudar para o Telêmaco.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há mais nessa história ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está certo, existe. E talvez eu lhe deva uma explicação melhor se eu vou enviar você de volta a Eltnen.</p>
+<p> </p>
+<p>Se eu lhe contar, você vai me ajudar de novo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O general da brigada e eu voltamos bastante. Costumava ser amigos, acredite ou não. A maioria dos homens, eles começariam a lhe dizer aqui como era uma mulher que veio entre nós. Bem, isso é verdade, eu acho, mas não posso culpar Dirvisia por seguir seu coração.</p>
+<p> </p>
+<p>E se o coração dela a levou a me escolher sobre ele ... mal posso ser culpada.</p>
+<p> </p>
+<p>Ainda assim, eu preciso dessa pedra de restauração e, se isso ajudar meu caso com o Telemachus a comer uma torta humilde ... você cuidará disso para mim, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Torta humilde. Certo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso culpar exatamente você.</p>
+<p> </p>
+<p>Não, não. Não estou com raiva. Deixei meu orgulho atrapalhar minha esposa.</p>
+<p> </p>
+<p>Suponho que tudo o que posso fazer agora é enviar uma carta ao Telêmaco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum. Gellius é persistente.</p>
+<p> </p>
+<p>Bem? São ameaças ou lisonjas?</p>
+<p> </p>
+<p>Vamos lá, estou entediado ultimamente. Isso deve ser bom para algum entretenimento, pelo menos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"A pedra é para a esposa de Gellius."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>D ... DIRVISIA?</p>
+<p> </p>
+<p>Aqui, pegue isso! E apresse -se!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Uau. Uh ... obrigado!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Telêmaco lhe deu a pedra da restauração?</p>
+<p> </p>
+<p>Fora com isso. Diga -me o que aconteceu!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Surpreendentemente, sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quase desisti da esperança de que ele nos ajudasse!</p>
+<p> </p>
+<p>Obrigado, [%username]. Agora minha esposa pode estar livre de sua maldição!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Telemachus] em Eltnen.</p></step>
+<step><p visible="[%3]">Volte para Inggison e fale com[%dic:STR_DIC_N_Gellius].</p></step>
+</steps>
+<p>Diga a Telêmaco que o Legionário Petrificado é a esposa de Gellius e peça novamente a pedra da restauração.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gellius explicou que o legionário que se voltou para Stone era sua esposa. Ele pediu que você implorasse a Telêmaco mais uma vez.</p>
+<p> </p>
+<p>Ao ouvir as novas informações, Telêmaco lhe deu a pedra da restauração sem qualquer argumento.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

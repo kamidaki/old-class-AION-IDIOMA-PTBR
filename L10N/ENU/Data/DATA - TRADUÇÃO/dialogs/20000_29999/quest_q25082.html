@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu quero capturar o [%dic:STR_DIC_M_DF5_H2_QuestShellizard_63_An]no deserto espinhoso.</p>
+<p> </p>
+<p>Sua comida favorita é a carne do[plur][%dic:STR_DIC_M_DF5_H_kuillus_62_An].</p>
+<p> </p>
+<p>Por favor, pegue alguns[%dic:STR_DIC_I_quest_25082a] e defina alguns[%dic:STR_DIC_OBJ_DF5_FOBJ_bait_Q25082]para atraí -lo.</p>
+<p> </p>
+<p>Por favor, cuide dessa tarefa para mim. Não consigo lidar porque não sou forte o suficiente.</p>
+<p> </p>
+<p>Você poderia aceitar esta missão, [%username]?</p>
+<p> </p>
+<p>Quando você terminar, vá para [%dic:STR_DIC_N_DF5_Wigric_E] e dê a ele um relatório completo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(É uma fogueira.)</p>
+<p> </p>
+<p>(A julgar pelas trilhas, o protetorado o usou muito.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você coloca a carne de Kirrin no fogo morto e a acende.</act>
+<act href="HACTION_FINISH_DIALOG">Você deixa isso.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>(A carne cozinha lentamente sobre o fogo.)</p>
+<p> </p>
+<p>(Você só precisa esperar um pouco.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2">Você olha em volta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>(Obviamente você precisa de um pouco[%dic:STR_DIC_I_quest_25082a] Ser capaz de acender isso.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Fumaça aumenta.)</p>
+<p> </p>
+<p>(O grosso Fin Kulatu aparecerá em breve.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você olha em volta.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Chisea já me avise.</p>
+<p> </p>
+<p>Ela pediu para você cuidar do[%dic:STR_DIC_M_DF5_H2_QuestShellizard_63_An].</p>
+<p> </p>
+<p>Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que o eliminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>A festa de busca não pôde fazer seu trabalho por causa deste kulatu. Agora temos uma coisa a menos com que nos preocupar pelo menos.</p>
+<p> </p>
+<p>Estamos sempre muito gratos por sua ajuda, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegue alguns[%dic:STR_DIC_I_quest_25082a] e coloque -o no[%dic:STR_DIC_OBJ_DF5_FOBJ_bait_Q25082]. Então acenda a fogueira.</p>[%collectitem]</step>
+<step><p visible="[%3]">Inspecione o [%dic:STR_DIC_OBJ_DF5_FOBJ_bait_Q25082].</p></step>
+<step><p visible="[%6]">Derrotar o [%dic:STR_DIC_M_DF5_H2_QuestShellizard_63_An]([%8]/1).</p></step>
+<step><p visible="[%9]">Relatório para [%dic:STR_DIC_N_DF5_Wigric_E].</p></step>
+</steps>
+<p>Chisea pediu que você eliminasse o grosso Fin Kulatu no deserto. Realize o pedido de Chrisea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Chisea pediu que você eliminasse o Fin Kulatu grosso, fora do deserto.</p>
+<p> </p>
+<p>Você assou a carne de uma juba azul Kirrin sobre a fogueira, que é quando a barbarafada grossa apareceu.</p>
+<p> </p>
+<p>Você destruiu o grosso Fin Kulatu e informou Vigrik, que agradeceu a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

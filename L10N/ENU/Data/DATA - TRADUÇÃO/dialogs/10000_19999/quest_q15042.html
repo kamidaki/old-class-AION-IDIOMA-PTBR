@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15042</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu nome é Telos, e estou em uma missão para ... (começa a sussurrar) ... Encontre o Senhor. Ele está desaparecido desde o dia da grande ofensiva, depois de salvar muitos Daevas.</p>
+<p> </p>
+<p>No dia seguinte à grande ofensiva, um grupo secreto foi reunido para encontrar o Senhor. Infelizmente, os traços da energia do Senhor neste lugar são a única pista que encontramos até agora.</p>
+<p> </p>
+<p>Enquanto estava na estrada, ouvi muito sobre as muitas missões que você concluiu aqui em Signia, [%username]. Talvez você possa fazer algo por mim também.</p>
+<p> </p>
+<p>Esta flauta é um instrumento maravilhoso que pode convocar a borboleta do Senhor. Por favor, vá para o [%dic:STR_DIC_W_LF5_SZ_D_01] e use o [%dic:STR_DIC_I_quest_15042a]para encontrar [%dic:STR_DIC_I_quest_15042b].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi? Você descobriu pistas sobre o paradeiro do Senhor?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou a borboleta de Lord Kaisinel!</p>
+<p> </p>
+<p>Isso prova que o Senhor veio aqui no dia seguinte à grande ofensiva.</p>
+<p> </p>
+<p>Provavelmente, ele usou tanto de seu poder para salvar os Daevas que ele não tinha mais nenhum para voltar para nós.</p>
+<p> </p>
+<p>Agora que temos vestígios do Senhor, continuarei minha pesquisa com vigor renovado.</p>
+<p> </p>
+<p>É tudo graças a você, [%username]. Muito obrigado!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_W_LF5_SZ_D_01] e use o [%dic:STR_DIC_I_quest_15042a]para encontrar [%dic:STR_DIC_I_quest_15042b]([%2]/3).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Telos_E].</p></step>
+</steps>
+<p>Use a flauta da lua no jardim de Balaur e procure pistas sobre o paradeiro do Senhor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Telos disse que ele foi designado para uma missão secreta para encontrar o Senhor, que estava desaparecido desde a grande invasão.</p>
+<p> </p>
+<p>Para ajudar Telos, você tocou a flauta da lua e convocou a borboleta do Senhor.</p>
+<p> </p>
+<p>Você se reportou a Telos, que estava muito agradecido por agora ter uma idéia do paradeiro do Senhor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

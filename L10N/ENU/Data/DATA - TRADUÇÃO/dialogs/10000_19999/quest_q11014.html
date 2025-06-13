@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, fragmentos! Aquele tolo ... fez uma bagunça com a tarefa mais simples sob o sol!</p>
+<p> </p>
+<p>É por isso que você não deve confiar em um Greenhorn com o trabalho de um Daeva!</p>
+<p> </p>
+<p>Gasuto é um idiota!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_angry;HACTION_SELECT1_1">"Vá com calma, Loktania."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei ... desculpe. Um Daeva não deve agir dessa maneira. Mas Gasuto perdeu os suprimentos para o acampamento de pico de Vaizel! De novo!</p>
+<p> </p>
+<p>Ele me pediu para confiar nele, e eu o fiz. Então, quem é o idiota maior, certo? Ele disse que um pacote de ettinas de Whitehawk roubou os suprimentos dele. DE NOVO!</p>
+<p> </p>
+<p>Eu não sei o que fazer, [%username]. Preciso levar novos suprimentos para a fortaleza, mas o único daeva que posso usar é aquele Gasuto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu posso entregá -los para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Obrigado, [%username]! Mas eles vão me culpar se eu enviar alguém que não seja aquele idiota para fazê -lo.</p>
+<p> </p>
+<p>Que tal isso .... o tolo e eu entregamos os suprimentos, e você lida com o [%dic:STR_DIC_M_Ettin_30_An] está perto da fortaleza.</p>
+<p> </p>
+<p>Depois de cuidados, as entregas devem ser muito mais fáceis para o meu assistente, o tolo, lidar. Parece bem para você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. É bom trabalhar ao lado de um profissional pela primeira vez.</p>
+<p> </p>
+<p>Então, você vai lidar com o [%dic:STR_DIC_M_Ettin_30_An] está na estrada de Heironopolis à fortaleza?</p>
+<p> </p>
+<p>Cinco Ettins devem ser suficientes para facilitar as tarefas do tolo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou cuidar deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>E agora você muda de idéia? Você acabou de dizer que me ajudaria, [%username]! O que aconteceu nos cinco segundos entre então e agora?</p>
+<p> </p>
+<p>Incompetência em todos os lugares!</p>
+<p> </p>
+<p>Você e Gasuto seriam ótimos amigos. Vou deixar você jogar juntos se sua mãe disser que está tudo bem ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você é um Daeva amargo!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Tempo perfeito, [%username]! Acabei de reembalar os suprimentos que o tolo perdeu.</p>
+<p> </p>
+<p>O problema da Ettin foi resolvido?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os Ettins estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é realmente incrível, [%username]! Eu trocaria 10 de meus tolos por um de vocês!</p>
+<p> </p>
+<p>Aqui está um pouco para você. Você tornou meu dia muito mais fácil.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_Ettin_30_An] S ([%2]/5).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Loktania].</p></step>
+</steps>
+<p>Destrua as Ettinas de Whitehawk, perto do novo portão de hiaron para que seu assistente possa fornecer suprimentos com segurança.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Loktania reclamou que seu assistente Gasuto deixou Whitehawk Ettins roubar seus suprimentos novamente.</p>
+<p> </p>
+<p>Você matou os Whitehawk Ettins perto da fortaleza, e Loktania ficou agradecida e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

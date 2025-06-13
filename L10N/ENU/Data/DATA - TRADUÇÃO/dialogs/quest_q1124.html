@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqueles vermes imundos ....</p>
+<p> </p>
+<p>Aqueles vermes doentes e gananciosos são uma varíola na face de [%dic:STR_DIC_ELA05], e não vou mais sofrer a presença deles.</p>
+<p> </p>
+<p>Você! Você é um treinado por batalha [%userclass], não é? Aqueles kobolds, gordos e lentos em seu banquete, seriam alvos fáceis para você, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está me contratando para vingar um porgus?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Podemos resolver os detalhes mais tarde, [%userclass]!</p>
+<p> </p>
+<p>Remediar essa dor de cabeça minha. Voltar para o [%dic:STR_DIC_FLA07]. Caça o [%dic:STR_DIC_MLA13_1] para baixo. [%dic:STR_DIC_MLA13_4] S se você os vir também. Eles sujo o ar de [%dic:STR_DIC_E_LF1_name]. Ninguém os lamentaria!</p>
+<p> </p>
+<p>Você vai fazer isso, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Está em suas mãos então.</p>
+<p> </p>
+<p>É o [%dic:STR_DIC_MLA13_1] Areia [%dic:STR_DIC_MLA13_4] S que foram responsáveis ​​pela morte de Tutty-eles são os que eu quero mortos.</p>
+<p> </p>
+<p>Ah, e quanto à prova, traga -me as colheres que eles usam para a refeição. Cinco deveriam fazer-algo para colocar em seu túmulo, então ele sabe que foi vingado ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro. Eu posso fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?!</p>
+<p> </p>
+<p>Você os matou de qualquer maneira! Eu era mais jovem, eu apenas iria mesmo! Não existe ninguém que exatará minha vingança por mim?!</p>
+<p> </p>
+<p>Me deixe, [%userclass]. Só minha sorte encontrar um mercenário que não quer dinheiro!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, você já limpou a mina de Kobolds gulosos?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Foi a última refeição deles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?</p>
+<p> </p>
+<p>Você está zombando de mim? Você acha isso engraçado, [%userclass]!?</p>
+<p> </p>
+<p>Pedi a você cinco de suas colheres. Onde eles estão?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou nisso ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Spoons de Kobold-isso será perfeito para o monumento de Tutty.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Pegue, e o agradecimento deste velho ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_MLA13_1] Areia [%dic:STR_DIC_MLA13_4] S in[%dic:STR_DIC_FLA07] e trazer as evidências para Pernos.</p>[%collectitem]</step>
+</steps>
+<p>Pernos ficou furioso com a morte de Tutty. Ele contratou você para matar Dukaki Kobolds em vingança e trazer a ele suas colheres.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você disse a ele que os Dukaki Kobolds haviam assassinado Tutty, ele pagou para matá -los e trazer de volta suas colheres como prova.</p>
+<p> </p>
+<p>Você foi à mina de Kabarah Strip, matou Kobolds e vingou Tutty.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

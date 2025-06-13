@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]!</p>
+<p> </p>
+<p>Se não me engano, esse não é o instrumento de cordas de poder do Siel?</p>
+<p> </p>
+<p>Meu Deus ... e você tem!</p>
+<p> </p>
+<p>Eu ouvi rumores, mas as habilidades de [%username]Realmente parece ser excelente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Posso dar uma olhada no instrumento de cordas mágicas de Siel's Magic Power?</p>
+<p> </p>
+<p>(Examina de perto o instrumento de cordas) Oh ... pena, é um instrumento tão bom. Parece que esse instrumento de cordas foi severamente danificado em algum lugar.</p>
+<p> </p>
+<p>Se pudesse ser restaurado à sua condição original, este instrumento de cordas seria capaz de um desempenho ainda maior.</p>
+<p> </p>
+<p>Você está interessado em restaurar o instrumento de cordas? Nesse caso, eu posso ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu disse que iria ajudá -lo, mas não quis dizer que eu mesmo o consertaria. Não sou suficientemente capaz de fazer isso, receio.</p>
+<p> </p>
+<p>Em vez de, [%username], Vou lhe dizer onde você pode encontrar um reparador imediatamente.</p>
+<p> </p>
+<p>Vá para o campo de refugiados de Rombus e conheça o Kobold Smith[%dic:STR_DIC_N_DF4_NPC_Nehmatan]. Ele é um Kobold, mas conhece o caminho em torno de qualquer arma.</p>
+<p> </p>
+<p>Ele sempre fica preso quando se trata de assuntos que envolvem reparo de armas. Você também pode obter ajuda dele.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem muita certeza de si mesmo?</p>
+<p> </p>
+<p>Você acha que não precisa das armas porque já é forte o suficiente, [%username]?</p>
+<p> </p>
+<p>Não recomendo mais nada para você se você não achar que nada é necessário.</p>
+<p> </p>
+<p>Até o melhor instrumento de cordas é apenas de valor para aqueles que apreciam sua qualidade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva, o que você quer?</p>
+<p> </p>
+<p>Você quer armas? Basta dizer o que você quer.</p>
+<p> </p>
+<p>Kobold reparará qualquer coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que deseja reparar o instrumento soberano de Siel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O instrumento de cordas de poder do Siel!</p>
+<p> </p>
+<p>Siel's Spear Legion, ancestrais do Reian, usou esta arma.</p>
+<p> </p>
+<p>Mas não está em bom reparo. Não pode ser usado em seu estado atual.</p>
+<p> </p>
+<p>Kobold ajudará a encontrar seus poderes novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_DF4_NPC_Nehmatan]%.</p></step>
+</steps>
+<p>Eles dizem que você pode restaurar seu poder original ao instrumento de cordas de poder de Siel. Vá ao campo de refugiados de Rombus e encontre -se com Tataka.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ipses disse, referindo -se ao instrumento Siel Power String, que, embora seja uma boa arma, ele já tem seus melhores dias atrás e está mostrando sinais de dano.</p>
+<p> </p>
+<p>Após o conselho dele, você foi ao Kobold Smith Tataka, que concordou em melhorar a arma.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

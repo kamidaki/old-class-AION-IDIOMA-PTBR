@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?</p>
+<p> </p>
+<p>É muito perturbador ter pessoas que acabam de invadir aqui. Estou tentando pensar. Você não tem algo para fazer?</p>
+<p> </p>
+<p>Oh, espere![%userclass], Eu posso ter um emprego para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Que tipo de trabalho?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... algo bem simples. Deve ser uma caminhada para alguém como você.</p>
+<p> </p>
+<p>Mantenha sua voz baixa, mas ... você já caçou os paindons?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Por que você pergunta?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, temos uma aposta semanal em quem pode caçar o maior número de países. Eu realmente gostaria de ganhar um, e não estou realmente preocupado com como.</p>
+<p> </p>
+<p>Você sabe quem venceu da última vez? Um shugo chamou Nagrunerk. Ele é pequeno, mas é bom em venenos.</p>
+<p> </p>
+<p>Eu odeio perder para um shugo, então, se você estiver disposto, pague -o para caçar alguns paindons por mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Será um bom negócio para nós dois.</p>
+<p> </p>
+<p>Eu preciso que você caça [%dic:STR_DIC_M_LF2A_CalydonAssassinH_48_An] Areia [%dic:STR_DIC_M_LF2A_CalydonMageH_48_An] S.</p>
+<p> </p>
+<p>Com suas mortes adicionadas ao meu, eu deveria ganhar as mãos!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fico feliz em ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Bem, tudo bem, mas não mencione isso a mais ninguém, bem?</p>
+<p> </p>
+<p>Se você mudar de idéia, minha oferta ainda permanece.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Mantenha sua voz baixa, [%username]. Você esteve em encontrar os Calydons? O que aconteceu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que aconteceu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Eu estava certo em pedir sua ajuda.</p>
+<p> </p>
+<p>Mas ainda não posso descansar. Tityus luta melhor do que eu teria pensado.</p>
+<p> </p>
+<p>Eu o subestimei porque pensei que ele era forte, mas estúpido. Agora parece que ele comprometerá minha vitória.</p>
+<p> </p>
+<p>Você deve estar cansado. Vá e descanse. Desejo tomar o assunto em minhas próprias mãos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Calydon na vila de Calydon.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_CalydonAssassinH_48_An]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LF2A_CalydonMageH_48_An]([%5]/4)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Oileus].</p></step>
+</steps>
+<p>Para garantir que Oileus vença a aposta de caça, você foi convidado a matar o Calydon Assassin e o Calydon Soothsayer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Oileus, que você conheceu no Jamanok Inn, perguntou se você tinha tempo.</p>
+<p> </p>
+<p>Você perguntou a ele o que se tratava, e ele lhe disse que fez uma aposta com outros caçadores de recompensas pela caça ao Calydon, mas que não podia deixar a pousada por razões pessoais, e ele pediu que você caçasse o calydon em seu lugar.</p>
+<p> </p>
+<p>Depois de voltar de eliminar os assassinos de Calydon e os Fortunetlers de Calydon, Oileus lhe disse que, inesperadamente, o desempenho de Tityus havia sido muito bom e que ele também iria caçar o próprio Calydon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

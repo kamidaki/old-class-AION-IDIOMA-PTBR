@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos vieram para Vengar. Eles querem encontrar nossa fraqueza e aproveitadamente aproveitar isso.</p>
+<p> </p>
+<p>Temos que mostrar a eles que não temos fraquezas e que estamos prontos para a batalha a qualquer momento.</p>
+<p> </p>
+<p>[%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos estão aumentando seu ataque a Vengar.</p>
+<p> </p>
+<p>Mas nossa ofensiva é ainda mais forte.</p>
+<p> </p>
+<p>Ouvi dizer que você parou os Elyos da última vez sem problemas. Como foi?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que foi fácil derrotá -los.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Se arcontes como você, [%username], lute por nós, então os Elyos não serão mais capazes de conquistar Vengar.</p>
+<p> </p>
+<p>Seremos vitoriosos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que invadiram Vengar ([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Grangund_E].</p></step>
+</steps>
+<p>O comandante interino Grangund pediu que você eliminasse os Elyos que invadiram Vengar. Realize a missão de Grangund.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O comandante em exercício Grangund pediu que você eliminasse os Elyos que invadiram Vengar.</p>
+<p> </p>
+<p>Você derrotou os Elyos e ele o elogiou quando você voltou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

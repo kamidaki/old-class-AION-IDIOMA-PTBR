@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], desde que você veio até aqui, gostaria de ganhar Kinah?</p>
+<p> </p>
+<p>Oh, não me dê esse olhar. Não é nada ilegal, mas fique quieto, ok?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não é ilegal?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que não. Já viu um spanner de estalo? Eles estão por toda parte das ruínas do posto avançado.</p>
+<p> </p>
+<p>Agora mesmo, [%dic:STR_DIC_I_QUEST_1326a] São muito populares no santuário. Eles vendem mais rápido que Sylphen frito!</p>
+<p> </p>
+<p>Veja para onde vou com isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu acho que sim. Diga -me mais."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], se você capturar [%dic:STR_DIC_M_Lobster_25_An] e me traga [%dic:STR_DIC_I_QUEST_1326a], Vou te pagar bem.</p>
+<p> </p>
+<p>Eu posso revendê -lo como um comerciante shugo. É uma situação em que todos saem ganhando.</p>
+<p> </p>
+<p>Você só precisa me trazer 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É um acordo, então![%dic:STR_DIC_M_Lobster_25_An] S está todo em torno do[%dic:STR_DIC_W_LF2_SZ_G1]. Apenas me traga as pinças.</p>
+<p> </p>
+<p>Ah, e se Heropes perguntar por que você está caçando espinha, não mencione meu nome o que fizer!</p>
+<p> </p>
+<p>Ele apenas tentará entrar e tomar parte do meu lucro!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É o nosso segredo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, tudo bem, [%username]....</p>
+<p> </p>
+<p>Não sei por que você recusaria uma maneira tão fácil de fazer Kinah.</p>
+<p> </p>
+<p>Não mencione isso para Heropes, ok?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece o rosto de um caçador de sucesso!</p>
+<p> </p>
+<p>Estamos olhando para um bom transporte?</p>
+<p> </p>
+<p>Quantos[%dic:STR_DIC_I_QUEST_1326a]Você conseguiu?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Tantos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Huh? Não é isso que concordamos. O Shugo diz que precisamos de pelo menos quinze para fazer valer a pena.</p>
+<p> </p>
+<p>Madios em santuário vão e vêm. Se perdermos este, teremos muitas pinças cheirando o lugar.</p>
+<p> </p>
+<p>Pressa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto logo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, as pessoas realmente comem essas coisas? Eu morei em santuário por um tempo, mas realmente não entendo as mangas.</p>
+<p> </p>
+<p>Bem, não importa se eu gosto deles, desde que sejam lucrativos!</p>
+<p> </p>
+<p>Aqui está o seu pagamento. Eu acho que você descobrirá que é mais do que suficiente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga as pinças gordas de que você obteve [%dic:STR_DIC_M_Lobster_25_An] para [%dic:STR_DIC_N_Novan].</p>[%collectitem]</step>
+</steps>
+<p>Reúna as pinças giradas dos Spiners, que buscam um preço alto no mercado, e os levam ao Novan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Novan disse que, se você trazer pinças de spine para ele, ele as compraria a um preço alto, já que são populares em santuário nos dias de hoje.</p>
+<p> </p>
+<p>Você foi para as ruínas do posto avançado, caçou spanners e trouxe suas pinças rechonchudas para ele. Yum!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

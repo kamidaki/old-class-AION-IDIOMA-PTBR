@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há necessidade de insistir na perda da fortaleza de Miren. Enquanto você vive, você deve ter bons tempos e maus momentos.</p>
+<p> </p>
+<p>Mas isso não significa que você precisa aceitar tudo o que acontece. Se você quiser mudar as coisas ... bem, temos o poder de fazer isso.</p>
+<p> </p>
+<p>O que você acha? Devemos recuperá -lo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso parece interessante."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que devemos ter apoio ativo dos Daevas para conseguir isso.</p>
+<p> </p>
+<p>Eu já ouvi muito sobre suas proezas, [%username], mas mesmo assim que somos, não conseguimos enfrentar todos os inimigos da fortaleza.</p>
+<p> </p>
+<p>Eu acho que ter você conosco pode ser fundamental, no entanto. O que você diz?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há razão para atrasar, então.</p>
+<p> </p>
+<p>Reunir alguns companheiros e sair imediatamente para obliterar o [%dic:STR_DIC_M_2795_all]. Vai ser glorioso!</p>
+<p> </p>
+<p>O Guardian General estará escondido em algum lugar profundamente dentro da fortaleza, então vamos cuidar da guarnição primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Isso deve ser feito!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recusou?</p>
+<p> </p>
+<p>Eu vejo .... bem, você deve ter seus motivos. O dever de um Daeva não pode ser forçado.</p>
+<p> </p>
+<p>Por favor, siga seu caminho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até mais tarde, então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que alguns asmodianos esmagaram o [%dic:STR_DIC_M_2795_all]Como se não fosse nada.</p>
+<p> </p>
+<p>Foram você e seus companheiros?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Nós esmagamos o inimigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Como esperado, você não me decepcionou.</p>
+<p> </p>
+<p>Bom trabalho, mas este é apenas o começo. Vou ficar de olho em você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_M_2795_all]([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Rossjof].</p></step>
+</steps>
+<p>Derrote a guarnição da fortaleza Miren com seus companheiros e relate o resultado a Rossjof.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Rossjof desejou alistar seu serviço no plano de recuperar a fortaleza e pediu que você atacasse a guarnição da fortaleza.</p>
+<p> </p>
+<p>Quando você derrotou a guarnição da fortaleza e voltou ao instruir, ele elogiou seu esforço e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

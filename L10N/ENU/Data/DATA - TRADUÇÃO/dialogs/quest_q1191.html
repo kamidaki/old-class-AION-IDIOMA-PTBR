@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Daeva! Você tem um momento? Eu tenho algo para lhe perguntar.</p>
+<p> </p>
+<p>Você se deparou com o Observatório Verteron? Um pouco fora do caminho, através do campo de Krall e tudo, mas você pode conseguir um voo para lá com facilidade.</p>
+<p> </p>
+<p>Eu tenho uma mensagem terrivelmente importante que deve ser entregue lá. Eu não posso trazê -lo sozinho, mas não posso arriscar sua interceptação ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E você gostaria que eu ajude."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. Eu sei que você deve ter tarefas infinitas à sua frente, mas isso é realmente importante.</p>
+<p> </p>
+<p>Muitas vidas ficam em equilíbrio, e você estaria me fazendo um ótimo serviço.</p>
+<p> </p>
+<p>Você vai ajudar? Você vai entregar esta carta a Khidia no Observatório?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se ao menos houvesse mais como você. Por favor, leve a carta para [%dic:STR_DIC_LA38]no[%dic:STR_DIC_FLA21].</p>
+<p> </p>
+<p>Se ela não o receber em breve, a própria Elysea poderá ser ameaçada.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou cuidar disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não percebe como isso é urgente.</p>
+<p> </p>
+<p>Se você não ajudar, devo pedir que você sai para que eu possa concentrar meus esforços em encontrar um Daeva comprometido com a Elysea.</p>
+<p> </p>
+<p>Suponho que você tenha outros deveres para cuidar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu faço."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você apressou -se, Daeva. Eu posso ouvir em sua voz ... respire e me diga o porquê.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_think;HACTION_SELECT_QUEST_REWARD">"Eu tenho isso para você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, o que isso diz ... o abismo? Explosivos?! Mas onde eles iriam ....</p>
+<p> </p>
+<p>Oh! Devo me desculpar. Por favor, não se preocupe com a mensagem. Não é nada.</p>
+<p> </p>
+<p>Você foi uma grande ajuda, obrigado. Cuidado com Krall e Frillnecks no seu caminho de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar [%dic:STR_DIC_LA22]Carta para [%dic:STR_DIC_LA38].</p></step>
+</steps>
+<p>Vá para a costa de Cantas e entregue a carta de Selene a Khidia. Pode ser mais fácil pegar um voo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Selene, um padre da Cidadela, pediu que você entregasse uma carta a Khidia no Observatório Verteron, dizendo que era uma questão altamente importante.</p>
+<p> </p>
+<p>Khidia murmurou algo para receber a carta, mas depois o enviou embora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

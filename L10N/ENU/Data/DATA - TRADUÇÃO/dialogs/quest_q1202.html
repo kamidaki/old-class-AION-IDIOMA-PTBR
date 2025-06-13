@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente fez a diferença da última vez, [%username].</p>
+<p> </p>
+<p>Mas você sabe como são a Krall-estupida, feia e persistente.</p>
+<p> </p>
+<p>Eles estão Massando novamente, o que significa outro ataque à Citadel da Verteron.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que podemos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você se importaria de me ajudar de novo?</p>
+<p> </p>
+<p>Eu preciso que você vá ao posto avançado de Tursin e matar cinco[plur][%dic:STR_DIC_MLA60] e cinco[plur][%dic:STR_DIC_MLA27_1]lá.</p>
+<p> </p>
+<p>Receio que estamos tendo problemas financeiros no momento, então não posso lhe dar tanto quanto da última vez. Mas é claro, você não ficará de mãos vazias.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, [%username]!</p>
+<p> </p>
+<p>Vá para o posto avançado da Tursin e elimine -os.</p>
+<p> </p>
+<p>É perigoso ir para lá sozinho, como tenho certeza que você sabe. Uma única Krall não é ameaça, mas há um ninho inteiro lá.</p>
+<p> </p>
+<p>Portanto, seria melhor se você levar camaradas com você.</p>
+<p> </p>
+<p>Se você levar alguns deles com você, então cinco[plur][%dic:STR_DIC_MLA60] e cinco[plur][%dic:STR_DIC_MLA27_1] Será brincadeira de criança.</p>
+<p> </p>
+<p>Agora vá. Eu ainda estarei aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Eu pensei ... não importa. Tenho certeza de que você tem muitas reivindicações sobre seu tempo.</p>
+<p> </p>
+<p>Se você ver outros[%userclass] S, você os apontaria dessa maneira? Os Krall estão reunindo, e alguém tem que lidar com isso.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você voltou, [%username]! Você se lembrava de levar aliados, não é?</p>
+<p> </p>
+<p>Como está a contagem do corpo de Krall?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que você não me decepcionaria. Bom trabalho, [%username].</p>
+<p> </p>
+<p>Sempre que você é livre, eu receberia sua ajuda. Eu preciso de pessoas com quem eu possa contar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá atrás do Krall do[%dic:STR_DIC_FLA22].</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA60]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_MLA27_1]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA39]%.</p></step>
+</steps>
+<p>O Tursin Krall está esperando a chance de penetrar na fortaleza de Verteron. Mate o Krall do posto avançado de Tursin e receba uma recompensa especial de Meteina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Krall se reunia frequentemente para preparar ataques em larga escala, então Meteina envia voluntários para o posto avançado da Tursin para subjugá-los.</p>
+<p> </p>
+<p>Você reuniu alguns aliados e lutou contra o Krall.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

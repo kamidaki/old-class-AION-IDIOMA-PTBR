@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem uma excelente noção de cozinhar e sabores. Eu poderia provar isso nos pratos que você fez.</p>
+<p> </p>
+<p>Antes que eu possa recomendá -lo como especialista em culinária, você precisará dominar pratos com uma receita mais complexa.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Quais pratos você gostaria?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Fazer [%dic:STR_DIC_E_Q1979a] S, [%dic:STR_DIC_E_Q1979b] S, [%dic:STR_DIC_E_Q1979c] Areia [%dic:STR_DIC_E_Q1979d] S, até que você possa criar um saboroso de cada.</p>
+<p> </p>
+<p>Será uma prova que você merece receber o título de especialista.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você será capaz de cozinhar o [%dic:STR_DIC_E_Q1979all] Se você Kep Kep Cooking Piece 'Salad, Snododes' Smoothie 'Fishads' Fuish, Chowder 'Chowdder.</p>
+<p> </p>
+<p>Cozinhar precisa de sabor sensível, uma delicada sensação de toque e paciência. Não será fácil, mas tenho certeza de que você pode fazer isso, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou decepcioná -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu pensei que você poderia fazer isso.</p>
+<p> </p>
+<p>Você não acredita em seu talento?</p>
+<p> </p>
+<p>Algum dia você virá até mim e pedir para ser ensinado. Eu estarei esperando.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Um prato contém o talento e o sentimento da pessoa que fez, [%username]. Um mestre pode lê -las apenas pelo sabor.</p>
+<p> </p>
+<p>Eu provei infinitas possibilidades nos pratos que você fez. No final, você pode me suceder.</p>
+<p> </p>
+<p>Você fez e trouxe aqueles pratos que eu pedi?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu comi. Coma bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está tendo dificuldade em preparar o [%dic:STR_DIC_E_Q1979all], Assim, [%username]?</p>
+<p> </p>
+<p>Nem todos têm talento, mas você o tem em abundância. Por que você desiste tão facilmente?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou tendo um dia ruim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava certo sobre você! Esses pratos são maravilhosos.</p>
+<p> </p>
+<p>Estou tão feliz em encontrar um talento como você, [%username].</p>
+<p> </p>
+<p>Espero que você se dedique a cozinhar. Qualquer outra coisa seria um desperdício.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o [%dic:STR_DIC_E_Q1979all] e trazê -lo para [%dic:STR_DIC_N_Hestia].</p>[%collectitem]</step>
+</steps>
+<p>Hestia diz para receber o título de especialista em culinária, você deve poder fazer pratos complexos com facilidade. Faça a salada de Fasimedes, o smoothie de Fasimedes, o peixe de Fasimedes e a sopa de Fasimedes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hestia disse que você deve tentar se qualificar para o especialista em cozinhar, fazendo um prato complicado.</p>
+<p> </p>
+<p>Você fez a salada de Fasimedes, o smoothie de Fasimedes, o peixe de Fasimedes e a sopa de Fasimedes para ela. Ela ficou satisfeita e recomendou que você se dedique a cozinhar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

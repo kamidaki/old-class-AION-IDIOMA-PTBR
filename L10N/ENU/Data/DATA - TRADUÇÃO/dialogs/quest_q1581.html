@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Mortos Vivos estão tramando alguma coisa.</p>
+<p> </p>
+<p>Geralmente eles agem sozinhos. Ultimamente, eu os vi lutando como um grupo-mas é mais do que isso.</p>
+<p> </p>
+<p>Eles parecem estar organizados-eles têm um líder.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Um líder? Isso é novo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Eu tive batedores assistindo -os. Há um morto -vivo que eles parecem seguir.</p>
+<p> </p>
+<p>Você tem sido contra esses Mortos Vivos antes, [%username]. Eu sei que você pode lidar com este iniciante.</p>
+<p> </p>
+<p>Posso contar com você?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Isso é o que eu queria ouvir.</p>
+<p> </p>
+<p>Há um altar de pedra nas ruínas do patema. Meus olheiros viram[%dic:STR_DIC_M_SpectreNamedQ_41_An]lá à noite. É a oportunidade perfeita para fazer um movimento.</p>
+<p> </p>
+<p>Este trabalho deve ser o jogo de Inedgling para um talentoso Daeva como você-uma localização, um alvo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Apenas um trecho casual das minhas asas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cansado de lidar com os Mortos Vivos?</p>
+<p> </p>
+<p>Eu entendo. É um negócio confuso. Mas não podemos reinstalar esta região até eliminá -los. Esse líder é uma complicação que não esperávamos.</p>
+<p> </p>
+<p>Espero que você mude de idéia.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Arieluma, [%username]! Ainda estou pensando nessa idéia dos Mortos Vivos tendo um líder. Ataques coordenados-quem teria pensado isso?</p>
+<p> </p>
+<p>Faz -me pensar se esse Gellar era um comandante militar durante sua vida. Hum.</p>
+<p> </p>
+<p>Então, você o eliminou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz, mas não sem brigar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas eu sabia que você poderia fazer isso. Livrar -se do Gellar tornará nosso trabalho muito mais fácil.</p>
+<p> </p>
+<p>Obrigado pelo seu serviço, [%username] e para concluir a missão com sucesso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Livrar-se de [%dic:STR_DIC_M_SpectreNamedQ_41_An]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Rance].</p></step>
+</steps>
+<p>Livre -se de Gellar, líder dos Mortos Vivos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Rance descobriu que os Mortos Vivos tinham um líder chamado Gellar. Ele o enviou para eliminar o Gellar. No seu sucesso, Rance lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Ammianus], Instrutor da Academia</p>
+<p> </p>
+<p>'Luma, brilhos!</p>
+<p> </p>
+<p>Bem -vindo à Academia Kaisinel.</p>
+<p> </p>
+<p>Para a lição de hoje, você estará limpando o rio Ellun. Se ficar muito mais poluído, os cidadãos em Verteron não terão nada para beber!</p>
+<p> </p>
+<p>Para passar, você precisará coletar cinco (5)[%dic:STR_DIC_I_QUEST_37000A] S e trazê -los para mim. Então vá pegar um mentor e começar a trabalhar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu realmente preciso de um mentor para isso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu mentor mostrou como obter essas conchas Inina?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Sim, e aqui estão cinco. Eu passo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu Dorion comeu seu[%dic:STR_DIC_I_QUEST_37000A] S, hmm? Confie em mim, já ouvi isso antes.</p>
+<p> </p>
+<p>Desta vez, vou te dar uma extensão, mas não me faça esperar. Vá para a boca do rio Ellun com seu mentor, se quiser aprender.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo o que causa a toxicidade também torna as conchas azuis. Uma concha mais azul significa mais contaminação?</p>
+<p> </p>
+<p>Bom trabalho hoje, [%username]. Espero ver mais um ótimo trabalho de você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_37000A] S com um[%dic:STR_DIC_E_Mentor] e depois levá -los para [%dic:STR_DIC_N_Ammianus].</p>[%collectitem]</step>
+</steps>
+<p>Você foi aceito na Academia Kaisinel, e o instrutor da Academia Markos o designou para encontrar um mentor e coletar Ininas Blue na Verteron Citadel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois que você foi aceito na Kaisinel Academy, o instrutor da Academia Markos o designou para encontrar um mentor e coletar Ininas Blue, perto da Cidadela de Verteron. Você passou, e Markos o recompensou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

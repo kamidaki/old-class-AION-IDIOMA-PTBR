@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41558</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>É hora. Wily Astus dormiu pela última vez.</p>
+<p> </p>
+<p>Você deve invadir a casa dele, recuperar qualquer documentação que encontrar e depois matá -lo. O traidor conhecerá o preço de sua traição, e você, meu amigo, mostrará a ele.</p>
+<p> </p>
+<p>Você está pronto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ei! Ei[%username]! Espere, espere um minuto!</p>
+<p> </p>
+<p>Eu sei para onde você está indo! Eu sei que você vai encontrar Astus e matá -lo. Mas por favor, por favor, me escute-ele é um velho amigo meu, e eu sei que posso convencê-lo a voltar para nós.</p>
+<p> </p>
+<p>Por favor! Eu só preciso de uma coisa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO10">"Fale rapidamente."</act>
+<act href="HACTION_SETPRO20">"Não está interessado. Os traidores morrem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>OK! Ouça, não estou pedindo que você o salve. Eu só quero que você me compre algum tempo para que eu possa convencê -lo a voltar. Somos velhos amigos, você vê. Ele vai me ouvir.</p>
+<p> </p>
+<p>Você já colocou uma pedra marcadora do lado de fora de sua casa, certo? Bem, eu tenho outra pedra. Eu quero que você o coloque na frente de [%dic:STR_DIC_W_LDF4b_SZ_T2_S14]. Isso criará confusão e me compre algum tempo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É melhor você trabalhar rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O que?!</p>
+<p> </p>
+<p>Stoine pediu para você salvar Astus? O idiota! Nada disso é fácil para nós, você sabe, Reians matar Reians é uma experiência horrível para nós, que desejamos acabar o mais rápido possível. As ações de Stoine, por mais valiosas que sejam, são completamente inaceitáveis.</p>
+<p> </p>
+<p>[%username], pôr um fim a esta situação ridícula. Entre na casa de Astus e encontre [%dic:STR_DIC_OBJ_LDF4b_FOBJ_Document]. Depois de tê -lo, mate [%dic:STR_DIC_M_LDF4b_Monster_Q41557]. Agora vá!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">"Vou trabalhar rápido."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select10_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta!</p>
+<p> </p>
+<p>O que aconteceu? Você colocou a pedra marcadora em frente a uma casa diferente?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado, [%username]!</p>
+<p> </p>
+<p>Enviei uma carta a Astus, esperando que finalmente consiga mudar de idéia. Agora eu só tenho que esperar ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select10_2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu? Você tem o diário? O traidor está morto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Bem..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward2">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente, podemos descansar fácil. Obrigado. [%username].</p>
+<p> </p>
+<p>Vou ler o diário e descobrir quanta informação eles compartilharam com o Balaur. Você terminou por enquanto, amigo. Excelente trabalho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Stoy].</p></step>
+<step><p visible="[%3]">Coloque outra pedra marcadora na frente de [%dic:STR_DIC_W_LDF4b_SZ_T2_S14] [%5].</p></step>
+<step><p visible="[%6]">Relatório de volta para [%dic:STR_DIC_N_Stoy].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_Aesty].</p></step>
+<step><p visible="[%12]">Encontre o [%dic:STR_DIC_OBJ_LDF4b_FOBJ_Document] [%14].</p></step>
+<step><p visible="[%15]">Matar [%dic:STR_DIC_M_LDF4b_Monster_Q41557]([%17]/1).</p></step>
+<step><p visible="[%18]">Relatório de volta para [%dic:STR_DIC_N_Aesty].</p></step>
+</steps>
+<p>Stoine quer falar com você sobre Astus. Encontre -o e descubra o que ele quer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aethon finalmente o enviou para matar Wily Astus. No entanto, enquanto viajava, você foi falado por Stoine, que queria tempo para falar com Astus e convencê -lo a voltar. Hora de tomar uma decisão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

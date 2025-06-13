@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- DESEJADO -</p>
+<p> </p>
+<p>Breaker da prisão[%dic:STR_DIC_N_Siraus]Para ser julgado pelas seguintes cobranças:</p>
+<p> </p>
+<p>1. Assassinando a família Homuron.</p>
+<p> </p>
+<p>2. Escaping guardas e fugindo.</p>
+<p> </p>
+<p>Uma recompensa generosa é oferecida para quem fornece informações críticas sobre o paradeiro de Zirius ou o traz vivo.</p>
+<p> </p>
+<p>Postado por [%dic:STR_DIC_N_Iphigenia], Oficial de Administração</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vivo? Parece desafiador. Eu gosto disso."</act>
+<act href="HACTION_FINISH_DIALOG">"Eu tenho muito mais para fazer."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, Daeva! Estou te implorando! Por favor me escute!</p>
+<p> </p>
+<p>Eu sei que eles acham que eu matei os homurons. Mas eu não! Eu os conheço desde a infância e era como família!</p>
+<p> </p>
+<p>Eu tenho tentado limpar meu nome rastreando o verdadeiro criminoso, mas seus caçadores de recompensas tornam impossível para mim fazer muito mais do que me esconder!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Você sabe quem é o verdadeiro criminoso?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Qual o seu nome?</p>
+<p> </p>
+<p>Bom, [%username]. Você não é como os outros caçadores de recompensas!</p>
+<p> </p>
+<p>Quando cheguei à casa onde morava a família Homuron, eles já estavam mortos. Cheirava a sangue por toda parte e ... de outra coisa.</p>
+<p> </p>
+<p>Cheirava a almas assustadas. Tenho certeza de que era o cheiro de [%dic:STR_DIC_M_LF2A_SpectreFxQ_50_An].</p>
+<p> </p>
+<p>Eu segui o cheiro até a caverna de Marla. Mas se eu for capturado agora, Mabolo nunca será pego.</p>
+<p> </p>
+<p>Por favor, pegue -o para mim, [%username]. Não, para meus amigos, a família Homuron. Por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu o MABOLO MATEMETRO?</p>
+<p> </p>
+<p>Ele estava na caverna de Marla, certo?</p>
+<p> </p>
+<p>Tenho certeza. Meu nariz nunca mente.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Você não mencionou o quão assustador ele era."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então ele se foi? Oh, obrigado, [%username]!</p>
+<p> </p>
+<p>Agora, as almas dos meus amigos poderão retornar ao fluxo de Aether pacificamente ... Honestamente, isso é mais importante do que limpar meu nome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre quebra -prisão[%dic:STR_DIC_N_Siraus].</p></step>
+<step><p visible="[%3]">Livrar-se de [%dic:STR_DIC_M_LF2A_SpectreFxQ_50_An]([%5]/1).</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_Siraus].</p></step>
+</steps>
+<p>Encontre o disjuntor da prisão Zirius, um criminoso procurado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou o desenho de Zirius criminal em Marla.</p>
+<p> </p>
+<p>Quando você foi prendê -lo, ele protestou contra sua inocência e pediu que você encontrasse MABOLO, o verdadeiro assassino da família Homuron.</p>
+<p> </p>
+<p>Você matou o MABERLATE MABOLO. Quando você voltou, Zirius agradeceu porque os amigos dele agora podiam descansar em paz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

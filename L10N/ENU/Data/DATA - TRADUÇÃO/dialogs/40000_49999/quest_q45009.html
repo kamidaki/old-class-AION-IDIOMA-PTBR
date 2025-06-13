@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Diretor de campo confiável:</p>
+<p> </p>
+<p>Horas atrás, descobrimos que um grupo desconhecido havia distribuído substâncias suspeitas em Asmodae, com a área de Beluslan sendo um dos principais loci.</p>
+<p> </p>
+<p>Pesquisas anteriores indicam que as substâncias podem perturbar os dispositivos de campo e vôo locais, embora se assemelhem a pedra comum.</p>
+<p> </p>
+<p>A urgência extrema é necessária para remover essas substâncias, para que a situação em Asmodae fique ainda mais caótica.</p>
+<p> </p>
+<p>Nenhum diretor deve ficar ocioso-tudo deve tomar iniciativa para desativar [%dic:STR_DIC_OBJ_FOBJ_Q45009] S e trazer evidências de descarte para o [%dic:STR_DIC_E_45007]com toda a pressa.</p>
+<p> </p>
+<p>Não atrase. Lembre -se de que todo asmodiano é sua ala.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">(Guarde a carta.)</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estava esperando você, [%username].</p>
+<p> </p>
+<p>Você recuperou algum desses fragmentos entrópicos que alguém se espalhou? O Pandaemonium exigiu que relatássemos imediatamente todas as evidências desse ato terrível.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Aqui está o que eu tenho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah. Obrigado, diretor. Isso parece ser consistente com os outros objetos que descobrimos.</p>
+<p> </p>
+<p>Conseguimos evitar uma tragédia em potencial hoje, mas quem sabe quando isso pode acontecer novamente? Simplesmente devemos descobrir o grupo subversivo que fez isso! Talvez o Pandaememonium nos ajude a ampliar nossos esforços de vigilância.</p>
+<p> </p>
+<p>Por favor, pegue esse token para seus esforços e deixe -me descartar essa carta para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_OBJ_FOBJ_Q45009] S ([%2]/3).</p></step>
+<step><p visible="[%15]">Traga evidências para [%dic:STR_DIC_E_45007].</p></step>
+</steps>
+<p>Uma carta urgente chegou dos guardas de campo. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com uma carta dos guardas de campo, um grupo desconhecido distribuiu substâncias perigosas do caos puro em torno de Beluslan.</p>
+<p> </p>
+<p>Você destruiu alguns fragmentos entrópicos, trouxe evidências ao agente de campo de Beluslan e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

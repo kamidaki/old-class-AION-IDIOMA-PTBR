@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um oficial de infiltração criou a base na sala vazia, onde comanda as tropas de Beritra.</p>
+<p> </p>
+<p>Isso é[%dic:STR_DIC_IDF5_R3_VriCU_Fi].</p>
+<p> </p>
+<p>Mate Barukan e as unidades de infiltração da sala vazia.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou Barukan?</p>
+<p> </p>
+<p>Ele invadiu a sala vazia e comanda a unidade de infiltração de Beritra.</p>
+<p> </p>
+<p>Nós absolutamente devemos eliminá -lo.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que completou a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso foi um bom trabalho.</p>
+<p> </p>
+<p>Agora devo me apressar em sede e compartilhar essas boas notícias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_IDF5_R3_VriCU_Fi]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LDF5b_Niber_G_DHM]no[%dic:STR_DIC_W_LDF5b_SV_6011].</p></step>
+</steps>
+<p>Cumpre o pedido de Vesmo e mate Barukan. Depois, relate -se a Niver.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Vesmo pediu que você matasse o comandante Barukan. Você matou Barukan e recebeu uma recompensa de Niver quando voltou.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

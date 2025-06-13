@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva está aqui, AK!</p>
+<p> </p>
+<p>Os negócios de Shugo estão em perigo, Ak. Daeva deve ajudar, AK.</p>
+<p> </p>
+<p>Shugo precisa urgentemente [%dic:STR_DIC_I_quest_23806a], e.</p>
+<p> </p>
+<p>Daeva deve ir para [%dic:STR_DIC_OBJ_LDF5_Fortress_FOBJ_A4_Vritramachine]no[%dic:STR_DIC_W_LDF5_Fortress_SZ_A4], AK. Daeva encontrará o item lá, AK.</p>
+<p> </p>
+<p>O Exército de Beritra não está mais usando o dispositivo, por isso não será perigoso, AK. Ou Daeva acredita que o Muderunerker quer colocar Daeva em perigo, AK?</p>
+<p> </p>
+<p>O Muderuners precisa do dispositivo para um projeto importante em Kaldor, AK. Se o Muderunerk não conseguir, os negócios da Muderunerk serão arruinados, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Gerador danificado! Os negócios da Muderunerk estão em perigo sem ele, Ak.</p>
+<p> </p>
+<p>Muderunerk tem que ter esse gerador de energia, AK.</p>
+<p> </p>
+<p>Este item fornece materiais valiosos, AK!</p>
+<p> </p>
+<p>Logo Muderunerking será o melhor comerciante, Ak. Muderunerk só tem que obter o gerador de energia, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o gerador de energia danificado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver. Um dois três...</p>
+<p> </p>
+<p>Isso é exatamente o mesmo que Shugo precisa! Daeva salvou Shugo.</p>
+<p> </p>
+<p>Muito obrigado. Muito obrigado.</p>
+<p> </p>
+<p>Shugo preparou uma recompensa para Daeva porque Daeva fez muito esforço. Não os esqueça.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_OBJ_LDF5_Fortress_FOBJ_A4_Vritramachine] e obter [plur][%dic:STR_DIC_I_quest_23806a]. Leve -os para [%dic:STR_DIC_N_LDF5_Fortress_Muderungrung_E].</p>[%collectitem]</step>
+</steps>
+<p>Traga os geradores de energia danificados para o Muderunerker.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Muderunerk pediu que você adquirisse os dispositivos de que precisa para suas relações em Kaldor, que foram deixadas para trás pelo exército de Beritra.</p>
+<p> </p>
+<p>Você trouxe os geradores de energia danificados para o Muderuneruner e recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

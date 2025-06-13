@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nós derrubamos os querubinhos alguns entalhes, mas muitos dos grãos que já haviam sido colhidos desapareceram.</p>
+<p> </p>
+<p>Os querubos estão roubando, [%username]. Parece que eles não são tão estúpidos quanto parecem.</p>
+<p> </p>
+<p>Os moradores precisam de volta. Eles estão enfrentando uma colheita difícil como é-eles precisam reunir culturas suficientes para seus próprios estoques em cima do[%dic:STR_DIC_ELA20] eles precisam enviar para [%dic:STR_DIC_ELA07].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então você quer que eu recupere o grão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, exatamente.</p>
+<p> </p>
+<p>Polinia, quem nos contratou, está ameaçando reter o pagamento até que os sacos sejam devolvidos aos moradores. Não sei onde ela aprendeu inteligência assim, mas certamente não era a escola de padre.</p>
+<p> </p>
+<p>Você pode ajudar? Eu sei que você acabou de lutar contra esses berros, mas quanto mais rápido recuperamos esses sacos, mais rápido recebemos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ótimo. Reunir três[%dic:STR_DIC_QILA69] S dos bengalas por aqui. Há um naquela colina-a razão seja um bom lugar para começar.</p>
+<p> </p>
+<p>Se você não vir lá, há outras tocas próximas.</p>
+<p> </p>
+<p>Pressa [%username]. Eles precisam de grãos[%dic:STR_DIC_ELA07]muito urgentemente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou o mais rápido possível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo.</p>
+<p> </p>
+<p>Você sabe, nem todo trabalho mercenário envolve matar coisas, [%username]. Às vezes, também temos mais trabalhos servil. Melhor aprender isso em breve se você quiser ser aceito pelos outros.</p>
+<p> </p>
+<p>Continue então, saia daqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo?</p>
+<p> </p>
+<p>Espero que você tenha todos aqueles sacos de grãos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], por favor! Eu disse três sacos!</p>
+<p> </p>
+<p>Volte para lá e recupere o resto!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Três sacos ... vou me mexer!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente!</p>
+<p> </p>
+<p>O padre pega seu grão, somos pagos-boa para todos os envolvidos!</p>
+<p> </p>
+<p>Oh, por falar em pagamento ... aqui está sua recompensa. Bom trabalho, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o [%dic:STR_DIC_QILA69] para [%dic:STR_DIC_LA148].</p>[%collectitem]</step>
+</steps>
+<p>Polinia, o padre, disse a Mires que os mercenários receberiam sua recompensa somente se ele recuperasse sacos de grãos dos dens do Kerub em[%dic:STR_DIC_FLA01].</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O padre decidiu que não podia dar aos mercenários a recompensa por se livrar dos querubros até que eles tenham recuperado sacos de grãos roubados.</p>
+<p> </p>
+<p>Você trouxe sacos de grãos dos dens do querubinho, como Mires ordenou.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu confio em você. É por isso que quero atribuir a você em uma missão que é de extrema importância na conquista da Signia.</p>
+<p> </p>
+<p>A área deve ser explicada e liberada de quaisquer elementos perturbadores, para que possamos proteger o Black Fin Canyon.</p>
+<p> </p>
+<p>Mate o [plur][%dic:STR_DIC_M_LF5_P1_SharkSpecies_Fi_58_Ah], o [plur][%dic:STR_DIC_M_LF5_P1_SharkSpecies_As_58_Ah], o [plur][%dic:STR_DIC_M_LF5_P1_SharkSpecies_Wi_58_Ah] e o [plur][%dic:STR_DIC_M_LF5_P1_SharkSpecies_Pr_58_Ah]. Traga -me uma prova de que você conseguiu.</p>
+<p> </p>
+<p>Vamos explorar a Signia pouco a pouco e logo reivindicá -lo por conta própria.</p>
+<p> </p>
+<p>Por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há problemas em todos os lugares. Não são apenas os Balaur e os asmodianos que estão causando problemas na Signia, também estamos desfavorecidos na batalha porque não conhecemos a área.</p>
+<p> </p>
+<p>Para ser eficaz de alguma forma, precisamos conhecer a área.</p>
+<p> </p>
+<p>É imperativo que protejam o Black Fin Canyon.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a prova de vitória do Black Fins Canyon.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Examinei toda a prova do Black FinS Canyon.</p>
+<p> </p>
+<p>Aprendi mais sobre Signia, graças a você.</p>
+<p> </p>
+<p>Agora, podemos nos concentrar no confronto com o Balaur e os Asmodianos no Canyon Black Fin.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos tempo a perder.</p>
+<p> </p>
+<p>Vá rapidamente e traga -me o saque do Black Fins Canyon.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Nosso trabalho será mais fácil agora, graças à sua ajuda.</p>
+<p> </p>
+<p>Ainda precisaremos da sua ajuda para avançar para outras regiões. Deixe -me saber se você estiver interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Infelizmente, não poderei lhe dar uma recompensa por esta missão.</p>
+<p> </p>
+<p>Por favor, obtenha sua recompensa do Black FinS Canyon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reunir o [%dic:STR_DIC_I_LF5_Advance_Q15217_all] e trazê -los para [%dic:STR_DIC_N_LF5_Brontte_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Brontte_E].</p></step>
+</steps>
+<p>Vá para o Black FinS Canyon, obtenha prova de sua vitória e leve -a para Branth.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Branth pediu que você limpe os elementos disruptivos da área para proteger o Black Fin Canyon.</p>
+<p> </p>
+<p>Você derrotou as barbatanas pretas mercenárias como Branth instruiu e lhe trouxe provas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

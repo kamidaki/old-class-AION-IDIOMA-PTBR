@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Receio que haja mais dragão no templo de Udas do que qualquer um de nós havia previsto. Devemos agir antes que as coisas vão além de nossa capacidade de controlá -las.</p>
+<p> </p>
+<p>Ainda precisamos descobrir o que o inimigo deseja, mas por enquanto lidar com essa ameaça mais imediata é uma prioridade.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você sugere?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Aglauros acredita que devemos tirar o líder do inimigo. Eu concordo, pois ele tem a capacidade de lavar os humanos normais, transformando -os em dragão.</p>
+<p> </p>
+<p>Esses autômatos com lavagem cerebral seguem cegamente as ordens, então matando[%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]Na Câmara de Orientação, certamente levará o caos para as fileiras inimigas.</p>
+<p> </p>
+<p>Você vai fazer isso por mim, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta não é a sua primeira vez que vai ao UDAS Temple, então tenho certeza que você está ciente de quão sério é o problema da dragão.</p>
+<p> </p>
+<p>Não volte até que você elimine [%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou ciente de que diferentes regras se aplicam a você e eu, [%username]. Eu tenho que seguir ordens, enquanto você pode evidentemente fazer o que quiser.</p>
+<p> </p>
+<p>No entanto, lembre -se de que nós dois lutamos pelo Pandaemonium. O que peço a você é para o bem maior.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou chegar a isso mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Alguns dos outros Daevas questionaram a necessidade de eliminar o dragão. Eles dizem que antes eram humanos, como nós éramos antes.</p>
+<p> </p>
+<p>Pessoalmente, eu não me importo. Minhas ordens são destruí-las-é tudo o que importa.</p>
+<p> </p>
+<p>Você acabou com o Nexus? Esse seria o primeiro passo em direção ao nosso objetivo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho, [%username].</p>
+<p> </p>
+<p>Este não é o fim em nossa luta contra o dragão, mas é um bom começo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar [%dic:STR_DIC_E_IDTemple_FanaticFiNamed_53_Ah]([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Taustir].</p></step>
+</steps>
+<p>Você deve eliminar o líder inimigo para impedir que suas forças fiquem mais fortes.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Taustir disse que o dragão era mais forte do que ele imaginava e que o líder deles deve ser eliminado.</p>
+<p> </p>
+<p>Você derrotou o líder deles e relatou seu sucesso a Taustir, que lembrou que isso era apenas o começo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

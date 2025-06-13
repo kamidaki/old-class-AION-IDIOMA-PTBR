@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>- Mensagem de Sigmund -</p>
+<p></p>
+<p>De: Sigmund, administrador da fortaleza de Sillus, Katalam Cleanup Squad</p>
+<p></p>
+<p>Para:[%username]</p>
+<p></p>
+<p>[%username], você concluiu com êxito a missão no Hall do Conhecimento. Isso merece uma recompensa especial.</p>
+<p></p>
+<p>Se o tempo permitir, venha me ver, administrador da fortaleza de Sillus[%dic:STR_DIC_N_LDF5a_Sigmund_G].</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Visite Sigmund.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Hall do Conhecimento só pode ser inserido por alguém que conquistou a fortaleza de Sillus.</p>
+<p> </p>
+<p>Como esse lugar é difícil de atacar, é preciso habilidade especial e boas táticas.</p>
+<p> </p>
+<p>O esquadrão Katalam Cleanup tem recompensas especiais para os Incomparavelmente Bravos Daevas que concluem com sucesso a missão para o Hall do Conhecimento.</p>
+<p> </p>
+<p>[%username], você completou com sucesso o ataque ao Hall of Knowledge também?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que venceu o Hall do Conhecimento.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bom!</p>
+<p> </p>
+<p>Muitos Daevas levaram o desafio do Hall do Conhecimento, mas apenas alguns deles foram capazes de entender completamente o segredo.</p>
+<p> </p>
+<p>[%username], você realmente ganhou ser comemorado como um herói[f:"heroine"].</p>
+<p> </p>
+<p>Como você conquistou o Hall of Knowledge, você deve experimentar o Laboratório de Pesquisa Idgel ou a sala vazia a seguir. O governador Bard espera que alguém conquista todos os três locais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5a_Sigmund_G].</p></step>
+</steps>
+<p>Vá para Sigmund, o administrador do administrador da Fortaleza Sillus e receba uma recompensa especial por suas ações heróicas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu uma recompensa especial por conquistar o Hall of Knowledge, que pertence à fortaleza de Sillus.</p>
+<p> </p>
+<p>Sigmund elogiou você por seus esforços heróicos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

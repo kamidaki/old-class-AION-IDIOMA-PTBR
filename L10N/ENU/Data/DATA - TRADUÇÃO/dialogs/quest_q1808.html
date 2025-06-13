@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Seu tempo é excelente.</p>
+<p> </p>
+<p>Você deve ter ouvido saber que perdemos a fortaleza das Asteria para os asmodianos.</p>
+<p> </p>
+<p>Se tivéssemos apenas mais algumas tropas, nunca ... bem, não há sentido em olhar para trás, certo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"A vitória está à frente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito verdadeiro. Não devemos deixar as falhas passadas nos impedirem.</p>
+<p> </p>
+<p>Então, estamos planejando recuperar a fortaleza, e o primeiro passo é acabar com a guarnição de elite que os asmodianos estacionaram lá.</p>
+<p> </p>
+<p>Essas tropas são a espinha dorsal da resistência. Se fossem derrotados, os asmodianos restantes seriam presas fáceis para o nosso ataque.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"E você quer que eu os derrote?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, [%username]... sim.</p>
+<p> </p>
+<p>Como você sabe, ninguém pode lidar com o [%dic:STR_DIC_M_1808_all].</p>
+<p> </p>
+<p>Você emprestará sua força para o bem da Elysea?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ouvir isso. Primeiro, você precisa fazer sua jogada quando os asmodianos estão ocupando a fortaleza, a fortaleza está no estado vulnerável e há uma batalha em andamento.</p>
+<p> </p>
+<p>Eu recomendo trazer alguns aliados também. Os asmodianos não chegarão a você apenas um de cada vez.</p>
+<p> </p>
+<p>Finalmente, oblitera o [%dic:STR_DIC_M_1808_all] e volte com o [%dic:STR_DIC_I_QUEST_1808a] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você faz parecer tão fácil."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Talvez você tenha outra missão?</p>
+<p> </p>
+<p>Talvez uma vez que sua missão atual seja feita, você pode voltar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem um relatório sobre seu progresso?</p>
+<p> </p>
+<p>Se você teve sucesso, eu vou precisar daqueles[%dic:STR_DIC_I_QUEST_1808a] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu os tenho aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Está tudo bem. Assumindo o [%dic:STR_DIC_M_1808_all] S é mais difícil do que você pensou.</p>
+<p> </p>
+<p>Descanse e encontre mais Daevas para ajudá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por seus esforços. Isso nos ajudará bastante a retomar a fortaleza.</p>
+<p> </p>
+<p>Por favor, tome isso como um sinal de agradecimento por seus esforços.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_1808_all] S e traga a prova para [%dic:STR_DIC_N_Garpedo].</p>[%collectitem]</step>
+</steps>
+<p>O maior obstáculo em recuperar a fortaleza de Asteria é a presença da guarnição de elite asmodianas. Quando a fortaleza estiver no estado vulnerável, oblitere -os e retorne a Garped com suas insígnias de arconte.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garedo disse que a guarnição de elite Asmodian está dificultando a recuperação da fortaleza de Asteria e pediu que você os limpe.</p>
+<p> </p>
+<p>Você foi à fortaleza de Asteria, como ele perguntou, derrotou a guarnição de elite asmodianos e voltou com as insígnias de Archon como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

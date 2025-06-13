@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q16942</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você sabe sobre o Laboratório de Pesquisa de Baruna?</p>
+<p> </p>
+<p>Há rumores de que é um laboratório em que o Exército de Beritra realiza pesquisas sobre a tecnologia Abismo.</p>
+<p> </p>
+<p>[%dic:STR_DIC_N_IDLDF4_Re_01_Ctesibius_E], Agente dos Daevas de Zephyr, viajou para aquele lugar. Agora ele solicitou urgentemente ajuda.</p>
+<p> </p>
+<p>Se você não se importa, você poderia ir e ajudá -lo, [%username]? Você pode chegar ao laboratório de pesquisa de Baruna através do[%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In]perto do campo da barreira da fissura.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está bem a tempo.</p>
+<p> </p>
+<p>A situação aqui muda constantemente e muito rapidamente. Não temos muito tempo, então vou manter minha explicação breve.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você pergunta sobre a situação em laboratório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A situação é extremamente caótica. Estou tendo dificuldade em reunir materiais lá.</p>
+<p> </p>
+<p>Eu me pergunto o que os pesquisadores usam como material neste laboratório. Você poderia me trazer materiais de pesquisa do laboratório?</p>
+<p> </p>
+<p>O Laboratório de Pesquisa de Baruna se espalha em três andares, com oito quartos para cada andar.</p>
+<p> </p>
+<p>Infelizmente, não sei onde o [plur][%dic:STR_DIC_M_IDLDF4_Re_01_DrakanMage_Wi_65_An] São. No entanto, você deve encontrá -los e escrever o [%dic:STR_DIC_I_quest_16942a]deles.</p>
+<p> </p>
+<p>Oh, eu quase esqueci algo crucial. Precisamos de uma amostra de sangue dos monstros que causaram todo o caos no laboratório de pesquisa.</p>
+<p> </p>
+<p>Depois de encontrar o [%dic:STR_DIC_I_quest_16942a] e o [%dic:STR_DIC_I_quest_16942b], por favor leve -os para [%dic:STR_DIC_N_LDF4_Advance_Elger_E] em Akarin.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você diz que você entendeu.</act>
+</selects>
+<cutscene id="899"></cutscene>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você estava no laboratório de pesquisa de Baruna?</p>
+<p> </p>
+<p>Você conseguiu o [%dic:STR_DIC_I_quest_16942a] e uma amostra de [%dic:STR_DIC_I_quest_16942b]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o Abismo Research Journal e a amostra de sangue.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Portanto, este é o Abismo Research Journal do Exército de Beritra. Você também trouxe uma amostra de sangue.</p>
+<p> </p>
+<p>Você me trouxe materiais realmente valiosos. Esses materiais me permitirão discernir o quão boa é a tecnologia Abismo do Exército de Beritra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato, obtendo o [%dic:STR_DIC_I_quest_16942b] e o [%dic:STR_DIC_I_quest_16942a] não é tarefa fácil.</p>
+<p> </p>
+<p>Mas precisamos de ambos se vamos avançar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Este é o diário de pesquisa que contém os registros da tecnologia de dimensões do Exército de Beritra.</p>
+<p> </p>
+<p>Esta é uma informação crítica. Ao analisar os registros, poderei estimar até que ponto o Exército de Beritra avançou sua tecnologia de dimensão.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>A tecnologia Balaur sempre foi mais avançada do que a dos Elyos. Não será fácil conversar com o Balaur.</p>
+<p> </p>
+<p>Eu deveria relatar isso imediatamente. Bom trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use o [%dic:STR_DIC_E_OBJ_IDLDF4Re_01_Entrance_In], entre no laboratório de pesquisa de Baruna e fale com[%dic:STR_DIC_N_IDLDF4_Re_01_Ctesibius_E].</p></step>
+<step><p visible="[%3]">Adquirir o [%dic:STR_DIC_I_quest_16942a] e o [%dic:STR_DIC_I_quest_16942b]. Traga os dois para [%dic:STR_DIC_N_LDF4_Advance_Elger_E].</p>[%collectitem]</step>
+</steps>
+<p>Pesquise no Laboratório de Pesquisa de Baruna para o Abismo Research Journal, obtenha uma amostra de sangue monstro e leve os dois ao Tribune Elger.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Cesibius pediu que você se infiltrasse no laboratório de pesquisa de Baruna e roubou o Abismo Research Journal e uma amostra de sangue.</p>
+<p> </p>
+<p>Você trouxe o diário de pesquisa e o sangue monstro para o Tribune Elger. Ele ficou surpreso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

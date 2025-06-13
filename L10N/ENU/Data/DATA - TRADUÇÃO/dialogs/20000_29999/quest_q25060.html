@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Não houve nada além de problemas desde que a tropa da expedição chegou[%dic:STR_DIC_W_DF5_SZ_G_01]. O Exército de Beritra tentou atrapalhar nossos suprimentos, bloqueando a rota de infiltração.</p>
+<p> </p>
+<p>Temos que parar o exército de Beritra para que possamos enviar apoio à tropa da expedição no[%dic:STR_DIC_W_DF5_SZ_G_01].</p>
+<p> </p>
+<p>Se não garantirmos a rota de infiltração, temos que esperar até que a retaguarda finalmente chegue.</p>
+<p> </p>
+<p>Por favor, elimine tudo[%dic:STR_DIC_E_Q25060_Vritra_all]Para enfraquecer as tropas de Balaur.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username]. Eu estive esperando por você.</p>
+<p> </p>
+<p>Você derrotou todos os comandantes do Exército de Beritra?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que derrotou todos eles.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado.</p>
+<p> </p>
+<p>Agora, o apoio deve passar sem grandes problemas.</p>
+<p> </p>
+<p>O suporte deve ser despachado para a tropa de expedição no Desfiladeiro do Dragão o mais rápido possível.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o [%dic:STR_DIC_E_Q25060_Vritra_all].</p>
+<p visible="[%3]">[%dic:STR_DIC_M_DF5_E_QuestVritra_Fi_60_An]([%5]/1)</p>
+<p visible="[%6]">[%dic:STR_DIC_M_DF5_E_QuestVritra_As_60_An]([%8]/1)</p>
+<p visible="[%9]">[%dic:STR_DIC_M_DF5_E_QuestVritra_Wi_60_An]([%11]/1)</p></step>
+<step><p visible="[%12]">Relatório para [%dic:STR_DIC_N_DF5_Xeikun_E].</p></step>
+</steps>
+<p>Jekun disse que ele só seria capaz de enviar reforços para a tropa da expedição no Desfiladeiro do Dragão se o exército de Beritra não estivesse mais impedindo -o de fazê -lo. Ele pediu que você eliminasse o comandante do exército de Beritra. Cuide do pedido de Jekun.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Jekun disse que ele só seria capaz de enviar reforços para a tropa da expedição no Desfiladeiro do Dragão se o exército de Beritra não estivesse mais impedindo -o de fazê -lo. Ele pediu que você eliminasse o comandante do exército de Beritra.</p>
+<p> </p>
+<p>Você derrotou o comandante do esquadrão de defesa de Beritra e Jekun ficou agradecido a você por isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

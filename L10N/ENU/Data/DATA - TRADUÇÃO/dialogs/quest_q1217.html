@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe, [%username], há um mito local que circunda essa costa. Sirenes cantando para os marinheiros e similares, daí "Cantas".</p>
+<p> </p>
+<p>Eu nunca comprei muito nas histórias, mas isso explicaria por que todas essas caixas acabaram na água aqui.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como assim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, é claro, as sirenes atraíam os marinheiros perto das rochas, onde os navios se separavam e afundavam.</p>
+<p> </p>
+<p>Centenas de navios, milhares de pessoas-tudo se foi. Trágico, se for verdade, mas de qualquer maneira, podemos lidar com o flotsam aqui.</p>
+<p> </p>
+<p>As criaturas parecem ter adotado em várias caixas também. Diga, você poderia me ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esplêndido! Obrigado!</p>
+<p> </p>
+<p>Pergunto porque as criaturas escondidas nessas caixas são cruéis demais para um humano enfrentar. Eu não poderia perguntar a ninguém além de um daeva para obter ajuda com isso.</p>
+<p> </p>
+<p>Por favor, limpe dois doze dos[%dic:STR_DIC_M_Mimic_19_n] es. Não importa se eles têm criaturas dentro ou não-só quero que a área seja limpa delas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou chegar imediatamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah.</p>
+<p> </p>
+<p>Sim, eu pensei que uma solicitação de limpeza simples poderia estar abaixo de um Daeva. O problema são essas criaturas-elas são fortes demais para os seres humanos.</p>
+<p> </p>
+<p>Vou fazer outros arranjos. Obrigado pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"De jeito nenhum."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá está você!</p>
+<p> </p>
+<p>Então, você limpou essas caixas? Você se deparou com alguma dessas bestas estranhas? Você está ferido?</p>
+<p> </p>
+<p>Você deve me dizer!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"As caixas são cuidadas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, muito obrigado!</p>
+<p> </p>
+<p>Não demorará muito para que a costa seja intocada e perfeita, como costumava ser!</p>
+<p> </p>
+<p>Pegue isso, [%username]. É uma pequena recompensa, mas eu quero que você a tenha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [plur][%dic:STR_DIC_M_Mimic_19_n]que estão contaminando a costa de Cantas. ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Phorcys].</p></step>
+</steps>
+<p>As caixas foram lavadas na costa de Cantas. Eles estão contaminando a costa. Phorcys pediu que você os elimine.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Phorcys estava preocupado com as caixas espalhadas ao longo da costa de Cantas, causando poluição e deterioração.</p>
+<p> </p>
+<p>Ele pediu que você os limpasse, avisando sobre os monstros. Você fez o que ele perguntou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Explosão! Acabei de voltar do templo carmesim, e foi invadido!</p>
+<p> </p>
+<p>Os Elyos e os Balaur estão se esforçando para o controle, e não há como deixar que alguns scaleback de nó de nó de nó se agarram a Gelkmaros.</p>
+<p> </p>
+<p>O templo deve ser retomado e, pela sombra de Azphel, verei acontecer.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que podemos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O Vorgaltem Battlefiled é um pesadelo tático-o terreno é quase impossível de defender, não importa quem o segure. Poderíamos puxar o pé por perto e tentar montar um ataque coordenado, mas eu prefiro uma abordagem mais direta.</p>
+<p> </p>
+<p>Passamos todo esse absurdo de estratégia, marcamos direto para o Templo Carmesim e matamos o general do Guardian.</p>
+<p> </p>
+<p>Isso deve fazer o inimigo pensar duas vezes em atravessar asmodae. O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que poderia contar com você, [%username].</p>
+<p> </p>
+<p>Chegando ao[%dic:STR_DIC_M_QUEST_21232]deve ser simples o suficiente. Matando isso será mais difícil. Reúna seus aliados e anda sua resolução.</p>
+<p> </p>
+<p>Depois de matar o Guardian General e retomar o templo, relate -se a Cozett. Ela deve estar na área e sem dúvida o recompensará por sua bravura. Agora, se mova antes que o inimigo tenha a chance de montar uma defesa!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há nada mais importante do que retomar o templo carmesim, [%username]!</p>
+<p> </p>
+<p>Se não retomarmos o templo, podemos perder a guerra.</p>
+<p> </p>
+<p>Se você reconsiderar, volte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Essa foi uma batalha, [%username]. Muitos de meus aliados caíram, mas agora o templo carmesim está sob nosso controle.</p>
+<p> </p>
+<p>Há muito a ser feito para reforçar nossas defesas.</p>
+<p> </p>
+<p>Mas antes de Svidar e eu chegarmos a isso, ouvi dizer que você participou do cerco? Alguém até mencionou que você matou o Guardian General?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim, é verdade."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é incrível!</p>
+<p> </p>
+<p>Eu sabia que você era um Daeva capaz, mas nunca imaginei que você poderia derrotar o general do Guardian.</p>
+<p> </p>
+<p>Aqui, por favor, pegue isso. Hoje você trouxe glória a Asmodae. Sangue para sangue!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar o guardião inimigo geral para retomar o [%dic:STR_DIC_W_DF4_SZ_3021_A].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_QUEST_21232]([%2]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Cozett].</p></step>
+</steps>
+<p>O templo carmesim caiu para o inimigo. Derrote o general guardião e retomar o templo carmesim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Raeyana pediu que você participasse de uma operação para retomar o Templo Carmesim.</p>
+<p> </p>
+<p>Você marchou no templo carmesim com aliados de confiança e derrotou o general do guardião inimigo. Você então se reportou a Cozett, que lhe deu uma recompensa e elogiou sua bravura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

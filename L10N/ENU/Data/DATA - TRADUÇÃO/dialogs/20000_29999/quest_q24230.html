@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha tarefa real era monitorar os ladrões graves, mas ...</p>
+<p> </p>
+<p>Ultimamente, eu realmente fui empurrado para o limite.</p>
+<p> </p>
+<p>Eu preciso desesperadamente de algo para relatar para que meus superiores fiquem satisfeitos.</p>
+<p> </p>
+<p>[%username], certamente você entende a situação em que estou. Você vai me ajudar? Tudo que você precisa fazer é eliminar o [%dic:STR_DIC_M_LehparWaD_14_An].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você derrotou o [plur][%dic:STR_DIC_M_LehparWaD_14_An]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que derrotou todos eles.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não pretendo abandonar minhas tarefas como arconte.</p>
+<p> </p>
+<p>Embora eu prefira realizar outras tarefas para servir a fortaleza.</p>
+<p> </p>
+<p>Pelo menos minhas tarefas aqui ficaram mais fáceis graças a você, [%username].</p>
+<p> </p>
+<p>Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_LehparWaD_14_An]([%2]/9).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_DF1A_Brodir_E].</p></step>
+</steps>
+<p>Brodir disse que precisava de algo sobre o qual pudesse denunciar. Então vá para os ladrões do túmulo e elimine as sentinelas de ladrões graves.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Brodir pediu que você fosse ao túmulo dos ladrões e se livrasse das sentinelas de ladrões graves.</p>
+<p> </p>
+<p>Você foi ao túmulo dos ladrões, se livrou das sentinelas de ladrões graves e informou Brodir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

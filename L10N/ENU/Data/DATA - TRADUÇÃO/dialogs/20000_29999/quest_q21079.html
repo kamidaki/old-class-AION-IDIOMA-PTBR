@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mitrakand é a posição restante mais forte do Balaur em Gelkmaros. Se for destruído, esta região é totalmente nossa.</p>
+<p> </p>
+<p>Eles também sabem disso, é claro, e é por isso que sua produção de Drana está concentrada lá e por que é tão bem guardada.</p>
+<p> </p>
+<p>Não que isso diminua a importância de derrubar esse lugar em todas as suas cabeças.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu sei tudo isso. Então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, meus superiores me ordenaram que eu começasse a pavimentar o caminho para um cerco em escala em larga escala. Precisamos começar com o Mitrakand Summit.</p>
+<p> </p>
+<p>Quanto menos tempo o Balaur tiver que se preparar para um ataque iminente, melhor somos. Mas é tão fortemente guardado quanto todo o resto.</p>
+<p> </p>
+<p>Precisamos adotar uma nova abordagem. Eu acho que tenho um bom que poderia usá -lo. Você quer se envolver?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, aqui está o que você precisa fazer: só podemos acessar o [%dic:STR_DIC_W_DF4_SZ_C1_Fire] Através de um Windstream.</p>
+<p> </p>
+<p>Vá para o posto de observação da fazenda Drana e leve o Windstream lá. Então retire seus guardas.</p>
+<p> </p>
+<p>Concentre -se [%dic:STR_DIC_M_DF4_W_C1_DrakanFi_Re_Nmd_55_An] e [%dic:STR_DIC_M_DF4_W_C1_DrakanWi_Re_Nmd_55_An]. Sem eles, o resto estará em desordem.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu os arrancarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você sabe o quão importante isso é. Eu te disse. E você vai e me recusar?</p>
+<p> </p>
+<p>Você é ruim na gerência do tempo ou está apenas nesta guerra por si mesmo?</p>
+<p> </p>
+<p>Embora talvez você esteja certo ... talvez outra pessoa seja mais adequada. Hmm, eu não sei ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"É a sua decisão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O posto de observação da fazenda de Drana relatou vê -lo.</p>
+<p> </p>
+<p>Eu acho que isso significa que o [%dic:STR_DIC_M_21079]foram mortos?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Voltou -se para Ash."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lá vai você! Agora podemos começar a planejar um grande ataque enquanto o sistema de aviso está inativo.</p>
+<p> </p>
+<p>Ainda vai demorar um pouco, no entanto. Espero que os superiores estejam na bola. Enquanto isso, o Balaur poderia reviver seus faresos. Podemos precisar de sua ajuda novamente.</p>
+<p> </p>
+<p>Certifique -me de deixar meus superiores saber que você ajudou. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Lute com o balauro que protege o [%dic:STR_DIC_W_DF4_SZ_C1_Fire].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_21079]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_W_C1_DrakanFi_Re_Nmd_55_An]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_DF4_W_C1_DrakanWi_Re_Nmd_55_An]([%8]/1)</p>
+</step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Brynhild].</p></step>
+</steps>
+<p>Mate o Balaur que guarda a cúpula de Mitrakand para que os arcontes de Gelkmaros possam atacar Mitrakand.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Centurion Brynhild falou de um plano para atacar Mitrakand, mas o sistema de alerta deve ser tratado primeiro.</p>
+<p> </p>
+<p>Ela pediu que você viajasse para a cúpula de Mitrakand e retire os soldados que a guardam.</p>
+<p> </p>
+<p>Então você se infiltrou na cúpula de Mitrakand através de uma corrente de vento e matou os soldados de Balaur. Brynhild agradeceu muito por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

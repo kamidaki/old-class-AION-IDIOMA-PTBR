@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Desejo morto ou vivo -</p>
+<p> </p>
+<p>Todos os fortuários são aconselhados a ler a seguinte proclamação.</p>
+<p></p>
+<p>1. Nome:[%dic:STR_DIC_M_LF4_DayQ_FanaticFi_53_An]</p>
+<p> </p>
+<p>2. Charge: assassinato, roubo de propriedade e provisões</p>
+<p></p>
+<p>3. [%dic:STR_DIC_SEN_LF4_SensoryArea_Q36506]com uma grande quantidade de bens saqueados.</p>
+<p></p>
+<p>Qualquer pessoa que apreende ou assassine os Bladebanks será recompensada generosamente.</p>
+<p> </p>
+<p>- decretado por [%dic:STR_DIC_E_36500], Guilda dos Fortuadores</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Parece que estou indo para o subsolo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foram suas férias na Necrópolis, [%username]? Ha ha ha. Eu daria à minha asa esquerda para limpar a memória daquele lugar da minha mente.</p>
+<p> </p>
+<p>Você cuidou dos Bladebanks? Você não encontrou nenhum desses suprimentos saqueados, não é?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sem suprimentos, mas Bladebanks é encerrado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para onde ele poderia ter transferido esses suprimentos? Estou meio tocado em pesquisar suas habitações ... mas eu confio em você, [%username]. Você é um bom sorte.</p>
+<p> </p>
+<p>É peculiar, eles dizem que nenhuma arma foi tirada. Quem simplesmente roubaria suprimentos quando eles poderiam colocar as mãos em um cache inteiro de eixos e espadas? Eh, talvez os soldados simplesmente não querem admitir. Não quero colocar o medo da escuridão nos Daevas.</p>
+<p> </p>
+<p>Enfim, aqui está a sua recompensa. Você está fazendo a nós e a si mesmo bastante rico em suas aventuras no comércio de caça à fortuna.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_SEN_LF4_SensoryArea_Q36506]para localizar e erradicar [%dic:STR_DIC_M_LF4_DayQ_FanaticFi_53_An]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatar o resultado para o [%dic:STR_DIC_E_36500].</p></step>
+</steps>
+<p>Chegou uma proclamação da Guilda Fortuneers. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma proclamação chegou da Guilda Fortuneers.</p>
+<p> </p>
+<p>Você eliminou o Bladebanks, que era procurado por assassinato e roubo de propriedades e provisões. O capitão dos fortunes elogiou seu esforço e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

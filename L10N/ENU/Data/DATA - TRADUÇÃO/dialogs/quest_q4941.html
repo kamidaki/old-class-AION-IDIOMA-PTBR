@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio aqui para obter uma decoração de pandaemonium? Bem, eu não vou te tratar de maneira diferente apenas porque somos amigos. Você terá que ganhar como todo mundo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não espero menos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem então. Preparar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você terá uma tarefa difícil pela frente. Tem certeza de que é forte o suficiente?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1">"Apenas me dê a missão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está saindo? Eu posso lhe dar a missão em outra hora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para receber sua decoração, você terá que matar [%dic:STR_DIC_M_IDLF1_H_DrakanFiName_50_Ah], o [%dic:STR_DIC_M_IDLF2A_ElementalKingNmd_50_Ah], ou[%dic:STR_DIC_M_Adma_DeathknightNamed_50_Ah]. Cada um deles tem um[%dic:STR_DIC_I_quest_4941a]. Pegue -o do cadáver e traga de volta.</p>
+<p> </p>
+<p>É um trabalho difícil, mas eu sei que você pode fazer isso. Sangue para sangue, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve falar com Kvasir primeiro. Não posso dar nenhuma dessas tarefas sem a permissão dele.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh, desculpe incomodá -lo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_3">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você já tem decorações suficientes para passar no teste. Você nem precisa falar comigo!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh, que tal isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, como vai sua busca épica, [%username]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Veja por si mesmo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez bem. Eu esperava nada menos. Em reconhecimento ao seu serviço ao povo de Asmodae, concedo a você esta medalha.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é tão fácil, é?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou confiante vou terminar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Genoveva].</p></step>
+<step><p visible="[%3]">Trazer [%dic:STR_DIC_E_Q4941]para [%dic:STR_DIC_N_Genoveva].</p>[%collectitem]</step>
+</steps>
+<p>Remova um dos três seres terríveis que atormentam Atreia e pegue as evidências para o Genoveva.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você removeu um dos seres monstruosos que atormentam Atreia e levou as evidências para o Genoveva. Ela concedeu a você uma decoração de pandaemonium.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

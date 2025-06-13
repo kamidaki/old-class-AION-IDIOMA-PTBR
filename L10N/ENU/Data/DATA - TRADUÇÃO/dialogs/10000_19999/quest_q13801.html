@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p> </p>
+<p>Remetente: patrulha Kaltor, [%dic:STR_DIC_N_LDF5_Fortress_Alphion_E]no[%dic:STR_DIC_W_LDF5_Fortress_SZ_A2_Start].</p>
+<p> </p>
+<p>Destinatário:[%username]</p>
+<p> </p>
+<p>Comando: Mate dois asmodianos que invadiram Akaron.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você realiza a missão.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], desde que você está aqui, suponho que você tenha recebido meus pedidos urgentes.</p>
+<p> </p>
+<p>O número de asmodianos em Kaldor continua aumentando.</p>
+<p> </p>
+<p>Se queremos ocupar essa área, eliminar os asmodianos é a nossa principal prioridade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você com certeza é algo especial!</p>
+<p> </p>
+<p>Se você continuar assim, os asmodianos em breve serão desencorajados e desistirão da luta.</p>
+<p> </p>
+<p>Dê tudo de você até o dia em que os Elyos triunfarem de uma vez por todas ..</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os asmodianos em[%dic:STR_DIC_W_LDF5_Fortress]([%2]/2).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Fortress_Alphion_E].</p></step>
+</steps>
+<p>Ordens urgentes: elimine os asmodianos em Kaldor e se reporte a Alphion.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Alphion deu a você o comando de eliminar o asmodiano que apareceu em Kaldor.</p>
+<p> </p>
+<p>Você matou o asmodiano invasor e se reportou de volta a Alphion. Alphion pediu mais ajuda para uma vitória de Elyos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

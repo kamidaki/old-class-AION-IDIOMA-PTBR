@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você é[%username]. Finalmente nos encontramos.</p>
+<p> </p>
+<p>E exatamente quando eu precisava de você. Há algo que conecta nós dois.</p>
+<p> </p>
+<p>Caso contrário, por que você viria a mim assim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Erm, eu não sei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me decepciona. Não tente negar nosso destino.</p>
+<p> </p>
+<p>É a vontade dos Senhores Empíreanos que você vem a mim.</p>
+<p> </p>
+<p>Você não pode questionar os desejos deles. Você só pode aceitar ou recusar seu destino. O que será?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sabia que seria assim.</p>
+<p> </p>
+<p>Na caldeira de Geroch, há uma criatura suja e terrível. o [%dic:STR_DIC_M_Hellhound_35_An], uma besta com duas cabeças.</p>
+<p> </p>
+<p>Você e eu vamos descartá -los. Assim que terminar aqui, eu vou te alcançar, mas seria melhor se você tivesse um início de cabeça.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Vou começar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não sou eu, você decepciona, [%userclass], mas os senhores Empíreo que o enviaram.</p>
+<p> </p>
+<p>Eles não deixaram minhas orações sem resposta.</p>
+<p> </p>
+<p>Vou esperar enquanto você muda de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Certo. Eu estarei a caminho agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username], excelente. Você não deveria ter esperado por mim; Meu trabalho levou muito mais tempo do que eu esperava.</p>
+<p> </p>
+<p>Agora podemos derrotar o [%dic:STR_DIC_M_Hellhound_35_An] S, como os Senhores Empíreanos desejam.</p>
+<p> </p>
+<p>Você parece confuso. Há algo que você quer me dizer?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu completei ... nossa ... missão."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Eu não esperava esse resultado, mas claramente é tão predito.</p>
+<p> </p>
+<p>Eu pensei que minha parte seria maior, mas a tarefa está completa.</p>
+<p> </p>
+<p>Aqui, pegue isso. Os Lordes On High se acertaram em incluir alguns fundos adicionais; Claramente eles foram feitos para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_Hellhound_35_An] S no cheiro Cabilabed ([%2]/9).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Hylas].</p></step>
+</steps>
+<p>Hylas desejava investigar a caldeira de Geroch, mas não podia por causa dos bargados obstruí -lo. Hunt Burning Barghests para que ele possa continuar com seu trabalho.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Hylas pediu que você o ajudasse com seu dever, dizendo que você estava destinado a encontrá -lo.</p>
+<p> </p>
+<p>Ele lhe disse que o alcançaria para ajudá -lo a caçar os queimadores de bargas, obstruindo sua pesquisa na Caldera de Geroch, mas ele não apareceu até você terminar de caçar todos os bargados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

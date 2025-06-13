@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, Elyos. Já faz algum tempo desde que tive uma boa conversa com uma das suas espécies.</p>
+<p> </p>
+<p>É estranho como nossas raças costumavam ser tão semelhantes, e ainda assim são tão ... separadas.</p>
+<p> </p>
+<p>Oh, você ... uh ... você pode ser ...?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Eu posso ser ...?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode estar indo para o Scar Canyon em breve?</p>
+<p> </p>
+<p>Veja bem, eu estive lá recentemente e encontrei alguns Crestliches e Pucas. Eu pensei que poderia lidar com eles, mas eles ... me manipularam, acho que você poderia dizer.</p>
+<p> </p>
+<p>Eu escapei, mas eles arrancaram meu saco ... todos os meus pertences voaram. Acabei de deixar tudo lá e correu o mais rápido que pude!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eles são muito difíceis".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, muito difícil. Especialmente quando eles o cercam-nada que você possa fazer, mas correr.</p>
+<p> </p>
+<p>Mas perdi um tesouro antigo que estava segurando para Gelon ... ainda não contei a ele.</p>
+<p> </p>
+<p>Você encontraria o [%dic:STR_DIC_I_QUEST_11104a] e [%dic:STR_DIC_I_QUEST_11104b]Que os Crestliches e Pucas tiraram de mim? Antes de Gelon descobrir?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Elyos. Gelon vai mastigar minha cabeça se descobrir!</p>
+<p> </p>
+<p>o [%dic:STR_DIC_I_QUEST_11104a] e [%dic:STR_DIC_I_QUEST_11104b] estão em algum lugar lá fora.</p>
+<p> </p>
+<p>Eu nunca vou esquecer sua bondade, meu amigo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Os favores fazem favores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi bobo da minha parte pedir ajuda a um Elyos. Sua espécie sempre se afasta de nós reianos.</p>
+<p> </p>
+<p>Eu esperava que você fosse diferente ... mas eu entendo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não é nada pessoal."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, você está bem a tempo, Elyos! Gelon acabou de vir até mim e pediu para ter seus tesouros de volta. Eu menti e disse que meu amigo estava limpando -os.</p>
+<p> </p>
+<p>Por favor me diga que você os encontrou em um[%dic:STR_DIC_M_LF4_B_Crestlich_Stone_53_n]ou[%dic:STR_DIC_M_LF4_B_Bookie_Stone_53_An]....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está o tesouro de Gelon."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não saiu? Ouvi dizer que Gelon está a caminho aqui ... você deve encontrar o tesouro dele para mim!</p>
+<p> </p>
+<p>Ele vai me tirar para secar se eu não tiver seus tesouros quando chegar! Por favor, Elyos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não se preocupe, meu amigo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahhh, você encontrou! E o relógio e o cabelo não parecem ser muito arranhados.</p>
+<p> </p>
+<p>Eu estava temendo o pior ... mas Gelon nunca notará.</p>
+<p> </p>
+<p>Obrigado, Elyos. Você salvou minha pele hoje. Eu te devo ... eu te devo muito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre os itens que [%dic:STR_DIC_M_LF4_B_Crestlich_Stone_53_n] e [%dic:STR_DIC_M_LF4_B_Bookie_Stone_53_An]levou e os trazia para [%dic:STR_DIC_N_Savinus].</p>[%collectitem]</step>
+</steps>
+<p>Savinus disse que as criaturas no Scar Canyon levaram os tesouros de Gelon. Livre -se de presos estalados e pucas sorridentes para encontrar os tesouros de Reian.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Savinus disse que os presos estalados e as pucas sorridentes levaram o tesouro de Gelon.</p>
+<p> </p>
+<p>Você se livrou dos Crestliches e Pucas e encontrou os tesouros Reian que Savinus perdeu.</p>
+<p> </p>
+<p>Quando você trouxe de volta os itens, ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

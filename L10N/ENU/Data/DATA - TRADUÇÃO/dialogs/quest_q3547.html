@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os elimes envenenados não estão causando nada além de problemas. Eu adoraria exterminar -os.</p>
+<p> </p>
+<p>Mas apenas o Senhor Arbolu pode decidir o destino do Elim. Ele é o governante da floresta e uma árvore sagrada.</p>
+<p> </p>
+<p>Você poderia encontrar [%dic:STR_DIC_N_Tree_Pacerta] e conte a ele sobre o elimine envenenado? Diga a ele que está realmente repleto de agripas e rotrons.</p>
+<p> </p>
+<p>Lord Arbolu decidirá o que acontece com o Elim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Lord Arbolu está se sentindo triste. A floresta em Hiário não é o jeito que costumava ser.</p>
+<p> </p>
+<p>Lord Arbolu diz que existem forças que estão destruindo a floresta e o eliminação.</p>
+<p> </p>
+<p>Lord Arbolu diz que não pode mais tolerar essa situação.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você dá a ele a mensagem de Trajanus.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Lord Arbolu diz que a situação é pior do que temia.</p>
+<p> </p>
+<p>Lord Arbolu pede ajuda a você, amigo do Elim.</p>
+<p> </p>
+<p>Lord Arbolu implora que você salve o elimine de seus sofrimentos.</p>
+<p> </p>
+<p>Lord Arbolu diz que você deve matar o [plur][%dic:STR_DIC_M_Rottentree_36_An] e o [plur][%dic:STR_DIC_M_Agrint_36_An]no bosque decapado.</p>
+<p> </p>
+<p>[plur][%dic:STR_DIC_I_quest_3547a]deve estar em seus corpos. Lord Arbolu diz que você deve coletar os cristais e trazê -los de volta com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você lançou os Rotrons e a Agrint de sua miséria?</p>
+<p> </p>
+<p>Lord Arbolu pergunta se você libertou as almas.</p>
+<p> </p>
+<p>Lord Arbolu quer ver os cristais como prova de suas ações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega o envenenado Crystal Elim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muitos elimes foram libertados, Hee Hee.</p>
+<p> </p>
+<p>Senhor Arbolu obrigado.</p>
+<p> </p>
+<p>Lord Arbolu diz que não tolerará aqueles que perturbam a natureza e o elimine.</p>
+<p> </p>
+<p>Lord Arbolu diz que aqueles que destroem a natureza se destruem no processo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Tree_Pacerta].</p></step>
+<step><p visible="[%3]">Juntar [plur][%dic:STR_DIC_I_quest_3547a] e leve-os para [%dic:STR_DIC_N_Tree_Pacerta].</p>[%collectitem]</step>
+</steps>
+<p>Conheça a voz de Arbolu e resolva o problema com as agripas e rotrons.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Trajano o enviou para Arbolu, o governante da floresta, para pedir seus conselhos sobre o eliminação envenenada.</p>
+<p> </p>
+<p>O alto -falante Arbolu disse que a agripressão e o rotron precisavam ser libertados de seu sofrimento.</p>
+<p> </p>
+<p>Você derrotou a Agrint e Rotron e coletou os cristais elimes envenenados. Lord Arbolu ficou agradecido por você ter libertado o elimismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

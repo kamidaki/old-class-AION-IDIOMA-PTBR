@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q41211</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu preciso da sua ajuda com alguma coisa. Isso pode ser uma tarefa sombria, meu amigo, mas pelo que ouvi, você teve seu quinhão de sombrio.</p>
+<p> </p>
+<p>Eu estava olhando o [%dic:STR_DIC_W_LDF4a_SZ_B2_10]Quando vi uma mochila velha em uma beira do penhasco. Eu teria recuperado isso sozinho, mas as areias estavam mudando rapidamente, e fui forçado a voltar.</p>
+<p> </p>
+<p>O problema é que acho que sei a quem a bolsa pertence, e foi fortemente manchada de sangue. Fui reatribuído aqui agora, mas não posso deixar essa história incalculável.</p>
+<p> </p>
+<p>Por favor, você deve encontrar o [%dic:STR_DIC_I_QUEST_41211A] e leve para [%dic:STR_DIC_N_Linacroft]. Apenas ... seja gentil.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é, [%userclass]?</p>
+<p> </p>
+<p>Por favor, seja rápido. Eu tenho minhas mãos cheias e preciso armazenar minhas ferramentas antes que essa tempestade de areia acabar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">"Eu achei isso perto das ruínas de Jotari ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por que eu me importaria com ... n ... não!</p>
+<p> </p>
+<p>Esta é a mochila do meu pai! Ele carrega isso sempre que vai explorar! Onde você disse que encontrou? Oh ... Pai ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_I_QUEST_41211A]no penhasco com vista para [%dic:STR_DIC_W_LDF4a_SZ_B2_09] e leve para [%dic:STR_DIC_N_Linacroft].</p>[%collectitem]</step>
+</steps>
+<p>Ganofus pediu que você colecionasse uma mochila que encontrou enquanto fazia escotismo e localizar seu proprietário. Encontre o [%dic:STR_DIC_I_QUEST_41211A] e reportar a um líder da equipe de escavação, [%dic:STR_DIC_N_Linacroft].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ganofus disse que encontrou a mochila de um explorador enquanto faz o escotismo, mas não conseguiu identificar de quem era. Então você foi às ruínas do santuário de Jotari e o encontrou em um penhasco com vista para o estúdio DeBarim Petralith.</p>
+<p> </p>
+<p>Você levou a mochila ao pesquisador líder de Jotun, Luanna, e ela ficou impressionada com choque, explicando que ela pertencia ao pai.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

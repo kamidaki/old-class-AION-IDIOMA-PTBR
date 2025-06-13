@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fragmentos! Esses bloqueios na cidadela de Vorgaltem foram invadidos!</p>
+<p> </p>
+<p>Não me interpretem mal, [%username], Tenho certeza de que Krizarid está segurando rápido-o homem é um monstro. Ouvi arcontes sussurrando que a razão pela qual Naga existe é porque ele gosta de quebrar as pernas de Drakan.</p>
+<p> </p>
+<p>Mas ele é apenas um homem, e ele não pode vencer contra centenas! Pelo menos ... acho que ele não pode.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que posso fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Apesar de Lord Kaisinel e seus agentes, não podemos simplesmente assumir que eles poderão nos proteger se formos atacados simultaneamente pelo Balaur e pelos Asmodianos.</p>
+<p> </p>
+<p>É por isso que você deve participar da Batalha pela Cidadela Vorgaltem também, [%username].</p>
+<p> </p>
+<p>Elimine os guardas da cidadela de Vorgaltem para romper a linha de defesa. Isso tornará mais fácil para nós retomar a fortaleza.</p>
+<p> </p>
+<p>Você vai cuidar disso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Junte forças com outras pessoas, se puder. Retomar a cidadela não será fácil. Uma vez que puder ser capturado, mate o [%dic:STR_DIC_E_Q21227all]para derrubar suas defesas.</p>
+<p> </p>
+<p>Bem? Não fique lá! Mova -se!</p>
+<p> </p>
+<p>Ah, e aqui estão alguns conselhos. Se [%dic:STR_DIC_N_Krizarid] está lutando, fique fora do caminho! E não deixe de falar com ele depois de retomar a Cidadela, mas não mencione que eu o enviei como backup-ele o levará como um insulto!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou ter cuidado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso tem que ser feito, [%username]!</p>
+<p> </p>
+<p>Krizarid não pode segurar para sempre! Eventualmente, ele será enterrado até o pescoço nos corpos e o inimigo o dominará!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tenho certeza que ele vai ficar bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Palestrante! Não perca! Abelha!</p>
+<p> </p>
+<p>Eu devo ter engolido alguns baldes de sangue naquela última batalha. Eu os bati abaixo do pescoço e vem jorrando como uma fonte!</p>
+<p> </p>
+<p>Suponho que devo ser grato, porque um banho de sangue significa que não preciso tomar banho na primavera, mas me fazendo engolir seu sangue ... bem, isso é apenas rude!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Uh ... Linar me enviou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que?! Ele não disse que eu precisava de backup, não é?</p>
+<p> </p>
+<p>Não? Oh, bem ... isso é bom, porque eu não!</p>
+<p> </p>
+<p>Vejo que você ajudou a retomar a Cidadela, então tenho que agradecer por isso. Poderíamos usar mais como você por aqui.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_Q21227all]([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Krizarid]%.</p></step>
+</steps>
+<p>Vorgaltem Citadel caiu em mãos inimigas. Mate o guardião do inimigo, destrua sua defesa e relate de volta a Krizarid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Linar diz que a cidadela de Vorgaltem foi capturada pelo inimigo. Ele está recrutando Daevas para retomá -lo.</p>
+<p> </p>
+<p>Você derrotou os guardas na Cidadela de Vorgaltem e recebeu agradecimentos do notório Krizarid.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

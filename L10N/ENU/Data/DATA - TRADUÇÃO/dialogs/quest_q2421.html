@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ahh[%username]! Você poderia ir para o pandaemonium para mim?</p>
+<p> </p>
+<p>Eu me sentiria culpado deixando a fortaleza em uma missão como essa enquanto somos abreviados e sobrecarregados.</p>
+<p> </p>
+<p>É realmente uma pequena tarefa.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Qual é a tarefa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Anos atrás, quando subi, meu pai me deu uma bela espada como presente. No entanto, era muito chique demais ser de uso prático. Confiei a espada a Keruthis, o modificador de aparência, para usar como modelo para reformular.</p>
+<p> </p>
+<p>Quando fiquei estacionado aqui, Arnkell, o Armas me fez essa espada de chama.</p>
+<p> </p>
+<p>Para honrar o presente de meu pai, gostaria de remodelar a espada da chama no padrão da espada de meu pai. Mas vou precisar de uma ajuda, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Leve isso para a loja de remodelação em[%dic:STR_DIC_W_DC1_2] em pandaemonium e Fale com [%dic:STR_DIC_N_Kerupnise].</p>
+<p> </p>
+<p>Ela vai remodelar a espada se você disser a ela que eu te enviei.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Não há planos de ir para o pandaemonium, hein?</p>
+<p> </p>
+<p>Não se preocupe na minha conta. Se não conseguir encontrar mais ninguém, sempre posso enviar o iPoderr.</p>
+<p> </p>
+<p>Ele vai reclamar por dias, no entanto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até a próxima."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Que [%mainslotitem]...  Oh! Como você pode carregar isso ...</p>
+<p> </p>
+<p>Fico feliz em ver você aqui. Você deve estar aqui para modificar sua aparência. O desempenho não é tudo sobre uma arma, você sabe.</p>
+<p> </p>
+<p>Não subestime a importância da aparência-sempre usa armas que realmente combinam com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Na verdade, estou aqui para a espada de Asgeirr."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>A espada do quartzo prateado Asgeirr confiada a mim é um belo item. Provavelmente nunca verei de novo.</p>
+<p> </p>
+<p>Só para olhar para ele ... Asgeirr agora poderá honrar o presente de seu pai todos os dias.</p>
+<p> </p>
+<p>[%username], você deve modificar a aparência de sua própria arma. Existem muitos padrões que parecem melhores que os que você está usando agora.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Azz Peterbra."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você voltou. Como foi sua viagem?</p>
+<p> </p>
+<p>O Pandaemonium é sempre um lugar maravilhoso para se visitar.</p>
+<p> </p>
+<p>E não estou apenas dizendo isso porque eu sou de lá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho sua espada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, parece maravilhoso! O peso, a forma e o desempenho ... eu gosto de tudo.</p>
+<p> </p>
+<p>Pode ser muito chique para um arconte Sentinel, mas é isso que meu pai queria.</p>
+<p> </p>
+<p>Muito obrigado por ir ao Pandaemonium para mim. Por favor, tome isso como uma recompensa pelo seu tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Kerupnise].</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_Asgeirr].</p></step>
+</steps>
+<p>Asgeirr quer remodelar sua arma. Vá a Pandaemonium para conhecer Keruthis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Asgeirr disse que queria remodelar sua arma, mas ele não podia ir para o Pandaemonium. Ele pediu para você ir lá para ele.</p>
+<p> </p>
+<p>Você foi a Pandaemonium e fez Keruthis modificar a aparência da arma. Asgeirr agradeceu muito.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

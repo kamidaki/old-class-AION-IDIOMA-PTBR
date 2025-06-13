@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para o bem -estar da Guilda, todas as missões a serem realizadas foram distribuídas entre os participantes da Guilda. Todos são solicitados a realizar suas missões, porque só então a tarefa da Guilda será totalmente concluída.</p>
+<p> </p>
+<p>Missão da Guilda:</p>
+<p>Vá para o templo do fogo e mate [%dic:STR_DIC_N_region_17003].</p>
+<p> </p>
+<p>Relatório para [%dic:STR_DIC_N_Ceana], como ela é responsável pelas batalhas de Elysea.</p>
+<p> </p>
+<p>- Administração de Legiões -</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O juiz Kromede é uma alma podre, cheia de ódio.</p>
+<p> </p>
+<p>Esse diabo enviará todos os Daevas para a morte deles se ela não for eliminada rapidamente.</p>
+<p> </p>
+<p>Deve ser por isso que a Guilda entregou a missão de matar Kromede.</p>
+<p> </p>
+<p>[%username]. Certamente você é um adversário digno?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre sua missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fantástico! Suas ações são o orgulho da Guilda, [%username].</p>
+<p> </p>
+<p>Continue realizando missões até que a tarefa da Guilda esteja concluída.</p>
+<p> </p>
+<p>Por favor, aceite esta pequena recompensa da Guilda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_N_region_17003]([%2]/1).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Ceana].</p></step>
+</steps>
+<p>Mate o juiz Kromede para completar a missão da Guilda. Você deve realizar a tarefa da Guilda, pois está participando da missão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Guilda ordenou que você matasse o juiz Kromede.</p>
+<p> </p>
+<p>Você participou de matar Kromede para que a missão da Guilda pudesse ser concluída.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

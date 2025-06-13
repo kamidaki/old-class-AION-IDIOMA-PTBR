@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para os olhos de [%username] Apenas:</p>
+<p> </p>
+<p>Este é um pedido urgente do Centurion[%dic:STR_DIC_N_Stanis], uma Ordem de Alabastro operacional disfarçado. Ele precisa de alguém discreto para carregar algumas informações importantes demais para anotar.</p>
+<p> </p>
+<p>Use o [%dic:STR_DIC_W_ZONE_NAME_Underpass]para se infiltrar em Gelkmaros e procurar o Centurion Stanis, que atualmente está em uma missão para capturar o [%dic:STR_DIC_W_DF4_SZ_3011_A]lá.</p>
+<p> </p>
+<p>[%username], mova -se rapidamente e traga sua mensagem de volta a um[%dic:STR_DIC_E_35021].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido e guarde -o.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Não tão alto! Que negócio você tem em Gelkmaros, [%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Leowasp Leowasp nas planícies."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>E "Cellatu Cellatu nas montanhas".</p>
+<p> </p>
+<p>Ouça, confio em você para entregar esta mensagem à sílaba da ordem do Alabaster para sílaba. Você está pronto?</p>
+<p> </p>
+<p>Cauda de Worg, lágrimas do espírito, ferida preta, névoa azul.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Tenho certeza de que há um mnemônico para isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como está o tempo em Gelkmaros?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Stanis diz: 'Cauda de Worg, as lágrimas do espírito ...'"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é um código de alto nível para a ordem do Alabaster. Vou precisar relatar isso aos outros oficiais.</p>
+<p> </p>
+<p>Lembre -se, você não sabe nada sobre isso.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Stanis].</p></step>
+<step><p visible="[%3]">Transmitir a mensagem para um[%dic:STR_DIC_E_35021].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Centurion Stanis, na Cidadela de Vorgaltem, tinha uma mensagem de topo secreta para a ordem Alabaster. Você se infiltrou em Gelkmaros e conheceu o Centurion Stanis, cuja mensagem codificada você transmitiu a Tersichore ou Eriphyle.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

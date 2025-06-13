@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Guardor Shugo[%dic:STR_DIC_N_Event_shugo_summer_reward] está aqui antes de Daeva, Akakak.</p>
+<p> </p>
+<p>Ouvi dizer que Scrooge foi capaz de organizar uma festa tremenda com todo o gelo sólido que Daeva investiu.</p>
+<p> </p>
+<p>A garantia de Shugo é válida para sempre, Akakak.</p>
+<p> </p>
+<p>Obter [%dic:STR_DIC_I_junk_world_event_d_bond].</p>
+<p> </p>
+<p>Aqui está um presente de Scrooge, Akakak.</p>
+<p> </p>
+<p>Você recebe 1 caixa de gelo para 1 garantia. Akakak.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>A garantia de Shugo é válida para sempre, Akakak.</p>
+<p> </p>
+<p>Daeva quer trocar 1[%dic:STR_DIC_I_junk_world_event_d_bond]Para 1 caixa de gelo, Akakak?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega mais de 1 garantia de Shugo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Aqui está uma caixa de gelo, Akakak.</p>
+<p> </p>
+<p>Daeva parece estar investindo muito bem.</p>
+<p> </p>
+<p>Akak ..</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não parece haver um[%dic:STR_DIC_I_junk_world_event_d_bond] Aqui. Akak ..</p>
+<p> </p>
+<p>Eu me pergunto se você realmente investiu. Akakak.</p>
+<p> </p>
+<p>Obtenha um[%dic:STR_DIC_I_junk_world_event_d_bond] e então volte. Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá ver o garante shugo e [%dic:STR_DIC_N_Event_shugo_summer_reward]troca 1[%dic:STR_DIC_I_junk_world_event_l_bond]Para 1 caixa de gelo.</p>[%collectitem]</step>
+</steps>
+<p>Você pode trocar o presente deixado por [%dic:STR_DIC_N_Event_Scrooge_d_4]para o [%dic:STR_DIC_I_junk_world_event_l_bond]. Este é um vínculo para os investimentos no ICE da Daeva. Troque 1[%dic:STR_DIC_I_junk_world_event_d_bond] e obtenha 1 caixa de gelo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trocou a garantia de Shugo por uma caixa de gelo.</p>
+<p> </p>
+<p>O Shugo elogiou você por investir tão bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

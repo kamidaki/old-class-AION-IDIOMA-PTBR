@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudações, [%username]. Eu estava prestes a ligar para você. Tenho um favor a perguntar.</p>
+<p> </p>
+<p>Eu ouço da frota azul que os espíritos dos marinheiros caídos ainda vagam pela Baía de Stenon? É verdade que eles permanecem naquele estado morto -vivo porque foram amaldiçoados por Bollvig?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Receio que sim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Ohh, aquelas pobres almas. Para sempre preso vagando pela terra ... nunca retornando ao Aether.</p>
+<p> </p>
+<p>Eu discuti esse assunto com suas famílias e eles concordaram em nos deixar ... devolver nossos bravos Daevas para o Aether. O que significa que devemos matá -los ... nosso próprio povo. Lembre -se, eles não são quem eram antes.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, Daeva. Você trará paz às famílias dos marinheiros destruídos.</p>
+<p> </p>
+<p>Saia agora para Stenon Bay e devolva o [%dic:STR_DIC_M_UndeadLightFi_44_An_2] Areia [%dic:STR_DIC_M_UndeadLightWi_44_An_2] está de volta ao fluxo de Aether.</p>
+<p> </p>
+<p>Você está fazendo o trabalho de Ariel hoje, meu amigo. Eu não te invejo nem um pouco.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou cuidar disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei, eu sei ... o que eu pedi a você é realmente desconfortável e altamente perigoso. Mas é o dever de Daeva cuidar de humanos, não é?</p>
+<p> </p>
+<p>Olhe para o velho Heraloene ali. Desde que ele ouviu falar da morte de seu filho, ele apenas vagueia e implora para vê -lo novamente.</p>
+<p> </p>
+<p>Se você pudesse ajudar seu filho caído a encontrar um pouco de paz, ele pode recuperar sua sanidade. Por favor, reconsidere. Eu vou implorar se eu precisar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu sou apenas um[%userclass]. "</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu com a nossa aldeia? Desde que os Argos tragicamente destruídos, o riso é apenas uma memória. Agora, apenas tristeza e desespero enchem nossas casas.</p>
+<p> </p>
+<p>Me perdoe, [%username]. Você deve estar cansado. Você não precisa ficar lá e ouvir uma velha geme sobre seus problemas. Como foram as coisas em Stenon Bay?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Os mortos retornaram ao Aether."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que Ariel te abençoe com luz eterna, [%username]. Você fez uma grande coisa para aquelas almas pobres lá embaixo.</p>
+<p> </p>
+<p>Isso é tudo o que os moradores podem dar. Não é muito, considerando o que você fez por nós, mas, por favor, leve.</p>
+<p> </p>
+<p>Devo ir e compartilhar as boas novas com muito mais famílias.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Devolver o [%dic:STR_DIC_M_QUEST_3527] Ao fluxo de Aether ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Antione].</p></step>
+</steps>
+<p>Mate os espíritos naufragados dos Argos em Stenon Bay e relate o resultado ao sacerdote Antione.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O sacerdote Antione patrocinou os espíritos naufragados dos Argos, que não conseguiram retornar ao fluxo de Aether após a morte. Ele pediu que você matasse as almas mortas -vivas por compaixão.</p>
+<p> </p>
+<p>Quando você devolveu os espíritos ao fluxo de Aether, ela o recompensou antes de contar às famílias.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

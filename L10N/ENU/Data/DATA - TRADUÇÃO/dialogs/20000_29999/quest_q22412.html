@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], sua chave de Adela de Adella é uma arma realmente boa.</p>
+<p> </p>
+<p>Afinal, o Armas Reian que criou essa arma colocou todo o seu conhecimento nela.</p>
+<p> </p>
+<p>Se você investe essa arma com um pouco de poder mágico, ela poderá fazer ainda mais.</p>
+<p> </p>
+<p>Nossos magos Reian pesquisam por muitos anos sobre como dar às armas ainda mais poder.</p>
+<p> </p>
+<p>Se eu despertei seu interesse, então vá e encontre [%dic:STR_DIC_N_Gneise] e o grande mago[%dic:STR_DIC_N_Lumen]. Eles vão explicar isso para você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deseja encantar a chave de Aether de Adella?</p>
+<p> </p>
+<p>Se você possuía um upsorceller, poderia dotar sua arma com maior poder.</p>
+<p> </p>
+<p>Esse [%dic:STR_DIC_I_ldf4b_weapon_upgrade_01]é extremamente valioso, pois eu o carrego constantemente de magia há muito tempo.</p>
+<p> </p>
+<p>Então, eu não posso simplesmente dar a você.</p>
+<p> </p>
+<p>Eu só darei a você se você levar seu tempo e me provar que você tem habilidades e paciência excelentes.</p>
+<p> </p>
+<p>Se você concluir uma missão e me trazer o mármore dourado, eu lhe darei o upsorceller.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deseja encantar a chave de Aether de Adella?</p>
+<p> </p>
+<p>Pode ser feito usando o [%dic:STR_DIC_I_ldf4b_weapon_upgrade_02] em minha posse.</p>
+<p> </p>
+<p>Mas esse item foi transmitido a partir da época da Guilda da Lança de Siel e, portanto, é extremamente precioso. Só vou confiar isso a uma pessoa confiável.</p>
+<p> </p>
+<p>Não será fácil. Você está pronto?</p>
+<p> </p>
+<p>Realizar todas as minhas tarefas e provar que você é uma pessoa confiável, [%username].</p>
+<p> </p>
+<p>E se você quer a energia do upsorceller e o cristal de aether para fluir para a arma, você também precisa do[%dic:STR_DIC_I_ldf4b_weapon_upgrade_03].</p>
+<p> </p>
+<p>Para isso, vá ver [%dic:STR_DIC_N_Ruaka].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>Você obteve os materiais de agulha de armas de Grais e Lumen?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega os materiais para melhorar as armas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vejo que você obteve os materiais adequados.</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+<p> </p>
+<p>(Ele segura a arma e os materiais e lança um feitiço.)</p>
+<p> </p>
+<p>Lá, está feito. Agora você tem uma arma poderosa, então use -a bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Gneise].</p></step>
+<step><p visible="[%3]">Vá para Sarpan e converse com[%dic:STR_DIC_N_Lumen].</p></step>
+<step><p visible="[%6]">Reunir o [plur][%dic:STR_DIC_E_Q12412] e leve-os para [%dic:STR_DIC_N_Uquini].</p>[%collectitem]</step>
+</steps>
+<p>A chave de Aether de Adella pode ser encantada. Encontre -se com Grais e Lumen e pergunte sobre os materiais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ulian disse que a Key Aether de Adella pode ser encantada com o poder de um mago.</p>
+<p> </p>
+<p>Você se encontrou com Grais e Lumen e recebeu um upsorceller e um cristal de aether deles. Você recebeu um fragmento de fusão de Ruaka.</p>
+<p> </p>
+<p>Quando você deu a Ulian os materiais, ele encantou a chave de Adella à chave de esplendor de Siel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

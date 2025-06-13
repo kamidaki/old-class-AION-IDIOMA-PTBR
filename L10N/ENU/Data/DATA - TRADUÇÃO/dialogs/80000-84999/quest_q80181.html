@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você tiver tempo, tenho um pedido para você.</p>
+<p> </p>
+<p>Minha mãe deixou sua aldeia para vir ao santuário.</p>
+<p> </p>
+<p>Ela deve ter chegado há um tempo atrás, mas não houve nenhuma notícia dela.</p>
+<p> </p>
+<p>Eu quero procurar por ela sozinho, mas não posso deixar meu lugar no momento.</p>
+<p> </p>
+<p>Não saber onde está minha mãe me deixa inquieto.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que aconteceu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha mãe está a caminho dela para me encontrar e Iuiel.</p>
+<p> </p>
+<p>Recentemente, ouvi daqui que ela estava na floresta onde o [plur] [%dic:STR_DIC_MLA129]% estão localizados.</p>
+<p> </p>
+<p>Estou preocupado que ela possa ter tido problemas com os Worgs.</p>
+<p> </p>
+<p>Eu não posso sair agora. Talvez você possa ir lá e dar uma olhada em mim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado ...</p>
+<p> </p>
+<p>Eu me pergunto se minha mãe se perdeu ou ... se algo pior aconteceu com ela ...</p>
+<p> </p>
+<p>Mate os worgs que podem ser encontrados na área primeiro.</p>
+<p> </p>
+<p>Há uma chance de minha mãe estar muito próxima.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vejo que você está ocupado, me perdoe.</p>
+<p> </p>
+<p>Isso não é problema. Vou tentar encontrar outra maneira.</p>
+<p> </p>
+<p>Oh, espero que nada tenha acontecido com ela!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você poderia encontrar minha mãe?</p>
+<p> </p>
+<p>Eu mal posso esperar. Por favor me diga tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você não encontrou minha mãe ...</p>
+<p> </p>
+<p>Não tenho escolha a não ser ir lá sozinho.</p>
+<p> </p>
+<p>Muito obrigado pela sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_MLA129]% ([%2]/17).</p></step>
+<step><p visible="[%15]">Relatório a Ryoenniya.</p></step>
+</steps>
+<p>Mate os Worgs que estão perto do local onde a mãe de Ryoenniya estava hospedada pela última vez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Não está claro onde está a mãe de Ryoenniya. Ela partiu da vila para ver Ryoenniya e Iuiel.</p>
+<p></p>
+<p>A pedido de Ryoenniya, você procurou a mãe dela e eliminou o Worg.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Cada estudioso escolhe entre moralidade e ambição acadêmica. Há um grande debate sobre experimentar corpos vivos em santuário.</p>
+<p> </p>
+<p>Até certo ponto, a pesquisa deve continuar. Quase tudo pode ser feito para o bem ou para o mal, você não concorda?</p>
+<p> </p>
+<p>Eu acho que os estudiosos por si só devem fazer essa escolha.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Uma posição não surpreendente ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu admito que tenho minhas dúvidas, [%username]. Eu o considero com cuidado desde o Centurion Sarantus enviou seu pedido pela primeira vez.</p>
+<p> </p>
+<p>Imagine estudar um corpo vivo-o que podemos aprender! Ainda mais emocionante, os lefaristas fizeram um assunto de teste artificial.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Decisões, decisões ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Como estudioso, posso fazer uma avaliação objetiva. O que os revolucionários lefaristas alcançaram é algo ótimo.</p>
+<p> </p>
+<p>Com a tecnologia deles, nossa pesquisa pode avançar para alturas deslumbrantes ... ou isso pode nos destruir.</p>
+<p> </p>
+<p>Não podemos nos apressar. Os sujeitos do teste devem ser destruídos. [%username], você vai me ajudar?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os revolucionários lefaristas utilizados[%dic:STR_DIC_M_LabM_Slime_40_An], Assim, [%dic:STR_DIC_M_LabR_LockAgrint_41_An], Assim, [%dic:STR_DIC_M_LabR_LockZombie_41_An], Assim, [%dic:STR_DIC_M_LabPo_LockedKuillus_40_An], e [%dic:STR_DIC_M_LabM_Fellial_40_An] em seus experimentos. Todos eles têm mutado com sucesso.</p>
+<p> </p>
+<p>Embora as notas sejam vagas, tenho certeza de que elas não foram criadas para dar os pés.</p>
+<p> </p>
+<p>Coloque um fim aos sujeitos da prova no Centro de Pesquisa Lefarista antes que as coisas fiquem fora de controle.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Pela luz de Old Class Aion."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não foi fácil para mim perguntar isso ... eu tenho algum orgulho, você sabe.</p>
+<p> </p>
+<p>Muito bem. Vou pedir ao Centurion Sarantus que envie alguém para me ajudar.</p>
+<p> </p>
+<p>Eu ainda prefiro trabalhar com você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, eu não posso ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já esteve no Centro de Pesquisa Lefarista? Você encontrou todos os assuntos de teste?</p>
+<p> </p>
+<p>Tenho certeza de que a luta foi feroz. Por favor, me diga tudo!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu fiz o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sei que não posso eliminar a tecnologia deles destruindo os sujeitos do teste, mas pode nos dar o tempo que precisamos ajustar.</p>
+<p> </p>
+<p>Por enquanto, pelo menos, podemos respirar um pequeno suspiro de alívio. Obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destrua os sujeitos do teste no Centro de Pesquisa Lefarista.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LabM_Slime_40_An]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LabR_LockAgrint_41_An]([%5]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LabR_LockZombie_41_An]([%8]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LabPo_LockedKuillus_40_An]([%11]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LabM_Fellial_40_An]([%14]/1)</p></step>
+<step><p visible="[%15]">Relatar o resultado[%dic:STR_DIC_N_Kalione].</p></step>
+</steps>
+<p>Os revolucionários lefaristas estão conduzindo experimentos em assuntos de teste ao vivo. Vá para o Centro de Pesquisa Lefarista e destrua todos os sujeitos do teste.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Kalione ficou preocupada ao investigar o experimento do corpo vivo dos lefaristas.</p>
+<p> </p>
+<p>Ela ficou preocupada porque a perspectiva de desempenho acadêmico pode ter um preço terrível.</p>
+<p> </p>
+<p>Kalione decidiu errar por cautela e pediu que você destruísse os sujeitos do teste no Centro de Pesquisa Lefarista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

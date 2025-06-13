@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Ice Petrahulks perto da vila começaram a agir de forma agressiva.</p>
+<p> </p>
+<p>Na verdade, eles estão agindo completamente estranhos.</p>
+<p> </p>
+<p>Não sei o que causou isso.</p>
+<p> </p>
+<p>Mas muitas das minhas tribos já foram feridas e mortas.</p>
+<p> </p>
+<p>Como podemos nos livrar deles, eu me pergunto?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, elimine o gelo petrahulks para nós.</p>
+<p> </p>
+<p>Vá me encontrar [%dic:STR_DIC_N_Delris] e pergunte sobre maneiras de tirar os gelo Petahulks.</p>
+<p> </p>
+<p>Você tem que eliminar o líder deles, Glacion the Hardy.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+<cutscene id="246"></cutscene>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_N_Delris]Pode saber como lutar contra o gelo Petahulks.</p>
+<p> </p>
+<p>Não suporto ver como eles estão machucando nossa tribo.</p>
+<p> </p>
+<p>Por favor nos ajude.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deve ter escapado de sua mente que é a nossa tribo que trabalha em conjunto com os Daevas!</p>
+<p> </p>
+<p>Pense bem - podemos não estar tão dispostos a cooperar se você recusar essa tarefa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Trabalhar com o Mau é incomum.</p>
+<p> </p>
+<p>É muito difícil de se comunicar.</p>
+<p> </p>
+<p>Se eu soubesse, teria feito mais um esforço para aprender o idioma Mau.</p>
+<p> </p>
+<p>Por que você veio me ver?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você pergunta sobre o gelo Petahulks.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você está aqui para o Ice Petrahulks. Claro que os vi. Há muitos deles por aqui.</p>
+<p> </p>
+<p>Você diz que eles nem sempre foram tão agressivos?</p>
+<p> </p>
+<p>Não sei por que eles mudaram.</p>
+<p> </p>
+<p>Mas se você deseja se livrar deles, posso ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1_1">Você pergunta sobre o método.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fire derrete o gelo.</p>
+<p> </p>
+<p>Detonar o [%dic:STR_DIC_I_QUEST_2057a] e toda a área se transformará em um mar de chamas.</p>
+<p> </p>
+<p>Você terá que colocar a bomba no local certo para tirar os gelo Petahulks.</p>
+<p> </p>
+<p>Mas não se esqueça - você só poderá usá -lo uma vez. Portanto, você deve escolher o local onde o define com muito cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+<cutscene id="247"></cutscene>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta.</p>
+<p> </p>
+<p>Você lidou com Glaciont the Hardy?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você eliminou todos os gelo Petahulks?</p>
+<p> </p>
+<p>Muito obrigado! Você fez um ótimo serviço à minha tribo.</p>
+<p> </p>
+<p>Nenhum dos meus camaradas será morto a partir de agora.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Delris]no[%dic:STR_DIC_W_STR_DF3_SZ_F].</p></step>
+<step><p visible="[%9]">Derrote os Gelo Petahulks.</p>
+<p visible="[%9]">Eliminar [%dic:STR_DIC_M_CyclopsReStatueDQ_43_An]([%11]/1).</p>
+<p visible="[%12]">Eliminar [%dic:STR_DIC_M_CyclopsReStatueDQ_43_An_2]([%14]/1)</p>
+<p visible="[%15]">Eliminar [%dic:STR_DIC_M_CyclopsReStatueDQ_43_An_3]([%17]/1).</p>
+<p visible="[%18]">Eliminar [%dic:STR_DIC_M_CyclopsReStatueDQ_43_An_4]([%20]/1)</p>
+<p visible="[%21]">Eliminar [%dic:STR_DIC_M_CyclopsReStatueDQ_43_An_5]([%23]/1)</p></step>
+<step><p visible="[%24]">Fale com [%dic:STR_DIC_N_DF3_NPC_Akigatan]no[%dic:STR_DIC_W_STR_DF3_SZ_F].</p></step>
+</steps>
+<p>O Chieftain Akagitan, Red Mane, relatou sobre os Petrahulks de Ice que estavam causando destruição. Vá conhecer Delris para descobrir mais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com o Chieftain Akagitan, do Red Mane Mau, os Ice Petrahulks começaram a se comportar de forma agressiva e matou muitos Mau de sua tribo.</p>
+<p> </p>
+<p>Ele não sabia que ação tomar contra os Ice Petrahulks, então pediu sua ajuda.</p>
+<p> </p>
+<p>Você e Delris criaram um plano e lidaram com o Ice Petrahulks para sempre.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

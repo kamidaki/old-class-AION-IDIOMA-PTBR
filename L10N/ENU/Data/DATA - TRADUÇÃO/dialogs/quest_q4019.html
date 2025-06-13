@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>PSST! Isso é[%username], certo? Você estava na fazenda Havenjark ... eu tenho uma proposta para você.</p>
+<p> </p>
+<p>Apenas entre você e eu, é claro.</p>
+<p> </p>
+<p>Tem algum crânio a partir daí? Ou algum osso? Se eles estiverem em boa forma, pagarei o Top Kinah por eles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você quer comprar ossos?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me olhe assim! O que há de errado em coletar crânios como hobby?</p>
+<p> </p>
+<p>Eu me ofereci para vir para Brusthonin porque tem muitos Mortos Vivos, mas estou preso no acampamento desde que cheguei aqui. Ordens de Randet.</p>
+<p> </p>
+<p>Olhar, [%username], Eu sei que você não é exatamente gritoso. Que tal voltar à fazenda Havenjark e coletar alguns crânios? Vou pagar, é claro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que eu realmente quero é caveiras de [%dic:STR_DIC_M_GraveknightD_23_An] Areia [%dic:STR_DIC_M_SkeletonMagicianD_23_An] está na fazenda Havenjark. Você vai me trazer alguns?</p>
+<p> </p>
+<p>E estou pagando por crânios intactos, não um monte de lascas de ossos. Entender?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ok, então talvez você esteja um pouco do lado sensível ...</p>
+<p> </p>
+<p>Olha, eu não sou um mentor sinistro que quer que os crânios criem uma horda de Mortos Vivos ou algo assim. Sou apenas um humilde legionário com um hobby incomum.</p>
+<p> </p>
+<p>Se você não ajudar, pelo menos me faça a cortesia de não fofocar sobre "Tala e seu macabro hobby". Nem todo mundo é ... de mente aberta, eu acho.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meus lábios estão selados."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Os ensinamentos de Lady Lumiel são nosso consolo em tempos difíceis.</p>
+<p> </p>
+<p>Tempos difíceis ... como ter que explicar a Randet por que tenho um monte de crânios na minha barraca.</p>
+<p> </p>
+<p>Mas chega de meus problemas. Me anime-me sinta alguns crânios!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem três tipos de pessoas que eu odeio neste mundo: primeiro, fofocas cruéis que simplesmente não deixam um humilde legionário em paz.</p>
+<p> </p>
+<p>Segundo, os chamados "revendedores de antiguidades" em Pandaemonium que vendem crânios de zumbis como crânios de falta de ar.</p>
+<p> </p>
+<p>E terceiro: as pessoas que dizem que vão ajudá -lo, mas depois não seguem adiante. Aquele anel verdadeiro, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esses espécimes são exatamente o que eu queria. Agora eu preciso apenas dos crânios de Banshees e Boggarts, e terei exemplos de tudo da Havenjark Farm.</p>
+<p> </p>
+<p>Onde vou colocar isso? Randet me disse para limpar minha coleção da barraca, então eu os escondi lá fora por enquanto.</p>
+<p> </p>
+<p>Mas esse é o meu problema, não seu, suponho. Obrigado pela sua ajuda-e sua discrição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_M_GraveknightD_23_An]crânios e [%dic:STR_DIC_M_SkeletonMagicianD_23_An]crânios e leve-os para [%dic:STR_DIC_N_Tala].</p>[%collectitem]</step>
+</steps>
+<p>Vá para a fazenda Havenjark e adquira crânios de projéteis e anubitos para Tala, que faz um hobby de colecionar crânios.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tala percebeu que você estava indo para a fazenda Havenjark, então ela pediu para você vender todos os crânios que você encontrou lá.</p>
+<p> </p>
+<p>Colecionadora de crânios, Tala pediu que você colecionasse crânios porque estava presa de plantão no acampamento dos colonos e não conseguia reuni -los.</p>
+<p> </p>
+<p>Você coletou crânios para Tala, que agradeceu, mas pediu que você não contasse aos outros sobre seu hobby incomum.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

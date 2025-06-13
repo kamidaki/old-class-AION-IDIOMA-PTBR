@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>(É um gabinete de exibição que contém a coleção de armas da Kaliga.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você analisa mais de perto as armas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(As teclas de Aether são exibidas no gabinete.)</p>
+<p></p>
+<p>(Eles parecem ser armas valiosas.)</p>
+<p></p>
+<p>(Você deve abrir o caso para dar uma olhada mais de perto.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete de exibição está firmemente bloqueado.)</p>
+<p></p>
+<p>(Você provavelmente precisa da chave de Kaliga para abri -la.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você abre o gabinete de exibição.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>(Após uma inspeção mais detalhada, as armas parecem um pouco inúteis.)</p>
+<p> </p>
+<p>(Você deve deixá -los onde estão.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete de exibição está firmemente bloqueado.)</p>
+<p></p>
+<p>(Você provavelmente precisa da chave de Kaliga para abri -la.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você abre o gabinete de exibição.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete de exibição está firmemente bloqueado.)</p>
+<p></p>
+<p>(Descubra se a Kaliga tem a chave.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>(O gabinete de exibição está aberto!)</p>
+<p></p>
+<p>(Pegue a chave do aether e coloque -a no seu cubo.)</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use a chave de Kaliga para abrir seu gabinete de exibição.</p>[%collectitem]</step>
+</steps>
+<p>Use a chave para abrir o gabinete de exibição da Kaliga e pegue uma arma de sua escolha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você levou a chave de Kaliga para o gabinete de exibição.</p>
+<p></p>
+<p>Você abriu o gabinete e recuperou uma arma de sua escolha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

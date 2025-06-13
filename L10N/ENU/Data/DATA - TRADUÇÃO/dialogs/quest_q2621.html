@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você vai ao Pandaemonium em breve?</p>
+<p> </p>
+<p>Preciso enviar uma carta para o Pandaemonium, mas não posso confiar no Shugo Express Mail.</p>
+<p> </p>
+<p>Esses shugos explosivos sempre recebem seu dinheiro, mas nem sempre entregam seu e -mail.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que está errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Preciso enviar uma carta para o meu segundo irmão mais velho e esperava pedir a alguém que vai a Pandaemonium para entregar.</p>
+<p> </p>
+<p>O nome dele é[%dic:STR_DIC_N_Freyr]. Ele é um preceptor de clérigos e chanters no edifício do Capitólio. Eu sei que é uma tarefa incômoda, mas meu irmão não deixou você ir sem lhe dar uma recompensa.</p>
+<p> </p>
+<p>Você pode se teletransportar para o pandaemonium da fortaleza em momentos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Freyr é seu irmão?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim. As pessoas tendem a ouvir quando digo a eles quem é meu irmão. A maioria das pessoas conhece minha família.</p>
+<p> </p>
+<p>Eu não ligo. Eu não moro fora do nome da minha família.</p>
+<p> </p>
+<p>De qualquer forma, você entregaria esta carta a [%dic:STR_DIC_N_Freyr] em pandaemonium?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para o edifício do Capitólio em Pandaemonium e dê esta carta a [%dic:STR_DIC_N_Freyr].</p>
+<p> </p>
+<p>Estou contando com você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou entregar com segurança."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não tem planos de ir ao Pandaemonium. Hum...</p>
+<p> </p>
+<p>Ah bem. Vou perguntar a outra pessoa, então.</p>
+<p> </p>
+<p>Adeus.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>É assim mesmo? Nosso Freyja enviou isso? Como está ela?</p>
+<p> </p>
+<p>Não estamos em termos ruins, mas devo perguntar a um estranho como ela está. Ela se mantém para si mesma.</p>
+<p> </p>
+<p>Ela é a mais nova da família, então eu sempre me preocupo com ela. É apenas uma carta? Havia mais alguma coisa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Apenas a carta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom saber que ela está bem.</p>
+<p> </p>
+<p>Estou um pouco magoado que ela me recusou quando não pode ser tão difícil para ela. Há momentos em que seus amigos são melhores que o seu próprio sangue.</p>
+<p> </p>
+<p>De qualquer forma, não posso deixar você ir sem uma recompensa. Foi uma longa jornada. Aqui, este é um sinal de minha apreciação.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar uma carta para [%dic:STR_DIC_N_Freyr].</p></step>
+</steps>
+<p>Entregue uma carta a Freyr enviada por sua irmã, Freyja.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você entregou uma carta a pedido de Freyja ao seu segundo irmão mais velho, Freyr, que está em Pandaemonium.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

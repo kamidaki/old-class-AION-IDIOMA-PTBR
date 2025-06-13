@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Linda, não é?</p>
+<p> </p>
+<p>É a água, eu acho. As ondas lambendo suavemente meus pés e o som das ondas quebrando ... tão relaxante.</p>
+<p> </p>
+<p>Ouvi histórias, porém, que a costa das Cantas era uma das principais atrações de Verteron, famosas por suas águas claras, belos pôr do sol e pesca de Afari.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Pesca de Afari?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>De fato. Quase não restava agora.</p>
+<p> </p>
+<p>O problema é o [%dic:STR_DIC_M_Starturtle_19_n] S. São bestas desajeitadas e devoram as veneras e a Afari. Sem predadores naturais, seus números crescem e o problema é exacerbado.</p>
+<p> </p>
+<p>Quero reduzir o número de tartarugas para proteger a área, mas preciso de ajuda. Talvez de alguém como você?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por nos ajudar.</p>
+<p> </p>
+<p>Por favor, preencha a tarefa rapidamente. Em breve será o momento em que o [plur][%dic:STR_DIC_M_Starturtle_19_n]raça.</p>
+<p> </p>
+<p>Eles incubam mais do que apenas um ovo. Portanto, seria bom se você pudesse eliminá -los antes que a criação deles fique fora de controle.</p>
+<p> </p>
+<p>Por favor, elimine 10 deles.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito bem. Vou fazer o máximo que puder, suponho.</p>
+<p> </p>
+<p>Viagem segura, [%userclass]. Obrigado por pelo menos me ouvir.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte, gen."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, meu cúmplice de confiança!</p>
+<p> </p>
+<p>Diga -me, como você fez?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">"Eu morei doze."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então a costa das Cantas ainda pode sobreviver a esses meses preocupantes! Excelente notícia!</p>
+<p> </p>
+<p>Por favor, pegue isso.</p>
+<p> </p>
+<p>Eu queria lhe dar um Afari assado como um agradecimento, mas acho melhor esperar até que os números deles se recuperassem primeiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [plur][%dic:STR_DIC_M_Starturtle_19_n]que estão interrompendo o ecossistema ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_Gen].</p></step>
+</steps>
+<p>Os Afari na costa de Cantas estão sendo ameaçados com extinção por causa dos tartarugas do mar. Mate o mar tartarugas antes que eles comam todo o Afari.</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gen estava preocupado que os tartarugas do mar estivessem colocando em risco o Afari, uma espécie rara de peixe, comendo muitas delas.</p>
+<p> </p>
+<p>Ele matou muitos deles, mas não conseguiu eliminá -los sozinho. Você concordou em ajudar a caçar tartarugas antes que eles tivessem a chance de se reproduzir.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

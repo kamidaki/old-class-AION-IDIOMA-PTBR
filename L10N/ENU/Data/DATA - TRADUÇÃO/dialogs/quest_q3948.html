@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Pessoalmente, eu confio em sua capacidade, [%username]. Mas não é assim que as coisas são tratadas em um nível oficial.</p>
+<p> </p>
+<p>Eu preciso de uma base objetiva para recomendá-lo como especialista-uma obra-prima.</p>
+<p> </p>
+<p>Você precisa provar que pode fazer um item de artesanato raro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como o que?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O colar nobre de Fasimedes é um item perfeito para um teste.</p>
+<p> </p>
+<p>É raro e definitivamente testará seu talento, [%username]. Você vai fazer um para mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei que você terá sucesso.</p>
+<p> </p>
+<p>Se você se aplicar, poderá fazer o colar nobre de Fasimedes. Eu acho que você achará mais complexo do que [%dic:STR_DIC_E_Q1977], mas não além de suas habilidades.</p>
+<p> </p>
+<p>Traga para mim quando terminar.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei o meu melhor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu nunca esperava que você recusasse minha oferta.</p>
+<p> </p>
+<p>Você não está interessado no título de especialista?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Deixe -me pensar nisso um pouco."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitas coisas que um mestre tem que fazer ... como ensinar Daevas que querem aprender a elaboração.</p>
+<p> </p>
+<p>Eu espero muito de você, [%username].</p>
+<p> </p>
+<p>Você fez o colar nobre de Fasimedes?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode ter outras coisas para fazer. Eu entendo.</p>
+<p> </p>
+<p>Mas essa oportunidade nem sempre está disponível. Espero que você faça o colar nobre de Fasimedes e o traga para mim.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou fazer isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom trabalho. Lindo trabalho!</p>
+<p> </p>
+<p>Definitivamente vou recomendá -lo como um especialista em deficiência.</p>
+<p> </p>
+<p>Obrigado por um trabalho duro. Estou satisfeito por ter encontrado um bom sucessor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Faça o colar nobre de Fasimedes e leve para [%dic:STR_DIC_N_Utisda].</p>[%collectitem]</step>
+</steps>
+<p>A UTSIDA disse que você precisa provar sua capacidade de receber o título de especialista em desvantagens. Faça o colar nobre de Fasimedes e traga -o para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A UTSIDA disse que você precisa provar sua capacidade, criando um item de artesanato raro para receber o título de especialista em desvantagens.</p>
+<p> </p>
+<p>Você fez o colar nobre de Fasimedes e levou para ele. Ele ficou satisfeito, dizendo que finalmente encontrou seu sucessor.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

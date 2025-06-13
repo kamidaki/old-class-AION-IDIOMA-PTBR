@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz que você esteja aqui, [%username]. Eu preciso lhe pedir um grande favor.</p>
+<p> </p>
+<p>Hoje em dia, estamos com abreviação-muitos Daevas estão sendo enviados para o abismo.</p>
+<p> </p>
+<p>A remoção de Manastone não é fácil de aprender e precisamos treinar mais trabalhadores para nos ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Como posso ajudá -lo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos treinando os removedores de Manastone na Associação de Removentes do Manastone, mas precisamos de mais Manastones.</p>
+<p> </p>
+<p>Obviamente, eu não posso deixar meu assento, então você, por favor, me traga mais Manastones?</p>
+<p> </p>
+<p>Não posso pagar, mas vou te dar um Manatone útil em troca.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Desta vez, preciso de MP +60, evasão +12 e Parry +20 Manatones.</p>
+<p> </p>
+<p>Eles são relativamente comuns, por isso não deve ser muito difícil.</p>
+<p> </p>
+<p>Vou deixar os detalhes para você, [%username].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto com suas pedras."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu sei, eu sei-você não está satisfeito com a recompensa, mas é tudo para Elysea!</p>
+<p> </p>
+<p>Um favor paga se com outro. Por favor me ajude.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe. Eu não posso te ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está bem a tempo, [%username]!</p>
+<p> </p>
+<p>Eu estava prestes a enviar os Manastones que já reuni para a associação.</p>
+<p> </p>
+<p>Agora posso adicionar o seu à remessa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui está, Dania."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Essas não são as pedras que estou procurando.</p>
+<p> </p>
+<p>A associação pediu MP +60, evasão +12 e Parry +20 Manastones.</p>
+<p> </p>
+<p>Eu acho que você ficou confuso porque eles se parecem iguais. Por favor, traga -me os corretos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Meu erro. Eu estarei de volta."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe as pedras! Aqui está o Manatone que eu prometi a você.</p>
+<p> </p>
+<p>Isso definitivamente ajudará, mas sempre posso enviar mais. Se você encontrar os mesmos Manastones que trouxe hoje, traga -os para mim.</p>
+<p> </p>
+<p>Muito obrigado, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>Não há pressão, mas me pediram para perguntar se você tem mais desses Manastones.</p>
+<p> </p>
+<p>Se você tivesse outro lote de um de MP +60, evasão +12 e Parry +20 Manastones, eu poderia fazer o mesmo comércio novamente.</p>
+<p> </p>
+<p>Apenas me diga se você está interessado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Aceitar.</act>
+<act href="HACTION_FINISH_DIALOG">"Talvez eu volte novamente mais tarde."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select10">
+<contents cdata="true">
+<html>
+<body>
+<p>A associação é um pouco insistente nas combinações corretas, desculpe.</p>
+<p> </p>
+<p>O que eu realmente preciso é um conjunto de MP +60, evasão +12 e Parry +20 Manastones.</p>
+<p> </p>
+<p>Novamente, não há pressão. Basta voltar quando você tiver os certos e faremos a troca.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Até então."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Colete Manastones e leve -os para Dania.</p>[%collectitem]</step>
+</steps>
+<p>Colete MP +60, Evasão +12 e Parry +20 Manastones que a Associação de Removentes de Manastone precisa e os traga para Dania.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dania precisa de mais Manastones para treinar novos removedores.</p>
+<p> </p>
+<p>Você trouxe para ela as novas pedras, ela agradeceu e lhe deu outro Manatone útil.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

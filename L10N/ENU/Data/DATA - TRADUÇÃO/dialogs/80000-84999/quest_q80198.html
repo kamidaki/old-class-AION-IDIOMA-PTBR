@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Peço desculpas por voar em uma raiva agora.</p>
+<p> </p>
+<p>Eu não sabia o que mais fazer.</p>
+<p> </p>
+<p>Eu tenho um pedido para perguntar a você, no entanto.</p>
+<p> </p>
+<p>Seria bom se você pudesse fazer isso por mim. Você será recompensado de acordo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta o que se trata.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Esta será a brincadeira de criança para você, [%username]. Por favor, mate 17 Crestlichs flamejantes nas proximidades.</p>
+<p> </p>
+<p>Alguém que eu amo muito é alérgico a eles e sofre muito se eles se aproximarem dele.</p>
+<p> </p>
+<p>Você ajudou aquela pessoa estúpida que enviou a carta da cadeia, então não vai recusar meu pedido, não é?</p>
+<p> </p>
+<p>Eu imploro a você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, muito obrigado.</p>
+<p> </p>
+<p>Isso também será uma grande ajuda para ele.</p>
+<p> </p>
+<p>Por favor, mate rapidamente os 17 precedentes de Crestlichs vermelhos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hum? Você está se recusando?</p>
+<p> </p>
+<p>Você entregaria uma carta de corrente, mas recusaria um pedido honesto?</p>
+<p> </p>
+<p>Volte se você reconsiderar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou os 17 Crestlichs?</p>
+<p> </p>
+<p>Foi fácil, certo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que sim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah! Agora meu amigo estará se saindo muito melhor.</p>
+<p> </p>
+<p>Muito obrigado. Temos você a agradecer por tudo, [%username].</p>
+<p> </p>
+<p>Desejo -lhe tudo de melhor em sua jornada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate 17 Crestlichs vermelhos nas proximidades</p></step>
+<step><p visible="[%3]">Fale com Liderin.</p></step>
+</steps>
+<p>Lidrin pede que você mate 17 Crestlichs para aliviar o sofrimento de seu amado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou 17 Crestlich Red a pedido de Lidrin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

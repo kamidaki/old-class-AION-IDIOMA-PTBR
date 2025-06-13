@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem urgente -</p>
+<p> </p>
+<p>1. Remetente: Líder de Guerrilha Phon do esquadrão Katalam Cleanup</p>
+<p> </p>
+<p>2. RECENDIENTE:[%username]</p>
+<p> </p>
+<p>3. Ordem: examine os movimentos dos Elyos na área ao redor [%dic:STR_DIC_W_LDF5A_OP_L] e matar o [%dic:STR_DIC_M_LDF5A_OP_L_Guard_Fi_L_Q_61_An]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o Guardian Sentinel?</p>
+<p> </p>
+<p>Oh céus! Eu side tão muito alto. Espero que Stelman não tenha ouvido nada.</p>
+<p> </p>
+<p>Vou perguntar de novo, em silêncio.</p>
+<p> </p>
+<p>Você matou o Guardian Sentinel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você diz que sim.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é bom.</p>
+<p> </p>
+<p>Agora quero mobilizar meus subordinados para atacar o inimigo.</p>
+<p> </p>
+<p>Isso está obrigado a chocar os Elyos.</p>
+<p> </p>
+<p>Se esse ataque for um sucesso, posso ser promovido a um post mais alto que Stelman.</p>
+<p> </p>
+<p>Tudo graças a você, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o Sentinel Guardian em[%dic:STR_DIC_W_LDF5A_OP_L].</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LDF5A_OP_L_Guard_Fi_L_Q_61_An]([%2]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5A_Phone_E].</p></step>
+</steps>
+<p>Comando Urgente: Elimine o Sentinela Guardian localizado nas proximidades da Recém -Construída Torre da Luz.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Enquanto você estava no chão examinando os Elyos, chegou um pedido do Phon do esquadrão Katalam Guerilla.</p>
+<p> </p>
+<p>Você cumpriu o pedido e matou os Guardiões Elyos, depois voltou ao Phon.</p>
+<p> </p>
+<p>Phon observou que os Elyos provavelmente estavam muito assustados e que ele lançaria um ataque surpresa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

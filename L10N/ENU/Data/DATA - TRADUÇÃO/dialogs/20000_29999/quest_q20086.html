@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q20086</questid>
+<questname>카룬 호위대 발견</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com Tolkin do protetorado Kahrun, que foi gravemente ferido</p>
+<p> </p>
+<p>Ah ... argh! Argh!</p>
+<p> </p>
+<p>Wa ... água!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você responde que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com Tolkin do protetorado Kahrun, que foi gravemente ferido</p>
+<p> </p>
+<p>Wa ... água!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega a água.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Suspiro. Suspiro.</p>
+<p> </p>
+<p>Ele agradece e diz o que aconteceu.</p>
+<p> </p>
+<p>Ele diz que muitos outros foram feridos em uma explosão, e isso e você deve ir e investigar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO3">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Gemo ...</p>
+<p> </p>
+<p>Água!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com Tolkin do protetorado Kahrun, que foi gravemente ferido</p>
+<p> </p>
+<p>Pensar que é isso que meus camaradas tiveram que sofrer.</p>
+<p> </p>
+<p>Até Kahrun não escapou da explosão. Ele está em perigo. Procure Kahrun!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO5">Você responde que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você examina o falecido protetorado Kahrun.</p>
+<p> </p>
+<p>(Suas feridas foram infligidas em batalha, não por uma explosão.)</p>
+<p> </p>
+<p>(Aparentemente, eles foram mortos por soldados de Beritra enquanto defendiam Kahrun.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO6">Você termina sua investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select7">
+<contents cdata="true">
+<html>
+<body>
+<p>Você examina o soldado morto de Beritra.</p>
+<p> </p>
+<p>(Ele leva feridas da batalha contra o protetorado de Kahrun.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO7">Você termina sua investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select9">
+<contents cdata="true">
+<html>
+<body>
+<p>Conversa com Pahel da equipe de defesa base</p>
+<p> </p>
+<p>Não houve incidentes especiais!</p>
+<p> </p>
+<p>Nem mesmo uma formiga passou por aqui, muito menos soldados de Beritra!</p>
+<p> </p>
+<p>Vá para a defesa base e pergunte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você diz que você entendeu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Relatório: Conversa com Daltra, o centurião de defesa base</p>
+<p> </p>
+<p>O que está acontecendo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pergunta se ele viu Kahrun.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que você estava procurando por Kahrun. Ele não está por aqui, no entanto.</p>
+<p> </p>
+<p>Então foi isso que aconteceu ...</p>
+<p> </p>
+<p>Bom trabalho. Teremos o maior prazer em ajudar no futuro também.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com Tolkin.</p></step>
+<step><p visible="[%3]">Pegue água e leve -a para Tolkin.</p></step>
+<step><p visible="[%6]">Procure o protetorado de Kahrun, que foi ferido em uma explosão.</p></step>
+<step><p visible="[%9]">Mate o protetorado de Kahrun, que foi contaminado por id ([%11]/4).</p></step>
+<step><p visible="[%12]">Diga a Tolkin o que aconteceu.</p></step>
+<step><p visible="[%15]">Procure faixas deixadas pelo protetorado que estavam seguindo Kahrun.</p></step>
+<step><p visible="[%18]">Procure faixas deixadas por soldados de Beritra.</p></step>
+<step><p visible="[%21]">Examine o post de Beritra.</p></step>
+<step><p visible="[%24]">Você pergunta a Pahel, o soldado de defesa base, se alguma coisa estranha houvesse ultimamente.</p></step>
+<step><p visible="[%27]">Relatório a Daltra, o centurião da defesa base.</p></step>
+</steps>
+<p>Ordens: Converse com Tolkin, que precisa de ajuda urgentemente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Conteúdo após conclusão</p>
+<p> </p>
+<p>Entrada subsequente</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

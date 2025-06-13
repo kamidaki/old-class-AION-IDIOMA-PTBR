@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para:[%username]</p>
+<p>De:[%dic:STR_DIC_N_Vespasianus], Instrutor da Academia</p>
+<p> </p>
+<p>Esses lefaristas e seu mau comportamento lúgubre! Imagine como se sentem os senhores Empyreanos.</p>
+<p> </p>
+<p>Mas eu tenho um plano, meu pequeno pão de porgus. Você e seu mentor vão coletar [%dic:STR_DIC_I_QUEST_37008A] S do[%dic:STR_DIC_M_37008all].</p>
+<p> </p>
+<p>Isso vai mostrar -os!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ugh. Lefaristas!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou morrendo de vontade de ver um desses "crachás".</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Então você está com sorte!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Oooooh. Não, não, não, não, sol. Você e seu mentor precisam obter [%dic:STR_DIC_I_QUEST_37008A] S.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estou indo. Sheesh!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não! Como eles se atrevem a usar esse padrão?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Com um[%dic:STR_DIC_E_Mentor], colete [%dic:STR_DIC_I_QUEST_37008A] S de [%dic:STR_DIC_M_37008all] e leve-os para [%dic:STR_DIC_N_Vespasianus].</p>[%collectitem]</step>
+</steps>
+<p>O instrutor da Academia Zenten instruiu você e seu mentor a saquear no bastião lefarista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O instrutor da Academia Zenten instruiu você e seu mentor a saquear lefaristas ambiciosos em seu bastião.</p>
+<p> </p>
+<p>Você concluiu a tarefa com sucesso e Zenten o recompensou ... por tudo o que ele foi distraído com o padrão nos crachás.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

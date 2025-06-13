@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q10504</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que Beritra veio à Signia para recuperar algo que foi gravado no relatório secreto de Tiamat.</p>
+<p> </p>
+<p>Até agora, porém, não está claro o que exatamente Beritra está procurando ... ou por que ele quer.</p>
+<p> </p>
+<p>Se considerarmos que Beritra se concentrou anteriormente na arma antiga da tribo e da identificação de Rune, fica óbvio que o segredo de Tiamat representa um grande perigo para nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema é que não sabemos o que é o segredo de Tiamat, nem onde está localizado. Devemos aprender mais sobre isso primeiro.</p>
+<p> </p>
+<p>Nazra, o comandante da 48ª unidade que destruiu as pedras de campo afins, deveria saber mais sobre o segredo de Tiamat.</p>
+<p> </p>
+<p>Mas ele não vai contar para você assim. Use o [%dic:STR_DIC_I_quest_10504a]para fazê -lo falar.</p>
+<p> </p>
+<p>Primeiro derrote o [plur][%dic:STR_DIC_M_LF5_Q_E_Vri_Hide_As_62_An] e o [plur][%dic:STR_DIC_M_LF5_Q_E_Vri_Strike_Gu_62_An]no jardim de Tiamat. Em seguida, obtenha as informações do comandante Nazra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você termina a conversa.</act>
+</selects>
+<voice file="Q10504-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select4">
+<contents cdata="true">
+<html>
+<body>
+<p>Como foi? Você fez progresso com sua pesquisa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os fragmentos do tablet.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse! Este é um tablet de juramento, inscrito por Tiamat! Onde você o encontrou?</p>
+<p> </p>
+<p>Eu preciso dar uma olhada mais de perto neste tablet. Se realmente for de Tiamat, será extremamente útil para nós.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+<voice file="Q10504-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não encontrou nada?</p>
+<p> </p>
+<p>Devemos descobrir o que é o relatório secreto antes de Beritra.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... pude discernir do comprimido que alguém fez de Tiamat selar o continente e submergir sob o mar para esconder alguma coisa. Ela jurou um juramento enquanto fazia isso.</p>
+<p> </p>
+<p>Mas o que poderia ter importado tanto para ela submergir um continente inteiro?</p>
+<p> </p>
+<p>Você obteve informações do Commander Nazra?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então o segredo de Tiamat não é um objeto, mas uma criatura de que ela tinha medo?</p>
+<p> </p>
+<p>Isso é ainda pior do que eu previa.</p>
+<p> </p>
+<p>Se Beritra encontrar essa criatura, que até o Senhor do Dragão temia, não vai acabar bem. Não temos tempo a perder. Precisamos seguir o Beritra o mais rápido possível.</p>
+<p> </p>
+<p>Felizmente, conseguimos obter essas informações vitais. Gostaria de pedir que você se junte à tropa da expedição e continue a trabalhar por nossa causa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LF5_SZ_Village_02] e Fale com [%dic:STR_DIC_N_LF5_Astrape_E].</p></step>
+<step><p visible="[%3]">Derrotar o [plur][%dic:STR_DIC_M_LF5_Q_E_Vri_Hide_As_62_An] e [plur][%dic:STR_DIC_M_LF5_Q_E_Vri_Strike_Gu_62_An].</p>
+<p visible="[%3]">Derrote os soldados e os guardas da 48ª unidade ([%5]/5).</p></step>
+<step><p visible="[%6]">Use o [%dic:STR_DIC_I_quest_10504a]Para obter informações de [%dic:STR_DIC_M_LF5_Q_E_Vri_HPDrainDD_Fi_NM_62_An].</p>
+<p visible="[%6]">Fazer comandante Nazra ([%8]/1) Divulgue as informações para você.</p></step>
+<step><p visible="[%9]">Obter um[%dic:STR_DIC_I_quest_10504b]do[%dic:STR_DIC_OBJ_LF5_FOBJ_Broken_Slate_Q10504a] e depois relatar para [%dic:STR_DIC_N_LF5_Astrape_E].</p>[%collectitem]</step>
+</steps>
+<p>Ajude a Astrop e perseguir o Exército de Beritra para saber o que o relatório secreto de Tiamat preocupa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O Astrop queria descobrir do que se tratava o relatório secreto de Tiamat.</p>
+<p> </p>
+<p>A pedido do Astrop, você foi à 48ª unidade e forçou o comandante Nazra a produzir as informações. Ao fazer isso, você aprendeu que Tiamat vivia com medo de uma criatura.</p>
+<p> </p>
+<p>Astrop pediu que você perseguesse Beritra e impedi -lo de encontrar essa criatura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

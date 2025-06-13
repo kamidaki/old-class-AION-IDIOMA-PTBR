@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Ouvi dizer que você viajou por toda parte. Você já viu Klaws?</p>
+<p> </p>
+<p>Acabei de ver um Klaw pela primeira vez recentemente. Quando meu comandante disse para acabar com eles, pensei "isso parece fácil".</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Últimas palavras famosas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Verdadeiro, verdadeiro. Eles são ferozes como Aranhas e inteligentes como Kentari. O que é pior, eles se reproduzem como loucos.</p>
+<p> </p>
+<p>Mothir e eu temos pouca esperança de eliminá -los por nós mesmos. Mas se um capaz [%userclass]Como você deveria nos ajudar ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É bom que você finalmente tenha ouvido falar deles. Em seguida, comece imediatamente no trabalho.</p>
+<p> </p>
+<p>Se você for para o leste daqui, virá ao Habitat Klaw.</p>
+<p> </p>
+<p>Há[%dic:STR_DIC_M_NeutL1D_38_An] e [%dic:STR_DIC_M_NeutL2D_38_An]. Por favor, elimine 7 peões e 3 guardas e depois volte.</p>
+<p> </p>
+<p>Se você, [%username], Comece esta tarefa, Mothir e eu mataremos o resto.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo. Nesse caso, não se preocupe com isso.</p>
+<p> </p>
+<p>Vamos lidar com o problema de Klaw.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Caminhe na sombra de Azphel."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você caçou[%dic:STR_DIC_M_NeutL1D_38_An] Areia [%dic:STR_DIC_M_NeutL2D_38_An]já é?</p>
+<p> </p>
+<p>Eles são mais fortes do que parecem, não são?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles são duros, mas eu os peguei!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que levaria você mais tempo-você se saiu muito melhor do que eu esperava!</p>
+<p> </p>
+<p>Podemos lidar com o resto.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Ajuda na destruição do Klaw.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_NeutL1D_38_An]([%2]/7).</p>
+<p visible="[%0]">Mate o [%dic:STR_DIC_M_NeutL2D_38_An]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Modgud].</p></step>
+</steps>
+<p>Comece a eliminar os Peons Klaw e os Guardiões Klaw para que Modgud possa continuar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Modgud solicitou ajuda com a infestação de Klaw nas proximidades.</p>
+<p> </p>
+<p>Você caçou klaw peões e sentinelas como ele perguntou. Ele agradeceu por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

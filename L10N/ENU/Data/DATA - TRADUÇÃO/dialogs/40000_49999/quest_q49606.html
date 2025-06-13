@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. Recebedor: funcionário temporário[%username]</p>
+<p> </p>
+<p>2. Tarefa: Temos um grande problema de minhoca. Por favor, vá para o camp *** e elimine essas pragas e depois relate ao escritório administrativo.</p>
+<p> </p>
+<p>3. Escritório Administrativo: Silverine Branch em North Katalam</p>
+<p> </p>
+<p>A tarefa acima conta para a avaliação para um cargo permanente e Daeva ganha pontos extras, dependendo dos resultados. Bom trabalho vale a pena o de Daeva, Ak.</p>
+<p> </p>
+<p>- Dumurinerk, Silverine Company</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Em Katalam, sempre temos as mãos cheias, Ak.</p>
+<p> </p>
+<p>Apenas quando pensamos que o negócio de madeira estava funcionando sem problemas, nos encontramos enfrentando uma infestação de lenha, Nyerk.</p>
+<p> </p>
+<p>E, claro, eles só caíram as árvores com a melhor madeira. É o suficiente para fazer você arrancar o cabelo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eliminar todos eles com um golpe não é possível.</p>
+<p> </p>
+<p>Assim, precisamos confiar na ajuda de Daeva mais uma vez.</p>
+<p> </p>
+<p>Shugo pode dar [%username]Muitos pontos novamente nesse caso, AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o acampamento de madeira e mate as minhocas ([%2]/7).</p></step>
+<step><p visible="[%15]">Relatório ao ramo de North Katalam da Silverine Limited.</p></step>
+</steps>
+<p>As instruções vieram da Silverine Limited. Leia a tarefa e conclua -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu instruções da Silverine Limited.</p>
+<p> </p>
+<p>Depois de eliminar as minhocas e relatar à filial Silverine Limited, na parte norte de Katalam, você foi recompensado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

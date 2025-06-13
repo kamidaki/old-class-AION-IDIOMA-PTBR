@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Deixe -me explicar.</p>
+<p> </p>
+<p>Eu me ofereci para proteger o daru.</p>
+<p> </p>
+<p>O que? Eu não pareço o tipo de pessoa que estaria interessada em conservação de animais? Pessoalmente, eu me considero um dos mocinhos!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você diz a ela que ela pode continuar falando.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Mas vamos seguir em frente. Vários worgs apareceram ultimamente.</p>
+<p> </p>
+<p>O Daru se extinguirá se nada for feito a respeito.</p>
+<p> </p>
+<p>Sou membro de uma associação que protege Darus. Então, eu não posso simplesmente assistir e não fazer nada!</p>
+<p> </p>
+<p>É por isso que estou pedindo para você matar os worgs por mim. Você será adequadamente recompensado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Eu sabia!</p>
+<p> </p>
+<p>Por favor, mate 18 worgs.</p>
+<p> </p>
+<p>Estou contando com você!</p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Como você poderia dizer que, quando os pobres, o doce daru estiverem ameaçados de extinção?</p>
+<p> </p>
+<p>Eu estava errado sobre você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa terminou</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>E? Você conseguiu reduzir o número de worgs?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você responde que dizimou worgs suficientes.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom, muito bem feito.</p>
+<p> </p>
+<p>Agora você faz parte dos ativistas do bem -estar animal Daru.</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate Worgs ([%2]/18).</p></step>
+<step><p visible="[%15]">Relatório a Winton.</p></step>
+</steps>
+<p>Mate os Worgs perto da fortaleza de Morheim.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu continuei eliminando Worgs até que o Daru recuperou a vantagem.</p>
+<p></p>
+<p>Um tipo de pena pelos worgs.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

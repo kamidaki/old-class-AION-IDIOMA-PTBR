@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>(O documento foi escrito em um roteiro antigo.)</p>
+<p> </p>
+<p>(Você mal pode decifrar a escrita e não tem certeza do conteúdo.)</p>
+<p> </p>
+<p>(Seria melhor ir ver Shumir e pedir ajuda.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina de investigar.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você terminou a pesquisa sobre a beira da espada?</p>
+<p> </p>
+<p>Você encontrou algum leads?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega o rolagem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que está acontecendo? Você queria me pegar algo!</p>
+<p> </p>
+<p>Eu pensei que você teria trazido algo para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso não pode ser! Você, por acaso, conheceu um homem chamado Bedin na beira da espada?</p>
+<p> </p>
+<p>(O rosto de Shumir perde sua cor enquanto ele lê o pergaminho.)</p>
+<p> </p>
+<p>Você cometeu um grande erro!</p>
+<p> </p>
+<p>Você ao menos sabe quem é esse bedin?</p>
+<p> </p>
+<p>Bedin é um vilão maligno que quer aproveitar o poder do Balaur e usá -los para tornar os inimigos de Elyos e Asmodianos para sempre.</p>
+<p> </p>
+<p>A ajuda que você deu a ele é a pesquisa que ele está fazendo para adquirir o poder do Balaur.</p>
+<p> </p>
+<p>A espada na beira da espada pertence a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Traga o pergaminho para Shumir.</p></step>
+</steps>
+<p>Mão Shumir o pergaminho escrito em um roteiro antigo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shumir está muito preocupado porque a pesquisa de Bedin sobre o Balaur chegou ao fim.</p>
+<p> </p>
+<p>Você diz a Shumir o que Bedin disse a você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

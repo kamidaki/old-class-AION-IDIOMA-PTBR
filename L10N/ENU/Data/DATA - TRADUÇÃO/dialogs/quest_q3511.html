@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Senhora da luz ser abençoada, eu cruzei caminhos com um[%userclass]!</p>
+<p> </p>
+<p>Os tesouros do templo estão sendo ameaçados por esses ... monstros! Eles estão por toda parte, crescendo a cada dia.</p>
+<p> </p>
+<p>Eu realmente poderia usar sua ajuda aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Tesouro? Que tesouro?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você quer dizer, você não ouviu os rumores, [%username]?</p>
+<p> </p>
+<p>Shhh, chegue um pouco mais perto. Há uma lenda dizendo que este templo foi construído em torno de uma vasta coleção de tesouros e artefatos antigos. Itens de antes da Grande Guerra.</p>
+<p> </p>
+<p>Ninguém sabe ao certo, mas os livros dos antigos mostram desenhos de jóias e jóias, tecidos misteriosos, armas antigas, segredos ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você nunca pode confiar em rumores."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro, eu sei, eu sei. Os rumores são apenas sussurros para surdos, certo?</p>
+<p> </p>
+<p>Eu não pensaria duas vezes sobre os rumores normalmente, mas houve tantos heisters fazendo perguntas aqui recentemente. Eu até ouvi a Guilda dos Fortunes está investigando o tesouro.</p>
+<p> </p>
+<p>E então eu ouvi de uma sentinela de patrulha que alguns[%dic:STR_DIC_M_Ettin_31_An] S se deparou com alguns pedaços do tesouro há muito perdido. Você descartaria deles? Mate -os, mate o segredo, certo? Vou fazer valer a pena.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, a luz da senhora brilhou em mim hoje! Obrigado, [%username]. Eu já posso provar as riquezas.</p>
+<p> </p>
+<p>Não diga nada a ninguém, no entanto. Se pudermos tirar essas Ettins Cracktooth, vou entrar à noite e começar a procurar o tesouro.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tesouro!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Ouvi dizer que você era do tipo aventureiro ... sempre procurando a próxima idéia selvagem. Vejo que eles estavam errados sobre você.</p>
+<p> </p>
+<p>Seja para você então! Há muito mais Daevas por aqui procurando fazer um pouco mais de Kinah ao lado.</p>
+<p> </p>
+<p>Mas se eu ouvir uma palavra sobre meu tesouro de alguém, estou enviando alguns amigos-alguns grandes e fortes amigos-para procurar você, [%username]!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou tremendo nas minhas botas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Pelo bem de Ariel, [%username], Eu pensei que você nunca voltaria!</p>
+<p> </p>
+<p>Pela aparência de você, eu diria que essas ettinas de Cracktooth eram um pouco mais difíceis do que você previa, não é? Você se livrou deles para mim? Algum sinal do tesouro? Alguma coisa?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Agora, onde está minha recompensa?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado. Isso é um grande alívio.</p>
+<p> </p>
+<p>Eu estava com tanta raiva que não conseguia dormir, porque podia ver os rostos desses selvagens sorridentes e de dentes amarelos quando fechei os olhos.</p>
+<p> </p>
+<p>Aqui está uma pequena recompensa para você. Não é muito, mas acho que esse objeto será útil para você.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir [%dic:STR_DIC_M_Ettin_31_An] S ([%2]/8).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Ibelia].</p></step>
+</steps>
+<p>Destrua as Ettins Cracktooth e retorne a Ibelia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ibelia, a Daeva de Zephyr, ficou perturbada com os Ettins bisbilhotando o tesouro no templo.</p>
+<p> </p>
+<p>Você os encerrou para ela, e ela agradeceu com uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você pode manter um segredo? Eu fiz algo realmente estúpido e preciso de ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Qual é o problema, Perinens?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Foi culpa de Estino! Ele apenas continuou e continuou até que eu não aguentasse mais!</p>
+<p> </p>
+<p>"Guarde a cidadela de novo, estamos? Nada acontecendo? Eu diria que você deveria assistir o posto de túrgias algum tempo, mas eu sei que nem todo mundo está cortado por lutar".</p>
+<p> </p>
+<p>Eu não poderia simplesmente ficar lá e aceitar! Então eu ... eu ... meio que deixei minha boca fugir comigo. Agora tenho que ir ao posto avançado de Tursin ou perder a aposta estúpida que fiz.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_yes;HACTION_ASK_QUEST_ACCEPT">"Você não pode lidar com o Krall?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Claro que posso, mas não posso deixar meu post! Especialmente para algo tão trivial como uma pontuação pessoal.</p>
+<p> </p>
+<p>Uma vez, uma sentinela chamada Gaione adormeceu em seu relógio-a cidadela estava quase invadida. Não terei uma história como aquela flutuando sobre mim.</p>
+<p> </p>
+<p>Mas ... talvez você pudesse invadir o posto avançado da Tursin e fingir que havia feito isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é como família para mim. Obrigado.</p>
+<p> </p>
+<p>A melhor prova seria uma pilha de [%dic:STR_DIC_QILA82] S, então por favor, junte alguns. O Krall os mantém em caixas de suprimento em todo o acampamento. Cerca de oito deles devem ser suficientes para fechar [%dic:STR_DIC_LA27] Acima. Ele está na boca do rio Ellun. Diga a ele que as armas Krall são de mim e ele perdeu a aposta. Ele lhe dará o dinheiro que ele me deve e você pode apenas mantê -lo.</p>
+<p> </p>
+<p>E por favor ... nunca respire uma palavra disso para ninguém.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Seu segredo é seguro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo. Eu me entrei nessa bagunça. Eu deveria me tirar disso.</p>
+<p> </p>
+<p>Vou perder a aposta, é claro. Eu serei o estoque risonho de toda a Verteron.</p>
+<p> </p>
+<p>Mesmo se você não vai me ajudar, por favor, não diga a Estino que eu pedi para você. Isso apenas pioraria.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu não vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]? O que você está fazendo até aqui?</p>
+<p> </p>
+<p>Espere ... Perinens te enviou? Essa garota não sabe quando sair!</p>
+<p> </p>
+<p>Ela enviou você com meu dinheiro? Ela está finalmente pagando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Ela me enviou com isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Sem desrespeito a você, [%userclass], mas por que você se incomodou em vir?</p>
+<p> </p>
+<p>Você me diz que Perinens foi ao posto avançado de Tursin e espera que eu aceite sua palavra para isso? Onde está a prova?</p>
+<p> </p>
+<p>Ei, se você está recebendo mensagens de um lado para o outro, diga a ela isso de mim. Quatro palavras-"Saiba quando você é espancado".</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Er, eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é ... esses são[%dic:STR_DIC_QILA82] S. Eles devem ter vindo de Krall de alto escalão. No posto avançado da Tursin.</p>
+<p> </p>
+<p>Ela realmente foi, não é? Saudando todas essas armas ... ela poderia ter sido morta!</p>
+<p> </p>
+<p>Você daria isso a ela para mim? Ela ganhou justa e quadrada. Vou observar minha boca ao redor dela no futuro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar armas dos caixas de suprimento de Krall e levá -las a [%dic:STR_DIC_LA27].</p>[%collectitem]</step>
+</steps>
+<p>[%dic:STR_DIC_LA78]fez uma aposta imprudente com Estino de que ela iria e invadiria o posto avançado da Tursin. Reúna as armas Krall, já que Perinens não pode deixar seu posto e trazê -las para Estino.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Estino provocou Perinens até que ela perdeu a paciência e fez uma aposta com ele.</p>
+<p> </p>
+<p>Ela se gabou de poder enfrentar o Krall no posto avançado de Tursin facilmente, mas acabou pedindo que você reunisse armas Krall para ela e levasse -os a Estino como prova.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

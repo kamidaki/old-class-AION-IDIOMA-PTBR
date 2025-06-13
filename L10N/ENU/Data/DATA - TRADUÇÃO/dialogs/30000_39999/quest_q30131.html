@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! É isso ... é isso que eu acho que é? Isso é supremo maça supremo?</p>
+<p> </p>
+<p>Pelas asas de Azphel! A lenda afirma que essas eram as armas da Guilda de Lady Siel de Lady Siel, usadas para combater o Balaur antes mesmo do cataclismo.</p>
+<p> </p>
+<p>Vamos dar uma olhada mais de perto ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bata -se."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmmm ... isso não parece bom. A arma foi danificada.</p>
+<p> </p>
+<p>A alça está solta, o eixo está rachado e ... o que é isso? Há cascas de poucas palavras bateu na cabeça! Quem usaria isso como um quebra -nozes?</p>
+<p> </p>
+<p>Eu tenho que me perguntar sobre o proprietário anterior da Mace. Ainda assim, acho que pode ser reparado. Quero alguma ajuda com isso, [%username]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Reparar a arma exigirá um toque de mestre, e isso acontece que eu conheço uma coisa ....</p>
+<p> </p>
+<p>Ele é um Kobold chamado[%dic:STR_DIC_N_DF4_NPC_Nehmatan], e ele vive na vila de Rhonnam Refugee. Não se preocupe, ele está do nosso lado ... por enquanto.</p>
+<p> </p>
+<p>Um aviso: ele pode ser o melhor ferreiro de Atreia, mas ele também é o pior cozinheiro de Atreia. Ele nega fazer toda a coisa de "cozinhar humanos" que Kobolds faz, mas eu erraria do lado da cautela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou lembrar disso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Um pouco confiante demais, não nós, não é, [%username]?</p>
+<p> </p>
+<p>Não que eu duvide de suas habilidades, mas reparar essa maça melhoraria sua força em combate.</p>
+<p> </p>
+<p>Pense em consertar um pouco de pensamento, pelo menos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva veio? O que Daeva quer com Tataka?</p>
+<p> </p>
+<p>Ahhhh! Tataka sabe! Daeva atraído pelo cheiro de bolinhos de Kobold! Não é nada para ter vergonha de Daeva, muitos humanos como os bolinhos de Kobold.</p>
+<p> </p>
+<p>Mesmo que Tataka possa ter esquecido alguns ingredientes e caído na fogueira e resgate do animal selvagem ... ainda tem um ótimo sabor! Daeva quer comer?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu tenho essa maça ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>MACE? Tataka não pode comer maça. Isso não é um comércio justo para os bolinhos de Kobold ....</p>
+<p> </p>
+<p>Momento de espera ... pela colher de Tataka! Daeva sabe que esta é a suprema maça de Siel?</p>
+<p> </p>
+<p>É uma maça rara, mas parece danificada. Agora Tataka entende por que Daeva vem, Daeva quer que Mace seja reparado. Tataka consertará, é uma honra trabalhar com maça assim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_DF4_NPC_Nehmatan].</p></step>
+</steps>
+<p>Há um Kobold que pode reparar a maça suprema do Siel. Vá para Rhonnam Refugee Village e conheça Tataka.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Ipses disse que a suprema maça de Siel precisava de restauração e reparo.</p>
+<p> </p>
+<p>Por sua sugestão, você foi ver um ferreiro de Kobold chamado Tataka, que se ofereceu para repará -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

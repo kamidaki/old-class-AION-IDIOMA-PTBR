@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O rosto de Dorph tem sido uma imagem de tristeza ultimamente.</p>
+<p> </p>
+<p>Eu gostaria de perguntar a ele o que está em sua mente, mas de alguma forma eu nunca vou perguntar.</p>
+<p> </p>
+<p>[%username], você poderia perguntar sobre [%dic:STR_DIC_N_LDF5b_Dorf_E]para mim?</p>
+<p> </p>
+<p>Às vezes, é melhor envolver um terceiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>(Suspiro longo.)</p>
+<p> </p>
+<p>Você veio por um motivo?</p>
+<p> </p>
+<p>Eu tenho algo no meu rosto, é isso?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Passe a história de Lathia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Venda LETA comigo?</p>
+<p> </p>
+<p>Ela está preocupada sem motivo.</p>
+<p> </p>
+<p>Mas isso não é importante agora, então é melhor não nos debruçarmos sobre o assunto. Vou falar com Lathia mais tarde.</p>
+<p> </p>
+<p>Eu a angusti muito, e você também, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Dorf_E], que está muito preocupado.</p></step>
+</steps>
+<p>Procure Dorph, que está com problemas,</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido de Latia, fomos a Dorph e perguntamos se ele estava tendo problemas. Ele disse que não e pedimos desculpas por perturbá -lo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

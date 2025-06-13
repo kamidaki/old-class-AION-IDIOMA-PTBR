@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? O que você quer, Daeva?</p>
+<p> </p>
+<p>Muitos Daevas vêm aqui. Mas eu só tenho suprimentos padrão. Nada antinatural-honra de Shulack!</p>
+<p> </p>
+<p>Negócios são bons. Mas se outros shulacks me encontrarem aqui ... estarei com grandes problemas.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Grande problema, hein?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, eu tive o [%dic:STR_DIC_OBJ_IDElim_Book_Q11461]! Só não diga a outros shulacks que estou aqui!</p>
+<p> </p>
+<p>Eu não tenho agora ....</p>
+<p> </p>
+<p>Não sei onde está o livro-a honra de Shulack! Mas se achá -lo importante, posso ajudar, se Daeva quiser.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, eu posso saber onde está o livro. Um Daeva chamado Carabel o escondeu em um buraco nos galhos de Taloc-o mesmo buraco em que cochilia.</p>
+<p> </p>
+<p>Joguei o livro e não sei onde ele pousou.</p>
+<p> </p>
+<p>Procure o [%dic:STR_DIC_OBJ_IDElim_Book_Q11461]Nos ramos de Taloc! Tenho certeza de que está lá em algum lugar. Devolver [%dic:STR_DIC_N_Carabel], rasgue, vendê -lo, eu não me importo. Apenas tire isso para que não mais danos venha procurar!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fique longe de problemas, Dorkin."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Do que estávamos falando ...? Ah, sim! Novo estoque está chegando em breve!</p>
+<p> </p>
+<p>O que, um livro? Não me lembro de falar de um livro.</p>
+<p> </p>
+<p>Você é bobo, Daeva.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você está tramando alguma coisa."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O Shulack escondido dentro do Taloc mencionou um livro?</p>
+<p> </p>
+<p>Que idiota! Esse livro é meu[%dic:STR_DIC_I_doc_quest_21461a]! Foi roubado de mim enquanto eu estava no Taloc's Hollow!</p>
+<p> </p>
+<p>Voltei para procurar várias vezes, e que Shulack fingiu que ele não sabia disso!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui, eu encontrei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você não tem isso?</p>
+<p> </p>
+<p>Bem, então volte e bata naquele Shulack até que ele tosse!</p>
+<p> </p>
+<p>Não que eu seja do tipo violento ... mas eu sei que Shulack merece.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou dar uma boa hallop."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Finalmente! Este é o relatório de pesquisa que escrevi quando fui investigar o Taloc's Hollow.</p>
+<p> </p>
+<p>Eu estava andando pelas galhos de Taloc quando tropecei e meus pertences espalhados por toda parte. Quando finalmente os reuni, percebi que um monte de coisas estava faltando! Eu sei que Shulack foi responsável.</p>
+<p> </p>
+<p>Espere um segundo ... fragmentos! Este não é meu representante ... oh ... isso é interessante. Hmmmm, alguém se esforçou muito nisso. Oh, bem, eu vou mantê -lo de qualquer maneira. Obrigado, [%username].</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre o [%dic:STR_DIC_OBJ_IDElim_Book_Q11461] e trazê -lo para [%dic:STR_DIC_N_Carabel].</p>[%collectitem]</step>
+</steps>
+<p>Dorkin disse que havia encontrado um livro curioso dentro de Taloc, mas ele o expulsou. Parece que o livro é importante para Carabel. Encontre e traga -o para ela.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Dorkin jogou fora um livro que ele encontrou dentro do Taloc. Ele disse que Carabel estava procurando o livro e pediu que você o encontrasse e o levasse embora.</p>
+<p> </p>
+<p>Você encontrou o livro e o trouxe para Carabel, que ficou aliviado, mas aconteceu que o relatório de pesquisa não era dela.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

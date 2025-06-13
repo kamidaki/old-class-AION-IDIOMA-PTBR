@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para um mestre de espírito, a única maneira de alcançar a verdadeira grandeza é descobrir um novo espírito. É por isso que cheguei a Gelkmaros!</p>
+<p> </p>
+<p>Minhas realizações como Daeva podem ter sido sem brilho até agora, mas se eu puder descobrir um espírito exclusivo da Balaurea ... imagine o que isso faria pela minha reputação!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso beneficiaria todos os Asmodae".</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, isso também. Mas de volta ao tópico-preciso de materiais especiais para convocar novos espíritos, mas os perigos aqui em Gelkmaros me impedem de sair sozinho. Eu conheço meus limites!</p>
+<p> </p>
+<p>Se você pode me trazer o que eu preciso, posso fazer a convocação aqui. Terei prazer em lhe dar crédito por ajudar na minha pesquisa. O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem então, a primeira coisa que preciso é 30 intacta [%dic:STR_DIC_I_QUEST_30328a] S. o [%dic:STR_DIC_M_DF4_Cellatu_DR_54_An] Areia [%dic:STR_DIC_M_DF4_CellatuDR_Baby_54_An] S no viscum pântano seria uma fonte ideal.</p>
+<p> </p>
+<p>Com as bexigas opacas, eu deveria ser capaz de convocar um espírito de água balia. Apresse -se de volta!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu vejo. Apenas heróis estabelecidos como você conseguem realizar grandes coisas? Sem tempo para ajudar o rapaz? Entendo.</p>
+<p> </p>
+<p>Você é como todo mundo-não é importante, mas você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você vai se sair bem por conta própria."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe as bexigas opacas, [%username]? Dê a eles aqui!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Essas coisas cheiram terríveis."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei que você ia me ajudar, [%username]. Por que você não ...?</p>
+<p> </p>
+<p>Não, sinto muito. Não tenho o direito de reclamar com meu benfeitor. Sei que você tem coisas mais importantes a fazer.</p>
+<p> </p>
+<p>Por favor, quando puder, mate o [%dic:STR_DIC_M_DF4_Cellatu_DR_54_An] S e o [%dic:STR_DIC_M_DF4_CellatuDR_Baby_54_An] está no pântano de viscum e me traga 30 intactos[%dic:STR_DIC_I_QUEST_30328a] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou trabalhando nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso é exatamente o que eu preciso! Não, não vá, vou tentar uma convocação agora ....</p>
+<p> </p>
+<p>Lá, você viu isso? Não? Oh, claro que você não. O espírito da água apareceu dentro de uma bexiga opaca. Se ao menos eu tivesse usado uma bexiga transparente ....</p>
+<p> </p>
+<p>Bem, eu senti que estava lá, e isso é tudo o que importa. Agora posso convocar um espírito de água balia completamente único, embora muito pequeno. Obrigado!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter 30[%dic:STR_DIC_I_QUEST_30328a] e trazê -los para [%dic:STR_DIC_N_Yumir].</p>[%collectitem]</step>
+</steps>
+<p>Yumir precisa que você recupere 30 bexigas opacas de Cellatus espinhosas e Baby Cellatus, para que ele possa convocar um espírito de água.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yumir quer convocar espíritos exclusivos de Balaurea e precisa de materiais especiais para fazê -lo.</p>
+<p> </p>
+<p>Você derrotou Cellatus, como perguntado e trouxe algumas bexigas opacas.</p>
+<p> </p>
+<p>Yumir convocou um espírito de água, mas era muito pequeno e escondido dentro de uma bexiga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

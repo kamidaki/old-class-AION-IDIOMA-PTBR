@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: esquadrão de limpeza Katalam, [%dic:STR_DIC_N_LDF5_Village_Guard17_D]do[%dic:STR_DIC_W_LDF5b_F1_v17]</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Ordens: punir os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F1]no Katalam do Sul.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], o que aconteceu com os Elyos que provocaram a linha de defesa de Beritra?</p>
+<p> </p>
+<p>Eles também parecem ter isso para a linha de defesa de Beritra.</p>
+<p> </p>
+<p>Os ataques constantes significam que mal descansamos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], estava certo da minha parte pedir isso por isso.</p>
+<p> </p>
+<p>Eu sabia que isso poderia ser feito se lhe perguntassemos, [%username].</p>
+<p> </p>
+<p>Estou pedindo que você continue ajudando.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Elyos que avançaram para o [%dic:STR_DIC_W_LDF5b_SZ_F1]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_LDF5_Village_Guard17_D].</p></step>
+</steps>
+<p>Ordens urgentes: Mate os Elyos que se infiltraram na linha de defesa de Beritra no sul de Katalam e se reportar a Helga.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Elyos direcionaram a linha de defesa de Beritra no sul de Katalam e estão causando problemas onde quer que possam.</p>
+<p> </p>
+<p>Você limpou os Elyos invasores e relatou a Helga.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

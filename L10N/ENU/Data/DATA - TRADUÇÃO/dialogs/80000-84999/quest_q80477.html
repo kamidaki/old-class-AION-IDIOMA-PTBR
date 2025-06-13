@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Saudação. Meu nome é Rowena.</p>
+<p> </p>
+<p>Você tem algo para vestir para o festival Ivankufalla?</p>
+<p> </p>
+<p>Caso contrário, então eu poderá ajudá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você pergunta que tipo de ajuda.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu coloco brasas mágicas que podem ser usadas para acender a fogueira sagrada.</p>
+<p> </p>
+<p>Se você me ajudar a reunir brasas mágicas, eu lhe darei uma túnica branca que você pode usar em festivais e uma coroa de flores silvestres como recompensa.</p>
+<p> </p>
+<p>Eu precisaria de 10 deles ... que tal? Você estaria interessado?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você diz que receberá 10 brasas mágicas.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, muito obrigado. A fogueira sagrada continuará queimando por mais tempo, graças à sua ajuda.</p>
+<p> </p>
+<p>Por favor, pegue -me as brasas mágicas agora, então.</p>
+<p> </p>
+<p>Vou preparar a túnica branca e a coroa de flores silvestres.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, acho que não há nada que possa ser feito então. Vou ter que procurar por outra pessoa ...</p>
+<p> </p>
+<p>Espero que você goste do festival.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, você está de volta.</p>
+<p> </p>
+<p>Você me trouxe as 10 brasas mágicas?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega mais de 10 brasas mágicas.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim, é isso. É exatamente isso!</p>
+<p> </p>
+<p>Isso manterá a fogueira sagrada por mais tempo.</p>
+<p> </p>
+<p>Muito obrigado, verdadeiramente.</p>
+<p> </p>
+<p>Aqui, a túnica branca e a coroa de flores silvestres que eu prometi. Continue, experimente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não parece ter tudo ainda.</p>
+<p> </p>
+<p>Não há necessidade de se apressar. Aceite seu tempo e junte tudo, depois traga -o para mim.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Reúna 10 brasas mágicas e leve tudo para Rowena.</p>[%collectitem]</step>
+</steps>
+<p>Pegue 10 brasas mágicas para Rowena.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe Rowena, que tende a fogueira sagrada, algumas brasas mágicas.</p>
+<p> </p>
+<p>Rowena lhe deu uma túnica branca e uma coroa de flores selvagens em troca.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

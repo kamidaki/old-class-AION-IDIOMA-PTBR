@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Vários sobreviventes de Reian se juntaram à tropa da expedição.</p>
+<p> </p>
+<p>Eu gostaria de cozinhar algo para o Reian no[%dic:STR_DIC_W_DF5_SZ_ID_02]Isso os lembra de casa.</p>
+<p> </p>
+<p>Para fazer isso eu preciso[%dic:STR_DIC_I_quest_25022a] e [%dic:STR_DIC_I_quest_25022b]. Você poderia obter esses ingredientes para mim?</p>
+<p> </p>
+<p>Eles estão com saudades de casa desde que tiveram que deixar o sarpão.</p>
+<p> </p>
+<p>Obviamente, algumas refeições não conseguem compensar a casa que perderam, mas é um bom gesto de nossa amizade, não acha?</p>
+<p> </p>
+<p>Aprendi a preparar o prato com o Sarpan Cooks e estou bastante confiante vou gerenciá -lo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos ver ...</p>
+<p> </p>
+<p>Você me trouxe o [%dic:STR_DIC_I_quest_25022a] e o [%dic:STR_DIC_I_quest_25022b] eu pedi?</p>
+<p> </p>
+<p>Se houver muito pouco, a sopa não tem um sabor agradável.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega os ingredientes.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom. Essa é a quantidade certa.</p>
+<p> </p>
+<p>Por favor, espere um momento.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não tem o [%dic:STR_DIC_I_quest_25022a] e o [%dic:STR_DIC_I_quest_25022b]para mim?</p>
+<p> </p>
+<p>Todos nós vamos morrer de fome.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso deve ser suficiente.</p>
+<p> </p>
+<p>Não sou Reian, mas devo conseguir fazer esta sopa.</p>
+<p> </p>
+<p>Se você não se importa, por favor traga a sopa para [%dic:STR_DIC_N_DF5_Kronag_E], o cientista Reian.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Tenho certeza que você tem muito o que fazer.</p>
+<p> </p>
+<p>Nós também estamos lutando para sobreviver.</p>
+<p> </p>
+<p>Mas ... ainda sentimos falta de Sarpan.</p>
+<p> </p>
+<p>O que é esse cheiro?</p>
+<p> </p>
+<p>Cheira a sopa de comida do mar que era tão popular em Sarpan ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você entrega a sopa e conta a ele sobre o sudo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu vejo...</p>
+<p> </p>
+<p>Eu nunca imaginaria que você faria algo assim por nós.</p>
+<p> </p>
+<p>Isso é ... nunca esqueceremos sua bondade.</p>
+<p> </p>
+<p>Vou contar ao outro Reian sobre isso. Muito obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Trazer [%dic:STR_DIC_I_quest_25022a] e [%dic:STR_DIC_I_quest_25022b]para [%dic:STR_DIC_N_DF5_Swith_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Verifique se ver se [%dic:STR_DIC_N_DF5_Swith_E]terminou de cozinhar.</p></step>
+<step><p visible="[%6]">Traga a sopa de comida do mar no estilo Reian para [%dic:STR_DIC_N_DF5_Kronag_E].</p></step>
+</steps>
+<p>O Swed quer cozinhar um estilo de refeição para acalmar a saudade de casa dos Reians e pediu que você obtenha os ingredientes para ele. Cumprir o pedido do Swed.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Swed queria cozinhar um estilo de refeição para acalmar a saudade de casa dos Reians e pediu que você obtenha os ingredientes para ele.</p>
+<p> </p>
+<p>Você obteve os ingredientes e o sudoeste preparou uma sopa de comida do mar em estilo Reian. Você o trouxe para Kronac na base Rentus, que ficou muito agradecida.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

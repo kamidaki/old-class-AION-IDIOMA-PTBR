@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você está aqui sobre Tuan?</p>
+<p> </p>
+<p>Eu tinha muito o que fazer.</p>
+<p> </p>
+<p>Por favor, diga [%dic:STR_DIC_N_LDF5b_Toan_E]Que não houve ordens para atacar de cima, portanto, não há necessidade de se preocupar com suprimentos por enquanto.</p>
+<p> </p>
+<p>[%username], diga também a ele que a situação aqui não é tão tensa devido à sua assistência.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você está de volta.</p>
+<p> </p>
+<p>Como foi então?</p>
+<p> </p>
+<p>O que Lingaman disse?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">Você passa a mensagem.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu deveria estar em um local apertado, assim como aquele cara!</p>
+<p> </p>
+<p>Mas pode haver um motivo importante para as ordens de ataque que não chegam, essa avaliação está correta.</p>
+<p> </p>
+<p>Obrigado a você, [%username], a situação se tornou mais suportável, e eu posso esquecer esse negócio por um tempo.</p>
+<p> </p>
+<p>No entanto, há um pedido urgente de Makkur, mas não tenho tempo porque tenho que esperar por Lingermun.</p>
+<p> </p>
+<p>Você poderia ir para [%dic:STR_DIC_N_LDF5b_Macur_E] e dê uma olhada em como é a situação?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você deve estar sempre em guarda nas montanhas Sauro.</p>
+<p> </p>
+<p>Você tem que ter cuidado com o exército de Beritra, os desertores de Tiamat e os Elyos.</p>
+<p> </p>
+<p>O que te traz aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Conte a história.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ha ha ha, se você quer dizer o problema, ele já foi resolvido.</p>
+<p> </p>
+<p>Na verdade, houve um pouco de desacordo, e é por isso que pedi ajuda a Tuan.</p>
+<p> </p>
+<p>E graças ao Daeva desta área, o problema foi resolvido.</p>
+<p> </p>
+<p>Você deve estar ocupado. Muito obrigado por realizar a jornada.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Toan_E]%.</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LDF5b_Macur_E]%.</p></step>
+</steps>
+<p>Volte a Tuan, revezar a história de Lingermun e ouvir a próxima história.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Quando você disse a Tuan que Lingaman não poderia montar um ataque porque o comando de ataque ainda não havia chegado, ele disse que queria apoiar Makur primeiro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

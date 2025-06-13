@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Com cozinhar tão bom, você está pronto para ser chamado de especialista.</p>
+<p> </p>
+<p>Eu quero que você receba o título, [%username]. Às vezes, um título pode abrir portas ... sabe o que quero dizer?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Se você diz. Estou pronto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Veja, você poderia servir aos comedores mais escolhidos o mesmo prato e eles diriam que ele tinha um sabor melhor se você tivesse um título.</p>
+<p> </p>
+<p>Vou gostar de escrever uma carta de recomendação para você.</p>
+<p> </p>
+<p>Você está pronto?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Para receber o título, você deve obter a aprovação do governador [%dic:STR_DIC_N_Vidar].</p>
+<p> </p>
+<p>Vou escrever a carta para você. Vá para Vidar e obtenha o título. Em seguida, participe da cerimônia de compromisso. Ah, e leve-o alguns desses baps-ele os amará!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ótimo! Estou nisso!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é muito modesto. Ou talvez você não ache que um título seja importante.</p>
+<p> </p>
+<p>Se você deseja que tudo isso seja seu algum dia ... bem ... você é melhor receber o título de especialista.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar sobre isso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não vê que estou ocupado?</p>
+<p> </p>
+<p>Pergunte a outra pessoa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sobre esta carta de Lainita ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Impressionante, [%username]. Você pode abrir um restaurante em Pandaemonium se for tão bom quanto esta carta diz.</p>
+<p> </p>
+<p>Você pode espalhar alegria com sua culinária. Agora, volte para [%dic:STR_DIC_N_Lainita] e agradeça a ela.</p>
+<p> </p>
+<p>Parabéns. Novo especialista em culinária!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Participe da cerimônia de compromisso especialista realizada por [%dic:STR_DIC_N_Vidar].</p></step>
+</steps>
+<p>O mestre da culinária Lainita recomendou que você visse o governador Vidar para a cerimônia de título de especialista. Então você fez.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lainita, uma mestre de culinária, disse que não tinha mais nada para ensinar e que você alcançou o nível de especialista.</p>
+<p> </p>
+<p>Então você recebeu a carta de recomendação dela. Então você foi ao governador Vidar e recebeu o título de especialista dele depois de participar da cerimônia de compromisso especialista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

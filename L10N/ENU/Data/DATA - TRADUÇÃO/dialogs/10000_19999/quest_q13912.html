@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente:[%dic:STR_DIC_N_Corridor_L_PangeaQuest_E], Administrador no Templo de Honra em Santum, Jurisdição: Pangea</p>
+<p></p>
+<p>2. RECENDIENTE:[%username]</p>
+<p></p>
+<p>3. Comando: conquista uma fortaleza em Pangea, derrotando um[%dic:STR_DIC_E_GAb1_Boss_all].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você realiza a missão.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Pangea é dividido nas quatro regiões de Belus, Aspida, Athanos e Deylon. Somente Daevas experiente deve se aventurar lá.</p>
+<p> </p>
+<p>Conquistar a fortaleza é uma tarefa muito importante. Se você conquistar a fortaleza, contribuirá para a conquista de Pangea.</p>
+<p> </p>
+<p>Como essa tarefa teve que ser concluída especialmente rapidamente, estou pedindo para você aceitar, [%username]. Espero que você não tenha me desapontado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você derrotou um dos generais guardiões das fortalezas. Isso significa que você conquistou a fortaleza! Isso é ótimo!</p>
+<p> </p>
+<p>Graças à sua ajuda, a batalha por Pangea será mais fácil para os Elyos.</p>
+<p> </p>
+<p>Estou muito animado. Conseguir essa vitória foi um feito inacreditável!</p>
+<p> </p>
+<p>[%username], você é realmente digno de sua reputação como herói.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar um[%dic:STR_DIC_E_GAb1_Boss_all]([%2]/1).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_Corridor_L_PangeaQuest_E].</p></step>
+</steps>
+<p>Derrote um dos quatro generais guardiões das fortalezas de Pangea.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você recebeu ordens urgentes da Pernas. Pernas pediu que você eliminasse um dos quatro generais guardiões das fortalezas de Pangea.</p>
+<p> </p>
+<p>Você seguiu a ordem de Pernas e eliminou um dos generais guardiões. Pernas o elogiou muito por sua conquista.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

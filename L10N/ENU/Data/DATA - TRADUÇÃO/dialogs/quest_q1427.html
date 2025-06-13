@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu recebi ordens, [%username]. Ordens que devem ser realizadas, mesmo que eu esteja relutante em fazê -lo. Este mundo derramou sua força vital, Aether, que transforma o natural em algo bastante antinatural.</p>
+<p> </p>
+<p>Talvez eu deva ter me voluntariado para o Santum. Talvez eu devesse ter dedicado minha vida aos cinco, mas Atreia se vira, e eu devo virar com ela ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Er ... algo errado?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>É a floresta de Manduri. Há dois problemas que me pediram para abordar lá. O primeiro é uma superpopulação simples de [%dic:STR_DIC_M_Vespa_21_n] S, mas o segundo ....</p>
+<p> </p>
+<p>Olhe para o chão, [%username]. Olhe para as rochas e o solo-inanimado. Entre na floresta, no entanto-o Aether atraiu algumas dessas coisas inanimadas juntos. O Aether lhes deu vida.</p>
+<p> </p>
+<p>Nós os chamamos[%dic:STR_DIC_M_ElementalEarth2_21_An] S, e embora possamos conceder -lhes liberdade e deixá -los em paz, suas maneiras violentas ameaçam a segurança dos seres humanos viajando. Eles têm que ser destruídos. Você me ajudaria?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Vou esperar aqui. Volte para mim quando seu trabalho estiver pronto.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo.</p>
+<p> </p>
+<p>Destruir aqueles que acabaram de receber a vida é uma coisa terrível de se fazer, mas minhas ordens ainda permanecem. Se você mudar de idéia, volte. Eu preciso de bom[%userclass]é como você para ajudar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo, [%username]?</p>
+<p> </p>
+<p>Não vou perguntar como foi a tarefa; Eu só espero que seu trabalho esteja feito.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Isso é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, você se saiu bem.</p>
+<p> </p>
+<p>Há mais trabalho que precisa fazer e eu gostaria de chamá -lo novamente, se puder. Pegue isso por enquanto-é mais do que merecido.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça as vespinas e espíritos que trazem inquietação na floresta.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Vespa_21_n]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth2_21_An]([%5]/5)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Androkles].</p></step>
+</steps>
+<p>Hunt the Grove Vespines e Moss Spirits para Androkles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Androkles recebeu uma ordem da fortaleza para caçar vespinas e espíritos de musgo, algo que o derrotou consideravelmente.</p>
+<p> </p>
+<p>Você caçou com sucesso para ele e foi convidado a voltar quando tiver tempo suficiente, pois mais trabalho precisa ser feito na floresta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

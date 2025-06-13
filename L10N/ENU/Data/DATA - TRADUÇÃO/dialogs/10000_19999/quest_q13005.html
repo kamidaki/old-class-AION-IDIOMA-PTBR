@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você poderia me ajudar?</p>
+<p> </p>
+<p>Recebi a tarefa de investigar o campo de neve lamentando, que é o que estou fazendo.</p>
+<p> </p>
+<p>Mas[%dic:STR_DIC_M_LDF5B_A3_SoulStone_63_An] está me interrompendo tanto na minha investigação que não posso realmente levar mais.</p>
+<p> </p>
+<p>Se você se livrar de [%dic:STR_DIC_M_LDF5B_A3_SoulStone_63_An], Eu poderia concluir minha tarefa, [%username].</p>
+<p> </p>
+<p>Você poderia me ajudar?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Acabei de me acostumar com Balaurea e agora Katalam agora está bem diferente novamente.</p>
+<p> </p>
+<p>O trabalho da força expedição é investigar a região, mas a área é tão diferente que sou cautelosa.</p>
+<p> </p>
+<p>Se você eliminar as muralhas ametgolem por aqui, poderei realizar a tarefa sozinho.</p>
+<p> </p>
+<p>Como está o [%dic:STR_DIC_M_LDF5B_A3_SoulStone_63_An]importando?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Tudo tratado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muito obrigado por se envolver, mesmo que tudo tenha sido devido à minha falta de habilidade.</p>
+<p> </p>
+<p>Sempre estive confiante em explorar áreas não civilizadas, mas Katalam realmente não é fácil.</p>
+<p> </p>
+<p>Graças a você agora posso realizar minha missão sem nenhum aborrecimento. Obrigado novamente.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_A3_SoulStone_63_An]([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5b_Tes_E]%.</p></step>
+</steps>
+<p>Para ajudar o Tess solitário, o AMETGOLEM BULKARK que permanece no caminho deve ser removido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tes, que faz parte da tropa da expedição, pediu que você eliminasse as rampartes difíceis que estavam interferindo na investigação.</p>
+<p> </p>
+<p>Depois que você matou os Ametgolems, o TES agradeceu sua ajuda, o que significava que ele agora poderia realizar a tarefa sozinha.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

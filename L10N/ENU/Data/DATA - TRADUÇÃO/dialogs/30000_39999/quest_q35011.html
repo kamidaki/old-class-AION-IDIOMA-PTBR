@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para os olhos de [%username] Apenas:</p>
+<p> </p>
+<p>Este é um pedido urgente da Sofne, um membro secreto da Ordem do Alabastro. Ela precisa de alguém discreto para carregar algumas informações importantes demais para anotar.</p>
+<p> </p>
+<p>[%username], precisamos que você fale com[%dic:STR_DIC_N_Sofne] e trazer sua mensagem de volta para [%dic:STR_DIC_E_35007].</p>
+<p> </p>
+<p>Seu código para esta missão é "Pluma Red Feather".</p>
+<p> </p>
+<p>Mova -se rapidamente e divulgue nada!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido e guarde -o.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Todo esse balaur ... eles me lembram a Guerra do Milênio.</p>
+<p> </p>
+<p>Sim?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"Pluma Red Feather."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço aion, o pedido enviou você!</p>
+<p> </p>
+<p>Silenciosamente agora e ouça de perto. É imperativo que você entregue minha mensagem literalmente.</p>
+<p> </p>
+<p>Nevoeiro preto, nevoeiro cinza, chama vermelha, seta dourada!</p>
+<p> </p>
+<p>Você tem isso? Mencione isso a ninguém.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Mencione o quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Não fique tão longe! O que o inimitável Sofne lhe disse?</p>
+<p> </p>
+<p>Chegue -se mais perto e sussurre sua mensagem no meu ouvido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Fog preto, nevoeiro cinza, chama vermelha, seta dourada."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Esse é um código apenas o uso de escalões mais altos do Alabaster Ordem! Devo conferir com Typhon e os outros.</p>
+<p> </p>
+<p>Nunca fale disso novamente ... para ninguém. Você nunca viu Sofne. Você nunca ouviu esse código.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Sofne].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_E_35007].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Ordem da Alabastro enviou você a Sofne, um membro da Ordem, para transmitir uma mensagem importante demais para ser escrita ou confiável para qualquer pessoa com lágrimas.</p>
+<p> </p>
+<p>Depois de ver Sofne, você entregou a mensagem codificada a Aiskyholos, que correu para conferir com os outros membros de alto escalão da Ordem de Alabastro.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

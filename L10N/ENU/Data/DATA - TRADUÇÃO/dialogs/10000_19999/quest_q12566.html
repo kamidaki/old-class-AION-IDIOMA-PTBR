@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Ouvi dizer que eles estão apressadamente procurando por [%dic:STR_DIC_N_LDF5a_Mycenae_E].</p>
+<p> </p>
+<p>Estar a caminho rapidamente; Parece interessar a uma tarefa importante.</p>
+<p> </p>
+<p>Como ouvi por acaso, parece preocupação uma tarefa em relação à tribo Rune.</p>
+<p> </p>
+<p>Não sei os detalhes exatos, provavelmente deveria me perguntar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage accept="true" name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu ouvi isso [%dic:STR_DIC_N_LDF5a_Mycenae_E] está procurando por você.</p>
+<p> </p>
+<p>Estar a caminho rapidamente; Parece interessar a uma tarefa importante.</p>
+<p> </p>
+<p>Como ouvi por acaso, trata -se de uma tarefa sobre a tribo Rune.</p>
+<p> </p>
+<p>Mas não tenho exatamente certeza. Então você deve perguntar e ter certeza.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio de Minoa? Oh, então você não sabe nada com certeza.</p>
+<p> </p>
+<p>É que uma nova tarefa está esperando por você, [%username].</p>
+<p> </p>
+<p>Recentemente, houve um boato de que o templo das lágrimas é uma passagem para o Katalam Underground.</p>
+<p> </p>
+<p>Você precisa verificar se é simplesmente um boato ou se realmente há uma passagem.</p>
+<p> </p>
+<p>Se você for para o lado de trás do templo das lágrimas, há[%dic:STR_DIC_W_LDF5a_SensoryArea_Q12566].</p>
+<p> </p>
+<p>Você poderia ir verificar se a conversa é mais do que apenas fofoca?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">Você concorda de acordo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você veio do templo das lágrimas?</p>
+<p> </p>
+<p>O que está acontecendo com a investigação que contei?</p>
+<p> </p>
+<p>Houve realmente um caminho no Katalam Underground?</p>
+<p> </p>
+<p>Estou tão curioso que automaticamente faço muitas perguntas.</p>
+<p> </p>
+<p>Por favor, me diga como foi.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o que viu.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, há um túnel que caiu e foi bloqueado?</p>
+<p> </p>
+<p>HM, o que pode ser feito sobre isso ...?</p>
+<p> </p>
+<p>Isso significa que isso foi usado no passado.</p>
+<p> </p>
+<p>Mas agora ninguém será capaz de descobrir se isso realmente leva ao Katalam Underground.</p>
+<p> </p>
+<p>Isso precisa ser examinado mais de perto mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5a_Mycenae_E].</p></step>
+<step><p visible="[%3]">Vá para o [%dic:STR_DIC_W_LDF5a_G3] e investigar o [%dic:STR_DIC_W_LDF5a_SensoryArea_Q12566] Atrás do templo das lágrimas.</p></step>
+<step><p visible="[%6]">Relate o que você viu[%dic:STR_DIC_N_LDF5a_Mycenae_E].</p></step>
+</steps>
+<p>Existe uma nova missão. Então vá ver Mikene.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Minoa disse que Mikene quer vê -lo com urgência, provavelmente porque ele tem um trabalho importante para você. Você deveria ir até ele.</p>
+<p> </p>
+<p>Mikene disse que a notícia é que o templo das lágrimas é uma passagem para o Katalam Underground. Ele pediu que você esclarecesse o assunto.</p>
+<p> </p>
+<p>Quando você investigou atrás do templo das lágrimas, conforme instruído por Mikene, encontrou os traços de uma passagem em ruínas.</p>
+<p> </p>
+<p>Como você descreveu o que você viu para Mkene, ele sugeriu que isso provavelmente fosse usado como uma passagem ao mesmo tempo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

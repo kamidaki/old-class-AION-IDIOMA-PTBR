@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, essa recompensa.</p>
+<p> </p>
+<p>Eu tinha duas opções com você: armadura ou moeda. Um mais imediato, mas o outro é algo que você pode usar como quiser. Também é muito mais fácil de transportar. Então, você tem uma moeda.</p>
+<p> </p>
+<p>Você parece confuso. Nunca usou uma moeda antes?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Bem, eu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Pare de gagueira! Aqui está como as moedas funcionam.</p>
+<p> </p>
+<p>Primeiro, pense neles como apenas mais um tipo de moeda. A diferença é que você não pode usar moedas em lojas normais, mas apenas com agentes de recompensa de contribuição ou agentes de administração como eu.</p>
+<p> </p>
+<p>Você pode comprar uma variedade de itens com moedas, como armadura, armas e poções. Eles também são coisas de primeira qualidade. Pronto para experimentá -los?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agora, pegue essa moeda para Lohaban. Não posso sentir falta dele. Ele está literalmente ao meu lado.</p>
+<p> </p>
+<p>Compre o tesouro de Lohaban e leve para mim.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Está tudo bem."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não? Moedas são muito complicadas para você?</p>
+<p> </p>
+<p>Talvez você deva se concentrar em coisas mais fáceis por enquanto, como respirar, caminhar em linha reta ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"... não lhe dando um olho roxo ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Como você se saiu?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, eu preciso do tesouro de Lohaban. Ele provavelmente o listou separadamente de suas ações principais.</p>
+<p> </p>
+<p>Tenha outro olhar e volte quando você o comprou.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendi."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito!</p>
+<p> </p>
+<p>Agora você pode comprar o que quer que lhe dê uma fantasia. Tenho itens para aulas de combate, como gladiadores, templários, assassinos e guardas florestais. Lohaban tem itens para classes de mágica, como clérigos, cantores, feiticeiros e mestres de espírito.</p>
+<p> </p>
+<p>Certifique -se de falar com o oficial de administração certo para sua aula!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Use sua moeda para comprar o tesouro de Lohaban e depois entregá -la [%dic:STR_DIC_N_Lateni].</p>[%collectitem]</step>
+</steps>
+<p>Use sua moeda para comprar o tesouro de Lohaban.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lateni ensinou o sistema de moedas e pediu que você comprasse um item de Lohaban para provar que você entendeu.</p>
+<p> </p>
+<p>Você voltou com o tesouro de Lohaban, para o deleite de Lateni.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

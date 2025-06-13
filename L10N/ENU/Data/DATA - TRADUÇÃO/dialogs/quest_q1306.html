@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q1306</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mais ordens. Ouça isso. "Devido ao seu excelente trabalho na floresta de Manduri, o General Telêmaco autorizou você a continuar livrando a área das vespinas e espíritos de musgo que ameaçam a paz".</p>
+<p> </p>
+<p>Centurion Maximus me atormenta deliberadamente? Eu não posso fazer tudo isso sozinho!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está procurando mais ajuda então?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim eu sou. Se você ficar feliz em continuar seu trabalho, isso seria um alívio para mim. Pelo menos dessa maneira, eu não precisaria envolver outras pessoas nesse trabalho sujo e infeliz.</p>
+<p> </p>
+<p>O que você diz?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username].</p>
+<p> </p>
+<p>Bem, então, há pouco mais a ser dito. Volte quando seu trabalho estiver pronto.</p>
+<p> </p>
+<p>Fé e armas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e armas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O trabalho inicial foi angustiante? Seu coração sangrou pelos infelizes que você estava destruindo?</p>
+<p> </p>
+<p>Não posso forçá -lo a fazer o trabalho e respeito sua decisão. Dito isto, se você mudar de idéia, volte e me veja. Sem dúvida, ainda vou precisar da sua ajuda.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa sorte com o trabalho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, você já está de volta.</p>
+<p> </p>
+<p>Seu trabalho está feito? As cotas foram preenchidas?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_clap;HACTION_SELECT_QUEST_REWARD">"Sim, eu fiz tudo de mim."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Algum dia espero que este negócio sangrento termine, e terei que comprar uma ou duas bebidas na Dionysia Tavern, em Santuário.</p>
+<p> </p>
+<p>Se você pode suportar mais do mesmo, tenho mais trabalho para você. Por enquanto, pegue isso. É realmente merecido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate as vespinas e espíritos que tornam a floresta insegura.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_Vespa_21_n]([%2]/4)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_ElementalEarth2_21_An]([%5]/6)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Androkles].</p></step>
+</steps>
+<p>Hunt Grove Vespines e Humus Spirits para Androkles.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>[Repeat Quest]</p>
+<p> </p>
+<p>Androkles havia recebido mais ordens da fortaleza para caçar vespinas e espíritos de musgo, algo que o pegou consideravelmente.</p>
+<p> </p>
+<p>Você caçou com sucesso por ele e foi convidado a voltar no futuro quando tiver tempo, como mais trabalho necessário para fazer na floresta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

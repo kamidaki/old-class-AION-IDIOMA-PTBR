@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q20062</questid>
+<questname>???</questname>
+<questtype>미입력</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Acabei de ouvir de meus cientistas. Infelizmente, tão forte quanto a célula de potência que você encontrou, não é forte o suficiente.</p>
+<p> </p>
+<p>Eles precisam de mais itens para monitorar alguma das fontes de Tiamat. Eu odeio pedir para você ajudar novamente, mas ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Não, por favor. Como posso ajudar?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você é uma linha de vida dentro de um mar de apatia! Obrigado!</p>
+<p> </p>
+<p>Como eu disse, precisamos de mais materiais para ajudar a alimentar os monitores. Desta vez, porém, eu sei exatamente a coisa! o [%dic:STR_DIC_M_LDF4b_T1_Monster_M_Flyingeye] S na cratera gigante são seres inerentemente mágicos, com[%dic:STR_DIC_I_QUEST_10060b] S que estão cheios de energia para nós aproveitarmos.</p>
+<p> </p>
+<p>O que você diz? Você vai ajudar?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Claro. É a maneira asmodiana."</act>
+</selects>
+<voice file="Q20062-1.ogg"></voice>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>De volta tão cedo? Eu ficaria surpreso, mas eu te conheço há muito tempo para esperar resultados tão rápidos.</p>
+<p> </p>
+<p>Oh! Não estou me adiantando, estou? Você encontrou os Oculazens?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Eu fiz. Aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Perfeito! Agora só precisamos instalar o dispositivo.</p>
+<p> </p>
+<p>Eu já coloquei uma ala perto do[%dic:STR_DIC_W_LDF4b_SZ_T3_S7]. É aí que o monitor deve estar posicionado, então, por favor, leve o núcleo de vigilância para o [%dic:STR_DIC_E_LDF4B_ItemUseArea_Q20062A], Ative -o e você definirá tudo o que planejamos em movimento. Lembre -se, a enfermaria aparecerá como um anel azul no chão, mas será invisível para o Balaur.</p>
+<p> </p>
+<p>Estou contando com você, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Nada está diante de mim."</act>
+</selects>
+<voice file="Q20062-2.ogg"></voice>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, isso não está certo.</p>
+<p> </p>
+<p>Por favor, corra para o [%dic:STR_DIC_M_LDF4b_T1_Monster_M_Flyingeye] S e reunir um[%dic:STR_DIC_I_QUEST_10060b]para nós.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu voltarei."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo é feito?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sim. O monitor foi instalado corretamente."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom! Agora, tudo o que podemos fazer é esperar enquanto o monitor estuda o coração da ira. Espere e aço a nós mesmos.</p>
+<p> </p>
+<p>Você fez excelentemente, [%username]. Notificaremos você assim que o núcleo de vigilância nos dê algo para continuar.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para [%dic:STR_DIC_W_LDF4b_SZ_OP_A4], e converse com Garnon.</p></step>
+<step><p visible="[%3]">Destruir um dos[%dic:STR_DIC_M_LDF4b_T1_Monster_M_Flyingeye] está na grande cratera e remova seu[%dic:STR_DIC_I_QUEST_10060b]Para Garnon.</p>[%collectitem]</step>
+<step><p visible="[%6]">Vá para o [%dic:STR_DIC_W_LDF4b_SZ_T3_S7] e instalar o núcleo de vigilância dentro de uma das enfermarias mágicas[%8].</p></step>
+<step><p visible="[%9]">Vá para [%dic:STR_DIC_W_LDF4b_SZ_OP_A4] e reportar a Garnon.</p></step>
+</steps>
+<p>Pedido: você precisa de mais informações antes de agredir o coração da ira. Veja Garnon.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Garnon lhe disse que o monitor precisava de mais energia e encarregou você de reunir um globo ocular de um Oculazen. Você fez o que ela perguntou, então começou o monitor de sucesso fora do coração da ira. Agora, como Garnon apontou, tudo o que você pode fazer é esperar ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Progresso da missão: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

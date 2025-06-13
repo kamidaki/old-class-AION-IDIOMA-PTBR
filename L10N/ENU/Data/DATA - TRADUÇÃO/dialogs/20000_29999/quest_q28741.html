@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>- ordens urgentes -</p>
+<p></p>
+<p>Remetente: knut, tropa de expedição asmodiana</p>
+<p></p>
+<p>Destinatário:[%username]</p>
+<p></p>
+<p>Comando: elimine os inimigos para garantir a rota de infiltração.</p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>As tropas de reforço devem estar aqui em breve ... mas não estou ouvindo nada da vanguarda.</p>
+<p> </p>
+<p>Existem problemas em todos os lugares. É importante fazer contato com a vanguarda.</p>
+<p> </p>
+<p>Você derrotou o [%dic:STR_DIC_M_IDRaksha_solo_Course_C]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você conseguiu muito. Obrigado por realizar esta ordem urgente.</p>
+<p> </p>
+<p>Você se saiu muito bem.</p>
+<p> </p>
+<p>Obrigado por tudo, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_IDRaksha_solo_Course_C]([%2]/50).</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_N_DF5_Cnut_E].</p></step>
+</steps>
+<p>Ordens urgentes: Derrote os inimigos e prenda a rota de infiltração. Em seguida, relate -se a Knut.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>De acordo com as ordens urgentes, você afastou o inimigo da rota de infiltração e depois relatou a Knut.</p>
+<p> </p>
+<p>Knut agradeceu e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

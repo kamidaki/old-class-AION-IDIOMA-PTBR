@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ainda não estou muito familiarizado com Inggison, por isso receio que não possa oferecer nenhum conhecimento profundo sobre este lugar.</p>
+<p> </p>
+<p>Eu posso pelo menos guiá -lo na direção certa, no entanto. Ainda interessado?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Estou sempre interessado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Fé e armas, [%username], é bom ouvir isso. Primeiro, você precisará encontrar o [%dic:STR_DIC_E_LF4_DragonTablet_Q30205] S.</p>
+<p> </p>
+<p>Você não pode sentir falta deles-eles são monumentos gravados com a história dos senhores do dragão. E essa história pode lançar um pouco de luz sobre nosso inimigo.</p>
+<p> </p>
+<p>Vou precisar de brigas de todos os monumentos. Você pode lidar com isso?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Há um[%dic:STR_DIC_E_LF4_DragonTablet_Q30205]Para cada um dos senhores do dragão ... mas apenas quatro foram encontrados até agora. Na verdade, ainda estamos tentando encontrar o de Tiamat.</p>
+<p> </p>
+<p>Qualquer um deles pode conter as pistas que estamos procurando, então me traga brigas dos quatro. Eles estão espalhados por toda a inggison.</p>
+<p> </p>
+<p>E mantenha suas de volta ao sol, [%username]. Isso ainda é uma terra sem documentos ... espere forças hostis em todos os lugares.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Fé e braços!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Percebo que correr por aí esfregando as gravuras dos monumentos inimigos não é a tarefa mais aventureira em Inggison, [%username]....</p>
+<p> </p>
+<p>Mas estamos aprendendo muito sobre esses selvagens pela maneira como eles honram seus senhores!</p>
+<p> </p>
+<p>Não vou deixar Outremus me culpar por isso. Se ele perguntar, estou dizendo a ele que você se recusou a fazê -lo. Isso é justo, Daeva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Essa é a sua ligação ...."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Fico feliz em ver que você está de volta, [%username]. Eu estava ficando um pouco preocupado.</p>
+<p> </p>
+<p>Se um Daeva acabar faltando neste local, há motivos para enviar a festa de busca.</p>
+<p> </p>
+<p>Você localizou todos os monumentos do Senhor Dragão? Deixe -me ver aquelas brigas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão os brigas, Daeva."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Espero siel que você já encontrou os monumentos do Senhor Dragão e obteve essas brigas, [%username]?</p>
+<p> </p>
+<p>Por favor, diga -me que você encontrou pelo menos metade deles agora .... e por favor, não me diga que você ainda não saiu!</p>
+<p> </p>
+<p>A raiva de Outremus não conhece limites. Se você for e me pegar o [%dic:STR_DIC_E_LF4_DragonTablet_Q30205]Recupeiras agora, talvez possamos esquecer sua pequena soneca na floresta.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe, vou fazer isso agora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estes são interessantes, [%username].... Eu reconheço alguns desses símbolos.</p>
+<p> </p>
+<p>Eu esperava que pelo menos um deles contestasse algumas dicas sobre o templo de Beshmundir ... mas eles não o fazem. Este menciona um santuário, este outro templo ...</p>
+<p> </p>
+<p>Mas nada sobre Beshmundir. É como se eles deixassem deliberadamente toda a referência a ele. Parece que você terá que pesquisar em outro lugar, Daeva.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter brigas de [%dic:STR_DIC_E_LF4_DragonTablet_Q30205] e trazê -los para [%dic:STR_DIC_N_Pilomenes].</p>[%collectitem]</step>
+</steps>
+<p>Os monumentos do Dragão Lord podem conter informações sobre o aviso de Isbariya. Tome brigas dos monumentos para os pilomenos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Pilomenos disseram que as lendas do Balaur podem conter pistas úteis e ele pediu que você tomasse brigas de monumentos de Senhor Dragão espalhados em torno de Inggison.</p>
+<p> </p>
+<p>No entanto, quando você trouxe as brigas para ele, ele disse que eles não continham informações úteis.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

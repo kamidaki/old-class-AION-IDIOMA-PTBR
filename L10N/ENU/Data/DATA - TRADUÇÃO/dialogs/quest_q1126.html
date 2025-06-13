@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], vamos conversar por um momento. Vai tirar minha mente ... minhas feridas.</p>
+<p> </p>
+<p>Você é um mercenário, como eu. Passamos a maior parte do tempo aqui selecionando a vida selvagem local, e eu cheguei a encontrar o [%dic:STR_DIC_E_LF1_name] Arredores intrigantes.</p>
+<p> </p>
+<p>Esta região é remota, por isso viu poucas batalhas. Como resultado, há ruínas não perturbadas aqui. E os animais ... são maravilhosos! Quando eles não estão nos atacando, é isso. Nghh ... caramba, aquele worg.</p>
+<p> </p>
+<p>Você viu o [%dic:STR_DIC_MLA12_1]? Eles são uma espécie incrível única para ... ah ... meu ... de volta ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Você está bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou melhorando. Minha febre foi. A ferida ainda ... queima, no entanto.</p>
+<p> </p>
+<p>Enfim, eu gostaria de estudar o [%dic:STR_DIC_MLA12_1]. Há rumores de que eram plantas simples, transformadas pelo cataclismo ... mutado!</p>
+<p> </p>
+<p>Você vai me ajudar a estudar essas criaturas, [%username]? Queria alguns espécimes. Ou ... melhor, seus corações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_comfort;HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sabia que você tinha uma mente curiosa.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_MLA12_1] S roam no[%dic:STR_DIC_FLA06]. Eu gostaria de ter alguns corações para o meu caderno de anatomia.</p>
+<p> </p>
+<p>Uma curiosidade científica de refletir ... enquanto eu me curo. Para pensar-uma planta com um coração!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Volto em breve. Você acabou de ler e descansar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma vergonha.</p>
+<p> </p>
+<p>Não devo esperar que os mercenários compartilhem meu entusiasmo por estudos naturais. Embora eu não tenha nascido naturalista ... meu amor por este mundo cresceu com o tempo.</p>
+<p> </p>
+<p>É melhor você continuar, [%username]. Mas olhe mais de perto o mundo ao seu redor, não é?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tente descansar um pouco, Melponeh."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está de volta!</p>
+<p> </p>
+<p>Você encontrou ... o [%dic:STR_DIC_QILA70] S?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Está tudo bem?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não, [%username], Assim, [%dic:STR_DIC_QILA70] S, frescos!</p>
+<p> </p>
+<p>Certifique -se de trazer vários, o suficiente para ver diferenças individuais, você sabe.</p>
+<p> </p>
+<p>Eu acho que preciso descansar agora ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe! Vou continuar olhando."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], estes são perfeitos!</p>
+<p> </p>
+<p>Agora eu posso estudá -los e aprender se eles surgiram do cataclismo ... ou evolução natural ... um projeto perfeito para acalmar uma mente febril!</p>
+<p> </p>
+<p>Obrigado, amigo. Por favor ... tome isso como um Ficha. Vou mencionar você no meu artigo também.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para o [%dic:STR_DIC_FLA06] e reunir -se [%dic:STR_DIC_QILA70] para [%dic:STR_DIC_LA11] estudar.</p>[%collectitem]</step>
+</steps>
+<p>[%dic:STR_DIC_LA11], um naturalista, quer alguns[%dic:STR_DIC_QILA70] S estudar. Vá para a Agaric Spore Road e caça fungos destemidos!</p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Melponeh é um historiador amador especializado na história de Sapien. Ela pediu alguns[%dic:STR_DIC_MLA12_1]corações para estudar enquanto ela cura de uma ferida infectada.</p>
+<p> </p>
+<p>Você caçou fungos na estrada Agaric Sore e trouxe seus corações para Melponeh, que agora pode estudar o efeito do cataclismo no mundo natural.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

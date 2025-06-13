@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>No começo, hesitei no pensamento de perguntar a você ... você é o único que pode me ajudar, [%username].</p>
+<p> </p>
+<p>[%dic:STR_DIC_M_DF5_C_QMerman_NM_As_58_An]Barnur matou! Quero se vingar de Barnur para que ele possa finalmente descansar em paz.</p>
+<p> </p>
+<p>Além de você, [%username], não há ninguém que entenda os aquans.</p>
+<p> </p>
+<p>Todo mundo apenas pensa que são inimigos.</p>
+<p> </p>
+<p>Você vai realizar meu pedido?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado.</p>
+<p> </p>
+<p>Quero que os Daevas saibam que havia um aquano chamado Barnur que os ajudou.</p>
+<p> </p>
+<p>Por favor, diga a Centurion[%dic:STR_DIC_N_DF5_Redelf_E], que há um aquano que quer nos ajudar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem-vindo, [%username].</p>
+<p> </p>
+<p>Você não estava no seu caminho para encontrar [%dic:STR_DIC_N_DF5_Muwel_E]?</p>
+<p> </p>
+<p>Há alguma notícia de Muel?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT3_1">Você repita o que Muel disse.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Muel disse isso?</p>
+<p> </p>
+<p>Então você deve definitivamente dizer ao comandante [%dic:STR_DIC_N_DF5_Grangund_E].</p>
+<p> </p>
+<p>Só de pensar em Muel ... acho que fizemos uma injustiça aos aquans ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>É você, [%username].</p>
+<p> </p>
+<p>Você teve algum problema com a missão?</p>
+<p> </p>
+<p>Deixe -me saber se você precisar de alguma coisa, mesmo que seja apenas algo pequeno.</p>
+<p> </p>
+<p>Farei qualquer coisa por alguém como você, [%username], mesmo que eu esteja muito ocupado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata sobre Muel.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então é assim que é. Eu não esperava isso dos aquans.</p>
+<p> </p>
+<p>Quero dizer, o Conselho de Anciãos Aquan nos ofereceu amizade ... talvez esses aquans sejam diferentes dos outros.</p>
+<p> </p>
+<p>Muel deve ter sofrido muito.</p>
+<p> </p>
+<p>Acho que devo levar os aquans a sério.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DF5_C_QMerman_NM_As_58_An] e se vingar de Muel ([%2]/1).</p></step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_DF5_Muwel_E].</p></step>
+<step><p visible="[%6]">Fale com [%dic:STR_DIC_N_DF5_Redelf_E].</p></step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_DF5_Grangund_E].</p></step>
+</steps>
+<p>Cumpre o desejo de Muel de se vingar e punir Bellin the Aquan.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Muel pediu que você punisse Bellin porque ele matou Barnur.</p>
+<p> </p>
+<p>Você cumpriu o desejo de Muel e matou Bellin. Muel agradeceu e lhe falou sobre um aquano que queria ajudar os asmodianos.</p>
+<p> </p>
+<p>Quando você transmitiu o que Muel disse a Redalf, ele ficou surpreso e agradeceu.</p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

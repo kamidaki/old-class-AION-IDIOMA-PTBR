@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, eu só tive a pior sorte!</p>
+<p> </p>
+<p>Eu quase peguei um gadill. Eu estava tão perto!</p>
+<p> </p>
+<p>E quando eu estava prestes a pousar, tropecei na minha caixa de ferramentas e os peixes escaparam!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Isso é terrível!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, é terrível! Pior de tudo, quando chutei minha caixa de ferramentas de pesca, ela caiu na água! Eu olhei na água, mas não vi. Talvez tenha sido varrido pela corrente.</p>
+<p> </p>
+<p>Meu[%dic:STR_DIC_OBJ_ToolBox_Q2497]contém[%dic:STR_DIC_I_QUEST_2497a], que eu preciso. O problema é ... bem, eu não consigo nadar.</p>
+<p> </p>
+<p>Se você puder nadar bem, você encontraria para mim?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Parece que deveria estar em algum lugar por aqui. Talvez para o leste ....</p>
+<p> </p>
+<p>Ele também contém uma isca cara, embora provavelmente seja de pouco valor para pessoas que não sabem sobre pescar.</p>
+<p> </p>
+<p>Sem ele, posso sentir falta da minha única chance de finalmente pegar um Gadill!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você vai pegar. Não se preocupe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Até você acha que eu sou patético, não é?</p>
+<p> </p>
+<p>Um simplório cuja única preocupação é tentar pegar peixes no meio de uma guerra.</p>
+<p> </p>
+<p>Nem todos os Daevas precisam ir à guerra, você sabe ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez você deva pegar outro hobby?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou meu[%dic:STR_DIC_OBJ_ToolBox_Q2497]?</p>
+<p> </p>
+<p>Foi o [%dic:STR_DIC_I_QUEST_2497a]na caixa?</p>
+<p> </p>
+<p>Onde você o encontrou?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Foi fácil encontrar. Aqui está."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Então você acha que não foi para o Oriente? Que tal pesquisar no oeste?</p>
+<p> </p>
+<p>Para ser sincero, não tenho ideia de qual direção foi. Onde em Atreia minha caixa de ferramentas poderia estar?</p>
+<p> </p>
+<p>A isca que perdi foi especialmente ordenada e bastante cara. Pode não estar disponível agora.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Relaxe, eu vou encontrar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, esta é a minha isca de pesca!</p>
+<p> </p>
+<p>Obrigado. Ei, acabei de ver um gadill passando!</p>
+<p> </p>
+<p>Bem, na verdade eu vejo isso dezenas de vezes por dia ... mas agora posso pegá -lo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Encontre a isca no[%dic:STR_DIC_OBJ_ToolBox_Q2497] e trazê -lo para [%dic:STR_DIC_N_Lif].</p>[%collectitem]</step>
+</steps>
+<p>Lif estava tão empolgado enquanto pescava Gadill que chutou sua caixa de ferramentas que continha sua isca de pesca. Encontre a caixa de ferramentas para LIF.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Lif, um daeva de pesca, estava tão empolgado ao ver um gadill que chutou a caixa de ferramentas de pesca na água.</p>
+<p> </p>
+<p>Ela procurou a caixa de ferramentas, mas não conseguiu encontrá -la porque não consegue nadar.</p>
+<p> </p>
+<p>Você encontrou a caixa de ferramentas e trouxe a isca de pesca para ela, então ela agradeceu e disse que daria outra tentativa a essa pesca de gadill.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

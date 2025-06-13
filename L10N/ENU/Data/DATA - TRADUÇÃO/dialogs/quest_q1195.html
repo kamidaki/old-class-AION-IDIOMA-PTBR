@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não temos certeza do que o Krall está planejando, mas sempre que se apossaram do Odium, eles inevitavelmente tentam usá -lo para abrir portais para o abismo.</p>
+<p> </p>
+<p>Eles desejam a liderança de seus mestres de Balaur, você vê. Se o Balaur fosse adquirido, o Krall seria imparável.</p>
+<p> </p>
+<p>Temos informações suficientes para o Santum enviar reforços, que foram formalmente solicitados-novamente-mas devemos começar agora. Recuso -me a me esconder na cidadela e esperar!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"O que devemos fazer?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei muito no assunto. O exército de Krall é como uma besta ... e devemos derrubar sua cabeça. Devemos eliminar [%dic:STR_DIC_MLA37].</p>
+<p> </p>
+<p>Isso não será fácil. Como sabemos em seu relatório, o covil é fortemente guardado. O próprio Kraka é um guerreiro veterano-forte, cruel e letalmente inteligente.</p>
+<p> </p>
+<p>Sem um líder, porém, o Krall cairá.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_charge;HACTION_ASK_QUEST_ACCEPT">"Então Kraka deve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Um dia devemos beber para aquele seu espírito de luta, [%username]. Vou precisar da sua ajuda e de seus aliados mais uma vez.</p>
+<p> </p>
+<p>Você está familiarizado com a área dentro e já provou que pode ser confiável.</p>
+<p> </p>
+<p>Você está disposto a cortar a cabeça da besta Krall?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente.</p>
+<p> </p>
+<p>Eu te avisaria sobre o perigo, mas você já ouviu o suficiente sobre esse assunto.</p>
+<p> </p>
+<p>Que asas de Lady Ariel te protejam, [%username].</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Obrigado."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perdeu sua confiança, não é?</p>
+<p> </p>
+<p>Eu não teria lhe dado essa missão se não acreditasse em suas habilidades. Se você não se sentir pronto, no entanto, eu entendo.</p>
+<p> </p>
+<p>Fale comigo novamente quando sua confiança retornar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Você voltou ... Eu temia ter enviado você à sua morte!</p>
+<p> </p>
+<p>O que aconteceu?</p>
+<p> </p>
+<p>Você encontrou Kraka? Ele é ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ele é morto."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Magnífico. Simplesmente magnífico. Eu não sei o que mais dizer!</p>
+<p> </p>
+<p>O santuário ouvirá disso imediatamente. Kraka está morto, e todos conhecerão o nome do Daeva que liderou a luta contra ele.</p>
+<p> </p>
+<p>Todo o Verteron está em sua dívida, [%username]. Estou honrado e humilhado por ter trabalhado com você.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_MLA37]do Tursin Krall ([%2]/1).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_LA19].</p></step>
+</steps>
+<p>Assassinado Kraka, o chefe de Tursin.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Para comprar algum tempo, Spatalos ordenou que você eliminasse Kraka enquanto os reforços estão a caminho. Sem o chefe deles, o exército de Krall desmoronaria, seus planos em ruínas.</p>
+<p> </p>
+<p>Você reuniu alguns aliados, foi à guarnição de Tursin e, depois de uma luta épica, conseguiu matar Kraka.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

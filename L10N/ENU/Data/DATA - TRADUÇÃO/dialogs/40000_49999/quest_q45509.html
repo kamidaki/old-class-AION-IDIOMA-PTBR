@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Ordem de operação -</p>
+<p></p>
+<p>De: The Blood Crusade</p>
+<p></p>
+<p>Para: Crusader [%username]</p>
+<p></p>
+<p>A Cruzada Sangue emitiu uma Ordem Geral de Kill sobre os Elyos arrogantes em todas as áreas. Você é direcionado a matar todos e quaisquer inimigos dignos de Elyos que você encontra, com as seguintes diretivas:</p>
+<p></p>
+<p>1. Independentemente do tempo e lugar, se você vir um Elyos, deve despachar ele ou ela prontamente.</p>
+<p></p>
+<p>2. Mate cinco Elyos por qualquer meio possível. Concentre seus esforços em inimigos dignos de suas proezas, ignorando aqueles cuja habilidade de combate está abaixo de você.</p>
+<p></p>
+<p>3. Relatório para [%dic:STR_DIC_E_45503]Uma vez que seus inimigos Elyos tenham perdido a vontade de lutar.</p>
+<p></p>
+<p>Você pode andar na sombra de Azphel. Sangue para sangue!</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Ah, um bom massacre!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>E então você retorna mais uma vez, [%username].</p>
+<p> </p>
+<p>Ouvi relatos de muitas batalhas serem travadas hoje. Sem dúvida, você participou de alguns?.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Sem dúvida."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho como sempre, [%username].</p>
+<p> </p>
+<p>Se todo cruzado de sangue fosse tão capaz quanto você, essa guerra seria vencida até agora.</p>
+<p> </p>
+<p>Aqui está a sua recompensa. Sangue para sangue!</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_E_Daily_2] em[%dic:STR_DIC_W_Daily]([%2]/5).</p></step>
+<step><p visible="[%3]">Relatório para o [%dic:STR_DIC_E_45503].</p></step>
+</steps>
+<p>Ordem diária: Livre -se dos Elyos em qualquer lugar e em qualquer lugar e relate -se a um agente da filial de Gelkmaros.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A Cruzada Sangue emitiu uma Ordem Geral de Kill em todos os covardes Elyos.</p>
+<p> </p>
+<p>Depois de concluir a missão, você visitou um agente da filial de Gelkmaros e recebeu sua recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

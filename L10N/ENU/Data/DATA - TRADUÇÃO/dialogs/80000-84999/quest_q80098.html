@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, Daeva, você veio ajudar.</p>
+<p> </p>
+<p>Eles me disseram que ninguém jamais ajudaria uma bruxa humildes aqui na cidade grande. Mas eu sabia que poderia contar com meus colegas asmodianos para obter ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Que ajuda você precisa, amigo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>São as visões. As visões terríveis na minha tigela de Scrying. Quando olho para as águas, vejo vislumbres do futuro ... de luz, tormento e terror.</p>
+<p> </p>
+<p>Isso me faz estremecer só de pensar sobre isso. Mas devo ver mais! Devemos nos proteger desse horror pendente!</p>
+<p> </p>
+<p>Posso contar com sua ajuda, [%userclass]?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agradeço sua ajuda. Você é realmente de sangue digno.</p>
+<p> </p>
+<p>Minhas necessidades são simples: preciso de energia para aumentar a força do meu Scrying. Vá em frente e caçar [%dic:STR_DIC_M_Branch_Event_UndeadDarkWiD_15_An] Areia [%dic:STR_DIC_M_Branch_Event_UndeadDarkPrd_15_An] S, e me traga o seu[%dic:STR_DIC_I_QUEST_80098A] S.</p>
+<p> </p>
+<p>Estou certo de que posso canalizar a energia dessas almas e esclarecer essas visões.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A tarefa é minha."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não vai ajudar? Então eles estavam certos sobre a cidade. Eu estava errado. É um local de corrupção queixado ao sol.</p>
+<p> </p>
+<p>Eu nunca pensei em ver uma coisa dessas ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Oh, supere -se."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Logo, tenho certeza que o [%userclass]Voltará em breve. Eu posso esperar. Eu posso esperar.</p>
+<p> </p>
+<p>Eles deveriam ter conhecido melhor. Se eles teriam sido razoáveis ​​...</p>
+<p> </p>
+<p>Lá está você! Você os pegou? Mostre-me!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui você vai."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim! Estes são perfeitos! Tão macio, tão suave. Simplesmente pulsando com energia. Mmm!</p>
+<p> </p>
+<p>O que? Ah, sim ... sim, tenho certeza que poderei fortalecer as visões com estes [%dic:STR_DIC_I_QUEST_80098A] S. A energia será saborosa ... focada com bom gosto no meu feitiço, para que possamos ver mais detalhes desse portent.</p>
+<p> </p>
+<p>Sangue para sangue, Daeva.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está rasgando seus deveres, Daeva?</p>
+<p> </p>
+<p>Você dá sua palavra, seu compromisso com a ajuda, tão levemente?</p>
+<p> </p>
+<p>Não, tenho certeza que você só precisa de mais tempo. Me pegue esses[%dic:STR_DIC_I_QUEST_80098A] S.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim claro."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Coletar [%dic:STR_DIC_I_QUEST_80098A] e entregá -los a [%dic:STR_DIC_N_event_Witchta].</p>[%collectitem]</step>
+</steps>
+<p>Colete os fragmentos da alma branca e entregue -os a Witchta.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você coletou fragmentos de alma para uma bruxa que afirma estar vendo visões de um futuro terrível.</p>
+<p> </p>
+<p>Ela lhe deu uma pequena recompensa por seus problemas, o que foi bom, mas seu murmúrio foi um pouco perturbador.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

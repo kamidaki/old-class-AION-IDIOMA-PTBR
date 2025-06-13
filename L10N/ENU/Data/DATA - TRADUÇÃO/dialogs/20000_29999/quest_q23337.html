@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], Eu tenho uma missão para você.</p>
+<p> </p>
+<p>A 1ª Tropa da 43ª Guilda de Lutadores de Elite de Beritra começou seu primeiro ataque.</p>
+<p> </p>
+<p>Devemos parar o reconhecimento e lançar um contra-ataque real.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Primeiro, vá para [%dic:STR_DIC_W_LDF5b_SensoryArea_Q13337] e veja o que eles estão fazendo lá.</p>
+<p> </p>
+<p>Depois de concluir sua patrulha, ataque [%dic:STR_DIC_E_LDF5b_F2_Vri], o coração da 1ª unidade da 43ª Guilda, para minar seu moral.</p>
+<p> </p>
+<p>Por fim, mate [%dic:STR_DIC_M_LDF5B_f3_Vri2_Confuse_El_SN_NmdQ_65_Ae] e pegue o deles[%dic:STR_DIC_I_QUEST_23337A].</p>
+<p> </p>
+<p>O que você acha? Você vai aceitar esta tarefa?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_1">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bom que a tarefa foi dada a uma pessoa qualificada como você, [%username].</p>
+<p> </p>
+<p>[%dic:STR_DIC_E_LDF5b_F2_Vri] e [%dic:STR_DIC_M_LDF5B_f3_Vri2_Confuse_El_SN_NmdQ_65_Ae] São elite, então você não pode se dar ao luxo de ser descuidado.</p>
+<p> </p>
+<p>Quando todas essas operações forem concluídas com sucesso, será um golpe incapacitante para essa banda.</p>
+<p> </p>
+<p>E a vitória é tão boa quanto garantida.</p>
+<p> </p>
+<p>Boa sorte.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você está ocupado atualmente com outra tarefa?</p>
+<p> </p>
+<p>Entendido.</p>
+<p> </p>
+<p>Esta tarefa é imensamente importante, então, volte e realize.</p>
+<p> </p>
+<p>Eu aguardo seu retorno.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>O que aconteceu com a operação?</p>
+<p> </p>
+<p>Você foi sem dúvida bem -sucedido, [%username].</p>
+<p> </p>
+<p>Rápido, você deve me dizer tudo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você trouxe a lista de materiais do Exército de Beritra!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Aparentemente, você ainda não tem a lista de materiais do Exército de Beritra com você ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Você completou a missão! Uma conquista!</p>
+<p> </p>
+<p>Esse incidente provavelmente também os desencorajou completamente.</p>
+<p> </p>
+<p>Vou usar bem a lista de bens militares de Beritra.</p>
+<p> </p>
+<p>Bom trabalho, realmente!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], de acordo com seus serviços, você estará bem recompensado conforme prometido.</p>
+<p> </p>
+<p>A situação não parece bem agora. Pedimos sua paciência.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Espionar [%dic:STR_DIC_W_LDF5b_SensoryArea_Q13337].</p></step>
+<step><p visible="[%3]">Remover [%dic:STR_DIC_E_LDF5b_F2_Vri]([%5]/9).</p></step>
+<step><p visible="[%6]">Juntar [%dic:STR_DIC_I_QUEST_23337A] e leve tudo para [%dic:STR_DIC_N_LDF5_Village_Guard17_D].</p>[%collectitem]</step>
+<step><p visible="[%9]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard17_D].</p></step>
+</steps>
+<p>Vá para a guarnição de suprimentos de Beritra e realize a operação com sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Helga deu a você a tarefa de espionar a guarnição de suprimentos de armas de cerco, matando os soldados do Regimento de Cavalaria e adquirindo informações sobre materiais militares.</p>
+<p> </p>
+<p>A operação na guarnição da oferta de Beritra foi bem -sucedida. Helga ficou muito agradecido e lhe deu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

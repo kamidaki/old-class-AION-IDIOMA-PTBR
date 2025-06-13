@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O 40º esquadrão de inteligência montou acampamento perto da fortaleza baseada e está entrando em ação.</p>
+<p> </p>
+<p>Se o esquadrão de inteligência descobrir nossos segredos militares, causará graves danos na batalha.</p>
+<p> </p>
+<p>Eles devem ser mortos antes que algo pior aconteça.</p>
+<p> </p>
+<p>Por favor, [%username], mate o [%dic:STR_DIC_E_LDF5b_D1_Vri40].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Temos que eliminar a ameaça de segredos militares saindo.</p>
+<p> </p>
+<p>Há uma unidade no exército de Beritra chamado[%dic:STR_DIC_E_LDF5b_D1_Vri40]que é especializado na coleta de informações.</p>
+<p> </p>
+<p>Eles precisam ser eliminados para evitar dificuldades mais tarde.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então não precisamos nos preocupar com o revelado segredos de nossa tropa.</p>
+<p> </p>
+<p>Estou muito satisfeito por você estar de volta seguro e som depois de lutar contra a poderosa 40ª tropa de inteligência.</p>
+<p> </p>
+<p>Bom trabalho.</p>
+<p> </p>
+<p>Você terá um futuro brilhante um dia como resultado de seus esforços hoje.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_E_LDF5b_D1_Vri40]([%2]/9).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_LDF5_Village_Guard16_L]%.</p></step>
+</steps>
+<p>Vamos matar o 40º esquadrão de inteligência antes que os segredos de nossos soldados sejam revelados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Segundo Killon, a 40ª tropa de inteligência deve ser eliminada para que os segredos dos aliados não sejam revelados.</p>
+<p> </p>
+<p>Você recebeu agradecimentos quando voltou depois de matar a 40ª tropa de inteligência, conforme solicitado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

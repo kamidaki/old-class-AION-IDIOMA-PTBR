@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q39612</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p align="center">- Instruções -</p>
+<p> </p>
+<p>1. RECENDIENTE: funcionário:[%username]</p>
+<p> </p>
+<p>2. Tarefa: Os Alitaurs do pântano estão atrasando a limpeza do pântano. Vá para [%dic:STR_DIC_W_LDF5b_SZ_G1], mate o [%dic:STR_DIC_M_LDF5B_G_Alligator_65_An] e reportar ao escritório administrativo responsável, AK.</p>
+<p> </p>
+<p>3. Escritório Administrativo:[%dic:STR_DIC_E_LDF5b_Silverlin_BA]</p>
+<p> </p>
+<p>Depois que a tarefa for concluída, você receberá uma recompensa. Por favor, faça um bom trabalho limpo, AK.</p>
+<p> </p>
+<p>- Danurinerk, Silverine Limited Chefe de Pessoal</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Embolsar as instruções.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva se livrou de todos os alitas do pântano?</p>
+<p> </p>
+<p>Aparentemente, eles quebraram a mangueira conectada à bacia da água, Ak.</p>
+<p> </p>
+<p>Danos graves resultaram porque a água do pântano não pôde ser canalizada por vários dias, Akakak.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Graças a Deus os monstros que danificaram a mangueira foram eliminados, AK!</p>
+<p> </p>
+<p>Alguns parecem ter conseguido entrar no tanque de água, mas não pode ser ajudado, Ak.</p>
+<p> </p>
+<p>Acho que isso significa que vou ter que começar a limpar o pântano novamente, AK.</p>
+<p> </p>
+<p>Excelente trabalho, [%username]! Shugo relatou que Daeva também realizou essa tarefa com habilmente, Akakak.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_G_Alligator_65_An], que estão mordendo as mangueiras do tanque de água de Silverine ([%2]/10).</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_E_LDF5b_Silverlin_BA].</p></step>
+</steps>
+<p>As instruções chegaram da Silverine Limited. Leia a tarefa e realize -a.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>As instruções vieram da Silverine Limited.</p>
+<p> </p>
+<p>Depois de matar o Alitaur do pântano que mastigou a mangueira do tanque de água e se reportando ao ramo de Silverine, no sul de Katalam, você recebeu uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]! Não pretendo estar à frente, mas você está planejando uma visita ao B5?</p>
+<p> </p>
+<p>Se você estiver indo para lá, gostaria de pedir um favor a você.</p>
+<p> </p>
+<p>Sei que não estamos tão bem familiarizados e hesito em perguntar, mas algo está em minha mente.</p>
+<p> </p>
+<p>Para ser sincero, não tenho mais ninguém para perguntar. Por favor, aceite meu pedido.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Pergunte qual é o problema.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrará uma pessoa chamada Altina em B5.</p>
+<p> </p>
+<p>Ela é mãe de uma amiga minha, e recentemente fez uma viagem lá. Eu temo por sua segurança.</p>
+<p> </p>
+<p>Bem ... ela perdeu algo precioso ... ela perdeu a filha para os fanáticos. Ela foi buscar vingança no deserto.</p>
+<p> </p>
+<p>Você vai ajudar neste?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não sabe como sou grato.</p>
+<p> </p>
+<p>Você encontrará Altina em B5.</p>
+<p> </p>
+<p>Dê a ela meus cumprimentos e ajude -a se ela perguntar.</p>
+<p> </p>
+<p>Espero que a dor de perder a filha não a leve a fazer algo tolo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>É minha culpa por perguntar tanto um estranho.</p>
+<p> </p>
+<p>Eu deveria ser o único a ir ... é apenas minhas habilidades de combate são patéticas.</p>
+<p> </p>
+<p>Não tenho escolha a não ser confiar na generosidade dos outros ....</p>
+<p> </p>
+<p>Bem, tem que haver outra maneira. Eu me recuso a sentar e não fazer nada.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Diálogo final.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>O que te traz aqui?</p>
+<p> </p>
+<p>O que um asmodiano poderia querer comigo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Dê a ela cumprimentos de Sirob.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sirob está preocupado comigo?</p>
+<p> </p>
+<p>Que jovem legal ... ele era um bom amigo para minha filha também.</p>
+<p> </p>
+<p>Não desejo ser um fardo para ninguém, mas isso não pode ser ajudado. Há algo que tenho que fazer.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com Altina.</p></step>
+</steps>
+<p>Sirob diz que está preocupado com Altina, a mãe de um amigo. Vá para Altina e veja se ela está bem.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Sirob disse que estava preocupado com a mãe de um amigo, que se tornara vingança depois de perder a filha.</p>
+<p> </p>
+<p>Então você foi ao B5 para verificar Altina e dizer a ela o que Sirob disse. Ela disse que não quer incomodar ninguém, mas deve se vingar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não me pense rude, mas agora não é hora de trocar palavras amigáveis ​​de boas -vindas, [%username]. o [%dic:STR_DIC_W_LF4_SZ_2011_A]caiu para nossos inimigos.</p>
+<p> </p>
+<p>Estou muito preocupado porque não sei como devemos lidar com essa ameaça.</p>
+<p> </p>
+<p>Você sabe o quão importante é o templo das escalas?</p>
+<p> </p>
+<p>Essa perda do templo das escalas significa que o altar da avareza não é mais seguro. Se o inimigo segurar o templo das escalas e o altar da avareza, todos os Elyos em Balaurea estarão em perigo.</p>
+<p> </p>
+<p>Os soldados estão estacionados no posto avançado, mas não poderão manter o inimigo afastado por muito tempo ... uma vez que o inimigo penetrar nesse ponto, até a fortaleza de ilusões não estará mais segura.</p>
+<p> </p>
+<p>Chegamos a Inggison para derrotar o Balaur e conquistar Balaurea, para não ser forçado à defesa!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Sinto muito, mas a situação atual está me deixando muito nervosa.</p>
+<p> </p>
+<p>Devemos fazer de tudo para retomar o [%dic:STR_DIC_W_LF4_SZ_2011_A].</p>
+<p> </p>
+<p>[%username], você poderia ir ao templo das escalas e descoplar os soldados inimigos?</p>
+<p> </p>
+<p>Encontre aliados confiáveis. Juntos, ataque a tropa de ocupação do templo da escala.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você realmente entende qual é a sua tarefa? Não retomar o [%dic:STR_DIC_W_LF4_SZ_2011_A]. Em vez disso, espalhe a tropa de ocupação do templo das escalas.</p>
+<p> </p>
+<p>Infiltrar o templo das escalas o mais rápido possível e mergulhar o [%dic:STR_DIC_M_QUEST_11307all]no caos. Seja sensato e retire se a situação ficar muito perigosa.</p>
+<p> </p>
+<p>Lembre -se de que outros grupos ainda estão realizando suas tarefas lá. Portanto, concentre -se em seu alvo, [%username].</p>
+<p> </p>
+<p>Por favor, elimine a tropa de ocupação, mas tenha cuidado.</p>
+<p> </p>
+<p>Quando você concluiu com êxito a tarefa e os Elyos controlam o templo das escalas, o Ghost Light Legionary[%dic:STR_DIC_N_Queesia] estarei esperando por você. Fale com ela para receber sua recompensa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou surpreso que você esteja rejeitando esta tarefa. Afinal, eu não teria dado essa tarefa a alguém que eu pensei que não poderia lidar com isso.</p>
+<p> </p>
+<p>Eu entendo que esta é inteiramente sua decisão, [%username]</p>
+<p> </p>
+<p>Mas você deve se lembrar que toda ação tem consequências.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>A princípio, a situação ficou calma por um tempo depois que os Elyos chegaram a Balaurea. Mas essa guerra exaustiva começou logo depois.</p>
+<p> </p>
+<p>Já descobrimos alguns dos planos sinistros de Beritra. É por isso que sabemos o quão perigoso é construir uma base aqui em Balaurea.</p>
+<p> </p>
+<p>Devemos ganhar essa guerra a todo custo.</p>
+<p> </p>
+<p>Não podemos perder o templo das escalas se queremos garantir uma vitória de Elyos.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você dá seu relatório.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você executou um ótimo serviço.</p>
+<p> </p>
+<p>Mas, embora tenhamos recuperado o templo das escalas, nossos inimigos não nos deixam em paz por muito tempo. Eles estão esperando um momento oportuno para retomar o templo de nós.</p>
+<p> </p>
+<p>É por isso que vou precisar da ajuda de danos capazes como você, [%username]. Você continuará a nos ajudar?</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_QUEST_11307all]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Queesia].</p></step>
+</steps>
+<p>Você tem direito ao templo das escalas. Elimine os guardiões inimigos lá.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moras ordenou que você eliminasse os soldados no templo das escalas, a fim de recuperar o templo.</p>
+<p> </p>
+<p>Então você foi ao templo e eliminou a tropa de ocupação do templo das escalas. Então você se reportou a Siaqua.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

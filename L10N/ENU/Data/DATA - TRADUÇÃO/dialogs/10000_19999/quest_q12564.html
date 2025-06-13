@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Examine minuciosamente o nevilim encontrado no lago da solidão.</p>
+<p> </p>
+<p>Está localizado nas profundezas do lago, mas para um pesquisador petralith é algo que não pode ser simplesmente ignorado.</p>
+<p> </p>
+<p>Esta é uma oportunidade única de descobrir sobre as origens do Jotun, que se acredita estar na raiz de Jotun.</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_LDF5A_A3] e suba no fundo do[%dic:STR_DIC_W_LDF5a_SensoryArea_Q12564]para o Nevilim afundado.</p>
+<p> </p>
+<p>Examine completamente o [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim]lá e me avise se você descobrir alguma coisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>(Isso é Nevilim que afundou no lago.)</p>
+<p> </p>
+<p>(Parece haver uma história antiga por trás disso.)</p>
+<p> </p>
+<p>(Parece semelhante a Jotun, mas muito maior.)</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO2">Você termina a investigação.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select3">
+<contents cdata="true">
+<html>
+<body>
+<p>Na verdade, eu estava realizando investigações em Theobomos.</p>
+<p> </p>
+<p>Fui a Sarpan para pesquisar o Jotun que faz petralith em um momento em que minha investigação não estava progredindo muito bem.</p>
+<p> </p>
+<p>Depois, soube das origens do Jotun e cheguei aqui para Katalam.</p>
+<p> </p>
+<p>Eu absolutamente devo ter informações sobre o Nevilim para concluir minhas investigações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Entregue a pedra de runa gravada.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Você encontrou uma pista!</p>
+<p> </p>
+<p>É imediatamente claro que este é um achado importante.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SET_SUCCEED">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não encontrou nada?</p>
+<p> </p>
+<p>Por favor me ajude. É vital para minha pesquisa.</p>
+<p> </p>
+<p>Deve haver uma pista que tem a ver com o Nevilim.</p>
+<p> </p>
+<p>Por favor, volte para o [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">A conversa termina.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso realmente vem do Nevilim?</p>
+<p> </p>
+<p>Parece ser uma espécie de gravura. Um traço, por assim dizer, que é feito quando alguém dá um pedido ao Nevilim.</p>
+<p> </p>
+<p>Pode vir da tribo Rune ...</p>
+<p> </p>
+<p>Isso significa que pode haver uma conexão entre o Nevilim e a tribo Rune.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username], você conseguiu descobrir novas informações sobre o Nevilim.</p>
+<p> </p>
+<p>Isso ajudará minha pesquisa a fazer um grande progresso.</p>
+<p> </p>
+<p>Muito obrigado por seus esforços.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Vá para Nevilim, que está em[%dic:STR_DIC_W_LDF5a_SensoryArea_Q12564].</p></step>
+<step><p visible="[%3]">Examinar [%dic:STR_DIC_E_LDF5a_FOBJ_A3_StonedNebilim].</p></step>
+<step><p visible="[%6]">Eliminar o [%dic:STR_DIC_M_LDF5A_A2_Nebilim_A4_Nebilim_all], pegue o [%dic:STR_DIC_I_quest_12564a] e trazê -lo para [%dic:STR_DIC_N_LDF5a_Akaia_E].</p>[%collectitem]</step>
+</steps>
+<p>Ajude Akaia examinando os Nevilim no lago.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Akaia instruiu você a fazer perguntas sobre o Nevilim no lago.</p>
+<p> </p>
+<p>Você derrotou os soldados de Nevilim e garantiu uma pedra de runa gravada. Quando você trouxe isso para Akaia, ele disse que a pedra deve ter desempenhado um papel importante para os membros da tribo Rune.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

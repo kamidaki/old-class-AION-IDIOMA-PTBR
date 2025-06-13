@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmmm ... A única explicação para as duas tentativas fracassadas são os materiais que usei.</p>
+<p> </p>
+<p>Tentei culpar você, que funcionou perfeitamente bem para mim pela primeira vez. Mas mesmo não posso fazer isso duas vezes seguidas. Agora devo culpar os materiais desta terra.</p>
+<p> </p>
+<p>Mas sou muito inteligente para deixar sua ignorância e os materiais de má qualidade de Balaurea me impedir de ter sucesso. Vou tentar ainda mais desta vez.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu realmente não gosto de falar com você."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu ouço isso um pouco, [%username]. Isso é inveja falando. E vou ignorar isso.</p>
+<p> </p>
+<p>Para voltar às minhas preocupações agora ... percebi que não posso confiar em apenas um material para fazer o truque. Vou ver o que acontece quando eu formar um pouco.</p>
+<p> </p>
+<p>Eu sei que agitei suas asas mais cedo, mas posso pedir sua ajuda mais uma vez, [%username]? Eu sabia que vamos conseguir desta vez!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Então, aqui está o meu próximo projeto para você-escalas de balaur. Eu sei que este é o material que fará o truque ... eu posso sentir.</p>
+<p> </p>
+<p>Você vai encontrar [%dic:STR_DIC_M_LF4_B4_DrakanWorkerFi_54_An] Areia [%dic:STR_DIC_M_LF4_B4_DrakanWorkerPr_54_An] S na fazenda Mephistis.</p>
+<p> </p>
+<p>Mate -os e mancham seus[%dic:STR_DIC_I_QUEST_30230a] S de seus cadáveres.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que esta seja sua última ideia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você é um selvagem de coração frio, [%username]! Como você pode me abandonar assim? Eu confiei em você ... dependia de você!</p>
+<p> </p>
+<p>Eu vou te culpar se eu não acabar descobrindo um novo espírito! Vou publicar minhas descobertas de qualquer maneira, e dedicarei um capítulo inteiro ao quão egoísta você é.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"A fama vem de várias formas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu coração está batendo tão rápido! Estamos a apenas alguns segundos de nascer um espírito totalmente novo do Aether!</p>
+<p> </p>
+<p>Você me trouxe as escalas de Balaur?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão as escalas."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu te disse que estava com pressa real aqui, [%username], e você ainda não adquiriu minhas escalas ainda?</p>
+<p> </p>
+<p>O que acontece quando algum outro Daeva convoca um novo espírito antes de eu fazer? O que vou fazer então, hein? Ele ficará famoso e eu ficarei ... com raiva.</p>
+<p> </p>
+<p>Por favor, vá e encontre -me o [%dic:STR_DIC_I_QUEST_30230a] S!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Gostaria de poder empurrá -los para o seu ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você pode sentir, Daeva? Você pode sentir a eletricidade no ar? O Espírito emergirá desta vez. Eu sei isso. Você está prestes a testemunhar as maiores conquistas da história de Elyos!</p>
+<p> </p>
+<p>(Ela segura a balança nas duas mãos e canta um feitiço. Uma pequena chama entra em erupção antes de desaparecer rapidamente.)</p>
+<p> </p>
+<p>Você viu isso? Você viu aquela pequena chama? Era como se o espírito estivesse espalhado para mim ... deu uma olhada. Eu chamaria isso de um tipo de sucesso, certo?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter [%dic:STR_DIC_I_QUEST_30230a] e leve-os para [%dic:STR_DIC_N_Aiola].</p>[%collectitem]</step>
+</steps>
+<p>Tessa precisa de um material que ajudará o espírito a se formar. Derrote os trabalhadores da Basrasa e os curandeiros de Basrasa e obtêm escalas de Balaur.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Tessa disse que falhou da última vez porque não tinha o material certo para ajudar o espírito a se formar.</p>
+<p> </p>
+<p>Usando as escalas de Balaur que você obteve para ela, Tessa tentou convocar um espírito novamente, apenas para ver uma pequena chama por alguns segundos. Ela, no entanto, declarou um sucesso ... mais ou menos.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

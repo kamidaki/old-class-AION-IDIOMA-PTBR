@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Fui confiado na tarefa de examinar o cubo de Idgel no platô congelante, mas encontrei muitas dificuldades.</p>
+<p> </p>
+<p>[%username], você eliminaria o [%dic:STR_DIC_M_LDF5B_A1_SoulStone_63_An]que estão perto do cubo Idgel?</p>
+<p> </p>
+<p>Eu já deveria ter começado, mas não consegui alcançar o cubo Idgel por causa das muralhas ametgolems.</p>
+<p> </p>
+<p>Ainda não estou acostumado com o ambiente de Katalam, e é por isso que ainda tenho que confrontar um monstro aqui.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, aí está você de novo, [%username].</p>
+<p> </p>
+<p>Você eliminou as muralhas ametgolem nas proximidades do cubo Idgel?</p>
+<p> </p>
+<p>Agora não temos mais uma desculpa para adiar a pesquisa.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, quão afortunado.</p>
+<p> </p>
+<p>Com sua ajuda, posso finalmente retomar minha pesquisa no cubo Idgel.</p>
+<p> </p>
+<p>Muito obrigado. Quando estiver melhor novamente, poderei lidar com eles facilmente. Perdoe -me por sobrecarregá -lo com uma coisa tão trivial.</p>
+<p> </p>
+<p>Aqui. Não é muito, mas por favor, aceite -o como um sinal da minha gratidão.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate o [%dic:STR_DIC_M_LDF5B_A1_SoulStone_63_An]([%2]/10)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5b_Gali_E].</p></step>
+</steps>
+<p>Mate as muralhas ametgolem que estão prejudicando a pesquisa do cubo Idgel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Gali disse que a busca pelo cubo Idgel não pôde ser realizada por causa das muralhas ametgolem.</p>
+<p> </p>
+<p>Depois que você matou as muralhas AMETGOLEM e voltou, Gali pediu desculpas por incomodá -lo com uma tarefa tão chata.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

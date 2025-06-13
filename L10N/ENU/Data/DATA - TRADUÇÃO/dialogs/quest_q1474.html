@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>O próprio Eltnen está morrendo. Estou pensando em sair há um tempo agora, mas é tão difícil ....</p>
+<p> </p>
+<p>Esta era a casa dos meus pais. É tudo o que eu já conheci.</p>
+<p> </p>
+<p>Mas todo dia aqui é um lembrete ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Um lembrete de quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh ... um lembrete do que antes foi. Do que aconteceu. Meus pais morreram ... eles ... nós ...</p>
+<p> </p>
+<p>Desculpe. É tão recente ....</p>
+<p> </p>
+<p>Nada útil cresce mais, então meus pais começaram a caçar comida. Bem, um dia eles saíram e os revolucionários lefaristas os levaram. Apenas os matou. Por que eles fariam isso? Meus pais eram boas pessoas. Eles eram tudo que eu tinha ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="PLAYEMOTION_sad;HACTION_ASK_QUEST_ACCEPT">"Eu sinto muito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso me rasga estar em casa, usando as ferramentas que meus pais usaram. Ao mesmo tempo, quanto mais eu acho, mais irritada eu recebo.</p>
+<p> </p>
+<p>Aqueles lefaristas, eles trouxeram nada além de miséria para esta vila. E ouço que eles estão fazendo isso em todos os lugares. E olhe o que eles fizeram comigo, para minha vida!</p>
+<p> </p>
+<p>Me ajude, Daeva? Vingar meus pais por mim?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Estou muito grato.</p>
+<p> </p>
+<p>Aqui está tudo o que sei. Há uma mulher que viu o assassinato dos meus pais. Ela diz que os nomes deles são[%dic:STR_DIC_M_LehparAsNamed_40_Ae] e [%dic:STR_DIC_M_LehparElementalNamed_40_Ae], e eles estão no[%dic:STR_DIC_W_LF2_SZ_J].</p>
+<p> </p>
+<p>Ouvi dizer que eles são de alto escalão. Eles não aparecem no bastião lefarista com frequência, por isso pode ser difícil encontrá -los. Por favor, isso não é para mim. É para meus pais, para todos os lefaristas.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Procure paz em Ariel. Voltarei em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você Daevasas! Você está acima de todos os outros. Não pode se sujar com assuntos humanos.</p>
+<p> </p>
+<p>Oh, eu te odeio! Eu odeio os lefaristas! Se eu pudesse lutar, mataria todos vocês!</p>
+<p> </p>
+<p>Eu não posso fazer isso. Os lefaristas me matariam antes de eu encontrar os que estou procurando. Como um fazendeiro poderia impedi -los?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Espero que Ariel o conforte."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], você voltou!</p>
+<p> </p>
+<p>Você encontrou[%dic:STR_DIC_M_LehparAsNamed_40_Ae] e [%dic:STR_DIC_M_LehparElementalNamed_40_Ae]? Você os matou? Você prometeu!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles lutaram muito, mas eu ganhei o dia".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado! Que Ariel sempre te abençoe!</p>
+<p> </p>
+<p>Espero que os tons desses lefaristas mortos nunca descansem. Espero que eles conheçam a dor que eu conheço. Esse será o meu conforto.</p>
+<p> </p>
+<p>Obrigado por vingar meus pais. Pegue isso. Eles queriam que você recompensou.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Os pais de Avenge Nomiki.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparAsNamed_40_Ae]([%2]/1)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_LehparElementalNamed_40_Ae]([%5]/1)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Nomiki].</p></step>
+</steps>
+<p>Mate os revolucionários lefaristas que assassinaram os pais de Nomiki.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nomiki disse que os revolucionários lefaristas mataram seus pais e ela pediu que você os vingasse.</p>
+<p> </p>
+<p>Você foi ao bastião lefarista e se vingou em nome de Nomiki, matando Lekion e Spiritmaster Shapiel.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

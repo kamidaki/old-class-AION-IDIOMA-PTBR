@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para [%username] Apenas os olhos:</p>
+<p> </p>
+<p>Theobomos está em turbulência e perdemos contato com o protetor de campo ATERIC ATROPOS, um informante da Ordem do Alabastro.</p>
+<p> </p>
+<p>A ordem de alabastro precisa que você encontre [%dic:STR_DIC_N_Atropos] e aprenda o que está acontecendo antes que algo terrível ocorra.</p>
+<p> </p>
+<p>Faça o que é necessário se a situação for urgente. Caso contrário, relate -se a [%dic:STR_DIC_E_35014].</p>
+<p> </p>
+<p>Mova -se rapidamente e divulgue nada!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Dobre o pedido e guarde -o.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Bênçãos do Sol, [%username]. O que o leva ao meu fragmento do mundo?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT2_1">"O pedido perdeu seus relatórios."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eles estão preocupados porque não ouviram falar de mim? Que estranho! Eu tenho enviado meus relatórios sobre a programação regular ...</p>
+<p> </p>
+<p>Tenho certeza de que posso descobrir o problema. Sabe, recentemente mudei do caro serviço de email shugo Express para um serviço não expresso de shugo mais barato.</p>
+<p> </p>
+<p>Isso vai me ensinar a tentar economizar dinheiro em vez de me preocupar com coisas mais importantes!</p>
+<p> </p>
+<p>Por favor, diga à ordem do Alabaster que está tudo bem. Vou reenviar os relatórios ausentes.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">"Vou avisar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Ela está bem? Você conheceu o protetor de campo ATROPOS ATERIC?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Ela teve problemas de correio, mas está sob controle".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os relatórios enviados por correio foram perdidos no caminho?</p>
+<p> </p>
+<p>HM ... se alguém deliberadamente roubou os relatórios de Atropos, poderíamos ter um grande problema.</p>
+<p> </p>
+<p>Por enquanto, vamos esperar e ver o que o Atropos descobre.</p>
+<p> </p>
+<p>Você fez bem, [%username].</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_Atropos].</p></step>
+<step><p visible="[%3]">Relatório para [%dic:STR_DIC_E_35014].</p></step>
+</steps>
+<p>Chegou uma chamada à ação da Ordem da Alabastro. Siga suas instruções.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A ordem da Alabaster não tinha ouvido falar de seu agente, o protetor de campo ATROPOS ATROPOS, e solicitou que você a encontrasse.</p>
+<p> </p>
+<p>A Atropos acha que o serviço de correio atrapalhou sua entrega de relatórios, mas Priamos está apenas disposto a aceitar isso pelo valor nominal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

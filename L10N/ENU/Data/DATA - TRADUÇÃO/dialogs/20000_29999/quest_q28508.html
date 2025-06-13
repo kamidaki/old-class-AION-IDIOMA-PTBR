@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uh oh. Daevas está aqui? Então ... fora do mundo sabe?</p>
+<p> </p>
+<p>Tinha medo que isso acontecesse em breve. Parece que Haramel está nos últimos dias! Melhor sair enquanto ficar é bom, Nyerk!</p>
+<p> </p>
+<p>Mas como obter o máximo de lucro possível ...? HRM .... Oh! Isso me lembra! Daeva!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Sim?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk está preocupado com o irmão Moofrenerk, Nyerk! Estou perto de entrada, mas o irmão está no meio da instalação!</p>
+<p> </p>
+<p>O que acontecerá se Daevas atacar, e o irmão for pego no meio? Ele poderia estar ... magoado! Isso seria horrível!</p>
+<p> </p>
+<p>O irmão poderia escapar por conta própria, mas Kobolds fica em seu caminho, Nyerk! Você poderia matá -los para que ele possa se afastar livremente?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh, obrigado, obrigado! A família é extremamente importante para Shugo, você sabe! Talvez até mais do que Kinah!</p>
+<p> </p>
+<p>Você não precisa limpar a refinaria de odium e a mina de tiras de odium. Basta matar Kobolds suficientes para que o Moofrenerk possa se esgueirar.</p>
+<p> </p>
+<p>Ah, e vá dizer ao Moofrenerk quando terminar, esse caminho de fuga é claro. Moorilerk deixa isso para você!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Uma decisão sábia."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Você deixaria o irmão pobre, pobre e indefeso Shugo na Mercy of Nasty Kobolds, Nyerk?</p>
+<p> </p>
+<p>Moorilerk nunca se perdoaria se algo acontecesse com o irmão! Você não vê lágrimas se formando nos meus olhos ...?</p>
+<p> </p>
+<p>Este shugo é triste, Daeva. Então, tão triste .... pode ... pode chorar ....</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Boa tentativa, Shugo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi muita luta acontecendo! Sons de batalha ecoando salas! Sabia que tinha que ser Daeva!</p>
+<p> </p>
+<p>O que te trouxe aqui? Por que matar Kobolds tão importante?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Seu irmão me pediu para ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>O que? Ele pediu para você fazer isso? Por que? É uma grande perda de tempo! Há tanta Odella e Odium aqui, poderíamos pegar muito enquanto fazemos nosso ...</p>
+<p> </p>
+<p>Claro! Por isso! O irmão pediu que você matasse Kobolds para que ele pudesse tomar Odium sem interferência! Ele provavelmente estava roubando enquanto você estava me encontrando! Akakak! Não sei se ficará com raiva ou orgulhoso! Ele fez exatamente o que eu teria feito!</p>
+<p> </p>
+<p>Terá palavras com o irmão quando eu sair daqui, Nyerk! Aqui, Daeva, pegue isso; Sem você, nunca saberia sobre a trama de Moorilerk!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Mate os Kobolds na refinaria de Odium de Haramel.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DbrownieWWa_smelt_18_an]([%2]/2)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DBrownieMWa_18_an]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDNovice_02_DBrownieWWa_18_an]([%8]/3)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shugo_IDNovice_2].</p></step>
+</steps>
+<p>Mate Kobolds para que o Moofrenerk possa escapar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Moorilerk disse que estava preocupado com a segurança de seu irmão, Moofrenerk. Ele pediu que você matasse Kobolds para fazer uma rota de fuga segura.</p>
+<p> </p>
+<p>Você fez o que ele pediu e deu a mensagem a Moofrenerk, que rapidamente percebeu que tudo isso era uma trama. Ele o recompensou, porém, por trazê -lo à sua atenção.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

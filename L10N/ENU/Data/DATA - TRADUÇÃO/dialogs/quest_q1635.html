@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diga, posso fazer uma pergunta a você?</p>
+<p> </p>
+<p>Eu ouvi alguns marinheiros falando sobre um naufrágio em Stenon Bay.</p>
+<p> </p>
+<p>É verdade?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Isso é."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bem, isso é ótimo. Eu sei que os moradores me chamam de nomes, menosprezam meu estilo de vida.</p>
+<p> </p>
+<p>Mas eu não era assim desde o início. Depois que meu noivo me traiu, pensei que não poderia confiar em ninguém.</p>
+<p> </p>
+<p>Eu mantive as pessoas à distância, usando -as, em vez de serem usadas por elas. Mas talvez eu não tenha sido traído, afinal.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Eu não entendo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Meu noivo era um marinheiro. Berus, capitão dos Argos. Estávamos planejando nosso casamento, quando os moradores pediram que ele navegue para Verteron.</p>
+<p> </p>
+<p>Pedi a ele para não ir, mas ele disse que não demoraria muito, e o casamento aconteceria quando ele voltasse. Mas ele nunca voltou. Eu pensei que ele fugiu porque não me queria.</p>
+<p> </p>
+<p>O naufrágio ... estou implorando a você. Você poderia ir ao naufrágio e procurar [%dic:STR_DIC_I_QUEST_1635a]?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%dic:STR_DIC_I_QUEST_1635a] era o símbolo do nosso amor. Nossos nomes foram esculpidos quando estávamos noivos.</p>
+<p> </p>
+<p>Se o naufrágio é o Argos, ele ainda deve estar lá. Um capitão nunca abandona seu navio. Ele prometeu nunca tirar isso ...</p>
+<p> </p>
+<p>Por favor, procure o anel.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Minha vida mudou naquele dia. Depois que ele saiu, a única razão para eu viver era odiar Berus.</p>
+<p> </p>
+<p>Mas se ele não me traiu ... eu tenho que saber!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Talvez outra hora."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou tão em conflito. Se Berus estiver morto, meu coração se partirá, mas pelo menos vou saber que ele não me traiu.</p>
+<p> </p>
+<p>Mas uma parte de mim quer pensar que ele ainda está vivo em algum lugar.</p>
+<p> </p>
+<p>Diga -me ... diga -me a verdade.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Às vezes, as respostas são piores que as perguntas".</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não estava lá? Berus ... ele me traiu, não foi?</p>
+<p> </p>
+<p>Você pesquisou com cuidado? Você olhou em todos os lugares?</p>
+<p> </p>
+<p>Meu coração está tão pesado ... eu não aguento isso. Por favor!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou voltar em breve."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Oh Berus ... Estou errado sobre ele por tanto tempo.</p>
+<p> </p>
+<p>Certa vez, eu sonhei que teríamos um filho-um garoto como seu pai. Saber que ele não me traiu nada muda. Meu coração está partido e meus sonhos morreram com Berus.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Destruir o fantasma de [%dic:STR_DIC_M_UndeadLightFiNamed_43_An] e leve o anel dele para [%dic:STR_DIC_N_Aifemis].</p>[%collectitem]</step>
+</steps>
+<p>Procure o anel de Berus no naufrágio em Stenon Bay.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Aifemis ouviu as equipes de frota azul falando sobre um naufrágio na costa. Pensando que pode ser o Argos, ela pediu que você procurasse o anel de Berus.</p>
+<p> </p>
+<p>Quando você levou o anel para ela, Aifemis percebeu que Berus não a traiu, afinal.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

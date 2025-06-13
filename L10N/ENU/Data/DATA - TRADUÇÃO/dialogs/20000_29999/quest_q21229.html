@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estou feliz por termos o templo carmesim, [%username].</p>
+<p> </p>
+<p>Não, não por causa de seu valor tático! Bem ... não apenas por causa de seu valor tático.</p>
+<p> </p>
+<p>Você já ouviu falar de Leowasps, [%username]? Eles são encontrados incomummente em muitas partes de Atreia, mas aqui se reúnem em grande número. Eles são algum tipo de inseto mutado, mas isso não tem como objetivo.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Então ... qual é o ponto?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Suas asas![%dic:STR_DIC_M_DF4_DragonFly_54_An] Asas são absolutamente deliciosas!</p>
+<p> </p>
+<p>Claro que você não os come crua-isso seria nojento! Mas assado sobre uma fogueira ... adicione algumas especiarias especiais ... e é como se você estivesse nas graças de Old Class Aion.</p>
+<p> </p>
+<p>Eu adoraria reunir algumas asas de Leowasp para mim-e os soldados também os amam, então não é como se isso não ajudasse o esforço de guerra. O que você diz, [%username], me ajude?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>o [%dic:STR_DIC_M_DF4_DragonFly_54_An] S está em toda essa área-apenas mate um monte e pegue suas asas.</p>
+<p> </p>
+<p>Nem todos os Leowasps também terão boas asas ... quero dizer, você está prestes a danificar as asas se estiver atingindo as criaturas na cara ou asthendo -as com magia, e eu não quero produtos danificados!</p>
+<p> </p>
+<p>Bem, continue! Já estou salivando!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, sim, eu estou indo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Vamos, [%username], ajude seus companheiros de asmodianos!</p>
+<p> </p>
+<p>Isso não é apenas para mim-precisamos de suprimentos para nos sustentar aqui no Templo Crimson!</p>
+<p> </p>
+<p>Eu posso até dar a você um gostinho da asa Leowasp assada ... talvez.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Não, obrigado..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você já conheceu Cozett, [%username]? Ela não é fofa? Você sabe ... eu poderia apresentá-lo a ela-ela adora conhecer novas pessoas.</p>
+<p> </p>
+<p>Ela é como uma filha para mim e, como querido pai, ela acha que as asas assadas de Leowasp são deliciosas!</p>
+<p> </p>
+<p>Bem, vamos ter então! Você trouxe as asas? Se você o fez, tenho certeza que Cozett ficaria mais impressionado ....</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Bem aqui."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Bah! Você ainda não matou o suficiente Leowasps.</p>
+<p> </p>
+<p>As criaturas não devem ter nenhum problema para você-certifique-se de não danificar as asas</p>
+<p> </p>
+<p>Apresse -se e traga -os de volta, estou morrendo de fome aqui. Ah, e Cozett também é!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu estarei de volta ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente! Eu sabia que não levaria você muito.</p>
+<p> </p>
+<p>Já posso provar aquelas asas deliciosas .... Ah, e Cozett ficou muito impressionado. Por que você não vai falar com ela?</p>
+<p> </p>
+<p>Eu posso precisar ... quero dizer, os soldados e eu talvez precisem de mais asas mais tarde, então não vá longe demais!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obter as asas de [%dic:STR_DIC_M_DF4_DragonFly_54_An] e trazê -los para [%dic:STR_DIC_N_Svidar].</p>[%collectitem]</step>
+</steps>
+<p>Mate as planícies de planície e junte suas deliciosas asas deliciosas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Svidar anseia pelo delicioso sabor das asas assadas e que você reunia alguns para ele.</p>
+<p> </p>
+<p>Você matou os Leowasps no campo de batalha de Vorgaltem e voltou com suas asas. Svidar ficou encantado e disse que poderia solicitar mais ajuda mais tarde.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

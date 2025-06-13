@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q11501</questid>
+<questname>펑기를 잡아라</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ajuda! Ajuda! Eu cometi um grande erro! São os fungos, [%username]. Os fungos.</p>
+<p> </p>
+<p>A maioria deles é venenosa, você vê, mas o [%dic:STR_DIC_M_LDF4A_A1_Fungy_Flower_56_n] S-eles não são! Eles estão cheios de nutrientes e bastante saborosos. Então plantamos seus esporos em todo o [%dic:STR_DIC_W_LDF4a_SZ_A1], na esperança de estabelecer uma fonte sustentável de comida.</p>
+<p> </p>
+<p>Quando voltamos, eles estavam por toda parte. Eles estão se multiplicando mais rápido do que podemos avaliar seus números e, se nada for feito, em breve estaremos nos afogando sob um mar de fungos! Por favor, por favor nos ajude, [%username]! Mate -os por nós, antes que seja tarde demais!</p>
+<p></p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você fez isso! Você salvou todos nós!</p>
+<p> </p>
+<p>Não podemos agradecer o suficiente, [%username]! Haverá músicas escritas sobre este dia e placas! Este dia vai cair na história. O dia que [%username]nos agraciou e nos salvou da terrível ameaça de fungos.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Realmente não era tão ha ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Bobagem! Bobagem!</p>
+<p> </p>
+<p>Por favor, preparamos isso para agradecer por salvar a todos nós. Não posso agradecer o suficiente, amigo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Limpe o [%dic:STR_DIC_M_LDF4A_A1_Fungy_Flower_56_n] S do[%dic:STR_DIC_W_LDF4a_SZ_A1] Antes que seja tarde demais ([%2]/12).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Shuos].</p></step>
+</steps>
+<p>Mate os fungos de folha de semeadas que estão cobertas de vegetação e estão ameaçando a própria estabilidade de Atreia.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Shuos, um Reian no campo de refugiados, ficou aterrorizado com a rápida disseminação dos fungos das folhas de orifícios, criaturas que os Reians tinham originalmente reservado para o consumo. Desde então, eles se reproduziram muito rapidamente e precisavam de eliminar um pouco. Você ajudou, muito para o alívio exagerado de Shuos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

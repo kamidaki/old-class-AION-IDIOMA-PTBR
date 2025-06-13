@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Isso será breve. Estou pressionado pelo tempo, então, por favor, ouça com cuidado.</p>
+<p> </p>
+<p>Kysy Fortaleza, como as fortalezas de Krotan e Miren, é um ponto estratégico vital. Ele guarda a entrada para os olhos de Reshanta, para que o inimigo não deve mantê -lo.</p>
+<p> </p>
+<p>Uma ofensiva em grande escala é impraticável devido às nossas perdas durante a batalha anterior.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Concordo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Para ganhar tempo para aumentar os reforços, estamos infiltrando o território inimigo para realizar ataques.</p>
+<p> </p>
+<p>A idéia é sangrar a força do inimigo atacando guardas fora da fortaleza quando eles estão isolados. Preservar nossas tropas, infligir perdas ao inimigo.</p>
+<p> </p>
+<p>Temos a sorte de ter muitos Elyos Daevas que emprestam suas espadas ao esforço. E você, [%username]? Você também está disposto?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado. Eu elogio sua bravura.</p>
+<p> </p>
+<p>Estou organizando o protetor da Guilda de Teminon para retomar a fortaleza. Reúna um esquadrão e vá para a fortaleza de Kys. Caça a qualquer [%dic:STR_DIC_M_Decasys_Guard] Soldados que você pode encontrar dentro da fortaleza.</p>
+<p> </p>
+<p>Ah, e não vá sozinho. Trata -se de infligir perdas sem levá -las. Não jogue justo.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Entendido!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não vou forçar você a intensificar, mas pense nisso ... se não jogamos nossas vidas aqui, perdemos alguma chance de sobrevivência por Atreia.</p>
+<p> </p>
+<p>Volte quando você mudar de idéia.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu vou pensar nisso."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username], meus olheiros dizem que você dizimou o [%dic:STR_DIC_M_Decasys_Guard].</p>
+<p> </p>
+<p>Eu gostaria dos detalhes, se você se recuperou o suficiente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu escrevi um relatório ..."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, impressionante. Foi preciso talento para você encontrar seus alvos sem ser pego por patrulhas ou criaturas agressivas.</p>
+<p> </p>
+<p>Suas habilidades são formidáveis ​​e crescem, [%username]. Vou garantir que o governador Michalis saiba seu nome.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Eliminar o [%dic:STR_DIC_M_Decasys_Guard]([%2]/10).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Bellona].</p></step>
+</steps>
+<p>Reúna seus colegas Daevas e emboscar tropas da guarnição inimiga dentro da Fortaleza de Kysis e depois se reporte a Bellona.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Bellona está dirigindo ataques para enfraquecer a fortaleza de Kys e pediu que você lidere um.</p>
+<p> </p>
+<p>Você dizimou a guarnição da fortaleza e voltou para Bellona. Seus batedores haviam relatado sua vitória e ela elogiou seu sucesso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

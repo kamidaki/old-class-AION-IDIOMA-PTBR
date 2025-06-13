@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>- Ordem de serviço -</p>
+<p>Peço humildemente que você crie os seguintes itens:</p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>- Status de artesanato -</p>
+<p> </p>
+<p>Progresso artesanal</p>
+		  [%collectitem]
+		  <p> </p>
+<p>Itens solicitados</p>
+		  [%task_product_list]
+		  <p> </p>
+<p>Matéria -prima fornecida</p>
+		  [%task_component_list]
+        </body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Crie os itens solicitados e leve -os para [%dic:STR_DIC_N_[%task_npc_name0]] ou[%dic:STR_DIC_N_[%task_npc_name1]].</p>[%collectitem]</step>
+</steps>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pedido do mestre, você fez [%task_product_count] [%task_product] S.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Ordem de serviço:[%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Embarcação Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Os danos sofridos pelos Guardiões em batalha com os soldados de Beritra aumentaram dramaticamente recentemente.</p>
+<p> </p>
+<p>De alguma forma, tenho a sensação de que eles adquiriram novas armas.</p>
+<p> </p>
+<p>Seu poder de luta melhorou significativamente em particular.</p>
+<p> </p>
+<p>[%username], mate o [%dic:STR_DIC_E_LDF5b_F123_Vri] e me traga o [%dic:STR_DIC_I_QUEST_13336A].</p>
+<p> </p>
+<p>É necessária confirmação de quaisquer alterações.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Embora o exército de Beritra estivesse estornizado antes, sua força atual é excepcional.</p>
+<p> </p>
+<p>A possibilidade mais provável é que eles melhorassem suas armas.</p>
+<p> </p>
+<p>Simplesmente não é possível que eles tenham desenvolvido de repente um método de luta especial.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as armas dos soldados de Beritra.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu pensei tanto.</p>
+<p> </p>
+<p>Essa arma parece ser um pouco diferente das armas usuais das tropas de Beritra.</p>
+<p> </p>
+<p>Há pouca diferença em sua aparência, mas sua intensidade é visivelmente diferente.</p>
+<p> </p>
+<p>O Exército de Beritra parece ter adquirido armas muito fortes de algum lugar.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Pegar [%dic:STR_DIC_I_QUEST_13336A]para [%dic:STR_DIC_N_LDF5_Village_Guard17_L].</p>[%collectitem]</step>
+</steps>
+<p>Mate os soldados de Beritra para fins de pesquisa e obtenha armas.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O poder de combate subitamente aumentado do Exército de Beritra parecia desconfiado de Timoleon, e ele queria investigar.</p>
+<p> </p>
+<p>Então você eliminou o exército de Beritra e trouxe de volta suas armas, o que acabou sendo muito mais forte que as armas normais.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

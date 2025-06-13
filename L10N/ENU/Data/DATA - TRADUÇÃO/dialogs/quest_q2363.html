@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Sim ... está funcionando! Eu posso sentir a dor desaparecendo ... lentamente.</p>
+<p> </p>
+<p>Você me ajudou, Daeva. Eu não posso ... obrigado o suficiente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Há mais alguma coisa que eu possa fazer por você?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso pedir outro favor ... posso? Há muito ... que precisa fazer em outro lugar.</p>
+<p> </p>
+<p>Se você tem ... tempo, porém, há mais uma coisa que você poderia fazer ... para mim. As vespinas ... porque me causam muita dor. Eles pousam em mim, eles rastejam ... por todo o meu casca queimado. A dor é ... excruciante.</p>
+<p> </p>
+<p>Isso perturba meus pensamentos, Daeva. Isso me impede de ajudar ... as árvores restantes ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Não posso agradecer ... Basta, Daeva. Você mostrou tanta bondade ... para um eliminação moribunda e quebradiça.</p>
+<p> </p>
+<p>o [%dic:STR_DIC_M_VespaReD_30_n] S e o [%dic:STR_DIC_M_VespaReD_32_n] S são os que mais me incomodam. Por favor, apenas ... mate -os.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Eu farei tudo o que puder."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu entendo, Daeva. Não posso ... espero que você me ajude o tempo todo.</p>
+<p> </p>
+<p>Obrigado por me ajudar ... antes. Agora farei toda a lata para controlar minha dor e ... ajudar aqueles que precisam da minha ajuda.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tome cuidado, Magni."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Está ficando mais silencioso, Daeva.</p>
+<p> </p>
+<p>Talvez você tenha feito o que eu pedi, ou talvez esteja apenas mais perto da morte. Mas ... é definitivamente ... ficando mais silencioso.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Relaxe, Magni. Eu fiz tudo o que você perguntou."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado ... de novo. Tanta gentileza ... de um estranho como você é raro ... nessas partes.</p>
+<p> </p>
+<p>Você aliviou meu sofrimento e ... me permitiu passar meus últimos dias ... em paz.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine as vespinas.</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_VespaReD_30_n]([%2]/7).</p>
+<p visible="[%0]">Matar [%dic:STR_DIC_M_VespaReD_32_n]([%5]/3).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Magni].</p></step>
+</steps>
+<p>Magni pediu que você elimine as vespinas de asa amarela e as vespas que estão perturbando sua paz. Você faz o favor a ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Magni lhe disse que a dor do raio havia diminuído e que ele desejava enfrentar seus últimos momentos em paz.</p>
+<p> </p>
+<p>No entanto, ele disse que não podia relaxar por causa das vespinas que estavam rastejando sobre seu corpo escaldado. Você concordou em ajudar e matou as criaturas para ele.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

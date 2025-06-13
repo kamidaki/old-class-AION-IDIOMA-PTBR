@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Recentemente, seguimos um documento de táticas de guerra do Exército de Beritra que contém informações sobre uma invasão planejada do bastião da parede de aço.</p>
+<p> </p>
+<p>Parece ser uma invasão em larga escala ... que seria o fim do bastião da parede de aço.</p>
+<p> </p>
+<p>[%username], você poderia ir ao bastião da parede de aço e matar tantos[%dic:STR_DIC_E_Q18030all] e [%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al]possível?</p>
+<p> </p>
+<p>Sem a sua ajuda, [%username], não podemos defender o bastião da parede de aço.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Eu estive esperando por você.</p>
+<p> </p>
+<p>A mensagem de que o exército de Beritra havia começado sua invasão me perturbou profundamente ...</p>
+<p> </p>
+<p>Como foi no bastião da parede de aço? Você foi capaz de defendê -lo contra o [%dic:STR_DIC_E_Q18030all] e contra [plur][%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você relata o resultado.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Que golpe de sorte!</p>
+<p> </p>
+<p>Se eles tivessem tomado o bastião da parede de aço, teria sido extremamente difícil para nós ocupar outras regiões de Balaurea.</p>
+<p> </p>
+<p>Gostaria de agradecer sinceramente em nome de todos nós.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Defender o bastião da parede de aço contra o [%dic:STR_DIC_E_Q18030all].</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_1]([%2]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_2]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_3]([%8]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_E_Q18030_4]([%11]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_IDF5_TD_DragonRider_Chief_N_65_Al]([%14]/1)</p></step>
+<step><p visible="[%15]">Relatório para [%dic:STR_DIC_N_LDF5b_Latkel_E].</p></step>
+</steps>
+<p>Defenda o bastião da parede de aço contra a Guilda Pashid do 43º Exército de Beritra.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Latkel falou sobre os planos do Exército de Beritra de atacar o bastião da parede de aço.</p>
+<p> </p>
+<p>Você realizou um pedido e defendeu o bastião da parede de aço contra o ataque de Balaur e o comandante supremo Pashid. Quando você voltou, ele agradeceu por defender um local estrategicamente importante.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

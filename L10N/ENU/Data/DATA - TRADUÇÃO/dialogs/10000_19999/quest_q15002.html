@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15002</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Não importa o quanto você se prepare para que você se prepare, assim que chegar ao destino da expedição, você percebe que algo está faltando ... Nossos novos legionários iniciantes precisam de algo para gerar calor.</p>
+<p> </p>
+<p>Esta região está um pouco fria, porque ficou submersa no mar por tanto tempo. Nossos membros mais sensíveis já estão congelando.</p>
+<p> </p>
+<p>Felizmente, aprendi que as vespinas nesta região carregam um líquido luminescente que emite calor. Podemos ser capazes de usá -los como luzes.</p>
+<p> </p>
+<p>Você poderia entrar no[%dic:STR_DIC_W_LF5_SZ_A_01], caçar [plur][%dic:STR_DIC_M_LF5_A_Vespa_55_An]lá e me traga [plur][%dic:STR_DIC_I_quest_15002a]?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ouvi dizer que Vespines luciferinas não apenas trazem luz para a escuridão na terra, mas uma vez brilhou nas profundezas do mar.</p>
+<p> </p>
+<p>Tenho certeza de que as Vespines luciferinas seriam muito valiosas para os membros da nossa Guilda.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as Vespines Lúciferin.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, então esta é a notória Vespines luciferina.</p>
+<p> </p>
+<p>Uma luz suave que não fica muito quente. Você me trouxe algo realmente especial. Muito obrigado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O frio confundiu seus sentidos?</p>
+<p> </p>
+<p>Então foi você, [%username], quem precisa das Vespines Lúciferin para se aquecer [f:"herself"].</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>HM, então esta é a notória Vespines luciferina.</p>
+<p> </p>
+<p>Uma luz suave que não fica muito quente. Você me trouxe algo realmente especial. Muito obrigado!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você assentia.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você tem sido extremamente útil. Vou usar o luciferin que você me trouxe bem.</p>
+<p> </p>
+<p>Continue fazendo o seu melhor para a nova Guilda Start.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Adquirir [plur][%dic:STR_DIC_I_quest_15002a] e reportar a [%dic:STR_DIC_N_LF5_Nubes_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Nubes_E].</p></step>
+</steps>
+<p>Traga Vespines Luciferins para Nuves.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Nuves reclamaram do ambiente frio, que também era uma fonte de problemas para os membros da nova Guilda Start. Ele pediu que você adquirisse Vespines Luciferins para os membros trabalhadores da Guilda.</p>
+<p> </p>
+<p>Quando você trouxe as Vespines Lúciferinas, ele ficou muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

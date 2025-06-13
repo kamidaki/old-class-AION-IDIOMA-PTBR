@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Algum tempo atrás, recebi uma mensagem pedindo -nos para guardar um vagão que passaria com carga perigosa. Como se não estivéssemos ocupados o suficiente para guardar o observatório! Mas, era uma ordem, então ....</p>
+<p> </p>
+<p>Quando o vagão apareceu, não parecia estar carregando nada perigoso. Apenas uma pilha de caixas.</p>
+<p> </p>
+<p>De qualquer forma, Neifenmer e eu escoltamos o vagão até a área inferior de [%dic:STR_DIC_W_DF1A_27], assim como disse o pedido.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT1_1">"Então o que aconteceu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Depois de escoltar o vagão até onde o [%dic:STR_DIC_W_DF1A_15]Poderam ser vistos, voltamos ao nosso post no Observatório.</p>
+<p> </p>
+<p>No nosso caminho de volta, ouvimos uma comoção. Quando voltamos, a carroça estava queimando e as caixas estavam rolando pela colina em direção à doca do dirigível.</p>
+<p> </p>
+<p>Não havia como descobrir o que exatamente aconteceu! As pessoas puxando o vagão pareciam desaparecer.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que você viu?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Algum tipo de monstro saiu de uma das caixas! O que eles estavam pensando, carregando monstros como carga diária?</p>
+<p> </p>
+<p>Neifenmer e eu fizemos o possível para caçá -los, mas havia muitos. Acho que perdemos alguns.</p>
+<p> </p>
+<p>Ainda há caixas flutuando perto da doca do dirigível. É muito perigoso deixá -los. Você poderia lidar com o [%dic:STR_DIC_M_MimicD_17_n] es?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Se você descer de [%dic:STR_DIC_W_DF1A_27] em direção ao[%dic:STR_DIC_W_DF1A_15], você deve ver o vagão em chamas.</p>
+<p> </p>
+<p>Desça um pouco mais a partir daí e você verá a estrada para a doca à direita.</p>
+<p> </p>
+<p>Você encontrará o [%dic:STR_DIC_M_MimicD_17_n] es na doca e nas ilhas próximas. Por favor, lide com essas caixas!</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Estou a caminho."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>O observatório é o lugar mais importante em Altgard. Sua segurança é a maior prioridade!</p>
+<p> </p>
+<p>Como você pode simplesmente ir embora e deixar esses monstros para correr desenfreado? Você deve ser louco!</p>
+<p> </p>
+<p>Nenhum Daeva em sã consciência recusaria essa missão!</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Desculpe."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você lidou com o [%dic:STR_DIC_M_MimicD_17_n] es? Então você deve ter visto os monstros.</p>
+<p> </p>
+<p>Quem pensaria que transportar esses monstros por vagão era uma boa ideia?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eu não consigo imaginar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado por lidar com as caixas restantes.</p>
+<p> </p>
+<p>Agora, posso voltar a coisas mais importantes, como guardar o observatório.</p>
+<p> </p>
+<p>Aqui está uma recompensa por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Caça os monstros escondidos no[%dic:STR_DIC_M_MimicD_17_n] es ([%2]/5).</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Urnir].</p></step>
+</steps>
+<p>A carroça carregando carga perigosa foi atacada e as caixas rolaram. Urnir pediu que você os caçasse.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A carroça carregando carga perigosa foi atacada e as caixas espalhadas.</p>
+<p> </p>
+<p>Urnir disse que havia monstros escondidos nas caixas, então você cuidou do problema.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

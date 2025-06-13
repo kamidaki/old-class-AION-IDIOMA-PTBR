@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q2374</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Kromede ganhou entrada no templo do fogo e selou Agnita.</p>
+<p> </p>
+<p>Ninguém pode entrar no templo do fogo no momento por causa dos seguidores de Kromede.</p>
+<p> </p>
+<p>Se você quiser entrar no templo do fogo, terá que eliminar os seguidores primeiro.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"O que deve ser feito?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Devemos erradicar os seguidores de Kromede. o [%dic:STR_DIC_M_GargoyleDF2_34_Ae] S, [%dic:STR_DIC_M_SAMD_34_Ae] Areia [%dic:STR_DIC_M_SouledstoneAReD_35_Ae] S não tem lugar no templo do fogo.</p>
+<p> </p>
+<p>Você vai se livrar deles?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Mate o [plur][%dic:STR_DIC_M_GargoyleDF2_34_Ae], o [plur][%dic:STR_DIC_M_SAMD_34_Ae] e o [plur][%dic:STR_DIC_M_SouledstoneAReD_35_Ae].</p>
+<p> </p>
+<p>Eles devem ser eliminados para que o templo do fogo possa ser restaurado à sua antiga glória.</p>
+<p> </p>
+<p>Vá em frente e livre -se deles!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sangue para sangue."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uma vez, há muito tempo, o templo do fogo não era assim.</p>
+<p> </p>
+<p>O templo deve ser restaurado à sua aparição anterior, da maneira que parecia antes de Agnita ser selado.</p>
+<p> </p>
+<p>Serei capaz de restaurar o templo à sua antiga glória, se você me ajuda agora ou não.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Outra época."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Você matou o [%dic:STR_DIC_M_GargoyleDF2_34_Ae] S, [%dic:STR_DIC_M_SAMD_34_Ae] Areia [%dic:STR_DIC_M_SouledstoneAReD_35_Ae] S?</p>
+<p> </p>
+<p>Os servos de Kromede não serão mostrados com misericórdia!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Está feito."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Agnita ficará satisfeita.</p>
+<p> </p>
+<p>O templo nunca pode realmente ficar claro da traição de Kromede, mas não esqueceremos seu trabalho duro.</p>
+<p> </p>
+<p>Obrigado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Elimine os encrenqueiros no templo do fogo.</p>
+<p visible="[%0]">[%dic:STR_DIC_M_GargoyleDF2_34_Ae]([%2]/5)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_SAMD_34_Ae]([%5]/3)</p>
+<p visible="[%0]">[%dic:STR_DIC_M_SouledstoneAReD_35_Ae]([%8]/2)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_DF2_Flamyar_E].</p></step>
+</steps>
+<p>Piyama pediu que você matasse os encrenqueiros, devotados de Kromede, que estão no templo do fogo. Atender ao seu pedido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Piyama disse que os servos de Kromede precisavam ser eliminados para restaurar o templo do fogo à maneira como costumava ser.</p>
+<p> </p>
+<p>Você eliminou os Kalgolems, Mugolems e Gargoyles que serviram à vontade de Kromede.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

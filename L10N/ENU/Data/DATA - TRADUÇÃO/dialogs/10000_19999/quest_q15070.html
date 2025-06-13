@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q15070</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select_none">
+<contents cdata="true">
+<html>
+<body>
+<p>Existem muitas criaturas e objetos peculiares em Signia, AK.</p>
+<p> </p>
+<p>Daeva ouviu falar dos Klocs da Shell de Coral na floresta musgosa?</p>
+<p> </p>
+<p>Yuranerk soube que essas carapapas de coral são supostamente muito populares, mas Yuranerk se pergunta o porquê, Ak.</p>
+<p> </p>
+<p>Seja como for, a demanda pelas carapaças é enorme e, portanto, você deve reabastecer absolutamente, Ak.</p>
+<p> </p>
+<p>Se Daeva tiver tempo, Daeva, por favor, iria para o [%dic:STR_DIC_W_LF5_SZ_H_01] e trazer yuranerk[plur][%dic:STR_DIC_I_quest_15070a]do[plur][%dic:STR_DIC_M_LF5_H_Rottentree_61_An], e?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Diz -se que as carapaços corais da concha de coral Klocs são extremamente populares, ak ...</p>
+<p> </p>
+<p>Mas Yuranerk não tem idéia de por que eles são tão populares, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as carapaças de coral.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_ok">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva reuniu caraperações de coral para Yuranerk, AK!</p>
+<p> </p>
+<p>Hmm ... a cor, o brilho ... eles são evidentemente carapaça de coral de alta qualidade, AK!</p>
+<p> </p>
+<p>Mas eles são realmente tão populares, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="check_user_item_fail">
+<contents cdata="true">
+<html>
+<body>
+<p>O que é isso?</p>
+<p> </p>
+<p>Não é assim que as carapaces de coral se parecem, Ak.</p>
+<p> </p>
+<p>Yuranerk ouviu que as carapaças de coral são muito populares, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_success">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva reuniu caraperações de coral para Yuranerk, AK!</p>
+<p> </p>
+<p>Hmm ... a cor, o brilho ... eles são evidentemente carapaça de coral de alta qualidade, AK!</p>
+<p> </p>
+<p>Mas eles são realmente tão populares, AK?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">Você pede sua recompensa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva leva a sério a preocupação de Shugo, então Daeva receberá uma recompensa, Ak.</p>
+<p> </p>
+<p>Yuranerk diz obrigado, e espera que Daeva continue levando a sério os pedidos de Shugo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha o [plur][%dic:STR_DIC_I_quest_15070a] e reportar a [%dic:STR_DIC_N_LF5_Yuraringring_E].</p>[%collectitem]</step>
+<step><p visible="[%3]">Fale com [%dic:STR_DIC_N_LF5_Yuraringring_E].</p></step>
+</steps>
+<p>Reúna as carapaces de coral e levá -las a Yuranerk.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Yuranerk pediu que você colhesse caraperações de coral da concha de coral Klocs na floresta musgosa.</p>
+<p> </p>
+<p>Você cumpriu o pedido de Yuranerk. Yuranerk disse que as carapaças que você reuniu eram muito populares e lhe deram uma recompensa.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

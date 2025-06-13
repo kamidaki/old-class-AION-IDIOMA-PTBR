@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>[%username]. É uma honra conhecê -lo.</p>
+<p> </p>
+<p>[%username], todo mundo sabe de suas ações honrosas.</p>
+<p> </p>
+<p>Muitos guerreiros se esforçam para cumprir serviços honrosos.</p>
+<p> </p>
+<p>Tornar -se um Daeva verdadeiramente glorioso não é fácil, e é por isso que ...</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">Você continua ouvindo.</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Tudo bem, vou tentar mantê -lo curto.</p>
+<p> </p>
+<p>Você pode obter as insígnias da limpeza e as insígnias da feroz batalha?</p>
+<p> </p>
+<p>[%username], a situação nesta guerra se voltaria a nosso favor se você recebesse essa honra.</p>
+<p> </p>
+<p>Se você me provar que ganhou 50.000 AP, darei a você as insígnias de limpeza.</p>
+<p> </p>
+<p>Você só pode receber as insígnias da feroz batalha se o pandarunerk considerar digno de usar essas insígnias. Você também pode receber essas insígnias no abismo.</p>
+<p> </p>
+<p>Você está pronto para defender sua reputação nobre?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Estamos tentando fazer um balanço da situação de guerra.</p>
+<p> </p>
+<p>Que você se sai bem.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você ainda não está pronto para lutar?</p>
+<p> </p>
+<p>Que pena.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Vá para a fortaleza!</p>
+<p> </p>
+<p>[%username], que as insígnias da limpeza e as insígnias da feroz batalha sirvam como emblemas de suas ações gloriosas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">Você entrega as insígnias da limpeza e as insígnias da feroz batalha.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>O que você está esperando?</p>
+<p> </p>
+<p>Jogue -se na batalha. Neste exato momento, inúmeros lutadores estão arriscando suas vidas por honra no campo de batalha.</p>
+<p> </p>
+<p>Prove que você é digno de honra, obtendo as insígnias da limpeza e as insígnias da batalha feroz.</p>
+<p> </p>
+<p>Eu vou esperar por você.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">Você termina a conversa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Inacreditável. Você fez isso tão rapidamente!</p>
+<p> </p>
+<p>Esta recompensa honrará sua bravura.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Obtenha as insígnias da limpeza e as insígnias da feroz batalha e leve -a a Hiran.</p>[%collectitem]</step>
+</steps>
+<p>Prove a ser honrado, obtenha as insígnias da limpeza e as insígnias da batalha feroz e traga esses símbolos de sua honra a Hiran.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>O comerciante de distinções Hiran disse que muitos combatentes aspiram a obter grande honra. Todo mundo obtém as insígnias da limpeza e as insígnias da feroz batalha seria muito honrada.</p>
+<p> </p>
+<p>Você ganhou pontos no Abismo através de batalhas e as trocou por insígnias de limpeza. Você obteve as insígnias da feroz batalha da batalha da fortaleza. Você recebeu grande honra por fazer isso.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Ativo:[%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

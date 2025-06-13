@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Tanar é um tolo às vezes, mesmo que seu coração esteja no lugar certo.</p>
+<p> </p>
+<p>Eu disse a ele que estava planejando ir ao Dragonrest para pegar alguns espécimes de ossos, e ele ficou furioso. Ele continuou me dizendo o quão perigoso era e, na noite passada, ele se foi!</p>
+<p> </p>
+<p>Ele disse que era para me proteger e, honestamente, ele voltou com muitos ossos ... mas também estava meio morto. Se eu tivesse ido eu mesmo, teria voltado com segurança.</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Os irmãos podem ser uma dor."</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Conte -me sobre isso, [%username]. Você tem irmãos ou irmãs? Eu simplesmente não consigo imaginar mais ninguém sendo tão teimoso quanto Tanar ....</p>
+<p> </p>
+<p>De qualquer forma, Tanar ainda é meu irmão, e foi difícil vê -lo sofrendo depois que ele arriscou sua vida por mim. Mas eu preciso continuar coletando ossos e não quero que isso aconteça novamente.</p>
+<p> </p>
+<p>Você se importaria de se aventurar no DragonRest e despachar algumas das criaturas de lá para que seja mais seguro?</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Obrigado, [%username]. Não se trata de vingar meu irmão ... mais sobre impedi -lo de se machucar.</p>
+<p> </p>
+<p>Se você pudesse matar o [%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An] S que cercam as pilhas de ossos, isso seria uma grande ajuda.</p>
+<p> </p>
+<p>E ... não conte a Tanar sobre isso. Se ele sabe que você está fazendo isso por mim, ele tentará fazer isso sozinho. Não quero pensar o que aconteceria se ele realmente tentasse lutar contra um antigo Drake, não apenas fugir dele ....</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Haveria outra pilha de ossos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, esqueça, [%username].</p>
+<p> </p>
+<p>Este é o meu problema. Você não deveria ter que lidar com a tolice de Tanar.</p>
+<p> </p>
+<p>Tomar cuidado.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Você também."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>É difícil classificar todos esses ossos que Tanar trouxe de volta. Não tenho idéia se eles são da mesma pilha, várias pilhas ou que outros ossos estavam por perto. Eu acho que ele acabou de correr lá e pegou o que podia antes de fugir ....</p>
+<p> </p>
+<p>Bem, pelo menos ele os trouxe de volta.</p>
+<p> </p>
+<p>E você, [%username]? Você teve alguma sorte matando os antigos Drakes de Acheron?</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Eles estão mortos."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Uau, você matou tantos? Obrigado, [%username]. Tanar obrigado também ... mesmo que ele não saiba.</p>
+<p> </p>
+<p>Tenho certeza de que ele vai se esgueirar lá em algum momento, quando eu deixei escapar que preciso de mais ossos. Pelo menos da próxima vez, ele voltará em uma peça.</p>
+<p> </p>
+<p>Aqui, tome isso como um sinal de minha gratidão.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Matar [%dic:STR_DIC_M_DF4_Bonedrake_DR_54_An], que está no túmulo do derrotado ([%2]/10)</p></step>
+<step><p visible="[%15]">Fale com [%dic:STR_DIC_N_Itar]%.</p></step>
+</steps>
+<p>Após o pedido de Itar, mate o antigo Acheron Drake, que vive na tumba dos derrotados.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Itar disse que seu irmão mais velho, Tanar, foi ao DragonRest para coletar espécimes ósseos e retornaram magoados depois de serem atacados pelo antigo Acheron Drakes.</p>
+<p> </p>
+<p>Para garantir que Tanar não seja ferido novamente, você descartou todos os antigos Drakes de Acheron da região. Quando você voltou, Itar ele agradeceu por sua ajuda.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

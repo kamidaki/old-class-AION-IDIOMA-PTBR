@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você me faria um favor, [%username]? Você teve uma grande ajuda para o nosso acampamento de escoteiros no deserto.</p>
+<p> </p>
+<p>Eu posso vê -lo se preparando para nos deixar e preciso enviar uma carta em algum lugar remoto.</p>
+<p> </p>
+<p>Apenas mais um pouco de ajuda para nós, e você pode esquecer este lugar.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Para onde você precisa ir?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>Escrevi um relatório descrevendo nossas missões recentes.</p>
+<p> </p>
+<p>Estou enviando para a fortaleza, mas acho que também será útil para a Guilda Golada Golada em sua guarnição.</p>
+<p> </p>
+<p>Então, eu gostaria de pedir que você entregue o relatório para [%dic:STR_DIC_N_Castor], a brigada de ouro Geral.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Por favor, entregue este relatório para [%dic:STR_DIC_N_Castor]na guarnição dourada.</p>
+<p> </p>
+<p>Nem os guardiões, a Guilda Golada, nem os daevas da vida podem parar a desertificação de Eltnen, embora façam o melhor possível.</p>
+<p> </p>
+<p>Nosso tempo aqui tem sido difícil, e o deserto é um oponente que não podemos derrotar. Mas eles deveriam pelo menos saber que tentamos.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Vou avisar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Você não é daqui, não posso esperar que você entenda nossa dor.</p>
+<p> </p>
+<p>Afastar agora é o melhor curso de ação para você. Antes de você cuidar de nós.</p>
+<p> </p>
+<p>Obrigado por todos os seus problemas.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sinto muito, não posso ajudar."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Você parece bastante exausto, [%username].</p>
+<p> </p>
+<p>Não me diga que esse calor está deixando você para baixo.</p>
+<p> </p>
+<p>Então, o que te traz aqui?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SELECT_QUEST_REWARD">"Demokritos envia palavras do campo."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Hmm ... eu não sabia que nada disso havia acontecido. Isso é muito em que pensar.</p>
+<p> </p>
+<p>A banda de escoteiros está fazendo um excelente trabalho. Sou muito grato a Demokritos por mantê -los em missão.</p>
+<p> </p>
+<p>Obrigado por entregar o relatório.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Entregar o relatório de escoteiro para [%dic:STR_DIC_N_Castor].</p></step>
+</steps>
+<p>Entregar o relatório da banda de escoteiros para [%dic:STR_DIC_N_Castor], a brigada de ouro Geral.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Os Demokritos queriam garantir que a Guilda Golada tivesse todas as informações mais recentes.</p>
+<p> </p>
+<p>Portanto, você entregou o relatório de escoteiros a Castor, que foi muito agradecido.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

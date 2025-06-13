@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<questinfo>
+<questid>Q16950</questid>
+<questname>???</questname>
+<questtype>undefined</questtype>
+</questinfo>
+<htmlpage accept="true" name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Ah, [%username]! Você é apenas a pessoa que eu preciso.</p>
+<p> </p>
+<p>Devo um favor a um agente secreto, e ela me pediu para encontrar alguém confiável para uma missão. Mas é difícil encontrar pessoas, todo mundo está tão ocupado.</p>
+<p> </p>
+<p>A missão é de [%dic:STR_DIC_N_LDF5b_Huwooring_E].</p>
+<p> </p>
+<p>Você podia ver ir vê -la quando tiver um momento tranquilo?</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_SIMPLE">Você aceita.</act>
+<act href="HACTION_QUEST_REFUSE_SIMPLE">Você recusa.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select2">
+<contents cdata="true">
+<html>
+<body>
+<p>Shhh! Quieto, Daeva, AK! O nome de Shugo é Hurinerk. Shugo está conduzindo uma investigação secreta em nome da Goldrinyerk Limited, AK.</p>
+<p> </p>
+<p>Um dos gerentes da Goldrinyerk Limited sofreu vários ataques da Steel Rose Crew, AK! Shugo suspeita que alguém da Goldrinyerk Limited esteja em conflito com os piratas, Akakak.</p>
+<p> </p>
+<p>Shugo descobriu que Bosaraki da rosa de aço recebeu uma carta do traidor, Ak. Daeva deve eliminá -la e obter o documento, para que possamos descobrir quem é o culpado.</p>
+<p> </p>
+<p>Vá para o [%dic:STR_DIC_W_IDShulackShip_02_SZ_1F] e pegue o [%dic:STR_DIC_I_quest_16950a], e.</p>
+<p> </p>
+<p>Quando Daeva está pronto para sair para a rosa de aço, [%dic:STR_DIC_N_IDShulack_Rose_Ent_1F_E] em North Katalam pode ajudar, Akakak!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_SETPRO1">A conversa terminou.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Se aprendermos mais sobre o ataque à pessoa nobre, isso poderia nos dar provas de que os piratas de aço rosa nos traíram, AK.</p>
+<p> </p>
+<p>De acordo com a investigação, o Steel Rose aparentemente teve uma confissão enviada pelo mentor do ataque, AK.</p>
+<p> </p>
+<p>Obtenha essa evidência de traição de Bosaraki e traga -a para mim, AK!</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM_SIMPLE">Você entrega as evidências.</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Daeva recebeu a ordem secreta de Bosaraki, AK?</p>
+<p> </p>
+<p>Esta evidência pode desmascarar o traidor! Shugo o entregará à liderança Limitada Goldrinyerk imediatamente, Akakak!</p>
+<p> </p>
+<p>Eu me pergunto quem poderia ser? AK.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Fale com [%dic:STR_DIC_N_LDF5b_Huwooring_E] em North Katalam.</p></step>
+<step><p visible="[%3]">Obtenha o [%dic:STR_DIC_I_quest_16950a] e reportar a [%dic:STR_DIC_N_LDF5b_Huwooring_E].</p>[%collectitem]</step>
+</steps>
+<p>Elimine Bosaraki na fase de desembarque da rosa de aço e colete sinais de traição.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>Você rasgou a rosa de aço, matou o bosaraki fascinido e reuniu evidências da traição.</p>
+<p> </p>
+<p>Hurinerk encaminhou as evidências de traição à cadeia e disse que o relacionamento com a rosa de aço teria que ser reconsiderado.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>

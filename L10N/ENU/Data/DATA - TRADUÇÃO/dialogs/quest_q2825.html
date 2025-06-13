@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<htmlpages>
+<htmlpage name="select1">
+<contents cdata="true">
+<html>
+<body>
+<p>Nossos ancestrais de asmodianos descobriram reshanta séculos atrás, mas o olho de Reshanta é principalmente um mistério para nós até hoje.</p>
+<p> </p>
+<p>Não sabemos quem construiu a fortaleza divina. Não sabemos por que não há fantasmas ou outros monstros lá. E sabemos pouco sobre os níveis mais baixos da fortaleza.</p>
+<p> </p>
+<p>Ah, procuramos respostas e eu apostarei que os Elyos também. Mas estamos frustrados a cada passo.</p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_ASK_QUEST_ACCEPT">"Frustrado pelo quê?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="ask_quest_accept">
+<contents cdata="true">
+<html>
+<body>
+<p>O problema são os níveis mais baixos da fortaleza divina. Os seres enigmáticos chamados "defensores" residem lá embaixo, e eles matam qualquer um que se aproxima.</p>
+<p> </p>
+<p>Eu só sei que há algo importante abaixo da fortaleza! E acho que os defensores mantêm o olho livre de fantasmas e outros horrores do abismo.</p>
+<p> </p>
+<p>No entanto, é tudo conjectura ... nem sabemos quem fez os defensores. Eles podem ser servos de um Senhor Dragão, ou talvez servem Aion. Isso me dá arrepios ...</p>
+<p> </p>
+<p></p>
+<p> </p>
+<p></p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_QUEST_ACCEPT_1">Aceitar.</act>
+<act href="HACTION_QUEST_REFUSE_1">Declínio.</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_accept_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Perguntei a Grunn, a coisa mais próxima que temos de um anatomista, sobre os defensores. Ele diz que, com amostras principais de cada protetor, ele poderia estudar de onde eles vieram e como são controlados.</p>
+<p> </p>
+<p>[%username], derrota a [%dic:STR_DIC_M_Ab1_1011_CyclopsOd_50_An], Assim, [%dic:STR_DIC_M_Ab1_1011_CyclopsFire_50_An], Assim, [%dic:STR_DIC_M_Ab1_1011_BoneDrake_50_An], e [%dic:STR_DIC_M_Ab1_1011_AgrintGi_50_An]. Volte com seus núcleos.</p>
+<p> </p>
+<p>Uma complicação adicional ... Grunn diz que os núcleos são frágeis e é difícil derrotar um zagueiro sem esmagar o núcleo por dentro. Boa sorte com isso ...</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Sim, para a ciência, certo?"</act>
+</selects>
+</htmlpage>
+<htmlpage name="quest_refuse_1">
+<contents cdata="true">
+<html>
+<body>
+<p>Realmente? Este é o maior mistério em todo o abismo! Você não tem interesse científico?</p>
+<p> </p>
+<p>Hmm, parece que os rumores de sua adequação são exagerados.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Faça sua própria escavação!"</act>
+</selects>
+</htmlpage>
+<htmlpage name="select5">
+<contents cdata="true">
+<html>
+<body>
+<p>Poderíamos sentir um fundo rumor sob a fortaleza divina. Era você?</p>
+<p> </p>
+<p>Eu imaginei isso. Mostre -me o [%dic:STR_DIC_I_QUEST_2825all] S, por favor. Grunn precisa deles imediatamente.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_CHECK_USER_HAS_QUEST_ITEM">"Aqui estão eles."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select6">
+<contents cdata="true">
+<html>
+<body>
+<p>Não é um conjunto completo, mas você sabe o que? Eu não esperava sucesso.</p>
+<p> </p>
+<p>Bem, não na sua primeira tentativa. Você não é o primeiro Daeva que eu atribuí a isso. Muitos procuraram o [%dic:STR_DIC_I_QUEST_2825all] S, mas todo mundo falhou até agora.</p>
+<p> </p>
+<p>Não desista agora! Tente novamente e caminhe na sombra de Azphel.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+<selects>
+<act href="HACTION_FINISH_DIALOG">"Tudo bem, mais uma vez."</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_quest_reward1">
+<contents cdata="true">
+<html>
+<body>
+<p>Excelente trabalho. Houve resmungo ao enviar Daevas em "Missões Suicidas". Fico feliz em provar isso falso.</p>
+<p> </p>
+<p>Há um elemento da verdade, no entanto. Você não foi o primeiro Daeva que enviei contra os defensores. Mas você não apenas voltou, você trouxe um conjunto completo de núcleos!</p>
+<p> </p>
+<p>Sangue para sangue, [%username]! Vou mandar isso para Grunn na Primum Fortaleza.</p>
+<p> </p>
+<p> </p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_summary">
+<contents cdata="true">
+<html>
+<body>
+<steps>
+<step><p visible="[%0]">Derrotar os defensores guardando o olho de Reshanta, reunir o [%dic:STR_DIC_I_QUEST_2825all] e leve-os para [%dic:STR_DIC_N_Ab1_1011_Quest_Da].</p>[%collectitem]</step>
+</steps>
+<p>Os defensores que guardam a exploração divina do bloco da fortaleza dos olhos de Reshanta. Reúna núcleos dos defensores do Aether, defensores do fogo, defensores antigos e defensores da natureza, para trazer um conjunto completo para Muelina.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="quest_complete">
+<contents cdata="true">
+<html>
+<body>
+<p>A pesquisa de Muelina sobre a fortaleza divina ficou frustrada com os defensores dos olhos de Reshanta. Sem saber qual propósito os defensores servem, ela não ousa destruir todos eles, mas pediu que você reunisse núcleos do zagueiro de um Aether, o zagueiro do fogo, o zagueiro antigo e o zagueiro da natureza para ela.</p>
+<p> </p>
+<p>Você derrotou os defensores à espreita nos níveis mais baixos da fortaleza e retornou com quatro tipos diferentes de núcleos, como a muelina instruiu. Ela os enviará para Grunn, especialista nos habitantes do abismo.</p>
+</body>
+</html>
+</contents>
+</htmlpage>
+<htmlpage name="select_acqusitive_quest_desc">
+<selects>
+<act>Nova missão: [%questname]</act>
+</selects>
+</htmlpage>
+<htmlpage name="select_progressive_quest_desc">
+<selects>
+<act>Em andamento: [%questname]</act>
+</selects>
+</htmlpage>
+</htmlpages>
