@@ -1,4 +1,7 @@
-! [old Class AION Banner](https://github.com/kamidaki/old-class-server/blob/main/Banner_OldClass.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kamidaki/old-class-AION-IDIOMA-PTBR/main/Banner_OldClass.png" alt="old Class AION Banner" width="800"/>
+</p>
+
 
 # Tradução PT-BR para Aion (Baseado nas versões 4.x e inferiores)
 
