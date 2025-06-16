@@ -22,7 +22,7 @@ Esta tradução foi feita inicialmente para o servidor Old Class. Conheça-o em 
 
 >>**Obs:** Não ensinamos como traduzir, montar servidores ou editar o CLIENT. Este projeto é destinado a pessoas que já sabem como editar o CLIENT e o SERVIDOR.
 
-Para fazer parte da nossa comunidade, visite nosso Discord: [https://discord.gg/SKCVjHd7j9](https://discord.gg/SKCVjHd7j9)
+Para fazer parte da nossa comunidade, visite nosso **Discord**: [![Discord Join Link](https://img.shields.io/badge/Discord-5865f2?logo=discord&logoColor=white)](https://discord.gg/SKCVjHd7j9)
 
 ---
 
